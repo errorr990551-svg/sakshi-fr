@@ -1,8 +1,26 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Globe } from 'lucide-react';
 
-export default function Footer({ onEnquireClick }) {
+export default function Footer({ onNavigate, onEnquireClick }) {
   const currentYear = new Date().getFullYear();
+
+  const handleProductsLink = (e) => {
+    e.preventDefault();
+    onNavigate('home');
+    setTimeout(() => {
+      const el = document.getElementById('products');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }, 150);
+  };
+
+  const handleScrollLink = (e, targetId) => {
+    e.preventDefault();
+    onNavigate('home');
+    setTimeout(() => {
+      const el = document.getElementById(targetId);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }, 150);
+  };
 
   return (
     <footer className="footer-sec">
@@ -10,7 +28,15 @@ export default function Footer({ onEnquireClick }) {
         <div className="footer-top">
           
           <div className="footer-about">
-            <a href="#" className="logo-link" style={{ marginBottom: '0.5rem' }}>
+            <a 
+              href="#" 
+              className="logo-link" 
+              style={{ marginBottom: '0.5rem' }}
+              onClick={(e) => {
+                e.preventDefault();
+                onNavigate('home');
+              }}
+            >
               <div className="logo-icon-wrap">SF</div>
               <span className="logo-text">Sakshi <span>Forge</span></span>
             </a>
@@ -36,11 +62,11 @@ export default function Footer({ onEnquireClick }) {
           <div className="footer-col">
             <h4>Menu</h4>
             <ul className="footer-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#products">Products Range</a></li>
-              <li><a href="#infra">Manufacturing Facility</a></li>
-              <li><a href="#why-choose">Why Choose Us</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); onNavigate('home'); window.scrollTo(0, 0); }}>Home</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); onNavigate('about'); window.scrollTo(0, 0); }}>About Us</a></li>
+              <li><a href="#" onClick={handleProductsLink}>Products Range</a></li>
+              <li><a href="#" onClick={(e) => handleScrollLink(e, 'infra')}>Manufacturing Facility</a></li>
+              <li><a href="#" onClick={(e) => handleScrollLink(e, 'why-choose')}>Why Choose Us</a></li>
               <li><a href="#" onClick={(e) => { e.preventDefault(); onEnquireClick(); }}>Get Quotation</a></li>
             </ul>
           </div>

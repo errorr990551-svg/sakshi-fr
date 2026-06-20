@@ -5,6 +5,7 @@ import AboutSection from './components/AboutSection';
 import ProductRange from './components/ProductRange';
 import Infrastructure from './components/Infrastructure';
 import WhyChooseUs from './components/WhyChooseUs';
+import AboutPage from './components/AboutPage';
 import Footer from './components/Footer';
 import ProductModal from './components/ProductModal';
 import EnquiryModal from './components/EnquiryModal';
@@ -38,25 +39,42 @@ function App() {
     handleOpenEnquiry(productName); // Open enquiry modal
   };
 
+  const [currentPage, setCurrentPage] = useState('home');
+
+  const handleNavigate = (page) => {
+    setCurrentPage(page);
+    window.scrollTo(0, 0);
+  };
+
   return (
     <>
       {/* Navigation Header */}
-      <Header onEnquireClick={() => handleOpenEnquiry('')} />
+      <Header 
+        currentPage={currentPage} 
+        onNavigate={handleNavigate} 
+        onEnquireClick={() => handleOpenEnquiry('')} 
+      />
 
-      {/* Hero Presentation Section & Capabilities */}
-      <Hero onEnquireClick={() => handleOpenEnquiry('')} />
+      {currentPage === 'home' ? (
+        <>
+          {/* Hero Presentation Section & Capabilities */}
+          <Hero onEnquireClick={() => handleOpenEnquiry('')} />
 
-      {/* About Corporate Overview */}
-      <AboutSection />
+          {/* About Corporate Overview */}
+          <AboutSection />
 
-      {/* Products Inventory Grid */}
-      <ProductRange onProductSelect={handleOpenProduct} />
+          {/* Products Inventory Grid */}
+          <ProductRange onProductSelect={handleOpenProduct} />
 
-      {/* Value Pillars List */}
-      <WhyChooseUs />
+          {/* Value Pillars List */}
+          <WhyChooseUs />
 
-      {/* Factory and Machinery Infrastructure */}
-      <Infrastructure />
+          {/* Factory and Machinery Infrastructure */}
+          <Infrastructure />
+        </>
+      ) : (
+        <AboutPage onEnquireClick={() => handleOpenEnquiry('')} />
+      )}
 
       {/* Call To Action Banner */}
       <section className="cta-sec section-padding">
@@ -78,7 +96,7 @@ function App() {
       </section>
 
       {/* Footer Sitemap */}
-      <Footer onEnquireClick={() => handleOpenEnquiry('')} />
+      <Footer onNavigate={handleNavigate} onEnquireClick={() => handleOpenEnquiry('')} />
 
       {/* Interactive Detail Modal for Products */}
       {selectedProduct && (

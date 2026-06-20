@@ -82,31 +82,31 @@ export default function AboutPage({ onEnquireClick }) {
       </section>
 
       {/* 2. Our History Section */}
-      <section className="section-padding" style={{ backgroundColor: 'var(--bg-dark-900)' }}>
+      <section style={{ backgroundColor: 'var(--bg-dark-900)', padding: '4rem 0' }}>
         <div className="container">
           <div className="about-grid">
             <div className="about-right" style={{ order: window.innerWidth < 992 ? 2 : 1 }}>
-              <div className="image-panel-container" style={{ aspectRatio: '16/22' }}>
+              <div className="image-panel-container" style={{ aspectRatio: '16/11' }}>
                 <img src="/about_history.png" alt="Stacked steel warehouse corridor" style={{ objectPosition: 'center center' }} />
               </div>
             </div>
 
             <div className="about-left" style={{ order: window.innerWidth < 992 ? 1 : 2 }}>
               <span className="hero-tag" style={{ border: 'none', backgroundColor: 'rgba(255, 193, 7, 0.08)' }}>Our Legacy</span>
-              <h3 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', lineHeight: '1.2' }}>
+              <h3 style={{ fontSize: '2.2rem', marginBottom: '1rem', lineHeight: '1.2' }}>
                 The Establishment of <br /><span>Sakshi Forge</span>
               </h3>
-              <div className="accent-line-left" style={{ marginBottom: '2.5rem' }}></div>
+              <div className="accent-line-left" style={{ marginBottom: '1.25rem' }}></div>
 
               <p className="about-p">
                 Sakshi Forge is a trusted manufacturer and supplier of industrial flanges, butt weld fittings, forged fittings, pipes, tubes, round bars, and steel plates. With a strong focus on quality, precision engineering, and reliable supply, we cater to the demanding requirements of oil & gas, petrochemical, power generation, and heavy engineering industries.
               </p>
               
-              <p className="about-p" style={{ marginBottom: '3rem' }}>
+              <p className="about-p" style={{ marginBottom: '1.5rem' }}>
                 Our commitment to advanced manufacturing practices and strict quality control ensures that every product meets national and international industry standards.
               </p>
 
-              <div className="about-sub-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
+              <div className="about-sub-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem' }}>
                 <div>
                   <h4 style={{ color: 'var(--primary-yellow)', fontSize: '1.1rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>
                     Growth and Expansion
@@ -135,7 +135,7 @@ export default function AboutPage({ onEnquireClick }) {
                   <h4 style={{ color: 'var(--primary-yellow)', fontSize: '1.1rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>
                     Get a Free Quote
                   </h4>
-                  <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '1rem' }}>
+                  <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '0.75rem' }}>
                     Contact us today to get a free quote for your industrial need met at Sakshi Forge.
                   </p>
                   <button onClick={onEnquireClick} className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.75rem' }}>
@@ -167,15 +167,15 @@ export default function AboutPage({ onEnquireClick }) {
       </section>
 
       {/* 4. Trusted Name Detail Grid */}
-      <section className="section-padding" style={{ backgroundColor: 'var(--bg-dark-800)' }}>
+      <section style={{ backgroundColor: 'var(--bg-dark-800)', padding: '4rem 0' }}>
         <div className="container">
           <div className="about-grid" style={{ gridTemplateColumns: '1.05fr 0.95fr' }}>
             <div className="about-left">
               <span className="hero-tag" style={{ border: 'none', backgroundColor: 'rgba(255, 193, 7, 0.08)' }}>Market Leadership</span>
-              <h3 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', lineHeight: '1.2' }}>
+              <h3 style={{ fontSize: '2.2rem', marginBottom: '1rem', lineHeight: '1.2' }}>
                 Sakshi Forge – A Trusted Name in <br /><span>Industrial Steel Manufacturing</span>
               </h3>
-              <div className="accent-line-left" style={{ marginBottom: '2.5rem' }}></div>
+              <div className="accent-line-left" style={{ marginBottom: '1.25rem' }}></div>
 
               <p className="about-p">
                 Sakshi Forge is a leading manufacturer and supplier of industrial flanges, butt weld fittings, forged fittings, pipes, tubes, round bars, and steel plates. With a strong focus on precision engineering and advanced manufacturing processes, we deliver products built for strength, durability, and reliable performance in demanding industrial environments.
@@ -192,7 +192,7 @@ export default function AboutPage({ onEnquireClick }) {
             </div>
 
             <div className="about-right">
-              <div className="image-panel-container" style={{ aspectRatio: '16/22' }}>
+              <div className="image-panel-container" style={{ aspectRatio: '16/11' }}>
                 <img src="/about_structure.png" alt="Industrial blast furnace chimney network" style={{ objectPosition: 'center center' }} />
               </div>
             </div>

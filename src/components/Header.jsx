@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Flame } from 'lucide-react';
+import { handleLinkClick } from '../utils/router';
 
 export default function Header({ currentPage, onNavigate, onEnquireClick }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,26 +22,16 @@ export default function Header({ currentPage, onNavigate, onEnquireClick }) {
 
   const handleProductsClick = (e) => {
     setIsMenuOpen(false);
-    if (currentPage !== 'home') {
-      e.preventDefault();
-      onNavigate('home');
-      setTimeout(() => {
-        const el = document.getElementById('products');
-        if (el) el.scrollIntoView({ behavior: 'smooth' });
-      }, 150);
-    }
+    handleLinkClick(e, '/products');
   };
 
   return (
     <header className={`header-wrapper ${isScrolled ? 'header-scrolled' : ''}`}>
       <div className="container header-container">
         <a 
-          href="#" 
+          href="/" 
           className="logo-link"
-          onClick={(e) => {
-            e.preventDefault();
-            onNavigate('home');
-          }}
+          onClick={(e) => handleLinkClick(e, '/')}
         >
           <div className="logo-icon-wrap">
             SF
@@ -52,12 +43,11 @@ export default function Header({ currentPage, onNavigate, onEnquireClick }) {
           <ul className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
             <li>
               <a 
-                href="#" 
+                href="/" 
                 className={`nav-link ${currentPage === 'home' ? 'active' : ''}`} 
                 onClick={(e) => {
-                  e.preventDefault();
-                  onNavigate('home');
                   setIsMenuOpen(false);
+                  handleLinkClick(e, '/');
                 }}
               >
                 Home
@@ -65,12 +55,11 @@ export default function Header({ currentPage, onNavigate, onEnquireClick }) {
             </li>
             <li>
               <a 
-                href="#" 
+                href="/about" 
                 className={`nav-link ${currentPage === 'about' ? 'active' : ''}`} 
                 onClick={(e) => {
-                  e.preventDefault();
-                  onNavigate('about');
                   setIsMenuOpen(false);
+                  handleLinkClick(e, '/about');
                 }}
               >
                 About Us
@@ -78,8 +67,8 @@ export default function Header({ currentPage, onNavigate, onEnquireClick }) {
             </li>
             <li>
               <a 
-                href="#products" 
-                className="nav-link" 
+                href="/products" 
+                className={`nav-link ${currentPage === 'products' ? 'active' : ''}`} 
                 onClick={handleProductsClick}
               >
                 Products

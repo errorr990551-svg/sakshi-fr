@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { 
   ChevronRight, ShieldCheck, Truck, Sparkles, MessageSquare, ArrowRight, HelpCircle, 
   ChevronDown, ChevronUp, Info, AlertTriangle, Layers, Activity, FileText, Calendar, 
-  CheckCircle2, XCircle, ArrowUpRight, Award, Zap, Package, Compass
+  CheckCircle2, XCircle, ArrowUpRight, Award, Zap, Package, Compass, Settings
 } from 'lucide-react';
 import { handleLinkClick } from '../utils/router';
 import { parseKeySpecs } from '../utils/seo';
@@ -107,7 +107,7 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
   };
 
   return (
-    <div className="product-page-wrapper" style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '6rem' }}>
+    <div className="product-page-wrapper" style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '6rem', paddingTop: '5.5rem' }}>
       
       {/* 1. Navigation / Breadcrumbs */}
       <section style={{ backgroundColor: 'var(--bg-dark-800)', borderBottom: '1px solid var(--border-color)', padding: '1rem 0' }}>
@@ -187,65 +187,95 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
               </div>
             </div>
 
-            {/* Right Quick RFQ Pane */}
-            <div style={{ 
-              backgroundColor: 'var(--bg-dark-800)', 
-              border: '1px solid var(--border-color)', 
-              borderRadius: '12px', 
-              padding: '2.5rem', 
-              boxShadow: '0 12px 40px rgba(0,0,0,0.4)',
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '1.5rem',
-              position: 'sticky',
-              top: '7rem'
-            }}>
-              <div>
-                <span style={{ color: 'var(--primary-yellow)', fontSize: '0.8rem', fontWeight: '700', textTransform: 'uppercase', display: 'block', marginBottom: '0.35rem' }}>
-                  Hygienic Steel Grade
-                </span>
-                <h3 style={{ fontSize: '1.6rem', fontWeight: '800', color: 'var(--text-primary)', lineHeight: '1.2' }}>
-                  Request Price Quote
-                </h3>
-              </div>
-
-              <div style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
-                <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
-                  <ShieldCheck size={20} style={{ color: 'var(--primary-yellow)' }} />
-                  <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>MTC EN 10204 3.1 Included</span>
-                </div>
-                <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
-                  <Truck size={20} style={{ color: 'var(--primary-yellow)' }} />
-                  <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Global Sea & Air Freight</span>
-                </div>
-                <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
-                  <Sparkles size={20} style={{ color: 'var(--primary-yellow)' }} />
-                  <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Electro-Chemical Finish Certificate</span>
+            {/* Right Column: Image and CTA/RFQ Card */}
+            <div style={{ position: 'sticky', top: '7rem', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+              
+              {/* Product Image Box */}
+              <div style={{
+                backgroundColor: 'var(--bg-dark-800)',
+                border: '1px solid var(--border-color)',
+                borderRadius: '12px',
+                aspectRatio: '16/10',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                flexDirection: 'column',
+                gap: '1rem',
+                background: 'radial-gradient(circle at center, rgba(255, 193, 7, 0.04) 0%, transparent 70%), var(--bg-dark-800)',
+                padding: '2rem',
+                textAlign: 'center',
+                boxShadow: '0 8px 30px rgba(0,0,0,0.2)'
+              }}>
+                <Package size={48} style={{ color: 'var(--primary-yellow)', opacity: 0.8 }} />
+                <div>
+                  <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.1em', fontWeight: '700' }}>
+                    {product['Category']}
+                  </span>
+                  <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginTop: '0.25rem', fontWeight: '500' }}>
+                    {product['Product Name']}
+                  </p>
                 </div>
               </div>
 
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                <button 
-                  onClick={() => onEnquireClick(product['Product Name'])} 
-                  className="btn btn-primary" 
-                  style={{ width: '100%', padding: '1rem 0' }}
-                >
-                  {product['CTA Button 1 Text'] || 'Request a Quote'} <ArrowRight size={18} />
-                </button>
-                <button 
-                  onClick={() => onEnquireClick('Catalogue Download: ' + product['Product Name'])} 
-                  className="btn btn-secondary" 
-                  style={{ width: '100%', padding: '1rem 0', textTransform: 'uppercase', letterSpacing: '0.05em' }}
-                >
-                  {product['CTA Button 2 Text'] || 'Download Catalogue'}
-                </button>
+              {/* Right Quick RFQ Pane */}
+              <div style={{ 
+                backgroundColor: 'var(--bg-dark-800)', 
+                border: '1px solid var(--border-color)', 
+                borderRadius: '12px', 
+                padding: '2.5rem', 
+                boxShadow: '0 12px 40px rgba(0,0,0,0.4)',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '1.5rem'
+              }}>
+                <div>
+                  <span style={{ color: 'var(--primary-yellow)', fontSize: '0.8rem', fontWeight: '700', textTransform: 'uppercase', display: 'block', marginBottom: '0.35rem' }}>
+                    Hygienic Steel Grade
+                  </span>
+                  <h3 style={{ fontSize: '1.6rem', fontWeight: '800', color: 'var(--text-primary)', lineHeight: '1.2' }}>
+                    Request Price Quote
+                  </h3>
+                </div>
+
+                <div style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
+                  <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
+                    <ShieldCheck size={20} style={{ color: 'var(--primary-yellow)' }} />
+                    <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>MTC EN 10204 3.1 Included</span>
+                  </div>
+                  <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
+                    <Truck size={20} style={{ color: 'var(--primary-yellow)' }} />
+                    <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Global Sea & Air Freight</span>
+                  </div>
+                  <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
+                    <Sparkles size={20} style={{ color: 'var(--primary-yellow)' }} />
+                    <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Electro-Chemical Finish Certificate</span>
+                  </div>
+                </div>
+
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                  <button 
+                    onClick={() => onEnquireClick(product['Product Name'])} 
+                    className="btn btn-primary" 
+                    style={{ width: '100%', padding: '1rem 0' }}
+                  >
+                    {product['CTA Button 1 Text'] || 'Request a Quote'} <ArrowRight size={18} />
+                  </button>
+                  <button 
+                    onClick={() => onEnquireClick('Catalogue Download: ' + product['Product Name'])} 
+                    className="btn btn-secondary" 
+                    style={{ width: '100%', padding: '1rem 0', textTransform: 'uppercase', letterSpacing: '0.05em' }}
+                  >
+                    {product['CTA Button 2 Text'] || 'Download Catalogue'}
+                  </button>
+                </div>
+
+                <div style={{ textAlign: 'center' }}>
+                  <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
+                    Response turnaround: Under 2 hours
+                  </span>
+                </div>
               </div>
 
-              <div style={{ textAlign: 'center' }}>
-                <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-                  Response turnaround: Under 2 hours
-                </span>
-              </div>
             </div>
 
           </div>

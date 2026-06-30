@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { ChevronRight, ShieldCheck, Truck, Sparkles, MessageSquare, ArrowRight, HelpCircle, ChevronDown, ChevronUp } from 'lucide-react';
+import { ChevronRight, ShieldCheck, Truck, Sparkles, MessageSquare, ArrowRight, HelpCircle, ChevronDown, ChevronUp, Package } from 'lucide-react';
 import productsData from '../data/products.json';
 import categoriesData from '../data/categories.json';
 import { handleLinkClick } from '../utils/router';
@@ -77,7 +77,7 @@ export default function ProductPage({ product, onEnquireClick }) {
   };
 
   return (
-    <div className="product-page-wrapper" style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '5rem' }}>
+    <div className="product-page-wrapper" style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '5rem', paddingTop: '5.5rem' }}>
       {/* 1. Top Navigation & Breadcrumbs */}
       <section style={{ backgroundColor: 'var(--bg-dark-800)', borderBottom: '1px solid var(--border-color)', padding: '1rem 0' }}>
         <div className="container">
@@ -263,58 +263,88 @@ export default function ProductPage({ product, onEnquireClick }) {
 
             </div>
 
-            {/* Right Column: CTA & RFQ Card */}
-            <div 
-              style={{ 
-                position: 'sticky', 
-                top: '7rem',
+            {/* Right Column: Image and CTA/RFQ Card */}
+            <div style={{ position: 'sticky', top: '7rem', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+              
+              {/* Product Image Box */}
+              <div style={{
                 backgroundColor: 'var(--bg-dark-800)',
                 border: '1px solid var(--border-color)',
                 borderRadius: '12px',
-                padding: '2.5rem',
-                boxShadow: '0 10px 30px rgba(0,0,0,0.3)',
+                aspectRatio: '16/10',
                 display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
                 flexDirection: 'column',
-                gap: '1.75rem'
-              }}
-            >
-              <div>
-                <span style={{ color: 'var(--primary-yellow)', fontSize: '0.8rem', fontWeight: '700', textTransform: 'uppercase', display: 'block', marginBottom: '0.5rem' }}>
-                  Quick Quotation
-                </span>
-                <h3 style={{ fontSize: '1.5rem', fontWeight: '800', color: 'var(--text-primary)', lineHeight: '1.2' }}>
-                  Request Price & Specs
-                </h3>
-              </div>
-
-              <div style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
-                  <ShieldCheck size={20} style={{ color: 'var(--primary-yellow)', flexShrink: 0 }} />
-                  <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>MTC EN 10204 3.1 & Inspection provided</span>
-                </div>
-                <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
-                  <Truck size={20} style={{ color: 'var(--primary-yellow)', flexShrink: 0 }} />
-                  <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Pan-India & global sea-freight dispatch</span>
-                </div>
-                <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
-                  <Sparkles size={20} style={{ color: 'var(--primary-yellow)', flexShrink: 0 }} />
-                  <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Custom dimensions/drawings supported</span>
+                gap: '1rem',
+                background: 'radial-gradient(circle at center, rgba(255, 193, 7, 0.04) 0%, transparent 70%), var(--bg-dark-800)',
+                padding: '2rem',
+                textAlign: 'center',
+                boxShadow: '0 8px 30px rgba(0,0,0,0.2)'
+              }}>
+                <Package size={48} style={{ color: 'var(--primary-yellow)', opacity: 0.8 }} />
+                <div>
+                  <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.1em', fontWeight: '700' }}>
+                    {product['Category']}
+                  </span>
+                  <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginTop: '0.25rem', fontWeight: '500' }}>
+                    {product['Product Name']}
+                  </p>
                 </div>
               </div>
 
-              <button 
-                onClick={() => onEnquireClick(product['Product Name'])}
-                className="btn btn-primary"
-                style={{ width: '100%', padding: '1rem 0' }}
+              {/* Quick Quotation Card */}
+              <div 
+                style={{ 
+                  backgroundColor: 'var(--bg-dark-800)',
+                  border: '1px solid var(--border-color)',
+                  borderRadius: '12px',
+                  padding: '2.5rem',
+                  boxShadow: '0 10px 30px rgba(0,0,0,0.3)',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '1.75rem'
+                }}
               >
-                {product['CTA'] || 'Get a Quote'} <ArrowRight size={18} />
-              </button>
+                <div>
+                  <span style={{ color: 'var(--primary-yellow)', fontSize: '0.8rem', fontWeight: '700', textTransform: 'uppercase', display: 'block', marginBottom: '0.5rem' }}>
+                    Quick Quotation
+                  </span>
+                  <h3 style={{ fontSize: '1.5rem', fontWeight: '800', color: 'var(--text-primary)', lineHeight: '1.2' }}>
+                    Request Price & Specs
+                  </h3>
+                </div>
 
-              <div style={{ textAlign: 'center' }}>
-                <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-                  Response time: Less than 2 hours
-                </span>
+                <div style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                  <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
+                    <ShieldCheck size={20} style={{ color: 'var(--primary-yellow)', flexShrink: 0 }} />
+                    <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>MTC EN 10204 3.1 & Inspection provided</span>
+                  </div>
+                  <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
+                    <Truck size={20} style={{ color: 'var(--primary-yellow)', flexShrink: 0 }} />
+                    <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Pan-India & global sea-freight dispatch</span>
+                  </div>
+                  <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
+                    <Sparkles size={20} style={{ color: 'var(--primary-yellow)', flexShrink: 0 }} />
+                    <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Custom dimensions/drawings supported</span>
+                  </div>
+                </div>
+
+                <button 
+                  onClick={() => onEnquireClick(product['Product Name'])}
+                  className="btn btn-primary"
+                  style={{ width: '100%', padding: '1rem 0' }}
+                >
+                  {product['CTA'] || 'Get a Quote'} <ArrowRight size={18} />
+                </button>
+
+                <div style={{ textAlign: 'center' }}>
+                  <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
+                    Response time: Less than 2 hours
+                  </span>
+                </div>
               </div>
+
             </div>
 
           </div>

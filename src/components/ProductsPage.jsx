@@ -49,7 +49,7 @@ export default function ProductsPage({ onEnquireClick }) {
           background: 'linear-gradient(rgba(11, 12, 16, 0.85), rgba(18, 21, 28, 0.98)), url("/hero_forge.png")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          padding: '6rem 0 4rem 0',
+          padding: '8.5rem 0 4rem 0',
           borderBottom: '1px solid var(--border-color)',
           textAlign: 'center'
         }}
@@ -266,23 +266,26 @@ export default function ProductsPage({ onEnquireClick }) {
                     className="catalog-product-card"
                   >
                     <div style={{ padding: '2rem' }}>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
-                        <span style={{ 
-                          backgroundColor: 'var(--primary-yellow-glow)', 
-                          color: 'var(--primary-yellow)', 
-                          fontSize: '0.7rem', 
-                          fontWeight: '700', 
-                          padding: '0.2rem 0.5rem', 
-                          borderRadius: '4px',
-                          textTransform: 'uppercase'
-                        }}>
-                          {p.Category}
-                        </span>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', marginBottom: '1rem' }}>
+                        <div>
+                          <span style={{ 
+                            backgroundColor: 'var(--primary-yellow-glow)', 
+                            color: 'var(--primary-yellow)', 
+                            fontSize: '0.7rem', 
+                            fontWeight: '700', 
+                            padding: '0.2rem 0.5rem', 
+                            borderRadius: '4px',
+                            textTransform: 'uppercase',
+                            display: 'inline-block'
+                          }}>
+                            {p.Category}
+                          </span>
+                        </div>
                         
                         {p.Standards && (
-                          <span style={{ color: 'var(--text-muted)', fontSize: '0.75rem', fontWeight: '500' }}>
+                          <div style={{ fontSize: '0.75rem', fontWeight: '500', color: 'var(--text-muted)' }}>
                             {p.Standards}
-                          </span>
+                          </div>
                         )}
                       </div>
 

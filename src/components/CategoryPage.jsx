@@ -27,7 +27,7 @@ export default function CategoryPage({ category, onEnquireClick }) {
           background: 'linear-gradient(rgba(11, 12, 16, 0.8), rgba(18, 21, 28, 0.95)), url("/hero_forge.png")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          padding: '6rem 0 4rem 0',
+          padding: '8.5rem 0 4rem 0',
           borderBottom: '1px solid var(--border-color)',
           position: 'relative'
         }}

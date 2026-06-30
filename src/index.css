@@ -1411,3 +1411,16 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2rem;
   }
 }
+
+/* Catalog Card Image Zoom Effect */
+.catalog-product-card {
+  overflow: hidden;
+}
+
+.catalog-product-card:hover .product-card-image {
+  transform: scale(1.06);
+}
+
+.product-detail-image:hover {
+  transform: scale(1.06);
+}

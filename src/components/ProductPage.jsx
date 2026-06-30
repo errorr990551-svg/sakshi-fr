@@ -276,21 +276,38 @@ export default function ProductPage({ product, onEnquireClick }) {
                 alignItems: 'center',
                 justifyContent: 'center',
                 flexDirection: 'column',
-                gap: '1rem',
+                gap: product.Image ? '0' : '1rem',
                 background: 'radial-gradient(circle at center, rgba(255, 193, 7, 0.04) 0%, transparent 70%), var(--bg-dark-800)',
-                padding: '2rem',
+                padding: product.Image ? '0' : '2rem',
                 textAlign: 'center',
-                boxShadow: '0 8px 30px rgba(0,0,0,0.2)'
+                boxShadow: '0 8px 30px rgba(0,0,0,0.2)',
+                overflow: 'hidden'
               }}>
-                <Package size={48} style={{ color: 'var(--primary-yellow)', opacity: 0.8 }} />
-                <div>
-                  <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.1em', fontWeight: '700' }}>
-                    {product['Category']}
-                  </span>
-                  <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginTop: '0.25rem', fontWeight: '500' }}>
-                    {product['Product Name']}
-                  </p>
-                </div>
+                {product.Image ? (
+                  <img 
+                    src={product.Image} 
+                    alt={product['Product Name']}
+                    className="product-detail-image"
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      transition: 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)'
+                    }}
+                  />
+                ) : (
+                  <>
+                    <Package size={48} style={{ color: 'var(--primary-yellow)', opacity: 0.8 }} />
+                    <div>
+                      <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.1em', fontWeight: '700' }}>
+                        {product['Category']}
+                      </span>
+                      <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginTop: '0.25rem', fontWeight: '500' }}>
+                        {product['Product Name']}
+                      </p>
+                    </div>
+                  </>
+                )}
               </div>
 
               {/* Quick Quotation Card */}

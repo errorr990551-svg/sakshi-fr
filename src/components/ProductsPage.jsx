@@ -261,59 +261,83 @@ export default function ProductsPage({ onEnquireClick }) {
                       flexDirection: 'column',
                       justifyContent: 'space-between',
                       transition: 'var(--transition-smooth)',
-                      position: 'relative'
+                      position: 'relative',
+                      overflow: 'hidden',
+                      cursor: 'pointer'
                     }}
                     className="catalog-product-card"
+                    onClick={(e) => {
+                      if (e.target.tagName === 'A' || e.target.closest('a')) return;
+                      window.history.pushState(null, '', `/${p['URL Slug']}`);
+                      window.dispatchEvent(new PopStateEvent('popstate'));
+                    }}
                   >
-                    <div style={{ padding: '2rem' }}>
-                      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', marginBottom: '1rem' }}>
-                        <div>
-                          <span style={{ 
-                            backgroundColor: 'var(--primary-yellow-glow)', 
-                            color: 'var(--primary-yellow)', 
-                            fontSize: '0.7rem', 
-                            fontWeight: '700', 
-                            padding: '0.2rem 0.5rem', 
-                            borderRadius: '4px',
-                            textTransform: 'uppercase',
-                            display: 'inline-block'
-                          }}>
-                            {p.Category}
+                    <div>
+                      {p.Image && (
+                        <div style={{ width: '100%', aspectRatio: '16/10', overflow: 'hidden', borderBottom: '1px solid var(--border-color)' }}>
+                          <img 
+                            src={p.Image} 
+                            alt={p['Product Name']} 
+                            style={{ 
+                              width: '100%', 
+                              height: '100%', 
+                              objectFit: 'cover', 
+                              transition: 'transform 0.5s ease' 
+                            }}
+                            className="product-card-image"
+                          />
+                        </div>
+                      )}
+                      <div style={{ padding: '2rem' }}>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', marginBottom: '1rem' }}>
+                          <div>
+                            <span style={{ 
+                              backgroundColor: 'var(--primary-yellow-glow)', 
+                              color: 'var(--primary-yellow)', 
+                              fontSize: '0.7rem', 
+                              fontWeight: '700', 
+                              padding: '0.2rem 0.5rem', 
+                              borderRadius: '4px',
+                              textTransform: 'uppercase',
+                              display: 'inline-block'
+                            }}>
+                              {p.Category}
+                            </span>
+                          </div>
+                          
+                          {p.Standards && (
+                            <div style={{ fontSize: '0.75rem', fontWeight: '500', color: 'var(--text-muted)' }}>
+                              {p.Standards}
+                            </div>
+                          )}
+                        </div>
+
+                        <h3 style={{ fontSize: '1.25rem', fontWeight: '700', marginBottom: '0.75rem', color: 'var(--text-primary)', lineHeight: '1.3' }}>
+                          {p['Product Name']}
+                        </h3>
+
+                        <p style={{ 
+                          color: 'var(--text-secondary)', 
+                          fontSize: '0.85rem', 
+                          lineHeight: '1.5', 
+                          marginBottom: '1.5rem',
+                          display: '-webkit-box',
+                          WebkitLineClamp: '3',
+                          WebkitBoxOrient: 'vertical',
+                          overflow: 'hidden',
+                          height: '4.5em'
+                        }}>
+                          {desc}
+                        </p>
+
+                        <div style={{ borderTop: '1px solid rgba(255,255,255,0.05)', paddingTop: '1rem' }}>
+                          <strong style={{ color: 'var(--primary-yellow)', fontSize: '0.75rem', textTransform: 'uppercase', display: 'block', marginBottom: '0.25rem' }}>
+                            Specifications:
+                          </strong>
+                          <span style={{ color: 'var(--text-muted)', fontSize: '0.8rem', lineHeight: '1.4', display: 'block' }}>
+                            {p['Key Specs']}
                           </span>
                         </div>
-                        
-                        {p.Standards && (
-                          <div style={{ fontSize: '0.75rem', fontWeight: '500', color: 'var(--text-muted)' }}>
-                            {p.Standards}
-                          </div>
-                        )}
-                      </div>
-
-                      <h3 style={{ fontSize: '1.25rem', fontWeight: '700', marginBottom: '0.75rem', color: 'var(--text-primary)', lineHeight: '1.3' }}>
-                        {p['Product Name']}
-                      </h3>
-
-                      <p style={{ 
-                        color: 'var(--text-secondary)', 
-                        fontSize: '0.85rem', 
-                        lineHeight: '1.5', 
-                        marginBottom: '1.5rem',
-                        display: '-webkit-box',
-                        WebkitLineClamp: '3',
-                        WebkitBoxOrient: 'vertical',
-                        overflow: 'hidden',
-                        height: '4.5em'
-                      }}>
-                        {desc}
-                      </p>
-
-                      <div style={{ borderTop: '1px solid rgba(255,255,255,0.05)', paddingTop: '1rem' }}>
-                        <strong style={{ color: 'var(--primary-yellow)', fontSize: '0.75rem', textTransform: 'uppercase', display: 'block', marginBottom: '0.25rem' }}>
-                          Specifications:
-                        </strong>
-                        <span style={{ color: 'var(--text-muted)', fontSize: '0.8rem', lineHeight: '1.4', display: 'block' }}>
-                          {p['Key Specs']}
-                        </span>
                       </div>
                     </div>
 

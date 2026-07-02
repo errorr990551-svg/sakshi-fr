@@ -111,7 +111,7 @@ export default function CategoryPage({ category, onEnquireClick }) {
             <div 
               style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(360px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
                 gap: '2.25rem'
               }}
             >
@@ -307,26 +307,26 @@ export default function CategoryPage({ category, onEnquireClick }) {
       )}
 
       {/* 4. RFQ Category CTA */}
-      <section className="cta-sec" style={{ padding: '6rem 0', borderTop: '1px solid var(--border-color)' }}>
-        <div className="container">
-          <div className="cta-grid" style={{ display: 'grid', gridTemplateColumns: '1.2fr 0.8fr', gap: '3rem', alignItems: 'center' }}>
-            <div>
-              <h2>Request Quote for <span>{category['Parent Category']}</span></h2>
-              <p style={{ marginTop: '0.5rem', color: 'var(--text-secondary)' }}>
-                Get certified material specifications, competitive volume pricing, and guaranteed delivery schedules from India's trusted custom steel manufacturers.
-              </p>
-            </div>
-            <div style={{ textAlign: 'right' }}>
-              <button 
-                onClick={() => onEnquireClick(category['Parent Category'])} 
-                className="btn btn-primary btn-lg"
-              >
-                Request RFQ <ArrowRight size={18} />
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+       <section className="cta-sec section-padding" style={{ borderTop: '1px solid var(--border-color)' }}>
+         <div className="container">
+           <div className="cta-grid">
+             <div className="cta-left">
+               <h2>Request Quote for <span>{category['Parent Category']}</span></h2>
+               <p style={{ marginTop: '0.5rem', color: 'var(--text-secondary)' }}>
+                 Get certified material specifications, competitive volume pricing, and guaranteed delivery schedules from India's trusted custom steel manufacturers.
+               </p>
+             </div>
+             <div className="cta-btn-wrap">
+               <button 
+                 onClick={() => onEnquireClick(category['Parent Category'])} 
+                 className="btn btn-primary btn-lg"
+               >
+                 Request RFQ <ArrowRight size={18} />
+               </button>
+             </div>
+           </div>
+         </div>
+       </section>
     </div>
   );
 }

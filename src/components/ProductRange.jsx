@@ -58,16 +58,6 @@ export default function ProductRange() {
           <div 
             className="products-grid carousel-active"
             style={{
-              gridTemplateColumns: categoriesData.length === 1 
-                ? '1fr' 
-                : categoriesData.length === 2 
-                ? '1fr 1fr' 
-                : 'repeat(3, 1fr)',
-              maxWidth: categoriesData.length === 1 
-                ? '380px' 
-                : categoriesData.length === 2 
-                ? '780px' 
-                : '100%',
               margin: '0 auto',
               width: '100%'
             }}

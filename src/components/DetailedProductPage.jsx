@@ -131,7 +131,7 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
       {/* 2. Premium Hero Banner */}
       <section style={{ padding: '5rem 0 4rem 0', background: 'radial-gradient(circle at 10% 20%, rgba(255, 193, 7, 0.04) 0%, transparent 60%)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1.25fr 0.75fr', gap: '4rem', alignItems: 'start' }}>
+          <div className="product-layout-grid">
             
             {/* Left Hero Pane */}
             <div>
@@ -302,7 +302,7 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
       {/* 3. Sticky Tab Navigation Bar */}
       <section style={{ 
         position: 'sticky', 
-        top: '4.5rem', 
+        top: '5.5rem', 
         backgroundColor: 'rgba(11, 12, 16, 0.95)', 
         backdropFilter: 'blur(10px)',
         borderTop: '1px solid var(--border-color)', 
@@ -351,7 +351,7 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
           
           {/* TAB 1: OVERVIEW */}
           {activeTab === 'overview' && (
-            <div style={{ display: 'grid', gridTemplateColumns: '1.1fr 0.9fr', gap: '4rem', alignItems: 'start' }}>
+            <div className="product-overview-grid">
               <div>
                 <h2 style={{ fontSize: '1.8rem', fontWeight: '800', marginBottom: '1.25rem', color: 'var(--text-primary)' }}>
                   Product Profile
@@ -435,7 +435,7 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
               </div>
 
               {/* Grades and Standards */}
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
+              <div className="product-two-col-grid">
                 
                 {/* Grades */}
                 <div style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.75rem' }}>
@@ -470,7 +470,7 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
               </div>
 
               {/* Ends and Surface Finishes */}
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
+              <div className="product-two-col-grid">
                 
                 {/* Ends */}
                 <div style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.75rem' }}>
@@ -575,7 +575,7 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
               )}
 
               {/* How to Order & Lead Times */}
-              <div style={{ display: 'grid', gridTemplateColumns: '1.25fr 0.75fr', gap: '3rem', alignItems: 'start' }}>
+              <div className="product-ordering-grid">
                 <div>
                   <h3 style={{ fontSize: '1.5rem', fontWeight: '800', marginBottom: '1.5rem', color: 'var(--text-primary)' }}>
                     Ordering Checklist & Process
@@ -631,7 +631,7 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '4rem' }}>
               
               {/* Primary Applications and Warning Areas */}
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2.5rem' }}>
+              <div className="product-two-col-grid">
                 <div>
                   <h3 style={{ fontSize: '1.4rem', fontWeight: '800', marginBottom: '1.25rem', color: 'var(--text-primary)' }}>
                     Primary Applications
@@ -695,7 +695,7 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
               </div>
 
               {/* Quality Testing & Documents */}
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2.5rem' }}>
+              <div className="product-two-col-grid">
                 {/* Testing Methods */}
                 <div>
                   <h3 style={{ fontSize: '1.4rem', fontWeight: '800', marginBottom: '1.25rem', color: 'var(--text-primary)' }}>

@@ -113,7 +113,7 @@ export default function ProductPage({ product, onEnquireClick }) {
       {/* 2. Product Hero */}
       <section style={{ padding: '4rem 0 3rem 0', background: 'radial-gradient(circle at 10% 20%, rgba(255, 193, 7, 0.03) 0%, transparent 50%)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 0.8fr', gap: '4rem', alignItems: 'start' }}>
+          <div className="product-simple-grid">
             
             {/* Left Column: Title & Specs */}
             <div>

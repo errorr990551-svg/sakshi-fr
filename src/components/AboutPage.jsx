@@ -85,13 +85,13 @@ export default function AboutPage({ onEnquireClick }) {
       <section style={{ backgroundColor: 'var(--bg-dark-900)', padding: '4rem 0' }}>
         <div className="container">
           <div className="about-grid">
-            <div className="about-right" style={{ order: window.innerWidth < 992 ? 2 : 1 }}>
+            <div className="about-right about-history-image">
               <div className="image-panel-container" style={{ aspectRatio: '16/11' }}>
                 <img src="/about_history.png" alt="Stacked steel warehouse corridor" style={{ objectPosition: 'center center' }} />
               </div>
             </div>
 
-            <div className="about-left" style={{ order: window.innerWidth < 992 ? 1 : 2 }}>
+            <div className="about-left about-history-text">
               <span className="hero-tag" style={{ border: 'none', backgroundColor: 'rgba(255, 193, 7, 0.08)' }}>Our Legacy</span>
               <h3 style={{ fontSize: '2.2rem', marginBottom: '1rem', lineHeight: '1.2' }}>
                 The Establishment of <br /><span>Sakshi Forge</span>
@@ -106,7 +106,7 @@ export default function AboutPage({ onEnquireClick }) {
                 Our commitment to advanced manufacturing practices and strict quality control ensures that every product meets national and international industry standards.
               </p>
 
-              <div className="about-sub-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem' }}>
+              <div className="about-sub-grid-responsive">
                 <div>
                   <h4 style={{ color: 'var(--primary-yellow)', fontSize: '1.1rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>
                     Growth and Expansion
@@ -154,7 +154,7 @@ export default function AboutPage({ onEnquireClick }) {
           <h2 style={{ color: 'var(--bg-dark-900)', textAlign: 'center', textTransform: 'uppercase', marginBottom: '3rem', fontSize: '2.25rem' }}>
             Our Strength in Numbers
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '2rem', textAlign: 'center' }}>
+          <div className="about-stats-grid" style={{ textAlign: 'center' }}>
             {stats.map((s, idx) => (
               <div key={idx} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
                 <div style={{ color: 'var(--bg-dark-900)' }}>{s.icon}</div>
@@ -169,7 +169,7 @@ export default function AboutPage({ onEnquireClick }) {
       {/* 4. Trusted Name Detail Grid */}
       <section style={{ backgroundColor: 'var(--bg-dark-800)', padding: '4rem 0' }}>
         <div className="container">
-          <div className="about-grid" style={{ gridTemplateColumns: '1.05fr 0.95fr' }}>
+          <div className="about-market-grid">
             <div className="about-left">
               <span className="hero-tag" style={{ border: 'none', backgroundColor: 'rgba(255, 193, 7, 0.08)' }}>Market Leadership</span>
               <h3 style={{ fontSize: '2.2rem', marginBottom: '1rem', lineHeight: '1.2' }}>
@@ -209,7 +209,7 @@ export default function AboutPage({ onEnquireClick }) {
             <div className="accent-line"></div>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.5rem', marginTop: '4rem' }}>
+          <div className="about-process-grid">
             {processes.map((p, idx) => (
               <div 
                 key={idx} 

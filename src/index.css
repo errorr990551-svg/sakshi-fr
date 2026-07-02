@@ -352,8 +352,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
+  .hero-sec {
+    height: auto;
+    min-height: auto;
+    padding-top: 7.5rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero-content {
+    padding: 1rem 0 2rem 0;
+  }
+
   .hero-title {
     font-size: 2.2rem;
+  }
+
+  .hero-desc {
+    margin-bottom: 1.75rem;
   }
 }
 
@@ -1424,3 +1439,135 @@ h1, h2, h3, h4, h5, h6 {
 .product-detail-image:hover {
   transform: scale(1.06);
 }
+
+/* Responsive Product Details Grid Layouts */
+.product-layout-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.product-simple-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.product-overview-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.product-ordering-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.product-two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+@media (max-width: 992px) {
+  .product-layout-grid,
+  .product-simple-grid,
+  .product-overview-grid,
+  .product-ordering-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-two-col-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* Responsive About Page Grid Layouts */
+.about-sub-grid-responsive {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.about-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.about-market-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 4.5rem;
+  align-items: center;
+}
+
+.about-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+@media (max-width: 1024px) {
+  .about-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .about-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .about-market-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-history-text {
+    order: 1;
+  }
+
+  .about-history-image {
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-sub-grid-responsive {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-process-grid {
+    grid-template-columns: 1fr;
+    margin-top: 2.5rem;
+  }
+
+  .about-metrics {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+

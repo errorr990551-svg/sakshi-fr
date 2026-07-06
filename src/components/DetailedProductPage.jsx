@@ -195,7 +195,7 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
                 backgroundColor: 'var(--bg-dark-800)',
                 border: '1px solid var(--border-color)',
                 borderRadius: '12px',
-                aspectRatio: '16/10',
+                aspectRatio: '3/2',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -216,6 +216,7 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
                       width: '100%',
                       height: '100%',
                       objectFit: 'cover',
+                      objectPosition: 'top',
                       transition: 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)'
                     }}
                   />

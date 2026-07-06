@@ -274,7 +274,7 @@ export default function ProductsPage({ onEnquireClick }) {
                   >
                     <div>
                       {p.Image && (
-                        <div style={{ width: '100%', aspectRatio: '16/10', overflow: 'hidden', borderBottom: '1px solid var(--border-color)' }}>
+                        <div style={{ width: '100%', aspectRatio: '3/2', overflow: 'hidden', borderBottom: '1px solid var(--border-color)' }}>
                           <img 
                             src={p.Image} 
                             alt={p['Product Name']} 
@@ -282,6 +282,7 @@ export default function ProductsPage({ onEnquireClick }) {
                               width: '100%', 
                               height: '100%', 
                               objectFit: 'cover', 
+                              objectPosition: 'top',
                               transition: 'transform 0.5s ease' 
                             }}
                             className="product-card-image"

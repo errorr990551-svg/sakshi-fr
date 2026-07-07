@@ -35,6 +35,20 @@ function App() {
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
+  // Handle static assets/redirection paths that might land in the SPA router
+  useEffect(() => {
+    if (currentPath === '/sitemap' || currentPath === '/sitemap.xml') {
+      window.location.replace('/sitemap.xml');
+    } else if (
+      currentPath === '/robots' || 
+      currentPath === '/robots.txt' || 
+      currentPath === '/robts' || 
+      currentPath === '/robts.txt'
+    ) {
+      window.location.replace('/robots.txt');
+    }
+  }, [currentPath]);
+
   // Resolve current route and data
   const route = useEffect(() => {
     // Scroll to hash element if present (e.g. /#products)

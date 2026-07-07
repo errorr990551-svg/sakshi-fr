@@ -41,7 +41,7 @@ export default function AboutSection() {
 
           <div className="about-right">
             <div className="image-panel-container">
-              <img src="/flanges_pipes.png" alt="Stack of finished steel flanges and pipes" />
+              <img src="/flanges_pipes.webp" alt="Stack of finished steel flanges and pipes" />
               <div className="image-panel-badge">
                 <span className="number">20+</span>
                 <span className="text">Years of Quality</span>

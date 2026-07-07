@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Redirect /sitemap and /robots to their corresponding static files
+  RewriteRule ^sitemap$ /sitemap.xml [R=301,L]
+  RewriteRule ^robots$ /robots.txt [R=301,L]
+  RewriteRule ^robts$ /robots.txt [R=301,L]
+  RewriteRule ^robts\.txt$ /robots.txt [R=301,L]
+
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+</IfModule>

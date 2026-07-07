@@ -24,7 +24,7 @@ export default function CategoryPage({ category, onEnquireClick }) {
       <section 
         className="category-hero" 
         style={{ 
-          background: 'linear-gradient(rgba(11, 12, 16, 0.8), rgba(18, 21, 28, 0.95)), url("/hero_forge.png")',
+          background: 'linear-gradient(rgba(11, 12, 16, 0.8), rgba(18, 21, 28, 0.95)), url("/hero_forge.webp")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           padding: '8.5rem 0 4rem 0',

@@ -87,7 +87,7 @@ export default function AboutPage({ onEnquireClick }) {
           <div className="about-grid">
             <div className="about-right about-history-image">
               <div className="image-panel-container" style={{ aspectRatio: '16/11' }}>
-                <img src="/about_history.png" alt="Stacked steel warehouse corridor" style={{ objectPosition: 'center center' }} />
+                <img src="/about_history.webp" alt="Stacked steel warehouse corridor" style={{ objectPosition: 'center center' }} />
               </div>
             </div>
 
@@ -193,7 +193,7 @@ export default function AboutPage({ onEnquireClick }) {
 
             <div className="about-right">
               <div className="image-panel-container" style={{ aspectRatio: '16/11' }}>
-                <img src="/about_structure.png" alt="Industrial blast furnace chimney network" style={{ objectPosition: 'center center' }} />
+                <img src="/about_structure.webp" alt="Industrial blast furnace chimney network" style={{ objectPosition: 'center center' }} />
               </div>
             </div>
           </div>

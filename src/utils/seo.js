@@ -2,7 +2,7 @@
  * SEO utility to dynamically inject Meta Tags and JSON-LD Schema markup in the document head.
  */
 
-const BASE_URL = "https://palegreen-quail-867602.hostingersite.com";
+const BASE_URL = "https://steelmanufacturer.in";
 
 // Helper to remove any previously injected custom script tags
 function clearExistingSchemas() {
@@ -191,7 +191,7 @@ export function updateSEO({ type, data }) {
       "@type": "Product",
       "name": data["Product Name"],
       "description": data["Meta Description (<=160 chars)"] || data["Meta Description"] || metaDesc,
-      "image": `${BASE_URL}/flanges_pipes.png`, // fallback standard image
+      "image": `${BASE_URL}/flanges_pipes.webp`, // fallback standard image
       "sku": `SF-${data["S.No"]}-${data["URL Slug"]}`,
       "brand": {
         "@type": "Brand",

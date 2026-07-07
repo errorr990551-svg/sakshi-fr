@@ -50,7 +50,10 @@ function App() {
   }, [currentPath]);
 
   // Resolve current route and data
-  const route = useEffect(() => {
+  useEffect(() => {
+    // Scroll to top of the page on route change
+    window.scrollTo(0, 0);
+
     // Scroll to hash element if present (e.g. /#products)
     const hash = window.location.hash;
     if (hash) {

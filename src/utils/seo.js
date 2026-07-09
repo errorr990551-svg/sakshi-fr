@@ -113,12 +113,13 @@ export function updateSEO({ type, data }) {
     "name": "Sakshi Forge",
     "url": BASE_URL,
     "logo": `${BASE_URL}/favicon.svg`,
-    "telephone": "+91-80458-15130",
+    "telephone": "+91-82913-66340",
+    "email": "Sakshiforge@gmail.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "113/117 Dr MG Mahimutra Marg 3rd Kumbharwada Shop No.5",
+      "streetAddress": "113/117 Dr. M. G. Mahimtura Marg, 3rd Kumbharwada, Shop No. 5, Ground Floor",
       "addressLocality": "Mumbai",
-      "postalCode": "400078",
+      "postalCode": "400004",
       "addressRegion": "Maharashtra",
       "addressCountry": "IN"
     },

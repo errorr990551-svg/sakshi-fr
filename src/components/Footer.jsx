@@ -38,15 +38,30 @@ export default function Footer({ onNavigate, onEnquireClick }) {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginTop: '0.5rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: 'var(--text-secondary)' }}>
                 <Phone size={16} className="infra-feature-icon" />
-                <span style={{ fontSize: '0.9rem' }}>+91 22 6639 4232</span>
+                <span style={{ fontSize: '0.9rem' }}>
+                  <a href="tel:+918291366340" style={{ color: 'inherit', textDecoration: 'none' }}>+91 82913 66340</a> /{' '}
+                  <a href="tel:+917976476375" style={{ color: 'inherit', textDecoration: 'none' }}>+91 79764 76375</a>
+                </span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: 'var(--text-secondary)' }}>
                 <Mail size={16} className="infra-feature-icon" />
-                <span style={{ fontSize: '0.9rem' }}>sales@sakshiforge.com</span>
+                <span style={{ fontSize: '0.9rem' }}>
+                  <a href="mailto:Sakshiforge@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>Sakshiforge@gmail.com</a>
+                </span>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: 'var(--text-secondary)' }}>
-                <MapPin size={16} className="infra-feature-icon" style={{ alignSelf: 'flex-start', marginTop: '0.2rem' }} />
-                <span style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>Office No. 12, Steel Market Chamber, Kalbadevi, Mumbai - 400004, India</span>
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', color: 'var(--text-secondary)' }}>
+                <MapPin size={16} className="infra-feature-icon" style={{ flexShrink: 0, marginTop: '0.2rem' }} />
+                <span style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>
+                  <strong>Office Address:</strong><br />
+                  113 / 117, Dr. M. G. Mahimtura Marg, 3rd Kumbharwada, Shop No. 5, Ground Floor, Mumbai - 400 004.
+                </span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', color: 'var(--text-secondary)' }}>
+                <MapPin size={16} className="infra-feature-icon" style={{ flexShrink: 0, marginTop: '0.2rem' }} />
+                <span style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>
+                  <strong>Factory Address:</strong><br />
+                  Balaji Industrial Compound, Taloja MIDC
+                </span>
               </div>
             </div>
           </div>

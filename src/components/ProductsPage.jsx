@@ -46,7 +46,7 @@ export default function ProductsPage({ onEnquireClick }) {
       {/* 1. Page Header Hero Section */}
       <section 
         style={{ 
-          background: 'linear-gradient(rgba(11, 12, 16, 0.85), rgba(18, 21, 28, 0.98)), url("/hero_forge.png")',
+          background: 'linear-gradient(rgba(11, 12, 16, 0.85), rgba(18, 21, 28, 0.98)), url("/hero_forge.webp")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           padding: '8.5rem 0 4rem 0',

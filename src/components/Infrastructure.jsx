@@ -35,14 +35,14 @@ export default function Infrastructure() {
             </div>
           </div>
           <div className="infra-image-wrap">
-            <img src="/hero_forge.png" alt="Heavy duty forging hook crane moving glowing metal cylinder" />
+            <img src="/hero_forge.webp" alt="Heavy duty forging hook crane moving glowing metal cylinder" />
           </div>
         </div>
 
         {/* Row 2: Manufacturing Infrastructure */}
         <div className="infra-grid infra-reverse">
           <div className="infra-image-wrap">
-            <img src="/molten_furnace.png" alt="Molten steel manufacturing forge furnace glowing" />
+            <img src="/molten_furnace.webp" alt="Molten steel manufacturing forge furnace glowing" />
           </div>
           <div className="infra-content">
             <span className="hero-tag" style={{ border: 'none', backgroundColor: 'rgba(255, 193, 7, 0.08)' }}>Infrastructure</span>

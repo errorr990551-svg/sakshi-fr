@@ -32,9 +32,9 @@ export default function ProductRange() {
   const getCategoryImage = (catName) => {
     const name = catName.toLowerCase();
     if (name.includes('flange') || name.includes('fitting')) {
-      return '/flanges_pipes.png';
+      return '/flanges_pipes.webp';
     }
-    return '/molten_furnace.png';
+    return '/molten_furnace.webp';
   };
 
   return (

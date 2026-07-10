@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node generate_sitemap.js && vite build",
+    "build": "python compile_data.py && node generate_sitemap.js && vite build && vite build --ssr src/main-ssr.jsx --outDir dist/server && node prerender.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },

@@ -1,6 +1,26 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Minimal cookie consent + GTM Consent Mode v2 -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'analytics_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied'
+      });
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K2QZ3H87');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" fill="#ffc107" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +29,51 @@
     <title>Sakshi Forge | Industrial Flanges, Pipes & Forged Steel Manufacturer</title>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K2QZ3H87"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Minimal cookie consent banner markup -->
+    <div id="cc-banner" style="position:fixed;bottom:0;left:0;right:0;background:#1F3864;color:#fff;padding:14px 20px;font:14px/1.5 Arial;z-index:9999;display:flex;gap:16px;align-items:center;justify-content:center;flex-wrap:wrap">
+      <span>We use cookies for analytics and to improve your quote experience. See our <a href="/privacy-policy/" style="color:#9DC3E6;text-decoration:underline">Privacy Policy</a>.</span>
+      <button onclick="ccAccept()" style="background:#BF8F00;color:#fff;border:0;padding:8px 22px;cursor:pointer;border-radius:4px;font-weight:bold">Accept</button>
+      <button onclick="ccDecline()" style="background:transparent;color:#fff;border:1px solid #fff;padding:8px 18px;cursor:pointer;border-radius:4px">Decline</button>
+    </div>
+    <script>
+      function ccHide(){
+        var banner = document.getElementById('cc-banner');
+        if (banner) banner.style.display = 'none';
+      }
+      function ccAccept(){
+        localStorage.setItem('cc', '1');
+        if(typeof gtag === 'function') {
+          gtag('consent', 'update', {
+            'analytics_storage': 'granted'
+          });
+        }
+        ccHide();
+      }
+      function ccDecline(){
+        localStorage.setItem('cc', '0');
+        ccHide();
+      }
+      if(localStorage.getItem('cc')){
+        ccHide();
+        if(localStorage.getItem('cc') === '1') {
+          // Wait slightly for gtag to initialize if loaded async
+          setTimeout(function() {
+            if(typeof gtag === 'function') {
+              gtag('consent', 'update', {
+                'analytics_storage': 'granted'
+              });
+            }
+          }, 100);
+        }
+      }
+    </script>
   </body>
 </html>

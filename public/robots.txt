@@ -1,4 +1,47 @@
+# robots.txt — steelmanufacturer.in
 User-agent: *
 Allow: /
+Disallow: /cgi-bin/
+Disallow: /admin/
+Disallow: /search
+Disallow: /*?s=
+Disallow: /*?q=
+Disallow: /*?utm_
+Disallow: /thank-you/
+Disallow: /cart/
+Disallow: /*.pdf$
+
+# --- AI / LLM crawlers: explicitly allowed (GEO) ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# --- Block scrapers that waste crawl budget ---
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
 
 Sitemap: https://steelmanufacturer.in/sitemap.xml
+Sitemap: https://steelmanufacturer.in/image-sitemap.xml

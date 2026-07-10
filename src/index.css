@@ -973,8 +973,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-top {
   display: grid;
-  grid-template-columns: 1.25fr 0.75fr 0.75fr 0.75fr;
-  gap: 3.5rem;
+  grid-template-columns: 1.3fr 0.8fr 1.05fr 1.05fr;
+  gap: 6rem;
   margin-bottom: 4rem;
 }
 
@@ -1060,7 +1060,7 @@ h1, h2, h3, h4, h5, h6 {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
+  gap: 1.15rem;
 }
 
 .footer-links a {

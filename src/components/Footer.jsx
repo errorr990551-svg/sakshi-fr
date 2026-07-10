@@ -70,21 +70,21 @@ export default function Footer({ onNavigate, onEnquireClick }) {
             <h4>Menu</h4>
             <ul className="footer-links">
               <li><a href="/" onClick={(e) => handleLinkClick(e, '/')}>Home</a></li>
-              <li><a href="/about" onClick={(e) => handleLinkClick(e, '/about')}>About Us</a></li>
+              <li><a href="/about-us" onClick={(e) => handleLinkClick(e, '/about-us')}>About Us</a></li>
               <li><a href="/products" onClick={handleProductsLink}>Products Catalog</a></li>
-              <li><a href="/#infra" onClick={(e) => handleScrollLink(e, 'infra')}>Manufacturing Facility</a></li>
-              <li><a href="/#why-choose" onClick={(e) => handleScrollLink(e, 'why-choose')}>Why Choose Us</a></li>
-              <li><a href="#" onClick={(e) => { e.preventDefault(); onEnquireClick(); }}>Get Quotation</a></li>
+              <li><a href="/quality-assurance" onClick={(e) => handleLinkClick(e, '/quality-assurance')}>Quality Assurance</a></li>
+              <li><a href="/weight-calculator" onClick={(e) => handleLinkClick(e, '/weight-calculator')}>Weight Calculator</a></li>
+              <li><a href="/contact-us" onClick={(e) => handleLinkClick(e, '/contact-us')}>Contact Us</a></li>
             </ul>
           </div>
 
           <div className="footer-col">
             <h4>Useful Links</h4>
             <ul className="footer-links">
-              <li><a href="#" onClick={(e) => e.preventDefault()}>Terms & Conditions</a></li>
-              <li><a href="#" onClick={(e) => e.preventDefault()}>Privacy Policy</a></li>
-              <li><a href="#" onClick={(e) => e.preventDefault()}>Disclaimer</a></li>
-              <li><a href="#" onClick={(e) => e.preventDefault()}>FAQ</a></li>
+              <li><a href="/terms-and-conditions" onClick={(e) => handleLinkClick(e, '/terms-and-conditions')}>Terms & Conditions</a></li>
+              <li><a href="/privacy-policy" onClick={(e) => handleLinkClick(e, '/privacy-policy')}>Privacy Policy</a></li>
+              <li><a href="/certifications" onClick={(e) => handleLinkClick(e, '/certifications')}>Certifications</a></li>
+              <li><a href="/blog" onClick={(e) => handleLinkClick(e, '/blog')}>Technical Blog</a></li>
             </ul>
           </div>
 
@@ -108,8 +108,8 @@ export default function Footer({ onNavigate, onEnquireClick }) {
         <div className="footer-bottom">
           <p>© {currentYear} Sakshi Forge. All Rights Reserved. Manufactured in India.</p>
           <div className="footer-bottom-links">
-            <a href="#" onClick={(e) => e.preventDefault()}>Sitemap</a>
-            <a href="#" onClick={(e) => e.preventDefault()}>Legal</a>
+            <a href="/sitemap.xml" target="_blank">Sitemap</a>
+            <a href="/privacy-policy" onClick={(e) => handleLinkClick(e, '/privacy-policy')}>Privacy Policy</a>
           </div>
         </div>
       </div>

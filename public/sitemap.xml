@@ -3,944 +3,1149 @@
   <!-- Core Pages -->
   <url>
     <loc>https://steelmanufacturer.in/</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/about</loc>
+    <loc>https://steelmanufacturer.in/about-us/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/products</loc>
+    <loc>https://steelmanufacturer.in/quality-assurance/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Categories -->
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-round-bars</loc>
+    <loc>https://steelmanufacturer.in/industries/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-fittings</loc>
+    <loc>https://steelmanufacturer.in/contact-us/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/certifications/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/blog/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/privacy-policy/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/terms-and-conditions/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/weight-calculator/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Category Pages -->
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipes/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/flanges/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/buttweld-fittings/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/forged-fittings/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/stainless-steel-pipes/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/round-bars/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/sheets-plates-coils/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/dairy-fittings/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/fasteners/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Product Pages -->
+  <url>
+    <loc>https://steelmanufacturer.in/brass-round-bars/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-tube</loc>
+    <loc>https://steelmanufacturer.in/bronze-round-bars/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-pipe-range</loc>
+    <loc>https://steelmanufacturer.in/grade-1-4462-super-duplex-round-bars/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-flanges-range</loc>
+    <loc>https://steelmanufacturer.in/stainless-steel-round-bar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-angle-range</loc>
+    <loc>https://steelmanufacturer.in/304-stainless-steel-round-bar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-coil-range</loc>
+    <loc>https://steelmanufacturer.in/306-stainless-steel-round-bar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/fasteners</loc>
+    <loc>https://steelmanufacturer.in/316-stainless-steel-round-bar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/bronze-round-bar-range</loc>
+    <loc>https://steelmanufacturer.in/316l-stainless-steel-round-bar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-seamless-pipe-range</loc>
+    <loc>https://steelmanufacturer.in/310-stainless-steel-round-bar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-dairy-fittings-range</loc>
+    <loc>https://steelmanufacturer.in/347-stainless-steel-round-bar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-shims-range</loc>
+    <loc>https://steelmanufacturer.in/347h-stainless-steel-round-bar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/ss-electropolish-pipe-range</loc>
+    <loc>https://steelmanufacturer.in/310s-stainless-steel-round-bar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-forged-fittings-range</loc>
+    <loc>https://steelmanufacturer.in/duplex-steel-round-bar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/electropolished-pipes-and-fittings</loc>
+    <loc>https://steelmanufacturer.in/316ti-stainless-steel-round-bar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <!-- Products -->
   <url>
-    <loc>https://steelmanufacturer.in/brass-round-bars</loc>
+    <loc>https://steelmanufacturer.in/hastelloy-c276-round-bar/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/bronze-round-bars</loc>
+    <loc>https://steelmanufacturer.in/17-4-ph-stainless-steel-round-bar/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/grade-1-4462-super-duplex-round-bars</loc>
+    <loc>https://steelmanufacturer.in/stainless-steel-elbow/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-round-bar</loc>
+    <loc>https://steelmanufacturer.in/stainless-steel-elbow-grade-316/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/304-stainless-steel-round-bar</loc>
+    <loc>https://steelmanufacturer.in/stainless-steel-dairy-bend/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/306-stainless-steel-round-bar</loc>
+    <loc>https://steelmanufacturer.in/stainless-steel-dairy-fitting/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/316-stainless-steel-round-bar</loc>
+    <loc>https://steelmanufacturer.in/ss-dairy-fittings/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/316l-stainless-steel-round-bar</loc>
+    <loc>https://steelmanufacturer.in/stainless-steel-sms-union/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/310-stainless-steel-round-bar</loc>
+    <loc>https://steelmanufacturer.in/stainless-steel-tee/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/347-stainless-steel-round-bar</loc>
+    <loc>https://steelmanufacturer.in/stainless-steel-u-clamp/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/347h-stainless-steel-round-bar</loc>
+    <loc>https://steelmanufacturer.in/stainless-steel-pipe-fittings/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/310s-stainless-steel-round-bar</loc>
+    <loc>https://steelmanufacturer.in/304-stainless-steel-pipe-fittings/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/duplex-steel-round-bar</loc>
+    <loc>https://steelmanufacturer.in/304l-stainless-steel-pipe-fittings/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/316ti-stainless-steel-round-bar</loc>
+    <loc>https://steelmanufacturer.in/316-stainless-steel-pipe-fittings/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/hastelloy-c276-round-bar</loc>
+    <loc>https://steelmanufacturer.in/316l-stainless-steel-pipe-fittings/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/17-4-ph-stainless-steel-round-bar</loc>
+    <loc>https://steelmanufacturer.in/321-stainless-steel-pipe-fittings/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-elbow</loc>
+    <loc>https://steelmanufacturer.in/347-stainless-steel-pipe-fittings/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-elbow-grade-316</loc>
+    <loc>https://steelmanufacturer.in/347h-stainless-steel-pipe-fittings/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-dairy-bend</loc>
+    <loc>https://steelmanufacturer.in/316ti-stainless-steel-pipe-fittings/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-dairy-fitting</loc>
+    <loc>https://steelmanufacturer.in/310-stainless-steel-pipe-fittings/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/ss-dairy-fittings</loc>
+    <loc>https://steelmanufacturer.in/310s-stainless-steel-pipe-fittings/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-sms-union</loc>
+    <loc>https://steelmanufacturer.in/duplex-2205-pipe-fittings/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-tee</loc>
+    <loc>https://steelmanufacturer.in/duplex-pipe-fittings/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-u-clamp</loc>
+    <loc>https://steelmanufacturer.in/17-4-ph-pipe-fittings/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-pipe-fittings</loc>
+    <loc>https://steelmanufacturer.in/s179-seamless-tubes/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/304-stainless-steel-pipe-fittings</loc>
+    <loc>https://steelmanufacturer.in/ss-bright-seamless-tubes/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/304l-stainless-steel-pipe-fittings</loc>
+    <loc>https://steelmanufacturer.in/stainless-steel-shims/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/316-stainless-steel-pipe-fittings</loc>
+    <loc>https://steelmanufacturer.in/carbon-steel-seamless-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/316l-stainless-steel-pipe-fittings</loc>
+    <loc>https://steelmanufacturer.in/ss-erw-pipes/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/321-stainless-steel-pipe-fittings</loc>
+    <loc>https://steelmanufacturer.in/stainless-steel-seamless-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/347-stainless-steel-pipe-fittings</loc>
+    <loc>https://steelmanufacturer.in/stainless-steel-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/347h-stainless-steel-pipe-fittings</loc>
+    <loc>https://steelmanufacturer.in/304-stainless-steel-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/316ti-stainless-steel-pipe-fittings</loc>
+    <loc>https://steelmanufacturer.in/316-stainless-steel-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/310-stainless-steel-pipe-fittings</loc>
+    <loc>https://steelmanufacturer.in/316l-stainless-steel-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/310s-stainless-steel-pipe-fittings</loc>
+    <loc>https://steelmanufacturer.in/304l-stainless-steel-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/duplex-2205-pipe-fittings</loc>
+    <loc>https://steelmanufacturer.in/347-stainless-steel-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/duplex-pipe-fittings</loc>
+    <loc>https://steelmanufacturer.in/347h-stainless-steel-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/17-4-ph-pipe-fittings</loc>
+    <loc>https://steelmanufacturer.in/310-stainless-steel-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/s179-seamless-tubes</loc>
+    <loc>https://steelmanufacturer.in/310s-stainless-steel-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/ss-bright-seamless-tubes</loc>
+    <loc>https://steelmanufacturer.in/duplex-2205-steel-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-shims</loc>
+    <loc>https://steelmanufacturer.in/duplex-2507-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/carbon-steel-seamless-pipe</loc>
+    <loc>https://steelmanufacturer.in/p11-flanges/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/ss-erw-pipes</loc>
+    <loc>https://steelmanufacturer.in/stainless-steel-flanges/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-seamless-pipe</loc>
+    <loc>https://steelmanufacturer.in/stainless-steel-flanges-with-hub/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-pipe</loc>
+    <loc>https://steelmanufacturer.in/stainless-steel-flange/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/304-stainless-steel-pipe</loc>
+    <loc>https://steelmanufacturer.in/321-stainless-steel-flange-1/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/316-stainless-steel-pipe</loc>
+    <loc>https://steelmanufacturer.in/321-stainless-steel-flange-2/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/316l-stainless-steel-pipe</loc>
+    <loc>https://steelmanufacturer.in/347-stainless-steel-flange/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/304l-stainless-steel-pipe</loc>
+    <loc>https://steelmanufacturer.in/347h-stainless-steel-flange/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/347-stainless-steel-pipe</loc>
+    <loc>https://steelmanufacturer.in/316-stainless-steel-flange/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/347h-stainless-steel-pipe</loc>
+    <loc>https://steelmanufacturer.in/316l-stainless-steel-flange/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/310-stainless-steel-pipe</loc>
+    <loc>https://steelmanufacturer.in/316ti-stainless-steel-flange/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/310s-stainless-steel-pipe</loc>
+    <loc>https://steelmanufacturer.in/310-stainless-steel-flange/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/duplex-2205-steel-pipe</loc>
+    <loc>https://steelmanufacturer.in/duplex-2205-f51-f60-flange/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/duplex-2507-pipe</loc>
+    <loc>https://steelmanufacturer.in/duplex-2507-f53-f55-flange/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/p11-flanges</loc>
+    <loc>https://steelmanufacturer.in/hastelloy-flanges/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-flanges</loc>
+    <loc>https://steelmanufacturer.in/17-4-ph-steel-flange/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-flanges-with-hub</loc>
+    <loc>https://steelmanufacturer.in/904l-stainless-steel-flange/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-flange</loc>
+    <loc>https://steelmanufacturer.in/stainless-steel-angle/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/321-stainless-steel-flange-1</loc>
+    <loc>https://steelmanufacturer.in/stainless-steel-coil/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/321-stainless-steel-flange-2</loc>
+    <loc>https://steelmanufacturer.in/ss-304-stainless-steel-coil/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/347-stainless-steel-flange</loc>
+    <loc>https://steelmanufacturer.in/ss-304l-stainless-steel-coil/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/347h-stainless-steel-flange</loc>
+    <loc>https://steelmanufacturer.in/ss-321-stainless-steel-coil/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/316-stainless-steel-flange</loc>
+    <loc>https://steelmanufacturer.in/ss-347-stainless-steel-coil-1/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/316l-stainless-steel-flange</loc>
+    <loc>https://steelmanufacturer.in/ss-347-stainless-steel-coil-2/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/316ti-stainless-steel-flange</loc>
+    <loc>https://steelmanufacturer.in/ss-316-stainless-steel-coil/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/310-stainless-steel-flange</loc>
+    <loc>https://steelmanufacturer.in/ss-316l-stainless-steel-coil/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/duplex-2205-f51-f60-flange</loc>
+    <loc>https://steelmanufacturer.in/ss-316ti-stainless-steel-coil/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/duplex-2507-f53-f55-flange</loc>
+    <loc>https://steelmanufacturer.in/ss-310-stainless-steel-coil/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/hastelloy-flanges</loc>
+    <loc>https://steelmanufacturer.in/ss-310s-stainless-steel-coil/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/17-4-ph-steel-flange</loc>
+    <loc>https://steelmanufacturer.in/duplex-2205-f1-f60-steel-coil/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/904l-stainless-steel-flange</loc>
+    <loc>https://steelmanufacturer.in/duplex-2507-f53-f55-steel-coil/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-angle</loc>
+    <loc>https://steelmanufacturer.in/17-4-ph-steel-coil/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-coil</loc>
+    <loc>https://steelmanufacturer.in/hastelloy-c276-coil/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/ss-304-stainless-steel-coil</loc>
+    <loc>https://steelmanufacturer.in/ss-904l-stainless-steel-coil/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/ss-304l-stainless-steel-coil</loc>
+    <loc>https://steelmanufacturer.in/stainless-steel-fasteners/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/ss-321-stainless-steel-coil</loc>
+    <loc>https://steelmanufacturer.in/304-stainless-steel-fasteners/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/ss-347-stainless-steel-coil-1</loc>
+    <loc>https://steelmanufacturer.in/stainless-steel-fasteners-premium/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/ss-347-stainless-steel-coil-2</loc>
+    <loc>https://steelmanufacturer.in/316-stainless-steel-fasteners/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/ss-316-stainless-steel-coil</loc>
+    <loc>https://steelmanufacturer.in/stainless-steel-rod/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/ss-316l-stainless-steel-coil</loc>
+    <loc>https://steelmanufacturer.in/phosphor-bronze-round-bar/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/ss-316ti-stainless-steel-coil</loc>
+    <loc>https://steelmanufacturer.in/bronze-round-bar/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/ss-310-stainless-steel-coil</loc>
+    <loc>https://steelmanufacturer.in/pb1-bronze-round-bar/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/ss-310s-stainless-steel-coil</loc>
+    <loc>https://steelmanufacturer.in/pb2-bronze-round-bar/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/duplex-2205-f1-f60-steel-coil</loc>
+    <loc>https://steelmanufacturer.in/c51000-bronze-round-bar/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/duplex-2507-f53-f55-steel-coil</loc>
+    <loc>https://steelmanufacturer.in/c52100-bronze-round-bar/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/17-4-ph-steel-coil</loc>
+    <loc>https://steelmanufacturer.in/c54400-bronze-round-bar/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/hastelloy-c276-coil</loc>
+    <loc>https://steelmanufacturer.in/c95400-bronze-round-bar/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/ss-904l-stainless-steel-coil</loc>
+    <loc>https://steelmanufacturer.in/c95800-bronze-round-bar/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-fasteners</loc>
+    <loc>https://steelmanufacturer.in/lg4-bronze-round-bar/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/304-stainless-steel-fasteners</loc>
+    <loc>https://steelmanufacturer.in/lg2-bronze-round-bar/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-fasteners-premium</loc>
+    <loc>https://steelmanufacturer.in/rg5-rg25-bronze-round-bar/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/316-stainless-steel-fasteners</loc>
+    <loc>https://steelmanufacturer.in/c93200-bronze-round-bar/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-rod</loc>
+    <loc>https://steelmanufacturer.in/c93600-bronze-round-bar/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/phosphor-bronze-round-bar</loc>
+    <loc>https://steelmanufacturer.in/c93700-bronze-round-bar/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/bronze-round-bar</loc>
+    <loc>https://steelmanufacturer.in/c86300-steel-round-bar/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/pb1-bronze-round-bar</loc>
+    <loc>https://steelmanufacturer.in/304-stainless-steel-seamless-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/pb2-bronze-round-bar</loc>
+    <loc>https://steelmanufacturer.in/304l-stainless-steel-seamless-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/c51000-bronze-round-bar</loc>
+    <loc>https://steelmanufacturer.in/321-stainless-steel-seamless-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/c52100-bronze-round-bar</loc>
+    <loc>https://steelmanufacturer.in/347-stainless-steel-seamless-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/c54400-bronze-round-bar</loc>
+    <loc>https://steelmanufacturer.in/347h-stainless-steel-seamless-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/c95400-bronze-round-bar</loc>
+    <loc>https://steelmanufacturer.in/316-stainless-steel-seamless-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/c95800-bronze-round-bar</loc>
+    <loc>https://steelmanufacturer.in/316l-stainless-steel-seamless-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/lg4-bronze-round-bar</loc>
+    <loc>https://steelmanufacturer.in/316ti-stainless-steel-seamless-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/lg2-bronze-round-bar</loc>
+    <loc>https://steelmanufacturer.in/310-stainless-steel-seamless-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/rg5-rg25-bronze-round-bar</loc>
+    <loc>https://steelmanufacturer.in/310s-stainless-steel-seamless-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/c93200-bronze-round-bar</loc>
+    <loc>https://steelmanufacturer.in/17-4-ph-stainless-steel-seamless-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/c93600-bronze-round-bar</loc>
+    <loc>https://steelmanufacturer.in/904l-stainless-steel-seamless-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/c93700-bronze-round-bar</loc>
+    <loc>https://steelmanufacturer.in/stainless-steel-dairy-fittings-cat/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/c86300-steel-round-bar</loc>
+    <loc>https://steelmanufacturer.in/304-stainless-steel-dairy-fittings/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/304-stainless-steel-seamless-pipe</loc>
+    <loc>https://steelmanufacturer.in/316-stainless-steel-dairy-fittings/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/304l-stainless-steel-seamless-pipe</loc>
+    <loc>https://steelmanufacturer.in/304-stainless-steel-shims/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/321-stainless-steel-seamless-pipe</loc>
+    <loc>https://steelmanufacturer.in/316-stainless-steel-shims/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/347-stainless-steel-seamless-pipe</loc>
+    <loc>https://steelmanufacturer.in/stainless-steel-forged-fittings/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/347h-stainless-steel-seamless-pipe</loc>
+    <loc>https://steelmanufacturer.in/304-stainless-steel-forged-fittings/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/316-stainless-steel-seamless-pipe</loc>
+    <loc>https://steelmanufacturer.in/316-stainless-steel-forge-fittings/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/316l-stainless-steel-seamless-pipe</loc>
+    <loc>https://steelmanufacturer.in/316l-stainless-steel-forge-fittings/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/316ti-stainless-steel-seamless-pipe</loc>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-and-fittings/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/310-stainless-steel-seamless-pipe</loc>
+    <loc>https://steelmanufacturer.in/alloy-20-fasteners/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/310s-stainless-steel-seamless-pipe</loc>
+    <loc>https://steelmanufacturer.in/904l-fasteners/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/17-4-ph-stainless-steel-seamless-pipe</loc>
+    <loc>https://steelmanufacturer.in/duplex-2205-fasteners/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/904l-stainless-steel-seamless-pipe</loc>
+    <loc>https://steelmanufacturer.in/duplex-2304-fasteners/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-dairy-fittings-cat</loc>
+    <loc>https://steelmanufacturer.in/super-duplex-2507-fasteners/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/304-stainless-steel-dairy-fittings</loc>
+    <loc>https://steelmanufacturer.in/super-duplex-s32760-fasteners/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/316-stainless-steel-dairy-fittings</loc>
+    <loc>https://steelmanufacturer.in/monel-400-fasteners/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/304-stainless-steel-shims</loc>
+    <loc>https://steelmanufacturer.in/monel-k500-fasteners/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/316-stainless-steel-shims</loc>
+    <loc>https://steelmanufacturer.in/inconel-600-fasteners/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/stainless-steel-forged-fittings</loc>
+    <loc>https://steelmanufacturer.in/inconel-601-fasteners/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/304-stainless-steel-forged-fittings</loc>
+    <loc>https://steelmanufacturer.in/inconel-625-fasteners/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/316-stainless-steel-forge-fittings</loc>
+    <loc>https://steelmanufacturer.in/inconel-718-fasteners/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/316l-stainless-steel-forge-fittings</loc>
+    <loc>https://steelmanufacturer.in/incoloy-800-fasteners/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/electropolished-pipe-and-fittings</loc>
+    <loc>https://steelmanufacturer.in/incoloy-800h-fasteners/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/alloy-20-fasteners</loc>
+    <loc>https://steelmanufacturer.in/incoloy-825-fasteners/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/904l-fasteners</loc>
+    <loc>https://steelmanufacturer.in/hastelloy-c22-fasteners/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/duplex-2205-fasteners</loc>
+    <loc>https://steelmanufacturer.in/hastelloy-c276-fasteners/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/duplex-2304-fasteners</loc>
+    <loc>https://steelmanufacturer.in/nickel-200-fasteners/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/super-duplex-2507-fasteners</loc>
+    <loc>https://steelmanufacturer.in/nickel-201-fasteners/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/super-duplex-s32760-fasteners</loc>
+    <loc>https://steelmanufacturer.in/titanium-grade-2-fasteners/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/monel-400-fasteners</loc>
+    <loc>https://steelmanufacturer.in/titanium-grade-5-fasteners/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/monel-k500-fasteners</loc>
+    <loc>https://steelmanufacturer.in/304l-ss-shims/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/inconel-600-fasteners</loc>
+    <loc>https://steelmanufacturer.in/316l-ss-shims/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/inconel-601-fasteners</loc>
+    <loc>https://steelmanufacturer.in/409m-ss-shims/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/inconel-625-fasteners</loc>
+    <loc>https://steelmanufacturer.in/303-ss-shims/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/inconel-718-fasteners</loc>
+    <loc>https://steelmanufacturer.in/302-ss-shims/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/incoloy-800-fasteners</loc>
+    <loc>https://steelmanufacturer.in/316ti-ss-shims/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/incoloy-800h-fasteners</loc>
+    <loc>https://steelmanufacturer.in/ss304-welded-electro-polish-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/incoloy-825-fasteners</loc>
+    <loc>https://steelmanufacturer.in/ss316-welded-electro-polish-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/hastelloy-c22-fasteners</loc>
+    <loc>https://steelmanufacturer.in/ss316l-welded-electro-polish-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/hastelloy-c276-fasteners</loc>
+    <loc>https://steelmanufacturer.in/duplex-electro-polish-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/nickel-200-fasteners</loc>
+    <loc>https://steelmanufacturer.in/super-duplex-electro-polish-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/nickel-201-fasteners</loc>
+    <loc>https://steelmanufacturer.in/ss304-seamless-electro-polish-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/titanium-grade-2-fasteners</loc>
+    <loc>https://steelmanufacturer.in/ss304l-seamless-electro-polish-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/titanium-grade-5-fasteners</loc>
+    <loc>https://steelmanufacturer.in/ss316-electro-polish-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/304l-ss-shims</loc>
+    <loc>https://steelmanufacturer.in/ss316l-electro-polish-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/316l-ss-shims</loc>
+    <loc>https://steelmanufacturer.in/duplex-electro-polish-seamless-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/409m-ss-shims</loc>
+    <loc>https://steelmanufacturer.in/super-duplex-electro-polish-seamless-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/303-ss-shims</loc>
+    <loc>https://steelmanufacturer.in/electropolished-pipes/ss-304-304l-electropolished-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/302-ss-shims</loc>
+    <loc>https://steelmanufacturer.in/electropolished-pipes/ss-316-316l-electropolished-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/316ti-ss-shims</loc>
+    <loc>https://steelmanufacturer.in/electropolished-pipes/astm-a270-sanitary-tube/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/ss304-welded-electro-polish-pipe</loc>
+    <loc>https://steelmanufacturer.in/electropolished-pipes/asme-bpe-tube/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/ss316-welded-electro-polish-pipe</loc>
+    <loc>https://steelmanufacturer.in/electropolished-pipes/duplex-electropolished-pipe/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/ss316l-welded-electro-polish-pipe</loc>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/3a-sanitary-fittings/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/duplex-electro-polish-pipe</loc>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/bs-4825-fittings/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/super-duplex-electro-polish-pipe</loc>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/asme-bpe-fittings/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/ss304-seamless-electro-polish-pipe</loc>
+    <loc>https://steelmanufacturer.in/flanges/weld-neck-flanges/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/ss304l-seamless-electro-polish-pipe</loc>
+    <loc>https://steelmanufacturer.in/flanges/slip-on-flanges/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/ss316-electro-polish-pipe</loc>
+    <loc>https://steelmanufacturer.in/flanges/blind-flanges/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/ss316l-electro-polish-pipe</loc>
+    <loc>https://steelmanufacturer.in/flanges/socket-weld-flanges/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/duplex-electro-polish-seamless-pipe</loc>
+    <loc>https://steelmanufacturer.in/flanges/threaded-flanges/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/super-duplex-electro-polish-seamless-pipe</loc>
+    <loc>https://steelmanufacturer.in/flanges/lap-joint-flanges/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/flanges/orifice-flanges/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/flanges/long-weld-neck-flanges/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/flanges/spectacle-blind-flanges/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/flanges/paddle-blind-spacer-flanges/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/buttweld-fittings/buttweld-elbows/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/buttweld-fittings/buttweld-tees/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/buttweld-fittings/buttweld-reducers/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/buttweld-fittings/buttweld-caps/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/buttweld-fittings/buttweld-stub-ends/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/buttweld-fittings/buttweld-bends/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/buttweld-fittings/buttweld-crosses/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/forged-fittings/socket-weld-fittings/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/forged-fittings/threaded-fittings/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/stainless-steel-pipes/ss-seamless-pipes/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/stainless-steel-pipes/ss-welded-pipes/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/stainless-steel-pipes/duplex-steel-pipes/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/stainless-steel-pipes/super-duplex-steel-pipes/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/round-bars/ss-304-round-bar/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/round-bars/ss-316-round-bar/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/round-bars/duplex-round-bar/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/round-bars/17-4ph-round-bar/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/dairy-fittings/sms-unions/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/dairy-fittings/tc-clamp-fittings/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/fasteners/stud-bolts/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/fasteners/ss-bolts-nuts/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

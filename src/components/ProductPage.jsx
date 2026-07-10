@@ -40,22 +40,55 @@ export default function ProductPage({ product, onEnquireClick }) {
     );
   }, [product]);
 
-  // Parse Internal Links into actual product objects
+  // Parse Internal Links into actual product/category objects
   const relatedProducts = useMemo(() => {
-    const raw = product['Internal Links'];
+    const raw = product['Internal Links Raw'] || product['Internal Links'];
     if (!raw) return [];
-    const linkNames = raw.split('|').map((item) => item.trim().toLowerCase());
     
-    // Find matching products in productsData
+    // Check if it has the new formatting: 'Anchor' -> URL
+    if (raw.includes("->")) {
+      const lines = raw.split("\n").map(l => l.trim()).filter(Boolean);
+      const links = [];
+      lines.forEach(line => {
+        const parts = line.split("->").map(p => p.trim());
+        if (parts.length === 2) {
+          const anchor = parts[0].replace(/'/g, "").trim();
+          const targetUrl = parts[1].trim();
+          const slug = targetUrl.replace("https://steelmanufacturer.in/", "").replace(/\/$/, "");
+          const matchedProd = productsData.find(p => p['URL Slug'] === slug);
+          if (matchedProd) {
+            links.push(matchedProd);
+          } else {
+            const matchedCat = categoriesData.find(c => c['Category Slug'] === slug);
+            if (matchedCat) {
+              links.push({
+                isCategory: true,
+                'Product Name': matchedCat['Parent Category'],
+                'URL Slug': matchedCat['Category Slug'],
+                'Category': 'Category',
+                'Meta Description (<=160 chars)': matchedCat['Category Meta Description']
+              });
+            }
+          }
+        }
+      });
+      return links.slice(0, 4);
+    }
+    
+    // Fallback legacy pipe format
+    const linkNames = raw.split('|').map((item) => item.trim().toLowerCase());
     return productsData.filter((p) => {
       const name = p['Product Name']?.toLowerCase();
       const cat = p['Category']?.toLowerCase();
       return linkNames.some(link => name.includes(link) || link.includes(name) || cat === link);
-    }).slice(0, 3); // limit to 3 related items
+    }).slice(0, 3);
   }, [product]);
 
   // Dynamic FAQ Q&As
   const faqs = useMemo(() => {
+    if (product.FAQs && product.FAQs.length > 0) {
+      return product.FAQs.map(f => ({ q: f.q, a: f.a }));
+    }
     return [
       {
         q: `What are the specifications of ${product['Product Name']}?`,
@@ -146,6 +179,30 @@ export default function ProductPage({ product, onEnquireClick }) {
               >
                 {product['H1 Tag']}
               </h1>
+
+              {product['TL;DR'] && (
+                <div 
+                  className="answer-box" 
+                  style={{
+                    backgroundColor: 'rgba(255, 193, 7, 0.04)',
+                    borderLeft: '4px solid var(--primary-yellow)',
+                    borderTop: '1px solid rgba(255,193,7,0.1)',
+                    borderRight: '1px solid rgba(255,193,7,0.1)',
+                    borderBottom: '1px solid rgba(255,193,7,0.1)',
+                    padding: '1.5rem 1.75rem',
+                    borderRadius: '8px',
+                    marginBottom: '2rem',
+                    boxShadow: '0 4px 20px rgba(0,0,0,0.15)'
+                  }}
+                >
+                  <strong style={{ color: 'var(--primary-yellow)', display: 'block', marginBottom: '0.5rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    Quick Summary (AI Overview)
+                  </strong>
+                  <p style={{ margin: 0, color: 'var(--text-primary)', fontSize: '0.95rem', lineHeight: '1.6', fontWeight: '500' }}>
+                    {product['TL;DR']}
+                  </p>
+                </div>
+              )}
 
               <p 
                 style={{ 

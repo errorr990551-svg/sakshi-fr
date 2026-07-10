@@ -19,15 +19,26 @@ import CategoryPage from './components/CategoryPage';
 import ProductPage from './components/ProductPage';
 import NotFoundPage from './components/NotFoundPage';
 import ProductsPage from './components/ProductsPage';
+import QualityPage from './components/QualityPage';
+import IndustriesPage from './components/IndustriesPage';
+import ContactPage from './components/ContactPage';
+import CertificationsPage from './components/CertificationsPage';
+import BlogPage from './components/BlogPage';
+import PrivacyPolicyPage from './components/PrivacyPolicyPage';
+import TermsPage from './components/TermsPage';
+import WeightCalculatorPage from './components/WeightCalculatorPage';
 
-function App() {
+function App(props) {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isEnquiryOpen, setIsEnquiryOpen] = useState(false);
   const [preselectedProduct, setPreselectedProduct] = useState('');
-  const [currentPath, setCurrentPath] = useState(window.location.pathname);
+  const [currentPath, setCurrentPath] = useState(
+    props.path || (typeof window !== 'undefined' ? window.location.pathname : '/')
+  );
 
   // Sync state with browser URL navigation
   useEffect(() => {
+    if (typeof window === 'undefined') return;
     const handlePopState = () => {
       setCurrentPath(window.location.pathname);
     };
@@ -67,17 +78,43 @@ function App() {
 
   // Determine current page type and parameters
   const resolvedRoute = (() => {
-    if (currentPath === '/' || currentPath === '') {
+    const cleanPath = currentPath === '/' ? '/' : currentPath.replace(/\/$/, '');
+    
+    if (cleanPath === '/' || cleanPath === '') {
       return { type: 'home', data: null };
     }
-    if (currentPath === '/about') {
+    if (cleanPath === '/about-us' || cleanPath === '/about') {
       return { type: 'about', data: null };
     }
-    if (currentPath === '/products') {
+    if (cleanPath === '/products') {
       return { type: 'products', data: null };
     }
+    if (cleanPath === '/quality-assurance') {
+      return { type: 'quality-assurance', data: null };
+    }
+    if (cleanPath === '/industries') {
+      return { type: 'industries', data: null };
+    }
+    if (cleanPath === '/contact-us') {
+      return { type: 'contact-us', data: null };
+    }
+    if (cleanPath === '/certifications') {
+      return { type: 'certifications', data: null };
+    }
+    if (cleanPath === '/blog') {
+      return { type: 'blog', data: null };
+    }
+    if (cleanPath === '/privacy-policy') {
+      return { type: 'privacy-policy', data: null };
+    }
+    if (cleanPath === '/terms-and-conditions') {
+      return { type: 'terms-and-conditions', data: null };
+    }
+    if (cleanPath === '/weight-calculator') {
+      return { type: 'weight-calculator', data: null };
+    }
     
-    const slug = currentPath.substring(1);
+    const slug = cleanPath.substring(1);
     
     // Check if matching category slug
     const category = categoriesData.find(c => c['Category Slug'] === slug);
@@ -177,6 +214,38 @@ function App() {
         <ProductsPage 
           onEnquireClick={handleOpenEnquiry} 
         />
+      )}
+
+      {resolvedRoute.type === 'quality-assurance' && (
+        <QualityPage onEnquireClick={handleOpenEnquiry} />
+      )}
+
+      {resolvedRoute.type === 'industries' && (
+        <IndustriesPage />
+      )}
+
+      {resolvedRoute.type === 'contact-us' && (
+        <ContactPage onEnquireClick={handleOpenEnquiry} />
+      )}
+
+      {resolvedRoute.type === 'certifications' && (
+        <CertificationsPage />
+      )}
+
+      {resolvedRoute.type === 'blog' && (
+        <BlogPage />
+      )}
+
+      {resolvedRoute.type === 'privacy-policy' && (
+        <PrivacyPolicyPage />
+      )}
+
+      {resolvedRoute.type === 'terms-and-conditions' && (
+        <TermsPage />
+      )}
+
+      {resolvedRoute.type === 'weight-calculator' && (
+        <WeightCalculatorPage onEnquireClick={handleOpenEnquiry} />
       )}
 
       {resolvedRoute.type === '404' && (

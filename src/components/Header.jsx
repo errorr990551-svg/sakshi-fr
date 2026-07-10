@@ -55,11 +55,11 @@ export default function Header({ currentPage, onNavigate, onEnquireClick }) {
             </li>
             <li>
               <a 
-                href="/about" 
+                href="/about-us" 
                 className={`nav-link ${currentPage === 'about' ? 'active' : ''}`} 
                 onClick={(e) => {
                   setIsMenuOpen(false);
-                  handleLinkClick(e, '/about');
+                  handleLinkClick(e, '/about-us');
                 }}
               >
                 About Us

@@ -1,17 +1,20 @@
 /**
  * SEO utility to dynamically inject Meta Tags and JSON-LD Schema markup in the document head.
  */
+import corePagesData from '../data/core_pages.json';
 
 const BASE_URL = "https://steelmanufacturer.in";
 
 // Helper to remove any previously injected custom script tags
 function clearExistingSchemas() {
+  if (typeof document === 'undefined') return;
   const existing = document.querySelectorAll("script.sakshi-seo-schema");
   existing.forEach((el) => el.remove());
 }
 
 // Helper to inject a JSON-LD schema
 function injectSchema(schemaId, schemaObj) {
+  if (typeof document === 'undefined') return;
   const script = document.createElement("script");
   script.type = "application/ld+json";
   script.className = "sakshi-seo-schema";
@@ -20,65 +23,113 @@ function injectSchema(schemaId, schemaObj) {
   document.head.appendChild(script);
 }
 
-// Helper to parse key specs like "Alloy: CuZn30 | Dia: 3-300mm | Std: IS 319" into key-value pairs
+// Helper to parse key specs from either the old line or the new multi-line pipe format
 export function parseKeySpecs(specsString) {
   if (!specsString) return [];
+  
+  // If it's the new multi-line pipe format: "Property | Value\n..."
+  if (specsString.includes("\n")) {
+    const lines = specsString.split("\n").map(l => l.trim()).filter(Boolean);
+    const parsed = [];
+    lines.forEach(line => {
+      if (line.includes("|")) {
+        const parts = line.split("|").map(p => p.trim());
+        const header = parts[0].toLowerCase();
+        if (header === "specification" || header === "property" || header === "feature") {
+          return; // skip headers
+        }
+        parsed.push({
+          key: parts[0],
+          value: parts[1] || ""
+        });
+      }
+    });
+    return parsed;
+  }
+  
+  // Fallback to legacy inline colon-pipe format: "Key: Value | Key2: Value2"
   return specsString.split("|").map((item) => {
     const parts = item.split(":");
     return {
-      key: parts[0]?.strip ? parts[0].strip() : parts[0]?.trim() || "",
-      value: parts[1]?.strip ? parts[1].strip() : parts[1]?.trim() || "",
+      key: parts[0]?.trim() || "",
+      value: parts[1]?.trim() || "",
     };
-  });
+  }).filter(item => item.key);
 }
 
 // Main function to update head elements dynamically
 export function updateSEO({ type, data }) {
+  if (typeof document === 'undefined') return;
+  
   clearExistingSchemas();
 
   let title = "Sakshi Forge | Industrial Flanges, Pipes & Forged Steel Manufacturer";
   let metaDesc = "Sakshi Forge is a leading manufacturer of high-quality forged flanges, industrial steel pipes, tubes, round bars, and steel plates. Serving oil & gas, petrochemical, and heavy industries globally.";
   let keywords = "Sakshi Forge, industrial flanges, forged steel, steel pipes, butt weld fittings, forged fittings, steel manufacturer India";
   let canonicalUrl = BASE_URL;
+  let robots = "index, follow";
 
-  // 1. Determine titles, descriptions, keywords, and canonical URL based on route type
-  if (type === "about") {
-    title = "About Sakshi Forge | Corporate Legacy & Manufacturing Capabilities";
-    metaDesc = "Read the legacy of Sakshi Forge, Mumbai. Over 10+ years of manufacturing experience, delivering certified flanges, pipes, and forged steel fittings.";
-    keywords = "Sakshi Forge about, corporate overview, manufacturing processes, steel forging legacy, certifications";
-    canonicalUrl = `${BASE_URL}/about`;
-  } else if (type === "products") {
-    title = "Industrial Steel Products Catalog | Sakshi Forge Mumbai";
-    metaDesc = "Explore the complete products catalog of Sakshi Forge. High-quality forged flanges, pipes, fittings, tubes, round bars, and sheets. Custom sizes manufactured in Mumbai.";
-    keywords = "Sakshi Forge products, forged flanges, steel pipes, butt weld fittings, forged fittings, round bars catalog, steel manufacturer India";
-    canonicalUrl = `${BASE_URL}/products`;
-  } else if (type === "category") {
-    // Data is a category object
-    title = data["Category Meta Title"] || `${data["Parent Category"]} Manufacturer Mumbai | Sakshi Forge`;
-    metaDesc = data["Category Meta Description"] || `Premium ${data["Parent Category"]} from Sakshi Forge Mumbai. Meet national & international standards. Request quotes online.`;
-    keywords = `${data["Primary KW"]}, ${data["Parent Category"]} supplier India, ${data["Parent Category"]} Mumbai manufacturer`;
-    canonicalUrl = `${BASE_URL}/${data["Category Slug"]}`;
-  } else if (type === "product") {
-    // Data is a product object
-    title = data["Meta Title (<=60 chars)"] || data["Meta Title"] || `${data["Product Name"]} Manufacturer Mumbai | Sakshi Forge`;
-    metaDesc = data["Meta Description (<=160 chars)"] || data["Meta Description"] || `Buy premium ${data["Product Name"]} from Sakshi Forge Mumbai. High quality, MTC provided, custom sizes. Get a quote today.`;
-    
-    const secKeywords = data["Secondary Keywords (3-5)"] || "";
-    const primKeyword = data["Primary Keyword"] || "";
-    const excelKeywords = data["Meta Keywords (5-8)"] || "";
-    
-    if (excelKeywords) {
-      keywords = excelKeywords;
-    } else {
-      keywords = primKeyword ? (secKeywords ? `${primKeyword}, ${secKeywords}` : primKeyword) : "";
+  // 1. Resolve metadata depending on page type
+  if (type === "home") {
+    const page = corePagesData.find(p => p.Slug === "" || p.PageName === "Homepage");
+    if (page) {
+      title = page["Meta Title"];
+      metaDesc = page["Meta Description"];
+      keywords = page["Primary Keyword"] ? (page["Secondary Keywords"] ? `${page["Primary Keyword"]}, ${page["Secondary Keywords"]}` : page["Primary Keyword"]) : keywords;
+      canonicalUrl = page["URL"];
+      robots = page["Robots"];
     }
-    canonicalUrl = `${BASE_URL}/${data["URL Slug"]}`;
+  } else if (type === "about" || type === "quality-assurance" || type === "industries" || type === "contact-us" || type === "certifications" || type === "blog" || type === "privacy-policy" || type === "terms-and-conditions" || type === "weight-calculator") {
+    const typeSlugMap = {
+      "about": "about-us",
+      "quality-assurance": "quality-assurance",
+      "industries": "industries",
+      "contact-us": "contact-us",
+      "certifications": "certifications",
+      "blog": "blog",
+      "privacy-policy": "privacy-policy",
+      "terms-and-conditions": "terms-and-conditions",
+      "weight-calculator": "weight-calculator"
+    };
+    const targetSlug = typeSlugMap[type] || type;
+    const page = corePagesData.find(p => p.Slug === targetSlug);
+    if (page) {
+      title = page["Meta Title"];
+      metaDesc = page["Meta Description"];
+      keywords = page["Primary Keyword"] ? (page["Secondary Keywords"] ? `${page["Primary Keyword"]}, ${page["Secondary Keywords"]}` : page["Primary Keyword"]) : keywords;
+      canonicalUrl = page["URL"];
+      robots = page["Robots"];
+    } else {
+      canonicalUrl = `${BASE_URL}/${targetSlug}/`;
+    }
+  } else if (type === "products") {
+    const page = corePagesData.find(p => p.Slug === "products" || p.PageName === "Products");
+    if (page) {
+      title = page["Meta Title"];
+      metaDesc = page["Meta Description"];
+      keywords = page["Primary Keyword"] ? (page["Secondary Keywords"] ? `${page["Primary Keyword"]}, ${page["Secondary Keywords"]}` : page["Primary Keyword"]) : keywords;
+      canonicalUrl = page["URL"];
+      robots = page["Robots"];
+    } else {
+      canonicalUrl = `${BASE_URL}/products/`;
+    }
+  } else if (type === "category" && data) {
+    title = data["Category Meta Title"] || title;
+    metaDesc = data["Category Meta Description"] || metaDesc;
+    keywords = data["Primary KW"] ? (data["Secondary KWs"] ? `${data["Primary KW"]}, ${data["Secondary KWs"]}` : data["Primary KW"]) : keywords;
+    canonicalUrl = `${BASE_URL}/${data["Category Slug"]}/`;
+    robots = data["Robots"] || robots;
+  } else if (type === "product" && data) {
+    title = data["Meta Title"] || data["Meta Title (<=60 chars)"] || data["Product Name"] || title;
+    metaDesc = data["Meta Description"] || data["Meta Description (<=160 chars)"] || data["Product Description"] || metaDesc;
+    keywords = data["Primary Keyword"] ? (data["Secondary Keywords (3-5)"] ? `${data["Primary Keyword"]}, ${data["Secondary Keywords (3-5)"]}` : data["Primary Keyword"]) : keywords;
+    canonicalUrl = `${BASE_URL}/${data["URL Slug"]}/`;
+    robots = data["Robots"] || robots;
   }
 
-  // 2. Update basic head DOM nodes
+  // 2. Inject meta headers in document head
   document.title = title;
 
-  // Meta description
   let descTag = document.querySelector('meta[name="description"]');
   if (!descTag) {
     descTag = document.createElement("meta");
@@ -87,7 +138,6 @@ export function updateSEO({ type, data }) {
   }
   descTag.setAttribute("content", metaDesc);
 
-  // Meta keywords
   let keywordsTag = document.querySelector('meta[name="keywords"]');
   if (!keywordsTag) {
     keywordsTag = document.createElement("meta");
@@ -96,7 +146,14 @@ export function updateSEO({ type, data }) {
   }
   keywordsTag.setAttribute("content", keywords);
 
-  // Canonical link
+  let robotsTag = document.querySelector('meta[name="robots"]');
+  if (!robotsTag) {
+    robotsTag = document.createElement("meta");
+    robotsTag.name = "robots";
+    document.head.appendChild(robotsTag);
+  }
+  robotsTag.setAttribute("content", robots);
+
   let canonicalTag = document.querySelector('link[rel="canonical"]');
   if (!canonicalTag) {
     canonicalTag = document.createElement("link");
@@ -105,174 +162,189 @@ export function updateSEO({ type, data }) {
   }
   canonicalTag.setAttribute("href", canonicalUrl);
 
-  // 3. Inject structured JSON-LD schemas
-  // A. Organization Schema (site-wide)
-  const orgSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Sakshi Forge",
-    "url": BASE_URL,
-    "logo": `${BASE_URL}/favicon.svg`,
-    "telephone": "+91-82913-66340",
-    "email": "Sakshiforge@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "113/117 Dr. M. G. Mahimtura Marg, 3rd Kumbharwada, Shop No. 5, Ground Floor",
-      "addressLocality": "Mumbai",
-      "postalCode": "400004",
-      "addressRegion": "Maharashtra",
-      "addressCountry": "IN"
-    },
-    "sameAs": [
-      "https://www.indiamart.com/sakshiforge/",
-      "https://www.tradeindia.com/Seller-11111-Sakshi-Forge/"
-    ]
-  };
-  injectSchema("organization", orgSchema);
+  // 3. Inject Structured Data Graph Schema
+  const graph = [];
 
-  // B. BreadcrumbList Schema (on category or product pages)
-  if (type === "category") {
+  // A. Sitewide components (Organization + WebSite + LocalBusiness)
+  // local business goes on homepage and contact page
+  const isHomeOrContact = type === "home" || type === "contact-us";
+  
+  const orgSchema = {
+    "@type": "Organization",
+    "@id": `${BASE_URL}/#org`,
+    "name": "Sakshi Forge",
+    "url": `${BASE_URL}/`,
+    "logo": `${BASE_URL}/favicon.svg`,
+    "sameAs": [
+      "https://www.sakshiforge.com",
+      "https://www.indiamart.com/sakshiforge"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-8045815130",
+      "contactType": "sales",
+      "email": "info@sakshiforge.in"
+    }
+  };
+
+  const websiteSchema = {
+    "@type": "WebSite",
+    "@id": `${BASE_URL}/#website`,
+    "url": `${BASE_URL}/`,
+    "name": "Sakshi Forge",
+    "publisher": {
+      "@id": `${BASE_URL}/#org`
+    }
+  };
+
+  graph.push(orgSchema);
+  graph.push(websiteSchema);
+
+  if (isHomeOrContact) {
+    const localSchema = {
+      "@type": "LocalBusiness",
+      "@id": `${BASE_URL}/#local`,
+      "name": "Sakshi Forge",
+      "image": `${BASE_URL}/favicon.svg`,
+      "telephone": "+91-8045815130",
+      "email": "info@sakshiforge.in",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "113/117 Dr. M.G. Mahimtura Marg, 3rd Kumbharwada, Shop No. 5, Ground Floor",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400004",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "18.9602",
+        "longitude": "72.8263"
+      }
+    };
+    graph.push(localSchema);
+  }
+
+  // B. Category specific schemas (Breadcrumbs + CollectionPage)
+  if (type === "category" && data) {
     const breadcrumbs = {
-      "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": BASE_URL
+          "item": `${BASE_URL}/`
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": data["Parent Category"],
-          "item": `${BASE_URL}/${data["Category Slug"]}`
+          "item": `${BASE_URL}/${data["Category Slug"]}/`
         }
       ]
     };
-    injectSchema("breadcrumbs", breadcrumbs);
-  } else if (type === "product") {
+
+    const collectionPage = {
+      "@type": "CollectionPage",
+      "name": data["Category Meta Title"] || title,
+      "url": `${BASE_URL}/${data["Category Slug"]}/`,
+      "description": data["Category Meta Description"] || metaDesc,
+      "isPartOf": {
+        "@id": `${BASE_URL}/#website`
+      },
+      "about": {
+        "@type": "Thing",
+        "name": data["Parent Category"]
+      }
+    };
+
+    graph.push(breadcrumbs);
+    graph.push(collectionPage);
+  }
+
+  // C. Product specific schemas (Breadcrumbs + Product + FAQPage)
+  if (type === "product" && data) {
+    // Find category slug dynamically (standardize/match slug lookup)
+    const catSlug = data["URL Slug"]?.split("/")[0] || "products";
     const breadcrumbs = {
-      "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": BASE_URL
+          "item": `${BASE_URL}/`
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": data["Category"],
-          // We will find category slug dynamically, or fallback to homepage if not found
-          "item": `${BASE_URL}` 
+          "item": `${BASE_URL}/${catSlug}/`
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": data["Product Name"],
-          "item": `${BASE_URL}/${data["URL Slug"]}`
+          "item": `${BASE_URL}/${data["URL Slug"]}/`
         }
       ]
     };
-    injectSchema("breadcrumbs", breadcrumbs);
 
-    // C. Product Rich Schema (specifically on product page)
-    const specsParsed = parseKeySpecs(data["Key Specs"]);
-    const additionalProperties = specsParsed.map((s) => ({
+    // Parse specs for PropertyValues
+    const specsList = parseKeySpecs(data["Key Specs"]);
+    const addProps = specsList.map(s => ({
       "@type": "PropertyValue",
       "name": s.key,
       "value": s.value
     }));
 
+    // Find material grades or available grades
+    const materialGrade = specsList.find(s => s.key.toLowerCase().includes("grade") || s.key.toLowerCase().includes("material"))?.value || "Stainless Steel";
+
     const productSchema = {
-      "@context": "https://schema.org",
       "@type": "Product",
       "name": data["Product Name"],
-      "description": data["Meta Description (<=160 chars)"] || data["Meta Description"] || metaDesc,
-      "image": `${BASE_URL}/flanges_pipes.webp`, // fallback standard image
-      "sku": `SF-${data["S.No"]}-${data["URL Slug"]}`,
+      "url": `${BASE_URL}/${data["URL Slug"]}/`,
+      "image": [
+        `${BASE_URL}${data["Image"] || "/flanges_pipes.webp"}`
+      ],
+      "description": data["Meta Description"] || metaDesc,
       "brand": {
         "@type": "Brand",
         "name": "Sakshi Forge"
       },
-      "material": data["Category"],
       "manufacturer": {
-        "@type": "Organization",
-        "name": "Sakshi Forge",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Mumbai",
-          "addressRegion": "Maharashtra",
-          "addressCountry": "IN"
-        }
+        "@id": `${BASE_URL}/#org`
       },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "INR",
-        "availability": "https://schema.org/InStock",
-        "seller": {
-          "@type": "Organization",
-          "name": "Sakshi Forge"
-        }
-      },
-      "additionalProperty": additionalProperties
+      "material": materialGrade,
+      "additionalProperty": addProps
     };
-    injectSchema("product", productSchema);
 
-    // D. FAQPage Schema (specifically on product page)
-    const faqEntities = [];
-    if (data["FAQ 1 Q"]) {
-      for (let i = 1; i <= 4; i++) {
-        const qKey = `FAQ ${i} Q`;
-        const aKey = `FAQ ${i} A`;
-        if (data[qKey] && data[aKey]) {
-          faqEntities.push({
-            "@type": "Question",
-            "name": data[qKey],
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": data[aKey]
-            }
-          });
+    graph.push(breadcrumbs);
+    graph.push(productSchema);
+
+    // FAQ schema if FAQs are defined in compiler output
+    if (data["FAQs"] && data["FAQs"].length > 0) {
+      const faqEntities = data["FAQs"].map(f => ({
+        "@type": "Question",
+        "name": f.q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": f.a
         }
-      }
-    } else {
-      faqEntities.push(
-        {
-          "@type": "Question",
-          "name": `What are the specifications of ${data["Product Name"]}?`,
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": `${data["Product Name"]} features the following specifications: ${data["Key Specs"]}. It meets national and international industry certifications and is optimized for ${data["Target Industries"]}.`
-          }
-        },
-        {
-          "@type": "Question",
-          "name": `Which industries are served by ${data["Product Name"]}?`,
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": `${data["Product Name"]} from Sakshi Forge is widely supplied to the ${data["Target Industries"]} industries. It is designed to withstand extreme mechanical tolerances and high pressure/temperature environments.`
-          }
-        },
-        {
-          "@type": "Question",
-          "name": `Does Sakshi Forge issue test certificates for ${data["Product Name"]}?`,
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, Sakshi Forge supplies standard quality compliance reports, including Material Test Certificates (MTC) compliant with EN 10204 3.1 standards, raw material certificates, and third-party inspection audits."
-          }
-        }
-      );
+      }));
+      const faqSchema = {
+        "@type": "FAQPage",
+        "mainEntity": faqEntities
+      };
+      graph.push(faqSchema);
     }
-
-    const faqSchema = {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": faqEntities
-    };
-    injectSchema("faq", faqSchema);
   }
+
+  // Inject final combined graph schema
+  injectSchema("main", {
+    "@context": "https://schema.org",
+    "@graph": graph
+  });
 }

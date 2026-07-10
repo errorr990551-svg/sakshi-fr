@@ -1,16 +1,65 @@
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /
+# .htaccess — steelmanufacturer.in (Apache 2.4+)
+# ============ 1. HTTPS + non-www + clean URLs (single 301 hop) ============
+RewriteEngine On
 
-  # Redirect /sitemap and /robots to their corresponding static files
-  RewriteRule ^sitemap$ /sitemap.xml [R=301,L]
-  RewriteRule ^robots$ /robots.txt [R=301,L]
-  RewriteRule ^robts$ /robots.txt [R=301,L]
-  RewriteRule ^robts\.txt$ /robots.txt [R=301,L]
+# Force HTTPS + non-www in one redirect
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
 
-  RewriteRule ^index\.html$ - [L]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME} !-l
-  RewriteRule . /index.html [L]
+# Strip index.php / index.html
+RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.(php|html?)[\s?] [NC]
+RewriteRule ^ /%1 [L,R=301]
+
+# Add trailing slash to non-file URLs
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !/$
+RewriteCond %{REQUEST_URI} !\.
+RewriteRule ^(.*)$ /$1/ [L,R=301]
+
+# Lowercase URLs (needs mod_speling or map in vhost; else enforce at CMS level)
+
+# ============ 2. Legacy URL redirects (fill from old-site crawl) ============
+# Redirect 301 /flanges.html /flanges/
+# Redirect 301 /old-page.php /new-page/
+
+# ============ 3. Compression ============
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json image/svg+xml
 </IfModule>
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# ============ 4. Browser caching ============
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/avif "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png  "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+FileETag None
+
+# ============ 5. Security headers ============
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# ============ 6. Custom error pages ============
+ErrorDocument 404 /404.html
+
+# ============ 7. Block sensitive files ============
+<FilesMatch "^(\.htaccess|\.env|config\.php|composer\.(json|lock))$">
+  Require all denied
+</FilesMatch>

@@ -27,6 +27,10 @@ import BlogPage from './components/BlogPage';
 import PrivacyPolicyPage from './components/PrivacyPolicyPage';
 import TermsPage from './components/TermsPage';
 import WeightCalculatorPage from './components/WeightCalculatorPage';
+import MarketAreaPage from './components/MarketAreaPage';
+import CityPage from './components/CityPage';
+import marketCitiesData from './data/market_cities.json';
+
 
 function App(props) {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -114,6 +118,16 @@ function App(props) {
       return { type: 'weight-calculator', data: null };
     }
     
+    if (cleanPath === '/market-area') {
+      return { type: 'market-area', data: null };
+    }
+    
+    // Check if matching city path e.g. /electropolished-pipes-manufacturer-in-mumbai
+    const matchedCity = marketCitiesData.find(c => c.path === cleanPath);
+    if (matchedCity) {
+      return { type: 'market-city', data: matchedCity };
+    }
+
     const slug = cleanPath.substring(1);
     
     // Check if matching category slug
@@ -247,6 +261,18 @@ function App(props) {
       {resolvedRoute.type === 'weight-calculator' && (
         <WeightCalculatorPage onEnquireClick={handleOpenEnquiry} />
       )}
+
+      {resolvedRoute.type === 'market-area' && (
+        <MarketAreaPage />
+      )}
+
+      {resolvedRoute.type === 'market-city' && (
+        <CityPage 
+          cityData={resolvedRoute.data} 
+          onEnquireClick={handleOpenEnquiry} 
+        />
+      )}
+
 
       {resolvedRoute.type === '404' && (
         <NotFoundPage />

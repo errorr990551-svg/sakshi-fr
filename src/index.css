@@ -1570,4 +1570,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Market Area & City Page Programmatic SEO CSS */
+.hover-card {
+  transition: var(--transition-smooth) !important;
+}
+.hover-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 8px 24px rgba(255, 193, 7, 0.12) !important;
+}
+
+
 

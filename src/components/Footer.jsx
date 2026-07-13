@@ -85,6 +85,7 @@ export default function Footer({ onNavigate, onEnquireClick }) {
               <li><a href="/privacy-policy" onClick={(e) => handleLinkClick(e, '/privacy-policy')}>Privacy Policy</a></li>
               <li><a href="/certifications" onClick={(e) => handleLinkClick(e, '/certifications')}>Certifications</a></li>
               <li><a href="/blog" onClick={(e) => handleLinkClick(e, '/blog')}>Technical Blog</a></li>
+              <li><a href="/market-area" onClick={(e) => handleLinkClick(e, '/market-area')}>Market Area</a></li>
             </ul>
           </div>
 

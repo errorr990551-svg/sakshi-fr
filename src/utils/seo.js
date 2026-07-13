@@ -125,7 +125,20 @@ export function updateSEO({ type, data }) {
     keywords = data["Primary Keyword"] ? (data["Secondary Keywords (3-5)"] ? `${data["Primary Keyword"]}, ${data["Secondary Keywords (3-5)"]}` : data["Primary Keyword"]) : keywords;
     canonicalUrl = `${BASE_URL}/${data["URL Slug"]}/`;
     robots = data["Robots"] || robots;
+  } else if (type === "market-area") {
+    title = "Sakshi Forge | India Cities We Serve - Electropolished Pipes & Fittings Supply";
+    metaDesc = "Explore the commercial and industrial cities served by Sakshi Forge across India. High-quality electropolished pipes and industrial steel supply.";
+    keywords = "market area, industrial cities, sakshi forge locations, steel pipes supply India";
+    canonicalUrl = `${BASE_URL}/market-area`;
+    robots = "index, follow";
+  } else if (type === "market-city" && data) {
+    title = data.pageTitle || title;
+    metaDesc = data.metaDescription || metaDesc;
+    keywords = data.primaryKeyword ? (data.topSecondaryKeywords ? `${data.primaryKeyword}, ${data.topSecondaryKeywords}` : data.primaryKeyword) : keywords;
+    canonicalUrl = `${BASE_URL}${data.path}`;
+    robots = "index, follow";
   }
+
 
   // 2. Inject meta headers in document head
   document.title = title;
@@ -342,9 +355,20 @@ export function updateSEO({ type, data }) {
     }
   }
 
+  if (type === "market-city" && data && data.schema) {
+    try {
+      const parsed = JSON.parse(data.schema);
+      injectSchema("main", parsed);
+      return;
+    } catch (e) {
+      console.error("Failed to parse compiled schema for city:", e);
+    }
+  }
+
   // Inject final combined graph schema
   injectSchema("main", {
     "@context": "https://schema.org",
     "@graph": graph
   });
 }
+

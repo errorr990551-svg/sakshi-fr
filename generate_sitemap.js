@@ -14,6 +14,8 @@ const productsPath = path.join(__dirname, 'src/data/products.json');
 const corePages = JSON.parse(fs.readFileSync(corePath, 'utf-8'));
 const categories = JSON.parse(fs.readFileSync(categoriesPath, 'utf-8'));
 const products = JSON.parse(fs.readFileSync(productsPath, 'utf-8'));
+const marketCities = JSON.parse(fs.readFileSync(path.join(__dirname, 'src/data/market_cities.json'), 'utf-8'));
+
 
 let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -58,9 +60,25 @@ products.forEach(prod => {
   </url>\n`;
 });
 
+// 4. Market Area & Cities
+sitemap += `  <!-- Market Area Pages -->\n`;
+sitemap += `  <url>
+    <loc>${BASE_URL}/market-area</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>\n`;
+
+marketCities.forEach(city => {
+  sitemap += `  <url>
+    <loc>${BASE_URL}${city.path}</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>\n`;
+});
+
 sitemap += `</urlset>\n`;
 
 const outputPath = path.join(__dirname, 'public/sitemap.xml');
 fs.writeFileSync(outputPath, sitemap);
-const totalCount = corePages.length + categories.length + products.length;
+const totalCount = corePages.length + categories.length + products.length + 1 + marketCities.length;
 console.log(`Dynamic sitemap generated successfully at ${outputPath} with ${totalCount} URLs.`);

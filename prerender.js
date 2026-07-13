@@ -26,6 +26,8 @@ async function runPrerender() {
   const corePages = JSON.parse(fs.readFileSync(path.join(__dirname, 'src/data/core_pages.json'), 'utf-8'));
   const categories = JSON.parse(fs.readFileSync(path.join(__dirname, 'src/data/categories.json'), 'utf-8'));
   const products = JSON.parse(fs.readFileSync(path.join(__dirname, 'src/data/products.json'), 'utf-8'));
+  const marketCities = JSON.parse(fs.readFileSync(path.join(__dirname, 'src/data/market_cities.json'), 'utf-8'));
+
 
   // 3. Assemble routes list
   const routes = [];
@@ -71,6 +73,33 @@ async function runPrerender() {
       data: p
     });
   });
+  
+  // Market Area page
+  routes.push({
+    url: `${BASE_URL}/market-area`,
+    type: 'market-area',
+    slug: 'market-area',
+    title: 'Sakshi Forge | India Cities We Serve - Electropolished Pipes & Fittings Supply',
+    description: 'Explore the commercial and industrial cities served by Sakshi Forge across India. High-quality electropolished pipes and industrial steel supply.',
+    robots: 'index, follow',
+    keywords: 'market area, industrial cities, sakshi forge locations, steel pipes supply India',
+    data: null
+  });
+
+  // Market Cities pages
+  marketCities.forEach(c => {
+    routes.push({
+      url: `${BASE_URL}${c.path}`,
+      type: 'market-city',
+      slug: c.path.substring(1), // remove starting slash
+      title: c.pageTitle,
+      description: c.metaDescription,
+      robots: 'index, follow',
+      keywords: c.primaryKeyword ? (c.topSecondaryKeywords ? `${c.primaryKeyword}, ${c.topSecondaryKeywords}` : c.primaryKeyword) : '',
+      data: c
+    });
+  });
+
 
   console.log(`Prepared ${routes.length} routes to render.`);
 
@@ -237,10 +266,15 @@ async function runPrerender() {
       }
     }
 
-    const schemaBlockHtml = `<script type="application/ld+json" class="sakshi-seo-schema">\n${JSON.stringify({
-      "@context": "https://schema.org",
-      "@graph": schemasGraph
-    }, null, 2)}\n</script>`;
+    let schemaBlockHtml = '';
+    if (route.type === 'market-city' && route.data.schema) {
+      schemaBlockHtml = `<script type="application/ld+json" class="sakshi-seo-schema">\n${route.data.schema}\n</script>`;
+    } else {
+      schemaBlockHtml = `<script type="application/ld+json" class="sakshi-seo-schema">\n${JSON.stringify({
+        "@context": "https://schema.org",
+        "@graph": schemasGraph
+      }, null, 2)}\n</script>`;
+    }
 
     // Replace templates in index.html
     let html = template;

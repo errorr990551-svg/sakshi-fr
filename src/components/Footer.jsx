@@ -46,7 +46,7 @@ export default function Footer({ onNavigate, onEnquireClick }) {
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: 'var(--text-secondary)' }}>
                 <Mail size={16} className="infra-feature-icon" />
                 <span style={{ fontSize: '0.9rem' }}>
-                  <a href="mailto:Sakshiforge@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>Sakshiforge@gmail.com</a>
+                  <a href="mailto:sakshiforge1737@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>sakshiforge1737@gmail.com</a>
                 </span>
               </div>
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', color: 'var(--text-secondary)' }}>

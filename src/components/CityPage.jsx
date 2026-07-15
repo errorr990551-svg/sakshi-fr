@@ -798,7 +798,7 @@ export default function CityPage({ cityData, onEnquireClick }) {
               </a>
 
               <a 
-                href="mailto:Sakshiforge@gmail.com" 
+                href="mailto:sakshiforge1737@gmail.com" 
                 className="btn btn-secondary btn-lg"
                 style={{ 
                   display: 'inline-flex', 

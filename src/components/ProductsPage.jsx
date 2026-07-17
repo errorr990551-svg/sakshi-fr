@@ -327,15 +327,15 @@ export default function ProductsPage({ onEnquireClick }) {
                   >
                     <div>
                       {p.Image && (
-                        <div style={{ width: '100%', aspectRatio: '3/2', overflow: 'hidden', borderBottom: '1px solid var(--border-color)' }}>
+                        <div style={{ width: '100%', aspectRatio: '3/2', overflow: 'hidden', borderBottom: '1px solid var(--border-color)', backgroundColor: 'var(--bg-dark-900)' }}>
                           <img 
                             src={p.Image} 
                             alt={p['Product Name']} 
                             style={{ 
                               width: '100%', 
                               height: '100%', 
-                              objectFit: 'cover', 
-                              objectPosition: 'top',
+                              objectFit: 'contain', 
+                              objectPosition: 'center',
                               transition: 'transform 0.5s ease' 
                             }}
                             className="product-card-image"
@@ -384,14 +384,7 @@ export default function ProductsPage({ onEnquireClick }) {
                           {desc}
                         </p>
 
-                        <div style={{ borderTop: '1px solid rgba(255,255,255,0.05)', paddingTop: '1rem' }}>
-                          <strong style={{ color: 'var(--primary-yellow)', fontSize: '0.75rem', textTransform: 'uppercase', display: 'block', marginBottom: '0.25rem' }}>
-                            Specifications:
-                          </strong>
-                          <span style={{ color: 'var(--text-muted)', fontSize: '0.8rem', lineHeight: '1.4', display: 'block' }}>
-                            {p['Key Specs']}
-                          </span>
-                        </div>
+
                       </div>
                     </div>
 

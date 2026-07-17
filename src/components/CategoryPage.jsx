@@ -138,15 +138,15 @@ export default function CategoryPage({ category, onEnquireClick }) {
                 >
                   <div>
                     {prod.Image && (
-                      <div style={{ width: '100%', aspectRatio: '3/2', overflow: 'hidden', borderBottom: '1px solid var(--border-color)' }}>
+                      <div style={{ width: '100%', aspectRatio: '3/2', overflow: 'hidden', borderBottom: '1px solid var(--border-color)', backgroundColor: 'var(--bg-dark-900)' }}>
                         <img 
                           src={prod.Image} 
                           alt={prod['Product Name']} 
                           style={{ 
                             width: '100%', 
                             height: '100%', 
-                            objectFit: 'cover', 
-                            objectPosition: 'top',
+                            objectFit: 'contain', 
+                            objectPosition: 'center',
                             transition: 'transform 0.5s ease' 
                           }}
                           className="product-card-image"
@@ -197,20 +197,7 @@ export default function CategoryPage({ category, onEnquireClick }) {
                         {prod['Meta Description (<=160 chars)']}
                       </p>
 
-                      <div 
-                        style={{ 
-                          borderTop: '1px solid rgba(255,255,255,0.05)', 
-                          paddingTop: '1rem',
-                          marginTop: '1rem'
-                        }}
-                      >
-                        <h4 style={{ fontSize: '0.8rem', color: 'var(--primary-yellow)', textTransform: 'uppercase', marginBottom: '0.5rem' }}>
-                          Key Specs:
-                        </h4>
-                        <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', lineHeight: '1.4' }}>
-                          {prod['Key Specs']}
-                        </p>
-                      </div>
+
                     </div>
                   </div>
 

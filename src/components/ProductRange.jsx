@@ -31,7 +31,10 @@ export default function ProductRange() {
 
   const getCategoryImage = (catName) => {
     const name = catName.toLowerCase();
-    if (name.includes('flange') || name.includes('fitting')) {
+    if (name.includes('flange')) {
+      return '/Stainless Steel Flanges.webp';
+    }
+    if (name.includes('fitting')) {
       return '/flanges_pipes.webp';
     }
     return '/molten_furnace.webp';

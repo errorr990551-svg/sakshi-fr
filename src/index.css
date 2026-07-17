@@ -720,7 +720,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product-card:hover .product-img-wrap img {
-  transform: scale(1.08);
+  transform: none;
 }
 
 .product-info {
@@ -1433,7 +1433,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .catalog-product-card:hover .product-card-image {
-  transform: scale(1.06);
+  transform: none;
 }
 
 .product-detail-image:hover {

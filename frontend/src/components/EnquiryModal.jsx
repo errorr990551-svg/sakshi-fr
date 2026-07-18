@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { X, CheckCircle2, Send, Loader2, AlertCircle } from 'lucide-react';
+import { X, CheckCircle2, Send, Loader2, AlertCircle, Phone, Mail, MapPin } from 'lucide-react';
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000';
 
-export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '' }) {
+export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '', customTitle = '', onUnlockContact = () => {} }) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -65,6 +65,14 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '' 
     }
   };
 
+  const handleSuccessUnlock = () => {
+    setIsSubmitted(true);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('contactDetailsUnlocked', 'true');
+    }
+    onUnlockContact();
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitError('');
@@ -92,18 +100,20 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '' 
       const data = await response.json();
 
       if (response.ok && data.success) {
-        setIsSubmitted(true);
+        handleSuccessUnlock();
       } else {
         setSubmitError(data.message || 'Failed to submit form. Please try again.');
       }
     } catch (err) {
       console.error('API Error submitting enquiry form:', err);
       // Fallback response for offline / CORS scenario so user is not blocked
-      setIsSubmitted(true);
+      handleSuccessUnlock();
     } finally {
       setIsSubmitting(false);
     }
   };
+
+  const isContactDetailsForm = customTitle.includes('phone') || customTitle.includes('contact');
 
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -122,7 +132,7 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '' 
             display: 'block',
             marginBottom: '0.4rem'
           }}>
-            Get In Touch
+            {isContactDetailsForm ? 'Direct Contact Access' : 'Get In Touch'}
           </span>
           <h2 style={{ 
             fontSize: '1.65rem', 
@@ -132,25 +142,74 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '' 
             textTransform: 'none',
             marginBottom: '0.5rem'
           }}>
-            Fill this form and get a quote in <span>30 minutes — guaranteed</span>
+            {customTitle || <>Fill this form and get a quote in <span>30 minutes — guaranteed</span></>}
           </h2>
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', margin: 0 }}>
-            Let our experts take over from here!
+            {isContactDetailsForm 
+              ? 'Submit your details to unlock email & phone number instantly.' 
+              : 'Let our experts take over from here!'}
           </p>
         </div>
 
         <div className="modal-body-wrap" style={{ padding: '1rem 2rem 2rem 2rem' }}>
           {isSubmitted ? (
-            <div className="success-banner" style={{ padding: '2rem 1rem', textAlign: 'center' }}>
+            <div className="success-banner" style={{ padding: '1.5rem 1rem', textAlign: 'center' }}>
               <div className="success-icon-circle" style={{ margin: '0 auto 1rem auto' }}>
                 <CheckCircle2 size={48} style={{ color: 'var(--primary-yellow)' }} />
               </div>
               <h3 style={{ fontSize: '1.4rem', fontWeight: '800', color: '#ffffff', marginBottom: '0.5rem' }}>
-                Quote Request Received!
+                Thank You, {formData.name}!
               </h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.5', maxWidth: '480px', margin: '0 auto 1.5rem auto' }}>
-                Thank you for reaching out, <strong>{formData.name}</strong>. Our metallurgy & sales team will review your specifications and reply to <strong>{formData.email}</strong> within 30 minutes.
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.5', maxWidth: '480px', margin: '0 auto 1.25rem auto' }}>
+                Your request has been logged. Below are Sakshi Forge's direct contact details:
               </p>
+
+              {/* Revealed Contact Card */}
+              <div style={{
+                backgroundColor: 'var(--bg-dark-900)',
+                border: '1px solid var(--border-color)',
+                borderRadius: '10px',
+                padding: '1.25rem',
+                textAlign: 'left',
+                marginBottom: '1.5rem',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '0.85rem'
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: 'var(--text-primary)' }}>
+                  <Phone size={18} style={{ color: 'var(--primary-yellow)' }} />
+                  <div>
+                    <strong style={{ fontSize: '0.75rem', color: 'var(--text-muted)', display: 'block', textTransform: 'uppercase' }}>Phone Numbers</strong>
+                    <a href="tel:+918291366340" style={{ color: 'var(--primary-yellow)', fontWeight: '700', textDecoration: 'none', fontSize: '0.95rem' }}>+91 82913 66340</a> /{' '}
+                    <a href="tel:+917976476375" style={{ color: 'var(--primary-yellow)', fontWeight: '700', textDecoration: 'none', fontSize: '0.95rem' }}>+91 79764 76375</a>
+                  </div>
+                </div>
+
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: 'var(--text-primary)' }}>
+                  <Mail size={18} style={{ color: 'var(--primary-yellow)' }} />
+                  <div>
+                    <strong style={{ fontSize: '0.75rem', color: 'var(--text-muted)', display: 'block', textTransform: 'uppercase' }}>Email Address</strong>
+                    <a href="mailto:sakshiforge1737@gmail.com" style={{ color: 'var(--text-primary)', fontWeight: '600', textDecoration: 'none', fontSize: '0.95rem' }}>sakshiforge1737@gmail.com</a>
+                  </div>
+                </div>
+
+                <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', color: 'var(--text-primary)' }}>
+                  <MapPin size={18} style={{ color: 'var(--primary-yellow)', flexShrink: 0, marginTop: '0.2rem' }} />
+                  <div>
+                    <strong style={{ fontSize: '0.75rem', color: 'var(--text-muted)', display: 'block', textTransform: 'uppercase' }}>Office Address</strong>
+                    <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>113 / 117, Dr. M. G. Mahimtura Marg, 3rd Kumbharwada, Shop No. 5, Ground Floor, Mumbai - 400 004.</span>
+                  </div>
+                </div>
+
+                <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', color: 'var(--text-primary)' }}>
+                  <MapPin size={18} style={{ color: 'var(--primary-yellow)', flexShrink: 0, marginTop: '0.2rem' }} />
+                  <div>
+                    <strong style={{ fontSize: '0.75rem', color: 'var(--text-muted)', display: 'block', textTransform: 'uppercase' }}>Factory Address</strong>
+                    <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Balaji Industrial Compound, Taloja MIDC</span>
+                  </div>
+                </div>
+              </div>
+
               <button 
                 onClick={onClose} 
                 className="btn btn-primary" 

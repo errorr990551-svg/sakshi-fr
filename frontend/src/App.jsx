@@ -36,9 +36,31 @@ function App(props) {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isEnquiryOpen, setIsEnquiryOpen] = useState(false);
   const [preselectedProduct, setPreselectedProduct] = useState('');
+  const [enquiryCustomTitle, setEnquiryCustomTitle] = useState('');
+  const [hasUnlockedContact, setHasUnlockedContact] = useState(() => {
+    return typeof window !== 'undefined' && localStorage.getItem('contactDetailsUnlocked') === 'true';
+  });
   const [currentPath, setCurrentPath] = useState(
     props.path || (typeof window !== 'undefined' ? window.location.pathname : '/')
   );
+
+  const handleOpenContactDetailsForm = () => {
+    if (hasUnlockedContact) return;
+    setEnquiryCustomTitle('Fill details to get email & phone number');
+    setPreselectedProduct('');
+    setIsEnquiryOpen(true);
+  };
+
+  const handleOpenEnquiry = (productName = '') => {
+    setEnquiryCustomTitle('');
+    setPreselectedProduct(productName || '');
+    setIsEnquiryOpen(true);
+  };
+
+  const handleCloseEnquiry = () => {
+    setIsEnquiryOpen(false);
+    setEnquiryCustomTitle('');
+  };
 
   // Trigger automatic Enquiry Popup for new visitors on any page
   useEffect(() => {
@@ -169,16 +191,6 @@ function App(props) {
 
   const handleCloseProduct = () => {
     setSelectedProduct(null);
-  };
-
-  const handleOpenEnquiry = (productName = '') => {
-    setPreselectedProduct(productName);
-    setIsEnquiryOpen(true);
-  };
-
-  const handleCloseEnquiry = () => {
-    setIsEnquiryOpen(false);
-    setPreselectedProduct('');
   };
 
   const handleProductEnquiryTrigger = (productName) => {
@@ -317,6 +329,8 @@ function App(props) {
           window.dispatchEvent(new PopStateEvent('popstate'));
         }} 
         onEnquireClick={() => handleOpenEnquiry('')} 
+        hasUnlockedContact={hasUnlockedContact}
+        onShowContactDetails={handleOpenContactDetailsForm}
       />
 
       {/* Interactive Detail Modal for Products (Legacy Fallback) */}
@@ -329,11 +343,12 @@ function App(props) {
       )}
 
       {/* Global RFQ/Enquiry Form Modal */}
-      {/* (Handles both general enquiries and specific product/category requests) */}
       <EnquiryModal 
         isOpen={isEnquiryOpen} 
         onClose={handleCloseEnquiry} 
         preselectedProduct={preselectedProduct}
+        customTitle={enquiryCustomTitle}
+        onUnlockContact={() => setHasUnlockedContact(true)}
       />
     </>
   );

@@ -1,20 +1,12 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Globe } from 'lucide-react';
+import { Mail, Phone, MapPin, Globe, Lock } from 'lucide-react';
 import { handleLinkClick } from '../utils/router';
 
-export default function Footer({ onNavigate, onEnquireClick }) {
+export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact = false, onShowContactDetails }) {
   const currentYear = new Date().getFullYear();
 
   const handleProductsLink = (e) => {
     handleLinkClick(e, '/products');
-  };
-
-  const handleScrollLink = (e, targetId) => {
-    handleLinkClick(e, '/');
-    setTimeout(() => {
-      const el = document.getElementById(targetId);
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
-    }, 250);
   };
 
   return (
@@ -35,35 +27,58 @@ export default function Footer({ onNavigate, onEnquireClick }) {
             <p>
               Sakshi Forge is a leading manufacturer and supplier of industrial flanges, butt weld fittings, forged fittings, pipes, tubes, round bars, and steel plates. We deliver precision-engineered steel products designed for strength, durability, and reliable industrial performance.
             </p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginTop: '0.5rem' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: 'var(--text-secondary)' }}>
-                <Phone size={16} className="infra-feature-icon" />
-                <span style={{ fontSize: '0.9rem' }}>
-                  <a href="tel:+918291366340" style={{ color: 'inherit', textDecoration: 'none' }}>+91 82913 66340</a> /{' '}
-                  <a href="tel:+917976476375" style={{ color: 'inherit', textDecoration: 'none' }}>+91 79764 76375</a>
-                </span>
+            
+            {hasUnlockedContact ? (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginTop: '0.5rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: 'var(--text-secondary)' }}>
+                  <Phone size={16} className="infra-feature-icon" />
+                  <span style={{ fontSize: '0.9rem' }}>
+                    <a href="tel:+918291366340" style={{ color: 'inherit', textDecoration: 'none' }}>+91 82913 66340</a> /{' '}
+                    <a href="tel:+917976476375" style={{ color: 'inherit', textDecoration: 'none' }}>+91 79764 76375</a>
+                  </span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: 'var(--text-secondary)' }}>
+                  <Mail size={16} className="infra-feature-icon" />
+                  <span style={{ fontSize: '0.9rem' }}>
+                    <a href="mailto:sakshiforge1737@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>sakshiforge1737@gmail.com</a>
+                  </span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', color: 'var(--text-secondary)' }}>
+                  <MapPin size={16} className="infra-feature-icon" style={{ flexShrink: 0, marginTop: '0.2rem' }} />
+                  <span style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>
+                    <strong>Office Address:</strong><br />
+                    113 / 117, Dr. M. G. Mahimtura Marg, 3rd Kumbharwada, Shop No. 5, Ground Floor, Mumbai - 400 004.
+                  </span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', color: 'var(--text-secondary)' }}>
+                  <MapPin size={16} className="infra-feature-icon" style={{ flexShrink: 0, marginTop: '0.2rem' }} />
+                  <span style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>
+                    <strong>Factory Address:</strong><br />
+                    Balaji Industrial Compound, Taloja MIDC
+                  </span>
+                </div>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: 'var(--text-secondary)' }}>
-                <Mail size={16} className="infra-feature-icon" />
-                <span style={{ fontSize: '0.9rem' }}>
-                  <a href="mailto:sakshiforge1737@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>sakshiforge1737@gmail.com</a>
-                </span>
+            ) : (
+              <div style={{ marginTop: '1rem' }}>
+                <button 
+                  onClick={onShowContactDetails} 
+                  className="btn btn-primary" 
+                  style={{ 
+                    display: 'inline-flex', 
+                    alignItems: 'center', 
+                    gap: '0.6rem', 
+                    padding: '0.8rem 1.4rem',
+                    fontSize: '0.85rem',
+                    fontWeight: '800',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.04em',
+                    boxShadow: '0 4px 15px rgba(255, 193, 7, 0.2)'
+                  }}
+                >
+                  <Phone size={16} /> Show Contact Details
+                </button>
               </div>
-              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', color: 'var(--text-secondary)' }}>
-                <MapPin size={16} className="infra-feature-icon" style={{ flexShrink: 0, marginTop: '0.2rem' }} />
-                <span style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>
-                  <strong>Office Address:</strong><br />
-                  113 / 117, Dr. M. G. Mahimtura Marg, 3rd Kumbharwada, Shop No. 5, Ground Floor, Mumbai - 400 004.
-                </span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', color: 'var(--text-secondary)' }}>
-                <MapPin size={16} className="infra-feature-icon" style={{ flexShrink: 0, marginTop: '0.2rem' }} />
-                <span style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>
-                  <strong>Factory Address:</strong><br />
-                  Balaji Industrial Compound, Taloja MIDC
-                </span>
-              </div>
-            </div>
+            )}
           </div>
 
           <div className="footer-col">

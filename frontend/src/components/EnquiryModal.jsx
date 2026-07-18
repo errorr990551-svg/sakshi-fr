@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, CheckCircle2, Send, Loader2, AlertCircle, Phone, Mail, MapPin } from 'lucide-react';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://sakshi-fr.onrender.com';
 
 export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '', customTitle = '', onUnlockContact = () => {} }) {
   const [formData, setFormData] = useState({

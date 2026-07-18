@@ -40,6 +40,19 @@ function App(props) {
     props.path || (typeof window !== 'undefined' ? window.location.pathname : '/')
   );
 
+  // Trigger automatic Enquiry Popup for new visitors on any page
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const hasSeenPopup = sessionStorage.getItem('hasSeenEnquiryPopup');
+    if (!hasSeenPopup) {
+      const timer = setTimeout(() => {
+        setIsEnquiryOpen(true);
+        sessionStorage.setItem('hasSeenEnquiryPopup', 'true');
+      }, 1500);
+      return () => clearTimeout(timer);
+    }
+  }, []);
+
   // Sync state with browser URL navigation
   useEffect(() => {
     if (typeof window === 'undefined') return;

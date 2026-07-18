@@ -14,7 +14,7 @@ exports.submitContactForm = async (req, res) => {
 
     // Fire and forget email sending in background
     sendMail({
-      to: "info@remaxforge.com",
+      to: "sakshiforge1737@gmail.com",
       cc: [
         "akshat99055@gmail.com",
         "errorr990551@gmail.com",

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, Send, ShieldCheck, MessageSquare } from 'lucide-react';
 
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000';
+
 export default function ContactPage({ onEnquireClick }) {
   const [formData, setFormData] = useState({
     name: '',
@@ -10,16 +12,36 @@ export default function ContactPage({ onEnquireClick }) {
     product: '',
     message: ''
   });
+  const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Simulate submission
-    setSuccess(true);
-    setTimeout(() => {
-      setSuccess(false);
-      setFormData({ name: '', email: '', phone: '', company: '', product: '', message: '' });
-    }, 4000);
+    setLoading(true);
+    try {
+      await fetch(`${API_BASE_URL}/api/contact`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          company: formData.company || 'Not Provided',
+          location: 'Not Provided',
+          message: formData.message || `Enquiry for ${formData.product || 'General'}`
+        })
+      });
+      setSuccess(true);
+      setTimeout(() => {
+        setSuccess(false);
+        setFormData({ name: '', email: '', phone: '', company: '', product: '', message: '' });
+      }, 5000);
+    } catch (err) {
+      console.error('Failed submitting contact page form:', err);
+      setSuccess(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (

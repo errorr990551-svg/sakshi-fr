@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "node generate_sitemap.js && vite build && vite build --ssr src/main-ssr.jsx --outDir dist/server && node prerender.js",
+    "dev": "npx --no-install vite",
+    "build": "node generate_sitemap.js && npx --no-install vite build && npx --no-install vite build --ssr src/main-ssr.jsx --outDir dist/server && node prerender.js",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "npx --no-install vite preview"
   },
   "dependencies": {
     "lucide-react": "^1.21.0",

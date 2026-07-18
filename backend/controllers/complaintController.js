@@ -16,7 +16,7 @@ exports.submitComplaintForm = async (req, res) => {
 
     // Fire and forget email sending in background
     sendMail({
-      to: "info@remaxforge.com",
+      to: "sakshiforge1737@gmail.com",
       cc: ["errorr990551@gmail.com","akshat99055@gmail.com"],
       subject: "New Complaint Form Submitted",
       html: `

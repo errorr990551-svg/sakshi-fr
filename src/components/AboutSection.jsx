@@ -18,7 +18,7 @@ export default function AboutSection() {
             <div className="accent-line-left" style={{ marginBottom: '2rem' }}></div>
             
             <h3>
-              Sakshi Forge – Industrial Flanges & <span>Forged Steel Manufacturer</span>
+              Sakshi Forge - Industrial Flanges & <span>Forged Steel Manufacturer</span>
             </h3>
             
             <p className="about-p">

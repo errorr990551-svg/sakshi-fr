@@ -45,7 +45,7 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
   const keyFacts = useMemo(() => parseNewlineList(product['Key Technical Facts (8 bullet points)']), [product]);
   
   const specsTable = useMemo(() => {
-    const raw = product['Specs Table (Property | Detail rows — pipe-separated)'];
+    const raw = product['Specs Table (Property | Detail rows - pipe-separated)'];
     if (!raw) return [];
     const parts = raw.split('|').map(x => x.trim()).filter(Boolean);
     const result = [];
@@ -57,14 +57,14 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
     return result;
   }, [product]);
 
-  const gradesTable = useMemo(() => parsePipeSeparatedKeyValue(product['Material Grades Table (Category | Grades — pipe-separated)']), [product]);
-  const standardsTable = useMemo(() => parsePipeSeparatedKeyValue(product['Standards Table (Standard | Scope — pipe-separated)']), [product]);
-  const endTypes = useMemo(() => parsePipeSeparatedKeyValue(product['Face / End Types (Name | Description — pipe-separated)']), [product]);
-  const surfaceFinish = useMemo(() => parsePipeSeparatedKeyValue(product['Surface Finish / Coating Options (Name | Description — pipe-separated)']), [product]);
+  const gradesTable = useMemo(() => parsePipeSeparatedKeyValue(product['Material Grades Table (Category | Grades - pipe-separated)']), [product]);
+  const standardsTable = useMemo(() => parsePipeSeparatedKeyValue(product['Standards Table (Standard | Scope - pipe-separated)']), [product]);
+  const endTypes = useMemo(() => parsePipeSeparatedKeyValue(product['Face / End Types (Name | Description - pipe-separated)']), [product]);
+  const surfaceFinish = useMemo(() => parsePipeSeparatedKeyValue(product['Surface Finish / Coating Options (Name | Description - pipe-separated)']), [product]);
 
   const dimensionsTable = useMemo(() => {
     const colsRaw = product['Dimensions Table Columns'];
-    const dataRaw = product['Dimensions Table Data (NPS rows — semicolon-separated)'];
+    const dataRaw = product['Dimensions Table Data (NPS rows - semicolon-separated)'];
     if (!colsRaw || !dataRaw) return null;
     const headers = colsRaw.split('|').map(x => x.trim()).filter(Boolean);
     const rows = dataRaw.split(';').map(r => r.split('|').map(c => c.trim())).filter(r => r.length > 0 && r[0]);
@@ -72,7 +72,7 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
   }, [product]);
 
   const comparisonTable = useMemo(() => {
-    const raw = product['Comparison Table (Feature vs 3 products — rows pipe-separated)'];
+    const raw = product['Comparison Table (Feature vs 3 products - rows pipe-separated)'];
     if (!raw) return null;
     const rows = raw.split(';').map(r => r.split('|').map(c => c.trim())).filter(r => r.length > 0 && r[0]);
     return {
@@ -84,11 +84,11 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
   const orderSteps = useMemo(() => parseNewlineList(product['How to Order Steps (8 numbered steps)']), [product]);
   const applications = useMemo(() => parseNewlineList(product['Primary Applications (10 bullet points)']), [product]);
   const notRecommended = useMemo(() => parseSemicolonList(product['NOT Recommended For (4 points)']), [product]);
-  const sectors = useMemo(() => parsePipeSeparatedKeyValue(product['Industry Sectors (10 — Name | Description)']), [product]);
-  const testingMethods = useMemo(() => parsePipeSeparatedKeyValue(product['Testing Methods (10 — Name | Description)']), [product]);
-  const documents = useMemo(() => parsePipeSeparatedKeyValue(product['Documents / Certificates (10 — Name | Description)']), [product]);
+  const sectors = useMemo(() => parsePipeSeparatedKeyValue(product['Industry Sectors (10 - Name | Description)']), [product]);
+  const testingMethods = useMemo(() => parsePipeSeparatedKeyValue(product['Testing Methods (10 - Name | Description)']), [product]);
+  const documents = useMemo(() => parsePipeSeparatedKeyValue(product['Documents / Certificates (10 - Name | Description)']), [product]);
   const limitations = useMemo(() => parseSemicolonList(product['Limitations (4 warning points)']), [product]);
-  const usps = useMemo(() => parsePipeSeparatedKeyValue(product['Why Choose Us (10 USP points — Name | Description)']), [product]);
+  const usps = useMemo(() => parsePipeSeparatedKeyValue(product['Why Choose Us (10 USP points - Name | Description)']), [product]);
 
   const customFaqs = useMemo(() => {
     const list = [];

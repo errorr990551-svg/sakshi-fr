@@ -115,7 +115,7 @@ export default function ContactPage({ onEnquireClick }) {
                   <div>
                     <h4 style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: '700', marginBottom: '0.25rem' }}>Business Hours</h4>
                     <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)' }}>
-                      Monday – Saturday: 9:00 AM – 7:00 PM IST (WhatsApp Desk open 24/7)
+                      Monday - Saturday: 9:00 AM - 7:00 PM IST (WhatsApp Desk open 24/7)
                     </p>
                   </div>
                 </div>

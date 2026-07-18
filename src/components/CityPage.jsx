@@ -185,7 +185,7 @@ export default function CityPage({ cityData, onEnquireClick }) {
     const regex = /\((\d+)\)\s*(.*?)(?=\s*\(\d+\)|$)/g;
     let match;
     while ((match = regex.exec(text)) !== null) {
-      const parts = match[2].split(" — ");
+      const parts = match[2].split(" - ");
       points.push({
         num: match[1],
         title: parts[0]?.trim() || "",
@@ -243,7 +243,7 @@ export default function CityPage({ cityData, onEnquireClick }) {
         tag = afterClose.replace(/^for\s+/i, "").trim();
       }
     } else {
-      const dashIdx = itemText.indexOf(" — ");
+      const dashIdx = itemText.indexOf(" - ");
       if (dashIdx !== -1) {
         title = itemText.substring(0, dashIdx).trim();
         standard = itemText.substring(dashIdx + 3).trim();

@@ -173,7 +173,7 @@ export default function AboutPage({ onEnquireClick }) {
             <div className="about-left">
               <span className="hero-tag" style={{ border: 'none', backgroundColor: 'rgba(255, 193, 7, 0.08)' }}>Market Leadership</span>
               <h3 style={{ fontSize: '2.2rem', marginBottom: '1rem', lineHeight: '1.2' }}>
-                Sakshi Forge – A Trusted Name in <br /><span>Industrial Steel Manufacturing</span>
+                Sakshi Forge - A Trusted Name in <br /><span>Industrial Steel Manufacturing</span>
               </h3>
               <div className="accent-line-left" style={{ marginBottom: '1.25rem' }}></div>
 

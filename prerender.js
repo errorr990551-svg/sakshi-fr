@@ -304,6 +304,14 @@ async function runPrerender() {
     // Inject rendered body
     html = html.replace('<div id="root"></div>', `<div id="root">${bodyHtml}</div>`);
 
+    // Sanitize any non-ASCII dashes or Mojibake before saving
+    html = html
+      .replace(/(?:Γ|Г)Ç[ôóö]/g, '-')
+      .replace(/(?:Γ|Г)Ç—/g, '-')
+      .replace(/â€“/g, '-')
+      .replace(/â€”/g, '-')
+      .replace(/[\u2013\u2014]/g, '-');
+
     // 5. Write to output folder
     let outputFilePath = '';
     if (route.type === 'home') {

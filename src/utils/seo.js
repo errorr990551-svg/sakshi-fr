@@ -139,6 +139,18 @@ export function updateSEO({ type, data }) {
     robots = "index, follow";
   }
 
+  const cleanDash = (str) => {
+    if (!str || typeof str !== 'string') return str;
+    return str
+      .replace(/(?:Γ|Г)Ç[ôóö]/g, '-')
+      .replace(/(?:Γ|Г)Ç—/g, '-')
+      .replace(/â€“/g, '-')
+      .replace(/â€”/g, '-')
+      .replace(/[\u2013\u2014]/g, '-');
+  };
+
+  title = cleanDash(title);
+  metaDesc = cleanDash(metaDesc);
 
   // 2. Inject meta headers in document head
   document.title = title;

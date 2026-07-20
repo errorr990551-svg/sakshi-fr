@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin, Clock, Send, ShieldCheck, MessageSquare } from 'lu
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://sakshi-fr.onrender.com';
 
-export default function ContactPage({ onEnquireClick }) {
+export default function ContactPage({ onEnquireClick, hasUnlockedContact = false, onShowContactDetails }) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -94,29 +94,54 @@ export default function ContactPage({ onEnquireClick }) {
               </div>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-                <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
-                  <div style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '0.75rem', color: 'var(--primary-yellow)' }}>
-                    <Phone size={20} />
-                  </div>
-                  <div>
-                    <h4 style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: '700', marginBottom: '0.25rem' }}>Phone Numbers</h4>
-                    <p style={{ fontWeight: '600', fontSize: '1.05rem' }}>
-                      <a href="tel:+918045815130" style={{ color: 'inherit', textDecoration: 'none' }}>+91-8045815130</a> / <a href="tel:+918291366340" style={{ color: 'inherit', textDecoration: 'none' }}>+91-8291366340</a>
-                    </p>
-                  </div>
-                </div>
+                {hasUnlockedContact ? (
+                  <>
+                    <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
+                      <div style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '0.75rem', color: 'var(--primary-yellow)' }}>
+                        <Phone size={20} />
+                      </div>
+                      <div>
+                        <h4 style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: '700', marginBottom: '0.25rem' }}>Phone Numbers</h4>
+                        <p style={{ fontWeight: '600', fontSize: '1.05rem' }}>
+                          <a href="tel:+918045815130" style={{ color: 'inherit', textDecoration: 'none' }}>+91-8045815130</a> / <a href="tel:+918291366340" style={{ color: 'inherit', textDecoration: 'none' }}>+91-8291366340</a>
+                        </p>
+                      </div>
+                    </div>
 
-                <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
-                  <div style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '0.75rem', color: 'var(--primary-yellow)' }}>
-                    <Mail size={20} />
-                  </div>
+                    <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
+                      <div style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '0.75rem', color: 'var(--primary-yellow)' }}>
+                        <Mail size={20} />
+                      </div>
+                      <div>
+                        <h4 style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: '700', marginBottom: '0.25rem' }}>Email Addresses</h4>
+                        <p style={{ fontWeight: '600', fontSize: '1.05rem' }}>
+                          <a href="mailto:info@sakshiforge.in" style={{ color: 'inherit', textDecoration: 'none' }}>info@sakshiforge.in</a> / <a href="mailto:sakshiforge1737@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>sakshiforge1737@gmail.com</a>
+                        </p>
+                      </div>
+                    </div>
+                  </>
+                ) : (
                   <div>
-                    <h4 style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: '700', marginBottom: '0.25rem' }}>Email Addresses</h4>
-                    <p style={{ fontWeight: '600', fontSize: '1.05rem' }}>
-                      <a href="mailto:info@sakshiforge.in" style={{ color: 'inherit', textDecoration: 'none' }}>info@sakshiforge.in</a> / <a href="mailto:sakshiforge1737@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>sakshiforge1737@gmail.com</a>
-                    </p>
+                    <button
+                      onClick={onShowContactDetails}
+                      className="btn btn-primary"
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '0.6rem',
+                        padding: '0.85rem 1.6rem',
+                        fontSize: '0.85rem',
+                        fontWeight: '800',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.04em',
+                        boxShadow: '0 4px 15px rgba(255, 193, 7, 0.2)',
+                        cursor: 'pointer'
+                      }}
+                    >
+                      <Phone size={16} /> Show Contact Details
+                    </button>
                   </div>
-                </div>
+                )}
 
                 <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
                   <div style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '0.75rem', color: 'var(--primary-yellow)' }}>

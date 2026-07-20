@@ -75,6 +75,18 @@ export default function Header({ currentPage, onNavigate, onEnquireClick }) {
               </a>
             </li>
             <li>
+              <a 
+                href="/contact-us" 
+                className={`nav-link ${currentPage === 'contact-us' ? 'active' : ''}`} 
+                onClick={(e) => {
+                  setIsMenuOpen(false);
+                  handleLinkClick(e, '/contact-us');
+                }}
+              >
+                Contact Us
+              </a>
+            </li>
+            <li>
               <button 
                 onClick={() => {
                   setIsMenuOpen(false);

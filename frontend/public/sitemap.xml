@@ -102,11 +102,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://steelmanufacturer.in/olets/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
   <!-- Product Pages -->
   <url>
     <loc>https://steelmanufacturer.in/brass-round-bars/</loc>
@@ -764,7 +759,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/electropolished-pipe-and-fittings/</loc>
+    <loc>https://steelmanufacturer.in/electropolished-pipes/electropolished-pipe-and-fittings/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -982,21 +977,6 @@
     <loc>https://steelmanufacturer.in/electropolished-pipes/duplex-electropolished-pipe/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/3a-sanitary-fittings/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/bs-4825-fittings/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/asme-bpe-fittings/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://steelmanufacturer.in/flanges/weld-neck-flanges/</loc>
@@ -1339,54 +1319,339 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/olets/branch-outlet/</loc>
+    <loc>https://steelmanufacturer.in/forged-fittings/branch-outlet/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/olets/weldolet/</loc>
+    <loc>https://steelmanufacturer.in/forged-fittings/weldolet/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/olets/sockolet/</loc>
+    <loc>https://steelmanufacturer.in/forged-fittings/sockolet/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/olets/threadolet/</loc>
+    <loc>https://steelmanufacturer.in/forged-fittings/threadolet/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/olets/latrolet/</loc>
+    <loc>https://steelmanufacturer.in/forged-fittings/latrolet/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/olets/elbolet/</loc>
+    <loc>https://steelmanufacturer.in/forged-fittings/elbolet/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/olets/sweepolet/</loc>
+    <loc>https://steelmanufacturer.in/forged-fittings/sweepolet/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/olets/nipolet/</loc>
+    <loc>https://steelmanufacturer.in/forged-fittings/nipolet/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/olets/flangeolet/</loc>
+    <loc>https://steelmanufacturer.in/forged-fittings/flangeolet/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/olets/coupolet/</loc>
+    <loc>https://steelmanufacturer.in/forged-fittings/coupolet/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-90-degree-elbow/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-45-degree-elbow/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-180-degree-return-bend/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-tee/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-equal-tee/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-reducing-tee/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-cross/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-concentric-reducer/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-eccentric-reducer/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-stub-end/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-long-stub-end/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-short-stub-end/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-end-cap/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-elbow/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-lateral-tee/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-instrument-tee/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-instrument-elbow/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-sanitary-elbow/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-sanitary-tee/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-sanitary-reducer/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-sanitary-cross/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-sanitary-end-cap/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-pipe-nipple/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-hex-nipple/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-barrel-nipple/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-swage-nipple/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-union/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-coupling/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-half-coupling/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-full-coupling/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-reducer-coupling/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-socket/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-adapter/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-male-adapter/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-female-adapter/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-hose-adapter/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-hose-barb/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-ferrule/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-clamp-ferrule/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-tri-clamp/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-tri-clover-clamp/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-clamp-gasket/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-sanitary-clamp/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-sanitary-ferrule/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-blind-cap/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-end-plug/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-hex-plug/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-square-plug/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-bushing/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-hex-bushing/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-olet/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-weldolet/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-sockolet/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-threadolet/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-elbolet/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-bpe-fittings/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/electropolished-pipe-fittings/electropolished-orbital-weld-fittings/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <!-- Market Area Pages -->
   <url>

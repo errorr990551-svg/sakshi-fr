@@ -122,7 +122,7 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '',
           <X size={22} />
         </button>
 
-        <div className="modal-header-wrap" style={{ padding: '2rem 2rem 0.75rem 2rem', borderBottom: 'none' }}>
+        <div className="modal-header-wrap" style={{ borderBottom: 'none' }}>
           <span style={{ 
             color: 'var(--primary-yellow)', 
             fontSize: '0.75rem', 
@@ -151,7 +151,7 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '',
           </p>
         </div>
 
-        <div className="modal-body-wrap" style={{ padding: '1rem 2rem 2rem 2rem' }}>
+        <div className="modal-body-wrap">
           {isSubmitted ? (
             <div className="success-banner" style={{ padding: '1.5rem 1rem', textAlign: 'center' }}>
               <div className="success-icon-circle" style={{ margin: '0 auto 1rem auto' }}>

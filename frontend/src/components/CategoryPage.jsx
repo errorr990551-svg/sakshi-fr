@@ -2,12 +2,13 @@ import React, { useMemo } from 'react';
 import { ArrowRight, ArrowLeftRight, ChevronRight, FileText } from 'lucide-react';
 import productsData from '../data/products.json';
 import { handleLinkClick } from '../utils/router';
+import { getParentCategoryName } from '../utils/categories';
 
 export default function CategoryPage({ category, onEnquireClick }) {
   // Filter products that belong to this category
   const filteredProducts = useMemo(() => {
     return productsData.filter(
-      (p) => p.Category?.toLowerCase() === category['Parent Category']?.toLowerCase()
+      (p) => getParentCategoryName(p).toLowerCase() === category['Parent Category']?.toLowerCase()
     );
   }, [category]);
 

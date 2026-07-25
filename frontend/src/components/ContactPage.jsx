@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, Send, ShieldCheck, MessageSquare } from 'lucide-react';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://sakshi-fr.onrender.com';
+const API_BASE_URL = import.meta.env.VITE_API_URL || '';
 
 export default function ContactPage({ onEnquireClick, hasUnlockedContact = false, onShowContactDetails }) {
   const [formData, setFormData] = useState({

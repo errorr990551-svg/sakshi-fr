@@ -1,9 +1,14 @@
-const { Resend } = require("resend");
+import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
-exports.sendMail = async ({ to, cc, subject, html, attachments = [] }) => {
+export const sendMail = async ({ to, cc, subject, html, attachments = [], apiKey }) => {
   try {
+    const key = apiKey || process.env.RESEND_API_KEY;
+    if (!key) {
+      throw new Error("RESEND_API_KEY environment variable is missing.");
+    }
+
+    const resend = new Resend(key);
+
     const data = await resend.emails.send({
       from: "SAKSHI <no-reply@inquiry.errorr.in>",
       to: Array.isArray(to) ? to : [to],
@@ -20,7 +25,7 @@ exports.sendMail = async ({ to, cc, subject, html, attachments = [] }) => {
       })),
     });
 
-    console.log("Resend response:", data);
+    console.log("Resend email sent successfully:", data);
     return data;
   } catch (error) {
     console.error("RESEND ERROR:", error);

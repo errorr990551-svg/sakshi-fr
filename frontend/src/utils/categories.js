@@ -14,7 +14,22 @@ export const getParentCategoryName = (p) => {
     }
   }
 
-  // 2. Fallback classification logic for original products
+  // 2. Direct Category match if matches any Parent Category in categoriesData
+  const directMatch = categoriesData.find(c => c['Parent Category'].toLowerCase() === cat.trim());
+  if (directMatch) {
+    return directMatch['Parent Category'];
+  }
+
+  // 3. Fallback classification logic for original products
+  if (cat.includes('electropolish') || slug.includes('electropolish') || name.includes('electropolished')) {
+    if (name.includes('fitting') || cat.includes('fitting')) {
+      return 'Electropolished Pipe Fittings';
+    }
+    return 'Electropolished Pipes';
+  }
+  if (cat.includes('seamless') || slug.includes('seamless') || name.includes('seamless')) {
+    return 'Seamless Pipes';
+  }
   if (cat.includes('round bar') || slug.includes('round-bar') || name.includes('round bar') || name.includes('bright bar')) {
     return 'Round Bars';
   }

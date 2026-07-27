@@ -1,5 +1,7 @@
-# .htaccess — steelmanufacturer.in (Apache 2.4+)
-# ============ 1. HTTPS + non-www + clean URLs (single 301 hop) ============
+# .htaccess — steelmanufacturer.in (Apache 2.4+ & LiteSpeed)
+DirectoryIndex index.html
+
+# ============ 1. HTTPS + non-www + clean URLs ============
 RewriteEngine On
 
 # Force HTTPS + non-www in one redirect
@@ -8,7 +10,7 @@ RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
 RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
 
-# Strip index.php / index.html
+# Strip index.php / index.html from URLs
 RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.(php|html?)[\s?] [NC]
 RewriteRule ^ /%1 [L,R=301]
 
@@ -18,13 +20,25 @@ RewriteCond %{REQUEST_URI} !/$
 RewriteCond %{REQUEST_URI} !\.
 RewriteRule ^(.*)$ /$1/ [L,R=301]
 
-# Lowercase URLs (needs mod_speling or map in vhost; else enforce at CMS level)
+# ============ 2. SPA & Pre-rendered Directory Routing ============
+# Serve existing physical file directly
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
 
-# ============ 2. Legacy URL redirects (fill from old-site crawl) ============
-# Redirect 301 /flanges.html /flanges/
-# Redirect 301 /old-page.php /new-page/
+# Serve existing pre-rendered directory index.html
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_FILENAME}/index.html -f
+RewriteRule ^ %{REQUEST_FILENAME}/index.html [L]
 
-# ============ 3. Compression ============
+# SPA Fallback: send any unhandled path to root /index.html for React Router
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ /index.html [L]
+
+# ============ 3. Custom Error Fallback ============
+ErrorDocument 404 /index.html
+
+# ============ 4. Compression ============
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json image/svg+xml
 </IfModule>
@@ -32,7 +46,7 @@ RewriteRule ^(.*)$ /$1/ [L,R=301]
   AddOutputFilterByType BROTLI_COMPRESS text/html text/css application/javascript application/json image/svg+xml
 </IfModule>
 
-# ============ 4. Browser caching ============
+# ============ 5. Browser caching ============
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType image/webp "access plus 1 year"
@@ -47,7 +61,7 @@ RewriteRule ^(.*)$ /$1/ [L,R=301]
 </IfModule>
 FileETag None
 
-# ============ 5. Security headers ============
+# ============ 6. Security headers ============
 <IfModule mod_headers.c>
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
   Header always set X-Content-Type-Options "nosniff"
@@ -55,9 +69,6 @@ FileETag None
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
   Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
 </IfModule>
-
-# ============ 6. Custom error pages ============
-ErrorDocument 404 /404.html
 
 # ============ 7. Block sensitive files ============
 <FilesMatch "^(\.htaccess|\.env|config\.php|composer\.(json|lock))$">

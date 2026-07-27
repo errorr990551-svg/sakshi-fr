@@ -333,6 +333,14 @@ async function runPrerender() {
     // ignore
   }
 
+  // Create 404.html fallback file in dist for web hosts expecting 404.html
+  const mainIndexHtml = path.join(__dirname, 'dist/index.html');
+  const dist404Html = path.join(__dirname, 'dist/404.html');
+  if (fs.existsSync(mainIndexHtml)) {
+    fs.copyFileSync(mainIndexHtml, dist404Html);
+    console.log('Created dist/404.html fallback file.');
+  }
+
   console.log('Static pre-rendering complete successfully!');
 }
 

@@ -27,6 +27,53 @@ missing_slugs = {
 
 def find_best_image(prod_name):
     pn = prod_name.lower()
+    exact_map = {
+        "socket weld fittings": "/socketweldfittings.png",
+        "threaded forged fittings": "/threadedforgedfittingd.png",
+        "90° elbow": "/90elbow.png",
+        "45° elbow": "/45elbow.png",
+        "street elbow": "/streetelbow.png",
+        "equal tee": "/equaltee.png",
+        "reducing tee": "/reducingtee.png",
+        "cross": "/cross.png",
+        "coupling": "/coupling.png",
+        "half coupling": "/halfcoupling.png",
+        "reducing coupling": "/reducingcoupling.png",
+        "full coupling": "/fullcoupling.png",
+        "hex nipple": "/hexnipple.png",
+        "close nipple": "/closenipple.png",
+        "barrel nipple": "/barrelnipple.png",
+        "swage nipple (concentric)": "/swagnippleconcentric.png",
+        "swage nipple (eccentric)": "/swagnippleeccentric.png",
+        "union": "/union.png",
+        "hex union": "/hexunion.png",
+        "reducing union": "/reducingunion.png",
+        "pipe cap": "/pipecap.png",
+        "hex plug": "/hexclub.png",
+        "square head plug": "/squareheadplig.png",
+        "round head plug": "/roundheadplug.png",
+        "bull plug": "/bull plug.png",
+        "bushing": "/bushing.png",
+        "hex bushing": "/hexbushing.png",
+        "reducing bushing": "/reducingbushing.png",
+        "adapter": "/adapter.png",
+        "male adapter": "/male adapter.png",
+        "female adapter": "/femaleadpater.png",
+        "boss": "/boss.png",
+        "socket weld boss": "/socketweldboss.png",
+        "threaded boss": "/threadedboss.png",
+        "bleed ring": "/bleedring.png",
+        "spacer ring": "/spacerring.png",
+        "lateral tee": "/lateraltee.png",
+        "branch outlet": "/branchoutlet.png",
+        "weldolet": "/weldolet.png"
+    }
+    if pn in exact_map:
+        return exact_map[pn]
+    for key, img_path in exact_map.items():
+        if key in pn:
+            return img_path
+
     if "electropolished pipe" in pn or "electropolished tube" in pn or "sanitary electropolished" in pn or "electropolish pipe" in pn or "honed pipe" in pn:
         return "/electropolish_pipes.webp"
     elif "electropolished 3-a" in pn or "electropolished bs" in pn or "electropolished asme" in pn:
@@ -62,6 +109,7 @@ def find_best_image(prod_name):
     elif "plate" in pn or "sheet" in pn:
         return "/shims.webp"
     return "/flanges_pipes.webp"
+
 
 # 1. Load products.json
 with open(products_json_path, "r", encoding="utf-8") as f:

@@ -5950,7 +5950,7 @@
     "H2 Outline": "1. What is Socket Weld Fittings? (definition + where it's used - 120w)\n2. Socket Weld Fittings Specifications ( the spec table)\n3. Grades & Chemical Composition (per-grade table: C, Cr, Ni, Mo %)\n4. Size Range & Dimensional Standards\n5. Manufacturing Process & Quality Testing at Sakshi Forge\n6. Applications by Industry (H3 per industry)\n7. Why Buy Socket Weld Fittings from Sakshi Forge (MTC, PMI, 30-min quote, export docs)\n8. Frequently Asked Questions (render FAQ Bank rows)\n9. Related Products (4 sibling links)",
     "Key Specs": "Specification | Value\nProduct | Socket Weld Fittings\nGrades / Materials | A182 F304/L, F316/L; A105\nSize range | 1/8\" to 4\"; 3000#/6000#/9000#\nStandards | ASME B16.11\nOrigin | Manufactured in Mumbai, India\nCertification | EN 10204 3.1 MTC (3.2 on request), PMI verified\nTesting | Hydro, ultrasonic, dye-penetrant NDT; third-party (SGS/BV/TUV) optional\nSupply condition | Ex-stock 2-4 days / made-to-order 2-4 weeks\nKey applications | Small-bore high-pressure process & instrument lines",
     "Internal Links Raw": "'Forged Fittings' -> https://steelmanufacturer.in/forged-fittings/\n'Threaded Forged Fittings' -> https://steelmanufacturer.in/forged-fittings/threaded-fittings/\n'Metal Weight Calculator' -> https://steelmanufacturer.in/weight-calculator/\n'Quality Assurance' -> https://steelmanufacturer.in/quality-assurance/",
-    "Image": "/socketweldfittings.png",
+    "Image": "/socketweldfittings.webp",
     "Image Alt Texts": "Hero: 'Socket Weld Fittings manufactured by Sakshi Forge Mumbai India'\n2: 'Socket Weld Fittings - A182 F304/L stock at Sakshi Forge warehouse'\n3: 'Socket Weld Fittings dimensional inspection with EN 10204 3.1 MTC'\nFile names: socket-weld-fittings-manufacturer-india-1.webp, -2.webp, -3.webp",
     "FAQs": [
       {
@@ -6001,7 +6001,7 @@
     "H2 Outline": "1. What is Threaded Forged Fittings? (definition + where it's used - 120w)\n2. Threaded Forged Fittings Specifications ( the spec table)\n3. Grades & Chemical Composition (per-grade table: C, Cr, Ni, Mo %)\n4. Size Range & Dimensional Standards\n5. Manufacturing Process & Quality Testing at Sakshi Forge\n6. Applications by Industry (H3 per industry)\n7. Why Buy Threaded Forged Fittings from Sakshi Forge (MTC, PMI, 30-min quote, export docs)\n8. Frequently Asked Questions (render FAQ Bank rows)\n9. Related Products (4 sibling links)",
     "Key Specs": "Specification | Value\nProduct | Threaded Forged Fittings\nGrades / Materials | A182 F304/L, F316/L; A105\nSize range | 1/8\" to 4\"; 2000#/3000#/6000#\nStandards | ASME B16.11\nOrigin | Manufactured in Mumbai, India\nCertification | EN 10204 3.1 MTC (3.2 on request), PMI verified\nTesting | Hydro, ultrasonic, dye-penetrant NDT; third-party (SGS/BV/TUV) optional\nSupply condition | Ex-stock 2-4 days / made-to-order 2-4 weeks\nKey applications | No-weld small-bore assemblies, utility stations",
     "Internal Links Raw": "'Forged Fittings' -> https://steelmanufacturer.in/forged-fittings/\n'Socket Weld Fittings' -> https://steelmanufacturer.in/forged-fittings/socket-weld-fittings/\n'Metal Weight Calculator' -> https://steelmanufacturer.in/weight-calculator/\n'Quality Assurance' -> https://steelmanufacturer.in/quality-assurance/",
-    "Image": "/threadedforgedfittingd.png",
+    "Image": "/threadedforgedfittingd.webp",
     "Image Alt Texts": "Hero: 'Threaded Forged Fittings manufactured by Sakshi Forge Mumbai India'\n2: 'Threaded Forged Fittings - A182 F304/L stock at Sakshi Forge warehouse'\n3: 'Threaded Forged Fittings dimensional inspection with EN 10204 3.1 MTC'\nFile names: threaded-forged-fittings-manufacturer-india-1.webp, -2.webp, -3.webp",
     "FAQs": [
       {
@@ -6664,7 +6664,7 @@
     "Applications": "Process Piping | Instrumentation Lines | Utility Piping | Steam & Water Lines",
     "Standards": "ASME B16.11, MSS SP-79",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/90elbow.png",
+    "Image": "/90elbow.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the 90° Elbow?",
@@ -6700,7 +6700,7 @@
     "Applications": "Process Piping | Utility Lines | Skid Piping | Water & Steam Lines",
     "Standards": "ASME B16.11, MSS SP-79",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/45elbow.png",
+    "Image": "/45elbow.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the 45° Elbow?",
@@ -6736,7 +6736,7 @@
     "Applications": "Instrumentation Hook-ups | Compact Skid Piping | Panel Piping",
     "Standards": "ASME B16.11, ASME B1.20.1",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/streetelbow.png",
+    "Image": "/streetelbow.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Street Elbow?",
@@ -6772,7 +6772,7 @@
     "Applications": "Heat Exchanger Tubing | Boiler Piping | Condenser Assemblies",
     "Standards": "ASME B16.11, MSS SP-79",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/Stainless Steel Pipe Fittings.webp",
+    "Image": "/180° Return Bend.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the 180° Return Bend?",
@@ -6808,7 +6808,7 @@
     "Applications": "Branch Piping | Header Distribution | Utility Lines",
     "Standards": "ASME B16.11, MSS SP-79",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/equaltee.png",
+    "Image": "/equaltee.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Equal Tee?",
@@ -6844,7 +6844,7 @@
     "Applications": "Branch Connections | Instrumentation Tie-ins | Header Reduction",
     "Standards": "ASME B16.11, MSS SP-79",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/reducingtee.png",
+    "Image": "/reducingtee.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Reducing Tee?",
@@ -6880,7 +6880,7 @@
     "Applications": "Header Distribution | Fire Sprinkler Systems | Multi-Directional Piping",
     "Standards": "ASME B16.11, MSS SP-79",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/cross.png",
+    "Image": "/cross.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Cross?",
@@ -6916,7 +6916,7 @@
     "Applications": "Pipe Line Extension | Repair Joints | Utility Piping",
     "Standards": "ASME B16.11, MSS SP-79",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/coupling.png",
+    "Image": "/coupling.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Coupling?",
@@ -6952,7 +6952,7 @@
     "Applications": "Instrument Nozzles | Vessel Branch Connections | Small Bore Tie-ins",
     "Standards": "ASME B16.11, MSS SP-79, MSS SP-97",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/halfcoupling.png",
+    "Image": "/halfcoupling.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Half Coupling?",
@@ -6988,7 +6988,7 @@
     "Applications": "Pipe Size Transition | Line Reduction | Utility Piping",
     "Standards": "ASME B16.11, MSS SP-79",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/reducingcoupling.png",
+    "Image": "/reducingcoupling.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Reducing Coupling?",
@@ -7024,7 +7024,7 @@
     "Applications": "High Pressure Pipe Joints | Utility Lines | Repair Connections",
     "Standards": "ASME B16.11, MSS SP-79",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/fullcoupling.png",
+    "Image": "/fullcoupling.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Full Coupling?",
@@ -7060,7 +7060,7 @@
     "Applications": "Fitting-to-Fitting Connections | Instrumentation Assemblies",
     "Standards": "ASME B16.11, MSS SP-79",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/hexnipple.png",
+    "Image": "/hexnipple.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Hex Nipple?",
@@ -7096,7 +7096,7 @@
     "Applications": "Tight Clearance Fitting Joints | Instrumentation Hook-ups",
     "Standards": "ASME B16.11, MSS SP-79, ASME B1.20.1",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/closenipple.png",
+    "Image": "/closenipple.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Close Nipple?",
@@ -7132,7 +7132,7 @@
     "Applications": "Extended Fitting Connections | Utility Piping",
     "Standards": "ASME B16.11, MSS SP-79, ASME B1.20.1",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/barrelnipple.png",
+    "Image": "/barrelnipple.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Barrel Nipple?",
@@ -7204,7 +7204,7 @@
     "Applications": "Centered Flow Pipe Reductions | Skid Piping | Header Transitions",
     "Standards": "MSS SP-95, ASME B16.11",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/swagnippleconcentric.png",
+    "Image": "/swagnippleconcentric.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Concentric Swage Nipple?",
@@ -7240,7 +7240,7 @@
     "Applications": "Pump Suction Lines | Drainage-Critical Reductions | Skid Piping",
     "Standards": "MSS SP-95, ASME B16.11",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/swagnippleeccentric.png",
+    "Image": "/swagnippleeccentric.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Eccentric Swage Nipple?",
@@ -7276,7 +7276,7 @@
     "Applications": "Serviceable Pipe Joints | Equipment Isolation Points | Maintenance-Friendly Lines",
     "Standards": "ASME B16.11, MSS SP-83",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/union.png",
+    "Image": "/union.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Union?",
@@ -7312,7 +7312,7 @@
     "Applications": "Compact Serviceable Joints | Instrumentation Piping",
     "Standards": "ASME B16.11, MSS SP-83",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/hexunion.png",
+    "Image": "/hexunion.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Hex Union?",
@@ -7348,7 +7348,7 @@
     "Applications": "Serviceable Size-Transition Joints | Equipment Tie-ins",
     "Standards": "ASME B16.11, MSS SP-83",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/reducingunion.png",
+    "Image": "/reducingunion.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Reducing Union?",
@@ -7384,7 +7384,7 @@
     "Applications": "Line Termination | Hydrostatic Test Closures | Future Tie-in Points",
     "Standards": "ASME B16.11, MSS SP-79",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/pipecap.png",
+    "Image": "/pipecap.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Pipe Cap?",
@@ -7420,7 +7420,7 @@
     "Applications": "Port Closures | Drain & Vent Plugging | Test Point Sealing",
     "Standards": "ASME B16.11, MSS SP-79",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/hexclub.png",
+    "Image": "/hexclub.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Hex Plug?",
@@ -7456,7 +7456,7 @@
     "Applications": "Port Closures | Drain & Vent Plugging | Small Bore Sealing",
     "Standards": "ASME B16.11, MSS SP-79",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/squareheadplig.png",
+    "Image": "/squareheadplig.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Square Head Plug?",
@@ -7492,7 +7492,7 @@
     "Applications": "Flush Port Closures | Panel & Manifold Plugging",
     "Standards": "ASME B16.11, MSS SP-79",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/roundheadplug.png",
+    "Image": "/roundheadplug.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Round Head Plug?",
@@ -7528,7 +7528,7 @@
     "Applications": "Pipe End Closures | Drain Line Plugging | Well Head Piping",
     "Standards": "ASME B16.11, MSS SP-79",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/bull plug.png",
+    "Image": "/bull plug.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Bull Plug?",
@@ -7564,7 +7564,7 @@
     "Applications": "Fitting Size Reduction | Instrumentation Adaptation",
     "Standards": "ASME B16.11, MSS SP-79",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/bushing.png",
+    "Image": "/bushing.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Bushing?",
@@ -7600,7 +7600,7 @@
     "Applications": "Fitting Size Reduction | Valve & Instrument Adaptation",
     "Standards": "ASME B16.11, MSS SP-79",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/hexbushing.png",
+    "Image": "/hexbushing.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Hex Bushing?",
@@ -7636,7 +7636,7 @@
     "Applications": "Multi-Step Size Reduction | Fitting-to-Fitting Adaptation",
     "Standards": "ASME B16.11, MSS SP-79",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/reducingbushing.png",
+    "Image": "/reducingbushing.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Reducing Bushing?",
@@ -7672,7 +7672,7 @@
     "Applications": "Connection Type Transitions | Retrofit Piping | Mixed-Joint Systems",
     "Standards": "ASME B16.11, MSS SP-79",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/adapter.png",
+    "Image": "/adapter.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Adapter?",
@@ -7708,7 +7708,7 @@
     "Applications": "Threaded-to-Weld Transitions | Valve & Equipment Connections",
     "Standards": "ASME B16.11, MSS SP-79",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/male adapter.png",
+    "Image": "/male adapter.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Male Adapter?",
@@ -7744,7 +7744,7 @@
     "Applications": "Threaded-to-Weld Transitions | Male-Threaded Component Connections",
     "Standards": "ASME B16.11, MSS SP-79",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/femaleadpater.png",
+    "Image": "/femaleadpater.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Female Adapter?",
@@ -7780,7 +7780,7 @@
     "Applications": "Vessel & Tank Branch Connections | Instrumentation Nozzles",
     "Standards": "MSS SP-97, ASME B16.11",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/boss.png",
+    "Image": "/boss.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Boss?",
@@ -7816,7 +7816,7 @@
     "Applications": "Small Bore Branch Connections | Instrumentation Take-offs",
     "Standards": "MSS SP-97, ASME B16.11",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/socketweldboss.png",
+    "Image": "/socketweldboss.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Socket Weld Boss?",
@@ -7852,7 +7852,7 @@
     "Applications": "Small Bore Branch Connections | Instrumentation Take-offs",
     "Standards": "MSS SP-97, ASME B16.11",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/threadedboss.png",
+    "Image": "/threadedboss.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Threaded Boss?",
@@ -7888,7 +7888,7 @@
     "Applications": "Flange Isolation Systems | Line-Break Maintenance | Pressure Venting",
     "Standards": "ASME B16.5, ASME B16.48",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/bleedring.png",
+    "Image": "/bleedring.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Bleed Ring?",
@@ -7924,7 +7924,7 @@
     "Applications": "Flange Isolation Systems | Line-Break Maintenance | Turnaround Work",
     "Standards": "ASME B16.5, ASME B16.48",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/spacerring.png",
+    "Image": "/spacerring.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Spacer Ring?",
@@ -7960,7 +7960,7 @@
     "Applications": "Angled Branch Piping | Low-Turbulence Flow Junctions",
     "Standards": "MSS SP-97, ASME B16.9",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/lateraltee.png",
+    "Image": "/lateraltee.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Lateral Tee?",
@@ -7996,7 +7996,7 @@
     "Applications": "High Pressure Branch Piping | Reinforced Tap-in Connections",
     "Standards": "MSS SP-97, ASME B16.11",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/branchoutlet.png",
+    "Image": "/branchoutlet.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Branch Outlet fitting?",
@@ -8032,7 +8032,7 @@
     "Applications": "High Pressure Branch Piping | Pipeline Tap-ins",
     "Standards": "MSS SP-97, ASME B16.9",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/weldolet.png",
+    "Image": "/weldolet.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Weldolet?",
@@ -8248,7 +8248,7 @@
     "Applications": "Small Bore Branch Connections | Instrumentation & Vent/Drain Points",
     "Standards": "MSS SP-97, ASME B16.11",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/Stainless Steel Pipe Fittings.webp",
+    "Image": "/nipolet.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Nipolet?",
@@ -8284,7 +8284,7 @@
     "Applications": "Flanged Branch Connections | Instrument & Valve Tie-ins",
     "Standards": "MSS SP-97, ASME B16.5",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/Stainless Steel Pipe Fittings.webp",
+    "Image": "/flangeolet.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Flangeolet?",
@@ -8320,7 +8320,7 @@
     "Applications": "Small Bore Branch Connections | Removable Fitting Tap-ins",
     "Standards": "MSS SP-97, ASME B16.11",
     "Available Grades": "SS 304/316, CS A105, Alloy Steel (as specified)",
-    "Image": "/Stainless Steel Pipe Fittings.webp",
+    "Image": "/coupolet.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Coupolet?",
@@ -8360,7 +8360,7 @@
     "Standards": "ASME BPE, ISO 1127, DIN 11850",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/90elbow.png",
+    "Image": "/90elbow.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished 90° Elbow?",
@@ -8400,7 +8400,7 @@
     "Standards": "ASME BPE, ISO 1127, DIN 11850",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/45elbow.png",
+    "Image": "/45elbow.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished 45° Elbow?",
@@ -8520,7 +8520,7 @@
     "Standards": "ASME BPE, ISO 1127, DIN 11850",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/equaltee.png",
+    "Image": "/equaltee.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Equal Tee?",
@@ -8560,7 +8560,7 @@
     "Standards": "ASME BPE, ISO 1127, DIN 11850",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/reducingtee.png",
+    "Image": "/reducingtee.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Reducing Tee?",
@@ -8600,7 +8600,7 @@
     "Standards": "ASME BPE, ISO 1127, DIN 11850",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/cross.png",
+    "Image": "/cross.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Cross?",
@@ -8840,7 +8840,7 @@
     "Standards": "ASME BPE, ISO 1127, DIN 11850",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/pipecap.png",
+    "Image": "/pipecap.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished End Cap?",
@@ -8920,7 +8920,7 @@
     "Standards": "ASME BPE, ISO 1127, DIN 11850",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/lateraltee.png",
+    "Image": "/lateraltee.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Lateral Tee?",
@@ -9160,7 +9160,7 @@
     "Standards": "ASME BPE, 3-A Sanitary Standards",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/cross.png",
+    "Image": "/cross.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Sanitary Cross?",
@@ -9200,7 +9200,7 @@
     "Standards": "ASME BPE, 3-A Sanitary Standards",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/pipecap.png",
+    "Image": "/pipecap.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Sanitary End Cap?",
@@ -9280,7 +9280,7 @@
     "Standards": "ASME B16.11, ASTM A182/A479",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/hexnipple.png",
+    "Image": "/hexnipple.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Hex Nipple?",
@@ -9320,7 +9320,7 @@
     "Standards": "ASME B16.11, ASTM A182/A479",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/barrelnipple.png",
+    "Image": "/barrelnipple.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Barrel Nipple?",
@@ -9360,7 +9360,7 @@
     "Standards": "MSS SP-95, ASME BPE",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/swagnippleconcentric.png",
+    "Image": "/swagnippleconcentric.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Swage Nipple?",
@@ -9400,7 +9400,7 @@
     "Standards": "ASME B16.11, MSS SP-83, ASME BPE",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/union.png",
+    "Image": "/union.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Union?",
@@ -9440,7 +9440,7 @@
     "Standards": "ASME B16.11, ASME BPE",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/coupling.png",
+    "Image": "/coupling.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Coupling?",
@@ -9480,7 +9480,7 @@
     "Standards": "ASME B16.11, MSS SP-97, ASME BPE",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/halfcoupling.png",
+    "Image": "/halfcoupling.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Half Coupling?",
@@ -9520,7 +9520,7 @@
     "Standards": "ASME B16.11, ASME BPE",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/fullcoupling.png",
+    "Image": "/fullcoupling.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Full Coupling?",
@@ -9560,7 +9560,7 @@
     "Standards": "ASME B16.11, ASME BPE",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/coupling.png",
+    "Image": "/coupling.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Reducer Coupling?",
@@ -9640,7 +9640,7 @@
     "Standards": "ASME BPE, ISO 2852, ASME B16.11",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/adapter.png",
+    "Image": "/adapter.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Adapter?",
@@ -9680,7 +9680,7 @@
     "Standards": "ASME BPE, ISO 2852, ASME B16.11",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/male adapter.png",
+    "Image": "/male adapter.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Male Adapter?",
@@ -9720,7 +9720,7 @@
     "Standards": "ASME BPE, ISO 2852, ASME B16.11",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/femaleadpater.png",
+    "Image": "/femaleadpater.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Female Adapter?",
@@ -9760,7 +9760,7 @@
     "Standards": "ASME BPE, ISO 2852",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/adapter.png",
+    "Image": "/adapter.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Hose Adapter?",
@@ -10120,7 +10120,7 @@
     "Standards": "ASME BPE, ISO 2852",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/pipecap.png",
+    "Image": "/pipecap.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Blind Cap?",
@@ -10200,7 +10200,7 @@
     "Standards": "ASME B16.11, ASME BPE",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/hexclub.png",
+    "Image": "/hexclub.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Hex Plug?",
@@ -10240,7 +10240,7 @@
     "Standards": "ASME B16.11, ASME BPE",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/squareheadplig.png",
+    "Image": "/squareheadplig.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Square Plug?",
@@ -10280,7 +10280,7 @@
     "Standards": "ASME B16.11, ASME BPE",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/bushing.png",
+    "Image": "/bushing.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Bushing?",
@@ -10320,7 +10320,7 @@
     "Standards": "ASME B16.11, ASME BPE",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/hexbushing.png",
+    "Image": "/hexbushing.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Hex Bushing?",
@@ -10360,7 +10360,7 @@
     "Standards": "MSS SP-97, ASME BPE",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/branchoutlet.png",
+    "Image": "/branchoutlet.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Olet?",
@@ -10400,7 +10400,7 @@
     "Standards": "MSS SP-97, ASME BPE",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/weldolet.png",
+    "Image": "/weldolet.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Weldolet?",
@@ -10440,7 +10440,7 @@
     "Standards": "MSS SP-97, ASME BPE",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/branchoutlet.png",
+    "Image": "/branchoutlet.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Sockolet?",
@@ -10480,7 +10480,7 @@
     "Standards": "MSS SP-97, ASME BPE",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/branchoutlet.png",
+    "Image": "/branchoutlet.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Threadolet?",
@@ -10520,7 +10520,7 @@
     "Standards": "MSS SP-97, ASME BPE",
     "Available Grades": "SS 316L / 316, SS 304L (as specified)",
     "CTA": "Get a Quote",
-    "Image": "/branchoutlet.png",
+    "Image": "/branchoutlet.webp",
     "FAQs": [
       {
         "q": "What are the specifications of the Electropolished Elbolet?",

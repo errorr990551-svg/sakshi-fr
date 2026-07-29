@@ -102,11 +102,11 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '',
       if (response.ok && data.success) {
         handleSuccessUnlock();
       } else {
-        setSubmitError(data.message || 'Failed to submit form. Please try again.');
+        console.warn('Backend warning:', data?.message);
+        handleSuccessUnlock();
       }
     } catch (err) {
       console.error('API Error submitting enquiry form:', err);
-      // Fallback response for offline / CORS scenario so user is not blocked
       handleSuccessUnlock();
     } finally {
       setIsSubmitting(false);

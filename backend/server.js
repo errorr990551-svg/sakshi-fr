@@ -44,21 +44,25 @@ app.post("/api/contact", async (c) => {
 
     const apiKey = c.env?.RESEND_API_KEY || process.env.RESEND_API_KEY;
 
-    await sendMail({
-      to: "sakshiforge1737@gmail.com",
-      cc: ["akshat99055@gmail.com", "errorr990551@gmail.com"],
-      subject: "New Contact Us Enquiry",
-      html: `
-        <h2>New Contact Enquiry</h2>
-        <p><b>Name:</b> ${name}</p>
-        <p><b>Email:</b> ${email}</p>
-        <p><b>Phone:</b> ${phone}</p>
-        <p><b>Location:</b> ${location || "Not Provided"}</p>
-        <p><b>Company:</b> ${company || "Not Provided"}</p>
-        <p><b>Message:</b><br/>${message}</p>
-      `,
-      apiKey,
-    });
+    try {
+      await sendMail({
+        to: "sakshiforge1737@gmail.com",
+        cc: ["akshat99055@gmail.com", "errorr990551@gmail.com"],
+        subject: "New Contact Us Enquiry",
+        html: `
+          <h2>New Contact Enquiry</h2>
+          <p><b>Name:</b> ${name}</p>
+          <p><b>Email:</b> ${email}</p>
+          <p><b>Phone:</b> ${phone}</p>
+          <p><b>Location:</b> ${location || "Not Provided"}</p>
+          <p><b>Company:</b> ${company || "Not Provided"}</p>
+          <p><b>Message:</b><br/>${message}</p>
+        `,
+        apiKey,
+      });
+    } catch (emailErr) {
+      console.error("Failed to send contact email:", emailErr);
+    }
 
     return c.json({
       success: true,

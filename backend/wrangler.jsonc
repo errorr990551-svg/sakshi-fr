@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "sakshi-backend",
+  "name": "sakshi-fr",
   "main": "server.js",
   "compatibility_date": "2024-09-23",
   "compatibility_flags": [

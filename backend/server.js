@@ -62,6 +62,10 @@ app.post("/api/contact", async (c) => {
       });
     } catch (emailErr) {
       console.error("Failed to send contact email:", emailErr);
+      return c.json(
+        { success: false, message: `Failed to send email: ${emailErr.message || "Email error"}` },
+        500
+      );
     }
 
     return c.json({
@@ -199,11 +203,16 @@ app.onError((err, c) => {
   return c.json({ success: false, message: err.message || "Internal Server Error" }, 500);
 });
 
-// Export default app for Cloudflare Workers
+// Export default app for Cloudflare Workers / Wrangler
 export default app;
 
-// Local development server with Node
-if (process.env.NODE_ENV !== "production" && !process.env.CF_PAGES) {
+// Local development server only when run directly with Node.js (e.g. `node server.js`)
+if (
+  typeof process !== "undefined" &&
+  process.argv &&
+  process.argv[1] &&
+  process.argv[1].replace(/\\/g, "/").endsWith("server.js")
+) {
   const PORT = process.env.PORT || 4000;
   serve({ fetch: app.fetch, port: Number(PORT) }, (info) => {
     console.log(`🚀 Sakshi Forge Server running on http://localhost:${info.port}`);

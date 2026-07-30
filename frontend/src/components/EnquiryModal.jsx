@@ -102,12 +102,11 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '',
       if (response.ok && data.success) {
         handleSuccessUnlock();
       } else {
-        console.warn('Backend warning:', data?.message);
-        handleSuccessUnlock();
+        setSubmitError(data?.message || 'Failed to submit enquiry. Please try again.');
       }
     } catch (err) {
       console.error('API Error submitting enquiry form:', err);
-      handleSuccessUnlock();
+      setSubmitError('Unable to connect to server. Please check your connection and try again.');
     } finally {
       setIsSubmitting(false);
     }

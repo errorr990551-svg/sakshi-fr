@@ -11,6 +11,10 @@
 # production
 /build
 
+# wrangler
+.wrangler
+/.wrangler
+
 # misc
 .DS_Store
 .env.local

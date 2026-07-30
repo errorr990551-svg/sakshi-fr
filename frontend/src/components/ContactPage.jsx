@@ -15,11 +15,14 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
+  const [errorMsg, setErrorMsg] = useState('');
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+    setErrorMsg('');
     try {
-      await fetch(`${API_BASE_URL}/api/contact`, {
+      const res = await fetch(`${API_BASE_URL}/api/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -31,14 +34,19 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
           message: formData.message || `Enquiry for ${formData.product || 'General'}`
         })
       });
-      setSuccess(true);
-      setTimeout(() => {
-        setSuccess(false);
-        setFormData({ name: '', email: '', phone: '', company: '', product: '', message: '' });
-      }, 5000);
+      const data = await res.json();
+      if (res.ok && data.success) {
+        setSuccess(true);
+        setTimeout(() => {
+          setSuccess(false);
+          setFormData({ name: '', email: '', phone: '', company: '', product: '', message: '' });
+        }, 5000);
+      } else {
+        setErrorMsg(data.message || 'Failed to send enquiry. Please try again.');
+      }
     } catch (err) {
       console.error('Failed submitting contact page form:', err);
-      setSuccess(true);
+      setErrorMsg('Unable to send enquiry. Please check your network connection.');
     } finally {
       setLoading(false);
     }
@@ -180,6 +188,20 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
             <div style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '12px', padding: '2.5rem' }}>
               <h3 style={{ fontSize: '1.5rem', fontWeight: '800', marginBottom: '1.5rem' }}>Request a Quote</h3>
               
+              {errorMsg && (
+                <div style={{
+                  backgroundColor: 'rgba(239, 68, 68, 0.1)',
+                  border: '1px solid #ef4444',
+                  color: '#ef4444',
+                  padding: '0.8rem 1rem',
+                  borderRadius: '6px',
+                  marginBottom: '1rem',
+                  fontSize: '0.9rem'
+                }}>
+                  {errorMsg}
+                </div>
+              )}
+
               {success ? (
                 <div style={{
                   backgroundColor: 'rgba(255, 193, 7, 0.05)',

@@ -2,14 +2,14 @@ import { Resend } from "resend";
 
 export const sendMail = async ({ to, cc, subject, html, attachments = [], apiKey }) => {
   try {
-    const key = apiKey || process.env.RESEND_API_KEY;
+    const key = apiKey || (typeof process !== "undefined" ? process.env?.RESEND_API_KEY : undefined);
     if (!key) {
       throw new Error("RESEND_API_KEY environment variable is missing.");
     }
 
     const resend = new Resend(key);
 
-    const data = await resend.emails.send({
+    const response = await resend.emails.send({
       from: "SAKSHI <no-reply@inquiry.errorr.in>",
       to: Array.isArray(to) ? to : [to],
       cc: cc
@@ -25,8 +25,13 @@ export const sendMail = async ({ to, cc, subject, html, attachments = [], apiKey
       })),
     });
 
-    console.log("Resend email sent successfully:", data);
-    return data;
+    if (response.error) {
+      console.error("Resend API Error:", response.error);
+      throw new Error(response.error.message || JSON.stringify(response.error));
+    }
+
+    console.log("Resend email sent successfully:", response.data);
+    return response.data;
   } catch (error) {
     console.error("RESEND ERROR:", error);
     throw error;

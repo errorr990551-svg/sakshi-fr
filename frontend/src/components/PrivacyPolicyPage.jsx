@@ -31,9 +31,9 @@ export default function PrivacyPolicyPage() {
             Sakshi Forge collects minimal contact details (name, email address, telephone number, and company name) supplied voluntarily via our Request for Quote (RFQ) forms. We process this data solely to submit commercial steel quotations and fulfill shipping orders.
           </p>
 
-          <h3 style={{ color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '0.5rem', fontSize: '1.25rem' }}>2. Consent & Consent Mode v2</h3>
+          <h3 style={{ color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '0.5rem', fontSize: '1.25rem' }}>2. Consent & Web Analytics</h3>
           <p>
-            By submitting an RFQ or using our cookies consent tool, you agree to our processing. We support Google Consent Mode v2; analytics codes (such as GA4) are fired only after you explicitly click "Accept" on our Cookie consent banner.
+            By submitting an RFQ or using our cookies consent tool, you agree to our processing. We utilize <strong>Google Analytics (GA4/GTM)</strong> and <strong>Microsoft Clarity</strong> to analyze website behavior through heatmaps, session replays, and usage statistics to improve user experience. We support Google Consent Mode v2 and respect your preferences; non-essential analytics and tracking storage are active only after you explicitly click "Accept" on our Cookie consent banner.
           </p>
 
           <h3 style={{ color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '0.5rem', fontSize: '1.25rem' }}>3. Data Storage & Security</h3>

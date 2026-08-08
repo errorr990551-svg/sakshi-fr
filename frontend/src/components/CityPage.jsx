@@ -253,11 +253,7 @@ export default function CityPage({ cityData, onEnquireClick }) {
     return { title, standard, tag };
   };
 
-  // Generate WhatsApp message link
-  const whatsappUrl = useMemo(() => {
-    const text = `Hello Sakshi Forge, I would like to request a quotation for electropolished pipes for delivery to ${cityData.city}, ${cityData.state}.`;
-    return `https://wa.me/918291366340?text=${encodeURIComponent(text)}`;
-  }, [cityData.city, cityData.state]);
+
 
   return (
     <div className="city-page-wrapper" style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '2rem', paddingTop: '5.5rem' }}>
@@ -345,34 +341,7 @@ export default function CityPage({ cityData, onEnquireClick }) {
                 Request Localized Quote
               </button>
               
-              <a 
-                href={whatsappUrl} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="btn btn-secondary btn-lg" 
-                style={{ 
-                  borderColor: '#10b981', 
-                  color: '#10b981', 
-                  backgroundColor: 'rgba(16, 185, 129, 0.05)',
-                  display: 'inline-flex', 
-                  alignItems: 'center', 
-                  gap: '0.6rem',
-                  padding: '1rem 2rem',
-                  fontSize: '0.95rem',
-                  fontWeight: '700'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = '#10b981';
-                  e.currentTarget.style.color = '#ffffff';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = 'rgba(16, 185, 129, 0.05)';
-                  e.currentTarget.style.color = '#10b981';
-                }}
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                WhatsApp Inquiry
-              </a>
+
             </div>
           </div>
 
@@ -768,34 +737,7 @@ export default function CityPage({ cityData, onEnquireClick }) {
                 Submit RFQ Form
               </button>
               
-              <a 
-                href={whatsappUrl} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="btn btn-secondary btn-lg" 
-                style={{ 
-                  borderColor: '#25D366', 
-                  color: '#25D366', 
-                  backgroundColor: 'rgba(37, 211, 102, 0.05)',
-                  display: 'inline-flex', 
-                  alignItems: 'center', 
-                  gap: '0.6rem',
-                  padding: '1rem 2.25rem',
-                  fontSize: '0.95rem',
-                  fontWeight: '750'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = '#25D366';
-                  e.currentTarget.style.color = '#ffffff';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = 'rgba(37, 211, 102, 0.05)';
-                  e.currentTarget.style.color = '#25D366';
-                }}
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                WhatsApp Sales Desk
-              </a>
+
 
               <a 
                 href="mailto:sakshiforge1737@gmail.com" 

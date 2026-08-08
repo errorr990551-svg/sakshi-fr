@@ -5,10 +5,6 @@ import { handleLinkClick } from '../utils/router';
 export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact = false, onShowContactDetails }) {
   const currentYear = new Date().getFullYear();
 
-  const handleProductsLink = (e) => {
-    handleLinkClick(e, '/products');
-  };
-
   return (
     <footer className="footer-sec">
       <div className="container">
@@ -25,7 +21,7 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
               <span className="logo-text">Sakshi <span>Forge</span></span>
             </a>
             <p>
-              Sakshi Forge is a leading manufacturer and supplier of industrial flanges, butt weld fittings, forged fittings, pipes, tubes, round bars, and steel plates. We deliver precision-engineered steel products designed for strength, durability, and reliable industrial performance.
+              Sakshi Forge is an ISO 9001:2015 certified manufacturer of industrial flanges, forged fittings, electropolished pipes, round bars, and stainless steel components in Mumbai, India. Delivering 100% PMI-tested metallurgy with EN 10204 3.1 MTCs globally.
             </p>
 
             {hasUnlockedContact ? (
@@ -48,13 +44,6 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
                   <span style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>
                     <strong>Office Address:</strong><br />
                     113 / 117, Dr. M. G. Mahimtura Marg, 3rd Kumbharwada, Shop No. 5, Ground Floor, Mumbai - 400 004.
-                  </span>
-                </div>
-                <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', color: 'var(--text-secondary)' }}>
-                  <MapPin size={16} className="infra-feature-icon" style={{ flexShrink: 0, marginTop: '0.2rem' }} />
-                  <span style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>
-                    <strong>Factory Address:</strong><br />
-                    Balaji Industrial Compound, Taloja MIDC
                   </span>
                 </div>
               </div>
@@ -81,42 +70,45 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
             )}
           </div>
 
+          {/* Key Product Hubs */}
           <div className="footer-col">
-            <h4>Menu</h4>
+            <h4>Products & Standards</h4>
             <ul className="footer-links">
-              <li><a href="/" onClick={(e) => handleLinkClick(e, '/')}>Home</a></li>
-              <li><a href="/about-us" onClick={(e) => handleLinkClick(e, '/about-us')}>About Us</a></li>
-              <li><a href="/products" onClick={handleProductsLink}>Products Catalog</a></li>
-              <li><a href="/quality-assurance" onClick={(e) => handleLinkClick(e, '/quality-assurance')}>Quality Assurance</a></li>
-              <li><a href="/weight-calculator" onClick={(e) => handleLinkClick(e, '/weight-calculator')}>Weight Calculator</a></li>
-              <li><a href="/contact-us" onClick={(e) => handleLinkClick(e, '/contact-us')}>Contact Us</a></li>
+              <li><a href="/flanges" onClick={(e) => handleLinkClick(e, '/flanges')}>Industrial Flanges Hub</a></li>
+              <li><a href="/forged-fittings" onClick={(e) => handleLinkClick(e, '/forged-fittings')}>Forged Steel Fittings</a></li>
+              <li><a href="/electropolished-pipes" onClick={(e) => handleLinkClick(e, '/electropolished-pipes')}>Electropolished Pipes</a></li>
+              <li><a href="/stainless-steel-round-bar" onClick={(e) => handleLinkClick(e, '/stainless-steel-round-bar')}>SS Round Bars & Rods</a></li>
+              <li><a href="/stainless-steel-elbow" onClick={(e) => handleLinkClick(e, '/stainless-steel-elbow')}>SS Elbows (45°/90°/180°)</a></li>
+              <li><a href="/asme-b16-11-forged-fittings" onClick={(e) => handleLinkClick(e, '/asme-b16-11-forged-fittings')}>ASME B16.11 Standard</a></li>
+              <li><a href="/asme-b16-5-flanges" onClick={(e) => handleLinkClick(e, '/asme-b16-5-flanges')}>ASME B16.5 Standard</a></li>
             </ul>
           </div>
 
+          {/* Engineering Tools & Trust */}
           <div className="footer-col">
-            <h4>Useful Links</h4>
+            <h4>Tools & Company</h4>
             <ul className="footer-links">
-              <li><a href="/terms-and-conditions" onClick={(e) => handleLinkClick(e, '/terms-and-conditions')}>Terms & Conditions</a></li>
-              <li><a href="/privacy-policy" onClick={(e) => handleLinkClick(e, '/privacy-policy')}>Privacy Policy</a></li>
-              <li><a href="/certifications" onClick={(e) => handleLinkClick(e, '/certifications')}>Certifications</a></li>
-              <li><a href="/blog" onClick={(e) => handleLinkClick(e, '/blog')}>Technical Blog</a></li>
-              <li><a href="/market-area" onClick={(e) => handleLinkClick(e, '/market-area')}>Market Area</a></li>
+              <li><a href="/flange-dimension-chart" onClick={(e) => handleLinkClick(e, '/flange-dimension-chart')}>Flange Dimension Chart</a></li>
+              <li><a href="/flange-weight-chart" onClick={(e) => handleLinkClick(e, '/flange-weight-chart')}>Flange Weight Chart</a></li>
+              <li><a href="/flange-bolt-chart" onClick={(e) => handleLinkClick(e, '/flange-bolt-chart')}>Flange Bolt Chart</a></li>
+              <li><a href="/pipe-schedule-chart" onClick={(e) => handleLinkClick(e, '/pipe-schedule-chart')}>Pipe Schedule Chart</a></li>
+              <li><a href="/catalogue" onClick={(e) => handleLinkClick(e, '/catalogue')}>Download Catalogue PDF</a></li>
+              <li><a href="/team" onClick={(e) => handleLinkClick(e, '/team')}>Leadership & QA Team</a></li>
+              <li><a href="/clients" onClick={(e) => handleLinkClick(e, '/clients')}>Our Clients & Industries</a></li>
             </ul>
           </div>
 
+          {/* Key Cities We Serve */}
           <div className="footer-col">
-            <h4>Follow Us</h4>
-            <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', marginBottom: '1.25rem' }}>
-              Stay updated with our latest metal pricing, inventory additions, and mill expansions.
-            </p>
-            <div className="footer-socials">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon-link" aria-label="Follow us on Instagram">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon-link" aria-label="Follow us on LinkedIn">
-                <Globe size={20} />
-              </a>
-            </div>
+            <h4>Top Cities Served</h4>
+            <ul className="footer-links">
+              <li><a href="/electropolished-pipes-manufacturer-in-mumbai" onClick={(e) => handleLinkClick(e, '/electropolished-pipes-manufacturer-in-mumbai')}>Mumbai Flange Supplier</a></li>
+              <li><a href="/electropolished-pipes-manufacturer-in-delhi" onClick={(e) => handleLinkClick(e, '/electropolished-pipes-manufacturer-in-delhi')}>Delhi NCR Steel Supply</a></li>
+              <li><a href="/electropolished-pipes-manufacturer-in-hyderabad" onClick={(e) => handleLinkClick(e, '/electropolished-pipes-manufacturer-in-hyderabad')}>Hyderabad Pharma Piping</a></li>
+              <li><a href="/electropolished-pipes-manufacturer-in-visakhapatnam" onClick={(e) => handleLinkClick(e, '/electropolished-pipes-manufacturer-in-visakhapatnam')}>Visakhapatnam Port Supply</a></li>
+              <li><a href="/electropolished-pipes-manufacturer-in-indore" onClick={(e) => handleLinkClick(e, '/electropolished-pipes-manufacturer-in-indore')}>Indore MP Flanges</a></li>
+              <li><a href="/market-area" onClick={(e) => handleLinkClick(e, '/market-area')}>All 50+ Cities Directory</a></li>
+            </ul>
           </div>
 
         </div>
@@ -126,6 +118,7 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
           <div className="footer-bottom-links">
             <a href="/sitemap.xml" target="_blank">Sitemap</a>
             <a href="/privacy-policy" onClick={(e) => handleLinkClick(e, '/privacy-policy')}>Privacy Policy</a>
+            <a href="/terms-and-conditions" onClick={(e) => handleLinkClick(e, '/terms-and-conditions')}>Terms & Conditions</a>
           </div>
         </div>
       </div>

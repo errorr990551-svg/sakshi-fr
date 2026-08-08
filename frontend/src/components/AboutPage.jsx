@@ -189,6 +189,22 @@ export default function AboutPage({ onEnquireClick }) {
               <p className="about-p" style={{ marginBottom: '0' }}>
                 At Sakshi Forge, we understand the importance of dimensional accuracy, material integrity, and on-time delivery. Our team works closely with clients to provide customized solutions that align with project requirements while ensuring compliance with national and international standards.
               </p>
+
+              {/* Brand Identity & Non-Affiliation Disclaimer Block */}
+              <div style={{ 
+                marginTop: '2rem', 
+                padding: '1.25rem', 
+                backgroundColor: 'var(--bg-dark-900)', 
+                border: '1px solid var(--border-color)', 
+                borderRadius: '8px', 
+                fontSize: '0.875rem',
+                color: 'var(--text-secondary)' 
+              }}>
+                <strong style={{ color: 'var(--primary-yellow)', display: 'block', marginBottom: '0.35rem' }}>
+                  Important Corporate Identity Notice:
+                </strong>
+                Sakshi Forge is headquartered in <strong>Mumbai, Maharashtra (GST registered)</strong>, specializing in industrial forged flanges, pipe fittings, and electropolished tubing. Please note that Sakshi Forge (Mumbai) is an independent manufacturer and is <strong>not affiliated with Sakshi Tube Fitting (Digha) or Sakshi Metal Industries (Ahmedabad)</strong>.
+              </div>
             </div>
 
             <div className="about-right">

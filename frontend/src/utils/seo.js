@@ -129,7 +129,7 @@ export function updateSEO({ type, data }) {
     title = "Sakshi Forge | India Cities We Serve - Electropolished Pipes & Fittings Supply";
     metaDesc = "Explore the commercial and industrial cities served by Sakshi Forge across India. High-quality electropolished pipes and industrial steel supply.";
     keywords = "market area, industrial cities, sakshi forge locations, steel pipes supply India";
-    canonicalUrl = `${BASE_URL}/market-area`;
+    canonicalUrl = `${BASE_URL}/market-area/`;
     robots = "index, follow";
   } else if (type === "market-city" && data) {
     title = data.pageTitle || title;
@@ -137,6 +137,42 @@ export function updateSEO({ type, data }) {
     keywords = data.primaryKeyword ? (data.topSecondaryKeywords ? `${data.primaryKeyword}, ${data.topSecondaryKeywords}` : data.primaryKeyword) : keywords;
     canonicalUrl = `${BASE_URL}${data.path}`;
     robots = "index, follow";
+  } else if (type === "clients") {
+    title = "Our Clients & Industries | Sakshi Forge";
+    metaDesc = "Sakshi Forge supplies ISO 9001:2015 certified flanges, forged fittings, and pipes to oil & gas, pharma, and marine projects worldwide.";
+    canonicalUrl = `${BASE_URL}/clients/`;
+  } else if (type === "catalogue") {
+    title = "Download Product Catalogue (PDF) | Sakshi Forge";
+    metaDesc = "Download official Sakshi Forge catalogue with ASME B16.5 flange dimension tables, forged fitting pressure ratings, and MTC formats.";
+    canonicalUrl = `${BASE_URL}/catalogue/`;
+  } else if (type === "team") {
+    title = "Leadership & Engineering Team | Sakshi Forge";
+    metaDesc = "Meet Sakshi Forge metallurgists, QA auditors, and leadership team delivering PMI-tested industrial steel products.";
+    canonicalUrl = `${BASE_URL}/team/`;
+  } else if (type === "stainless-steel-elbow") {
+    title = "SS Elbow Manufacturer: 45°, 90°, 180° | Sakshi Forge";
+    metaDesc = "ASME B16.9 buttweld and ASME B16.11 forged elbows in SS 304, 316L, and Duplex. 30-minute quotes.";
+    canonicalUrl = `${BASE_URL}/stainless-steel-elbow/`;
+  } else if (type === "grade" && data) {
+    title = data.title;
+    metaDesc = data.desc;
+    canonicalUrl = `${BASE_URL}/${data.slug}/`;
+  } else if (type === "standard" && data) {
+    title = data.title;
+    metaDesc = data.desc;
+    canonicalUrl = `${BASE_URL}/${data.slug}/`;
+  } else if (type === "chart-tool" && data) {
+    title = data.title || "Engineering Tool | Sakshi Forge";
+    metaDesc = data.desc || "Interactive flange and pipe dimension chart.";
+    canonicalUrl = `${BASE_URL}/${data.slug}/`;
+  } else if (type === "export" && data) {
+    title = data.title;
+    metaDesc = data.desc;
+    canonicalUrl = `${BASE_URL}/${data.slug}/`;
+  }
+
+  if (canonicalUrl && !canonicalUrl.endsWith('/')) {
+    canonicalUrl = `${canonicalUrl}/`;
   }
 
   const cleanDash = (str) => {

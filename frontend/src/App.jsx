@@ -31,6 +31,16 @@ import MarketAreaPage from './components/MarketAreaPage';
 import CityPage from './components/CityPage';
 import marketCitiesData from './data/market_cities.json';
 
+import ClientsPage from './components/ClientsPage';
+import CataloguePage from './components/CataloguePage';
+import TeamPage from './components/TeamPage';
+import GradePage from './components/GradePage';
+import StandardPage from './components/StandardPage';
+import ChartToolsPage from './components/ChartToolsPage';
+import ExportPage from './components/ExportPage';
+import ElbowProductPage from './components/ElbowProductPage';
+import { gradePages, standardPages } from './data/seo_master_data';
+
 
 function App(props) {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -156,14 +166,42 @@ function App(props) {
     if (cleanPath === '/market-area') {
       return { type: 'market-area', data: null };
     }
+    if (cleanPath === '/clients') {
+      return { type: 'clients', data: null };
+    }
+    if (cleanPath === '/catalogue') {
+      return { type: 'catalogue', data: null };
+    }
+    if (cleanPath === '/team') {
+      return { type: 'team', data: null };
+    }
+    if (cleanPath === '/stainless-steel-elbow') {
+      return { type: 'stainless-steel-elbow', data: null };
+    }
     
-    // Check if matching city path e.g. /electropolished-pipes-manufacturer-in-mumbai
-    const matchedCity = marketCitiesData.find(c => c.path === cleanPath);
-    if (matchedCity) {
-      return { type: 'market-city', data: matchedCity };
+    // Check chart tool slugs
+    if (['/flange-dimension-chart', '/flange-weight-chart', '/flange-bolt-chart', '/pipe-schedule-chart'].includes(cleanPath)) {
+      const toolType = cleanPath.substring(1);
+      return { type: 'chart-tool', data: { toolType, slug: toolType } };
+    }
+
+    // Check export slugs
+    if (['/flange-exporter-usa', '/flange-supplier-uae', '/flange-supplier-saudi-arabia'].includes(cleanPath)) {
+      const countryType = cleanPath === '/flange-exporter-usa' ? 'usa' : cleanPath === '/flange-supplier-uae' ? 'uae' : 'saudi-arabia';
+      return { type: 'export', data: { countryType, slug: cleanPath.substring(1) } };
     }
 
     const slug = cleanPath.substring(1);
+
+    // Check grade pages
+    if (gradePages[slug]) {
+      return { type: 'grade', data: gradePages[slug] };
+    }
+
+    // Check standard pages
+    if (standardPages[slug]) {
+      return { type: 'standard', data: standardPages[slug] };
+    }
     
     // Check if matching category slug
     const category = categoriesData.find(c => c['Category Slug'] === slug);
@@ -300,6 +338,38 @@ function App(props) {
           cityData={resolvedRoute.data} 
           onEnquireClick={handleOpenEnquiry} 
         />
+      )}
+
+      {resolvedRoute.type === 'clients' && (
+        <ClientsPage onEnquireClick={handleOpenEnquiry} />
+      )}
+
+      {resolvedRoute.type === 'catalogue' && (
+        <CataloguePage onEnquireClick={handleOpenEnquiry} />
+      )}
+
+      {resolvedRoute.type === 'team' && (
+        <TeamPage onEnquireClick={handleOpenEnquiry} />
+      )}
+
+      {resolvedRoute.type === 'stainless-steel-elbow' && (
+        <ElbowProductPage onEnquireClick={handleOpenEnquiry} />
+      )}
+
+      {resolvedRoute.type === 'grade' && (
+        <GradePage gradeData={resolvedRoute.data} onEnquireClick={handleOpenEnquiry} />
+      )}
+
+      {resolvedRoute.type === 'standard' && (
+        <StandardPage standardData={resolvedRoute.data} onEnquireClick={handleOpenEnquiry} />
+      )}
+
+      {resolvedRoute.type === 'chart-tool' && (
+        <ChartToolsPage toolType={resolvedRoute.data.toolType} onEnquireClick={handleOpenEnquiry} />
+      )}
+
+      {resolvedRoute.type === 'export' && (
+        <ExportPage countryType={resolvedRoute.data.countryType} onEnquireClick={handleOpenEnquiry} />
       )}
 
 

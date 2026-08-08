@@ -88,8 +88,9 @@ async function runPrerender() {
 
   // Market Cities pages
   marketCities.forEach(c => {
+    const cleanPath = c.path.endsWith('/') ? c.path : `${c.path}/`;
     routes.push({
-      url: `${BASE_URL}${c.path}`,
+      url: `${BASE_URL}${cleanPath}`,
       type: 'market-city',
       slug: c.path.substring(1), // remove starting slash
       title: c.pageTitle,
@@ -99,6 +100,32 @@ async function runPrerender() {
       data: c
     });
   });
+
+  // Workbook New Pages & Tools
+  const extraPages = [
+    { url: `${BASE_URL}/clients/`, type: 'clients', slug: 'clients', title: 'Our Clients & Industries | Sakshi Forge', description: 'Sakshi Forge supplies ISO 9001:2015 certified flanges and fittings globally.', data: null },
+    { url: `${BASE_URL}/catalogue/`, type: 'catalogue', slug: 'catalogue', title: 'Download Product Catalogue (PDF) | Sakshi Forge', description: 'Download official Sakshi Forge catalogue with ASME B16.5 flange dimension tables.', data: null },
+    { url: `${BASE_URL}/team/`, type: 'team', slug: 'team', title: 'Leadership & Engineering Team | Sakshi Forge', description: 'Meet Sakshi Forge metallurgists and QA team.', data: null },
+    { url: `${BASE_URL}/stainless-steel-elbow/`, type: 'stainless-steel-elbow', slug: 'stainless-steel-elbow', title: 'SS Elbow Manufacturer: 45°, 90°, 180° | Sakshi Forge', description: 'ASME B16.9 buttweld and B16.11 forged elbows.', data: null },
+    { url: `${BASE_URL}/ss-304-pipe-fittings-flanges/`, type: 'grade', slug: 'ss-304-pipe-fittings-flanges', title: 'SS 304/304L Pipes, Fittings & Flanges | Sakshi Forge', description: 'Stainless Steel 304 / 304L Products.', data: null },
+    { url: `${BASE_URL}/ss-316-316l-pipe-fittings-flanges/`, type: 'grade', slug: 'ss-316-316l-pipe-fittings-flanges', title: 'SS 316/316L Pipes, Fittings & Flanges | Sakshi Forge', description: 'Stainless Steel 316 / 316L Products.', data: null },
+    { url: `${BASE_URL}/duplex-2205-products/`, type: 'grade', slug: 'duplex-2205-products', title: 'Duplex 2205 Flanges & Fittings | Sakshi Forge', description: 'Duplex 2205 Products.', data: null },
+    { url: `${BASE_URL}/super-duplex-2507-products/`, type: 'grade', slug: 'super-duplex-2507-products', title: 'Super Duplex 2507 Products | Sakshi Forge', description: 'Super Duplex 2507 Products.', data: null },
+    { url: `${BASE_URL}/inconel-625-flanges/`, type: 'grade', slug: 'inconel-625-flanges', title: 'Inconel 625 Flanges Supplier | Sakshi Forge', description: 'Inconel 625 Forged Flanges.', data: null },
+    { url: `${BASE_URL}/asme-b16-11-forged-fittings/`, type: 'standard', slug: 'asme-b16-11-forged-fittings', title: 'ASME B16.11 Forged Fittings: Classes & Dimensions', description: 'ASME B16.11 Forged Fittings.', data: null },
+    { url: `${BASE_URL}/asme-b16-5-flanges/`, type: 'standard', slug: 'asme-b16-5-flanges', title: 'ASME B16.5 Flanges: Classes 150-2500 & Dimensions', description: 'ASME B16.5 Flanges.', data: null },
+    { url: `${BASE_URL}/astm-a105-flanges/`, type: 'standard', slug: 'astm-a105-flanges', title: 'ASTM A105 Carbon Steel Flanges Manufacturer', description: 'ASTM A105 Carbon Steel Flanges.', data: null },
+    { url: `${BASE_URL}/astm-a270-sanitary-tube/`, type: 'standard', slug: 'astm-a270-sanitary-tube', title: 'ASTM A270 Sanitary Tubes | EP & BA Finish', description: 'ASTM A270 Sanitary Tubing.', data: null },
+    { url: `${BASE_URL}/flange-dimension-chart/`, type: 'chart-tool', slug: 'flange-dimension-chart', title: 'ASME B16.5 Flange Dimension Chart', description: 'Flange dimension chart.', data: { toolType: 'flange-dimension-chart' } },
+    { url: `${BASE_URL}/flange-weight-chart/`, type: 'chart-tool', slug: 'flange-weight-chart', title: 'Flange Weight Chart & Calculator', description: 'Flange weight chart.', data: { toolType: 'flange-weight-chart' } },
+    { url: `${BASE_URL}/flange-bolt-chart/`, type: 'chart-tool', slug: 'flange-bolt-chart', title: 'Flange Bolt Chart: Size, Qty & Torque', description: 'Flange bolt chart.', data: { toolType: 'flange-bolt-chart' } },
+    { url: `${BASE_URL}/pipe-schedule-chart/`, type: 'chart-tool', slug: 'pipe-schedule-chart', title: 'Pipe Schedule Chart: Sch 5S-XXS', description: 'Pipe schedule chart.', data: { toolType: 'pipe-schedule-chart' } },
+    { url: `${BASE_URL}/flange-exporter-usa/`, type: 'export', slug: 'flange-exporter-usa', title: 'Indian Flange & Fittings Exporter to USA', description: 'Flange exporter to USA.', data: { countryType: 'usa' } },
+    { url: `${BASE_URL}/flange-supplier-uae/`, type: 'export', slug: 'flange-supplier-uae', title: 'Flange & Pipe Fittings Supplier to UAE', description: 'Flange supplier to UAE.', data: { countryType: 'uae' } },
+    { url: `${BASE_URL}/flange-supplier-saudi-arabia/`, type: 'export', slug: 'flange-supplier-saudi-arabia', title: 'Flange Supplier to Saudi Arabia', description: 'Flange supplier to KSA.', data: { countryType: 'saudi-arabia' } }
+  ];
+
+  extraPages.forEach(p => routes.push(p));
 
 
   console.log(`Prepared ${routes.length} routes to render.`);
@@ -292,10 +319,11 @@ async function runPrerender() {
     }
 
     // Inject canonical link
+    const canonicalHref = route.url.endsWith('/') ? route.url : `${route.url}/`;
     if (html.includes('rel="canonical"')) {
-      html = html.replace(/<link rel="canonical" href=".*?" \/>/, `<link rel="canonical" href="${route.url}" />`);
+      html = html.replace(/<link rel="canonical" href=".*?" \/>/, `<link rel="canonical" href="${canonicalHref}" />`);
     } else {
-      html = html.replace('</head>', `  <link rel="canonical" href="${route.url}" />\n  </head>`);
+      html = html.replace('</head>', `  <link rel="canonical" href="${canonicalHref}" />\n  </head>`);
     }
 
     // Inject JSON-LD Schema

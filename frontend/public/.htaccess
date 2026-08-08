@@ -14,6 +14,9 @@ RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
 RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.(php|html?)[\s?] [NC]
 RewriteRule ^ /%1 [L,R=301]
 
+# 301 redirect /home/ to /
+RewriteRule ^home/?$ https://steelmanufacturer.in/ [L,R=301]
+
 # Add trailing slash to non-file URLs
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} !/$

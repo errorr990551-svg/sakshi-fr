@@ -1,0 +1,101 @@
+[
+  [
+    "Priority",
+    "Query",
+    "Pos",
+    "Impr",
+    "Target URL",
+    "Action (exactly what to add/change)",
+    "Status"
+  ],
+  [
+    "P1",
+    "high pressure forged steel fittings (+ singular: 9 impr @ 19.3)",
+    "15.0",
+    "20.0",
+    "/forged-fittings/",
+    "Add H2 'High Pressure Forged Steel Fittings (Class 3000, 6000 & 9000)' with a pressure-rating table (class × NPS × PSI @ temp). Add FAQ: 'What pressure can forged steel fittings handle?'. Internal links to this page with anchor 'high pressure forged fittings' from the forged-pipe-fittings guide and the B16.11 page (Sheet 5 N5).",
+    "Not Started"
+  ],
+  [
+    "P1",
+    "stainless steel elbow manufacturers (+ 'elbow manufacturer' 15.2 / 'elbow manufacturer in india' 8.8)",
+    "14.7",
+    "19.0",
+    "NEW: /stainless-steel-elbow/ (see Sheet 5 N9)",
+    "No dedicated elbow page exists — three elbow queries already rank without one. Build the elbow product page (45°/90°/180°, LR/SR, buttweld B16.9 + socket weld B16.11, grades table). Link from /forged-fittings/ and buttweld guide.",
+    "Not Started"
+  ],
+  [
+    "P1",
+    "ss flange manufacturer in mumbai",
+    "10.3",
+    "6.0",
+    "/industrial-pipe-flange-manufacturer-in-mumbai-sakshi-forge/",
+    "Covered by Sheet 3 Mumbai rewrite. Additionally add an H2 'Stainless Steel Flange Manufacturer in Mumbai' + 3 sentences naming SS grades stocked; link from homepage body with anchor 'SS flange manufacturer in Mumbai'.",
+    "Not Started"
+  ],
+  [
+    "P2",
+    "metal forge / steel forge / metal forging / forging industry",
+    "4.9",
+    "34.0",
+    "/about-us/ + homepage",
+    "Generic forging queries land on brand pages. Add an 'Inside Our Forge' section to About Us (process photos, hammer tonnage, furnace details) — satisfies the informational intent without a new page. Do NOT over-optimise; these are low-intent.",
+    "Not Started"
+  ],
+  [
+    "P2",
+    "sakshi tube fitting / sakshi tube fitting digha / sakshi metal industries",
+    "8.7",
+    "98.0",
+    "/about-us/",
+    "BRAND CONFUSION: searchers looking for other 'Sakshi' companies (Digha/Ahmedabad) see us. Add a clear brand block to About Us: 'Sakshi Forge, Mumbai — not affiliated with Sakshi Tube Fitting (Digha) or Sakshi Metal Industries (Ahmedabad)' + our GST/address. Captures misdirected buyers honestly and reduces pogo-sticking.",
+    "Not Started"
+  ],
+  [
+    "P2",
+    "reducing coupling manufacturers",
+    "16.0",
+    "3.0",
+    "/forged-fittings/ (couplings section)",
+    "Add 'Full & Reducing Couplings' H3 with size-combination table; anchor-link from B16.11 page.",
+    "Not Started"
+  ],
+  [
+    "P2",
+    "inconel 625 flanges supplier (pos 1 on 5 impr!) + hastelloy flanges (33.6)",
+    "1.0",
+    "21.0",
+    "/hastelloy-flanges/ + NEW /inconel-625-flanges/ (Sheet 5 N4)",
+    "Already #1 for inconel 625 flanges with no dedicated page — build it before a competitor does. Interlink alloy flange pages as a 'High-Nickel Alloy Flanges' cluster.",
+    "Not Started"
+  ],
+  [
+    "P2",
+    "ss pipe fittings manufacturers in mumbai (31.7) / in india (69.7)",
+    "31.7",
+    "16.0",
+    "/ss-pipe-fittings-complete-guide-2/ → migrate to clean URL /ss-pipe-fittings/",
+    "The '-2' slug signals a duplicate. 301 /ss-pipe-fittings-complete-guide-2/ → /ss-pipe-fittings/ (new clean hub). Title: 'SS Pipe Fittings Manufacturer in India | Sakshi Forge'. Make it the parent hub linking every fitting type page.",
+    "Not Started"
+  ],
+  [
+    "P3",
+    "stainless steel round bar manufacturers in india (146) / manufacturer (76.6)",
+    "76.6",
+    "9.0",
+    "/stainless-steel-round-bar/",
+    "Page ranks 76–146: thin content. Expand to full product page: grades (303/304/316/410/17-4PH), size chart 3–500 mm, tolerance h9/h11, applications, MTC note. Add to products nav.",
+    "Not Started"
+  ],
+  [
+    "P3",
+    "blind flange manufacturers in india / slip on flanges manufacturer / weld neck",
+    "72.6",
+    "15.0",
+    "/flanges/ child pages",
+    "Create flange-type child pages (weld neck exists at /weld-neck-flanges-wnrf-.../ — clean its slug to /weld-neck-flanges/). Add /blind-flanges/, /slip-on-flanges/, /sorf-flanges/ with dimension tables per class. Interlink from /flanges/ hub.",
+    "Not Started"
+  ]
+]

@@ -1,0 +1,93 @@
+[
+  [
+    "Feature",
+    "Sakshi Forge (us) — today",
+    "CeraPure (cerapuresteel.com)",
+    "Mahadev (mahadevdairypharmafitting.com)",
+    "Gap action (sheet.row)"
+  ],
+  [
+    "Homepage title strategy",
+    "'Electropolished Pipe & Flanges Manufacturer | Sakshi Forge' — decent, lacks location",
+    "'ISO Certified Stainless Steel Pipe Manufacturer In Mumbai' — cert+location in title",
+    "'India's No 1. Stainless Steel Pipe Manufacturer in Mumbai' — superlative claim",
+    "Keep ours; certification already in meta. Monitor after CTR fixes (Sheet 3)."
+  ],
+  [
+    "Grade pages (304/316/duplex…)",
+    "None",
+    "304 + 316 tube grade pages",
+    "Many (304, 316, duplex, titanium, Monel/Inconel)",
+    "Sheet 5 G1–G4, N4"
+  ],
+  [
+    "Standard pages (ASTM/ASME)",
+    "One (A182 blog-style) + B16.11 page with messy slug",
+    "ASTM A269 + A270 pages",
+    "Huge library: A312/A270/A269/A213/A249/A358/A554…",
+    "Sheet 5 N5–N8"
+  ],
+  [
+    "Calculators / charts hub",
+    "Weight calculator only",
+    "Full hub: pipe weight calc, size charts, Ra/RMS, inch-mm",
+    "None",
+    "Sheet 5 C1–C4 — beat CeraPure in flange niche"
+  ],
+  [
+    "Client logo wall / social proof",
+    "'150+ global clients' claim, no names",
+    "Testimonials with named companies (Sun Pharma)",
+    "30+ recognisable logos (Amul, Nestle, Cipla, Coca-Cola…) + stockist brands",
+    "Sheet 5 T1 (with permissions)"
+  ],
+  [
+    "Catalogue download",
+    "None",
+    "None",
+    "Yes (PDF)",
+    "Sheet 5 T2"
+  ],
+  [
+    "Team / E-E-A-T page",
+    "None",
+    "Yes — named staff with photos",
+    "No",
+    "Sheet 5 T3"
+  ],
+  [
+    "Blog freshness",
+    "Good guides, no bylines/dates",
+    "Active, recently updated",
+    "Stale/thin",
+    "Sheet 6 rule 8"
+  ],
+  [
+    "Schema",
+    "Product snippets trigger occasionally",
+    "OG/Twitter full; unknown structured data",
+    "Minimal",
+    "Sheet 7 rollout"
+  ],
+  [
+    "URL hygiene",
+    "Mostly clean; a few 60+ char blog slugs & '-2' duplicate",
+    "Clean",
+    "Terrible (200-char stuffed slugs) — their weakness",
+    "Sheet 4 rows 8; keep slugs short (Sheet 5)"
+  ],
+  [
+    "Internal linking / nav",
+    "4 nav items for 415 URLs — worst of the three",
+    "Clean product silo in nav",
+    "Entire sitemap dumped in nav (bad UX but links flow)",
+    "Sheet 8 row 1 — highest-leverage fix"
+  ],
+  [
+    "Technical health",
+    "http/https split, slash duplicates",
+    "Template leftovers (placeholder social links)",
+    "Old stack, slow",
+    "Sheet 2 — fix ours, then we lead"
+  ]
+]

@@ -1,0 +1,16 @@
+# 6. Content Quality Rules
+
+| # | Rule (pass/fail — apply to EVERY page before publishing) | Why (what Google rewards) |
+| --- | --- | --- |
+| 1.0 | Answer the buyer's core question in the first 80 words (what it is, grades/standards, that we manufacture it, quote CTA). No throat-clearing intros. | Helpful-content: satisfies intent immediately; reduces pogo-sticking. |
+| 2.0 | Every product page has a real spec table: size range, grades, standards, pressure class, finish, MTC availability, MOQ, lead time. Tables, not paragraphs. | Structured facts win Product snippets (we already trigger them) and featured tables. |
+| 3.0 | Demonstrate first-hand expertise with specifics: 'PMI-tested on Olympus XRF', 'normalised at X °C', 'tolerance to h9' — never 'best quality', 'world-class'. | E-E-A-T = evidence of experience. Specifics also differentiate vs Mahadev's boilerplate. |
+| 4.0 | ≥1 original photo per product page (our stock/machines, not stock imagery), descriptive alt text ('weld neck flange 6 inch class 300 A105 Sakshi Forge'). | Image originality is an E-E-A-T signal; alt text ranks in image search where B2B buyers browse. |
+| 5.0 | FAQs = real purchase-manager questions only: MOQ? lead time? MTC 3.1 vs 3.2? PMI on request? price basis (per kg vs per pc)? payment/Incoterms for export? | Matches long-tail queries; qualifies for FAQ rich results; pre-answers sales objections. |
+| 6.0 | Banned filler phrases: 'in today's fast-paced world', 'look no further', 'we understand that', 'top-notch', 'wide range of' (>1× per page). Rewrite with facts. | AI-boilerplate patterns correlate with helpful-content demotions. |
+| 7.0 | City pages must earn their existence: name the city's industrial areas served, industries, realistic dispatch/transit time, and a delivered-project mention if available. If we can't write 150 genuinely local words — don't publish the page. | Thin doorway pages risk sitewide quality demotion; local substance is what makes programmatic SEO survive. |
+| 8.0 | Blog guides carry author byline + 'Reviewed by {QA/engineering name}' linking /team/, plus a visible 'Last updated' date (and real updates behind it). | Authorship + freshness are core E-E-A-T signals for YMYL-adjacent technical buying content. |
+| 9.0 | Internal links: minimum 3 in / 3 out per page with descriptive anchors (never 'click here'). New pages get links added to existing pages the same day they publish. | Orphaned pages (our current state: 415 URLs, 4 in nav) can't accumulate authority. |
+| 10.0 | Write for a purchase manager: short paragraphs (≤3 sentences), tables over prose, mm AND inch units, Indian + export context. Clean professional English — this alone beats both competitors' copy. | Readability & satisfaction metrics; competitor weakness we exploit. |
+| 11.0 | Never invent: no fake reviews/counts, no unheld certifications, no client names without permission. Anything unverified goes in the 'Verify with Akshat' column first. | Fabrication risks manual actions, legal issues, and destroys the trust the whole strategy builds. |
+| 12.0 | One page = one primary intent. If a page chases two keywords with different intents (e.g., 'guide' + 'manufacturer'), split it (see Sheet 5 N6 pattern: guide article + commercial page). | Prevents cannibalization — already visible in our flange guide vs product pages. |

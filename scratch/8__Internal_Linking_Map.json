@@ -1,0 +1,72 @@
+[
+  [
+    "Priority",
+    "Hub / page group",
+    "Must RECEIVE links from (with anchor)",
+    "Must SEND links to",
+    "Status"
+  ],
+  [
+    "P1",
+    "SITEWIDE NAV & FOOTER (the single biggest fix — 415 URLs, 4 nav items)",
+    "—",
+    "Expand header nav: Products (mega-menu: Flanges / Forged Fittings / Buttweld / EP Pipes / Pipes & Tubes / Round Bars / Fasteners / Plates & Coils) + Resources (Blog, Charts & Calculators, Catalogue) + Cities We Serve (index page linking all city pages) + About (Team, Quality, Certifications, Clients). Footer: top 10 cities, top 8 products, top 5 guides.",
+    "Not Started"
+  ],
+  [
+    "P1",
+    "/flanges/ hub",
+    "Homepage product card; every flange blog guide (anchor 'industrial flanges'); every city page ('flange manufacturer')",
+    "All flange-type children (weld neck, blind, slip-on, SORF), A182 guide, N6/N7 standard pages, C1–C3 charts, city-page index.",
+    "Not Started"
+  ],
+  [
+    "P1",
+    "/forged-fittings/ hub",
+    "Homepage; forged-fittings guide; B16.11 page (N5); weldolet & square-head-plug children",
+    "All forged fitting children incl. NEW elbow page (N9), high-pressure section (Sheet 4 row 1), fastener pages (bolting cross-sell).",
+    "Not Started"
+  ],
+  [
+    "P1",
+    "/electropolished-pipes/ hub",
+    "Homepage; all ~15 EP city pages (anchor 'electropolished pipes manufacturer'); A270 page (N8); dairy fittings pages",
+    "EP city pages (linked FROM hub too — bidirectional), duplex EP pipe, G2 (316L), A270 (N8), quality-assurance.",
+    "Not Started"
+  ],
+  [
+    "P1",
+    "Blog guides (all)",
+    "Related product pages ('Learn more: {guide}' block)",
+    "Each guide → exactly 2–3 product pages with keyword-ish anchors (e.g. flange guide → /flanges/ 'flange manufacturer in India' + /weld-neck-flanges/). Add author byline link → /team/.",
+    "Not Started"
+  ],
+  [
+    "P2",
+    "City pages (~30 flange + ~15 EP)",
+    "Cities index page (new /cities/); footer top-10; parent product hub",
+    "Parent hub (anchor 'industrial flanges' / 'electropolished pipes'), /contact-us/, 1 relevant guide, 2 neighbouring-city pages (prev/next).",
+    "Not Started"
+  ],
+  [
+    "P2",
+    "Charts & calculators (C1–C4 + existing /weight-calculator/)",
+    "Resources nav; every relevant product page sidebar ('Flange dimension chart')",
+    "Product pages they describe (chart row → product), catalogue page.",
+    "Not Started"
+  ],
+  [
+    "P2",
+    "Trust cluster (/team/, /clients/, /quality-assurance/, /certifications/)",
+    "Footer; About; blog bylines; product page 'Why Sakshi Forge' blocks",
+    "Each other + /contact-us/.",
+    "Not Started"
+  ],
+  [
+    "P3",
+    "Breadcrumbs",
+    "—",
+    "Visible breadcrumbs on every page mirroring BreadcrumbList schema (Sheet 7): Home › Hub › Page.",
+    "Not Started"
+  ]
+]

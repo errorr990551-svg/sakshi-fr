@@ -1,0 +1,58 @@
+[
+  [
+    "Weeks",
+    "Focus",
+    "Deliverables (reference rows)",
+    "Owner",
+    "KPI checkpoint",
+    "Status"
+  ],
+  [
+    "1–2",
+    "P0 technical consolidation",
+    "Sheet 2 rows 1–6 + 10 live and verified; sitemap resubmitted; Sheet 3 top-7 CTR rewrites (flange guide, C95800, forged fittings guide, A182, SS buyers guide, O&G flanges, socket-vs-threaded) live with re-indexing requested.",
+    "Developer",
+    "GSC Pages report: http URLs moving to 'Page with redirect'; impressions consolidating onto https rows within 2–3 weeks.",
+    "Not Started"
+  ],
+  [
+    "3–4",
+    "CTR rewrites done + trust foundation",
+    "Remaining Sheet 3 city rewrites (incl. pattern rollout to ~25 cities); Sheet 2 rows 7–8; /team/ + /clients/ + /catalogue/ (T1–T3) drafted; nav/footer expansion (Sheet 8 row 1) shipped.",
+    "Developer + Content",
+    "Rewritten pages: CTR lift visible in GSC page filter (target: flange guide 0.36% → ≥2%; city pages 0% → ≥3%).",
+    "Not Started"
+  ],
+  [
+    "5–6",
+    "Grade pages wave 1 + quick product wins",
+    "G1, G2, N9 (elbow — already ranking), N4 (Inconel 625 — ranking #1); '-2' slug migration (Sheet 4 row 8); Product schema template live sitewide (Sheet 7).",
+    "Content + Developer",
+    "New pages indexed ≤7 days; Product snippet impressions rising in Search Appearance report.",
+    "Not Started"
+  ],
+  [
+    "7–8",
+    "Standard pages wave",
+    "N5–N8; G3; internal-link passes for new pages (Sheet 8); FAQ schema on all pages with FAQs.",
+    "Content",
+    "Striking-distance queries (Sheet 4) position improvement; 'high pressure forged steel fittings' into top 10.",
+    "Not Started"
+  ],
+  [
+    "9–10",
+    "Charts hub + export wave 1",
+    "C1–C3; E1 (USA) + E2 (UAE); breadcrumbs sitewide.",
+    "Developer + Content",
+    "US CTR >0.5% on export queries; chart pages earning impressions.",
+    "Not Started"
+  ],
+  [
+    "11–12",
+    "Finish + audit loop",
+    "C4, G4, E3; Sheet 6 audit of 20 oldest product pages (bring to rule compliance); full recrawl request;month-end GSC export re-pull to rebase numbers.",
+    "All",
+    "Overall: non-brand clicks +50% vs baseline 12-month run-rate; ≥25 pages with ≥1 click/mo (vs current long tail of zeros).",
+    "Not Started"
+  ]
+]

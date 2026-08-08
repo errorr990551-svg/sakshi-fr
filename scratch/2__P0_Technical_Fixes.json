@@ -1,0 +1,101 @@
+[
+  [
+    "#",
+    "Priority",
+    "Issue",
+    "Affected URLs / pattern",
+    "Exact fix (copy-paste)",
+    "How to verify",
+    "Status"
+  ],
+  [
+    "1.0",
+    "P0",
+    "HTTP and HTTPS versions both indexed — homepage clicks are split (http = 74 clicks/1,803 impr vs https = 49/958). Missing or broken sitewide 301.",
+    "Entire site. Proven in GSC Pages report: http://steelmanufacturer.in/ and https://steelmanufacturer.in/ appear as separate rows.",
+    "Apache (.htaccess, top of file):\nRewriteEngine On\nRewriteCond %{HTTPS} off\nRewriteRule ^(.*)$ https://steelmanufacturer.in/$1 [L,R=301]\n\nNginx (server block on port 80):\nserver {\n  listen 80;\n  server_name steelmanufacturer.in www.steelmanufacturer.in;\n  return 301 https://steelmanufacturer.in$request_uri;\n}\n\nAlso add HSTS header on the https server:\nadd_header Strict-Transport-Security \"max-age=31536000\" always;",
+    "curl -I http://steelmanufacturer.in/ → must return 301 with Location: https://steelmanufacturer.in/ in ONE hop. Repeat for 3 deep URLs. Then GSC URL Inspection on the http URL should show 'Page with redirect'.",
+    "Not Started"
+  ],
+  [
+    "2.0",
+    "P0",
+    "www vs non-www not consolidated (verify).",
+    "https://www.steelmanufacturer.in/*",
+    "Include www in the same 301 rule as row 1 (Nginx server_name shown above already covers it; Apache add:\nRewriteCond %{HTTP_HOST} ^www\\. [NC]\nRewriteRule ^(.*)$ https://steelmanufacturer.in/$1 [L,R=301]).\nRedirect must land on final URL in one hop — never http→https→non-www chains.",
+    "curl -I https://www.steelmanufacturer.in/ and curl -I http://www.steelmanufacturer.in/some-page/ → single 301 to final https non-www URL.",
+    "Not Started"
+  ],
+  [
+    "3.0",
+    "P0",
+    "Trailing-slash duplicates indexed as separate pages, splitting signals.",
+    "Confirmed pairs in GSC: /electropolished-pipes-manufacturer-in-mumbai and .../mumbai/ ; also non-slash variants receiving impressions: /stainless-steel-round-bar, /310-stainless-steel-pipe, /electropolished-pipes, /stainless-steel-coil, /304-stainless-steel-pipe-fittings, /stainless-steel-rod, /duplex-2205-fasteners, /409m-ss-shims",
+    "Standard = WITH trailing slash. Add a 301 for any non-file URL lacking it.\nNginx:\nrewrite ^([^.]*[^/])$ $1/ permanent;\nApache:\nRewriteCond %{REQUEST_FILENAME} !-f\nRewriteCond %{REQUEST_URI} !(.*)/$\nRewriteRule ^(.*)$ https://steelmanufacturer.in/$1/ [L,R=301]",
+    "curl -I https://steelmanufacturer.in/stainless-steel-round-bar → 301 → /stainless-steel-round-bar/ (200). Spot-check every URL listed at left.",
+    "Not Started"
+  ],
+  [
+    "4.0",
+    "P0",
+    "Self-referencing canonical must exist on every page pointing to the final https+slash URL.",
+    "All templates (custom-coded site — add to base layout).",
+    "In <head> of every template, output the absolute canonical:\n<link rel=\"canonical\" href=\"https://steelmanufacturer.in{path_with_trailing_slash}\" />\nNever emit the http or non-slash form. Homepage canonical = https://steelmanufacturer.in/",
+    "View source on 5 page types (home, product, city, blog, contact) — canonical present, absolute, https, trailing slash, matches the URL.",
+    "Not Started"
+  ],
+  [
+    "5.0",
+    "P0",
+    "XML sitemap must list ONLY canonical 200-status https URLs, then be resubmitted.",
+    "https://steelmanufacturer.in/sitemap.xml",
+    "Regenerate sitemap after fixes 1–4: https + trailing slash only, no redirected/404 URLs, <lastmod> real dates. Reference it in robots.txt (Sitemap: https://steelmanufacturer.in/sitemap.xml). Resubmit in GSC → Sitemaps.",
+    "Fetch sitemap, script-check every <loc> returns 200 (no 301s). GSC sitemap status = Success, discovered URLs ≈ real page count.",
+    "Not Started"
+  ],
+  [
+    "6.0",
+    "P0",
+    "/home/ duplicate of homepage (received 19 impressions separately).",
+    "https://steelmanufacturer.in/home/",
+    "301 /home/ → / :\nNginx: location = /home/ { return 301 https://steelmanufacturer.in/; }\nApache: Redirect 301 /home/ https://steelmanufacturer.in/",
+    "curl -I → single 301 to /.",
+    "Not Started"
+  ],
+  [
+    "7.0",
+    "P1",
+    "robots.txt sanity + staging protection.",
+    "https://steelmanufacturer.in/robots.txt",
+    "Ensure robots.txt: allows all product/city/blog paths, disallows only true junk (cart/test/admin), declares the sitemap line. Do NOT try to fix duplicates with robots.txt — redirects+canonicals (rows 1–4) do that.",
+    "Fetch robots.txt; GSC robots.txt report shows no errors; no important path blocked.",
+    "Not Started"
+  ],
+  [
+    "8.0",
+    "P1",
+    "Core Web Vitals pass on mobile (mobile already ranks better — position 17.8 vs desktop 26 — protect it).",
+    "All templates.",
+    "Checklist: (a) width/height attributes on all <img> to kill CLS; (b) loading=\"lazy\" on below-fold images, NOT on the LCP hero image; (c) hero image preloaded: <link rel=\"preload\" as=\"image\" href=\"/hero_forge.webp\">; (d) font-display:swap on webfonts; (e) preconnect to googletagmanager; (f) defer non-critical JS; (g) serve responsive srcset for the .webp images already in use.",
+    "PageSpeed Insights mobile: LCP <2.5s, CLS <0.1, INP <200ms on home, one product page, one city page, one blog guide.",
+    "Not Started"
+  ],
+  [
+    "9.0",
+    "P1",
+    "International targeting: 474 US impressions → 1 click; content is en for all markets.",
+    "Homepage + export pages (see Sheet 5 rows E1–E3).",
+    "Site is single-language English: do NOT add hreflang pairs for country targeting with one URL set (invalid). Instead: build the dedicated export pages in Sheet 5, and add x-default+en self-referencing hreflang only if/when regional variants exist. Keep GSC geo-targeting unset (domain is .in — accept India default; export pages win via content).",
+    "Export pages live + indexed; monitor US clicks in GSC country report monthly.",
+    "Not Started"
+  ],
+  [
+    "10.0",
+    "P0",
+    "DO-NOT-DO guardrails for the developer.",
+    "—",
+    "Do NOT use GSC 'Change of Address' (that is for domain moves, not protocol). Do NOT block http via robots.txt (Google must see the 301s). Do NOT mass-delete the duplicate URLs — redirect them. Do NOT change URL slugs of ranking pages while doing these fixes.",
+    "— (read before starting)",
+    "Not Started"
+  ]
+]

@@ -126,20 +126,6 @@ export default function Header({ currentPage, onNavigate, onEnquireClick }) {
               </a>
             </li>
 
-            {/* Gallery Link */}
-            <li>
-              <a 
-                href="/gallery" 
-                className={`nav-link ${currentPage === 'gallery' ? 'active' : ''}`} 
-                onClick={(e) => {
-                  closeMenu();
-                  handleLinkClick(e, '/gallery');
-                }}
-              >
-                Gallery
-              </a>
-            </li>
-
             {/* About Dropdown */}
             <li 
               className={`nav-dropdown-item ${activeDropdown === 'about' ? 'dropdown-active' : ''}`}

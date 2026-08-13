@@ -44,4 +44,5 @@ User-agent: SemrushBot
 Crawl-delay: 10
 
 Sitemap: https://steelmanufacturer.in/sitemap.xml
+Sitemap: https://steelmanufacturer.in/sitemap-cities.xml
 Sitemap: https://steelmanufacturer.in/image-sitemap.xml

@@ -17,6 +17,7 @@ const products = JSON.parse(fs.readFileSync(productsPath, 'utf-8'));
 const marketCities = JSON.parse(fs.readFileSync(path.join(__dirname, 'src/data/market_cities.json'), 'utf-8'));
 
 const newPages = [
+  'gallery',
   'clients',
   'catalogue',
   'team',
@@ -39,10 +40,6 @@ const newPages = [
   'flange-supplier-saudi-arabia'
 ];
 
-let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-`;
-
 // Helper to format priority
 const formatPriority = (p) => {
   const num = parseFloat(p);
@@ -55,69 +52,85 @@ const formatUrl = (url) => {
   return url.endsWith('/') ? url : `${url}/`;
 };
 
-// 1. Core Pages
-sitemap += `  <!-- Core Pages -->\n`;
+// 1. Main Sitemap (sitemap.xml)
+let mainSitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+`;
+
+// Core Pages
+mainSitemap += `  <!-- Core Pages -->\n`;
 corePages.forEach(page => {
   const priorityVal = formatPriority(page['Priority'] || page['Sitemap priority']);
-  sitemap += `  <url>
+  mainSitemap += `  <url>
     <loc>${formatUrl(page['URL'])}</loc>
     <changefreq>${page['Changefreq'] || 'monthly'}</changefreq>
     <priority>${priorityVal}</priority>
   </url>\n`;
 });
 
-// 2. Categories
-sitemap += `  <!-- Category Pages -->\n`;
+// Categories
+mainSitemap += `  <!-- Category Pages -->\n`;
 categories.forEach(cat => {
   const priorityVal = formatPriority(cat['Sitemap priority']);
-  sitemap += `  <url>
+  mainSitemap += `  <url>
     <loc>${BASE_URL}/${cat['Category Slug']}/</loc>
     <changefreq>${cat['Changefreq'] || 'weekly'}</changefreq>
     <priority>${priorityVal}</priority>
   </url>\n`;
 });
 
-// 3. Products
-sitemap += `  <!-- Product Pages -->\n`;
+// Products
+mainSitemap += `  <!-- Product Pages -->\n`;
 products.forEach(prod => {
   const priorityVal = formatPriority(prod['Sitemap priority']);
-  sitemap += `  <url>
+  mainSitemap += `  <url>
     <loc>${BASE_URL}/${prod['URL Slug']}/</loc>
     <changefreq>${prod['Changefreq'] || 'monthly'}</changefreq>
     <priority>${priorityVal}</priority>
   </url>\n`;
 });
 
-// 4. Workbook New Pages & Tools
-sitemap += `  <!-- Grade, Standard, Tool & Trust Pages -->\n`;
+// New Pages & Tools
+mainSitemap += `  <!-- Tools, Standards & Gallery -->\n`;
 newPages.forEach(slug => {
-  sitemap += `  <url>
+  mainSitemap += `  <url>
     <loc>${BASE_URL}/${slug}/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>\n`;
 });
 
-// 5. Market Area & Cities
-sitemap += `  <!-- Market Area Pages -->\n`;
-sitemap += `  <url>
+// Market Area Hub
+mainSitemap += `  <!-- Market Area Hub -->\n`;
+mainSitemap += `  <url>
     <loc>${BASE_URL}/market-area/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>\n`;
 
+mainSitemap += `</urlset>\n`;
+
+const mainSitemapPath = path.join(__dirname, 'public/sitemap.xml');
+fs.writeFileSync(mainSitemapPath, mainSitemap);
+console.log(`Main sitemap generated successfully at ${mainSitemapPath}`);
+
+// 2. Dedicated City Sitemap (sitemap-cities.xml) for GSC tracking
+let citySitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- 102+ Programmatic City Supply Location Pages -->
+`;
+
 marketCities.forEach(city => {
   const cityPath = city.path.endsWith('/') ? city.path : `${city.path}/`;
-  sitemap += `  <url>
+  citySitemap += `  <url>
     <loc>${BASE_URL}${cityPath}</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>\n`;
 });
 
-sitemap += `</urlset>\n`;
+citySitemap += `</urlset>\n`;
 
-const outputPath = path.join(__dirname, 'public/sitemap.xml');
-fs.writeFileSync(outputPath, sitemap);
-const totalCount = corePages.length + categories.length + products.length + newPages.length + 1 + marketCities.length;
-console.log(`Dynamic sitemap generated successfully at ${outputPath} with ${totalCount} URLs.`);
+const citySitemapPath = path.join(__dirname, 'public/sitemap-cities.xml');
+fs.writeFileSync(citySitemapPath, citySitemap);
+console.log(`City sitemap generated successfully at ${citySitemapPath} with ${marketCities.length} city URLs.`);

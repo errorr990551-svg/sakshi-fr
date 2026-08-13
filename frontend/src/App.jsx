@@ -220,6 +220,12 @@ function App(props) {
       return { type: 'product', data: product };
     }
     
+    // Check if matching market city slug
+    const city = marketCitiesData.find(c => c.slug === slug || c.path === cleanPath || c.path === '/' + slug);
+    if (city) {
+      return { type: 'market-city', data: city };
+    }
+    
     return { type: '404', data: null };
   })();
 

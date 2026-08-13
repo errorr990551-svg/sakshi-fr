@@ -102,6 +102,10 @@ export function updateSEO({ type, data }) {
     } else {
       canonicalUrl = `${BASE_URL}/${targetSlug}/`;
     }
+  } else if (type === "gallery") {
+    title = "Factory Media & Video Gallery | Sakshi Forge Manufacturing Infrastructure";
+    metaDesc = "Watch live videos and explore photos of Sakshi Forge's forging presses, heat treatment furnaces, CNC lathes, and industrial steel flange inventory.";
+    canonicalUrl = `${BASE_URL}/gallery/`;
   } else if (type === "products") {
     const page = corePagesData.find(p => p.Slug === "products" || p.PageName === "Products");
     if (page) {

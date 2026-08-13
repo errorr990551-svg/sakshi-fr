@@ -103,6 +103,7 @@ async function runPrerender() {
 
   // Workbook New Pages & Tools
   const extraPages = [
+    { url: `${BASE_URL}/gallery/`, type: 'gallery', slug: 'gallery', title: 'Factory Media & Video Gallery | Sakshi Forge Manufacturing Infrastructure', description: 'Watch live videos and explore photos of Sakshi Forge forging presses, heat treatment furnaces, CNC lathes, and industrial steel flange inventory.', data: null },
     { url: `${BASE_URL}/clients/`, type: 'clients', slug: 'clients', title: 'Our Clients & Industries | Sakshi Forge', description: 'Sakshi Forge supplies ISO 9001:2015 certified flanges and fittings globally.', data: null },
     { url: `${BASE_URL}/catalogue/`, type: 'catalogue', slug: 'catalogue', title: 'Download Product Catalogue (PDF) | Sakshi Forge', description: 'Download official Sakshi Forge catalogue with ASME B16.5 flange dimension tables.', data: null },
     { url: `${BASE_URL}/team/`, type: 'team', slug: 'team', title: 'Leadership & Engineering Team | Sakshi Forge', description: 'Meet Sakshi Forge metallurgists and QA team.', data: null },

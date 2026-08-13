@@ -5,6 +5,7 @@ import { handleLinkClick } from '../utils/router';
 export default function Header({ currentPage, onNavigate, onEnquireClick }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,7 +21,10 @@ export default function Header({ currentPage, onNavigate, onEnquireClick }) {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-  const closeMenu = () => setIsMenuOpen(false);
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+    setActiveDropdown(null);
+  };
 
   return (
     <header className={`header-wrapper ${isScrolled ? 'header-scrolled' : ''}`}>
@@ -52,7 +56,11 @@ export default function Header({ currentPage, onNavigate, onEnquireClick }) {
             </li>
 
             {/* Products Dropdown */}
-            <li className="nav-dropdown-item" style={{ position: 'relative' }}>
+            <li 
+              className={`nav-dropdown-item ${activeDropdown === 'products' ? 'dropdown-active' : ''}`}
+              onMouseEnter={() => setActiveDropdown('products')}
+              onMouseLeave={() => setActiveDropdown(null)}
+            >
               <a 
                 href="/products" 
                 className={`nav-link ${currentPage === 'products' ? 'active' : ''}`} 
@@ -60,9 +68,8 @@ export default function Header({ currentPage, onNavigate, onEnquireClick }) {
                   closeMenu();
                   handleLinkClick(e, '/products');
                 }}
-                style={{ display: 'inline-flex', alignItems: 'center', gap: '0.2rem' }}
               >
-                Products <ChevronDown size={14} />
+                Products <ChevronDown size={14} className={`chevron-icon ${activeDropdown === 'products' ? 'rotate' : ''}`} />
               </a>
               <ul className="dropdown-menu">
                 <li><a href="/flanges" onClick={(e) => { closeMenu(); handleLinkClick(e, '/flanges'); }}>Industrial Flanges</a></li>
@@ -78,8 +85,12 @@ export default function Header({ currentPage, onNavigate, onEnquireClick }) {
               </ul>
             </li>
 
-            {/* Resources & Engineering Tools */}
-            <li className="nav-dropdown-item" style={{ position: 'relative' }}>
+            {/* Resources Dropdown */}
+            <li 
+              className={`nav-dropdown-item ${activeDropdown === 'resources' ? 'dropdown-active' : ''}`}
+              onMouseEnter={() => setActiveDropdown('resources')}
+              onMouseLeave={() => setActiveDropdown(null)}
+            >
               <a 
                 href="/weight-calculator" 
                 className="nav-link"
@@ -87,15 +98,15 @@ export default function Header({ currentPage, onNavigate, onEnquireClick }) {
                   closeMenu();
                   handleLinkClick(e, '/weight-calculator');
                 }}
-                style={{ display: 'inline-flex', alignItems: 'center', gap: '0.2rem' }}
               >
-                Resources <ChevronDown size={14} />
+                Resources <ChevronDown size={14} className={`chevron-icon ${activeDropdown === 'resources' ? 'rotate' : ''}`} />
               </a>
               <ul className="dropdown-menu">
                 <li><a href="/flange-dimension-chart" onClick={(e) => { closeMenu(); handleLinkClick(e, '/flange-dimension-chart'); }}>Flange Dimension Chart</a></li>
                 <li><a href="/flange-weight-chart" onClick={(e) => { closeMenu(); handleLinkClick(e, '/flange-weight-chart'); }}>Flange Weight Chart</a></li>
                 <li><a href="/flange-bolt-chart" onClick={(e) => { closeMenu(); handleLinkClick(e, '/flange-bolt-chart'); }}>Flange Bolt Chart</a></li>
                 <li><a href="/pipe-schedule-chart" onClick={(e) => { closeMenu(); handleLinkClick(e, '/pipe-schedule-chart'); }}>Pipe Schedule Chart</a></li>
+                <li><a href="/gallery" onClick={(e) => { closeMenu(); handleLinkClick(e, '/gallery'); }}>Factory & Video Gallery</a></li>
                 <li><a href="/catalogue" onClick={(e) => { closeMenu(); handleLinkClick(e, '/catalogue'); }}>Product Catalogue (PDF)</a></li>
                 <li><a href="/blog" onClick={(e) => { closeMenu(); handleLinkClick(e, '/blog'); }}>Steel Knowledge Hub</a></li>
               </ul>
@@ -115,8 +126,26 @@ export default function Header({ currentPage, onNavigate, onEnquireClick }) {
               </a>
             </li>
 
-            {/* About & Trust Dropdown */}
-            <li className="nav-dropdown-item" style={{ position: 'relative' }}>
+            {/* Gallery Link */}
+            <li>
+              <a 
+                href="/gallery" 
+                className={`nav-link ${currentPage === 'gallery' ? 'active' : ''}`} 
+                onClick={(e) => {
+                  closeMenu();
+                  handleLinkClick(e, '/gallery');
+                }}
+              >
+                Gallery
+              </a>
+            </li>
+
+            {/* About Dropdown */}
+            <li 
+              className={`nav-dropdown-item ${activeDropdown === 'about' ? 'dropdown-active' : ''}`}
+              onMouseEnter={() => setActiveDropdown('about')}
+              onMouseLeave={() => setActiveDropdown(null)}
+            >
               <a 
                 href="/about-us" 
                 className={`nav-link ${currentPage === 'about' ? 'active' : ''}`} 
@@ -124,12 +153,12 @@ export default function Header({ currentPage, onNavigate, onEnquireClick }) {
                   closeMenu();
                   handleLinkClick(e, '/about-us');
                 }}
-                style={{ display: 'inline-flex', alignItems: 'center', gap: '0.2rem' }}
               >
-                About <ChevronDown size={14} />
+                About <ChevronDown size={14} className={`chevron-icon ${activeDropdown === 'about' ? 'rotate' : ''}`} />
               </a>
               <ul className="dropdown-menu">
                 <li><a href="/about-us" onClick={(e) => { closeMenu(); handleLinkClick(e, '/about-us'); }}>Corporate Overview</a></li>
+                <li><a href="/gallery" onClick={(e) => { closeMenu(); handleLinkClick(e, '/gallery'); }}>Media & Factory Gallery</a></li>
                 <li><a href="/team" onClick={(e) => { closeMenu(); handleLinkClick(e, '/team'); }}>Leadership & QA Team</a></li>
                 <li><a href="/clients" onClick={(e) => { closeMenu(); handleLinkClick(e, '/clients'); }}>Clients & Industries</a></li>
                 <li><a href="/quality-assurance" onClick={(e) => { closeMenu(); handleLinkClick(e, '/quality-assurance'); }}>Quality Assurance</a></li>

@@ -39,6 +39,8 @@ import StandardPage from './components/StandardPage';
 import ChartToolsPage from './components/ChartToolsPage';
 import ExportPage from './components/ExportPage';
 import ElbowProductPage from './components/ElbowProductPage';
+import GalleryPage from './components/GalleryPage';
+import GallerySection from './components/GallerySection';
 import { gradePages, standardPages } from './data/seo_master_data';
 
 
@@ -178,6 +180,9 @@ function App(props) {
     if (cleanPath === '/stainless-steel-elbow') {
       return { type: 'stainless-steel-elbow', data: null };
     }
+    if (cleanPath === '/gallery' || cleanPath === '/media-gallery') {
+      return { type: 'gallery', data: null };
+    }
     
     // Check chart tool slugs
     if (['/flange-dimension-chart', '/flange-weight-chart', '/flange-bolt-chart', '/pipe-schedule-chart'].includes(cleanPath)) {
@@ -264,9 +269,16 @@ function App(props) {
           {/* Value Pillars List */}
           <WhyChooseUs />
 
+          {/* Live Factory Video & Photo Gallery */}
+          <GallerySection onEnquireClick={handleOpenEnquiry} />
+
           {/* Factory and Machinery Infrastructure */}
           <Infrastructure />
         </>
+      )}
+
+      {resolvedRoute.type === 'gallery' && (
+        <GalleryPage onEnquireClick={handleOpenEnquiry} />
       )}
 
       {resolvedRoute.type === 'about' && (

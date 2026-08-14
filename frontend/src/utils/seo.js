@@ -173,6 +173,12 @@ export function updateSEO({ type, data }) {
     title = data.title;
     metaDesc = data.desc;
     canonicalUrl = `${BASE_URL}/${data.slug}/`;
+  } else if (type === "ep-spec" && data) {
+    title = data.title || title;
+    metaDesc = data.meta || metaDesc;
+    keywords = data.primary_kw ? (data.secondary_kws?.length ? `${data.primary_kw}, ${data.secondary_kws.join(', ')}` : data.primary_kw) : keywords;
+    const urlSlug = data.url ? data.url.replace(/^\/|\/$/g, '') : '';
+    canonicalUrl = urlSlug ? `${BASE_URL}/${urlSlug}/` : `${BASE_URL}/`;
   }
 
   if (canonicalUrl && !canonicalUrl.endsWith('/')) {
@@ -404,6 +410,75 @@ export function updateSEO({ type, data }) {
         "mainEntity": faqEntities
       };
       graph.push(faqSchema);
+    }
+  }
+
+  if (type === "ep-spec" && data) {
+    const parentPath = data.parent || "/";
+    const parentName = parentPath === "/" ? "Home" : parentPath.replace(/^\/|\/$/g, "").replace(/-/g, " ");
+    const currentUrl = data.url ? `${BASE_URL}${data.url.startsWith('/') ? '' : '/'}${data.url}` : canonicalUrl;
+
+    const breadcrumbList = {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": `${BASE_URL}/` }
+      ]
+    };
+
+    if (parentPath !== "/") {
+      breadcrumbList.itemListElement.push({
+        "@type": "ListItem",
+        "position": 2,
+        "name": parentName,
+        "item": `${BASE_URL}${parentPath.startsWith('/') ? '' : '/'}${parentPath}`
+      });
+      breadcrumbList.itemListElement.push({
+        "@type": "ListItem",
+        "position": 3,
+        "name": data.h1 || data.title,
+        "item": currentUrl
+      });
+    } else {
+      breadcrumbList.itemListElement.push({
+        "@type": "ListItem",
+        "position": 2,
+        "name": data.h1 || data.title,
+        "item": currentUrl
+      });
+    }
+
+    graph.push(breadcrumbList);
+
+    if (data.faqs && data.faqs.length > 0) {
+      const faqEntities = data.faqs.map(f => ({
+        "@type": "Question",
+        "name": f.question || f.q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": f.answer || f.a
+        }
+      }));
+      graph.push({
+        "@type": "FAQPage",
+        "mainEntity": faqEntities
+      });
+    }
+
+    if (data.page_type && data.page_type.includes("Product")) {
+      graph.push({
+        "@type": "Product",
+        "name": data.h1 || data.title,
+        "url": currentUrl,
+        "description": data.meta,
+        "brand": { "@type": "Brand", "name": "Sakshi Forge" },
+        "manufacturer": { "@id": `${BASE_URL}/#org` },
+        "material": "Stainless Steel 316L / 304L",
+        "additionalProperty": [
+          { "@type": "PropertyValue", "name": "Surface Finish", "value": "Ra 0.38 um (15 uin) - ASME BPE SF4" },
+          { "@type": "PropertyValue", "name": "Standard", "value": "ASTM A270 / ASTM A312" },
+          { "@type": "PropertyValue", "name": "Certification", "value": "EN 10204 3.1 MTC" }
+        ]
+      });
     }
   }
 

@@ -27,6 +27,9 @@ async function runPrerender() {
   const categories = JSON.parse(fs.readFileSync(path.join(__dirname, 'src/data/categories.json'), 'utf-8'));
   const products = JSON.parse(fs.readFileSync(path.join(__dirname, 'src/data/products.json'), 'utf-8'));
   const marketCities = JSON.parse(fs.readFileSync(path.join(__dirname, 'src/data/market_cities.json'), 'utf-8'));
+  const epBuildSpecData = fs.existsSync(path.join(__dirname, 'src/data/ep_build_spec_data.json'))
+    ? JSON.parse(fs.readFileSync(path.join(__dirname, 'src/data/ep_build_spec_data.json'), 'utf-8'))
+    : [];
 
 
   // 3. Assemble routes list
@@ -128,6 +131,25 @@ async function runPrerender() {
 
   extraPages.forEach(p => routes.push(p));
 
+  // EP Build Spec 106 Pages
+  epBuildSpecData.forEach(p => {
+    if (p.url && p.url !== '/') {
+      const cleanSlug = p.url.replace(/^\/|\/$/g, '');
+      // Avoid duplicate route if already present
+      if (!routes.some(r => r.slug === cleanSlug)) {
+        routes.push({
+          url: `${BASE_URL}/${cleanSlug}/`,
+          type: 'ep-spec',
+          slug: cleanSlug,
+          title: p.title,
+          description: p.meta,
+          robots: 'index, follow',
+          keywords: p.primary_kw ? (p.secondary_kws?.length ? `${p.primary_kw}, ${p.secondary_kws.join(', ')}` : p.primary_kw) : '',
+          data: p
+        });
+      }
+    }
+  });
 
   console.log(`Prepared ${routes.length} routes to render.`);
 
@@ -290,6 +312,71 @@ async function runPrerender() {
         schemasGraph.push({
           "@type": "FAQPage",
           "mainEntity": faqEntities
+        });
+      }
+    }
+
+    if (route.type === 'ep-spec' && route.data) {
+      const parentPath = route.data.parent || "/";
+      const parentName = parentPath === "/" ? "Home" : parentPath.replace(/^\/|\/$/g, "").replace(/-/g, " ");
+
+      const breadcrumbList = {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": `${BASE_URL}/` }
+        ]
+      };
+
+      if (parentPath !== "/") {
+        breadcrumbList.itemListElement.push({
+          "@type": "ListItem",
+          "position": 2,
+          "name": parentName,
+          "item": `${BASE_URL}${parentPath.startsWith('/') ? '' : '/'}${parentPath}`
+        });
+        breadcrumbList.itemListElement.push({
+          "@type": "ListItem",
+          "position": 3,
+          "name": route.data.h1 || route.title,
+          "item": route.url
+        });
+      } else {
+        breadcrumbList.itemListElement.push({
+          "@type": "ListItem",
+          "position": 2,
+          "name": route.data.h1 || route.title,
+          "item": route.url
+        });
+      }
+
+      schemasGraph.push(breadcrumbList);
+
+      if (route.data.faqs && route.data.faqs.length > 0) {
+        const faqEntities = route.data.faqs.map(f => ({
+          "@type": "Question",
+          "name": f.question || f.q,
+          "acceptedAnswer": { "@type": "Answer", "text": f.answer || f.a }
+        }));
+        schemasGraph.push({
+          "@type": "FAQPage",
+          "mainEntity": faqEntities
+        });
+      }
+
+      if (route.data.page_type && route.data.page_type.includes("Product")) {
+        schemasGraph.push({
+          "@type": "Product",
+          "name": route.data.h1 || route.title,
+          "url": route.url,
+          "description": route.description,
+          "brand": { "@type": "Brand", "name": "Sakshi Forge" },
+          "manufacturer": { "@id": `${BASE_URL}/#org` },
+          "material": "Stainless Steel 316L / 304L",
+          "additionalProperty": [
+            { "@type": "PropertyValue", "name": "Surface Finish", "value": "Ra 0.38 um (15 uin) - ASME BPE SF4" },
+            { "@type": "PropertyValue", "name": "Standard", "value": "ASTM A270 / ASTM A312" },
+            { "@type": "PropertyValue", "name": "Certification", "value": "EN 10204 3.1 MTC" }
+          ]
         });
       }
     }

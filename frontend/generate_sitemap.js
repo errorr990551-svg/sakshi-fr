@@ -15,6 +15,9 @@ const corePages = JSON.parse(fs.readFileSync(corePath, 'utf-8'));
 const categories = JSON.parse(fs.readFileSync(categoriesPath, 'utf-8'));
 const products = JSON.parse(fs.readFileSync(productsPath, 'utf-8'));
 const marketCities = JSON.parse(fs.readFileSync(path.join(__dirname, 'src/data/market_cities.json'), 'utf-8'));
+const epBuildSpecData = fs.existsSync(path.join(__dirname, 'src/data/ep_build_spec_data.json'))
+  ? JSON.parse(fs.readFileSync(path.join(__dirname, 'src/data/ep_build_spec_data.json'), 'utf-8'))
+  : [];
 
 const newPages = [
   'gallery',
@@ -107,6 +110,20 @@ mainSitemap += `  <url>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>\n`;
+
+// EP Build Spec 106 Pages
+mainSitemap += `  <!-- EP Build Spec 106 Pages -->\n`;
+epBuildSpecData.forEach(item => {
+  if (item.url) {
+    const fullUrl = item.url.startsWith('http') ? item.url : `${BASE_URL}${item.url.startsWith('/') ? '' : '/'}${item.url}`;
+    const priorityVal = item.priority === 'P1' ? '1.0' : item.priority === 'P2' ? '0.8' : '0.7';
+    mainSitemap += `  <url>
+    <loc>${formatUrl(fullUrl)}</loc>
+    <changefreq>weekly</changefreq>
+    <priority>${priorityVal}</priority>
+  </url>\n`;
+  }
+});
 
 mainSitemap += `</urlset>\n`;
 

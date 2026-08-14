@@ -42,6 +42,8 @@ import ElbowProductPage from './components/ElbowProductPage';
 import GalleryPage from './components/GalleryPage';
 import GallerySection from './components/GallerySection';
 import { gradePages, standardPages } from './data/seo_master_data';
+import epBuildSpecData from './data/ep_build_spec_data.json';
+import EPBuildSpecRenderer from './components/EPBuildSpecRenderer';
 
 
 function App(props) {
@@ -225,6 +227,12 @@ function App(props) {
     if (city) {
       return { type: 'market-city', data: city };
     }
+
+    // Check if matching EP Build Spec page (106 URLs)
+    const epPage = epBuildSpecData.find(p => p.url === cleanPath || p.url === `${cleanPath}/` || p.url === `/${slug}` || p.url === `/${slug}/`);
+    if (epPage) {
+      return { type: 'ep-spec', data: epPage };
+    }
     
     return { type: '404', data: null };
   })();
@@ -388,6 +396,10 @@ function App(props) {
 
       {resolvedRoute.type === 'export' && (
         <ExportPage countryType={resolvedRoute.data.countryType} onEnquireClick={handleOpenEnquiry} />
+      )}
+
+      {resolvedRoute.type === 'ep-spec' && (
+        <EPBuildSpecRenderer path={currentPath} onEnquireClick={handleOpenEnquiry} />
       )}
 
 

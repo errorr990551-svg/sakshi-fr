@@ -117,24 +117,6 @@ export const galleryItems = [
     description: 'Precision drilling and facing operation on heavy alloy steel flanges.'
   },
   {
-    id: 'img-12',
-    type: 'image',
-    title: 'Duplex & Alloy Steel Fittings',
-    category: 'Product Inventory',
-    filterTag: 'Products & Stock',
-    src: '/WhatsApp Image 2026-08-13 at 1.47.31 PM.webp',
-    description: 'High-grade alloy pipe fittings ready for client shipping and export.'
-  },
-  {
-    id: 'img-13',
-    type: 'image',
-    title: 'Electropolished Pipes & Tubes',
-    category: 'Product Inventory',
-    filterTag: 'Products & Stock',
-    src: '/WhatsApp Image 2026-08-13 at 1.47.31 PM (1).webp',
-    description: 'Mirror finished electropolished stainless steel tubing for sanitary applications.'
-  },
-  {
     id: 'img-14',
     type: 'image',
     title: 'Forged Threaded Fittings Collection',
@@ -142,24 +124,6 @@ export const galleryItems = [
     filterTag: 'Products & Stock',
     src: '/WhatsApp Image 2026-08-13 at 1.47.31 PM (2).webp',
     description: 'High pressure 3000# and 6000# threaded hex nipples and couplings.'
-  },
-  {
-    id: 'img-15',
-    type: 'image',
-    title: 'Custom Forgings & Machined Components',
-    category: 'Factory & Forging',
-    filterTag: 'Factory & Forging',
-    src: '/WhatsApp Image 2026-08-13 at 1.47.31 PM (3).webp',
-    description: 'Tailor-made forged steel items crafted to client technical drawings.'
-  },
-  {
-    id: 'img-16',
-    type: 'image',
-    title: 'Export Packaging & Dispatch Area',
-    category: 'Product Inventory',
-    filterTag: 'Products & Stock',
-    src: '/WhatsApp Image 2026-08-13 at 1.48.03 PM.webp',
-    description: 'Seaworthy wooden crate packaging for international shipments.'
   },
   {
     id: 'img-17',

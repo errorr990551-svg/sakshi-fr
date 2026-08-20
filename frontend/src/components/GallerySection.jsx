@@ -76,10 +76,6 @@ function HomeGalleryCard({ item, index, onSelect }) {
           </>
         )}
       </div>
-      <div className="gallery-card-body">
-        <span className="gallery-category-pill">{item.category}</span>
-        <h4 className="gallery-card-title">{item.title}</h4>
-      </div>
     </div>
   );
 }
@@ -172,12 +168,7 @@ export default function GallerySection({ onEnquireClick }) {
             </div>
 
             <div className="lightbox-info-bar">
-              <div className="lightbox-info-text">
-                <span className="gallery-category-pill">{currentItem.category}</span>
-                <h3>{currentItem.title}</h3>
-                <p>{currentItem.description}</p>
-              </div>
-              <div className="lightbox-action-btn">
+              <div className="lightbox-action-btn" style={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
                 <button
                   className="btn btn-primary"
                   onClick={() => {

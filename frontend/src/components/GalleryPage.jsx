@@ -78,12 +78,6 @@ function GalleryCard({ item, index, onSelect }) {
           </>
         )}
       </div>
-
-      <div className="gallery-card-body">
-        <span className="gallery-category-pill">{item.category}</span>
-        <h4 className="gallery-card-title">{item.title}</h4>
-        <p className="gallery-card-desc">{item.description}</p>
-      </div>
     </div>
   );
 }
@@ -125,7 +119,7 @@ export default function GalleryPage({ onEnquireClick }) {
       <section className="gallery-hero-section">
         <div className="container">
           <Breadcrumbs customCrumbs={[{ label: 'Home', path: '/' }, { label: 'Media & Factory Gallery' }]} />
-          
+
           <div className="gallery-hero-header">
             <span className="hero-tag">FACTORY & INFRASTRUCTURE VISUALS</span>
             <h1 className="gallery-hero-title">
@@ -234,12 +228,7 @@ export default function GalleryPage({ onEnquireClick }) {
 
             <div className="lightbox-info-bar">
               <div className="lightbox-info-text">
-                <div className="lightbox-meta-top">
-                  <span className="gallery-category-pill">{currentItem.category}</span>
-                  <span className="lightbox-counter">{lightboxIndex + 1} of {filteredItems.length}</span>
-                </div>
-                <h3>{currentItem.title}</h3>
-                <p>{currentItem.description}</p>
+                <span className="lightbox-counter">{lightboxIndex + 1} of {filteredItems.length}</span>
               </div>
               <div className="lightbox-action-btn">
                 <button

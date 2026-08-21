@@ -118,7 +118,7 @@ export default function GalleryPage({ onEnquireClick }) {
       {/* Hero Header Section */}
       <section className="gallery-hero-section">
         <div className="container">
-          <Breadcrumbs customCrumbs={[{ label: 'Home', path: '/' }, { label: 'Media & Factory Gallery' }]} />
+          <Breadcrumbs customCrumbs={[{ label: 'Home', path: '/' }, { label: 'Gallery' }]} />
 
           <div className="gallery-hero-header">
             <span className="hero-tag">FACTORY & INFRASTRUCTURE VISUALS</span>

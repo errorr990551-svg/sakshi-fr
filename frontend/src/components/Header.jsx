@@ -106,23 +106,23 @@ export default function Header({ currentPage, onNavigate, onEnquireClick }) {
                 <li><a href="/flange-weight-chart" onClick={(e) => { closeMenu(); handleLinkClick(e, '/flange-weight-chart'); }}>Flange Weight Chart</a></li>
                 <li><a href="/flange-bolt-chart" onClick={(e) => { closeMenu(); handleLinkClick(e, '/flange-bolt-chart'); }}>Flange Bolt Chart</a></li>
                 <li><a href="/pipe-schedule-chart" onClick={(e) => { closeMenu(); handleLinkClick(e, '/pipe-schedule-chart'); }}>Pipe Schedule Chart</a></li>
-                <li><a href="/gallery" onClick={(e) => { closeMenu(); handleLinkClick(e, '/gallery'); }}>Factory & Video Gallery</a></li>
+                <li><a href="/gallery" onClick={(e) => { closeMenu(); handleLinkClick(e, '/gallery'); }}>Gallery</a></li>
                 <li><a href="/catalogue" onClick={(e) => { closeMenu(); handleLinkClick(e, '/catalogue'); }}>Product Catalogue (PDF)</a></li>
                 <li><a href="/blog" onClick={(e) => { closeMenu(); handleLinkClick(e, '/blog'); }}>Steel Knowledge Hub</a></li>
               </ul>
             </li>
 
-            {/* Cities We Serve */}
+            {/* Gallery */}
             <li>
               <a 
-                href="/market-area" 
-                className={`nav-link ${currentPage === 'market-area' ? 'active' : ''}`} 
+                href="/gallery" 
+                className={`nav-link ${currentPage === 'gallery' ? 'active' : ''}`} 
                 onClick={(e) => {
                   closeMenu();
-                  handleLinkClick(e, '/market-area');
+                  handleLinkClick(e, '/gallery');
                 }}
               >
-                Cities We Serve
+                Gallery
               </a>
             </li>
 
@@ -144,7 +144,7 @@ export default function Header({ currentPage, onNavigate, onEnquireClick }) {
               </a>
               <ul className="dropdown-menu">
                 <li><a href="/about-us" onClick={(e) => { closeMenu(); handleLinkClick(e, '/about-us'); }}>Corporate Overview</a></li>
-                <li><a href="/gallery" onClick={(e) => { closeMenu(); handleLinkClick(e, '/gallery'); }}>Media & Factory Gallery</a></li>
+                <li><a href="/gallery" onClick={(e) => { closeMenu(); handleLinkClick(e, '/gallery'); }}>Gallery</a></li>
                 <li><a href="/team" onClick={(e) => { closeMenu(); handleLinkClick(e, '/team'); }}>Leadership & QA Team</a></li>
                 <li><a href="/clients" onClick={(e) => { closeMenu(); handleLinkClick(e, '/clients'); }}>Clients & Industries</a></li>
                 <li><a href="/quality-assurance" onClick={(e) => { closeMenu(); handleLinkClick(e, '/quality-assurance'); }}>Quality Assurance</a></li>

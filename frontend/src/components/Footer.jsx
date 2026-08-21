@@ -92,7 +92,7 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
               <li><a href="/flange-weight-chart" onClick={(e) => handleLinkClick(e, '/flange-weight-chart')}>Flange Weight Chart</a></li>
               <li><a href="/flange-bolt-chart" onClick={(e) => handleLinkClick(e, '/flange-bolt-chart')}>Flange Bolt Chart</a></li>
               <li><a href="/pipe-schedule-chart" onClick={(e) => handleLinkClick(e, '/pipe-schedule-chart')}>Pipe Schedule Chart</a></li>
-              <li><a href="/gallery" onClick={(e) => handleLinkClick(e, '/gallery')}>Factory & Media Gallery</a></li>
+              <li><a href="/gallery" onClick={(e) => handleLinkClick(e, '/gallery')}>Gallery</a></li>
               <li><a href="/catalogue" onClick={(e) => handleLinkClick(e, '/catalogue')}>Download Catalogue PDF</a></li>
               <li><a href="/team" onClick={(e) => handleLinkClick(e, '/team')}>Leadership & QA Team</a></li>
               <li><a href="/clients" onClick={(e) => handleLinkClick(e, '/clients')}>Our Clients & Industries</a></li>
@@ -101,14 +101,14 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
 
           {/* Key Cities We Serve */}
           <div className="footer-col">
-            <h4>Top Cities Served</h4>
+            <h4>Cities We Serve</h4>
             <ul className="footer-links">
               <li><a href="/electropolished-pipes-manufacturer-in-mumbai" onClick={(e) => handleLinkClick(e, '/electropolished-pipes-manufacturer-in-mumbai')}>Mumbai Flange Supplier</a></li>
               <li><a href="/electropolished-pipes-manufacturer-in-delhi" onClick={(e) => handleLinkClick(e, '/electropolished-pipes-manufacturer-in-delhi')}>Delhi NCR Steel Supply</a></li>
               <li><a href="/electropolished-pipes-manufacturer-in-hyderabad" onClick={(e) => handleLinkClick(e, '/electropolished-pipes-manufacturer-in-hyderabad')}>Hyderabad Pharma Piping</a></li>
               <li><a href="/electropolished-pipes-manufacturer-in-visakhapatnam" onClick={(e) => handleLinkClick(e, '/electropolished-pipes-manufacturer-in-visakhapatnam')}>Visakhapatnam Port Supply</a></li>
               <li><a href="/electropolished-pipes-manufacturer-in-indore" onClick={(e) => handleLinkClick(e, '/electropolished-pipes-manufacturer-in-indore')}>Indore MP Flanges</a></li>
-              <li><a href="/market-area" onClick={(e) => handleLinkClick(e, '/market-area')}>All 50+ Cities Directory</a></li>
+              <li><a href="/market-area" onClick={(e) => handleLinkClick(e, '/market-area')}>Cities We Serve (All 50+ Cities)</a></li>
             </ul>
           </div>
 

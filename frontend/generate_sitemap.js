@@ -10,13 +10,15 @@ const BASE_URL = 'https://steelmanufacturer.in';
 const corePath = path.join(__dirname, 'src/data/core_pages.json');
 const categoriesPath = path.join(__dirname, 'src/data/categories.json');
 const productsPath = path.join(__dirname, 'src/data/products.json');
+const marketCitiesPath = path.join(__dirname, 'src/data/market_cities.json');
+const epBuildSpecPath = path.join(__dirname, 'src/data/ep_build_spec_data.json');
 
 const corePages = JSON.parse(fs.readFileSync(corePath, 'utf-8'));
 const categories = JSON.parse(fs.readFileSync(categoriesPath, 'utf-8'));
 const products = JSON.parse(fs.readFileSync(productsPath, 'utf-8'));
-const marketCities = JSON.parse(fs.readFileSync(path.join(__dirname, 'src/data/market_cities.json'), 'utf-8'));
-const epBuildSpecData = fs.existsSync(path.join(__dirname, 'src/data/ep_build_spec_data.json'))
-  ? JSON.parse(fs.readFileSync(path.join(__dirname, 'src/data/ep_build_spec_data.json'), 'utf-8'))
+const marketCities = JSON.parse(fs.readFileSync(marketCitiesPath, 'utf-8')).filter(c => c.path && c.city && c.path !== '/');
+const epBuildSpecData = fs.existsSync(epBuildSpecPath)
+  ? JSON.parse(fs.readFileSync(epBuildSpecPath, 'utf-8'))
   : [];
 
 const newPages = [
@@ -44,84 +46,81 @@ const newPages = [
 ];
 
 // Helper to format priority
-const formatPriority = (p) => {
+const formatPriority = (p, defaultVal = '0.7') => {
   const num = parseFloat(p);
-  return isNaN(num) ? '0.7' : num.toFixed(1);
+  return isNaN(num) ? defaultVal : num.toFixed(1);
 };
 
-// Helper to ensure trailing slash
+// Helper to ensure trailing slash and clean domain
 const formatUrl = (url) => {
-  if (url === BASE_URL || url === `${BASE_URL}/`) return `${BASE_URL}/`;
-  return url.endsWith('/') ? url : `${url}/`;
+  let clean = (url || '').trim();
+  if (!clean.startsWith('http')) {
+    clean = `${BASE_URL}${clean.startsWith('/') ? '' : '/'}${clean}`;
+  }
+  if (clean === BASE_URL || clean === `${BASE_URL}/`) return `${BASE_URL}/`;
+  return clean.endsWith('/') ? clean : `${clean}/`;
+};
+
+// Helper to escape XML special characters
+const xmlEscape = (str) => {
+  if (!str) return '';
+  return str.replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&apos;');
 };
 
 // 1. Main Sitemap (sitemap.xml)
+const mainUrlsSet = new Set();
 let mainSitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 `;
 
-// Core Pages
-mainSitemap += `  <!-- Core Pages -->\n`;
-corePages.forEach(page => {
-  const priorityVal = formatPriority(page['Priority'] || page['Sitemap priority']);
+// Helper to append unique URL to main sitemap
+const addMainUrl = (url, changefreq, priority, comment = '') => {
+  const formatted = formatUrl(url);
+  if (mainUrlsSet.has(formatted)) return;
+  mainUrlsSet.add(formatted);
+  if (comment) mainSitemap += `  <!-- ${comment} -->\n`;
   mainSitemap += `  <url>
-    <loc>${formatUrl(page['URL'])}</loc>
-    <changefreq>${page['Changefreq'] || 'monthly'}</changefreq>
-    <priority>${priorityVal}</priority>
+    <loc>${formatted}</loc>
+    <changefreq>${changefreq}</changefreq>
+    <priority>${priority}</priority>
   </url>\n`;
+};
+
+// Core Pages
+corePages.forEach(page => {
+  const priorityVal = formatPriority(page['Priority'] || page['Sitemap priority'], '0.8');
+  addMainUrl(page['URL'], page['Changefreq'] || 'monthly', priorityVal, `Core: ${page['Page Name'] || page['Slug']}`);
 });
 
 // Categories
-mainSitemap += `  <!-- Category Pages -->\n`;
 categories.forEach(cat => {
-  const priorityVal = formatPriority(cat['Sitemap priority']);
-  mainSitemap += `  <url>
-    <loc>${BASE_URL}/${cat['Category Slug']}/</loc>
-    <changefreq>${cat['Changefreq'] || 'weekly'}</changefreq>
-    <priority>${priorityVal}</priority>
-  </url>\n`;
+  const priorityVal = formatPriority(cat['Sitemap priority'], '0.9');
+  addMainUrl(`${BASE_URL}/${cat['Category Slug']}/`, cat['Changefreq'] || 'weekly', priorityVal, `Category: ${cat['Category Slug']}`);
 });
 
 // Products
-mainSitemap += `  <!-- Product Pages -->\n`;
 products.forEach(prod => {
-  const priorityVal = formatPriority(prod['Sitemap priority']);
-  mainSitemap += `  <url>
-    <loc>${BASE_URL}/${prod['URL Slug']}/</loc>
-    <changefreq>${prod['Changefreq'] || 'monthly'}</changefreq>
-    <priority>${priorityVal}</priority>
-  </url>\n`;
+  const priorityVal = formatPriority(prod['Sitemap priority'], '0.8');
+  addMainUrl(`${BASE_URL}/${prod['URL Slug']}/`, prod['Changefreq'] || 'monthly', priorityVal);
 });
 
 // New Pages & Tools
-mainSitemap += `  <!-- Tools, Standards & Gallery -->\n`;
 newPages.forEach(slug => {
-  mainSitemap += `  <url>
-    <loc>${BASE_URL}/${slug}/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>\n`;
+  addMainUrl(`${BASE_URL}/${slug}/`, 'weekly', '0.8');
 });
 
 // Market Area Hub
-mainSitemap += `  <!-- Market Area Hub -->\n`;
-mainSitemap += `  <url>
-    <loc>${BASE_URL}/market-area/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>\n`;
+addMainUrl(`${BASE_URL}/market-area/`, 'weekly', '0.8', 'Market Area Hub');
 
-// EP Build Spec 106 Pages
-mainSitemap += `  <!-- EP Build Spec 106 Pages -->\n`;
+// EP Build Spec Pages
 epBuildSpecData.forEach(item => {
   if (item.url) {
-    const fullUrl = item.url.startsWith('http') ? item.url : `${BASE_URL}${item.url.startsWith('/') ? '' : '/'}${item.url}`;
     const priorityVal = item.priority === 'P1' ? '1.0' : item.priority === 'P2' ? '0.8' : '0.7';
-    mainSitemap += `  <url>
-    <loc>${formatUrl(fullUrl)}</loc>
-    <changefreq>weekly</changefreq>
-    <priority>${priorityVal}</priority>
-  </url>\n`;
+    addMainUrl(item.url, 'weekly', priorityVal);
   }
 });
 
@@ -129,18 +128,21 @@ mainSitemap += `</urlset>\n`;
 
 const mainSitemapPath = path.join(__dirname, 'public/sitemap.xml');
 fs.writeFileSync(mainSitemapPath, mainSitemap);
-console.log(`Main sitemap generated successfully at ${mainSitemapPath}`);
+console.log(`Main sitemap generated successfully at ${mainSitemapPath} with ${mainUrlsSet.size} unique URLs.`);
 
-// 2. Dedicated City Sitemap (sitemap-cities.xml) for GSC tracking
+// 2. Dedicated City Sitemap (sitemap-cities.xml)
+const cityUrlsSet = new Set();
 let citySitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- 102+ Programmatic City Supply Location Pages -->
 `;
 
 marketCities.forEach(city => {
-  const cityPath = city.path.endsWith('/') ? city.path : `${city.path}/`;
+  if (!city.path || city.path === '/') return;
+  const formatted = formatUrl(`${BASE_URL}${city.path}`);
+  if (cityUrlsSet.has(formatted)) return;
+  cityUrlsSet.add(formatted);
   citySitemap += `  <url>
-    <loc>${BASE_URL}${cityPath}</loc>
+    <loc>${formatted}</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>\n`;
@@ -150,4 +152,37 @@ citySitemap += `</urlset>\n`;
 
 const citySitemapPath = path.join(__dirname, 'public/sitemap-cities.xml');
 fs.writeFileSync(citySitemapPath, citySitemap);
-console.log(`City sitemap generated successfully at ${citySitemapPath} with ${marketCities.length} city URLs.`);
+console.log(`City sitemap generated successfully at ${citySitemapPath} with ${cityUrlsSet.size} city URLs.`);
+
+// 3. Image Sitemap (image-sitemap.xml)
+let imageSitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+`;
+
+let imageCount = 0;
+products.forEach(prod => {
+  if (prod.Image && prod['URL Slug']) {
+    const pageLoc = formatUrl(`${BASE_URL}/${prod['URL Slug']}/`);
+    let imgPath = prod.Image.trim();
+    if (!imgPath.startsWith('/')) imgPath = '/' + imgPath;
+    const imgUrl = `${BASE_URL}${encodeURI(imgPath)}`;
+    const imgTitle = xmlEscape(prod['H1 Tag'] || prod['Product Name'] || '');
+
+    imageSitemap += `  <url>
+    <loc>${pageLoc}</loc>
+    <image:image>
+      <image:loc>${imgUrl}</image:loc>
+      <image:title>${imgTitle}</image:title>
+    </image:image>
+  </url>\n`;
+    imageCount++;
+  }
+});
+
+imageSitemap += `</urlset>\n`;
+
+const imageSitemapPath = path.join(__dirname, 'public/image-sitemap.xml');
+fs.writeFileSync(imageSitemapPath, imageSitemap);
+console.log(`Image sitemap generated successfully at ${imageSitemapPath} with ${imageCount} product images.`);
+

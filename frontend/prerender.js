@@ -26,7 +26,7 @@ async function runPrerender() {
   const corePages = JSON.parse(fs.readFileSync(path.join(__dirname, 'src/data/core_pages.json'), 'utf-8'));
   const categories = JSON.parse(fs.readFileSync(path.join(__dirname, 'src/data/categories.json'), 'utf-8'));
   const products = JSON.parse(fs.readFileSync(path.join(__dirname, 'src/data/products.json'), 'utf-8'));
-  const marketCities = JSON.parse(fs.readFileSync(path.join(__dirname, 'src/data/market_cities.json'), 'utf-8'));
+  const marketCities = JSON.parse(fs.readFileSync(path.join(__dirname, 'src/data/market_cities.json'), 'utf-8')).filter(c => c.path && c.city && c.path !== '/');
   const epBuildSpecData = fs.existsSync(path.join(__dirname, 'src/data/ep_build_spec_data.json'))
     ? JSON.parse(fs.readFileSync(path.join(__dirname, 'src/data/ep_build_spec_data.json'), 'utf-8'))
     : [];

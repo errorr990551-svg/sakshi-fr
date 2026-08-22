@@ -21,7 +21,7 @@ export default function CataloguePage({ onEnquireClick }) {
   ];
 
   return (
-    <div style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '5rem' }}>
+    <div style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '5rem', paddingTop: '5.5rem' }}>
       <Breadcrumbs items={[{ name: 'Catalogue Download', url: '/catalogue/' }]} />
 
       <section style={{ 

@@ -26,9 +26,9 @@ export default function EPBuildSpecRenderer({ path, onEnquireClick }) {
   const parentName = parent === '/' ? 'Home' : parent.replace(/^\/|\/$/g, '').replace(/-/g, ' ');
 
   return (
-    <div className="bg-slate-950 text-slate-100 min-h-screen font-sans selection:bg-blue-500 selection:text-white">
+    <div className="bg-slate-950 text-slate-100 min-h-screen font-sans selection:bg-blue-500 selection:text-white pt-[5.5rem]">
       {/* 1. BREADCRUMB BAR */}
-      <nav aria-label="Breadcrumb" className="border-b border-slate-800 bg-slate-900/60 backdrop-blur sticky top-16 z-30">
+      <nav aria-label="Breadcrumb" className="border-b border-slate-800 bg-slate-900/60 backdrop-blur sticky top-[5.5rem] z-30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-xs sm:text-sm text-slate-400 flex items-center space-x-2 overflow-x-auto">
           <a href="/" onClick={(e) => handleLinkClick(e, '/')} className="hover:text-blue-400 transition flex items-center">
             Home

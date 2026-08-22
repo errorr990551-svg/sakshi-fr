@@ -24,6 +24,8 @@ import IndustriesPage from './components/IndustriesPage';
 import ContactPage from './components/ContactPage';
 import CertificationsPage from './components/CertificationsPage';
 import BlogPage from './components/BlogPage';
+import BlogPostPage from './components/BlogPostPage';
+import { blogPosts } from './data/blogData';
 import PrivacyPolicyPage from './components/PrivacyPolicyPage';
 import TermsPage from './components/TermsPage';
 import WeightCalculatorPage from './components/WeightCalculatorPage';
@@ -156,6 +158,13 @@ function App(props) {
     }
     if (cleanPath === '/blog') {
       return { type: 'blog', data: null };
+    }
+    if (cleanPath.startsWith('/blog/')) {
+      const blogSlug = cleanPath.replace(/^\/blog\//, '').replace(/\/$/, '');
+      const post = blogPosts.find(p => p.slug === blogSlug || p.id === blogSlug);
+      if (post) {
+        return { type: 'blog-post', data: post };
+      }
     }
     if (cleanPath === '/privacy-policy') {
       return { type: 'privacy-policy', data: null };
@@ -341,6 +350,10 @@ function App(props) {
 
       {resolvedRoute.type === 'blog' && (
         <BlogPage />
+      )}
+
+      {resolvedRoute.type === 'blog-post' && (
+        <BlogPostPage post={resolvedRoute.data} onEnquireClick={handleOpenEnquiry} />
       )}
 
       {resolvedRoute.type === 'privacy-policy' && (

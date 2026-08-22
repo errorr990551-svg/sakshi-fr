@@ -8,7 +8,7 @@ export default function StandardPage({ standardData, onEnquireClick }) {
   const { title, h1, standardCode, desc, pressureClasses, dimensionSummary, materialGrades, faqs, slug } = standardData;
 
   return (
-    <div style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '5rem' }}>
+    <div style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '5rem', paddingTop: '5.5rem' }}>
       <Breadcrumbs items={[
         { name: 'Standards & Specifications', url: '/products/' },
         { name: title, url: `/${slug}/` }

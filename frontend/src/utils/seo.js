@@ -102,6 +102,11 @@ export function updateSEO({ type, data }) {
     } else {
       canonicalUrl = `${BASE_URL}/${targetSlug}/`;
     }
+  } else if (type === "blog-post" && data) {
+    title = `${data.title} | Sakshi Forge Steel Knowledge Hub`;
+    metaDesc = data.desc;
+    keywords = data.tags ? data.tags.join(", ") : keywords;
+    canonicalUrl = `${BASE_URL}/blog/${data.slug}/`;
   } else if (type === "gallery") {
     title = "Factory Media & Video Gallery | Sakshi Forge Manufacturing Infrastructure";
     metaDesc = "Watch live videos and explore photos of Sakshi Forge's forging presses, heat treatment furnaces, CNC lathes, and industrial steel flange inventory.";
@@ -480,6 +485,39 @@ export function updateSEO({ type, data }) {
         ]
       });
     }
+  }
+
+  if (type === "blog-post" && data) {
+    const postUrl = `${BASE_URL}/blog/${data.slug}/`;
+    const breadcrumbList = {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": `${BASE_URL}/` },
+        { "@type": "ListItem", "position": 2, "name": "Steel Knowledge Hub", "item": `${BASE_URL}/blog/` },
+        { "@type": "ListItem", "position": 3, "name": data.title, "item": postUrl }
+      ]
+    };
+    const blogPostingSchema = {
+      "@type": "BlogPosting",
+      "@id": `${postUrl}#article`,
+      "headline": data.title,
+      "description": data.desc,
+      "datePublished": data.date,
+      "author": {
+        "@type": "Organization",
+        "name": "Sakshi Forge"
+      },
+      "publisher": {
+        "@id": `${BASE_URL}/#org`
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": postUrl
+      },
+      "image": data.image ? `${BASE_URL}${data.image}` : undefined
+    };
+    graph.push(breadcrumbList);
+    graph.push(blogPostingSchema);
   }
 
   if (type === "market-city" && data && data.schema) {

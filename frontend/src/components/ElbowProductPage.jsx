@@ -16,7 +16,7 @@ export default function ElbowProductPage({ onEnquireClick }) {
   ];
 
   return (
-    <div style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '5rem' }}>
+    <div style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '5rem', paddingTop: '5.5rem' }}>
       <Breadcrumbs items={[
         { name: 'Buttweld & Forged Fittings', url: '/products/' },
         { name: 'Stainless Steel Elbow', url: '/stainless-steel-elbow/' }

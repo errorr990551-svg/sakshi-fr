@@ -55,7 +55,7 @@ export default function ChartToolsPage({ toolType, onEnquireClick }) {
   ];
 
   return (
-    <div style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '5rem' }}>
+    <div style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '5rem', paddingTop: '5.5rem' }}>
       <Breadcrumbs items={[
         { name: 'Engineering Tools & Charts', url: '/weight-calculator/' },
         { name: currentTool.breadcrumb, url: `/${currentTool.slug}/` }

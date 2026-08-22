@@ -8,7 +8,7 @@ export default function GradePage({ gradeData, onEnquireClick }) {
   const { title, h1, gradeCode, category, desc, chemistryTable, mechanicalTable, applications, faqs, slug } = gradeData;
 
   return (
-    <div style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '5rem' }}>
+    <div style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '5rem', paddingTop: '5.5rem' }}>
       <Breadcrumbs items={[
         { name: 'Grade Catalog', url: '/products/' },
         { name: title, url: `/${slug}/` }

@@ -114,7 +114,7 @@ export default function GalleryPage({ onEnquireClick }) {
   const currentItem = lightboxIndex !== null ? filteredItems[lightboxIndex] : null;
 
   return (
-    <main className="gallery-page-container">
+    <main className="gallery-page-container" style={{ paddingTop: '5.5rem' }}>
       {/* Hero Header Section */}
       <section className="gallery-hero-section">
         <div className="container">

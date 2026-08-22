@@ -17,7 +17,7 @@ export default function TeamPage({ onEnquireClick }) {
   ];
 
   return (
-    <div style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '5rem' }}>
+    <div style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '5rem', paddingTop: '5.5rem' }}>
       <Breadcrumbs items={[{ name: 'Leadership & Engineering Team', url: '/team/' }]} />
 
       <section style={{ 

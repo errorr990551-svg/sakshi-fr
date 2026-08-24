@@ -67,10 +67,9 @@ export default function EPBuildSpecRenderer({ path, onEnquireClick }) {
               </p>
 
               {/* Badges / Highlights Grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
-                <div className="bg-slate-900/90 border border-slate-800 rounded-xl p-3">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">                <div className="bg-slate-900/90 border border-slate-800 rounded-xl p-3">
                   <span className="text-xs text-slate-400 block">Surface Finish</span>
-                  <span className="text-sm font-bold text-emerald-400">Ra ≤ 0.38 µm (15 µin)</span>
+                  <span className="text-sm font-bold text-cyan-400">Ra ≤ 0.38 µm (15 µin)</span>
                 </div>
                 <div className="bg-slate-900/90 border border-slate-800 rounded-xl p-3">
                   <span className="text-xs text-slate-400 block">Standard Specs</span>
@@ -78,7 +77,7 @@ export default function EPBuildSpecRenderer({ path, onEnquireClick }) {
                 </div>
                 <div className="bg-slate-900/90 border border-slate-800 rounded-xl p-3 col-span-2 sm:col-span-1">
                   <span className="text-xs text-slate-400 block">Material Traceability</span>
-                  <span className="text-sm font-bold text-cyan-400">100% PMI Verified</span>
+                  <span className="text-sm font-bold text-amber-400">100% PMI Verified</span>
                 </div>
               </div>
 
@@ -86,18 +85,18 @@ export default function EPBuildSpecRenderer({ path, onEnquireClick }) {
               <div className="flex flex-wrap gap-4 pt-4">
                 <button
                   onClick={() => onEnquireClick(h1)}
-                  className="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-3.5 rounded-xl transition flex items-center space-x-2 shadow-lg shadow-blue-600/30"
+                  className="bg-yellow-500 hover:bg-yellow-400 text-slate-950 font-extrabold px-6 py-3.5 rounded-xl transition flex items-center space-x-2 shadow-lg shadow-yellow-500/25"
                 >
-                  <FileText className="w-5 h-5" />
+                  <FileText className="w-5 h-5 text-slate-950" />
                   <span>Request Quick Quotation</span>
                 </button>
                 <a
                   href="https://wa.me/918045815130?text=Hi%2C%20I%20am%20interested%20in%20Electropolished%20Pipes%20and%20Tubes"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-emerald-600/20 hover:bg-emerald-600/30 border border-emerald-500/40 text-emerald-300 font-semibold px-6 py-3.5 rounded-xl transition flex items-center space-x-2"
+                  className="bg-slate-900/90 hover:bg-slate-800 border border-amber-500/30 text-amber-400 font-semibold px-6 py-3.5 rounded-xl transition flex items-center space-x-2"
                 >
-                  <MessageSquare className="w-5 h-5 text-emerald-400" />
+                  <MessageSquare className="w-5 h-5 text-amber-400" />
                   <span>WhatsApp Engineering Sales</span>
                 </a>
               </div>
@@ -106,7 +105,7 @@ export default function EPBuildSpecRenderer({ path, onEnquireClick }) {
             {/* Hero Quick RFQ Form / Card */}
             <div className="lg:col-span-5">
               <div className="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 shadow-2xl relative">
-                <div className="absolute top-0 right-0 transform translate-x-2 -translate-y-2 bg-blue-600 text-white text-[10px] uppercase tracking-wider font-bold px-3 py-1 rounded-full shadow">
+                <div className="absolute top-0 right-0 transform translate-x-2 -translate-y-2 bg-yellow-500 text-slate-950 text-[10px] uppercase tracking-wider font-extrabold px-3 py-1 rounded-full shadow">
                   Instant Quote Response
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">Get Price & Spec Sheet</h3>
@@ -115,27 +114,27 @@ export default function EPBuildSpecRenderer({ path, onEnquireClick }) {
                 <form onSubmit={(e) => { e.preventDefault(); onEnquireClick(h1); }} className="space-y-4">
                   <div>
                     <label className="block text-xs text-slate-400 mb-1">Your Name / Company *</label>
-                    <input type="text" required placeholder="e.g. Reliance / Sun Pharma" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-blue-500" />
+                    <input type="text" required placeholder="e.g. Reliance / Sun Pharma" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-yellow-500" />
                   </div>
                   <div className="grid grid-cols-2 gap-3">
                     <div>
                       <label className="block text-xs text-slate-400 mb-1">Phone / WhatsApp *</label>
-                      <input type="tel" required placeholder="+91 XXXXX XXXXX" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-blue-500" />
+                      <input type="tel" required placeholder="+91 XXXXX XXXXX" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-yellow-500" />
                     </div>
                     <div>
                       <label className="block text-xs text-slate-400 mb-1">Material Grade</label>
-                      <select className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-blue-500">
-                        <option>SS 316L (EP)</option>
-                        <option>SS 304L (EP)</option>
-                        <option>ASME BPE SF4</option>
+                      <select className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-yellow-500">
+                        <option className="bg-slate-900 text-white">SS 316L (EP)</option>
+                        <option className="bg-slate-900 text-white">SS 304L (EP)</option>
+                        <option className="bg-slate-900 text-white">ASME BPE SF4</option>
                       </select>
                     </div>
                   </div>
                   <div>
                     <label className="block text-xs text-slate-400 mb-1">Quantity / Outer Diameter (OD)</label>
-                    <input type="text" placeholder="e.g. 200 metres, 1 inch OD x 1.65mm WT" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-blue-500" />
+                    <input type="text" placeholder="e.g. 200 metres, 1 inch OD x 1.65mm WT" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-yellow-500" />
                   </div>
-                  <button type="submit" className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold py-3.5 rounded-xl transition shadow-lg shadow-blue-600/25">
+                  <button type="submit" className="w-full bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-500 hover:from-yellow-400 hover:to-amber-400 text-slate-950 font-extrabold py-3.5 rounded-xl transition shadow-lg shadow-yellow-500/25 uppercase tracking-wider text-sm">
                     Submit RFQ Now
                   </button>
                 </form>
@@ -285,11 +284,11 @@ export default function EPBuildSpecRenderer({ path, onEnquireClick }) {
           {page_type.includes('Resource') && (
             <div className="mb-16">
               {cleanPath.includes('ra-surface-finish-converter') && <RaConverterTool />}
-              {cleanPath.includes('ss-pipe-weight-calculator') && <PipeWeightCalculatorTool />}
+              {cleanPath.includes('ss-pipe-weight-calculator') && <PipeWeightCalculatorTool onEnquireClick={onEnquireClick} />}
               {(!cleanPath.includes('ra-surface-finish-converter') && !cleanPath.includes('ss-pipe-weight-calculator')) && (
                 <>
                   <RaConverterTool />
-                  <PipeWeightCalculatorTool />
+                  <PipeWeightCalculatorTool onEnquireClick={onEnquireClick} />
                 </>
               )}
             </div>
@@ -379,25 +378,26 @@ export default function EPBuildSpecRenderer({ path, onEnquireClick }) {
           )}
 
           {/* E. STICKY / BOTTOM CONVERSION CTA BANNER */}
-          <div className="bg-gradient-to-r from-blue-900/80 via-indigo-900/80 to-slate-900 border border-blue-700/50 rounded-2xl p-8 sm:p-10 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl">
+          <div className="bg-gradient-to-r from-slate-900 via-slate-950 to-slate-900 border border-yellow-500/30 rounded-2xl p-8 sm:p-10 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl relative overflow-hidden">
             <div className="space-y-2 text-center md:text-left">
-              <h3 className="text-2xl sm:text-3xl font-extrabold">Ready to Order Electropolished Pipe?</h3>
-              <p className="text-blue-200 text-sm sm:text-base max-w-xl">
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-white">Ready to Order <span className="text-yellow-400">Electropolished Pipe?</span></h3>
+              <p className="text-slate-300 text-sm sm:text-base max-w-xl leading-relaxed">
                 Get mill direct pricing, EN 10204 3.1 MTCs, and Ra roughness test reports from Sakshi Forge.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
               <button
                 onClick={() => onEnquireClick(h1)}
-                className="bg-white hover:bg-slate-100 text-slate-950 font-bold px-7 py-3.5 rounded-xl transition shadow-lg whitespace-nowrap"
+                className="bg-yellow-500 hover:bg-yellow-400 text-slate-950 font-extrabold px-7 py-3.5 rounded-xl transition shadow-lg shadow-yellow-500/25 whitespace-nowrap flex items-center justify-center space-x-2"
               >
-                Request Quotation
+                <span>Request Quotation</span>
+                <ArrowRight className="w-4 h-4 text-slate-950" />
               </button>
               <a
                 href="tel:+918045815130"
-                className="bg-blue-600/30 hover:bg-blue-600/50 border border-blue-400/40 text-white font-semibold px-6 py-3.5 rounded-xl transition flex items-center justify-center space-x-2 whitespace-nowrap"
+                className="bg-slate-900/90 hover:bg-slate-800 border border-yellow-500/40 text-yellow-400 font-bold px-6 py-3.5 rounded-xl transition flex items-center justify-center space-x-2 whitespace-nowrap"
               >
-                <Phone className="w-4 h-4 text-blue-300" />
+                <Phone className="w-4 h-4 text-yellow-400" />
                 <span>Call +91 8045815130</span>
               </a>
             </div>

@@ -122,6 +122,20 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
             <a href="/terms-and-conditions" onClick={(e) => handleLinkClick(e, '/terms-and-conditions')}>Terms & Conditions</a>
           </div>
         </div>
+
+        <div className="footer-signature-wrap">
+          <a
+            href="https://errorr.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-signature-badge"
+          >
+            <span>Designed and Promoted by</span>
+            <span className="sig-brand">errorr.in</span>
+            <span className="sig-divider">•</span>
+            <span className="sig-tag">Best Digital Marketing Company in India</span>
+          </a>
+        </div>
       </div>
     </footer>
   );

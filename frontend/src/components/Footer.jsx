@@ -36,7 +36,7 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: 'var(--text-secondary)' }}>
                   <Mail size={16} className="infra-feature-icon" />
                   <span style={{ fontSize: '0.9rem' }}>
-                    <a href="mailto:sakshiforge1737@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>sakshiforge1737@gmail.com</a>
+                    <a href="mailto:sales@steelmanufacturer.in" style={{ color: 'inherit', textDecoration: 'none' }}>sales@steelmanufacturer.in</a>
                   </span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', color: 'var(--text-secondary)' }}>
@@ -123,18 +123,10 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
           </div>
         </div>
 
-        <div className="footer-signature-wrap">
-          <a
-            href="https://errorr.in/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer-signature-badge"
-          >
-            <span>Designed and Promoted by</span>
-            <span className="sig-brand">errorr.in</span>
-            <span className="sig-divider">•</span>
-            <span className="sig-tag">Best Digital Marketing Company in India</span>
-          </a>
+        <div className="footer-signature-wrap" style={{ textAlign: 'center', marginTop: '1.25rem' }}>
+          <p className="site-credit" style={{ fontSize: '0.8rem', color: 'var(--text-muted)', margin: 0 }}>
+            Website by <a href="https://errorr.in/" rel="nofollow" target="_blank" style={{ color: 'inherit', textDecoration: 'underline' }}>errorr.in</a>
+          </p>
         </div>
       </div>
     </footer>

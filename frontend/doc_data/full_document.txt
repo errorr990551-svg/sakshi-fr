@@ -1,0 +1,1599 @@
+﻿Canberra EP Pipes Page — Developer Handoff
+https://steelmanufacturer.in/market-area/canberra-australia
+Sep 29, 2026 · @Akshat Raj
+How to use this doc
+Replace the live Canberra page section by section, top to bottom, using the blocks below. Every block is final copy except text in [square brackets], which the client must supply before publishing.
+* Page: https://steelmanufacturer.in/market-area/canberra-australia
+* Order of work: page settings → sections in page order → media → schema → delete list → sitewide template fixes → QA.
+* [BRACKETS] = real data from Sakshi Forge. Never publish a page with brackets still in it.
+* Code blocks = paste exactly as written.
+* Template vs city fields: everything marked Template fix goes into the master city-page template once. Only the Local block, lead times and references are hand-written per city.
+1. Page settings (SEO fields)
+Set these in the SEO plugin / page settings. They replace whatever is there now.
+Field
+	Paste this
+	Title tag
+	Electropolished Pipes Manufacturer for Canberra, ACT | Sakshi Forge
+	Meta description
+	ASTM A270 / ASME BPE electropolished 316L & 304L tube shipped from Mumbai to Canberra. Duty-free under AI-ECTA, EN 10204 3.1 MTC, Ra-tested. Request a quote.
+	H1 (only one H1 on the page)
+	Electropolished Pipes Manufacturer for Canberra, ACT
+	Eyebrow text above H1
+	Export Supply · Canberra, ACT, Australia
+	Canonical URL
+	The site-standard version of /market-area/canberra-australia (with or without trailing slash — match every other page). 301-redirect the other version to it.
+	Visible breadcrumb
+	Home › Market Directory › Australia › Canberra
+	Open Graph image
+	electropolished-pipes.jpg (section 3.1)
+	Robots
+	index, follow
+	The eyebrow replaces "Industrial Supply Location • ACT (B)". The "(B)" is an internal tier code and must not appear on any public page.
+2. Page copy — section by section
+Each block replaces the matching block on the live page, in page order. "Replaces" names the current block so the developer can find it.
+2.1 Hero
+Replaces: the intro paragraph, the 4 badges and the button under the H1.
+Intro paragraph
+Sakshi Forge manufactures ASTM A270 / ASME BPE electropolished stainless steel tubing in Mumbai and ships it to Canberra through Port Botany, Sydney. We supply SS 316L and 304L EP tube with internal finishes down to Ra ≤ 0.38 µm (SF4). Every batch is 100% PMI-tested and ships with EN 10204 3.1 MTCs, for pharma, laboratory, hospital, brewery and food process lines across the ACT and Queanbeyan.
+Trust badges (4)
+Badge 1
+	Badge 2
+	Badge 3
+	Badge 4
+	ISO 9001:2015 Certified
+	EN 10204 3.1 MTC Provided
+	100% PMI Tested
+	Duty-Free into Australia (AI-ECTA)
+	Button: Request a Quote for Canberra
+2.2 Local block
+Replaces: "LOCAL INDUSTRIAL INTEGRATION — Supplying High-Purity EP Tubing Across Canberra Estates", its paragraph and its 3 info cards (including "CTY-0672" and "SF-ROUTE: #CAN-EP").
+Eyebrow: CANBERRA & ACT SUPPLY
+H2: Electropolished Tubing for Canberra's Labs, Hospitals & Breweries
+Body
+Canberra is not a heavy-industry city. Demand for electropolished tubing here comes from research, healthcare and craft beverage production. We supply EP tube for:
+* Research laboratories — purified water, specialty gas and clean utility lines.
+* Hospital pharmacy and sterile services — PW/WFI and clean-steam distribution.
+* Craft breweries and distilleries — product transfer and CIP lines in 304L and 316L.
+* Food producers — sanitary process piping.
+[Reference line — client to supply 1–2 real ones, e.g. "In [year] we supplied 316L SF4 tube to a [sector] facility in [area]." If none exist, delete this line. Never invent one.]
+Info cards (3)
+Card title
+	Card text
+	Delivery Areas
+	Fyshwick · Hume · Mitchell · Beard · Queanbeyan (NSW)
+	Key Buyer Sectors
+	Research labs · Hospitals · Craft brewing & distilling · Food production
+	Entry Port
+	Port Botany, Sydney — about 280 km by road to Canberra
+	Related-pages line (directly under the cards): Also supplying: Electropolished Pipes for Sydney · Melbourne · All Australia — [link only pages that already exist and are indexed].
+2.3 Logistics & process
+Replaces: "Supply Route & Logistics", the Mumbai Works → Canberra Site graphic, the 5 process steps, "FOB Mumbai / Door Delivery" and the "Dispatched with…" line.
+H2: How We Ship Electropolished Pipes from Mumbai to Canberra
+Route graphic labels (4 nodes, left to right): Mumbai Works → Nhava Sheva Port → Port Botany, Sydney → Canberra Site
+Process steps (6)
+1. Heat-number traceability and PMI check on incoming material
+2. [Client to confirm their real forming / sizing step] and dimensional check
+3. Internal electropolishing, DI-water rinse and nitrogen purge
+4. Ra profilometer inspection and EN 10204 3.1 MTC issue
+5. End-capped, poly-sleeved and packed in ISPM-15 heat-treated timber crates, as Australian biosecurity requires for timber packaging
+6. Sea freight Nhava Sheva → Port Botany, Sydney, then road delivery to Canberra
+Info rows
+Label
+	Text
+	Incoterms
+	FOB Nhava Sheva · CIF Port Botany · DAP Canberra site
+	Lead time
+	[X] weeks production + [Y] weeks sea freight + [Z] days clearance and road
+	Import duty
+	Duty-free under the India–Australia ECTA with a valid Certificate of Origin
+	Shipping documents
+	Commercial invoice, packing list, bill of lading, ECTA Certificate of Origin, EN 10204 3.1 MTC, Ra report, packaging declaration
+	Footnote line: Every dispatch includes EN 10204 3.1 MTCs, chemical analysis and Ra profilometer reports from a NABL-accredited lab. NABL is an ILAC-MRA signatory, like Australia's NATA.
+2.4 EP vs MP comparison table
+Replaces: the intro line and the whole table under "TECHNICAL COMPARISON". Keep the H2. The 4th column header changes from "Industrial Benefit in Canberra" to "Why It Matters".
+Intro line: Electropolishing removes a thin surface layer electrochemically, levelling peaks and leaving a chromium-enriched passive film. Mechanical polishing only abrades the surface.
+Surface Property
+	Electropolished (EP)
+	Mechanically Polished (MP)
+	Why It Matters
+	Internal Ra (ASME BPE)
+	SF4 ≤ 0.38 µm (15 µin) · SF5 ≤ 0.51 µm (20 µin) · SF6 ≤ 0.64 µm (25 µin)
+	SF1 ≤ 0.51 µm (20 µin) · SF2 ≤ 0.64 µm (25 µin) · SF3 ≤ 0.76 µm (30 µin)
+	Lower Ra resists bacterial adhesion and biofilm in sanitary loops
+	Surface structure
+	Levelled, no directional lay
+	Directional abrasive scratches
+	Faster, more reliable CIP and SIP cycles
+	Passive layer
+	Chromium-enriched [add measured Cr/Fe ratio only if you hold an XPS/AES test report]
+	Standard passive layer unless separately passivated
+	Better resistance to rouging and pitting
+	Typical specification
+	ASTM A270 + ASME BPE SF4–SF6
+	ASTM A270 + ASME BPE SF1–SF3
+	Commonly specified for TGA (PIC/S), EU-GMP and FDA-regulated product-contact systems
+	2.5 Grade cards
+Replaces: the intro line and all 3 cards under "METALLURGY & STANDARDS". The 904L card is removed from this page (904L tube is ASTM B677/B673/B674, not A270, and Canberra has no acid-chemical demand).
+Intro line: All electropolished tube dispatched to Canberra conforms to ASTM A270 and ASME BPE. Chemistry shown is the ASTM limit; your MTC shows the actual heat analysis.
+Card 1 — SS 316L EP Tubing · Tag: PHARMA & BIOTECH
+Low-carbon, molybdenum-bearing grade for purified water, WFI and clean-steam systems.
+Cr: 16.0–18.0% | Ni: 10.0–14.0% | Mo: 2.0–3.0% | C: ≤ 0.035% max [or the tighter limit you certify] S: 0.005–0.017% for orbital weldability (ASME BPE) [keep only if you control sulfur to this range] Surface finish: SF4 (Ra ≤ 0.38 µm) · SF5 (Ra ≤ 0.51 µm)
+Card 2 — SS 304L EP Tubing · Tag: FOOD, DAIRY & BREWERY
+Low-carbon 18/8 austenitic grade for brewery, dairy and food product lines.
+Cr: 18.0–20.0% | Ni: 8.0–12.0% | C: ≤ 0.035% max [QA to confirm all values against the ASTM A269/A270 edition you certify to] Surface finish: SF5 (Ra ≤ 0.51 µm / 20 µin) internal
+Card 3 — Size Range at a Glance · Tag: STOCK & MADE-TO-ORDER
+½" to 4" OD (12.70–101.60 mm) · 1.65–2.11 mm wall · 6 m lengths. See the full size table below. [Adjust to the client's real range.]
+2.6 Size table (new block)
+Insert: directly after the grade cards. There is no size information on the live page today.
+H2: Electropolished Tube Sizes Available for Canberra Projects
+Intro line: Standard ASTM A270 / ASME BPE outside diameters. Custom lengths and other wall thicknesses on request. [Client to confirm the range they actually produce and delete rows they don't.]
+OD (inch)
+	OD (mm)
+	Wall (mm)
+	Length
+	½"
+	12.70
+	1.65
+	6 m
+	¾"
+	19.05
+	1.65
+	6 m
+	1"
+	25.40
+	1.65
+	6 m
+	1½"
+	38.10
+	1.65
+	6 m
+	2"
+	50.80
+	1.65
+	6 m
+	2½"
+	63.50
+	1.65
+	6 m
+	3"
+	76.20
+	1.65
+	6 m
+	4"
+	101.60
+	2.11
+	6 m
+	2.7 Why-us cards
+Replaces: "ENGINEERED EXCELLENCE — Why Industrial Plants in Canberra Partner with Sakshi Forge" and its 5 cards.
+H2: Why Canberra Buyers Choose Sakshi Forge
+Card title
+	Card text
+	Ultra-Smooth Internal Surface
+	Electropolished to Ra ≤ 0.38 µm (SF4), removing the micro-burrs and crevices where biofilm starts.
+	100% PMI & EN 10204 3.1 MTC
+	Every batch is PMI-verified and [hydrostatic / eddy-current] tested before dispatch. [ASTM A270 accepts either test — state the one you run.]
+	Duty-Free, Fully Documented Export
+	ECTA Certificate of Origin, complete shipping documents, and delivery to Port Botany or your Canberra site.
+	EP Tube, Fittings & Flanges from One Source
+	Electropolished tube with tri-clamp fittings and weld-neck flanges [add "high-purity valves" only if actually stocked].
+	Export-Grade Packing
+	End-capped, poly-sleeved tube in ISPM-15 heat-treated crates that meet Australian biosecurity rules.
+	2.8 FAQ
+Replaces: all 3 current FAQ items (2 of them have no answer). The visible question and answer text must match the FAQ schema in section 4 word for word.
+H2: Frequently Asked Questions — Supply to Canberra
+Q1. Do you supply EN 10204 3.1 certified electropolished pipes to Canberra? Yes. Every shipment to the ACT carries EN 10204 3.1 MTCs with heat numbers, PMI results and Ra profilometer reports from a NABL-accredited lab. NABL is an ILAC-MRA signatory, like Australia's NATA.
+Q2. What surface roughness (Ra) finishes are available for Canberra pharma and lab projects? We supply electropolished SF4 (Ra ≤ 0.38 µm / 15 µin) and SF5 (Ra ≤ 0.51 µm / 20 µin) [add SF6 if offered]. Mechanically polished SF1 (Ra ≤ 0.51 µm) is available for non-product-contact lines.
+Q3. What is the delivery time to Canberra? Typically [X] weeks production, [Y] weeks sea freight to Port Botany, Sydney, and [Z] days for customs clearance and road delivery to Canberra. We confirm the exact date with every quote.
+Q4. Is there import duty on electropolished pipes from India to Australia? Indian-origin goods enter Australia duty-free under the India–Australia ECTA when shipped with a valid Certificate of Origin. Ask your customs broker to confirm the HS code (7306.40 welded or 7304.41 seamless) and whether any anti-dumping measures apply.
+Q5. Do your tubes meet AS 1528? [Keep ONE answer, delete the other] Yes — we supply to AS 1528.1 dimensions for dairy, brewery and food lines. / We supply ASTM A270 outside diameters; send your AS 1528 specification and we will confirm compatibility before quoting.
+Q6. How do I order electropolished pipes from Australia? Send the grade, OD × wall, finish, length and quantity through the RFQ form or to [sales@steelmanufacturer.in]. You will receive a quote within one business day (AEST). Minimum order: [MOQ].
+2.9 RFQ block
+Replaces: "Request Direct Manufacturer Quotation for Canberra", its paragraph and its footnote. Removes "FOR doorstep pricing" and "MTC within 2 business hours".
+H2: Request a Manufacturer Quotation for Canberra
+Body: Get FOB Nhava Sheva, CIF Port Botany or DAP Canberra pricing on ASTM A270 electropolished 316L and 304L tube, sanitary fittings and flanges. Quotes within one business day (AEST). Sample MTC and Ra report on request.
+Buttons: Submit RFQ Form · Email Sales Team → mailto:[sales@steelmanufacturer.in]
+Footnote: EN 10204 3.1 Mill Test Certificates and NABL-accredited Ra profilometer reports are supplied with every dispatch.
+2.10 Closing block
+Replaces: "Partner with Sakshi Forge for Reliable Industrial Steel Solutions" (the flanges / forged / high-pressure text is off-topic for this page).
+H2: Specify Electropolished Tube for Your Next ACT Project
+Body: Send your grade, OD × wall, finish and quantity. Our QA team replies with a quote, a sample 3.1 MTC and a delivered lead time to your Canberra site.
+Button: Contact Us
+3. Media — photo and video
+Use only the one photo and the one YouTube video below. No other images, videos or captions go on this page.
+3.1 Product photo
+ Electropolished Pipes 
+
+This is the only photo for this page. Use it exactly as supplied, with the caption below and no other image or caption.
+Setting
+	Value
+	File
+	electropolished-pipes.jpg (client's photo, renamed) — 500 × 500 px, 33 KB, JPEG. No resizing or compression needed.
+	Upload to
+	WordPress Media Library
+	Placement
+	Hero, right of the intro paragraph (below the badges on mobile)
+	Alt text
+	Electropolished pipes
+	Caption
+	Electropolished Pipes
+	<figure class="ep-photo" style="margin:0;max-width:500px;">
+ <img
+   src="[Media Library URL of electropolished-pipes.jpg]"
+   alt="Electropolished pipes"
+   width="500" height="500"
+   fetchpriority="high" decoding="async"
+   style="width:100%;height:auto;border-radius:8px;">
+ <figcaption>Electropolished Pipes</figcaption>
+</figure>
+The photo sits above the fold, so it uses fetchpriority="high" and no lazy loading.
+3.2 YouTube video
+* Video: https://youtu.be/SJqbbUzYjXg (video ID SJqbbUzYjXg) — the only video for this page.
+* Placement: directly under the 6 process steps in section 2.3, before the Info rows.
+* No caption or extra heading under or above the video.
+<div class="ep-video" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px;margin:0 0 24px;">
+ <iframe
+   src="https://www.youtube-nocookie.com/embed/SJqbbUzYjXg?rel=0"
+   title="[Exact YouTube video title]"
+   loading="lazy"
+   style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+   referrerpolicy="strict-origin-when-cross-origin"
+   allowfullscreen></iframe>
+</div>
+The title attribute is for screen readers only and does not show on the page. Copy it from the YouTube video page.
+rel=0 limits end-screen suggestions to this channel. The nocookie domain keeps the page lighter and avoids YouTube tracking cookies before play.
+4. Schema (JSON-LD)
+Paste this once, as a Custom HTML block at the end of the page or in the SEO plugin's custom-schema field. Fill the brackets first.
+Before pasting: check whether the template already auto-generates FAQPage schema from the FAQ block. If it does, turn that off for this page — two FAQPage blocks (one with empty answers) is an error.
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+   {
+     "@type": "WebPage",
+     "@id": "https://steelmanufacturer.in/market-area/canberra-australia#webpage",
+     "url": "https://steelmanufacturer.in/market-area/canberra-australia",
+     "name": "Electropolished Pipes Manufacturer for Canberra, ACT | Sakshi Forge",
+     "description": "ASTM A270 / ASME BPE electropolished 316L & 304L tube shipped from Mumbai to Canberra. Duty-free under AI-ECTA, EN 10204 3.1 MTC, Ra-tested. Request a quote.",
+     "inLanguage": "en",
+     "breadcrumb": { "@id": "https://steelmanufacturer.in/market-area/canberra-australia#breadcrumb" }
+   },
+   {
+     "@type": "BreadcrumbList",
+     "@id": "https://steelmanufacturer.in/market-area/canberra-australia#breadcrumb",
+     "itemListElement": [
+       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://steelmanufacturer.in/" },
+       { "@type": "ListItem", "position": 2, "name": "Market Directory", "item": "[Market Directory URL]" },
+       { "@type": "ListItem", "position": 3, "name": "Australia", "item": "[Australia hub URL]" },
+       { "@type": "ListItem", "position": 4, "name": "Canberra", "item": "https://steelmanufacturer.in/market-area/canberra-australia" }
+     ]
+   },
+   {
+     "@type": "FAQPage",
+     "@id": "https://steelmanufacturer.in/market-area/canberra-australia#faq",
+     "mainEntity": [
+       {
+         "@type": "Question",
+         "name": "Do you supply EN 10204 3.1 certified electropolished pipes to Canberra?",
+         "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every shipment to the ACT carries EN 10204 3.1 MTCs with heat numbers, PMI results and Ra profilometer reports from a NABL-accredited lab. NABL is an ILAC-MRA signatory, like Australia's NATA." }
+       },
+       {
+         "@type": "Question",
+         "name": "What surface roughness (Ra) finishes are available for Canberra pharma and lab projects?",
+         "acceptedAnswer": { "@type": "Answer", "text": "We supply electropolished SF4 (Ra ≤ 0.38 µm / 15 µin) and SF5 (Ra ≤ 0.51 µm / 20 µin). Mechanically polished SF1 (Ra ≤ 0.51 µm) is available for non-product-contact lines." }
+       },
+       {
+         "@type": "Question",
+         "name": "What is the delivery time to Canberra?",
+         "acceptedAnswer": { "@type": "Answer", "text": "Typically [X] weeks production, [Y] weeks sea freight to Port Botany, Sydney, and [Z] days for customs clearance and road delivery to Canberra. We confirm the exact date with every quote." }
+       },
+       {
+         "@type": "Question",
+         "name": "Is there import duty on electropolished pipes from India to Australia?",
+         "acceptedAnswer": { "@type": "Answer", "text": "Indian-origin goods enter Australia duty-free under the India–Australia ECTA when shipped with a valid Certificate of Origin. Ask your customs broker to confirm the HS code (7306.40 welded or 7304.41 seamless) and whether any anti-dumping measures apply." }
+       },
+       {
+         "@type": "Question",
+         "name": "Do your tubes meet AS 1528?",
+         "acceptedAnswer": { "@type": "Answer", "text": "[Paste the ONE Q5 answer kept on the page]" }
+       },
+       {
+         "@type": "Question",
+         "name": "How do I order electropolished pipes from Australia?",
+         "acceptedAnswer": { "@type": "Answer", "text": "Send the grade, OD × wall, finish, length and quantity through the RFQ form or to [sales@steelmanufacturer.in]. You will receive a quote within one business day (AEST). Minimum order: [MOQ]." }
+       }
+     ]
+   },
+   {
+     "@type": "VideoObject",
+     "@id": "https://steelmanufacturer.in/market-area/canberra-australia#video",
+     "name": "[Exact YouTube video title]",
+     "description": "[1–2 sentences on what the video shows]",
+     "thumbnailUrl": "https://i.ytimg.com/vi/SJqbbUzYjXg/hqdefault.jpg",
+     "uploadDate": "[YYYY-MM-DDT00:00:00+05:30 — the date it went live on YouTube]",
+     "embedUrl": "https://www.youtube.com/embed/SJqbbUzYjXg"
+   }
+ ]
+}
+</script>
+Rules for this code:
+* Every FAQ answer here must match the visible answer on the page word for word. If the client edits one, edit both.
+* The page URL must match the canonical exactly (trailing slash or not).
+* If no Australia hub page exists yet, delete breadcrumb item 3 and renumber Canberra to position 3.
+* Product schema is intentionally left out. Google needs a price or genuine reviews for it; never add fake ratings.
+* Validate with Google's Rich Results Test and validator.schema.org before publishing.
+5. Delete list — confirm none of this survives
+Most of these disappear when section 2 is pasted. Search the live page for each string after publishing and tick it off.
+* ☐ "ACT (B)" — eyebrow. Internal tier code.
+* ☐ "CTY-0672" — local block. Internal ID.
+* ☐ "Active Supply Node" / "SF-ROUTE: #CAN-EP" — local block card. Internal code.
+* ☐ "Hume Industrial" — local block and FAQ. The area is Hume.
+* ☐ "Fast Road Transit to Canberra" — hero badge. There is no road route from Mumbai; it ships by sea.
+* ☐ "Fast Road Transit from Mumbai Plant" — why-us card. Same reason.
+* ☐ "E-Way Bill Lock" / "Heat Lock" / "Electropolishing Purge" — process steps. Indian domestic paperwork and wrong terms.
+* ☐ "FOB Mumbai / Door Delivery" — logistics. Replaced by the Incoterms row.
+* ☐ "FOR doorstep pricing" — RFQ. Indian domestic term.
+* ☐ "within 2 business hours" — RFQ. Unclear across time zones, and the MTC ships with the goods, not the quote.
+* ☐ "semiconductor" and "high-purity chemical units" — intro. No such plants in the ACT.
+* ☐ "premier" — intro. Filler word.
+* ☐ The whole "904L & Specialty EP" card — grades. 904L is not an ASTM A270 grade.
+* ☐ "SF1" anywhere in the EP column or on the 316L card — SF1 is a mechanically polished finish.
+* ☐ "Ra ≤ 0.80 µm (32 µin) / SF1" — comparison table. SF1 is 0.51 µm.
+* ☐ "Mandatory for USFDA, WHO-GMP & EU-GMP" — comparison table. GMP rules don't mandate a finish.
+* ☐ "Chromium-to-Iron ratio > 1.5" and "~ 0.8" — comparison table, unless the client holds an XPS/AES report.
+* ☐ "Partner with Sakshi Forge for Reliable Industrial Steel Solutions" block — bottom. Flanges/forgings text is off-topic here.
+* ☐ Extra "in Canberra" phrases, e.g. "Industrial Benefit in Canberra", "environments in Canberra". Target: about 6–8 natural mentions on the whole page, down from about 18.
+6. Sitewide template fixes
+These errors come from the master city-page template, so every city page has them. Fix them once in the template; Canberra and all other city pages inherit the fix.
+Split the template: India vs international. Road transit, FOR pricing and E-Way Bill are correct for Indian city pages. For all international pages (Australia, UAE, UK, USA and the other export markets), use the export logistics block from section 2.3: sea route, Incoterms, lead time, Certificate of Origin.
+Fix
+	Where
+	Change
+	Hide internal codes
+	All city pages
+	Never print tier codes (A/B/C), CTY-IDs or SF-ROUTE values on the front end.
+	International logistics block
+	All non-India city pages
+	Replace road transit / FOR / E-Way Bill with the section 2.3 block.
+	Comparison table and grade cards
+	All city pages
+	Apply the corrected SF values, drop SF1 from EP, drop "Mandatory for…GMP", remove 904L from the A270 list.
+	RFQ and closing blocks
+	All city pages
+	Use the section 2.9 and 2.10 copy. International pages get Incoterms; India pages keep ex-works / FOR.
+	FAQ schema
+	All city pages
+	Never output a Question with an empty answer. Hide the FAQ item until its answer is filled.
+	Breadcrumb
+	International city pages
+	Add the country level: Home › Market Directory › [Country] › [City].
+	Sales email
+	Footer, RFQ, contact page
+	Replace sakshiforge1737@gmail.com with [sales@steelmanufacturer.in] once the mailbox exists.
+	Agency footer credit
+	Footer, every page
+	Replace with the code below. A keyword-anchor link on every page of a 2,000-page site looks like a paid link pattern to Google.
+	URL versions
+	Whole site
+	One version per URL: force HTTPS and one trailing-slash format with 301s; canonical must match.
+	robots.txt
+	Site root
+	Confirm Googlebot is not disallowed. Blocking AI crawlers (GPTBot, ClaudeBot, PerplexityBot) is a client decision — it keeps the site out of AI answers.
+	Footer credit — replaces "Designed and Promoted by errorr.in • Best Digital Marketing Company in India":
+<p class="site-credit">Website by <a href="https://errorr.in/" rel="nofollow">errorr.in</a></p>
+7. Placeholders to fill, then QA
+The page cannot go live until every bracket below is filled with real data. If a fact isn't available, delete the line rather than guess.
+Placeholder
+	Where it appears
+	Who supplies it
+	Real supply references (1–2)
+	2.2 Local block
+	Client
+	Forming / sizing process step
+	2.3 step 2
+	Client QA
+	Lead time: production [X], sea [Y], clearance + road [Z]
+	2.3 Info rows, FAQ Q3, schema
+	Client logistics
+	Measured Cr/Fe ratio (optional)
+	2.4 table
+	Client QA — only with an XPS/AES report
+	316L carbon limit, sulfur range
+	2.5 Card 1
+	Client QA
+	304L chemistry check
+	2.5 Card 2
+	Client QA
+	Real size range
+	2.5 Card 3, 2.6 table
+	Client production
+	Hydrostatic or eddy-current test
+	2.7 card 2
+	Client QA
+	High-purity valves stocked?
+	2.7 card 4
+	Client
+	SF6 offered?
+	FAQ Q2 (page + schema)
+	Client
+	AS 1528 answer
+	FAQ Q5 (page + schema)
+	Client QA
+	Sales email on own domain
+	FAQ Q6, 2.9, footer
+	Client — create mailbox
+	Minimum order quantity
+	FAQ Q6 (page + schema)
+	Client
+	Media Library URL of electropolished-pipes.jpg
+	3.1 code
+	Developer, after upload
+	Video title, description, upload date
+	3.2 code, schema
+	From the YouTube video page
+	Market Directory and Australia hub URLs
+	Breadcrumb, schema
+	Developer
+	Sydney / Melbourne / Australia links
+	2.2 related-pages line
+	Developer — existing pages only
+	Pre-publish QA
+* ☐ Search the page source for "[" — zero results.
+* ☐ Exactly one H1 on the page.
+* ☐ "Canberra" appears about 6–8 times, not 18.
+* ☐ Every item in the Delete list (section 5) is gone.
+* ☐ Visible FAQ text matches the schema text word for word.
+* ☐ Rich Results Test: no errors, only one FAQPage block.
+* ☐ Mobile: tables scroll sideways inside their box; video keeps 16:9.
+* ☐ The only image is electropolished-pipes.jpg (caption "Electropolished Pipes") and the only video is SJqbbUzYjXg.
+* ☐ Canonical matches the live URL; the other slash / HTTP versions 301 to it.
+* ☐ After publishing: Search Console → URL Inspection → Request indexing.
+Source for the duty-free claim: from January 1, 2026, 100% of Indian tariff lines have duty-free access to Australia under ECTA — News On AIR, 1 Jan 2026. Anti-dumping duties are a separate regime, which is why FAQ Q4 tells buyers to check with their broker.
+Abu Dhabi EP Pipes Page — Developer Handoff
+29 Sept 2026 · @Akshat Raj
+https://steelmanufacturer.in/market-area/abu-dhabi-uae
+How to use this doc
+This is a complete page for "Electropolished Pipes Manufacturer in Abu Dhabi", built to beat the two ranking pages on EP relevance, Abu Dhabi specifics and technical accuracy. Paste it section by section, top to bottom. Text in [square brackets] is client data and must be filled before publishing.
+* One URL only. If an Abu Dhabi page already exists, replace its content entirely. Never publish a second Abu Dhabi URL (doorway-page rule).
+* Media: only the client's photo (electropolished-pipes.jpg, caption "Electropolished Pipes") and only the YouTube video SJqbbUzYjXg. No other images, videos or captions anywhere on the page.
+* Template fixes: the sitewide fixes in the Canberra handoff (section 6) apply here too: India vs international template split, internal codes hidden, domain email, footer credit.
+What the ranking pages do, and where this page wins
+
+
+	Sagar Steel — Abu Dhabi pipes & tubes page
+	Creative Piping — polished pipe page
+	This page
+	Product focus
+	Every pipe type: carbon, alloy, duplex, Monel, Cu-Ni. EP is not covered.
+	Mechanically polished pipe (mirror, satin, grit). Not EP.
+	Electropolished tube only
+	EP detail (Ra, ASME BPE SF grades)
+	None
+	None
+	SF table, grade cards, size table
+	Abu Dhabi specifics
+	City name repeated in text. No zones, buyers, port or duty information.
+	None
+	Industrial zones, buyer sectors, Khalifa Port route, CEPA duty
+	Accuracy problems
+	ISO 9001:2008 (withdrawn standard), "18% GST" on an export page, dispatch "via Shuwaikh Port" (Kuwait), size chart typo (¾" OD shown as 4.05 in)
+	—
+	Every figure checked; client data in brackets
+	Worth copying
+	LC/TT payment terms, WhatsApp RFQ button, export country list
+	FAQ and Product schema, export country list
+	Payment terms, WhatsApp RFQ, FAQ schema
+	Sagar Steel ranks on an old domain, exact "Abu Dhabi" in URL/title/H1 and a network of ~60 interlinked city pages — not on EP content. Creative Piping ranks for "polished". Neither page answers an EP buyer's real questions: finish, sizes, lead time, duty, documents. This page does.
+1. Page settings (SEO fields)
+Set these in the SEO plugin / page settings.
+Field
+	Paste this
+	URL
+	Keep the existing Abu Dhabi URL if there is one. If not, create /market-area/abu-dhabi-uae (same pattern as /market-area/canberra-australia).
+	Title tag
+	Electropolished Pipes Manufacturer for Abu Dhabi, UAE | Sakshi Forge
+	Meta description
+	ASTM A270 / ASME BPE electropolished 316L & 304L tube shipped from Mumbai to Abu Dhabi. CEPA Certificate of Origin, EN 10204 3.1 MTC, Ra-tested. Request a quote.
+	H1 (only one H1 on the page)
+	Electropolished Pipes Manufacturer for Abu Dhabi, UAE
+	Eyebrow text above H1
+	Export Supply · Abu Dhabi, United Arab Emirates
+	Canonical URL
+	The page's own URL, in the site-standard slash format. 301-redirect every other version to it.
+	Visible breadcrumb
+	Home › Market Directory › UAE › Abu Dhabi
+	Open Graph image
+	electropolished-pipes.jpg (the client's photo — section 5)
+	Robots
+	index, follow
+	Why "for Abu Dhabi" and not "in Abu Dhabi": the plant is in Mumbai. Google matches the keyword "electropolished pipes manufacturer in Abu Dhabi" either way, and the page never claims a UAE address it doesn't have.
+2. Page copy — hero, local block, logistics
+Paste in this order. Bold labels (H2, Eyebrow, Button…) tell the developer which component the text goes into; don't paste the labels.
+2.1 Hero
+Eyebrow: Export Supply · Abu Dhabi, United Arab Emirates
+H1: Electropolished Pipes Manufacturer for Abu Dhabi, UAE
+Intro paragraph
+Sakshi Forge manufactures ASTM A270 / ASME BPE electropolished stainless steel tubing in Mumbai and ships it to Abu Dhabi through Khalifa Port or Jebel Ali. We supply SS 316L and 304L EP tube with internal finishes down to Ra ≤ 0.38 µm (SF4). Every batch is 100% PMI-tested and ships with EN 10204 3.1 MTCs, for pharmaceutical, biotech, hospital, laboratory, dairy and food process lines across Abu Dhabi and Al Ain.
+Trust badges (4)
+Badge 1
+	Badge 2
+	Badge 3
+	Badge 4
+	ISO 9001:2015 Certified
+	EN 10204 3.1 MTC Provided
+	100% PMI Tested
+	CEPA Certificate of Origin
+	Buttons: Request a Quote for Abu Dhabi · WhatsApp Your RFQ
+<a class="btn-whatsapp" href="https://wa.me/[91XXXXXXXXXX]?text=RFQ%20-%20Electropolished%20pipes%20for%20Abu%20Dhabi" target="_blank" rel="noopener">WhatsApp Your RFQ</a>
+[Client to confirm which number runs WhatsApp Business; digits only, country code first, no + or spaces.]
+The photo goes to the right of the intro — see section 5.
+2.2 Local block
+Eyebrow: ABU DHABI & UAE SUPPLY
+H2: Electropolished Tubing for Abu Dhabi's Pharma, Biotech & Food Plants
+Body
+Abu Dhabi is adding pharmaceutical and biologics capacity, with vaccine fill-finish, biologics and injectables projects planned at KEZAD next to Khalifa Port. These plants run purified water, WFI and clean-steam systems — exactly where electropolished tube is specified. We supply EP tube for:
+* Pharmaceutical and biotech plants — PW/WFI loops, clean steam and CIP/SIP lines in 316L SF4.
+* Hospitals and hospital pharmacies — purified water and sterile services.
+* Research laboratories and universities — purified water, specialty gas and clean utility lines.
+* Dairy, juice and bottled-water producers — sanitary product and CIP lines in 304L and 316L.
+[Reference line — client to supply 1–2 real UAE shipments, e.g. "In [year] we supplied 316L SF4 tube to a [sector] project in [KEZAD / Mussafah / Al Ain]." If none exist, delete this line. Never invent one.]
+Info cards (3)
+Card title
+	Card text
+	Delivery Areas
+	KEZAD (Khalifa Port) · ICAD / Mussafah · Masdar City · Al Ain
+	Key Buyer Sectors
+	Pharma & biotech · Hospitals · Research labs · Dairy & beverages
+	Entry Ports
+	Khalifa Port, Abu Dhabi · Jebel Ali, Dubai
+	Related-pages line (under the cards): Also supplying: Electropolished Pipes for Dubai · Sharjah · All UAE — [link only pages that already exist and are indexed].
+2.3 Logistics & export
+H2: How We Ship Electropolished Pipes from Mumbai to Abu Dhabi
+Route graphic labels (4 nodes, left to right): Mumbai Works → Nhava Sheva Port → Khalifa Port, Abu Dhabi → Your Site
+Process steps (6)
+1. Heat-number traceability and PMI check on incoming material
+2. [Client to confirm their real forming / sizing step] and dimensional check
+3. Internal electropolishing, DI-water rinse and nitrogen purge
+4. Ra profilometer inspection and EN 10204 3.1 MTC issue
+5. End-capped, poly-sleeved and packed in ISPM-15 heat-treated timber crates
+6. Sea freight Nhava Sheva → Khalifa Port (or Jebel Ali, then road to Abu Dhabi), cleared and delivered to your site
+The YouTube video goes directly under these steps — see section 5.
+Info rows
+Label
+	Text
+	Incoterms
+	FOB Nhava Sheva · CIF Khalifa Port or Jebel Ali · DAP Abu Dhabi site
+	Lead time
+	[X] weeks production + [Y] days sea freight + [Z] days clearance and delivery
+	Import duty
+	0% UAE customs duty for qualifying Indian-origin goods with a CEPA Certificate of Origin (standard rate 5%)
+	Payment terms
+	[e.g. LC at sight or TT — client to confirm]
+	Quote currency
+	USD or AED
+	Shipping documents
+	Commercial invoice, packing list, bill of lading, CEPA Certificate of Origin, EN 10204 3.1 MTC, Ra report [+ any invoice attestation the buyer's clearing agent requires]
+	Footnote line: Every dispatch includes EN 10204 3.1 MTCs, chemical analysis and Ra profilometer reports from a NABL-accredited lab. NABL is an ILAC-MRA signatory, like the UAE's EIAC.
+3. Page copy — technical sections
+3.1 EP vs MP comparison
+Eyebrow: TECHNICAL COMPARISON
+H2: Electropolished (EP) vs Mechanically Polished (MP) Stainless Steel Pipe
+Intro line: Electropolishing removes a thin surface layer electrochemically, levelling peaks and leaving a chromium-enriched passive film. Mechanical polishing only abrades the surface. If your specification says "electropolished", a mirror-polished pipe does not meet it.
+Surface Property
+	Electropolished (EP)
+	Mechanically Polished (MP)
+	Why It Matters
+	Internal Ra (ASME BPE)
+	SF4 ≤ 0.38 µm (15 µin) · SF5 ≤ 0.51 µm (20 µin) · SF6 ≤ 0.64 µm (25 µin)
+	SF1 ≤ 0.51 µm (20 µin) · SF2 ≤ 0.64 µm (25 µin) · SF3 ≤ 0.76 µm (30 µin)
+	Lower Ra resists bacterial adhesion and biofilm in sanitary loops
+	Surface structure
+	Levelled, no directional lay
+	Directional abrasive scratches
+	Faster, more reliable CIP and SIP cycles
+	Passive layer
+	Chromium-enriched [add measured Cr/Fe ratio only if you hold an XPS/AES test report]
+	Standard passive layer unless separately passivated
+	Better resistance to rouging and pitting
+	Typical specification
+	ASTM A270 + ASME BPE SF4–SF6
+	ASTM A270 + ASME BPE SF1–SF3
+	Commonly specified for EDE-licensed (UAE), EU-GMP and FDA-regulated product-contact systems
+	3.2 Grade cards
+Eyebrow: METALLURGY & STANDARDS
+H2: Grades and Chemistry
+Intro line: All electropolished tube we ship conforms to ASTM A270 and ASME BPE. Chemistry shown is the ASTM limit; your MTC shows the actual heat analysis.
+Card 1 — SS 316L EP Tubing · Tag: PHARMA & BIOTECH
+Low-carbon, molybdenum-bearing grade for purified water, WFI and clean-steam systems.
+Cr: 16.0–18.0% | Ni: 10.0–14.0% | Mo: 2.0–3.0% | C: ≤ 0.035% max [or the tighter limit you certify] S: 0.005–0.017% for orbital weldability (ASME BPE) [keep only if you control sulfur to this range] Surface finish: SF4 (Ra ≤ 0.38 µm) · SF5 (Ra ≤ 0.51 µm)
+Card 2 — SS 304L EP Tubing · Tag: DAIRY, FOOD & BEVERAGE
+Low-carbon 18/8 austenitic grade for dairy, juice, bottled-water and food product lines.
+Cr: 18.0–20.0% | Ni: 8.0–12.0% | C: ≤ 0.035% max [QA to confirm all values against the ASTM A269/A270 edition you certify to] Surface finish: SF5 (Ra ≤ 0.51 µm / 20 µin) internal
+Card 3 — Size Range at a Glance · Tag: STOCK & MADE-TO-ORDER
+½" to 4" OD (12.70–101.60 mm) · 1.65–2.11 mm wall · 6 m lengths. See the full size table below. [Adjust to the client's real range.]
+No 904L card on this page: 904L tube is made to ASTM B677/B673/B674, not A270.
+3.3 Size table
+H2: Electropolished Tube Sizes Available
+Intro line: Standard ASTM A270 / ASME BPE outside diameters. Custom lengths and other wall thicknesses on request. [Client to confirm the range they actually produce and delete rows they don't.]
+OD (inch)
+	OD (mm)
+	Wall (mm)
+	Length
+	½"
+	12.70
+	1.65
+	6 m
+	¾"
+	19.05
+	1.65
+	6 m
+	1"
+	25.40
+	1.65
+	6 m
+	1½"
+	38.10
+	1.65
+	6 m
+	2"
+	50.80
+	1.65
+	6 m
+	2½"
+	63.50
+	1.65
+	6 m
+	3"
+	76.20
+	1.65
+	6 m
+	4"
+	101.60
+	2.11
+	6 m
+	4. Page copy — why us, FAQ, RFQ, closing
+4.1 Why-us cards
+Eyebrow: ENGINEERED EXCELLENCE
+H2: Why UAE Buyers Choose Sakshi Forge
+Card title
+	Card text
+	Ultra-Smooth Internal Surface
+	Electropolished to Ra ≤ 0.38 µm (SF4), removing the micro-burrs and crevices where biofilm starts.
+	100% PMI & EN 10204 3.1 MTC
+	Every batch is PMI-verified and [hydrostatic / eddy-current] tested before dispatch. [ASTM A270 accepts either test — state the one you run.]
+	Short Sea Route, CEPA Duty Benefit
+	Mumbai to Abu Dhabi is a short sea leg, and qualifying goods enter the UAE at 0% duty with a CEPA Certificate of Origin.
+	EP Tube, Fittings & Flanges from One Source
+	Electropolished tube with tri-clamp fittings and weld-neck flanges [add "high-purity valves" only if actually stocked].
+	Export-Grade Packing
+	End-capped, poly-sleeved tube in ISPM-15 heat-treated crates.
+	Quotes in Your Working Day
+	India is only 1.5 hours ahead of the UAE, so our sales team works your hours. Quotes within one business day.
+	4.2 FAQ
+The visible question and answer text must match the FAQ schema in section 6 word for word.
+H2: Frequently Asked Questions — Supply to Abu Dhabi
+Q1. Do you supply EN 10204 3.1 certified electropolished pipes to Abu Dhabi? Yes. Every shipment to the UAE carries EN 10204 3.1 MTCs with heat numbers, PMI results and Ra profilometer reports from a NABL-accredited lab. NABL is an ILAC-MRA signatory, like the UAE's EIAC.
+Q2. What surface roughness (Ra) finishes are available for pharma and biotech projects? We supply electropolished SF4 (Ra ≤ 0.38 µm / 15 µin) and SF5 (Ra ≤ 0.51 µm / 20 µin) [add SF6 if offered]. Mechanically polished SF1 (Ra ≤ 0.51 µm) is available for non-product-contact lines.
+Q3. How long does delivery to Abu Dhabi take? Typically [X] weeks production, [Y] days sea freight from Nhava Sheva to Khalifa Port or Jebel Ali, and [Z] days for customs clearance and delivery. We confirm the exact date with every quote.
+Q4. Is there customs duty on electropolished pipes from India to the UAE? Under the India–UAE CEPA, qualifying Indian-origin goods enter the UAE at 0% customs duty instead of the standard 5%, when shipped with a valid CEPA Certificate of Origin. Steel products have strict origin rules, so we confirm CEPA eligibility for your order before shipping. Your clearing agent can confirm the HS code (7306.40 welded or 7304.41 seamless).
+Q5. Can you deliver to KEZAD and other free zones? Yes. We deliver to KEZAD, ICAD / Mussafah, Masdar City and mainland sites across Abu Dhabi. Tell us whether your site is in a free zone or on the mainland; the customs paperwork differs, and we prepare documents to match.
+Q6. Which currencies and payment terms do you accept? We quote in USD or AED and accept [LC at sight / TT — client to confirm].
+Q7. How do I order electropolished pipes for Abu Dhabi? Send the grade, OD × wall, finish, length and quantity through the RFQ form, on WhatsApp, or to [sales@steelmanufacturer.in]. You will receive a quote within one business day. Minimum order: [MOQ].
+4.3 RFQ block
+H2: Request a Manufacturer Quotation for Abu Dhabi
+Body: Get FOB Nhava Sheva, CIF Khalifa Port / Jebel Ali or DAP Abu Dhabi pricing on ASTM A270 electropolished 316L and 304L tube, sanitary fittings and flanges. Quotes in USD or AED within one business day. Sample MTC and Ra report on request.
+Buttons: Submit RFQ Form · WhatsApp Your RFQ (same link as the hero) · Email Sales Team → mailto:[sales@steelmanufacturer.in]
+Footnote: EN 10204 3.1 Mill Test Certificates and NABL-accredited Ra profilometer reports are supplied with every dispatch.
+4.4 Closing block
+H2: Specify Electropolished Tube for Your Next UAE Project
+Body: Send your grade, OD × wall, finish and quantity. Our QA team replies with a quote, a sample 3.1 MTC and a delivered lead time to your site.
+Button: Contact Us
+5. Media — the one photo and the one video
+Use only the photo and the YouTube video below. No other images, videos or captions go on this page.
+5.1 Product photo
+
+Setting
+	Value
+	File
+	electropolished-pipes.jpg (client's photo) — 500 × 500 px, JPEG, about 33 KB. No resizing needed.
+	Upload
+	Reuse the file already in the WordPress Media Library from the Canberra page. Don't upload a second copy.
+	Placement
+	Hero, right of the intro paragraph (below the badges on mobile)
+	Alt text
+	Electropolished pipes
+	Caption
+	Electropolished Pipes
+	<figure class="ep-photo" style="margin:0;max-width:500px;">
+  <img
+    src="[Media Library URL of electropolished-pipes.jpg]"
+    alt="Electropolished pipes"
+    width="500" height="500"
+    fetchpriority="high" decoding="async"
+    style="width:100%;height:auto;border-radius:8px;">
+  <figcaption>Electropolished Pipes</figcaption>
+</figure>
+The photo sits above the fold, so it uses fetchpriority="high" and no lazy loading.
+5.2 YouTube video
+* Video: https://youtu.be/SJqbbUzYjXg (video ID SJqbbUzYjXg) — the only video for this page.
+* Placement: directly under the 6 process steps in section 2.3, before the Info rows.
+* No caption or extra heading under or above the video.
+<div class="ep-video" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px;margin:0 0 24px;">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/SJqbbUzYjXg?rel=0"
+    title="[Exact YouTube video title]"
+    loading="lazy"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe>
+</div>
+The title attribute is for screen readers only and does not show on the page. Copy it from the YouTube video page.
+6. Schema (JSON-LD)
+Paste once, as a Custom HTML block at the end of the page or in the SEO plugin's custom-schema field. Fill the brackets first. If the template auto-generates FAQPage schema from the FAQ block, turn that off for this page so there is only one.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://steelmanufacturer.in/market-area/abu-dhabi-uae#webpage",
+      "url": "https://steelmanufacturer.in/market-area/abu-dhabi-uae",
+      "name": "Electropolished Pipes Manufacturer for Abu Dhabi, UAE | Sakshi Forge",
+      "description": "ASTM A270 / ASME BPE electropolished 316L & 304L tube shipped from Mumbai to Abu Dhabi. CEPA Certificate of Origin, EN 10204 3.1 MTC, Ra-tested. Request a quote.",
+      "inLanguage": "en",
+      "breadcrumb": { "@id": "https://steelmanufacturer.in/market-area/abu-dhabi-uae#breadcrumb" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://steelmanufacturer.in/market-area/abu-dhabi-uae#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://steelmanufacturer.in/" },
+        { "@type": "ListItem", "position": 2, "name": "Market Directory", "item": "[Market Directory URL]" },
+        { "@type": "ListItem", "position": 3, "name": "UAE", "item": "[UAE hub URL]" },
+        { "@type": "ListItem", "position": 4, "name": "Abu Dhabi", "item": "https://steelmanufacturer.in/market-area/abu-dhabi-uae" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://steelmanufacturer.in/market-area/abu-dhabi-uae#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you supply EN 10204 3.1 certified electropolished pipes to Abu Dhabi?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every shipment to the UAE carries EN 10204 3.1 MTCs with heat numbers, PMI results and Ra profilometer reports from a NABL-accredited lab. NABL is an ILAC-MRA signatory, like the UAE's EIAC." }
+        },
+        {
+          "@type": "Question",
+          "name": "What surface roughness (Ra) finishes are available for pharma and biotech projects?",
+          "acceptedAnswer": { "@type": "Answer", "text": "We supply electropolished SF4 (Ra ≤ 0.38 µm / 15 µin) and SF5 (Ra ≤ 0.51 µm / 20 µin). Mechanically polished SF1 (Ra ≤ 0.51 µm) is available for non-product-contact lines." }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does delivery to Abu Dhabi take?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Typically [X] weeks production, [Y] days sea freight from Nhava Sheva to Khalifa Port or Jebel Ali, and [Z] days for customs clearance and delivery. We confirm the exact date with every quote." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there customs duty on electropolished pipes from India to the UAE?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Under the India–UAE CEPA, qualifying Indian-origin goods enter the UAE at 0% customs duty instead of the standard 5%, when shipped with a valid CEPA Certificate of Origin. Steel products have strict origin rules, so we confirm CEPA eligibility for your order before shipping. Your clearing agent can confirm the HS code (7306.40 welded or 7304.41 seamless)." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you deliver to KEZAD and other free zones?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. We deliver to KEZAD, ICAD / Mussafah, Masdar City and mainland sites across Abu Dhabi. Tell us whether your site is in a free zone or on the mainland; the customs paperwork differs, and we prepare documents to match." }
+        },
+        {
+          "@type": "Question",
+          "name": "Which currencies and payment terms do you accept?",
+          "acceptedAnswer": { "@type": "Answer", "text": "We quote in USD or AED and accept [LC at sight / TT — client to confirm]." }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I order electropolished pipes for Abu Dhabi?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Send the grade, OD × wall, finish, length and quantity through the RFQ form, on WhatsApp, or to [sales@steelmanufacturer.in]. You will receive a quote within one business day. Minimum order: [MOQ]." }
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://steelmanufacturer.in/market-area/abu-dhabi-uae#video",
+      "name": "[Exact YouTube video title]",
+      "description": "[1–2 sentences on what the video shows]",
+      "thumbnailUrl": "https://i.ytimg.com/vi/SJqbbUzYjXg/hqdefault.jpg",
+      "uploadDate": "[YYYY-MM-DDT00:00:00+05:30 — the date it went live on YouTube]",
+      "embedUrl": "https://www.youtube.com/embed/SJqbbUzYjXg"
+    }
+  ]
+}
+</script>
+Rules for this code:
+* Every FAQ answer must match the visible answer word for word. If the client adds SF6 to Q2 on the page, add it here too.
+* If the page URL differs from /market-area/abu-dhabi-uae, replace it in all 5 places. It must match the canonical exactly.
+* If no UAE hub page exists yet, delete breadcrumb item 3 and renumber Abu Dhabi to position 3.
+* Product schema is intentionally left out: Google needs a price or genuine reviews, and fake ratings are a manual-action risk.
+* Validate with Google's Rich Results Test and validator.schema.org before publishing.
+7. Placeholders to fill, then QA
+The page cannot go live until every bracket is filled with real data. If a fact isn't available, delete the line rather than guess.
+Check this one first: CEPA has strict origin rules for steel products, including a "melt and pour" rule. The client must confirm with their export council or CoO-issuing agency that their EP tube qualifies as Indian-origin. If it doesn't, remove every "0% duty" and "CEPA" claim (hero badge, duty row, why-us card 3, FAQ Q4 on page and in schema).
+Placeholder
+	Where it appears
+	Who supplies it
+	CEPA origin eligibility
+	Badge 4, 2.3 duty row, why-us card 3, FAQ Q4
+	Client — export council / CoO agency
+	WhatsApp number
+	2.1 button code, 4.3
+	Client
+	Real UAE supply references (1–2)
+	2.2 Local block
+	Client
+	Forming / sizing process step
+	2.3 step 2
+	Client QA
+	Lead time: production [X], sea [Y], clearance + delivery [Z]
+	2.3 Info rows, FAQ Q3, schema
+	Client logistics
+	Payment terms
+	2.3 Info rows, FAQ Q6, schema
+	Client
+	Invoice attestation needs
+	2.3 shipping documents
+	Client's UAE clearing agent
+	Measured Cr/Fe ratio (optional)
+	3.1 table
+	Client QA — only with an XPS/AES report
+	316L carbon limit, sulfur range; 304L chemistry
+	3.2 Cards 1–2
+	Client QA
+	Real size range
+	3.2 Card 3, 3.3 table
+	Client production
+	Hydrostatic or eddy-current test
+	4.1 card 2
+	Client QA
+	High-purity valves stocked?
+	4.1 card 4
+	Client
+	SF6 offered?
+	FAQ Q2 (page + schema)
+	Client
+	Sales email on own domain
+	FAQ Q7, 4.3
+	Client — create mailbox
+	Minimum order quantity
+	FAQ Q7 (page + schema)
+	Client
+	Media Library URL of electropolished-pipes.jpg
+	5.1 code
+	Developer
+	Video title, description, upload date
+	5.2 code, schema
+	From the YouTube video page
+	Market Directory and UAE hub URLs
+	Breadcrumb, schema
+	Developer
+	Dubai / Sharjah / All UAE links
+	2.2 related-pages line
+	Developer — existing pages only
+	Pre-publish QA
+* Search the page source for "[" — zero results.
+* Exactly one H1 on the page.
+* Every "Abu Dhabi" mention sits next to a real fact (port, zone, route, duty). No filler sentences that only repeat the city name.
+* The only image is electropolished-pipes.jpg (caption "Electropolished Pipes"); the only video is SJqbbUzYjXg, with no caption.
+* No internal codes (tier letters, CTY-IDs, SF-ROUTE) anywhere on the page.
+* No India-only terms: road transit, FOR pricing, E-Way Bill, GST.
+* Visible FAQ text matches the schema text word for word.
+* Rich Results Test: no errors, only one FAQPage block.
+* Mobile: tables scroll sideways inside their box; video keeps 16:9.
+* Canonical matches the live URL; other slash / HTTP versions 301 to it.
+* After publishing: Search Console → URL Inspection → Request indexing.
+Sources
+As of 29 Sep 2026.
+* Indian Trade Portal — India-UAE CEPA FAQs: UAE eliminates duties on 97% of tariff lines (99% of Indian exports by value); Indian goods previously faced 5% UAE import duty; "melt and pour" rule for steel products.
+* AGBI, May 2026: AED 700 million pharma platform planned at KEZAD — vaccine fill-finish, oncology, biologics and injectables.
+* Gulf News, Feb 2026: Emirates Drug Establishment launched as the UAE pharma regulator; 37 production facilities licensed.
+* Sagar Steel — Abu Dhabi pipes & tubes page: competitor content reviewed for the gap table.
+
+
+Al Ain EP Pipes Page — Developer Handoff (E-E-A-T)
+29 Sept 2026 · @Akshat Raj
+https://steelmanufacturer.in/market-area/al-ain-uae
+How to use this doc
+This is a complete, long-form page for "Electropolished Pipes Manufacturer in Al Ain", written to show first-hand Experience, Expertise, Authoritativeness and Trust (E-E-A-T). Paste it section by section, top to bottom. Text in [square brackets] is client data and must be filled before publishing.
+* One URL only. If an Al Ain page exists, replace its content entirely. Never publish a second Al Ain URL.
+* Media: only the client's photo (electropolished-pipes.jpg, caption "Electropolished Pipes") and only the YouTube video SJqbbUzYjXg. No other images, videos or captions.
+* Unique content rule: sections 3 and 5 are written for Al Ain's industries (dairy, bottled water, dates, hospitals, university labs). Never reuse them on another city page. Shared blocks (grades, sizes) are reworded here so the page is not a copy of the Abu Dhabi page.
+* Template fixes: the sitewide fixes in the Canberra handoff (section 6) apply here too.
+E-E-A-T blueprint — what proves each signal, and where it sits
+Google's quality guidelines ask three things of a page: who made it, how, and why. Every row below answers one of those with something a buyer can check.
+Signal
+	Proof on this page
+	Where
+	Client must supply
+	Experience
+	The client's own product photo and process video; real UAE shipment references; "mistakes we see in RFQs" notes from the sales desk
+	Hero, 3.3, 4.1, 5.2
+	1–2 real UAE references; confirm the RFQ notes match their experience
+	Expertise
+	Correct ASME BPE finish values, chemistry, inspection plan and a buyer's specification guide; a named QA reviewer with credentials
+	Sections 4–5; reviewer byline under the H1
+	Reviewer name, title, qualification, years of experience
+	Authoritativeness
+	Certificate numbers a buyer can verify; citations of the standards used; company profiles linked in schema
+	7.1, 7.2, schema sameAs
+	ISO 9001:2015 certificate no. and certifying body; lab accreditation no.; LinkedIn / directory URLs
+	Trust
+	Legal name, address, IEC/GST numbers, domain email, sample MTC download, claims policy, honest scope ("what we don't supply"), last-reviewed date
+	Byline, 7.1, 7.4, footer
+	IEC, GST, sample MTC PDF, claims/NCR policy, domain mailbox
+	Nothing in these rows may be invented. A missing item is left out, not faked — a fake certificate number or review does more damage than an empty field.
+1. Page settings (SEO fields)
+Field
+	Paste this
+	URL
+	Keep the existing Al Ain URL if there is one. If not, create /market-area/al-ain-uae (same pattern as the Canberra and Abu Dhabi pages).
+	Title tag
+	Electropolished Pipes Manufacturer for Al Ain, UAE | Sakshi Forge
+	Meta description
+	ASTM A270 / ASME BPE electropolished 316L & 304L tube for Al Ain dairy, water, food and pharma lines. QA-reviewed specs, EN 10204 3.1 MTC, CEPA CoO. Get a quote.
+	H1 (only one H1)
+	Electropolished Pipes Manufacturer for Al Ain, UAE
+	Eyebrow text above H1
+	Export Supply · Al Ain, Abu Dhabi Emirate, UAE
+	Canonical URL
+	The page's own URL, in the site-standard slash format. 301 every other version to it.
+	Visible breadcrumb
+	Home › Market Directory › UAE › Al Ain
+	Open Graph image
+	electropolished-pipes.jpg (section 8)
+	Robots
+	index, follow
+	Visible "Last reviewed" date
+	Shown in the reviewer byline (section 2). Update it only when the content is actually re-checked.
+	Why "for Al Ain" and not "in Al Ain": the plant is in Mumbai. Google matches the keyword "electropolished pipes manufacturer in Al Ain" either way, and the page never claims a UAE address it doesn't have. That honesty is itself a Trust signal.
+2. Hero, reviewer byline and trust bar
+Bold labels tell the developer which component the text goes into; don't paste the labels.
+2.1 Hero
+Eyebrow: Export Supply · Al Ain, Abu Dhabi Emirate, UAE
+H1: Electropolished Pipes Manufacturer for Al Ain, UAE
+Reviewer byline (directly under the H1, small text):
+Technically reviewed by [Reviewer name], [Job title, e.g. Head of Quality Assurance], [Qualification, e.g. B.E. Metallurgy] · [X] years in stainless tube manufacturing · Last reviewed: [DD Mon YYYY]
+The reviewer's name links to the bio in section 7.3 (#reviewer).
+Intro paragraph
+Sakshi Forge manufactures ASTM A270 / ASME BPE electropolished stainless steel tubing in Mumbai and supplies process plants in Al Ain through Khalifa Port and Jebel Ali. Our 316L and 304L EP tube is finished to an internal Ra as low as 0.38 µm (SF4), 100% PMI-tested and shipped with EN 10204 3.1 MTCs. This page explains how we make it, how to specify it for dairy, water, food and pharma lines, and what arrives with every shipment.
+Buttons: Request a Quote for Al Ain · WhatsApp Your RFQ
+<a class="btn-whatsapp" href="https://wa.me/[91XXXXXXXXXX]?text=RFQ%20-%20Electropolished%20pipes%20for%20Al%20Ain" target="_blank" rel="noopener">WhatsApp Your RFQ</a>
+The photo goes to the right of the intro — see section 8.
+2.2 Trust bar (5 items, one row under the hero)
+Item
+	Text
+	Links to
+	1
+	ISO 9001:2015 · Cert. No. [certificate number]
+	Certificate PDF or the certifying body's verification page
+	2
+	EN 10204 3.1 MTC with every heat
+	Section 5.5 (#mtc)
+	3
+	100% PMI Tested
+	Section 5.4 (#inspection)
+	4
+	CEPA Certificate of Origin
+	Section 6 (#shipping)
+	5
+	Download a Sample MTC (PDF)
+	[Sample MTC PDF — real document, customer details masked]
+	2.3 "On this page" jump links (under the trust bar)
+A long page needs a table of contents. Each item links to the anchor ID shown.
+Link text
+	Anchor ID
+	Al Ain industries we supply
+	#al-ain
+	How we make EP tube
+	#process
+	EP vs mechanically polished
+	#ep-vs-mp
+	Grades and sizes
+	#grades
+	Specification guide
+	#spec-guide
+	Inspection and testing
+	#inspection
+	Shipping to Al Ain
+	#shipping
+	About Sakshi Forge
+	#about
+	FAQ
+	#faq
+	3. Al Ain section (anchor #al-ain)
+This section is written only for Al Ain. Do not reuse it on any other city page.
+Eyebrow: AL AIN & EASTERN REGION SUPPLY
+H2: Electropolished and Sanitary Tube for Al Ain's Food, Water and Healthcare Plants
+Body
+Al Ain is the inland food and water centre of the Abu Dhabi emirate. Al Ain Industrial City holds several hundred industrial licences, and most tenants are light manufacturers such as food processors. Around them sit dairy and farm-processing sites, bottled-water and juice plants, date processors, the city's major hospitals and a university research base. Each of these runs stainless process lines — but they don't all need the same tube.
+Sector cards (5) — title, what the plant runs, what we supply
+Card title
+	What the plant runs
+	What we supply
+	Dairy & Farm Processing
+	Milk reception, pasteurisation, filling and CIP circuits
+	304L or 316L sanitary tube, mechanically polished to 3-A levels, or electropolished SF5 where your specification calls for it
+	Bottled Water & Beverages
+	Treated-water lines, filler feed and CIP returns
+	316L sanitary tube; electropolished only when your specification requires it
+	Hospitals & Hospital Pharmacies
+	Purified-water generation and loops, sterile-services supply
+	316L electropolished tube, SF4 or SF5
+	University & Research Labs
+	Purified water, clean utilities and specialty-gas lines
+	316L electropolished tube, SF4 or SF5
+	Dates & Food Processing
+	Syrup, paste and product-transfer lines
+	304L or 316L mechanically polished sanitary tube
+	3.1 Honest-advice box (styled as a highlighted callout)
+H3: When you don't need electropolished tube
+Many dairy, water and food lines don't. 3-A and EHEDG hygienic-design guidance sets product-contact surfaces at Ra 0.8 µm (32 µin) or smoother, and research on food-plant cleaning finds little benefit from going much smoother. A good mechanically polished sanitary tube meets that at lower cost. Electropolishing earns its price in pharmaceutical, hospital and laboratory water systems, where corrosion resistance and a passive, low-particle surface matter. Send us your specification and we'll tell you honestly which one it calls for — even when that means the cheaper tube.
+3.2 Delivery points (info card row)
+Card title
+	Card text
+	Delivery Areas
+	Al Ain Industrial City and Sanaiya · hospital and university sites · farm and dairy sites across the Al Ain region
+	Entry Ports
+	Khalifa Port, Abu Dhabi · Jebel Ali, Dubai — then by road to Al Ain
+	Buyer Sectors
+	Dairy · Bottled water · Hospitals · Research labs · Food
+	3.3 Proof line (Experience)
+[Client to supply 1–2 real UAE shipments, e.g. "In [year] we supplied [quantity] of 316L SF4 tube for a [sector] project in [Al Ain / Abu Dhabi emirate]." Name the customer only with written permission. If there are none, delete this line — never invent one.]
+Related-pages line (under the cards): Also supplying: Electropolished Pipes for Abu Dhabi · Dubai · All UAE — [link only pages that already exist and are indexed].
+4. Expertise part 1 — process, EP vs MP, grades, sizes
+4.1 How we make electropolished tube (anchor #process)
+Eyebrow: OUR PROCESS
+H2: How We Make Electropolished Tube
+Intro: Electropolishing is the last finishing step, not a repair. It improves a good tube; it cannot rescue a poor one. That is why each step before it matters.
+Process steps (7) — step title and explanation
+1. Start from sound base tube. We start from [welded ASTM A270 tube / seamless tube — client to confirm]. A deep scratch, lap or weld pit that exists before electropolishing is still there after it.
+2. Anneal. [Bright / solution annealing — client to confirm] restores corrosion resistance after forming and welding.
+3. Mechanically pre-polish the bore. For SF4, ASME BPE calls for a mechanical polish followed by electropolishing. The pre-polish sets the base profile; electropolishing then levels it.
+4. Electropolish the bore. The tube becomes the anode, a cathode runs through the bore, and an acid electrolyte [phosphoric/sulfuric-acid based — client to confirm] dissolves the surface. Peaks dissolve faster than valleys, so the profile levels. Free iron and embedded particles go with it, leaving a chromium-enriched passive layer.
+5. Rinse and dry. DI-water rinse and [filtered nitrogen drying — client to confirm], so no electrolyte or water spots remain inside.
+6. Inspect. Internal Ra on a profilometer and a visual check of the bore against the ordered finish (full plan in section 5.4).
+7. Protect. End caps, poly sleeve and ISPM-15 crate, so the finish arrives the way it left.
+The YouTube video goes directly under these steps — see section 8.
+Callout box — H3: What electropolishing cannot do
+* It won't remove deep defects. A pit or lap in the base tube shows through the finish.
+* It doesn't change the grade. 304L electropolished is still 304L; pick the grade for the chemistry first.
+* It doesn't make a system rouge-proof. Hot WFI and clean-steam systems can still form rouge over time, so plan derouging and repassivation into maintenance.
+4.2 EP vs MP (anchor #ep-vs-mp)
+Eyebrow: TECHNICAL COMPARISON
+H2: Electropolished vs Mechanically Polished Tube: What Actually Differs
+Intro line: Both finishes can be smooth. The difference is how the surface was made: mechanical polishing abrades it, electropolishing dissolves it. That changes the structure and the chemistry of the surface, not just the Ra number.
+Surface Property
+	Electropolished (EP)
+	Mechanically Polished (MP)
+	Why It Matters
+	Internal Ra (ASME BPE)
+	SF4 ≤ 0.38 µm (15 µin) · SF5 ≤ 0.51 µm (20 µin) · SF6 ≤ 0.64 µm (25 µin)
+	SF1 ≤ 0.51 µm (20 µin) · SF2 ≤ 0.64 µm (25 µin) · SF3 ≤ 0.76 µm (30 µin)
+	Both meet the 0.8 µm food-contact level; EP adds a passive, low-particle surface
+	Surface structure
+	Levelled, no directional lay
+	Directional abrasive scratches
+	Fewer sites for residue and biofilm to hold
+	Passive layer
+	Chromium-enriched [add measured Cr/Fe ratio only if you hold an XPS/AES report]
+	Standard passive layer unless separately passivated
+	Better resistance to rouging and pitting
+	Typical use
+	ASTM A270 + BPE SF4–SF6: pharma, hospital and lab water
+	ASTM A270 + BPE SF1–SF3: dairy, water and food lines
+	Commonly specified for EDE-licensed (UAE), EU-GMP and FDA-regulated systems (EP) and 3-A / EHEDG food lines (MP)
+	4.3 Grades (anchor #grades)
+Eyebrow: METALLURGY
+H2: Choosing Between 316L and 304L
+Intro line: Choose the grade for the fluid and the cleaning chemistry first, then the finish. Chemistry below is the ASTM limit; your MTC shows the actual heat analysis.
+Card 1 — SS 316L EP Tubing · Tag: PHARMA, HOSPITAL & LAB
+The default for purified water, WFI and clean steam. The 2–3% molybdenum improves pitting resistance, which also makes it the safer choice for CIP circuits where chlorides are present.
+Cr: 16.0–18.0% | Ni: 10.0–14.0% | Mo: 2.0–3.0% | C: ≤ 0.035% max [or the tighter limit you certify] S: 0.005–0.017% for orbital weldability (ASME BPE) [keep only if you control sulfur to this range] Finish: SF4 (Ra ≤ 0.38 µm) · SF5 (Ra ≤ 0.51 µm)
+Card 2 — SS 304L Sanitary & EP Tubing · Tag: DAIRY, WATER & FOOD
+Suits cold product lines in dairy, bottled water and food where chloride exposure is low. Lower cost than 316L.
+Cr: 18.0–20.0% | Ni: 8.0–12.0% | C: ≤ 0.035% max [QA to confirm all values against the ASTM A269/A270 edition you certify to] Finish: MP SF1 (Ra ≤ 0.51 µm) or EP SF5 (Ra ≤ 0.51 µm)
+Card 3 — Size Range at a Glance · Tag: STOCK & MADE-TO-ORDER
+½" to 4" OD (12.70–101.60 mm) · 1.65–2.11 mm wall · 6 m lengths. Full table below. [Adjust to the client's real range.]
+4.4 Size table
+H2: Standard Tube Sizes
+Intro line: Sanitary systems are built from OD tube, not NPS pipe — so we list outside diameters, the way ASTM A270 and ASME BPE do. Other walls and custom lengths on request. [Client to confirm the range they actually produce and delete rows they don't.]
+OD (inch)
+	OD (mm)
+	Wall (mm)
+	Length
+	½"
+	12.70
+	1.65
+	6 m
+	¾"
+	19.05
+	1.65
+	6 m
+	1"
+	25.40
+	1.65
+	6 m
+	1½"
+	38.10
+	1.65
+	6 m
+	2"
+	50.80
+	1.65
+	6 m
+	2½"
+	63.50
+	1.65
+	6 m
+	3"
+	76.20
+	1.65
+	6 m
+	4"
+	101.60
+	2.11
+	6 m
+	5. Expertise part 2 — specification guide, inspection, MTC, storage
+This section is written for Al Ain's industry mix. Do not reuse it on other city pages.
+5.1 Buyer's specification checklist (anchor #spec-guide)
+Eyebrow: SPECIFICATION GUIDE
+H2: How to Specify Electropolished Tube: An 8-Point RFQ Checklist
+Intro: A complete RFQ gets an accurate quote the first time. Include these eight items:
+1. Standard — ASTM A270, plus ASME BPE where the system is designed to it. [Add "with Supplementary Requirement S2 (pharmaceutical quality)" only if the client supplies S2 tube.]
+2. Grade — 316L or 304L (see 4.3).
+3. OD × wall — as OD tube sizes, e.g. 2" × 1.65 mm, not NPS pipe schedules.
+4. Internal finish — as an ASME BPE designation such as SF4, not just "electropolished" or "mirror".
+5. External finish — only if it matters, such as exposed runs. Otherwise a standard OD saves cost.
+6. Sulfur range — 0.005–0.017% if the tube will be orbitally welded to another supplier's fittings.
+7. Length, quantity and ends — random or fixed lengths, square-cut, capped.
+8. Documents — EN 10204 3.1 MTC, Ra report, and any third-party inspection you need.
+5.2 Mistakes we see in RFQs (Experience)
+[Client's sales desk to confirm each point from their own RFQs; delete any they haven't actually seen.]
+H3: Five Specification Mistakes We See Most Often
+* "Electropolished" with no SF designation. Two suppliers can quote very different finishes against the same word.
+* Pipe schedules for a sanitary line. Sanitary clamps and fittings are made for OD tube, not NPS Sch 10S pipe.
+* 316 instead of 316L on welded systems. The low-carbon L grade protects weld zones from sensitisation.
+* No sulfur range on tube that meets another supplier's fittings. A sulfur mismatch between the two sides can pull the orbital weld pool off-centre.
+* OD polish on tube where only the bore touches product. It adds cost with no process benefit.
+5.3 Which finish for which line
+H2: Which Finish Does Your Line Need?
+Intro line: A starting point, not a rule. Your user requirement specification (URS) always overrides this table.
+Application
+	Grade
+	Typical internal finish
+	Electropolishing needed?
+	Purified water, WFI loops, clean steam
+	316L
+	SF4, or SF5/SF6 if your spec allows
+	Usually yes
+	Hospital pharmacy and sterile-services water
+	316L
+	SF4 or SF5
+	Usually yes
+	Laboratory purified water and clean utilities
+	316L
+	SF4 or SF5
+	Often — check your spec
+	Dairy product and CIP lines
+	304L or 316L
+	Ra ≤ 0.8 µm (3-A); MP SF1 or better
+	Rarely
+	Bottled water and juice
+	316L or 304L
+	Ra ≤ 0.8 µm; MP SF1
+	Rarely
+	Date syrup and food transfer
+	304L or 316L
+	Ra ≤ 0.8 µm; MP SF1
+	No
+	5.4 Inspection and test plan (anchor #inspection)
+Eyebrow: QUALITY CONTROL
+H2: How We Inspect and Test Every Lot
+Stage
+	What we check
+	Method
+	What you receive
+	Incoming material
+	Grade and chemistry
+	PMI [XRF / OES — client to confirm] and mill-certificate review
+	Heat number traced on the MTC
+	After forming / sizing
+	OD, wall, ovality
+	Calibrated gauges [client to confirm]
+	Dimensional results [if supplied]
+	Tube integrity
+	Weld soundness, leaks
+	[Hydrostatic or eddy-current test — ASTM A270 accepts either]
+	Result on the MTC
+	After electropolishing
+	Internal Ra
+	Stylus profilometer; [sampling rule, e.g. X tubes per lot]
+	Ra report
+	After electropolishing
+	Bore appearance
+	Visual [+ borescope, if used] against the ordered finish
+	Inspection report
+	Before dispatch
+	Cleanliness, caps, marking
+	Visual; heat number marked on every tube
+	Packing list
+	Documentation
+	All of the above
+	EN 10204 3.1
+	Signed MTC
+	Line under the table: Third-party inspection is welcome at our Mumbai plant — [TPI agencies accepted, e.g. "any agency you nominate"].
+5.5 How to read our MTC (anchor #mtc)
+H2: How to Read Our EN 10204 3.1 Certificate
+Intro: An EN 10204 type 3.1 certificate is issued by the manufacturer and signed by an inspection representative who is independent of production. It states that the tube meets your order and gives the actual test results. Check these fields:
+Field
+	What to check
+	Certificate and PO numbers
+	Match your purchase order
+	Product description
+	Standard (ASTM A270), grade, OD × wall, finish designation
+	Heat number
+	Matches the marking on each tube
+	Chemical analysis
+	Actual values within grade limits, and within the sulfur range if you ordered one
+	Mechanical properties
+	Tensile, yield, elongation and hardness within limits
+	Tests
+	Hydrostatic or eddy-current result and any other tests the standard requires
+	Surface finish
+	Measured Ra against the ordered SF designation
+	Signature
+	Authorised inspection representative, independent of production
+	Link under the table: Download a sample MTC (PDF) → [real MTC, customer details masked]
+5.6 Storage on an Al Ain site
+H3: Storing Electropolished Tube in Al Ain's Heat and Dust
+Intro: Heat and wind-blown dust do the most damage between delivery and installation. [Client to confirm these match the handling advice they give.]
+* Keep end caps and poly sleeves on until the tube is cut for installation; they keep dust and sand out of the bore.
+* Store under cover, out of direct sun. Heat and UV weaken plastic caps and sleeves.
+* Rack tubes off the ground on timber or plastic supports, never directly on carbon steel. Iron pickup from carbon steel shows up later as rust spots.
+* Handle with clean gloves, and use only stainless-steel tools on the bore.
+* Store 316L and 304L apart, with heat-number markings visible for traceability.
+6. Shipping, duty and terms (anchor #shipping)
+Eyebrow: EXPORT & LOGISTICS
+H2: Shipping Electropolished Tube from Mumbai to Al Ain
+Body: Al Ain is inland, so every shipment ends with a road leg. We ship by sea from Nhava Sheva to Khalifa Port in Abu Dhabi or Jebel Ali in Dubai — whichever gives your clearing agent the faster route — and deliver by road to your site — via the E66 from Dubai or the E22 from Abu Dhabi.
+Route graphic labels (4 nodes, left to right): Mumbai Works → Nhava Sheva Port → Khalifa Port / Jebel Ali → Al Ain Site (by road)
+Info rows
+Label
+	Text
+	Incoterms
+	FOB Nhava Sheva · CIF Khalifa Port or Jebel Ali · DAP Al Ain site
+	Lead time
+	[X] weeks production + [Y] days sea freight + [Z] days clearance and road delivery to Al Ain
+	Import duty
+	0% UAE customs duty for qualifying Indian-origin goods with a CEPA Certificate of Origin (standard rate 5%)
+	Payment terms
+	[e.g. LC at sight or TT — client to confirm]
+	Quote currency
+	USD or AED
+	Packing
+	End caps, poly sleeves, ISPM-15 heat-treated crates; heat number marked on every tube
+	Shipping documents
+	Commercial invoice, packing list, bill of lading, CEPA Certificate of Origin, EN 10204 3.1 MTC, Ra report [+ any invoice attestation the buyer's clearing agent requires]
+	Callout — H3: About the 0% duty
+Under the India–UAE CEPA, most Indian goods enter the UAE duty-free with a valid Certificate of Origin. Steel products carry strict origin rules, so we confirm CEPA eligibility for each order before it ships and tell you up front if it doesn't qualify.
+Footnote line: Every dispatch includes EN 10204 3.1 MTCs, chemical analysis and Ra profilometer reports from a NABL-accredited lab. NABL is an ILAC-MRA signatory, like the UAE's EIAC.
+7. Trust — about us, reviewer, policies, FAQ, RFQ
+7.1 About Sakshi Forge (anchor #about)
+Eyebrow: WHO WE ARE
+H2: About Sakshi Forge
+Body: Sakshi Forge is an ISO 9001:2015 certified manufacturer of electropolished pipes, industrial flanges, forged fittings and stainless steel components in Mumbai, India. [Add: established in [year]; exports to [number] countries — only if the client confirms both.]
+Company facts table (every row must be real; delete any row the client can't fill)
+Field
+	Value
+	Legal name
+	[Registered legal name]
+	Office address
+	113/117, Dr. M. G. Mahimtura Marg, 3rd Kumbharwada, Shop No. 5, Ground Floor, Mumbai 400 004, India
+	Plant address
+	[Plant address, if different from the office]
+	Established
+	[Year]
+	IEC (Importer-Exporter Code)
+	[IEC]
+	GSTIN
+	[GSTIN]
+	Quality system
+	ISO 9001:2015 · Cert. No. [number] · issued by [certifying body] · valid to [date]
+	Test laboratory
+	[NABL-accredited lab name and accreditation number — state whether in-house or third-party]
+	Phone / WhatsApp
+	+91 82913 66340 · +91 79764 76375
+	Email
+	[sales@steelmanufacturer.in]
+	Company profiles
+	[LinkedIn company page] · [IndiaMART / TradeIndia profile]
+	7.2 What we don't supply (honest scope)
+H3: What We Don't Supply
+* We don't have a UAE office or stockyard; every order ships from Mumbai. [If the client has a UAE agent, name the agent here instead.]
+* We don't supply 904L tube under ASTM A270 — 904L tube is made to ASTM B677, B673 or B674.
+* [UHP semiconductor tube to SEMI F19 — client to state whether they supply it.]
+* We don't publish customer names without written permission.
+7.3 Technical reviewer (anchor #reviewer)
+H3: About the Technical Reviewer
+[Reviewer name] · [Job title] at Sakshi Forge
+[Qualification, e.g. B.E. Metallurgy] · [X] years in stainless tube and fittings manufacturing · [Professional membership — only if real]
+Responsible for [e.g. incoming PMI, Ra inspection and EN 10204 3.1 sign-off]. Reviewed this page for technical accuracy on [DD Mon YYYY]. [LinkedIn profile link]
+No headshot: this page uses only the client's one product photo.
+7.4 Claims policy
+H3: If Something Is Wrong With Your Tube
+If a delivery doesn't match your order or its MTC, tell us within [X] days of receipt, with photos and the heat number. We investigate, report back within [X] working days and [replace / credit — client's actual policy].
+7.5 FAQ (anchor #faq)
+The visible question and answer text must match the FAQ schema in section 9 word for word.
+H2: Frequently Asked Questions — Electropolished Tube for Al Ain
+Q1. Do you supply electropolished pipes to Al Ain? Yes. We ship from our Mumbai plant by sea to Khalifa Port or Jebel Ali and deliver by road to sites across Al Ain, including Al Ain Industrial City. Every order carries EN 10204 3.1 MTCs.
+Q2. Do I need electropolished tube for a dairy or bottled-water line? Usually not. 3-A and EHEDG guidance for food-contact surfaces is Ra 0.8 µm or smoother, which a good mechanically polished sanitary tube meets. Electropolishing is typically specified for pharmaceutical, hospital and laboratory water systems. Send your specification and we will advise.
+Q3. What surface roughness (Ra) finishes can you supply? Electropolished SF4 (Ra ≤ 0.38 µm / 15 µin) and SF5 (Ra ≤ 0.51 µm / 20 µin) [add SF6 if offered], and mechanically polished SF1 (Ra ≤ 0.51 µm).
+Q4. How long does delivery to Al Ain take? Typically [X] weeks production, [Y] days sea freight to Khalifa Port or Jebel Ali, and [Z] days for customs clearance and road delivery to Al Ain. We confirm the date with every quote.
+Q5. Is there customs duty on electropolished pipes from India to the UAE? Under the India–UAE CEPA, qualifying Indian-origin goods enter the UAE at 0% customs duty instead of the standard 5%, when shipped with a valid CEPA Certificate of Origin. Steel products have strict origin rules, so we confirm CEPA eligibility for your order before shipping.
+Q6. How is the internal Ra measured and reported? We measure internal Ra with a stylus profilometer after electropolishing, [sampling rule, e.g. X tubes per lot]. Results appear in the Ra report and on the EN 10204 3.1 MTC against the ordered SF designation.
+Q7. Can we inspect the tube before it ships? Yes. Your own inspector or a third-party agency can witness inspection at our Mumbai plant before dispatch, with [X] working days' notice.
+Q8. How do I order electropolished tube for Al Ain? Send the grade, OD × wall, finish, length and quantity through the RFQ form, on WhatsApp, or to [sales@steelmanufacturer.in]. You will receive a quote within one business day. Minimum order: [MOQ].
+7.6 RFQ block
+H2: Request a Manufacturer Quotation for Al Ain
+Body: Get FOB Nhava Sheva, CIF Khalifa Port / Jebel Ali or DAP Al Ain pricing on ASTM A270 316L and 304L tube — electropolished or mechanically polished, whichever your specification needs. Quotes in USD or AED within one business day, with a sample MTC and Ra report on request.
+Buttons: Submit RFQ Form · WhatsApp Your RFQ (same link as the hero) · Email Sales Team → mailto:[sales@steelmanufacturer.in]
+Footnote: EN 10204 3.1 Mill Test Certificates and NABL-accredited Ra profilometer reports are supplied with every dispatch.
+7.7 Closing block
+H2: Tell Us What the Line Carries — We'll Tell You Which Tube It Needs
+Body: Send your grade, sizes and specification. Our QA team replies with a quote, a sample 3.1 MTC and a delivered lead time to your site.
+Button: Contact Us
+8. Media — the one photo and the one video
+Use only the photo and the YouTube video below. No other images, videos or captions go on this page — not even a reviewer headshot.
+8.1 Product photo
+
+Setting
+	Value
+	File
+	electropolished-pipes.jpg (client's photo) — 500 × 500 px, JPEG, about 33 KB. No resizing needed.
+	Upload
+	Reuse the file already in the WordPress Media Library from the Canberra and Abu Dhabi pages. Don't upload a second copy.
+	Placement
+	Hero, right of the intro paragraph (below the trust bar on mobile)
+	Alt text
+	Electropolished pipes
+	Caption
+	Electropolished Pipes
+	<figure class="ep-photo" style="margin:0;max-width:500px;">
+  <img
+    src="[Media Library URL of electropolished-pipes.jpg]"
+    alt="Electropolished pipes"
+    width="500" height="500"
+    fetchpriority="high" decoding="async"
+    style="width:100%;height:auto;border-radius:8px;">
+  <figcaption>Electropolished Pipes</figcaption>
+</figure>
+The photo sits above the fold, so it uses fetchpriority="high" and no lazy loading.
+8.2 YouTube video
+* Video: https://youtu.be/SJqbbUzYjXg (video ID SJqbbUzYjXg) — the only video for this page.
+* Placement: directly under the 7 process steps in section 4.1, before the "What electropolishing cannot do" callout. Showing the process right after explaining it is the page's strongest Experience signal.
+* No caption or extra heading under or above the video.
+<div class="ep-video" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px;margin:0 0 24px;">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/SJqbbUzYjXg?rel=0"
+    title="[Exact YouTube video title]"
+    loading="lazy"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe>
+</div>
+The title attribute is for screen readers only and does not show on the page. Copy it from the YouTube video page.
+9. Schema (JSON-LD)
+Paste once, as a Custom HTML block at the end of the page or in the SEO plugin's custom-schema field. Fill the brackets first. The reviewedBy, lastReviewed and Organization nodes carry the E-E-A-T signals into structured data.
+Before pasting: if the template already outputs FAQPage or Organization schema, turn those off for this page (FAQPage) or delete the Organization node below and keep only its @id reference (Organization). One of each, never two.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://steelmanufacturer.in/market-area/al-ain-uae#webpage",
+      "url": "https://steelmanufacturer.in/market-area/al-ain-uae",
+      "name": "Electropolished Pipes Manufacturer for Al Ain, UAE | Sakshi Forge",
+      "description": "ASTM A270 / ASME BPE electropolished 316L & 304L tube for Al Ain dairy, water, food and pharma lines. QA-reviewed specs, EN 10204 3.1 MTC, CEPA CoO. Get a quote.",
+      "inLanguage": "en",
+      "lastReviewed": "[YYYY-MM-DD — same date as the visible byline]",
+      "reviewedBy": { "@id": "https://steelmanufacturer.in/#reviewer" },
+      "publisher": { "@id": "https://steelmanufacturer.in/#organization" },
+      "breadcrumb": { "@id": "https://steelmanufacturer.in/market-area/al-ain-uae#breadcrumb" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://steelmanufacturer.in/#organization",
+      "name": "Sakshi Forge",
+      "url": "https://steelmanufacturer.in/",
+      "logo": "[Logo image URL]",
+      "email": "[sales@steelmanufacturer.in]",
+      "telephone": "+91-82913-66340",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "113/117, Dr. M. G. Mahimtura Marg, 3rd Kumbharwada, Shop No. 5, Ground Floor",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400004",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "[LinkedIn company page URL]",
+        "[IndiaMART or TradeIndia profile URL]"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://steelmanufacturer.in/#reviewer",
+      "name": "[Reviewer name]",
+      "jobTitle": "[Job title]",
+      "worksFor": { "@id": "https://steelmanufacturer.in/#organization" },
+      "sameAs": [ "[Reviewer LinkedIn URL]" ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://steelmanufacturer.in/market-area/al-ain-uae#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://steelmanufacturer.in/" },
+        { "@type": "ListItem", "position": 2, "name": "Market Directory", "item": "[Market Directory URL]" },
+        { "@type": "ListItem", "position": 3, "name": "UAE", "item": "[UAE hub URL]" },
+        { "@type": "ListItem", "position": 4, "name": "Al Ain", "item": "https://steelmanufacturer.in/market-area/al-ain-uae" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://steelmanufacturer.in/market-area/al-ain-uae#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Do you supply electropolished pipes to Al Ain?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. We ship from our Mumbai plant by sea to Khalifa Port or Jebel Ali and deliver by road to sites across Al Ain, including Al Ain Industrial City. Every order carries EN 10204 3.1 MTCs." } },
+        { "@type": "Question", "name": "Do I need electropolished tube for a dairy or bottled-water line?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Usually not. 3-A and EHEDG guidance for food-contact surfaces is Ra 0.8 µm or smoother, which a good mechanically polished sanitary tube meets. Electropolishing is typically specified for pharmaceutical, hospital and laboratory water systems. Send your specification and we will advise." } },
+        { "@type": "Question", "name": "What surface roughness (Ra) finishes can you supply?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Electropolished SF4 (Ra ≤ 0.38 µm / 15 µin) and SF5 (Ra ≤ 0.51 µm / 20 µin), and mechanically polished SF1 (Ra ≤ 0.51 µm)." } },
+        { "@type": "Question", "name": "How long does delivery to Al Ain take?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Typically [X] weeks production, [Y] days sea freight to Khalifa Port or Jebel Ali, and [Z] days for customs clearance and road delivery to Al Ain. We confirm the date with every quote." } },
+        { "@type": "Question", "name": "Is there customs duty on electropolished pipes from India to the UAE?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Under the India–UAE CEPA, qualifying Indian-origin goods enter the UAE at 0% customs duty instead of the standard 5%, when shipped with a valid CEPA Certificate of Origin. Steel products have strict origin rules, so we confirm CEPA eligibility for your order before shipping." } },
+        { "@type": "Question", "name": "How is the internal Ra measured and reported?",
+          "acceptedAnswer": { "@type": "Answer", "text": "We measure internal Ra with a stylus profilometer after electropolishing, [sampling rule, e.g. X tubes per lot]. Results appear in the Ra report and on the EN 10204 3.1 MTC against the ordered SF designation." } },
+        { "@type": "Question", "name": "Can we inspect the tube before it ships?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Your own inspector or a third-party agency can witness inspection at our Mumbai plant before dispatch, with [X] working days' notice." } },
+        { "@type": "Question", "name": "How do I order electropolished tube for Al Ain?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Send the grade, OD × wall, finish, length and quantity through the RFQ form, on WhatsApp, or to [sales@steelmanufacturer.in]. You will receive a quote within one business day. Minimum order: [MOQ]." } }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://steelmanufacturer.in/market-area/al-ain-uae#video",
+      "name": "[Exact YouTube video title]",
+      "description": "[1–2 sentences on what the video shows]",
+      "thumbnailUrl": "https://i.ytimg.com/vi/SJqbbUzYjXg/hqdefault.jpg",
+      "uploadDate": "[YYYY-MM-DDT00:00:00+05:30 — the date it went live on YouTube]",
+      "embedUrl": "https://www.youtube.com/embed/SJqbbUzYjXg"
+    }
+  ]
+}
+</script>
+Rules for this code:
+* Every FAQ answer must match the visible answer word for word. If the client adds SF6 to Q3 on the page, add it here too.
+* lastReviewed must equal the visible "Last reviewed" date in the byline.
+* If the page URL differs from /market-area/al-ain-uae, replace it in every place it appears. It must match the canonical exactly.
+* If no UAE hub page exists yet, delete breadcrumb item 3 and renumber Al Ain to position 3.
+* Delete any sameAs line the client can't fill — never leave a bracket or a fake URL.
+* Product schema is intentionally left out: Google needs a price or genuine reviews, and fake ratings are a manual-action risk.
+* Validate with Google's Rich Results Test and validator.schema.org before publishing.
+10. Placeholders to fill, then QA
+This page is only as trustworthy as the facts behind it. Every bracket must be filled with real data; if a fact isn't available, delete the line rather than guess.
+Check this one first: CEPA has strict origin rules for steel, including a "melt and pour" rule. The client must confirm with their export council or CoO-issuing agency that their EP tube qualifies as Indian-origin. If it doesn't, remove every "0% duty" and "CEPA" claim: trust bar item 4, section 6 duty row and callout, FAQ Q5 on page and in schema.
+Placeholder
+	Where it appears
+	Who supplies it
+	CEPA origin eligibility
+	Trust bar 4, section 6, FAQ Q5
+	Client — export council / CoO agency
+	Reviewer name, title, qualification, years, LinkedIn, review date
+	Byline 2.1, bio 7.3, schema
+	Client — a real QA person who has actually read the page
+	ISO 9001:2015 certificate no., certifying body, expiry
+	Trust bar 1, 7.1
+	Client
+	Lab name and accreditation no. (in-house or third-party)
+	7.1
+	Client QA
+	Legal name, plant address, year established, IEC, GSTIN
+	7.1
+	Client
+	Sample MTC PDF (real, customer details masked)
+	Trust bar 5, 5.5
+	Client QA
+	LinkedIn and directory profile URLs
+	7.1, schema sameAs
+	Client
+	Real UAE supply references
+	3.3
+	Client — names only with written permission
+	Base tube type, anneal, electrolyte, drying method
+	4.1 steps 1, 2, 4, 5
+	Client production
+	Measured Cr/Fe ratio (optional)
+	4.2 table
+	Client QA — only with an XPS/AES report
+	316L carbon limit, sulfur range; 304L chemistry
+	4.3 cards
+	Client QA
+	Real size range
+	4.3 card 3, 4.4 table
+	Client production
+	ASTM A270 S2 supplied?
+	5.1 checklist item 1
+	Client QA
+	RFQ mistakes actually seen
+	5.2
+	Client sales desk
+	PMI method, gauges, hydro vs eddy current, Ra sampling rule, borescope
+	5.4 table, FAQ Q6
+	Client QA
+	TPI agencies accepted; inspection notice period
+	5.4, FAQ Q7
+	Client
+	Storage advice confirmed
+	5.6
+	Client QA
+	Lead time X / Y / Z
+	Section 6, FAQ Q4, schema
+	Client logistics
+	Payment terms; invoice attestation needs
+	Section 6
+	Client; UAE clearing agent
+	UAE office or agent?
+	7.2
+	Client
+	SEMI F19 UHP tube supplied?
+	7.2
+	Client
+	Claims window and remedy
+	7.4
+	Client
+	SF6 offered?
+	FAQ Q3 (page + schema)
+	Client
+	WhatsApp number; sales email; MOQ
+	2.1, 7.5, 7.6
+	Client
+	Logo URL; Media Library URL of the photo
+	Schema; 8.1
+	Developer
+	Video title, description, upload date
+	8.2, schema
+	From the YouTube video page
+	Market Directory and UAE hub URLs; Abu Dhabi / Dubai links
+	Breadcrumb, schema, 3.3
+	Developer — existing pages only
+	Pre-publish QA
+* Search the page source for "[" — zero results.
+* Exactly one H1. H2/H3 order follows the doc.
+* Reviewer byline shows a real name and a real "Last reviewed" date, and the date matches lastReviewed in the schema.
+* Every trust-bar item links to something a buyer can verify.
+* Every "Al Ain" mention sits next to a real fact (industry, area, route). No filler sentences that only repeat the city name.
+* Sections 3 and 5 don't appear word for word on any other city page.
+* The only image is electropolished-pipes.jpg (caption "Electropolished Pipes"); the only video is SJqbbUzYjXg, with no caption. No reviewer headshot.
+* No internal codes and no India-only terms (road transit from Mumbai, FOR, E-Way Bill, GST).
+* All 9 jump links in 2.3 land on the right anchor.
+* Visible FAQ text matches the schema text word for word.
+* Rich Results Test: no errors; one FAQPage and one Organization block only.
+* Mobile: tables scroll sideways inside their box; video keeps 16:9.
+* Canonical matches the live URL; other slash / HTTP versions 301 to it.
+* After publishing: Search Console → URL Inspection → Request indexing.
+Sources
+As of 29 Sep 2026.
+* KiTalent — Al Ain logistics and manufacturing (2026): Al Ain Industrial City has about 850 industrial licences, light manufacturing (including food processing) is 62% of tenants, food processing is about 40% of industrial output, and dairy, water and poultry processors anchor the base; E66 and E22 road corridors; Sanaiya district. Secondary source — used for context only, no figures quoted on the page.
+* Milledge, University of Southampton — cleanability of stainless steel food-contact surfaces: EHEDG and 3-A set food-contact surfaces at Ra 0.8 µm (32 µin) or smoother; evidence doesn't normally justify highly polished surfaces in the food industry.
+* Indian Trade Portal — India-UAE CEPA FAQs: UAE duty elimination for Indian goods, 5% standard duty, "melt and pour" rule for steel.
+* Gulf News, Feb 2026: Emirates Drug Establishment launched as the UAE's pharmaceutical regulator and licenses production facilities.

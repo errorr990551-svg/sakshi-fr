@@ -1,0 +1,362 @@
+Canberra EP Pipes Page — Developer Handoff
+https://steelmanufacturer.in/market-area/canberra-australia
+Sep 29, 2026 · @Akshat Raj
+How to use this doc
+Replace the live Canberra page section by section, top to bottom, using the blocks below. Every block is final copy except text in [square brackets], which the client must supply before publishing.
+Page: https://steelmanufacturer.in/market-area/canberra-australia
+Order of work: page settings → sections in page order → media → schema → delete list → sitewide template fixes → QA.
+[BRACKETS] = real data from Sakshi Forge. Never publish a page with brackets still in it.
+Code blocks = paste exactly as written.
+Template vs city fields: everything marked Template fix goes into the master city-page template once. Only the Local block, lead times and references are hand-written per city.
+1. Page settings (SEO fields)
+Set these in the SEO plugin / page settings. They replace whatever is there now.
+Field
+Paste this
+Title tag
+Electropolished Pipes Manufacturer for Canberra, ACT | Sakshi Forge
+Meta description
+ASTM A270 / ASME BPE electropolished 316L & 304L tube shipped from Mumbai to Canberra. Duty-free under AI-ECTA, EN 10204 3.1 MTC, Ra-tested. Request a quote.
+H1 (only one H1 on the page)
+Electropolished Pipes Manufacturer for Canberra, ACT
+Eyebrow text above H1
+Export Supply · Canberra, ACT, Australia
+Canonical URL
+The site-standard version of /market-area/canberra-australia (with or without trailing slash — match every other page). 301-redirect the other version to it.
+Visible breadcrumb
+Home › Market Directory › Australia › Canberra
+Open Graph image
+electropolished-pipes.jpg (section 3.1)
+Robots
+index, follow
+The eyebrow replaces "Industrial Supply Location • ACT (B)". The "(B)" is an internal tier code and must not appear on any public page.
+2. Page copy — section by section
+Each block replaces the matching block on the live page, in page order. "Replaces" names the current block so the developer can find it.
+2.1 Hero
+Replaces: the intro paragraph, the 4 badges and the button under the H1.
+Intro paragraph
+Sakshi Forge manufactures ASTM A270 / ASME BPE electropolished stainless steel tubing in Mumbai and ships it to Canberra through Port Botany, Sydney. We supply SS 316L and 304L EP tube with internal finishes down to Ra ≤ 0.38 µm (SF4). Every batch is 100% PMI-tested and ships with EN 10204 3.1 MTCs, for pharma, laboratory, hospital, brewery and food process lines across the ACT and Queanbeyan.
+Trust badges (4)
+Badge 1
+Badge 2
+Badge 3
+Badge 4
+ISO 9001:2015 Certified
+EN 10204 3.1 MTC Provided
+100% PMI Tested
+Duty-Free into Australia (AI-ECTA)
+Button: Request a Quote for Canberra
+2.2 Local block
+Replaces: "LOCAL INDUSTRIAL INTEGRATION — Supplying High-Purity EP Tubing Across Canberra Estates", its paragraph and its 3 info cards (including "CTY-0672" and "SF-ROUTE: #CAN-EP").
+Eyebrow: CANBERRA & ACT SUPPLY
+H2: Electropolished Tubing for Canberra's Labs, Hospitals & Breweries
+Body
+Canberra is not a heavy-industry city. Demand for electropolished tubing here comes from research, healthcare and craft beverage production. We supply EP tube for:
+Research laboratories — purified water, specialty gas and clean utility lines.
+Hospital pharmacy and sterile services — PW/WFI and clean-steam distribution.
+Craft breweries and distilleries — product transfer and CIP lines in 304L and 316L.
+Food producers — sanitary process piping.
+[Reference line — client to supply 1–2 real ones, e.g. "In [year] we supplied 316L SF4 tube to a [sector] facility in [area]." If none exist, delete this line. Never invent one.]
+Info cards (3)
+Card title
+Card text
+Delivery Areas
+Fyshwick · Hume · Mitchell · Beard · Queanbeyan (NSW)
+Key Buyer Sectors
+Research labs · Hospitals · Craft brewing & distilling · Food production
+Entry Port
+Port Botany, Sydney — about 280 km by road to Canberra
+Related-pages line (directly under the cards): Also supplying: Electropolished Pipes for Sydney · Melbourne · All Australia — [link only pages that already exist and are indexed].
+2.3 Logistics & process
+Replaces: "Supply Route & Logistics", the Mumbai Works → Canberra Site graphic, the 5 process steps, "FOB Mumbai / Door Delivery" and the "Dispatched with…" line.
+H2: How We Ship Electropolished Pipes from Mumbai to Canberra
+Route graphic labels (4 nodes, left to right): Mumbai Works → Nhava Sheva Port → Port Botany, Sydney → Canberra Site
+Process steps (6)
+Heat-number traceability and PMI check on incoming material
+[Client to confirm their real forming / sizing step] and dimensional check
+Internal electropolishing, DI-water rinse and nitrogen purge
+Ra profilometer inspection and EN 10204 3.1 MTC issue
+End-capped, poly-sleeved and packed in ISPM-15 heat-treated timber crates, as Australian biosecurity requires for timber packaging
+Sea freight Nhava Sheva → Port Botany, Sydney, then road delivery to Canberra
+Info rows
+Label
+Text
+Incoterms
+FOB Nhava Sheva · CIF Port Botany · DAP Canberra site
+Lead time
+[X] weeks production + [Y] weeks sea freight + [Z] days clearance and road
+Import duty
+Duty-free under the India–Australia ECTA with a valid Certificate of Origin
+Shipping documents
+Commercial invoice, packing list, bill of lading, ECTA Certificate of Origin, EN 10204 3.1 MTC, Ra report, packaging declaration
+Footnote line: Every dispatch includes EN 10204 3.1 MTCs, chemical analysis and Ra profilometer reports from a NABL-accredited lab. NABL is an ILAC-MRA signatory, like Australia's NATA.
+2.4 EP vs MP comparison table
+Replaces: the intro line and the whole table under "TECHNICAL COMPARISON". Keep the H2. The 4th column header changes from "Industrial Benefit in Canberra" to "Why It Matters".
+Intro line: Electropolishing removes a thin surface layer electrochemically, levelling peaks and leaving a chromium-enriched passive film. Mechanical polishing only abrades the surface.
+Surface Property
+Electropolished (EP)
+Mechanically Polished (MP)
+Why It Matters
+Internal Ra (ASME BPE)
+SF4 ≤ 0.38 µm (15 µin) · SF5 ≤ 0.51 µm (20 µin) · SF6 ≤ 0.64 µm (25 µin)
+SF1 ≤ 0.51 µm (20 µin) · SF2 ≤ 0.64 µm (25 µin) · SF3 ≤ 0.76 µm (30 µin)
+Lower Ra resists bacterial adhesion and biofilm in sanitary loops
+Surface structure
+Levelled, no directional lay
+Directional abrasive scratches
+Faster, more reliable CIP and SIP cycles
+Passive layer
+Chromium-enriched [add measured Cr/Fe ratio only if you hold an XPS/AES test report]
+Standard passive layer unless separately passivated
+Better resistance to rouging and pitting
+Typical specification
+ASTM A270 + ASME BPE SF4–SF6
+ASTM A270 + ASME BPE SF1–SF3
+Commonly specified for TGA (PIC/S), EU-GMP and FDA-regulated product-contact systems
+2.5 Grade cards
+Replaces: the intro line and all 3 cards under "METALLURGY & STANDARDS". The 904L card is removed from this page (904L tube is ASTM B677/B673/B674, not A270, and Canberra has no acid-chemical demand).
+Intro line: All electropolished tube dispatched to Canberra conforms to ASTM A270 and ASME BPE. Chemistry shown is the ASTM limit; your MTC shows the actual heat analysis.
+Card 1 — SS 316L EP Tubing · Tag: PHARMA & BIOTECH
+Low-carbon, molybdenum-bearing grade for purified water, WFI and clean-steam systems.
+Cr: 16.0–18.0% | Ni: 10.0–14.0% | Mo: 2.0–3.0% | C: ≤ 0.035% max [or the tighter limit you certify] S: 0.005–0.017% for orbital weldability (ASME BPE) [keep only if you control sulfur to this range] Surface finish: SF4 (Ra ≤ 0.38 µm) · SF5 (Ra ≤ 0.51 µm)
+Card 2 — SS 304L EP Tubing · Tag: FOOD, DAIRY & BREWERY
+Low-carbon 18/8 austenitic grade for brewery, dairy and food product lines.
+Cr: 18.0–20.0% | Ni: 8.0–12.0% | C: ≤ 0.035% max [QA to confirm all values against the ASTM A269/A270 edition you certify to] Surface finish: SF5 (Ra ≤ 0.51 µm / 20 µin) internal
+Card 3 — Size Range at a Glance · Tag: STOCK & MADE-TO-ORDER
+½" to 4" OD (12.70–101.60 mm) · 1.65–2.11 mm wall · 6 m lengths. See the full size table below. [Adjust to the client's real range.]
+2.6 Size table (new block)
+Insert: directly after the grade cards. There is no size information on the live page today.
+H2: Electropolished Tube Sizes Available for Canberra Projects
+Intro line: Standard ASTM A270 / ASME BPE outside diameters. Custom lengths and other wall thicknesses on request. [Client to confirm the range they actually produce and delete rows they don't.]
+OD (inch)
+OD (mm)
+Wall (mm)
+Length
+½"
+12.70
+1.65
+6 m
+¾"
+19.05
+1.65
+6 m
+1"
+25.40
+1.65
+6 m
+1½"
+38.10
+1.65
+6 m
+2"
+50.80
+1.65
+6 m
+2½"
+63.50
+1.65
+6 m
+3"
+76.20
+1.65
+6 m
+4"
+101.60
+2.11
+6 m
+2.7 Why-us cards
+Replaces: "ENGINEERED EXCELLENCE — Why Industrial Plants in Canberra Partner with Sakshi Forge" and its 5 cards.
+H2: Why Canberra Buyers Choose Sakshi Forge
+Card title
+Card text
+Ultra-Smooth Internal Surface
+Electropolished to Ra ≤ 0.38 µm (SF4), removing the micro-burrs and crevices where biofilm starts.
+100% PMI & EN 10204 3.1 MTC
+Every batch is PMI-verified and [hydrostatic / eddy-current] tested before dispatch. [ASTM A270 accepts either test — state the one you run.]
+Duty-Free, Fully Documented Export
+ECTA Certificate of Origin, complete shipping documents, and delivery to Port Botany or your Canberra site.
+EP Tube, Fittings & Flanges from One Source
+Electropolished tube with tri-clamp fittings and weld-neck flanges [add "high-purity valves" only if actually stocked].
+Export-Grade Packing
+End-capped, poly-sleeved tube in ISPM-15 heat-treated crates that meet Australian biosecurity rules.
+2.8 FAQ
+Replaces: all 3 current FAQ items (2 of them have no answer). The visible question and answer text must match the FAQ schema in section 4 word for word.
+H2: Frequently Asked Questions — Supply to Canberra
+Q1. Do you supply EN 10204 3.1 certified electropolished pipes to Canberra? Yes. Every shipment to the ACT carries EN 10204 3.1 MTCs with heat numbers, PMI results and Ra profilometer reports from a NABL-accredited lab. NABL is an ILAC-MRA signatory, like Australia's NATA.
+Q2. What surface roughness (Ra) finishes are available for Canberra pharma and lab projects? We supply electropolished SF4 (Ra ≤ 0.38 µm / 15 µin) and SF5 (Ra ≤ 0.51 µm / 20 µin) [add SF6 if offered]. Mechanically polished SF1 (Ra ≤ 0.51 µm) is available for non-product-contact lines.
+Q3. What is the delivery time to Canberra? Typically [X] weeks production, [Y] weeks sea freight to Port Botany, Sydney, and [Z] days for customs clearance and road delivery to Canberra. We confirm the exact date with every quote.
+Q4. Is there import duty on electropolished pipes from India to Australia? Indian-origin goods enter Australia duty-free under the India–Australia ECTA when shipped with a valid Certificate of Origin. Ask your customs broker to confirm the HS code (7306.40 welded or 7304.41 seamless) and whether any anti-dumping measures apply.
+Q5. Do your tubes meet AS 1528? [Keep ONE answer, delete the other] Yes — we supply to AS 1528.1 dimensions for dairy, brewery and food lines. / We supply ASTM A270 outside diameters; send your AS 1528 specification and we will confirm compatibility before quoting.
+Q6. How do I order electropolished pipes from Australia? Send the grade, OD × wall, finish, length and quantity through the RFQ form or to [sales@steelmanufacturer.in]. You will receive a quote within one business day (AEST). Minimum order: [MOQ].
+2.9 RFQ block
+Replaces: "Request Direct Manufacturer Quotation for Canberra", its paragraph and its footnote. Removes "FOR doorstep pricing" and "MTC within 2 business hours".
+H2: Request a Manufacturer Quotation for Canberra
+Body: Get FOB Nhava Sheva, CIF Port Botany or DAP Canberra pricing on ASTM A270 electropolished 316L and 304L tube, sanitary fittings and flanges. Quotes within one business day (AEST). Sample MTC and Ra report on request.
+Buttons: Submit RFQ Form · Email Sales Team → mailto:[sales@steelmanufacturer.in]
+Footnote: EN 10204 3.1 Mill Test Certificates and NABL-accredited Ra profilometer reports are supplied with every dispatch.
+2.10 Closing block
+Replaces: "Partner with Sakshi Forge for Reliable Industrial Steel Solutions" (the flanges / forged / high-pressure text is off-topic for this page).
+H2: Specify Electropolished Tube for Your Next ACT Project
+Body: Send your grade, OD × wall, finish and quantity. Our QA team replies with a quote, a sample 3.1 MTC and a delivered lead time to your Canberra site.
+Button: Contact Us
+3. Media — photo and video
+Use only the one photo and the one YouTube video below. No other images, videos or captions go on this page.
+3.1 Product photo
+This is the only photo for this page. Use it exactly as supplied, with the caption below and no other image or caption.
+Setting
+Value
+File
+electropolished-pipes.jpg (client's photo, renamed) — 500 × 500 px, 33 KB, JPEG. No resizing or compression needed.
+Upload to
+WordPress Media Library
+Placement
+Hero, right of the intro paragraph (below the badges on mobile)
+Alt text
+Electropolished pipes
+Caption
+Electropolished Pipes
+<figure class="ep-photo" style="margin:0;max-width:500px;">  <img    src="[Media Library URL of electropolished-pipes.jpg]"    alt="Electropolished pipes"    width="500" height="500"    fetchpriority="high" decoding="async"    style="width:100%;height:auto;border-radius:8px;">  <figcaption>Electropolished Pipes</figcaption></figure>
+The photo sits above the fold, so it uses fetchpriority="high" and no lazy loading.
+3.2 YouTube video
+Video: https://youtu.be/SJqbbUzYjXg (video ID SJqbbUzYjXg) — the only video for this page.
+Placement: directly under the 6 process steps in section 2.3, before the Info rows.
+No caption or extra heading under or above the video.
+<div class="ep-video" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px;margin:0 0 24px;">  <iframe    src="https://www.youtube-nocookie.com/embed/SJqbbUzYjXg?rel=0"    title="[Exact YouTube video title]"    loading="lazy"    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"    referrerpolicy="strict-origin-when-cross-origin"    allowfullscreen></iframe></div>
+The title attribute is for screen readers only and does not show on the page. Copy it from the YouTube video page.
+rel=0 limits end-screen suggestions to this channel. The nocookie domain keeps the page lighter and avoids YouTube tracking cookies before play.
+4. Schema (JSON-LD)
+Paste this once, as a Custom HTML block at the end of the page or in the SEO plugin's custom-schema field. Fill the brackets first.
+Before pasting: check whether the template already auto-generates FAQPage schema from the FAQ block. If it does, turn that off for this page — two FAQPage blocks (one with empty answers) is an error.
+<script type="application/ld+json">{  "@context": "https://schema.org",  "@graph": [    {      "@type": "WebPage",      "@id": "https://steelmanufacturer.in/market-area/canberra-australia#webpage",      "url": "https://steelmanufacturer.in/market-area/canberra-australia",      "name": "Electropolished Pipes Manufacturer for Canberra, ACT | Sakshi Forge",      "description": "ASTM A270 / ASME BPE electropolished 316L & 304L tube shipped from Mumbai to Canberra. Duty-free under AI-ECTA, EN 10204 3.1 MTC, Ra-tested. Request a quote.",      "inLanguage": "en",      "breadcrumb": { "@id": "https://steelmanufacturer.in/market-area/canberra-australia#breadcrumb" }    },    {      "@type": "BreadcrumbList",      "@id": "https://steelmanufacturer.in/market-area/canberra-australia#breadcrumb",      "itemListElement": [        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://steelmanufacturer.in/" },        { "@type": "ListItem", "position": 2, "name": "Market Directory", "item": "[Market Directory URL]" },        { "@type": "ListItem", "position": 3, "name": "Australia", "item": "[Australia hub URL]" },        { "@type": "ListItem", "position": 4, "name": "Canberra", "item": "https://steelmanufacturer.in/market-area/canberra-australia" }      ]    },    {      "@type": "FAQPage",      "@id": "https://steelmanufacturer.in/market-area/canberra-australia#faq",      "mainEntity": [        {          "@type": "Question",          "name": "Do you supply EN 10204 3.1 certified electropolished pipes to Canberra?",          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every shipment to the ACT carries EN 10204 3.1 MTCs with heat numbers, PMI results and Ra profilometer reports from a NABL-accredited lab. NABL is an ILAC-MRA signatory, like Australia's NATA." }        },        {          "@type": "Question",          "name": "What surface roughness (Ra) finishes are available for Canberra pharma and lab projects?",          "acceptedAnswer": { "@type": "Answer", "text": "We supply electropolished SF4 (Ra ≤ 0.38 µm / 15 µin) and SF5 (Ra ≤ 0.51 µm / 20 µin). Mechanically polished SF1 (Ra ≤ 0.51 µm) is available for non-product-contact lines." }        },        {          "@type": "Question",          "name": "What is the delivery time to Canberra?",          "acceptedAnswer": { "@type": "Answer", "text": "Typically [X] weeks production, [Y] weeks sea freight to Port Botany, Sydney, and [Z] days for customs clearance and road delivery to Canberra. We confirm the exact date with every quote." }        },        {          "@type": "Question",          "name": "Is there import duty on electropolished pipes from India to Australia?",          "acceptedAnswer": { "@type": "Answer", "text": "Indian-origin goods enter Australia duty-free under the India–Australia ECTA when shipped with a valid Certificate of Origin. Ask your customs broker to confirm the HS code (7306.40 welded or 7304.41 seamless) and whether any anti-dumping measures apply." }        },        {          "@type": "Question",          "name": "Do your tubes meet AS 1528?",          "acceptedAnswer": { "@type": "Answer", "text": "[Paste the ONE Q5 answer kept on the page]" }        },        {          "@type": "Question",          "name": "How do I order electropolished pipes from Australia?",          "acceptedAnswer": { "@type": "Answer", "text": "Send the grade, OD × wall, finish, length and quantity through the RFQ form or to [sales@steelmanufacturer.in]. You will receive a quote within one business day (AEST). Minimum order: [MOQ]." }        }      ]    },    {      "@type": "VideoObject",      "@id": "https://steelmanufacturer.in/market-area/canberra-australia#video",      "name": "[Exact YouTube video title]",      "description": "[1–2 sentences on what the video shows]",      "thumbnailUrl": "https://i.ytimg.com/vi/SJqbbUzYjXg/hqdefault.jpg",      "uploadDate": "[YYYY-MM-DDT00:00:00+05:30 — the date it went live on YouTube]",      "embedUrl": "https://www.youtube.com/embed/SJqbbUzYjXg"    }  ]}</script>
+Rules for this code:
+Every FAQ answer here must match the visible answer on the page word for word. If the client edits one, edit both.
+The page URL must match the canonical exactly (trailing slash or not).
+If no Australia hub page exists yet, delete breadcrumb item 3 and renumber Canberra to position 3.
+Product schema is intentionally left out. Google needs a price or genuine reviews for it; never add fake ratings.
+Validate with Google's Rich Results Test and validator.schema.org before publishing.
+5. Delete list — confirm none of this survives
+Most of these disappear when section 2 is pasted. Search the live page for each string after publishing and tick it off.
+☐ "ACT (B)" — eyebrow. Internal tier code.
+☐ "CTY-0672" — local block. Internal ID.
+☐ "Active Supply Node" / "SF-ROUTE: #CAN-EP" — local block card. Internal code.
+☐ "Hume Industrial" — local block and FAQ. The area is Hume.
+☐ "Fast Road Transit to Canberra" — hero badge. There is no road route from Mumbai; it ships by sea.
+☐ "Fast Road Transit from Mumbai Plant" — why-us card. Same reason.
+☐ "E-Way Bill Lock" / "Heat Lock" / "Electropolishing Purge" — process steps. Indian domestic paperwork and wrong terms.
+☐ "FOB Mumbai / Door Delivery" — logistics. Replaced by the Incoterms row.
+☐ "FOR doorstep pricing" — RFQ. Indian domestic term.
+☐ "within 2 business hours" — RFQ. Unclear across time zones, and the MTC ships with the goods, not the quote.
+☐ "semiconductor" and "high-purity chemical units" — intro. No such plants in the ACT.
+☐ "premier" — intro. Filler word.
+☐ The whole "904L & Specialty EP" card — grades. 904L is not an ASTM A270 grade.
+☐ "SF1" anywhere in the EP column or on the 316L card — SF1 is a mechanically polished finish.
+☐ "Ra ≤ 0.80 µm (32 µin) / SF1" — comparison table. SF1 is 0.51 µm.
+☐ "Mandatory for USFDA, WHO-GMP & EU-GMP" — comparison table. GMP rules don't mandate a finish.
+☐ "Chromium-to-Iron ratio > 1.5" and "~ 0.8" — comparison table, unless the client holds an XPS/AES report.
+☐ "Partner with Sakshi Forge for Reliable Industrial Steel Solutions" block — bottom. Flanges/forgings text is off-topic here.
+☐ Extra "in Canberra" phrases, e.g. "Industrial Benefit in Canberra", "environments in Canberra". Target: about 6–8 natural mentions on the whole page, down from about 18.
+6. Sitewide template fixes
+These errors come from the master city-page template, so every city page has them. Fix them once in the template; Canberra and all other city pages inherit the fix.
+Split the template: India vs international. Road transit, FOR pricing and E-Way Bill are correct for Indian city pages. For all international pages (Australia, UAE, UK, USA and the other export markets), use the export logistics block from section 2.3: sea route, Incoterms, lead time, Certificate of Origin.
+Fix
+Where
+Change
+Hide internal codes
+All city pages
+Never print tier codes (A/B/C), CTY-IDs or SF-ROUTE values on the front end.
+International logistics block
+All non-India city pages
+Replace road transit / FOR / E-Way Bill with the section 2.3 block.
+Comparison table and grade cards
+All city pages
+Apply the corrected SF values, drop SF1 from EP, drop "Mandatory for…GMP", remove 904L from the A270 list.
+RFQ and closing blocks
+All city pages
+Use the section 2.9 and 2.10 copy. International pages get Incoterms; India pages keep ex-works / FOR.
+FAQ schema
+All city pages
+Never output a Question with an empty answer. Hide the FAQ item until its answer is filled.
+Breadcrumb
+International city pages
+Add the country level: Home › Market Directory › [Country] › [City].
+Sales email
+Footer, RFQ, contact page
+Replace sakshiforge1737@gmail.com with [sales@steelmanufacturer.in] once the mailbox exists.
+Agency footer credit
+Footer, every page
+Replace with the code below. A keyword-anchor link on every page of a 2,000-page site looks like a paid link pattern to Google.
+URL versions
+Whole site
+One version per URL: force HTTPS and one trailing-slash format with 301s; canonical must match.
+robots.txt
+Site root
+Confirm Googlebot is not disallowed. Blocking AI crawlers (GPTBot, ClaudeBot, PerplexityBot) is a client decision — it keeps the site out of AI answers.
+Footer credit — replaces "Designed and Promoted by errorr.in • Best Digital Marketing Company in India":
+<p class="site-credit">Website by <a href="https://errorr.in/" rel="nofollow">errorr.in</a></p>
+7. Placeholders to fill, then QA
+The page cannot go live until every bracket below is filled with real data. If a fact isn't available, delete the line rather than guess.
+Placeholder
+Where it appears
+Who supplies it
+Real supply references (1–2)
+2.2 Local block
+Client
+Forming / sizing process step
+2.3 step 2
+Client QA
+Lead time: production [X], sea [Y], clearance + road [Z]
+2.3 Info rows, FAQ Q3, schema
+Client logistics
+Measured Cr/Fe ratio (optional)
+2.4 table
+Client QA — only with an XPS/AES report
+316L carbon limit, sulfur range
+2.5 Card 1
+Client QA
+304L chemistry check
+2.5 Card 2
+Client QA
+Real size range
+2.5 Card 3, 2.6 table
+Client production
+Hydrostatic or eddy-current test
+2.7 card 2
+Client QA
+High-purity valves stocked?
+2.7 card 4
+Client
+SF6 offered?
+FAQ Q2 (page + schema)
+Client
+AS 1528 answer
+FAQ Q5 (page + schema)
+Client QA
+Sales email on own domain
+FAQ Q6, 2.9, footer
+Client — create mailbox
+Minimum order quantity
+FAQ Q6 (page + schema)
+Client
+Media Library URL of electropolished-pipes.jpg
+3.1 code
+Developer, after upload
+Video title, description, upload date
+3.2 code, schema
+From the YouTube video page
+Market Directory and Australia hub URLs
+Breadcrumb, schema
+Developer
+Sydney / Melbourne / Australia links
+2.2 related-pages line
+Developer — existing pages only
+Pre-publish QA
+☐ Search the page source for "[" — zero results.
+☐ Exactly one H1 on the page.
+☐ "Canberra" appears about 6–8 times, not 18.
+☐ Every item in the Delete list (section 5) is gone.
+☐ Visible FAQ text matches the schema text word for word.
+☐ Rich Results Test: no errors, only one FAQPage block.
+☐ Mobile: tables scroll sideways inside their box; video keeps 16:9.
+☐ The only image is electropolished-pipes.jpg (caption "Electropolished Pipes") and the only video is SJqbbUzYjXg.
+☐ Canonical matches the live URL; the other slash / HTTP versions 301 to it.
+☐ After publishing: Search Console → URL Inspection → Request indexing.
+Source for the duty-free claim: from January 1, 2026, 100% of Indian tariff lines have duty-free access to Australia under ECTA — News On AIR, 1 Jan 2026. Anti-dumping duties are a separate regime, which is why FAQ Q4 tells buyers to check with their broker.

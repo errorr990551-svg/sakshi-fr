@@ -421,7 +421,7 @@ function App(props) {
       )}
 
       {/* Call To Action Banner */}
-      {resolvedRoute.type !== 'contact-us' && (
+      {resolvedRoute.type !== 'contact-us' && resolvedRoute.type !== 'market-city' && (
         <section className="cta-sec section-padding">
           <div className="container">
             <div className="cta-grid">

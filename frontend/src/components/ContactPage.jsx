@@ -123,7 +123,7 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
                       <div>
                         <h4 style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: '700', marginBottom: '0.25rem' }}>Email Addresses</h4>
                         <p style={{ fontWeight: '600', fontSize: '1.05rem' }}>
-                          <a href="mailto:info@sakshiforge.in" style={{ color: 'inherit', textDecoration: 'none' }}>info@sakshiforge.in</a> / <a href="mailto:sakshiforge1737@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>sakshiforge1737@gmail.com</a>
+                          <a href="mailto:info@sakshiforge.in" style={{ color: 'inherit', textDecoration: 'none' }}>info@sakshiforge.in</a> / <a href="mailto:sales@steelmanufacturer.in" style={{ color: 'inherit', textDecoration: 'none' }}>sales@steelmanufacturer.in</a>
                         </p>
                       </div>
                     </div>

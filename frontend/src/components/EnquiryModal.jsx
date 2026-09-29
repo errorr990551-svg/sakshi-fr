@@ -188,7 +188,7 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '',
                   <Mail size={18} style={{ color: 'var(--primary-yellow)' }} />
                   <div>
                     <strong style={{ fontSize: '0.75rem', color: 'var(--text-muted)', display: 'block', textTransform: 'uppercase' }}>Email Address</strong>
-                    <a href="mailto:sakshiforge1737@gmail.com" style={{ color: 'var(--text-primary)', fontWeight: '600', textDecoration: 'none', fontSize: '0.95rem' }}>sakshiforge1737@gmail.com</a>
+                    <a href="mailto:sales@steelmanufacturer.in" style={{ color: 'var(--text-primary)', fontWeight: '600', textDecoration: 'none', fontSize: '0.95rem' }}>sales@steelmanufacturer.in</a>
                   </div>
                 </div>
 

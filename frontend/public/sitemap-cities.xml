@@ -146,6 +146,31 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://steelmanufacturer.in/market-area/hosur/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/tiruchirappalli/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/salem/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/madurai/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/thoothukudi/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://steelmanufacturer.in/market-area/dahej/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -227,11 +252,6 @@
   </url>
   <url>
     <loc>https://steelmanufacturer.in/market-area/haridwar/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steelmanufacturer.in/market-area/hosur/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -342,11 +362,6 @@
   </url>
   <url>
     <loc>https://steelmanufacturer.in/market-area/ludhiana/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steelmanufacturer.in/market-area/madurai/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -546,11 +561,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/market-area/salem/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://steelmanufacturer.in/market-area/sanand/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -622,11 +632,6 @@
   </url>
   <url>
     <loc>https://steelmanufacturer.in/market-area/thrissur/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steelmanufacturer.in/market-area/tiruchirappalli/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

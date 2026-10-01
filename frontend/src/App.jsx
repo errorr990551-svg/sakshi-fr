@@ -6,6 +6,9 @@ import ProductRange from './components/ProductRange';
 import Infrastructure from './components/Infrastructure';
 import WhyChooseUs from './components/WhyChooseUs';
 import AboutPage from './components/AboutPage';
+import HomePage from './components/HomePage';
+import TamilNaduHubPage from './components/TamilNaduHubPage';
+import { customCityData } from './data/customCityData';
 import Footer from './components/Footer';
 import ProductModal from './components/ProductModal';
 import EnquiryModal from './components/EnquiryModal';
@@ -231,8 +234,18 @@ function App(props) {
       return { type: 'product', data: product };
     }
     
+    if (cleanPath === '/tamil-nadu' || cleanPath === '/market-area/tamil-nadu') {
+      return { type: 'tamil-nadu-hub', data: null };
+    }
+
     // Check if matching market city slug
-    const city = marketCitiesData.find(c => c.slug === slug || c.path === cleanPath || c.path === '/' + slug);
+    let city = marketCitiesData.find(c => c.slug === slug || c.path === cleanPath || c.path === '/' + slug);
+    if (!city) {
+      const citySlug = cleanPath.startsWith('/market-area/') ? cleanPath.replace('/market-area/', '') : slug;
+      if (customCityData[citySlug]) {
+        city = customCityData[citySlug];
+      }
+    }
     if (city) {
       return { type: 'market-city', data: city };
     }
@@ -279,25 +292,11 @@ function App(props) {
 
       {/* Main Body Routing */}
       {resolvedRoute.type === 'home' && (
-        <>
-          {/* Hero Presentation Section & Capabilities */}
-          <Hero onEnquireClick={() => handleOpenEnquiry('')} />
+        <HomePage onEnquireClick={handleOpenEnquiry} />
+      )}
 
-          {/* About Corporate Overview */}
-          <AboutSection />
-
-          {/* Products Inventory Grid */}
-          <ProductRange onProductSelect={handleOpenProduct} />
-
-          {/* Value Pillars List */}
-          <WhyChooseUs />
-
-          {/* Live Factory Video & Photo Gallery */}
-          <GallerySection onEnquireClick={handleOpenEnquiry} />
-
-          {/* Factory and Machinery Infrastructure */}
-          <Infrastructure />
-        </>
+      {resolvedRoute.type === 'tamil-nadu-hub' && (
+        <TamilNaduHubPage onEnquireClick={handleOpenEnquiry} />
       )}
 
       {resolvedRoute.type === 'gallery' && (
@@ -421,7 +420,7 @@ function App(props) {
       )}
 
       {/* Call To Action Banner */}
-      {resolvedRoute.type !== 'contact-us' && resolvedRoute.type !== 'market-city' && (
+      {resolvedRoute.type !== 'contact-us' && resolvedRoute.type !== 'market-city' && resolvedRoute.type !== 'home' && resolvedRoute.type !== 'about' && resolvedRoute.type !== 'tamil-nadu-hub' && (
         <section className="cta-sec section-padding">
           <div className="container">
             <div className="cta-grid">

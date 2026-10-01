@@ -2167,6 +2167,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://steelmanufacturer.in/tamil-nadu/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Market Area Hub -->
   <url>
     <loc>https://steelmanufacturer.in/market-area/</loc>

@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { ChevronRight, ShieldCheck, Truck, Sparkles, MapPin, HelpCircle, ChevronDown, ChevronUp, Phone, Mail, FileText, Globe, Building, Award, Activity, ArrowRight, Shield, Layers, FileCheck, HelpCircle as FaqIcon, CheckCircle2, Sliders, Cpu, Zap, Box } from 'lucide-react';
+import { ChevronRight, ShieldCheck, Truck, Sparkles, MapPin, HelpCircle, ChevronDown, ChevronUp, Phone, Mail, FileText, Globe, Building, Award, Activity, ArrowRight, Shield, Layers, FileCheck, HelpCircle as FaqIcon, CheckCircle2, Sliders, Cpu, Zap, Box, MessageSquare } from 'lucide-react';
 import { handleLinkClick } from '../utils/router';
 import { customCityData } from '../data/customCityData';
 
@@ -296,6 +296,420 @@ export default function CityPage({ cityData, onEnquireClick }) {
     }
     return points;
   }, [cityData, custom]);
+
+  if (custom?.isTamilNaduRich) {
+    return (
+      <div className="city-page-wrapper" style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '2rem', paddingTop: '5.5rem' }}>
+        {/* 1. HERO */}
+        <section style={{ 
+          background: 'linear-gradient(rgba(11, 12, 16, 0.9), rgba(18, 21, 28, 0.98)), url("/hero_forge.webp") center/cover',
+          padding: '6rem 0 4.5rem 0',
+          borderBottom: '1px solid var(--border-color)',
+          position: 'relative'
+        }}>
+          <div className="container">
+            {/* Breadcrumbs */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.8rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
+              <a href="/" onClick={(e) => handleLinkClick(e, '/')} style={{ color: 'inherit', textDecoration: 'none' }}>Home</a>
+              <ChevronRight size={12} />
+              <a href="/market-area" onClick={(e) => handleLinkClick(e, '/market-area')} style={{ color: 'inherit', textDecoration: 'none' }}>Market Directory</a>
+              <ChevronRight size={12} />
+              <a href="/tamil-nadu" onClick={(e) => handleLinkClick(e, '/tamil-nadu')} style={{ color: 'inherit', textDecoration: 'none' }}>Tamil Nadu</a>
+              <ChevronRight size={12} />
+              <span style={{ color: 'var(--primary-yellow)', fontWeight: '600' }}>{custom.city}</span>
+            </div>
+
+            <div style={{ maxWidth: '980px' }}>
+              <span style={{ 
+                backgroundColor: 'rgba(255, 193, 7, 0.1)', 
+                color: 'var(--primary-yellow)', 
+                border: '1px solid rgba(255, 193, 7, 0.3)',
+                padding: '0.35rem 0.9rem', 
+                borderRadius: '50px', 
+                fontSize: '0.75rem', 
+                fontWeight: '800', 
+                textTransform: 'uppercase', 
+                letterSpacing: '0.08em',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.4rem',
+                marginBottom: '1.25rem'
+              }}>
+                <Globe size={12} />
+                Factory Direct · ISO 9001:2015 · Taloja, Mumbai
+              </span>
+
+              <h1 style={{ 
+                fontSize: 'clamp(2rem, 4vw, 3.2rem)', 
+                fontWeight: '850', 
+                lineHeight: '1.2', 
+                marginBottom: '1.25rem',
+                background: 'linear-gradient(135deg, #ffffff 0%, #d1d5db 50%, var(--primary-yellow) 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent'
+              }}>
+                {custom.h1}
+              </h1>
+
+              <p style={{ color: '#cbd5e1', fontSize: '1.12rem', lineHeight: '1.75', marginBottom: '2rem' }}>
+                {custom.heroIntro}
+              </p>
+
+              {/* Trust strip */}
+              <div style={{ 
+                backgroundColor: 'rgba(255, 255, 255, 0.04)', 
+                border: '1px solid rgba(255, 255, 255, 0.1)', 
+                borderRadius: '8px', 
+                padding: '0.85rem 1.25rem', 
+                marginBottom: '2.5rem', 
+                display: 'flex', 
+                flexWrap: 'wrap', 
+                alignItems: 'center', 
+                gap: '0.75rem 1.25rem', 
+                fontSize: '0.85rem', 
+                color: '#e2e8f0' 
+              }}>
+                <span style={{ color: 'var(--primary-yellow)', fontWeight: '800', textTransform: 'uppercase', fontSize: '0.75rem', letterSpacing: '0.05em' }}>Trust Strip:</span>
+                {custom.trustStrip.map((item, idx) => (
+                  <React.Fragment key={idx}>
+                    {idx > 0 && <span style={{ color: 'var(--text-muted)' }}>•</span>}
+                    <span>{item}</span>
+                  </React.Fragment>
+                ))}
+              </div>
+
+              {/* 4 Hero Cards */}
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.25rem' }}>
+                {custom.heroCards.map((card, idx) => (
+                  <div key={idx} style={{ 
+                    backgroundColor: 'var(--bg-dark-800)', 
+                    border: '1px solid var(--border-color)', 
+                    borderRadius: '10px', 
+                    padding: '1.5rem', 
+                    display: 'flex', 
+                    flexDirection: 'column', 
+                    justifyContent: 'space-between' 
+                  }}>
+                    <div>
+                      <h3 style={{ fontSize: '1.05rem', color: '#fff', fontWeight: '700', marginBottom: '0.25rem' }}>{card.title}</h3>
+                      <div style={{ color: 'var(--primary-yellow)', fontSize: '0.8rem', fontWeight: '600', marginBottom: '0.75rem' }}>{card.subtitle}</div>
+                      <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', lineHeight: '1.5', marginBottom: '1.25rem' }}>{card.desc}</p>
+                    </div>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                      {card.actions.map((act, i) => (
+                        act.type === 'download' ? (
+                          <a key={i} href={act.link} onClick={(e) => handleLinkClick(e, act.link)} className="btn btn-outline" style={{ padding: '0.45rem 0.75rem', fontSize: '0.78rem', textAlign: 'center' }}>
+                            {act.text}
+                          </a>
+                        ) : (
+                          <button key={i} onClick={() => onEnquireClick(`${card.title} - ${custom.city}`)} className="btn btn-primary" style={{ padding: '0.45rem 0.75rem', fontSize: '0.78rem', fontWeight: '700' }}>
+                            {act.text}
+                          </button>
+                        )
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 2. WHY BUYERS TRUST US */}
+        <section style={{ padding: '5rem 0', backgroundColor: 'var(--bg-dark-900)' }}>
+          <div className="container" style={{ maxWidth: '980px' }}>
+            <span style={{ color: 'var(--primary-yellow)', fontSize: '0.8rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '0.5rem' }}>Procurement & QA Verification</span>
+            <h2 style={{ fontSize: '2.2rem', fontWeight: '800', marginBottom: '1.25rem' }}>{custom.whyBuyersTrust.title}</h2>
+            <div className="accent-line" style={{ width: '80px', height: '3px', backgroundColor: 'var(--primary-yellow)', borderRadius: '2px', marginBottom: '1.75rem' }}></div>
+            {custom.whyBuyersTrust.paragraphs.map((p, idx) => (
+              <p key={idx} style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', lineHeight: '1.8', marginBottom: '1.25rem' }}>{p}</p>
+            ))}
+          </div>
+        </section>
+
+        {/* 3. PRODUCT RANGE */}
+        <section style={{ padding: '5rem 0', backgroundColor: 'var(--bg-dark-800)', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
+          <div className="container" style={{ maxWidth: '980px' }}>
+            <span style={{ color: 'var(--primary-yellow)', fontSize: '0.8rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '0.5rem' }}>Electropolished Pipe Catalog</span>
+            <h2 style={{ fontSize: '2.2rem', fontWeight: '800', marginBottom: '1.25rem' }}>{custom.productRange.title}</h2>
+            <div className="accent-line" style={{ width: '80px', height: '3px', backgroundColor: 'var(--primary-yellow)', borderRadius: '2px', marginBottom: '2rem' }}></div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginBottom: '2.5rem' }}>
+              {custom.productRange.items.map((item, idx) => (
+                <div key={idx} style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.5rem' }}>
+                  <h3 style={{ fontSize: '1.1rem', color: 'var(--primary-yellow)', marginBottom: '0.5rem' }}>{item.heading}</h3>
+                  <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.6', margin: 0 }}>{item.text}</p>
+                </div>
+              ))}
+            </div>
+
+            <div style={{ textAlign: 'center' }}>
+              <a href={custom.productRange.btnLink || '/electropolished-pipes'} onClick={(e) => handleLinkClick(e, custom.productRange.btnLink || '/electropolished-pipes')} className="btn btn-primary" style={{ padding: '0.85rem 2rem', fontWeight: '700' }}>
+                {custom.productRange.btnText}
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* 4. LOCAL REALITY */}
+        <section style={{ padding: '5rem 0', backgroundColor: 'var(--bg-dark-900)' }}>
+          <div className="container" style={{ maxWidth: '980px' }}>
+            <span style={{ color: 'var(--primary-yellow)', fontSize: '0.8rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '0.5rem' }}>Operating Conditions</span>
+            <h2 style={{ fontSize: '2.2rem', fontWeight: '800', marginBottom: '1.25rem' }}>{custom.localReality.title}</h2>
+            <div className="accent-line" style={{ width: '80px', height: '3px', backgroundColor: 'var(--primary-yellow)', borderRadius: '2px', marginBottom: '2rem' }}></div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+              {custom.localReality.points.map((pt, idx) => (
+                <div key={idx} style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.75rem', borderLeft: '3px solid var(--primary-yellow)' }}>
+                  <h4 style={{ fontSize: '1.05rem', color: '#fff', fontWeight: '700', marginBottom: '0.5rem' }}>{pt.title}</h4>
+                  <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.6', margin: 0 }}>{pt.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 5. SPECIFICATIONS SNAPSHOT */}
+        <section style={{ padding: '5rem 0', backgroundColor: 'var(--bg-dark-800)', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
+          <div className="container" style={{ maxWidth: '980px' }}>
+            <span style={{ color: 'var(--primary-yellow)', fontSize: '0.8rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '0.5rem' }}>Technical Configuration</span>
+            <h2 style={{ fontSize: '2.2rem', fontWeight: '800', marginBottom: '1.25rem' }}>{custom.specSnapshot.title}</h2>
+            <div className="accent-line" style={{ width: '80px', height: '3px', backgroundColor: 'var(--primary-yellow)', borderRadius: '2px', marginBottom: '2rem' }}></div>
+
+            <div style={{ overflowX: 'auto', backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '8px' }}>
+              <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.9rem' }}>
+                <thead>
+                  <tr style={{ backgroundColor: 'var(--bg-dark-700)', color: 'var(--primary-yellow)', borderBottom: '1px solid var(--border-color)' }}>
+                    {custom.specSnapshot.headers.map((h, i) => (
+                      <th key={i} style={{ padding: '0.85rem 1.25rem', fontWeight: '800' }}>{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {custom.specSnapshot.rows.map((row, i) => (
+                    <tr key={i} style={{ borderBottom: '1px solid var(--border-color)', backgroundColor: i % 2 === 1 ? 'rgba(255,255,255,0.02)' : 'transparent' }}>
+                      <td style={{ padding: '0.85rem 1.25rem', fontWeight: '700', color: '#fff' }}>{row.feature}</td>
+                      <td style={{ padding: '0.85rem 1.25rem', color: '#cbd5e1' }}>{row.col1}</td>
+                      <td style={{ padding: '0.85rem 1.25rem', color: '#cbd5e1' }}>{row.col2}</td>
+                      {row.col3 && <td style={{ padding: '0.85rem 1.25rem', color: '#cbd5e1' }}>{row.col3}</td>}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        {/* 6. APPLICATIONS */}
+        <section style={{ padding: '5rem 0', backgroundColor: 'var(--bg-dark-900)' }}>
+          <div className="container" style={{ maxWidth: '980px' }}>
+            <span style={{ color: 'var(--primary-yellow)', fontSize: '0.8rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '0.5rem' }}>Service Loops & Installation</span>
+            <h2 style={{ fontSize: '2.2rem', fontWeight: '800', marginBottom: '1.25rem' }}>{custom.applications.title}</h2>
+            <div className="accent-line" style={{ width: '80px', height: '3px', backgroundColor: 'var(--primary-yellow)', borderRadius: '2px', marginBottom: '2rem' }}></div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+              {custom.applications.items.map((app, idx) => (
+                <div key={idx} style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.5rem' }}>
+                  <h3 style={{ fontSize: '1.1rem', color: 'var(--primary-yellow)', marginBottom: '0.4rem' }}>{app.title}</h3>
+                  <p style={{ color: 'var(--text-secondary)', fontSize: '0.88rem', lineHeight: '1.6', margin: 0 }}>{app.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 7. GETTING PIPES TO [CITY] */}
+        <section style={{ padding: '5rem 0', backgroundColor: 'var(--bg-dark-800)', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
+          <div className="container" style={{ maxWidth: '980px' }}>
+            <span style={{ color: 'var(--primary-yellow)', fontSize: '0.8rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '0.5rem' }}>Logistics Execution</span>
+            <h2 style={{ fontSize: '2.2rem', fontWeight: '800', marginBottom: '1.25rem' }}>{custom.orderSteps.title}</h2>
+            <div className="accent-line" style={{ width: '80px', height: '3px', backgroundColor: 'var(--primary-yellow)', borderRadius: '2px', marginBottom: '2rem' }}></div>
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem', marginBottom: '2rem' }}>
+              {custom.orderSteps.steps.map((st, idx) => (
+                <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', backgroundColor: 'var(--bg-dark-900)', padding: '1rem 1.25rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+                  <span style={{ width: '28px', height: '28px', borderRadius: '50%', backgroundColor: 'rgba(255,193,7,0.15)', color: 'var(--primary-yellow)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: '800', fontSize: '0.85rem', flexShrink: 0 }}>
+                    {idx + 1}
+                  </span>
+                  <span style={{ color: '#cbd5e1', fontSize: '0.92rem', lineHeight: '1.6' }}>{st}</span>
+                </div>
+              ))}
+            </div>
+
+            <div style={{ backgroundColor: 'rgba(255, 193, 7, 0.05)', border: '1px solid rgba(255, 193, 7, 0.25)', borderRadius: '8px', padding: '1.25rem 1.5rem', color: '#e2e8f0', fontSize: '0.9rem', lineHeight: '1.6' }}>
+              {custom.orderSteps.note}
+            </div>
+          </div>
+        </section>
+
+        {/* 8. CHECKLIST */}
+        <section style={{ padding: '5rem 0', backgroundColor: 'var(--bg-dark-900)' }}>
+          <div className="container" style={{ maxWidth: '980px' }}>
+            <span style={{ color: 'var(--primary-yellow)', fontSize: '0.8rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '0.5rem' }}>Technical Due Diligence</span>
+            <h2 style={{ fontSize: '2.2rem', fontWeight: '800', marginBottom: '1.25rem' }}>{custom.checklist.title}</h2>
+            <div className="accent-line" style={{ width: '80px', height: '3px', backgroundColor: 'var(--primary-yellow)', borderRadius: '2px', marginBottom: '2rem' }}></div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem' }}>
+              {custom.checklist.points.map((pt, idx) => (
+                <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', backgroundColor: 'var(--bg-dark-800)', padding: '1rem 1.25rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+                  <CheckCircle2 size={18} style={{ color: 'var(--primary-yellow)', flexShrink: 0, marginTop: '2px' }} />
+                  <span style={{ color: '#cbd5e1', fontSize: '0.9rem', lineHeight: '1.5' }}>{pt}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 9. AREAS COVERED */}
+        <section style={{ padding: '5rem 0', backgroundColor: 'var(--bg-dark-800)', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
+          <div className="container" style={{ maxWidth: '980px' }}>
+            <span style={{ color: 'var(--primary-yellow)', fontSize: '0.8rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '0.5rem' }}>Industrial Delivery Footprint</span>
+            <h2 style={{ fontSize: '2.2rem', fontWeight: '800', marginBottom: '1.25rem' }}>{custom.areasCovered.title}</h2>
+            <div className="accent-line" style={{ width: '80px', height: '3px', backgroundColor: 'var(--primary-yellow)', borderRadius: '2px', marginBottom: '2rem' }}></div>
+
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.65rem', marginBottom: '2rem' }}>
+              {custom.areasCovered.areas.map((ar, idx) => (
+                <span key={idx} style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', padding: '0.45rem 0.95rem', borderRadius: '4px', fontSize: '0.88rem', color: '#fff', fontWeight: '500' }}>
+                  {ar}
+                </span>
+              ))}
+            </div>
+
+            <div>
+              <div style={{ color: 'var(--primary-yellow)', fontWeight: '700', fontSize: '0.9rem', marginBottom: '0.75rem' }}>
+                {custom.areasCovered.stateHubText}
+              </div>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.65rem' }}>
+                {custom.areasCovered.siblingCities.map((sib, idx) => (
+                  <a key={idx} href={sib.path} onClick={(e) => handleLinkClick(e, sib.path)} style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', padding: '0.4rem 0.85rem', borderRadius: '4px', color: '#cbd5e1', fontSize: '0.82rem', textDecoration: 'none', fontWeight: '500' }}>
+                    {sib.name}
+                  </a>
+                ))}
+                <a href="/tamil-nadu" onClick={(e) => handleLinkClick(e, '/tamil-nadu')} style={{ color: 'var(--primary-yellow)', padding: '0.4rem 0.85rem', fontSize: '0.82rem', textDecoration: 'underline', fontWeight: '700' }}>
+                  View All Tamil Nadu Hubs →
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 10. WHY CHOOSE US (if present) */}
+        {custom.whyChooseUs && (
+          <section style={{ padding: '5rem 0', backgroundColor: 'var(--bg-dark-900)' }}>
+            <div className="container" style={{ maxWidth: '980px' }}>
+              <span style={{ color: 'var(--primary-yellow)', fontSize: '0.8rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '0.5rem' }}>Manufacturer Strengths</span>
+              <h2 style={{ fontSize: '2.2rem', fontWeight: '800', marginBottom: '1.25rem' }}>{custom.whyChooseUs.title}</h2>
+              <div className="accent-line" style={{ width: '80px', height: '3px', backgroundColor: 'var(--primary-yellow)', borderRadius: '2px', marginBottom: '2rem' }}></div>
+
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+                {custom.whyChooseUs.points.map((pt, idx) => (
+                  <div key={idx} style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.5rem' }}>
+                    <h3 style={{ fontSize: '1.1rem', color: 'var(--primary-yellow)', marginBottom: '0.4rem' }}>{pt.heading}</h3>
+                    <p style={{ color: 'var(--text-secondary)', fontSize: '0.88rem', lineHeight: '1.6', margin: 0 }}>{pt.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* 12. FAQs */}
+        <section style={{ padding: '5rem 0', backgroundColor: 'var(--bg-dark-800)', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
+          <div className="container" style={{ maxWidth: '980px' }}>
+            <span style={{ color: 'var(--primary-yellow)', fontSize: '0.8rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '0.5rem' }}>Questions & Technical Answers</span>
+            <h2 style={{ fontSize: '2.2rem', fontWeight: '800', marginBottom: '1.25rem' }}>Frequently Asked Questions</h2>
+            <div className="accent-line" style={{ width: '80px', height: '3px', backgroundColor: 'var(--primary-yellow)', borderRadius: '2px', marginBottom: '2rem' }}></div>
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
+              {custom.faqs.map((faq, idx) => (
+                <div key={idx} style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '8px', overflow: 'hidden' }}>
+                  <button
+                    onClick={() => toggleFaq(idx)}
+                    style={{
+                      width: '100%',
+                      padding: '1.15rem 1.5rem',
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      alignItems: 'center',
+                      background: 'none',
+                      border: 'none',
+                      textAlign: 'left',
+                      color: openFaq === idx ? 'var(--primary-yellow)' : '#fff',
+                      fontSize: '1rem',
+                      fontWeight: '600',
+                      cursor: 'pointer'
+                    }}
+                  >
+                    <span>{faq.q}</span>
+                    {openFaq === idx ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
+                  </button>
+                  {openFaq === idx && (
+                    <div style={{ padding: '0 1.5rem 1.25rem', color: '#cbd5e1', fontSize: '0.9rem', lineHeight: '1.7', borderTop: '1px solid rgba(255, 255, 255, 0.05)' }}>
+                      {faq.a}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 13. CTA */}
+        <section style={{ padding: '5rem 0', backgroundColor: 'var(--bg-dark-900)' }}>
+          <div className="container" style={{ maxWidth: '980px', backgroundColor: 'var(--bg-dark-800)', borderRadius: '12px', border: '1px solid var(--border-color)', padding: '3rem 2rem' }}>
+            <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+              <span style={{ color: 'var(--primary-yellow)', fontSize: '0.8rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '0.5rem' }}>30-Minute Response Guarantee</span>
+              <h2 style={{ fontSize: '2.2rem', fontWeight: '800', margin: '0 0 1rem 0' }}>{custom.cta.title}</h2>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', maxWidth: '750px', margin: '0 auto 2rem auto', lineHeight: '1.7' }}>
+                {custom.cta.desc}
+              </p>
+
+              <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+                <button onClick={() => onEnquireClick(`RFQ for ${custom.city}`)} className="btn btn-primary" style={{ padding: '0.85rem 2rem', fontWeight: '700' }}>
+                  Request RFQ <ArrowRight size={16} />
+                </button>
+                <a href="https://wa.me/918291366340" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '0.85rem 1.75rem', fontWeight: '600', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <MessageSquare size={16} /> WhatsApp Us
+                </a>
+                <a href="mailto:sakshiforge1737@gmail.com" className="btn btn-outline" style={{ padding: '0.85rem 1.75rem', fontWeight: '600', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <Mail size={16} /> Email Sales Team
+                </a>
+              </div>
+            </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem', paddingTop: '2rem', borderTop: '1px solid var(--border-color)' }}>
+              <div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary-yellow)', fontWeight: '700', marginBottom: '0.35rem', fontSize: '0.88rem' }}>
+                  <MapPin size={16} /> Factory Address
+                </div>
+                <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.85rem', lineHeight: '1.5' }}>
+                  {custom.cta.address}
+                </p>
+              </div>
+
+              <div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary-yellow)', fontWeight: '700', marginBottom: '0.35rem', fontSize: '0.88rem' }}>
+                  <Phone size={16} /> Phone / WhatsApp
+                </div>
+                <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.85rem', lineHeight: '1.5' }}>
+                  {custom.cta.phones.join(' | ')}
+                </p>
+              </div>
+
+              <div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary-yellow)', fontWeight: '700', marginBottom: '0.35rem', fontSize: '0.88rem' }}>
+                  <Mail size={16} /> Email
+                </div>
+                <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.85rem', lineHeight: '1.5' }}>
+                  {custom.cta.email}
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    );
+  }
 
   return (
     <div className="city-page-wrapper" style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '2rem', paddingTop: '5.5rem' }}>

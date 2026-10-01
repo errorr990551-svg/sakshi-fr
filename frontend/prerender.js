@@ -126,7 +126,8 @@ async function runPrerender() {
     { url: `${BASE_URL}/pipe-schedule-chart/`, type: 'chart-tool', slug: 'pipe-schedule-chart', title: 'Pipe Schedule Chart: Sch 5S-XXS', description: 'Pipe schedule chart.', data: { toolType: 'pipe-schedule-chart' } },
     { url: `${BASE_URL}/flange-exporter-usa/`, type: 'export', slug: 'flange-exporter-usa', title: 'Indian Flange & Fittings Exporter to USA', description: 'Flange exporter to USA.', data: { countryType: 'usa' } },
     { url: `${BASE_URL}/flange-supplier-uae/`, type: 'export', slug: 'flange-supplier-uae', title: 'Flange & Pipe Fittings Supplier to UAE', description: 'Flange supplier to UAE.', data: { countryType: 'uae' } },
-    { url: `${BASE_URL}/flange-supplier-saudi-arabia/`, type: 'export', slug: 'flange-supplier-saudi-arabia', title: 'Flange Supplier to Saudi Arabia', description: 'Flange supplier to KSA.', data: { countryType: 'saudi-arabia' } }
+    { url: `${BASE_URL}/flange-supplier-saudi-arabia/`, type: 'export', slug: 'flange-supplier-saudi-arabia', title: 'Flange Supplier to Saudi Arabia', description: 'Flange supplier to KSA.', data: { countryType: 'saudi-arabia' } },
+    { url: `${BASE_URL}/tamil-nadu/`, type: 'tamil-nadu-hub', slug: 'tamil-nadu', title: 'Electropolished Pipe Supplier in Tamil Nadu | 10 Industrial Belts | Sakshi Forge', description: 'Factory-direct electropolished SS 304L, 316L and duplex pipes supplied across Tamil Nadu: Chennai, Coimbatore, Hosur, Cuddalore, Trichy, Salem, Madurai, Thoothukudi.', data: null }
   ];
 
   extraPages.forEach(p => routes.push(p));

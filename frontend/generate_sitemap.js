@@ -42,7 +42,8 @@ const newPages = [
   'pipe-schedule-chart',
   'flange-exporter-usa',
   'flange-supplier-uae',
-  'flange-supplier-saudi-arabia'
+  'flange-supplier-saudi-arabia',
+  'tamil-nadu'
 ];
 
 // Helper to format priority

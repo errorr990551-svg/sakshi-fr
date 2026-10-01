@@ -20,6 +20,9 @@ export function handleLinkClick(e, path) {
     return;
   }
   
+  const targetPath = path || e.currentTarget?.getAttribute('href') || e.target?.getAttribute('href');
+  if (!targetPath) return;
+
   e.preventDefault();
-  navigate(path);
+  navigate(targetPath);
 }

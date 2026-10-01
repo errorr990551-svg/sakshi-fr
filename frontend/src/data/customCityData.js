@@ -1,5 +1,6 @@
 // Custom Rich City Content Data for International EP Pipes Handoff Pages
 // Built specifically for Canberra (Australia), Abu Dhabi (UAE), and Al Ain (UAE)
+import { tamilNaduCityData } from './tamilNaduCityData';
 
 export const customCityData = {
   'canberra-australia': {
@@ -813,5 +814,9 @@ export const customCityData = {
       body: 'Send your grade, sizes and specification. Our QA team replies with a quote, a sample 3.1 MTC and a delivered lead time to your site.',
       buttonText: 'Contact Us'
     }
-  }
+  },
+  ...tamilNaduCityData,
+  // Aliases for compatibility
+  trichy: tamilNaduCityData.tiruchirappalli,
+  tuticorin: tamilNaduCityData.thoothukudi
 };

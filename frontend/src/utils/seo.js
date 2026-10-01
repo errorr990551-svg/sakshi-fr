@@ -2,6 +2,7 @@
  * SEO utility to dynamically inject Meta Tags and JSON-LD Schema markup in the document head.
  */
 import corePagesData from '../data/core_pages.json';
+import { customCityData } from '../data/customCityData';
 
 const BASE_URL = "https://steelmanufacturer.in";
 
@@ -141,10 +142,16 @@ export function updateSEO({ type, data }) {
     canonicalUrl = `${BASE_URL}/market-area/`;
     robots = "index, follow";
   } else if (type === "market-city" && data) {
-    title = data.pageTitle || title;
-    metaDesc = data.metaDescription || metaDesc;
+    const custom = customCityData[data.slug];
+    title = custom?.pageTitle || data.pageTitle || title;
+    metaDesc = custom?.metaDescription || data.metaDescription || metaDesc;
     keywords = data.primaryKeyword ? (data.topSecondaryKeywords ? `${data.primaryKeyword}, ${data.topSecondaryKeywords}` : data.primaryKeyword) : keywords;
-    canonicalUrl = `${BASE_URL}${data.path}`;
+    canonicalUrl = `${BASE_URL}${data.path || (custom ? '/market-area/' + custom.slug : '')}`;
+    robots = "index, follow";
+  } else if (type === "tamil-nadu-hub") {
+    title = "Electropolished Pipe Supplier Across Tamil Nadu | Sakshi Forge";
+    metaDesc = "Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Tamil Nadu industrial hubs: Chennai, Coimbatore, Hosur, Cuddalore, Trichy, Salem, Madurai and Thoothukudi.";
+    canonicalUrl = `${BASE_URL}/tamil-nadu/`;
     robots = "index, follow";
   } else if (type === "clients") {
     title = "Our Clients & Industries | Sakshi Forge";

@@ -21,7 +21,7 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
               <span className="logo-text">Sakshi <span>Forge</span></span>
             </a>
             <p>
-              Sakshi Forge is an ISO 9001:2015 certified manufacturer of industrial flanges, forged fittings, electropolished pipes, round bars, and stainless steel components in Mumbai, India. Delivering 100% PMI-tested metallurgy with EN 10204 3.1 MTCs globally.
+              Sakshi Forge is an ISO 9001:2015 certified manufacturer of electropolished pipes, industrial flanges, forged fittings, round bars and stainless steel components in Mumbai, India. We deliver 100% PMI-tested material with EN 10204 3.1 MTCs to customers across India and worldwide.
             </p>
 
             {hasUnlockedContact ? (
@@ -103,12 +103,15 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
           <div className="footer-col">
             <h4>Cities We Serve</h4>
             <ul className="footer-links">
-              <li><a href="/electropolished-pipes-manufacturer-in-mumbai" onClick={(e) => handleLinkClick(e, '/electropolished-pipes-manufacturer-in-mumbai')}>Mumbai Flange Supplier</a></li>
-              <li><a href="/electropolished-pipes-manufacturer-in-delhi" onClick={(e) => handleLinkClick(e, '/electropolished-pipes-manufacturer-in-delhi')}>Delhi NCR Steel Supply</a></li>
-              <li><a href="/electropolished-pipes-manufacturer-in-hyderabad" onClick={(e) => handleLinkClick(e, '/electropolished-pipes-manufacturer-in-hyderabad')}>Hyderabad Pharma Piping</a></li>
-              <li><a href="/electropolished-pipes-manufacturer-in-visakhapatnam" onClick={(e) => handleLinkClick(e, '/electropolished-pipes-manufacturer-in-visakhapatnam')}>Visakhapatnam Port Supply</a></li>
-              <li><a href="/electropolished-pipes-manufacturer-in-indore" onClick={(e) => handleLinkClick(e, '/electropolished-pipes-manufacturer-in-indore')}>Indore MP Flanges</a></li>
-              <li><a href="/market-area" onClick={(e) => handleLinkClick(e, '/market-area')}>Cities We Serve (All 50+ Cities)</a></li>
+              <li><a href="/market-area/mumbai" onClick={(e) => handleLinkClick(e, '/market-area/mumbai')}>Mumbai</a></li>
+              <li><a href="/market-area/delhi" onClick={(e) => handleLinkClick(e, '/market-area/delhi')}>Delhi NCR</a></li>
+              <li><a href="/market-area/hyderabad" onClick={(e) => handleLinkClick(e, '/market-area/hyderabad')}>Hyderabad</a></li>
+              <li><a href="/market-area/visakhapatnam" onClick={(e) => handleLinkClick(e, '/market-area/visakhapatnam')}>Visakhapatnam</a></li>
+              <li><a href="/market-area/indore" onClick={(e) => handleLinkClick(e, '/market-area/indore')}>Indore</a></li>
+              <li><a href="/market-area/chennai" onClick={(e) => handleLinkClick(e, '/market-area/chennai')}>Chennai</a></li>
+              <li><a href="/market-area/coimbatore" onClick={(e) => handleLinkClick(e, '/market-area/coimbatore')}>Coimbatore</a></li>
+              <li><a href="/tamil-nadu" onClick={(e) => handleLinkClick(e, '/tamil-nadu')} style={{ color: 'var(--primary-yellow)', fontWeight: '700' }}>Tamil Nadu Hub (10 Cities)</a></li>
+              <li><a href="/market-area" onClick={(e) => handleLinkClick(e, '/market-area')}>All 50+ Cities Directory</a></li>
             </ul>
           </div>
 

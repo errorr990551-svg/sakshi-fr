@@ -23,7 +23,7 @@ app.get("/", (c) => c.text("Sakshi Forge API is running!"));
 app.get("/health", (c) => c.text("OK"));
 
 // Contact Form Endpoint
-app.post("/api/contact", async (c) => {
+const handleContact = async (c) => {
   try {
     let body;
     const contentType = c.req.header("content-type") || "";
@@ -79,10 +79,12 @@ app.post("/api/contact", async (c) => {
       500
     );
   }
-});
+};
+app.post("/api/contact", handleContact);
+app.post("/api/contact/", handleContact);
 
 // Complaint Form Endpoint
-app.post("/api/complaint", async (c) => {
+const handleComplaint = async (c) => {
   try {
     const data = await c.req.parseBody();
     const attachments = [];
@@ -140,10 +142,12 @@ app.post("/api/complaint", async (c) => {
       500
     );
   }
-});
+};
+app.post("/api/complaint", handleComplaint);
+app.post("/api/complaint/", handleComplaint);
 
 // Job Application Endpoint
-app.post("/api/apply", async (c) => {
+const handleApply = async (c) => {
   try {
     const data = await c.req.parseBody();
     const { fullName, email, mobile, location, role } = data;
@@ -190,7 +194,9 @@ app.post("/api/apply", async (c) => {
       500
     );
   }
-});
+};
+app.post("/api/apply", handleApply);
+app.post("/api/apply/", handleApply);
 
 // 404 Handler
 app.notFound((c) => {

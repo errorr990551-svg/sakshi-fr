@@ -17,11 +17,20 @@ RewriteRule ^ /%1 [L,R=301]
 # 301 redirect /home/ to /
 RewriteRule ^home/?$ https://steelmanufacturer.in/ [L,R=301]
 
-# Add trailing slash to non-file URLs
+# Add trailing slash to non-file URLs (excluding API routes)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} !/$
 RewriteCond %{REQUEST_URI} !\.
+RewriteCond %{REQUEST_URI} !^/api
 RewriteRule ^(.*)$ /$1/ [L,R=301]
+
+# Optional API proxy fallback (if Apache mod_proxy is enabled)
+<IfModule mod_proxy.c>
+  <IfModule mod_proxy_http.c>
+    SSLProxyEngine On
+    RewriteRule ^api/(.*)$ https://sakshi-fr.errorr990551.workers.dev/api/$1 [P,L]
+  </IfModule>
+</IfModule>
 
 # ============ 2. SPA & Pre-rendered Directory Routing ============
 # Serve existing physical file directly
@@ -33,7 +42,8 @@ RewriteCond %{REQUEST_FILENAME} -d
 RewriteCond %{REQUEST_FILENAME}/index.html -f
 RewriteRule ^ %{REQUEST_FILENAME}/index.html [L]
 
-# SPA Fallback: send any unhandled path to root /index.html for React Router
+# SPA Fallback: send any unhandled path to root /index.html for React Router (excluding API)
+RewriteCond %{REQUEST_URI} !^/api
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ /index.html [L]

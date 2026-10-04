@@ -70,21 +70,22 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
             )}
           </div>
 
-          {/* Key Product Hubs */}
+          {/* Quick Links (Header pages + Market Area) */}
           <div className="footer-col">
-            <h4>Products & Standards</h4>
+            <h4>Quick Links</h4>
             <ul className="footer-links">
-              <li><a href="/flanges" onClick={(e) => handleLinkClick(e, '/flanges')}>Industrial Flanges Hub</a></li>
-              <li><a href="/forged-fittings" onClick={(e) => handleLinkClick(e, '/forged-fittings')}>Forged Steel Fittings</a></li>
-              <li><a href="/electropolished-pipes" onClick={(e) => handleLinkClick(e, '/electropolished-pipes')}>Electropolished Pipes</a></li>
-              <li><a href="/stainless-steel-round-bar" onClick={(e) => handleLinkClick(e, '/stainless-steel-round-bar')}>SS Round Bars & Rods</a></li>
-              <li><a href="/stainless-steel-elbow" onClick={(e) => handleLinkClick(e, '/stainless-steel-elbow')}>SS Elbows (45°/90°/180°)</a></li>
-              <li><a href="/asme-b16-11-forged-fittings" onClick={(e) => handleLinkClick(e, '/asme-b16-11-forged-fittings')}>ASME B16.11 Standard</a></li>
-              <li><a href="/asme-b16-5-flanges" onClick={(e) => handleLinkClick(e, '/asme-b16-5-flanges')}>ASME B16.5 Standard</a></li>
+              <li><a href="/" onClick={(e) => handleLinkClick(e, '/')}>Home</a></li>
+              <li><a href="/products" onClick={(e) => handleLinkClick(e, '/products')}>Products Range</a></li>
+              <li><a href="/about-us" onClick={(e) => handleLinkClick(e, '/about-us')}>About Sakshi Forge</a></li>
+              <li><a href="/gallery" onClick={(e) => handleLinkClick(e, '/gallery')}>Facility Gallery</a></li>
+              <li><a href="/quality-assurance" onClick={(e) => handleLinkClick(e, '/quality-assurance')}>Quality Assurance</a></li>
+              <li><a href="/weight-calculator" onClick={(e) => handleLinkClick(e, '/weight-calculator')}>Weight Calculator</a></li>
+              <li><a href="/market-area" onClick={(e) => handleLinkClick(e, '/market-area')} style={{ color: 'var(--primary-yellow)', fontWeight: '700' }}>Market Area Directory</a></li>
+              <li><a href="/contact-us" onClick={(e) => handleLinkClick(e, '/contact-us')}>Contact Us</a></li>
             </ul>
           </div>
 
-          {/* Engineering Tools & Trust */}
+          {/* Engineering Tools & Company */}
           <div className="footer-col">
             <h4>Tools & Company</h4>
             <ul className="footer-links">
@@ -92,25 +93,24 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
               <li><a href="/flange-weight-chart" onClick={(e) => handleLinkClick(e, '/flange-weight-chart')}>Flange Weight Chart</a></li>
               <li><a href="/flange-bolt-chart" onClick={(e) => handleLinkClick(e, '/flange-bolt-chart')}>Flange Bolt Chart</a></li>
               <li><a href="/pipe-schedule-chart" onClick={(e) => handleLinkClick(e, '/pipe-schedule-chart')}>Pipe Schedule Chart</a></li>
-              <li><a href="/gallery" onClick={(e) => handleLinkClick(e, '/gallery')}>Gallery</a></li>
               <li><a href="/catalogue" onClick={(e) => handleLinkClick(e, '/catalogue')}>Download Catalogue PDF</a></li>
               <li><a href="/team" onClick={(e) => handleLinkClick(e, '/team')}>Leadership & QA Team</a></li>
               <li><a href="/clients" onClick={(e) => handleLinkClick(e, '/clients')}>Our Clients & Industries</a></li>
+              <li><a href="/blog" onClick={(e) => handleLinkClick(e, '/blog')}>Steel Knowledge Blog</a></li>
             </ul>
           </div>
 
-          {/* Key Cities We Serve */}
+          {/* Market Area (Replaced Cities We Serve) */}
           <div className="footer-col">
-            <h4>Cities We Serve</h4>
+            <h4>Market Area</h4>
             <ul className="footer-links">
-              <li><a href="/electropolished-pipe-manufacturer-mumbai" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-mumbai')}>Mumbai Works</a></li>
-              <li><a href="/electropolished-pipe-manufacturer-pune" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-pune')}>Pune MIDC</a></li>
-              <li><a href="/electropolished-pipe-manufacturer-thane" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-thane')}>Thane-Belapur</a></li>
+              <li><a href="/market-area" onClick={(e) => handleLinkClick(e, '/market-area')} style={{ color: 'var(--primary-yellow)', fontWeight: '700' }}>All 50+ Cities Directory →</a></li>
+              <li><a href="/tamil-nadu" onClick={(e) => handleLinkClick(e, '/tamil-nadu')}>Tamil Nadu Industrial Hub (10 Cities)</a></li>
+              <li><a href="/electropolished-pipe-manufacturer-mumbai" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-mumbai')}>Mumbai Works & Taloja MIDC</a></li>
+              <li><a href="/electropolished-pipe-manufacturer-pune" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-pune')}>Pune & Chakan MIDC</a></li>
+              <li><a href="/electropolished-pipe-manufacturer-thane" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-thane')}>Thane-Belapur Chemical Belt</a></li>
               <li><a href="/electropolished-pipe-manufacturer-tarapur" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-tarapur')}>Tarapur Chemical Zone</a></li>
-              <li><a href="/electropolished-pipe-manufacturer-nashik" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-nashik')}>Nashik Ambad & Sinnar</a></li>
-              <li><a href="/electropolished-pipe-manufacturer-aurangabad" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-aurangabad')}>Aurangabad & AURIC</a></li>
-              <li><a href="/tamil-nadu" onClick={(e) => handleLinkClick(e, '/tamil-nadu')} style={{ color: 'var(--primary-yellow)', fontWeight: '700' }}>Tamil Nadu Hub (10 Cities)</a></li>
-              <li><a href="/market-area" onClick={(e) => handleLinkClick(e, '/market-area')}>All 50+ Cities Directory</a></li>
+              <li><a href="/market-area" onClick={(e) => handleLinkClick(e, '/market-area')}>Pan-India & Global Supply Network</a></li>
             </ul>
           </div>
 
@@ -125,9 +125,9 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
           </div>
         </div>
 
-        <div className="footer-signature-wrap" style={{ textAlign: 'center', marginTop: '1.25rem' }}>
-          <p className="site-credit" style={{ fontSize: '0.8rem', color: 'var(--text-muted)', margin: 0 }}>
-            Website by <a href="https://errorr.in/" rel="nofollow" target="_blank" style={{ color: 'inherit', textDecoration: 'underline' }}>errorr.in</a>
+        <div className="footer-signature-wrap" style={{ textAlign: 'center', marginTop: '1.25rem', paddingTop: '1rem', borderTop: '1px solid rgba(255, 255, 255, 0.06)' }}>
+          <p className="site-credit" style={{ fontSize: '0.82rem', color: '#94a3b8', margin: 0 }}>
+            Designed and Promoted by <a href="https://errorr.in/" rel="nofollow" target="_blank" style={{ color: 'var(--primary-yellow)', fontWeight: '700', textDecoration: 'none' }}>errorr.in</a> • Best Digital Marketing Company in India
           </p>
         </div>
       </div>

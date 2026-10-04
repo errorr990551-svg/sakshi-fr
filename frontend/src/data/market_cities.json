@@ -185,6 +185,48 @@
     ]
   },
   {
+    "city": "Amravati",
+    "state": "Maharashtra",
+    "country": "India",
+    "tier": "B",
+    "industrialCluster": "Amravati MIDC, Nandgaon Peth, PM MITRA Textile Park",
+    "industrialAreas": "Amravati MIDC, Additional Amravati MIDC (Nandgaon Peth), Badnera Road, Warud, Morshi, Achalpur",
+    "keyIndustries": "Textile wet-processing, food and agro processing, clean utilities",
+    "roadTransitFromMumbai": "2-3 days road transit from Taloja works (780-820 km)",
+    "dispatchLane": "Samruddhi Expressway / National Highway Corridor",
+    "transitLine": "Direct Logistics Corridor to Amravati MIDC",
+    "freightBasis": "Consolidated Dispatch / Door Delivery",
+    "projectRef": "CTY-AMR-01",
+    "slug": "amravati",
+    "fullPageUrl": "https://steelmanufacturer.in/electropolished-pipe-manufacturer-amravati",
+    "path": "/electropolished-pipe-manufacturer-amravati",
+    "pageTitle": "Electropolished Pipe Manufacturer Amravati | Sakshi Forge",
+    "metaDescription": "Electropolished 316L & 304L pipes for Amravati MIDC food, agro and process plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.",
+    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Amravati: 316L and 304L EP Tubes for Amravati MIDC, Nandgaon Peth and PM MITRA Park Plants",
+    "canonicalUrl": "https://steelmanufacturer.in/electropolished-pipe-manufacturer-amravati",
+    "primaryKeyword": "Electropolished Stainless Steel Pipe Manufacturer in Amravati, SS EP Tube Suppliers in Amravati",
+    "topSecondaryKeywords": "Sanitary SS tube for food and agro plants, ASME BPE tubes Amravati, 316L electropolished tubing MIDC Amravati",
+    "distanceKm": 800,
+    "faqs": [
+      {
+        "q": "How fast can you deliver to Amravati, and how is the finish protected over that distance?",
+        "a": "Amravati is roughly 780-820 km from our Taloja MIDC factory, and delivery is typically 2-3 days. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. Factory visits and witnessed testing before dispatch are welcome."
+      },
+      {
+        "q": "Amravati is a textile hub. Is electropolished pipe used in textile units?",
+        "a": "Not in spinning, weaving or garment-making. Our pipe fits the water, dosing and utility lines in wet-processing units. We recommend 316L where dye-house salts bring chlorides and 304L for plain utility lines. Tell us the media and temperature and we'll confirm the grade."
+      },
+      {
+        "q": "We are setting up a unit at the PM MITRA park. Can you quote at design stage?",
+        "a": "Yes. Send your drawings or specification, and we'll quote against them, flag anything that doesn't suit electropolished pipe, and prepare the document pack you'll need for commissioning."
+      },
+      {
+        "q": "Can I combine several sizes into one order to save on freight?",
+        "a": "Yes. Send your full requirement across grades, sizes and lengths and we'll quote one consolidated dispatch. This usually works out cheaper than several small shipments over this distance."
+      }
+    ]
+  },
+  {
     "city": "Amritsar",
     "state": "Punjab",
     "country": "India",

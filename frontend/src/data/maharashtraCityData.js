@@ -347,5 +347,65 @@ export const maharashtraCityData = {
         a: 'MTC EN 10204 3.1 with heat numbers, a PMI certificate, a hydro certificate, a QA report and a surface report with measured Ra, plus passivation and ferrite records. These support your validation file but do not replace your own validation documentation.'
       }
     ]
+  },
+
+  amravati: {
+    slug: 'amravati',
+    city: 'Amravati',
+    state: 'Maharashtra',
+    country: 'India',
+    pageUrl: '/electropolished-pipe-manufacturer-amravati',
+    pageTitle: 'Electropolished Pipe Manufacturer Amravati | Sakshi Forge',
+    metaDescription: 'Electropolished 316L & 304L pipes for Amravati MIDC food, agro and process plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.',
+    h1: 'Electropolished Stainless Steel Pipe Manufacturer in Amravati: 316L and 304L EP Tubes for Amravati MIDC, Nandgaon Peth and PM MITRA Park Plants',
+    subHeadline: "Amravati is building one of India's largest textile regions, and its MIDC estates also host food and agro-processing units that need clean, easy-to-sanitise pipe. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply Amravati's plants directly, packed for the long haul, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    trustStrip: ['ISO 9001:2015', 'EN 10204 3.1 MTC', '100% PMI Tested', 'Internal Ra ≤0.4 µm', 'ASTM A269 / A270'],
+    defaultFilter: { grade: '316L', ra: '0.4' },
+    hasDuplex: true,
+    transitInfo: 'Amravati is roughly 780-820 km from our factory, and delivery is typically 2-3 days with protective capping and sleeving for the long haul.',
+    regionalCapability: {
+      title: "Electropolished Pipe for Amravati's Industrial Belts",
+      description: "Amravati district has a string of MIDC estates. The main ones are the Amravati MIDC and the Additional Amravati MIDC at Nandgaon Peth, with smaller estates at Achalpur, Anjangaon Surji, Daryapur, Morshi, Warud and elsewhere. Next to the Nandgaon Peth estate, the PM MITRA integrated textile park covers 1,020 acres, about 30 km from the Samruddhi Expressway, and has a common effluent treatment plant. Around the city, the district's farming belt feeds food and agro-processing units. A word on fit: Spinning, weaving and garment-making don't use electropolished pipe. Where we are useful is the water and dosing lines in textile wet-processing units, food and agro plants, and new-build projects that specify clean utilities at design stage.",
+      zones: [
+        { zone: 'Amravati MIDC (city estate)', endUse: 'Mixed manufacturing, food and engineering', application: 'Hygienic transfer, clean utility', spec: '304L / 316L' },
+        { zone: 'Additional Amravati MIDC, Nandgaon Peth', endUse: 'Textile and mixed industry', application: 'Process-water, dosing and clean-utility lines', spec: '316L for salt-bearing dye lines; 304L for plain utility' },
+        { zone: 'PM MITRA Textile Park (Nandgaon Peth)', endUse: 'Integrated textile region, partly under development', application: 'Wet-processing water, dosing, effluent-side clean lines, design-stage project specs', spec: '316L / 304L, project quotes' },
+        { zone: 'Badnera Road and city food units', endUse: 'Food and agro processing', application: 'Hygienic transfer, CIP', spec: '304L' },
+        { zone: 'Warud / Morshi / Achalpur MIDCs', endUse: 'Agro-based and citrus-region processing', application: 'Hygienic transfer, juice and food lines', spec: '304L; 316L for acidic concentrates' }
+      ],
+      applications: [
+        { title: 'Textile wet-processing water and dosing lines', desc: '316L where dye-house salts bring chlorides, 304L for plain utility.' },
+        { title: 'Food and agro processing', desc: 'A smooth, passivated interior that cleans easily and does not hold residue.' },
+        { title: 'Citrus and juice transfer', desc: 'Hygienic tubing for orange and juice lines, once we have checked your media and cleaning chemistry.' },
+        { title: 'New-build plants at PM MITRA', desc: 'Quotes against your drawings and specification at design stage, with the document pack you will need for commissioning.' },
+        { title: 'CIP and SIP lines', desc: 'A smooth bore cleans faster and drains better.' },
+        { title: 'High-purity gas lines', desc: 'Guaranteed Ra surface roughness down to ≤0.4 µm with full MTC validation.' }
+      ],
+      localNotes: [
+        'Where we fit: Dye-house water and dosing lines, food and agro plants, and design-stage projects are our best match here. We will say plainly if a line does not suit electropolished pipe.',
+        'A textile park still being built: Plants in a new park decide piping at design stage, so send drawings early and we will mark up the specification and flag anything unsuitable.',
+        'Dye-house salts and chlorides: Salt in dyeing liquor attacks 304 by pitting. For lines carrying it, 316L is usually the safer grade. Tell us the media and temperature and we will confirm.',
+        'A long supply line: Amravati is roughly 780-820 km from our factory. We cap the pipe ends, sleeve every length and pack for the journey, and we quote consolidated dispatches for larger orders.'
+      ]
+    },
+    areas: ['Amravati', 'Badnera', 'Nandgaon Peth', 'Achalpur', 'Anjangaon Surji', 'Daryapur', 'Morshi', 'Warud', 'Dhamangaon Railway', 'Chandur Railway'],
+    faqs: [
+      {
+        q: 'How fast can you deliver to Amravati, and how is the finish protected over that distance?',
+        a: 'Amravati is roughly 780-820 km from our Taloja MIDC factory, and delivery is typically 2-3 days. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. Factory visits and witnessed testing before dispatch are welcome.'
+      },
+      {
+        q: 'Amravati is a textile hub. Is electropolished pipe used in textile units?',
+        a: 'Not in spinning, weaving or garment-making. Our pipe fits the water, dosing and utility lines in wet-processing units. We recommend 316L where dye-house salts bring chlorides and 304L for plain utility lines. Tell us the media and temperature and we will confirm the grade.'
+      },
+      {
+        q: 'We are setting up a unit at the PM MITRA park. Can you quote at design stage?',
+        a: 'Yes. Send your drawings or specification, and we will quote against them, flag anything that does not suit electropolished pipe, and prepare the document pack you will need for commissioning.'
+      },
+      {
+        q: 'Can I combine several sizes into one order to save on freight?',
+        a: 'Yes. Send your full requirement across grades, sizes and lengths and we will quote one consolidated dispatch. This usually works out cheaper than several small shipments over this distance.'
+      }
+    ]
   }
 };

@@ -204,7 +204,9 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick }) {
     { name: 'Pune', path: '/electropolished-pipe-manufacturer-pune' },
     { name: 'Tarapur', path: '/electropolished-pipe-manufacturer-tarapur' },
     { name: 'Nashik', path: '/electropolished-pipe-manufacturer-nashik' },
-    { name: 'Aurangabad', path: '/electropolished-pipe-manufacturer-aurangabad' }
+    { name: 'Aurangabad', path: '/electropolished-pipe-manufacturer-aurangabad' },
+    { name: 'Nagpur', path: '/market-area/nagpur' },
+    { name: 'Amravati', path: '/electropolished-pipe-manufacturer-amravati' }
   ].filter(c => c.name.toLowerCase() !== cityData.slug);
 
   return (
@@ -269,7 +271,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick }) {
                 className="btn btn-primary btn-lg" 
                 style={{ padding: '0.9rem 1.85rem', fontWeight: '700' }}
               >
-                Get a {cityData.city} Quote in 30 Minutes <ArrowRight size={16} />
+                {['A', 'E', 'I', 'O', 'U'].includes(cityData.city[0].toUpperCase()) ? 'Get an' : 'Get a'} {cityData.city} Quote in 30 Minutes <ArrowRight size={16} />
               </button>
               <a 
                 href="/catalogue" 
@@ -1051,7 +1053,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick }) {
                     <Clock size={18} /> Delivery Schedule
                   </div>
                   <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.5' }}>
-                    Same-day to next-day road transit from Taloja works. Urgent site deliveries supported.
+                    {cityData.transitInfo || 'Same-day to next-day road transit from Taloja works. Urgent site deliveries supported.'}
                   </p>
                 </div>
               </div>

@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useEffect } from 'react';
 import { handleLinkClick } from '../utils/router';
 import marketCitiesData from '../data/market_cities.json';
 
@@ -27,6 +27,21 @@ export default function MarketAreaPage() {
   const getStateSlug = (stateName) => {
     return stateName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
   };
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      setTimeout(() => {
+        const el = document.querySelector(hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 150);
+    } else if (window.location.pathname.includes('maharashtra')) {
+      setTimeout(() => {
+        const el = document.getElementById('maharashtra');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 150);
+    }
+  }, []);
 
   return (
     <div className="market-area-page-wrapper" style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '6rem', paddingTop: '5.5rem' }}>
@@ -132,15 +147,30 @@ export default function MarketAreaPage() {
       <section style={{ padding: '1rem 0 2rem 0' }}>
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.5rem' }}>
-            <div style={{
-              background: 'linear-gradient(135deg, rgba(255, 193, 7, 0.08) 0%, var(--bg-dark-800) 100%)',
-              border: '1px solid var(--primary-yellow)',
-              borderRadius: '12px',
-              padding: '1.75rem',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between'
-            }}>
+            {/* Box 1: Tamil Nadu */}
+            <div 
+              onClick={() => handleLinkClick(null, '/tamil-nadu')}
+              style={{
+                background: 'linear-gradient(135deg, rgba(255, 193, 7, 0.08) 0%, var(--bg-dark-800) 100%)',
+                border: '1px solid var(--primary-yellow)',
+                borderRadius: '12px',
+                padding: '1.75rem',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                cursor: 'pointer',
+                transition: 'all 0.25s ease',
+                position: 'relative'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-3px)';
+                e.currentTarget.style.boxShadow = '0 10px 25px rgba(255, 193, 7, 0.2)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'none';
+                e.currentTarget.style.boxShadow = 'none';
+              }}
+            >
               <div>
                 <span style={{ fontSize: '0.75rem', fontWeight: '800', color: 'var(--primary-yellow)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
                   Regional Dedicated Hub
@@ -152,39 +182,96 @@ export default function MarketAreaPage() {
               </div>
               <a 
                 href="/tamil-nadu" 
-                onClick={(e) => handleLinkClick(e, '/tamil-nadu')}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleLinkClick(e, '/tamil-nadu');
+                }}
                 className="btn btn-primary"
-                style={{ marginTop: '1rem', width: 'fit-content' }}
+                style={{ marginTop: '1.25rem', width: 'fit-content' }}
               >
                 Explore Tamil Nadu Hub &rarr;
               </a>
             </div>
 
-            <div style={{
-              background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, var(--bg-dark-800) 100%)',
-              border: '1px solid rgba(59, 130, 246, 0.4)',
-              borderRadius: '12px',
-              padding: '1.75rem',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between'
-            }}>
+            {/* Box 2: Maharashtra */}
+            <div 
+              onClick={(e) => {
+                if (e.target.closest('a')) return;
+                const mhElem = document.getElementById('maharashtra');
+                if (mhElem) {
+                  mhElem.scrollIntoView({ behavior: 'smooth' });
+                  window.history.pushState(null, '', '#maharashtra');
+                } else {
+                  handleLinkClick(e, '#maharashtra');
+                }
+              }}
+              style={{
+                background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, var(--bg-dark-800) 100%)',
+                border: '1px solid rgba(59, 130, 246, 0.4)',
+                borderRadius: '12px',
+                padding: '1.75rem',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                cursor: 'pointer',
+                transition: 'all 0.25s ease',
+                position: 'relative'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-3px)';
+                e.currentTarget.style.boxShadow = '0 10px 25px rgba(59, 130, 246, 0.25)';
+                e.currentTarget.style.borderColor = '#60a5fa';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'none';
+                e.currentTarget.style.boxShadow = 'none';
+                e.currentTarget.style.borderColor = 'rgba(59, 130, 246, 0.4)';
+              }}
+            >
               <div>
                 <span style={{ fontSize: '0.75rem', fontWeight: '800', color: '#60a5fa', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
                   Direct Works Dispatch
                 </span>
                 <h3 style={{ fontSize: '1.3rem', fontWeight: '800', margin: '0.5rem 0', color: 'var(--text-primary)' }}>Maharashtra Industrial Corridors</h3>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.5' }}>
-                  Factory-direct same-day to 24h road transit from Taloja works to Pune MIDC, Mumbai, Thane-Belapur, Tarapur, Nashik, and Aurangabad.
+                  Factory-direct road transit from Taloja works to Pune MIDC, Mumbai, Thane-Belapur, Tarapur, Nashik, Aurangabad, and Amravati.
                 </p>
               </div>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginTop: '1rem' }}>
-                <a href="/electropolished-pipe-manufacturer-pune" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-pune')} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)' }}>Pune</a>
-                <a href="/electropolished-pipe-manufacturer-mumbai" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-mumbai')} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)' }}>Mumbai</a>
-                <a href="/electropolished-pipe-manufacturer-thane" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-thane')} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)' }}>Thane</a>
-                <a href="/electropolished-pipe-manufacturer-tarapur" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-tarapur')} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)' }}>Tarapur</a>
-                <a href="/electropolished-pipe-manufacturer-nashik" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-nashik')} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)' }}>Nashik</a>
-                <a href="/electropolished-pipe-manufacturer-aurangabad" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-aurangabad')} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)' }}>Aurangabad</a>
+              <div>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginTop: '1rem' }}>
+                  <a href="/electropolished-pipe-manufacturer-pune" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-pune'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#60a5fa'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Pune</a>
+                  <a href="/electropolished-pipe-manufacturer-mumbai" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-mumbai'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#60a5fa'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Mumbai</a>
+                  <a href="/electropolished-pipe-manufacturer-thane" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-thane'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#60a5fa'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Thane</a>
+                  <a href="/electropolished-pipe-manufacturer-tarapur" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-tarapur'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#60a5fa'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Tarapur</a>
+                  <a href="/electropolished-pipe-manufacturer-nashik" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-nashik'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#60a5fa'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Nashik</a>
+                  <a href="/electropolished-pipe-manufacturer-aurangabad" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-aurangabad'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#60a5fa'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Aurangabad</a>
+                  <a href="/electropolished-pipe-manufacturer-amravati" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-amravati'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'rgba(59, 130, 246, 0.18)', borderRadius: '4px', color: '#93c5fd', textDecoration: 'none', border: '1px solid #3b82f6', fontWeight: '700', transition: 'all 0.2s' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#3b82f6'; e.currentTarget.style.color = '#fff'; }} onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(59, 130, 246, 0.18)'; e.currentTarget.style.color = '#93c5fd'; }}>Amravati ★</a>
+                </div>
+                <div style={{ marginTop: '1rem' }}>
+                  <a 
+                    href="#maharashtra" 
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      e.preventDefault();
+                      const mhElem = document.getElementById('maharashtra');
+                      if (mhElem) {
+                        mhElem.scrollIntoView({ behavior: 'smooth' });
+                        window.history.pushState(null, '', '#maharashtra');
+                      }
+                    }}
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.4rem',
+                      color: '#60a5fa',
+                      fontSize: '0.85rem',
+                      fontWeight: '700',
+                      textDecoration: 'none'
+                    }}
+                  >
+                    View All Maharashtra Cities &darr;
+                  </a>
+                </div>
               </div>
             </div>
           </div>

@@ -240,6 +240,10 @@ function App(props) {
       return { type: 'tamil-nadu-hub', data: null };
     }
 
+    if (cleanPath === '/maharashtra' || cleanPath === '/market-area/maharashtra') {
+      return { type: 'market-area', data: null };
+    }
+
     // Check if matching Maharashtra manufacturer page
     const mhPrefix = '/electropolished-pipe-manufacturer-';
     if (cleanPath.startsWith(mhPrefix)) {

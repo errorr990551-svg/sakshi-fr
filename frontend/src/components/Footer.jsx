@@ -103,13 +103,12 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
           <div className="footer-col">
             <h4>Cities We Serve</h4>
             <ul className="footer-links">
-              <li><a href="/market-area/mumbai" onClick={(e) => handleLinkClick(e, '/market-area/mumbai')}>Mumbai</a></li>
-              <li><a href="/market-area/delhi" onClick={(e) => handleLinkClick(e, '/market-area/delhi')}>Delhi NCR</a></li>
-              <li><a href="/market-area/hyderabad" onClick={(e) => handleLinkClick(e, '/market-area/hyderabad')}>Hyderabad</a></li>
-              <li><a href="/market-area/visakhapatnam" onClick={(e) => handleLinkClick(e, '/market-area/visakhapatnam')}>Visakhapatnam</a></li>
-              <li><a href="/market-area/indore" onClick={(e) => handleLinkClick(e, '/market-area/indore')}>Indore</a></li>
-              <li><a href="/market-area/chennai" onClick={(e) => handleLinkClick(e, '/market-area/chennai')}>Chennai</a></li>
-              <li><a href="/market-area/coimbatore" onClick={(e) => handleLinkClick(e, '/market-area/coimbatore')}>Coimbatore</a></li>
+              <li><a href="/electropolished-pipe-manufacturer-mumbai" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-mumbai')}>Mumbai Works</a></li>
+              <li><a href="/electropolished-pipe-manufacturer-pune" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-pune')}>Pune MIDC</a></li>
+              <li><a href="/electropolished-pipe-manufacturer-thane" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-thane')}>Thane-Belapur</a></li>
+              <li><a href="/electropolished-pipe-manufacturer-tarapur" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-tarapur')}>Tarapur Chemical Zone</a></li>
+              <li><a href="/electropolished-pipe-manufacturer-nashik" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-nashik')}>Nashik Ambad & Sinnar</a></li>
+              <li><a href="/electropolished-pipe-manufacturer-aurangabad" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-aurangabad')}>Aurangabad & AURIC</a></li>
               <li><a href="/tamil-nadu" onClick={(e) => handleLinkClick(e, '/tamil-nadu')} style={{ color: 'var(--primary-yellow)', fontWeight: '700' }}>Tamil Nadu Hub (10 Cities)</a></li>
               <li><a href="/market-area" onClick={(e) => handleLinkClick(e, '/market-area')}>All 50+ Cities Directory</a></li>
             </ul>

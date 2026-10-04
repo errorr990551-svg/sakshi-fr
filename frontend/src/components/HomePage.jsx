@@ -841,34 +841,34 @@ export default function HomePage({ onEnquireClick }) {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginBottom: '2.5rem' }}>
               <div style={{ borderRadius: '8px', overflow: 'hidden', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-dark-900)' }}>
                 <img 
-                  src="/about_history.webp" 
-                  alt="SS 316L electropolished pipes stacked for dispatch at Sakshi Forge, Taloja" 
-                  style={{ width: '100%', height: '220px', objectFit: 'cover', display: 'block' }} 
+                  src="/WhatsApp Image 2026-10-03 at 9.37.31 PM.jpeg" 
+                  alt="SS 316L seamless end caps 50NB SCH40 with heat number SFE50 and SF stamp manufactured at Sakshi Forge, Taloja" 
+                  style={{ width: '100%', height: '260px', objectFit: 'cover', display: 'block' }} 
                 />
-                <div style={{ padding: '0.85rem', fontSize: '0.82rem', color: 'var(--text-muted)' }}>
-                  SS 316L electropolished pipes stacked for dispatch at Sakshi Forge, Taloja
+                <div style={{ padding: '0.85rem', fontSize: '0.85rem', color: '#e2e8f0', fontWeight: '500' }}>
+                  50NB SCH40 Seamless End Caps (GR. 316L, Heat No: SFE50) with mill stamp
                 </div>
               </div>
 
               <div style={{ borderRadius: '8px', overflow: 'hidden', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-dark-900)' }}>
                 <img 
-                  src="/about_structure.webp" 
-                  alt="Precision CNC lathe turning ASME B16.5 weld neck flanges at Sakshi Forge manufacturing plant" 
-                  style={{ width: '100%', height: '220px', objectFit: 'cover', display: 'block' }} 
+                  src="/WhatsApp Image 2026-10-03 at 9.37.32 PM.jpeg" 
+                  alt="Internal and external electropolished surface and bevelled edge inspection of seamless end caps" 
+                  style={{ width: '100%', height: '260px', objectFit: 'cover', display: 'block' }} 
                 />
-                <div style={{ padding: '0.85rem', fontSize: '0.82rem', color: 'var(--text-muted)' }}>
-                  Precision CNC lathe turning ASME B16.5 weld neck flanges at Sakshi Forge manufacturing plant
+                <div style={{ padding: '0.85rem', fontSize: '0.85rem', color: '#e2e8f0', fontWeight: '500' }}>
+                  Internal bore & bevelled edge inspection of high-purity seamless pipe end caps
                 </div>
               </div>
 
               <div style={{ borderRadius: '8px', overflow: 'hidden', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-dark-900)' }}>
                 <img 
-                  src="/products_flanges.webp" 
-                  alt="In-house electropolishing bath line and Ra profilometer surface inspection station" 
-                  style={{ width: '100%', height: '220px', objectFit: 'cover', display: 'block' }} 
+                  src="/WhatsApp Image 2026-10-03 at 9.43.30 PM.jpeg" 
+                  alt="Sakshi Forge certified 50NB SCH40 seamless pipe end cap grade 316L with laser marking" 
+                  style={{ width: '100%', height: '260px', objectFit: 'cover', display: 'block' }} 
                 />
-                <div style={{ padding: '0.85rem', fontSize: '0.82rem', color: 'var(--text-muted)' }}>
-                  In-house electropolishing bath line and Ra profilometer surface inspection station
+                <div style={{ padding: '0.85rem', fontSize: '0.85rem', color: '#e2e8f0', fontWeight: '500' }}>
+                  Sakshi Forge certified 50NB SCH40 316L seamless end cap for process lines
                 </div>
               </div>
             </div>

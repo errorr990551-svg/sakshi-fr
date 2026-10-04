@@ -1302,5 +1302,309 @@ export const tamilNaduCityData = {
       email: "sakshiforge1737@gmail.com",
       address: "Balaji Industrial Compound, Taloja MIDC, Mumbai, Maharashtra 410208"
     }
+  },
+  erode: {
+    slug: 'erode',
+    city: 'Erode',
+    state: 'Tamil Nadu',
+    country: 'India',
+    pageTitle: 'Electropolished Pipe Supplier in Erode | SS 304, 316L EP Pipes | Sakshi Forge',
+    metaDescription: 'Electropolished SS 304 and 316L pipes for Erode and Perundurai dyeing, chemical, food and process plants. Ra ≤0.4 µm, 100% PMI tested, 3.1 MTC. Quote in 30 minutes.',
+    isTamilNaduRich: true,
+    h1: "Electropolished Pipes for Erode and Perundurai's Dyeing, Chemical, Agro-Processing and Process Plants",
+    heroIntro: "Erode and the Perundurai industrial belt run on textile processing, dyeing, chemicals, engineering and agro processing. Sakshi Forge supplies SS 304 and 316L electropolished pipes for the clean-service and chemical lines in those plants, factory-direct from Mumbai.",
+    heroCards: [
+      {
+        title: "SS 316L Electropolished Pipes",
+        subtitle: "Dyeing, Chemical and Process Lines",
+        desc: "Molybdenum-stabilised alloy resisting salt chlorides and chemical dyes.",
+        actions: [{ text: "Get Quote for Erode", type: "quote" }]
+      },
+      {
+        title: "SS 304 / 304L Electropolished Pipes",
+        subtitle: "Food and Agro-Processing in Erode",
+        desc: "Ultra-smooth, easy-to-clean bore for turmeric, food and beverage lines.",
+        actions: [{ text: "Get Quote for Erode", type: "quote" }]
+      },
+      {
+        title: "ASTM A270 Sanitary Tubes",
+        subtitle: "Hygienic Transfer Systems",
+        desc: "High-purity sanitary tubing finished to Ra ≤0.4 µm inside and out.",
+        actions: [{ text: "Get Quote for Erode", type: "quote" }]
+      },
+      {
+        title: "Duplex 2205 Electropolished Pipes",
+        subtitle: "Aggressive Chemical Duty",
+        desc: "High yield strength and pitting resistance for concentrated process media.",
+        actions: [{ text: "Get Quote for Erode", type: "quote" }]
+      }
+    ],
+    trustStrip: ["Factory Direct", "ISO 9001:2015", "100% PMI Tested", "EN 10204 3.1 MTC", "Quote in 30 Minutes"],
+    whyBuyersTrust: {
+      title: "Why Erode-Region Buyers Choose Sakshi Forge",
+      paragraphs: [
+        "The Perundurai SIPCOT growth centre near Erode lists textile and hosiery processing, dyeing, foundry, leather, engineering and chemical units together. Erode itself is also known for turmeric and agro processing. That makes this a mixed market, with wet processing, chemical dosing and food-grade needs in the same district.",
+        "We help you pick the right spec for each. Tell us the media and we recommend a grade, rather than selling one product for every job."
+      ]
+    },
+    productRange: {
+      title: "Electropolished Pipe and Tube for Erode & Perundurai",
+      items: [
+        { title: "SS 316 / 316L Electropolished Pipes", desc: "Dyeing, chemical and moderate-chloride duty. Welded and seamless." },
+        { title: "SS 304 / 304L Electropolished Pipes", desc: "Welded and seamless, ½\" to 12\" in welded form. Food, agro and general hygienic service." },
+        { title: "ASTM A270 Sanitary Tubes", desc: "Sanitary and bioprocess tubing with verified internal Ra ≤0.4 µm." },
+        { title: "Duplex 2205 Electropolished Pipes", desc: "½\" to 8\" welded and seamless for aggressive chemical dosing." },
+        { title: "Fittings", desc: "Elbows (45°, 90°, 180°), tees and reducers finished to match your pipe." }
+      ]
+    },
+    localReality: {
+      title: "What Erode and Perundurai Plants Actually Deal With",
+      points: [
+        {
+          title: "Dyeing and wet processing",
+          desc: "Dye houses use hot water, salts and chemicals. Salts bring chlorides, so 316L is usually safer than 304 for lines carrying them. A smooth electropolished surface also keeps dye and residue from clinging, which helps changeovers."
+        },
+        {
+          title: "Chemical dosing and effluent-side lines",
+          desc: "Dosing lines carry concentrated chemicals. Share the fluid, concentration and temperature, and we'll confirm the grade and flag limits (no hydrofluoric acid). For abrasive effluent slurries, electropolished pipe is not recommended."
+        },
+        {
+          title: "Turmeric and agro processing",
+          desc: "Washing, boiling and drying lines need cleanable surfaces. 304L suits most food-grade duty here, and we'll say so rather than push 316L."
+        },
+        {
+          title: "A district of small and mid-sized units",
+          desc: "Most buyers here order modest lots. We quote small project lots as well as bulk, with the same documents either way."
+        }
+      ]
+    },
+    specsTable: {
+      title: "Specifications Snapshot: Erode Configuration",
+      headers: ["Feature", "SS 316 / 316L", "SS 304 / 304L", "Duplex 2205"],
+      rows: [
+        { feature: "Type", col1: "Welded / Seamless", col2: "Welded / Seamless", col3: "Welded / Seamless" },
+        { feature: "Standard", col1: "ASTM A269 / A270, ASME BPE", col2: "ASTM A269 / A270", col3: "ASTM A790" },
+        { feature: "Finish", col1: "Internal Ra ≤0.4 µm, electropolished inside and out", col2: "Same", col3: "Same" },
+        { feature: "Size", col1: "Standard plus custom", col2: "½\" to 12\" (welded) plus custom", col3: "½\" to 8\" plus custom" },
+        { feature: "Erode fit", col1: "Dyeing, chemical dosing", col2: "Food and agro lines", col3: "Aggressive chemical duty" },
+        { feature: "Documents", col1: "MTC 3.1, surface report, PMI, hydro", col2: "Same", col3: "Same" }
+      ]
+    },
+    applications: {
+      title: "Where Our Pipes Go to Work Around Erode",
+      items: [
+        { title: "Textile Dyeing and Processing Water", desc: "Chemical-resistant process lines and hot liquor circulation." },
+        { title: "Chemical Dosing and Process Lines", desc: "Precise transfer of acids, alkalis, and process fluids." },
+        { title: "Turmeric, Food and Agro Processing", desc: "Hygienic boiling, washing, and transfer systems." },
+        { title: "Engineering and Foundry Utility Lines", desc: "Compressed air, clean water, and hydraulic loops." },
+        { title: "Water Purification and Laboratories", desc: "DM water and analytical sampling lines." }
+      ]
+    },
+    orderSteps: {
+      title: "Getting Pipes to Erode",
+      steps: [
+        "Send media, grade, size, quantity.",
+        "Quote in 30 minutes.",
+        "Specification check.",
+        "In-house manufacture and testing.",
+        "Document pack prepared.",
+        "Dispatch from Taloja, Mumbai. Typical road transit is 4-5 days.",
+        "After-delivery support."
+      ],
+      note: "We manufacture in Mumbai. No local warehouse."
+    },
+    checklist: {
+      title: "6 Checks for Erode Plants Buying Electropolished Pipe",
+      points: [
+        "Define the media: fluid, salts, concentration, temperature.",
+        "Pick the grade for chlorides: 316L for salt-bearing lines.",
+        "Rule out hydrofluoric acid and abrasive slurries.",
+        "Ask for the measured Ra and surface report.",
+        "Get PMI and 3.1 MTC with heat numbers.",
+        "Order small lots as needed, but keep the same document pack."
+      ]
+    },
+    areasCovered: {
+      title: "Areas Covered Across Erode & Perundurai Belts",
+      areas: ["Erode", "Perundurai", "SIPCOT Perundurai", "Bhavani", "Gobichettipalayam", "Sathyamangalam", "Kangeyam", "Tiruppur (nearby)"],
+      stateHubText: "Also across Tamil Nadu:",
+      siblingCities: [
+        { name: "Chennai", path: "/market-area/chennai" },
+        { name: "Coimbatore", path: "/market-area/coimbatore" },
+        { name: "Hosur", path: "/market-area/hosur" },
+        { name: "Cuddalore", path: "/market-area/cuddalore" },
+        { name: "Tiruchirappalli", path: "/market-area/tiruchirappalli" },
+        { name: "Salem", path: "/market-area/salem" },
+        { name: "Madurai", path: "/market-area/madurai" },
+        { name: "Thoothukudi", path: "/market-area/thoothukudi" },
+        { name: "Vellore", path: "/market-area/vellore" }
+      ]
+    },
+    faqs: [
+      { q: "Do you have an Erode warehouse?", a: "No. We dispatch from Taloja, Mumbai, typically 4-5 days by road." },
+      { q: "Which grade for dyeing lines?", a: "Usually 316L, because dye-house salts bring chlorides. Tell us your media to confirm." },
+      { q: "Do you accept small orders?", a: "Yes. Small project lots and bulk, with the same documents." },
+      { q: "Which grade for turmeric and food processing?", a: "Usually 304L." },
+      { q: "What documents come with the pipes?", a: "MTC EN 10204 3.1, mill traceability, QA report, surface report, PMI and hydro certificates." }
+    ],
+    cta: {
+      title: "Ready to Specify Electropolished Pipe for Your Erode Plant?",
+      desc: "Send your requirements for direct factory pricing with 30-minute response guarantee.",
+      phones: ["+91 82913 66340", "+91 79764 76375"],
+      email: "sakshiforge1737@gmail.com",
+      address: "Balaji Industrial Compound, Taloja MIDC, Mumbai, Maharashtra 410208"
+    }
+  },
+  vellore: {
+    slug: 'vellore',
+    city: 'Vellore',
+    state: 'Tamil Nadu',
+    country: 'India',
+    pageTitle: 'Electropolished Pipe Supplier in Vellore & Ranipet | SS 316L EP Pipes | Sakshi Forge',
+    metaDescription: 'Electropolished SS 316L and 304 pipes for Vellore and Ranipet SIPCOT pharma, chemical and engineering plants. Ra ≤0.4 µm, 100% PMI tested, 3.1 MTC. Quote in 30 minutes.',
+    isTamilNaduRich: true,
+    h1: "Electropolished Pipes for Vellore and Ranipet's Pharma, Chemical and Engineering Plants",
+    heroIntro: "Vellore is best known for leather and tanning, but the Ranipet SIPCOT estate next door also hosts engineering, chemical and pharmaceutical units. Those are the plants that need hygienic, well-documented pipe. Sakshi Forge supplies SS 316L and 304 electropolished pipes to them, factory-direct from Mumbai.",
+    heroCards: [
+      {
+        title: "SS 316L Electropolished Pipes",
+        subtitle: "Ranipet Pharma and Chemical Plants",
+        desc: "Ra ≤0.4 µm inside and out with full MTC 3.1 documentation.",
+        actions: [{ text: "Get Quote for Vellore and Ranipet", type: "quote" }]
+      },
+      {
+        title: "SS 304 / 304L Electropolished Pipes",
+        subtitle: "Engineering and Utility Lines",
+        desc: "Economical clean piping for utility and non-chloride service.",
+        actions: [{ text: "Get Quote for Vellore and Ranipet", type: "quote" }]
+      },
+      {
+        title: "ASME BPE Electropolished Tubes",
+        subtitle: "Bioprocess and Pharma Systems",
+        desc: "Sterile bioprocess and WFI tubing meeting stringent ASME BPE dimensions.",
+        actions: [{ text: "Get Quote for Vellore and Ranipet", type: "quote" }]
+      },
+      {
+        title: "Duplex 2205 Electropolished Pipes",
+        subtitle: "Chloride and Aggressive Chemical Service",
+        desc: "Extreme resistance to pitting and stress corrosion cracking.",
+        actions: [{ text: "Get Quote for Vellore and Ranipet", type: "quote" }]
+      }
+    ],
+    trustStrip: ["Factory Direct", "ISO 9001:2015", "100% PMI Tested", "EN 10204 3.1 MTC", "Quote in 30 Minutes"],
+    whyBuyersTrust: {
+      title: "Why Vellore-Region Buyers Choose Sakshi Forge",
+      paragraphs: [
+        "Vellore and Ranipet sit on the corridors linking Chennai, Ranipet and Hosur. SIPCOT Ranipet lists leather, engineering, chemical and pharmaceutical industries together, so the buyer mix is wide.",
+        "We're upfront about fit. The region's best-known industry, leather and tanning, is not where electropolished pipe is usually specified. Our best fit here is the chemical, pharma and engineering plants, and we focus on them."
+      ]
+    },
+    productRange: {
+      title: "Electropolished Pipe Range for Vellore & Ranipet",
+      items: [
+        { title: "SS 316 / 316L Electropolished Pipes", desc: "Pharma, chemical and moderate-chloride duty." },
+        { title: "SS 304 / 304L Electropolished Pipes", desc: "Welded and seamless, ½\" to 12\" in welded form." },
+        { title: "ASTM A270 / ASME BPE Tubes", desc: "Hygienic tubing for bioprocess and pharma systems." },
+        { title: "Duplex 2205 Electropolished Pipes", desc: "½\" to 8\" welded and seamless." },
+        { title: "Fittings", desc: "Elbows (45°, 90°, 180°) and sanitary fittings." }
+      ]
+    },
+    localReality: {
+      title: "What Vellore and Ranipet Plants Actually Deal With",
+      points: [
+        {
+          title: "A mixed estate, so a mixed spec",
+          desc: "Chemical, pharma and engineering units sit side by side at SIPCOT Ranipet. A pharma line needs measured Ra and a surface report. A chemical line needs the right alloy for the media. We recommend by application, not by habit."
+        },
+        {
+          title: "Aggressive media near tannery chemistry",
+          desc: "Plants working with strong chemicals need to check compatibility before ordering. Tell us the fluid, concentration and temperature. We'll flag hard limits: hydrofluoric acid and abrasive slurries are out."
+        },
+        {
+          title: "Corridor supply",
+          desc: "Ranipet connects to Chennai on one side and Hosur on the other. If you buy for several sites along those corridors, we can quote one consolidated order with one document format."
+        },
+        {
+          title: "Documentation for regulated plants",
+          desc: "Pharma and chemical units here face audits. Every consignment carries a 3.1 MTC, mill traceability, PMI and hydro certificates, and a surface report."
+        }
+      ]
+    },
+    specsTable: {
+      title: "Specifications Snapshot: Vellore Configuration",
+      headers: ["Feature", "SS 316 / 316L", "SS 304 / 304L", "Duplex 2205"],
+      rows: [
+        { feature: "Type", col1: "Welded / Seamless", col2: "Welded / Seamless", col3: "Welded / Seamless" },
+        { feature: "Standard", col1: "ASTM A269 / A270, ASME BPE", col2: "ASTM A269 / A270", col3: "ASTM A790" },
+        { feature: "Finish", col1: "Internal Ra ≤0.4 µm, electropolished inside and out", col2: "Same", col3: "Same" },
+        { feature: "Size", col1: "Standard plus custom", col2: "½\" to 12\" (welded) plus custom", col3: "½\" to 8\" plus custom" },
+        { feature: "Vellore fit", col1: "Pharma and chemical", col2: "Engineering and utility", col3: "Chloride and aggressive duty" },
+        { feature: "Documents", col1: "MTC 3.1, surface report, PMI, hydro", col2: "Same", col3: "Same" }
+      ]
+    },
+    applications: {
+      title: "Where Our Pipes Go to Work Around Vellore & Ranipet",
+      items: [
+        { title: "Pharmaceutical and Biotech", desc: "Clean steam, purified water loops and fermentation lines." },
+        { title: "Chemical Processing", desc: "Corrosion-resistant transfer and reactor feed lines." },
+        { title: "Engineering and Utility Piping", desc: "High-purity utility loops and skid manufacturing." },
+        { title: "Water Purification and Laboratories", desc: "RO permeate and analytical sampling lines." },
+        { title: "Food and Beverage", desc: "Hygienic food preparation and clean CIP circuits." }
+      ]
+    },
+    orderSteps: {
+      title: "Getting Pipes to Vellore and Ranipet",
+      steps: [
+        "Send media, grade, size, quantity.",
+        "Quote in 30 minutes.",
+        "Specification check.",
+        "In-house manufacture and testing.",
+        "Document pack prepared.",
+        "Dispatch from Taloja, Mumbai. Typical road transit is 4-5 days.",
+        "After-delivery support."
+      ],
+      note: "We manufacture in Mumbai. No local warehouse."
+    },
+    checklist: {
+      title: "6 Checks for Vellore and Ranipet Plants",
+      points: [
+        "Define the media before choosing the grade.",
+        "Rule out hydrofluoric acid and abrasive slurries.",
+        "Ask for the measured Ra and surface report.",
+        "Get PMI and 3.1 MTC with heat numbers.",
+        "Confirm welded or seamless for your pressure and hygiene needs.",
+        "Protect the finish in handling and installation."
+      ]
+    },
+    areasCovered: {
+      title: "Areas Covered Across Vellore, Ranipet & Corridor",
+      areas: ["Vellore", "Ranipet", "SIPCOT Ranipet", "Walajapet", "Arakkonam", "Katpadi", "Gudiyatham", "Ambur", "Vaniyambadi"],
+      stateHubText: "Also across Tamil Nadu:",
+      siblingCities: [
+        { name: "Chennai", path: "/market-area/chennai" },
+        { name: "Coimbatore", path: "/market-area/coimbatore" },
+        { name: "Hosur", path: "/market-area/hosur" },
+        { name: "Cuddalore", path: "/market-area/cuddalore" },
+        { name: "Tiruchirappalli", path: "/market-area/tiruchirappalli" },
+        { name: "Salem", path: "/market-area/salem" },
+        { name: "Madurai", path: "/market-area/madurai" },
+        { name: "Thoothukudi", path: "/market-area/thoothukudi" },
+        { name: "Erode", path: "/market-area/erode" }
+      ]
+    },
+    faqs: [
+      { q: "Do you have a Vellore warehouse?", a: "No. We dispatch from Taloja, Mumbai, typically 4-5 days by road." },
+      { q: "Is electropolished pipe used in tanneries?", a: "It is not the usual choice for tannery process lines. Our best fit is pharma, chemical and engineering plants." },
+      { q: "Which grade for pharma in Ranipet?", a: "SS 316L, with ASME BPE tubing where specified." },
+      { q: "Can you supply one order for sites in Ranipet and Hosur?", a: "Yes, with a shared document format." },
+      { q: "What documents come with the pipes?", a: "MTC EN 10204 3.1, mill traceability, QA report, surface report, PMI and hydro certificates." }
+    ],
+    cta: {
+      title: "Ready to Specify Electropolished Pipe for Your Vellore or Ranipet Plant?",
+      desc: "Send your requirements for direct factory pricing with 30-minute response guarantee.",
+      phones: ["+91 82913 66340", "+91 79764 76375"],
+      email: "sakshiforge1737@gmail.com",
+      address: "Balaji Industrial Compound, Taloja MIDC, Mumbai, Maharashtra 410208"
+    }
   }
 };

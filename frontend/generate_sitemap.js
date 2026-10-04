@@ -43,7 +43,26 @@ const newPages = [
   'flange-exporter-usa',
   'flange-supplier-uae',
   'flange-supplier-saudi-arabia',
-  'tamil-nadu'
+  'tamil-nadu',
+  // Maharashtra Manufacturer Pages
+  'electropolished-pipe-manufacturer-pune',
+  'electropolished-pipe-manufacturer-mumbai',
+  'electropolished-pipe-manufacturer-thane',
+  'electropolished-pipe-manufacturer-tarapur',
+  'electropolished-pipe-manufacturer-nashik',
+  'electropolished-pipe-manufacturer-aurangabad',
+  // Tamil Nadu Supplier Pages
+  'electropolished-pipe-supplier-chennai',
+  'electropolished-pipe-supplier-coimbatore',
+  'electropolished-pipe-supplier-hosur',
+  'electropolished-pipe-supplier-cuddalore',
+  'electropolished-pipe-supplier-trichy',
+  'electropolished-pipe-supplier-tiruchirappalli',
+  'electropolished-pipe-supplier-salem',
+  'electropolished-pipe-supplier-madurai',
+  'electropolished-pipe-supplier-thoothukudi',
+  'electropolished-pipe-supplier-erode',
+  'electropolished-pipe-supplier-vellore'
 ];
 
 // Helper to format priority

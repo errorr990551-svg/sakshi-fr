@@ -818,5 +818,17 @@ export const customCityData = {
   ...tamilNaduCityData,
   // Aliases for compatibility
   trichy: tamilNaduCityData.tiruchirappalli,
-  tuticorin: tamilNaduCityData.thoothukudi
+  tuticorin: tamilNaduCityData.thoothukudi,
+  'electropolished-pipe-supplier-chennai': tamilNaduCityData.chennai,
+  'electropolished-pipe-supplier-coimbatore': tamilNaduCityData.coimbatore,
+  'electropolished-pipe-supplier-hosur': tamilNaduCityData.hosur,
+  'electropolished-pipe-supplier-cuddalore': tamilNaduCityData.cuddalore,
+  'electropolished-pipe-supplier-tiruchirappalli': tamilNaduCityData.tiruchirappalli,
+  'electropolished-pipe-supplier-trichy': tamilNaduCityData.tiruchirappalli,
+  'electropolished-pipe-supplier-salem': tamilNaduCityData.salem,
+  'electropolished-pipe-supplier-madurai': tamilNaduCityData.madurai,
+  'electropolished-pipe-supplier-thoothukudi': tamilNaduCityData.thoothukudi,
+  'electropolished-pipe-supplier-tuticorin': tamilNaduCityData.thoothukudi,
+  'electropolished-pipe-supplier-erode': tamilNaduCityData.erode,
+  'electropolished-pipe-supplier-vellore': tamilNaduCityData.vellore
 };

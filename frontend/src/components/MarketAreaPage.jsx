@@ -128,6 +128,69 @@ export default function MarketAreaPage() {
         </div>
       </section>
 
+      {/* Featured Regional Corridors */}
+      <section style={{ padding: '1rem 0 2rem 0' }}>
+        <div className="container">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.5rem' }}>
+            <div style={{
+              background: 'linear-gradient(135deg, rgba(255, 193, 7, 0.08) 0%, var(--bg-dark-800) 100%)',
+              border: '1px solid var(--primary-yellow)',
+              borderRadius: '12px',
+              padding: '1.75rem',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between'
+            }}>
+              <div>
+                <span style={{ fontSize: '0.75rem', fontWeight: '800', color: 'var(--primary-yellow)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+                  Regional Dedicated Hub
+                </span>
+                <h3 style={{ fontSize: '1.3rem', fontWeight: '800', margin: '0.5rem 0', color: 'var(--text-primary)' }}>Tamil Nadu Industrial Belts</h3>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.5' }}>
+                  Dedicated supply across Chennai, Coimbatore, Hosur, Cuddalore, Trichy, Salem, Madurai, Thoothukudi, Erode, and Vellore.
+                </p>
+              </div>
+              <a 
+                href="/tamil-nadu" 
+                onClick={(e) => handleLinkClick(e, '/tamil-nadu')}
+                className="btn btn-primary"
+                style={{ marginTop: '1rem', width: 'fit-content' }}
+              >
+                Explore Tamil Nadu Hub &rarr;
+              </a>
+            </div>
+
+            <div style={{
+              background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, var(--bg-dark-800) 100%)',
+              border: '1px solid rgba(59, 130, 246, 0.4)',
+              borderRadius: '12px',
+              padding: '1.75rem',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between'
+            }}>
+              <div>
+                <span style={{ fontSize: '0.75rem', fontWeight: '800', color: '#60a5fa', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+                  Direct Works Dispatch
+                </span>
+                <h3 style={{ fontSize: '1.3rem', fontWeight: '800', margin: '0.5rem 0', color: 'var(--text-primary)' }}>Maharashtra Industrial Corridors</h3>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.5' }}>
+                  Factory-direct same-day to 24h road transit from Taloja works to Pune MIDC, Mumbai, Thane-Belapur, Tarapur, Nashik, and Aurangabad.
+                </p>
+              </div>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginTop: '1rem' }}>
+                <a href="/electropolished-pipe-manufacturer-pune" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-pune')} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)' }}>Pune</a>
+                <a href="/electropolished-pipe-manufacturer-mumbai" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-mumbai')} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)' }}>Mumbai</a>
+                <a href="/electropolished-pipe-manufacturer-thane" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-thane')} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)' }}>Thane</a>
+                <a href="/electropolished-pipe-manufacturer-tarapur" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-tarapur')} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)' }}>Tarapur</a>
+                <a href="/electropolished-pipe-manufacturer-nashik" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-nashik')} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)' }}>Nashik</a>
+                <a href="/electropolished-pipe-manufacturer-aurangabad" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-aurangabad')} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)' }}>Aurangabad</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 3. States and Cities Directory */}
       <section style={{ padding: '2rem 0' }}>
         <div className="container" style={{ display: 'flex', flexDirection: 'column', gap: '3.5rem' }}>

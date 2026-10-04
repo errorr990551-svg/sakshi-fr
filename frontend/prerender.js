@@ -127,7 +127,26 @@ async function runPrerender() {
     { url: `${BASE_URL}/flange-exporter-usa/`, type: 'export', slug: 'flange-exporter-usa', title: 'Indian Flange & Fittings Exporter to USA', description: 'Flange exporter to USA.', data: { countryType: 'usa' } },
     { url: `${BASE_URL}/flange-supplier-uae/`, type: 'export', slug: 'flange-supplier-uae', title: 'Flange & Pipe Fittings Supplier to UAE', description: 'Flange supplier to UAE.', data: { countryType: 'uae' } },
     { url: `${BASE_URL}/flange-supplier-saudi-arabia/`, type: 'export', slug: 'flange-supplier-saudi-arabia', title: 'Flange Supplier to Saudi Arabia', description: 'Flange supplier to KSA.', data: { countryType: 'saudi-arabia' } },
-    { url: `${BASE_URL}/tamil-nadu/`, type: 'tamil-nadu-hub', slug: 'tamil-nadu', title: 'Electropolished Pipe Supplier in Tamil Nadu | 10 Industrial Belts | Sakshi Forge', description: 'Factory-direct electropolished SS 304L, 316L and duplex pipes supplied across Tamil Nadu: Chennai, Coimbatore, Hosur, Cuddalore, Trichy, Salem, Madurai, Thoothukudi.', data: null }
+    { url: `${BASE_URL}/tamil-nadu/`, type: 'tamil-nadu-hub', slug: 'tamil-nadu', title: 'Electropolished Pipe Supplier in Tamil Nadu | 10 Industrial Belts | Sakshi Forge', description: 'Factory-direct electropolished SS 304L, 316L and duplex pipes supplied across Tamil Nadu: Chennai, Coimbatore, Hosur, Cuddalore, Trichy, Salem, Madurai, Thoothukudi, Erode, Vellore.', data: null },
+    // Maharashtra Developer Hand-off Landing Pages
+    { url: `${BASE_URL}/electropolished-pipe-manufacturer-pune/`, type: 'maharashtra-city', slug: 'electropolished-pipe-manufacturer-pune', title: 'Electropolished SS Pipe Manufacturer in Pune | Sakshi Forge', description: '316L & 304L electropolished SS pipes and tubes for Pune MIDC plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.', data: null },
+    { url: `${BASE_URL}/electropolished-pipe-manufacturer-mumbai/`, type: 'maharashtra-city', slug: 'electropolished-pipe-manufacturer-mumbai', title: 'Electropolished SS Pipe Manufacturer in Mumbai | Sakshi Forge', description: 'ISO 9001:2015 electropolished pipe manufacturer in Mumbai. SS 304, 316L and duplex EP pipes, Ra ≤0.4 µm, 100% PMI tested, 3.1 MTC.', data: null },
+    { url: `${BASE_URL}/electropolished-pipe-manufacturer-thane/`, type: 'maharashtra-city', slug: 'electropolished-pipe-manufacturer-thane', title: 'Electropolished SS Pipe Manufacturer in Thane | Sakshi Forge', description: '316L & 304L electropolished SS pipes for Thane-Belapur and Dombivli chemical belts. Ra ≤0.4 µm, 100% PMI tested, 3.1 MTC.', data: null },
+    { url: `${BASE_URL}/electropolished-pipe-manufacturer-tarapur/`, type: 'maharashtra-city', slug: 'electropolished-pipe-manufacturer-tarapur', title: 'Electropolished SS Pipe Manufacturer in Tarapur | Sakshi Forge', description: 'Electropolished 316L & 304L pipes for Tarapur MIDC chemical and API plants. Coastal chloride resistant, Ra ≤0.4 µm, 3.1 MTC.', data: null },
+    { url: `${BASE_URL}/electropolished-pipe-manufacturer-nashik/`, type: 'maharashtra-city', slug: 'electropolished-pipe-manufacturer-nashik', title: 'Electropolished SS Pipe Manufacturer in Nashik | Sakshi Forge', description: '316L and 304L electropolished pipes for Nashik Ambad, Satpur and Sinnar plants. Winery and pharma hygienic tubing, 3.1 MTC.', data: null },
+    { url: `${BASE_URL}/electropolished-pipe-manufacturer-aurangabad/`, type: 'maharashtra-city', slug: 'electropolished-pipe-manufacturer-aurangabad', title: 'Electropolished Pipe Manufacturer Aurangabad | Sakshi Forge', description: 'Electropolished 316L & 304L pipes for Aurangabad Waluj, Chikalthana and Shendra plants. ASTM A270, MTC EN 10204 3.1, PMI tested.', data: null },
+    // Tamil Nadu City Supplier Pages
+    { url: `${BASE_URL}/electropolished-pipe-supplier-chennai/`, type: 'market-city', slug: 'electropolished-pipe-supplier-chennai', title: 'Electropolished Pipe Supplier in Chennai | Sakshi Forge', description: 'Electropolished SS 316L, 304L pipes supplied directly to Chennai pharma, automotive, and petrochemical facilities.', data: null },
+    { url: `${BASE_URL}/electropolished-pipe-supplier-coimbatore/`, type: 'market-city', slug: 'electropolished-pipe-supplier-coimbatore', title: 'Electropolished Pipe Supplier in Coimbatore | Sakshi Forge', description: 'Electropolished stainless steel pipes supplied to Coimbatore textile, pump, engineering and food plants.', data: null },
+    { url: `${BASE_URL}/electropolished-pipe-supplier-hosur/`, type: 'market-city', slug: 'electropolished-pipe-supplier-hosur', title: 'Electropolished Pipe Supplier in Hosur | Sakshi Forge', description: 'High purity electropolished SS 316L/304L pipes for Hosur biopharma and precision engineering plants.', data: null },
+    { url: `${BASE_URL}/electropolished-pipe-supplier-cuddalore/`, type: 'market-city', slug: 'electropolished-pipe-supplier-cuddalore', title: 'Electropolished Pipe Supplier in Cuddalore | Sakshi Forge', description: 'Corrosion-resistant electropolished duplex and 316L pipes for Cuddalore SIPCOT chemical belts.', data: null },
+    { url: `${BASE_URL}/electropolished-pipe-supplier-trichy/`, type: 'market-city', slug: 'electropolished-pipe-supplier-trichy', title: 'Electropolished Pipe Supplier in Trichy | Sakshi Forge', description: 'Electropolished stainless steel tubes and pipes for Trichy boiler and fabrication units.', data: null },
+    { url: `${BASE_URL}/electropolished-pipe-supplier-tiruchirappalli/`, type: 'market-city', slug: 'electropolished-pipe-supplier-tiruchirappalli', title: 'Electropolished Pipe Supplier in Tiruchirappalli | Sakshi Forge', description: 'Electropolished stainless steel tubes and pipes for Tiruchirappalli boiler and fabrication units.', data: null },
+    { url: `${BASE_URL}/electropolished-pipe-supplier-salem/`, type: 'market-city', slug: 'electropolished-pipe-supplier-salem', title: 'Electropolished Pipe Supplier in Salem | Sakshi Forge', description: 'Electropolished stainless steel pipes for Salem steel, sago, and chemical processing facilities.', data: null },
+    { url: `${BASE_URL}/electropolished-pipe-supplier-madurai/`, type: 'market-city', slug: 'electropolished-pipe-supplier-madurai', title: 'Electropolished Pipe Supplier in Madurai | Sakshi Forge', description: 'Hygienic electropolished tubes and pipes for Madurai food, dairy, and pharmaceutical industries.', data: null },
+    { url: `${BASE_URL}/electropolished-pipe-supplier-thoothukudi/`, type: 'market-city', slug: 'electropolished-pipe-supplier-thoothukudi', title: 'Electropolished Pipe Supplier in Thoothukudi | Sakshi Forge', description: 'Marine and chemical grade duplex and 316L electropolished pipes for Thoothukudi coastal units.', data: null },
+    { url: `${BASE_URL}/electropolished-pipe-supplier-erode/`, type: 'market-city', slug: 'electropolished-pipe-supplier-erode', title: 'Electropolished Pipe Supplier in Erode | Sakshi Forge', description: 'EP pipes for Erode textile processing, food, and dairy industries.', data: null },
+    { url: `${BASE_URL}/electropolished-pipe-supplier-vellore/`, type: 'market-city', slug: 'electropolished-pipe-supplier-vellore', title: 'Electropolished Pipe Supplier in Vellore | Sakshi Forge', description: 'Sanitary electropolished tubing for Vellore biomedical, pharma, and leather processing plants.', data: null }
   ];
 
   extraPages.forEach(p => routes.push(p));
@@ -383,7 +402,7 @@ async function runPrerender() {
     }
 
     let schemaBlockHtml = '';
-    if (route.type === 'market-city' && route.data.schema) {
+    if (route.type === 'market-city' && route.data?.schema) {
       schemaBlockHtml = `<script type="application/ld+json" class="sakshi-seo-schema">\n${route.data.schema}\n</script>`;
     } else {
       schemaBlockHtml = `<script type="application/ld+json" class="sakshi-seo-schema">\n${JSON.stringify({
@@ -398,13 +417,15 @@ async function runPrerender() {
     // Inject dynamic head tags
     html = html.replace(/<title>.*?<\/title>/, `<title>${route.title}</title>`);
     html = html.replace(/<meta name="description" content=".*?" \/>/, `<meta name="description" content="${route.description}" />`);
-    html = html.replace(/<meta name="keywords" content=".*?" \/>/, `<meta name="keywords" content="${route.keywords}" />`);
+    const pageKeywords = route.keywords || 'electropolished pipe, stainless steel 316L, electropolishing, Sakshi Forge';
+    const pageRobots = route.robots || 'index, follow';
+    html = html.replace(/<meta name="keywords" content=".*?" \/>/, `<meta name="keywords" content="${pageKeywords}" />`);
     
     // Inject robots
     if (html.includes('name="robots"')) {
-      html = html.replace(/<meta name="robots" content=".*?" \/>/, `<meta name="robots" content="${route.robots}" />`);
+      html = html.replace(/<meta name="robots" content=".*?" \/>/, `<meta name="robots" content="${pageRobots}" />`);
     } else {
-      html = html.replace('</head>', `  <meta name="robots" content="${route.robots}" />\n  </head>`);
+      html = html.replace('</head>', `  <meta name="robots" content="${pageRobots}" />\n  </head>`);
     }
 
     // Inject canonical link

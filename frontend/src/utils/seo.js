@@ -148,9 +148,14 @@ export function updateSEO({ type, data }) {
     keywords = data.primaryKeyword ? (data.topSecondaryKeywords ? `${data.primaryKeyword}, ${data.topSecondaryKeywords}` : data.primaryKeyword) : keywords;
     canonicalUrl = `${BASE_URL}${data.path || (custom ? '/market-area/' + custom.slug : '')}`;
     robots = "index, follow";
+  } else if (type === "maharashtra-city" && data) {
+    title = data.pageTitle || title;
+    metaDesc = data.metaDescription || metaDesc;
+    canonicalUrl = `${BASE_URL}${data.pageUrl || ''}`;
+    robots = "index, follow";
   } else if (type === "tamil-nadu-hub") {
     title = "Electropolished Pipe Supplier Across Tamil Nadu | Sakshi Forge";
-    metaDesc = "Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Tamil Nadu industrial hubs: Chennai, Coimbatore, Hosur, Cuddalore, Trichy, Salem, Madurai and Thoothukudi.";
+    metaDesc = "Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Tamil Nadu industrial hubs: Chennai, Coimbatore, Hosur, Cuddalore, Trichy, Salem, Madurai, Thoothukudi, Erode and Vellore.";
     canonicalUrl = `${BASE_URL}/tamil-nadu/`;
     robots = "index, follow";
   } else if (type === "clients") {

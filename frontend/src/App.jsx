@@ -9,6 +9,8 @@ import AboutPage from './components/AboutPage';
 import HomePage from './components/HomePage';
 import TamilNaduHubPage from './components/TamilNaduHubPage';
 import { customCityData } from './data/customCityData';
+import { maharashtraCityData } from './data/maharashtraCityData';
+import MaharashtraCityPage from './components/MaharashtraCityPage';
 import Footer from './components/Footer';
 import ProductModal from './components/ProductModal';
 import EnquiryModal from './components/EnquiryModal';
@@ -238,14 +240,31 @@ function App(props) {
       return { type: 'tamil-nadu-hub', data: null };
     }
 
-    // Check if matching market city slug
-    let city = marketCitiesData.find(c => c.slug === slug || c.path === cleanPath || c.path === '/' + slug);
-    if (!city) {
-      const citySlug = cleanPath.startsWith('/market-area/') ? cleanPath.replace('/market-area/', '') : slug;
-      if (customCityData[citySlug]) {
-        city = customCityData[citySlug];
+    // Check if matching Maharashtra manufacturer page
+    const mhPrefix = '/electropolished-pipe-manufacturer-';
+    if (cleanPath.startsWith(mhPrefix)) {
+      const mhCityKey = cleanPath.replace(mhPrefix, '');
+      if (maharashtraCityData[mhCityKey]) {
+        return { type: 'maharashtra-city', data: maharashtraCityData[mhCityKey] };
       }
     }
+
+    // Check if market-area path is for Maharashtra rich cities
+    if (cleanPath.startsWith('/market-area/')) {
+      const marketCityKey = cleanPath.replace('/market-area/', '');
+      if (maharashtraCityData[marketCityKey]) {
+        return { type: 'maharashtra-city', data: maharashtraCityData[marketCityKey] };
+      }
+    }
+
+    // Check custom rich city data (Tamil Nadu, Canberra, Abu Dhabi, etc.)
+    const customCityKey = cleanPath.startsWith('/market-area/') ? cleanPath.replace('/market-area/', '') : slug;
+    if (customCityData[customCityKey]) {
+      return { type: 'market-city', data: customCityData[customCityKey] };
+    }
+
+    // Check if matching market city slug from standard dataset
+    let city = marketCitiesData.find(c => c.slug === slug || c.path === cleanPath || c.path === '/' + slug);
     if (city) {
       return { type: 'market-city', data: city };
     }
@@ -378,6 +397,13 @@ function App(props) {
         />
       )}
 
+      {resolvedRoute.type === 'maharashtra-city' && (
+        <MaharashtraCityPage 
+          cityData={resolvedRoute.data} 
+          onEnquireClick={handleOpenEnquiry} 
+        />
+      )}
+
       {resolvedRoute.type === 'clients' && (
         <ClientsPage onEnquireClick={handleOpenEnquiry} />
       )}
@@ -420,7 +446,7 @@ function App(props) {
       )}
 
       {/* Call To Action Banner */}
-      {resolvedRoute.type !== 'contact-us' && resolvedRoute.type !== 'market-city' && resolvedRoute.type !== 'home' && resolvedRoute.type !== 'about' && resolvedRoute.type !== 'tamil-nadu-hub' && (
+      {resolvedRoute.type !== 'contact-us' && resolvedRoute.type !== 'market-city' && resolvedRoute.type !== 'maharashtra-city' && resolvedRoute.type !== 'home' && resolvedRoute.type !== 'about' && resolvedRoute.type !== 'tamil-nadu-hub' && (
         <section className="cta-sec section-padding">
           <div className="container">
             <div className="cta-grid">

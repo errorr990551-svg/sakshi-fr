@@ -8,7 +8,8 @@ import epBuildSpecData from '../data/ep_build_spec_data.json';
 import { handleLinkClick } from '../utils/router';
 import { RaConverterTool, PipeWeightCalculatorTool } from './EPTools';
 
-export default function EPBuildSpecRenderer({ path, onEnquireClick }) {
+export default function EPBuildSpecRenderer({ path, onEnquireClick, hasUnlockedContact = false, onShowContactDetails }) {
+  const handleShowContact = onShowContactDetails || (() => onEnquireClick && onEnquireClick('Contact Request - EP Spec'));
   const pageData = epBuildSpecData.find(
     (p) => p.url === path || p.url === `${path}/` || `${p.url}/` === path
   );
@@ -90,15 +91,13 @@ export default function EPBuildSpecRenderer({ path, onEnquireClick }) {
                   <FileText className="w-5 h-5 text-slate-950" />
                   <span>Request Quick Quotation</span>
                 </button>
-                <a
-                  href="https://wa.me/918045815130?text=Hi%2C%20I%20am%20interested%20in%20Electropolished%20Pipes%20and%20Tubes"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  onClick={handleShowContact}
                   className="bg-slate-900/90 hover:bg-slate-800 border border-amber-500/30 text-amber-400 font-semibold px-6 py-3.5 rounded-xl transition flex items-center space-x-2"
                 >
-                  <MessageSquare className="w-5 h-5 text-amber-400" />
-                  <span>WhatsApp Engineering Sales</span>
-                </a>
+                  <Phone className="w-5 h-5 text-amber-400" />
+                  <span>Show Contact Details</span>
+                </button>
               </div>
             </div>
 
@@ -118,7 +117,7 @@ export default function EPBuildSpecRenderer({ path, onEnquireClick }) {
                   </div>
                   <div className="grid grid-cols-2 gap-3">
                     <div>
-                      <label className="block text-xs text-slate-400 mb-1">Phone / WhatsApp *</label>
+                      <label className="block text-xs text-slate-400 mb-1">Phone Number *</label>
                       <input type="tel" required placeholder="+91 XXXXX XXXXX" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-yellow-500" />
                     </div>
                     <div>
@@ -393,13 +392,13 @@ export default function EPBuildSpecRenderer({ path, onEnquireClick }) {
                 <span>Request Quotation</span>
                 <ArrowRight className="w-4 h-4 text-slate-950" />
               </button>
-              <a
-                href="tel:+918045815130"
+              <button
+                onClick={handleShowContact}
                 className="bg-slate-900/90 hover:bg-slate-800 border border-yellow-500/40 text-yellow-400 font-bold px-6 py-3.5 rounded-xl transition flex items-center justify-center space-x-2 whitespace-nowrap"
               >
                 <Phone className="w-4 h-4 text-yellow-400" />
-                <span>Call +91 8045815130</span>
-              </a>
+                <span>Show Contact Details</span>
+              </button>
             </div>
           </div>
 

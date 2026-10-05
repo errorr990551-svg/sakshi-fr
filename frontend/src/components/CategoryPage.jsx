@@ -20,7 +20,7 @@ export default function CategoryPage({ category, onEnquireClick }) {
   }, [category]);
 
   return (
-    <div className="category-page-wrapper" style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)' }}>
+    <div className="category-page-wrapper" style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingTop: '5.5rem' }}>
       {/* 1. Category Hero Banner */}
       <section 
         className="category-hero" 
@@ -28,7 +28,7 @@ export default function CategoryPage({ category, onEnquireClick }) {
           background: 'linear-gradient(rgba(11, 12, 16, 0.8), rgba(18, 21, 28, 0.95)), url("/hero_forge.webp")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          padding: '8.5rem 0 4rem 0',
+          padding: '4.5rem 0 4rem 0',
           borderBottom: '1px solid var(--border-color)',
           position: 'relative'
         }}

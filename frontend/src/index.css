@@ -1616,14 +1616,11 @@ nav {
 /* About Page Hero Banner Styling */
 .about-hero {
   position: relative;
-  height: 45vh;
-  min-height: 350px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: auto;
+  min-height: auto;
+  display: block;
   background-color: var(--bg-dark-900);
-  overflow: hidden;
-  padding-top: 5.5rem;
+  overflow: visible;
 }
 
 .about-hero-overlay {

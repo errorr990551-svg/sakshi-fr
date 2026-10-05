@@ -8,8 +8,10 @@ import WhyChooseUs from './components/WhyChooseUs';
 import AboutPage from './components/AboutPage';
 import HomePage from './components/HomePage';
 import TamilNaduHubPage from './components/TamilNaduHubPage';
+import KarnatakaHubPage from './components/KarnatakaHubPage';
 import { customCityData } from './data/customCityData';
 import { maharashtraCityData } from './data/maharashtraCityData';
+import { karnatakaCityData } from './data/karnatakaCityData';
 import MaharashtraCityPage from './components/MaharashtraCityPage';
 import Footer from './components/Footer';
 import ProductModal from './components/ProductModal';
@@ -240,25 +242,40 @@ function App(props) {
       return { type: 'tamil-nadu-hub', data: null };
     }
 
+    if (cleanPath === '/karnataka' || cleanPath === '/market-area/karnataka') {
+      return { type: 'karnataka-hub', data: null };
+    }
+
     if (cleanPath === '/maharashtra' || cleanPath === '/market-area/maharashtra') {
       return { type: 'market-area', data: null };
     }
 
-    // Check if matching Maharashtra manufacturer page
-    const mhPrefix = '/electropolished-pipe-manufacturer-';
-    if (cleanPath.startsWith(mhPrefix)) {
-      const mhCityKey = cleanPath.replace(mhPrefix, '');
-      if (maharashtraCityData[mhCityKey]) {
-        return { type: 'maharashtra-city', data: maharashtraCityData[mhCityKey] };
+    // Check if matching manufacturer page for Maharashtra or Karnataka
+    const epPrefix = '/electropolished-pipe-manufacturer-';
+    if (cleanPath.startsWith(epPrefix)) {
+      const cityKey = cleanPath.replace(epPrefix, '');
+      if (maharashtraCityData[cityKey]) {
+        return { type: 'maharashtra-city', data: maharashtraCityData[cityKey] };
+      }
+      if (karnatakaCityData[cityKey]) {
+        return { type: 'maharashtra-city', data: karnatakaCityData[cityKey] };
       }
     }
 
-    // Check if market-area path is for Maharashtra rich cities
+    // Check if market-area path is for Maharashtra or Karnataka rich cities
     if (cleanPath.startsWith('/market-area/')) {
       const marketCityKey = cleanPath.replace('/market-area/', '');
       if (maharashtraCityData[marketCityKey]) {
         return { type: 'maharashtra-city', data: maharashtraCityData[marketCityKey] };
       }
+      if (karnatakaCityData[marketCityKey]) {
+        return { type: 'maharashtra-city', data: karnatakaCityData[marketCityKey] };
+      }
+    }
+
+    // Check if direct slug matches Karnataka rich cities
+    if (karnatakaCityData[slug]) {
+      return { type: 'maharashtra-city', data: karnatakaCityData[slug] };
     }
 
     // Check custom rich city data (Tamil Nadu, Canberra, Abu Dhabi, etc.)
@@ -319,7 +336,19 @@ function App(props) {
       )}
 
       {resolvedRoute.type === 'tamil-nadu-hub' && (
-        <TamilNaduHubPage onEnquireClick={handleOpenEnquiry} />
+        <TamilNaduHubPage 
+          onEnquireClick={handleOpenEnquiry} 
+          hasUnlockedContact={hasUnlockedContact}
+          onShowContactDetails={handleOpenContactDetailsForm}
+        />
+      )}
+
+      {resolvedRoute.type === 'karnataka-hub' && (
+        <KarnatakaHubPage 
+          onEnquireClick={handleOpenEnquiry} 
+          hasUnlockedContact={hasUnlockedContact}
+          onShowContactDetails={handleOpenContactDetailsForm}
+        />
       )}
 
       {resolvedRoute.type === 'gallery' && (
@@ -327,7 +356,11 @@ function App(props) {
       )}
 
       {resolvedRoute.type === 'about' && (
-        <AboutPage onEnquireClick={() => handleOpenEnquiry('')} />
+        <AboutPage 
+          onEnquireClick={() => handleOpenEnquiry('')} 
+          hasUnlockedContact={hasUnlockedContact}
+          onShowContactDetails={handleOpenContactDetailsForm}
+        />
       )}
 
       {resolvedRoute.type === 'category' && (
@@ -398,6 +431,8 @@ function App(props) {
         <CityPage 
           cityData={resolvedRoute.data} 
           onEnquireClick={handleOpenEnquiry} 
+          hasUnlockedContact={hasUnlockedContact}
+          onShowContactDetails={handleOpenContactDetailsForm}
         />
       )}
 
@@ -405,6 +440,8 @@ function App(props) {
         <MaharashtraCityPage 
           cityData={resolvedRoute.data} 
           onEnquireClick={handleOpenEnquiry} 
+          hasUnlockedContact={hasUnlockedContact}
+          onShowContactDetails={handleOpenContactDetailsForm}
         />
       )}
 
@@ -441,7 +478,12 @@ function App(props) {
       )}
 
       {resolvedRoute.type === 'ep-spec' && (
-        <EPBuildSpecRenderer path={currentPath} onEnquireClick={handleOpenEnquiry} />
+        <EPBuildSpecRenderer 
+          path={currentPath} 
+          onEnquireClick={handleOpenEnquiry} 
+          hasUnlockedContact={hasUnlockedContact}
+          onShowContactDetails={handleOpenContactDetailsForm}
+        />
       )}
 
 
@@ -450,7 +492,7 @@ function App(props) {
       )}
 
       {/* Call To Action Banner */}
-      {resolvedRoute.type !== 'contact-us' && resolvedRoute.type !== 'market-city' && resolvedRoute.type !== 'maharashtra-city' && resolvedRoute.type !== 'home' && resolvedRoute.type !== 'about' && resolvedRoute.type !== 'tamil-nadu-hub' && (
+      {resolvedRoute.type !== 'contact-us' && resolvedRoute.type !== 'market-city' && resolvedRoute.type !== 'maharashtra-city' && resolvedRoute.type !== 'home' && resolvedRoute.type !== 'about' && resolvedRoute.type !== 'tamil-nadu-hub' && resolvedRoute.type !== 'karnataka-hub' && (
         <section className="cta-sec section-padding">
           <div className="container">
             <div className="cta-grid">

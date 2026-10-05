@@ -156,8 +156,9 @@ const LiveDeliveryWidget = ({ city, state, country, transitLine, freightBasis })
   );
 };
 
-export default function CityPage({ cityData, onEnquireClick }) {
+export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact = false, onShowContactDetails }) {
   const [openFaq, setOpenFaq] = useState(0);
+  const handleShowContact = onShowContactDetails || (() => onEnquireClick && onEnquireClick(`Contact Request - ${cityData?.city || 'General'}`));
   const custom = customCityData[cityData.slug];
   const isInternational = cityData.country && cityData.country !== 'India';
   const rfqData = custom?.rfq || custom?.rfqBlock;
@@ -668,12 +669,9 @@ export default function CityPage({ cityData, onEnquireClick }) {
                 <button onClick={() => onEnquireClick(`RFQ for ${custom.city}`)} className="btn btn-primary" style={{ padding: '0.85rem 2rem', fontWeight: '700' }}>
                   Request RFQ <ArrowRight size={16} />
                 </button>
-                <a href="https://wa.me/918291366340" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '0.85rem 1.75rem', fontWeight: '600', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <MessageSquare size={16} /> WhatsApp Us
-                </a>
-                <a href="mailto:sakshiforge1737@gmail.com" className="btn btn-outline" style={{ padding: '0.85rem 1.75rem', fontWeight: '600', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <Mail size={16} /> Email Sales Team
-                </a>
+                <button onClick={handleShowContact} className="btn btn-outline" style={{ padding: '0.85rem 1.75rem', fontWeight: '700', display: 'inline-flex', alignItems: 'center', gap: '0.6rem' }}>
+                  <Phone size={16} /> Show Contact Details
+                </button>
               </div>
             </div>
 
@@ -687,23 +685,47 @@ export default function CityPage({ cityData, onEnquireClick }) {
                 </p>
               </div>
 
-              <div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary-yellow)', fontWeight: '700', marginBottom: '0.35rem', fontSize: '0.88rem' }}>
-                  <Phone size={16} /> Phone / WhatsApp
-                </div>
-                <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.85rem', lineHeight: '1.5' }}>
-                  {custom.cta.phones.join(' | ')}
-                </p>
-              </div>
+              {hasUnlockedContact ? (
+                <>
+                  <div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary-yellow)', fontWeight: '700', marginBottom: '0.35rem', fontSize: '0.88rem' }}>
+                      <Phone size={16} /> Phone
+                    </div>
+                    <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.85rem', lineHeight: '1.5' }}>
+                      {custom.cta.phones.join(' | ')}
+                    </p>
+                  </div>
 
-              <div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary-yellow)', fontWeight: '700', marginBottom: '0.35rem', fontSize: '0.88rem' }}>
-                  <Mail size={16} /> Email
+                  <div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary-yellow)', fontWeight: '700', marginBottom: '0.35rem', fontSize: '0.88rem' }}>
+                      <Mail size={16} /> Email
+                    </div>
+                    <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.85rem', lineHeight: '1.5' }}>
+                      sales@steelmanufacturer.in
+                    </p>
+                  </div>
+                </>
+              ) : (
+                <div style={{ display: 'flex', alignItems: 'center' }}>
+                  <button
+                    onClick={handleShowContact}
+                    className="btn btn-primary"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.6rem',
+                      padding: '0.8rem 1.4rem',
+                      fontSize: '0.85rem',
+                      fontWeight: '800',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.04em',
+                      boxShadow: '0 4px 15px rgba(255, 193, 7, 0.2)'
+                    }}
+                  >
+                    <Phone size={16} /> Show Contact Details
+                  </button>
                 </div>
-                <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.85rem', lineHeight: '1.5' }}>
-                  {custom.cta.email}
-                </p>
-              </div>
+              )}
             </div>
           </div>
         </section>
@@ -850,29 +872,8 @@ export default function CityPage({ cityData, onEnquireClick }) {
                 >
                   {custom?.primaryBtnText || `Request Localized Quote for ${cityData.city}`}
                 </button>
-                {custom?.whatsappLink && (
-                  <a
-                    href={custom.whatsappLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-secondary btn-lg"
-                    style={{
-                      padding: '1rem 1.6rem',
-                      fontSize: '0.95rem',
-                      fontWeight: '700',
-                      display: 'inline-flex',
-                      alignItems: 'center',
-                      gap: '0.5rem',
-                      borderColor: '#25D366',
-                      color: '#25D366'
-                    }}
-                  >
-                    <Phone size={16} />
-                    WhatsApp Your RFQ
-                  </a>
-                )}
-                <a
-                  href="mailto:sales@steelmanufacturer.in"
+                <button
+                  onClick={handleShowContact}
                   className="btn btn-secondary btn-lg"
                   style={{
                     padding: '1rem 1.6rem',
@@ -883,9 +884,9 @@ export default function CityPage({ cityData, onEnquireClick }) {
                     gap: '0.5rem'
                   }}
                 >
-                  <Mail size={16} />
-                  Email Sales Team
-                </a>
+                  <Phone size={16} />
+                  Show Contact Details
+                </button>
               </div>
             </div>
 
@@ -1734,30 +1735,8 @@ export default function CityPage({ cityData, onEnquireClick }) {
                 Submit RFQ Form
               </button>
               
-              {custom?.whatsappLink && (
-                <a 
-                  href={custom.whatsappLink} 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-secondary btn-lg"
-                  style={{ 
-                    display: 'inline-flex', 
-                    alignItems: 'center', 
-                    gap: '0.6rem',
-                    padding: '1rem 2.25rem',
-                    fontSize: '0.95rem',
-                    fontWeight: '750',
-                    borderColor: '#25D366',
-                    color: '#25D366'
-                  }}
-                >
-                  <Phone size={18} />
-                  WhatsApp Your RFQ
-                </a>
-              )}
-
-              <a 
-                href="mailto:sales@steelmanufacturer.in" 
+              <button
+                onClick={handleShowContact}
                 className="btn btn-secondary btn-lg"
                 style={{ 
                   display: 'inline-flex', 
@@ -1768,9 +1747,9 @@ export default function CityPage({ cityData, onEnquireClick }) {
                   fontWeight: '750'
                 }}
               >
-                <Mail size={18} />
-                Email Sales Team
-              </a>
+                <Phone size={18} />
+                Show Contact Details
+              </button>
             </div>
             
             <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginTop: '2rem', fontWeight: '500' }}>

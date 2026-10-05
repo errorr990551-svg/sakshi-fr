@@ -7,13 +7,28 @@ import {
 } from 'lucide-react';
 import { handleLinkClick } from '../utils/router';
 
-export default function MaharashtraCityPage({ cityData, onEnquireClick }) {
+export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnlockedContact = false, onShowContactDetails }) {
   const [openFaq, setOpenFaq] = useState(0);
+  const handleShowContact = onShowContactDetails || (() => onEnquireClick && onEnquireClick(`Contact Request - ${cityData?.city || 'General'}`));
   
   // Interactive Spec Table Filters
-  const [selectedGrade, setSelectedGrade] = useState('ALL');
-  const [selectedType, setSelectedType] = useState('ALL');
+  const [selectedGrade, setSelectedGrade] = useState(cityData?.defaultFilter?.grade || 'ALL');
+  const [selectedType, setSelectedType] = useState(cityData?.defaultFilter?.type || 'ALL');
   const [selectedOD, setSelectedOD] = useState('ALL');
+
+  useEffect(() => {
+    if (cityData?.defaultFilter?.grade) {
+      setSelectedGrade(cityData.defaultFilter.grade);
+    } else {
+      setSelectedGrade('ALL');
+    }
+    if (cityData?.defaultFilter?.type) {
+      setSelectedType(cityData.defaultFilter.type);
+    } else {
+      setSelectedType('ALL');
+    }
+    setOpenFaq(0);
+  }, [cityData]);
 
   // Pipe Weight & Ra Converter Widget State
   const [calcGrade, setCalcGrade] = useState('0.02507'); // 316L default
@@ -125,7 +140,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick }) {
           },
           "areaServed": [
             { "@type": "City", "name": cityData.city },
-            { "@type": "AdministrativeArea", "name": "Maharashtra" }
+            { "@type": "AdministrativeArea", "name": cityData.state || "Maharashtra" }
           ]
         },
         {
@@ -198,15 +213,15 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick }) {
     });
   }, [selectedGrade, selectedType, selectedOD]);
 
-  const nearbyCities = [
-    { name: 'Mumbai', path: '/electropolished-pipe-manufacturer-mumbai' },
-    { name: 'Thane', path: '/electropolished-pipe-manufacturer-thane' },
-    { name: 'Pune', path: '/electropolished-pipe-manufacturer-pune' },
-    { name: 'Tarapur', path: '/electropolished-pipe-manufacturer-tarapur' },
-    { name: 'Nashik', path: '/electropolished-pipe-manufacturer-nashik' },
-    { name: 'Aurangabad', path: '/electropolished-pipe-manufacturer-aurangabad' },
+  const nearbyCities = cityData.nearbyCities || [
+    { name: 'Mumbai', path: '/market-area/mumbai' },
+    { name: 'Thane', path: '/market-area/thane' },
+    { name: 'Pune', path: '/market-area/pune' },
+    { name: 'Tarapur', path: '/market-area/tarapur' },
+    { name: 'Nashik', path: '/market-area/nashik' },
+    { name: 'Aurangabad', path: '/market-area/aurangabad' },
     { name: 'Nagpur', path: '/market-area/nagpur' },
-    { name: 'Amravati', path: '/electropolished-pipe-manufacturer-amravati' }
+    { name: 'Amravati', path: '/market-area/amravati' }
   ].filter(c => c.name.toLowerCase() !== cityData.slug);
 
   return (
@@ -226,7 +241,13 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick }) {
             <span>›</span>
             <a href="/electropolished-pipes" onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>Electropolished Pipes</a>
             <span>›</span>
-            <span>Maharashtra</span>
+            <a 
+              href={cityData.state === 'Karnataka' ? '/karnataka' : '/market-area#maharashtra'} 
+              onClick={(e) => handleLinkClick(e, cityData.state === 'Karnataka' ? '/karnataka' : '/market-area#maharashtra')} 
+              style={{ color: 'inherit', textDecoration: 'none' }}
+            >
+              {cityData.state || 'Maharashtra'}
+            </a>
             <span>›</span>
             <span style={{ color: 'var(--primary-yellow)', fontWeight: '600' }}>{cityData.city}</span>
           </div>
@@ -281,15 +302,19 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick }) {
               >
                 <Download size={16} /> Download Catalogue
               </a>
-              <a 
-                href="https://wa.me/918291366340?text=Hello%20Sakshi%20Forge,%20I%20need%20a%20quote%20for%20electropolished%20pipes%20for%20our%20plant" 
-                target="_blank" 
-                rel="noreferrer" 
+              <button 
+                onClick={handleShowContact} 
                 className="btn btn-outline" 
-                style={{ padding: '0.9rem 1.5rem', fontWeight: '600', color: '#25D366', borderColor: '#25D366' }}
+                style={{ 
+                  padding: '0.9rem 1.6rem', 
+                  fontWeight: '700', 
+                  display: 'inline-flex', 
+                  alignItems: 'center', 
+                  gap: '0.6rem'
+                }}
               >
-                <MessageSquare size={16} /> WhatsApp Sales
-              </a>
+                <Phone size={16} /> Show Contact Details
+              </button>
             </div>
 
             {/* Trust strip */}
@@ -950,7 +975,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick }) {
 
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Phone / WhatsApp *</label>
+                        <label style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Phone Number *</label>
                         <input 
                           type="tel" 
                           required 
@@ -1030,23 +1055,53 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick }) {
                   </small>
                 </div>
 
-                <div style={{ backgroundColor: 'var(--bg-dark-800)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', color: 'var(--primary-yellow)', fontWeight: '700', marginBottom: '0.4rem' }}>
-                    <Phone size={18} /> Call / WhatsApp Direct
-                  </div>
-                  <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.5', fontWeight: '600' }}>
-                    <a href="tel:+918291366340" style={{ color: '#fff', textDecoration: 'none' }}>+91 82913 66340</a> | <a href="tel:+917976476375" style={{ color: '#fff', textDecoration: 'none' }}>+91 79764 76375</a>
-                  </p>
-                </div>
+                {hasUnlockedContact ? (
+                  <>
+                    <div style={{ backgroundColor: 'var(--bg-dark-800)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', color: 'var(--primary-yellow)', fontWeight: '700', marginBottom: '0.4rem' }}>
+                        <Phone size={18} /> Direct Works Hotline
+                      </div>
+                      <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.5', fontWeight: '600' }}>
+                        <a href="tel:+918291366340" style={{ color: '#fff', textDecoration: 'none' }}>+91 82913 66340</a> | <a href="tel:+917976476375" style={{ color: '#fff', textDecoration: 'none' }}>+91 79764 76375</a>
+                      </p>
+                    </div>
 
-                <div style={{ backgroundColor: 'var(--bg-dark-800)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', color: 'var(--primary-yellow)', fontWeight: '700', marginBottom: '0.4rem' }}>
-                    <Mail size={18} /> Email
+                    <div style={{ backgroundColor: 'var(--bg-dark-800)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', color: 'var(--primary-yellow)', fontWeight: '700', marginBottom: '0.4rem' }}>
+                        <Mail size={18} /> Email
+                      </div>
+                      <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.5' }}>
+                        <a href="mailto:sales@steelmanufacturer.in" style={{ color: '#fff', textDecoration: 'none' }}>sales@steelmanufacturer.in</a>
+                      </p>
+                    </div>
+                  </>
+                ) : (
+                  <div style={{ backgroundColor: 'var(--bg-dark-800)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', color: 'var(--primary-yellow)', fontWeight: '700', marginBottom: '0.5rem' }}>
+                      <Phone size={18} /> Direct Works & Engineering Hotline
+                    </div>
+                    <p style={{ margin: '0 0 1.25rem 0', color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.5' }}>
+                      Click below to view our direct engineer phone numbers, dispatch contacts, and official sales email.
+                    </p>
+                    <button
+                      onClick={handleShowContact}
+                      className="btn btn-primary"
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '0.6rem',
+                        padding: '0.8rem 1.4rem',
+                        fontSize: '0.85rem',
+                        fontWeight: '800',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.04em',
+                        boxShadow: '0 4px 15px rgba(255, 193, 7, 0.2)'
+                      }}
+                    >
+                      <Phone size={16} /> Show Contact Details
+                    </button>
                   </div>
-                  <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.5' }}>
-                    <a href="mailto:sakshiforge1737@gmail.com" style={{ color: '#fff', textDecoration: 'none' }}>sakshiforge1737@gmail.com</a>
-                  </p>
-                </div>
+                )}
 
                 <div style={{ backgroundColor: 'var(--bg-dark-800)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', color: 'var(--primary-yellow)', fontWeight: '700', marginBottom: '0.4rem' }}>

@@ -29,7 +29,7 @@ export default function BlogPage() {
   ];
 
   return (
-    <div className="blog-page-wrapper" style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '6rem' }}>
+    <div className="blog-page-wrapper" style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '6rem', paddingTop: '5.5rem' }}>
       
       {/* Breadcrumbs */}
       <Breadcrumbs items={breadcrumbItems} />

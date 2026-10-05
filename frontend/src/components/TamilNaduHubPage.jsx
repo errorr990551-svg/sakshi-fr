@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import { MapPin, ArrowRight, ShieldCheck, Phone, Mail, Award, CheckCircle2 } from 'lucide-react';
 import { handleLinkClick } from '../utils/router';
 
-export default function TamilNaduHubPage({ onEnquireClick }) {
+export default function TamilNaduHubPage({ onEnquireClick, onShowContactDetails }) {
+  const handleShowContact = onShowContactDetails || (() => onEnquireClick && onEnquireClick('Tamil Nadu State Hub Contact Request'));
   const cities = [
     {
       name: "Chennai",
@@ -130,9 +131,19 @@ export default function TamilNaduHubPage({ onEnquireClick }) {
             <button onClick={() => onEnquireClick('Tamil Nadu State Hub RFQ')} className="btn btn-primary" style={{ padding: '0.85rem 1.85rem', fontWeight: '700' }}>
               Request Tamil Nadu Quote <ArrowRight size={16} />
             </button>
-            <a href="https://wa.me/918291366340" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '0.85rem 1.85rem', fontWeight: '600' }}>
-              WhatsApp Sales Team
-            </a>
+            <button 
+              onClick={handleShowContact} 
+              className="btn btn-outline" 
+              style={{ 
+                padding: '0.85rem 1.85rem', 
+                fontWeight: '700', 
+                display: 'inline-flex', 
+                alignItems: 'center', 
+                gap: '0.6rem' 
+              }}
+            >
+              <Phone size={16} /> Show Contact Details
+            </button>
           </div>
         </div>
       </section>

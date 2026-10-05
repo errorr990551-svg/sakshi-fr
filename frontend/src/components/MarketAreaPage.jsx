@@ -40,6 +40,11 @@ export default function MarketAreaPage() {
         const el = document.getElementById('maharashtra');
         if (el) el.scrollIntoView({ behavior: 'smooth' });
       }, 150);
+    } else if (window.location.pathname.includes('karnataka')) {
+      setTimeout(() => {
+        const el = document.getElementById('karnataka');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 150);
     }
   }, []);
 
@@ -245,7 +250,7 @@ export default function MarketAreaPage() {
                   <a href="/electropolished-pipe-manufacturer-tarapur" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-tarapur'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#60a5fa'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Tarapur</a>
                   <a href="/electropolished-pipe-manufacturer-nashik" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-nashik'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#60a5fa'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Nashik</a>
                   <a href="/electropolished-pipe-manufacturer-aurangabad" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-aurangabad'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#60a5fa'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Aurangabad</a>
-                  <a href="/electropolished-pipe-manufacturer-amravati" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-amravati'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'rgba(59, 130, 246, 0.18)', borderRadius: '4px', color: '#93c5fd', textDecoration: 'none', border: '1px solid #3b82f6', fontWeight: '700', transition: 'all 0.2s' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#3b82f6'; e.currentTarget.style.color = '#fff'; }} onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(59, 130, 246, 0.18)'; e.currentTarget.style.color = '#93c5fd'; }}>Amravati ★</a>
+                  <a href="/market-area/amravati" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/amravati'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#60a5fa'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Amravati</a>
                 </div>
                 <div style={{ marginTop: '1rem' }}>
                   <a 
@@ -270,6 +275,109 @@ export default function MarketAreaPage() {
                     }}
                   >
                     View All Maharashtra Cities &darr;
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Box 3: Karnataka */}
+            <div 
+              onClick={(e) => {
+                if (e.target.closest('a')) return;
+                const ktElem = document.getElementById('karnataka');
+                if (ktElem) {
+                  ktElem.scrollIntoView({ behavior: 'smooth' });
+                  window.history.pushState(null, '', '#karnataka');
+                } else {
+                  handleLinkClick(e, '/karnataka');
+                }
+              }}
+              style={{
+                background: 'linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, var(--bg-dark-800) 100%)',
+                border: '1px solid rgba(16, 185, 129, 0.4)',
+                borderRadius: '12px',
+                padding: '1.75rem',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                cursor: 'pointer',
+                transition: 'all 0.25s ease',
+                position: 'relative'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-3px)';
+                e.currentTarget.style.boxShadow = '0 10px 25px rgba(16, 185, 129, 0.25)';
+                e.currentTarget.style.borderColor = '#34d399';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'none';
+                e.currentTarget.style.boxShadow = 'none';
+                e.currentTarget.style.borderColor = 'rgba(16, 185, 129, 0.4)';
+              }}
+            >
+              <div>
+                <span style={{ fontSize: '0.75rem', fontWeight: '800', color: '#34d399', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+                  Pharma &amp; Biotech Corridors
+                </span>
+                <h3 style={{ fontSize: '1.3rem', fontWeight: '800', margin: '0.5rem 0', color: 'var(--text-primary)' }}>Karnataka Industrial Corridors</h3>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.5' }}>
+                  Express direct dispatch across Bengaluru, Tumakuru, Mysuru, Mangaluru, Bidar, Hubballi-Dharwad, Belagavi, Hassan, Raichur, and Mandya.
+                </p>
+              </div>
+              <div>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginTop: '1rem' }}>
+                  <a href="/electropolished-pipe-manufacturer-bengaluru" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-bengaluru'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Bengaluru</a>
+                  <a href="/electropolished-pipe-manufacturer-tumakuru" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-tumakuru'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Tumakuru</a>
+                  <a href="/electropolished-pipe-manufacturer-mysuru" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-mysuru'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Mysuru</a>
+                  <a href="/electropolished-pipe-manufacturer-mangaluru" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-mangaluru'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Mangaluru</a>
+                  <a href="/electropolished-pipe-manufacturer-bidar" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-bidar'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Bidar</a>
+                  <a href="/electropolished-pipe-manufacturer-hubballi-dharwad" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-hubballi-dharwad'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Hubballi</a>
+                  <a href="/electropolished-pipe-manufacturer-belagavi" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-belagavi'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Belagavi</a>
+                  <a href="/electropolished-pipe-manufacturer-hassan" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-hassan'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Hassan</a>
+                  <a href="/electropolished-pipe-manufacturer-raichur" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-raichur'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Raichur</a>
+                  <a href="/electropolished-pipe-manufacturer-mandya" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-mandya'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Mandya</a>
+                </div>
+                <div style={{ marginTop: '1rem', display: 'flex', gap: '1.25rem', alignItems: 'center', flexWrap: 'wrap' }}>
+                  <a 
+                    href="/karnataka" 
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleLinkClick(e, '/karnataka');
+                    }}
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.4rem',
+                      color: '#34d399',
+                      fontSize: '0.85rem',
+                      fontWeight: '700',
+                      textDecoration: 'none'
+                    }}
+                  >
+                    Explore Karnataka Hub &rarr;
+                  </a>
+                  <a 
+                    href="#karnataka" 
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      e.preventDefault();
+                      const ktElem = document.getElementById('karnataka');
+                      if (ktElem) {
+                        ktElem.scrollIntoView({ behavior: 'smooth' });
+                        window.history.pushState(null, '', '#karnataka');
+                      }
+                    }}
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.4rem',
+                      color: 'var(--text-secondary)',
+                      fontSize: '0.82rem',
+                      fontWeight: '600',
+                      textDecoration: 'none'
+                    }}
+                  >
+                    View All Cities &darr;
                   </a>
                 </div>
               </div>

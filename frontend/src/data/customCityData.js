@@ -760,8 +760,7 @@ export const customCityData = {
         { field: 'Head Office', value: '113/117, Dr. M. G. Mahimtura Marg, 3rd Kumbharwada, Shop No. 5, Ground Floor, Mumbai 400 004, India' },
         { field: 'Quality System', value: 'ISO 9001:2015 Certified Manufacturing & Quality Assurance' },
         { field: 'Testing Laboratory', value: 'NABL Accredited Partner Laboratory (ILAC-MRA Signatory)' },
-        { field: 'Phone / WhatsApp', value: '+91 82913 66340 · +91 79764 76375' },
-        { field: 'Email', value: 'sales@steelmanufacturer.in' }
+        { field: 'Sales & Inquiries', value: 'Fast 30-minute response via official RFQ desk' },
       ],
       notSupply: [
         'We do not operate a local Al Ain warehouse; every consignment is custom manufactured and dispatched direct from our Mumbai works for maximum quality control.',

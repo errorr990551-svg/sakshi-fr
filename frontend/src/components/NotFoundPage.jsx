@@ -25,7 +25,7 @@ export default function NotFoundPage() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: '6rem 2rem 4rem 2rem',
+        padding: '8.5rem 2rem 5rem 2rem',
         background: 'radial-gradient(circle at center, var(--bg-dark-800) 0%, var(--bg-dark-900) 100%)',
         position: 'relative',
         overflow: 'hidden'

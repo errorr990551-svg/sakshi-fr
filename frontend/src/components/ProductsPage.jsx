@@ -45,7 +45,7 @@ export default function ProductsPage({ onEnquireClick }) {
   }, [activeCategory, searchQuery]);
 
   return (
-    <div className="products-catalog-page" style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '6rem' }}>
+    <div className="products-catalog-page" style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '6rem', paddingTop: '5.5rem' }}>
       
       {/* 1. Page Header Hero Section */}
       <section 
@@ -53,7 +53,7 @@ export default function ProductsPage({ onEnquireClick }) {
           background: 'linear-gradient(rgba(11, 12, 16, 0.85), rgba(18, 21, 28, 0.98)), url("/hero_forge.webp")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          padding: '8.5rem 0 4rem 0',
+          padding: '4.5rem 0 4rem 0',
           borderBottom: '1px solid var(--border-color)',
           textAlign: 'center'
         }}

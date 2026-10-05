@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import { Calendar, CheckSquare, Truck, Handshake, Shield, HelpCircle, FileText, ArrowRight, Phone, MessageSquare, MapPin, Mail, Award, CheckCircle, Factory, ShieldCheck, Cpu } from 'lucide-react';
 import { handleLinkClick } from '../utils/router';
 
-export default function AboutPage({ onEnquireClick }) {
+export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, onShowContactDetails }) {
+  const handleShowContact = onShowContactDetails || (() => onEnquireClick && onEnquireClick('About Page Contact Request'));
   const stats = [
     { number: '10+', label: 'Years' },
     { number: '100+', label: 'Clients' },
@@ -115,10 +116,14 @@ export default function AboutPage({ onEnquireClick }) {
   }, []);
 
   return (
-    <div className="about-page-wrapper">
+    <div className="about-page-wrapper" style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingTop: '5.5rem' }}>
       {/* 1. HERO */}
-      <section className="about-hero" style={{ background: 'linear-gradient(rgba(10, 14, 23, 0.92), rgba(10, 14, 23, 0.95)), url(/hero_bg.webp) center/cover' }}>
-        <div className="container" style={{ padding: '5rem 1rem 3.5rem' }}>
+      <section className="about-hero" style={{ 
+        background: 'linear-gradient(rgba(10, 14, 23, 0.92), rgba(10, 14, 23, 0.95)), url(/hero_bg.webp) center/cover',
+        padding: '4.5rem 0 3.5rem 0',
+        borderBottom: '1px solid var(--border-color)'
+      }}>
+        <div className="container">
           <div style={{ maxWidth: '950px' }}>
             <span className="hero-tag" style={{ backgroundColor: 'rgba(255, 193, 7, 0.1)', color: 'var(--primary-yellow)', border: '1px solid rgba(255,193,7,0.3)', padding: '0.4rem 1rem', borderRadius: '4px', textTransform: 'uppercase', letterSpacing: '0.08em', fontSize: '0.8rem', fontWeight: '700', display: 'inline-block', marginBottom: '1.25rem' }}>
               ISO 9001:2015 Certified Manufacturer · Taloja MIDC, Mumbai
@@ -400,7 +405,7 @@ export default function AboutPage({ onEnquireClick }) {
                 <div style={{ padding: '0.75rem', backgroundColor: 'var(--bg-dark-800)', fontSize: '0.82rem', color: '#e2e8f0' }}>Sakshi Forge branded 50NB SCH40 316L seamless end cap</div>
               </div>
               <div style={{ borderRadius: '8px', overflow: 'hidden', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-dark-900)' }}>
-                <img src="/products_flanges.webp" alt="In-house electropolishing line, QA inspection and export staging area at Sakshi Forge" style={{ width: '100%', height: '220px', objectFit: 'cover', display: 'block' }} />
+                <img src="/electropolish_pipes.webp" alt="In-house electropolishing line, QA inspection and export staging area at Sakshi Forge" style={{ width: '100%', height: '220px', objectFit: 'cover', display: 'block' }} />
                 <div style={{ padding: '0.75rem', backgroundColor: 'var(--bg-dark-800)', fontSize: '0.82rem', color: '#e2e8f0' }}>Electropolishing line, QA inspection and export staging area</div>
               </div>
             </div>
@@ -680,9 +685,13 @@ export default function AboutPage({ onEnquireClick }) {
                 <button onClick={() => onEnquireClick('About Page Bottom RFQ')} className="btn btn-primary" style={{ padding: '0.85rem 2rem', fontWeight: '700' }}>
                   Request RFQ <ArrowRight size={16} />
                 </button>
-                <a href="https://wa.me/918291366340" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '0.85rem 2rem', fontWeight: '600', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <MessageSquare size={16} /> WhatsApp Us
-                </a>
+                <button 
+                  onClick={handleShowContact} 
+                  className="btn btn-outline" 
+                  style={{ padding: '0.85rem 2rem', fontWeight: '700', display: 'inline-flex', alignItems: 'center', gap: '0.6rem' }}
+                >
+                  <Phone size={16} /> Show Contact Details
+                </button>
               </div>
             </div>
 
@@ -696,23 +705,47 @@ export default function AboutPage({ onEnquireClick }) {
                 </p>
               </div>
 
-              <div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary-yellow)', fontWeight: '700', marginBottom: '0.4rem', fontSize: '0.9rem' }}>
-                  <Phone size={16} /> Phone / WhatsApp
-                </div>
-                <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.85rem', lineHeight: '1.5' }}>
-                  +91 82913 66340 | +91 79764 76375
-                </p>
-              </div>
+              {hasUnlockedContact ? (
+                <>
+                  <div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary-yellow)', fontWeight: '700', marginBottom: '0.4rem', fontSize: '0.9rem' }}>
+                      <Phone size={16} /> Direct Phones
+                    </div>
+                    <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.85rem', lineHeight: '1.5' }}>
+                      <a href="tel:+918291366340" style={{ color: 'inherit', textDecoration: 'none' }}>+91 82913 66340</a> | <a href="tel:+917976476375" style={{ color: 'inherit', textDecoration: 'none' }}>+91 79764 76375</a>
+                    </p>
+                  </div>
 
-              <div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary-yellow)', fontWeight: '700', marginBottom: '0.4rem', fontSize: '0.9rem' }}>
-                  <Mail size={16} /> Email
+                  <div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary-yellow)', fontWeight: '700', marginBottom: '0.4rem', fontSize: '0.9rem' }}>
+                      <Mail size={16} /> Email
+                    </div>
+                    <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.85rem', lineHeight: '1.5' }}>
+                      <a href="mailto:sales@steelmanufacturer.in" style={{ color: 'inherit', textDecoration: 'none' }}>sales@steelmanufacturer.in</a>
+                    </p>
+                  </div>
+                </>
+              ) : (
+                <div style={{ display: 'flex', alignItems: 'center' }}>
+                  <button
+                    onClick={handleShowContact}
+                    className="btn btn-primary"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.6rem',
+                      padding: '0.8rem 1.4rem',
+                      fontSize: '0.85rem',
+                      fontWeight: '800',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.04em',
+                      boxShadow: '0 4px 15px rgba(255, 193, 7, 0.2)'
+                    }}
+                  >
+                    <Phone size={16} /> Show Contact Details
+                  </button>
                 </div>
-                <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.85rem', lineHeight: '1.5' }}>
-                  sakshiforge1737@gmail.com
-                </p>
-              </div>
+              )}
             </div>
           </div>
         </div>

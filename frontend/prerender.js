@@ -91,11 +91,11 @@ async function runPrerender() {
 
   // Market Cities pages
   marketCities.forEach(c => {
-    const cleanPath = c.path.endsWith('/') ? c.path : `${c.path}/`;
+    const cleanPath = c.path.replace(/\/+$/, '');
     routes.push({
       url: `${BASE_URL}${cleanPath}`,
       type: 'market-city',
-      slug: c.path.substring(1), // remove starting slash
+      slug: cleanPath.startsWith('/') ? cleanPath.substring(1) : cleanPath, // remove starting slash
       title: c.pageTitle,
       description: c.metaDescription,
       robots: 'index, follow',
@@ -413,7 +413,9 @@ async function runPrerender() {
     }
 
     // Inject canonical link
-    const canonicalHref = route.url.endsWith('/') ? route.url : `${route.url}/`;
+    const canonicalHref = (route.type === 'market-city' || route.slug === 'market-area' || route.type === 'maharashtra-city')
+      ? route.url.replace(/\/+$/, '')
+      : (route.url.endsWith('/') ? route.url : `${route.url}/`);
     if (html.includes('rel="canonical"')) {
       html = html.replace(/<link rel="canonical" href=".*?" \/>/, `<link rel="canonical" href="${canonicalHref}" />`);
     } else {

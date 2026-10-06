@@ -139,7 +139,7 @@ export function updateSEO({ type, data }) {
     title = "Sakshi Forge | India Cities We Serve - Electropolished Pipes & Fittings Supply";
     metaDesc = "Explore the commercial and industrial cities served by Sakshi Forge across India. High-quality electropolished pipes and industrial steel supply.";
     keywords = "market area, industrial cities, sakshi forge locations, steel pipes supply India";
-    canonicalUrl = `${BASE_URL}/market-area/`;
+    canonicalUrl = `${BASE_URL}/market-area`;
     robots = "index, follow";
   } else if (type === "market-city" && data) {
     const custom = customCityData[data.slug];
@@ -156,17 +156,17 @@ export function updateSEO({ type, data }) {
   } else if (type === "tamil-nadu-hub") {
     title = "Electropolished Pipe Supplier Across Tamil Nadu | Sakshi Forge";
     metaDesc = "Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Tamil Nadu industrial hubs: Chennai, Coimbatore, Hosur, Cuddalore, Trichy, Salem, Madurai, Thoothukudi, Erode and Vellore.";
-    canonicalUrl = `${BASE_URL}/tamil-nadu/`;
+    canonicalUrl = `${BASE_URL}/tamil-nadu`;
     robots = "index, follow";
   } else if (type === "karnataka-hub") {
     title = "Electropolished Pipe Manufacturer Across Karnataka | Sakshi Forge";
     metaDesc = "Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Karnataka industrial corridors: Bengaluru, Tumakuru, Mysuru, Mangaluru, Bidar, Hubballi-Dharwad, Belagavi, Hassan, Raichur and Mandya.";
-    canonicalUrl = `${BASE_URL}/karnataka/`;
+    canonicalUrl = `${BASE_URL}/karnataka`;
     robots = "index, follow";
   } else if (type === "gujarat-hub") {
     title = "Electropolished Pipe Manufacturer Across Gujarat | Sakshi Forge";
     metaDesc = "Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Gujarat industrial belts: Ahmedabad, Vadodara, Vapi, Sanand, Ankleshwar, Surat, Dahej, Anand and Mehsana.";
-    canonicalUrl = `${BASE_URL}/market-area/gujarat/`;
+    canonicalUrl = `${BASE_URL}/market-area/gujarat`;
     robots = "index, follow";
   } else if (type === "clients") {
     title = "Our Clients & Industries | Sakshi Forge";

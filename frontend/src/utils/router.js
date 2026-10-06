@@ -1,11 +1,28 @@
 /**
- * SPA client-side router utility.
- * Intercepts page transitions using HTML5 history API.
+ * Check if a path is a city/market-area URL with a trailing slash
  */
+export function isTrailingSlashCityPath(pathname) {
+  if (!pathname || pathname === '/' || typeof pathname !== 'string') {
+    return false;
+  }
+  const purePath = pathname.split('?')[0].split('#')[0];
+  if (!purePath.endsWith('/')) {
+    return false;
+  }
+  const clean = purePath.replace(/\/+$/, '');
+  if (clean === '/market-area' || clean.startsWith('/market-area/')) {
+    return true;
+  }
+  return false;
+}
 
 export function navigate(path) {
+  let targetPath = path;
+  if (isTrailingSlashCityPath(targetPath)) {
+    targetPath = '/';
+  }
   // Update browser address bar without page reload
-  window.history.pushState(null, "", path);
+  window.history.pushState(null, "", targetPath);
   // Trigger popstate event so our App router hears it and updates the view
   window.dispatchEvent(new PopStateEvent("popstate"));
   // Scroll to top of the page smoothly

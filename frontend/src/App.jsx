@@ -57,6 +57,32 @@ import epBuildSpecData from './data/ep_build_spec_data.json';
 import EPBuildSpecRenderer from './components/EPBuildSpecRenderer';
 
 
+// Helper to check if a pathname is a city/market-area path with a trailing slash
+export const isTrailingSlashCityPath = (pathname) => {
+  if (!pathname || pathname === '/' || typeof pathname !== 'string') {
+    return false;
+  }
+  const purePath = pathname.split('?')[0].split('#')[0];
+  if (!purePath.endsWith('/')) {
+    return false;
+  }
+  const clean = purePath.replace(/\/+$/, '');
+  if (clean === '/market-area' || clean.startsWith('/market-area/')) {
+    return true;
+  }
+  const slug = clean.replace(/^\//, '');
+  if (
+    (maharashtraCityData && maharashtraCityData[slug]) ||
+    (karnatakaCityData && karnatakaCityData[slug]) ||
+    (gujaratCityData && gujaratCityData[slug]) ||
+    (customCityData && customCityData[slug]) ||
+    (marketCitiesData && marketCitiesData.some(c => c.slug === slug || c.path === clean || c.path === '/' + slug))
+  ) {
+    return true;
+  }
+  return false;
+};
+
 function App(props) {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isEnquiryOpen, setIsEnquiryOpen] = useState(false);
@@ -65,9 +91,22 @@ function App(props) {
   const [hasUnlockedContact, setHasUnlockedContact] = useState(() => {
     return typeof window !== 'undefined' && localStorage.getItem('contactDetailsUnlocked') === 'true';
   });
-  const [currentPath, setCurrentPath] = useState(
-    props.path || (typeof window !== 'undefined' ? window.location.pathname : '/')
-  );
+  const [currentPath, setCurrentPath] = useState(() => {
+    if (props.path) {
+      if (isTrailingSlashCityPath(props.path)) {
+        return '/';
+      }
+      return props.path;
+    }
+    if (typeof window !== 'undefined') {
+      if (isTrailingSlashCityPath(window.location.pathname)) {
+        window.history.replaceState(null, '', '/');
+        return '/';
+      }
+      return window.location.pathname;
+    }
+    return '/';
+  });
 
   const handleOpenContactDetailsForm = () => {
     if (hasUnlockedContact) return;
@@ -104,7 +143,13 @@ function App(props) {
   useEffect(() => {
     if (typeof window === 'undefined') return;
     const handlePopState = () => {
-      setCurrentPath(window.location.pathname);
+      const path = window.location.pathname;
+      if (isTrailingSlashCityPath(path)) {
+        window.history.replaceState(null, '', '/');
+        setCurrentPath('/');
+      } else {
+        setCurrentPath(path);
+      }
     };
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
@@ -112,6 +157,13 @@ function App(props) {
 
   // Handle static assets/redirection paths that might land in the SPA router
   useEffect(() => {
+    if (typeof window !== 'undefined' && (isTrailingSlashCityPath(window.location.pathname) || isTrailingSlashCityPath(currentPath))) {
+      window.history.replaceState(null, '', '/');
+      if (currentPath !== '/') {
+        setCurrentPath('/');
+      }
+      return;
+    }
     if (currentPath === '/sitemap' || currentPath === '/sitemap.xml') {
       window.location.replace('/sitemap.xml');
     } else if (
@@ -152,6 +204,9 @@ function App(props) {
 
   // Determine current page type and parameters
   const resolvedRoute = (() => {
+    if (isTrailingSlashCityPath(currentPath)) {
+      return { type: 'home', data: null };
+    }
     const cleanPath = currentPath === '/' ? '/' : currentPath.replace(/\/$/, '');
     
     if (cleanPath === '/' || cleanPath === '') {

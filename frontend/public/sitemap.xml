@@ -2178,7 +2178,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/market-area/gujarat/</loc>
+    <loc>https://steelmanufacturer.in/market-area/gujarat</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -2189,7 +2189,7 @@
   </url>
   <!-- Market Area Hub -->
   <url>
-    <loc>https://steelmanufacturer.in/market-area/</loc>
+    <loc>https://steelmanufacturer.in/market-area</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

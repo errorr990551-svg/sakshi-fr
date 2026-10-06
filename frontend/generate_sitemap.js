@@ -62,6 +62,10 @@ const formatUrl = (url) => {
     clean = `${BASE_URL}${clean.startsWith('/') ? '' : '/'}${clean}`;
   }
   if (clean === BASE_URL || clean === `${BASE_URL}/`) return `${BASE_URL}/`;
+  // Do not add trailing slashes to market-area or city URLs
+  if (clean === `${BASE_URL}/market-area` || clean.startsWith(`${BASE_URL}/market-area/`)) {
+    return clean.replace(/\/+$/, '');
+  }
   return clean.endsWith('/') ? clean : `${clean}/`;
 };
 
@@ -118,7 +122,7 @@ newPages.forEach(slug => {
 });
 
 // Market Area Hub
-addMainUrl(`${BASE_URL}/market-area/`, 'weekly', '0.8', 'Market Area Hub');
+addMainUrl(`${BASE_URL}/market-area`, 'weekly', '0.8', 'Market Area Hub');
 
 // EP Build Spec Pages
 epBuildSpecData.forEach(item => {

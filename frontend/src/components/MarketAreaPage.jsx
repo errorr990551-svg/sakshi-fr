@@ -45,6 +45,11 @@ export default function MarketAreaPage() {
         const el = document.getElementById('karnataka');
         if (el) el.scrollIntoView({ behavior: 'smooth' });
       }, 150);
+    } else if (window.location.pathname.includes('gujarat')) {
+      setTimeout(() => {
+        const el = document.getElementById('gujarat');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 150);
     }
   }, []);
 
@@ -53,9 +58,10 @@ export default function MarketAreaPage() {
       
       {/* 1. Hero Header Section */}
       <section style={{ 
-        background: 'linear-gradient(rgba(11, 12, 16, 0.8), rgba(18, 21, 28, 0.95)), url("/hero_forge.webp")',
+        background: 'linear-gradient(to right, rgba(10, 14, 23, 0.82) 0%, rgba(10, 14, 23, 0.58) 55%, rgba(10, 14, 23, 0.38) 100%), linear-gradient(to bottom, rgba(10, 14, 23, 0.42) 0%, rgba(10, 14, 23, 0.10) 50%, rgba(10, 14, 23, 0.80) 100%), url("/sakshi-forge-banner.webp")',
+        backgroundPosition: 'left top',
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
         padding: '5.5rem 0 3.5rem 0',
         borderBottom: '1px solid var(--border-color)',
         textAlign: 'center'
@@ -244,12 +250,12 @@ export default function MarketAreaPage() {
               </div>
               <div>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginTop: '1rem' }}>
-                  <a href="/electropolished-pipe-manufacturer-pune" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-pune'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#60a5fa'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Pune</a>
-                  <a href="/electropolished-pipe-manufacturer-mumbai" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-mumbai'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#60a5fa'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Mumbai</a>
-                  <a href="/electropolished-pipe-manufacturer-thane" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-thane'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#60a5fa'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Thane</a>
-                  <a href="/electropolished-pipe-manufacturer-tarapur" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-tarapur'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#60a5fa'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Tarapur</a>
-                  <a href="/electropolished-pipe-manufacturer-nashik" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-nashik'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#60a5fa'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Nashik</a>
-                  <a href="/electropolished-pipe-manufacturer-aurangabad" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-aurangabad'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#60a5fa'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Aurangabad</a>
+                  <a href="/market-area/pune" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/pune'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#60a5fa'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Pune</a>
+                  <a href="/market-area/mumbai" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/mumbai'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#60a5fa'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Mumbai</a>
+                  <a href="/market-area/thane" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/thane'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#60a5fa'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Thane</a>
+                  <a href="/market-area/tarapur" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/tarapur'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#60a5fa'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Tarapur</a>
+                  <a href="/market-area/nashik" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/nashik'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#60a5fa'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Nashik</a>
+                  <a href="/market-area/aurangabad" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/aurangabad'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#60a5fa'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Aurangabad</a>
                   <a href="/market-area/amravati" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/amravati'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#60a5fa'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Amravati</a>
                 </div>
                 <div style={{ marginTop: '1rem' }}>
@@ -326,16 +332,16 @@ export default function MarketAreaPage() {
               </div>
               <div>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginTop: '1rem' }}>
-                  <a href="/electropolished-pipe-manufacturer-bengaluru" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-bengaluru'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Bengaluru</a>
-                  <a href="/electropolished-pipe-manufacturer-tumakuru" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-tumakuru'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Tumakuru</a>
-                  <a href="/electropolished-pipe-manufacturer-mysuru" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-mysuru'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Mysuru</a>
-                  <a href="/electropolished-pipe-manufacturer-mangaluru" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-mangaluru'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Mangaluru</a>
-                  <a href="/electropolished-pipe-manufacturer-bidar" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-bidar'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Bidar</a>
-                  <a href="/electropolished-pipe-manufacturer-hubballi-dharwad" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-hubballi-dharwad'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Hubballi</a>
-                  <a href="/electropolished-pipe-manufacturer-belagavi" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-belagavi'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Belagavi</a>
-                  <a href="/electropolished-pipe-manufacturer-hassan" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-hassan'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Hassan</a>
-                  <a href="/electropolished-pipe-manufacturer-raichur" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-raichur'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Raichur</a>
-                  <a href="/electropolished-pipe-manufacturer-mandya" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/electropolished-pipe-manufacturer-mandya'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Mandya</a>
+                  <a href="/market-area/bengaluru" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/bengaluru'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Bengaluru</a>
+                  <a href="/market-area/tumakuru" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/tumakuru'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Tumakuru</a>
+                  <a href="/market-area/mysuru" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/mysuru'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Mysuru</a>
+                  <a href="/market-area/mangaluru" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/mangaluru'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Mangaluru</a>
+                  <a href="/market-area/bidar" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/bidar'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Bidar</a>
+                  <a href="/market-area/hubballi-dharwad" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/hubballi-dharwad'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Hubballi</a>
+                  <a href="/market-area/belagavi" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/belagavi'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Belagavi</a>
+                  <a href="/market-area/hassan" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/hassan'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Hassan</a>
+                  <a href="/market-area/raichur" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/raichur'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Raichur</a>
+                  <a href="/market-area/mandya" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/mandya'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#34d399'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Mandya</a>
                 </div>
                 <div style={{ marginTop: '1rem', display: 'flex', gap: '1.25rem', alignItems: 'center', flexWrap: 'wrap' }}>
                   <a 
@@ -365,6 +371,108 @@ export default function MarketAreaPage() {
                       if (ktElem) {
                         ktElem.scrollIntoView({ behavior: 'smooth' });
                         window.history.pushState(null, '', '#karnataka');
+                      }
+                    }}
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.4rem',
+                      color: 'var(--text-secondary)',
+                      fontSize: '0.82rem',
+                      fontWeight: '600',
+                      textDecoration: 'none'
+                    }}
+                  >
+                    View All Cities &darr;
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Box 4: Gujarat */}
+            <div 
+              onClick={(e) => {
+                if (e.target.closest('a')) return;
+                const gjElem = document.getElementById('gujarat');
+                if (gjElem) {
+                  gjElem.scrollIntoView({ behavior: 'smooth' });
+                  window.history.pushState(null, '', '#gujarat');
+                } else {
+                  handleLinkClick(e, '/market-area/gujarat');
+                }
+              }}
+              style={{
+                background: 'linear-gradient(135deg, rgba(245, 158, 11, 0.08) 0%, var(--bg-dark-800) 100%)',
+                border: '1px solid rgba(245, 158, 11, 0.4)',
+                borderRadius: '12px',
+                padding: '1.75rem',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                cursor: 'pointer',
+                transition: 'all 0.25s ease',
+                position: 'relative'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-3px)';
+                e.currentTarget.style.boxShadow = '0 10px 25px rgba(245, 158, 11, 0.25)';
+                e.currentTarget.style.borderColor = '#fbbf24';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'none';
+                e.currentTarget.style.boxShadow = 'none';
+                e.currentTarget.style.borderColor = 'rgba(245, 158, 11, 0.4)';
+              }}
+            >
+              <div>
+                <span style={{ fontSize: '0.75rem', fontWeight: '800', color: '#fbbf24', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+                  Chemical, Pharma &amp; Dairy Capital
+                </span>
+                <h3 style={{ fontSize: '1.3rem', fontWeight: '800', margin: '0.5rem 0', color: 'var(--text-primary)' }}>Gujarat Industrial Belts</h3>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.5' }}>
+                  Direct manufacturer supply across Ahmedabad, Vadodara, Vapi, Sanand, Ankleshwar, Surat, Dahej PCPIR, Anand, and Mehsana.
+                </p>
+              </div>
+              <div>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginTop: '1rem' }}>
+                  <a href="/market-area/ahmedabad" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/ahmedabad'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#fbbf24'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Ahmedabad</a>
+                  <a href="/market-area/vadodara" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/vadodara'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#fbbf24'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Vadodara</a>
+                  <a href="/market-area/vapi" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/vapi'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#fbbf24'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Vapi</a>
+                  <a href="/market-area/sanand" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/sanand'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#fbbf24'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Sanand</a>
+                  <a href="/market-area/ankleshwar" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/ankleshwar'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#fbbf24'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Ankleshwar</a>
+                  <a href="/market-area/surat" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/surat'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#fbbf24'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Surat</a>
+                  <a href="/market-area/dahej" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/dahej'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#fbbf24'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Dahej</a>
+                  <a href="/market-area/anand" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/anand'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#fbbf24'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Anand</a>
+                  <a href="/market-area/mehsana" onClick={(e) => { e.stopPropagation(); handleLinkClick(e, '/market-area/mehsana'); }} style={{ fontSize: '0.8rem', padding: '0.35rem 0.75rem', background: 'var(--bg-dark-700)', borderRadius: '4px', color: 'var(--text-primary)', textDecoration: 'none', border: '1px solid var(--border-color)', transition: 'all 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = '#fbbf24'} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}>Mehsana</a>
+                </div>
+                <div style={{ marginTop: '1rem', display: 'flex', gap: '1.25rem', alignItems: 'center', flexWrap: 'wrap' }}>
+                  <a 
+                    href="/market-area/gujarat" 
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleLinkClick(e, '/market-area/gujarat');
+                    }}
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.4rem',
+                      color: '#fbbf24',
+                      fontSize: '0.85rem',
+                      fontWeight: '700',
+                      textDecoration: 'none'
+                    }}
+                  >
+                    Explore Gujarat Hub &rarr;
+                  </a>
+                  <a 
+                    href="#gujarat" 
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      e.preventDefault();
+                      const gjElem = document.getElementById('gujarat');
+                      if (gjElem) {
+                        gjElem.scrollIntoView({ behavior: 'smooth' });
+                        window.history.pushState(null, '', '#gujarat');
                       }
                     }}
                     style={{

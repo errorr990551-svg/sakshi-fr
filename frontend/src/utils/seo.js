@@ -163,6 +163,11 @@ export function updateSEO({ type, data }) {
     metaDesc = "Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Karnataka industrial corridors: Bengaluru, Tumakuru, Mysuru, Mangaluru, Bidar, Hubballi-Dharwad, Belagavi, Hassan, Raichur and Mandya.";
     canonicalUrl = `${BASE_URL}/karnataka/`;
     robots = "index, follow";
+  } else if (type === "gujarat-hub") {
+    title = "Electropolished Pipe Manufacturer Across Gujarat | Sakshi Forge";
+    metaDesc = "Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Gujarat industrial belts: Ahmedabad, Vadodara, Vapi, Sanand, Ankleshwar, Surat, Dahej, Anand and Mehsana.";
+    canonicalUrl = `${BASE_URL}/market-area/gujarat/`;
+    robots = "index, follow";
   } else if (type === "clients") {
     title = "Our Clients & Industries | Sakshi Forge";
     metaDesc = "Sakshi Forge supplies ISO 9001:2015 certified flanges, forged fittings, and pipes to oil & gas, pharma, and marine projects worldwide.";

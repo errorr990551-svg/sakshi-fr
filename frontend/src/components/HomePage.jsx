@@ -163,32 +163,36 @@ export default function HomePage({ onEnquireClick }) {
   }, []);
 
   return (
-    <div className="homepage-wrapper">
-      {/* 1. HERO BANNER (Fixed Cut-Off Issue & Unconstrained Height) */}
+    <div className="homepage-wrapper" style={{ paddingTop: '5.5rem' }}>
+      {/* 1. HERO BANNER (Balanced Widescreen Ratio to Keep Top-Left Logo Completely Visible) */}
       <section 
         className="hero-sec" 
         style={{ 
           position: 'relative', 
           minHeight: 'auto', 
           height: 'auto',
-          background: 'linear-gradient(rgba(10, 14, 23, 0.93), rgba(10, 14, 23, 0.96)), url(/hero_bg.webp) center/cover',
+          background: 'linear-gradient(to right, rgba(10, 14, 23, 0.82) 0%, rgba(10, 14, 23, 0.58) 55%, rgba(10, 14, 23, 0.38) 100%), linear-gradient(to bottom, rgba(10, 14, 23, 0.42) 0%, rgba(10, 14, 23, 0.10) 50%, rgba(10, 14, 23, 0.80) 100%), url(/sakshi-forge-banner.webp)',
+          backgroundPosition: 'left top',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
           overflow: 'visible',
-          padding: '6.5rem 1rem 4.5rem'
+          padding: '5rem 1rem 4rem',
+          borderBottom: '1px solid var(--border-color)'
         }}
       >
         <div className="container">
-          <div style={{ maxWidth: '1080px', margin: '0 auto' }}>
+          <div style={{ maxWidth: '1080px' }}>
             <span className="hero-tag" style={{ backgroundColor: 'rgba(255, 193, 7, 0.1)', color: 'var(--primary-yellow)', border: '1px solid rgba(255,193,7,0.3)', padding: '0.45rem 1.15rem', borderRadius: '4px', textTransform: 'uppercase', letterSpacing: '0.08em', fontSize: '0.82rem', fontWeight: '700', display: 'inline-block', marginBottom: '1.25rem' }}>
               ISO 9001:2015 Certified Manufacturer · Taloja MIDC, Mumbai
             </span>
-            <h1 className="hero-title" style={{ fontSize: 'clamp(2.2rem, 4.8vw, 3.5rem)', fontWeight: '800', lineHeight: '1.18', color: '#fff', marginBottom: '1.35rem' }}>
-              Electropolished Pipe Manufacturer in India: Hygienic, Corrosion-Resistant, Fully Certified
+            <h1 className="hero-title" style={{ fontSize: 'clamp(2.2rem, 4.8vw, 3.5rem)', fontWeight: '850', lineHeight: '1.18', color: '#fff', marginBottom: '1.35rem', textShadow: '0 2px 14px rgba(0, 0, 0, 0.9)' }}>
+              Electropolished Pipe Manufacturer in India: <br className="hidden-mobile" />Hygienic, Corrosion-Resistant, Fully Certified
             </h1>
-            <p className="hero-desc" style={{ fontSize: '1.15rem', color: '#cbd5e1', lineHeight: '1.75', marginBottom: '2.25rem', maxWidth: '920px' }}>
+            <p className="hero-desc" style={{ fontSize: '1.15rem', color: '#cbd5e1', lineHeight: '1.75', marginBottom: '2.25rem', maxWidth: '920px', textShadow: '0 1px 8px rgba(0, 0, 0, 0.8)' }}>
               Sakshi Forge manufactures electropolished stainless steel pipes and sanitary fittings in-house at our Taloja, Mumbai facility. Available in welded and seamless SS 304, 316L, and duplex alloys finished to Ra ≤0.4 µm inside and out. Every order ships with 100% PMI testing and an EN 10204 3.1 inspection certificate.
             </p>
 
-            <div style={{ display: 'flex', gap: '1.25rem', flexWrap: 'wrap', marginBottom: '3rem' }}>
+            <div style={{ display: 'flex', gap: '1.25rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
               <button onClick={() => onEnquireClick('Hero: Get a Quote in 30 Minutes')} className="btn btn-primary btn-lg" style={{ padding: '0.95rem 2rem', fontWeight: '700' }}>
                 Get a Quote in 30 Minutes <ArrowRight size={17} />
               </button>
@@ -196,9 +200,15 @@ export default function HomePage({ onEnquireClick }) {
                 Download Catalogue PDF
               </a>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* 2. TRUST HIGHLIGHTS (Styled like 'Why Choose IOT Sense' with modern card grid) */}
-            <div style={{ marginTop: '2.5rem', marginBottom: '2.75rem' }}>
+      {/* 2. TRUST HIGHLIGHTS & STATS (Dedicated High-Contrast Section Directly Below Banner) */}
+      <section style={{ backgroundColor: 'var(--bg-dark-900)', borderBottom: '1px solid var(--border-color)', padding: '3.5rem 1rem 3.5rem' }}>
+        <div className="container">
+          <div style={{ maxWidth: '1080px', margin: '0 auto' }}>
+            <div style={{ marginBottom: '2.75rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.25rem' }}>
                 <span style={{ height: '2px', width: '28px', backgroundColor: 'var(--primary-yellow)', display: 'inline-block' }}></span>
                 <span style={{ color: 'var(--primary-yellow)', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.08em', fontSize: '0.85rem' }}>
@@ -225,7 +235,7 @@ export default function HomePage({ onEnquireClick }) {
             </div>
 
             {/* Stats Band */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1.5rem', paddingTop: '2rem', borderTop: '1px solid rgba(255, 255, 255, 0.12)' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1.5rem', paddingTop: '2.5rem', borderTop: '1px solid rgba(255, 255, 255, 0.12)' }}>
               <div>
                 <div style={{ fontSize: '2.3rem', fontWeight: '800', color: 'var(--primary-yellow)', lineHeight: '1.1' }}>10+ Years</div>
                 <div style={{ fontSize: '0.85rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.06em', marginTop: '0.35rem', fontWeight: '600' }}>Manufacturing Heritage</div>
@@ -317,7 +327,7 @@ export default function HomePage({ onEnquireClick }) {
                 title: "SS 304 / 304L Electropolished Pipes",
                 sub: "Welded and Seamless (½\" to 12\" NB)",
                 desc: "An ultra-smooth, easy-to-clean Ra ≤0.4 µm surface for dairy, food, beverage and hygienic process pipelines.",
-                img: "/electropolished-pipes.jpg",
+                img: "/electropolished-pipes.webp",
                 link: "/electropolished-pipes"
               },
               {
@@ -624,35 +634,35 @@ export default function HomePage({ onEnquireClick }) {
               {
                 title: "🥛 Food, Dairy & Beverage",
                 desc: "Hygienic milk lines, brewery filtration, and automated CIP sanitization lines requiring zero bacterial adhesion.",
-                bg: "/Food, Dairy and Beverage.jpg.jpeg",
+                bg: "/Food, Dairy and Beverage.webp",
                 icon: <Droplet size={26} />,
                 pills: ["SS 304 / 304L", "CIP PIPING", "DAIRY FITTINGS"]
               },
               {
                 title: "⚡ Semiconductor & UPW Systems",
                 desc: "Ultra-pure water (UPW) distribution, high-purity microelectronics gas manifolds, and cleanroom supply lines.",
-                bg: "/semiconductor.jpg.jpeg",
+                bg: "/semiconductor.webp",
                 icon: <Cpu size={26} />,
                 pills: ["UPW LINES", "HIGH PURITY GAS", "RA ≤ 0.2 µM"]
               },
               {
                 title: "🧪 Chemical & Water Purification",
                 desc: "Corrosive chemical dosing, reverse osmosis desalination, and high-purity water treatment skid fabrication.",
-                bg: "/Chemical Processing and Water Purification.jpg.jpeg",
+                bg: "/Chemical Processing and Water Purification.webp",
                 icon: <Layers size={26} />,
                 pills: ["CORROSION RESISTANT", "ACID PROCESS", "DESALINATION"]
               },
               {
                 title: "🔬 Cosmetics & Research Laboratories",
                 desc: "Sanitary cream mixing tanks, high-shear formulation lines, and automated laboratory sample transfer.",
-                bg: "/Cosmetics and Laboratories.jpg.jpeg",
+                bg: "/Cosmetics and Laboratories.webp",
                 icon: <Sparkles size={26} />,
                 pills: ["STERILE TRANSFER", "SAMPLE VALVES", "POLISHED TUBES"]
               },
               {
                 title: "⚓ Marine & Desalination",
                 desc: "Duplex 2205 and Super Duplex piping designed for extreme seawater salinity and coastal chloride exposure.",
-                bg: "/Marine and Desalination.jpg.jpeg",
+                bg: "/Marine and Desalination.webp",
                 icon: <Globe size={26} />,
                 pills: ["DUPLEX 2205", "SUPER DUPLEX", "CHLORIDE RESISTANT"]
               }
@@ -691,32 +701,32 @@ export default function HomePage({ onEnquireClick }) {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.75rem' }}>
             {[
               {
-                icon: "/1st card.png",
+                icon: "/1st card.webp",
                 title: "Everything under one roof",
                 desc: "Forging, machining, electropolishing and testing are all in-house, so there is no outsourcing delay or divided responsibility."
               },
               {
-                icon: "/2nd card.png",
+                icon: "/2nd card.webp",
                 title: "Traceable material",
                 desc: "Certified raw material from approved primary mills, 100% PMI spectro testing, and EN 10204 3.1 certificates tied directly to mill heat numbers."
               },
               {
-                icon: "/3rd card.png",
+                icon: "/3rd card.webp",
                 title: "Tested beyond PMI",
                 desc: "Profilometer Ra roughness scans, hydrostatic leak checks, passivation verification, and ferrite checks reported directly in your QA pack."
               },
               {
-                icon: "/4th card.png",
+                icon: "/4th card.webp",
                 title: "One supplier for pipes, fittings and flanges",
                 desc: "Electropolished pipes sit alongside ASME B16.5 flanges and B16.11 forged fittings: one vendor, one unified document trail, one coordinated dispatch."
               },
               {
-                icon: "/5th card.png",
+                icon: "/5th card.webp",
                 title: "Custom work without the runaround",
                 desc: "Special wall thicknesses, non-standard spool lengths, and specialty corrosion-resistant alloys quoted accurately against your engineering drawing."
               },
               {
-                icon: "/6th card.png",
+                icon: "/6th card.webp",
                 title: "Quotes in minutes",
                 desc: "Our guaranteed 30-minute quote turnaround ensures your plant shutdown, maintenance, or project procurement timeline never waits."
               }
@@ -1007,7 +1017,7 @@ export default function HomePage({ onEnquireClick }) {
             <div>
               <div style={{ borderRadius: '16px', overflow: 'hidden', padding: '1rem', backgroundColor: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.08)' }}>
                 <img 
-                  src="/global section.png" 
+                  src="/global section.webp" 
                   alt="Sakshi Forge Global and Domestic Supply Map" 
                   style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'contain', filter: 'drop-shadow(0 15px 30px rgba(0,0,0,0.5))' }}
                 />

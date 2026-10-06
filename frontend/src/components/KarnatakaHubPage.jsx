@@ -8,7 +8,7 @@ export default function KarnatakaHubPage({ onEnquireClick, onShowContactDetails 
     {
       name: "Bengaluru",
       slug: "bengaluru",
-      path: "/electropolished-pipe-manufacturer-bengaluru",
+      path: "/market-area/bengaluru",
       clusters: "Peenya, Bommasandra–Jigani, Harohalli, Doddaballapur, Whitefield",
       focus: "Pharma, Biotech, WFI Loops, Clean Utility & Skid Assemblies (SS 316L / 304L, ASME BPE)",
       tag: "Biotech & Pharma Capital"
@@ -16,7 +16,7 @@ export default function KarnatakaHubPage({ onEnquireClick, onShowContactDetails 
     {
       name: "Tumakuru",
       slug: "tumakuru",
-      path: "/electropolished-pipe-manufacturer-tumakuru",
+      path: "/market-area/tumakuru",
       clusters: "Vasanthanarasapura (Phases I-III), Antharasanahalli, Kora",
       focus: "Bulk Drug, Pharma, Food & Agro Processing Clean Utility & Purified Water Lines",
       tag: "Corridor & Bulk Drug Node"
@@ -24,7 +24,7 @@ export default function KarnatakaHubPage({ onEnquireClick, onShowContactDetails 
     {
       name: "Mysuru",
       slug: "mysuru",
-      path: "/electropolished-pipe-manufacturer-mysuru",
+      path: "/market-area/mysuru",
       clusters: "Hebbal, Hootagalli, Nanjangud, Kadakola, Thandya",
       focus: "Food, FMCG, Pharma, Distillery Clean-Side & Medical-Device Precision Tubing",
       tag: "Food, FMCG & Medical Hub"
@@ -32,7 +32,7 @@ export default function KarnatakaHubPage({ onEnquireClick, onShowContactDetails 
     {
       name: "Mangaluru",
       slug: "mangaluru",
-      path: "/electropolished-pipe-manufacturer-mangaluru",
+      path: "/market-area/mangaluru",
       clusters: "Baikampady, New Mangalore Port, Yeyyadi, Katipalla",
       focus: "Duplex 2205 & SS 316L for Coastal Salt Air, Seafood Brine, Port & Refinery Utility",
       tag: "Deepwater Port & Coastal Hub"
@@ -40,7 +40,7 @@ export default function KarnatakaHubPage({ onEnquireClick, onShowContactDetails 
     {
       name: "Bidar",
       slug: "bidar",
-      path: "/electropolished-pipe-manufacturer-bidar",
+      path: "/market-area/bidar",
       clusters: "Kolhar Industrial Area, Humnabad KIADB, Hallikhed",
       focus: "API, Bulk Drug & Intermediates Clean Utilities, PW/WFI Loops & QC Laboratory Lines",
       tag: "Pharma & API Cluster"
@@ -48,7 +48,7 @@ export default function KarnatakaHubPage({ onEnquireClick, onShowContactDetails 
     {
       name: "Hubballi–Dharwad",
       slug: "hubballi-dharwad",
-      path: "/electropolished-pipe-manufacturer-hubballi-dharwad",
+      path: "/market-area/hubballi-dharwad",
       clusters: "Gokul Road, Tarihal, Belur Industrial Area, Rayapur",
       focus: "Wet Food, Dairy, Automotive Clean Utilities & Valve/Skid Fabricator Custom Spools",
       tag: "Twin-City Engineering & Food"
@@ -56,7 +56,7 @@ export default function KarnatakaHubPage({ onEnquireClick, onShowContactDetails 
     {
       name: "Belagavi",
       slug: "belagavi",
-      path: "/electropolished-pipe-manufacturer-belagavi",
+      path: "/market-area/belagavi",
       clusters: "Udyambag Foundry Cluster, Machhe, Autonagar, Aerospace SEZ",
       focus: "Engineering Fabricator Spools, Sugar & Ethanol Clean-Side Water & Condensate Lines",
       tag: "Foundry & Machining Corridor"
@@ -64,7 +64,7 @@ export default function KarnatakaHubPage({ onEnquireClick, onShowContactDetails 
     {
       name: "Hassan",
       slug: "hassan",
-      path: "/electropolished-pipe-manufacturer-hassan",
+      path: "/market-area/hassan",
       clusters: "KIADB Pharmaceutical SEZ, Hassan Food Processing SEZ, B.M. Road",
       focus: "Formulation WFI Loops, Export Food Processing Lines & SEZ Direct Customs Documentation",
       tag: "Pharma & Food SEZ Zone"
@@ -72,7 +72,7 @@ export default function KarnatakaHubPage({ onEnquireClick, onShowContactDetails 
     {
       name: "Raichur & Yadgir",
       slug: "raichur",
-      path: "/electropolished-pipe-manufacturer-raichur",
+      path: "/market-area/raichur",
       clusters: "Raichur Growth Centre, Deosugur, Kadechur Industrial Area",
       focus: "Pharma, Nutraceutical, Dairy & Sugar Clean Utilities with MTC EN 10204 3.1 Traceability",
       tag: "Growth Centre & Bulk Drug"
@@ -80,7 +80,7 @@ export default function KarnatakaHubPage({ onEnquireClick, onShowContactDetails 
     {
       name: "Mandya",
       slug: "mandya",
-      path: "/electropolished-pipe-manufacturer-mandya",
+      path: "/market-area/mandya",
       clusters: "Tubinakere, Maddur (Somanahalli), Pandavapura, Srirangapatna",
       focus: "High-Purity Dairy Milk Lines (Ra ≤0.4 µm), Ethanol & Sugar Clean Water Transfer",
       tag: "Sugar, Ethanol & Dairy Hub"
@@ -100,7 +100,10 @@ export default function KarnatakaHubPage({ onEnquireClick, onShowContactDetails 
     <div style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingTop: '5.5rem', paddingBottom: '3rem' }}>
       {/* Hero */}
       <section style={{ 
-        background: 'linear-gradient(rgba(11, 12, 16, 0.9), rgba(18, 21, 28, 0.98)), url("/hero_forge.webp") center/cover',
+        background: 'linear-gradient(to right, rgba(10, 14, 23, 0.82) 0%, rgba(10, 14, 23, 0.58) 55%, rgba(10, 14, 23, 0.38) 100%), linear-gradient(to bottom, rgba(10, 14, 23, 0.42) 0%, rgba(10, 14, 23, 0.10) 50%, rgba(10, 14, 23, 0.80) 100%), url("/sakshi-forge-banner.webp")',
+        backgroundPosition: 'left top',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
         padding: '5rem 0 3.5rem',
         borderBottom: '1px solid var(--border-color)'
       }}>

@@ -393,15 +393,15 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
                 <div style={{ padding: '0.75rem', backgroundColor: 'var(--bg-dark-800)', fontSize: '0.82rem', color: '#e2e8f0' }}>CNC automated machining centers & facing lathes</div>
               </div>
               <div style={{ borderRadius: '8px', overflow: 'hidden', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-dark-900)' }}>
-                <img src="/WhatsApp Image 2026-10-03 at 9.37.31 PM.jpeg" alt="SS 316L seamless end caps 50NB SCH40 with heat number SFE50 stamped at Sakshi Forge" style={{ width: '100%', height: '220px', objectFit: 'cover', display: 'block' }} />
+                <img src="/WhatsApp Image 2026-10-03 at 9.37.31 PM.webp" alt="SS 316L seamless end caps 50NB SCH40 with heat number SFE50 stamped at Sakshi Forge" style={{ width: '100%', height: '220px', objectFit: 'cover', display: 'block' }} />
                 <div style={{ padding: '0.75rem', backgroundColor: 'var(--bg-dark-800)', fontSize: '0.82rem', color: '#e2e8f0' }}>SS 316L 50NB SCH40 seamless end caps with Heat No: SFE50 mill stamp</div>
               </div>
               <div style={{ borderRadius: '8px', overflow: 'hidden', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-dark-900)' }}>
-                <img src="/WhatsApp Image 2026-10-03 at 9.37.32 PM.jpeg" alt="Internal electropolished surface and bevelled edge inspection of seamless pipe end caps" style={{ width: '100%', height: '220px', objectFit: 'cover', display: 'block' }} />
+                <img src="/WhatsApp Image 2026-10-03 at 9.37.32 PM.webp" alt="Internal electropolished surface and bevelled edge inspection of seamless pipe end caps" style={{ width: '100%', height: '220px', objectFit: 'cover', display: 'block' }} />
                 <div style={{ padding: '0.75rem', backgroundColor: 'var(--bg-dark-800)', fontSize: '0.82rem', color: '#e2e8f0' }}>Internal bore & bevelled edge inspection of high-purity end caps</div>
               </div>
               <div style={{ borderRadius: '8px', overflow: 'hidden', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-dark-900)' }}>
-                <img src="/WhatsApp Image 2026-10-03 at 9.43.30 PM.jpeg" alt="Sakshi Forge laser branded 50NB SCH40 316L seamless end cap for process lines" style={{ width: '100%', height: '220px', objectFit: 'cover', display: 'block' }} />
+                <img src="/WhatsApp Image 2026-10-03 at 9.43.30 PM.webp" alt="Sakshi Forge laser branded 50NB SCH40 316L seamless end cap for process lines" style={{ width: '100%', height: '220px', objectFit: 'cover', display: 'block' }} />
                 <div style={{ padding: '0.75rem', backgroundColor: 'var(--bg-dark-800)', fontSize: '0.82rem', color: '#e2e8f0' }}>Sakshi Forge branded 50NB SCH40 316L seamless end cap</div>
               </div>
               <div style={{ borderRadius: '8px', overflow: 'hidden', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-dark-900)' }}>

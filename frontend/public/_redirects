@@ -1,1 +1,3 @@
-/*    /index.html   200
+/electropolished-pipe-manufacturer-*    /market-area/:splat    301!
+/electropolished-pipe-supplier-*        /market-area/:splat    301!
+/*                                      /index.html            200

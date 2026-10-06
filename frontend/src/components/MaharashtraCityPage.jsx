@@ -171,6 +171,14 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
               "text": f.a
             }
           }))
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://steelmanufacturer.in/" },
+            { "@type": "ListItem", "position": 2, "name": "Market Areas", "item": "https://steelmanufacturer.in/market-area" },
+            { "@type": "ListItem", "position": 3, "name": cityData.city, "item": `https://steelmanufacturer.in${cityData.pageUrl}` }
+          ]
         }
       ]
     };
@@ -229,7 +237,10 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
       
       {/* 1. HERO SECTION */}
       <section style={{ 
-        background: 'linear-gradient(rgba(10, 14, 23, 0.92), rgba(10, 14, 23, 0.96)), url("/hero_forge.webp") center/cover',
+        background: 'linear-gradient(to right, rgba(10, 14, 23, 0.82) 0%, rgba(10, 14, 23, 0.58) 55%, rgba(10, 14, 23, 0.38) 100%), linear-gradient(to bottom, rgba(10, 14, 23, 0.42) 0%, rgba(10, 14, 23, 0.10) 50%, rgba(10, 14, 23, 0.80) 100%), url("/sakshi-forge-banner.webp")',
+        backgroundPosition: 'left top',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
         padding: '5rem 0 3.5rem 0',
         borderBottom: '1px solid var(--border-color)',
         position: 'relative'
@@ -239,11 +250,11 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.82rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
             <a href="/" onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>Home</a>
             <span>›</span>
-            <a href="/electropolished-pipes" onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>Electropolished Pipes</a>
+            <a href="/market-area" onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>Market Areas</a>
             <span>›</span>
             <a 
-              href={cityData.state === 'Karnataka' ? '/karnataka' : '/market-area#maharashtra'} 
-              onClick={(e) => handleLinkClick(e, cityData.state === 'Karnataka' ? '/karnataka' : '/market-area#maharashtra')} 
+              href={cityData.state === 'Karnataka' ? '/karnataka' : cityData.state === 'Gujarat' ? '/market-area/gujarat' : '/market-area#maharashtra'} 
+              onClick={(e) => handleLinkClick(e, cityData.state === 'Karnataka' ? '/karnataka' : cityData.state === 'Gujarat' ? '/market-area/gujarat' : '/market-area#maharashtra')} 
               style={{ color: 'inherit', textDecoration: 'none' }}
             >
               {cityData.state || 'Maharashtra'}
@@ -1131,7 +1142,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
             {/* Also supplying nearby */}
             <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1.5rem' }}>
               <div style={{ color: '#cbd5e1', fontWeight: '700', fontSize: '0.85rem', marginBottom: '0.5rem' }}>
-                Also Supplying Across Maharashtra Industrial Hubs:
+                Also Supplying Across {cityData.state || 'Maharashtra'} Industrial Hubs:
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', fontSize: '0.85rem' }}>
                 {nearbyCities.map((nc, idx) => (

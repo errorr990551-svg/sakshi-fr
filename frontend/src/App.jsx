@@ -9,9 +9,11 @@ import AboutPage from './components/AboutPage';
 import HomePage from './components/HomePage';
 import TamilNaduHubPage from './components/TamilNaduHubPage';
 import KarnatakaHubPage from './components/KarnatakaHubPage';
+import GujaratHubPage from './components/GujaratHubPage';
 import { customCityData } from './data/customCityData';
 import { maharashtraCityData } from './data/maharashtraCityData';
 import { karnatakaCityData } from './data/karnatakaCityData';
+import { gujaratCityData } from './data/gujaratCityData';
 import MaharashtraCityPage from './components/MaharashtraCityPage';
 import Footer from './components/Footer';
 import ProductModal from './components/ProductModal';
@@ -119,6 +121,16 @@ function App(props) {
       currentPath === '/robts.txt'
     ) {
       window.location.replace('/robots.txt');
+    } else if (currentPath.includes('electropolished-pipe-manufacturer-')) {
+      const clean = currentPath.replace(/\/$/, '');
+      const idx = clean.indexOf('electropolished-pipe-manufacturer-');
+      const cityKey = clean.substring(idx + 'electropolished-pipe-manufacturer-'.length);
+      window.location.replace(`/market-area/${cityKey}`);
+    } else if (currentPath.includes('electropolished-pipe-supplier-')) {
+      const clean = currentPath.replace(/\/$/, '');
+      const idx = clean.indexOf('electropolished-pipe-supplier-');
+      const cityKey = clean.substring(idx + 'electropolished-pipe-supplier-'.length);
+      window.location.replace(`/market-area/${cityKey}`);
     }
   }, [currentPath]);
 
@@ -246,23 +258,31 @@ function App(props) {
       return { type: 'karnataka-hub', data: null };
     }
 
+    if (cleanPath === '/gujarat' || cleanPath === '/market-area/gujarat') {
+      return { type: 'gujarat-hub', data: null };
+    }
+
     if (cleanPath === '/maharashtra' || cleanPath === '/market-area/maharashtra') {
       return { type: 'market-area', data: null };
     }
 
-    // Check if matching manufacturer page for Maharashtra or Karnataka
-    const epPrefix = '/electropolished-pipe-manufacturer-';
-    if (cleanPath.startsWith(epPrefix)) {
-      const cityKey = cleanPath.replace(epPrefix, '');
-      if (maharashtraCityData[cityKey]) {
-        return { type: 'maharashtra-city', data: maharashtraCityData[cityKey] };
+    // Redirect legacy electropolished-pipe-manufacturer-* and supplier-* to /market-area/*
+    if (cleanPath.startsWith('/electropolished-pipe-manufacturer-')) {
+      const cityKey = cleanPath.replace('/electropolished-pipe-manufacturer-', '');
+      if (typeof window !== 'undefined') {
+        window.location.replace(`/market-area/${cityKey}`);
       }
-      if (karnatakaCityData[cityKey]) {
-        return { type: 'maharashtra-city', data: karnatakaCityData[cityKey] };
+      return { type: '404', data: null };
+    }
+    if (cleanPath.startsWith('/electropolished-pipe-supplier-')) {
+      const cityKey = cleanPath.replace('/electropolished-pipe-supplier-', '');
+      if (typeof window !== 'undefined') {
+        window.location.replace(`/market-area/${cityKey}`);
       }
+      return { type: '404', data: null };
     }
 
-    // Check if market-area path is for Maharashtra or Karnataka rich cities
+    // Check if market-area path is for Maharashtra, Karnataka, or Gujarat rich cities
     if (cleanPath.startsWith('/market-area/')) {
       const marketCityKey = cleanPath.replace('/market-area/', '');
       if (maharashtraCityData[marketCityKey]) {
@@ -271,11 +291,17 @@ function App(props) {
       if (karnatakaCityData[marketCityKey]) {
         return { type: 'maharashtra-city', data: karnatakaCityData[marketCityKey] };
       }
+      if (gujaratCityData[marketCityKey]) {
+        return { type: 'maharashtra-city', data: gujaratCityData[marketCityKey] };
+      }
     }
 
-    // Check if direct slug matches Karnataka rich cities
+    // Check if direct slug matches Karnataka or Gujarat rich cities
     if (karnatakaCityData[slug]) {
       return { type: 'maharashtra-city', data: karnatakaCityData[slug] };
+    }
+    if (gujaratCityData[slug]) {
+      return { type: 'maharashtra-city', data: gujaratCityData[slug] };
     }
 
     // Check custom rich city data (Tamil Nadu, Canberra, Abu Dhabi, etc.)
@@ -345,6 +371,14 @@ function App(props) {
 
       {resolvedRoute.type === 'karnataka-hub' && (
         <KarnatakaHubPage 
+          onEnquireClick={handleOpenEnquiry} 
+          hasUnlockedContact={hasUnlockedContact}
+          onShowContactDetails={handleOpenContactDetailsForm}
+        />
+      )}
+
+      {resolvedRoute.type === 'gujarat-hub' && (
+        <GujaratHubPage 
           onEnquireClick={handleOpenEnquiry} 
           hasUnlockedContact={hasUnlockedContact}
           onShowContactDetails={handleOpenContactDetailsForm}

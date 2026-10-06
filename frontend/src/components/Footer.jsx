@@ -104,13 +104,14 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
           <div className="footer-col">
             <h4>Market Area</h4>
             <ul className="footer-links">
-              <li><a href="/market-area" onClick={(e) => handleLinkClick(e, '/market-area')} style={{ color: 'var(--primary-yellow)', fontWeight: '700' }}>All 50+ Cities Directory →</a></li>
-              <li><a href="/tamil-nadu" onClick={(e) => handleLinkClick(e, '/tamil-nadu')}>Tamil Nadu Industrial Hub (10 Cities)</a></li>
-              <li><a href="/electropolished-pipe-manufacturer-mumbai" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-mumbai')}>Mumbai Works & Taloja MIDC</a></li>
-              <li><a href="/electropolished-pipe-manufacturer-pune" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-pune')}>Pune & Chakan MIDC</a></li>
-              <li><a href="/electropolished-pipe-manufacturer-thane" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-thane')}>Thane-Belapur Chemical Belt</a></li>
-              <li><a href="/electropolished-pipe-manufacturer-tarapur" onClick={(e) => handleLinkClick(e, '/electropolished-pipe-manufacturer-tarapur')}>Tarapur Chemical Zone</a></li>
-              <li><a href="/market-area" onClick={(e) => handleLinkClick(e, '/market-area')}>Pan-India & Global Supply Network</a></li>
+              <li><a href="/market-area" onClick={(e) => handleLinkClick(e, '/market-area')} style={{ color: 'var(--primary-yellow)', fontWeight: '700' }}>All Industrial Hubs Directory →</a></li>
+              <li><a href="/market-area/gujarat" onClick={(e) => handleLinkClick(e, '/market-area/gujarat')}>Gujarat Belts (Ahmedabad, Vadodara, Vapi...)</a></li>
+              <li><a href="/karnataka" onClick={(e) => handleLinkClick(e, '/karnataka')}>Karnataka Hub (Bengaluru, Belagavi, Mysuru...)</a></li>
+              <li><a href="/tamil-nadu" onClick={(e) => handleLinkClick(e, '/tamil-nadu')}>Tamil Nadu Hub (Chennai, Coimbatore...)</a></li>
+              <li><a href="/market-area/mumbai" onClick={(e) => handleLinkClick(e, '/market-area/mumbai')}>Mumbai Works & Taloja MIDC</a></li>
+              <li><a href="/market-area/pune" onClick={(e) => handleLinkClick(e, '/market-area/pune')}>Pune & Chakan MIDC</a></li>
+              <li><a href="/market-area/thane" onClick={(e) => handleLinkClick(e, '/market-area/thane')}>Thane-Belapur Chemical Belt</a></li>
+              <li><a href="/market-area/tarapur" onClick={(e) => handleLinkClick(e, '/market-area/tarapur')}>Tarapur Chemical Zone</a></li>
             </ul>
           </div>
 

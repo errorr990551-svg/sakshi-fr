@@ -303,7 +303,10 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
       <div className="city-page-wrapper" style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '2rem', paddingTop: '5.5rem' }}>
         {/* 1. HERO */}
         <section style={{ 
-          background: 'linear-gradient(rgba(11, 12, 16, 0.9), rgba(18, 21, 28, 0.98)), url("/hero_forge.webp") center/cover',
+          background: 'linear-gradient(to right, rgba(10, 14, 23, 0.82) 0%, rgba(10, 14, 23, 0.58) 55%, rgba(10, 14, 23, 0.38) 100%), linear-gradient(to bottom, rgba(10, 14, 23, 0.42) 0%, rgba(10, 14, 23, 0.10) 50%, rgba(10, 14, 23, 0.80) 100%), url("/sakshi-forge-banner.webp")',
+          backgroundPosition: 'left top',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
           padding: '6rem 0 4.5rem 0',
           borderBottom: '1px solid var(--border-color)',
           position: 'relative'
@@ -738,9 +741,10 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
       
       {/* 1. Hero / Header & Intro */}
       <section style={{ 
-        background: 'linear-gradient(rgba(11, 12, 16, 0.88), rgba(18, 21, 28, 0.99)), url("/hero_forge.webp")',
+        background: 'linear-gradient(to right, rgba(10, 14, 23, 0.82) 0%, rgba(10, 14, 23, 0.58) 55%, rgba(10, 14, 23, 0.38) 100%), linear-gradient(to bottom, rgba(10, 14, 23, 0.42) 0%, rgba(10, 14, 23, 0.10) 50%, rgba(10, 14, 23, 0.80) 100%), url("/sakshi-forge-banner.webp")',
+        backgroundPosition: 'left top',
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
         padding: '6.5rem 0 5rem 0',
         borderBottom: '1px solid var(--border-color)',
         position: 'relative'
@@ -895,7 +899,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
               <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <figure className="ep-photo" style={{ margin: 0, maxWidth: '440px', width: '100%' }}>
                   <img
-                    src="/electropolished-pipes.jpg"
+                    src="/electropolished-pipes.webp"
                     alt="Electropolished pipes"
                     width="500"
                     height="500"

@@ -44,38 +44,9 @@ const newPages = [
   'flange-supplier-uae',
   'flange-supplier-saudi-arabia',
   'tamil-nadu',
-  // Maharashtra Manufacturer Pages
-  'electropolished-pipe-manufacturer-pune',
-  'electropolished-pipe-manufacturer-mumbai',
-  'electropolished-pipe-manufacturer-thane',
-  'electropolished-pipe-manufacturer-tarapur',
-  'electropolished-pipe-manufacturer-nashik',
-  'electropolished-pipe-manufacturer-aurangabad',
-  'electropolished-pipe-manufacturer-amravati',
-  // Karnataka Hub & Manufacturer Pages
   'karnataka',
-  'electropolished-pipe-manufacturer-bengaluru',
-  'electropolished-pipe-manufacturer-tumakuru',
-  'electropolished-pipe-manufacturer-mysuru',
-  'electropolished-pipe-manufacturer-mangaluru',
-  'electropolished-pipe-manufacturer-bidar',
-  'electropolished-pipe-manufacturer-hubballi-dharwad',
-  'electropolished-pipe-manufacturer-belagavi',
-  'electropolished-pipe-manufacturer-hassan',
-  'electropolished-pipe-manufacturer-raichur',
-  'electropolished-pipe-manufacturer-mandya',
-  // Tamil Nadu Supplier Pages
-  'electropolished-pipe-supplier-chennai',
-  'electropolished-pipe-supplier-coimbatore',
-  'electropolished-pipe-supplier-hosur',
-  'electropolished-pipe-supplier-cuddalore',
-  'electropolished-pipe-supplier-trichy',
-  'electropolished-pipe-supplier-tiruchirappalli',
-  'electropolished-pipe-supplier-salem',
-  'electropolished-pipe-supplier-madurai',
-  'electropolished-pipe-supplier-thoothukudi',
-  'electropolished-pipe-supplier-erode',
-  'electropolished-pipe-supplier-vellore'
+  'market-area/gujarat',
+  'gujarat'
 ];
 
 // Helper to format priority

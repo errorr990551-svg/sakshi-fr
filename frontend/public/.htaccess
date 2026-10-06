@@ -17,6 +17,10 @@ RewriteRule ^ /%1 [L,R=301]
 # 301 redirect /home/ to /
 RewriteRule ^home/?$ https://steelmanufacturer.in/ [L,R=301]
 
+# 301 redirect legacy electropolished-pipe-manufacturer-* and supplier-* to /market-area/*
+RewriteRule ^electropolished-pipe-manufacturer-(.*)/?$ https://steelmanufacturer.in/market-area/$1/ [L,R=301]
+RewriteRule ^electropolished-pipe-supplier-(.*)/?$ https://steelmanufacturer.in/market-area/$1/ [L,R=301]
+
 # Add trailing slash to non-file URLs (excluding API routes)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} !/$

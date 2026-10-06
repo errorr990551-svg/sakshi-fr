@@ -5,7 +5,7 @@ export const galleryItems = [
     title: 'SS 316L Seamless End Caps 50NB SCH40 (Heat No: SFE50)',
     category: 'Product Inventory',
     filterTag: 'Products & Stock',
-    src: '/WhatsApp Image 2026-10-03 at 9.37.31 PM.jpeg',
+    src: '/WhatsApp Image 2026-10-03 at 9.37.31 PM.webp',
     description: 'Precision forged and electropolished SS 316L seamless pipe end caps with mill heat number SFE50 stamp and SF brand identity.'
   },
   {
@@ -14,7 +14,7 @@ export const galleryItems = [
     title: '50NB SCH40 Seamless End Caps - Bevelled Weld Ends & Internal Finish',
     category: 'Product Inventory',
     filterTag: 'Products & Stock',
-    src: '/WhatsApp Image 2026-10-03 at 9.37.32 PM.jpeg',
+    src: '/WhatsApp Image 2026-10-03 at 9.37.32 PM.webp',
     description: 'Internal and external surface inspection of 50NB Schedule 40 seamless end caps showcasing clean bevelled edges and mirror finish.'
   },
   {
@@ -23,7 +23,7 @@ export const galleryItems = [
     title: 'Sakshi Forge Certified Seamless End Cap with 100% Traceability',
     category: 'Quality Assurance',
     filterTag: 'Quality Assurance',
-    src: '/WhatsApp Image 2026-10-03 at 9.43.30 PM.jpeg',
+    src: '/WhatsApp Image 2026-10-03 at 9.43.30 PM.webp',
     description: 'Sakshi Forge branded 50NB SCH40 seamless pipe end cap grade SS 316L with EN 10204 3.1 heat number SFE50 laser marking.'
   },
   {

@@ -81,16 +81,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/market-area/belagavi/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steelmanufacturer.in/market-area/bengaluru/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://steelmanufacturer.in/market-area/bharuch/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -266,11 +256,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/market-area/hubballi-dharwad/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://steelmanufacturer.in/market-area/hyderabad/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -386,11 +371,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/market-area/mangaluru/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://steelmanufacturer.in/market-area/medak-patancheru/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -422,11 +402,6 @@
   </url>
   <url>
     <loc>https://steelmanufacturer.in/market-area/muzaffarpur/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steelmanufacturer.in/market-area/mysuru/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -647,11 +622,6 @@
   </url>
   <url>
     <loc>https://steelmanufacturer.in/market-area/tiruppur/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steelmanufacturer.in/market-area/tumakuru/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -2431,52 +2401,52 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/electropolished-pipe-manufacturer-bengaluru/</loc>
+    <loc>https://steelmanufacturer.in/market-area/bengaluru/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/electropolished-pipe-manufacturer-tumakuru/</loc>
+    <loc>https://steelmanufacturer.in/market-area/tumakuru/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/electropolished-pipe-manufacturer-mysuru/</loc>
+    <loc>https://steelmanufacturer.in/market-area/mysuru/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/electropolished-pipe-manufacturer-mangaluru/</loc>
+    <loc>https://steelmanufacturer.in/market-area/mangaluru/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/electropolished-pipe-manufacturer-bidar/</loc>
+    <loc>https://steelmanufacturer.in/market-area/bidar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/electropolished-pipe-manufacturer-hubballi-dharwad/</loc>
+    <loc>https://steelmanufacturer.in/market-area/hubballi-dharwad/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/electropolished-pipe-manufacturer-belagavi/</loc>
+    <loc>https://steelmanufacturer.in/market-area/belagavi/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/electropolished-pipe-manufacturer-hassan/</loc>
+    <loc>https://steelmanufacturer.in/market-area/hassan/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/electropolished-pipe-manufacturer-raichur/</loc>
+    <loc>https://steelmanufacturer.in/market-area/raichur/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/electropolished-pipe-manufacturer-mandya/</loc>
+    <loc>https://steelmanufacturer.in/market-area/mandya/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

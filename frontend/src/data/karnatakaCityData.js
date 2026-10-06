@@ -7,7 +7,7 @@ export const karnatakaCityData = {
     city: 'Bengaluru',
     state: 'Karnataka',
     country: 'India',
-    pageUrl: '/electropolished-pipe-manufacturer-bengaluru',
+    pageUrl: '/market-area/bengaluru',
     pageTitle: 'Electropolished Pipe Manufacturer Bengaluru | Sakshi Forge',
     metaDescription: 'Electropolished 316L & 304L SS pipes for Bengaluru Peenya, Bommasandra and Harohalli pharma plants. ASTM A270, MTC EN 10204 3.1, PMI tested.',
     h1: 'Electropolished Stainless Steel Pipe Manufacturer in Bengaluru: 316L and 304L EP Tubes for Peenya, Bommasandra–Jigani and Harohalli Plants',
@@ -45,8 +45,8 @@ export const karnatakaCityData = {
     },
     areas: ['Bengaluru (Bangalore)', 'Peenya', 'Rajajinagar', 'Bommasandra', 'Jigani', 'Harohalli', 'Bidadi', 'Doddaballapur', 'Dobbaspet', 'Nelamangala', 'Electronic City', 'Attibele', 'Whitefield', 'Hoskote', 'Malur', 'Devanahalli'],
     nearbyCities: [
-      { name: 'Tumakuru', path: '/electropolished-pipe-manufacturer-tumakuru' },
-      { name: 'Mysuru', path: '/electropolished-pipe-manufacturer-mysuru' },
+      { name: 'Tumakuru', path: '/market-area/tumakuru' },
+      { name: 'Mysuru', path: '/market-area/mysuru' },
       { name: 'Hosur (Tamil Nadu)', path: '/market-area/hosur' }
     ],
     faqs: [
@@ -74,7 +74,7 @@ export const karnatakaCityData = {
     city: 'Tumakuru',
     state: 'Karnataka',
     country: 'India',
-    pageUrl: '/electropolished-pipe-manufacturer-tumakuru',
+    pageUrl: '/market-area/tumakuru',
     pageTitle: 'Electropolished Pipe Manufacturer Tumakuru | Sakshi Forge',
     metaDescription: 'Electropolished 316L & 304L SS pipes for Tumakuru Vasanthanarasapura pharma and food plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.',
     h1: 'Electropolished Stainless Steel Pipe Manufacturer in Tumakuru: 316L and 304L EP Tubes for Vasanthanarasapura and Tumakuru Industrial Plants',
@@ -108,9 +108,9 @@ export const karnatakaCityData = {
     },
     areas: ['Tumakuru (Tumkur)', 'Vasanthanarasapura', 'Antharasanahalli', 'Kora', 'Gubbi', 'Tiptur', 'Sira', 'Madhugiri', 'Kunigal', 'Koratagere'],
     nearbyCities: [
-      { name: 'Bengaluru', path: '/electropolished-pipe-manufacturer-bengaluru' },
-      { name: 'Hassan', path: '/electropolished-pipe-manufacturer-hassan' },
-      { name: 'Mysuru', path: '/electropolished-pipe-manufacturer-mysuru' }
+      { name: 'Bengaluru', path: '/market-area/bengaluru' },
+      { name: 'Hassan', path: '/market-area/hassan' },
+      { name: 'Mysuru', path: '/market-area/mysuru' }
     ],
     faqs: [
       {
@@ -137,7 +137,7 @@ export const karnatakaCityData = {
     city: 'Mysuru',
     state: 'Karnataka',
     country: 'India',
-    pageUrl: '/electropolished-pipe-manufacturer-mysuru',
+    pageUrl: '/market-area/mysuru',
     pageTitle: 'Electropolished Pipe Manufacturer Mysuru | Sakshi Forge',
     metaDescription: 'Electropolished 316L & 304L SS pipes for Mysuru Hebbal and Nanjangud food, pharma and medical-device plants. ASTM A270, MTC EN 10204 3.1, PMI tested.',
     h1: 'Electropolished Stainless Steel Pipe Manufacturer in Mysuru: 316L and 304L EP Tubes for Hebbal, Nanjangud and Kadakola Plants',
@@ -173,10 +173,10 @@ export const karnatakaCityData = {
     },
     areas: ['Mysuru (Mysore)', 'Hebbal', 'Hootagalli', 'Belawadi', 'Belagola', 'Koorgalli', 'Metagalli', 'Kadakola', 'Thandya', 'Immavu', 'Nanjangud', 'Srirangapatna', 'Mandya (nearby)'],
     nearbyCities: [
-      { name: 'Bengaluru', path: '/electropolished-pipe-manufacturer-bengaluru' },
-      { name: 'Mandya', path: '/electropolished-pipe-manufacturer-mandya' },
-      { name: 'Hassan', path: '/electropolished-pipe-manufacturer-hassan' },
-      { name: 'Tumakuru', path: '/electropolished-pipe-manufacturer-tumakuru' }
+      { name: 'Bengaluru', path: '/market-area/bengaluru' },
+      { name: 'Mandya', path: '/market-area/mandya' },
+      { name: 'Hassan', path: '/market-area/hassan' },
+      { name: 'Tumakuru', path: '/market-area/tumakuru' }
     ],
     faqs: [
       {
@@ -203,7 +203,7 @@ export const karnatakaCityData = {
     city: 'Mangaluru',
     state: 'Karnataka',
     country: 'India',
-    pageUrl: '/electropolished-pipe-manufacturer-mangaluru',
+    pageUrl: '/market-area/mangaluru',
     pageTitle: 'Electropolished Pipe Manufacturer Mangaluru | Sakshi Forge',
     metaDescription: 'Electropolished 316L & duplex SS pipes for Mangaluru coastal, pharma and food plants. ASTM A270/A790, MTC EN 10204 3.1, PMI tested. Quote in 30 min.',
     h1: 'Electropolished Stainless Steel Pipe Manufacturer in Mangaluru: 316L and Duplex 2205 EP Tubes for Baikampady, Yeyyadi and New Mangalore Port Plants',
@@ -240,9 +240,9 @@ export const karnatakaCityData = {
     },
     areas: ['Mangaluru (Mangalore)', 'Baikampady', 'New Mangalore Port', 'Yeyyadi', 'Panambur', 'Surathkal', 'Katipalla', 'Bajpe', 'Mulki', 'Ganjimutt', 'Balkunje', 'Udupi (nearby)', 'Puttur (nearby)'],
     nearbyCities: [
-      { name: 'Mysuru', path: '/electropolished-pipe-manufacturer-mysuru' },
-      { name: 'Hassan', path: '/electropolished-pipe-manufacturer-hassan' },
-      { name: 'Bengaluru', path: '/electropolished-pipe-manufacturer-bengaluru' }
+      { name: 'Mysuru', path: '/market-area/mysuru' },
+      { name: 'Hassan', path: '/market-area/hassan' },
+      { name: 'Bengaluru', path: '/market-area/bengaluru' }
     ],
     faqs: [
       {
@@ -269,7 +269,7 @@ export const karnatakaCityData = {
     city: 'Bidar',
     state: 'Karnataka',
     country: 'India',
-    pageUrl: '/electropolished-pipe-manufacturer-bidar',
+    pageUrl: '/market-area/bidar',
     pageTitle: 'Electropolished Pipe Manufacturer in Bidar | Sakshi Forge',
     metaDescription: 'Electropolished 316L & 304L SS pipes for Bidar Kolhar pharma and API plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.',
     h1: 'Electropolished Stainless Steel Pipe Manufacturer in Bidar: 316L EP Tubes for Kolhar, Humnabad and Bidar Pharma and API Plants',
@@ -303,8 +303,8 @@ export const karnatakaCityData = {
     },
     areas: ['Bidar', 'Kolhar', 'Humnabad', 'Balki', 'Bhalki', 'Malachapura', 'Hallikhed', 'Baroor', 'Basavakalyan', 'Aurad', 'Kalaburagi (nearby)'],
     nearbyCities: [
-      { name: 'Raichur', path: '/electropolished-pipe-manufacturer-raichur' },
-      { name: 'Hubballi–Dharwad', path: '/electropolished-pipe-manufacturer-hubballi-dharwad' },
+      { name: 'Raichur', path: '/market-area/raichur' },
+      { name: 'Hubballi–Dharwad', path: '/market-area/hubballi-dharwad' },
       { name: 'Solapur (Maharashtra)', path: '/market-area/solapur' }
     ],
     faqs: [
@@ -332,7 +332,7 @@ export const karnatakaCityData = {
     city: 'Hubballi–Dharwad',
     state: 'Karnataka',
     country: 'India',
-    pageUrl: '/electropolished-pipe-manufacturer-hubballi-dharwad',
+    pageUrl: '/market-area/hubballi-dharwad',
     pageTitle: 'Electropolished Pipe Manufacturer Hubballi | Sakshi Forge',
     metaDescription: 'Electropolished 304L & 316L SS pipes for Hubballi-Dharwad food and engineering plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.',
     h1: 'Electropolished Stainless Steel Pipe Manufacturer in Hubballi–Dharwad: 304L and 316L EP Tubes for Gokul Road, Tarihal and Belur Plants',
@@ -367,9 +367,9 @@ export const karnatakaCityData = {
     },
     areas: ['Hubballi (Hubli)', 'Dharwad', 'Gokul Road', 'Tarihal', 'Gamanagatti', 'Belur', 'Rayapur', 'Lakamanahalli', 'Mummigatti', 'Navanagar', 'Kundgol', 'Byadgi'],
     nearbyCities: [
-      { name: 'Belagavi', path: '/electropolished-pipe-manufacturer-belagavi' },
-      { name: 'Bidar', path: '/electropolished-pipe-manufacturer-bidar' },
-      { name: 'Raichur', path: '/electropolished-pipe-manufacturer-raichur' }
+      { name: 'Belagavi', path: '/market-area/belagavi' },
+      { name: 'Bidar', path: '/market-area/bidar' },
+      { name: 'Raichur', path: '/market-area/raichur' }
     ],
     faqs: [
       {
@@ -396,7 +396,7 @@ export const karnatakaCityData = {
     city: 'Belagavi',
     state: 'Karnataka',
     country: 'India',
-    pageUrl: '/electropolished-pipe-manufacturer-belagavi',
+    pageUrl: '/market-area/belagavi',
     pageTitle: 'Electropolished Pipe Manufacturer Belagavi | Sakshi Forge',
     metaDescription: 'Electropolished 316L & 304L SS pipes for Belagavi Udyambag and Machhe sugar, food and engineering plants. ASTM A270, MTC EN 10204 3.1, PMI tested.',
     h1: 'Electropolished Stainless Steel Pipe Manufacturer in Belagavi: 304L and 316L EP Tubes for Udyambag, Machhe and Autonagar Plants',
@@ -433,9 +433,9 @@ export const karnatakaCityData = {
     },
     areas: ['Belagavi (Belgaum)', 'Udyambag', 'Machhe', 'Autonagar', 'Khanapur Road', 'Chikkodi', 'Athani', 'Kagwad', 'Gokak', 'Nipani', 'Bailhongal', 'Dharwad (nearby)'],
     nearbyCities: [
-      { name: 'Hubballi–Dharwad', path: '/electropolished-pipe-manufacturer-hubballi-dharwad' },
+      { name: 'Hubballi–Dharwad', path: '/market-area/hubballi-dharwad' },
       { name: 'Kolhapur (Maharashtra)', path: '/market-area/kolhapur' },
-      { name: 'Pune (Maharashtra)', path: '/electropolished-pipe-manufacturer-pune' }
+      { name: 'Pune (Maharashtra)', path: '/market-area/pune' }
     ],
     faqs: [
       {
@@ -462,7 +462,7 @@ export const karnatakaCityData = {
     city: 'Hassan',
     state: 'Karnataka',
     country: 'India',
-    pageUrl: '/electropolished-pipe-manufacturer-hassan',
+    pageUrl: '/market-area/hassan',
     pageTitle: 'Electropolished Pipe Manufacturer in Hassan | Sakshi Forge',
     metaDescription: 'Electropolished 316L & 304L SS pipes for Hassan pharma SEZ and food-processing plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.',
     h1: 'Electropolished Stainless Steel Pipe Manufacturer in Hassan: 316L and 304L EP Tubes for the Pharma SEZ, Food Processing SEZ and Hassan Industrial Area',
@@ -500,9 +500,9 @@ export const karnatakaCityData = {
     },
     areas: ['Hassan', 'Shantigrama', 'Hassan Industrial Area', 'Channarayapatna', 'Arsikere', 'Belur', 'Holenarasipura', 'Alur', 'Sakleshpur'],
     nearbyCities: [
-      { name: 'Mysuru', path: '/electropolished-pipe-manufacturer-mysuru' },
-      { name: 'Tumakuru', path: '/electropolished-pipe-manufacturer-tumakuru' },
-      { name: 'Mangaluru', path: '/electropolished-pipe-manufacturer-mangaluru' }
+      { name: 'Mysuru', path: '/market-area/mysuru' },
+      { name: 'Tumakuru', path: '/market-area/tumakuru' },
+      { name: 'Mangaluru', path: '/market-area/mangaluru' }
     ],
     faqs: [
       {
@@ -529,7 +529,7 @@ export const karnatakaCityData = {
     city: 'Raichur',
     state: 'Karnataka',
     country: 'India',
-    pageUrl: '/electropolished-pipe-manufacturer-raichur',
+    pageUrl: '/market-area/raichur',
     pageTitle: 'Electropolished Pipe Manufacturer in Raichur | Sakshi Forge',
     metaDescription: 'Electropolished 316L & 304L SS pipes for Raichur and Yadgir pharma, food and sugar-linked plants. ASTM A270, MTC EN 10204 3.1, PMI tested.',
     h1: 'Electropolished Stainless Steel Pipe Manufacturer in Raichur and Yadgir: 316L and 304L EP Tubes for the Raichur Growth Centre, Deosugur and Kadechur Plants',
@@ -566,8 +566,8 @@ export const karnatakaCityData = {
     },
     areas: ['Raichur', 'Raichur Growth Centre', 'Deosugur', 'Shaktinagar', 'Sindhanur', 'Manvi', 'Lingasugur', 'Yadgir', 'Kadechur', 'Shahapur', 'Kalaburagi (nearby)', 'Koppal (nearby)'],
     nearbyCities: [
-      { name: 'Bidar', path: '/electropolished-pipe-manufacturer-bidar' },
-      { name: 'Hubballi–Dharwad', path: '/electropolished-pipe-manufacturer-hubballi-dharwad' },
+      { name: 'Bidar', path: '/market-area/bidar' },
+      { name: 'Hubballi–Dharwad', path: '/market-area/hubballi-dharwad' },
       { name: 'Solapur (Maharashtra)', path: '/market-area/solapur' }
     ],
     faqs: [
@@ -595,7 +595,7 @@ export const karnatakaCityData = {
     city: 'Mandya',
     state: 'Karnataka',
     country: 'India',
-    pageUrl: '/electropolished-pipe-manufacturer-mandya',
+    pageUrl: '/market-area/mandya',
     pageTitle: 'Electropolished Pipe Manufacturer in Mandya | Sakshi Forge',
     metaDescription: 'Electropolished 316L & 304L SS pipes for Mandya sugar, ethanol, dairy and food plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.',
     h1: 'Electropolished Stainless Steel Pipe Manufacturer in Mandya: 304L and 316L EP Tubes for Maddur, Tubinakere and Pandavapura Plants',
@@ -633,10 +633,10 @@ export const karnatakaCityData = {
     },
     areas: ['Mandya', 'Tubinakere', 'Maddur', 'Somanahalli', 'Gejjalegere', 'Pandavapura', 'Srirangapatna', 'Malavalli', 'Nagamangala', 'Krishnarajpet'],
     nearbyCities: [
-      { name: 'Mysuru', path: '/electropolished-pipe-manufacturer-mysuru' },
-      { name: 'Bengaluru', path: '/electropolished-pipe-manufacturer-bengaluru' },
-      { name: 'Tumakuru', path: '/electropolished-pipe-manufacturer-tumakuru' },
-      { name: 'Hassan', path: '/electropolished-pipe-manufacturer-hassan' }
+      { name: 'Mysuru', path: '/market-area/mysuru' },
+      { name: 'Bengaluru', path: '/market-area/bengaluru' },
+      { name: 'Tumakuru', path: '/market-area/tumakuru' },
+      { name: 'Hassan', path: '/market-area/hassan' }
     ],
     faqs: [
       {

@@ -46,7 +46,11 @@ const newPages = [
   'tamil-nadu',
   'karnataka',
   'market-area/gujarat',
-  'gujarat'
+  'gujarat',
+  'telangana',
+  'market-area/telangana',
+  'west-bengal',
+  'market-area/west-bengal'
 ];
 
 // Helper to format priority

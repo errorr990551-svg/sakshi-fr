@@ -50,6 +50,11 @@ export default function MarketAreaPage() {
         const el = document.getElementById('gujarat');
         if (el) el.scrollIntoView({ behavior: 'smooth' });
       }, 150);
+    } else if (window.location.pathname.includes('telangana')) {
+      setTimeout(() => {
+        const el = document.getElementById('telangana');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 150);
     }
   }, []);
 

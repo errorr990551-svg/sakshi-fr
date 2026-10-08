@@ -2187,6 +2187,26 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://steelmanufacturer.in/telangana/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/telangana</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/west-bengal/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/west-bengal</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Market Area Hub -->
   <url>
     <loc>https://steelmanufacturer.in/market-area</loc>

@@ -10,10 +10,14 @@ import HomePage from './components/HomePage';
 import TamilNaduHubPage from './components/TamilNaduHubPage';
 import KarnatakaHubPage from './components/KarnatakaHubPage';
 import GujaratHubPage from './components/GujaratHubPage';
+import TelanganaHubPage from './components/TelanganaHubPage';
+import WestBengalHubPage from './components/WestBengalHubPage';
 import { customCityData } from './data/customCityData';
 import { maharashtraCityData } from './data/maharashtraCityData';
 import { karnatakaCityData } from './data/karnatakaCityData';
 import { gujaratCityData } from './data/gujaratCityData';
+import { telanganaCityData } from './data/telanganaCityData';
+import { westBengalCityData } from './data/westBengalCityData';
 import MaharashtraCityPage from './components/MaharashtraCityPage';
 import Footer from './components/Footer';
 import ProductModal from './components/ProductModal';
@@ -75,6 +79,8 @@ export const isTrailingSlashCityPath = (pathname) => {
     (maharashtraCityData && maharashtraCityData[slug]) ||
     (karnatakaCityData && karnatakaCityData[slug]) ||
     (gujaratCityData && gujaratCityData[slug]) ||
+    (telanganaCityData && telanganaCityData[slug]) ||
+    (westBengalCityData && westBengalCityData[slug]) ||
     (customCityData && customCityData[slug]) ||
     (marketCitiesData && marketCitiesData.some(c => c.slug === slug || c.path === clean || c.path === '/' + slug))
   ) {
@@ -317,6 +323,14 @@ function App(props) {
       return { type: 'gujarat-hub', data: null };
     }
 
+    if (cleanPath === '/telangana' || cleanPath === '/market-area/telangana') {
+      return { type: 'telangana-hub', data: null };
+    }
+
+    if (cleanPath === '/west-bengal' || cleanPath === '/market-area/west-bengal') {
+      return { type: 'west-bengal-hub', data: null };
+    }
+
     if (cleanPath === '/maharashtra' || cleanPath === '/market-area/maharashtra') {
       return { type: 'market-area', data: null };
     }
@@ -337,7 +351,7 @@ function App(props) {
       return { type: '404', data: null };
     }
 
-    // Check if market-area path is for Maharashtra, Karnataka, or Gujarat rich cities
+    // Check if market-area path is for Maharashtra, Karnataka, Gujarat, Telangana, or West Bengal rich cities
     if (cleanPath.startsWith('/market-area/')) {
       const marketCityKey = cleanPath.replace('/market-area/', '');
       if (maharashtraCityData[marketCityKey]) {
@@ -349,14 +363,26 @@ function App(props) {
       if (gujaratCityData[marketCityKey]) {
         return { type: 'maharashtra-city', data: gujaratCityData[marketCityKey] };
       }
+      if (telanganaCityData[marketCityKey]) {
+        return { type: 'maharashtra-city', data: telanganaCityData[marketCityKey] };
+      }
+      if (westBengalCityData[marketCityKey]) {
+        return { type: 'maharashtra-city', data: westBengalCityData[marketCityKey] };
+      }
     }
 
-    // Check if direct slug matches Karnataka or Gujarat rich cities
+    // Check if direct slug matches Karnataka, Gujarat, Telangana, or West Bengal rich cities
     if (karnatakaCityData[slug]) {
       return { type: 'maharashtra-city', data: karnatakaCityData[slug] };
     }
     if (gujaratCityData[slug]) {
       return { type: 'maharashtra-city', data: gujaratCityData[slug] };
+    }
+    if (telanganaCityData[slug]) {
+      return { type: 'maharashtra-city', data: telanganaCityData[slug] };
+    }
+    if (westBengalCityData[slug]) {
+      return { type: 'maharashtra-city', data: westBengalCityData[slug] };
     }
 
     // Check custom rich city data (Tamil Nadu, Canberra, Abu Dhabi, etc.)
@@ -434,6 +460,22 @@ function App(props) {
 
       {resolvedRoute.type === 'gujarat-hub' && (
         <GujaratHubPage 
+          onEnquireClick={handleOpenEnquiry} 
+          hasUnlockedContact={hasUnlockedContact}
+          onShowContactDetails={handleOpenContactDetailsForm}
+        />
+      )}
+
+      {resolvedRoute.type === 'telangana-hub' && (
+        <TelanganaHubPage 
+          onEnquireClick={handleOpenEnquiry} 
+          hasUnlockedContact={hasUnlockedContact}
+          onShowContactDetails={handleOpenContactDetailsForm}
+        />
+      )}
+
+      {resolvedRoute.type === 'west-bengal-hub' && (
+        <WestBengalHubPage 
           onEnquireClick={handleOpenEnquiry} 
           hasUnlockedContact={hasUnlockedContact}
           onShowContactDetails={handleOpenContactDetailsForm}

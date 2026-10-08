@@ -253,8 +253,8 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
             <a href="/market-area" onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>Market Areas</a>
             <span>›</span>
             <a 
-              href={cityData.state === 'Karnataka' ? '/karnataka' : cityData.state === 'Gujarat' ? '/market-area/gujarat' : '/market-area#maharashtra'} 
-              onClick={(e) => handleLinkClick(e, cityData.state === 'Karnataka' ? '/karnataka' : cityData.state === 'Gujarat' ? '/market-area/gujarat' : '/market-area#maharashtra')} 
+              href={cityData.state === 'Karnataka' ? '/karnataka' : cityData.state === 'Gujarat' ? '/market-area/gujarat' : cityData.state === 'Telangana' ? '/market-area/telangana' : cityData.state === 'West Bengal' ? '/market-area/west-bengal' : '/market-area#maharashtra'} 
+              onClick={(e) => handleLinkClick(e, cityData.state === 'Karnataka' ? '/karnataka' : cityData.state === 'Gujarat' ? '/market-area/gujarat' : cityData.state === 'Telangana' ? '/market-area/telangana' : cityData.state === 'West Bengal' ? '/market-area/west-bengal' : '/market-area#maharashtra')} 
               style={{ color: 'inherit', textDecoration: 'none' }}
             >
               {cityData.state || 'Maharashtra'}
@@ -1131,7 +1131,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                 Key Industrial Areas & Belts Served:
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', color: '#94a3b8', fontSize: '0.85rem' }}>
-                {cityData.areas.map((area, idx) => (
+                {(Array.isArray(cityData.areas) ? cityData.areas : typeof cityData.areas === 'string' ? cityData.areas.split('|').map(s => s.trim()).filter(Boolean) : []).map((area, idx) => (
                   <span key={idx} style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', padding: '0.25rem 0.65rem', borderRadius: '4px' }}>
                     {area}
                   </span>

@@ -168,6 +168,16 @@ export function updateSEO({ type, data }) {
     metaDesc = "Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Gujarat industrial belts: Ahmedabad, Vadodara, Vapi, Sanand, Ankleshwar, Surat, Dahej, Anand and Mehsana.";
     canonicalUrl = `${BASE_URL}/market-area/gujarat`;
     robots = "index, follow";
+  } else if (type === "telangana-hub") {
+    title = "Electropolished Pipe Manufacturer Across Telangana | Sakshi Forge";
+    metaDesc = "Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Telangana industrial belts: Hyderabad, Sangareddy, Patancheru, Karimnagar, Mahabubnagar, Warangal, Nizamabad, Siddipet, Ramagundam and Khammam.";
+    canonicalUrl = `${BASE_URL}/market-area/telangana`;
+    robots = "index, follow";
+  } else if (type === "west-bengal-hub") {
+    title = "Electropolished Pipe Manufacturer Across West Bengal | Sakshi Forge";
+    metaDesc = "Sakshi Forge supplies electropolished SS 316L, 304L and duplex 2205 pipes across West Bengal industrial corridors: Kolkata, Haldia, Kalyani, Howrah, Dankuni, Durgapur, Siliguri, Kharagpur, Asansol and Bardhaman.";
+    canonicalUrl = `${BASE_URL}/market-area/west-bengal`;
+    robots = "index, follow";
   } else if (type === "clients") {
     title = "Our Clients & Industries | Sakshi Forge";
     metaDesc = "Sakshi Forge supplies ISO 9001:2015 certified flanges, forged fittings, and pipes to oil & gas, pharma, and marine projects worldwide.";
@@ -540,6 +550,76 @@ export function updateSEO({ type, data }) {
     };
     graph.push(breadcrumbList);
     graph.push(blogPostingSchema);
+  }
+
+  if (type === "maharashtra-city" && data) {
+    const currentUrl = `${BASE_URL}${data.pageUrl || ''}`;
+    const breadcrumbList = {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": `${BASE_URL}/` },
+        { "@type": "ListItem", "position": 2, "name": "Market Areas", "item": `${BASE_URL}/market-area` },
+        { "@type": "ListItem", "position": 3, "name": data.city, "item": currentUrl }
+      ]
+    };
+    graph.push(breadcrumbList);
+
+    const localBusiness = {
+      "@type": "LocalBusiness",
+      "@id": `${BASE_URL}/#org`,
+      "name": "Sakshi Forge",
+      "url": `${BASE_URL}/`,
+      "telephone": "+918291366340",
+      "email": "sakshiforge1737@gmail.com",
+      "description": "ISO 9001:2015 certified manufacturer of electropolished stainless steel pipes and tubes, industrial flanges and forged fittings.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Balaji Industrial Compound, Taloja MIDC",
+        "addressLocality": "Navi Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "410208",
+        "addressCountry": "IN"
+      },
+      "areaServed": [
+        { "@type": "City", "name": data.city },
+        ...(data.state ? [{ "@type": "AdministrativeArea", "name": data.state }] : [])
+      ]
+    };
+    graph.push(localBusiness);
+
+    const productSchema = {
+      "@type": "Product",
+      "@id": `${currentUrl}#product`,
+      "name": `Electropolished SS 304L / 316L Sanitary Pipes and Tubes - ${data.city}`,
+      "description": data.metaDescription || `Welded and seamless electropolished stainless steel sanitary pipes and tubes in 304L and 316L for ${data.city}, supplied with MTC EN 10204 3.1 and 100% PMI testing.`,
+      "brand": { "@type": "Brand", "name": "Sakshi Forge" },
+      "manufacturer": { "@id": `${BASE_URL}/#org` },
+      "material": "SS 304L (UNS S30403 / 1.4307), SS 316L (UNS S31603 / 1.4404)",
+      "category": "Electropolished stainless steel pipes and tubes",
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Internal surface roughness (Ra)", "maxValue": 0.4, "unitCode": "4H", "unitText": "µm" },
+        { "@type": "PropertyValue", "name": "Manufacturing standards", "value": "ASTM A269, ASTM A270" },
+        { "@type": "PropertyValue", "name": "Material certificate", "value": "EN 10204 3.1" },
+        { "@type": "PropertyValue", "name": "Testing", "value": "100% PMI, Ra test, hydro test, passivation verification, ferrite check" },
+        { "@type": "PropertyValue", "name": "Types", "value": "Welded and seamless" }
+      ]
+    };
+    graph.push(productSchema);
+
+    if (data.faqs && data.faqs.length > 0) {
+      const faqEntities = data.faqs.map(f => ({
+        "@type": "Question",
+        "name": f.q || f.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": f.a || f.answer
+        }
+      }));
+      graph.push({
+        "@type": "FAQPage",
+        "mainEntity": faqEntities
+      });
+    }
   }
 
   if (type === "market-city" && data && data.schema) {

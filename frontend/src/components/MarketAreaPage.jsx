@@ -6,8 +6,14 @@ export default function MarketAreaPage() {
   // Group cities by state and sort alphabetically
   const citiesByState = useMemo(() => {
     const grouped = {};
+    const seenCityInState = new Set();
+
     marketCitiesData.forEach(city => {
       const state = city.state || 'Other';
+      const key = `${state}::${(city.city || '').toLowerCase().trim()}`;
+      if (seenCityInState.has(key)) return;
+      seenCityInState.add(key);
+
       if (!grouped[state]) {
         grouped[state] = [];
       }

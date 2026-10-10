@@ -2,17 +2,6 @@
  * Check if a path is a city/market-area URL with a trailing slash
  */
 export function isTrailingSlashCityPath(pathname) {
-  if (!pathname || pathname === '/' || typeof pathname !== 'string') {
-    return false;
-  }
-  const purePath = pathname.split('?')[0].split('#')[0];
-  if (!purePath.endsWith('/')) {
-    return false;
-  }
-  const clean = purePath.replace(/\/+$/, '');
-  if (clean === '/market-area' || clean.startsWith('/market-area/')) {
-    return true;
-  }
   return false;
 }
 

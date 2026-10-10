@@ -363,9 +363,14 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
             </h2>
             <div className="accent-line-left" style={{ marginBottom: '1.5rem' }}></div>
 
-            <p style={{ fontSize: '1.08rem', color: '#cbd5e1', lineHeight: '1.8', marginBottom: '2rem' }}>
-              {cityData.regionalCapability.description}
-            </p>
+            <div style={{ fontSize: '1.08rem', color: '#cbd5e1', lineHeight: '1.8', marginBottom: '2rem' }}>
+              {(typeof cityData?.regionalCapability?.description === 'string'
+                ? cityData.regionalCapability.description.split('\n\n')
+                : [cityData?.regionalCapability?.description]
+              ).map((pText, pIdx, arr) => (
+                <p key={pIdx} style={{ marginBottom: pIdx < arr.length - 1 ? '1rem' : '0' }}>{pText}</p>
+              ))}
+            </div>
 
             {/* Zone Mapping Table */}
             <div style={{ overflowX: 'auto', borderRadius: '8px', border: '1px solid var(--border-color)', marginBottom: '2.5rem' }}>

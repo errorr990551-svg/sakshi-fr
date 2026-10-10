@@ -70,10 +70,11 @@ const formatUrl = (url) => {
     clean = `${BASE_URL}${clean.startsWith('/') ? '' : '/'}${clean}`;
   }
   if (clean === BASE_URL || clean === `${BASE_URL}/`) return `${BASE_URL}/`;
-  // Do not add trailing slashes to market-area or city URLs
-  if (clean === `${BASE_URL}/market-area` || clean.startsWith(`${BASE_URL}/market-area/`)) {
-    return clean.replace(/\/+$/, '');
+  // Only the root hub /market-area has no trailing slash
+  if (clean === `${BASE_URL}/market-area`) {
+    return `${BASE_URL}/market-area`;
   }
+  // All specific pages, including /market-area/<city>/, use trailing slash
   return clean.endsWith('/') ? clean : `${clean}/`;
 };
 

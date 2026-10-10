@@ -421,8 +421,8 @@ async function runPrerender() {
     }
 
     // Inject canonical link
-    const canonicalHref = (route.type === 'market-city' || route.slug === 'market-area' || route.type === 'maharashtra-city')
-      ? route.url.replace(/\/+$/, '')
+    const canonicalHref = route.slug === 'market-area'
+      ? `${BASE_URL}/market-area`
       : (route.url.endsWith('/') ? route.url : `${route.url}/`);
     if (html.includes('rel="canonical"')) {
       html = html.replace(/<link rel="canonical" href=".*?" \/>/, `<link rel="canonical" href="${canonicalHref}" />`);

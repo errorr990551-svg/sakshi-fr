@@ -65,33 +65,8 @@ import epBuildSpecData from './data/ep_build_spec_data.json';
 import EPBuildSpecRenderer from './components/EPBuildSpecRenderer';
 
 
-// Helper to check if a pathname is a city/market-area path with a trailing slash
+// Helper to check if a pathname is a city/market-area path with a trailing slash (kept for compatibility, returns false so valid trailing slash URLs resolve correctly)
 export const isTrailingSlashCityPath = (pathname) => {
-  if (!pathname || pathname === '/' || typeof pathname !== 'string') {
-    return false;
-  }
-  const purePath = pathname.split('?')[0].split('#')[0];
-  if (!purePath.endsWith('/')) {
-    return false;
-  }
-  const clean = purePath.replace(/\/+$/, '');
-  if (clean === '/market-area' || clean.startsWith('/market-area/')) {
-    return true;
-  }
-  const slug = clean.replace(/^\//, '');
-  if (
-    (maharashtraCityData && maharashtraCityData[slug]) ||
-    (karnatakaCityData && karnatakaCityData[slug]) ||
-    (gujaratCityData && gujaratCityData[slug]) ||
-    (telanganaCityData && telanganaCityData[slug]) ||
-    (westBengalCityData && westBengalCityData[slug]) ||
-    (madhyaPradeshCityData && madhyaPradeshCityData[slug]) ||
-    (andhraPradeshCityData && andhraPradeshCityData[slug]) ||
-    (customCityData && customCityData[slug]) ||
-    (marketCitiesData && marketCitiesData.some(c => c.slug === slug || c.path === clean || c.path === '/' + slug))
-  ) {
-    return true;
-  }
   return false;
 };
 

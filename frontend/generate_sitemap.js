@@ -50,7 +50,11 @@ const newPages = [
   'telangana',
   'market-area/telangana',
   'west-bengal',
-  'market-area/west-bengal'
+  'market-area/west-bengal',
+  'madhya-pradesh',
+  'market-area/madhya-pradesh',
+  'andhra-pradesh',
+  'market-area/andhra-pradesh'
 ];
 
 // Helper to format priority

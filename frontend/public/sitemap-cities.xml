@@ -41,11 +41,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/market-area/anantapur</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://steelmanufacturer.in/market-area/angul</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -102,11 +97,6 @@
   </url>
   <url>
     <loc>https://steelmanufacturer.in/market-area/bhiwadi</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steelmanufacturer.in/market-area/bhopal</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -177,11 +167,6 @@
   </url>
   <url>
     <loc>https://steelmanufacturer.in/market-area/dehradun</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steelmanufacturer.in/market-area/dewas</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -261,11 +246,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/market-area/indore</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://steelmanufacturer.in/market-area/jaipur</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -292,11 +272,6 @@
   </url>
   <url>
     <loc>https://steelmanufacturer.in/market-area/jodhpur</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steelmanufacturer.in/market-area/kakinada</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -361,16 +336,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/market-area/malanpur</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steelmanufacturer.in/market-area/mandideep</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://steelmanufacturer.in/market-area/medak-patancheru</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -426,11 +391,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/market-area/nellore</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://steelmanufacturer.in/market-area/new-delhi</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -477,11 +437,6 @@
   </url>
   <url>
     <loc>https://steelmanufacturer.in/market-area/pimpri-chinchwad</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steelmanufacturer.in/market-area/pithampur</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -616,11 +571,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/market-area/tirupati</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://steelmanufacturer.in/market-area/tiruppur</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -657,16 +607,6 @@
   </url>
   <url>
     <loc>https://steelmanufacturer.in/market-area/verna</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steelmanufacturer.in/market-area/vijayawada</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steelmanufacturer.in/market-area/visakhapatnam</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -2497,6 +2437,106 @@
   </url>
   <url>
     <loc>https://steelmanufacturer.in/market-area/bardhaman</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/indore</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/pithampur</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/dewas</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/ujjain</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/bhopal</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/ratlam</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/gwalior</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/jabalpur</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/neemuch</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/visakhapatnam</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/anakapalle</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/tirupati</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/kakinada</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/vijayawada</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/guntur</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/rajahmundry</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/chittoor</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/mandideep</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/nellore</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/kurnool</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -2207,6 +2207,26 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://steelmanufacturer.in/madhya-pradesh/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/madhya-pradesh</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/andhra-pradesh/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/andhra-pradesh</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Market Area Hub -->
   <url>
     <loc>https://steelmanufacturer.in/market-area</loc>

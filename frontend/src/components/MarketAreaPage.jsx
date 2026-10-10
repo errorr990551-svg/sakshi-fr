@@ -172,16 +172,28 @@ export default function MarketAreaPage() {
               <div key={state} id={slug} className="state-section" style={{ scrollMarginTop: '6.5rem' }}>
                 {/* State Section Title */}
                 <div style={{ marginBottom: '1.75rem', position: 'relative' }}>
-                  <h2 style={{
-                    fontSize: '1.6rem',
-                    fontWeight: '800',
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.03em',
-                    color: 'var(--text-primary)',
-                    marginBottom: '0.5rem'
-                  }}>
-                    {state}
-                  </h2>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.75rem', marginBottom: '0.5rem' }}>
+                    <h2 style={{
+                      fontSize: '1.6rem',
+                      fontWeight: '800',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.03em',
+                      color: 'var(--text-primary)',
+                      margin: 0
+                    }}>
+                      {state}
+                    </h2>
+
+                    {state === 'Gujarat' && (
+                      <a 
+                        href="/market-area/gujarat" 
+                        onClick={(e) => handleLinkClick(e, '/market-area/gujarat')}
+                        style={{ color: 'var(--primary-yellow)', fontSize: '0.85rem', fontWeight: '700', textDecoration: 'none' }}
+                      >
+                        View Gujarat State Overview →
+                      </a>
+                    )}
+                  </div>
                   <div style={{
                     height: '2px',
                     width: '60px',

@@ -253,8 +253,8 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
             <a href="/market-area" onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>Market Areas</a>
             <span>›</span>
             <a 
-              href={cityData.state === 'Karnataka' ? '/karnataka' : cityData.state === 'Gujarat' ? '/market-area/gujarat' : cityData.state === 'Telangana' ? '/market-area/telangana' : cityData.state === 'West Bengal' ? '/market-area/west-bengal' : '/market-area#maharashtra'} 
-              onClick={(e) => handleLinkClick(e, cityData.state === 'Karnataka' ? '/karnataka' : cityData.state === 'Gujarat' ? '/market-area/gujarat' : cityData.state === 'Telangana' ? '/market-area/telangana' : cityData.state === 'West Bengal' ? '/market-area/west-bengal' : '/market-area#maharashtra')} 
+              href={cityData.state === 'Karnataka' ? '/karnataka' : cityData.state === 'Gujarat' ? '/market-area/gujarat' : cityData.state === 'Telangana' ? '/market-area/telangana' : cityData.state === 'West Bengal' ? '/market-area/west-bengal' : cityData.state === 'Madhya Pradesh' ? '/market-area/madhya-pradesh' : cityData.state === 'Andhra Pradesh' ? '/market-area/andhra-pradesh' : '/market-area#maharashtra'} 
+              onClick={(e) => handleLinkClick(e, cityData.state === 'Karnataka' ? '/karnataka' : cityData.state === 'Gujarat' ? '/market-area/gujarat' : cityData.state === 'Telangana' ? '/market-area/telangana' : cityData.state === 'West Bengal' ? '/market-area/west-bengal' : cityData.state === 'Madhya Pradesh' ? '/market-area/madhya-pradesh' : cityData.state === 'Andhra Pradesh' ? '/market-area/andhra-pradesh' : '/market-area#maharashtra')} 
               style={{ color: 'inherit', textDecoration: 'none' }}
             >
               {cityData.state || 'Maharashtra'}

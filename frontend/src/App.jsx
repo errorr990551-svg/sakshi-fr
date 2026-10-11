@@ -65,10 +65,8 @@ import epBuildSpecData from './data/ep_build_spec_data.json';
 import EPBuildSpecRenderer from './components/EPBuildSpecRenderer';
 
 
-// Helper to check if a pathname is a city/market-area path with a trailing slash (kept for compatibility, returns false so valid trailing slash URLs resolve correctly)
-export const isTrailingSlashCityPath = (pathname) => {
-  return false;
-};
+// Helper kept for backward compatibility
+export const isTrailingSlashCityPath = () => false;
 
 function App(props) {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -80,16 +78,9 @@ function App(props) {
   });
   const [currentPath, setCurrentPath] = useState(() => {
     if (props.path) {
-      if (isTrailingSlashCityPath(props.path)) {
-        return '/';
-      }
       return props.path;
     }
     if (typeof window !== 'undefined') {
-      if (isTrailingSlashCityPath(window.location.pathname)) {
-        window.history.replaceState(null, '', '/');
-        return '/';
-      }
       return window.location.pathname;
     }
     return '/';
@@ -130,13 +121,7 @@ function App(props) {
   useEffect(() => {
     if (typeof window === 'undefined') return;
     const handlePopState = () => {
-      const path = window.location.pathname;
-      if (isTrailingSlashCityPath(path)) {
-        window.history.replaceState(null, '', '/');
-        setCurrentPath('/');
-      } else {
-        setCurrentPath(path);
-      }
+      setCurrentPath(window.location.pathname);
     };
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
@@ -144,13 +129,6 @@ function App(props) {
 
   // Handle static assets/redirection paths that might land in the SPA router
   useEffect(() => {
-    if (typeof window !== 'undefined' && (isTrailingSlashCityPath(window.location.pathname) || isTrailingSlashCityPath(currentPath))) {
-      window.history.replaceState(null, '', '/');
-      if (currentPath !== '/') {
-        setCurrentPath('/');
-      }
-      return;
-    }
     if (currentPath === '/sitemap' || currentPath === '/sitemap.xml') {
       window.location.replace('/sitemap.xml');
     } else if (
@@ -191,10 +169,8 @@ function App(props) {
 
   // Determine current page type and parameters
   const resolvedRoute = (() => {
-    if (isTrailingSlashCityPath(currentPath)) {
-      return { type: 'home', data: null };
-    }
-    const cleanPath = currentPath === '/' ? '/' : currentPath.replace(/\/$/, '');
+    const rawPath = currentPath ? currentPath.split('?')[0].split('#')[0] : '/';
+    const cleanPath = rawPath === '/' ? '/' : rawPath.replace(/\/+$/, '');
     
     if (cleanPath === '/' || cleanPath === '') {
       return { type: 'home', data: null };
@@ -221,7 +197,7 @@ function App(props) {
       return { type: 'blog', data: null };
     }
     if (cleanPath.startsWith('/blog/')) {
-      const blogSlug = cleanPath.replace(/^\/blog\//, '').replace(/\/$/, '');
+      const blogSlug = cleanPath.replace(/^\/blog\//, '').replace(/\/+$/, '');
       const post = blogPosts.find(p => p.slug === blogSlug || p.id === blogSlug);
       if (post) {
         return { type: 'blog-post', data: post };
@@ -237,7 +213,7 @@ function App(props) {
       return { type: 'weight-calculator', data: null };
     }
     
-    if (cleanPath === '/market-area') {
+    if (cleanPath === '/market-area' || cleanPath === '/marketplace') {
       return { type: 'market-area', data: null };
     }
     if (cleanPath === '/clients') {
@@ -393,7 +369,10 @@ function App(props) {
     }
 
     // Check if matching market city slug from standard dataset
-    let city = marketCitiesData.find(c => c.slug === slug || c.path === cleanPath || c.path === '/' + slug);
+    let city = marketCitiesData.find(c => {
+      const normPath = c.path ? c.path.replace(/\/+$/, '') : '';
+      return c.slug === slug || c.slug === customCityKey || normPath === cleanPath || normPath === '/' + slug;
+    });
     if (city) {
       return { type: 'market-city', data: city };
     }

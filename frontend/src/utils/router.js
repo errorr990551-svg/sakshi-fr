@@ -1,15 +1,12 @@
 /**
- * Check if a path is a city/market-area URL with a trailing slash
+ * Kept for backward compatibility
  */
 export function isTrailingSlashCityPath(pathname) {
   return false;
 }
 
 export function navigate(path) {
-  let targetPath = path;
-  if (isTrailingSlashCityPath(targetPath)) {
-    targetPath = '/';
-  }
+  const targetPath = path || '/';
   // Update browser address bar without page reload
   window.history.pushState(null, "", targetPath);
   // Trigger popstate event so our App router hears it and updates the view

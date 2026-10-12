@@ -22,6 +22,7 @@ import { telanganaCityData } from './data/telanganaCityData';
 import { westBengalCityData } from './data/westBengalCityData';
 import { madhyaPradeshCityData } from './data/madhyaPradeshCityData';
 import { andhraPradeshCityData } from './data/andhraPradeshCityData';
+import { odishaCityData } from './data/odishaCityData';
 import MaharashtraCityPage from './components/MaharashtraCityPage';
 import Footer from './components/Footer';
 import ProductModal from './components/ProductModal';
@@ -300,6 +301,10 @@ function App(props) {
       return { type: 'market-area', data: null };
     }
 
+    if (cleanPath === '/odisha' || cleanPath === '/market-area/odisha') {
+      return { type: 'market-area', data: null };
+    }
+
     // Redirect legacy electropolished-pipe-manufacturer-* and supplier-* to /market-area/*
     if (cleanPath.startsWith('/electropolished-pipe-manufacturer-')) {
       const cityKey = cleanPath.replace('/electropolished-pipe-manufacturer-', '');
@@ -316,7 +321,7 @@ function App(props) {
       return { type: '404', data: null };
     }
 
-    // Check if market-area path is for Maharashtra, Karnataka, Gujarat, Telangana, West Bengal, MP, or AP rich cities
+    // Check if market-area path is for Maharashtra, Karnataka, Gujarat, Telangana, West Bengal, MP, AP, or Odisha rich cities
     if (cleanPath.startsWith('/market-area/')) {
       const marketCityKey = cleanPath.replace('/market-area/', '');
       if (maharashtraCityData[marketCityKey]) {
@@ -340,9 +345,12 @@ function App(props) {
       if (andhraPradeshCityData[marketCityKey]) {
         return { type: 'maharashtra-city', data: andhraPradeshCityData[marketCityKey] };
       }
+      if (odishaCityData[marketCityKey]) {
+        return { type: 'maharashtra-city', data: odishaCityData[marketCityKey] };
+      }
     }
 
-    // Check if direct slug matches Karnataka, Gujarat, Telangana, West Bengal, MP, or AP rich cities
+    // Check if direct slug matches Karnataka, Gujarat, Telangana, West Bengal, MP, AP, or Odisha rich cities
     if (karnatakaCityData[slug]) {
       return { type: 'maharashtra-city', data: karnatakaCityData[slug] };
     }
@@ -360,6 +368,9 @@ function App(props) {
     }
     if (andhraPradeshCityData[slug]) {
       return { type: 'maharashtra-city', data: andhraPradeshCityData[slug] };
+    }
+    if (odishaCityData[slug]) {
+      return { type: 'maharashtra-city', data: odishaCityData[slug] };
     }
 
     // Check custom rich city data (Tamil Nadu, Canberra, Abu Dhabi, etc.)

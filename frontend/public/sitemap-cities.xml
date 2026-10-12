@@ -41,11 +41,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/market-area/angul/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://steelmanufacturer.in/market-area/ankleshwar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -97,11 +92,6 @@
   </url>
   <url>
     <loc>https://steelmanufacturer.in/market-area/bhiwadi/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steelmanufacturer.in/market-area/bhubaneswar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -426,11 +416,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steelmanufacturer.in/market-area/paradip/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://steelmanufacturer.in/market-area/patna/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -482,11 +467,6 @@
   </url>
   <url>
     <loc>https://steelmanufacturer.in/market-area/roha/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steelmanufacturer.in/market-area/rourkela/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -2537,6 +2517,56 @@
   </url>
   <url>
     <loc>https://steelmanufacturer.in/market-area/kurnool/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/bhubaneswar/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/cuttack/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/berhampur/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/angul/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/rourkela/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/sambalpur/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/jharsuguda/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/jajpur/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/paradip/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/market-area/balasore/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -61,6 +61,11 @@ export default function MarketAreaPage() {
         const el = document.getElementById('telangana');
         if (el) el.scrollIntoView({ behavior: 'smooth' });
       }, 150);
+    } else if (window.location.pathname.includes('odisha')) {
+      setTimeout(() => {
+        const el = document.getElementById('odisha');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 150);
     }
   }, []);
 

@@ -54,7 +54,9 @@ const newPages = [
   'madhya-pradesh',
   'market-area/madhya-pradesh',
   'andhra-pradesh',
-  'market-area/andhra-pradesh'
+  'market-area/andhra-pradesh',
+  'odisha',
+  'market-area/odisha'
 ];
 
 // Helper to format priority

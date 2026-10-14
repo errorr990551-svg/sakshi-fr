@@ -140,13 +140,69 @@ export default function BlogPage() {
               }}
               className="featured-post-card"
             >
-              <div style={{ height: '100%', minHeight: '260px', overflow: 'hidden', backgroundColor: '#12151c' }}>
-                <img 
-                  src={featuredPost.image} 
-                  alt={featuredPost.title} 
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
-                />
-              </div>
+              {featuredPost.image ? (
+                <div style={{ height: '100%', minHeight: '260px', overflow: 'hidden', backgroundColor: '#12151c' }}>
+                  <img 
+                    src={featuredPost.image} 
+                    alt={featuredPost.title} 
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                  />
+                </div>
+              ) : (
+                <div style={{ 
+                  height: '100%', 
+                  minHeight: '260px', 
+                  background: 'linear-gradient(135deg, rgba(255, 193, 7, 0.12) 0%, rgba(18, 21, 28, 0.98) 100%)',
+                  borderRight: '1px solid var(--border-color)',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  padding: '2.5rem',
+                  position: 'relative',
+                  overflow: 'hidden'
+                }}>
+                  <div style={{
+                    position: 'absolute',
+                    inset: 0,
+                    backgroundImage: 'radial-gradient(rgba(255, 193, 7, 0.12) 1px, transparent 1px)',
+                    backgroundSize: '18px 18px',
+                    opacity: 0.8
+                  }} />
+                  <div style={{
+                    width: '68px',
+                    height: '68px',
+                    borderRadius: '16px',
+                    backgroundColor: 'rgba(255, 193, 7, 0.12)',
+                    border: '1px solid var(--primary-yellow)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    color: 'var(--primary-yellow)',
+                    marginBottom: '1rem',
+                    position: 'relative',
+                    zIndex: 1,
+                    boxShadow: '0 8px 24px rgba(255, 193, 7, 0.2)'
+                  }}>
+                    <Sparkles size={32} />
+                  </div>
+                  <span style={{
+                    position: 'relative',
+                    zIndex: 1,
+                    color: 'var(--primary-yellow)',
+                    fontSize: '0.85rem',
+                    fontWeight: '700',
+                    letterSpacing: '0.08em',
+                    textTransform: 'uppercase',
+                    backgroundColor: 'rgba(11, 12, 16, 0.85)',
+                    padding: '0.3rem 0.8rem',
+                    borderRadius: '20px',
+                    border: '1px solid rgba(255, 193, 7, 0.3)'
+                  }}>
+                    {featuredPost.category}
+                  </span>
+                </div>
+              )}
               <div style={{ padding: '2.5rem', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '1rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                   <span style={{ backgroundColor: 'var(--primary-yellow-glow)', color: 'var(--primary-yellow)', border: '1px solid var(--primary-yellow-solid-glow)', fontSize: '0.75rem', fontWeight: '700', padding: '0.25rem 0.75rem', borderRadius: '50px', textTransform: 'uppercase' }}>
@@ -209,7 +265,7 @@ export default function BlogPage() {
                   }}
                 >
                   <div>
-                    {post.image && (
+                    {post.image ? (
                       <div style={{ height: '180px', overflow: 'hidden', backgroundColor: '#12151c', borderBottom: '1px solid var(--border-color)' }}>
                         <img 
                           src={post.image} 
@@ -217,6 +273,59 @@ export default function BlogPage() {
                           style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.3s ease' }}
                           className="card-img"
                         />
+                      </div>
+                    ) : (
+                      <div style={{ 
+                        height: '160px', 
+                        background: 'linear-gradient(135deg, rgba(255, 193, 7, 0.08) 0%, rgba(18, 21, 28, 0.98) 100%)', 
+                        borderBottom: '1px solid var(--border-color)',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        position: 'relative',
+                        padding: '1.25rem',
+                        overflow: 'hidden'
+                      }}>
+                        <div style={{
+                          position: 'absolute',
+                          inset: 0,
+                          backgroundImage: 'radial-gradient(rgba(255, 193, 7, 0.08) 1px, transparent 1px)',
+                          backgroundSize: '14px 14px',
+                          opacity: 0.65
+                        }} />
+                        <div style={{
+                          width: '48px',
+                          height: '48px',
+                          borderRadius: '12px',
+                          backgroundColor: 'rgba(255, 193, 7, 0.1)',
+                          border: '1px solid rgba(255, 193, 7, 0.3)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          color: 'var(--primary-yellow)',
+                          marginBottom: '0.65rem',
+                          position: 'relative',
+                          zIndex: 1,
+                          boxShadow: '0 4px 15px rgba(255, 193, 7, 0.12)'
+                        }}>
+                          <FileText size={22} />
+                        </div>
+                        <span style={{ 
+                          position: 'relative', 
+                          zIndex: 1,
+                          fontSize: '0.72rem', 
+                          fontWeight: '700', 
+                          color: 'var(--primary-yellow)', 
+                          textTransform: 'uppercase', 
+                          letterSpacing: '0.06em',
+                          backgroundColor: 'rgba(11, 12, 16, 0.9)',
+                          padding: '0.2rem 0.6rem',
+                          borderRadius: '20px',
+                          border: '1px solid rgba(255, 193, 7, 0.25)'
+                        }}>
+                          {post.category} Guide
+                        </span>
                       </div>
                     )}
                     <div style={{ padding: '1.5rem' }}>

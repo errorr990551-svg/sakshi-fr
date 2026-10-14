@@ -18,6 +18,15 @@ async function runPrerender() {
   }
   
   const { render } = await import('./dist/server/main-ssr.js');
+  const { odishaCityData } = await import('./src/data/odishaCityData.js');
+  const { maharashtraCityData } = await import('./src/data/maharashtraCityData.js');
+  const { karnatakaCityData } = await import('./src/data/karnatakaCityData.js');
+  const { gujaratCityData } = await import('./src/data/gujaratCityData.js');
+  const { telanganaCityData } = await import('./src/data/telanganaCityData.js');
+  const { westBengalCityData } = await import('./src/data/westBengalCityData.js');
+  const { madhyaPradeshCityData } = await import('./src/data/madhyaPradeshCityData.js');
+  const { andhraPradeshCityData } = await import('./src/data/andhraPradeshCityData.js');
+  const { blogPosts } = await import('./src/data/blogData.js');
 
   // 2. Load template and data models
   const templatePath = path.join(__dirname, 'dist/index.html');
@@ -159,10 +168,35 @@ async function runPrerender() {
           description: p.meta,
           robots: 'index, follow',
           keywords: p.primary_kw ? (p.secondary_kws?.length ? `${p.primary_kw}, ${p.secondary_kws.join(', ')}` : p.primary_kw) : '',
-          data: p
         });
       }
     }
+  });
+
+  // Technical Blog Hub Page
+  routes.push({
+    url: `${BASE_URL}/blog/`,
+    type: 'blog',
+    slug: 'blog',
+    title: 'Steel Knowledge Hub & Technical Guides | Sakshi Forge',
+    description: 'Deep technical briefings, ASME dimension matrices, surface electropolishing standards, and metallurgical grade selection guides curated by Sakshi Forge engineers.',
+    robots: 'index, follow',
+    keywords: 'steel knowledge hub, electropolished pipes guide, ASME BPE standards, pharma piping specs',
+    data: null
+  });
+
+  // Individual Technical Blog Posts
+  blogPosts.forEach(post => {
+    routes.push({
+      url: `${BASE_URL}/blog/${post.slug}/`,
+      type: 'blog-post',
+      slug: `blog/${post.slug}`,
+      title: post.seoTitle ? `${post.seoTitle} | Sakshi Forge` : `${post.title} | Sakshi Forge`,
+      description: post.desc,
+      robots: 'index, follow',
+      keywords: post.tags ? post.tags.join(', ') : '',
+      data: post
+    });
   });
 
   console.log(`Prepared ${routes.length} routes to render.`);
@@ -391,6 +425,89 @@ async function runPrerender() {
             { "@type": "PropertyValue", "name": "Standard", "value": "ASTM A270 / ASTM A312" },
             { "@type": "PropertyValue", "name": "Certification", "value": "EN 10204 3.1 MTC" }
           ]
+        });
+      }
+    }
+
+    if (route.type === 'market-city' && route.data) {
+      const citySlug = route.data.slug || route.slug.replace('market-area/', '');
+      const richData = odishaCityData[citySlug] || maharashtraCityData[citySlug] || karnatakaCityData[citySlug] || gujaratCityData[citySlug] || telanganaCityData[citySlug] || westBengalCityData[citySlug] || madhyaPradeshCityData[citySlug] || andhraPradeshCityData[citySlug];
+
+      const currentUrl = `${BASE_URL}${route.data.path || ('/market-area/' + citySlug)}`;
+      const cityName = richData?.city || route.data.city;
+      const stateName = richData?.state || route.data.state || 'India';
+      const faqsList = richData?.faqs || route.data.faqs;
+      const hasDuplex = richData?.hasDuplex || route.data.hasDuplex;
+
+      // BreadcrumbList
+      schemasGraph.push({
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": `${BASE_URL}/` },
+          { "@type": "ListItem", "position": 2, "name": "Market Areas", "item": `${BASE_URL}/market-area` },
+          { "@type": "ListItem", "position": 3, "name": cityName, "item": currentUrl }
+        ]
+      });
+
+      // LocalBusiness
+      schemasGraph.push({
+        "@type": "LocalBusiness",
+        "@id": `${BASE_URL}/#org`,
+        "name": "Sakshi Forge",
+        "url": `${BASE_URL}/`,
+        "telephone": "+918291366340",
+        "email": "sakshiforge1737@gmail.com",
+        "description": "ISO 9001:2015 certified manufacturer of electropolished stainless steel pipes and tubes, industrial flanges and forged fittings.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Balaji Industrial Compound, Taloja MIDC",
+          "addressLocality": "Navi Mumbai",
+          "addressRegion": "Maharashtra",
+          "postalCode": "410208",
+          "addressCountry": "IN"
+        },
+        "areaServed": [
+          { "@type": "City", "name": cityName },
+          ...(stateName ? [{ "@type": "AdministrativeArea", "name": stateName }] : [])
+        ]
+      });
+
+      // Product
+      schemasGraph.push({
+        "@type": "Product",
+        "@id": `${currentUrl}#product`,
+        "name": hasDuplex 
+          ? `Electropolished SS 316L and Duplex 2205 Pipes and Tubes - ${cityName}`
+          : `Electropolished SS 304L / 316L Sanitary Pipes and Tubes - ${cityName}`,
+        "description": route.data.metaDescription || `Welded and seamless electropolished stainless steel pipes and tubes in 316L, 304L${hasDuplex ? ' and duplex 2205' : ''} for ${cityName}, supplied with MTC EN 10204 3.1 and 100% PMI testing.`,
+        "brand": { "@type": "Brand", "name": "Sakshi Forge" },
+        "manufacturer": { "@id": `${BASE_URL}/#org` },
+        "material": hasDuplex
+          ? "SS 316L (UNS S31603 / 1.4404), SS 304L (UNS S30403 / 1.4307), Duplex 2205 (UNS S31803 / 1.4462)"
+          : "SS 304L (UNS S30403 / 1.4307), SS 316L (UNS S31603 / 1.4404)",
+        "category": "Electropolished stainless steel pipes and tubes",
+        "additionalProperty": [
+          { "@type": "PropertyValue", "name": "Internal surface roughness (Ra)", "maxValue": 0.4, "unitCode": "4H", "unitText": "µm" },
+          { "@type": "PropertyValue", "name": "Manufacturing standards", "value": hasDuplex ? "ASTM A269, ASTM A270, ASTM A790 (duplex)" : "ASTM A269, ASTM A270" },
+          { "@type": "PropertyValue", "name": "Material certificate", "value": "EN 10204 3.1" },
+          { "@type": "PropertyValue", "name": "Testing", "value": "100% PMI, Ra test, hydro test, passivation verification, ferrite check" },
+          { "@type": "PropertyValue", "name": "Types", "value": "Welded and seamless" }
+        ]
+      });
+
+      // FAQPage
+      if (faqsList && faqsList.length > 0) {
+        const faqEntities = faqsList.map(f => ({
+          "@type": "Question",
+          "name": f.q || f.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": f.a || f.answer
+          }
+        }));
+        schemasGraph.push({
+          "@type": "FAQPage",
+          "mainEntity": faqEntities
         });
       }
     }

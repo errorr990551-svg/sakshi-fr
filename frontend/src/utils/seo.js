@@ -104,10 +104,11 @@ export function updateSEO({ type, data }) {
       canonicalUrl = `${BASE_URL}/${targetSlug}/`;
     }
   } else if (type === "blog-post" && data) {
-    title = `${data.title} | Sakshi Forge Steel Knowledge Hub`;
-    metaDesc = data.desc;
+    title = data.seoTitle ? `${data.seoTitle} | Sakshi Forge` : `${data.title} | Sakshi Forge Steel Knowledge Hub`;
+    metaDesc = data.desc || data.metaDesc;
     keywords = data.tags ? data.tags.join(", ") : keywords;
     canonicalUrl = `${BASE_URL}/blog/${data.slug}/`;
+    robots = "index, follow";
   } else if (type === "gallery") {
     title = "Factory Media & Video Gallery | Sakshi Forge Manufacturing Infrastructure";
     metaDesc = "Watch live videos and explore photos of Sakshi Forge's forging presses, heat treatment furnaces, CNC lathes, and industrial steel flange inventory.";

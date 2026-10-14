@@ -76,6 +76,7 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
             <ul className="footer-links">
               <li><a href="/" onClick={(e) => handleLinkClick(e, '/')}>Home</a></li>
               <li><a href="/products" onClick={(e) => handleLinkClick(e, '/products')}>Products Range</a></li>
+              <li><a href="/blog" onClick={(e) => handleLinkClick(e, '/blog')}>Technical Blogs</a></li>
               <li><a href="/about-us" onClick={(e) => handleLinkClick(e, '/about-us')}>About Sakshi Forge</a></li>
               <li><a href="/gallery" onClick={(e) => handleLinkClick(e, '/gallery')}>Facility Gallery</a></li>
               <li><a href="/quality-assurance" onClick={(e) => handleLinkClick(e, '/quality-assurance')}>Quality Assurance</a></li>
@@ -89,6 +90,7 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
           <div className="footer-col">
             <h4>Tools & Company</h4>
             <ul className="footer-links">
+              <li><a href="/blog" onClick={(e) => handleLinkClick(e, '/blog')} style={{ color: 'var(--primary-yellow)', fontWeight: '700' }}>EP Pipes &amp; Steel Blogs →</a></li>
               <li><a href="/flange-dimension-chart" onClick={(e) => handleLinkClick(e, '/flange-dimension-chart')}>Flange Dimension Chart</a></li>
               <li><a href="/flange-weight-chart" onClick={(e) => handleLinkClick(e, '/flange-weight-chart')}>Flange Weight Chart</a></li>
               <li><a href="/flange-bolt-chart" onClick={(e) => handleLinkClick(e, '/flange-bolt-chart')}>Flange Bolt Chart</a></li>
@@ -96,7 +98,6 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
               <li><a href="/catalogue" onClick={(e) => handleLinkClick(e, '/catalogue')}>Download Catalogue PDF</a></li>
               <li><a href="/team" onClick={(e) => handleLinkClick(e, '/team')}>Leadership & QA Team</a></li>
               <li><a href="/clients" onClick={(e) => handleLinkClick(e, '/clients')}>Our Clients & Industries</a></li>
-              <li><a href="/blog" onClick={(e) => handleLinkClick(e, '/blog')}>Steel Knowledge Blog</a></li>
             </ul>
           </div>
 

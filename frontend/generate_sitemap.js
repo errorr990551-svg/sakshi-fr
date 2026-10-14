@@ -21,6 +21,8 @@ const epBuildSpecData = fs.existsSync(epBuildSpecPath)
   ? JSON.parse(fs.readFileSync(epBuildSpecPath, 'utf-8'))
   : [];
 
+import { blogPosts } from './src/data/blogData.js';
+
 const newPages = [
   'gallery',
   'clients',
@@ -141,6 +143,12 @@ epBuildSpecData.forEach(item => {
     const priorityVal = item.priority === 'P1' ? '1.0' : item.priority === 'P2' ? '0.8' : '0.7';
     addMainUrl(item.url, 'weekly', priorityVal);
   }
+});
+
+// Technical Blog Hub and Posts
+addMainUrl(`${BASE_URL}/blog/`, 'weekly', '0.8', 'Steel Knowledge Hub');
+blogPosts.forEach(post => {
+  addMainUrl(`${BASE_URL}/blog/${post.slug}/`, 'monthly', '0.8', `Blog: ${post.title}`);
 });
 
 mainSitemap += `</urlset>\n`;

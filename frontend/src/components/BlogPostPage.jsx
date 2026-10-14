@@ -175,6 +175,13 @@ export default function BlogPostPage({ post, onEnquireClick }) {
           <article 
             className="blog-content-body"
             dangerouslySetInnerHTML={{ __html: post.content }}
+            onClick={(e) => {
+              const target = e.target.closest('a');
+              if (target && target.getAttribute('href')?.startsWith('/')) {
+                e.preventDefault();
+                handleLinkClick(e, target.getAttribute('href'));
+              }
+            }}
             style={{ 
               lineHeight: '1.8', 
               fontSize: '1.05rem', 

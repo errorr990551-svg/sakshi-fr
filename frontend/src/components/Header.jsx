@@ -112,6 +112,20 @@ export default function Header({ currentPage, onNavigate, onEnquireClick }) {
               </ul>
             </li>
 
+            {/* Blogs */}
+            <li>
+              <a 
+                href="/blog" 
+                className={`nav-link ${currentPage === 'blog' || currentPage === 'blog-post' ? 'active' : ''}`} 
+                onClick={(e) => {
+                  closeMenu();
+                  handleLinkClick(e, '/blog');
+                }}
+              >
+                Blogs
+              </a>
+            </li>
+
             {/* Gallery */}
             <li>
               <a 

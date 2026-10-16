@@ -6,6 +6,7 @@ import {
   SlidersHorizontal, Sparkles, Filter
 } from 'lucide-react';
 import { handleLinkClick } from '../utils/router';
+import CityProductPillars from './CityProductPillars';
 
 export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnlockedContact = false, onShowContactDetails }) {
   const [openFaq, setOpenFaq] = useState(0);
@@ -1165,6 +1166,9 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
           </div>
         </div>
       </section>
+
+      {/* Core Electropolished Product Specification Pillars */}
+      <CityProductPillars cityName={cityData?.city || 'Your Area'} />
     </div>
   );
 }

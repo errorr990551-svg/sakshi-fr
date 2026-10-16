@@ -74,11 +74,7 @@ const formatUrl = (url) => {
     clean = `${BASE_URL}${clean.startsWith('/') ? '' : '/'}${clean}`;
   }
   if (clean === BASE_URL || clean === `${BASE_URL}/`) return `${BASE_URL}/`;
-  // Only the root hub /market-area has no trailing slash
-  if (clean === `${BASE_URL}/market-area`) {
-    return `${BASE_URL}/market-area`;
-  }
-  // All specific pages, including /market-area/<city>/, use trailing slash
+  // All pages, including /market-area/ and /market-area/<city>/, use trailing slash to avoid 301 redirects
   return clean.endsWith('/') ? clean : `${clean}/`;
 };
 
@@ -92,6 +88,9 @@ const xmlEscape = (str) => {
             .replace(/'/g, '&apos;');
 };
 
+// Current modification date for lastmod tags (YYYY-MM-DD)
+const TODAY_LASTMOD = new Date().toISOString().split('T')[0];
+
 // 1. Main Sitemap (sitemap.xml)
 const mainUrlsSet = new Set();
 let mainSitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -99,13 +98,14 @@ let mainSitemap = `<?xml version="1.0" encoding="UTF-8"?>
 `;
 
 // Helper to append unique URL to main sitemap
-const addMainUrl = (url, changefreq, priority, comment = '') => {
+const addMainUrl = (url, changefreq, priority, comment = '', lastmod = TODAY_LASTMOD) => {
   const formatted = formatUrl(url);
   if (mainUrlsSet.has(formatted)) return;
   mainUrlsSet.add(formatted);
   if (comment) mainSitemap += `  <!-- ${comment} -->\n`;
   mainSitemap += `  <url>
     <loc>${formatted}</loc>
+    <lastmod>${lastmod}</lastmod>
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
   </url>\n`;
@@ -134,8 +134,8 @@ newPages.forEach(slug => {
   addMainUrl(`${BASE_URL}/${slug}/`, 'weekly', '0.8');
 });
 
-// Market Area Hub
-addMainUrl(`${BASE_URL}/market-area`, 'weekly', '0.8', 'Market Area Hub');
+// Market Area Hub (with trailing slash)
+addMainUrl(`${BASE_URL}/market-area/`, 'weekly', '0.8', 'Market Area Hub');
 
 // EP Build Spec Pages
 epBuildSpecData.forEach(item => {
@@ -157,21 +157,60 @@ const mainSitemapPath = path.join(__dirname, 'public/sitemap.xml');
 fs.writeFileSync(mainSitemapPath, mainSitemap);
 console.log(`Main sitemap generated successfully at ${mainSitemapPath} with ${mainUrlsSet.size} unique URLs.`);
 
-// 2. Dedicated City Sitemap (sitemap-cities.xml)
+// 2. Dedicated City Sitemap (sitemap-cities.xml) - Reduced to 30 Highest-Priority Industrial Cities
+export const PRIORITY_30_CITY_SLUGS = [
+  'mumbai',
+  'delhi',
+  'chennai',
+  'pune',
+  'ahmedabad',
+  'bengaluru',
+  'hyderabad',
+  'kolkata',
+  'surat',
+  'vadodara',
+  'thane',
+  'indore',
+  'visakhapatnam',
+  'coimbatore',
+  'vapi',
+  'ankleshwar',
+  'hosur',
+  'tarapur',
+  'nashik',
+  'aurangabad',
+  'bhopal',
+  'lucknow',
+  'jaipur',
+  'ludhiana',
+  'bhubaneswar',
+  'cuttack',
+  'rajkot',
+  'cuddalore',
+  'tiruchirappalli',
+  'nagpur'
+];
+
 const cityUrlsSet = new Set();
 let citySitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 `;
 
-marketCities.forEach(city => {
-  if (!city.path || city.path === '/') return;
+// Filter market cities to the 30 priority list in defined order
+PRIORITY_30_CITY_SLUGS.forEach(slug => {
+  const city = marketCities.find(c => c.slug === slug || c.path === `/market-area/${slug}`);
+  if (!city) {
+    console.warn(`Warning: Priority city ${slug} not found in marketCities!`);
+    return;
+  }
   const formatted = formatUrl(`${BASE_URL}${city.path}`);
   if (cityUrlsSet.has(formatted)) return;
   cityUrlsSet.add(formatted);
   citySitemap += `  <url>
     <loc>${formatted}</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>${TODAY_LASTMOD}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>\n`;
 });
 
@@ -179,7 +218,7 @@ citySitemap += `</urlset>\n`;
 
 const citySitemapPath = path.join(__dirname, 'public/sitemap-cities.xml');
 fs.writeFileSync(citySitemapPath, citySitemap);
-console.log(`City sitemap generated successfully at ${citySitemapPath} with ${cityUrlsSet.size} city URLs.`);
+console.log(`City sitemap generated successfully at ${citySitemapPath} with ${cityUrlsSet.size} priority city URLs.`);
 
 // 3. Image Sitemap (image-sitemap.xml)
 let imageSitemap = `<?xml version="1.0" encoding="UTF-8"?>

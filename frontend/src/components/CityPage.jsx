@@ -2,6 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { ChevronRight, ShieldCheck, Truck, Sparkles, MapPin, HelpCircle, ChevronDown, ChevronUp, Phone, Mail, FileText, Globe, Building, Award, Activity, ArrowRight, Shield, Layers, FileCheck, HelpCircle as FaqIcon, CheckCircle2, Sliders, Cpu, Zap, Box, MessageSquare } from 'lucide-react';
 import { handleLinkClick } from '../utils/router';
 import { customCityData } from '../data/customCityData';
+import CityProductPillars from './CityProductPillars';
 
 // Premium Live Delivery Widget Component
 const LiveDeliveryWidget = ({ city, state, country, transitLine, freightBasis }) => {
@@ -732,6 +733,9 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
             </div>
           </div>
         </section>
+
+        {/* Core Product Specification Pillars Interlinking */}
+        <CityProductPillars cityName={custom?.city || cityData?.city || 'Chennai'} />
       </div>
     );
   }
@@ -1838,6 +1842,9 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
           </div>
         </section>
       )}
+
+      {/* 9. Core Product Specification Pillars Interlinking */}
+      <CityProductPillars cityName={cityData?.city || 'Your Area'} />
 
     </div>
   );

@@ -7,6 +7,7 @@ import {
   Compass, ArrowUpRight
 } from 'lucide-react';
 import { handleLinkClick } from '../utils/router';
+import { PRIORITY_30_CITIES } from '../data/priorityCities';
 
 export default function HomePage({ onEnquireClick }) {
   const [openFaq, setOpenFaq] = useState(0);
@@ -973,41 +974,39 @@ export default function HomePage({ onEnquireClick }) {
 
               <div style={{ marginBottom: '1.75rem' }}>
                 <div style={{ color: 'var(--primary-yellow)', fontWeight: '700', fontSize: '0.92rem', marginBottom: '0.85rem' }}>
-                  Major Hubs & Cities We Serve:
+                  30 Priority Industrial Corridors & Cities We Serve:
                 </div>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.6rem' }}>
-                  {[
-                    { name: 'Mumbai Works', path: '/market-area/mumbai' },
-                    { name: 'Delhi NCR', path: '/market-area/delhi' },
-                    { name: 'Hyderabad', path: '/market-area/hyderabad' },
-                    { name: 'Visakhapatnam', path: '/market-area/visakhapatnam' },
-                    { name: 'Chennai', path: '/market-area/chennai' },
-                    { name: 'Coimbatore', path: '/market-area/coimbatore' },
-                    { name: 'Hosur', path: '/market-area/hosur' },
-                    { name: 'Cuddalore', path: '/market-area/cuddalore' },
-                    { name: 'Pune MIDC', path: '/market-area/pune' },
-                    { name: 'Tarapur', path: '/market-area/tarapur' }
-                  ].map((c, idx) => (
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', maxHeight: '240px', overflowY: 'auto', paddingRight: '0.5rem' }}>
+                  {PRIORITY_30_CITIES.map((c, idx) => (
                     <a
                       key={idx}
                       href={c.path}
-                      onClick={handleLinkClick}
+                      onClick={(e) => handleLinkClick(e, c.path)}
                       style={{
                         backgroundColor: 'var(--bg-dark-900)',
                         border: '1px solid var(--border-color)',
-                        padding: '0.4rem 0.85rem',
+                        padding: '0.35rem 0.75rem',
                         borderRadius: '6px',
                         color: '#e2e8f0',
                         textDecoration: 'none',
-                        fontSize: '0.82rem',
-                        fontWeight: '500'
+                        fontSize: '0.8rem',
+                        fontWeight: '500',
+                        transition: 'border-color 0.2s, color 0.2s'
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.borderColor = 'var(--primary-yellow)';
+                        e.currentTarget.style.color = 'var(--primary-yellow)';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.borderColor = 'var(--border-color)';
+                        e.currentTarget.style.color = '#e2e8f0';
                       }}
                     >
                       {c.name}
                     </a>
                   ))}
-                  <a href="/market-area" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', fontSize: '0.85rem', padding: '0.4rem 0.5rem', textDecoration: 'underline', fontWeight: '700' }}>
-                    and all 50+ Cities in Directory →
+                  <a href="/market-area/" onClick={(e) => handleLinkClick(e, '/market-area/')} style={{ color: 'var(--primary-yellow)', fontSize: '0.82rem', padding: '0.35rem 0.5rem', textDecoration: 'underline', fontWeight: '700', display: 'flex', alignItems: 'center' }}>
+                    View All 50+ Cities in Directory →
                   </a>
                 </div>
               </div>

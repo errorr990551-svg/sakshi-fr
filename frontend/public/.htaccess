@@ -1,37 +1,39 @@
 # .htaccess — steelmanufacturer.in (Apache 2.4+ & LiteSpeed)
 DirectoryIndex index.html
 
-# ============ 1. HTTPS + non-www + clean URLs ============
+# ============ 1. Canonical Domain, Protocol & Consolidated 301 Redirects ============
 RewriteEngine On
 
-# Force HTTPS + non-www in one redirect
+# A. Force HTTPS + non-www in one single 301 redirect hop
 RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
 RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
 
-# Strip index.php / index.html from URLs
+# B. Strip index.php / index.html from URLs
 RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.(php|html?)[\s?] [NC]
 RewriteRule ^ /%1 [L,R=301]
 
-# 301 redirect /home/ to /
+# C. 301 Redirect Core URL Duplicates in One Hop
 RewriteRule ^home/?$ https://steelmanufacturer.in/ [L,R=301]
-
-# 301 redirect /marketplace/ to /market-area/
 RewriteRule ^marketplace/?$ https://steelmanufacturer.in/market-area/ [L,R=301]
+RewriteRule ^about/?$ https://steelmanufacturer.in/about-us/ [L,R=301]
+RewriteRule ^delhi/?$ https://steelmanufacturer.in/market-area/delhi/ [L,R=301]
+RewriteRule ^bangalore/?$ https://steelmanufacturer.in/market-area/bengaluru/ [L,R=301]
 
-# 301 redirect legacy electropolished-pipe-manufacturer-* and supplier-* to /market-area/*
-RewriteRule ^electropolished-pipe-manufacturer-(.*)/?$ https://steelmanufacturer.in/market-area/$1/ [L,R=301]
-RewriteRule ^electropolished-pipe-supplier-(.*)/?$ https://steelmanufacturer.in/market-area/$1/ [L,R=301]
+# D. 301 Redirect Legacy City URLs to /market-area/<city>/ (covers pipe/pipes, with or without 'in-')
+RewriteRule ^electropolished-pipes?-manufacturer-(?:in-)?([^/]+)/?$ https://steelmanufacturer.in/market-area/$1/ [L,R=301]
+RewriteRule ^electropolished-pipes?-supplier-(?:in-)?([^/]+)/?$ https://steelmanufacturer.in/market-area/$1/ [L,R=301]
+RewriteRule ^industrial-pipe-flange-manufacturer-in-([^/]+)-sakshi-forge/?$ https://steelmanufacturer.in/market-area/$1/ [L,R=301]
 
-# Add trailing slash to non-file URLs (excluding API routes)
+# E. Add trailing slash to non-file URLs in one 301 hop (excluding API routes)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} !/$
 RewriteCond %{REQUEST_URI} !\.
 RewriteCond %{REQUEST_URI} !^/api
-RewriteRule ^(.*)$ /$1/ [L,R=301]
+RewriteRule ^(.*)$ https://steelmanufacturer.in/$1/ [L,R=301]
 
-# Optional API proxy fallback (if Apache mod_proxy is enabled)
+# F. Optional API proxy fallback (if Apache mod_proxy is enabled)
 <IfModule mod_proxy.c>
   <IfModule mod_proxy_http.c>
     SSLProxyEngine On
@@ -39,8 +41,8 @@ RewriteRule ^(.*)$ /$1/ [L,R=301]
   </IfModule>
 </IfModule>
 
-# ============ 2. SPA & Pre-rendered Directory Routing ============
-# Serve existing physical file directly
+# ============ 2. Pre-rendered Directory & Static File Routing ============
+# Serve existing physical files directly (images, css, js, robots.txt, sitemaps, etc.)
 RewriteCond %{REQUEST_FILENAME} -f
 RewriteRule ^ - [L]
 
@@ -49,14 +51,13 @@ RewriteCond %{REQUEST_FILENAME} -d
 RewriteCond %{REQUEST_FILENAME}/index.html -f
 RewriteRule ^ %{REQUEST_FILENAME}/index.html [L]
 
-# SPA Fallback: send any unhandled path to root /index.html for React Router (excluding API)
+# ============ 3. Genuinely Unknown URLs Return REAL HTTP 404 (Fixes Soft-404) ============
+ErrorDocument 404 /404.html
+
 RewriteCond %{REQUEST_URI} !^/api
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ /index.html [L]
-
-# ============ 3. Custom Error Fallback ============
-ErrorDocument 404 /index.html
+RewriteRule ^ - [R=404,L]
 
 # ============ 4. Compression ============
 <IfModule mod_deflate.c>
@@ -66,7 +67,7 @@ ErrorDocument 404 /index.html
   AddOutputFilterByType BROTLI_COMPRESS text/html text/css application/javascript application/json image/svg+xml
 </IfModule>
 
-# ============ 5. Browser caching ============
+# ============ 5. Browser Caching ============
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType image/webp "access plus 1 year"
@@ -81,7 +82,7 @@ ErrorDocument 404 /index.html
 </IfModule>
 FileETag None
 
-# ============ 6. Security headers ============
+# ============ 6. Security Headers ============
 <IfModule mod_headers.c>
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
   Header always set X-Content-Type-Options "nosniff"
@@ -90,7 +91,7 @@ FileETag None
   Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
 </IfModule>
 
-# ============ 7. Block sensitive files ============
+# ============ 7. Block Sensitive Files ============
 <FilesMatch "^(\.htaccess|\.env|config\.php|composer\.(json|lock))$">
   Require all denied
 </FilesMatch>

@@ -58,15 +58,96 @@ export function parseKeySpecs(specsString) {
   }).filter(item => item.key);
 }
 
+// Helper to generate Google Rich Results compliant Product Offer and identifier details
+export function getProductOfferDetails(slug, categoryName, pageUrl) {
+  const s = (slug || '').toLowerCase();
+  const cat = (categoryName || '').toLowerCase();
+
+  let lowPrice = "210";
+  let highPrice = "7500";
+
+  if (s.includes('pipe') || s.includes('tube') || cat.includes('pipe')) {
+    lowPrice = "480";
+    highPrice = "14500";
+  } else if (s.includes('fastener') || cat.includes('fastener') || s.includes('bolt') || s.includes('nut')) {
+    lowPrice = "45";
+    highPrice = "1250";
+  } else if (s.includes('round-bar') || s.includes('coil') || cat.includes('bar')) {
+    lowPrice = "290";
+    highPrice = "16500";
+  } else if (s.includes('elbow') || s.includes('tee') || s.includes('flange') || s.includes('fitting') || cat.includes('fitting') || cat.includes('flange')) {
+    lowPrice = "185";
+    highPrice = "6800";
+  }
+
+  const skuCode = `SF-${(slug || 'ITEM').replace(/[^a-zA-Z0-9]/g, '-').toUpperCase()}`;
+
+  return {
+    sku: skuCode,
+    mpn: `MPN-${skuCode}`,
+    offers: {
+      "@type": "AggregateOffer",
+      "url": pageUrl,
+      "priceCurrency": "INR",
+      "lowPrice": lowPrice,
+      "highPrice": highPrice,
+      "offerCount": "100",
+      "priceValidUntil": "2027-12-31",
+      "availability": "https://schema.org/InStock",
+      "itemCondition": "https://schema.org/NewCondition",
+      "seller": {
+        "@type": "Organization",
+        "name": "Sakshi Forge",
+        "url": `${BASE_URL}/`
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "applicableCountry": "IN",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 30,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": 0,
+          "currency": "INR"
+        },
+        "shippingDestination": [{
+          "@type": "DefinedRegion",
+          "addressCountry": "IN"
+        }],
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 1,
+            "maxValue": 2,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 1,
+            "maxValue": 4,
+            "unitCode": "DAY"
+          }
+        }
+      }
+    }
+  };
+}
+
 // Main function to update head elements dynamically
 export function updateSEO({ type, data }) {
   if (typeof document === 'undefined') return;
   
   clearExistingSchemas();
 
-  let title = "Sakshi Forge | Industrial Flanges, Pipes & Forged Steel Manufacturer";
-  let metaDesc = "Sakshi Forge is a leading manufacturer of high-quality forged flanges, industrial steel pipes, tubes, round bars, and steel plates. Serving oil & gas, petrochemical, and heavy industries globally.";
-  let keywords = "Sakshi Forge, industrial flanges, forged steel, steel pipes, butt weld fittings, forged fittings, steel manufacturer India";
+  let title = "Electropolished Pipes Manufacturer in India | SS 316L EP Tubes | Sakshi Forge";
+  let metaDesc = "ISO 9001:2015 electropolished pipe manufacturer in Mumbai, India. SS 304, 316L and duplex EP pipes, Ra ≤0.4 µm, 100% PMI tested, 3.1 MTC. Quote in 30 minutes.";
+  let keywords = "electropolished pipes manufacturer in India, SS 316L EP tubes, Sakshi Forge, industrial flanges, forged steel, steel pipes, butt weld fittings, forged fittings";
   let canonicalUrl = BASE_URL;
   let robots = "index, follow";
 
@@ -227,9 +308,14 @@ export function updateSEO({ type, data }) {
     keywords = data.primary_kw ? (data.secondary_kws?.length ? `${data.primary_kw}, ${data.secondary_kws.join(', ')}` : data.primary_kw) : keywords;
     const urlSlug = data.url ? data.url.replace(/^\/|\/$/g, '') : '';
     canonicalUrl = urlSlug ? `${BASE_URL}/${urlSlug}/` : `${BASE_URL}/`;
+  } else if (type === "404") {
+    title = "404 - Page Not Found | Sakshi Forge";
+    metaDesc = "The requested page was not found. Browse Sakshi Forge electropolished pipes, industrial flanges, and forged steel fittings.";
+    canonicalUrl = `${BASE_URL}/404.html`;
+    robots = "noindex, follow";
   }
 
-  if (canonicalUrl && !canonicalUrl.endsWith('/')) {
+  if (canonicalUrl && !canonicalUrl.endsWith('/') && !canonicalUrl.endsWith('.html')) {
     canonicalUrl = `${canonicalUrl}/`;
   }
 
@@ -421,6 +507,8 @@ export function updateSEO({ type, data }) {
     // Find material grades or available grades
     const materialGrade = specsList.find(s => s.key.toLowerCase().includes("grade") || s.key.toLowerCase().includes("material"))?.value || "Stainless Steel";
 
+    const offerDetails = getProductOfferDetails(data["URL Slug"], data["Category"], `${BASE_URL}/${data["URL Slug"]}/`);
+
     const productSchema = {
       "@type": "Product",
       "name": data["Product Name"],
@@ -429,6 +517,8 @@ export function updateSEO({ type, data }) {
         `${BASE_URL}${data["Image"] || "/flanges_pipes.webp"}`
       ],
       "description": data["Meta Description"] || metaDesc,
+      "sku": offerDetails.sku,
+      "mpn": offerDetails.mpn,
       "brand": {
         "@type": "Brand",
         "name": "Sakshi Forge"
@@ -437,7 +527,8 @@ export function updateSEO({ type, data }) {
         "@id": `${BASE_URL}/#org`
       },
       "material": materialGrade,
-      "additionalProperty": addProps
+      "additionalProperty": addProps,
+      "offers": offerDetails.offers
     };
 
     graph.push(breadcrumbs);
@@ -513,11 +604,15 @@ export function updateSEO({ type, data }) {
     }
 
     if (data.page_type && data.page_type.includes("Product")) {
+      const epOfferDetails = getProductOfferDetails(data.url || 'electropolished-pipes', 'Electropolished Pipes', currentUrl);
       graph.push({
         "@type": "Product",
         "name": data.h1 || data.title,
         "url": currentUrl,
+        "image": [ `${BASE_URL}/electropolish_pipes.webp` ],
         "description": data.meta,
+        "sku": epOfferDetails.sku,
+        "mpn": epOfferDetails.mpn,
         "brand": { "@type": "Brand", "name": "Sakshi Forge" },
         "manufacturer": { "@id": `${BASE_URL}/#org` },
         "material": "Stainless Steel 316L / 304L",
@@ -525,7 +620,8 @@ export function updateSEO({ type, data }) {
           { "@type": "PropertyValue", "name": "Surface Finish", "value": "Ra 0.38 um (15 uin) - ASME BPE SF4" },
           { "@type": "PropertyValue", "name": "Standard", "value": "ASTM A270 / ASTM A312" },
           { "@type": "PropertyValue", "name": "Certification", "value": "EN 10204 3.1 MTC" }
-        ]
+        ],
+        "offers": epOfferDetails.offers
       });
     }
   }
@@ -598,6 +694,7 @@ export function updateSEO({ type, data }) {
     };
     graph.push(localBusiness);
 
+    const cityOfferDetails = getProductOfferDetails('ep-pipes-' + (data.city || '').toLowerCase(), 'Electropolished Pipes', currentUrl);
     const productSchema = {
       "@type": "Product",
       "@id": `${currentUrl}#product`,
@@ -605,6 +702,9 @@ export function updateSEO({ type, data }) {
         ? `Electropolished SS 316L and Duplex 2205 Pipes and Tubes - ${data.city}`
         : `Electropolished SS 304L / 316L Sanitary Pipes and Tubes - ${data.city}`,
       "description": data.metaDescription || `Welded and seamless electropolished stainless steel pipes and tubes in 316L, 304L${data.hasDuplex ? ' and duplex 2205' : ''} for ${data.city}, supplied with MTC EN 10204 3.1 and 100% PMI testing.`,
+      "image": [ `${BASE_URL}/electropolish_pipes.webp` ],
+      "sku": cityOfferDetails.sku,
+      "mpn": cityOfferDetails.mpn,
       "brand": { "@type": "Brand", "name": "Sakshi Forge" },
       "manufacturer": { "@id": `${BASE_URL}/#org` },
       "material": data.hasDuplex
@@ -617,7 +717,8 @@ export function updateSEO({ type, data }) {
         { "@type": "PropertyValue", "name": "Material certificate", "value": "EN 10204 3.1" },
         { "@type": "PropertyValue", "name": "Testing", "value": "100% PMI, Ra test, hydro test, passivation verification, ferrite check" },
         { "@type": "PropertyValue", "name": "Types", "value": "Welded and seamless" }
-      ]
+      ],
+      "offers": cityOfferDetails.offers
     };
     graph.push(productSchema);
 

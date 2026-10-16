@@ -3,6 +3,7 @@ import { ArrowRight, ArrowLeftRight, ChevronRight, FileText } from 'lucide-react
 import productsData from '../data/products.json';
 import { handleLinkClick } from '../utils/router';
 import { getParentCategoryName } from '../utils/categories';
+import { PRIORITY_30_CITIES } from '../data/priorityCities';
 
 export default function CategoryPage({ category, onEnquireClick }) {
   // Filter products that belong to this category
@@ -294,6 +295,59 @@ export default function CategoryPage({ category, onEnquireClick }) {
           </div>
         </section>
       )}
+
+      {/* 3.5 Priority Industrial Cities Linking Map */}
+      <section style={{ padding: '3.5rem 0', backgroundColor: 'var(--bg-dark-800)', borderTop: '1px solid var(--border-color)' }}>
+        <div className="container">
+          <div style={{ marginBottom: '1.75rem' }}>
+            <span style={{ color: 'var(--primary-yellow)', fontSize: '0.8rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+              Pan-India Supply Network
+            </span>
+            <h3 style={{ fontSize: '1.4rem', fontWeight: '750', marginTop: '0.35rem', color: '#fff' }}>
+              Supply & Express Dispatch to 30 Major Industrial Hubs
+            </h3>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', margin: 0 }}>
+              Sakshi Forge manufactures at Taloja MIDC, Mumbai and dispatches electropolished stainless steel pipes, fittings and flanges directly to engineering and process plants across India:
+            </p>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(170px, 1fr))', gap: '0.75rem' }}>
+            {PRIORITY_30_CITIES.map((c) => (
+              <a
+                key={c.slug}
+                href={`/market-area/${c.slug}/`}
+                onClick={(e) => handleLinkClick(e, `/market-area/${c.slug}/`)}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  backgroundColor: 'var(--bg-dark-900)',
+                  border: '1px solid var(--border-color)',
+                  borderRadius: '6px',
+                  padding: '0.65rem 0.9rem',
+                  color: 'var(--text-secondary)',
+                  textDecoration: 'none',
+                  fontSize: '0.82rem',
+                  fontWeight: '600',
+                  transition: 'var(--transition-fast)'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = 'var(--primary-yellow)';
+                  e.currentTarget.style.color = 'var(--primary-yellow)';
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = 'var(--border-color)';
+                  e.currentTarget.style.color = 'var(--text-secondary)';
+                  e.currentTarget.style.transform = 'none';
+                }}
+              >
+                <span>{c.name}</span>
+                <ChevronRight size={13} style={{ color: 'var(--primary-yellow)' }} />
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* 4. RFQ Category CTA */}
        <section className="cta-sec section-padding" style={{ borderTop: '1px solid var(--border-color)' }}>

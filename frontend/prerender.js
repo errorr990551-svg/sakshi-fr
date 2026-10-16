@@ -58,6 +58,21 @@ async function runPrerender() {
     });
   });
 
+  // Ensure physical /about/ page exists with full SEO information
+  const aboutPage = corePages.find(p => p.Slug === 'about-us');
+  if (aboutPage) {
+    routes.push({
+      url: `${BASE_URL}/about/`,
+      type: 'about',
+      slug: 'about',
+      title: aboutPage['Meta Title'],
+      description: aboutPage['Meta Description'],
+      robots: 'index, follow',
+      keywords: aboutPage['Primary Keyword'] || '',
+      data: aboutPage
+    });
+  }
+
   // Categories
   categories.forEach(c => {
     routes.push({
@@ -88,7 +103,7 @@ async function runPrerender() {
   
   // Market Area page
   routes.push({
-    url: `${BASE_URL}/market-area`,
+    url: `${BASE_URL}/market-area/`,
     type: 'market-area',
     slug: 'market-area',
     title: 'Sakshi Forge | India Cities We Serve - Electropolished Pipes & Fittings Supply',
@@ -222,6 +237,87 @@ async function runPrerender() {
     }).filter(item => item.key);
   }
 
+  // Helper to generate Google Rich Results compliant Product Offer and identifier details
+  function getProductOfferDetails(slug, categoryName, pageUrl) {
+    const s = (slug || '').toLowerCase();
+    const cat = (categoryName || '').toLowerCase();
+
+    let lowPrice = "210";
+    let highPrice = "7500";
+
+    if (s.includes('pipe') || s.includes('tube') || cat.includes('pipe')) {
+      lowPrice = "480";
+      highPrice = "14500";
+    } else if (s.includes('fastener') || cat.includes('fastener') || s.includes('bolt') || s.includes('nut')) {
+      lowPrice = "45";
+      highPrice = "1250";
+    } else if (s.includes('round-bar') || s.includes('coil') || cat.includes('bar')) {
+      lowPrice = "290";
+      highPrice = "16500";
+    } else if (s.includes('elbow') || s.includes('tee') || s.includes('flange') || s.includes('fitting') || cat.includes('fitting') || cat.includes('flange')) {
+      lowPrice = "185";
+      highPrice = "6800";
+    }
+
+    const skuCode = `SF-${(slug || 'ITEM').replace(/[^a-zA-Z0-9]/g, '-').toUpperCase()}`;
+
+    return {
+      sku: skuCode,
+      mpn: `MPN-${skuCode}`,
+      offers: {
+        "@type": "AggregateOffer",
+        "url": pageUrl,
+        "priceCurrency": "INR",
+        "lowPrice": lowPrice,
+        "highPrice": highPrice,
+        "offerCount": "100",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Sakshi Forge",
+          "url": `${BASE_URL}/`
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "IN",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 30,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "INR"
+          },
+          "shippingDestination": [{
+            "@type": "DefinedRegion",
+            "addressCountry": "IN"
+          }],
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 1,
+              "maxValue": 2,
+              "unitCode": "DAY"
+            },
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 1,
+              "maxValue": 4,
+              "unitCode": "DAY"
+            }
+          }
+        }
+      }
+    };
+  }
+
   // 4. Render each route
   for (const route of routes) {
     // Determine path relative to domain
@@ -336,16 +432,21 @@ async function runPrerender() {
       }));
       const materialGrade = specsList.find(s => s.key.toLowerCase().includes("grade") || s.key.toLowerCase().includes("material"))?.value || "Stainless Steel";
 
+      const offerData = getProductOfferDetails(route.slug, route.data['Category'], route.url);
+
       const productSchema = {
         "@type": "Product",
         "name": route.data['Product Name'],
         "url": route.url,
         "image": [ `${BASE_URL}${route.data['Image'] || '/flanges_pipes.webp'}` ],
         "description": route.description,
+        "sku": offerData.sku,
+        "mpn": offerData.mpn,
         "brand": { "@type": "Brand", "name": "Sakshi Forge" },
         "manufacturer": { "@id": `${BASE_URL}/#org` },
         "material": materialGrade,
-        "additionalProperty": addProps
+        "additionalProperty": addProps,
+        "offers": offerData.offers
       };
 
       schemasGraph.push(breadcrumbs);
@@ -412,11 +513,15 @@ async function runPrerender() {
       }
 
       if (route.data.page_type && route.data.page_type.includes("Product")) {
+        const epOffer = getProductOfferDetails(route.slug, 'Electropolished Pipes', route.url);
         schemasGraph.push({
           "@type": "Product",
           "name": route.data.h1 || route.title,
           "url": route.url,
+          "image": [ `${BASE_URL}/electropolish_pipes.webp` ],
           "description": route.description,
+          "sku": epOffer.sku,
+          "mpn": epOffer.mpn,
           "brand": { "@type": "Brand", "name": "Sakshi Forge" },
           "manufacturer": { "@id": `${BASE_URL}/#org` },
           "material": "Stainless Steel 316L / 304L",
@@ -424,7 +529,8 @@ async function runPrerender() {
             { "@type": "PropertyValue", "name": "Surface Finish", "value": "Ra 0.38 um (15 uin) - ASME BPE SF4" },
             { "@type": "PropertyValue", "name": "Standard", "value": "ASTM A270 / ASTM A312" },
             { "@type": "PropertyValue", "name": "Certification", "value": "EN 10204 3.1 MTC" }
-          ]
+          ],
+          "offers": epOffer.offers
         });
       }
     }
@@ -473,6 +579,7 @@ async function runPrerender() {
       });
 
       // Product
+      const cityEpOffer = getProductOfferDetails('electropolished-pipes-' + citySlug, 'Electropolished Pipes', currentUrl);
       schemasGraph.push({
         "@type": "Product",
         "@id": `${currentUrl}#product`,
@@ -480,6 +587,9 @@ async function runPrerender() {
           ? `Electropolished SS 316L and Duplex 2205 Pipes and Tubes - ${cityName}`
           : `Electropolished SS 304L / 316L Sanitary Pipes and Tubes - ${cityName}`,
         "description": route.data.metaDescription || `Welded and seamless electropolished stainless steel pipes and tubes in 316L, 304L${hasDuplex ? ' and duplex 2205' : ''} for ${cityName}, supplied with MTC EN 10204 3.1 and 100% PMI testing.`,
+        "image": [ `${BASE_URL}/electropolish_pipes.webp` ],
+        "sku": cityEpOffer.sku,
+        "mpn": cityEpOffer.mpn,
         "brand": { "@type": "Brand", "name": "Sakshi Forge" },
         "manufacturer": { "@id": `${BASE_URL}/#org` },
         "material": hasDuplex
@@ -492,7 +602,8 @@ async function runPrerender() {
           { "@type": "PropertyValue", "name": "Material certificate", "value": "EN 10204 3.1" },
           { "@type": "PropertyValue", "name": "Testing", "value": "100% PMI, Ra test, hydro test, passivation verification, ferrite check" },
           { "@type": "PropertyValue", "name": "Types", "value": "Welded and seamless" }
-        ]
+        ],
+        "offers": cityEpOffer.offers
       });
 
       // FAQPage
@@ -540,11 +651,13 @@ async function runPrerender() {
     }
 
     // Inject canonical link
-    const canonicalHref = route.slug === 'market-area'
-      ? `${BASE_URL}/market-area`
-      : (route.url.endsWith('/') ? route.url : `${route.url}/`);
+    let canonicalHref = `${BASE_URL}/`;
+    if (route.type !== 'home') {
+      const cleanSlug = route.slug.replace(/^\/+|\/+$/g, '');
+      canonicalHref = `${BASE_URL}/${cleanSlug}/`;
+    }
     if (html.includes('rel="canonical"')) {
-      html = html.replace(/<link rel="canonical" href=".*?" \/>/, `<link rel="canonical" href="${canonicalHref}" />`);
+      html = html.replace(/<link rel="canonical" href=".*?" \/?>/, `<link rel="canonical" href="${canonicalHref}" />`);
     } else {
       html = html.replace('</head>', `  <link rel="canonical" href="${canonicalHref}" />\n  </head>`);
     }
@@ -584,13 +697,25 @@ async function runPrerender() {
     // ignore
   }
 
-  // Create 404.html fallback file in dist for web hosts expecting 404.html
-  const mainIndexHtml = path.join(__dirname, 'dist/index.html');
-  const dist404Html = path.join(__dirname, 'dist/404.html');
-  if (fs.existsSync(mainIndexHtml)) {
-    fs.copyFileSync(mainIndexHtml, dist404Html);
-    console.log('Created dist/404.html fallback file.');
+  // Create genuine 404.html pre-rendered page
+  let body404Html = '';
+  try {
+    body404Html = render('/404');
+  } catch (err) {
+    console.error('Failed to render SSR 404 page:', err);
   }
+  let html404 = template;
+  html404 = html404.replace(/<title>.*?<\/title>/, '<title>404 - Page Not Found | Sakshi Forge</title>');
+  html404 = html404.replace(/<meta name="description" content=".*?" \/>/, '<meta name="description" content="The page you requested could not be found. Explore Sakshi Forge electropolished pipes, flanges, and forged steel products." />');
+  if (html404.includes('name="robots"')) {
+    html404 = html404.replace(/<meta name="robots" content=".*?" \/>/, '<meta name="robots" content="noindex, follow" />');
+  } else {
+    html404 = html404.replace('</head>', '  <meta name="robots" content="noindex, follow" />\n  </head>');
+  }
+  html404 = html404.replace(/<link rel="canonical" href=".*?" \/?>/, `<link rel="canonical" href="${BASE_URL}/404.html" />`);
+  html404 = html404.replace('<div id="root"></div>', `<div id="root">${body404Html}</div>`);
+  fs.writeFileSync(path.join(__dirname, 'dist/404.html'), html404, 'utf-8');
+  console.log('Created dist/404.html pre-rendered error page with noindex.');
 
   console.log('Static pre-rendering complete successfully!');
 }

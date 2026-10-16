@@ -7,6 +7,7 @@ import {
 import epBuildSpecData from '../data/ep_build_spec_data.json';
 import { handleLinkClick } from '../utils/router';
 import { RaConverterTool, PipeWeightCalculatorTool } from './EPTools';
+import { PRIORITY_30_CITIES } from '../data/priorityCities';
 
 export default function EPBuildSpecRenderer({ path, onEnquireClick, hasUnlockedContact = false, onShowContactDetails }) {
   const handleShowContact = onShowContactDetails || (() => onEnquireClick && onEnquireClick('Contact Request - EP Spec'));
@@ -375,6 +376,43 @@ export default function EPBuildSpecRenderer({ path, onEnquireClick, hasUnlockedC
               </div>
             </div>
           )}
+
+          {/* F. LOCAL SUPPLY HUBS & 30 PRIORITY INDUSTRIAL CITIES */}
+          <div className="mb-16 bg-slate-900/60 border border-slate-800 rounded-2xl p-6 sm:p-8">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+              <div>
+                <span className="text-xs font-bold text-yellow-400 uppercase tracking-wider block mb-1">Direct Works Dispatch Across India</span>
+                <h3 className="text-xl sm:text-2xl font-bold text-white flex items-center gap-2">
+                  <MapPin className="w-5 h-5 text-yellow-400 shrink-0" />
+                  <span>30 Major Industrial Cities We Serve</span>
+                </h3>
+              </div>
+              <a 
+                href="/market-area/" 
+                onClick={(e) => handleLinkClick(e, '/market-area/')}
+                className="text-xs sm:text-sm text-yellow-400 hover:text-yellow-300 font-semibold underline inline-flex items-center gap-1"
+              >
+                All 50+ Cities in Directory &rarr;
+              </a>
+            </div>
+
+            <p className="text-slate-300 text-sm leading-relaxed mb-6">
+              Sakshi Forge manufactures electropolished pipes and tubes at Taloja MIDC, Mumbai, and maintains direct logistics routes with daily dispatches across major pharmaceutical, chemical, biotechnology, and food processing belts in India:
+            </p>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2.5">
+              {PRIORITY_30_CITIES.map((city, idx) => (
+                <a
+                  key={idx}
+                  href={city.path}
+                  onClick={(e) => handleLinkClick(e, city.path)}
+                  className="bg-slate-950/80 hover:bg-slate-800 border border-slate-800/80 hover:border-yellow-500/50 rounded-lg p-2.5 text-center text-xs text-slate-200 hover:text-yellow-400 font-medium transition flex items-center justify-center gap-1.5"
+                >
+                  <span className="truncate">{city.name}</span>
+                </a>
+              ))}
+            </div>
+          </div>
 
           {/* E. STICKY / BOTTOM CONVERSION CTA BANNER */}
           <div className="bg-gradient-to-r from-slate-900 via-slate-950 to-slate-900 border border-yellow-500/30 rounded-2xl p-8 sm:p-10 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl relative overflow-hidden">

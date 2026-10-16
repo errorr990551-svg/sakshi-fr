@@ -1,3 +1,24 @@
-/electropolished-pipe-manufacturer-*    /market-area/:splat    301!
-/electropolished-pipe-supplier-*        /market-area/:splat    301!
-/*                                      /index.html            200
+# Redirect rules for Cloudflare Pages / Netlify
+
+# 1. Legacy city URLs -> 301 redirect to /market-area/:splat
+/electropolished-pipes-manufacturer-in-*   /market-area/:splat   301!
+/electropolished-pipe-manufacturer-in-*    /market-area/:splat   301!
+/electropolished-pipes-supplier-in-*       /market-area/:splat   301!
+/electropolished-pipe-supplier-in-*        /market-area/:splat   301!
+/electropolished-pipes-manufacturer-*      /market-area/:splat   301!
+/electropolished-pipe-manufacturer-*       /market-area/:splat   301!
+/electropolished-pipes-supplier-*          /market-area/:splat   301!
+/electropolished-pipe-supplier-*           /market-area/:splat   301!
+/industrial-pipe-flange-manufacturer-in-*-sakshi-forge  /market-area/:splat 301!
+
+# 2. Key aliases and duplicate consolidations
+/home                                      /                     301!
+/home/                                     /                     301!
+/marketplace                               /market-area/         301!
+/marketplace/                              /market-area/         301!
+/about                                     /about-us/            301!
+/about/                                    /about-us/            301!
+/delhi                                     /market-area/delhi/   301!
+/delhi/                                    /market-area/delhi/   301!
+/bangalore                                 /market-area/bengaluru/ 301!
+/bangalore/                                /market-area/bengaluru/ 301!

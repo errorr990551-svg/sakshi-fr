@@ -128,27 +128,62 @@ function App(props) {
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
+  // Helper to resolve legacy city URLs to 301 destinations or /electropolished-pipes/ fallback
+  const getLegacyRedirect = (rawPath) => {
+    if (!rawPath) return null;
+    const clean = rawPath.split('?')[0].split('#')[0].replace(/^\/+|\/+$/g, '').toLowerCase();
+
+    if (clean === 'home') return '/';
+    if (clean === 'marketplace') return '/market-area/';
+    if (clean === 'about') return '/about-us/';
+    if (clean === 'delhi') return '/market-area/delhi/';
+    if (clean === 'bangalore') return '/market-area/bengaluru/';
+
+    let citySlug = '';
+    const m1 = clean.match(/^electropolished-pipes?-(?:manufacturer|supplier)-(?:in-)?(.+)$/);
+    if (m1) {
+      citySlug = m1[1];
+    } else {
+      const m2 = clean.match(/^industrial-pipe-flange-manufacturer-in-(.+)-sakshi-forge$/);
+      if (m2) {
+        citySlug = m2[1];
+      }
+    }
+
+    if (!citySlug) return null;
+
+    if (citySlug === 'delhi' || citySlug === 'new-delhi') return '/market-area/delhi/';
+    if (citySlug === 'bangalore' || citySlug === 'bengaluru') return '/market-area/bengaluru/';
+
+    const cityExists = marketCitiesData.some(c => c.slug === citySlug || c.path === `/market-area/${citySlug}`) ||
+      Boolean(maharashtraCityData[citySlug] || karnatakaCityData[citySlug] || gujaratCityData[citySlug] ||
+      telanganaCityData[citySlug] || westBengalCityData[citySlug] || madhyaPradeshCityData[citySlug] ||
+      andhraPradeshCityData[citySlug] || odishaCityData[citySlug] || customCityData[citySlug]);
+
+    return cityExists ? `/market-area/${citySlug}/` : '/electropolished-pipes/';
+  };
+
   // Handle static assets/redirection paths that might land in the SPA router
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+
     if (currentPath === '/sitemap' || currentPath === '/sitemap.xml') {
       window.location.replace('/sitemap.xml');
-    } else if (
+      return;
+    }
+    if (
       currentPath === '/robots' || 
       currentPath === '/robots.txt' || 
       currentPath === '/robts' || 
       currentPath === '/robts.txt'
     ) {
       window.location.replace('/robots.txt');
-    } else if (currentPath.includes('electropolished-pipe-manufacturer-')) {
-      const clean = currentPath.replace(/\/$/, '');
-      const idx = clean.indexOf('electropolished-pipe-manufacturer-');
-      const cityKey = clean.substring(idx + 'electropolished-pipe-manufacturer-'.length);
-      window.location.replace(`/market-area/${cityKey}`);
-    } else if (currentPath.includes('electropolished-pipe-supplier-')) {
-      const clean = currentPath.replace(/\/$/, '');
-      const idx = clean.indexOf('electropolished-pipe-supplier-');
-      const cityKey = clean.substring(idx + 'electropolished-pipe-supplier-'.length);
-      window.location.replace(`/market-area/${cityKey}`);
+      return;
+    }
+
+    const legacyDest = getLegacyRedirect(currentPath);
+    if (legacyDest) {
+      window.location.replace(legacyDest);
     }
   }, [currentPath]);
 
@@ -306,17 +341,10 @@ function App(props) {
     }
 
     // Redirect legacy electropolished-pipe-manufacturer-* and supplier-* to /market-area/*
-    if (cleanPath.startsWith('/electropolished-pipe-manufacturer-')) {
-      const cityKey = cleanPath.replace('/electropolished-pipe-manufacturer-', '');
+    const legacyTarget = getLegacyRedirect(cleanPath);
+    if (legacyTarget) {
       if (typeof window !== 'undefined') {
-        window.location.replace(`/market-area/${cityKey}`);
-      }
-      return { type: '404', data: null };
-    }
-    if (cleanPath.startsWith('/electropolished-pipe-supplier-')) {
-      const cityKey = cleanPath.replace('/electropolished-pipe-supplier-', '');
-      if (typeof window !== 'undefined') {
-        window.location.replace(`/market-area/${cityKey}`);
+        window.location.replace(legacyTarget);
       }
       return { type: '404', data: null };
     }

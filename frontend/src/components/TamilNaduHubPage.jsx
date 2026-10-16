@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { MapPin, ArrowRight, ShieldCheck, Phone, Mail, Award, CheckCircle2 } from 'lucide-react';
 import { handleLinkClick } from '../utils/router';
+import CityProductPillars from './CityProductPillars';
 
 export default function TamilNaduHubPage({ onEnquireClick, onShowContactDetails }) {
   const handleShowContact = onShowContactDetails || (() => onEnquireClick && onEnquireClick('Tamil Nadu State Hub Contact Request'));
@@ -232,6 +233,9 @@ export default function TamilNaduHubPage({ onEnquireClick, onShowContactDetails 
           </div>
         </div>
       </section>
+
+      {/* Core Product Specification Pillars Interlinking */}
+      <CityProductPillars cityName="Tamil Nadu" />
     </div>
   );
 }

@@ -20,6 +20,15 @@ RewriteRule ^marketplace/?$ https://steelmanufacturer.in/market-area/ [L,R=301]
 RewriteRule ^about/?$ https://steelmanufacturer.in/about-us/ [L,R=301]
 RewriteRule ^delhi/?$ https://steelmanufacturer.in/market-area/delhi/ [L,R=301]
 RewriteRule ^bangalore/?$ https://steelmanufacturer.in/market-area/bengaluru/ [L,R=301]
+RewriteRule ^industrial-flanges/?$ https://steelmanufacturer.in/flanges/ [L,R=301]
+RewriteRule ^gujarat/?$ https://steelmanufacturer.in/market-area/gujarat/ [L,R=301]
+RewriteRule ^telangana/?$ https://steelmanufacturer.in/market-area/telangana/ [L,R=301]
+RewriteRule ^west-bengal/?$ https://steelmanufacturer.in/market-area/west-bengal/ [L,R=301]
+RewriteRule ^madhya-pradesh/?$ https://steelmanufacturer.in/market-area/madhya-pradesh/ [L,R=301]
+RewriteRule ^andhra-pradesh/?$ https://steelmanufacturer.in/market-area/andhra-pradesh/ [L,R=301]
+RewriteRule ^odisha/?$ https://steelmanufacturer.in/market-area/odisha/ [L,R=301]
+RewriteRule ^306-stainless-steel-round-bar/?$ https://steelmanufacturer.in/304-stainless-steel-round-bar/ [L,R=301]
+
 
 # D. 301 Redirect Legacy City URLs to /market-area/<city>/ (covers pipe/pipes, with or without 'in-')
 RewriteRule ^electropolished-pipes?-manufacturer-(?:in-)?([^/]+)/?$ https://steelmanufacturer.in/market-area/$1/ [L,R=301]

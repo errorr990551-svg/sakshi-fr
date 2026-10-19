@@ -35,6 +35,11 @@ export default function ProductPage({ product, onEnquireClick }) {
 
   // Find category object to get category slug
   const parentCategory = useMemo(() => {
+    const slugPrefix = (product['URL Slug'] || '').split('/')[0];
+    if (slugPrefix) {
+      const match = categoriesData.find(c => c['Category Slug'] === slugPrefix);
+      if (match) return match;
+    }
     return categoriesData.find(
       (c) => c['Parent Category']?.toLowerCase() === product['Category']?.toLowerCase()
     );
@@ -128,11 +133,11 @@ export default function ProductPage({ product, onEnquireClick }) {
             <ChevronRight size={14} />
             {parentCategory ? (
               <a 
-                href={`/${parentCategory['Category Slug']}`} 
-                onClick={(e) => handleLinkClick(e, `/${parentCategory['Category Slug']}`)}
+                href={`/${parentCategory['Category Slug']}/`} 
+                onClick={(e) => handleLinkClick(e, `/${parentCategory['Category Slug']}/`)}
                 style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}
               >
-                {product['Category']}
+                {parentCategory['Parent Category']}
               </a>
             ) : (
               <span>{product['Category']}</span>
@@ -196,7 +201,7 @@ export default function ProductPage({ product, onEnquireClick }) {
                   }}
                 >
                   <strong style={{ color: 'var(--primary-yellow)', display: 'block', marginBottom: '0.5rem', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                    Quick Summary (AI Overview)
+                    Quick Technical Summary
                   </strong>
                   <p style={{ margin: 0, color: 'var(--text-primary)', fontSize: '0.95rem', lineHeight: '1.6', fontWeight: '500' }}>
                     {product['TL;DR']}

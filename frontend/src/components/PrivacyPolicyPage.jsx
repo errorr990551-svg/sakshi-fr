@@ -43,7 +43,7 @@ export default function PrivacyPolicyPage() {
 
           <h3 style={{ color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '0.5rem', fontSize: '1.25rem' }}>4. Your Rights</h3>
           <p>
-            Under India's DPDP Act 2023, you have the right to withdraw consent, request rectification, or ask for the deletion of your personal contact records from our active sales directory. To exercise these rights, email us at <a href="mailto:info@sakshiforge.in" style={{ color: 'var(--primary-yellow)', textDecoration: 'none' }}>info@sakshiforge.in</a>.
+            Under India's DPDP Act 2023, you have the right to withdraw consent, request rectification, or ask for the deletion of your personal contact records from our active sales directory. To exercise these rights, email us at <a href="mailto:sales@steelmanufacturer.in" style={{ color: 'var(--primary-yellow)', textDecoration: 'none' }}>sales@steelmanufacturer.in</a>.
           </p>
         </div>
       </section>

@@ -62,26 +62,26 @@ export default function Header({ currentPage, onNavigate, onEnquireClick }) {
               onMouseLeave={() => setActiveDropdown(null)}
             >
               <a 
-                href="/products" 
+                href="/products/" 
                 className={`nav-link ${currentPage === 'products' ? 'active' : ''}`} 
                 onClick={(e) => {
                   closeMenu();
-                  handleLinkClick(e, '/products');
+                  handleLinkClick(e, '/products/');
                 }}
               >
                 Products <ChevronDown size={14} className={`chevron-icon ${activeDropdown === 'products' ? 'rotate' : ''}`} />
               </a>
               <ul className="dropdown-menu">
-                <li><a href="/flanges" onClick={(e) => { closeMenu(); handleLinkClick(e, '/flanges'); }}>Industrial Flanges</a></li>
-                <li><a href="/forged-fittings" onClick={(e) => { closeMenu(); handleLinkClick(e, '/forged-fittings'); }}>Forged Steel Fittings</a></li>
-                <li><a href="/electropolished-pipes" onClick={(e) => { closeMenu(); handleLinkClick(e, '/electropolished-pipes'); }}>Electropolished Pipes</a></li>
-                <li><a href="/stainless-steel-round-bar" onClick={(e) => { closeMenu(); handleLinkClick(e, '/stainless-steel-round-bar'); }}>Round Bars & Rods</a></li>
-                <li><a href="/stainless-steel-elbow" onClick={(e) => { closeMenu(); handleLinkClick(e, '/stainless-steel-elbow'); }}>SS Elbows (45°/90°/180°)</a></li>
-                <li><a href="/asme-b16-11-forged-fittings" onClick={(e) => { closeMenu(); handleLinkClick(e, '/asme-b16-11-forged-fittings'); }}>ASME B16.11 Fittings</a></li>
-                <li><a href="/asme-b16-5-flanges" onClick={(e) => { closeMenu(); handleLinkClick(e, '/asme-b16-5-flanges'); }}>ASME B16.5 Flanges</a></li>
-                <li><a href="/ss-304-pipe-fittings-flanges" onClick={(e) => { closeMenu(); handleLinkClick(e, '/ss-304-pipe-fittings-flanges'); }}>SS 304/304L Grade</a></li>
-                <li><a href="/ss-316-316l-pipe-fittings-flanges" onClick={(e) => { closeMenu(); handleLinkClick(e, '/ss-316-316l-pipe-fittings-flanges'); }}>SS 316/316L Grade</a></li>
-                <li><a href="/duplex-2205-products" onClick={(e) => { closeMenu(); handleLinkClick(e, '/duplex-2205-products'); }}>Duplex 2205 Products</a></li>
+                <li><a href="/flanges/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/flanges/'); }}>Industrial Flanges</a></li>
+                <li><a href="/forged-fittings/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/forged-fittings/'); }}>Forged Steel Fittings</a></li>
+                <li><a href="/electropolished-pipes/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/electropolished-pipes/'); }}>Electropolished Pipes</a></li>
+                <li><a href="/stainless-steel-round-bar/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/stainless-steel-round-bar/'); }}>Round Bars & Rods</a></li>
+                <li><a href="/stainless-steel-elbow/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/stainless-steel-elbow/'); }}>SS Elbows (45°/90°/180°)</a></li>
+                <li><a href="/asme-b16-11-forged-fittings/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/asme-b16-11-forged-fittings/'); }}>ASME B16.11 Fittings</a></li>
+                <li><a href="/asme-b16-5-flanges/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/asme-b16-5-flanges/'); }}>ASME B16.5 Flanges</a></li>
+                <li><a href="/ss-304-pipe-fittings-flanges/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/ss-304-pipe-fittings-flanges/'); }}>SS 304/304L Grade</a></li>
+                <li><a href="/ss-316-316l-pipe-fittings-flanges/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/ss-316-316l-pipe-fittings-flanges/'); }}>SS 316/316L Grade</a></li>
+                <li><a href="/duplex-2205-products/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/duplex-2205-products/'); }}>Duplex 2205 Products</a></li>
               </ul>
             </li>
 
@@ -92,34 +92,34 @@ export default function Header({ currentPage, onNavigate, onEnquireClick }) {
               onMouseLeave={() => setActiveDropdown(null)}
             >
               <a 
-                href="/weight-calculator" 
+                href="/weight-calculator/" 
                 className="nav-link"
                 onClick={(e) => {
                   closeMenu();
-                  handleLinkClick(e, '/weight-calculator');
+                  handleLinkClick(e, '/weight-calculator/');
                 }}
               >
                 Resources <ChevronDown size={14} className={`chevron-icon ${activeDropdown === 'resources' ? 'rotate' : ''}`} />
               </a>
               <ul className="dropdown-menu">
-                <li><a href="/flange-dimension-chart" onClick={(e) => { closeMenu(); handleLinkClick(e, '/flange-dimension-chart'); }}>Flange Dimension Chart</a></li>
-                <li><a href="/flange-weight-chart" onClick={(e) => { closeMenu(); handleLinkClick(e, '/flange-weight-chart'); }}>Flange Weight Chart</a></li>
-                <li><a href="/flange-bolt-chart" onClick={(e) => { closeMenu(); handleLinkClick(e, '/flange-bolt-chart'); }}>Flange Bolt Chart</a></li>
-                <li><a href="/pipe-schedule-chart" onClick={(e) => { closeMenu(); handleLinkClick(e, '/pipe-schedule-chart'); }}>Pipe Schedule Chart</a></li>
-                <li><a href="/gallery" onClick={(e) => { closeMenu(); handleLinkClick(e, '/gallery'); }}>Gallery</a></li>
-                <li><a href="/catalogue" onClick={(e) => { closeMenu(); handleLinkClick(e, '/catalogue'); }}>Product Catalogue (PDF)</a></li>
-                <li><a href="/blog" onClick={(e) => { closeMenu(); handleLinkClick(e, '/blog'); }}>Steel Knowledge Hub</a></li>
+                <li><a href="/flange-dimension-chart/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/flange-dimension-chart/'); }}>Flange Dimension Chart</a></li>
+                <li><a href="/flange-weight-chart/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/flange-weight-chart/'); }}>Flange Weight Chart</a></li>
+                <li><a href="/flange-bolt-chart/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/flange-bolt-chart/'); }}>Flange Bolt Chart</a></li>
+                <li><a href="/pipe-schedule-chart/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/pipe-schedule-chart/'); }}>Pipe Schedule Chart</a></li>
+                <li><a href="/gallery/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/gallery/'); }}>Gallery</a></li>
+                <li><a href="/catalogue/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/catalogue/'); }}>Product Catalogue (PDF)</a></li>
+                <li><a href="/blog/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/blog/'); }}>Steel Knowledge Hub</a></li>
               </ul>
             </li>
 
             {/* Blogs */}
             <li>
               <a 
-                href="/blog" 
+                href="/blog/" 
                 className={`nav-link ${currentPage === 'blog' || currentPage === 'blog-post' ? 'active' : ''}`} 
                 onClick={(e) => {
                   closeMenu();
-                  handleLinkClick(e, '/blog');
+                  handleLinkClick(e, '/blog/');
                 }}
               >
                 Blogs
@@ -129,11 +129,11 @@ export default function Header({ currentPage, onNavigate, onEnquireClick }) {
             {/* Gallery */}
             <li>
               <a 
-                href="/gallery" 
+                href="/gallery/" 
                 className={`nav-link ${currentPage === 'gallery' ? 'active' : ''}`} 
                 onClick={(e) => {
                   closeMenu();
-                  handleLinkClick(e, '/gallery');
+                  handleLinkClick(e, '/gallery/');
                 }}
               >
                 Gallery
@@ -147,32 +147,32 @@ export default function Header({ currentPage, onNavigate, onEnquireClick }) {
               onMouseLeave={() => setActiveDropdown(null)}
             >
               <a 
-                href="/about-us" 
+                href="/about-us/" 
                 className={`nav-link ${currentPage === 'about' ? 'active' : ''}`} 
                 onClick={(e) => {
                   closeMenu();
-                  handleLinkClick(e, '/about-us');
+                  handleLinkClick(e, '/about-us/');
                 }}
               >
                 About <ChevronDown size={14} className={`chevron-icon ${activeDropdown === 'about' ? 'rotate' : ''}`} />
               </a>
               <ul className="dropdown-menu">
-                <li><a href="/about-us" onClick={(e) => { closeMenu(); handleLinkClick(e, '/about-us'); }}>Corporate Overview</a></li>
-                <li><a href="/gallery" onClick={(e) => { closeMenu(); handleLinkClick(e, '/gallery'); }}>Gallery</a></li>
-                <li><a href="/team" onClick={(e) => { closeMenu(); handleLinkClick(e, '/team'); }}>Leadership & QA Team</a></li>
-                <li><a href="/clients" onClick={(e) => { closeMenu(); handleLinkClick(e, '/clients'); }}>Clients & Industries</a></li>
-                <li><a href="/quality-assurance" onClick={(e) => { closeMenu(); handleLinkClick(e, '/quality-assurance'); }}>Quality Assurance</a></li>
-                <li><a href="/certifications" onClick={(e) => { closeMenu(); handleLinkClick(e, '/certifications'); }}>ISO & Standards Certs</a></li>
+                <li><a href="/about-us/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/about-us/'); }}>Corporate Overview</a></li>
+                <li><a href="/gallery/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/gallery/'); }}>Gallery</a></li>
+                <li><a href="/team/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/team/'); }}>Leadership & QA Team</a></li>
+                <li><a href="/clients/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/clients/'); }}>Clients & Industries</a></li>
+                <li><a href="/quality-assurance/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/quality-assurance/'); }}>Quality Assurance</a></li>
+                <li><a href="/certifications/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/certifications/'); }}>ISO & Standards Certs</a></li>
               </ul>
             </li>
 
             <li>
               <a 
-                href="/contact-us" 
+                href="/contact-us/" 
                 className={`nav-link ${currentPage === 'contact-us' ? 'active' : ''}`} 
                 onClick={(e) => {
                   closeMenu();
-                  handleLinkClick(e, '/contact-us');
+                  handleLinkClick(e, '/contact-us/');
                 }}
               >
                 Contact Us

@@ -111,7 +111,7 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
                       <div>
                         <h4 style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: '700', marginBottom: '0.25rem' }}>Phone Numbers</h4>
                         <p style={{ fontWeight: '600', fontSize: '1.05rem' }}>
-                          <a href="tel:+918045815130" style={{ color: 'inherit', textDecoration: 'none' }}>+91-8045815130</a> / <a href="tel:+918291366340" style={{ color: 'inherit', textDecoration: 'none' }}>+91-8291366340</a>
+                          <a href="tel:+918291366340" style={{ color: 'inherit', textDecoration: 'none' }}>+91 82913 66340</a> / <a href="tel:+917976476375" style={{ color: 'inherit', textDecoration: 'none' }}>+91 79764 76375</a>
                         </p>
                       </div>
                     </div>
@@ -121,9 +121,9 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
                         <Mail size={20} />
                       </div>
                       <div>
-                        <h4 style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: '700', marginBottom: '0.25rem' }}>Email Addresses</h4>
+                        <h4 style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: '700', marginBottom: '0.25rem' }}>Email Address</h4>
                         <p style={{ fontWeight: '600', fontSize: '1.05rem' }}>
-                          <a href="mailto:info@sakshiforge.in" style={{ color: 'inherit', textDecoration: 'none' }}>info@sakshiforge.in</a> / <a href="mailto:sales@steelmanufacturer.in" style={{ color: 'inherit', textDecoration: 'none' }}>sales@steelmanufacturer.in</a>
+                          <a href="mailto:sales@steelmanufacturer.in" style={{ color: 'inherit', textDecoration: 'none' }}>sales@steelmanufacturer.in</a>
                         </p>
                       </div>
                     </div>

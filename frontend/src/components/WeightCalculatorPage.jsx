@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowRight, Calculator, Sparkles, Scale, Info } from 'lucide-react';
+import { ArrowRight, Calculator, Sparkles, Scale, Info, AlertTriangle } from 'lucide-react';
 import { handleLinkClick } from '../utils/router';
 
 export default function WeightCalculatorPage({ onEnquireClick }) {
@@ -17,6 +17,7 @@ export default function WeightCalculatorPage({ onEnquireClick }) {
     quantity: '1'
   });
   const [result, setResult] = useState(null);
+  const [error, setError] = useState(null);
 
   // Density map (g/cm3)
   const densities = {
@@ -29,53 +30,102 @@ export default function WeightCalculatorPage({ onEnquireClick }) {
   };
 
   const handleInputChange = (name, val) => {
+    setError(null);
     setDimensions(prev => ({ ...prev, [name]: val }));
   };
 
   const calculateWeight = (e) => {
     e.preventDefault();
+    setError(null);
     const d = densities[grade] || 7.93;
     const qty = parseFloat(dimensions.quantity) || 1;
+
+    if (qty <= 0) {
+      setError("Quantity must be greater than zero.");
+      setResult(null);
+      return;
+    }
+
     let weight = 0; // in kg
 
     if (shape === 'pipe') {
       const od = parseFloat(dimensions.od);
       const wall = parseFloat(dimensions.wall);
       const len = parseFloat(dimensions.length);
-      if (od && wall && len) {
-        // formula: weight (kg) = (OD - Wall) * Wall * 0.02466 * length * density_ratio (compared to 7.93 base)
-        const densityRatio = d / 7.93;
-        weight = (od - wall) * wall * 0.02466 * len * densityRatio;
+
+      if (!od || od <= 0 || !wall || wall <= 0 || !len || len <= 0) {
+        setError("Please enter positive numeric values for outer diameter, wall thickness, and length.");
+        setResult(null);
+        return;
       }
+
+      if (wall >= od / 2) {
+        setError("Wall thickness must be less than half of the outer diameter (OD / 2).");
+        setResult(null);
+        return;
+      }
+
+      // Exact physics formula:
+      // Area = π * (OD - Wall) * Wall (mm²)
+      // Volume = Area * Length * 1000 (mm³) = Area * Length (cm³)
+      // Mass (kg) = (Volume (cm³) * Density (g/cm³)) / 1000
+      weight = (Math.PI * (od - wall) * wall * len * d) / 1000;
     } else if (shape === 'bar') {
       const dia = parseFloat(dimensions.diameter);
       const len = parseFloat(dimensions.length);
-      if (dia && len) {
-        // formula: weight = dia^2 * 0.006165 * length * density_ratio
-        const densityRatio = d / 7.93;
-        weight = dia * dia * 0.006165 * len * densityRatio;
+
+      if (!dia || dia <= 0 || !len || len <= 0) {
+        setError("Please enter positive numeric values for diameter and length.");
+        setResult(null);
+        return;
       }
+
+      // Exact physics formula:
+      // Area = π * (Dia / 2)^2 = π * Dia^2 / 4 (mm²)
+      // Mass (kg) = (π * Dia^2 * Length * Density) / 4000
+      weight = (Math.PI * dia * dia * len * d) / 4000;
     } else if (shape === 'sheet') {
       const w = parseFloat(dimensions.width); // in mm
       const len = parseFloat(dimensions.length); // in meters
       const thk = parseFloat(dimensions.thickness); // in mm
-      if (w && len && thk) {
-        // formula: weight = width (mm) * length (m) * thickness (mm) * density / 1000
-        weight = (w * len * thk * d) / 1000;
+
+      if (!w || w <= 0 || !len || len <= 0 || !thk || thk <= 0) {
+        setError("Please enter positive numeric values for width, length, and thickness.");
+        setResult(null);
+        return;
       }
+
+      // Mass (kg) = width (mm) * length (m) * thickness (mm) * density / 1000
+      weight = (w * len * thk * d) / 1000;
     } else if (shape === 'flange') {
       const od = parseFloat(dimensions.outerDiameter);
-      const id = parseFloat(dimensions.innerDiameter);
+      const id = parseFloat(dimensions.innerDiameter) || 0;
       const thk = parseFloat(dimensions.thickness);
-      if (od && thk) {
-        const inner = id || 0;
-        // volume = pi * (R^2 - r^2) * h
-        const R = od / 20; // in cm
-        const r = inner / 20; // in cm
-        const h = thk / 10; // in cm
-        const volume = Math.PI * (R * R - r * r) * h;
-        weight = (volume * d) / 1000;
+
+      if (!od || od <= 0 || !thk || thk <= 0) {
+        setError("Please enter positive values for outer diameter and thickness.");
+        setResult(null);
+        return;
       }
+
+      if (id < 0) {
+        setError("Inner diameter cannot be negative.");
+        setResult(null);
+        return;
+      }
+
+      if (id >= od) {
+        setError("Inner diameter must be strictly less than outer diameter.");
+        setResult(null);
+        return;
+      }
+
+      // Volume = π * (R^2 - r^2) * thickness (in cm³)
+      const R = od / 20; // cm
+      const r = id / 20; // cm
+      const h = thk / 10; // cm
+      const volume = Math.PI * (R * R - r * r) * h;
+      weight = (volume * d) / 1000;
     }
 
     if (weight > 0) {
@@ -148,10 +198,14 @@ export default function WeightCalculatorPage({ onEnquireClick }) {
                       <button
                         key={s.id}
                         type="button"
-                        onClick={() => { setShape(s.id); setResult(null); }}
+                        onClick={() => { setShape(s.id); setResult(null); setError(null); }}
                         style={{
                           padding: '0.75rem 0.25rem',
-                          fontSize: '0.8rem',
+                          minHeight: '44px',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          fontSize: '0.85rem',
                           fontWeight: '600',
                           backgroundColor: shape === s.id ? 'var(--primary-yellow)' : 'var(--bg-dark-700)',
                           color: shape === s.id ? '#000' : 'var(--text-primary)',
@@ -265,7 +319,24 @@ export default function WeightCalculatorPage({ onEnquireClick }) {
                   <input type="number" min="1" required value={dimensions.quantity} onChange={(e) => handleInputChange('quantity', e.target.value)} style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} />
                 </div>
 
-                <button type="submit" className="btn btn-primary" style={{ width: '100%', padding: '1rem 0', justifyContent: 'center' }}>
+                {error && (
+                  <div style={{
+                    backgroundColor: 'rgba(239, 68, 68, 0.12)',
+                    border: '1px solid rgba(239, 68, 68, 0.4)',
+                    borderRadius: '8px',
+                    padding: '0.85rem 1rem',
+                    color: '#fca5a5',
+                    fontSize: '0.875rem',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.75rem'
+                  }}>
+                    <AlertTriangle size={18} style={{ color: '#ef4444', flexShrink: 0 }} />
+                    <span>{error}</span>
+                  </div>
+                )}
+
+                <button type="submit" className="btn btn-primary" style={{ width: '100%', minHeight: '48px', padding: '0.85rem 0', justifyContent: 'center', fontSize: '0.95rem' }}>
                   Calculate Weight <Calculator size={18} style={{ marginLeft: '0.5rem' }} />
                 </button>
 

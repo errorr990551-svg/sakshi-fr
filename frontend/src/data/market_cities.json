@@ -19187,5 +19187,42 @@
         "a": "Shipments to New Delhi are dispatched via ICD Tughlakabad (15 km) with an average transit time of same-day to next-day road from our Mumbai works. Urgent air or express surface transport is available upon request."
       }
     ]
+  },
+  {
+    "city": "Vellore",
+    "state": "Tamil Nadu",
+    "country": "India",
+    "tier": "B",
+    "industrialCluster": "SIPCOT Ranipet Industrial Complex",
+    "industrialAreas": "SIPCOT Ranipet Phase I & II, SIDCO Katpadi, Walajapet, Arakkonam",
+    "keyIndustries": "Pharmaceutical, chemical, leather processing, engineering, food & beverage",
+    "roadTransitFromMumbai": "4-5 day road transit from our Mumbai works",
+    "dispatchLane": "Chennai Port (130 km) / Road Corridor",
+    "transitLine": "Direct Logistics Corridor via NH48",
+    "freightBasis": "FOB Mumbai / Door Delivery",
+    "projectRef": "CTY-0516",
+    "slug": "vellore",
+    "fullPageUrl": "https://steelmanufacturer.in/market-area/vellore/",
+    "path": "/market-area/vellore",
+    "pageTitle": "Electropolished Pipe Supplier in Vellore & Ranipet | SS 316L EP Pipes | Sakshi Forge",
+    "metaDescription": "Electropolished SS 316L and 304 pipes for Vellore and Ranipet SIPCOT pharma, chemical and engineering plants. Ra ≤0.4 µm, 100% PMI tested, 3.1 MTC. Quote in 30 minutes.",
+    "h1": "Electropolished Pipes for Vellore and Ranipet's Pharma, Chemical and Engineering Plants",
+    "canonicalUrl": "https://steelmanufacturer.in/market-area/vellore/",
+    "primaryKeyword": "electropolished pipe supplier in Vellore, electropolished pipes Ranipet SIPCOT, SS 316L EP pipes Vellore",
+    "topSecondaryKeywords": "Ranipet pharma plants, clean utilities, chemical processing, leather effluent piping",
+    "faqs": [
+      {
+        "q": "Do you have a Vellore warehouse?",
+        "a": "No. We dispatch directly from our Taloja, Mumbai manufacturing plant, typically 4-5 days by road with protective sleeving and end caps."
+      },
+      {
+        "q": "Which grade of electropolished pipe is recommended for Ranipet chemical and pharma units?",
+        "a": "SS 316L is standard for pharma and corrosive chemical applications with internal Ra ≤0.4 µm. For non-corrosive clean utilities, SS 304L is an economical alternative."
+      },
+      {
+        "q": "Do you provide EN 10204 3.1 mill test certificates and PMI reports?",
+        "a": "Yes, 100% PMI testing and EN 10204 3.1 inspection certificates are supplied with every order shipped to Vellore and Ranipet."
+      }
+    ]
   }
 ]

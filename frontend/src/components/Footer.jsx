@@ -75,14 +75,14 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
             <h4>Quick Links</h4>
             <ul className="footer-links">
               <li><a href="/" onClick={(e) => handleLinkClick(e, '/')}>Home</a></li>
-              <li><a href="/products" onClick={(e) => handleLinkClick(e, '/products')}>Products Range</a></li>
-              <li><a href="/blog" onClick={(e) => handleLinkClick(e, '/blog')}>Technical Blogs</a></li>
-              <li><a href="/about-us" onClick={(e) => handleLinkClick(e, '/about-us')}>About Sakshi Forge</a></li>
-              <li><a href="/gallery" onClick={(e) => handleLinkClick(e, '/gallery')}>Facility Gallery</a></li>
-              <li><a href="/quality-assurance" onClick={(e) => handleLinkClick(e, '/quality-assurance')}>Quality Assurance</a></li>
-              <li><a href="/weight-calculator" onClick={(e) => handleLinkClick(e, '/weight-calculator')}>Weight Calculator</a></li>
-              <li><a href="/market-area" onClick={(e) => handleLinkClick(e, '/market-area')} style={{ color: 'var(--primary-yellow)', fontWeight: '700' }}>Market Area Directory</a></li>
-              <li><a href="/contact-us" onClick={(e) => handleLinkClick(e, '/contact-us')}>Contact Us</a></li>
+              <li><a href="/products/" onClick={(e) => handleLinkClick(e, '/products/')}>Products Range</a></li>
+              <li><a href="/blog/" onClick={(e) => handleLinkClick(e, '/blog/')}>Technical Blogs</a></li>
+              <li><a href="/about-us/" onClick={(e) => handleLinkClick(e, '/about-us/')}>About Sakshi Forge</a></li>
+              <li><a href="/gallery/" onClick={(e) => handleLinkClick(e, '/gallery/')}>Facility Gallery</a></li>
+              <li><a href="/quality-assurance/" onClick={(e) => handleLinkClick(e, '/quality-assurance/')}>Quality Assurance</a></li>
+              <li><a href="/weight-calculator/" onClick={(e) => handleLinkClick(e, '/weight-calculator/')}>Weight Calculator</a></li>
+              <li><a href="/market-area/" onClick={(e) => handleLinkClick(e, '/market-area/')} style={{ color: 'var(--primary-yellow)', fontWeight: '700' }}>Market Area Directory</a></li>
+              <li><a href="/contact-us/" onClick={(e) => handleLinkClick(e, '/contact-us/')}>Contact Us</a></li>
             </ul>
           </div>
 
@@ -90,14 +90,14 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
           <div className="footer-col">
             <h4>Tools & Company</h4>
             <ul className="footer-links">
-              <li><a href="/blog" onClick={(e) => handleLinkClick(e, '/blog')} style={{ color: 'var(--primary-yellow)', fontWeight: '700' }}>EP Pipes &amp; Steel Blogs →</a></li>
-              <li><a href="/flange-dimension-chart" onClick={(e) => handleLinkClick(e, '/flange-dimension-chart')}>Flange Dimension Chart</a></li>
-              <li><a href="/flange-weight-chart" onClick={(e) => handleLinkClick(e, '/flange-weight-chart')}>Flange Weight Chart</a></li>
-              <li><a href="/flange-bolt-chart" onClick={(e) => handleLinkClick(e, '/flange-bolt-chart')}>Flange Bolt Chart</a></li>
-              <li><a href="/pipe-schedule-chart" onClick={(e) => handleLinkClick(e, '/pipe-schedule-chart')}>Pipe Schedule Chart</a></li>
-              <li><a href="/catalogue" onClick={(e) => handleLinkClick(e, '/catalogue')}>Download Catalogue PDF</a></li>
-              <li><a href="/team" onClick={(e) => handleLinkClick(e, '/team')}>Leadership & QA Team</a></li>
-              <li><a href="/clients" onClick={(e) => handleLinkClick(e, '/clients')}>Our Clients & Industries</a></li>
+              <li><a href="/blog/" onClick={(e) => handleLinkClick(e, '/blog/')} style={{ color: 'var(--primary-yellow)', fontWeight: '700' }}>EP Pipes &amp; Steel Blogs →</a></li>
+              <li><a href="/flange-dimension-chart/" onClick={(e) => handleLinkClick(e, '/flange-dimension-chart/')}>Flange Dimension Chart</a></li>
+              <li><a href="/flange-weight-chart/" onClick={(e) => handleLinkClick(e, '/flange-weight-chart/')}>Flange Weight Chart</a></li>
+              <li><a href="/flange-bolt-chart/" onClick={(e) => handleLinkClick(e, '/flange-bolt-chart/')}>Flange Bolt Chart</a></li>
+              <li><a href="/pipe-schedule-chart/" onClick={(e) => handleLinkClick(e, '/pipe-schedule-chart/')}>Pipe Schedule Chart</a></li>
+              <li><a href="/catalogue/" onClick={(e) => handleLinkClick(e, '/catalogue/')}>Download Catalogue PDF</a></li>
+              <li><a href="/team/" onClick={(e) => handleLinkClick(e, '/team/')}>Leadership & QA Team</a></li>
+              <li><a href="/clients/" onClick={(e) => handleLinkClick(e, '/clients/')}>Our Clients & Industries</a></li>
             </ul>
           </div>
 
@@ -105,16 +105,16 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
           <div className="footer-col">
             <h4>Market Area</h4>
             <ul className="footer-links">
-              <li><a href="/market-area" onClick={(e) => handleLinkClick(e, '/market-area')} style={{ color: 'var(--primary-yellow)', fontWeight: '700' }}>All Industrial Hubs Directory →</a></li>
-              <li><a href="/market-area/gujarat" onClick={(e) => handleLinkClick(e, '/market-area/gujarat')}>Gujarat Belts (Ahmedabad, Vadodara, Vapi...)</a></li>
-              <li><a href="/karnataka" onClick={(e) => handleLinkClick(e, '/karnataka')}>Karnataka Hub (Bengaluru, Belagavi, Mysuru...)</a></li>
-              <li><a href="/tamil-nadu" onClick={(e) => handleLinkClick(e, '/tamil-nadu')}>Tamil Nadu Hub (Chennai, Coimbatore...)</a></li>
-              <li><a href="/market-area/telangana" onClick={(e) => handleLinkClick(e, '/market-area/telangana')}>Telangana Hub (Hyderabad, Sangareddy, Warangal...)</a></li>
-              <li><a href="/market-area/west-bengal" onClick={(e) => handleLinkClick(e, '/market-area/west-bengal')}>West Bengal Hub (Kolkata, Haldia, Asansol...)</a></li>
-              <li><a href="/market-area/mumbai" onClick={(e) => handleLinkClick(e, '/market-area/mumbai')}>Mumbai Works & Taloja MIDC</a></li>
-              <li><a href="/market-area/pune" onClick={(e) => handleLinkClick(e, '/market-area/pune')}>Pune & Chakan MIDC</a></li>
-              <li><a href="/market-area/thane" onClick={(e) => handleLinkClick(e, '/market-area/thane')}>Thane-Belapur Chemical Belt</a></li>
-              <li><a href="/market-area/tarapur" onClick={(e) => handleLinkClick(e, '/market-area/tarapur')}>Tarapur Chemical Zone</a></li>
+              <li><a href="/market-area/" onClick={(e) => handleLinkClick(e, '/market-area/')} style={{ color: 'var(--primary-yellow)', fontWeight: '700' }}>All Industrial Hubs Directory →</a></li>
+              <li><a href="/market-area/gujarat/" onClick={(e) => handleLinkClick(e, '/market-area/gujarat/')}>Gujarat Belts (Ahmedabad, Vadodara, Vapi...)</a></li>
+              <li><a href="/karnataka/" onClick={(e) => handleLinkClick(e, '/karnataka/')}>Karnataka Hub (Bengaluru, Belagavi, Mysuru...)</a></li>
+              <li><a href="/tamil-nadu/" onClick={(e) => handleLinkClick(e, '/tamil-nadu/')}>Tamil Nadu Hub (Chennai, Coimbatore...)</a></li>
+              <li><a href="/market-area/telangana/" onClick={(e) => handleLinkClick(e, '/market-area/telangana/')}>Telangana Hub (Hyderabad, Sangareddy, Warangal...)</a></li>
+              <li><a href="/market-area/west-bengal/" onClick={(e) => handleLinkClick(e, '/market-area/west-bengal/')}>West Bengal Hub (Kolkata, Haldia, Asansol...)</a></li>
+              <li><a href="/market-area/mumbai/" onClick={(e) => handleLinkClick(e, '/market-area/mumbai/')}>Mumbai Works & Taloja MIDC</a></li>
+              <li><a href="/market-area/pune/" onClick={(e) => handleLinkClick(e, '/market-area/pune/')}>Pune & Chakan MIDC</a></li>
+              <li><a href="/market-area/thane/" onClick={(e) => handleLinkClick(e, '/market-area/thane/')}>Thane-Belapur Chemical Belt</a></li>
+              <li><a href="/market-area/tarapur/" onClick={(e) => handleLinkClick(e, '/market-area/tarapur/')}>Tarapur Chemical Zone</a></li>
             </ul>
           </div>
 
@@ -124,8 +124,8 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
           <p>© {currentYear} Sakshi Forge. All Rights Reserved. Manufactured in India.</p>
           <div className="footer-bottom-links">
             <a href="/sitemap.xml" target="_blank">Sitemap</a>
-            <a href="/privacy-policy" onClick={(e) => handleLinkClick(e, '/privacy-policy')}>Privacy Policy</a>
-            <a href="/terms-and-conditions" onClick={(e) => handleLinkClick(e, '/terms-and-conditions')}>Terms & Conditions</a>
+            <a href="/privacy-policy/" onClick={(e) => handleLinkClick(e, '/privacy-policy/')}>Privacy Policy</a>
+            <a href="/terms-and-conditions/" onClick={(e) => handleLinkClick(e, '/terms-and-conditions/')}>Terms & Conditions</a>
           </div>
         </div>
 

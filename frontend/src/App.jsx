@@ -113,7 +113,7 @@ function App(props) {
       const timer = setTimeout(() => {
         setIsEnquiryOpen(true);
         sessionStorage.setItem('hasSeenEnquiryPopup', 'true');
-      }, 1500);
+      }, 25000);
       return () => clearTimeout(timer);
     }
   }, []);
@@ -138,6 +138,14 @@ function App(props) {
     if (clean === 'about') return '/about-us/';
     if (clean === 'delhi') return '/market-area/delhi/';
     if (clean === 'bangalore') return '/market-area/bengaluru/';
+    if (clean === 'industrial-flanges') return '/flanges/';
+    if (clean === 'gujarat') return '/market-area/gujarat/';
+    if (clean === 'telangana') return '/market-area/telangana/';
+    if (clean === 'west-bengal') return '/market-area/west-bengal/';
+    if (clean === 'madhya-pradesh') return '/market-area/madhya-pradesh/';
+    if (clean === 'andhra-pradesh') return '/market-area/andhra-pradesh/';
+    if (clean === 'odisha') return '/market-area/odisha/';
+    if (clean === '306-stainless-steel-round-bar') return '/304-stainless-steel-round-bar/';
 
     let citySlug = '';
     const m1 = clean.match(/^electropolished-pipes?-(?:manufacturer|supplier)-(?:in-)?(.+)$/);

@@ -14,6 +14,11 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
 
   // Parse parent category slug for breadcrumbs
   const parentCategory = useMemo(() => {
+    const slugPrefix = (product['URL Slug'] || '').split('/')[0];
+    if (slugPrefix) {
+      const match = categoriesData.find(c => c['Category Slug'] === slugPrefix);
+      if (match) return match;
+    }
     return categoriesData.find(
       (c) => c['Parent Category']?.toLowerCase() === product['Category']?.toLowerCase()
     );
@@ -116,8 +121,8 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
             <a href="/" onClick={(e) => handleLinkClick(e, '/')} style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Home</a>
             <ChevronRight size={14} />
             {parentCategory ? (
-              <a href={`/${parentCategory['Category Slug']}`} onClick={(e) => handleLinkClick(e, `/${parentCategory['Category Slug']}`)} style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>
-                {product['Category']}
+              <a href={`/${parentCategory['Category Slug']}/`} onClick={(e) => handleLinkClick(e, `/${parentCategory['Category Slug']}/`)} style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>
+                {parentCategory['Parent Category']}
               </a>
             ) : (
               <span>{product['Category']}</span>

@@ -22,3 +22,24 @@
 /delhi/                                    /market-area/delhi/   301!
 /bangalore                                 /market-area/bengaluru/ 301!
 /bangalore/                                /market-area/bengaluru/ 301!
+/industrial-flanges                        /flanges/             301!
+/industrial-flanges/                       /flanges/             301!
+
+# 3. Consolidate duplicate state pages to canonical /market-area/<state>/
+/gujarat                                   /market-area/gujarat/ 301!
+/gujarat/                                  /market-area/gujarat/ 301!
+/telangana                                 /market-area/telangana/ 301!
+/telangana/                                /market-area/telangana/ 301!
+/west-bengal                               /market-area/west-bengal/ 301!
+/west-bengal/                              /market-area/west-bengal/ 301!
+/madhya-pradesh                            /market-area/madhya-pradesh/ 301!
+/madhya-pradesh/                           /market-area/madhya-pradesh/ 301!
+/andhra-pradesh                            /market-area/andhra-pradesh/ 301!
+/andhra-pradesh/                           /market-area/andhra-pradesh/ 301!
+/odisha                                    /market-area/odisha/  301!
+/odisha/                                   /market-area/odisha/  301!
+
+# 4. Odd slug redirects
+/306-stainless-steel-round-bar             /304-stainless-steel-round-bar/ 301!
+/306-stainless-steel-round-bar/            /304-stainless-steel-round-bar/ 301!
+

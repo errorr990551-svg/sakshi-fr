@@ -367,6 +367,34 @@ export function updateSEO({ type, data }) {
   }
   canonicalTag.setAttribute("href", canonicalUrl);
 
+  // Helper to set Open Graph and Twitter meta tags
+  const setMeta = (attrName, attrVal, content) => {
+    let el = document.querySelector(`meta[${attrName}="${attrVal}"]`);
+    if (!el) {
+      el = document.createElement("meta");
+      el.setAttribute(attrName, attrVal);
+      document.head.appendChild(el);
+    }
+    el.setAttribute("content", content);
+  };
+
+  // Open Graph Tags
+  setMeta("property", "og:type", type === "blog-post" ? "article" : "website");
+  setMeta("property", "og:site_name", "Sakshi Forge");
+  setMeta("property", "og:title", title);
+  setMeta("property", "og:description", metaDesc);
+  setMeta("property", "og:url", canonicalUrl);
+  setMeta("property", "og:image", `${BASE_URL}/sakshi-forge-banner.webp`);
+  setMeta("property", "og:image:width", "1200");
+  setMeta("property", "og:image:height", "630");
+  setMeta("property", "og:locale", "en_IN");
+
+  // Twitter Card Tags
+  setMeta("name", "twitter:card", "summary_large_image");
+  setMeta("name", "twitter:title", title);
+  setMeta("name", "twitter:description", metaDesc);
+  setMeta("name", "twitter:image", `${BASE_URL}/sakshi-forge-banner.webp`);
+
   // 3. Inject Structured Data Graph Schema
   const graph = [];
 
@@ -386,9 +414,9 @@ export function updateSEO({ type, data }) {
     ],
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+91-8045815130",
+      "telephone": "+91 82913 66340",
       "contactType": "sales",
-      "email": "info@sakshiforge.in"
+      "email": "sales@steelmanufacturer.in"
     }
   };
 
@@ -411,8 +439,8 @@ export function updateSEO({ type, data }) {
       "@id": `${BASE_URL}/#local`,
       "name": "Sakshi Forge",
       "image": `${BASE_URL}/favicon.svg`,
-      "telephone": "+91-8045815130",
-      "email": "info@sakshiforge.in",
+      "telephone": "+91 82913 66340",
+      "email": "sales@steelmanufacturer.in",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "113/117 Dr. M.G. Mahimtura Marg, 3rd Kumbharwada, Shop No. 5, Ground Floor",
@@ -676,8 +704,8 @@ export function updateSEO({ type, data }) {
       "@id": `${BASE_URL}/#org`,
       "name": "Sakshi Forge",
       "url": `${BASE_URL}/`,
-      "telephone": "+918291366340",
-      "email": "sakshiforge1737@gmail.com",
+      "telephone": "+91 82913 66340",
+      "email": "sales@steelmanufacturer.in",
       "description": "ISO 9001:2015 certified manufacturer of electropolished stainless steel pipes and tubes, industrial flanges and forged fittings.",
       "address": {
         "@type": "PostalAddress",

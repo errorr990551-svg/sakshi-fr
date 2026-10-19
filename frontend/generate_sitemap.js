@@ -48,16 +48,10 @@ const newPages = [
   'tamil-nadu',
   'karnataka',
   'market-area/gujarat',
-  'gujarat',
-  'telangana',
   'market-area/telangana',
-  'west-bengal',
   'market-area/west-bengal',
-  'madhya-pradesh',
   'market-area/madhya-pradesh',
-  'andhra-pradesh',
   'market-area/andhra-pradesh',
-  'odisha',
   'market-area/odisha'
 ];
 
@@ -196,7 +190,7 @@ let citySitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 `;
 
-// Filter market cities to the 30 priority list in defined order
+// Filter market cities: 30 priority cities first, then all remaining cities so all 516 live pages are indexed
 PRIORITY_30_CITY_SLUGS.forEach(slug => {
   const city = marketCities.find(c => c.slug === slug || c.path === `/market-area/${slug}`);
   if (!city) {
@@ -214,11 +208,25 @@ PRIORITY_30_CITY_SLUGS.forEach(slug => {
   </url>\n`;
 });
 
+// Add all remaining market cities (resolves H3: ~474 pages missing from sitemap)
+marketCities.forEach(city => {
+  if (!city.path || city.path === '/') return;
+  const formatted = formatUrl(`${BASE_URL}${city.path}`);
+  if (cityUrlsSet.has(formatted)) return;
+  cityUrlsSet.add(formatted);
+  citySitemap += `  <url>
+    <loc>${formatted}</loc>
+    <lastmod>${TODAY_LASTMOD}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>\n`;
+});
+
 citySitemap += `</urlset>\n`;
 
 const citySitemapPath = path.join(__dirname, 'public/sitemap-cities.xml');
 fs.writeFileSync(citySitemapPath, citySitemap);
-console.log(`City sitemap generated successfully at ${citySitemapPath} with ${cityUrlsSet.size} priority city URLs.`);
+console.log(`City sitemap generated successfully at ${citySitemapPath} with ${cityUrlsSet.size} city URLs.`);
 
 // 3. Image Sitemap (image-sitemap.xml)
 let imageSitemap = `<?xml version="1.0" encoding="UTF-8"?>

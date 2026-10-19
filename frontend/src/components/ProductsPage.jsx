@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Search, ArrowRight, Layers, Tag, Compass, FileText } from 'lucide-react';
+import { Search, ArrowRight, Layers, Tag, Compass, FileText, ChevronLeft, ChevronRight } from 'lucide-react';
 import productsData from '../data/products.json';
 import categoriesData from '../data/categories.json';
 import { handleLinkClick } from '../utils/router';
@@ -8,6 +8,8 @@ import { getParentCategoryName } from '../utils/categories';
 export default function ProductsPage({ onEnquireClick }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeCategory, setActiveCategory] = useState('all');
+  const [currentPage, setCurrentPage] = useState(1);
+  const ITEMS_PER_PAGE = 24;
 
   // Compute product count per category dynamically
   const categoryCounts = useMemo(() => {
@@ -43,6 +45,19 @@ export default function ProductsPage({ onEnquireClick }) {
       return matchesCategory && matchesQuery;
     });
   }, [activeCategory, searchQuery]);
+
+  const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE) || 1;
+  const paginatedProducts = useMemo(() => {
+    const start = (currentPage - 1) * ITEMS_PER_PAGE;
+    return filteredProducts.slice(start, start + ITEMS_PER_PAGE);
+  }, [filteredProducts, currentPage]);
+
+  const goToPage = (page) => {
+    setCurrentPage(page);
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 380, behavior: 'smooth' });
+    }
+  };
 
   return (
     <div className="products-catalog-page" style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '6rem', paddingTop: '5.5rem' }}>
@@ -103,7 +118,7 @@ export default function ProductsPage({ onEnquireClick }) {
               type="text"
               placeholder="Search by product name, standards, grades, or specifications..."
               value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
+              onChange={(e) => { setSearchQuery(e.target.value); setCurrentPage(1); }}
               style={{
                 width: '100%',
                 padding: '1.1rem 1.25rem 1.1rem 3.25rem',
@@ -120,7 +135,7 @@ export default function ProductsPage({ onEnquireClick }) {
             />
             {searchQuery && (
               <button 
-                onClick={() => setSearchQuery('')}
+                onClick={() => { setSearchQuery(''); setCurrentPage(1); }}
                 style={{
                   position: 'absolute',
                   right: '1.25rem',
@@ -155,7 +170,7 @@ export default function ProductsPage({ onEnquireClick }) {
             >
               {/* 'All' Tab */}
               <button
-                onClick={() => setActiveCategory('all')}
+                onClick={() => { setActiveCategory('all'); setCurrentPage(1); }}
                 style={{
                   backgroundColor: activeCategory === 'all' ? 'var(--primary-yellow)' : 'var(--bg-dark-800)',
                   color: activeCategory === 'all' ? 'var(--bg-dark-900)' : 'var(--text-secondary)',
@@ -191,7 +206,7 @@ export default function ProductsPage({ onEnquireClick }) {
                 return (
                   <button
                     key={cat['Category Slug']}
-                    onClick={() => setActiveCategory(catName)}
+                    onClick={() => { setActiveCategory(catName); setCurrentPage(1); }}
                     style={{
                       backgroundColor: activeCategory === catName ? 'var(--primary-yellow)' : 'var(--bg-dark-800)',
                       color: activeCategory === catName ? 'var(--bg-dark-900)' : 'var(--text-secondary)',
@@ -250,7 +265,7 @@ export default function ProductsPage({ onEnquireClick }) {
                 gap: '2rem'
               }}
             >
-              {filteredProducts.map((p) => {
+              {paginatedProducts.map((p) => {
                 // Determine description to show
                 const desc = p['Product Description'] || p['Meta Description (<=160 chars)'] || '';
                 
@@ -352,6 +367,99 @@ export default function ProductsPage({ onEnquireClick }) {
                   </div>
                 );
               })}
+            </div>
+          )}
+
+          {/* Pagination Controls */}
+          {totalPages > 1 && (
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              gap: '1.25rem',
+              marginTop: '3.5rem',
+              paddingTop: '2rem',
+              borderTop: '1px solid var(--border-color)'
+            }}>
+              <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+                Showing <span style={{ color: 'var(--primary-yellow)', fontWeight: '600' }}>{(currentPage - 1) * ITEMS_PER_PAGE + 1}–{Math.min(currentPage * ITEMS_PER_PAGE, filteredProducts.length)}</span> of <span style={{ color: 'var(--text-primary)', fontWeight: '600' }}>{filteredProducts.length}</span> products
+              </div>
+
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+                <button
+                  type="button"
+                  onClick={() => goToPage(Math.max(currentPage - 1, 1))}
+                  disabled={currentPage === 1}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.25rem',
+                    padding: '0.5rem 0.85rem',
+                    borderRadius: '6px',
+                    backgroundColor: 'var(--bg-dark-800)',
+                    border: '1px solid var(--border-color)',
+                    color: currentPage === 1 ? 'var(--text-muted)' : 'var(--text-primary)',
+                    cursor: currentPage === 1 ? 'not-allowed' : 'pointer',
+                    fontSize: '0.85rem',
+                    minHeight: '44px'
+                  }}
+                >
+                  <ChevronLeft size={16} /> Prev
+                </button>
+
+                {Array.from({ length: totalPages }, (_, i) => i + 1)
+                  .filter(p => p === 1 || p === totalPages || Math.abs(p - currentPage) <= 2)
+                  .map((page, idx, arr) => {
+                    const prev = arr[idx - 1];
+                    const showEllipsis = prev && page - prev > 1;
+                    return (
+                      <React.Fragment key={page}>
+                        {showEllipsis && (
+                          <span style={{ color: 'var(--text-muted)', padding: '0 0.25rem' }}>...</span>
+                        )}
+                        <button
+                          type="button"
+                          onClick={() => goToPage(page)}
+                          style={{
+                            minWidth: '44px',
+                            minHeight: '44px',
+                            padding: '0.5rem',
+                            borderRadius: '6px',
+                            backgroundColor: currentPage === page ? 'var(--primary-yellow)' : 'var(--bg-dark-800)',
+                            color: currentPage === page ? '#000' : 'var(--text-primary)',
+                            border: currentPage === page ? '1px solid var(--primary-yellow)' : '1px solid var(--border-color)',
+                            fontWeight: currentPage === page ? '700' : '500',
+                            cursor: 'pointer',
+                            fontSize: '0.9rem'
+                          }}
+                        >
+                          {page}
+                        </button>
+                      </React.Fragment>
+                    );
+                  })}
+
+                <button
+                  type="button"
+                  onClick={() => goToPage(Math.min(currentPage + 1, totalPages))}
+                  disabled={currentPage === totalPages}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.25rem',
+                    padding: '0.5rem 0.85rem',
+                    borderRadius: '6px',
+                    backgroundColor: 'var(--bg-dark-800)',
+                    border: '1px solid var(--border-color)',
+                    color: currentPage === totalPages ? 'var(--text-muted)' : 'var(--text-primary)',
+                    cursor: currentPage === totalPages ? 'not-allowed' : 'pointer',
+                    fontSize: '0.85rem',
+                    minHeight: '44px'
+                  }}
+                >
+                  Next <ChevronRight size={16} />
+                </button>
+              </div>
             </div>
           )}
 

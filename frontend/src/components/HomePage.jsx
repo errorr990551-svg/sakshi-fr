@@ -342,8 +342,8 @@ export default function HomePage({ onEnquireClick }) {
                 title: "Duplex 2205 Electropolished Pipes",
                 sub: "UNS S31803 / S32205 High-Strength",
                 desc: "High yield strength and extreme chloride pitting resistance for marine, chemical, and offshore desalination plants.",
-                img: "/Duplex 2205 Pipe Fittings.webp",
-                link: "/electropolished-pipes"
+                img: "/electropolish_pipes.webp",
+                link: "/electropolished-pipes/"
               },
               {
                 title: "Super Duplex Electropolished Pipes",

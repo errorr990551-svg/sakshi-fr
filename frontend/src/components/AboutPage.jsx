@@ -280,7 +280,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginBottom: '2.5rem' }}>
               <div style={{ backgroundColor: 'var(--bg-dark-900)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
                 <h3 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '0.5rem' }}>
-                  <a href="/electropolished-pipes" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'none' }}>
+                  <a href="/electropolished-pipes/" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'none' }}>
                     Electropolished Pipes and Tubes
                   </a>
                 </h3>
@@ -291,7 +291,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
 
               <div style={{ backgroundColor: 'var(--bg-dark-900)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
                 <h3 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '0.5rem' }}>
-                  <a href="/industrial-flanges" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'none' }}>
+                  <a href="/flanges/" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'none' }}>
                     Industrial Flanges
                   </a>
                 </h3>
@@ -302,7 +302,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
 
               <div style={{ backgroundColor: 'var(--bg-dark-900)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
                 <h3 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '0.5rem' }}>
-                  <a href="/forged-fittings" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'none' }}>
+                  <a href="/forged-fittings/" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'none' }}>
                     Forged Steel Fittings
                   </a>
                 </h3>
@@ -313,7 +313,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
 
               <div style={{ backgroundColor: 'var(--bg-dark-900)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
                 <h3 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '0.5rem' }}>
-                  <a href="/stainless-steel-elbow" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'none' }}>
+                  <a href="/stainless-steel-elbow/" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'none' }}>
                     SS Elbows
                   </a>
                 </h3>
@@ -324,7 +324,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
 
               <div style={{ backgroundColor: 'var(--bg-dark-900)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
                 <h3 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '0.5rem' }}>
-                  <a href="/round-bars" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'none' }}>
+                  <a href="/stainless-steel-round-bar/" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'none' }}>
                     Round Bars, Rods and Plates
                   </a>
                 </h3>
@@ -344,7 +344,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
             </div>
 
             <div style={{ textAlign: 'center' }}>
-              <a href="/products" onClick={handleLinkClick} className="btn btn-primary" style={{ padding: '0.85rem 2rem', fontWeight: '700' }}>
+              <a href="/products/" onClick={handleLinkClick} className="btn btn-primary" style={{ padding: '0.85rem 2rem', fontWeight: '700' }}>
                 View All Products <ArrowRight size={16} />
               </a>
             </div>

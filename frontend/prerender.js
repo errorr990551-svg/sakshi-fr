@@ -154,16 +154,10 @@ async function runPrerender() {
     { url: `${BASE_URL}/tamil-nadu/`, type: 'tamil-nadu-hub', slug: 'tamil-nadu', title: 'Electropolished Pipe Supplier in Tamil Nadu | 10 Industrial Belts | Sakshi Forge', description: 'Factory-direct electropolished SS 304L, 316L and duplex pipes supplied across Tamil Nadu: Chennai, Coimbatore, Hosur, Cuddalore, Trichy, Salem, Madurai, Thoothukudi, Erode, Vellore.', data: null },
     { url: `${BASE_URL}/karnataka/`, type: 'karnataka-hub', slug: 'karnataka', title: 'Electropolished Pipe Manufacturer Across Karnataka | Sakshi Forge', description: 'Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Karnataka industrial corridors: Bengaluru, Tumakuru, Mysuru, Mangaluru, Bidar, Hubballi-Dharwad, Belagavi, Hassan, Raichur and Mandya.', data: null },
     { url: `${BASE_URL}/market-area/gujarat/`, type: 'gujarat-hub', slug: 'market-area/gujarat', title: 'Electropolished Pipe Manufacturer Across Gujarat | Sakshi Forge', description: 'Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Gujarat industrial belts: Ahmedabad, Vadodara, Vapi, Sanand, Ankleshwar, Surat, Dahej, Anand and Mehsana.', data: null },
-    { url: `${BASE_URL}/gujarat/`, type: 'gujarat-hub', slug: 'gujarat', title: 'Electropolished Pipe Manufacturer Across Gujarat | Sakshi Forge', description: 'Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Gujarat industrial belts: Ahmedabad, Vadodara, Vapi, Sanand, Ankleshwar, Surat, Dahej, Anand and Mehsana.', data: null },
-    { url: `${BASE_URL}/telangana/`, type: 'telangana-hub', slug: 'telangana', title: 'Electropolished Pipe Manufacturer Across Telangana | Sakshi Forge', description: 'Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Telangana industrial belts: Hyderabad, Sangareddy, Patancheru, Karimnagar, Mahabubnagar, Warangal, Nizamabad, Siddipet, Ramagundam and Khammam.', data: null },
     { url: `${BASE_URL}/market-area/telangana/`, type: 'telangana-hub', slug: 'market-area/telangana', title: 'Electropolished Pipe Manufacturer Across Telangana | Sakshi Forge', description: 'Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Telangana industrial belts: Hyderabad, Sangareddy, Patancheru, Karimnagar, Mahabubnagar, Warangal, Nizamabad, Siddipet, Ramagundam and Khammam.', data: null },
-    { url: `${BASE_URL}/west-bengal/`, type: 'west-bengal-hub', slug: 'west-bengal', title: 'Electropolished Pipe Manufacturer Across West Bengal | Sakshi Forge', description: 'Sakshi Forge supplies electropolished SS 316L, 304L and duplex 2205 pipes across West Bengal industrial corridors: Kolkata, Haldia, Kalyani, Howrah, Dankuni, Durgapur, Siliguri, Kharagpur, Asansol and Bardhaman.', data: null },
     { url: `${BASE_URL}/market-area/west-bengal/`, type: 'west-bengal-hub', slug: 'market-area/west-bengal', title: 'Electropolished Pipe Manufacturer Across West Bengal | Sakshi Forge', description: 'Sakshi Forge supplies electropolished SS 316L, 304L and duplex 2205 pipes across West Bengal industrial corridors: Kolkata, Haldia, Kalyani, Howrah, Dankuni, Durgapur, Siliguri, Kharagpur, Asansol and Bardhaman.', data: null },
-    { url: `${BASE_URL}/madhya-pradesh/`, type: 'madhya-pradesh-hub', slug: 'madhya-pradesh', title: 'Electropolished Pipe Manufacturer Across Madhya Pradesh | Sakshi Forge', description: 'Sakshi Forge supplies electropolished SS 316L and 304L pipes across Madhya Pradesh industrial corridors: Indore, Pithampur SEZ, Dewas, Ujjain Vikram Udyogpuri, Bhopal, Ratlam, Gwalior Malanpur, Jabalpur and Neemuch.', data: null },
     { url: `${BASE_URL}/market-area/madhya-pradesh/`, type: 'madhya-pradesh-hub', slug: 'market-area/madhya-pradesh', title: 'Electropolished Pipe Manufacturer Across Madhya Pradesh | Sakshi Forge', description: 'Sakshi Forge supplies electropolished SS 316L and 304L pipes across Madhya Pradesh industrial corridors: Indore, Pithampur SEZ, Dewas, Ujjain Vikram Udyogpuri, Bhopal, Ratlam, Gwalior Malanpur, Jabalpur and Neemuch.', data: null },
-    { url: `${BASE_URL}/andhra-pradesh/`, type: 'andhra-pradesh-hub', slug: 'andhra-pradesh', title: 'Electropolished Stainless Steel Pipe Manufacturer Across Andhra Pradesh | Sakshi Forge', description: 'Sakshi Forge supplies electropolished SS 316L, 304L and duplex 2205 pipes across Andhra Pradesh industrial corridors: Visakhapatnam Vizag SEZ, Anakapalle Parawada Pharma City, Tirupati Sri City, Kakinada Port SEZ, Vijayawada Autonagar, Guntur Spices Park, Rajahmundry, Chittoor, Nellore Krishnapatnam and Kurnool Orvakal.', data: null },
     { url: `${BASE_URL}/market-area/andhra-pradesh/`, type: 'andhra-pradesh-hub', slug: 'market-area/andhra-pradesh', title: 'Electropolished Stainless Steel Pipe Manufacturer Across Andhra Pradesh | Sakshi Forge', description: 'Sakshi Forge supplies electropolished SS 316L, 304L and duplex 2205 pipes across Andhra Pradesh industrial corridors: Visakhapatnam Vizag SEZ, Anakapalle Parawada Pharma City, Tirupati Sri City, Kakinada Port SEZ, Vijayawada Autonagar, Guntur Spices Park, Rajahmundry, Chittoor, Nellore Krishnapatnam and Kurnool Orvakal.', data: null },
-    { url: `${BASE_URL}/odisha/`, type: 'market-area', slug: 'odisha', title: 'Electropolished Stainless Steel Pipe Manufacturer Across Odisha | Sakshi Forge', description: 'Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Odisha industrial corridors: Bhubaneswar, Cuttack, Berhampur, Angul, Rourkela, Sambalpur, Jharsuguda, Jajpur, Paradip, and Balasore.', data: null },
     { url: `${BASE_URL}/market-area/odisha/`, type: 'market-area', slug: 'market-area/odisha', title: 'Electropolished Stainless Steel Pipe Manufacturer Across Odisha | Sakshi Forge', description: 'Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Odisha industrial corridors: Bhubaneswar, Cuttack, Berhampur, Angul, Rourkela, Sambalpur, Jharsuguda, Jajpur, Paradip, and Balasore.', data: null }
   ];
 
@@ -415,11 +409,13 @@ async function runPrerender() {
 
     if (route.type === 'product') {
       const catSlug = route.slug.split('/')[0] || 'products';
+      const parentCat = categories.find(c => c['Category Slug'] === catSlug);
+      const catName = parentCat ? parentCat['Category Name'] : (route.data['Category'] || 'Products');
       const breadcrumbs = {
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": `${BASE_URL}/` },
-          { "@type": "ListItem", "position": 2, "name": route.data['Category'], "item": `${BASE_URL}/${catSlug}/` },
+          { "@type": "ListItem", "position": 2, "name": catName, "item": `${BASE_URL}/${catSlug}/` },
           { "@type": "ListItem", "position": 3, "name": route.data['Product Name'], "item": route.url }
         ]
       };
@@ -562,7 +558,7 @@ async function runPrerender() {
         "name": "Sakshi Forge",
         "url": `${BASE_URL}/`,
         "telephone": "+918291366340",
-        "email": "sakshiforge1737@gmail.com",
+        "email": "sales@steelmanufacturer.in",
         "description": "ISO 9001:2015 certified manufacturer of electropolished stainless steel pipes and tubes, industrial flanges and forged fittings.",
         "address": {
           "@type": "PostalAddress",
@@ -661,6 +657,30 @@ async function runPrerender() {
     } else {
       html = html.replace('</head>', `  <link rel="canonical" href="${canonicalHref}" />\n  </head>`);
     }
+
+    // Inject Open Graph & Twitter Card tags (resolves M3)
+    const escapeAttr = (s) => (s || '').replace(/"/g, '&quot;');
+    let ogImageUrl = `${BASE_URL}/sakshi-forge-banner.webp`;
+    if (route.type === 'product' && route.data?.Image) {
+      const imgPath = route.data.Image.startsWith('/') ? route.data.Image : `/${route.data.Image}`;
+      ogImageUrl = `${BASE_URL}${encodeURI(imgPath)}`;
+    }
+    const ogType = route.type === 'product' ? 'product' : 'website';
+    const ogTags = `  <meta property="og:type" content="${ogType}" />
+  <meta property="og:site_name" content="Sakshi Forge" />
+  <meta property="og:title" content="${escapeAttr(route.title)}" />
+  <meta property="og:description" content="${escapeAttr(route.description)}" />
+  <meta property="og:url" content="${canonicalHref}" />
+  <meta property="og:image" content="${ogImageUrl}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="${escapeAttr(route.title)}" />
+  <meta name="twitter:description" content="${escapeAttr(route.description)}" />
+  <meta name="twitter:image" content="${ogImageUrl}" />`;
+
+    // Remove existing generic og / twitter tags if any, then insert updated
+    html = html.replace(/<meta property="og:.*?" content=".*?" \/>\n?/g, '');
+    html = html.replace(/<meta name="twitter:.*?" content=".*?" \/>\n?/g, '');
+    html = html.replace('</head>', `${ogTags}\n</head>`);
 
     // Inject JSON-LD Schema
     html = html.replace('</head>', `${schemaBlockHtml}\n</head>`);

@@ -201,7 +201,7 @@ export const tamilNaduCityData = {
       title: "Ready to Specify Electropolished Pipe for Your Chennai Plant?",
       desc: "Send your grade, size, quantity and finish. Quotes are factory-direct, with full documentation, delivered anywhere in Chennai, Manali, Ambattur, Sriperumbudur or Oragadam.",
       phones: ["+91 82913 66340", "+91 79764 76375"],
-      email: "sakshiforge1737@gmail.com",
+      email: "sales@steelmanufacturer.in",
       address: "Balaji Industrial Compound, Taloja MIDC, Mumbai, Maharashtra 410208"
     }
   },
@@ -382,7 +382,7 @@ export const tamilNaduCityData = {
       title: "Ready to Specify Electropolished Pipe for Your Coimbatore Business?",
       desc: "Send your grade, size, quantity and drawing. Factory-direct quote with full documentation.",
       phones: ["+91 82913 66340", "+91 79764 76375"],
-      email: "sakshiforge1737@gmail.com",
+      email: "sales@steelmanufacturer.in",
       address: "Balaji Industrial Compound, Taloja MIDC, Mumbai, Maharashtra 410208"
     }
   },
@@ -535,7 +535,7 @@ export const tamilNaduCityData = {
       title: "Ready to Specify Electropolished Pipe for Your Hosur Plant?",
       desc: "Send your requirements for direct factory pricing with 30-minute response guarantee.",
       phones: ["+91 82913 66340", "+91 79764 76375"],
-      email: "sakshiforge1737@gmail.com",
+      email: "sales@steelmanufacturer.in",
       address: "Balaji Industrial Compound, Taloja MIDC, Mumbai, Maharashtra 410208"
     }
   },
@@ -687,7 +687,7 @@ export const tamilNaduCityData = {
       title: "Ready to Specify Electropolished Pipe for Your Cuddalore Plant?",
       desc: "Send your requirements for direct factory pricing with 30-minute response guarantee.",
       phones: ["+91 82913 66340", "+91 79764 76375"],
-      email: "sakshiforge1737@gmail.com",
+      email: "sales@steelmanufacturer.in",
       address: "Balaji Industrial Compound, Taloja MIDC, Mumbai, Maharashtra 410208"
     }
   },
@@ -840,7 +840,7 @@ export const tamilNaduCityData = {
       title: "Ready to Specify Electropolished Pipe for Your Trichy Business?",
       desc: "Send your requirements for direct factory pricing with 30-minute response guarantee.",
       phones: ["+91 82913 66340", "+91 79764 76375"],
-      email: "sakshiforge1737@gmail.com",
+      email: "sales@steelmanufacturer.in",
       address: "Balaji Industrial Compound, Taloja MIDC, Mumbai, Maharashtra 410208"
     }
   },
@@ -993,7 +993,7 @@ export const tamilNaduCityData = {
       title: "Ready to Specify Electropolished Pipe for Your Salem Plant?",
       desc: "Send your requirements for direct factory pricing with 30-minute response guarantee.",
       phones: ["+91 82913 66340", "+91 79764 76375"],
-      email: "sakshiforge1737@gmail.com",
+      email: "sales@steelmanufacturer.in",
       address: "Balaji Industrial Compound, Taloja MIDC, Mumbai, Maharashtra 410208"
     }
   },
@@ -1147,7 +1147,7 @@ export const tamilNaduCityData = {
       title: "Ready to Specify Electropolished Pipe for Your Madurai Plant?",
       desc: "Send your requirements for direct factory pricing with 30-minute response guarantee.",
       phones: ["+91 82913 66340", "+91 79764 76375"],
-      email: "sakshiforge1737@gmail.com",
+      email: "sales@steelmanufacturer.in",
       address: "Balaji Industrial Compound, Taloja MIDC, Mumbai, Maharashtra 410208"
     }
   },
@@ -1299,7 +1299,7 @@ export const tamilNaduCityData = {
       title: "Ready to Specify Electropolished Pipe for Your Thoothukudi Plant?",
       desc: "Send your requirements for direct factory pricing with 30-minute response guarantee.",
       phones: ["+91 82913 66340", "+91 79764 76375"],
-      email: "sakshiforge1737@gmail.com",
+      email: "sales@steelmanufacturer.in",
       address: "Balaji Industrial Compound, Taloja MIDC, Mumbai, Maharashtra 410208"
     }
   },
@@ -1451,7 +1451,7 @@ export const tamilNaduCityData = {
       title: "Ready to Specify Electropolished Pipe for Your Erode Plant?",
       desc: "Send your requirements for direct factory pricing with 30-minute response guarantee.",
       phones: ["+91 82913 66340", "+91 79764 76375"],
-      email: "sakshiforge1737@gmail.com",
+      email: "sales@steelmanufacturer.in",
       address: "Balaji Industrial Compound, Taloja MIDC, Mumbai, Maharashtra 410208"
     }
   },
@@ -1460,6 +1460,9 @@ export const tamilNaduCityData = {
     city: 'Vellore',
     state: 'Tamil Nadu',
     country: 'India',
+    path: '/market-area/vellore',
+    fullPageUrl: 'https://steelmanufacturer.in/market-area/vellore/',
+    canonicalUrl: 'https://steelmanufacturer.in/market-area/vellore/',
     pageTitle: 'Electropolished Pipe Supplier in Vellore & Ranipet | SS 316L EP Pipes | Sakshi Forge',
     metaDescription: 'Electropolished SS 316L and 304 pipes for Vellore and Ranipet SIPCOT pharma, chemical and engineering plants. Ra ≤0.4 µm, 100% PMI tested, 3.1 MTC. Quote in 30 minutes.',
     isTamilNaduRich: true,
@@ -1603,7 +1606,7 @@ export const tamilNaduCityData = {
       title: "Ready to Specify Electropolished Pipe for Your Vellore or Ranipet Plant?",
       desc: "Send your requirements for direct factory pricing with 30-minute response guarantee.",
       phones: ["+91 82913 66340", "+91 79764 76375"],
-      email: "sakshiforge1737@gmail.com",
+      email: "sales@steelmanufacturer.in",
       address: "Balaji Industrial Compound, Taloja MIDC, Mumbai, Maharashtra 410208"
     }
   }

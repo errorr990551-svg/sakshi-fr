@@ -8,8 +8,14 @@ export default function CataloguePage({ onEnquireClick }) {
   const handleDownload = (e) => {
     e.preventDefault();
     setDownloadRequested(true);
-    // Trigger direct file download or open PDF
-    window.open('/favicon.svg', '_blank'); // Accessible fallback file
+    // Direct official catalogue PDF download
+    const link = document.createElement('a');
+    link.href = '/Sakshi_Forge_Master_Product_Catalogue.pdf';
+    link.download = 'Sakshi_Forge_Master_Product_Catalogue.pdf';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const categories = [

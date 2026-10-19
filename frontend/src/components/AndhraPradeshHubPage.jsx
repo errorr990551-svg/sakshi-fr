@@ -351,10 +351,10 @@ export default function AndhraPradeshHubPage({ onEnquireClick, onShowContactDeta
               <Phone size={16} style={{ color: 'var(--primary-yellow)' }} /> +91 82913 66340
             </a>
             <a 
-              href="mailto:sakshiforge1737@gmail.com" 
+              href="mailto:sales@steelmanufacturer.in" 
               style={{ color: 'var(--text-primary)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontWeight: '600' }}
             >
-              <Mail size={16} style={{ color: 'var(--primary-yellow)' }} /> sakshiforge1737@gmail.com
+              <Mail size={16} style={{ color: 'var(--primary-yellow)' }} /> sales@steelmanufacturer.in
             </a>
           </div>
         </div>

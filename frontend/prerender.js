@@ -473,11 +473,12 @@ async function runPrerender() {
       };
 
       if (parentPath !== "/") {
+        const cleanParent = parentPath.replace(/\/+$/, '') + '/';
         breadcrumbList.itemListElement.push({
           "@type": "ListItem",
           "position": 2,
           "name": parentName,
-          "item": `${BASE_URL}${parentPath.startsWith('/') ? '' : '/'}${parentPath}`
+          "item": `${BASE_URL}${cleanParent.startsWith('/') ? '' : '/'}${cleanParent}`
         });
         breadcrumbList.itemListElement.push({
           "@type": "ListItem",
@@ -535,7 +536,9 @@ async function runPrerender() {
       const citySlug = route.data.slug || route.slug.replace('market-area/', '');
       const richData = odishaCityData[citySlug] || maharashtraCityData[citySlug] || karnatakaCityData[citySlug] || gujaratCityData[citySlug] || telanganaCityData[citySlug] || westBengalCityData[citySlug] || madhyaPradeshCityData[citySlug] || andhraPradeshCityData[citySlug];
 
-      const currentUrl = `${BASE_URL}${route.data.path || ('/market-area/' + citySlug)}`;
+      const rawCityPath = route.data.path || ('/market-area/' + citySlug);
+      const cleanCityPath = rawCityPath.replace(/\/+$/, '') + '/';
+      const currentUrl = `${BASE_URL}${cleanCityPath.startsWith('/') ? '' : '/'}${cleanCityPath}`;
       const cityName = richData?.city || route.data.city;
       const stateName = richData?.state || route.data.state || 'India';
       const faqsList = richData?.faqs || route.data.faqs;
@@ -546,7 +549,7 @@ async function runPrerender() {
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": `${BASE_URL}/` },
-          { "@type": "ListItem", "position": 2, "name": "Market Areas", "item": `${BASE_URL}/market-area` },
+          { "@type": "ListItem", "position": 2, "name": "Market Areas", "item": `${BASE_URL}/market-area/` },
           { "@type": "ListItem", "position": 3, "name": cityName, "item": currentUrl }
         ]
       });

@@ -3,6 +3,7 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://steelmanufacturer.in/sitemap_index.xml
 Sitemap: https://steelmanufacturer.in/sitemap.xml
 Sitemap: https://steelmanufacturer.in/sitemap-cities.xml
 Sitemap: https://steelmanufacturer.in/image-sitemap.xml

@@ -119,6 +119,8 @@ categories.forEach(cat => {
 
 // Products
 products.forEach(prod => {
+  // Exclude odd/redirected slug to avoid sitemap redirect error (306 redirects to 304)
+  if (prod['URL Slug'] === '306-stainless-steel-round-bar') return;
   const priorityVal = formatPriority(prod['Sitemap priority'], '0.8');
   addMainUrl(`${BASE_URL}/${prod['URL Slug']}/`, prod['Changefreq'] || 'monthly', priorityVal);
 });
@@ -131,9 +133,17 @@ newPages.forEach(slug => {
 // Market Area Hub (with trailing slash)
 addMainUrl(`${BASE_URL}/market-area/`, 'weekly', '0.8', 'Market Area Hub');
 
-// EP Build Spec Pages
+// EP Build Spec Pages (excluding city pages handled exclusively by sitemap-cities.xml)
+const stateHubSlugs = ['gujarat', 'telangana', 'west-bengal', 'madhya-pradesh', 'andhra-pradesh', 'odisha'];
 epBuildSpecData.forEach(item => {
   if (item.url) {
+    if (item.url.includes('/market-area/')) {
+      const isStateHub = stateHubSlugs.some(s => item.url.includes(`/market-area/${s}/`) || item.url.endsWith(`/market-area/${s}`));
+      if (!isStateHub) {
+        // City page is handled exclusively by sitemap-cities.xml to prevent duplicate entries
+        return;
+      }
+    }
     const priorityVal = item.priority === 'P1' ? '1.0' : item.priority === 'P2' ? '0.8' : '0.7';
     addMainUrl(item.url, 'weekly', priorityVal);
   }
@@ -150,6 +160,28 @@ mainSitemap += `</urlset>\n`;
 const mainSitemapPath = path.join(__dirname, 'public/sitemap.xml');
 fs.writeFileSync(mainSitemapPath, mainSitemap);
 console.log(`Main sitemap generated successfully at ${mainSitemapPath} with ${mainUrlsSet.size} unique URLs.`);
+
+// Master Sitemap Index (sitemap_index.xml)
+const sitemapIndex = `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>${BASE_URL}/sitemap.xml</loc>
+    <lastmod>${TODAY_LASTMOD}</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>${BASE_URL}/sitemap-cities.xml</loc>
+    <lastmod>${TODAY_LASTMOD}</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>${BASE_URL}/image-sitemap.xml</loc>
+    <lastmod>${TODAY_LASTMOD}</lastmod>
+  </sitemap>
+</sitemapindex>
+`;
+
+const sitemapIndexPath = path.join(__dirname, 'public/sitemap_index.xml');
+fs.writeFileSync(sitemapIndexPath, sitemapIndex);
+console.log(`Master sitemap index generated successfully at ${sitemapIndexPath}.`);
 
 // 2. Dedicated City Sitemap (sitemap-cities.xml) - Reduced to 30 Highest-Priority Industrial Cities
 export const PRIORITY_30_CITY_SLUGS = [

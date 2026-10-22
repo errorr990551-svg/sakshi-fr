@@ -51,6 +51,9 @@ RewriteRule ^(.*)$ https://steelmanufacturer.in/$1/ [L,R=301]
 </IfModule>
 
 # ============ 2. Pre-rendered Directory & Static File Routing ============
+AddType application/xml .xml
+AddType text/plain .txt
+
 # Serve existing physical files directly (images, css, js, robots.txt, sitemaps, etc.)
 RewriteCond %{REQUEST_FILENAME} -f
 RewriteRule ^ - [L]

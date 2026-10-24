@@ -14,7 +14,7 @@ jobs:
   build-and-deploy:
     name: 🚀 Build & Ultra-Fast Deploy
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 10
 
     steps:
       - name: ⬇️ Checkout Repository
@@ -27,15 +27,18 @@ jobs:
           cache: 'npm'
           cache-dependency-path: frontend/package-lock.json
 
-      - name: 📦 Install Frontend Dependencies
+      - name: 📦 Install Dependencies
         run: |
           cd frontend
           npm ci
+          cd ..
+          npm install --no-save basic-ftp
 
       - name: 🏗️ Build Site & Pre-render Static Pages
         run: |
           cd frontend
           npm run build
+          cd ..
 
       - name: 🗜️ Package into Fast Deploy ZIP (with .htaccess)
         run: |
@@ -59,18 +62,14 @@ jobs:
           echo "✅ Deployment package prepared in staging/:"
           ls -lh staging/
 
-      - name: 📤 FTP Upload ZIP to Hostinger (Only 2 Files, ~5 Seconds!)
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ${{ secrets.FTP_PROTOCOL || 'ftps' }}
-          port: ${{ secrets.FTP_PORT || 21 }}
-          security: loose
-          local-dir: ./staging/
-          server-dir: ${{ secrets.FTP_SERVER_DIR || './' }}
-          dangerous-clean-slate: false
+      - name: 📤 Upload ZIP Package to Hostinger (Fast FTP/FTPS)
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_SERVER_DIR: ${{ secrets.FTP_SERVER_DIR || './' }}
+        run: |
+          node .github/scripts/upload_ftp.cjs
 
       - name: ⚡ Trigger Server Unpack & Clean Up Archive
         run: |
@@ -88,7 +87,7 @@ jobs:
             echo "------------------------------------------------------"
             echo "Troubleshooting Tips:"
             echo "1. If you got a 404 error, check your FTP account path in Hostinger:"
-            echo "   - If your FTP account lands in /public_html, server-dir './' works."
+            echo "   - If your FTP account lands in /public_html, FTP_SERVER_DIR should be './'"
             echo "   - If using Hostinger Master FTP account, add a GitHub Secret: FTP_SERVER_DIR = public_html/"
             echo "2. Check if PHP ZipArchive is enabled in Hostinger PHP extensions."
             echo "------------------------------------------------------"

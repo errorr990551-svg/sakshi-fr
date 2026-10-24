@@ -15,6 +15,7 @@ frontend/dist
 .vite
 .wrangler
 backend/.wrangler
+scratch/
 
 # Environment variables
 .env

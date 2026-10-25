@@ -1,0 +1,56 @@
+{
+  "slug": "bhiwadi",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Bhiwadi: Rajasthan's NCR Industrial Gateway",
+      "paragraphs": [
+        "Bhiwadi, in Alwar district on Rajasthan's border with Haryana, is the state's closest industrial town to Delhi NCR. Its RIICO industrial area runs in several phases, and RIICO has developed additional clusters around it at Chopanki, Khushkhera, Tapukara and Bhiwadi Extension. Each has its own character: the main RIICO phases host many pharmaceutical units, including parenteral (injectable) manufacturers; Chopanki has a biotech park as well as plastics manufacturers; and Khushkhera is dominated by automotive and auto-component plants.",
+        "That spread means Bhiwadi buyers range from injectable makers who need the most demanding finish we make, to auto suppliers who need none."
+      ]
+    },
+    {
+      "heading": "Parenteral Manufacturers: WFI and Clean Steam",
+      "paragraphs": [
+        "Injectables require water for injection and clean steam, and their product-contact lines must meet strict limits on particulates and endotoxins. In these systems electropolished 316L tube to ASME BPE SF4 is the industry norm: hot WFI loops resist rouging longer on an electropolished surface, clean-steam condensate drains fully from a smooth bore, and product-contact lines clean and sterilise more reliably.",
+        "Specify ASTM A270 with the S2 supplement where your URS calls for it, orbital welding with purge and passivation, and borescope inspection of critical welds. We supply each electropolished lot with an EN 10204 3.1 certificate, PMI records and an internal Ra report."
+      ]
+    },
+    {
+      "heading": "Oral Formulation Plants",
+      "paragraphs": [
+        "Bhiwadi's tablet, capsule and liquid formulators need purified water rather than WFI. 316L is standard from RO permeate onwards; an ambient purified-water loop is often built in SF1 mechanically polished tube, with SF4 electropolished tube reserved for hot-sanitised sections and points of use that feed product. Liquid-oral plants add product-transfer and CIP lines where electropolishing shortens cleaning cycles."
+      ]
+    },
+    {
+      "heading": "Chopanki Biotech Park and Plastics Units",
+      "paragraphs": [
+        "Biotech units at Chopanki need small-diameter 316L SF4 tube for media, buffer and WFI service, ordered in small lots with full documentation. Plastics manufacturers there need hygienic tube only when they mould primary packaging for pharma or food customers who audit their utilities - certified 304L or 316L with a mechanically polished finish usually suffices."
+      ]
+    },
+    {
+      "heading": "Khushkhera's Automotive Cluster",
+      "paragraphs": [
+        "Auto and auto-component plants in Khushkhera do not need electropolished tube. Where they buy stainless, it is for paint-shop deionised water, test rigs and laboratories, and a standard certified finish is the economical choice."
+      ]
+    },
+    {
+      "heading": "Delivery to Bhiwadi, Chopanki and Khushkhera",
+      "paragraphs": [
+        "Bhiwadi is supplied by road from our Taloja MIDC works; dispatch and transit are confirmed in writing per quotation. Give us the phase or cluster name with your enquiry so the consignment is routed directly.",
+        "Nearby NCR and Rajasthan clusters:"
+      ],
+      "links": [
+        { "label": "Alwar and Neemrana", "href": "/market-area/alwar/" },
+        { "label": "Gurugram and Manesar", "href": "/market-area/gurugram/" },
+        { "label": "Jaipur", "href": "/market-area/jaipur/" },
+        { "label": "Faridabad", "href": "/market-area/faridabad/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Outlook Business: Path to prosperity (Bhiwadi and RIICO clusters)", "url": "https://www.outlookbusiness.com/magazine/story/path-to-prosperity-1428" },
+    { "title": "Pharmaguddu: Pharmaceutical companies in Bhiwadi", "url": "https://pharmaguddu.com/list-of-pharmaceuticals-companies-in-bhiwadi-rajasthan/" },
+    { "title": "Secured Engineers: Khushkhera industrial area", "url": "https://www.securedengineers.com/industrial-zones/rajasthan/khushkhera-industrial-area/" }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "haridwar",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "SIIDCUL Haridwar: A Multi-Product Estate Near Delhi NCR",
+      "paragraphs": [
+        "The Integrated Industrial Estate at Haridwar, developed by SIIDCUL (formerly SIDCUL), the Uttarakhand industrial development corporation, sits beside the BHEL Haridwar complex and has built a reputation as a multi-product estate within reach of Delhi NCR. SIIDCUL's own material lists FMCG, automotive and pharmaceutical manufacturers among its occupants, including a large contract formulation manufacturer and personal-care producers.",
+        "Haridwar's hygienic-tube demand therefore comes from two directions: pharmaceutical formulation, much of it contract manufacturing for other brands, and FMCG - personal care, food and home-care products."
+      ]
+    },
+    {
+      "heading": "Contract Formulation: Many Products, Many Changeovers",
+      "paragraphs": [
+        "Contract manufacturers run a large number of products for many brand owners through shared equipment. Changeovers and cleaning validation dominate their working week, and each client's quality team may audit the site. Electropolished product-contact and CIP lines earn their place by making cleaning faster and more repeatable from one product to the next.",
+        "For purified water, the usual pattern holds: 316L throughout, SF1 for an ambient loop, SF4 electropolished for hot-sanitised loops and critical points of use. Because several clients' auditors may review the same water system, consistent documentation - 3.1 certificate per heat, PMI per length, Ra report per electropolished lot - saves repeated questions."
+      ]
+    },
+    {
+      "heading": "Personal Care and FMCG Lines",
+      "paragraphs": [
+        "Creams, lotions, shampoos and gels are viscous, often contain surfactants and preservatives, and leave films that rough steel holds on to. Product-transfer, mixing-vessel and filling lines in 316L with a smooth internal finish clean faster and reduce the risk of microbial contamination between batches. Food and beverage FMCG lines follow 3-A practice: 304 for most duty, 316L for salty or acidic products.",
+        "Utility lines - chilled water, compressed air, general process water - do not need a hygienic finish, and we will say so rather than quote electropolished tube where it adds nothing."
+      ]
+    },
+    {
+      "heading": "Automotive Plants in the Estate",
+      "paragraphs": [
+        "Two-wheeler and vehicle plants in the estate do not use hygienic tube in their process. Paint-shop deionised water and laboratory utilities are the exceptions, and certified 304L with a standard finish usually meets the need."
+      ]
+    },
+    {
+      "heading": "Delivery to SIIDCUL Haridwar and Bahadrabad",
+      "paragraphs": [
+        "Haridwar is a long-haul road delivery from our Taloja MIDC works; dispatch and transit are confirmed in writing with each quotation. ICD Dadri, about 200 km away, is the nearest listed container gateway for export-bound material.",
+        "Other Uttarakhand clusters:"
+      ],
+      "links": [
+        { "label": "Dehradun and Selaqui", "href": "/market-area/dehradun/" },
+        { "label": "Rudrapur and Pantnagar", "href": "/market-area/rudrapur/" },
+        { "label": "Kashipur", "href": "/market-area/kashipur/" },
+        { "label": "Paonta Sahib", "href": "/market-area/paonta-sahib/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "State Infrastructure and Industrial Development Corporation of Uttarakhand - Wikipedia", "url": "https://en.wikipedia.org/wiki/State_Infrastructure_and_Industrial_Development_Corporation_of_Uttarakhand_Limited" },
+    { "title": "SIIDCUL: Success projects", "url": "https://www.siidcul.com/uploads/images/news/news_2244254_Success Projects.pdf" }
+  ]
+}

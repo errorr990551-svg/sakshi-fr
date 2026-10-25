@@ -1,0 +1,48 @@
+{
+  "slug": "puducherry",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Puducherry's Industrial Estates: Mettupalayam, Sedarapet and Thirubuvanai",
+      "paragraphs": [
+        "Industrial estates in the Union Territory of Puducherry are run by PIPDIC. Its own listings describe Mettupalayam as the largest, at around 167 acres with some 257 units, followed by Sedarapet with around 83 units; Thirubuvanai has an electronics focus. Pharmaceutical formulation is a significant part of the base - filings before the National Green Tribunal by the Puducherry Pollution Control Committee list several formulation units in the PIPDIC estate at Mettupalayam, and further formulation plants operate around Thirubuvanai.",
+        "Puducherry's formulators are mostly small and mid-sized, many with WHO-GMP certification, which sets the tone for what they buy."
+      ]
+    },
+    {
+      "heading": "WHO-GMP Formulators: Getting the Purified-Water System Right",
+      "paragraphs": [
+        "For a mid-sized formulation plant the purified-water system is the single most inspected utility. Build it in 316L from the RO permeate onward. An ambient loop in SF1 mechanically polished tube is usually defensible for oral solids; move to SF4 electropolished tube for hot-sanitised loops, for liquid orals and for points of use that feed product directly. Slope every line to drain, keep dead legs within ASME BPE guidance, and passivate after welding.",
+        "Every lot we supply carries an EN 10204 3.1 certificate traced to heat number, a PMI record for each length and, for electropolished tube, an internal Ra report - the material evidence a WHO-GMP inspector expects to see in the water-system qualification file."
+      ]
+    },
+    {
+      "heading": "Pharmaceutical Effluent Under Review",
+      "paragraphs": [
+        "The National Green Tribunal has taken up the environmental impact of pharmaceutical manufacturing in a case that includes Puducherry, with the territory's pollution control committee filing details of formulation units. Units under that scrutiny benefit from product-contact and CIP lines that clean in fewer, shorter cycles, reducing wash-water and detergent load to treatment."
+      ]
+    },
+    {
+      "heading": "Engineering and Food Units",
+      "paragraphs": [
+        "Engineering units in Puducherry's estates need tube to drawing with certificates they can pass on to food or pharma end users. Food units need sanitary product and CIP lines - 304 for most duty, 316L for salty or acidic products - with electropolishing reserved for lines cleaned between every batch. Electronics units at Thirubuvanai need high-purity water lines only where their process demands it; tell us the water specification and we will advise the finish."
+      ]
+    },
+    {
+      "heading": "Delivery to Puducherry",
+      "paragraphs": [
+        "Puducherry is supplied by road from our Taloja MIDC works; dispatch and transit are confirmed in writing with each quotation. Chennai Port, about 160 km away, is the nearest listed sea gateway for export-bound material.",
+        "Nearby Tamil Nadu clusters:"
+      ],
+      "links": [
+        { "label": "Cuddalore", "href": "/market-area/cuddalore/" },
+        { "label": "Chennai", "href": "/market-area/chennai/" },
+        { "label": "Ranipet", "href": "/market-area/ranipet/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Government of Puducherry, Industries: Industrial estates", "url": "https://industry.py.gov.in/industrial-estate" },
+    { "title": "NGT: Affidavit by Govt. of Puducherry & Puducherry PCC in OA No. 497 of 2024", "url": "https://www.greentribunal.gov.in/sites/default/files/news_updates/AFFIDAVIT BY R-34 GOVT. OF PUDUCHERRY & R-70 PUDUCHERRY PCC IN OA NO. 497 of 2024 News item titled Impact of Pharmaceutical toxicity on the environment and its regulatory aspects.pdf" }
+  ]
+}

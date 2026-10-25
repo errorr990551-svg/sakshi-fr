@@ -1,0 +1,51 @@
+{
+  "slug": "jaipur",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Jaipur's Industrial Areas: Sitapura, VKIA and Mahindra World City",
+      "paragraphs": [
+        "Jaipur's industry is spread across several RIICO estates. Sitapura, on the southern side of the city, is the largest planned area, with phases I-IV, an Export Promotion Industrial Park, two RIICO-developed special economic zones originally planned for gems and jewellery, an apparel park and a gem park. The Vishwakarma Industrial Area (VKIA) is the city's older general-industry estate. Mahindra World City, a multi-product SEZ developed jointly by RIICO and the Mahindra Group, adds technology, services and logistics activity on the Ajmer road.",
+        "RIICO has also planned biotech park space at Sitapura. Against that background, Jaipur's demand for electropolished tube comes from its pharmaceutical and food processors - a smaller share of the city's industry than gems, textiles and engineering, but the share that needs hygienic tube."
+      ]
+    },
+    {
+      "heading": "Pharmaceutical and Biotech Units",
+      "paragraphs": [
+        "Pharmaceutical and biotech units in Sitapura and around the city need the standard hygienic package: 316L throughout purified-water systems, SF1 mechanically polished tube for ambient loops, and SF4 electropolished tube for hot-sanitised loops, WFI, clean steam and critical product contact. Biotech units add small-diameter, low-Ra service for media and buffer preparation.",
+        "Jaipur is far from the coastal pharma belts, so lead time and completeness of the first delivery matter. Ordering spools, spares and test pieces with the main order avoids waiting on a second consignment during installation."
+      ]
+    },
+    {
+      "heading": "Food Processing, Dairy and Spices",
+      "paragraphs": [
+        "Food processors around Jaipur handle dairy, edible oils, spices and packaged foods. Dairy and liquid-food product lines need 3-A-style hygienic tube - 304 for most duty, 316L where CIP chemistry or salt is aggressive. Spice extraction and edible-oil units need corrosion-resistant, cleanable product lines; electropolishing is worth it where flavour or colour carry-over between batches matters.",
+        "Utility and non-contact lines do not need an electropolished finish, and we will quote the economical option where that is the right answer."
+      ]
+    },
+    {
+      "heading": "Gems, Jewellery and Engineering",
+      "paragraphs": [
+        "Jaipur's gem-cutting, jewellery and engineering units do not need hygienic tube in their processes. The exceptions are electroplating and cleaning lines that use purified water or chemicals, where certified stainless with a standard finish meets the need."
+      ]
+    },
+    {
+      "heading": "Delivery to Jaipur",
+      "paragraphs": [
+        "Jaipur is supplied by road from our Taloja MIDC works; dispatch and transit are confirmed in writing per quotation. Mundra Port is the nearest listed sea gateway for export-bound material.",
+        "Other Rajasthan and NCR clusters:"
+      ],
+      "links": [
+        { "label": "Bhiwadi", "href": "/market-area/bhiwadi/" },
+        { "label": "Alwar and Neemrana", "href": "/market-area/alwar/" },
+        { "label": "Jodhpur", "href": "/market-area/jodhpur/" },
+        { "label": "Udaipur", "href": "/market-area/udaipur/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "eGov (Elets): RIICO - Rajasthan's industrial lifeline (2019)", "url": "https://egov.eletsonline.com/2019/03/riico-rajasthans-industrial-lifeline/" },
+    { "title": "India.gov.in: Jaipur Special Economic Zone", "url": "https://www.india.gov.in/website-jaipur-special-economic-zone" },
+    { "title": "CSE: Jaipur air quality report (industrial areas list)", "url": "https://cseindia.org/content/downloadreports/10613" }
+  ]
+}

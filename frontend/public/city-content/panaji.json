@@ -1,0 +1,48 @@
+{
+  "slug": "panaji",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Goa's Pharmaceutical Industry, Seen from Panaji",
+      "paragraphs": [
+        "Goa is one of India's significant pharmaceutical manufacturing states, and its plants are strongly export-oriented. Industry bodies quoted in Goan press have described the state as ranking second only to Gujarat, with dozens of manufacturing units and a large number of contract manufacturers; estimates of the share of output exported range from around 70 percent upward. The plants cluster at Verna, Pilerne, Kundaim and Colvale, with Corlim and Pilerne the estates closest to Panaji.",
+        "Mormugao is a notified port for both import and export of pharmaceutical products, which is one reason export plants chose Goa. This page covers the Panaji side of the state - Corlim, Pilerne and the capital's commercial belt."
+      ]
+    },
+    {
+      "heading": "Export Documentation: What Overseas Inspectors Expect",
+      "paragraphs": [
+        "Export-oriented formulation plants are inspected by overseas regulators as well as Indian ones. Their engineering teams therefore buy stainless tube with an inspection in mind: material certificates traceable to heat number, objective evidence of surface finish on water- and product-contact lines, and installation records for welding and passivation.",
+        "We supply every lot with an EN 10204 3.1 certificate traced to heat number and PMI records for each length; electropolished lots add an internal Ra report stating the measurement method. When your validation plan calls for incoming verification, the certificates are organised by heat so that each spool can be traced without cross-referencing."
+      ]
+    },
+    {
+      "heading": "Water Systems in Goa's Humid Coastal Climate",
+      "paragraphs": [
+        "Goa's warm, humid, salt-laden air is a quiet hazard for stainless on the outside of pipework as well as inside it. Uninsulated external surfaces near the coast can show tea-staining and, in crevices and under deposits, chloride pitting. For purified-water and WFI systems, 316L is the minimum; keep external insulation sealed, avoid chloride-containing cleaners on external surfaces, and store tube capped and indoors until installation.",
+        "Inside the system the usual guidance holds: SF1 for ambient purified water, SF4 electropolished for hot-sanitised loops, WFI and clean steam."
+      ]
+    },
+    {
+      "heading": "Food Units around Panaji",
+      "paragraphs": [
+        "Food producers serving Goa's hospitality sector - bakeries, dairies, beverage and processed-food units - need sanitary tube on product and CIP lines, usually 304, moving to 316L for salty or acidic products. Seafood processing in particular combines salt and moisture, so 316L and good drainability matter more there than an electropolished finish."
+      ]
+    },
+    {
+      "heading": "Delivery to Panaji, Corlim and Pilerne",
+      "paragraphs": [
+        "Goa is reached by road down the coast from our Taloja MIDC works; dispatch and transit are confirmed in writing per quotation. Mormugao Port, about 30 km away, is the nearest sea gateway.",
+        "Other Goa estates:"
+      ],
+      "links": [
+        { "label": "Ponda and Kundaim", "href": "/market-area/ponda/" },
+        { "label": "Verna", "href": "/market-area/verna/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Herald Goa: Pharma better option for Goa, say experts", "url": "https://www.heraldgoa.in/goa/pharma-better-option-for-goa-say-experts/373339" },
+    { "title": "Diplomatist: Pharma manufacturing in Goa", "url": "https://diplomatist.com/pharma-manufacturing-in-goa/" }
+  ]
+}

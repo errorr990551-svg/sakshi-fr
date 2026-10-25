@@ -1,0 +1,51 @@
+{
+  "slug": "patna",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Patna's Industrial Areas: Patliputra and Fatuha",
+      "paragraphs": [
+        "Patna's organised industry is concentrated in two BIADA estates. Patliputra Industrial Area, inside the city, is the more established, with beverage bottling among its units; Fatuha Industrial Area, to the east along the Ganga, is where most new capacity is going. District profiles have recorded Fatuha at about 98.6 hectares with dozens of units in production, and Patliputra with more than seventy.",
+        "Bihar's industrial policy is now pushing agriculture- and livestock-based processing. In 2026 BIADA's project clearance committee approved a Rs 200 crore dairy manufacturing and processing unit for Amul on 13 acres at Fatuha, and later batches of approvals included further food-processing projects. That makes dairy and food the centre of Patna's hygienic-tube demand."
+      ]
+    },
+    {
+      "heading": "Dairy Processing: The Growth Story",
+      "paragraphs": [
+        "Patna already has a co-operative dairy - the Patna dairy of the Vaishali Patliputra milk union at Phulwari Sharif - and new private and co-operative capacity is arriving. A modern dairy plant runs milk reception, chilling, separation, pasteurisation and fresh-product lines (curd, buttermilk, paneer, flavoured milk), all cleaned by CIP several times a day.",
+        "304 or 304L is the usual grade for milk and cream lines; 316L is worth specifying on salted, acidic or high-temperature CIP sections. Buyers reference 3-A Sanitary Standards and ASTM A270. Drainability and correct slope matter as much as surface finish: an electropolished line that holds milk is still a hygiene risk."
+      ]
+    },
+    {
+      "heading": "Food and Beverage Processing",
+      "paragraphs": [
+        "Beverage bottlers and food processors in Patliputra and Fatuha need sanitary syrup, product and CIP lines. Sugar syrups and fruit-based beverages leave residues that rough steel holds on to; electropolishing pays back on lines cleaned between every flavour change. Utility and non-contact lines do not need a hygienic finish."
+      ]
+    },
+    {
+      "heading": "Pharmaceutical Distribution and Engineering",
+      "paragraphs": [
+        "Patna is a major distribution centre for medicines in eastern India rather than a manufacturing cluster, so pharmaceutical demand for hygienic tube is limited to formulation units and hospitals. Engineering firms building dairy and food equipment for Bihar's new plants need sanitary tube to drawing, with certificates they can hand over at commissioning."
+      ]
+    },
+    {
+      "heading": "Delivery to Patna",
+      "paragraphs": [
+        "Patna is a long-haul road delivery from our Taloja MIDC works; dispatch and transit are confirmed in writing with each quotation. Haldia Port is the nearest listed sea gateway for export-bound material.",
+        "Other eastern India clusters:"
+      ],
+      "links": [
+        { "label": "Muzaffarpur", "href": "/market-area/muzaffarpur/" },
+        { "label": "Kolkata", "href": "/market-area/kolkata/" },
+        { "label": "Ranchi", "href": "/market-area/ranchi/" },
+        { "label": "Varanasi", "href": "/market-area/varanasi/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "UNI India: Amul to set up Rs 200 cr dairy processing unit in Fatuha", "url": "https://www.uniindia.com/bihar-amul-to-set-up-rs-200-cr-dairy-processing-unit-in-fatuha-200-jobs-likely/east/news/3871638.html" },
+    { "title": "Patna Press: Amul dairy processing plant at Fatuha", "url": "https://patnapress.com/amul-rs-200-crore-dairy-processing-plant-patna-fatuha-bihar/" },
+    { "title": "MSME-DI: Patna district industrial profile", "url": "https://dcmsme.gov.in/old/dips/Patna.pdf" },
+    { "title": "CPCB: Ganga pollution inventory, Bihar (dairy and bottling units)", "url": "https://cpcb.nic.in/ngrba/GPI_BR.pdf" }
+  ]
+}

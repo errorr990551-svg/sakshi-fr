@@ -365,8 +365,8 @@ export default function EPBuildSpecRenderer({ path, onEnquireClick, hasUnlockedC
                         <span className="text-base sm:text-lg pr-4">{faq.question}</span>
                         {isOpen ? <ChevronUp className="w-5 h-5 text-blue-400 shrink-0" /> : <ChevronDown className="w-5 h-5 text-slate-500 shrink-0" />}
                       </button>
-                      {isOpen && (
-                        <div className="p-5 pt-0 text-slate-300 text-sm leading-relaxed border-t border-slate-800/60 bg-slate-900/40">
+                      {(
+                        <div hidden={!isOpen} className="p-5 pt-0 text-slate-300 text-sm leading-relaxed border-t border-slate-800/60 bg-slate-900/40">
                           {faq.answer}
                         </div>
                       )}

@@ -1,6 +1,6 @@
 // Custom Rich City Content Data for International EP Pipes Handoff Pages
 // Built specifically for Canberra (Australia), Abu Dhabi (UAE), and Al Ain (UAE)
-import { tamilNaduCityData } from './tamilNaduCityData';
+import { tamilNaduCityData } from './tamilNaduCityData.js';
 
 export const customCityData = {
   'canberra-australia': {

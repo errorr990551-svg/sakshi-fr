@@ -246,8 +246,8 @@ export default function BlogPostPage({ post, onEnquireClick }) {
                         {isOpen ? <ChevronUp size={18} style={{ color: 'var(--primary-yellow)' }} /> : <ChevronDown size={18} style={{ color: 'var(--text-muted)' }} />}
                       </button>
 
-                      {isOpen && (
-                        <div style={{ padding: '0 1.25rem 1.25rem 1.25rem', color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.6', borderTop: '1px solid var(--border-color)', paddingTop: '1rem' }}>
+                      {(
+                        <div hidden={!isOpen} style={{ padding: '0 1.25rem 1.25rem 1.25rem', color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.6', borderTop: '1px solid var(--border-color)', paddingTop: '1rem' }}>
                           {faq.a}
                         </div>
                       )}

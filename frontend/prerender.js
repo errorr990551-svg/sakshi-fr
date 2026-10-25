@@ -2,6 +2,9 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { REDIRECTED_PATHS, isRedirectedPath } from './src/data/redirects.js';
+import { buildCityFaqs } from './src/data/cityContent.js';
+import { customCityData } from './src/data/customCityData.js';
+import { visibleProductFaqs } from './src/utils/productFaqs.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -443,8 +446,9 @@ async function runPrerender() {
       schemasGraph.push(breadcrumbs);
       schemasGraph.push(productSchema);
 
-      if (route.data['FAQs'] && route.data['FAQs'].length > 0) {
-        const faqEntities = route.data['FAQs'].map(f => ({
+      const productFaqs = visibleProductFaqs(route.data);
+      if (productFaqs.length > 0) {
+        const faqEntities = productFaqs.map(f => ({
           "@type": "Question",
           "name": f.q,
           "acceptedAnswer": { "@type": "Answer", "text": f.a }
@@ -536,7 +540,9 @@ async function runPrerender() {
       const currentUrl = `${BASE_URL}${cleanCityPath.startsWith('/') ? '' : '/'}${cleanCityPath}`;
       const cityName = richData?.city || route.data.city;
       const stateName = richData?.state || route.data.state || 'India';
-      const faqsList = richData?.faqs || route.data.faqs;
+      // Must match the FAQs CityPage shows: custom city data first, then generated research FAQs
+      const customCity = customCityData[citySlug];
+      const faqsList = richData?.faqs || (customCity ? customCity.faqs : buildCityFaqs(route.data)) || route.data.faqs;
       const hasDuplex = richData?.hasDuplex || route.data.hasDuplex;
 
       // BreadcrumbList

@@ -2,6 +2,8 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { ChevronRight, ShieldCheck, Truck, Sparkles, MapPin, HelpCircle, ChevronDown, ChevronUp, Phone, Mail, FileText, Globe, Building, Award, Activity, ArrowRight, Shield, Layers, FileCheck, HelpCircle as FaqIcon, CheckCircle2, Sliders, Cpu, Zap, Box, MessageSquare } from 'lucide-react';
 import { handleLinkClick, withSlash } from '../utils/router';
 import { stripPrerenderedSchemaTypes } from '../utils/seo';
+import { buildCityContent } from '../data/cityContent';
+import CityLocalSections from './CityLocalSections';
 import { customCityData } from '../data/customCityData';
 import CityProductPillars from './CityProductPillars';
 
@@ -162,6 +164,8 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
   const [openFaq, setOpenFaq] = useState(0);
   const handleShowContact = onShowContactDetails || (() => onEnquireClick && onEnquireClick(`Contact Request - ${cityData?.city || 'General'}`));
   const custom = customCityData[cityData.slug];
+  const localContent = useMemo(() => (custom ? null : buildCityContent(cityData)), [cityData, custom]);
+  const cityFaqs = localContent?.faqs || cityData.faqs;
   const isInternational = cityData.country && cityData.country !== 'India';
   const rfqData = custom?.rfq || custom?.rfqBlock;
   const closingData = custom?.closing || custom?.closingBlock;
@@ -219,7 +223,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
         },
         {
           "@type": "FAQPage",
-          "mainEntity": (cityData.faqs || []).map(f => ({
+          "mainEntity": (cityFaqs || []).map(f => ({
             "@type": "Question",
             "name": f.question || f.q,
             "acceptedAnswer": { "@type": "Answer", "text": f.answer || f.a }
@@ -252,7 +256,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
       const s = document.getElementById('city-jsonld-schema');
       if (s) s.remove();
     };
-  }, [cityData, custom]);
+  }, [cityData, custom, cityFaqs]);
 
   // Icons mapping for Why Choose Us
   const getWhyIcon = (num, title) => {
@@ -651,8 +655,8 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
                     <span>{faq.q}</span>
                     {openFaq === idx ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
                   </button>
-                  {openFaq === idx && (
-                    <div style={{ padding: '0 1.5rem 1.25rem', color: '#cbd5e1', fontSize: '0.9rem', lineHeight: '1.7', borderTop: '1px solid rgba(255, 255, 255, 0.05)' }}>
+                  {(
+                    <div hidden={!(openFaq === idx)} style={{ padding: '0 1.5rem 1.25rem', color: '#cbd5e1', fontSize: '0.9rem', lineHeight: '1.7', borderTop: '1px solid rgba(255, 255, 255, 0.05)' }}>
                       {faq.a}
                     </div>
                   )}
@@ -1063,6 +1067,25 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
         </div>
       </section>
 
+      <CityLocalSections content={localContent} city={cityData.city} />
+
+      {/* Researched cities link to the product pages for the generic EP-vs-MP and grade tables */}
+      {localContent && (
+        <section style={{ padding: '3rem 0', backgroundColor: 'var(--bg-dark-900)', borderBottom: '1px solid var(--border-color)' }}>
+          <div className="container" style={{ maxWidth: '980px' }}>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: '1.7', margin: 0 }}>
+              Grade chemistry, sizes and finish options are on our product pages:{' '}
+              <a href="/ss-316l-electropolished-pipes/" onClick={(e) => handleLinkClick(e, '/ss-316l-electropolished-pipes/')}>SS 316L electropolished pipes</a>,{' '}
+              <a href="/ss-304l-electropolished-pipes/" onClick={(e) => handleLinkClick(e, '/ss-304l-electropolished-pipes/')}>SS 304L electropolished pipes</a>,{' '}
+              <a href="/electropolished-tubes/" onClick={(e) => handleLinkClick(e, '/electropolished-tubes/')}>electropolished tubes</a> and{' '}
+              <a href="/asme-bpe-electropolished-tubes/" onClick={(e) => handleLinkClick(e, '/asme-bpe-electropolished-tubes/')}>ASME BPE tubes</a>.
+            </p>
+          </div>
+        </section>
+      )}
+
+      {!localContent && (
+        <>
       {/* 3. Surface Roughness & Electropolishing Comparison Table */}
       <section style={{ padding: '6.5rem 0', backgroundColor: 'var(--bg-dark-900)' }}>
         <div className="container">
@@ -1212,6 +1235,9 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
           </div>
         </div>
       </section>
+
+        </>
+      )}
 
       {/* 4.5 Sizes Table (if custom city provides sizes) */}
       {custom?.sizesTable && (
@@ -1619,7 +1645,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
       )}
 
       {/* 6. Technical FAQs Accordion */}
-      {cityData.faqs && cityData.faqs.length > 0 && (
+      {cityFaqs && cityFaqs.length > 0 && (
         <section id="faq" style={{ 
           backgroundColor: 'var(--bg-dark-800)', 
           borderTop: '1px solid var(--border-color)', 
@@ -1636,7 +1662,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
             </div>
 
             <div style={{ maxWidth: '850px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-              {cityData.faqs.map((faq, idx) => {
+              {cityFaqs.map((faq, idx) => {
                 const isActive = openFaq === idx;
                 const questionText = faq.question || faq.q;
                 const answerText = faq.answer || faq.a;
@@ -1689,8 +1715,8 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
                         {isActive ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
                       </div>
                     </button>
-                    {isActive && (
-                      <div 
+                    {(
+                      <div hidden={!(isActive)} 
                         style={{ 
                           padding: '0 1.75rem 1.75rem 1.75rem', 
                           color: 'var(--text-secondary)',

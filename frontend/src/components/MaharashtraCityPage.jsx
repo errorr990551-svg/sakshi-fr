@@ -848,8 +848,8 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                     <span>{faq.q}</span>
                     {openFaq === idx ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
                   </button>
-                  {openFaq === idx && (
-                    <div style={{ padding: '0 1.5rem 1.25rem', color: '#cbd5e1', fontSize: '0.92rem', lineHeight: '1.7', borderTop: '1px solid rgba(255, 255, 255, 0.05)' }}>
+                  {(
+                    <div hidden={!(openFaq === idx)} style={{ padding: '0 1.5rem 1.25rem', color: '#cbd5e1', fontSize: '0.92rem', lineHeight: '1.7', borderTop: '1px solid rgba(255, 255, 255, 0.05)' }}>
                       {faq.a}
                     </div>
                   )}

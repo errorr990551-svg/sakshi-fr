@@ -4,6 +4,7 @@
 import corePagesData from '../data/core_pages.json';
 import { customCityData } from '../data/customCityData';
 import { withSlash } from './router';
+import { visibleProductFaqs } from './productFaqs';
 
 const BASE_URL = "https://steelmanufacturer.in";
 
@@ -620,8 +621,9 @@ export function updateSEO({ type, data }) {
     graph.push(productSchema);
 
     // FAQ schema if FAQs are defined in compiler output
-    if (data["FAQs"] && data["FAQs"].length > 0) {
-      const faqEntities = data["FAQs"].map(f => ({
+    const productFaqs = visibleProductFaqs(data);
+    if (productFaqs.length > 0) {
+      const faqEntities = productFaqs.map(f => ({
         "@type": "Question",
         "name": f.q,
         "acceptedAnswer": {

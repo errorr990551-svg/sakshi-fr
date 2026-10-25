@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { Search, ArrowRight, Layers, Tag, Compass, FileText, ChevronLeft, ChevronRight } from 'lucide-react';
 import productsData from '../data/products.json';
 import categoriesData from '../data/categories.json';
-import { handleLinkClick } from '../utils/router';
+import { handleLinkClick, withSlash } from '../utils/router';
 import { getParentCategoryName } from '../utils/categories';
 
 export default function ProductsPage({ onEnquireClick }) {
@@ -114,7 +114,7 @@ export default function ProductsPage({ onEnquireClick }) {
                 color: 'var(--text-muted)' 
               }} 
             />
-            <input 
+            <input aria-label="Search by product name, standards, grades, or specifications..." 
               type="text"
               placeholder="Search by product name, standards, grades, or specifications..."
               value={searchQuery}
@@ -305,6 +305,8 @@ export default function ProductsPage({ onEnquireClick }) {
                               transition: 'transform 0.5s ease' 
                             }}
                             className="product-card-image"
+                            width={800}
+                            height={600}
                           />
                         </div>
                       )}
@@ -356,7 +358,7 @@ export default function ProductsPage({ onEnquireClick }) {
 
                     <div style={{ padding: '0 2rem 2rem 2rem' }}>
                       <a 
-                        href={`/${p['URL Slug']}`}
+                        href={withSlash(`/${p['URL Slug']}`)}
                         onClick={(e) => handleLinkClick(e, `/${p['URL Slug']}`)}
                         className="btn btn-outline"
                         style={{ width: '100%', padding: '0.65rem 0', display: 'flex', justifyContent: 'center', fontSize: '0.85rem' }}

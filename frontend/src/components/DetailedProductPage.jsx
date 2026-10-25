@@ -217,6 +217,9 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
                     src={product.Image} 
                     alt={product['Product Name']}
                     className="product-detail-image"
+                    width={800}
+                    height={600}
+                    fetchPriority="high"
                     style={{
                       width: '100%',
                       height: '100%',

@@ -1516,10 +1516,6 @@ export const andhraPradeshCityData = {
         "path": "/market-area/guntur"
       },
       {
-        "name": "Anantapur",
-        "path": "/market-area/anantapur"
-      },
-      {
         "name": "Andhra Pradesh State Hub",
         "path": "/market-area/andhra-pradesh"
       }
@@ -2915,10 +2911,6 @@ export const andhraPradeshCityData = {
       {
         "name": "Guntur",
         "path": "/market-area/guntur"
-      },
-      {
-        "name": "Anantapur",
-        "path": "/market-area/anantapur"
       },
       {
         "name": "Andhra Pradesh State Hub",

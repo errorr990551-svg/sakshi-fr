@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { ChevronRight, ShieldCheck, Truck, Sparkles, MessageSquare, ArrowRight, HelpCircle, ChevronDown, ChevronUp, Package } from 'lucide-react';
 import productsData from '../data/products.json';
 import categoriesData from '../data/categories.json';
-import { handleLinkClick } from '../utils/router';
+import { handleLinkClick, withSlash } from '../utils/router';
 import { parseKeySpecs } from '../utils/seo';
 import DetailedProductPage from './DetailedProductPage';
 
@@ -350,6 +350,9 @@ export default function ProductPage({ product, onEnquireClick }) {
                     src={product.Image} 
                     alt={product['Product Name']}
                     className="product-detail-image"
+                    width={800}
+                    height={600}
+                    fetchPriority="high"
                     style={{
                       width: '100%',
                       height: '100%',
@@ -530,7 +533,7 @@ export default function ProductPage({ product, onEnquireClick }) {
                   </div>
 
                   <a 
-                    href={`/${p['URL Slug']}`}
+                    href={withSlash(`/${p['URL Slug']}`)}
                     onClick={(e) => handleLinkClick(e, `/${p['URL Slug']}`)}
                     className="btn btn-outline"
                     style={{ fontSize: '0.8rem', padding: '0.5rem 0', textAlign: 'center', justifyContent: 'center' }}

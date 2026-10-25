@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Calendar, User, Clock, ArrowRight, Search, FileText, Sparkles, Filter } from 'lucide-react';
 import Breadcrumbs from './Breadcrumbs';
 import { blogPosts } from '../data/blogData';
-import { handleLinkClick } from '../utils/router';
+import { handleLinkClick, withSlash } from '../utils/router';
 
 export default function BlogPage() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -69,7 +69,7 @@ export default function BlogPage() {
           {/* Search Box */}
           <div style={{ maxWidth: '560px', margin: '0 auto', position: 'relative' }}>
             <Search size={18} style={{ position: 'absolute', left: '1.1rem', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
-            <input 
+            <input aria-label="Search articles by standard, grade, or keyword (e.g. B16.5, 316L, Electropolish)..." 
               type="text" 
               placeholder="Search articles by standard, grade, or keyword (e.g. B16.5, 316L, Electropolish)..."
               value={searchQuery}
@@ -353,7 +353,7 @@ export default function BlogPage() {
                       <Clock size={12} /> {post.readTime}
                     </span>
                     <a 
-                      href={`/blog/${post.slug}`} 
+                      href={withSlash(`/blog/${post.slug}`)} 
                       onClick={(e) => handleLinkClick(e, `/blog/${post.slug}`)} 
                       style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', color: 'var(--primary-yellow)', fontSize: '0.85rem', textDecoration: 'none', fontWeight: '700' }}
                     >

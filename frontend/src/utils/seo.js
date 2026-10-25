@@ -542,7 +542,7 @@ export function updateSEO({ type, data }) {
       "name": data["Product Name"],
       "url": `${BASE_URL}/${data["URL Slug"]}/`,
       "image": [
-        `${BASE_URL}${data["Image"] || "/flanges_pipes.webp"}`
+        `${BASE_URL}${encodeURI(data["Image"] || "/flanges_pipes.webp")}`
       ],
       "description": data["Meta Description"] || metaDesc,
       "sku": offerDetails.sku,
@@ -597,7 +597,7 @@ export function updateSEO({ type, data }) {
         "@type": "ListItem",
         "position": 2,
         "name": parentName,
-        "item": `${BASE_URL}${parentPath.startsWith('/') ? '' : '/'}${parentPath}`
+        "item": `${BASE_URL}${parentPath.startsWith('/') ? '' : '/'}${parentPath}${parentPath.endsWith('/') ? '' : '/'}`
       });
       breadcrumbList.itemListElement.push({
         "@type": "ListItem",
@@ -681,7 +681,7 @@ export function updateSEO({ type, data }) {
         "@type": "WebPage",
         "@id": postUrl
       },
-      "image": data.image ? `${BASE_URL}${data.image}` : undefined
+      "image": data.image ? `${BASE_URL}${encodeURI(data.image)}` : undefined
     };
     graph.push(breadcrumbList);
     graph.push(blogPostingSchema);
@@ -693,7 +693,7 @@ export function updateSEO({ type, data }) {
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": `${BASE_URL}/` },
-        { "@type": "ListItem", "position": 2, "name": "Market Areas", "item": `${BASE_URL}/market-area` },
+        { "@type": "ListItem", "position": 2, "name": "Market Areas", "item": `${BASE_URL}/market-area/` },
         { "@type": "ListItem", "position": 3, "name": data.city, "item": currentUrl }
       ]
     };

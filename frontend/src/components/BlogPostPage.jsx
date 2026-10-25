@@ -14,7 +14,7 @@ export default function BlogPostPage({ post, onEnquireClick }) {
         <h2>Article Not Found</h2>
         <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem' }}>The requested blog post could not be located in our database.</p>
         <a 
-          href="/blog" 
+          href="/blog/" 
           onClick={(e) => handleLinkClick(e, '/blog')}
           style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1.5rem', backgroundColor: 'var(--primary-yellow)', color: '#000', fontWeight: '700', borderRadius: '4px', textDecoration: 'none' }}
         >
@@ -121,7 +121,7 @@ export default function BlogPostPage({ post, onEnquireClick }) {
           {/* Back to hub link */}
           <div style={{ marginBottom: '2rem' }}>
             <a 
-              href="/blog" 
+              href="/blog/" 
               onClick={(e) => handleLinkClick(e, '/blog')}
               style={{ color: 'var(--primary-yellow)', display: 'inline-flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem', textDecoration: 'none', fontWeight: '600' }}
             >
@@ -294,7 +294,7 @@ export default function BlogPostPage({ post, onEnquireClick }) {
                 <Send size={16} /> Request Engineering RFQ
               </button>
               <a 
-                href="/catalogue"
+                href="/catalogue/"
                 onClick={(e) => handleLinkClick(e, '/catalogue')}
                 style={{
                   backgroundColor: 'transparent',

@@ -5,7 +5,7 @@ import {
   Layers, Factory, Globe, Truck, Check, AlertTriangle, MessageSquare, Calculator,
   SlidersHorizontal, Sparkles, Filter
 } from 'lucide-react';
-import { handleLinkClick } from '../utils/router';
+import { handleLinkClick, withSlash } from '../utils/router';
 import CityProductPillars from './CityProductPillars';
 
 export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnlockedContact = false, onShowContactDetails }) {
@@ -251,10 +251,10 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.82rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
             <a href="/" onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>Home</a>
             <span>›</span>
-            <a href="/market-area" onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>Market Areas</a>
+            <a href="/market-area/" onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>Market Areas</a>
             <span>›</span>
             <a 
-              href={cityData.state === 'Karnataka' ? '/karnataka' : cityData.state === 'Gujarat' ? '/market-area/gujarat' : cityData.state === 'Telangana' ? '/market-area/telangana' : cityData.state === 'West Bengal' ? '/market-area/west-bengal' : cityData.state === 'Madhya Pradesh' ? '/market-area/madhya-pradesh' : cityData.state === 'Andhra Pradesh' ? '/market-area/andhra-pradesh' : '/market-area#maharashtra'} 
+              href={withSlash(cityData.state === 'Karnataka' ? '/karnataka' : cityData.state === 'Gujarat' ? '/market-area/gujarat' : cityData.state === 'Telangana' ? '/market-area/telangana' : cityData.state === 'West Bengal' ? '/market-area/west-bengal' : cityData.state === 'Madhya Pradesh' ? '/market-area/madhya-pradesh' : cityData.state === 'Andhra Pradesh' ? '/market-area/andhra-pradesh' : '/market-area#maharashtra')} 
               onClick={(e) => handleLinkClick(e, cityData.state === 'Karnataka' ? '/karnataka' : cityData.state === 'Gujarat' ? '/market-area/gujarat' : cityData.state === 'Telangana' ? '/market-area/telangana' : cityData.state === 'West Bengal' ? '/market-area/west-bengal' : cityData.state === 'Madhya Pradesh' ? '/market-area/madhya-pradesh' : cityData.state === 'Andhra Pradesh' ? '/market-area/andhra-pradesh' : '/market-area#maharashtra')} 
               style={{ color: 'inherit', textDecoration: 'none' }}
             >
@@ -307,7 +307,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                 {['A', 'E', 'I', 'O', 'U'].includes(cityData.city[0].toUpperCase()) ? 'Get an' : 'Get a'} {cityData.city} Quote in 30 Minutes <ArrowRight size={16} />
               </button>
               <a 
-                href="/catalogue" 
+                href="/catalogue/" 
                 onClick={handleLinkClick} 
                 className="btn btn-outline btn-lg" 
                 style={{ padding: '0.9rem 1.85rem', fontWeight: '600' }}
@@ -583,6 +583,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                     <Filter size={14} /> Filter:
                   </div>
                   <select 
+                    aria-label="Filter by grade"
                     value={selectedGrade} 
                     onChange={(e) => setSelectedGrade(e.target.value)}
                     style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', color: '#fff', padding: '0.4rem 0.65rem', borderRadius: '4px', fontSize: '0.82rem' }}
@@ -594,6 +595,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                   </select>
 
                   <select 
+                    aria-label="Filter by product type"
                     value={selectedType} 
                     onChange={(e) => setSelectedType(e.target.value)}
                     style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', color: '#fff', padding: '0.4rem 0.65rem', borderRadius: '4px', fontSize: '0.82rem' }}
@@ -604,6 +606,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                   </select>
 
                   <select 
+                    aria-label="Filter by outside diameter"
                     value={selectedOD} 
                     onChange={(e) => setSelectedOD(e.target.value)}
                     style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', color: '#fff', padding: '0.4rem 0.65rem', borderRadius: '4px', fontSize: '0.82rem' }}
@@ -967,8 +970,8 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                   <form onSubmit={handleFormSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Name *</label>
-                        <input 
+                        <label htmlFor="maharashtra-city-field-1" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Name *</label>
+                        <input id="maharashtra-city-field-1" 
                           type="text" 
                           required 
                           placeholder="Your Name"
@@ -978,8 +981,8 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                         />
                       </div>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Company *</label>
-                        <input 
+                        <label htmlFor="maharashtra-city-field-2" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Company *</label>
+                        <input id="maharashtra-city-field-2" 
                           type="text" 
                           required 
                           placeholder="Plant / Company"
@@ -992,8 +995,8 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
 
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Phone Number *</label>
-                        <input 
+                        <label htmlFor="maharashtra-city-field-3" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Phone Number *</label>
+                        <input id="maharashtra-city-field-3" 
                           type="tel" 
                           required 
                           placeholder="+91..."
@@ -1003,8 +1006,8 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                         />
                       </div>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Email *</label>
-                        <input 
+                        <label htmlFor="maharashtra-city-field-4" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Email *</label>
+                        <input id="maharashtra-city-field-4" 
                           type="email" 
                           required 
                           placeholder="procurement@company.com"
@@ -1017,8 +1020,8 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
 
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Grade & OD × WT *</label>
-                        <input 
+                        <label htmlFor="maharashtra-city-field-5" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Grade & OD × WT *</label>
+                        <input id="maharashtra-city-field-5" 
                           type="text" 
                           required 
                           placeholder="e.g. 316L, 1 inch OD, 1.65 WT"
@@ -1028,8 +1031,8 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                         />
                       </div>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Quantity / Length *</label>
-                        <input 
+                        <label htmlFor="maharashtra-city-field-6" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Quantity / Length *</label>
+                        <input id="maharashtra-city-field-6" 
                           type="text" 
                           required 
                           placeholder="e.g. 100 meters / 20 pcs"
@@ -1041,8 +1044,8 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                     </div>
 
                     <div>
-                      <label style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Media / drawing / finish notes</label>
-                      <textarea 
+                      <label htmlFor="maharashtra-city-field-7" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Media / drawing / finish notes</label>
+                      <textarea id="maharashtra-city-field-7" 
                         rows="3"
                         placeholder="Mention fluid, temperature, Ra requirements (SF4/SF1), delivery location..."
                         value={formData.message}
@@ -1154,7 +1157,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                 {nearbyCities.map((nc, idx) => (
                   <a 
                     key={idx} 
-                    href={nc.path} 
+                    href={withSlash(nc.path)} 
                     onClick={handleLinkClick}
                     style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}
                   >

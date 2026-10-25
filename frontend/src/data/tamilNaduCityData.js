@@ -1350,12 +1350,14 @@ export const tamilNaduCityData = {
     productRange: {
       title: "Electropolished Pipe and Tube for Erode & Perundurai",
       items: [
-        { title: "SS 316 / 316L Electropolished Pipes", desc: "Dyeing, chemical and moderate-chloride duty. Welded and seamless." },
-        { title: "SS 304 / 304L Electropolished Pipes", desc: "Welded and seamless, ½\" to 12\" in welded form. Food, agro and general hygienic service." },
-        { title: "ASTM A270 Sanitary Tubes", desc: "Sanitary and bioprocess tubing with verified internal Ra ≤0.4 µm." },
-        { title: "Duplex 2205 Electropolished Pipes", desc: "½\" to 8\" welded and seamless for aggressive chemical dosing." },
-        { title: "Fittings", desc: "Elbows (45°, 90°, 180°), tees and reducers finished to match your pipe." }
-      ]
+        { heading: "SS 316 / 316L Electropolished Pipes", text: "Dyeing, chemical and moderate-chloride duty. Welded and seamless." },
+        { heading: "SS 304 / 304L Electropolished Pipes", text: "Welded and seamless, ½\" to 12\" in welded form. Food, agro and general hygienic service." },
+        { heading: "ASTM A270 Sanitary Tubes", text: "Sanitary and bioprocess tubing with verified internal Ra ≤0.4 µm." },
+        { heading: "Duplex 2205 Electropolished Pipes", text: "½\" to 8\" welded and seamless for aggressive chemical dosing." },
+        { heading: "Fittings", text: "Elbows (45°, 90°, 180°), tees and reducers finished to match your pipe." }
+      ],
+      btnText: "View All Electropolished Pipes →",
+      btnLink: "/electropolished-pipes"
     },
     localReality: {
       title: "What Erode and Perundurai Plants Actually Deal With",
@@ -1378,7 +1380,7 @@ export const tamilNaduCityData = {
         }
       ]
     },
-    specsTable: {
+    specSnapshot: {
       title: "Specifications Snapshot: Erode Configuration",
       headers: ["Feature", "SS 316 / 316L", "SS 304 / 304L", "Duplex 2205"],
       rows: [
@@ -1505,12 +1507,14 @@ export const tamilNaduCityData = {
     productRange: {
       title: "Electropolished Pipe Range for Vellore & Ranipet",
       items: [
-        { title: "SS 316 / 316L Electropolished Pipes", desc: "Pharma, chemical and moderate-chloride duty." },
-        { title: "SS 304 / 304L Electropolished Pipes", desc: "Welded and seamless, ½\" to 12\" in welded form." },
-        { title: "ASTM A270 / ASME BPE Tubes", desc: "Hygienic tubing for bioprocess and pharma systems." },
-        { title: "Duplex 2205 Electropolished Pipes", desc: "½\" to 8\" welded and seamless." },
-        { title: "Fittings", desc: "Elbows (45°, 90°, 180°) and sanitary fittings." }
-      ]
+        { heading: "SS 316 / 316L Electropolished Pipes", text: "Pharma, chemical and moderate-chloride duty." },
+        { heading: "SS 304 / 304L Electropolished Pipes", text: "Welded and seamless, ½\" to 12\" in welded form." },
+        { heading: "ASTM A270 / ASME BPE Tubes", text: "Hygienic tubing for bioprocess and pharma systems." },
+        { heading: "Duplex 2205 Electropolished Pipes", text: "½\" to 8\" welded and seamless." },
+        { heading: "Fittings", text: "Elbows (45°, 90°, 180°) and sanitary fittings." }
+      ],
+      btnText: "View All Electropolished Pipes →",
+      btnLink: "/electropolished-pipes"
     },
     localReality: {
       title: "What Vellore and Ranipet Plants Actually Deal With",
@@ -1533,7 +1537,7 @@ export const tamilNaduCityData = {
         }
       ]
     },
-    specsTable: {
+    specSnapshot: {
       title: "Specifications Snapshot: Vellore Configuration",
       headers: ["Feature", "SS 316 / 316L", "SS 304 / 304L", "Duplex 2205"],
       rows: [

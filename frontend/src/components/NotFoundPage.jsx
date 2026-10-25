@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Home, Search, FileText, ArrowRight, CornerDownRight } from 'lucide-react';
-import { handleLinkClick } from '../utils/router';
+import { handleLinkClick, withSlash } from '../utils/router';
 import categoriesData from '../data/categories.json';
 
 export default function NotFoundPage() {
@@ -104,7 +104,7 @@ export default function NotFoundPage() {
 
         {/* 1. Search Box */}
         <form onSubmit={handleSearchSubmit} style={{ position: 'relative', maxWidth: '500px', margin: '0 auto 2.5rem auto' }}>
-          <input 
+          <input aria-label="Search our product catalog..." 
             type="text" 
             placeholder="Search our product catalog..."
             value={query}
@@ -147,7 +147,7 @@ export default function NotFoundPage() {
             {topCategories.map((c) => (
               <a
                 key={c['Category Slug']}
-                href={`/${c['Category Slug']}`}
+                href={withSlash(`/${c['Category Slug']}`)}
                 onClick={(e) => handleLinkClick(e, `/${c['Category Slug']}`)}
                 style={{
                   display: 'flex',
@@ -190,7 +190,7 @@ export default function NotFoundPage() {
           </a>
           
           <a 
-            href="/contact-us"
+            href="/contact-us/"
             onClick={(e) => handleLinkClick(e, '/contact-us')}
             className="btn btn-primary"
             style={{ padding: '0.8rem 1.5rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}

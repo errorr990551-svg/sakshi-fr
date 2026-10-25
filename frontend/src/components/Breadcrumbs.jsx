@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChevronRight, Home } from 'lucide-react';
-import { handleLinkClick } from '../utils/router';
+import { handleLinkClick, withSlash } from '../utils/router';
 
 export default function Breadcrumbs({ items = [] }) {
   if (!items || items.length === 0) return null;
@@ -54,7 +54,7 @@ export default function Breadcrumbs({ items = [] }) {
                   </span>
                 ) : (
                   <a 
-                    href={item.url} 
+                    href={withSlash(item.url)} 
                     onClick={(e) => handleLinkClick(e, item.url)}
                     style={{ color: 'var(--text-muted)', textDecoration: 'none' }}
                   >

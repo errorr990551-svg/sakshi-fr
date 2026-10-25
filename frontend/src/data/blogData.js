@@ -53,7 +53,7 @@ export const blogPosts = [
     <h4>Planning a pharma piping project?</h4>
     <p>Get EP pipe technical specifications, certified Ra reports, and a fast factory-direct quote.</p>
   </div>
-  <a href="/contact-us" class="btn btn-primary blog-mid-cta-btn">Get EP Pipe Specs &amp; Quote</a>
+  <a href="/contact-us/" class="btn btn-primary blog-mid-cta-btn">Get EP Pipe Specs &amp; Quote</a>
 </div>
 
 <h2>5. Reason 3: Compliance and Audit Readiness</h2>
@@ -202,7 +202,7 @@ export const blogPosts = [
     <h4>Not sure which finish your project needs?</h4>
     <p>Our metallurgy and surface finishing engineers can review your process conditions and recommend the optimal finish.</p>
   </div>
-  <a href="/contact-us" class="btn btn-primary blog-mid-cta-btn">Talk to Our Engineering Team</a>
+  <a href="/contact-us/" class="btn btn-primary blog-mid-cta-btn">Talk to Our Engineering Team</a>
 </div>
 
 <h2>5. Where Each Finish Makes Sense</h2>
@@ -305,7 +305,7 @@ export const blogPosts = [
     <h4>Upgrading a dairy or beverage line?</h4>
     <p>Get food-grade ASTM A270 sanitary EP pipes with certified finish and complete material test certificates.</p>
   </div>
-  <a href="/contact-us" class="btn btn-primary blog-mid-cta-btn">Request an EP Pipe Quote</a>
+  <a href="/contact-us/" class="btn btn-primary blog-mid-cta-btn">Request an EP Pipe Quote</a>
 </div>
 
 <h2>5. Meeting FSSAI, HACCP and Export Buyer Expectations</h2>
@@ -415,7 +415,7 @@ export const blogPosts = [
     <h4>Have a bill of materials or specification?</h4>
     <p>Send your pipe schedule, grade, and Ra requirements to receive a fast, itemized, like-for-like quote.</p>
   </div>
-  <a href="/contact-us" class="btn btn-primary blog-mid-cta-btn">Send Spec for EP Pipe Quote</a>
+  <a href="/contact-us/" class="btn btn-primary blog-mid-cta-btn">Send Spec for EP Pipe Quote</a>
 </div>
 
 <h2>5. Cost Driver 4: Standards, Testing and Documents</h2>
@@ -517,7 +517,7 @@ export const blogPosts = [
     <h4>Need custom lengths or a small trial lot?</h4>
     <p>Talk directly with our EP pipe technical sales team for immediate dispatch and custom cutting requirements.</p>
   </div>
-  <a href="/contact-us" class="btn btn-primary blog-mid-cta-btn">Talk to Our EP Pipe Team</a>
+  <a href="/contact-us/" class="btn btn-primary blog-mid-cta-btn">Talk to Our EP Pipe Team</a>
 </div>
 
 <h2>5. Reason 4: Faster Support and Easier Inspection</h2>
@@ -612,7 +612,7 @@ export const blogPosts = [
     <h4>Want to see our MTC and Ra report format?</h4>
     <p>Request sample mill test certificates, Ra profilometer charts, and passivation test records.</p>
   </div>
-  <a href="/contact-us" class="btn btn-primary blog-mid-cta-btn">Request Sample Documents</a>
+  <a href="/contact-us/" class="btn btn-primary blog-mid-cta-btn">Request Sample Documents</a>
 </div>
 
 <h2>5. Points 7-8: Track Record and Standards Knowledge</h2>
@@ -753,7 +753,7 @@ export const blogPosts = [
     <h4>Not sure which grade fits your process line?</h4>
     <p>Share your operating temperature, media chemistry, and cleaning regime for an engineering recommendation.</p>
   </div>
-  <a href="/contact-us" class="btn btn-primary blog-mid-cta-btn">Share Media &amp; Get Advice</a>
+  <a href="/contact-us/" class="btn btn-primary blog-mid-cta-btn">Share Media &amp; Get Advice</a>
 </div>
 
 <h2>5. Which Industries Buy Which Grade in India</h2>
@@ -893,7 +893,7 @@ export const blogPosts = [
     <h4>Need a specific certified Ra finish?</h4>
     <p>We supply EP pipes certified down to Ra ≤ 0.38 µm (15 µin) and Ra ≤ 0.5 µm (20 µin) with calibrated profilometer reports.</p>
   </div>
-  <a href="/contact-us" class="btn btn-primary blog-mid-cta-btn">Request Certified Ra Quote</a>
+  <a href="/contact-us/" class="btn btn-primary blog-mid-cta-btn">Request Certified Ra Quote</a>
 </div>
 
 <h2>4. How Ra Is Measured on a Pipe</h2>
@@ -990,7 +990,7 @@ export const blogPosts = [
     <h4>Building or revamping an export-oriented plant?</h4>
     <p>Ask for ASME BPE-aligned EP pipe documentation, MTC 3.1 certificates, and passivation dossiers.</p>
   </div>
-  <a href="/contact-us" class="btn btn-primary blog-mid-cta-btn">Ask for BPE-Aligned EP Docs</a>
+  <a href="/contact-us/" class="btn btn-primary blog-mid-cta-btn">Ask for BPE-Aligned EP Docs</a>
 </div>
 
 <h2>4. Material and Finish: What Export Projects Typically Specify</h2>
@@ -1102,7 +1102,7 @@ The cheapest quote often leaves out the finish, the documents, the inspection or
     <h4>Ready to request quotes without ambiguity?</h4>
     <p>Send your bill of quantities to get a fully transparent, like-for-like quote with all documentation included.</p>
   </div>
-  <a href="/contact-us" class="btn btn-primary blog-mid-cta-btn">Get a Like-for-Like Quote</a>
+  <a href="/contact-us/" class="btn btn-primary blog-mid-cta-btn">Get a Like-for-Like Quote</a>
 </div>
 
 <h2>4. Mistakes 5-6: Paperwork and Traceability</h2>

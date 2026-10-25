@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { MapPin, ArrowRight, ShieldCheck, Phone, Mail, Award, CheckCircle2, Factory } from 'lucide-react';
-import { handleLinkClick } from '../utils/router';
+import { handleLinkClick, withSlash } from '../utils/router';
 
 export default function MadhyaPradeshHubPage({ onEnquireClick, onShowContactDetails }) {
   const handleShowContact = onShowContactDetails || (() => onEnquireClick && onEnquireClick('Madhya Pradesh State Hub Contact Request'));
@@ -113,9 +113,9 @@ export default function MadhyaPradeshHubPage({ onEnquireClick, onShowContactDeta
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.82rem', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
             <a href="/" onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>Home</a>
             <span>›</span>
-            <a href="/electropolished-pipes" onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>Electropolished Pipes</a>
+            <a href="/electropolished-pipes/" onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>Electropolished Pipes</a>
             <span>›</span>
-            <a href="/market-area" onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>Market Directory</a>
+            <a href="/market-area/" onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>Market Directory</a>
             <span>›</span>
             <span style={{ color: 'var(--primary-yellow)', fontWeight: '600' }}>Madhya Pradesh</span>
           </div>
@@ -189,7 +189,7 @@ export default function MadhyaPradeshHubPage({ onEnquireClick, onShowContactDeta
             {cities.map((city) => (
               <a
                 key={city.slug}
-                href={city.path}
+                href={withSlash(city.path)}
                 onClick={(e) => handleLinkClick(e, city.path)}
                 style={{
                   backgroundColor: 'var(--bg-dark-800)',

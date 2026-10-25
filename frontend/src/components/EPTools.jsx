@@ -92,8 +92,8 @@ export function RaConverterTool() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-end mb-8">
         <div>
-          <label className="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Input Value</label>
-          <input
+          <label htmlFor="ep-tools-field-1" className="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Input Value</label>
+          <input id="ep-tools-field-1"
             type="number"
             step="0.01"
             value={val}
@@ -358,10 +358,10 @@ export function PipeWeightCalculatorTool({ onEnquireClick }) {
 
         {/* 4. Quantity Input */}
         <div>
-          <label className="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">
+          <label htmlFor="ep-tools-field-2" className="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">
             Number of Pipes
           </label>
-          <input
+          <input id="ep-tools-field-2"
             type="number"
             min="1"
             value={quantity}
@@ -376,10 +376,10 @@ export function PipeWeightCalculatorTool({ onEnquireClick }) {
       {/* Manual Inputs Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-8 bg-slate-950/70 p-5 rounded-xl border border-slate-800">
         <div>
-          <label className="block text-xs text-slate-400 mb-1">
+          <label htmlFor="ep-tools-field-3" className="block text-xs text-slate-400 mb-1">
             Outer Diameter (OD in {unitSystem === 'metric' ? 'mm' : 'inches'})
           </label>
-          <input
+          <input id="ep-tools-field-3"
             type="number"
             step="0.01"
             value={unitSystem === 'metric' ? odMm.toFixed(2) : (odMm / 25.4).toFixed(3)}
@@ -393,10 +393,10 @@ export function PipeWeightCalculatorTool({ onEnquireClick }) {
         </div>
 
         <div>
-          <label className="block text-xs text-slate-400 mb-1">
+          <label htmlFor="ep-tools-field-4" className="block text-xs text-slate-400 mb-1">
             Wall Thickness (WT in {unitSystem === 'metric' ? 'mm' : 'inches'})
           </label>
-          <input
+          <input id="ep-tools-field-4"
             type="number"
             step="0.01"
             value={unitSystem === 'metric' ? wtMm.toFixed(2) : (wtMm / 25.4).toFixed(3)}
@@ -410,10 +410,10 @@ export function PipeWeightCalculatorTool({ onEnquireClick }) {
         </div>
 
         <div>
-          <label className="block text-xs text-slate-400 mb-1">
+          <label htmlFor="ep-tools-field-5" className="block text-xs text-slate-400 mb-1">
             Pipe Length ({unitSystem === 'metric' ? 'Metres' : 'Feet'})
           </label>
-          <input
+          <input id="ep-tools-field-5"
             type="number"
             step="0.5"
             value={pipeLength}

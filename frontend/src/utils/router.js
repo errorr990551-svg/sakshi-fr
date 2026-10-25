@@ -5,8 +5,20 @@ export function isTrailingSlashCityPath(pathname) {
   return false;
 }
 
+/**
+ * Normalizes an internal link to the canonical trailing-slash form so links
+ * never hit the sitewide trailing-slash 301. External URLs, anchors, mailto/tel
+ * and file paths (e.g. /catalogue.pdf) are returned unchanged.
+ */
+export function withSlash(href) {
+  if (typeof href !== 'string' || !href.startsWith('/') || href.startsWith('//')) return href;
+  const [, pathname, rest] = href.match(/^([^?#]*)(.*)$/);
+  if (pathname.endsWith('/') || /\.[a-z0-9]{2,5}$/i.test(pathname)) return href;
+  return pathname + '/' + rest;
+}
+
 export function navigate(path) {
-  const targetPath = path || '/';
+  const targetPath = withSlash(path || '/');
   // Update browser address bar without page reload
   window.history.pushState(null, "", targetPath);
   // Trigger popstate event so our App router hears it and updates the view

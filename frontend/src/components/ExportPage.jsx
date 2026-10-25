@@ -53,7 +53,7 @@ export default function ExportPage({ countryType, onEnquireClick }) {
   return (
     <div style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '5rem', paddingTop: '5.5rem' }}>
       <Breadcrumbs items={[
-        { name: 'Global Export Hub', url: '/market-area' },
+        { name: 'Global Export Hub', url: '/market-area/' },
         { name: current.h1, url: `/${current.slug}/` }
       ]} />
 

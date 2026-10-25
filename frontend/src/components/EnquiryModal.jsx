@@ -239,7 +239,7 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '',
 
               <div className="form-group-row">
                 <div className="form-group">
-                  <input
+                  <input aria-label="Name *"
                     type="text"
                     id="name"
                     name="name"
@@ -252,7 +252,7 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '',
                 </div>
                 
                 <div className="form-group">
-                  <input
+                  <input aria-label="Email Address *"
                     type="email"
                     id="email"
                     name="email"
@@ -267,7 +267,7 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '',
 
               <div className="form-group-row">
                 <div className="form-group">
-                  <input
+                  <input aria-label="Phone Number *"
                     type="tel"
                     id="phone"
                     name="phone"
@@ -280,7 +280,7 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '',
                 </div>
 
                 <div className="form-group">
-                  <input
+                  <input aria-label="Company Name"
                     type="text"
                     id="company"
                     name="company"
@@ -293,7 +293,7 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '',
               </div>
 
               <div className="form-group">
-                <input
+                <input aria-label="Location"
                   type="text"
                   id="location"
                   name="location"
@@ -305,7 +305,7 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '',
               </div>
 
               <div className="form-group">
-                <textarea
+                <textarea aria-label="How can we help you? *"
                   id="message"
                   name="message"
                   className={`form-input ${errors.message ? 'error' : ''}`}

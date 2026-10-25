@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { MapPin, ArrowRight, ShieldCheck, Phone, Mail, Award, CheckCircle2 } from 'lucide-react';
-import { handleLinkClick } from '../utils/router';
+import { handleLinkClick, withSlash } from '../utils/router';
 import CityProductPillars from './CityProductPillars';
 
 export default function TamilNaduHubPage({ onEnquireClick, onShowContactDetails }) {
@@ -206,7 +206,7 @@ export default function TamilNaduHubPage({ onEnquireClick, onShowContactDetails 
                 </div>
 
                 <a 
-                  href={c.path}
+                  href={withSlash(c.path)}
                   onClick={(e) => {
                     e.stopPropagation();
                     handleLinkClick(e, c.path);

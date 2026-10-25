@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Calendar, CheckSquare, Truck, Handshake, Shield, HelpCircle, FileText, ArrowRight, Phone, MessageSquare, MapPin, Mail, Award, CheckCircle, Factory, ShieldCheck, Cpu } from 'lucide-react';
-import { handleLinkClick } from '../utils/router';
+import { handleLinkClick, withSlash } from '../utils/router';
 
 export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, onShowContactDetails }) {
   const handleShowContact = onShowContactDetails || (() => onEnquireClick && onEnquireClick('About Page Contact Request'));
@@ -138,7 +138,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
               <button onClick={() => onEnquireClick('About Page Hero Quote')} className="btn btn-primary" style={{ padding: '0.85rem 1.75rem', fontWeight: '700' }}>
                 Request a Quote <ArrowRight size={16} />
               </button>
-              <a href="/catalogue" onClick={handleLinkClick} className="btn btn-outline" style={{ padding: '0.85rem 1.75rem', fontWeight: '600' }}>
+              <a href="/catalogue/" onClick={handleLinkClick} className="btn btn-outline" style={{ padding: '0.85rem 1.75rem', fontWeight: '600' }}>
                 Download Catalogue
               </a>
             </div>
@@ -195,7 +195,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
               We began with forged flanges and fittings, products where tolerance, material grade and traceability decide whether a pipeline is safe. That discipline shaped everything we did next.
             </p>
             <p className="about-p" style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
-              As customers in pharma, food, dairy and process industries asked for cleaner, more corrosion-resistant piping, we moved into <a href="/electropolished-pipes" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline', fontWeight: '600' }}>electropolished pipes and tubes</a> and built the process in-house. Controlling forging, machining, electropolishing and testing ourselves meant we could stand behind every certificate we issued.
+              As customers in pharma, food, dairy and process industries asked for cleaner, more corrosion-resistant piping, we moved into <a href="/electropolished-pipes/" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline', fontWeight: '600' }}>electropolished pipes and tubes</a> and built the process in-house. Controlling forging, machining, electropolishing and testing ourselves meant we could stand behind every certificate we issued.
             </p>
             <p className="about-p" style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
               Today we supply 100+ clients across India and export to the USA, UAE, Europe and Southeast Asia. We have delivered 500+ projects, and the aim is still the same as on day one: material you can trust and answers you can rely on.
@@ -508,7 +508,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
               {industries.map((ind, idx) => (
                 <a 
                   key={idx} 
-                  href={ind.path} 
+                  href={withSlash(ind.path)} 
                   onClick={handleLinkClick}
                   style={{
                     backgroundColor: 'var(--bg-dark-900)',
@@ -638,7 +638,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
               {cities.map((c, idx) => (
                 <a 
                   key={idx} 
-                  href={c.path} 
+                  href={withSlash(c.path)} 
                   onClick={handleLinkClick}
                   style={{
                     backgroundColor: 'var(--bg-dark-800)',

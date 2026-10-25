@@ -254,6 +254,22 @@ marketCities.forEach(city => {
   </url>\n`;
 });
 
+// EP build-spec city pages that are pre-rendered but not listed in market_cities.json
+epBuildSpecData.forEach(item => {
+  if (!item.url || !item.url.includes('/market-area/')) return;
+  const isStateHub = stateHubSlugs.some(s => item.url.includes(`/market-area/${s}/`) || item.url.endsWith(`/market-area/${s}`));
+  if (isStateHub) return;
+  const formatted = formatUrl(item.url);
+  if (cityUrlsSet.has(formatted) || mainUrlsSet.has(formatted)) return;
+  cityUrlsSet.add(formatted);
+  citySitemap += `  <url>
+    <loc>${formatted}</loc>
+    <lastmod>${TODAY_LASTMOD}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>\n`;
+});
+
 citySitemap += `</urlset>\n`;
 
 const citySitemapPath = path.join(__dirname, 'public/sitemap-cities.xml');

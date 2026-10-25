@@ -122,7 +122,7 @@ export default function GallerySection({ onEnquireClick }) {
           </div>
           <div style={{ alignSelf: 'center' }}>
             <a
-              href="/gallery"
+              href="/gallery/"
               className="btn btn-outline"
               onClick={(e) => handleLinkClick(e, '/gallery')}
             >

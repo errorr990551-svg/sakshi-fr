@@ -6,7 +6,7 @@ import {
   Play, Sparkles, Package, Cpu, Scissors, Zap, Droplet, Building2, FlaskConical,
   Compass, ArrowUpRight
 } from 'lucide-react';
-import { handleLinkClick } from '../utils/router';
+import { handleLinkClick, withSlash } from '../utils/router';
 import { PRIORITY_30_CITIES } from '../data/priorityCities';
 
 export default function HomePage({ onEnquireClick }) {
@@ -197,7 +197,7 @@ export default function HomePage({ onEnquireClick }) {
               <button onClick={() => onEnquireClick('Hero: Get a Quote in 30 Minutes')} className="btn btn-primary btn-lg" style={{ padding: '0.95rem 2rem', fontWeight: '700' }}>
                 Get a Quote in 30 Minutes <ArrowRight size={17} />
               </button>
-              <a href="/catalogue" onClick={handleLinkClick} className="btn btn-outline btn-lg" style={{ padding: '0.95rem 2rem', fontWeight: '600' }}>
+              <a href="/catalogue/" onClick={handleLinkClick} className="btn btn-outline btn-lg" style={{ padding: '0.95rem 2rem', fontWeight: '600' }}>
                 Download Catalogue PDF
               </a>
             </div>
@@ -397,7 +397,7 @@ export default function HomePage({ onEnquireClick }) {
 
                 <div style={{ padding: '1.75rem', display: 'flex', flexDirection: 'column', flexGrow: 1, alignItems: 'center' }}>
                   <h3 style={{ fontSize: '1.25rem', color: '#fff', marginBottom: '0.75rem', fontWeight: '700' }}>
-                    <a href={prod.link} onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>
+                    <a href={withSlash(prod.link)} onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>
                       {prod.title}
                     </a>
                   </h3>
@@ -405,7 +405,7 @@ export default function HomePage({ onEnquireClick }) {
                     {prod.desc}
                   </p>
                   <a 
-                    href={prod.link} 
+                    href={withSlash(prod.link)} 
                     onClick={handleLinkClick} 
                     className="btn btn-outline" 
                     style={{ padding: '0.65rem 1.4rem', fontSize: '0.88rem', fontWeight: '600', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
@@ -418,7 +418,7 @@ export default function HomePage({ onEnquireClick }) {
           </div>
 
           <div style={{ textAlign: 'center' }}>
-            <a href="/electropolished-pipes" onClick={handleLinkClick} className="btn btn-primary btn-lg" style={{ padding: '0.9rem 2.25rem', fontWeight: '700' }}>
+            <a href="/electropolished-pipes/" onClick={handleLinkClick} className="btn btn-primary btn-lg" style={{ padding: '0.9rem 2.25rem', fontWeight: '700' }}>
               Explore Full Electropolished Range <ArrowRight size={16} />
             </a>
           </div>
@@ -919,7 +919,7 @@ export default function HomePage({ onEnquireClick }) {
                 </div>
                 <div style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
                   <h3 style={{ fontSize: '1.2rem', color: 'var(--primary-yellow)', marginBottom: '0.5rem', fontWeight: '700' }}>
-                    <a href={cat.link} onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>
+                    <a href={withSlash(cat.link)} onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>
                       {cat.title}
                     </a>
                   </h3>
@@ -927,7 +927,7 @@ export default function HomePage({ onEnquireClick }) {
                     {cat.desc}
                   </p>
                   <a 
-                    href={cat.link} 
+                    href={withSlash(cat.link)} 
                     onClick={handleLinkClick} 
                     className="btn btn-outline"
                     style={{ width: '100%', padding: '0.65rem 0', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem' }}
@@ -941,16 +941,16 @@ export default function HomePage({ onEnquireClick }) {
 
           {/* Reference Tools Bar */}
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1.5rem', paddingTop: '1.75rem', borderTop: '1px solid var(--border-color)' }}>
-            <a href="/products" onClick={handleLinkClick} className="btn btn-primary" style={{ padding: '0.75rem 1.75rem', fontWeight: '700' }}>
+            <a href="/products/" onClick={handleLinkClick} className="btn btn-primary" style={{ padding: '0.75rem 1.75rem', fontWeight: '700' }}>
               View All 17 Categories →
             </a>
 
             <div style={{ display: 'flex', gap: '1.25rem', flexWrap: 'wrap', fontSize: '0.88rem' }}>
               <span style={{ color: 'var(--text-muted)', fontWeight: '700', textTransform: 'uppercase' }}>Reference Tools:</span>
-              <a href="/pipe-schedule-chart" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Pipe Schedule Chart</a>
-              <a href="/flange-dimension-chart" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Flange Dimension Chart</a>
-              <a href="/flange-weight-chart" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Flange Weight Chart</a>
-              <a href="/flange-bolt-chart" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Flange Bolt Chart</a>
+              <a href="/pipe-schedule-chart/" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Pipe Schedule Chart</a>
+              <a href="/flange-dimension-chart/" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Flange Dimension Chart</a>
+              <a href="/flange-weight-chart/" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Flange Weight Chart</a>
+              <a href="/flange-bolt-chart/" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Flange Bolt Chart</a>
             </div>
           </div>
         </div>
@@ -980,7 +980,7 @@ export default function HomePage({ onEnquireClick }) {
                   {PRIORITY_30_CITIES.map((c, idx) => (
                     <a
                       key={idx}
-                      href={c.path}
+                      href={withSlash(c.path)}
                       onClick={(e) => handleLinkClick(e, c.path)}
                       style={{
                         backgroundColor: 'var(--bg-dark-900)',
@@ -1065,7 +1065,7 @@ export default function HomePage({ onEnquireClick }) {
 
               {/* Learn More Button */}
               <a 
-                href="/about-us" 
+                href="/about-us/" 
                 onClick={handleLinkClick} 
                 className="btn btn-primary"
                 style={{ padding: '0.85rem 2rem', fontWeight: '700', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
@@ -1119,7 +1119,7 @@ export default function HomePage({ onEnquireClick }) {
           </div>
 
           <div style={{ textAlign: 'center' }}>
-            <a href="/gallery" onClick={handleLinkClick} className="btn btn-outline" style={{ padding: '0.85rem 2.25rem', fontWeight: '600' }}>
+            <a href="/gallery/" onClick={handleLinkClick} className="btn btn-outline" style={{ padding: '0.85rem 2.25rem', fontWeight: '600' }}>
               View Full Gallery & Video Tour →
             </a>
           </div>
@@ -1211,8 +1211,8 @@ export default function HomePage({ onEnquireClick }) {
                   <form onSubmit={handleFormSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Name *</label>
-                        <input 
+                        <label htmlFor="home-field-1" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Name *</label>
+                        <input id="home-field-1" 
                           type="text" 
                           required 
                           placeholder="Your Full Name"
@@ -1222,8 +1222,8 @@ export default function HomePage({ onEnquireClick }) {
                         />
                       </div>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Company *</label>
-                        <input 
+                        <label htmlFor="home-field-2" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Company *</label>
+                        <input id="home-field-2" 
                           type="text" 
                           required 
                           placeholder="Company / Plant Name"
@@ -1236,8 +1236,8 @@ export default function HomePage({ onEnquireClick }) {
 
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Phone Number *</label>
-                        <input 
+                        <label htmlFor="home-field-3" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Phone Number *</label>
+                        <input id="home-field-3" 
                           type="tel" 
                           required 
                           placeholder="+91..."
@@ -1247,8 +1247,8 @@ export default function HomePage({ onEnquireClick }) {
                         />
                       </div>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Email *</label>
-                        <input 
+                        <label htmlFor="home-field-4" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Email *</label>
+                        <input id="home-field-4" 
                           type="email" 
                           required 
                           placeholder="procurement@company.com"
@@ -1261,8 +1261,8 @@ export default function HomePage({ onEnquireClick }) {
 
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Grade & Size *</label>
-                        <input 
+                        <label htmlFor="home-field-5" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Grade & Size *</label>
+                        <input id="home-field-5" 
                           type="text" 
                           required 
                           placeholder="e.g. SS 316L, 2 inch, Sch 10"
@@ -1272,8 +1272,8 @@ export default function HomePage({ onEnquireClick }) {
                         />
                       </div>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Quantity *</label>
-                        <input 
+                        <label htmlFor="home-field-6" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Quantity *</label>
+                        <input id="home-field-6" 
                           type="text" 
                           required 
                           placeholder="e.g. 500 meters / 40 lengths"
@@ -1285,8 +1285,8 @@ export default function HomePage({ onEnquireClick }) {
                     </div>
 
                     <div>
-                      <label style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Message / Spool Drawing Details</label>
-                      <textarea 
+                      <label htmlFor="home-field-7" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Message / Spool Drawing Details</label>
+                      <textarea id="home-field-7" 
                         rows="3"
                         placeholder="Mention standard (ASTM A270/A269), Ra roughness requirements, delivery destination, etc."
                         value={formData.message}

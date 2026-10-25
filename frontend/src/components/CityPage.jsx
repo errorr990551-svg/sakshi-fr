@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { ChevronRight, ShieldCheck, Truck, Sparkles, MapPin, HelpCircle, ChevronDown, ChevronUp, Phone, Mail, FileText, Globe, Building, Award, Activity, ArrowRight, Shield, Layers, FileCheck, HelpCircle as FaqIcon, CheckCircle2, Sliders, Cpu, Zap, Box, MessageSquare } from 'lucide-react';
-import { handleLinkClick } from '../utils/router';
+import { handleLinkClick, withSlash } from '../utils/router';
 import { customCityData } from '../data/customCityData';
 import CityProductPillars from './CityProductPillars';
 
@@ -317,9 +317,9 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.8rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
               <a href="/" onClick={(e) => handleLinkClick(e, '/')} style={{ color: 'inherit', textDecoration: 'none' }}>Home</a>
               <ChevronRight size={12} />
-              <a href="/market-area" onClick={(e) => handleLinkClick(e, '/market-area')} style={{ color: 'inherit', textDecoration: 'none' }}>Market Directory</a>
+              <a href="/market-area/" onClick={(e) => handleLinkClick(e, '/market-area')} style={{ color: 'inherit', textDecoration: 'none' }}>Market Directory</a>
               <ChevronRight size={12} />
-              <a href="/tamil-nadu" onClick={(e) => handleLinkClick(e, '/tamil-nadu')} style={{ color: 'inherit', textDecoration: 'none' }}>Tamil Nadu</a>
+              <a href="/tamil-nadu/" onClick={(e) => handleLinkClick(e, '/tamil-nadu')} style={{ color: 'inherit', textDecoration: 'none' }}>Tamil Nadu</a>
               <ChevronRight size={12} />
               <span style={{ color: 'var(--primary-yellow)', fontWeight: '600' }}>{custom.city}</span>
             </div>
@@ -403,7 +403,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                       {card.actions.map((act, i) => (
                         act.type === 'download' ? (
-                          <a key={i} href={act.link} onClick={(e) => handleLinkClick(e, act.link)} className="btn btn-outline" style={{ padding: '0.45rem 0.75rem', fontSize: '0.78rem', textAlign: 'center' }}>
+                          <a key={i} href={withSlash(act.link)} onClick={(e) => handleLinkClick(e, act.link)} className="btn btn-outline" style={{ padding: '0.45rem 0.75rem', fontSize: '0.78rem', textAlign: 'center' }}>
                             {act.text}
                           </a>
                         ) : (
@@ -449,7 +449,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
             </div>
 
             <div style={{ textAlign: 'center' }}>
-              <a href={custom.productRange.btnLink || '/electropolished-pipes'} onClick={(e) => handleLinkClick(e, custom.productRange.btnLink || '/electropolished-pipes')} className="btn btn-primary" style={{ padding: '0.85rem 2rem', fontWeight: '700' }}>
+              <a href={withSlash(custom.productRange.btnLink || '/electropolished-pipes')} onClick={(e) => handleLinkClick(e, custom.productRange.btnLink || '/electropolished-pipes')} className="btn btn-primary" style={{ padding: '0.85rem 2rem', fontWeight: '700' }}>
                 {custom.productRange.btnText}
               </a>
             </div>
@@ -586,11 +586,11 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.65rem' }}>
                 {custom.areasCovered.siblingCities.map((sib, idx) => (
-                  <a key={idx} href={sib.path} onClick={(e) => handleLinkClick(e, sib.path)} style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', padding: '0.4rem 0.85rem', borderRadius: '4px', color: '#cbd5e1', fontSize: '0.82rem', textDecoration: 'none', fontWeight: '500' }}>
+                  <a key={idx} href={withSlash(sib.path)} onClick={(e) => handleLinkClick(e, sib.path)} style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', padding: '0.4rem 0.85rem', borderRadius: '4px', color: '#cbd5e1', fontSize: '0.82rem', textDecoration: 'none', fontWeight: '500' }}>
                     {sib.name}
                   </a>
                 ))}
-                <a href="/tamil-nadu" onClick={(e) => handleLinkClick(e, '/tamil-nadu')} style={{ color: 'var(--primary-yellow)', padding: '0.4rem 0.85rem', fontSize: '0.82rem', textDecoration: 'underline', fontWeight: '700' }}>
+                <a href="/tamil-nadu/" onClick={(e) => handleLinkClick(e, '/tamil-nadu')} style={{ color: 'var(--primary-yellow)', padding: '0.4rem 0.85rem', fontSize: '0.82rem', textDecoration: 'underline', fontWeight: '700' }}>
                   View All Tamil Nadu Hubs →
                 </a>
               </div>
@@ -775,7 +775,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
               <React.Fragment key={i}>
                 {i < arr.length - 1 ? (
                   <>
-                    <a href={b.path} onClick={(e) => handleLinkClick(e, b.path)} style={{ color: 'inherit', textDecoration: 'none', transition: 'var(--transition-fast)' }} onMouseEnter={(e) => e.target.style.color = 'var(--primary-yellow)'} onMouseLeave={(e) => e.target.style.color = 'inherit'}>{b.name}</a>
+                    <a href={withSlash(b.path)} onClick={(e) => handleLinkClick(e, b.path)} style={{ color: 'inherit', textDecoration: 'none', transition: 'var(--transition-fast)' }} onMouseEnter={(e) => e.target.style.color = 'var(--primary-yellow)'} onMouseLeave={(e) => e.target.style.color = 'inherit'}>{b.name}</a>
                     <ChevronRight size={12} style={{ color: 'var(--text-muted)' }} />
                   </>
                 ) : (
@@ -930,7 +930,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
               {custom.jumpLinks.map((link, idx) => (
                 <a
                   key={idx}
-                  href={link.href}
+                  href={withSlash(link.href)}
                   style={{
                     fontSize: '0.8rem',
                     color: 'var(--text-secondary)',
@@ -1810,7 +1810,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
                 {cityData.nearbyCitySpokes.map((spoke, idx) => (
                   <a
                     key={idx}
-                    href={spoke.path}
+                    href={withSlash(spoke.path)}
                     onClick={(e) => handleLinkClick(e, spoke.path)}
                     style={{
                       color: 'var(--text-secondary)',

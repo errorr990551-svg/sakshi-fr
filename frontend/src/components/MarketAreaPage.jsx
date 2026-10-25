@@ -1,5 +1,5 @@
 import React, { useMemo, useEffect } from 'react';
-import { handleLinkClick } from '../utils/router';
+import { handleLinkClick, withSlash } from '../utils/router';
 import marketCitiesData from '../data/market_cities.json';
 
 export default function MarketAreaPage() {
@@ -197,7 +197,7 @@ export default function MarketAreaPage() {
 
                     {state === 'Gujarat' && (
                       <a 
-                        href="/market-area/gujarat" 
+                        href="/market-area/gujarat/" 
                         onClick={(e) => handleLinkClick(e, '/market-area/gujarat')}
                         style={{ color: 'var(--primary-yellow)', fontSize: '0.85rem', fontWeight: '700', textDecoration: 'none' }}
                       >
@@ -222,7 +222,7 @@ export default function MarketAreaPage() {
                   {cities.map((city) => (
                     <a
                       key={city.slug}
-                      href={city.path}
+                      href={withSlash(city.path)}
                       onClick={(e) => handleLinkClick(e, city.path)}
                       style={{
                         backgroundColor: 'var(--bg-dark-800)',

@@ -43,3 +43,8 @@ date	path	type	status	nearest_overlap_before	nearest_overlap_after	words_before	
 2026-10-25	/madhya-pradesh/	legacy	redirect	-	-	-	-	301 to canonical page; no content work needed
 2026-10-25	/telangana/	legacy	redirect	-	-	-	-	301 to canonical page; no content work needed
 2026-10-25	/west-bengal/	legacy	redirect	-	-	-	-	301 to canonical page; no content work needed
+2026-10-25	/market-area/agra/	city-in	keep-pending-verify	0.612	0.457	1538	2146	petha (CSE/DTE), TTZ, UPSIDA-NICDC cluster; sources quoted via search only, network blocked page fetch
+2026-10-25	/market-area/alwar/	city-in	keep-pending-verify	0.655	0.490	1479	2057	new Alwar Saras dairy 3 lakh LPD (AgroSpectrum), RIICO agro food park; sources quoted via search only
+2026-10-25	/market-area/ambala/	city-in	keep-pending-verify	0.500	0.377	1289	1848	scientific instruments cluster 2000+ units (Tribune), IDDC; sources quoted via search only
+2026-10-25	/market-area/ambernath/	city-in	keep-pending-verify	0.528	0.409	1411	1945	MPCB 2014 unit list, Asston Unit II Jan 2026, PolyPeptide; sources quoted via search only
+2026-10-25	/market-area/amritsar/	city-in	keep-pending-verify	0.629	0.473	1476	2038	Verka plant, Rs 135 cr sterilised/fermented expansion Apr 2025 (PTI); sources quoted via search only

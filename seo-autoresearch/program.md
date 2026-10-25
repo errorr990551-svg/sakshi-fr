@@ -2,11 +2,14 @@
 
 This uses the autoresearch pattern (github.com/karpathy/autoresearch): a human writes this file. Each day the agent does one bounded batch of work, measures it against a fixed metric, keeps what improves the metric and discards what does not, then logs the result. Here the "experiment" is one page, not one training run.
 
+## The one objective
+**Make steelmanufacturer.in better every single day.** Every run must leave the site measurably better than it found it: more pages indexed, more unique, more useful, and technically cleaner. If a change does not make the site better, it is discarded. There is no other objective.
+
 ## Goal
 Get the URLs in `queue.tsv` out of "Discovered – currently not indexed" in Search Console. Every page must earn indexing by being substantially unique and useful. The target searches are **"electropolished pipes manufacturer in <city>"** and **"electropolished tubes manufacturer in <city>"**. Only https://steelmanufacturer.in (https, no www) exists.
 
 ## Daily budget
-**5 pages per run.** Take the first 5 rows of `queue.tsv` (rows go in priority order) whose path is not already in `results.tsv` with status `keep`, `redirect` or `discard`.
+**5 pages per run.** Take the first 5 rows of `queue.tsv` (rows go in priority order) whose path is not already in `results.tsv` with status `keep`, `keep-pending-verify`, `redirect` or `discard`.
 
 ## Hard rules (never break)
 1. **No invented facts.** Every city-specific claim (industrial estates, companies, regulators, ports, distances, policy) must come from a source you actually opened this run. List each source in the page's `sources`. If you cannot verify something, leave it out.
@@ -15,6 +18,8 @@ Get the URLs in `queue.tsv` out of "Discovered – currently not indexed" in Sea
 4. Electropolished pipe/tube is the only product promoted. Mention other products only as internal links.
 5. Do not touch pages outside today's 5, except to add an internal link to a new page.
 6. Never force-push, never rewrite history, never skip a failing check.
+7. **Sources must be opened, not just seen in search snippets.** If WebFetch/curl cannot open source pages (network policy block), write and check the pages but push to the working branch only (status `keep-pending-verify`), do NOT push to `main`, and tell the owner the network access must be widened. At the start of every run, first re-verify any `keep-pending-verify` rows by opening their sources; fix or remove unconfirmed claims, then promote them to `keep` and push to main.
+8. **Transactional intent.** Pages are written for a buyer ready to order. Each city page needs a section that tells that city's buyer exactly what to send in an RFQ for their industry, with a link to /contact/. It must be specific to the city's plants, not a generic checklist.
 
 ## Quality gate (no low-quality content is ever pushed)
 A page is pushed only if it passes **all** of these. Otherwise discard it, log `discard` with the reason, and move on. **It is better to push 0 pages than 1 weak page.**

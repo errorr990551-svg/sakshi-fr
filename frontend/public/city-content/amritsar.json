@@ -1,0 +1,83 @@
+{
+  "slug": "amritsar",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Amritsar's Dairy Heritage: The Verka Milk Plant",
+      "paragraphs": [
+        "Amritsar gave its name to Punjab's best-known dairy brand. Verka, a village on the city's outskirts, is where one of North India's first modern milk plants was established, and the plant on Batala Road is run by the Amritsar District Cooperative Milk Producers Union under Milkfed Punjab. The Tribune has reported the plant as fully automatic with a processing capacity of 2.5 lakh litres a day, expandable to 5 lakh.",
+        "The plant is still expanding. In April 2025 Punjab Chief Minister Bhagwant Mann laid the foundation stone of a Rs 135 crore project to raise its capacity for sterilised flavoured milk and new fermented dairy products. Alongside Verka, Amritsar's Focal Point and Mehta Road estates house food-processing, textile and engineering units."
+      ]
+    },
+    {
+      "heading": "Sterilised and Fermented Dairy: Why the Tube Specification Tightens",
+      "paragraphs": [
+        "Sterilised flavoured milk is a long-shelf-life product. Its process lines run hotter than ordinary pasteurised milk, and everything after the sterilisation step must stay sterile to the filler. That is where electropolished 316L tube is worth specifying: a smooth, passive bore resists fouling at high temperature and stands up to hot caustic and acid CIP cycle after cycle.",
+        "Fermented products such as curd and lassi carry live cultures. Any residue in a product line can carry over and upset the next batch. Electropolished tube on culture dosing, fermented-product transfer and filling lines, installed with a continuous slope to drain, makes cleaning validation repeatable. Raw-milk reception and chilled-water services can stay in 304 with a standard finish."
+      ]
+    },
+    {
+      "heading": "Food Processors in Amritsar's Estates",
+      "paragraphs": [
+        "Amritsar's food units, from pickles and sauces to sweets and packaged foods, need sanitary product and CIP lines. Salty and acidic products such as pickles and chutneys call for 316L rather than 304, because chlorides at warm temperatures pit 304 over time. Electropolishing is justified on lines cleaned between every batch or every flavour.",
+        "Sweet makers working with khoa and other milk-based products face the same residue problem as the dairy, and the same 304L or 316L product-contact rule applies to them."
+      ]
+    },
+    {
+      "heading": "Getting a Quote for Dairy-Grade Tube in Amritsar",
+      "bullets": [
+        "Tell us which lines the tube is for: sterilised flavoured milk after the steriliser, culture dosing, curd or lassi transfer, CIP, or utilities.",
+        "Sizes and wall, usually 1.65 mm wall for dairy tube to ASTM A270, with metres required per size.",
+        "Grade by duty: 304L for most milk lines, 316L for hot CIP supply, salted product and acidic flavours.",
+        "Finish: SF1 for general sanitary duty, SF4 electropolished for aseptic and fermented product lines.",
+        "Contractor or plant: if a turnkey contractor is building the Amritsar expansion, give us both names so certificates are addressed correctly.",
+        "We document each lot with an EN 10204 3.1 certificate traced to heat number, PMI records, and an Ra report for every electropolished batch."
+      ],
+      "links": [
+        {
+          "label": "Get an Amritsar quotation",
+          "href": "/contact/"
+        }
+      ]
+    },
+    {
+      "heading": "Delivery to Amritsar",
+      "paragraphs": [
+        "Amritsar is a long-haul road delivery from our Taloja MIDC works; dispatch and transit are confirmed in writing with each quotation. ICD Ludhiana is the nearest listed container gateway.",
+        "Other Punjab clusters:"
+      ],
+      "links": [
+        {
+          "label": "Jalandhar",
+          "href": "/market-area/jalandhar/"
+        },
+        {
+          "label": "Ludhiana",
+          "href": "/market-area/ludhiana/"
+        },
+        {
+          "label": "Mohali",
+          "href": "/market-area/mohali/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Week (PTI): Punjab CM Mann lays foundation stone of Rs 135 cr milk plant expansion project",
+      "url": "https://www.theweek.in/wire-updates/business/2025/04/09/nrg18-pb-mann-milk-plant.html"
+    },
+    {
+      "title": "The Tribune: Verka milk plant",
+      "url": "https://tribuneindia.com/topic/verka-milk-plant"
+    },
+    {
+      "title": "BIS licence listing: Amritsar District Cooperative Milk Producers Union, Verka",
+      "url": "https://www.services.bis.gov.in/php/BIS_2.0/mscd_dev/forms/DataListController/msc_licence/chbo-2"
+    },
+    {
+      "title": "Commercial Vehicle: Milk for India's food bowl (Verka history)",
+      "url": "https://commercialvehicle.in/milk-for-indias-food-bowl/"
+    }
+  ]
+}

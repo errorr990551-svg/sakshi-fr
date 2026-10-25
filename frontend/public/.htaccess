@@ -68,6 +68,7 @@ RewriteRule ^(?:electropolished-pipes?-(?:manufacturer|supplier)-(?:in-)?|indust
 # D. 301 Redirect Legacy City URLs to /market-area/<city>/ (covers pipe/pipes, with or without 'in-')
 RewriteRule ^electropolished-pipes?-manufacturer-(?:in-)?([^/]+)/?$ https://steelmanufacturer.in/market-area/$1/ [L,R=301]
 RewriteRule ^electropolished-pipes?-supplier-(?:in-)?([^/]+)/?$ https://steelmanufacturer.in/market-area/$1/ [L,R=301]
+RewriteRule ^(?:electropolished-pipes?(?:-fittings)?-in-|dairy-electropolished-pipes-)(chennai|mumbai|pune|kolhapur)/?$ https://steelmanufacturer.in/market-area/$1/ [L,R=301]
 RewriteRule ^industrial-pipe-flange-manufacturer-in-([^/]+)-sakshi-forge/?$ https://steelmanufacturer.in/market-area/$1/ [L,R=301]
 
 # E. Add trailing slash to non-file URLs in one 301 hop (excluding API routes)

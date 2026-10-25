@@ -3,6 +3,7 @@
  */
 import corePagesData from '../data/core_pages.json';
 import { customCityData } from '../data/customCityData';
+import { withSlash } from './router';
 
 const BASE_URL = "https://steelmanufacturer.in";
 
@@ -358,6 +359,13 @@ export function updateSEO({ type, data }) {
     document.head.appendChild(robotsTag);
   }
   robotsTag.setAttribute("content", robots);
+
+  // Every indexable page is self-canonical, matching the pre-rendered HTML. Deriving it
+  // from page data let aliased routes (e.g. /market-area/bharuch/ rendering Dahej data)
+  // point Google at a different URL once JavaScript ran.
+  if (!robots.includes("noindex")) {
+    canonicalUrl = `${BASE_URL}${withSlash(window.location.pathname)}`;
+  }
 
   let canonicalTag = document.querySelector('link[rel="canonical"]');
   if (!canonicalTag) {

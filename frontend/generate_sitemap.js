@@ -7,6 +7,8 @@ const __dirname = path.dirname(__filename);
 
 const BASE_URL = 'https://steelmanufacturer.in';
 
+const isRedirected = (formatted) => Object.keys(REDIRECTED_CITY_PATHS).some(p => formatted === `${BASE_URL}${p}`);
+
 const corePath = path.join(__dirname, 'src/data/core_pages.json');
 const categoriesPath = path.join(__dirname, 'src/data/categories.json');
 const productsPath = path.join(__dirname, 'src/data/products.json');
@@ -22,6 +24,7 @@ const epBuildSpecData = fs.existsSync(epBuildSpecPath)
   : [];
 
 import { blogPosts } from './src/data/blogData.js';
+import { REDIRECTED_CITY_PATHS } from './src/data/redirectedCities.js';
 
 const newPages = [
   'gallery',
@@ -94,7 +97,7 @@ let mainSitemap = `<?xml version="1.0" encoding="UTF-8"?>
 // Helper to append unique URL to main sitemap
 const addMainUrl = (url, changefreq, priority, comment = '', lastmod = TODAY_LASTMOD) => {
   const formatted = formatUrl(url);
-  if (mainUrlsSet.has(formatted)) return;
+  if (mainUrlsSet.has(formatted) || isRedirected(formatted)) return;
   mainUrlsSet.add(formatted);
   if (comment) mainSitemap += `  <!-- ${comment} -->\n`;
   mainSitemap += `  <url>
@@ -230,7 +233,7 @@ PRIORITY_30_CITY_SLUGS.forEach(slug => {
     return;
   }
   const formatted = formatUrl(`${BASE_URL}${city.path}`);
-  if (cityUrlsSet.has(formatted)) return;
+  if (cityUrlsSet.has(formatted) || isRedirected(formatted)) return;
   cityUrlsSet.add(formatted);
   citySitemap += `  <url>
     <loc>${formatted}</loc>
@@ -244,23 +247,7 @@ PRIORITY_30_CITY_SLUGS.forEach(slug => {
 marketCities.forEach(city => {
   if (!city.path || city.path === '/') return;
   const formatted = formatUrl(`${BASE_URL}${city.path}`);
-  if (cityUrlsSet.has(formatted)) return;
-  cityUrlsSet.add(formatted);
-  citySitemap += `  <url>
-    <loc>${formatted}</loc>
-    <lastmod>${TODAY_LASTMOD}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>\n`;
-});
-
-// EP build-spec city pages that are pre-rendered but not listed in market_cities.json
-epBuildSpecData.forEach(item => {
-  if (!item.url || !item.url.includes('/market-area/')) return;
-  const isStateHub = stateHubSlugs.some(s => item.url.includes(`/market-area/${s}/`) || item.url.endsWith(`/market-area/${s}`));
-  if (isStateHub) return;
-  const formatted = formatUrl(item.url);
-  if (cityUrlsSet.has(formatted) || mainUrlsSet.has(formatted)) return;
+  if (cityUrlsSet.has(formatted) || isRedirected(formatted)) return;
   cityUrlsSet.add(formatted);
   citySitemap += `  <url>
     <loc>${formatted}</loc>

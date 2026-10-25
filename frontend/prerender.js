@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { REDIRECTED_CITY_PATHS } from './src/data/redirectedCities.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -297,8 +298,10 @@ async function runPrerender() {
     };
   }
 
-  // 4. Render each route
+  // 4. Render each route (skipping duplicate city URLs the server 301-redirects, see .htaccess section B)
+  const redirectedSlugs = new Set(Object.keys(REDIRECTED_CITY_PATHS).map(p => p.replace(/^\/|\/$/g, '')));
   for (const route of routes) {
+    if (redirectedSlugs.has(route.slug.replace(/^\/|\/$/g, ''))) continue;
     // Determine path relative to domain
     let routePath = '/' + route.slug;
     if (route.type === 'home') {

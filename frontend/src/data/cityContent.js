@@ -44,7 +44,7 @@ function regulatorNotes(r) {
 function transitSentence(ctx) {
   const { r } = ctx;
   if (ctx.india) {
-    return `Material for ${ctx.city} leaves our Taloja MIDC works in Mumbai by road; transit is typically ${r.transit.replace(/ from our Mumbai works$/, '')}. For export-bound projects the nearest gateway is ${r.gateway}.`;
+    return `Material for ${ctx.city} leaves our Taloja MIDC works in Mumbai by road (typical transit: ${r.transit.replace(/ from our Mumbai works$/, '')}). For export-bound projects the nearest gateway is ${r.gateway}.`;
   }
   return `${ctx.city} is supplied by sea from Nhava Sheva (JNPT) through ${r.gateway}; ocean transit is typically ${r.transit.replace(/ from Nhava Sheva.*$/, '')}, plus time for customs clearance and inland delivery.`;
 }

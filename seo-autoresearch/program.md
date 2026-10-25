@@ -6,7 +6,7 @@ This uses the autoresearch pattern (github.com/karpathy/autoresearch): a human w
 Get the URLs in `queue.tsv` out of "Discovered – currently not indexed" in Search Console. Every page must earn indexing by being substantially unique and useful. The target searches are **"electropolished pipes manufacturer in <city>"** and **"electropolished tubes manufacturer in <city>"**. Only https://steelmanufacturer.in (https, no www) exists.
 
 ## Daily budget
-**5 pages per run.** Take the first 5 rows of `queue.tsv` (rows go in priority order) whose path is not already in `results.tsv` with status `keep` or `redirect`.
+**5 pages per run.** Take the first 5 rows of `queue.tsv` (rows go in priority order) whose path is not already in `results.tsv` with status `keep`, `redirect` or `discard`.
 
 ## Hard rules (never break)
 1. **No invented facts.** Every city-specific claim (industrial estates, companies, regulators, ports, distances, policy) must come from a source you actually opened this run. List each source in the page's `sources`. If you cannot verify something, leave it out.
@@ -15,6 +15,18 @@ Get the URLs in `queue.tsv` out of "Discovered – currently not indexed" in Sea
 4. Electropolished pipe/tube is the only product promoted. Mention other products only as internal links.
 5. Do not touch pages outside today's 5, except to add an internal link to a new page.
 6. Never force-push, never rewrite history, never skip a failing check.
+
+## Quality gate (no low-quality content is ever pushed)
+A page is pushed only if it passes **all** of these. Otherwise discard it, log `discard` with the reason, and move on. **It is better to push 0 pages than 1 weak page.**
+1. `python3 ../seo-autoresearch/scripts/quality.py <slug>` prints PASS. It checks: at least 450 new words; 4–7 sections; at least 2 independent source domains; no marketing filler ("leading manufacturer", "world-class", "one-stop", ...); no unconfirmed company facts (day/week lead times, "in stock", MOQ, named customers, local office or warehouse); a heading names the place; no paragraphs under 15 words; no more than 2 sentences shared with any other city page.
+2. The `score.py` overlap falls and the word count rises (see step 5).
+3. **Self-review.** Re-read the page as a pharma/dairy plant engineer in that city and answer honestly:
+   - Does every paragraph say something true and specific to this place or product that would not fit on another city's page?
+   - Is every place fact backed by a cited source you opened?
+   - Is anything vague, padded or guessed? Delete it.
+   If more than one paragraph could be pasted onto another city page unchanged, rewrite it or drop the page.
+4. If research finds too little verifiable local information (common for small foreign towns), do **not** pad. Log `discard: insufficient verifiable sources`, leave the page as it is, and take the next queue row so the day still gets 5 good attempts. Never exceed 8 attempts in one run.
+5. `upgrade` rows are wave-1 pages that fail the gate. Extend them with researched, cited content until they pass. Do not delete existing correct content.
 
 ## Per-page procedure
 For each of the 5 paths:
@@ -33,7 +45,7 @@ For each of the 5 paths:
    printf '%s\n' <the 5 paths> > /tmp/p.txt && node ../seo-autoresearch/scripts/hydall.cjs /tmp/p.txt   # 0 JS errors
    python3 ../seo-autoresearch/scripts/score.py <path>
    ```
-5. **Keep or discard.** Keep the page only if all checks pass **and** nearest-neighbour overlap fell (city pages: target < 0.35) **and** words rose. Otherwise run `git checkout -- <files>` for that page, or delete the new JSON, and log `discard` with the reason.
+5. **Keep or discard.** Keep the page only if the quality gate passes, all checks pass **and** nearest-neighbour overlap fell (city pages: target < 0.35) **and** words rose. Otherwise run `git checkout -- <files>` for that page, or delete the new JSON, and log `discard` with the reason.
 6. **Log** one row per page in `seo-autoresearch/results.tsv`: `date path type status overlap_before overlap_after words_before words_after notes`. In notes, name the main sources and anything you could not verify.
 
 ## Finish the run

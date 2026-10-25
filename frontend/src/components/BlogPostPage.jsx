@@ -139,7 +139,7 @@ export default function BlogPostPage({ post, onEnquireClick }) {
               maxHeight: '400px',
               backgroundColor: 'var(--bg-dark-800)'
             }}>
-              <img 
+              <img loading="lazy" 
                 src={post.image} 
                 alt={post.title} 
                 style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} 

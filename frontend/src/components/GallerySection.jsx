@@ -163,7 +163,7 @@ export default function GallerySection({ onEnquireClick }) {
               {currentItem.type === 'video' ? (
                 <video src={currentItem.src} controls autoPlay className="lightbox-video" />
               ) : (
-                <img src={currentItem.src} alt={currentItem.title} className="lightbox-image" />
+                <img loading="lazy" src={currentItem.src} alt={currentItem.title} className="lightbox-image" />
               )}
             </div>
 

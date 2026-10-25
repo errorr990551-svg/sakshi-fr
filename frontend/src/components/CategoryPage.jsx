@@ -141,7 +141,7 @@ export default function CategoryPage({ category, onEnquireClick }) {
                   <div>
                     {prod.Image && (
                       <div style={{ width: '100%', aspectRatio: '3/2', overflow: 'hidden', borderBottom: '1px solid var(--border-color)', backgroundColor: 'var(--bg-dark-900)' }}>
-                        <img 
+                        <img loading="lazy" 
                           src={prod.Image} 
                           alt={prod['Product Name']} 
                           style={{ 

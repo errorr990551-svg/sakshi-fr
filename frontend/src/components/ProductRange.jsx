@@ -68,7 +68,7 @@ export default function ProductRange() {
             {visibleCategories.map((c) => (
               <div className="product-card" key={c['Category Slug']}>
                 <div className="product-img-wrap">
-                  <img src={getCategoryImage(c['Parent Category'])} alt={c['Parent Category']} />
+                  <img loading="lazy" src={getCategoryImage(c['Parent Category'])} alt={c['Parent Category']} />
                 </div>
                 <div className="product-info">
                   <div>

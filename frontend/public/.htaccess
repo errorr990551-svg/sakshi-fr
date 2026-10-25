@@ -1,5 +1,6 @@
 # .htaccess — steelmanufacturer.in (Apache 2.4+ & LiteSpeed)
 DirectoryIndex index.html
+AddDefaultCharset UTF-8
 
 # ============ 1. Canonical Domain, Protocol & Consolidated 301 Redirects ============
 RewriteEngine On
@@ -37,6 +38,29 @@ RewriteRule ^andhra-pradesh/?$ https://steelmanufacturer.in/market-area/andhra-p
 RewriteRule ^odisha/?$ https://steelmanufacturer.in/market-area/odisha/ [L,R=301]
 RewriteRule ^306-stainless-steel-round-bar/?$ https://steelmanufacturer.in/304-stainless-steel-round-bar/ [L,R=301]
 
+
+# C2. Old WordPress URLs with a clear equivalent page -> 301 to it
+RewriteRule ^blind-flange/?$ https://steelmanufacturer.in/flanges/blind-flanges/ [L,R=301]
+RewriteRule ^slip-on-flange/?$ https://steelmanufacturer.in/flanges/slip-on-flanges/ [L,R=301]
+RewriteRule ^long-weld-neck-flange/?$ https://steelmanufacturer.in/flanges/long-weld-neck-flanges/ [L,R=301]
+RewriteRule ^weld-neck-flanges-wnrf-manufacturer-exporter-sakshi-forge/?$ https://steelmanufacturer.in/flanges/weld-neck-flanges/ [L,R=301]
+RewriteRule ^industrial-flanges-manufacturer-exporter-in-india-sakshi-forge/?$ https://steelmanufacturer.in/flanges/ [L,R=301]
+RewriteRule ^electropolished-pipes?-and-fittings/?$ https://steelmanufacturer.in/electropolished-pipes/electropolished-pipe-and-fittings/ [L,R=301]
+RewriteRule ^stainless-steel-forged-fittings-range/?$ https://steelmanufacturer.in/stainless-steel-forged-fittings/ [L,R=301]
+RewriteRule ^stainless-steel-flanges-range/?$ https://steelmanufacturer.in/stainless-steel-flanges/ [L,R=301]
+RewriteRule ^stainless-steel-seamless-pipe-range/?$ https://steelmanufacturer.in/stainless-steel-seamless-pipe/ [L,R=301]
+RewriteRule ^stainless-steel-pipe-range/?$ https://steelmanufacturer.in/stainless-steel-pipes/ [L,R=301]
+RewriteRule ^asme-b16-11-stainless-steel-forged-fittings-manufacturer/?$ https://steelmanufacturer.in/asme-b16-11-forged-fittings/ [L,R=301]
+RewriteRule ^metal-weight-calculation-formulas-technical-charts-sakshi-forge/?$ https://steelmanufacturer.in/weight-calculator/ [L,R=301]
+RewriteRule ^stainless-steel-dairy-fittings-manufacturer-in-mumbai/?$ https://steelmanufacturer.in/ss-dairy-fittings/ [L,R=301]
+RewriteRule ^the-ultimate-guide-to-asme-b16-5-flanges-specifications-ratings-and-selection-for-2026/?$ https://steelmanufacturer.in/blog/asme-b16-5-flange-dimensions-pressure-ratings/ [L,R=301]
+RewriteRule ^forged-fittings-vs-buttweld-fittings-the-ultimate-comparison-guide/?$ https://steelmanufacturer.in/blog/butt-weld-vs-forged-fittings-guide/ [L,R=301]
+
+# C3. Old WordPress URLs and city pages with no equivalent -> 410 Gone (Google drops them faster than 404)
+RewriteRule ^(?:wp-content|wp-json|wp-admin|wp-includes|category|tag|author|feed)(?:/.*)?$ - [G,L]
+RewriteRule ^(?:plate-flange|olets|plates|electropolished-pipe-fittings/bs-4825-fittings)/?$ - [G,L]
+RewriteRule ^(?:ss-pipe-vs-ss-tube-the-definitive-2026-comparison-guide|how-to-choose-right-industrial-flange-engineering-guide|ss-pipe-fittings-complete-guide|forged-pipe-fittings-guide-pressure-classes-standards|types-of-industrial-flanges-complete-guide|butt-weld-pipe-fittings-asme-b16-9-complete-guide|stainless-steel-flanges-grades-standards-applications|india-steel-manufacturing-industry-growth-2024|ansi-vs-din-vs-jis-flange-standard-comparison|how-stainless-steel-pipe-and-tube-price-is-calculated-[a-z0-9-]+|stainless-steel-pipe-and-tube-standards-[a-z0-9-]+|socket-weld-vs-threaded-pipe-fittings-[a-z0-9-]+|the-complete-guide-to-industrial-flanges|astm-a182-stainless-steel-flanges-[a-z0-9-]+|stainless-steel-flanges-oil-gas-industry-specifications|corrosion-resistance-stainless-steel-industrial-guide|complete-guide-to-ss-pipe-fittings-[a-z0-9-]+|carbon-steel-flanges-price-in-india-[a-z0-9-]+|stainless-steel-pipe-vs-tube-the-definitive-[a-z0-9-]+|stainless-steel-pipes-industrial-guide-grades-applications|forged-flanges-vs-cast-flanges-[a-z0-9-]+|stainless-steel-flanges-for-oil-gas-industry-in-india-[a-z0-9-]+|304-vs-316-vs-202-vs-duplex-stainless-steel-[a-z0-9-]+|seamless-vs-welded-erw-stainless-steel-pipe-and-tube-[a-z0-9-]+|how-to-select-the-right-flange-for-industrial-piping-[a-z0-9-]+|stainless-steel-price-per-kg-in-india-[a-z0-9-]+)/?$ - [G,L]
+RewriteRule ^(?:electropolished-pipes?-(?:manufacturer|supplier)-(?:in-)?|industrial-pipe-flange-manufacturer-in-)(?:karnal|gorakhpur|bathinda|ballari|patiala|hisar|korba|chandigarh|bilaspur|rohtak|kota|dhanbad|tirupur|morbi)(?:-sakshi-forge)?/?$ - [G,L]
 
 # D. 301 Redirect Legacy City URLs to /market-area/<city>/ (covers pipe/pipes, with or without 'in-')
 RewriteRule ^electropolished-pipes?-manufacturer-(?:in-)?([^/]+)/?$ https://steelmanufacturer.in/market-area/$1/ [L,R=301]
@@ -78,6 +102,7 @@ RewriteRule ^ %{REQUEST_FILENAME}/index.html [L]
 
 # ============ 3. Genuinely Unknown URLs Return REAL HTTP 404 (Fixes Soft-404) ============
 ErrorDocument 404 /404.html
+ErrorDocument 410 /404.html
 
 RewriteCond %{REQUEST_URI} !^/api
 RewriteCond %{REQUEST_FILENAME} !-f

@@ -294,7 +294,7 @@ export default function ProductsPage({ onEnquireClick }) {
                     <div>
                       {p.Image && (
                         <div style={{ width: '100%', aspectRatio: '3/2', overflow: 'hidden', borderBottom: '1px solid var(--border-color)', backgroundColor: 'var(--bg-dark-900)' }}>
-                          <img 
+                          <img loading="lazy" 
                             src={p.Image} 
                             alt={p['Product Name']} 
                             style={{ 

@@ -142,7 +142,7 @@ export default function BlogPage() {
             >
               {featuredPost.image ? (
                 <div style={{ height: '100%', minHeight: '260px', overflow: 'hidden', backgroundColor: '#12151c' }}>
-                  <img 
+                  <img loading="lazy" 
                     src={featuredPost.image} 
                     alt={featuredPost.title} 
                     style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
@@ -267,7 +267,7 @@ export default function BlogPage() {
                   <div>
                     {post.image ? (
                       <div style={{ height: '180px', overflow: 'hidden', backgroundColor: '#12151c', borderBottom: '1px solid var(--border-color)' }}>
-                        <img 
+                        <img loading="lazy" 
                           src={post.image} 
                           alt={post.title} 
                           style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.3s ease' }}

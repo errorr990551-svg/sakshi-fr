@@ -1,0 +1,51 @@
+{
+  "slug": "daman",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Daman's Industrial Estates: Oral Solid Dosage at Scale",
+      "paragraphs": [
+        "Daman packs a large industrial base into a small territory. Government data for the district lists 39 industrial estates with 3,443 industrial units, with plastics, pharmaceuticals and yarn texturising as the major industries. Private estates grew up in the Dabhel, Kachigam and Bhimpore panchayat areas, and the Daman Industrial Estate at Kadaiya sits alongside them.",
+        "The pharmaceutical side is dominated by high-volume oral solid dosage. Wockhardt, for example, describes its Bhimpore site in Silver Industrial Estate as a tablets-and-capsules plant with a stated capacity of 2,400 million units, and its Kadaiya site as licensed for tablets including potent drug categories. CDSCO's WHO-GMP list also places formulation plants at Kachigam and Dabhel. That mix - very high throughput, export registrations and some potent products - shapes what Daman plants ask of their pipework."
+      ]
+    },
+    {
+      "heading": "Purified Water for High-Volume Tablet and Capsule Plants",
+      "paragraphs": [
+        "In an oral solid dosage block, purified water (PW) is used for granulation binders, film-coating solutions and equipment washing. At Daman volumes the PW loop rarely stops, and the washing load is heavy, so the loop design matters as much as the material.",
+        "316L is the standard material from RO permeate onwards. For an ambient PW loop, an ASME BPE SF1 mechanically polished finish is common and defensible; an SF4 electropolished finish becomes worthwhile where the loop is hot-sanitised, at the storage tank outlet and on points of use feeding granulation and coating preparation directly. Electropolishing also helps on the CIP supply and return lines of granulators and coating pans, where faster, more repeatable cleaning shortens changeovers - valuable when a plant runs many products through the same equipment."
+      ]
+    },
+    {
+      "heading": "Potent Products and Cleaning Validation",
+      "paragraphs": [
+        "Plants licensed for potent drug categories must show that cleaning removes residues to very low limits before the next product. In practice that pushes them towards surfaces that clean predictably: electropolished product-contact and wash-water lines, fully drainable runs, and welds inspected internally. A smoother, passive bore does not replace a validated cleaning procedure, but it reduces the variability that makes cleaning validation hard.",
+        "For these lines we supply 316L electropolished tube with an internal Ra report per lot, PMI on every length and an EN 10204 3.1 certificate traced to heat number, so the material evidence supports the cleaning-validation file."
+      ]
+    },
+    {
+      "heading": "Plastics and Texturising Units: Where Hygienic Tube Is Not Needed",
+      "paragraphs": [
+        "Daman's plastics and yarn texturising units are a large part of its economy, but they rarely need hygienic stainless tube. Process cooling water, compressed air and oil systems are outside our product range's sweet spot. The exceptions are plastics units moulding primary packaging for pharma and food customers, which may run purified-water or cleanroom utilities that their customers audit - for those, certified 304L or 316L sanitary tube is the sensible choice."
+      ]
+    },
+    {
+      "heading": "Delivery to Kachigam, Bhimpore, Dabhel and Kadaiya",
+      "paragraphs": [
+        "Daman is a short road run up the coast from our Taloja MIDC works in Mumbai, and we confirm dispatch and transit in writing with each quotation. Hazira Port, about 110 km away, is the nearest listed sea gateway for export-bound project material. Give us the estate name and plot number with your enquiry - deliveries inside Daman's private estates are planned around their gate timings.",
+        "Nearby clusters we also supply:"
+      ],
+      "links": [
+        { "label": "Silvassa", "href": "/market-area/silvassa/" },
+        { "label": "Vapi", "href": "/market-area/vapi/" },
+        { "label": "Valsad and Umbergaon", "href": "/market-area/valsad/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "NeGD: Daman industrial profile", "url": "https://negd.gov.in/isl/Directory/statedata/522" },
+    { "title": "Wockhardt: Daman manufacturing units", "url": "https://www.wockhardt.com/about-us/our-manufacturing-units/daman-india/" },
+    { "title": "CDSCO: List of WHO-GMP certified units", "url": "https://cdsco.gov.in/opencms/resources/UploadCDSCOWeb/2018/UploadIndustryCommon/listwhogmp.pdf" },
+    { "title": "NITI Aayog Library: Daman & Diu development plan", "url": "https://digitallibrary.niti.gov.in/items/4cf92edf-d3a1-483c-ad9b-8ffad147eb07" }
+  ]
+}

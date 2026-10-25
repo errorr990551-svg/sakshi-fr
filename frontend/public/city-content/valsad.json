@@ -1,0 +1,49 @@
+{
+  "slug": "valsad",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Valsad District Beyond Vapi: Umbergaon and Sarigam",
+      "paragraphs": [
+        "Valsad district is best known for Vapi, the chemical hub of Gujarat, but its southern estates have their own character. GIDC records list the Umbergam estate at about 197 hectares, notified in 1975, and the much larger Sarigam estate at about 509 hectares, notified in 1997. Older district data counted roughly 396 allotted plots at Umargam and 395 at Sarigam. The district's industrial base is described as chemicals, textiles and paper, with pharmaceutical and intermediate units concentrated in Sarigam's chemical zone.",
+        "Central Pollution Control Board listings place pharmaceutical and drug-intermediate units in GIDC Sarigam. For a pipe supplier, that means Valsad enquiries split between process chemistry, where the alloy matters most, and finished-pharma utilities, where the surface finish matters most."
+      ]
+    },
+    {
+      "heading": "Pharmaceutical Intermediates: Alloy First, Finish Second",
+      "paragraphs": [
+        "Intermediate and bulk-chemical plants run reactions in glass-lined, carbon-steel and high-alloy equipment. Stainless tube appears on solvent transfer, utilities, sampling and dosing lines. The right question there is which grade survives the process: 316L for general service; duplex 2205 where chlorides or hot acidic streams create pitting or stress-corrosion risk; higher alloys where your process licensor specifies them.",
+        "An electropolished finish earns its place in intermediates plants mainly on high-purity solvent and dosing lines, analyser and sampling lines, and the QC laboratory - anywhere that carry-over or particulate would contaminate the next batch or distort a test result."
+      ]
+    },
+    {
+      "heading": "When an Intermediates Plant Moves Toward GMP",
+      "paragraphs": [
+        "Intermediate makers that supply regulated API producers increasingly face customer audits of their own. The final isolation, drying and purified-water systems are where those audits focus. Moving those sections to 316L tube with documented finish - SF1 for ambient purified water, SF4 electropolished for critical product contact - and keeping full material traceability is usually the most cost-effective way to satisfy an API customer's quality team without rebuilding the whole plant."
+      ]
+    },
+    {
+      "heading": "Paper, Textile and Plastics Units",
+      "paragraphs": [
+        "Valsad's paper, textile and plastics units mostly need corrosion-resistant utility piping rather than hygienic tube. We supply them where a certified stainless line is genuinely required, and we will say when a standard pickled finish is enough."
+      ]
+    },
+    {
+      "heading": "Delivery to Umbergaon and Sarigam",
+      "paragraphs": [
+        "Umbergaon and Sarigam are among the nearest Gujarat estates to our Taloja MIDC works in Mumbai, reached by road; dispatch and transit are confirmed with each quotation. Hazira Port, about 110 km away, is the nearest listed sea gateway for export-bound projects.",
+        "Neighbouring clusters:"
+      ],
+      "links": [
+        { "label": "Vapi", "href": "/market-area/vapi/" },
+        { "label": "Daman", "href": "/market-area/daman/" },
+        { "label": "Silvassa", "href": "/market-area/silvassa/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Gujarat Industrial Development Corporation - Wikipedia (estate list)", "url": "https://en.wikipedia.org/wiki/Gujarat_Industrial_Development_Corporation" },
+    { "title": "MSME-DI: Brief Industrial Profile of Valsad", "url": "https://dcmsme.gov.in/old/dips/BIP VALSAD SEPT2912.pdf" },
+    { "title": "CPCB: Gujarat industrial units list", "url": "https://www.cpcb.nic.in/upload/thrust-area/state/Gujarat.pdf" }
+  ]
+}

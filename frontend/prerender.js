@@ -321,6 +321,13 @@ async function runPrerender() {
     console.log(`Pre-rendering URL: ${routePath}`);
 
     // Render body using server bundle
+    // In-depth city content (public/city-content/<slug>.json): visible to the server render
+    // and embedded in the page so hydration renders the same markup.
+    const citySlugMatch = routePath.match(/^\/market-area\/([^/]+)\/?$/);
+    const cityDeepPath = citySlugMatch ? path.join(__dirname, 'public/city-content', `${citySlugMatch[1]}.json`) : null;
+    const cityDeep = cityDeepPath && fs.existsSync(cityDeepPath) ? JSON.parse(fs.readFileSync(cityDeepPath, 'utf-8')) : null;
+    globalThis.__CITY_DEEP__ = cityDeep;
+
     let bodyHtml = '';
     try {
       bodyHtml = render(routePath);
@@ -688,6 +695,12 @@ async function runPrerender() {
 
     // Inject JSON-LD Schema
     html = html.replace('</head>', `${schemaBlockHtml}\n</head>`);
+
+    if (cityDeep) {
+      const embedded = JSON.stringify(cityDeep).replace(/</g, '\\u003c');
+      html = html.replace('</head>', `<script id="city-deep-data" type="application/json">${embedded}</script>\n</head>`);
+    }
+    globalThis.__CITY_DEEP__ = null;
 
     // Inject rendered body
     html = html.replace('<div id="root"></div>', `<div id="root">${bodyHtml}</div>`);

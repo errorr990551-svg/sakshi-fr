@@ -1,0 +1,52 @@
+{
+  "slug": "nalagarh",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Nalagarh: The Expanding End of the BBN Belt",
+      "paragraphs": [
+        "Nalagarh, in Solan district, closes the Baddi-Barotiwala-Nalagarh (BBN) industrial area to the north-west. Its estates - Nalagarh Industrial Area and the Manpura belt - mix pharmaceutical formulation with engineering and packaging units, which makes it less single-industry than Baddi.",
+        "Nalagarh is also where much of the belt's new land is. In September 2025 the Himachal government was considering developing around 300 acres of the Gheer Industrial Area in Nalagarh with power, water and road infrastructure, with a cabinet sub-committee asking for a cost-benefit analysis before deciding. Whether or not that particular plan proceeds, Nalagarh enquiries are more likely than elsewhere in the belt to be for new blocks and greenfield plants rather than upgrades."
+      ]
+    },
+    {
+      "heading": "Planning Pipework for a Greenfield Pharma Block",
+      "paragraphs": [
+        "A new plant is the cheapest moment to get water-system piping right, and the most common place to overspend. The practical approach is to grade each line by what touches it.",
+        "Water for injection and clean steam, if the block will make sterile products: electropolished 316L to ASME BPE SF4, orbital welded, with full traceability. Purified water distribution: 316L, with SF1 often sufficient for ambient loops and SF4 where the loop is hot-sanitised or feeds product directly. Process utilities such as chilled water, compressed air and vacuum: no hygienic finish needed - standard stainless or other materials as your design specifies.",
+        "Decide on one dimensional system (ASME BPE OD tube is the usual choice in India) before ordering, and include spares and test spools in the first order so that later repairs match the original heat and finish documentation."
+      ]
+    },
+    {
+      "heading": "Engineering and Fabrication Buyers in Nalagarh",
+      "paragraphs": [
+        "Nalagarh's engineering units fabricate skids, tanks and process equipment, some of it for the formulators in the belt. These buyers order tube by drawing: specific ODs, cut lengths and a finish that matches their end customer's specification. What they need from a mill is consistency and certificates they can hand on unchanged at FAT and SAT.",
+        "We supply against your drawing and your customer's standard, with the EN 10204 3.1 certificate, PMI record and, for electropolished lots, the Ra report issued by the plant that made and finished the tube - so there is no gap in the chain of custody between our works and your customer's validation file."
+      ]
+    },
+    {
+      "heading": "Packaging and Utility Lines",
+      "paragraphs": [
+        "Packaging plants around Manpura mostly need hygienic tube only for utilities serving pharma customers - purified-water rinsing, cleanroom humidification or coating lines. For these, 304L or 316L sanitary tube with a mechanically polished finish is usually the right, economical answer; we will say so rather than sell an electropolished finish that is not needed."
+      ]
+    },
+    {
+      "heading": "Delivery to Nalagarh, Manpura and the Gheer Area",
+      "paragraphs": [
+        "Material travels by road from our Taloja MIDC works in Mumbai; dispatch and transit time are confirmed with each quotation. For export-bound projects the nearest listed container gateway is ICD Ludhiana, about 115 km away. Tell us whether delivery is to a running plant or a construction site - greenfield sites often need consignments split to match the installation sequence.",
+        "Neighbouring BBN estates and nearby clusters:"
+      ],
+      "links": [
+        { "label": "Baddi", "href": "/market-area/baddi/" },
+        { "label": "Barotiwala", "href": "/market-area/barotiwala/" },
+        { "label": "Solan and Parwanoo", "href": "/market-area/solan/" },
+        { "label": "Mohali", "href": "/market-area/mohali/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Nalagarh - Wikipedia", "url": "https://en.wikipedia.org/wiki/Nalagarh" },
+    { "title": "The Week: Himachal govt mulls development of 300-acre industrial belt in Nalagarh (Sept 2025)", "url": "https://www.theweek.in/wire-updates/business/2025/09/24/nrg18-hp-industry.html" },
+    { "title": "Industry in Himachal Pradesh - Wikipedia", "url": "https://en.wikipedia.org/wiki/Industry_in_Himachal_Pradesh" }
+  ]
+}

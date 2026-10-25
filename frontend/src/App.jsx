@@ -26,6 +26,7 @@ import { odishaCityData } from './data/odishaCityData';
 import MaharashtraCityPage from './components/MaharashtraCityPage';
 import Footer from './components/Footer';
 import EPRelatedLinks from './components/EPRelatedLinks';
+import CityDeepContent from './components/CityDeepContent';
 import ProductModal from './components/ProductModal';
 import EnquiryModal from './components/EnquiryModal';
 import { ArrowRight } from 'lucide-react';
@@ -687,6 +688,9 @@ function App(props) {
         </section>
       )}
 
+      {(resolvedRoute.type === 'market-city' || resolvedRoute.type === 'maharashtra-city') && currentPath.startsWith('/market-area/') && (
+        <CityDeepContent slug={currentPath.replace(/^\/market-area\/|\/$/g, '')} />
+      )}
       {resolvedRoute.type !== '404' && <EPRelatedLinks path={currentPath} />}
 
       {/* Footer Sitemap */}

@@ -1,0 +1,53 @@
+{
+  "slug": "solan",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Solan District: Pharma, Fruit Processing and One of India's Oldest Breweries",
+      "paragraphs": [
+        "Solan district is unusual among Indian industrial districts because three very different hygienic industries sit within a short drive of each other. The pharmaceutical belt of Baddi-Barotiwala-Nalagarh lies in the south of the district; Parwanoo, on the Kalka-Shimla route, is an industrial town whose sectors 1, 2, 3 and 5 are given over to industry and whose best-known plant is HPMC's fruit processing unit; and Solan town itself has been a brewing centre since the nineteenth century.",
+        "This page covers Solan Industrial Estate and Parwanoo HPSIDC. For the pharma estates further south, see the Baddi, Barotiwala and Nalagarh pages."
+      ]
+    },
+    {
+      "heading": "Fruit Processing at Parwanoo: Juice Concentrate Lines",
+      "paragraphs": [
+        "HPMC's Parwanoo unit is the state corporation's largest fruit processing plant. In October 2024 it processed about 653 tonnes of apple juice concentrate, around 42 percent of a record 1,545 tonnes produced across HPMC's three plants that season.",
+        "Juice concentrate work is seasonal and intense: crushing, enzymatic treatment, clarification, evaporation and aseptic filling run hard for a few months. The stainless choices follow the process. Apple juice is acidic, so 304 is the minimum and 316L is the safer grade where hot acidic product and CIP chemistry combine. An electropolished finish earns its place on aseptic filling and on lines that must be cleaned and held between seasons without residue; the bulk of the fruit-handling and pulping equipment is well served by a mechanically polished finish.",
+        "Off-season shutdowns are the usual window for replacing pipework, so orders for Parwanoo plants are best placed with enough lead time to land before the harvest."
+      ]
+    },
+    {
+      "heading": "Brewing in Solan: Where an Electropolished Finish Is Worth It",
+      "paragraphs": [
+        "Brewing in the area dates back to Edward Dyer's brewery at Kasauli, which produced Lion, often described as Asia's first beer; brewing later moved to Solan, which had more reliable water, and the business became today's Mohan Meakin. Solan's name lives on in the company's Solan No. 1 whisky.",
+        "For any brewery, the honest answer on electropolished tube is selective use. It is justified on yeast propagation and handling, bright-beer lines and aseptic or sterile filtration, where any residue risks infection of the next batch. Hot-side wort lines, cooling water and most utilities run well on a lower-cost finish. Breweries with European equipment may also need DIN 11850 dimensions rather than ASME BPE OD tube - tell us which your plant uses."
+      ]
+    },
+    {
+      "heading": "Pharma and Food Units in Solan Industrial Estate",
+      "paragraphs": [
+        "Pharmaceutical and food units in and around Solan Industrial Estate follow the same rules as the wider district: 316L for purified water and product contact in pharma, 304 or 316L for food product lines depending on acidity and salt, and documented certification for anything a GMP or food-safety auditor will look at. Every electropolished lot we supply carries an EN 10204 3.1 certificate, a PMI record and an internal Ra report."
+      ]
+    },
+    {
+      "heading": "Delivery to Solan and Parwanoo",
+      "paragraphs": [
+        "Solan and Parwanoo are supplied by road from our Taloja MIDC works in Mumbai, with dispatch and transit confirmed per quotation. For export-bound material ICD Ludhiana, about 140 km away, is the nearest listed container gateway. Parwanoo's location on the plains edge makes it the easier delivery point; Solan town deliveries may need smaller vehicles on the hill road, which we plan at order stage.",
+        "Other clusters in the district and nearby:"
+      ],
+      "links": [
+        { "label": "Baddi", "href": "/market-area/baddi/" },
+        { "label": "Barotiwala", "href": "/market-area/barotiwala/" },
+        { "label": "Nalagarh", "href": "/market-area/nalagarh/" },
+        { "label": "Paonta Sahib", "href": "/market-area/paonta-sahib/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Parwanoo - Wikipedia", "url": "https://en.wikipedia.org/wiki/Parwanoo" },
+    { "title": "The Daily Pioneer: Himachal sets record with 1,545 MT of apple juice concentrate (2024)", "url": "https://www.dailypioneer.com/2024/state-editions/himachal-sets-record-with-1-545-mt-of-apple-juice-concentrate-production.html" },
+    { "title": "Kasauli Brewery and Distillery - Wikipedia", "url": "https://en.wikipedia.org/wiki/Kasauli_Brewery_and_Distillery" },
+    { "title": "Mohan Meakin - Wikipedia", "url": "https://en.wikipedia.org/wiki/Mohan_Meakin" }
+  ]
+}

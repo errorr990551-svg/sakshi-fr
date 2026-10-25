@@ -1,0 +1,70 @@
+{
+  "slug": "baddi",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Baddi and the BBN Belt: Why Pipe Specifications Here Are Written for Auditors",
+      "paragraphs": [
+        "Baddi sits in Solan district at the southern edge of Himachal Pradesh and anchors the Baddi-Barotiwala-Nalagarh (BBN) industrial area, the largest industrial area in the state. Most of the belt grew after 2003, when central excise and income-tax exemptions drew small and mid-sized manufacturers to the Himalayan foothills, and pharmaceutical formulation became its defining industry.",
+        "Industry representatives quoted in The Tribune have estimated that roughly one in three medicines made in India comes out of this cluster, with a combined turnover put at around Rs 40,000 crore. Those are industry estimates rather than official statistics, but they explain the character of enquiries from Baddi: high volumes of oral solid and liquid formulations, many plants with export registrations, and a steady flow of capacity upgrades.",
+        "For a pipe supplier that means one thing. In the Baddi Industrial Area and EPIP Phase I & II, the person approving a purified-water or process line is usually thinking about the next inspection, not just the next production run."
+      ]
+    },
+    {
+      "heading": "What Baddi Formulation Plants Make, and Which Lines Need Electropolished Tube",
+      "paragraphs": [
+        "Not every stainless line in a formulation plant needs an electropolished bore. The useful split in Baddi is by dosage form and by water grade.",
+        "Tablet and capsule blocks use purified water (PW) for granulation, coating solutions and equipment washing. The PW generation skid and distribution loop are where 316L tube with a controlled internal finish pays for itself, because the loop runs continuously, is sanitised on a schedule and is sampled for microbial counts. Electropolishing is common here but not mandatory; many oral-solid plants specify ASME BPE SF1 mechanically polished tube for PW and reserve SF4 electropolished tube for the hottest or most critical sections.",
+        "Oral liquids and syrups put PW in direct product contact and add sugar-rich, viscous product transfer. Residue hold-up is the problem, so product-transfer and CIP return lines are where an electropolished 316L bore shortens cleaning cycles and cleaning validation.",
+        "Injectable and ophthalmic lines, where a Baddi plant has them, move to water for injection (WFI) and clean steam. These are the lines where an electropolished SF4 finish is the norm, because hot WFI accelerates rouging and the loop has to stay clean between costly sanitisation shutdowns.",
+        "FMCG units in the belt (personal care, nutraceutical and food products) use sanitary tube on product transfer and CIP, usually in 304 or 316L depending on product chemistry. Packaging plants rarely need hygienic tube at all beyond utility water."
+      ]
+    },
+    {
+      "heading": "The Inspection Context: Revised Schedule M, WHO-GMP and Export Registrations",
+      "paragraphs": [
+        "India notified a revised Schedule M under the Drugs Rules in December 2023, bringing domestic good manufacturing practice closer to WHO-GMP. Large manufacturers had a six-month transition; smaller manufacturers were given additional time, to the end of 2025, to upgrade. Much of Baddi's formulation base falls in the MSME category, so water-system and utility upgrades have been a recurring reason for pipework enquiries from the belt.",
+        "Plants that export typically also hold WHO-GMP certification, and some carry USFDA or other regulatory inspections. In all of these audits the piping evidence looks the same: material certificates traceable to heat number, a documented surface finish for product- and water-contact lines, weld records and passivation records. We supply the material side of that file - an EN 10204 3.1 certificate per heat, PMI on every length and an internal Ra report for electropolished lots - so your validation team is not chasing paperwork after installation."
+      ]
+    },
+    {
+      "heading": "Specifying a Purified-Water or WFI Loop for a Baddi Plant: Working Checklist",
+      "bullets": [
+        "Grade: 316L for PW, WFI and clean steam; 304L only for non-critical utilities.",
+        "Finish: decide per line, not per project - SF1 is often adequate for ambient PW; specify SF4 (Ra <= 0.38 um) for hot PW, WFI and clean-steam condensate.",
+        "Standard: ASTM A270 sanitary tube, with the S2 pharmaceutical supplement where your URS calls for it; ASME BPE dimensions and tolerances for orbital welding.",
+        "Sanitisation method: hot-water and ozone-sanitised loops both suit 316L EP tube; tell us which you use so we can flag any finish or passivation considerations.",
+        "Dead legs and drainability: design to the ASME BPE dead-leg guidance and slope lines to drain; a low Ra does not compensate for a line that holds water.",
+        "Joining: orbital welding with internal purge, followed by passivation; ask your fabricator for weld logs and borescope records on critical joints.",
+        "Documents to request at order stage: 3.1 MTC per heat, PMI record, Ra report for EP lots, and dimensional report if your validation plan requires it."
+      ]
+    },
+    {
+      "heading": "Getting Tube to the Baddi Industrial Area and EPIP",
+      "paragraphs": [
+        "Baddi is a long-haul road delivery from our works at Taloja MIDC, Mumbai. We confirm the dispatch date and transit time in writing with each quotation rather than quoting a generic figure, because consignment size and the delivery point inside the BBN belt both affect it. For export-oriented projects the nearest container gateway listed for Baddi is ICD Ludhiana, about 120 km away.",
+        "Every electropolished length leaves the works end-capped and individually sleeved, so the bore reaches your stores in the condition it was tested in. On arrival, check heat numbers against the certificate, confirm caps are intact and keep lengths off the floor and away from carbon-steel fabrication until installation."
+      ]
+    },
+    {
+      "heading": "Other Himachal and North India Clusters We Supply",
+      "paragraphs": [
+        "Plants in the BBN belt often share contractors and maintenance teams with neighbouring estates. If your group runs sites elsewhere in the region, these pages cover them:"
+      ],
+      "links": [
+        { "label": "Barotiwala", "href": "/market-area/barotiwala/" },
+        { "label": "Nalagarh", "href": "/market-area/nalagarh/" },
+        { "label": "Solan and Parwanoo", "href": "/market-area/solan/" },
+        { "label": "Paonta Sahib", "href": "/market-area/paonta-sahib/" },
+        { "label": "Mohali", "href": "/market-area/mohali/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Baddi - Wikipedia", "url": "https://en.wikipedia.org/wiki/Baddi" },
+    { "title": "Outlook Business: Here For Good (BBN belt and the 2003 tax incentives)", "url": "https://www.outlookbusiness.com/magazine/story/here-for-good-3392" },
+    { "title": "The Tribune: HP pharma cluster to cash in on falling Chinese imports", "url": "https://www.tribuneindia.com/news/archive/business/hp-pharma-cluster-to-cash-in-on-falling-chinese-imports-614671" },
+    { "title": "India Briefing: Pharmaceutical SMEs gain time to meet revised Schedule M", "url": "https://india-briefing.com/news/india-extends-gmp-compliance-deadline-to-december-2025-35679.html" },
+    { "title": "Business Standard: Small pharma companies get 1-year breather to implement Schedule M", "url": "https://www.business-standard.com/health/small-pharma-companies-get-1-year-breather-to-implement-schedule-m-125021201111_1.html" }
+  ]
+}

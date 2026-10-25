@@ -1,0 +1,50 @@
+{
+  "slug": "silvassa",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Silvassa: Textiles, Plastics and a Pharmaceutical Minority",
+      "paragraphs": [
+        "Silvassa, capital of the former Dadra and Nagar Haveli, grew into an industrial hub on the back of its proximity to Mumbai and the Vadodara petrochemical complex. Its estates - Silvassa Industrial Estate, Masat, Dadra, Naroli and Amli among them - are dominated by textiles and plastics. Government investment material describes the combined Dadra and Nagar Haveli and Daman and Diu territory as a leader in integrated textile plants, accounting for around 80 percent of India's texturising yarn production.",
+        "Pharmaceutical formulation is a smaller but established presence; investment guides list major drugmakers with manufacturing in the territory. For a hygienic-tube supplier that makes Silvassa a market where the first job is to separate the lines that truly need an electropolished bore from the many that do not."
+      ]
+    },
+    {
+      "heading": "Formulation Plants: Getting the Water System Right",
+      "paragraphs": [
+        "Formulation units in Silvassa make oral solids and liquids, so purified water (PW) is the critical utility. The guidance is the same we give any formulator, applied to Silvassa's typical scale of mid-sized plants: 316L from RO permeate onwards; SF1 mechanically polished tube for an ambient PW loop; SF4 electropolished tube for hot-sanitised sections, tank outlets and points of use that feed product. Oral liquids add product-transfer and CIP lines, where an electropolished bore shortens cleaning and makes residue limits easier to meet.",
+        "When a Silvassa plant extends an existing loop, the most common mistake is mixing dimensional standards. Confirm whether the loop is built to ASME BPE OD tube or another series before ordering, so new welds line up with old ones."
+      ]
+    },
+    {
+      "heading": "Chemical Additive and Compounding Units around Naroli",
+      "paragraphs": [
+        "Government listings show chemical producers in the Silvassa-Naroli area making PVC stabilisers and stearates, PVC compounds, fatty acids and plasticisers for the plastics industry. These are corrosion and temperature problems rather than hygiene problems. 316L is the usual starting point for stainless dosing and transfer lines; duplex 2205 is worth considering where chlorides or stress-corrosion risk are present. An electropolished finish adds little here except on laboratory and sampling lines where carry-over between batches matters."
+      ]
+    },
+    {
+      "heading": "Textile and Plastics Plants: Honest Scoping",
+      "paragraphs": [
+        "Texturising and spinning units, and most plastics moulding plants, do not need hygienic tube in their process. Where they buy from us, it is for dye-kitchen dosing, laboratory water or for moulding primary packaging destined for pharma or food customers who audit their suppliers. In those cases certified 304L or 316L tube with a mechanically polished finish usually does the job at lower cost than an electropolished one, and we will recommend it."
+      ]
+    },
+    {
+      "heading": "Delivery to Silvassa, Masat and Dadra",
+      "paragraphs": [
+        "Silvassa is supplied by road from our Taloja MIDC works in Mumbai, with dispatch and transit confirmed per quotation. Hazira Port, about 120 km away, is the nearest listed sea gateway for export-bound projects. Every electropolished length is end-capped and sleeved before dispatch.",
+        "Neighbouring clusters:"
+      ],
+      "links": [
+        { "label": "Daman", "href": "/market-area/daman/" },
+        { "label": "Vapi", "href": "/market-area/vapi/" },
+        { "label": "Valsad and Umbergaon", "href": "/market-area/valsad/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Silvassa - Wikipedia", "url": "https://en.wikipedia.org/wiki/Silvassa" },
+    { "title": "IndBiz: Dadra and Nagar Haveli and Daman and Diu", "url": "https://indbiz.gov.in/state/dadra-and-nagar-haveli-daman-diu" },
+    { "title": "MSME-DI: Dadra and Nagar Haveli State Profile 2016-17", "url": "https://dcmsme.gov.in/old/dips/state_wise_profile_16-17/4. Dadara Nagar State Profile 2016-17.pdf" },
+    { "title": "IBEF: Dadra Nagar Haveli and Daman Diu Infographics (April 2026)", "url": "https://www.ibef.org/uploads/states/infographics/large/Dadra-Nagra-Haveli-and-Daman-Diu-Infographics-April-2026.pdf" }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "paonta-sahib",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Paonta Sahib: Sirmaur's Pharmaceutical Estate on the Yamuna",
+      "paragraphs": [
+        "Paonta Sahib, in Sirmaur district on the Himachal-Uttarakhand border, is a pharmaceutical town separate from the better-known BBN belt. A state industries profile from 2015 counted 127 plots in the Paonta Sahib industrial area and noted that registered units were concentrated in pharmaceuticals, chemicals and engineering. Industrial activity extends beyond the main estate into areas such as Gondpur.",
+        "What distinguishes Paonta Sahib from many formulation clusters is the presence of sterile manufacturing. Pharmaceutical Technology has documented a large plant here, spread over about 14 acres, built for contract manufacture of sterile injectables. Sterile production changes the pipework conversation entirely."
+      ]
+    },
+    {
+      "heading": "Sterile Injectables: WFI, Clean Steam and Why the Finish Is Not Optional",
+      "paragraphs": [
+        "Injectable plants run water for injection (WFI) loops that are typically kept hot and circulating, clean-steam generators feeding sterilisers and equipment SIP, and product-contact transfer lines in compounding and filling. In all three, electropolished 316L tube to ASME BPE SF4 (internal Ra no more than 0.38 um) is the industry norm rather than an upgrade.",
+        "The reasons are practical. Hot WFI promotes rouging, the iron-oxide film that eventually forces a shutdown for derouging; an electropolished, chromium-rich surface delays its onset. Clean steam condensate needs to drain completely from every low point. And endotoxin and particulate limits for injectables leave no room for surfaces that trap residue. Electropolishing does not remove the need for passivation after welding, periodic inspection or good drainability, but it makes each of them more effective."
+      ]
+    },
+    {
+      "heading": "Oral Formulations and Chemical Units in the Estate",
+      "paragraphs": [
+        "Alongside sterile manufacturing, Paonta Sahib has oral formulation plants and chemical units. Oral-solid plants use purified water at ambient or hot-sanitised temperature, where SF1 316L is often adequate and SF4 is reserved for critical points. Chemical units mostly need corrosion resistance rather than finish: tell us the process chemistry and we will recommend 316L, duplex or a higher alloy, and say plainly where an electropolished bore adds nothing."
+      ]
+    },
+    {
+      "heading": "Documentation a Sterile-Product Auditor Will Ask For",
+      "bullets": [
+        "EN 10204 3.1 material certificate traced to the heat number on every length.",
+        "PMI (positive material identification) record confirming 316L chemistry.",
+        "Internal Ra report for each electropolished lot, stating the measurement method.",
+        "From your fabricator: weld maps, orbital weld logs, borescope records and passivation records for the installed system.",
+        "Dimensional records if your validation protocol requires incoming verification."
+      ]
+    },
+    {
+      "heading": "Delivery to Paonta Sahib",
+      "paragraphs": [
+        "Paonta Sahib is supplied by road from our Taloja MIDC works in Mumbai; we confirm dispatch and transit time in writing with each quotation. The nearest listed container gateway for export-bound material is ICD Dadri, about 240 km away. Electropolished lengths travel end-capped and sleeved, and for WFI and clean-steam projects we recommend inspecting caps and sleeves on receipt before material enters your stores.",
+        "Related pages for other Himachal and nearby clusters:"
+      ],
+      "links": [
+        { "label": "Baddi", "href": "/market-area/baddi/" },
+        { "label": "Solan and Parwanoo", "href": "/market-area/solan/" },
+        { "label": "Dehradun", "href": "/market-area/dehradun/" },
+        { "label": "Haridwar", "href": "/market-area/haridwar/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "MSME-DI: Brief Industries Profile of Sirmaur (H.P.)", "url": "https://dcmsme.gov.in/dips/Brief Industries Profile of  Sirmaur (H.P.)_28416.pdf" },
+    { "title": "Pharmaceutical Technology: Kilitch Drugs manufacturing plant, Paonta Sahib", "url": "https://www.pharmaceutical-technology.com/projects/kilitch-drugs-manufacturing-plant/" }
+  ]
+}

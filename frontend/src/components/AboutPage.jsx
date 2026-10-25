@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Calendar, CheckSquare, Truck, Handshake, Shield, HelpCircle, FileText, ArrowRight, Phone, MessageSquare, MapPin, Mail, Award, CheckCircle, Factory, ShieldCheck, Cpu } from 'lucide-react';
 import { handleLinkClick, withSlash } from '../utils/router';
+import { withoutDuplicateSchemaTypes } from '../utils/seo';
 
 export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, onShowContactDetails }) {
   const handleShowContact = onShowContactDetails || (() => onEnquireClick && onEnquireClick('About Page Contact Request'));
@@ -106,7 +107,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
     const script = document.createElement('script');
     script.id = 'about-page-schema';
     script.type = 'application/ld+json';
-    script.text = JSON.stringify(schemaData);
+    script.text = JSON.stringify(withoutDuplicateSchemaTypes(schemaData, script.id));
     document.head.appendChild(script);
 
     return () => {

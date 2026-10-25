@@ -7,6 +7,7 @@ import {
   Compass, ArrowUpRight
 } from 'lucide-react';
 import { handleLinkClick, withSlash } from '../utils/router';
+import { withoutDuplicateSchemaTypes } from '../utils/seo';
 import { PRIORITY_30_CITIES } from '../data/priorityCities';
 
 export default function HomePage({ onEnquireClick }) {
@@ -154,7 +155,7 @@ export default function HomePage({ onEnquireClick }) {
     const script = document.createElement('script');
     script.id = 'homepage-seo-schema';
     script.type = 'application/ld+json';
-    script.text = JSON.stringify(schemaData);
+    script.text = JSON.stringify(withoutDuplicateSchemaTypes(schemaData, script.id));
     document.head.appendChild(script);
 
     return () => {

@@ -19,6 +19,8 @@ export function withSlash(href) {
 
 export function navigate(path) {
   const targetPath = withSlash(path || '/');
+  // Leaving the pre-rendered page: from now on the head is managed client-side.
+  window.__SAKSHI_HYDRATED_PATH__ = null;
   // Update browser address bar without page reload
   window.history.pushState(null, "", targetPath);
   // Trigger popstate event so our App router hears it and updates the view

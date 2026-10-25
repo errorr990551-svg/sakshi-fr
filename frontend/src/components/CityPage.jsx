@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { ChevronRight, ShieldCheck, Truck, Sparkles, MapPin, HelpCircle, ChevronDown, ChevronUp, Phone, Mail, FileText, Globe, Building, Award, Activity, ArrowRight, Shield, Layers, FileCheck, HelpCircle as FaqIcon, CheckCircle2, Sliders, Cpu, Zap, Box, MessageSquare } from 'lucide-react';
 import { handleLinkClick, withSlash } from '../utils/router';
+import { stripPrerenderedSchemaTypes } from '../utils/seo';
 import { customCityData } from '../data/customCityData';
 import CityProductPillars from './CityProductPillars';
 
@@ -238,6 +239,8 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
 
     const existingScript = document.getElementById('city-jsonld-schema');
     if (existingScript) existingScript.remove();
+    // This block's FAQ/breadcrumb match the visible page; drop the server-rendered copies.
+    stripPrerenderedSchemaTypes(['FAQPage', 'BreadcrumbList']);
 
     const script = document.createElement('script');
     script.id = 'city-jsonld-schema';

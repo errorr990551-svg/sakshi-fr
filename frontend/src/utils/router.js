@@ -1,3 +1,5 @@
+import { REDIRECTED_PATHS } from '../data/redirects';
+
 /**
  * Kept for backward compatibility
  */
@@ -13,8 +15,10 @@ export function isTrailingSlashCityPath(pathname) {
 export function withSlash(href) {
   if (typeof href !== 'string' || !href.startsWith('/') || href.startsWith('//')) return href;
   const [, pathname, rest] = href.match(/^([^?#]*)(.*)$/);
-  if (pathname.endsWith('/') || /\.[a-z0-9]{2,5}$/i.test(pathname)) return href;
-  return pathname + '/' + rest;
+  if (/\.[a-z0-9]{2,5}$/i.test(pathname)) return href;
+  const slashed = pathname.endsWith('/') ? pathname : `${pathname}/`;
+  // Links to merged pages go straight to the page they were merged into (no 301 hop)
+  return (REDIRECTED_PATHS[slashed] || slashed) + rest;
 }
 
 export function navigate(path) {

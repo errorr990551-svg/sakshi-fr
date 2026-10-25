@@ -1,7 +1,7 @@
 import React, { useMemo, useEffect } from 'react';
 import { handleLinkClick, withSlash } from '../utils/router';
 import marketCitiesData from '../data/market_cities.json';
-import { REDIRECTED_CITY_PATHS } from '../data/redirectedCities';
+import { isRedirectedPath } from '../data/redirects';
 
 export default function MarketAreaPage() {
   // Group cities by state and sort alphabetically
@@ -10,7 +10,7 @@ export default function MarketAreaPage() {
     const seenCityInState = new Set();
 
     marketCitiesData.forEach(city => {
-      if (REDIRECTED_CITY_PATHS[withSlash(city.path || '')]) return;
+      if (isRedirectedPath(city.path)) return;
       const state = city.state || 'Other';
       const key = `${state}::${(city.city || '').toLowerCase().trim()}`;
       if (seenCityInState.has(key)) return;

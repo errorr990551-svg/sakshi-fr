@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename);
 
 const BASE_URL = 'https://steelmanufacturer.in';
 
-const isRedirected = (formatted) => Object.keys(REDIRECTED_CITY_PATHS).some(p => formatted === `${BASE_URL}${p}`);
+const isRedirected = (formatted) => isRedirectedPath(formatted);
 
 const corePath = path.join(__dirname, 'src/data/core_pages.json');
 const categoriesPath = path.join(__dirname, 'src/data/categories.json');
@@ -24,7 +24,7 @@ const epBuildSpecData = fs.existsSync(epBuildSpecPath)
   : [];
 
 import { blogPosts } from './src/data/blogData.js';
-import { REDIRECTED_CITY_PATHS } from './src/data/redirectedCities.js';
+import { isRedirectedPath } from './src/data/redirects.js';
 
 const newPages = [
   'gallery',
@@ -271,6 +271,7 @@ let imageSitemap = `<?xml version="1.0" encoding="UTF-8"?>
 
 let imageCount = 0;
 products.forEach(prod => {
+  if (isRedirectedPath(`/${prod['URL Slug']}`)) return;
   if (prod.Image && prod['URL Slug']) {
     const pageLoc = formatUrl(`${BASE_URL}/${prod['URL Slug']}/`);
     let imgPath = prod.Image.trim();

@@ -23,6 +23,9 @@ RewriteRule ^(?:market-area/|electropolished-pipes?-(?:manufacturer|supplier)-(?
 RewriteRule ^(?:market-area/|electropolished-pipes?-(?:manufacturer|supplier)-(?:in-)?|industrial-pipe-flange-manufacturer-in-)hubballi(?:-sakshi-forge)?/?$ https://steelmanufacturer.in/market-area/hubballi-dharwad/ [L,R=301]
 RewriteRule ^(?:market-area/|electropolished-pipes?-(?:manufacturer|supplier)-(?:in-)?|industrial-pipe-flange-manufacturer-in-)chhatrapati-sambhajinagar(?:-sakshi-forge)?/?$ https://steelmanufacturer.in/market-area/aurangabad/ [L,R=301]
 
+# B2. Merged pages (generated at build time from src/data/redirects.js by prerender.js)
+# @MERGED_PAGES@
+
 # C. 301 Redirect Core URL Duplicates in One Hop
 RewriteRule ^home/?$ https://steelmanufacturer.in/ [L,R=301]
 RewriteRule ^marketplace/?$ https://steelmanufacturer.in/market-area/ [L,R=301]
@@ -45,7 +48,7 @@ RewriteRule ^slip-on-flange/?$ https://steelmanufacturer.in/flanges/slip-on-flan
 RewriteRule ^long-weld-neck-flange/?$ https://steelmanufacturer.in/flanges/long-weld-neck-flanges/ [L,R=301]
 RewriteRule ^weld-neck-flanges-wnrf-manufacturer-exporter-sakshi-forge/?$ https://steelmanufacturer.in/flanges/weld-neck-flanges/ [L,R=301]
 RewriteRule ^industrial-flanges-manufacturer-exporter-in-india-sakshi-forge/?$ https://steelmanufacturer.in/flanges/ [L,R=301]
-RewriteRule ^electropolished-pipes?-and-fittings/?$ https://steelmanufacturer.in/electropolished-pipes/electropolished-pipe-and-fittings/ [L,R=301]
+RewriteRule ^electropolished-pipes?-and-fittings/?$ https://steelmanufacturer.in/electropolished-pipe-fittings/ [L,R=301]
 RewriteRule ^stainless-steel-forged-fittings-range/?$ https://steelmanufacturer.in/stainless-steel-forged-fittings/ [L,R=301]
 RewriteRule ^stainless-steel-flanges-range/?$ https://steelmanufacturer.in/stainless-steel-flanges/ [L,R=301]
 RewriteRule ^stainless-steel-seamless-pipe-range/?$ https://steelmanufacturer.in/stainless-steel-seamless-pipe/ [L,R=301]

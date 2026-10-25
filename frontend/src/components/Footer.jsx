@@ -105,7 +105,7 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
           <div className="footer-col">
             <h4>Grades, Standards & Export</h4>
             <ul className="footer-links">
-              <li><a href="/astm-a270-sanitary-tube/" onClick={(e) => handleLinkClick(e, '/astm-a270-sanitary-tube/')}>ASTM A270 Sanitary Tube</a></li>
+              <li><a href="/astm-a270-electropolished-tubes/" onClick={(e) => handleLinkClick(e, '/astm-a270-electropolished-tubes/')}>ASTM A270 Electropolished Tubes</a></li>
               <li><a href="/super-duplex-2507-products/" onClick={(e) => handleLinkClick(e, '/super-duplex-2507-products/')}>Super Duplex 2507 Products</a></li>
               <li><a href="/inconel-625-flanges/" onClick={(e) => handleLinkClick(e, '/inconel-625-flanges/')}>Inconel 625 Flanges</a></li>
               <li><a href="/astm-a105-flanges/" onClick={(e) => handleLinkClick(e, '/astm-a105-flanges/')}>ASTM A105 Flanges</a></li>

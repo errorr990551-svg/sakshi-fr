@@ -1,11 +1,11 @@
 import epBuildSpecData from '../data/ep_build_spec_data.json';
 import { handleLinkClick, withSlash } from '../utils/router';
-import { REDIRECTED_CITY_PATHS } from '../data/redirectedCities';
+import { isRedirectedPath } from '../data/redirects';
 
 // Crawlable links between the electropolished pipe/tube pages, built from the
 // parent field in ep_build_spec_data.json: the parent page, its child pages and
 // its sibling pages. Without this block most EP pages had no internal links at all.
-const byUrl = new Map(epBuildSpecData.filter((p) => p.url && p.url !== '/' && !REDIRECTED_CITY_PATHS[withSlash(p.url)]).map((p) => [withSlash(p.url), p]));
+const byUrl = new Map(epBuildSpecData.filter((p) => p.url && p.url !== '/' && !isRedirectedPath(p.url)).map((p) => [withSlash(p.url), p]));
 
 const labelFor = (url) => {
   const page = byUrl.get(url);

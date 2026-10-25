@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { REDIRECTED_CITY_PATHS } from './src/data/redirectedCities.js';
+import { REDIRECTED_PATHS, isRedirectedPath } from './src/data/redirects.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -298,10 +298,17 @@ async function runPrerender() {
     };
   }
 
-  // 4. Render each route (skipping duplicate city URLs the server 301-redirects, see .htaccess section B)
-  const redirectedSlugs = new Set(Object.keys(REDIRECTED_CITY_PATHS).map(p => p.replace(/^\/|\/$/g, '')));
+  // Write the merged-page 301 rules into the deployed .htaccess
+  const htaccessPath = path.join(__dirname, 'dist/.htaccess');
+  const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const mergedRules = Object.entries(REDIRECTED_PATHS)
+    .map(([from, to]) => `RewriteRule ^${escapeRegex(from.replace(/^\/|\/$/g, ''))}/?$ ${BASE_URL}${to} [L,R=301]`)
+    .join('\n');
+  fs.writeFileSync(htaccessPath, fs.readFileSync(htaccessPath, 'utf-8').replace('# @MERGED_PAGES@', mergedRules));
+
+  // 4. Render each route (skipping merged pages the server 301-redirects, see src/data/redirects.js)
   for (const route of routes) {
-    if (redirectedSlugs.has(route.slug.replace(/^\/|\/$/g, ''))) continue;
+    if (isRedirectedPath(`/${route.slug}`)) continue;
     // Determine path relative to domain
     let routePath = '/' + route.slug;
     if (route.type === 'home') {

@@ -1,0 +1,51 @@
+{
+  "slug": "lote-parshuram",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Lote Parshuram MIDC: Konkan's Chemical and API Zone",
+      "paragraphs": [
+        "Lote Parshuram MIDC lies in Khed taluka, Ratnagiri district, between Chiplun and Khed on the Konkan coast. It is one of Maharashtra's designated chemical industrial zones, with chemicals, pharmaceuticals (mainly APIs rather than formulations), agrochemicals and paints among its industries. A Down To Earth report described the zone as having around 138 factory units, more than a hundred of them producing chemicals.",
+        "API makers in the zone include veterinary and human active-ingredient producers; recent plot-sale material, for example, describes a veterinary anthelmintic API unit making molecules such as albendazole and fenbendazole. That API focus, combined with strict effluent oversight, is what defines pipework decisions in Lote."
+      ]
+    },
+    {
+      "heading": "API Plants: The Final Stages Decide the Specification",
+      "paragraphs": [
+        "An API process has two very different halves. The synthesis half - reactions, extractions, solvent recovery - runs in glass-lined and alloy equipment where corrosion resistance decides material choice. The finishing half - final crystallisation, filtration, drying, milling and packing - is where the product must meet pharmacopoeial purity and where GMP inspectors focus.",
+        "Electropolished 316L tube belongs in that finishing half and in the purified-water system that serves it: mother-liquor and wash lines to the centrifuge, solvent-wash headers, and transfer to blending and packing. A smooth, passive, fully drainable bore reduces product hold-up and makes cleaning validation between campaigns easier - important for multi-product API plants that switch molecules."
+      ]
+    },
+    {
+      "heading": "Solvent Recovery and Effluent: Corrosion and Compliance",
+      "paragraphs": [
+        "Solvent recovery columns, condensers and receivers often see chlorinated solvents, acids and water together - a combination that pits 316L. Duplex 2205 or a higher alloy is frequently the safer specification; an electropolished finish adds little there.",
+        "Khed's chemical zone has faced closure orders over effluent contamination in the past, and the common effluent treatment plant (recorded at about 6 MLD) sets the pace for the estate. Cleaner product-contact lines that need less wash solvent and water help on both cost and compliance."
+      ]
+    },
+    {
+      "heading": "Agrochemical and Paint Units",
+      "paragraphs": [
+        "Crop-protection and paint manufacturers in the zone use stainless mainly on reagent dosing, utilities, sampling and laboratory lines. For most of these a pickled or mechanically polished finish is sufficient; we reserve electropolished tube for lines where carry-over between batches would affect product quality or test results."
+      ]
+    },
+    {
+      "heading": "Delivery to Lote Parshuram",
+      "paragraphs": [
+        "Lote is reached by road down the Mumbai-Goa highway from our Taloja MIDC works; dispatch and transit are confirmed in writing with each quotation. JNPT Nhava Sheva, about 215 km away, is the nearest listed gateway for export-bound material.",
+        "Other Konkan and Raigad chemical zones:"
+      ],
+      "links": [
+        { "label": "Mahad", "href": "/market-area/mahad/" },
+        { "label": "Roha and Dhatav", "href": "/market-area/roha/" },
+        { "label": "Kolhapur", "href": "/market-area/kolhapur/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Lote, India - Wikipedia", "url": "https://en.wikipedia.org/wiki/Lote,_India" },
+    { "title": "Down To Earth: Factories poison Khed", "url": "https://www.downtoearth.org.in/environment/factories-poison-khed-890" },
+    { "title": "MPCB: SRO Chiplun industry database (2014)", "url": "https://mpcb.gov.in/sites/default/files/industrial-statistics/sro-industry/SROchiplun_SROdatabase_31072014.pdf" },
+    { "title": "Ascent: Information memorandum, sale of plots at Lote Parshuram MIDC", "url": "https://www.ascconline.com/blog/wp-content/uploads/2023/11/Information-Memorandum-of-Sale-of-Plots-at-Lote-Parshuram-MIDC-.pdf" }
+  ]
+}

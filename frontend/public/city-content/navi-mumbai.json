@@ -1,0 +1,78 @@
+{
+  "slug": "navi-mumbai",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Navi Mumbai: Our Home Market",
+      "paragraphs": [
+        "Our works is in Taloja MIDC, inside Navi Mumbai's industrial belt, so for plants in Navi Mumbai we are not a distant mill - we are a neighbour. That makes short road deliveries and small top-up quantities practical in a way long-distance supply is not.",
+        "Navi Mumbai's industry sits in two main MIDC areas. The Trans-Thane Creek (TTC) industrial area runs along the Thane-Belapur Road through Rabale, Mahape, Turbhe and Pawane; pollution-board filings describe it as a large, mature estate of around 27 square kilometres with over 3,000 units in chemicals, dyes and intermediates, bulk drugs, pharmaceuticals and pesticides. Taloja MIDC, near Panvel, is the newer chemical zone where land has been cheaper than in TTC."
+      ]
+    },
+    {
+      "heading": "TTC Pharma and Bulk-Drug Units",
+      "paragraphs": [
+        "TTC hosts pharmaceutical formulation, bulk-drug and R&D facilities. Formulation plants need purified-water loops and product-contact lines in 316L - SF1 mechanically polished for ambient purified water, SF4 electropolished for hot-sanitised loops, WFI and critical product contact. Bulk-drug plants need electropolished tube mainly in their finishing sections and water systems, with alloy selection driving everything upstream.",
+        "R&D and pilot plants have a different need: many small lengths in several sizes, often at short notice, with full certification for each. Being in the same city as these labs makes that practical."
+      ]
+    },
+    {
+      "heading": "Taloja: Chemicals and Pharma Next Door",
+      "paragraphs": [
+        "Taloja's chemical units run corrosive processes where duplex 2205 or higher alloys often outperform 316L, and where an electropolished finish is justified only on purity-sensitive transfer, sampling and laboratory lines. Pharmaceutical units in Taloja follow the same water-system and product-contact rules as TTC.",
+        "Taloja has also been under regulatory pressure over effluent - joint CPCB and MPCB inspections in 2018 found the CETP not functioning properly, and closure notices followed. Shorter, more complete cleaning on product lines helps plants manage their discharge load."
+      ]
+    },
+    {
+      "heading": "Breakdowns and Shutdowns: What Proximity Allows",
+      "bullets": [
+        "Short-notice replacement lengths for a failed purified-water or product line; we confirm what is in stock and the delivery time when you call.",
+        "Small quantities for maintenance stores without the minimum-freight problem of long-distance supply.",
+        "Coordinated deliveries timed to a planned shutdown window rather than a single bulk dispatch."
+      ]
+    },
+    {
+      "heading": "Delivery Across Rabale, Mahape, Turbhe, Pawane and Taloja",
+      "paragraphs": [
+        "All Navi Mumbai estates are a short road run from our works; we confirm timing with each quotation. JNPT Nhava Sheva, about 25 km away, handles export-bound material.",
+        "Other nearby clusters:"
+      ],
+      "links": [
+        {
+          "label": "Mumbai",
+          "href": "/market-area/mumbai/"
+        },
+        {
+          "label": "Panvel",
+          "href": "/market-area/panvel/"
+        },
+        {
+          "label": "Ambernath",
+          "href": "/market-area/ambernath/"
+        },
+        {
+          "label": "Badlapur",
+          "href": "/market-area/badlapur/"
+        },
+        {
+          "label": "Mahad",
+          "href": "/market-area/mahad/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "NGT: Affidavit in OA No. 77/2016 (TTC industrial area profile)",
+      "url": "https://www.greentribunal.gov.in/sites/default/files/news_updates/Affidavit by R-4 & 5 in OA No.77-2016 (page nos.592-708).pdf"
+    },
+    {
+      "title": "CPCB: CEPI Action Plan, Navi Mumbai",
+      "url": "https://cpcb.nic.in/industrial_pollution/New_Action_Plans/CEPI_Action Plan_Navi Mumbai.pdf"
+    },
+    {
+      "title": "MPCB: Navi Mumbai-I industry list",
+      "url": "https://mpcb.gov.in/sites/default/files/industrial-statistics/sro-industry/Navi-Mumbai-I.pdf"
+    }
+  ]
+}

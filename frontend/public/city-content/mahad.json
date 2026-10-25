@@ -1,0 +1,53 @@
+{
+  "slug": "mahad",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "MIDC Mahad: A Chemical Zone on the Savitri",
+      "paragraphs": [
+        "MIDC Mahad in Raigad district was set up in 1981-82, with the Additional Mahad Industrial Area following in 1995-96. Pollution-board filings place the estate near the old NH-17 and about 3 km from the Savitri river. The estate is dominated by chemical manufacturing - specialty and fine chemicals, dyes and pesticides - with bulk-drug and intermediate makers among the consent holders listed by the Maharashtra Pollution Control Board.",
+        "Effluent is handled through a common effluent treatment plant of about 7.5 MLD, with treated effluent piped to the saline reach of the Savitri (Bankot) creek. Mahad has a documented compliance history: in 2010 the board issued closure directions to units found discharging sub-standard effluent. Plants in Mahad therefore work under close scrutiny of both process discharge and housekeeping."
+      ]
+    },
+    {
+      "heading": "Bulk Drugs and Intermediates: Where Stainless Tube Fits",
+      "paragraphs": [
+        "Reaction chemistry in Mahad plants runs mostly in glass-lined, carbon-steel and high-alloy equipment, and process piping is usually specified by the process licensor or EPC. Stainless tube from a mill like ours fits on three kinds of line: solvent and reagent transfer where 316L is compatible with the chemistry; utilities such as purified water, nitrogen and process water; and the final stages of an API process - crystallisation, centrifugation, drying and packing - where product purity and cleanability decide the specification.",
+        "Electropolishing earns its place in those final API stages and in purified-water systems, because the purified product and the water it touches must not pick up particulate or residue. Upstream in the reaction train, alloy selection matters far more than finish: tell us the solvents, acids and chloride levels and we will advise 316L, duplex 2205 or a higher alloy, and say so plainly when an electropolished bore adds nothing."
+      ]
+    },
+    {
+      "heading": "Chlorides, Acids and Pitting: Grade Selection for Mahad Chemistry",
+      "bullets": [
+        "316L: general solvent service, purified water, nitrogen and most utilities.",
+        "Duplex 2205: chloride-bearing streams, brine and hot dilute acids where 316L would pit or stress-crack.",
+        "Higher alloys: strong acids and halogenated chemistry as specified by your licensor - we will tell you if a requirement is outside our range rather than offer an unsuitable substitute.",
+        "Finish: electropolished SF4 on final API stages and high-purity lines; mechanically polished or pickled elsewhere."
+      ]
+    },
+    {
+      "heading": "Effluent Pressure and Cleaner Lines",
+      "paragraphs": [
+        "With effluent volumes watched closely, anything that reduces wash water and cleaning chemical has value in Mahad. Electropolished product-contact lines clean faster and more completely, which shortens cleaning cycles and the effluent they generate. That is a secondary benefit - the primary reason to specify EP is product quality - but in a CETP-constrained estate it is a real one."
+      ]
+    },
+    {
+      "heading": "Delivery to MIDC Mahad",
+      "paragraphs": [
+        "Mahad is a short road run down the Konkan coast from our Taloja MIDC works in Raigad district - both estates are in the same district. Dispatch and transit are confirmed in writing per quotation. For export-bound project material the nearest listed gateway is JNPT Nhava Sheva, about 120 km away.",
+        "Nearby chemical zones:"
+      ],
+      "links": [
+        { "label": "Roha and Dhatav", "href": "/market-area/roha/" },
+        { "label": "Lote Parshuram", "href": "/market-area/lote-parshuram/" },
+        { "label": "Navi Mumbai and Taloja", "href": "/market-area/navi-mumbai/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "MPCB: Raigad environmental report", "url": "https://www.mpcb.gov.in/sites/default/files/focus-area-reports-documents/envreportraigad.pdf" },
+    { "title": "MPCB: Affidavit on MIDC Mahad CETP", "url": "https://www.mpcb.gov.in/sites/default/files/common-effluent-treatment-plant/general/affadavit/Affidavit_5012012.pdf" },
+    { "title": "MPCB: SRO Mahad industry database (2014)", "url": "https://mpcb.gov.in/sites/default/files/industrial-statistics/sro-industry/SRO_Mahad_srodatabase_31072014.pdf" },
+    { "title": "MPCB: Savitri river action plan (2019)", "url": "https://mpcb.gov.in/sites/default/files/river-polluted/action-plan-priority/Action_plans_priority_V_SAVITRI_2019_03072019.pdf" }
+  ]
+}

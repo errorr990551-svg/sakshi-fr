@@ -1,0 +1,71 @@
+{
+  "slug": "nagpur",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Nagpur: Butibori, Hingna and the MIHAN Hub",
+      "paragraphs": [
+        "Nagpur sits at the geographic centre of India and its industry reflects that position. Butibori MIDC, on the city's southern edge, is often described as one of Asia's largest industrial areas by land, home to textile and infrastructure manufacturers alongside process industries, a common effluent treatment plant and a hazardous-waste facility. Hingna MIDC is the city's older engineering estate. MIHAN - the Multi-modal International Cargo Hub and Airport at Nagpur - combines an airport-linked logistics hub with a special economic zone, and the Maharashtra Airport Development Company has reported employment there of more than 30,000 people.",
+        "For electropolished tube, Nagpur's interest lies in its food, agro-processing and pharmaceutical units rather than in its larger textile and engineering base."
+      ]
+    },
+    {
+      "heading": "Orange Processing and Juice Plants",
+      "paragraphs": [
+        "Nagpur oranges carry a Geographical Indication tag, and processing capacity has grown around them. In 2025, industry press reported the opening at MIHAN of a large orange processing plant described as Asia's largest, extracting juice and recovering volatile oils from the peel.",
+        "Citrus processing is acidic and abrasive to hygiene: juice, pulp and concentrate leave sugars and pectin that cling to rough surfaces, and essential-oil recovery adds solvents and temperature. 316L is the safer grade for citrus product contact and CIP; an electropolished finish is justified on juice and concentrate transfer, aseptic processing and filling, and essential-oil product lines where carry-over would affect flavour. Fruit receiving, washing and peel handling are well served by standard sanitary finishes."
+      ]
+    },
+    {
+      "heading": "Pharmaceutical and Food Units in Butibori and Hingna",
+      "paragraphs": [
+        "Pharmaceutical formulation units in Nagpur's estates need 316L purified-water systems and product-contact lines - SF1 mechanically polished tube for ambient loops, SF4 electropolished for hot-sanitised loops, WFI and critical product contact. Food and agro-processors handling pulses, spices, dairy and beverages follow food-grade practice: 304 for most product lines, 316L where salt, acid or aggressive cleaning is involved, and an electropolished bore where cleaning between batches is critical."
+      ]
+    },
+    {
+      "heading": "Defence and Engineering Units",
+      "paragraphs": [
+        "Nagpur's defence and engineering manufacturers rarely need hygienic tube in their core processes. Where they buy high-cleanliness stainless, it is for hydraulic test rigs, fluid systems and laboratory utilities, where traceability and documented cleanliness matter more than a sanitary finish. We supply certified tube for these applications and will advise when a standard finish is the right call."
+      ]
+    },
+    {
+      "heading": "Delivery to Nagpur",
+      "paragraphs": [
+        "Nagpur is a long-haul road delivery from our Taloja MIDC works; dispatch and transit are confirmed in writing with each quotation. For export-bound project material, JNPT Nhava Sheva, about 830 km away, is the nearest listed sea gateway.",
+        "Other central India clusters:"
+      ],
+      "links": [
+        {
+          "label": "Bhopal",
+          "href": "/market-area/bhopal/"
+        },
+        {
+          "label": "Indore",
+          "href": "/market-area/indore/"
+        },
+        {
+          "label": "Raipur",
+          "href": "/market-area/raipur/"
+        },
+        {
+          "label": "Jalgaon",
+          "href": "/market-area/jalgaon/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Multi-modal International Cargo Hub and Airport at Nagpur - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Multi-modal_International_Cargo_Hub_and_Airport_at_Nagpur"
+    },
+    {
+      "title": "Organiser: Nagpur - the industrial hub (Dec 2025)",
+      "url": "https://organiser.org/2025/12/03/328382/bharat/nagpur-the-industrial-hub-scripting-the-story-of-swadeshi/"
+    },
+    {
+      "title": "MPCB: SRO Nagpur-II industry list",
+      "url": "https://mpcb.gov.in/sites/default/files/industrial-statistics/sro-industry/SRONagpur_II.pdf"
+    }
+  ]
+}

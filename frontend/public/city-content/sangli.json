@@ -1,0 +1,50 @@
+{
+  "slug": "sangli",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Sangli and Miraj: Sugar, Turmeric and the Kupwad MIDC",
+      "paragraphs": [
+        "Sangli district sits in Maharashtra's sugar belt; with more than thirty sugar factories it is among the highest sugar-producing districts in India. Sangli city is also known as Asia's largest trading centre for turmeric, and the spice trade supports a cluster of grinding and processing units. Industry within the city is concentrated in Kupwad MIDC and the Miraj MIDC, where foundries, spinning mills, chocolate factories, edible-oil manufacturers and cold-storage operators sit side by side.",
+        "That agricultural base is what makes Sangli relevant to hygienic stainless tube: sugar refining, spice processing, confectionery and edible oil all have product-contact lines that must be cleaned reliably."
+      ]
+    },
+    {
+      "heading": "Sugar Mills and Refineries: Where Hygienic Tube Fits",
+      "paragraphs": [
+        "Much of a sugar mill - cane handling, milling, boilers - is outside our range. Hygienic stainless tube becomes relevant downstream, in refined sugar, liquid sugar and syrup handling, and in the CIP systems that serve them. Hot sugar solutions leave deposits that harbour microbial growth if lines do not drain and clean completely.",
+        "304 stainless covers most syrup and liquid-sugar duty; 316L is the safer grade where cleaning chemicals are aggressive. An electropolished finish is worth specifying on liquid-sugar and syrup transfer lines that feed food or beverage customers, where residue between cleaning cycles is the main risk."
+      ]
+    },
+    {
+      "heading": "Turmeric, Spice and Edible-Oil Processing",
+      "paragraphs": [
+        "Spice grinding is a dry process, but extraction, oleoresin and paste production use solvents, oils and cleaning water. Oleoresin and extract lines need corrosion resistance to solvents and clean, drainable product paths; 316L is the usual choice, with an electropolished bore where colour or flavour carry-over between products matters.",
+        "Edible-oil units use stainless on refined-oil transfer and storage connections. Grade 304 or 316L with a mechanically polished finish usually meets the requirement; we recommend electropolished tube only where your customer's specification or your own cleaning regime calls for it."
+      ]
+    },
+    {
+      "heading": "Confectionery and Cold Storage",
+      "paragraphs": [
+        "Chocolate and confectionery plants handle warm, fatty, sugar-rich product that adheres to rough surfaces. Product transfer and tempering lines in 316L with a smooth internal finish reduce build-up and cleaning time. Cold-storage operators, by contrast, need hygienic tube only for washdown and process-water lines, where a certified 304 tube is generally sufficient."
+      ]
+    },
+    {
+      "heading": "Delivery to Kupwad, Miraj and Sangli",
+      "paragraphs": [
+        "Sangli is supplied by road from our Taloja MIDC works; dispatch and transit are confirmed in writing with each quotation. JNPT Nhava Sheva, about 390 km away, is the nearest listed gateway for export-bound material. Sugar-sector buyers often plan pipework replacement in the off-season, so we recommend placing orders well before the crushing season starts.",
+        "Nearby clusters:"
+      ],
+      "links": [
+        { "label": "Kolhapur", "href": "/market-area/kolhapur/" },
+        { "label": "Satara", "href": "/market-area/satara/" },
+        { "label": "Solapur", "href": "/market-area/solapur/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Sangli Metropolitan Region - Wikipedia", "url": "https://en.wikipedia.org/wiki/Sangli_Metropolitan_Region" },
+    { "title": "Sangli (archived Wikipedia, 2006): turmeric trade and sugar factories", "url": "https://wikipedia2006.classicistranieri.com/en/s/a/n/Sangli.html" },
+    { "title": "MPCB: SRO Sangli industry list", "url": "https://mpcb.gov.in/sites/default/files/industrial-statistics/sro-industry/SRO_Sangli.pdf" }
+  ]
+}

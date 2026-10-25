@@ -77,7 +77,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
           "@id": "https://steelmanufacturer.in/#organization",
           "name": "Sakshi Forge",
           "url": "https://steelmanufacturer.in/",
-          "logo": "https://steelmanufacturer.in/logo.png",
+          "logo": "https://steelmanufacturer.in/favicon.svg",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Balaji Industrial Compound, Taloja MIDC",

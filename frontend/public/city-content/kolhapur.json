@@ -1,0 +1,56 @@
+{
+  "slug": "kolhapur",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Kolhapur: India's Foundry Cluster and a Co-operative Dairy Powerhouse",
+      "paragraphs": [
+        "Kolhapur has three MIDC estates - Shiroli, Gokul Shirgaon and Kagal Five Star - and two industries that define it. The first is metal casting: the Centre for Science and Environment describes a cluster of around 275 foundries, mostly small-scale, contributing about 7 percent of India's casting production. The second is dairy: the Kolhapur district co-operative milk producers' union, known by its brand Gokul, runs a large processing plant at Gokul Shirgaon, described in its profiles as having a capacity of around 7 lakh litres per day, with butter, milk powder and ghee production.",
+        "For a hygienic-tube supplier, the dairy is the main story - and the foundry cluster is a reminder that most of Kolhapur's industry does not need electropolished tube at all."
+      ]
+    },
+    {
+      "heading": "Dairy Processing: Reception, Pasteurisation, Powder and CIP",
+      "paragraphs": [
+        "A large co-operative dairy runs milk reception, chilling, separation, pasteurisation, standardisation, packing, butter and ghee making and spray-drying for milk powder, all tied together by CIP. Every product-contact line must come clean every cycle, without hold-up points, at the volumes a co-operative of this scale handles.",
+        "304 or 304L is the usual grade for milk and cream lines; 316L becomes worthwhile where CIP chemistry is aggressive, on salted butter lines, and in hot sections of the powder plant. Buyers reference 3-A Sanitary Standards and ASTM A270. An electropolished finish shortens CIP cycles and reduces biofilm risk on product-contact lines, but drainability and correct slope matter as much as the Ra figure - a perfectly finished line that holds milk is still a hygiene risk."
+      ]
+    },
+    {
+      "heading": "Satellite Plants, Chilling Centres and Private Dairies",
+      "paragraphs": [
+        "Beyond the main plant, Kolhapur's dairy sector includes chilling centres across the district and satellite and private processors. Chilling centres need sanitary tube for milk reception and transfer to bulk coolers, usually in 304 with a mechanically polished finish. Smaller processors making paneer, curd and flavoured milk follow the same rules as the large plant at a smaller scale, and often order in small lots - which we supply with the same certification as a large order."
+      ]
+    },
+    {
+      "heading": "Foundries and Food-Equipment Makers",
+      "paragraphs": [
+        "Kolhapur's foundries and engineering units make castings, pumps and machinery, including equipment for the food and sugar industries. Foundries themselves have no use for hygienic tube in their process. Food-equipment makers, on the other hand, build pasteurisers, tanks and process lines for dairy and food customers, and need sanitary tube to their customer's specification with certificates they can hand over at commissioning."
+      ]
+    },
+    {
+      "heading": "Sugar and Jaggery",
+      "paragraphs": [
+        "The district's sugar and jaggery producers need hygienic tube mainly on syrup, liquid-sugar and CIP lines - 304 for most duty, 316L for aggressive cleaning chemistry - and on any line supplying food or beverage customers who audit their ingredients."
+      ]
+    },
+    {
+      "heading": "Delivery to Shiroli, Gokul Shirgaon and Kagal",
+      "paragraphs": [
+        "Kolhapur is supplied by road from our Taloja MIDC works; dispatch and transit are confirmed in writing per quotation. JNPT Nhava Sheva, about 390 km away, is the nearest listed gateway for export-bound material.",
+        "Nearby clusters:"
+      ],
+      "links": [
+        { "label": "Sangli and Miraj", "href": "/market-area/sangli/" },
+        { "label": "Satara", "href": "/market-area/satara/" },
+        { "label": "Belagavi", "href": "/market-area/belagavi/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "CSE: Improving the environmental performance of the foundry sector in Kolhapur", "url": "https://www.cseindia.org/improving-the-environmental-performance-of-the-foundry-sector-in-kolhapur-maharashtra-11761" },
+    { "title": "Venture Center: Gokul Dairy, Shirgaon, Kolhapur", "url": "https://venturecenter.co.in/campaigns/sanitation/gokul-dairy-shirgaon-kolhapur/" },
+    { "title": "DairyReporter: Gokul state funding to expand dairy operations", "url": "https://www.dairyreporter.com/Article/2014/08/05/Gokul-1.5m-state-funding-to-expand-dairy-operations/" },
+    { "title": "MSME-DI: District Industrial Potential Survey, Kolhapur", "url": "https://dcmsme.gov.in/dips/DIPS Kolhapur.pdf" }
+  ]
+}

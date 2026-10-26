@@ -228,8 +228,8 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
                 <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                     <div>
-                      <label style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Your Name</label>
-                      <input 
+                      <label htmlFor="contact-field-1" style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Your Name</label>
+                      <input id="contact-field-1" 
                         type="text" 
                         required 
                         value={formData.name} 
@@ -238,8 +238,8 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
                       />
                     </div>
                     <div>
-                      <label style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Email Address</label>
-                      <input 
+                      <label htmlFor="contact-field-2" style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Email Address</label>
+                      <input id="contact-field-2" 
                         type="email" 
                         required 
                         value={formData.email} 
@@ -251,8 +251,8 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
 
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                     <div>
-                      <label style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Phone Number</label>
-                      <input 
+                      <label htmlFor="contact-field-3" style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Phone Number</label>
+                      <input id="contact-field-3" 
                         type="tel" 
                         required 
                         value={formData.phone} 
@@ -261,8 +261,8 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
                       />
                     </div>
                     <div>
-                      <label style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Company / City</label>
-                      <input 
+                      <label htmlFor="contact-field-4" style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Company / City</label>
+                      <input id="contact-field-4" 
                         type="text" 
                         value={formData.company} 
                         onChange={(e) => setFormData({...formData, company: e.target.value})} 
@@ -272,8 +272,8 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
                   </div>
 
                   <div>
-                    <label style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Product / Requirements</label>
-                    <input 
+                    <label htmlFor="contact-field-5" style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Product / Requirements</label>
+                    <input id="contact-field-5" 
                       type="text" 
                       placeholder='e.g. 2" Class 150 Slip-On Flanges SS316L' 
                       value={formData.product} 
@@ -283,8 +283,8 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
                   </div>
 
                   <div>
-                    <label style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Detailed Specifications & Quantity</label>
-                    <textarea 
+                    <label htmlFor="contact-field-6" style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Detailed Specifications & Quantity</label>
+                    <textarea id="contact-field-6" 
                       rows="4" 
                       value={formData.message} 
                       onChange={(e) => setFormData({...formData, message: e.target.value})} 

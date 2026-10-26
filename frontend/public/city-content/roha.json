@@ -1,0 +1,50 @@
+{
+  "slug": "roha",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Roha and MIDC Dhatav: A Declared Chemical Industry Zone",
+      "paragraphs": [
+        "MIDC's industrial area at Dhatav, near Roha in Raigad district, is declared a Chemical Industry Zone, and most of its units are chemical process industries. The town grew quickly with the chemical industry in the late 1970s and early 1980s; the downturn of the early 2000s closed some units, but a substantial base remains.",
+        "Maharashtra Pollution Control Board listings show the range: pigments and colourants, aroma chemicals, specialty and electrochemicals, dyes and dye intermediates, and technical-grade agrochemicals. Effluent is treated at a common plant of about 10 MLD operated by the industries' co-operative at Dhatav. It is a varied chemical estate rather than a pharmaceutical one, which changes what a hygienic-tube supplier is useful for."
+      ]
+    },
+    {
+      "heading": "Aroma and Fine Chemicals: Purity and Carry-Over",
+      "paragraphs": [
+        "Aroma-chemical and fine-chemical producers sell on purity and odour profile. A trace of the previous product in a transfer line or receiver can put a batch out of specification. That is the one place in a Roha plant where an electropolished bore pays for itself on a chemical line: distillate receivers, product transfer to packing, and filling lines where a smooth, crevice-free surface drains and flushes completely between grades.",
+        "For these lines we supply 316L electropolished tube with an internal Ra report per lot. Where your product is sensitive to trace iron or nickel pick-up, tell us - passivation and the choice of grade both matter, and we will advise honestly rather than over-specify."
+      ]
+    },
+    {
+      "heading": "Agrochemicals, Pigments and Electrochemicals: Corrosion First",
+      "paragraphs": [
+        "Technical-grade agrochemical, pigment and electrochemical processes are corrosion problems. Chlorides, acidic intermediates and elevated temperature drive material choice, and the right answer is often duplex 2205 or a higher alloy rather than 316L - and rarely an electropolished finish. Use stainless from us where it suits the duty: solvent and reagent transfer, utilities, analyser and sampling lines, and QC laboratory distribution.",
+        "Tell us the stream composition at RFQ stage. We would rather recommend a pickled 316L line or point you to a higher alloy than sell an electropolished tube that will fail in service."
+      ]
+    },
+    {
+      "heading": "Dyes and Dye Intermediates",
+      "paragraphs": [
+        "Dye units need clean dosing and lab lines more than hygienic process piping. Colour carry-over between shades is the problem electropolished tube solves here, on dye-kitchen dosing and sampling lines. Bulk process piping stays on standard stainless or other materials as your process engineer specifies."
+      ]
+    },
+    {
+      "heading": "Delivery to Roha and Dhatav",
+      "paragraphs": [
+        "Roha is a short road run from our Taloja MIDC works, which is also in Raigad district. Dispatch and transit are confirmed in writing with each quotation. JNPT Nhava Sheva, about 110 km away, is the nearest listed gateway for export-bound material.",
+        "Nearby chemical zones:"
+      ],
+      "links": [
+        { "label": "Mahad", "href": "/market-area/mahad/" },
+        { "label": "Lote Parshuram", "href": "/market-area/lote-parshuram/" },
+        { "label": "Navi Mumbai and Taloja", "href": "/market-area/navi-mumbai/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Roha - Wikipedia", "url": "https://en.wikipedia.com/wiki/Roha" },
+    { "title": "MPCB: Raigad-II industry list (Dhatav units, CETP)", "url": "https://mpcb.gov.in/sites/default/files/industrial-statistics/sro-industry/Raigad-II.pdf" },
+    { "title": "MPCB: SRO Raigad-2 database (2014)", "url": "https://mpcb.gov.in/sites/default/files/industrial-statistics/sro-industry/SRORaigad2SROdatabase_31072014.pdf" }
+  ]
+}

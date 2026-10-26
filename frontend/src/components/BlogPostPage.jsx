@@ -15,7 +15,11 @@ export default function BlogPostPage({ post, onEnquireClick }) {
         <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem' }}>The requested blog post could not be located in our database.</p>
         <a 
           href="/blog/" 
+<<<<<<< HEAD
           onClick={(e) => handleLinkClick(e, '/blog/')}
+=======
+          onClick={(e) => handleLinkClick(e, '/blog')}
+>>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
           style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1.5rem', backgroundColor: 'var(--primary-yellow)', color: '#000', fontWeight: '700', borderRadius: '4px', textDecoration: 'none' }}
         >
           <ArrowLeft size={16} /> Return to Knowledge Hub
@@ -121,7 +125,7 @@ export default function BlogPostPage({ post, onEnquireClick }) {
           {/* Back to hub link */}
           <div style={{ marginBottom: '2rem' }}>
             <a 
-              href="/blog" 
+              href="/blog/" 
               onClick={(e) => handleLinkClick(e, '/blog')}
               style={{ color: 'var(--primary-yellow)', display: 'inline-flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem', textDecoration: 'none', fontWeight: '600' }}
             >
@@ -139,7 +143,7 @@ export default function BlogPostPage({ post, onEnquireClick }) {
               maxHeight: '400px',
               backgroundColor: 'var(--bg-dark-800)'
             }}>
-              <img 
+              <img loading="lazy" 
                 src={post.image} 
                 alt={post.title} 
                 style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} 
@@ -246,8 +250,8 @@ export default function BlogPostPage({ post, onEnquireClick }) {
                         {isOpen ? <ChevronUp size={18} style={{ color: 'var(--primary-yellow)' }} /> : <ChevronDown size={18} style={{ color: 'var(--text-muted)' }} />}
                       </button>
 
-                      {isOpen && (
-                        <div style={{ padding: '0 1.25rem 1.25rem 1.25rem', color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.6', borderTop: '1px solid var(--border-color)', paddingTop: '1rem' }}>
+                      {(
+                        <div hidden={!isOpen} style={{ padding: '0 1.25rem 1.25rem 1.25rem', color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.6', borderTop: '1px solid var(--border-color)', paddingTop: '1rem' }}>
                           {faq.a}
                         </div>
                       )}
@@ -294,7 +298,7 @@ export default function BlogPostPage({ post, onEnquireClick }) {
                 <Send size={16} /> Request Engineering RFQ
               </button>
               <a 
-                href="/catalogue"
+                href="/catalogue/"
                 onClick={(e) => handleLinkClick(e, '/catalogue')}
                 style={{
                   backgroundColor: 'transparent',

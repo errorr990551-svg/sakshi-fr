@@ -1,18 +1,30 @@
 # .htaccess — steelmanufacturer.in (Apache 2.4+ & LiteSpeed)
 DirectoryIndex index.html
+AddDefaultCharset UTF-8
 
 # ============ 1. Canonical Domain, Protocol & Consolidated 301 Redirects ============
 RewriteEngine On
 
-# A. Force HTTPS + non-www in one single 301 redirect hop
-RewriteCond %{HTTPS} off [OR]
-RewriteCond %{HTTP_HOST} ^www\. [NC]
-RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
-RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+# Every rule below redirects straight to the final https://steelmanufacturer.in/.../ URL,
+# so http://, www. and missing-slash variants all resolve in ONE 301 hop (no chains).
+# The protocol/host rule (F) runs last, only for URLs no earlier rule rewrote.
 
-# B. Strip index.php / index.html from URLs
+# A. Strip index.php / index.html from URLs
 RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.(php|html?)[\s?] [NC]
-RewriteRule ^ /%1 [L,R=301]
+RewriteRule ^ https://steelmanufacturer.in/%1 [L,R=301]
+
+# B. Duplicate / alternate-name city pages -> the one canonical city page
+#    (covers /market-area/<alias>/ and every legacy city URL pattern for that alias)
+RewriteRule ^(?:market-area/|electropolished-pipes?-(?:manufacturer|supplier)-(?:in-)?|industrial-pipe-flange-manufacturer-in-)tuticorin(?:-sakshi-forge)?/?$ https://steelmanufacturer.in/market-area/thoothukudi/ [L,R=301]
+RewriteRule ^(?:market-area/|electropolished-pipes?-(?:manufacturer|supplier)-(?:in-)?|industrial-pipe-flange-manufacturer-in-)bharuch(?:-sakshi-forge)?/?$ https://steelmanufacturer.in/market-area/dahej/ [L,R=301]
+RewriteRule ^(?:market-area/|electropolished-pipes?-(?:manufacturer|supplier)-(?:in-)?|industrial-pipe-flange-manufacturer-in-)chittoor-tirupati(?:-sakshi-forge)?/?$ https://steelmanufacturer.in/market-area/tirupati/ [L,R=301]
+RewriteRule ^(?:market-area/|electropolished-pipes?-(?:manufacturer|supplier)-(?:in-)?|industrial-pipe-flange-manufacturer-in-)vijayawada-guntur(?:-sakshi-forge)?/?$ https://steelmanufacturer.in/market-area/vijayawada/ [L,R=301]
+RewriteRule ^(?:market-area/|electropolished-pipes?-(?:manufacturer|supplier)-(?:in-)?|industrial-pipe-flange-manufacturer-in-)bangalore(?:-sakshi-forge)?/?$ https://steelmanufacturer.in/market-area/bengaluru/ [L,R=301]
+RewriteRule ^(?:market-area/|electropolished-pipes?-(?:manufacturer|supplier)-(?:in-)?|industrial-pipe-flange-manufacturer-in-)hubballi(?:-sakshi-forge)?/?$ https://steelmanufacturer.in/market-area/hubballi-dharwad/ [L,R=301]
+RewriteRule ^(?:market-area/|electropolished-pipes?-(?:manufacturer|supplier)-(?:in-)?|industrial-pipe-flange-manufacturer-in-)chhatrapati-sambhajinagar(?:-sakshi-forge)?/?$ https://steelmanufacturer.in/market-area/aurangabad/ [L,R=301]
+
+# B2. Merged pages (generated at build time from src/data/redirects.js by prerender.js)
+# @MERGED_PAGES@
 
 # C. 301 Redirect Core URL Duplicates in One Hop
 RewriteRule ^home/?$ https://steelmanufacturer.in/ [L,R=301]
@@ -31,9 +43,33 @@ RewriteRule ^306-stainless-steel-round-bar/?$ https://steelmanufacturer.in/304-s
 RewriteRule ^forged-pipe-fittings-guide-pressure-classes-standards/?$ https://steelmanufacturer.in/asme-b16-11-forged-fittings/ [L,R=301]
 
 
+# C2. Old WordPress URLs with a clear equivalent page -> 301 to it
+RewriteRule ^blind-flange/?$ https://steelmanufacturer.in/flanges/blind-flanges/ [L,R=301]
+RewriteRule ^slip-on-flange/?$ https://steelmanufacturer.in/flanges/slip-on-flanges/ [L,R=301]
+RewriteRule ^long-weld-neck-flange/?$ https://steelmanufacturer.in/flanges/long-weld-neck-flanges/ [L,R=301]
+RewriteRule ^weld-neck-flanges-wnrf-manufacturer-exporter-sakshi-forge/?$ https://steelmanufacturer.in/flanges/weld-neck-flanges/ [L,R=301]
+RewriteRule ^industrial-flanges-manufacturer-exporter-in-india-sakshi-forge/?$ https://steelmanufacturer.in/flanges/ [L,R=301]
+RewriteRule ^electropolished-pipes?-and-fittings/?$ https://steelmanufacturer.in/electropolished-pipe-fittings/ [L,R=301]
+RewriteRule ^stainless-steel-forged-fittings-range/?$ https://steelmanufacturer.in/stainless-steel-forged-fittings/ [L,R=301]
+RewriteRule ^stainless-steel-flanges-range/?$ https://steelmanufacturer.in/stainless-steel-flanges/ [L,R=301]
+RewriteRule ^stainless-steel-seamless-pipe-range/?$ https://steelmanufacturer.in/stainless-steel-seamless-pipe/ [L,R=301]
+RewriteRule ^stainless-steel-pipe-range/?$ https://steelmanufacturer.in/stainless-steel-pipes/ [L,R=301]
+RewriteRule ^asme-b16-11-stainless-steel-forged-fittings-manufacturer/?$ https://steelmanufacturer.in/asme-b16-11-forged-fittings/ [L,R=301]
+RewriteRule ^metal-weight-calculation-formulas-technical-charts-sakshi-forge/?$ https://steelmanufacturer.in/weight-calculator/ [L,R=301]
+RewriteRule ^stainless-steel-dairy-fittings-manufacturer-in-mumbai/?$ https://steelmanufacturer.in/ss-dairy-fittings/ [L,R=301]
+RewriteRule ^the-ultimate-guide-to-asme-b16-5-flanges-specifications-ratings-and-selection-for-2026/?$ https://steelmanufacturer.in/blog/asme-b16-5-flange-dimensions-pressure-ratings/ [L,R=301]
+RewriteRule ^forged-fittings-vs-buttweld-fittings-the-ultimate-comparison-guide/?$ https://steelmanufacturer.in/blog/butt-weld-vs-forged-fittings-guide/ [L,R=301]
+
+# C3. Old WordPress URLs and city pages with no equivalent -> 410 Gone (Google drops them faster than 404)
+RewriteRule ^(?:wp-content|wp-json|wp-admin|wp-includes|category|tag|author|feed)(?:/.*)?$ - [G,L]
+RewriteRule ^(?:plate-flange|olets|plates|electropolished-pipe-fittings/bs-4825-fittings)/?$ - [G,L]
+RewriteRule ^(?:ss-pipe-vs-ss-tube-the-definitive-2026-comparison-guide|how-to-choose-right-industrial-flange-engineering-guide|ss-pipe-fittings-complete-guide|forged-pipe-fittings-guide-pressure-classes-standards|types-of-industrial-flanges-complete-guide|butt-weld-pipe-fittings-asme-b16-9-complete-guide|stainless-steel-flanges-grades-standards-applications|india-steel-manufacturing-industry-growth-2024|ansi-vs-din-vs-jis-flange-standard-comparison|how-stainless-steel-pipe-and-tube-price-is-calculated-[a-z0-9-]+|stainless-steel-pipe-and-tube-standards-[a-z0-9-]+|socket-weld-vs-threaded-pipe-fittings-[a-z0-9-]+|the-complete-guide-to-industrial-flanges|astm-a182-stainless-steel-flanges-[a-z0-9-]+|stainless-steel-flanges-oil-gas-industry-specifications|corrosion-resistance-stainless-steel-industrial-guide|complete-guide-to-ss-pipe-fittings-[a-z0-9-]+|carbon-steel-flanges-price-in-india-[a-z0-9-]+|stainless-steel-pipe-vs-tube-the-definitive-[a-z0-9-]+|stainless-steel-pipes-industrial-guide-grades-applications|forged-flanges-vs-cast-flanges-[a-z0-9-]+|stainless-steel-flanges-for-oil-gas-industry-in-india-[a-z0-9-]+|304-vs-316-vs-202-vs-duplex-stainless-steel-[a-z0-9-]+|seamless-vs-welded-erw-stainless-steel-pipe-and-tube-[a-z0-9-]+|how-to-select-the-right-flange-for-industrial-piping-[a-z0-9-]+|stainless-steel-price-per-kg-in-india-[a-z0-9-]+)/?$ - [G,L]
+RewriteRule ^(?:electropolished-pipes?-(?:manufacturer|supplier)-(?:in-)?|industrial-pipe-flange-manufacturer-in-)(?:karnal|gorakhpur|bathinda|ballari|patiala|hisar|korba|chandigarh|bilaspur|rohtak|kota|dhanbad|tirupur|morbi)(?:-sakshi-forge)?/?$ - [G,L]
+
 # D. 301 Redirect Legacy City URLs to /market-area/<city>/ (covers pipe/pipes, with or without 'in-')
 RewriteRule ^electropolished-pipes?-manufacturer-(?:in-)?([^/]+)/?$ https://steelmanufacturer.in/market-area/$1/ [L,R=301]
 RewriteRule ^electropolished-pipes?-supplier-(?:in-)?([^/]+)/?$ https://steelmanufacturer.in/market-area/$1/ [L,R=301]
+RewriteRule ^(?:electropolished-pipes?(?:-fittings)?-in-|dairy-electropolished-pipes-)(chennai|mumbai|pune|kolhapur)/?$ https://steelmanufacturer.in/market-area/$1/ [L,R=301]
 RewriteRule ^industrial-pipe-flange-manufacturer-in-([^/]+)-sakshi-forge/?$ https://steelmanufacturer.in/market-area/$1/ [L,R=301]
 
 # E. Add trailing slash to non-file URLs in one 301 hop (excluding API routes)
@@ -43,7 +79,12 @@ RewriteCond %{REQUEST_URI} !\.
 RewriteCond %{REQUEST_URI} !^/api
 RewriteRule ^(.*)$ https://steelmanufacturer.in/$1/ [L,R=301]
 
-# F. Optional API proxy fallback (if Apache mod_proxy is enabled)
+# F. Force HTTPS + non-www for everything else (already-slashed pages and files)
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^ https://steelmanufacturer.in%{REQUEST_URI} [L,R=301]
+
+# G. Optional API proxy fallback (if Apache mod_proxy is enabled)
 <IfModule mod_proxy.c>
   <IfModule mod_proxy_http.c>
     SSLProxyEngine On
@@ -66,6 +107,7 @@ RewriteRule ^ %{REQUEST_FILENAME}/index.html [L]
 
 # ============ 3. Genuinely Unknown URLs Return REAL HTTP 404 (Fixes Soft-404) ============
 ErrorDocument 404 /404.html
+ErrorDocument 410 /404.html
 
 RewriteCond %{REQUEST_URI} !^/api
 RewriteCond %{REQUEST_FILENAME} !-f

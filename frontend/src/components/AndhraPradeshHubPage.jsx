@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { MapPin, ArrowRight, ShieldCheck, Phone, Mail, Award, CheckCircle2, Factory } from 'lucide-react';
-import { handleLinkClick } from '../utils/router';
+import { handleLinkClick, withSlash } from '../utils/router';
 
 export default function AndhraPradeshHubPage({ onEnquireClick, onShowContactDetails }) {
   const handleShowContact = onShowContactDetails || (() => onEnquireClick && onEnquireClick('Andhra Pradesh State Hub Contact Request'));
@@ -112,7 +112,7 @@ export default function AndhraPradeshHubPage({ onEnquireClick, onShowContactDeta
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.82rem', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
             <a href="/" onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>Home</a>
             <span>›</span>
-            <a href="/market-area" onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>Market Areas</a>
+            <a href="/market-area/" onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>Market Areas</a>
             <span>›</span>
             <span style={{ color: 'var(--primary-yellow)', fontWeight: '600' }}>Andhra Pradesh State Hub</span>
           </div>
@@ -272,7 +272,7 @@ export default function AndhraPradeshHubPage({ onEnquireClick, onShowContactDeta
                 </div>
 
                 <a 
-                  href={c.path}
+                  href={withSlash(c.path)}
                   onClick={(e) => handleLinkClick(e, c.path)}
                   style={{
                     display: 'inline-flex',

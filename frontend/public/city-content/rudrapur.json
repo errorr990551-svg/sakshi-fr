@@ -1,0 +1,49 @@
+{
+  "slug": "rudrapur",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "SIDCUL Pantnagar: Uttarakhand's Largest Industrial Estate",
+      "paragraphs": [
+        "The Integrated Industrial Estate at Pantnagar, beside Rudrapur in Udham Singh Nagar district, is described in Outlook Business reporting as the largest industrial area in Uttarakhand, built around high-revenue automotive and pharmaceutical industries. The same report cited around 450 factories and 60,000-70,000 workers, with a vehicle maker and its vendor park occupying about a third of the estate's land. Those figures date from the estate's first decade, but the shape is unchanged: an automotive anchor surrounded by pharmaceutical, FMCG and food plants.",
+        "For a hygienic-tube supplier, Pantnagar is really two markets. The automotive half needs very little of what we make; the pharmaceutical, FMCG and food half needs a good deal."
+      ]
+    },
+    {
+      "heading": "Pharmaceutical Plants in the Estate",
+      "paragraphs": [
+        "Formulation plants at Pantnagar and in the Rudrapur industrial area follow the purified-water pattern familiar from other north Indian clusters: 316L from RO permeate onwards; SF1 mechanically polished tube for ambient loops; SF4 electropolished tube where loops are hot-sanitised and at points of use that feed product. Any sterile or ophthalmic production moves to WFI and clean steam in electropolished 316L throughout.",
+        "Every lot we supply carries an EN 10204 3.1 certificate traced to heat number, a PMI record for each length and, for electropolished tube, an internal Ra report."
+      ]
+    },
+    {
+      "heading": "FMCG and Food: Cleanability Over Specification",
+      "paragraphs": [
+        "FMCG and food plants in the estate run product-transfer, mixing and filling lines where viscous, sugary or fatty products cling to rough steel. Grade 304 suits most food duty; 316L is better for salty, acidic or surfactant-rich products. An electropolished bore pays back on lines that are cleaned between every product or batch; utilities and non-contact lines do not need it.",
+        "Drainability matters as much as finish here. A smooth line that sags or traps product between CIP cycles is still a hygiene risk, so specify slopes and avoid dead legs alongside the finish."
+      ]
+    },
+    {
+      "heading": "Effluent and Environmental Compliance",
+      "paragraphs": [
+        "The state pollution control board has acted against units in the Pantnagar area over effluent norms, including closure proceedings against four industries in 2018. Shorter, more complete cleaning on product lines reduces wash-water volume - a practical side-benefit of specifying the right finish on the lines that are cleaned most often."
+      ]
+    },
+    {
+      "heading": "Delivery to Pantnagar and Rudrapur",
+      "paragraphs": [
+        "Rudrapur is a long-haul road delivery from our Taloja MIDC works; dispatch and transit are confirmed in writing with each quotation. ICD Dadri, about 250 km away, is the nearest listed container gateway for export-bound material.",
+        "Other Uttarakhand clusters:"
+      ],
+      "links": [
+        { "label": "Kashipur", "href": "/market-area/kashipur/" },
+        { "label": "Haridwar", "href": "/market-area/haridwar/" },
+        { "label": "Dehradun and Selaqui", "href": "/market-area/dehradun/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Outlook Business: The edge of a plank (Pantnagar estate)", "url": "https://www.outlookbusiness.com/magazine/story/the-edge-of-a-plank-1387" },
+    { "title": "India Environment Portal: Four industrial units in Pantnagar to face closure", "url": "https://indiaenvironmentportal.org.in/news-clippings/four-industrial-units-in-pantnagar-to-face-closure" }
+  ]
+}

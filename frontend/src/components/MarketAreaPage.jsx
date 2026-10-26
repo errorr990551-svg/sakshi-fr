@@ -1,6 +1,7 @@
 import React, { useMemo, useEffect } from 'react';
-import { handleLinkClick } from '../utils/router';
+import { handleLinkClick, withSlash } from '../utils/router';
 import marketCitiesData from '../data/market_cities.json';
+import { isRedirectedPath } from '../data/redirects';
 
 export default function MarketAreaPage() {
   // Group cities by state and sort alphabetically
@@ -9,6 +10,7 @@ export default function MarketAreaPage() {
     const seenCityInState = new Set();
 
     marketCitiesData.forEach(city => {
+      if (isRedirectedPath(city.path)) return;
       const state = city.state || 'Other';
       const key = `${state}::${(city.city || '').toLowerCase().trim()}`;
       if (seenCityInState.has(key)) return;
@@ -198,7 +200,11 @@ export default function MarketAreaPage() {
                     {state === 'Gujarat' && (
                       <a 
                         href="/market-area/gujarat/" 
+<<<<<<< HEAD
                         onClick={(e) => handleLinkClick(e, '/market-area/gujarat/')}
+=======
+                        onClick={(e) => handleLinkClick(e, '/market-area/gujarat')}
+>>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
                         style={{ color: 'var(--primary-yellow)', fontSize: '0.85rem', fontWeight: '700', textDecoration: 'none' }}
                       >
                         View Gujarat State Overview →
@@ -219,6 +225,7 @@ export default function MarketAreaPage() {
                   gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
                   gap: '1.25rem'
                 }}>
+<<<<<<< HEAD
                   {cities.map((city) => {
                     const cityUrl = (city.path || '').endsWith('/') ? city.path : `${city.path}/`;
                     return (
@@ -227,6 +234,14 @@ export default function MarketAreaPage() {
                         href={cityUrl}
                         onClick={(e) => handleLinkClick(e, cityUrl)}
                         style={{
+=======
+                  {cities.map((city) => (
+                    <a
+                      key={city.slug}
+                      href={withSlash(city.path)}
+                      onClick={(e) => handleLinkClick(e, city.path)}
+                      style={{
+>>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
                         backgroundColor: 'var(--bg-dark-800)',
                         border: '1px solid var(--border-color)',
                         borderRadius: '8px',

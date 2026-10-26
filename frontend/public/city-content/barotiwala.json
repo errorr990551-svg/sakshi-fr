@@ -1,0 +1,59 @@
+{
+  "slug": "barotiwala",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Barotiwala in the BBN Pharma Belt",
+      "paragraphs": [
+        "Barotiwala is the middle link of the Baddi-Barotiwala-Nalagarh (BBN) cluster in Solan district. A 2017 Outlook Business report described the BBN belt as roughly 380 square kilometres hosting around 500 small, medium and large pharmaceutical units, most of them formulation plants that arrived after the 2003 excise and income-tax incentives. Barotiwala Industrial Area shares that profile: tablets, capsules, liquids and ointments, plus the packaging units that serve them.",
+        "Two things set the tone for pipework decisions here. First, plants are mostly mid-sized formulators that upgrade in stages rather than build greenfield. Second, the belt has been under sustained scrutiny on licensing and on environmental discharge, so documentation is checked closely at every stage."
+      ]
+    },
+    {
+      "heading": "Approvals, Licence Renewals and Why Paperwork Comes First",
+      "paragraphs": [
+        "The Tribune has reported periods when Himachal Pradesh was without a full-time state drugs controller, delaying approvals and licence renewals for around 270 WHO-approved units in the belt. Whatever the current position, the lesson plants in Barotiwala have drawn is to keep their equipment and utility files complete so that an inspection or renewal never waits on a missing document.",
+        "For stainless tube that file is short but specific: a material certificate for every heat used, evidence of material identity, and the surface finish on water- and product-contact lines. We ship electropolished tube with an EN 10204 3.1 certificate traced to heat number, a PMI record for every length and an internal Ra report for each electropolished lot, so the documents arrive with the material rather than weeks later."
+      ]
+    },
+    {
+      "heading": "Purified Water Generation in a Mid-Sized Formulation Plant",
+      "paragraphs": [
+        "Most Barotiwala enquiries concern purified water (PW): a pretreatment train, reverse osmosis and often electro-deionisation (EDI), a storage tank and a distribution loop that feeds granulation, coating, liquid manufacturing and washing. The question is where to spend on finish.",
+        "Upstream of the RO, stainless finish matters little; pretreatment is about removing hardness, chlorine and organics. From the RO permeate onward the water is aggressive towards contaminants and the loop must stay microbially clean, so 316L tube becomes the default. Many oral-solid plants run an ambient PW loop in SF1 mechanically polished tube and move to SF4 electropolished tube on hot-sanitised sections, on the storage tank outlet and on points of use that feed product directly.",
+        "If you are adding capacity to an existing loop, match the existing standard and OD series - mixing ASME BPE and DIN dimensions in one loop creates misaligned welds and hold-up points that undo the benefit of a good finish."
+      ]
+    },
+    {
+      "heading": "Effluent and the Sirsa River: Where Stainless Choice Affects Compliance",
+      "paragraphs": [
+        "Down To Earth's 2017 investigation reported concerns about pharmaceutical effluent from the BBN belt reaching the Sirsa river, and the issue has kept environmental compliance high on the agenda for Barotiwala plants. Electropolished tube is not an effluent-treatment material, but it plays a part upstream: cleaner product-contact and CIP lines need shorter cleaning cycles, which reduces the volume of wash water and cleaning chemical sent to treatment.",
+        "For the effluent treatment plant itself, chloride levels decide the material - 316L for moderate service, duplex 2205 where chlorides are high. Tell us the analysis of the stream and we will advise the grade honestly, including when plain pickled tube is the sensible choice."
+      ]
+    },
+    {
+      "heading": "Packaging Units in Barotiwala",
+      "paragraphs": [
+        "Barotiwala's packaging plants - blister foil, cartons, bottles and closures for the formulators around them - seldom need hygienic tube in their own process. The exception is units moulding or printing primary packaging for pharma customers, which may run purified-water or cleanroom utilities that their customers audit. In that case a short run of 304L or 316L sanitary tube with full certification is usually enough."
+      ]
+    },
+    {
+      "heading": "Delivery to Barotiwala and Neighbouring Estates",
+      "paragraphs": [
+        "Barotiwala is reached by road from our Taloja MIDC works in Mumbai. We confirm dispatch and transit time in writing with each quotation. For export-bound material, ICD Ludhiana, about 125 km away, is the nearest listed container gateway. Each length ships end-capped and sleeved.",
+        "Plants in Barotiwala often share maintenance contractors with the rest of the belt; these pages cover the neighbouring estates:"
+      ],
+      "links": [
+        { "label": "Baddi", "href": "/market-area/baddi/" },
+        { "label": "Nalagarh", "href": "/market-area/nalagarh/" },
+        { "label": "Solan and Parwanoo", "href": "/market-area/solan/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Outlook Business: Here For Good (BBN belt, 2017)", "url": "https://www.outlookbusiness.com/magazine/business/story/here-for-good-3392" },
+    { "title": "The Tribune: Pharma hub without state drugs controller", "url": "https://www.tribuneindia.com/news/himachal/pharma-hub-without-state-drugs-controller-since-jan-1-582501" },
+    { "title": "India Water Portal: Bad times at Baddi", "url": "https://www.indiawaterportal.org/drinking-water/bad-times-baddi" },
+    { "title": "Down To Earth (via Magzter): Bitter Medicine", "url": "https://react.magzter.com/stories/Science/Down-To-Earth/Bitter-Medicine" }
+  ]
+}

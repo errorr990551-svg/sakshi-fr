@@ -1,0 +1,54 @@
+{
+  "slug": "medak-patancheru",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Patancheru, Bollaram and Pashamylaram: India's Oldest Bulk-Drug Belt",
+      "paragraphs": [
+        "The industrial development areas of Patancheru, Bollaram, Pashamylaram, Kazipalli and Bonthapally, on Hyderabad's north-western edge, formed one of India's first concentrations of bulk-drug (API) manufacturing. They are also the subject of one of the country's longest-running environmental cases: a public-interest petition filed in the 1990s led the Supreme Court to restrict the establishment and expansion of bulk-drug units in the estate, to require effluent to be routed for treatment, and to push units toward zero liquid discharge.",
+        "That history shapes what plants here buy. Most activity is upgrading, debottlenecking and maintaining existing plants within tight environmental conditions, rather than greenfield expansion."
+      ]
+    },
+    {
+      "heading": "Zero Liquid Discharge and What It Means for Pipework",
+      "paragraphs": [
+        "Zero liquid discharge pushes plants to recover and reuse water - stripping, evaporation, crystallisation of salts and recycling of condensate. Those systems concentrate chlorides and dissolved solids, which attack ordinary stainless. Recovery and evaporator piping is a materials question first: 316L only where chloride levels allow, duplex 2205 or higher alloys where they do not.",
+        "Electropolishing has no role in brine and evaporator service. Its role in a ZLD-constrained API plant is indirect: product-contact and cleaning lines that clean faster and more completely consume less wash solvent and water, and that reduces the load on the recovery system."
+      ]
+    },
+    {
+      "heading": "API Finishing Sections and Water Systems",
+      "paragraphs": [
+        "Where electropolished 316L tube belongs in a Patancheru plant is the same as in any API facility: the final crystallisation, filtration, drying and packing sections, and the purified-water system that supplies them. These are the areas a GMP inspector examines and where product must meet pharmacopoeial purity.",
+        "Many bulk-drug plants in the belt supply regulated export markets and are inspected accordingly. For those sections we supply 316L tube to ASTM A270, electropolished to ASME BPE SF4, with an EN 10204 3.1 certificate per heat, PMI on every length and an Ra report per lot."
+      ]
+    },
+    {
+      "heading": "Retrofit Work Inside Running Plants",
+      "bullets": [
+        "Match the existing dimensional standard and OD series so new welds align with old ones.",
+        "Order short spools and spares with the main order so later repairs share the same heat documentation.",
+        "Specify passivation after welding; retrofits often skip it under shutdown pressure.",
+        "Confirm the alloy for any line touching recovered water or concentrated brine before ordering - the old line may have failed for a reason."
+      ]
+    },
+    {
+      "heading": "Delivery to Patancheru and Bollaram",
+      "paragraphs": [
+        "The belt is supplied by road from our Taloja MIDC works; dispatch and transit are confirmed in writing per quotation. Krishnapatnam Port is the nearest listed sea gateway for export-bound material. Deliveries into running plants are usually scheduled around shutdown windows - tell us the date at RFQ stage.",
+        "Other Hyderabad-area clusters:"
+      ],
+      "links": [
+        { "label": "Hyderabad", "href": "/market-area/hyderabad/" },
+        { "label": "Genome Valley", "href": "/market-area/genome-valley/" },
+        { "label": "Sangareddy", "href": "/market-area/sangareddy/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Down To Earth: Supreme abuse (Patancheru effluent and court orders)", "url": "https://www.downtoearth.org.in/environment/supreme-abuse-51876" },
+    { "title": "Down To Earth: Hearing impaired", "url": "https://www.downtoearth.org.in/environment/hearing-impaired-9599" },
+    { "title": "Vidhi Centre for Legal Policy: An unequal fight - industrial pollution in Patancheru", "url": "https://vidhilegalpolicy.in/videos/an-unequal-fight-a-documentary-on-industrial-pollution-in-patancheru/" },
+    { "title": "Chemistry World: Pollution from Indian drugmakers drives drug resistance", "url": "https://www.chemistryworld.com/news/pollution-from-indian-drugmakers-drives-drug-resistance/3007349.article" }
+  ]
+}

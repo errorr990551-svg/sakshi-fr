@@ -5,7 +5,7 @@ import {
   Sparkles, Layers, Check, Calculator, Star, ExternalLink 
 } from 'lucide-react';
 import epBuildSpecData from '../data/ep_build_spec_data.json';
-import { handleLinkClick } from '../utils/router';
+import { handleLinkClick, withSlash } from '../utils/router';
 import { RaConverterTool, PipeWeightCalculatorTool } from './EPTools';
 import { PRIORITY_30_CITIES } from '../data/priorityCities';
 
@@ -38,7 +38,7 @@ export default function EPBuildSpecRenderer({ path, onEnquireClick, hasUnlockedC
           <ChevronRight className="w-3.5 h-3.5 text-slate-600 shrink-0" />
           {parent !== '/' && (
             <>
-              <a href={parent} onClick={(e) => handleLinkClick(e, parent)} className="hover:text-blue-400 transition capitalize whitespace-nowrap">
+              <a href={withSlash(parent)} onClick={(e) => handleLinkClick(e, parent)} className="hover:text-blue-400 transition capitalize whitespace-nowrap">
                 {parentName}
               </a>
               <ChevronRight className="w-3.5 h-3.5 text-slate-600 shrink-0" />
@@ -113,17 +113,17 @@ export default function EPBuildSpecRenderer({ path, onEnquireClick, hasUnlockedC
                 
                 <form onSubmit={(e) => { e.preventDefault(); onEnquireClick(h1); }} className="space-y-4">
                   <div>
-                    <label className="block text-xs text-slate-400 mb-1">Your Name / Company *</label>
-                    <input type="text" required placeholder="e.g. Reliance / Sun Pharma" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-yellow-500" />
+                    <label htmlFor="ep-spec-field-1" className="block text-xs text-slate-400 mb-1">Your Name / Company *</label>
+                    <input id="ep-spec-field-1" type="text" required placeholder="e.g. Reliance / Sun Pharma" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-yellow-500" />
                   </div>
                   <div className="grid grid-cols-2 gap-3">
                     <div>
-                      <label className="block text-xs text-slate-400 mb-1">Phone Number *</label>
-                      <input type="tel" required placeholder="+91 XXXXX XXXXX" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-yellow-500" />
+                      <label htmlFor="ep-spec-field-2" className="block text-xs text-slate-400 mb-1">Phone Number *</label>
+                      <input id="ep-spec-field-2" type="tel" required placeholder="+91 XXXXX XXXXX" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-yellow-500" />
                     </div>
                     <div>
-                      <label className="block text-xs text-slate-400 mb-1">Material Grade</label>
-                      <select className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-yellow-500">
+                      <label htmlFor="ep-spec-field-3" className="block text-xs text-slate-400 mb-1">Material Grade</label>
+                      <select id="ep-spec-field-3" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-yellow-500">
                         <option className="bg-slate-900 text-white">SS 316L (EP)</option>
                         <option className="bg-slate-900 text-white">SS 304L (EP)</option>
                         <option className="bg-slate-900 text-white">ASME BPE SF4</option>
@@ -131,8 +131,8 @@ export default function EPBuildSpecRenderer({ path, onEnquireClick, hasUnlockedC
                     </div>
                   </div>
                   <div>
-                    <label className="block text-xs text-slate-400 mb-1">Quantity / Outer Diameter (OD)</label>
-                    <input type="text" placeholder="e.g. 200 metres, 1 inch OD x 1.65mm WT" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-yellow-500" />
+                    <label htmlFor="ep-spec-field-4" className="block text-xs text-slate-400 mb-1">Quantity / Outer Diameter (OD)</label>
+                    <input id="ep-spec-field-4" type="text" placeholder="e.g. 200 metres, 1 inch OD x 1.65mm WT" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-yellow-500" />
                   </div>
                   <button type="submit" className="w-full bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-500 hover:from-yellow-400 hover:to-amber-400 text-slate-950 font-extrabold py-3.5 rounded-xl transition shadow-lg shadow-yellow-500/25 uppercase tracking-wider text-sm">
                     Submit RFQ Now
@@ -365,8 +365,8 @@ export default function EPBuildSpecRenderer({ path, onEnquireClick, hasUnlockedC
                         <span className="text-base sm:text-lg pr-4">{faq.question}</span>
                         {isOpen ? <ChevronUp className="w-5 h-5 text-blue-400 shrink-0" /> : <ChevronDown className="w-5 h-5 text-slate-500 shrink-0" />}
                       </button>
-                      {isOpen && (
-                        <div className="p-5 pt-0 text-slate-300 text-sm leading-relaxed border-t border-slate-800/60 bg-slate-900/40">
+                      {(
+                        <div hidden={!isOpen} className="p-5 pt-0 text-slate-300 text-sm leading-relaxed border-t border-slate-800/60 bg-slate-900/40">
                           {faq.answer}
                         </div>
                       )}
@@ -404,7 +404,7 @@ export default function EPBuildSpecRenderer({ path, onEnquireClick, hasUnlockedC
               {PRIORITY_30_CITIES.map((city, idx) => (
                 <a
                   key={idx}
-                  href={city.path}
+                  href={withSlash(city.path)}
                   onClick={(e) => handleLinkClick(e, city.path)}
                   className="bg-slate-950/80 hover:bg-slate-800 border border-slate-800/80 hover:border-yellow-500/50 rounded-lg p-2.5 text-center text-xs text-slate-200 hover:text-yellow-400 font-medium transition flex items-center justify-center gap-1.5"
                 >

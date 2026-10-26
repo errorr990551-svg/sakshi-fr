@@ -1,0 +1,72 @@
+{
+  "slug": "lucknow",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Lucknow's Industrial Enclaves",
+      "paragraphs": [
+        "Lucknow is primarily an administrative, services and trading city, and its manufacturing is spread across small and medium enterprises in several industrial enclaves - Amausi, Talkatora, Chinhat, Aishbagh, Mohanlalganj and others - rather than concentrated in one large estate. Amausi Industrial Area, near the airport, hosts a mix of manufacturers and technical institutions, while Talkatora is one of the older estates, listed for upgrading under central MSME infrastructure schemes. Uttar Pradesh's plans for private industrial parks name Lucknow among districts for textiles, garments, food processing, perfumery and electronics.",
+        "For electropolished tube, Lucknow's relevant buyers are its pharmaceutical units, food processors and the engineering firms that build equipment for them."
+      ]
+    },
+    {
+      "heading": "Pharmaceutical Units",
+      "paragraphs": [
+        "Pharmaceutical manufacturers in and around Lucknow are mostly formulation units serving the large north Indian market. Their purified-water systems should be in 316L from RO permeate onwards, with SF1 mechanically polished tube for ambient loops and SF4 electropolished tube for hot-sanitised loops and critical points of use. Revised Schedule M, notified in December 2023, has made water-system upgrades a priority for smaller manufacturers across Uttar Pradesh.",
+        "We supply the material evidence those upgrades need: an EN 10204 3.1 certificate traced to heat number, PMI records for every length and an internal Ra report for each electropolished lot."
+      ]
+    },
+    {
+      "heading": "Food Processing and Perfumery",
+      "paragraphs": [
+        "Lucknow's food processors - dairy, sweets and namkeen, bakery and packaged foods - need sanitary product and CIP lines: 304 for most duty, 316L where salt or acidic products are involved. Electropolishing is worth specifying on lines cleaned between every batch; utilities rarely need it.",
+        "Perfumery is among the industries Uttar Pradesh has named for Lucknow's planned private industrial parks. Fragrance and flavour units share one specific problem: carry-over of one aroma into the next batch spoils it. Electropolished 316L on distillate receivers, transfer and filling lines drains and flushes cleanly between products."
+      ]
+    },
+    {
+      "heading": "Engineering Units",
+      "paragraphs": [
+        "Engineering firms in Lucknow's estates that build tanks, skids and process equipment for food and pharma customers need tube cut to drawing and certificates they can hand over at commissioning. Units serving other industries rarely need a hygienic finish, and we will recommend the economical option where it fits."
+      ]
+    },
+    {
+      "heading": "Delivery to Lucknow",
+      "paragraphs": [
+        "Lucknow is a long-haul road delivery from our Taloja MIDC works; dispatch and transit are confirmed in writing with each quotation. ICD Kanpur, about 85 km away, is the nearest listed container gateway for export-bound material.",
+        "Other Uttar Pradesh clusters:"
+      ],
+      "links": [
+        {
+          "label": "Kanpur",
+          "href": "/market-area/kanpur/"
+        },
+        {
+          "label": "Varanasi",
+          "href": "/market-area/varanasi/"
+        },
+        {
+          "label": "Agra",
+          "href": "/market-area/agra/"
+        },
+        {
+          "label": "Noida",
+          "href": "/market-area/noida/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Economy of Lucknow (Bharatpedia)",
+      "url": "https://en.bharatpedia.org/wiki/Economy_of_Lucknow"
+    },
+    {
+      "title": "DC-MSME: Ongoing infrastructure development projects (Talkatora upgrade)",
+      "url": "https://www.dcmsme.gov.in/schemes/Ongoing%20ID-21042023.pdf"
+    },
+    {
+      "title": "India Briefing: Revised Schedule M compliance timeline",
+      "url": "https://india-briefing.com/news/india-extends-gmp-compliance-deadline-to-december-2025-35679.html"
+    }
+  ]
+}

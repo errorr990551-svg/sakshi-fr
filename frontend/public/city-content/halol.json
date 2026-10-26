@@ -1,0 +1,51 @@
+{
+  "slug": "halol",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Halol: Export Pharma and an Automotive Corridor in Panchmahal",
+      "paragraphs": [
+        "Halol, in Panchmahal district north-east of Vadodara, sits in the Halol-Savli belt, which Gujarat designated a Special Investment Region covering about 123 square kilometres. The GIDC Halol Expansion Industrial Estate has developed as an automobile and engineering hub, with road links towards Sanand, Vithalpur and Becharaji, and GIDC lists engineering, automobiles and ancillaries, plastics, and electronics among its focus sectors.",
+        "Halol is also home to large-scale pharmaceutical manufacturing: Sun Pharmaceutical lists a factory on the Halol-Baroda Highway near Anand Kendra. So Halol enquiries come from two very different worlds - export-registered pharma plants with exacting documentation requirements, and automotive and engineering plants that rarely need hygienic tube at all."
+      ]
+    },
+    {
+      "heading": "Large Export-Oriented Pharma Plants",
+      "paragraphs": [
+        "Plants that supply regulated markets are inspected against expectations on water systems, cleaning and data integrity, and their engineering teams specify stainless tube accordingly. For WFI and clean steam: 316L, ASME BPE SF4 electropolished, orbital welded, with borescope records. For purified water: 316L, SF1 or SF4 depending on temperature and criticality. For product contact in formulation: 316L with a finish your cleaning validation supports.",
+        "What matters most for these buyers is not the finish on a datasheet but consistency between lots and the depth of documentation behind each one. Every lot we ship carries an EN 10204 3.1 certificate traced to heat number, a PMI record for each length and an internal Ra report for electropolished tube, so material evidence is ready for an inspector without being reconstructed later."
+      ]
+    },
+    {
+      "heading": "Automotive and Engineering Plants in the Halol Expansion Estate",
+      "paragraphs": [
+        "Automotive assembly and component plants do not use electropolished tube in their core process. Where they do buy hygienic stainless, it is for paint-shop deionised water, laboratory utilities and test rigs that need clean, low-pickup lines. For most of these, certified 304L tube with a mechanically polished or pickled finish is the economical choice; an electropolished bore is only worth specifying where a downstream process is sensitive to particulate or ionic contamination."
+      ]
+    },
+    {
+      "heading": "Specifying for a Halol Project",
+      "bullets": [
+        "Pharma WFI / clean steam: 316L, SF4 (Ra <= 0.38 um), ASTM A270 with S2 where your URS requires it.",
+        "Pharma purified water: 316L, SF1 ambient or SF4 hot-sanitised; one dimensional standard across the loop.",
+        "Automotive DI water and labs: 304L, mechanically polished or pickled unless your process says otherwise.",
+        "Documents: 3.1 certificate per heat, PMI per length, Ra report per EP lot."
+      ]
+    },
+    {
+      "heading": "Delivery to Halol",
+      "paragraphs": [
+        "Halol is supplied by road from our Taloja MIDC works in Mumbai, with dispatch and transit confirmed in writing per quotation. Hazira Port, about 200 km away, is the nearest listed sea gateway for export-bound projects.",
+        "Nearby clusters:"
+      ],
+      "links": [
+        { "label": "Savli and Manjusar", "href": "/market-area/savli/" },
+        { "label": "Vadodara", "href": "/market-area/vadodara/" },
+        { "label": "Ahmedabad", "href": "/market-area/ahmedabad/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "GIDC: Halol Expansion Industrial Estate presentation", "url": "https://gidc.gujarat.gov.in/pdf/gidc-presentation/Halol_Expansion_Industrial_Estate_27-10.pdf" },
+    { "title": "Sun Pharmaceutical Industries: registered plant locations", "url": "https://voguestock.in/fundamental/locations/sun-pharmaceutical-industries-ltd" }
+  ]
+}

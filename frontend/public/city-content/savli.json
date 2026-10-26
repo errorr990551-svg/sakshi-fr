@@ -1,0 +1,49 @@
+{
+  "slug": "savli",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Savli and Manjusar: Vadodara's Pharma and Process-Equipment Estate",
+      "paragraphs": [
+        "Savli GIDC, in Vadodara district on the Delhi-Mumbai Industrial Corridor, is a large estate of about 800 hectares that has drawn engineering and electronics manufacturers, including a rail-car and electrical-component plant opened by Bombardier (now Alstom) in 2009. Savli is also recognised as an Export Promotion Industrial Park location.",
+        "The pharmaceutical side is significant too. Published lists of pharmaceutical manufacturers in Gujarat place several multinational and Indian drugmakers at Savli, and the adjoining Manjusar GIDC includes a biotech park. New pharma capacity continues to come up: in 2022 a construction order worth about Rs 20 crore was reported for a new pharmaceutical plant at GIDC Manjusar."
+      ]
+    },
+    {
+      "heading": "New Pharma Plants: Specifying Before the Civil Work Finishes",
+      "paragraphs": [
+        "For a greenfield block in Savli or Manjusar, the most useful time to settle the hygienic-piping specification is before mechanical contractors are appointed. Agree which loops need an electropolished SF4 finish (WFI, clean steam, hot-sanitised purified water and critical product contact), which can run on SF1 mechanically polished 316L (ambient purified water), and which need no hygienic finish at all.",
+        "Fix one dimensional system - usually ASME BPE OD tube - and write the documentation requirements into the purchase specification: an EN 10204 3.1 certificate per heat, PMI records, an Ra report for each electropolished lot and orbital weld and passivation records from the installer. Doing this up front avoids the most expensive outcome in a new plant: rework during qualification."
+      ]
+    },
+    {
+      "heading": "Biotech Park Buyers at Manjusar",
+      "paragraphs": [
+        "Biotech and life-science units work at smaller pipe diameters but tighter finish and cleanliness requirements than conventional formulation. Media and buffer preparation, WFI distribution and CIP return lines are usually specified in 316L to ASME BPE SF4 or tighter, with borescope inspection of welds. Small, frequent orders are normal for these buyers, and consistency of finish between orders matters more than price per metre."
+      ]
+    },
+    {
+      "heading": "Process-Equipment Fabricators in Savli",
+      "paragraphs": [
+        "Savli's engineering base includes fabricators building skids, vessels and process modules for pharma, food and chemical clients across Gujarat and beyond. They need tube supplied to their drawing - specific ODs, cut lengths, a finish matching their customer's specification - with certificates they can pass through unchanged at factory and site acceptance tests. We supply directly as the manufacturer, so the 3.1 certificate in their customer's turnover package comes from the plant that made and finished the tube."
+      ]
+    },
+    {
+      "heading": "Delivery to Savli and Manjusar",
+      "paragraphs": [
+        "Savli and Manjusar are supplied by road from our Taloja MIDC works in Mumbai; dispatch and transit are confirmed in writing per quotation. Hazira Port, about 155 km away, is the nearest listed sea gateway for export-bound projects.",
+        "Nearby clusters:"
+      ],
+      "links": [
+        { "label": "Vadodara", "href": "/market-area/vadodara/" },
+        { "label": "Halol", "href": "/market-area/halol/" },
+        { "label": "Anand", "href": "/market-area/anand/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Savli - Wikipedia", "url": "https://en.wikipedia.org/wiki/Savli" },
+    { "title": "Pharmaceutical industry in Gujarat - Wikipedia", "url": "https://en.wikipedia.org/wiki/Pharmaceutical_industry_in_Gujarat" },
+    { "title": "SSMB: Conart Engineers bags construction orders (Manjusar pharma plant, 2022)", "url": "https://ssmb.in/2022/01/17/conart-engineers-bags-construction-orders" }
+  ]
+}

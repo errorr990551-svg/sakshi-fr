@@ -1,0 +1,45 @@
+date	path	type	status	nearest_overlap_before	nearest_overlap_after	words_before	words_after	notes
+2026-10-25	/market-area/baddi/	city-in	keep	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/barotiwala/	city-in	keep	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/bhiwadi/	city-in	needs-upgrade	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/daman/	city-in	keep	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/genome-valley/	city-in	needs-upgrade	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/halol/	city-in	needs-upgrade	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/haridwar/	city-in	needs-upgrade	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/jaipur/	city-in	needs-upgrade	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/kolhapur/	city-in	keep	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/lote-parshuram/	city-in	needs-upgrade	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/lucknow/	city-in	needs-upgrade	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/mahad/	city-in	needs-upgrade	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/medak-patancheru/	city-in	needs-upgrade	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/nagpur/	city-in	needs-upgrade	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/nalagarh/	city-in	keep	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/navi-mumbai/	city-in	needs-upgrade	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/new-delhi/	city-in	needs-upgrade	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/panaji/	city-in	needs-upgrade	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/paonta-sahib/	city-in	needs-upgrade	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/patna/	city-in	needs-upgrade	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/ponda/	city-in	needs-upgrade	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/puducherry/	city-in	needs-upgrade	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/roha/	city-in	needs-upgrade	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/rudrapur/	city-in	needs-upgrade	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/sangli/	city-in	needs-upgrade	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/satara/	city-in	needs-upgrade	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/savli/	city-in	needs-upgrade	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/silvassa/	city-in	needs-upgrade	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/solan/	city-in	keep	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/market-area/valsad/	city-in	needs-upgrade	-	-	-	-	wave 1 deep page (pre-loop)
+2026-10-25	/andhra-pradesh/	legacy	redirect	-	-	-	-	301 to canonical page; no content work needed
+2026-10-25	/dairy-electropolished-pipes-kolhapur/	legacy	redirect	-	-	-	-	301 to canonical page; no content work needed
+2026-10-25	/dairy-electropolished-pipes-pune/	legacy	redirect	-	-	-	-	301 to canonical page; no content work needed
+2026-10-25	/electropolished-pipe-fittings-in-pune/	legacy	redirect	-	-	-	-	301 to canonical page; no content work needed
+2026-10-25	/electropolished-pipe-supplier-chennai/	legacy	redirect	-	-	-	-	301 to canonical page; no content work needed
+2026-10-25	/electropolished-pipe-supplier-chittoor-tirupati/	legacy	redirect	-	-	-	-	301 to canonical page; no content work needed
+2026-10-25	/electropolished-pipe-supplier-vadodara/	legacy	redirect	-	-	-	-	301 to canonical page; no content work needed
+2026-10-25	/electropolished-pipe-supplier-visakhapatnam/	legacy	redirect	-	-	-	-	301 to canonical page; no content work needed
+2026-10-25	/electropolished-pipes-in-chennai/	legacy	redirect	-	-	-	-	301 to canonical page; no content work needed
+2026-10-25	/electropolished-pipes-in-mumbai/	legacy	redirect	-	-	-	-	301 to canonical page; no content work needed
+2026-10-25	/gujarat/	legacy	redirect	-	-	-	-	301 to canonical page; no content work needed
+2026-10-25	/madhya-pradesh/	legacy	redirect	-	-	-	-	301 to canonical page; no content work needed
+2026-10-25	/telangana/	legacy	redirect	-	-	-	-	301 to canonical page; no content work needed
+2026-10-25	/west-bengal/	legacy	redirect	-	-	-	-	301 to canonical page; no content work needed

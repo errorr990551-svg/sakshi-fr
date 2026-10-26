@@ -224,8 +224,8 @@ export default function WeightCalculatorPage({ onEnquireClick }) {
 
                 {/* Grade Selection */}
                 <div>
-                  <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: '600', color: 'var(--text-secondary)', marginBottom: '0.5rem', textTransform: 'uppercase' }}>Material Grade</label>
-                  <select
+                  <label htmlFor="weight-calculator-field-1" style={{ display: 'block', fontSize: '0.85rem', fontWeight: '600', color: 'var(--text-secondary)', marginBottom: '0.5rem', textTransform: 'uppercase' }}>Material Grade</label>
+                  <select id="weight-calculator-field-1"
                     value={grade}
                     onChange={(e) => { setGrade(e.target.value); setResult(null); }}
                     style={{
@@ -252,16 +252,16 @@ export default function WeightCalculatorPage({ onEnquireClick }) {
                   {shape === 'pipe' && (
                     <>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Outer Diameter (OD) - mm</label>
-                        <input type="number" step="any" required placeholder="e.g. 50.8" value={dimensions.od} onChange={(e) => handleInputChange('od', e.target.value)} style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} />
+                        <label htmlFor="weight-calculator-field-2" style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Outer Diameter (OD) - mm</label>
+                        <input id="weight-calculator-field-2" type="number" step="any" required placeholder="e.g. 50.8" value={dimensions.od} onChange={(e) => handleInputChange('od', e.target.value)} style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} />
                       </div>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Wall Thickness - mm</label>
-                        <input type="number" step="any" required placeholder="e.g. 2.0" value={dimensions.wall} onChange={(e) => handleInputChange('wall', e.target.value)} style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} />
+                        <label htmlFor="weight-calculator-field-3" style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Wall Thickness - mm</label>
+                        <input id="weight-calculator-field-3" type="number" step="any" required placeholder="e.g. 2.0" value={dimensions.wall} onChange={(e) => handleInputChange('wall', e.target.value)} style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} />
                       </div>
                       <div style={{ gridColumn: 'span 2' }}>
-                        <label style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Length (meters)</label>
-                        <input type="number" step="any" required placeholder="e.g. 6" value={dimensions.length} onChange={(e) => handleInputChange('length', e.target.value)} style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} />
+                        <label htmlFor="weight-calculator-field-4" style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Length (meters)</label>
+                        <input id="weight-calculator-field-4" type="number" step="any" required placeholder="e.g. 6" value={dimensions.length} onChange={(e) => handleInputChange('length', e.target.value)} style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} />
                       </div>
                     </>
                   )}
@@ -269,12 +269,12 @@ export default function WeightCalculatorPage({ onEnquireClick }) {
                   {shape === 'bar' && (
                     <>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Diameter - mm</label>
-                        <input type="number" step="any" required placeholder="e.g. 25" value={dimensions.diameter} onChange={(e) => handleInputChange('diameter', e.target.value)} style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} />
+                        <label htmlFor="weight-calculator-field-5" style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Diameter - mm</label>
+                        <input id="weight-calculator-field-5" type="number" step="any" required placeholder="e.g. 25" value={dimensions.diameter} onChange={(e) => handleInputChange('diameter', e.target.value)} style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} />
                       </div>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Length (meters)</label>
-                        <input type="number" step="any" required placeholder="e.g. 3" value={dimensions.length} onChange={(e) => handleInputChange('length', e.target.value)} style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} />
+                        <label htmlFor="weight-calculator-field-6" style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Length (meters)</label>
+                        <input id="weight-calculator-field-6" type="number" step="any" required placeholder="e.g. 3" value={dimensions.length} onChange={(e) => handleInputChange('length', e.target.value)} style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} />
                       </div>
                     </>
                   )}
@@ -282,16 +282,16 @@ export default function WeightCalculatorPage({ onEnquireClick }) {
                   {shape === 'sheet' && (
                     <>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Thickness - mm</label>
-                        <input type="number" step="any" required placeholder="e.g. 3" value={dimensions.thickness} onChange={(e) => handleInputChange('thickness', e.target.value)} style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} />
+                        <label htmlFor="weight-calculator-field-7" style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Thickness - mm</label>
+                        <input id="weight-calculator-field-7" type="number" step="any" required placeholder="e.g. 3" value={dimensions.thickness} onChange={(e) => handleInputChange('thickness', e.target.value)} style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} />
                       </div>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Width - mm</label>
-                        <input type="number" step="any" required placeholder="e.g. 1250" value={dimensions.width} onChange={(e) => handleInputChange('width', e.target.value)} style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} />
+                        <label htmlFor="weight-calculator-field-8" style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Width - mm</label>
+                        <input id="weight-calculator-field-8" type="number" step="any" required placeholder="e.g. 1250" value={dimensions.width} onChange={(e) => handleInputChange('width', e.target.value)} style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} />
                       </div>
                       <div style={{ gridColumn: 'span 2' }}>
-                        <label style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Length (meters)</label>
-                        <input type="number" step="any" required placeholder="e.g. 2.5" value={dimensions.length} onChange={(e) => handleInputChange('length', e.target.value)} style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} />
+                        <label htmlFor="weight-calculator-field-9" style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Length (meters)</label>
+                        <input id="weight-calculator-field-9" type="number" step="any" required placeholder="e.g. 2.5" value={dimensions.length} onChange={(e) => handleInputChange('length', e.target.value)} style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} />
                       </div>
                     </>
                   )}
@@ -299,24 +299,24 @@ export default function WeightCalculatorPage({ onEnquireClick }) {
                   {shape === 'flange' && (
                     <>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Outer Diameter - mm</label>
-                        <input type="number" step="any" required placeholder="e.g. 150" value={dimensions.outerDiameter} onChange={(e) => handleInputChange('outerDiameter', e.target.value)} style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} />
+                        <label htmlFor="weight-calculator-field-10" style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Outer Diameter - mm</label>
+                        <input id="weight-calculator-field-10" type="number" step="any" required placeholder="e.g. 150" value={dimensions.outerDiameter} onChange={(e) => handleInputChange('outerDiameter', e.target.value)} style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} />
                       </div>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Inner Diameter - mm</label>
-                        <input type="number" step="any" placeholder="e.g. 50 (optional)" value={dimensions.innerDiameter} onChange={(e) => handleInputChange('innerDiameter', e.target.value)} style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} />
+                        <label htmlFor="weight-calculator-field-11" style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Inner Diameter - mm</label>
+                        <input id="weight-calculator-field-11" type="number" step="any" placeholder="e.g. 50 (optional)" value={dimensions.innerDiameter} onChange={(e) => handleInputChange('innerDiameter', e.target.value)} style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} />
                       </div>
                       <div style={{ gridColumn: 'span 2' }}>
-                        <label style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Thickness - mm</label>
-                        <input type="number" step="any" required placeholder="e.g. 18" value={dimensions.thickness} onChange={(e) => handleInputChange('thickness', e.target.value)} style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} />
+                        <label htmlFor="weight-calculator-field-12" style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Thickness - mm</label>
+                        <input id="weight-calculator-field-12" type="number" step="any" required placeholder="e.g. 18" value={dimensions.thickness} onChange={(e) => handleInputChange('thickness', e.target.value)} style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} />
                       </div>
                     </>
                   )}
                 </div>
 
                 <div>
-                  <label style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Quantity</label>
-                  <input type="number" min="1" required value={dimensions.quantity} onChange={(e) => handleInputChange('quantity', e.target.value)} style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} />
+                  <label htmlFor="weight-calculator-field-13" style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Quantity</label>
+                  <input id="weight-calculator-field-13" type="number" min="1" required value={dimensions.quantity} onChange={(e) => handleInputChange('quantity', e.target.value)} style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} />
                 </div>
 
                 {error && (

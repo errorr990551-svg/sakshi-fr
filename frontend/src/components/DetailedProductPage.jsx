@@ -217,6 +217,9 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
                     src={product.Image} 
                     alt={product['Product Name']}
                     className="product-detail-image"
+                    width={800}
+                    height={600}
+                    fetchPriority="high"
                     style={{
                       width: '100%',
                       height: '100%',
@@ -824,8 +827,8 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
                     </span>
                     {openFaq === idx ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
                   </button>
-                  {openFaq === idx && (
-                    <div style={{ 
+                  {(
+                    <div hidden={!(openFaq === idx)} style={{ 
                       padding: '0 1.5rem 1.5rem 1.5rem', 
                       color: 'var(--text-secondary)',
                       fontSize: '0.9rem',

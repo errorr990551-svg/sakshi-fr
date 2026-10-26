@@ -1282,10 +1282,6 @@ export const telanganaCityData = {
       {
         "name": "Hyderabad",
         "path": "/market-area/hyderabad"
-      },
-      {
-        "name": "Suryapet",
-        "path": "/market-area/suryapet"
       }
     ],
     "faqs": [

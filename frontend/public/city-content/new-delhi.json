@@ -1,0 +1,51 @@
+{
+  "slug": "new-delhi",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Okhla, Naraina and Bawana: Delhi's Planned Industrial Estates",
+      "paragraphs": [
+        "Delhi's manufacturing is concentrated in estates developed by DSIIDC, the Delhi State Industrial and Infrastructure Development Corporation. Okhla and Naraina are the older, inner-city estates; Bawana, on the north-western edge, is one of the largest DSIIDC has built, with planned plots and road links to the national highway and the Urban Extension Road. Bawana and Narela also received many units under Delhi's relocation scheme, which moved industry out of non-conforming residential areas.",
+        "This page covers those estates. Delhi as a market is also a large hub for pharmaceutical trading and distribution, so many of our Delhi enquiries come from buyers sourcing for plants outside the city."
+      ]
+    },
+    {
+      "heading": "Buying from Delhi for Plants Elsewhere",
+      "paragraphs": [
+        "Head offices, project consultants and trading houses in Delhi often buy stainless tube for formulation plants in Himachal Pradesh, Uttarakhand, Haryana or Rajasthan. If that is your situation, specify the delivery site, not the billing address, at RFQ stage: transit, packing and documentation are planned for where the tube will be installed.",
+        "Ask for documentation addressed to the end plant's validation team: an EN 10204 3.1 certificate traced to heat number, PMI records and, for electropolished lots, an internal Ra report. Those documents travel with the material to site."
+      ]
+    },
+    {
+      "heading": "Food, Packaging and Engineering Units in the Estates",
+      "paragraphs": [
+        "Food units in Delhi's estates - bakery, confectionery, beverages, packaged foods - need sanitary product and CIP lines, 304 for most duty and 316L for salty or acidic product. Packaging units serving pharma customers may need certified tube on purified-water or cleanroom utilities. Engineering firms fabricating skids and equipment for pharma and food clients need tube to drawing with certificates that pass straight through to their customer."
+      ]
+    },
+    {
+      "heading": "Hospitals, Laboratories and Institutions",
+      "paragraphs": [
+        "Delhi's hospitals, research laboratories and institutions buy high-purity water and clean-utility piping in smaller quantities. Purified-water and laboratory distribution lines in 316L with a smooth internal finish reduce contamination risk for analytical work. Tell us the water specification and the points of use and we will advise whether an electropolished finish is justified."
+      ]
+    },
+    {
+      "heading": "Delivery to Delhi",
+      "paragraphs": [
+        "Delhi is supplied by road from our Taloja MIDC works; dispatch and transit are confirmed in writing with each quotation. ICD Tughlakabad, about 15 km from the city centre, is the nearest listed container gateway for export-bound material.",
+        "Nearby NCR clusters:"
+      ],
+      "links": [
+        { "label": "Delhi", "href": "/market-area/delhi/" },
+        { "label": "Gurugram and Manesar", "href": "/market-area/gurugram/" },
+        { "label": "Noida", "href": "/market-area/noida/" },
+        { "label": "Faridabad", "href": "/market-area/faridabad/" },
+        { "label": "Ghaziabad", "href": "/market-area/ghaziabad/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "DSIIDC: Bawana Industrial Area", "url": "https://dsiidc.delhi.gov.in/bawana-industrial-area" },
+    { "title": "DSIIDC: About the relocation scheme", "url": "https://dsiidc.delhi.gov.in/relocation" },
+    { "title": "The Week: Delhi industry dept to auction plots in Narela, Bawana (2024)", "url": "https://www.theweek.in/wire-updates/business/2024/07/18/nrg11-dl-plots-auction.html" }
+  ]
+}

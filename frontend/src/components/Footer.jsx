@@ -104,6 +104,21 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
             </ul>
           </div>
 
+          {/* Grades, Standards & Export */}
+          <div className="footer-col">
+            <h4>Grades, Standards & Export</h4>
+            <ul className="footer-links">
+              <li><a href="/astm-a270-electropolished-tubes/" onClick={(e) => handleLinkClick(e, '/astm-a270-electropolished-tubes/')}>ASTM A270 Electropolished Tubes</a></li>
+              <li><a href="/super-duplex-2507-products/" onClick={(e) => handleLinkClick(e, '/super-duplex-2507-products/')}>Super Duplex 2507 Products</a></li>
+              <li><a href="/inconel-625-flanges/" onClick={(e) => handleLinkClick(e, '/inconel-625-flanges/')}>Inconel 625 Flanges</a></li>
+              <li><a href="/astm-a105-flanges/" onClick={(e) => handleLinkClick(e, '/astm-a105-flanges/')}>ASTM A105 Flanges</a></li>
+              <li><a href="/sheets-plates-coils/" onClick={(e) => handleLinkClick(e, '/sheets-plates-coils/')}>Sheets, Plates & Coils</a></li>
+              <li><a href="/flange-exporter-usa/" onClick={(e) => handleLinkClick(e, '/flange-exporter-usa/')}>Flange Exporter to USA</a></li>
+              <li><a href="/flange-supplier-uae/" onClick={(e) => handleLinkClick(e, '/flange-supplier-uae/')}>Flange Supplier to UAE</a></li>
+              <li><a href="/flange-supplier-saudi-arabia/" onClick={(e) => handleLinkClick(e, '/flange-supplier-saudi-arabia/')}>Flange Supplier to Saudi Arabia</a></li>
+            </ul>
+          </div>
+
           {/* Market Area (Replaced Cities We Serve) */}
           <div className="footer-col">
             <h4>Market Area</h4>

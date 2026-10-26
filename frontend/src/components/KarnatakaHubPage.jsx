@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { MapPin, ArrowRight, ShieldCheck, Phone, Mail, Award, CheckCircle2, Factory } from 'lucide-react';
-import { handleLinkClick } from '../utils/router';
+import { handleLinkClick, withSlash } from '../utils/router';
 
 export default function KarnatakaHubPage({ onEnquireClick, onShowContactDetails }) {
   const handleShowContact = onShowContactDetails || (() => onEnquireClick && onEnquireClick('Karnataka State Hub Contact Request'));
@@ -112,9 +112,15 @@ export default function KarnatakaHubPage({ onEnquireClick, onShowContactDetails 
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.82rem', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
             <a href="/" onClick={(e) => handleLinkClick(e, '/')} style={{ color: 'inherit', textDecoration: 'none' }}>Home</a>
             <span>›</span>
+<<<<<<< HEAD
             <a href="/electropolished-pipes/" onClick={(e) => handleLinkClick(e, '/electropolished-pipes/')} style={{ color: 'inherit', textDecoration: 'none' }}>Electropolished Pipes</a>
             <span>›</span>
             <a href="/market-area/" onClick={(e) => handleLinkClick(e, '/market-area/')} style={{ color: 'inherit', textDecoration: 'none' }}>Market Directory</a>
+=======
+            <a href="/electropolished-pipes/" onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>Electropolished Pipes</a>
+            <span>›</span>
+            <a href="/market-area/" onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>Market Directory</a>
+>>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
             <span>›</span>
             <span style={{ color: 'var(--primary-yellow)', fontWeight: '600' }}>Karnataka</span>
           </div>
@@ -246,7 +252,7 @@ export default function KarnatakaHubPage({ onEnquireClick, onShowContactDetails 
                 </div>
 
                 <a 
-                  href={c.path}
+                  href={withSlash(c.path)}
                   onClick={(e) => {
                     e.stopPropagation();
                     handleLinkClick(e, c.path);

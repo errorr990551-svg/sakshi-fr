@@ -1,6 +1,10 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { REDIRECTED_PATHS, isRedirectedPath } from './src/data/redirects.js';
+import { buildCityFaqs } from './src/data/cityContent.js';
+import { customCityData } from './src/data/customCityData.js';
+import { visibleProductFaqs } from './src/utils/productFaqs.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -57,21 +61,6 @@ async function runPrerender() {
       data: p
     });
   });
-
-  // Ensure physical /about/ page exists with full SEO information
-  const aboutPage = corePages.find(p => p.Slug === 'about-us');
-  if (aboutPage) {
-    routes.push({
-      url: `${BASE_URL}/about/`,
-      type: 'about',
-      slug: 'about',
-      title: aboutPage['Meta Title'],
-      description: aboutPage['Meta Description'],
-      robots: 'index, follow',
-      keywords: aboutPage['Primary Keyword'] || '',
-      data: aboutPage
-    });
-  }
 
   // Categories
   categories.forEach(c => {
@@ -133,24 +122,24 @@ async function runPrerender() {
     { url: `${BASE_URL}/gallery/`, type: 'gallery', slug: 'gallery', title: 'Factory Media & Video Gallery | Sakshi Forge Manufacturing Infrastructure', description: 'Watch live videos and explore photos of Sakshi Forge forging presses, heat treatment furnaces, CNC lathes, and industrial steel flange inventory.', data: null },
     { url: `${BASE_URL}/clients/`, type: 'clients', slug: 'clients', title: 'Our Clients & Industries | Sakshi Forge', description: 'Sakshi Forge supplies ISO 9001:2015 certified flanges and fittings globally.', data: null },
     { url: `${BASE_URL}/catalogue/`, type: 'catalogue', slug: 'catalogue', title: 'Download Product Catalogue (PDF) | Sakshi Forge', description: 'Download official Sakshi Forge catalogue with ASME B16.5 flange dimension tables.', data: null },
-    { url: `${BASE_URL}/team/`, type: 'team', slug: 'team', title: 'Leadership & Engineering Team | Sakshi Forge', description: 'Meet Sakshi Forge metallurgists and QA team.', data: null },
-    { url: `${BASE_URL}/stainless-steel-elbow/`, type: 'stainless-steel-elbow', slug: 'stainless-steel-elbow', title: 'SS Elbow Manufacturer: 45°, 90°, 180° | Sakshi Forge', description: 'ASME B16.9 buttweld and B16.11 forged elbows.', data: null },
-    { url: `${BASE_URL}/ss-304-pipe-fittings-flanges/`, type: 'grade', slug: 'ss-304-pipe-fittings-flanges', title: 'SS 304/304L Pipes, Fittings & Flanges | Sakshi Forge', description: 'Stainless Steel 304 / 304L Products.', data: null },
-    { url: `${BASE_URL}/ss-316-316l-pipe-fittings-flanges/`, type: 'grade', slug: 'ss-316-316l-pipe-fittings-flanges', title: 'SS 316/316L Pipes, Fittings & Flanges | Sakshi Forge', description: 'Stainless Steel 316 / 316L Products.', data: null },
-    { url: `${BASE_URL}/duplex-2205-products/`, type: 'grade', slug: 'duplex-2205-products', title: 'Duplex 2205 Flanges & Fittings | Sakshi Forge', description: 'Duplex 2205 Products.', data: null },
-    { url: `${BASE_URL}/super-duplex-2507-products/`, type: 'grade', slug: 'super-duplex-2507-products', title: 'Super Duplex 2507 Products | Sakshi Forge', description: 'Super Duplex 2507 Products.', data: null },
-    { url: `${BASE_URL}/inconel-625-flanges/`, type: 'grade', slug: 'inconel-625-flanges', title: 'Inconel 625 Flanges Supplier | Sakshi Forge', description: 'Inconel 625 Forged Flanges.', data: null },
-    { url: `${BASE_URL}/asme-b16-11-forged-fittings/`, type: 'standard', slug: 'asme-b16-11-forged-fittings', title: 'ASME B16.11 Forged Fittings: Classes & Dimensions', description: 'ASME B16.11 Forged Fittings.', data: null },
-    { url: `${BASE_URL}/asme-b16-5-flanges/`, type: 'standard', slug: 'asme-b16-5-flanges', title: 'ASME B16.5 Flanges: Classes 150-2500 & Dimensions', description: 'ASME B16.5 Flanges.', data: null },
-    { url: `${BASE_URL}/astm-a105-flanges/`, type: 'standard', slug: 'astm-a105-flanges', title: 'ASTM A105 Carbon Steel Flanges Manufacturer', description: 'ASTM A105 Carbon Steel Flanges.', data: null },
-    { url: `${BASE_URL}/astm-a270-sanitary-tube/`, type: 'standard', slug: 'astm-a270-sanitary-tube', title: 'ASTM A270 Sanitary Tubes | EP & BA Finish', description: 'ASTM A270 Sanitary Tubing.', data: null },
-    { url: `${BASE_URL}/flange-dimension-chart/`, type: 'chart-tool', slug: 'flange-dimension-chart', title: 'ASME B16.5 Flange Dimension Chart', description: 'Flange dimension chart.', data: { toolType: 'flange-dimension-chart' } },
-    { url: `${BASE_URL}/flange-weight-chart/`, type: 'chart-tool', slug: 'flange-weight-chart', title: 'Flange Weight Chart & Calculator', description: 'Flange weight chart.', data: { toolType: 'flange-weight-chart' } },
-    { url: `${BASE_URL}/flange-bolt-chart/`, type: 'chart-tool', slug: 'flange-bolt-chart', title: 'Flange Bolt Chart: Size, Qty & Torque', description: 'Flange bolt chart.', data: { toolType: 'flange-bolt-chart' } },
-    { url: `${BASE_URL}/pipe-schedule-chart/`, type: 'chart-tool', slug: 'pipe-schedule-chart', title: 'Pipe Schedule Chart: Sch 5S-XXS', description: 'Pipe schedule chart.', data: { toolType: 'pipe-schedule-chart' } },
-    { url: `${BASE_URL}/flange-exporter-usa/`, type: 'export', slug: 'flange-exporter-usa', title: 'Indian Flange & Fittings Exporter to USA', description: 'Flange exporter to USA.', data: { countryType: 'usa' } },
-    { url: `${BASE_URL}/flange-supplier-uae/`, type: 'export', slug: 'flange-supplier-uae', title: 'Flange & Pipe Fittings Supplier to UAE', description: 'Flange supplier to UAE.', data: { countryType: 'uae' } },
-    { url: `${BASE_URL}/flange-supplier-saudi-arabia/`, type: 'export', slug: 'flange-supplier-saudi-arabia', title: 'Flange Supplier to Saudi Arabia', description: 'Flange supplier to KSA.', data: { countryType: 'saudi-arabia' } },
+    { url: `${BASE_URL}/team/`, type: 'team', slug: 'team', title: 'Leadership & Engineering Team | Sakshi Forge', description: 'Meet the Sakshi Forge leadership, metallurgy and quality assurance team behind our stainless steel flanges, forged fittings and electropolished pipes.', data: null },
+    { url: `${BASE_URL}/stainless-steel-elbow/`, type: 'stainless-steel-elbow', slug: 'stainless-steel-elbow', title: 'SS Elbow Manufacturer: 45°, 90°, 180° | Sakshi Forge', description: 'Stainless steel 45°, 90° and 180° elbows to ASME B16.9 (buttweld) and ASME B16.11 (forged) in 304/304L, 316/316L and duplex grades from Sakshi Forge.', data: null },
+    { url: `${BASE_URL}/ss-304-pipe-fittings-flanges/`, type: 'grade', slug: 'ss-304-pipe-fittings-flanges', title: 'SS 304/304L Pipes, Fittings & Flanges | Sakshi Forge', description: 'SS 304 / 304L pipes, pipe fittings, flanges and forged fittings from Sakshi Forge, supplied to ASTM and ASME standards with mill test certificates.', data: null },
+    { url: `${BASE_URL}/ss-316-316l-pipe-fittings-flanges/`, type: 'grade', slug: 'ss-316-316l-pipe-fittings-flanges', title: 'SS 316/316L Pipes, Fittings & Flanges | Sakshi Forge', description: 'SS 316 / 316L pipes, pipe fittings, flanges and forged fittings from Sakshi Forge for chemical, pharma and food plants, with mill test certificates.', data: null },
+    { url: `${BASE_URL}/duplex-2205-products/`, type: 'grade', slug: 'duplex-2205-products', title: 'Duplex 2205 Flanges & Fittings | Sakshi Forge', description: 'Duplex 2205 (UNS S31803 / S32205) flanges, pipe fittings and forged fittings from Sakshi Forge for chloride-rich, high-strength process service.', data: null },
+    { url: `${BASE_URL}/super-duplex-2507-products/`, type: 'grade', slug: 'super-duplex-2507-products', title: 'Super Duplex 2507 Products | Sakshi Forge', description: 'Super duplex 2507 (UNS S32750) flanges, pipe fittings and forged fittings from Sakshi Forge for offshore, desalination and severe chloride duty.', data: null },
+    { url: `${BASE_URL}/inconel-625-flanges/`, type: 'grade', slug: 'inconel-625-flanges', title: 'Inconel 625 Flanges Supplier | Sakshi Forge', description: 'Inconel 625 (UNS N06625) forged flanges from Sakshi Forge: weld neck, slip-on, blind and socket weld types for high-temperature, corrosive service.', data: null },
+    { url: `${BASE_URL}/asme-b16-11-forged-fittings/`, type: 'standard', slug: 'asme-b16-11-forged-fittings', title: 'ASME B16.11 Forged Fittings: Classes & Dimensions', description: 'ASME B16.11 forged fittings guide: socket weld and threaded classes 2000, 3000, 6000 and 9000, dimensions and grades supplied by Sakshi Forge.', data: null },
+    { url: `${BASE_URL}/asme-b16-5-flanges/`, type: 'standard', slug: 'asme-b16-5-flanges', title: 'ASME B16.5 Flanges: Classes 150-2500 & Dimensions', description: 'ASME B16.5 flanges in pressure classes 150 to 2500: types, dimensions and materials, manufactured and supplied by Sakshi Forge in Mumbai, India.', data: null },
+    { url: `${BASE_URL}/astm-a105-flanges/`, type: 'standard', slug: 'astm-a105-flanges', title: 'ASTM A105 Carbon Steel Flanges Manufacturer', description: 'ASTM A105 carbon steel forged flanges from Sakshi Forge: weld neck, slip-on, blind and socket weld flanges to ASME B16.5 dimensions.', data: null },
+    { url: `${BASE_URL}/astm-a270-sanitary-tube/`, type: 'standard', slug: 'astm-a270-sanitary-tube', title: 'ASTM A270 Sanitary Tubes | EP & BA Finish', description: 'ASTM A270 sanitary stainless steel tubing in 304L and 316L with electropolished (EP) and bright annealed (BA) finishes for food, dairy and pharma lines.', data: null },
+    { url: `${BASE_URL}/flange-dimension-chart/`, type: 'chart-tool', slug: 'flange-dimension-chart', title: 'ASME B16.5 Flange Dimension Chart', description: 'ASME B16.5 flange dimension chart: outside diameter, thickness, bolt circle and bolt holes for weld neck, slip-on and blind flanges, class 150 to 2500.', data: { toolType: 'flange-dimension-chart' } },
+    { url: `${BASE_URL}/flange-weight-chart/`, type: 'chart-tool', slug: 'flange-weight-chart', title: 'Flange Weight Chart & Calculator', description: 'Flange weight chart and calculator: approximate weights of ASME B16.5 weld neck, slip-on and blind flanges by nominal size and pressure class.', data: { toolType: 'flange-weight-chart' } },
+    { url: `${BASE_URL}/flange-bolt-chart/`, type: 'chart-tool', slug: 'flange-bolt-chart', title: 'Flange Bolt Chart: Size, Qty & Torque', description: 'Flange bolt chart: stud bolt size, quantity and length for ASME B16.5 flanges by nominal pipe size and pressure class, with torque guidance.', data: { toolType: 'flange-bolt-chart' } },
+    { url: `${BASE_URL}/pipe-schedule-chart/`, type: 'chart-tool', slug: 'pipe-schedule-chart', title: 'Pipe Schedule Chart: Sch 5S-XXS', description: 'Pipe schedule chart from Sch 5S to XXS: outside diameter, wall thickness and weight per metre for stainless and carbon steel pipe sizes.', data: { toolType: 'pipe-schedule-chart' } },
+    { url: `${BASE_URL}/flange-exporter-usa/`, type: 'export', slug: 'flange-exporter-usa', title: 'Indian Flange & Fittings Exporter to USA', description: 'Sakshi Forge exports ASME B16.5 flanges, forged fittings and stainless steel pipe fittings from India to buyers in the USA, with full material traceability.', data: { countryType: 'usa' } },
+    { url: `${BASE_URL}/flange-supplier-uae/`, type: 'export', slug: 'flange-supplier-uae', title: 'Flange & Pipe Fittings Supplier to UAE', description: 'Sakshi Forge supplies flanges, forged fittings and stainless steel pipe fittings from India to oil, gas and process plants across the UAE.', data: { countryType: 'uae' } },
+    { url: `${BASE_URL}/flange-supplier-saudi-arabia/`, type: 'export', slug: 'flange-supplier-saudi-arabia', title: 'Flange Supplier to Saudi Arabia', description: 'Sakshi Forge supplies ASME flanges, forged fittings and stainless steel pipe fittings from India to industrial and oil and gas projects in Saudi Arabia.', data: { countryType: 'saudi-arabia' } },
     { url: `${BASE_URL}/tamil-nadu/`, type: 'tamil-nadu-hub', slug: 'tamil-nadu', title: 'Electropolished Pipe Supplier in Tamil Nadu | 10 Industrial Belts | Sakshi Forge', description: 'Factory-direct electropolished SS 304L, 316L and duplex pipes supplied across Tamil Nadu: Chennai, Coimbatore, Hosur, Cuddalore, Trichy, Salem, Madurai, Thoothukudi, Erode, Vellore.', data: null },
     { url: `${BASE_URL}/karnataka/`, type: 'karnataka-hub', slug: 'karnataka', title: 'Electropolished Pipe Manufacturer Across Karnataka | Sakshi Forge', description: 'Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Karnataka industrial corridors: Bengaluru, Tumakuru, Mysuru, Mangaluru, Bidar, Hubballi-Dharwad, Belagavi, Hassan, Raichur and Mandya.', data: null },
     { url: `${BASE_URL}/market-area/gujarat/`, type: 'gujarat-hub', slug: 'market-area/gujarat', title: 'Electropolished Pipe Manufacturer Across Gujarat | Sakshi Forge', description: 'Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Gujarat industrial belts: Ahmedabad, Vadodara, Vapi, Sanand, Ankleshwar, Surat, Dahej, Anand and Mehsana.', data: null },
@@ -312,8 +301,17 @@ async function runPrerender() {
     };
   }
 
-  // 4. Render each route
+  // Write the merged-page 301 rules into the deployed .htaccess
+  const htaccessPath = path.join(__dirname, 'dist/.htaccess');
+  const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const mergedRules = Object.entries(REDIRECTED_PATHS)
+    .map(([from, to]) => `RewriteRule ^${escapeRegex(from.replace(/^\/|\/$/g, ''))}/?$ ${BASE_URL}${to} [L,R=301]`)
+    .join('\n');
+  fs.writeFileSync(htaccessPath, fs.readFileSync(htaccessPath, 'utf-8').replace('# @MERGED_PAGES@', mergedRules));
+
+  // 4. Render each route (skipping merged pages the server 301-redirects, see src/data/redirects.js)
   for (const route of routes) {
+    if (isRedirectedPath(`/${route.slug}`)) continue;
     // Determine path relative to domain
     let routePath = '/' + route.slug;
     if (route.type === 'home') {
@@ -323,6 +321,13 @@ async function runPrerender() {
     console.log(`Pre-rendering URL: ${routePath}`);
 
     // Render body using server bundle
+    // In-depth city content (public/city-content/<slug>.json): visible to the server render
+    // and embedded in the page so hydration renders the same markup.
+    const citySlugMatch = routePath.match(/^\/market-area\/([^/]+)\/?$/);
+    const cityDeepPath = citySlugMatch ? path.join(__dirname, 'public/city-content', `${citySlugMatch[1]}.json`) : null;
+    const cityDeep = cityDeepPath && fs.existsSync(cityDeepPath) ? JSON.parse(fs.readFileSync(cityDeepPath, 'utf-8')) : null;
+    globalThis.__CITY_DEEP__ = cityDeep;
+
     let bodyHtml = '';
     try {
       bodyHtml = render(routePath);
@@ -434,7 +439,7 @@ async function runPrerender() {
         "@type": "Product",
         "name": route.data['Product Name'],
         "url": route.url,
-        "image": [ `${BASE_URL}${route.data['Image'] || '/flanges_pipes.webp'}` ],
+        "image": [ `${BASE_URL}${encodeURI(route.data['Image'] || '/flanges_pipes.webp')}` ],
         "description": route.description,
         "sku": offerData.sku,
         "mpn": offerData.mpn,
@@ -448,8 +453,9 @@ async function runPrerender() {
       schemasGraph.push(breadcrumbs);
       schemasGraph.push(productSchema);
 
-      if (route.data['FAQs'] && route.data['FAQs'].length > 0) {
-        const faqEntities = route.data['FAQs'].map(f => ({
+      const productFaqs = visibleProductFaqs(route.data);
+      if (productFaqs.length > 0) {
+        const faqEntities = productFaqs.map(f => ({
           "@type": "Question",
           "name": f.q,
           "acceptedAnswer": { "@type": "Answer", "text": f.a }
@@ -541,7 +547,9 @@ async function runPrerender() {
       const currentUrl = `${BASE_URL}${cleanCityPath.startsWith('/') ? '' : '/'}${cleanCityPath}`;
       const cityName = richData?.city || route.data.city;
       const stateName = richData?.state || route.data.state || 'India';
-      const faqsList = richData?.faqs || route.data.faqs;
+      // Must match the FAQs CityPage shows: custom city data first, then generated research FAQs
+      const customCity = customCityData[citySlug];
+      const faqsList = richData?.faqs || (customCity ? customCity.faqs : buildCityFaqs(route.data)) || route.data.faqs;
       const hasDuplex = richData?.hasDuplex || route.data.hasDuplex;
 
       // BreadcrumbList
@@ -688,16 +696,14 @@ async function runPrerender() {
     // Inject JSON-LD Schema
     html = html.replace('</head>', `${schemaBlockHtml}\n</head>`);
 
+    if (cityDeep) {
+      const embedded = JSON.stringify(cityDeep).replace(/</g, '\\u003c');
+      html = html.replace('</head>', `<script id="city-deep-data" type="application/json">${embedded}</script>\n</head>`);
+    }
+    globalThis.__CITY_DEEP__ = null;
+
     // Inject rendered body
     html = html.replace('<div id="root"></div>', `<div id="root">${bodyHtml}</div>`);
-
-    // Sanitize any non-ASCII dashes or Mojibake before saving
-    html = html
-      .replace(/(?:Γ|Г)Ç[ôóö]/g, '-')
-      .replace(/(?:Γ|Г)Ç—/g, '-')
-      .replace(/â€“/g, '-')
-      .replace(/â€”/g, '-')
-      .replace(/[\u2013\u2014]/g, '-');
 
     // 5. Write to output folder
     let outputFilePath = '';

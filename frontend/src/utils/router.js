@@ -1,3 +1,5 @@
+import { REDIRECTED_PATHS } from '../data/redirects';
+
 /**
  * Normalizes internal router paths with standard trailing slash to eliminate 301 redirects
  */
@@ -16,8 +18,28 @@ export function isTrailingSlashCityPath(pathname) {
   return true;
 }
 
+/**
+ * Normalizes an internal link to the canonical trailing-slash form so links
+ * never hit the sitewide trailing-slash 301. External URLs, anchors, mailto/tel
+ * and file paths (e.g. /catalogue.pdf) are returned unchanged.
+ */
+export function withSlash(href) {
+  if (typeof href !== 'string' || !href.startsWith('/') || href.startsWith('//')) return href;
+  const [, pathname, rest] = href.match(/^([^?#]*)(.*)$/);
+  if (/\.[a-z0-9]{2,5}$/i.test(pathname)) return href;
+  const slashed = pathname.endsWith('/') ? pathname : `${pathname}/`;
+  // Links to merged pages go straight to the page they were merged into (no 301 hop)
+  return (REDIRECTED_PATHS[slashed] || slashed) + rest;
+}
+
 export function navigate(path) {
+<<<<<<< HEAD
   const targetPath = normalizePath(path);
+=======
+  const targetPath = withSlash(path || '/');
+  // Leaving the pre-rendered page: from now on the head is managed client-side.
+  window.__SAKSHI_HYDRATED_PATH__ = null;
+>>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
   // Update browser address bar without page reload
   window.history.pushState(null, "", targetPath);
   // Trigger popstate event so our App router hears it and updates the view

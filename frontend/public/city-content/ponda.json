@@ -1,0 +1,59 @@
+{
+  "slug": "ponda",
+  "updated": "2026-10-25",
+  "sections": [
+    {
+      "heading": "Ponda Taluka: Kundaim and Bethora Industrial Estates",
+      "paragraphs": [
+        "Ponda, in central Goa, is home to the Kundaim and Bethora industrial estates. Kundaim is one of the four locations - with Verna, Pilerne and Colvale - where Goa's pharmaceutical manufacturing is concentrated, and the state's pharma sector as a whole leans heavily on contract manufacturing: industry bodies have counted far more contract manufacturers than brand-owning plants in Goa.",
+        "Contract manufacturing shapes the specification. A plant making products for several brand owners is audited by each of them, runs frequent changeovers and must prove its cleaning works for every product it makes."
+      ]
+    },
+    {
+      "heading": "Contract Manufacturers: Built for Changeovers",
+      "paragraphs": [
+        "In a multi-client formulation plant, the lines that carry product - granulation binder, coating suspension, liquid-oral transfer - and the CIP circuits that clean them are the ones worth specifying in electropolished 316L. A smooth, passive bore releases residue more readily, so cleaning cycles are shorter and validation data more consistent from product to product.",
+        "The purified-water system that supplies these lines is usually built in 316L, with SF1 tube adequate for an ambient loop and SF4 electropolished tube for hot-sanitised sections and critical points of use. Because several clients' auditors review the same system, consistent documentation matters: an EN 10204 3.1 certificate for every heat, PMI records for every length, and an Ra report for every electropolished lot."
+      ]
+    },
+    {
+      "heading": "Engineering and Food Units in Ponda",
+      "paragraphs": [
+        "Ponda's engineering units fabricate equipment and skids, some of it for pharma and food customers; they need tube supplied to drawing with certificates they can pass on. Food units follow food-grade practice - 304 for most product lines, 316L for salty or acidic products - with electropolishing reserved for lines cleaned between every batch."
+      ]
+    },
+    {
+      "heading": "Choosing Between SF1 and SF4 for a Goa Formulation Plant",
+      "bullets": [
+        "Ambient purified-water loop, oral solids only: SF1 is usually defensible.",
+        "Hot-sanitised purified water, or loops feeding liquid orals: SF4 recommended.",
+        "WFI and clean steam (any sterile or ophthalmic work): SF4 electropolished as standard.",
+        "Product transfer and CIP in multi-product plants: SF4 shortens cleaning and helps validation.",
+        "Utilities (chilled water, compressed air, non-contact water): no hygienic finish needed."
+      ]
+    },
+    {
+      "heading": "Delivery to Kundaim and Bethora",
+      "paragraphs": [
+        "Ponda is reached by road from our Taloja MIDC works down the coast; dispatch and transit are confirmed in writing per quotation. Mormugao Port, about 30 km away, is the nearest sea gateway.",
+        "Other Goa estates:"
+      ],
+      "links": [
+        {
+          "label": "Panaji, Corlim and Pilerne",
+          "href": "/market-area/panaji/"
+        },
+        {
+          "label": "Verna",
+          "href": "/market-area/verna/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Herald Goa: Pharma better option for Goa, say experts",
+      "url": "https://www.heraldgoa.in/goa/pharma-better-option-for-goa-say-experts/373339"
+    }
+  ]
+}

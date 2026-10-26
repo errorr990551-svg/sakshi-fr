@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import categoriesData from '../data/categories.json';
-import { handleLinkClick } from '../utils/router';
+import { handleLinkClick, withSlash } from '../utils/router';
 
 export default function ProductRange() {
   const [startIndex, setStartIndex] = useState(0);
@@ -68,7 +68,7 @@ export default function ProductRange() {
             {visibleCategories.map((c) => (
               <div className="product-card" key={c['Category Slug']}>
                 <div className="product-img-wrap">
-                  <img src={getCategoryImage(c['Parent Category'])} alt={c['Parent Category']} />
+                  <img loading="lazy" src={getCategoryImage(c['Parent Category'])} alt={c['Parent Category']} />
                 </div>
                 <div className="product-info">
                   <div>
@@ -78,7 +78,7 @@ export default function ProductRange() {
                     </p>
                   </div>
                   <a 
-                    href={`/${c['Category Slug']}`} 
+                    href={withSlash(`/${c['Category Slug']}`)} 
                     onClick={(e) => handleLinkClick(e, `/${c['Category Slug']}`)}
                     className="btn btn-outline" 
                     style={{ width: '100%', padding: '0.65rem 0', display: 'flex', justifyContent: 'center' }}

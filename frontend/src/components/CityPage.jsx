@@ -1,6 +1,9 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { ChevronRight, ShieldCheck, Truck, Sparkles, MapPin, HelpCircle, ChevronDown, ChevronUp, Phone, Mail, FileText, Globe, Building, Award, Activity, ArrowRight, Shield, Layers, FileCheck, HelpCircle as FaqIcon, CheckCircle2, Sliders, Cpu, Zap, Box, MessageSquare } from 'lucide-react';
-import { handleLinkClick } from '../utils/router';
+import { handleLinkClick, withSlash } from '../utils/router';
+import { stripPrerenderedSchemaTypes } from '../utils/seo';
+import { buildCityContent } from '../data/cityContent';
+import CityLocalSections from './CityLocalSections';
 import { customCityData } from '../data/customCityData';
 import CityProductPillars from './CityProductPillars';
 
@@ -161,6 +164,8 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
   const [openFaq, setOpenFaq] = useState(0);
   const handleShowContact = onShowContactDetails || (() => onEnquireClick && onEnquireClick(`Contact Request - ${cityData?.city || 'General'}`));
   const custom = customCityData[cityData.slug];
+  const localContent = useMemo(() => (custom ? null : buildCityContent(cityData)), [cityData, custom]);
+  const cityFaqs = localContent?.faqs || cityData.faqs;
   const isInternational = cityData.country && cityData.country !== 'India';
   const rfqData = custom?.rfq || custom?.rfqBlock;
   const closingData = custom?.closing || custom?.closingBlock;
@@ -218,7 +223,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
         },
         {
           "@type": "FAQPage",
-          "mainEntity": (cityData.faqs || []).map(f => ({
+          "mainEntity": (cityFaqs || []).map(f => ({
             "@type": "Question",
             "name": f.question || f.q,
             "acceptedAnswer": { "@type": "Answer", "text": f.answer || f.a }
@@ -238,6 +243,8 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
 
     const existingScript = document.getElementById('city-jsonld-schema');
     if (existingScript) existingScript.remove();
+    // This block's FAQ/breadcrumb match the visible page; drop the server-rendered copies.
+    stripPrerenderedSchemaTypes(['FAQPage', 'BreadcrumbList']);
 
     const script = document.createElement('script');
     script.id = 'city-jsonld-schema';
@@ -249,7 +256,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
       const s = document.getElementById('city-jsonld-schema');
       if (s) s.remove();
     };
-  }, [cityData, custom]);
+  }, [cityData, custom, cityFaqs]);
 
   // Icons mapping for Why Choose Us
   const getWhyIcon = (num, title) => {
@@ -317,9 +324,15 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.8rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
               <a href="/" onClick={(e) => handleLinkClick(e, '/')} style={{ color: 'inherit', textDecoration: 'none' }}>Home</a>
               <ChevronRight size={12} />
+<<<<<<< HEAD
               <a href="/market-area/" onClick={(e) => handleLinkClick(e, '/market-area/')} style={{ color: 'inherit', textDecoration: 'none' }}>Market Directory</a>
               <ChevronRight size={12} />
               <a href="/tamil-nadu/" onClick={(e) => handleLinkClick(e, '/tamil-nadu/')} style={{ color: 'inherit', textDecoration: 'none' }}>Tamil Nadu</a>
+=======
+              <a href="/market-area/" onClick={(e) => handleLinkClick(e, '/market-area')} style={{ color: 'inherit', textDecoration: 'none' }}>Market Directory</a>
+              <ChevronRight size={12} />
+              <a href="/tamil-nadu/" onClick={(e) => handleLinkClick(e, '/tamil-nadu')} style={{ color: 'inherit', textDecoration: 'none' }}>Tamil Nadu</a>
+>>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
               <ChevronRight size={12} />
               <span style={{ color: 'var(--primary-yellow)', fontWeight: '600' }}>{custom.city}</span>
             </div>
@@ -403,7 +416,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                       {card.actions.map((act, i) => (
                         act.type === 'download' ? (
-                          <a key={i} href={act.link} onClick={(e) => handleLinkClick(e, act.link)} className="btn btn-outline" style={{ padding: '0.45rem 0.75rem', fontSize: '0.78rem', textAlign: 'center' }}>
+                          <a key={i} href={withSlash(act.link)} onClick={(e) => handleLinkClick(e, act.link)} className="btn btn-outline" style={{ padding: '0.45rem 0.75rem', fontSize: '0.78rem', textAlign: 'center' }}>
                             {act.text}
                           </a>
                         ) : (
@@ -449,7 +462,11 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
             </div>
 
             <div style={{ textAlign: 'center' }}>
+<<<<<<< HEAD
               <a href={custom.productRange.btnLink || '/electropolished-pipes/'} onClick={(e) => handleLinkClick(e, custom.productRange.btnLink || '/electropolished-pipes/')} className="btn btn-primary" style={{ padding: '0.85rem 2rem', fontWeight: '700' }}>
+=======
+              <a href={withSlash(custom.productRange.btnLink || '/electropolished-pipes')} onClick={(e) => handleLinkClick(e, custom.productRange.btnLink || '/electropolished-pipes')} className="btn btn-primary" style={{ padding: '0.85rem 2rem', fontWeight: '700' }}>
+>>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
                 {custom.productRange.btnText}
               </a>
             </div>
@@ -585,6 +602,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
                 {custom.areasCovered.stateHubText}
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.65rem' }}>
+<<<<<<< HEAD
                 {custom.areasCovered.siblingCities.map((sib, idx) => {
                   const sPath = (sib.path || '').endsWith('/') ? sib.path : `${sib.path}/`;
                   return (
@@ -594,6 +612,14 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
                   );
                 })}
                 <a href="/tamil-nadu/" onClick={(e) => handleLinkClick(e, '/tamil-nadu/')} style={{ color: 'var(--primary-yellow)', padding: '0.4rem 0.85rem', fontSize: '0.82rem', textDecoration: 'underline', fontWeight: '700' }}>
+=======
+                {custom.areasCovered.siblingCities.map((sib, idx) => (
+                  <a key={idx} href={withSlash(sib.path)} onClick={(e) => handleLinkClick(e, sib.path)} style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', padding: '0.4rem 0.85rem', borderRadius: '4px', color: '#cbd5e1', fontSize: '0.82rem', textDecoration: 'none', fontWeight: '500' }}>
+                    {sib.name}
+                  </a>
+                ))}
+                <a href="/tamil-nadu/" onClick={(e) => handleLinkClick(e, '/tamil-nadu')} style={{ color: 'var(--primary-yellow)', padding: '0.4rem 0.85rem', fontSize: '0.82rem', textDecoration: 'underline', fontWeight: '700' }}>
+>>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
                   View All Tamil Nadu Hubs →
                 </a>
               </div>
@@ -651,8 +677,8 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
                     <span>{faq.q}</span>
                     {openFaq === idx ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
                   </button>
-                  {openFaq === idx && (
-                    <div style={{ padding: '0 1.5rem 1.25rem', color: '#cbd5e1', fontSize: '0.9rem', lineHeight: '1.7', borderTop: '1px solid rgba(255, 255, 255, 0.05)' }}>
+                  {(
+                    <div hidden={!(openFaq === idx)} style={{ padding: '0 1.5rem 1.25rem', color: '#cbd5e1', fontSize: '0.9rem', lineHeight: '1.7', borderTop: '1px solid rgba(255, 255, 255, 0.05)' }}>
                       {faq.a}
                     </div>
                   )}
@@ -780,7 +806,11 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
               <React.Fragment key={i}>
                 {i < arr.length - 1 ? (
                   <>
+<<<<<<< HEAD
                     <a href={bPath} onClick={(e) => handleLinkClick(e, bPath)} style={{ color: 'inherit', textDecoration: 'none', transition: 'var(--transition-fast)' }} onMouseEnter={(e) => e.target.style.color = 'var(--primary-yellow)'} onMouseLeave={(e) => e.target.style.color = 'inherit'}>{b.name}</a>
+=======
+                    <a href={withSlash(b.path)} onClick={(e) => handleLinkClick(e, b.path)} style={{ color: 'inherit', textDecoration: 'none', transition: 'var(--transition-fast)' }} onMouseEnter={(e) => e.target.style.color = 'var(--primary-yellow)'} onMouseLeave={(e) => e.target.style.color = 'inherit'}>{b.name}</a>
+>>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
                     <ChevronRight size={12} style={{ color: 'var(--text-muted)' }} />
                   </>
                 ) : (
@@ -936,7 +966,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
               {custom.jumpLinks.map((link, idx) => (
                 <a
                   key={idx}
-                  href={link.href}
+                  href={withSlash(link.href)}
                   style={{
                     fontSize: '0.8rem',
                     color: 'var(--text-secondary)',
@@ -1066,6 +1096,25 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
         </div>
       </section>
 
+      <CityLocalSections content={localContent} city={cityData.city} />
+
+      {/* Researched cities link to the product pages for the generic EP-vs-MP and grade tables */}
+      {localContent && (
+        <section style={{ padding: '3rem 0', backgroundColor: 'var(--bg-dark-900)', borderBottom: '1px solid var(--border-color)' }}>
+          <div className="container" style={{ maxWidth: '980px' }}>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: '1.7', margin: 0 }}>
+              Grade chemistry, sizes and finish options are on our product pages:{' '}
+              <a href="/ss-316l-electropolished-pipes/" onClick={(e) => handleLinkClick(e, '/ss-316l-electropolished-pipes/')}>SS 316L electropolished pipes</a>,{' '}
+              <a href="/ss-304l-electropolished-pipes/" onClick={(e) => handleLinkClick(e, '/ss-304l-electropolished-pipes/')}>SS 304L electropolished pipes</a>,{' '}
+              <a href="/electropolished-tubes/" onClick={(e) => handleLinkClick(e, '/electropolished-tubes/')}>electropolished tubes</a> and{' '}
+              <a href="/asme-bpe-electropolished-tubes/" onClick={(e) => handleLinkClick(e, '/asme-bpe-electropolished-tubes/')}>ASME BPE tubes</a>.
+            </p>
+          </div>
+        </section>
+      )}
+
+      {!localContent && (
+        <>
       {/* 3. Surface Roughness & Electropolishing Comparison Table */}
       <section style={{ padding: '6.5rem 0', backgroundColor: 'var(--bg-dark-900)' }}>
         <div className="container">
@@ -1215,6 +1264,9 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
           </div>
         </div>
       </section>
+
+        </>
+      )}
 
       {/* 4.5 Sizes Table (if custom city provides sizes) */}
       {custom?.sizesTable && (
@@ -1622,7 +1674,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
       )}
 
       {/* 6. Technical FAQs Accordion */}
-      {cityData.faqs && cityData.faqs.length > 0 && (
+      {cityFaqs && cityFaqs.length > 0 && (
         <section id="faq" style={{ 
           backgroundColor: 'var(--bg-dark-800)', 
           borderTop: '1px solid var(--border-color)', 
@@ -1639,7 +1691,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
             </div>
 
             <div style={{ maxWidth: '850px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-              {cityData.faqs.map((faq, idx) => {
+              {cityFaqs.map((faq, idx) => {
                 const isActive = openFaq === idx;
                 const questionText = faq.question || faq.q;
                 const answerText = faq.answer || faq.a;
@@ -1692,8 +1744,8 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
                         {isActive ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
                       </div>
                     </button>
-                    {isActive && (
-                      <div 
+                    {(
+                      <div hidden={!(isActive)} 
                         style={{ 
                           padding: '0 1.75rem 1.75rem 1.75rem', 
                           color: 'var(--text-secondary)',
@@ -1818,8 +1870,13 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
                   return (
                   <a
                     key={idx}
+<<<<<<< HEAD
                     href={spokePath}
                     onClick={(e) => handleLinkClick(e, spokePath)}
+=======
+                    href={withSlash(spoke.path)}
+                    onClick={(e) => handleLinkClick(e, spoke.path)}
+>>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
                     style={{
                       color: 'var(--text-secondary)',
                       textDecoration: 'none',

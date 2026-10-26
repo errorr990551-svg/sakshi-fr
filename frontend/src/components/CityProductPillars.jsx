@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layers, ArrowRight, ShieldCheck, Sparkles } from 'lucide-react';
-import { handleLinkClick } from '../utils/router';
+import { handleLinkClick, withSlash } from '../utils/router';
 import { EP_PRODUCT_PILLARS } from '../data/priorityCities';
 
 export default function CityProductPillars({ cityName = 'Your Facility' }) {
@@ -61,7 +61,7 @@ export default function CityProductPillars({ cityName = 'Your Facility' }) {
           {EP_PRODUCT_PILLARS.map((pillar, idx) => (
             <a
               key={idx}
-              href={pillar.path}
+              href={withSlash(pillar.path)}
               onClick={(e) => handleLinkClick(e, pillar.path)}
               style={{
                 backgroundColor: 'var(--bg-dark-800, #0f172a)',

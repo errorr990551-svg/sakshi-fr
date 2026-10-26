@@ -218,7 +218,7 @@ export default function GalleryPage({ onEnquireClick }) {
                   className="lightbox-video"
                 />
               ) : (
-                <img
+                <img loading="lazy"
                   src={currentItem.src}
                   alt={currentItem.title}
                   className="lightbox-image"

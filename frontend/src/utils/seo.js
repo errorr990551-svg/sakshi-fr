@@ -3,6 +3,8 @@
  */
 import corePagesData from '../data/core_pages.json';
 import { customCityData } from '../data/customCityData';
+import { withSlash } from './router';
+import { visibleProductFaqs } from './productFaqs';
 
 const BASE_URL = "https://steelmanufacturer.in";
 
@@ -13,9 +15,51 @@ function clearExistingSchemas() {
   existing.forEach((el) => el.remove());
 }
 
+
+const graphOf = (schema) => (Array.isArray(schema["@graph"]) ? schema["@graph"] : [schema]);
+
+// Schema types already declared by JSON-LD blocks on the page (optionally ignoring one block).
+function schemaTypesOnPage(exceptId) {
+  const types = new Set();
+  document.querySelectorAll('script[type="application/ld+json"]').forEach((el) => {
+    if (exceptId && el.id === exceptId) return;
+    try {
+      graphOf(JSON.parse(el.textContent)).forEach((n) => [].concat(n["@type"] || []).forEach((t) => types.add(t)));
+    } catch {
+      // ignore unparsable blocks
+    }
+  });
+  return types;
+}
+
+// Drops nodes whose @type another JSON-LD block on the page already declares, so a
+// component's schema never duplicates FAQPage/BreadcrumbList/Organization nodes.
+export function withoutDuplicateSchemaTypes(schema, ownId) {
+  if (typeof document === 'undefined') return schema;
+  const present = schemaTypesOnPage(ownId);
+  const graph = graphOf(schema).filter((n) => ![].concat(n["@type"] || []).some((t) => present.has(t)));
+  return { "@context": "https://schema.org", "@graph": graph };
+}
+
+// Removes the given @types from the server-rendered JSON-LD, for pages whose component
+// emits the version of those nodes that matches the visible content (e.g. city FAQs).
+export function stripPrerenderedSchemaTypes(types) {
+  if (typeof document === 'undefined') return;
+  document.querySelectorAll("script.sakshi-seo-schema").forEach((el) => {
+    try {
+      const schema = JSON.parse(el.textContent);
+      const graph = graphOf(schema).filter((n) => ![].concat(n["@type"] || []).some((t) => types.includes(t)));
+      el.textContent = JSON.stringify({ "@context": "https://schema.org", "@graph": graph });
+    } catch {
+      // leave unparsable blocks untouched
+    }
+  });
+}
+
 // Helper to inject a JSON-LD schema
 function injectSchema(schemaId, schemaObj) {
   if (typeof document === 'undefined') return;
+  schemaObj = withoutDuplicateSchemaTypes(schemaObj);
   const script = document.createElement("script");
   script.type = "application/ld+json";
   script.className = "sakshi-seo-schema";
@@ -140,8 +184,15 @@ export function getProductOfferDetails(slug, categoryName, pageUrl) {
 }
 
 // Main function to update head elements dynamically
+// The page Google receives is pre-rendered with its final title, meta tags, canonical
+// and JSON-LD. On that first (hydrating) load the head must stay exactly as served;
+// only later client-side navigations need updateSEO to rewrite it.
 export function updateSEO({ type, data }) {
   if (typeof document === 'undefined') return;
+  if (window.__SAKSHI_HYDRATED_PATH__ === window.location.pathname) {
+    window.__SAKSHI_HYDRATED_PATH__ = null;
+    return;
+  }
   
   clearExistingSchemas();
 
@@ -363,6 +414,13 @@ export function updateSEO({ type, data }) {
   }
   robotsTag.setAttribute("content", robots);
 
+  // Every indexable page is self-canonical, matching the pre-rendered HTML. Deriving it
+  // from page data let aliased routes (e.g. /market-area/bharuch/ rendering Dahej data)
+  // point Google at a different URL once JavaScript ran.
+  if (!robots.includes("noindex")) {
+    canonicalUrl = `${BASE_URL}${withSlash(window.location.pathname)}`;
+  }
+
   let canonicalTag = document.querySelector('link[rel="canonical"]');
   if (!canonicalTag) {
     canonicalTag = document.createElement("link");
@@ -546,7 +604,7 @@ export function updateSEO({ type, data }) {
       "name": data["Product Name"],
       "url": `${BASE_URL}/${data["URL Slug"]}/`,
       "image": [
-        `${BASE_URL}${data["Image"] || "/flanges_pipes.webp"}`
+        `${BASE_URL}${encodeURI(data["Image"] || "/flanges_pipes.webp")}`
       ],
       "description": data["Meta Description"] || metaDesc,
       "sku": offerDetails.sku,
@@ -567,8 +625,9 @@ export function updateSEO({ type, data }) {
     graph.push(productSchema);
 
     // FAQ schema if FAQs are defined in compiler output
-    if (data["FAQs"] && data["FAQs"].length > 0) {
-      const faqEntities = data["FAQs"].map(f => ({
+    const productFaqs = visibleProductFaqs(data);
+    if (productFaqs.length > 0) {
+      const faqEntities = productFaqs.map(f => ({
         "@type": "Question",
         "name": f.q,
         "acceptedAnswer": {
@@ -601,7 +660,7 @@ export function updateSEO({ type, data }) {
         "@type": "ListItem",
         "position": 2,
         "name": parentName,
-        "item": `${BASE_URL}${parentPath.startsWith('/') ? '' : '/'}${parentPath}`
+        "item": `${BASE_URL}${parentPath.startsWith('/') ? '' : '/'}${parentPath}${parentPath.endsWith('/') ? '' : '/'}`
       });
       breadcrumbList.itemListElement.push({
         "@type": "ListItem",
@@ -685,7 +744,7 @@ export function updateSEO({ type, data }) {
         "@type": "WebPage",
         "@id": postUrl
       },
-      "image": data.image ? `${BASE_URL}${data.image}` : undefined
+      "image": data.image ? `${BASE_URL}${encodeURI(data.image)}` : undefined
     };
     graph.push(breadcrumbList);
     graph.push(blogPostingSchema);
@@ -697,7 +756,7 @@ export function updateSEO({ type, data }) {
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": `${BASE_URL}/` },
-        { "@type": "ListItem", "position": 2, "name": "Market Areas", "item": `${BASE_URL}/market-area` },
+        { "@type": "ListItem", "position": 2, "name": "Market Areas", "item": `${BASE_URL}/market-area/` },
         { "@type": "ListItem", "position": 3, "name": data.city, "item": currentUrl }
       ]
     };

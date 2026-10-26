@@ -6,7 +6,8 @@ import {
   Play, Sparkles, Package, Cpu, Scissors, Zap, Droplet, Building2, FlaskConical,
   Compass, ArrowUpRight
 } from 'lucide-react';
-import { handleLinkClick } from '../utils/router';
+import { handleLinkClick, withSlash } from '../utils/router';
+import { withoutDuplicateSchemaTypes } from '../utils/seo';
 import { PRIORITY_30_CITIES } from '../data/priorityCities';
 
 export default function HomePage({ onEnquireClick }) {
@@ -99,7 +100,7 @@ export default function HomePage({ onEnquireClick }) {
           "@id": "https://steelmanufacturer.in/#organization",
           "name": "Sakshi Forge",
           "url": "https://steelmanufacturer.in/",
-          "logo": "https://steelmanufacturer.in/logo.png",
+          "logo": "https://steelmanufacturer.in/favicon.svg",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Balaji Industrial Compound, Taloja MIDC",
@@ -154,7 +155,7 @@ export default function HomePage({ onEnquireClick }) {
     const script = document.createElement('script');
     script.id = 'homepage-seo-schema';
     script.type = 'application/ld+json';
-    script.text = JSON.stringify(schemaData);
+    script.text = JSON.stringify(withoutDuplicateSchemaTypes(schemaData, script.id));
     document.head.appendChild(script);
 
     return () => {
@@ -197,7 +198,11 @@ export default function HomePage({ onEnquireClick }) {
               <button onClick={() => onEnquireClick('Hero: Get a Quote in 30 Minutes')} className="btn btn-primary btn-lg" style={{ padding: '0.95rem 2rem', fontWeight: '700' }}>
                 Get a Quote in 30 Minutes <ArrowRight size={17} />
               </button>
+<<<<<<< HEAD
               <a href="/catalogue/" onClick={(e) => handleLinkClick(e, '/catalogue/')} className="btn btn-outline btn-lg" style={{ padding: '0.95rem 2rem', fontWeight: '600' }}>
+=======
+              <a href="/catalogue/" onClick={handleLinkClick} className="btn btn-outline btn-lg" style={{ padding: '0.95rem 2rem', fontWeight: '600' }}>
+>>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
                 Download Catalogue PDF
               </a>
             </div>
@@ -383,7 +388,7 @@ export default function HomePage({ onEnquireClick }) {
                 }}
               >
                 <div style={{ height: '220px', width: '100%', overflow: 'hidden', backgroundColor: '#070a10', position: 'relative' }}>
-                  <img 
+                  <img loading="lazy" 
                     src={prod.img} 
                     alt={prod.title} 
                     style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.4s ease' }} 
@@ -397,7 +402,7 @@ export default function HomePage({ onEnquireClick }) {
 
                 <div style={{ padding: '1.75rem', display: 'flex', flexDirection: 'column', flexGrow: 1, alignItems: 'center' }}>
                   <h3 style={{ fontSize: '1.25rem', color: '#fff', marginBottom: '0.75rem', fontWeight: '700' }}>
-                    <a href={prod.link} onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>
+                    <a href={withSlash(prod.link)} onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>
                       {prod.title}
                     </a>
                   </h3>
@@ -405,7 +410,7 @@ export default function HomePage({ onEnquireClick }) {
                     {prod.desc}
                   </p>
                   <a 
-                    href={prod.link} 
+                    href={withSlash(prod.link)} 
                     onClick={handleLinkClick} 
                     className="btn btn-outline" 
                     style={{ padding: '0.65rem 1.4rem', fontSize: '0.88rem', fontWeight: '600', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
@@ -418,7 +423,11 @@ export default function HomePage({ onEnquireClick }) {
           </div>
 
           <div style={{ textAlign: 'center' }}>
+<<<<<<< HEAD
             <a href="/electropolished-pipes/" onClick={(e) => handleLinkClick(e, '/electropolished-pipes/')} className="btn btn-primary btn-lg" style={{ padding: '0.9rem 2.25rem', fontWeight: '700' }}>
+=======
+            <a href="/electropolished-pipes/" onClick={handleLinkClick} className="btn btn-primary btn-lg" style={{ padding: '0.9rem 2.25rem', fontWeight: '700' }}>
+>>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
               Explore Full Electropolished Range <ArrowRight size={16} />
             </a>
           </div>
@@ -540,7 +549,7 @@ export default function HomePage({ onEnquireClick }) {
             {/* Left Side: Pic + Service Parameters Underneath */}
             <div>
               <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid var(--border-color)', boxShadow: '0 10px 30px rgba(0,0,0,0.4)', marginBottom: '1.75rem', backgroundColor: 'var(--bg-dark-900)' }}>
-                <img 
+                <img loading="lazy" 
                   src="/technical parameter.webp" 
                   alt="Technical Parameters - Sakshi Forge Electropolished Pipe" 
                   style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }} 
@@ -734,7 +743,7 @@ export default function HomePage({ onEnquireClick }) {
             ].map((card, idx) => (
               <div key={idx} className="utility-plant-card">
                 <div className="utility-icon-box">
-                  <img src={card.icon} alt={card.title} className="utility-icon-img" />
+                  <img loading="lazy" src={card.icon} alt={card.title} className="utility-icon-img" />
                   <h3 className="utility-title">{card.title}</h3>
                 </div>
                 <div className="utility-details">
@@ -915,11 +924,11 @@ export default function HomePage({ onEnquireClick }) {
                 }}
               >
                 <div style={{ height: '200px', width: '100%', overflow: 'hidden', backgroundColor: '#000' }}>
-                  <img src={cat.img} alt={cat.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <img loading="lazy" src={cat.img} alt={cat.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
                   <h3 style={{ fontSize: '1.2rem', color: 'var(--primary-yellow)', marginBottom: '0.5rem', fontWeight: '700' }}>
-                    <a href={cat.link} onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>
+                    <a href={withSlash(cat.link)} onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>
                       {cat.title}
                     </a>
                   </h3>
@@ -927,7 +936,7 @@ export default function HomePage({ onEnquireClick }) {
                     {cat.desc}
                   </p>
                   <a 
-                    href={cat.link} 
+                    href={withSlash(cat.link)} 
                     onClick={handleLinkClick} 
                     className="btn btn-outline"
                     style={{ width: '100%', padding: '0.65rem 0', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem' }}
@@ -941,6 +950,7 @@ export default function HomePage({ onEnquireClick }) {
 
           {/* Reference Tools & Core Product Hubs */}
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1.5rem', paddingTop: '1.75rem', borderTop: '1px solid var(--border-color)' }}>
+<<<<<<< HEAD
             <a href="/products/" onClick={(e) => handleLinkClick(e, '/products/')} className="btn btn-primary" style={{ padding: '0.75rem 1.75rem', fontWeight: '700' }}>
               View All 17 Categories →
             </a>
@@ -955,6 +965,18 @@ export default function HomePage({ onEnquireClick }) {
               <a href="/flange-dimension-chart/" onClick={(e) => handleLinkClick(e, '/flange-dimension-chart/')} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Flange Dimension Chart</a>
               <a href="/flange-weight-chart/" onClick={(e) => handleLinkClick(e, '/flange-weight-chart/')} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Flange Weight Chart</a>
               <a href="/flange-bolt-chart/" onClick={(e) => handleLinkClick(e, '/flange-bolt-chart/')} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Flange Bolt Chart</a>
+=======
+            <a href="/products/" onClick={handleLinkClick} className="btn btn-primary" style={{ padding: '0.75rem 1.75rem', fontWeight: '700' }}>
+              View All 17 Categories →
+            </a>
+
+            <div style={{ display: 'flex', gap: '1.25rem', flexWrap: 'wrap', fontSize: '0.88rem' }}>
+              <span style={{ color: 'var(--text-muted)', fontWeight: '700', textTransform: 'uppercase' }}>Reference Tools:</span>
+              <a href="/pipe-schedule-chart/" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Pipe Schedule Chart</a>
+              <a href="/flange-dimension-chart/" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Flange Dimension Chart</a>
+              <a href="/flange-weight-chart/" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Flange Weight Chart</a>
+              <a href="/flange-bolt-chart/" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Flange Bolt Chart</a>
+>>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
             </div>
           </div>
         </div>
@@ -984,7 +1006,7 @@ export default function HomePage({ onEnquireClick }) {
                   {PRIORITY_30_CITIES.map((c, idx) => (
                     <a
                       key={idx}
-                      href={c.path}
+                      href={withSlash(c.path)}
                       onClick={(e) => handleLinkClick(e, c.path)}
                       style={{
                         backgroundColor: 'var(--bg-dark-900)',
@@ -1019,7 +1041,7 @@ export default function HomePage({ onEnquireClick }) {
             {/* Right Photo */}
             <div>
               <div style={{ borderRadius: '16px', overflow: 'hidden', padding: '1rem', backgroundColor: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.08)' }}>
-                <img 
+                <img loading="lazy" 
                   src="/global section.webp" 
                   alt="Sakshi Forge Global and Domestic Supply Map" 
                   style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'contain', filter: 'drop-shadow(0 15px 30px rgba(0,0,0,0.5))' }}
@@ -1037,7 +1059,7 @@ export default function HomePage({ onEnquireClick }) {
             {/* Left Image */}
             <div>
               <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid var(--border-color)', boxShadow: '0 12px 35px rgba(0,0,0,0.4)', minHeight: '360px' }}>
-                <img 
+                <img loading="lazy" 
                   src="/about_structure.webp" 
                   alt="Sakshi Forge Corporate Facility Taloja MIDC" 
                   style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
@@ -1070,7 +1092,11 @@ export default function HomePage({ onEnquireClick }) {
               {/* Learn More Button */}
               <a 
                 href="/about-us/" 
+<<<<<<< HEAD
                 onClick={(e) => handleLinkClick(e, '/about-us/')} 
+=======
+                onClick={handleLinkClick} 
+>>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
                 className="btn btn-primary"
                 style={{ padding: '0.85rem 2rem', fontWeight: '700', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
               >
@@ -1098,7 +1124,7 @@ export default function HomePage({ onEnquireClick }) {
           {/* 3 Real Gallery Photos with descriptions removed */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.75rem', marginBottom: '2.5rem' }}>
             <div style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-dark-900)', height: '280px', boxShadow: '0 6px 20px rgba(0,0,0,0.3)' }}>
-              <img 
+              <img loading="lazy" 
                 src="/WhatsApp Image 2026-08-13 at 1.35.50 PM.webp" 
                 alt="Forged Steel Flange Stock & Machining Facility" 
                 style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.4s ease' }} 
@@ -1106,7 +1132,7 @@ export default function HomePage({ onEnquireClick }) {
             </div>
 
             <div style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-dark-900)', height: '280px', boxShadow: '0 6px 20px rgba(0,0,0,0.3)' }}>
-              <img 
+              <img loading="lazy" 
                 src="/WhatsApp Image 2026-08-13 at 1.38.01 PM.webp" 
                 alt="Hot Precision Forging Hammer & Furnace Operations" 
                 style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.4s ease' }} 
@@ -1114,7 +1140,7 @@ export default function HomePage({ onEnquireClick }) {
             </div>
 
             <div style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-dark-900)', height: '280px', boxShadow: '0 6px 20px rgba(0,0,0,0.3)' }}>
-              <img 
+              <img loading="lazy" 
                 src="/WhatsApp Image 2026-08-13 at 1.48.03 PM.webp" 
                 alt="Finished Electropolished Products and Warehouse Inventory" 
                 style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.4s ease' }} 
@@ -1123,7 +1149,11 @@ export default function HomePage({ onEnquireClick }) {
           </div>
 
           <div style={{ textAlign: 'center' }}>
+<<<<<<< HEAD
             <a href="/gallery/" onClick={(e) => handleLinkClick(e, '/gallery/')} className="btn btn-outline" style={{ padding: '0.85rem 2.25rem', fontWeight: '600' }}>
+=======
+            <a href="/gallery/" onClick={handleLinkClick} className="btn btn-outline" style={{ padding: '0.85rem 2.25rem', fontWeight: '600' }}>
+>>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
               View Full Gallery & Video Tour →
             </a>
           </div>
@@ -1175,8 +1205,8 @@ export default function HomePage({ onEnquireClick }) {
                   <span>{faq.q}</span>
                   {openFaq === idx ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
                 </button>
-                {openFaq === idx && (
-                  <div style={{ padding: '0 1.5rem 1.25rem', color: '#cbd5e1', fontSize: '0.92rem', lineHeight: '1.7', borderTop: '1px solid rgba(255, 255, 255, 0.05)' }}>
+                {(
+                  <div hidden={!(openFaq === idx)} style={{ padding: '0 1.5rem 1.25rem', color: '#cbd5e1', fontSize: '0.92rem', lineHeight: '1.7', borderTop: '1px solid rgba(255, 255, 255, 0.05)' }}>
                     {faq.a}
                   </div>
                 )}
@@ -1215,8 +1245,8 @@ export default function HomePage({ onEnquireClick }) {
                   <form onSubmit={handleFormSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Name *</label>
-                        <input 
+                        <label htmlFor="home-field-1" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Name *</label>
+                        <input id="home-field-1" 
                           type="text" 
                           required 
                           placeholder="Your Full Name"
@@ -1226,8 +1256,8 @@ export default function HomePage({ onEnquireClick }) {
                         />
                       </div>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Company *</label>
-                        <input 
+                        <label htmlFor="home-field-2" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Company *</label>
+                        <input id="home-field-2" 
                           type="text" 
                           required 
                           placeholder="Company / Plant Name"
@@ -1240,8 +1270,8 @@ export default function HomePage({ onEnquireClick }) {
 
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Phone Number *</label>
-                        <input 
+                        <label htmlFor="home-field-3" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Phone Number *</label>
+                        <input id="home-field-3" 
                           type="tel" 
                           required 
                           placeholder="+91..."
@@ -1251,8 +1281,8 @@ export default function HomePage({ onEnquireClick }) {
                         />
                       </div>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Email *</label>
-                        <input 
+                        <label htmlFor="home-field-4" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Email *</label>
+                        <input id="home-field-4" 
                           type="email" 
                           required 
                           placeholder="procurement@company.com"
@@ -1265,8 +1295,8 @@ export default function HomePage({ onEnquireClick }) {
 
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Grade & Size *</label>
-                        <input 
+                        <label htmlFor="home-field-5" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Grade & Size *</label>
+                        <input id="home-field-5" 
                           type="text" 
                           required 
                           placeholder="e.g. SS 316L, 2 inch, Sch 10"
@@ -1276,8 +1306,8 @@ export default function HomePage({ onEnquireClick }) {
                         />
                       </div>
                       <div>
-                        <label style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Quantity *</label>
-                        <input 
+                        <label htmlFor="home-field-6" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Quantity *</label>
+                        <input id="home-field-6" 
                           type="text" 
                           required 
                           placeholder="e.g. 500 meters / 40 lengths"
@@ -1289,8 +1319,8 @@ export default function HomePage({ onEnquireClick }) {
                     </div>
 
                     <div>
-                      <label style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Message / Spool Drawing Details</label>
-                      <textarea 
+                      <label htmlFor="home-field-7" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Message / Spool Drawing Details</label>
+                      <textarea id="home-field-7" 
                         rows="3"
                         placeholder="Mention standard (ASTM A270/A269), Ra roughness requirements, delivery destination, etc."
                         value={formData.message}

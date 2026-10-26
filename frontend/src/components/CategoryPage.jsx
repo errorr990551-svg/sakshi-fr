@@ -134,7 +134,7 @@ export default function CategoryPage({ category, onEnquireClick }) {
                   }}
                   onClick={(e) => {
                     if (e.target.tagName === 'A' || e.target.closest('a')) return;
-                    window.history.pushState(null, '', `/${prod['URL Slug']}`);
+                    window.history.pushState(null, '', `/${prod['URL Slug']}/`);
                     window.dispatchEvent(new PopStateEvent('popstate'));
                   }}
                 >
@@ -205,8 +205,8 @@ export default function CategoryPage({ category, onEnquireClick }) {
 
                   <div style={{ padding: '0 2rem 2rem 2rem' }}>
                     <a 
-                      href={`/${prod['URL Slug']}`}
-                      onClick={(e) => handleLinkClick(e, `/${prod['URL Slug']}`)}
+                      href={`/${prod['URL Slug']}/`}
+                      onClick={(e) => handleLinkClick(e, `/${prod['URL Slug']}/`)}
                       className="btn btn-outline"
                       style={{ width: '100%', padding: '0.65rem 0', display: 'flex', justifyContent: 'center' }}
                     >
@@ -219,6 +219,103 @@ export default function CategoryPage({ category, onEnquireClick }) {
           )}
         </div>
       </section>
+
+      {/* 2.5 Dedicated Forged Fittings Technical Guide & Pressure Classes (Increases Content Depth for /forged-fittings/) */}
+      {category['Category Slug'] === 'forged-fittings' && (
+        <section style={{ padding: '4.5rem 0', backgroundColor: 'var(--bg-dark-800)', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
+          <div className="container">
+            <div style={{ maxWidth: '900px', marginBottom: '2.5rem' }}>
+              <span style={{ color: 'var(--primary-yellow)', fontSize: '0.8rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+                Technical Specification & Manufacturing Standards
+              </span>
+              <h2 style={{ fontSize: '2rem', fontWeight: '800', marginTop: '0.5rem', color: '#fff' }}>
+                ASME B16.11 High-Pressure Forged Fittings Engineering Matrix
+              </h2>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', lineHeight: '1.7', marginTop: '0.75rem' }}>
+                Sakshi Forge manufactures hot-forged, precision-machined pipe fittings engineered to withstand high cyclic pressures, thermal shocks, and aggressive chemicals. Fully compliant with <strong>ASME B16.11</strong>, <strong>BS 3799</strong>, and <strong>MSS-SP-79/83/95/97</strong> standards.
+              </p>
+            </div>
+
+            {/* Pressure Rating & Dimensions Table */}
+            <div style={{ overflowX: 'auto', marginBottom: '3rem', backgroundColor: 'var(--bg-dark-900)', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+              <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.9rem' }}>
+                <thead>
+                  <tr style={{ backgroundColor: 'rgba(255, 193, 7, 0.08)', borderBottom: '2px solid var(--border-color)', color: 'var(--primary-yellow)' }}>
+                    <th style={{ padding: '1rem 1.25rem' }}>Fitting Type</th>
+                    <th style={{ padding: '1rem 1.25rem' }}>Pressure Class</th>
+                    <th style={{ padding: '1rem 1.25rem' }}>Size Range (NPS)</th>
+                    <th style={{ padding: '1rem 1.25rem' }}>Standard Ends</th>
+                    <th style={{ padding: '1rem 1.25rem' }}>Primary Materials</th>
+                  </tr>
+                </thead>
+                <tbody style={{ color: 'var(--text-secondary)' }}>
+                  <tr style={{ borderBottom: '1px solid var(--border-color)' }}>
+                    <td style={{ padding: '0.9rem 1.25rem', color: '#fff', fontWeight: '600' }}>Socket Weld (Elbows, Tees, Crosses, Couplings)</td>
+                    <td style={{ padding: '0.9rem 1.25rem' }}>Class 3000, 6000, 9000</td>
+                    <td style={{ padding: '0.9rem 1.25rem' }}>1/8" to 4" (DN 6 - DN 100)</td>
+                    <td style={{ padding: '0.9rem 1.25rem' }}>Counter-bored socket weld</td>
+                    <td style={{ padding: '0.9rem 1.25rem' }}>ASTM A182 F304/L, F316/L, F321, Duplex 2205</td>
+                  </tr>
+                  <tr style={{ borderBottom: '1px solid var(--border-color)' }}>
+                    <td style={{ padding: '0.9rem 1.25rem', color: '#fff', fontWeight: '600' }}>Threaded / Screwed (NPT, BSPT, BSPP)</td>
+                    <td style={{ padding: '0.9rem 1.25rem' }}>Class 2000, 3000, 6000</td>
+                    <td style={{ padding: '0.9rem 1.25rem' }}>1/8" to 4"</td>
+                    <td style={{ padding: '0.9rem 1.25rem' }}>ASME B1.20.1 NPT taper threads</td>
+                    <td style={{ padding: '0.9rem 1.25rem' }}>A182 F316L, A105 Carbon Steel, Alloy 20</td>
+                  </tr>
+                  <tr style={{ borderBottom: '1px solid var(--border-color)' }}>
+                    <td style={{ padding: '0.9rem 1.25rem', color: '#fff', fontWeight: '600' }}>Branch Outlets (Weldolet, Sockolet, Thredolet)</td>
+                    <td style={{ padding: '0.9rem 1.25rem' }}>STD, XS, Sch 160, Class 3000/6000</td>
+                    <td style={{ padding: '0.9rem 1.25rem' }}>1/2" run up to 36" header</td>
+                    <td style={{ padding: '0.9rem 1.25rem' }}>Buttweld / SW / Threaded</td>
+                    <td style={{ padding: '0.9rem 1.25rem' }}>ASTM A182 F316/L, F51, Inconel 625</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: '0.9rem 1.25rem', color: '#fff', fontWeight: '600' }}>Plugs, Bushings & Unions</td>
+                    <td style={{ padding: '0.9rem 1.25rem' }}>Class 3000, 6000</td>
+                    <td style={{ padding: '0.9rem 1.25rem' }}>1/4" to 3"</td>
+                    <td style={{ padding: '0.9rem 1.25rem' }}>Hex head, square head, round head</td>
+                    <td style={{ padding: '0.9rem 1.25rem' }}>SS 304, SS 316, ASTM A105, Monel 400</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            {/* Quality and Contextual Navigation Cards */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+              <div style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.75rem' }}>
+                <h4 style={{ color: '#fff', fontSize: '1.15rem', marginBottom: '0.75rem' }}>100% PMI & MTC Documentation</h4>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.6' }}>
+                  Every forged fitting shipment includes EN 10204 3.1 inspection certification with full melt chemistry, mechanical tensile test data, and heat treatment traceability.
+                </p>
+                <a href="/quality-assurance/" onClick={(e) => handleLinkClick(e, '/quality-assurance/')} style={{ color: 'var(--primary-yellow)', fontSize: '0.88rem', fontWeight: '700', textDecoration: 'underline' }}>
+                  Explore Quality Assurance & Testing →
+                </a>
+              </div>
+
+              <div style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.75rem' }}>
+                <h4 style={{ color: '#fff', fontSize: '1.15rem', marginBottom: '0.75rem' }}>ASME B16.11 Dimension Standards</h4>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.6' }}>
+                  Detailed bore diameter, socket depth, wall thickness, and thread engagement matrices for engineering layout and piping fabrication projects.
+                </p>
+                <a href="/asme-b16-11-forged-fittings/" onClick={(e) => handleLinkClick(e, '/asme-b16-11-forged-fittings/')} style={{ color: 'var(--primary-yellow)', fontSize: '0.88rem', fontWeight: '700', textDecoration: 'underline' }}>
+                  View ASME B16.11 Fittings Guide →
+                </a>
+              </div>
+
+              <div style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.75rem' }}>
+                <h4 style={{ color: '#fff', fontSize: '1.15rem', marginBottom: '0.75rem' }}>Complementary Industrial Products</h4>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.6' }}>
+                  Complete your piping assembly with matching <a href="/flanges/" onClick={(e) => handleLinkClick(e, '/flanges/')} style={{ color: 'var(--primary-yellow)' }}>Forged Flanges</a> and <a href="/stainless-steel-pipe/" onClick={(e) => handleLinkClick(e, '/stainless-steel-pipe/')} style={{ color: 'var(--primary-yellow)' }}>Stainless Steel Pipes</a>.
+                </p>
+                <a href="/catalogue/" onClick={(e) => handleLinkClick(e, '/catalogue/')} style={{ color: 'var(--primary-yellow)', fontSize: '0.88rem', fontWeight: '700', textDecoration: 'underline' }}>
+                  Download Complete Product Catalogue →
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* 3. Cross-Linking & Sub-Products Tags */}
       {crossLinks.length > 0 && (
@@ -249,8 +346,8 @@ export default function CategoryPage({ category, onEnquireClick }) {
                   return (
                     <a
                       key={index}
-                      href={`/${matchingProd['URL Slug']}`}
-                      onClick={(e) => handleLinkClick(e, `/${matchingProd['URL Slug']}`)}
+                      href={`/${matchingProd['URL Slug']}/`}
+                      onClick={(e) => handleLinkClick(e, `/${matchingProd['URL Slug']}/`)}
                       style={{
                         backgroundColor: 'var(--bg-dark-700)',
                         border: '1px solid var(--border-color)',

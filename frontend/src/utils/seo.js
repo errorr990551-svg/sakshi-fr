@@ -221,54 +221,58 @@ export function updateSEO({ type, data }) {
     title = "Sakshi Forge | India Cities We Serve - Electropolished Pipes & Fittings Supply";
     metaDesc = "Explore the commercial and industrial cities served by Sakshi Forge across India. High-quality electropolished pipes and industrial steel supply.";
     keywords = "market area, industrial cities, sakshi forge locations, steel pipes supply India";
-    canonicalUrl = `${BASE_URL}/market-area`;
+    canonicalUrl = `${BASE_URL}/market-area/`;
     robots = "index, follow";
   } else if (type === "market-city" && data) {
     const custom = customCityData[data.slug];
     title = custom?.pageTitle || data.pageTitle || title;
     metaDesc = custom?.metaDescription || data.metaDescription || metaDesc;
     keywords = data.primaryKeyword ? (data.topSecondaryKeywords ? `${data.primaryKeyword}, ${data.topSecondaryKeywords}` : data.primaryKeyword) : keywords;
-    canonicalUrl = `${BASE_URL}${data.path || (custom ? '/market-area/' + custom.slug : '')}`;
+    const rawPath = data.path || (custom ? '/market-area/' + custom.slug : '');
+    const cleanPath = rawPath.endsWith('/') ? rawPath : `${rawPath}/`;
+    canonicalUrl = `${BASE_URL}${cleanPath}`;
     robots = "index, follow";
   } else if (type === "maharashtra-city" && data) {
     title = data.pageTitle || title;
     metaDesc = data.metaDescription || metaDesc;
-    canonicalUrl = `${BASE_URL}${data.pageUrl || ''}`;
+    const rawUrl = data.pageUrl || '';
+    const cleanUrl = rawUrl.endsWith('/') ? rawUrl : `${rawUrl}/`;
+    canonicalUrl = `${BASE_URL}${cleanUrl}`;
     robots = "index, follow";
   } else if (type === "tamil-nadu-hub") {
     title = "Electropolished Pipe Supplier Across Tamil Nadu | Sakshi Forge";
     metaDesc = "Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Tamil Nadu industrial hubs: Chennai, Coimbatore, Hosur, Cuddalore, Trichy, Salem, Madurai, Thoothukudi, Erode and Vellore.";
-    canonicalUrl = `${BASE_URL}/tamil-nadu`;
+    canonicalUrl = `${BASE_URL}/tamil-nadu/`;
     robots = "index, follow";
   } else if (type === "karnataka-hub") {
     title = "Electropolished Pipe Manufacturer Across Karnataka | Sakshi Forge";
     metaDesc = "Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Karnataka industrial corridors: Bengaluru, Tumakuru, Mysuru, Mangaluru, Bidar, Hubballi-Dharwad, Belagavi, Hassan, Raichur and Mandya.";
-    canonicalUrl = `${BASE_URL}/karnataka`;
+    canonicalUrl = `${BASE_URL}/karnataka/`;
     robots = "index, follow";
   } else if (type === "gujarat-hub") {
     title = "Electropolished Pipe Manufacturer Across Gujarat | Sakshi Forge";
     metaDesc = "Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Gujarat industrial belts: Ahmedabad, Vadodara, Vapi, Sanand, Ankleshwar, Surat, Dahej, Anand and Mehsana.";
-    canonicalUrl = `${BASE_URL}/market-area/gujarat`;
+    canonicalUrl = `${BASE_URL}/market-area/gujarat/`;
     robots = "index, follow";
   } else if (type === "telangana-hub") {
     title = "Electropolished Pipe Manufacturer Across Telangana | Sakshi Forge";
     metaDesc = "Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Telangana industrial belts: Hyderabad, Sangareddy, Patancheru, Karimnagar, Mahabubnagar, Warangal, Nizamabad, Siddipet, Ramagundam and Khammam.";
-    canonicalUrl = `${BASE_URL}/market-area/telangana`;
+    canonicalUrl = `${BASE_URL}/market-area/telangana/`;
     robots = "index, follow";
   } else if (type === "west-bengal-hub") {
     title = "Electropolished Pipe Manufacturer Across West Bengal | Sakshi Forge";
     metaDesc = "Sakshi Forge supplies electropolished SS 316L, 304L and duplex 2205 pipes across West Bengal industrial corridors: Kolkata, Haldia, Kalyani, Howrah, Dankuni, Durgapur, Siliguri, Kharagpur, Asansol and Bardhaman.";
-    canonicalUrl = `${BASE_URL}/market-area/west-bengal`;
+    canonicalUrl = `${BASE_URL}/market-area/west-bengal/`;
     robots = "index, follow";
   } else if (type === "madhya-pradesh-hub") {
     title = "Electropolished Pipe Manufacturer Across Madhya Pradesh | Sakshi Forge";
     metaDesc = "Sakshi Forge supplies electropolished SS 316L and 304L pipes across Madhya Pradesh industrial corridors: Indore, Pithampur SEZ, Dewas, Ujjain Vikram Udyogpuri, Bhopal, Ratlam, Gwalior Malanpur, Jabalpur and Neemuch.";
-    canonicalUrl = `${BASE_URL}/market-area/madhya-pradesh`;
+    canonicalUrl = `${BASE_URL}/market-area/madhya-pradesh/`;
     robots = "index, follow";
   } else if (type === "andhra-pradesh-hub") {
     title = "Electropolished Stainless Steel Pipe Manufacturer Across Andhra Pradesh | Sakshi Forge";
     metaDesc = "Sakshi Forge supplies electropolished SS 316L, 304L and duplex 2205 pipes across Andhra Pradesh industrial corridors: Visakhapatnam Vizag SEZ, Anakapalle Parawada Pharma City, Tirupati Sri City, Kakinada Port SEZ, Vijayawada Autonagar, Guntur Spices Park, Rajahmundry, Chittoor, Nellore Krishnapatnam and Kurnool Orvakal.";
-    canonicalUrl = `${BASE_URL}/market-area/andhra-pradesh`;
+    canonicalUrl = `${BASE_URL}/market-area/andhra-pradesh/`;
     robots = "index, follow";
   } else if (type === "clients") {
     title = "Our Clients & Industries | Sakshi Forge";

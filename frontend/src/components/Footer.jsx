@@ -76,6 +76,9 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
             <ul className="footer-links">
               <li><a href="/" onClick={(e) => handleLinkClick(e, '/')}>Home</a></li>
               <li><a href="/products/" onClick={(e) => handleLinkClick(e, '/products/')}>Products Range</a></li>
+              <li><a href="/forged-fittings/" onClick={(e) => handleLinkClick(e, '/forged-fittings/')}>Forged Fittings</a></li>
+              <li><a href="/stainless-steel-pipe/" onClick={(e) => handleLinkClick(e, '/stainless-steel-pipe/')}>Stainless Steel Pipes</a></li>
+              <li><a href="/ss-347-stainless-steel-coil-2/" onClick={(e) => handleLinkClick(e, '/ss-347-stainless-steel-coil-2/')}>SS 347 Coils</a></li>
               <li><a href="/blog/" onClick={(e) => handleLinkClick(e, '/blog/')}>Technical Blogs</a></li>
               <li><a href="/about-us/" onClick={(e) => handleLinkClick(e, '/about-us/')}>About Sakshi Forge</a></li>
               <li><a href="/gallery/" onClick={(e) => handleLinkClick(e, '/gallery/')}>Facility Gallery</a></li>

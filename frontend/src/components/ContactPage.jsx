@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, Send, ShieldCheck, MessageSquare } from 'lucide-react';
+import { trackLeadSubmission } from '../utils/analytics';
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://sakshi-fr.errorr990551.workers.dev';
 
@@ -37,6 +38,12 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
       const data = await res.json();
       if (res.ok && data.success) {
         setSuccess(true);
+        // Track GA4 conversion key event
+        trackLeadSubmission({
+          formType: 'contact_page_form',
+          product: formData.product,
+          company: formData.company
+        });
         setTimeout(() => {
           setSuccess(false);
           setFormData({ name: '', email: '', phone: '', company: '', product: '', message: '' });

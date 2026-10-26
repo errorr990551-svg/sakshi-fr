@@ -1,12 +1,23 @@
 /**
- * Kept for backward compatibility
+ * Normalizes internal router paths with standard trailing slash to eliminate 301 redirects
  */
+export function normalizePath(path) {
+  if (!path || path === '/') return '/';
+  if (path.startsWith('http://') || path.startsWith('https://') || path.startsWith('tel:') || path.startsWith('mailto:') || path.startsWith('#')) return path;
+  const parts = path.split(/(?=[?#])/);
+  const base = parts[0];
+  const rest = parts.slice(1).join('');
+  if (base.includes('.')) return path; // static file like /sitemap.xml
+  const cleanBase = base.endsWith('/') ? base : `${base}/`;
+  return `${cleanBase}${rest}`;
+}
+
 export function isTrailingSlashCityPath(pathname) {
-  return false;
+  return true;
 }
 
 export function navigate(path) {
-  const targetPath = path || '/';
+  const targetPath = normalizePath(path);
   // Update browser address bar without page reload
   window.history.pushState(null, "", targetPath);
   // Trigger popstate event so our App router hears it and updates the view
@@ -23,9 +34,9 @@ export function handleLinkClick(e, path) {
     return;
   }
   
-  const targetPath = path || e.currentTarget?.getAttribute('href') || e.target?.getAttribute('href');
-  if (!targetPath) return;
+  const rawTarget = path || e.currentTarget?.getAttribute('href') || e.target?.getAttribute('href');
+  if (!rawTarget) return;
 
   e.preventDefault();
-  navigate(targetPath);
+  navigate(rawTarget);
 }

@@ -197,7 +197,7 @@ export default function HomePage({ onEnquireClick }) {
               <button onClick={() => onEnquireClick('Hero: Get a Quote in 30 Minutes')} className="btn btn-primary btn-lg" style={{ padding: '0.95rem 2rem', fontWeight: '700' }}>
                 Get a Quote in 30 Minutes <ArrowRight size={17} />
               </button>
-              <a href="/catalogue" onClick={handleLinkClick} className="btn btn-outline btn-lg" style={{ padding: '0.95rem 2rem', fontWeight: '600' }}>
+              <a href="/catalogue/" onClick={(e) => handleLinkClick(e, '/catalogue/')} className="btn btn-outline btn-lg" style={{ padding: '0.95rem 2rem', fontWeight: '600' }}>
                 Download Catalogue PDF
               </a>
             </div>
@@ -418,7 +418,7 @@ export default function HomePage({ onEnquireClick }) {
           </div>
 
           <div style={{ textAlign: 'center' }}>
-            <a href="/electropolished-pipes" onClick={handleLinkClick} className="btn btn-primary btn-lg" style={{ padding: '0.9rem 2.25rem', fontWeight: '700' }}>
+            <a href="/electropolished-pipes/" onClick={(e) => handleLinkClick(e, '/electropolished-pipes/')} className="btn btn-primary btn-lg" style={{ padding: '0.9rem 2.25rem', fontWeight: '700' }}>
               Explore Full Electropolished Range <ArrowRight size={16} />
             </a>
           </div>
@@ -939,18 +939,22 @@ export default function HomePage({ onEnquireClick }) {
             ))}
           </div>
 
-          {/* Reference Tools Bar */}
+          {/* Reference Tools & Core Product Hubs */}
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1.5rem', paddingTop: '1.75rem', borderTop: '1px solid var(--border-color)' }}>
-            <a href="/products" onClick={handleLinkClick} className="btn btn-primary" style={{ padding: '0.75rem 1.75rem', fontWeight: '700' }}>
+            <a href="/products/" onClick={(e) => handleLinkClick(e, '/products/')} className="btn btn-primary" style={{ padding: '0.75rem 1.75rem', fontWeight: '700' }}>
               View All 17 Categories →
             </a>
 
-            <div style={{ display: 'flex', gap: '1.25rem', flexWrap: 'wrap', fontSize: '0.88rem' }}>
-              <span style={{ color: 'var(--text-muted)', fontWeight: '700', textTransform: 'uppercase' }}>Reference Tools:</span>
-              <a href="/pipe-schedule-chart" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Pipe Schedule Chart</a>
-              <a href="/flange-dimension-chart" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Flange Dimension Chart</a>
-              <a href="/flange-weight-chart" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Flange Weight Chart</a>
-              <a href="/flange-bolt-chart" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Flange Bolt Chart</a>
+            <div style={{ display: 'flex', gap: '1.25rem', flexWrap: 'wrap', fontSize: '0.88rem', alignItems: 'center' }}>
+              <span style={{ color: 'var(--text-muted)', fontWeight: '700', textTransform: 'uppercase' }}>Key Products:</span>
+              <a href="/forged-fittings/" onClick={(e) => handleLinkClick(e, '/forged-fittings/')} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Forged Fittings</a>
+              <a href="/stainless-steel-pipe/" onClick={(e) => handleLinkClick(e, '/stainless-steel-pipe/')} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Stainless Steel Pipe</a>
+              <a href="/ss-347-stainless-steel-coil-2/" onClick={(e) => handleLinkClick(e, '/ss-347-stainless-steel-coil-2/')} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>SS 347 Coil</a>
+              <span style={{ color: 'var(--text-muted)', fontWeight: '700', textTransform: 'uppercase', marginLeft: '0.5rem' }}>Reference Tools:</span>
+              <a href="/pipe-schedule-chart/" onClick={(e) => handleLinkClick(e, '/pipe-schedule-chart/')} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Pipe Schedule Chart</a>
+              <a href="/flange-dimension-chart/" onClick={(e) => handleLinkClick(e, '/flange-dimension-chart/')} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Flange Dimension Chart</a>
+              <a href="/flange-weight-chart/" onClick={(e) => handleLinkClick(e, '/flange-weight-chart/')} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Flange Weight Chart</a>
+              <a href="/flange-bolt-chart/" onClick={(e) => handleLinkClick(e, '/flange-bolt-chart/')} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Flange Bolt Chart</a>
             </div>
           </div>
         </div>
@@ -1065,8 +1069,8 @@ export default function HomePage({ onEnquireClick }) {
 
               {/* Learn More Button */}
               <a 
-                href="/about-us" 
-                onClick={handleLinkClick} 
+                href="/about-us/" 
+                onClick={(e) => handleLinkClick(e, '/about-us/')} 
                 className="btn btn-primary"
                 style={{ padding: '0.85rem 2rem', fontWeight: '700', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
               >
@@ -1119,7 +1123,7 @@ export default function HomePage({ onEnquireClick }) {
           </div>
 
           <div style={{ textAlign: 'center' }}>
-            <a href="/gallery" onClick={handleLinkClick} className="btn btn-outline" style={{ padding: '0.85rem 2.25rem', fontWeight: '600' }}>
+            <a href="/gallery/" onClick={(e) => handleLinkClick(e, '/gallery/')} className="btn btn-outline" style={{ padding: '0.85rem 2.25rem', fontWeight: '600' }}>
               View Full Gallery & Video Tour →
             </a>
           </div>

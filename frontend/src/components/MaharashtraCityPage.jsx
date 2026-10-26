@@ -249,13 +249,13 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
         <div className="container">
           {/* Breadcrumb Navigation */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.82rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
-            <a href="/" onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>Home</a>
+            <a href="/" onClick={(e) => handleLinkClick(e, '/')} style={{ color: 'inherit', textDecoration: 'none' }}>Home</a>
             <span>›</span>
-            <a href="/market-area" onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>Market Areas</a>
+            <a href="/market-area/" onClick={(e) => handleLinkClick(e, '/market-area/')} style={{ color: 'inherit', textDecoration: 'none' }}>Market Areas</a>
             <span>›</span>
             <a 
-              href={cityData.state === 'Karnataka' ? '/karnataka' : cityData.state === 'Gujarat' ? '/market-area/gujarat' : cityData.state === 'Telangana' ? '/market-area/telangana' : cityData.state === 'West Bengal' ? '/market-area/west-bengal' : cityData.state === 'Madhya Pradesh' ? '/market-area/madhya-pradesh' : cityData.state === 'Andhra Pradesh' ? '/market-area/andhra-pradesh' : '/market-area#maharashtra'} 
-              onClick={(e) => handleLinkClick(e, cityData.state === 'Karnataka' ? '/karnataka' : cityData.state === 'Gujarat' ? '/market-area/gujarat' : cityData.state === 'Telangana' ? '/market-area/telangana' : cityData.state === 'West Bengal' ? '/market-area/west-bengal' : cityData.state === 'Madhya Pradesh' ? '/market-area/madhya-pradesh' : cityData.state === 'Andhra Pradesh' ? '/market-area/andhra-pradesh' : '/market-area#maharashtra')} 
+              href={cityData.state === 'Karnataka' ? '/karnataka/' : cityData.state === 'Gujarat' ? '/market-area/gujarat/' : cityData.state === 'Telangana' ? '/market-area/telangana/' : cityData.state === 'West Bengal' ? '/market-area/west-bengal/' : cityData.state === 'Madhya Pradesh' ? '/market-area/madhya-pradesh/' : cityData.state === 'Andhra Pradesh' ? '/market-area/andhra-pradesh/' : '/market-area/#maharashtra'} 
+              onClick={(e) => handleLinkClick(e, cityData.state === 'Karnataka' ? '/karnataka/' : cityData.state === 'Gujarat' ? '/market-area/gujarat/' : cityData.state === 'Telangana' ? '/market-area/telangana/' : cityData.state === 'West Bengal' ? '/market-area/west-bengal/' : cityData.state === 'Madhya Pradesh' ? '/market-area/madhya-pradesh/' : cityData.state === 'Andhra Pradesh' ? '/market-area/andhra-pradesh/' : '/market-area/#maharashtra')} 
               style={{ color: 'inherit', textDecoration: 'none' }}
             >
               {cityData.state || 'Maharashtra'}
@@ -307,8 +307,8 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                 {['A', 'E', 'I', 'O', 'U'].includes(cityData.city[0].toUpperCase()) ? 'Get an' : 'Get a'} {cityData.city} Quote in 30 Minutes <ArrowRight size={16} />
               </button>
               <a 
-                href="/catalogue" 
-                onClick={handleLinkClick} 
+                href="/catalogue/" 
+                onClick={(e) => handleLinkClick(e, '/catalogue/')} 
                 className="btn btn-outline btn-lg" 
                 style={{ padding: '0.9rem 1.85rem', fontWeight: '600' }}
               >

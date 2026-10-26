@@ -317,9 +317,9 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.8rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
               <a href="/" onClick={(e) => handleLinkClick(e, '/')} style={{ color: 'inherit', textDecoration: 'none' }}>Home</a>
               <ChevronRight size={12} />
-              <a href="/market-area" onClick={(e) => handleLinkClick(e, '/market-area')} style={{ color: 'inherit', textDecoration: 'none' }}>Market Directory</a>
+              <a href="/market-area/" onClick={(e) => handleLinkClick(e, '/market-area/')} style={{ color: 'inherit', textDecoration: 'none' }}>Market Directory</a>
               <ChevronRight size={12} />
-              <a href="/tamil-nadu" onClick={(e) => handleLinkClick(e, '/tamil-nadu')} style={{ color: 'inherit', textDecoration: 'none' }}>Tamil Nadu</a>
+              <a href="/tamil-nadu/" onClick={(e) => handleLinkClick(e, '/tamil-nadu/')} style={{ color: 'inherit', textDecoration: 'none' }}>Tamil Nadu</a>
               <ChevronRight size={12} />
               <span style={{ color: 'var(--primary-yellow)', fontWeight: '600' }}>{custom.city}</span>
             </div>
@@ -449,7 +449,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
             </div>
 
             <div style={{ textAlign: 'center' }}>
-              <a href={custom.productRange.btnLink || '/electropolished-pipes'} onClick={(e) => handleLinkClick(e, custom.productRange.btnLink || '/electropolished-pipes')} className="btn btn-primary" style={{ padding: '0.85rem 2rem', fontWeight: '700' }}>
+              <a href={custom.productRange.btnLink || '/electropolished-pipes/'} onClick={(e) => handleLinkClick(e, custom.productRange.btnLink || '/electropolished-pipes/')} className="btn btn-primary" style={{ padding: '0.85rem 2rem', fontWeight: '700' }}>
                 {custom.productRange.btnText}
               </a>
             </div>
@@ -585,12 +585,15 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
                 {custom.areasCovered.stateHubText}
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.65rem' }}>
-                {custom.areasCovered.siblingCities.map((sib, idx) => (
-                  <a key={idx} href={sib.path} onClick={(e) => handleLinkClick(e, sib.path)} style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', padding: '0.4rem 0.85rem', borderRadius: '4px', color: '#cbd5e1', fontSize: '0.82rem', textDecoration: 'none', fontWeight: '500' }}>
-                    {sib.name}
-                  </a>
-                ))}
-                <a href="/tamil-nadu" onClick={(e) => handleLinkClick(e, '/tamil-nadu')} style={{ color: 'var(--primary-yellow)', padding: '0.4rem 0.85rem', fontSize: '0.82rem', textDecoration: 'underline', fontWeight: '700' }}>
+                {custom.areasCovered.siblingCities.map((sib, idx) => {
+                  const sPath = (sib.path || '').endsWith('/') ? sib.path : `${sib.path}/`;
+                  return (
+                    <a key={idx} href={sPath} onClick={(e) => handleLinkClick(e, sPath)} style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', padding: '0.4rem 0.85rem', borderRadius: '4px', color: '#cbd5e1', fontSize: '0.82rem', textDecoration: 'none', fontWeight: '500' }}>
+                      {sib.name}
+                    </a>
+                  );
+                })}
+                <a href="/tamil-nadu/" onClick={(e) => handleLinkClick(e, '/tamil-nadu/')} style={{ color: 'var(--primary-yellow)', padding: '0.4rem 0.85rem', fontSize: '0.82rem', textDecoration: 'underline', fontWeight: '700' }}>
                   View All Tamil Nadu Hubs →
                 </a>
               </div>
@@ -769,20 +772,23 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.8rem', marginBottom: '2.5rem', flexWrap: 'wrap', fontWeight: '500' }}>
             {(custom?.breadcrumb || [
               { name: 'Home', path: '/' },
-              { name: 'Market Directory', path: '/market-area' },
-              { name: cityData.city, path: cityData.fullPageUrl || cityData.path }
-            ]).map((b, i, arr) => (
+              { name: 'Market Directory', path: '/market-area/' },
+              { name: cityData.city, path: cityData.fullPageUrl || ((cityData.path || '').endsWith('/') ? cityData.path : `${cityData.path}/`) }
+            ]).map((b, i, arr) => {
+              const bPath = (b.path || '').endsWith('/') || b.path.includes('#') ? b.path : `${b.path}/`;
+              return (
               <React.Fragment key={i}>
                 {i < arr.length - 1 ? (
                   <>
-                    <a href={b.path} onClick={(e) => handleLinkClick(e, b.path)} style={{ color: 'inherit', textDecoration: 'none', transition: 'var(--transition-fast)' }} onMouseEnter={(e) => e.target.style.color = 'var(--primary-yellow)'} onMouseLeave={(e) => e.target.style.color = 'inherit'}>{b.name}</a>
+                    <a href={bPath} onClick={(e) => handleLinkClick(e, bPath)} style={{ color: 'inherit', textDecoration: 'none', transition: 'var(--transition-fast)' }} onMouseEnter={(e) => e.target.style.color = 'var(--primary-yellow)'} onMouseLeave={(e) => e.target.style.color = 'inherit'}>{b.name}</a>
                     <ChevronRight size={12} style={{ color: 'var(--text-muted)' }} />
                   </>
                 ) : (
                   <span style={{ color: 'var(--primary-yellow)', fontWeight: '600' }}>{b.name}</span>
                 )}
               </React.Fragment>
-            ))}
+              );
+            })}
           </div>
 
           <div style={{
@@ -1807,11 +1813,13 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
                 Sibling Supply Destinations ({cityData.state}):
               </span>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.6rem' }}>
-                {cityData.nearbyCitySpokes.map((spoke, idx) => (
+                {cityData.nearbyCitySpokes.map((spoke, idx) => {
+                  const spokePath = (spoke.path || '').endsWith('/') ? spoke.path : `${spoke.path}/`;
+                  return (
                   <a
                     key={idx}
-                    href={spoke.path}
-                    onClick={(e) => handleLinkClick(e, spoke.path)}
+                    href={spokePath}
+                    onClick={(e) => handleLinkClick(e, spokePath)}
                     style={{
                       color: 'var(--text-secondary)',
                       textDecoration: 'none',
@@ -1836,7 +1844,8 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
                   >
                     EP Pipes in {spoke.city}
                   </a>
-                ))}
+                );
+              })}
               </div>
             </div>
           </div>

@@ -190,8 +190,8 @@ export default function NotFoundPage() {
           </a>
           
           <a 
-            href="/contact-us"
-            onClick={(e) => handleLinkClick(e, '/contact-us')}
+            href="/contact-us/"
+            onClick={(e) => handleLinkClick(e, '/contact-us/')}
             className="btn btn-primary"
             style={{ padding: '0.8rem 1.5rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
           >

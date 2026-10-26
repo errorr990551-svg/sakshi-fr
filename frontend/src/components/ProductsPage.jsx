@@ -287,7 +287,7 @@ export default function ProductsPage({ onEnquireClick }) {
                     className="catalog-product-card"
                     onClick={(e) => {
                       if (e.target.tagName === 'A' || e.target.closest('a')) return;
-                      window.history.pushState(null, '', `/${p['URL Slug']}`);
+                      window.history.pushState(null, '', `/${p['URL Slug']}/`);
                       window.dispatchEvent(new PopStateEvent('popstate'));
                     }}
                   >
@@ -356,8 +356,8 @@ export default function ProductsPage({ onEnquireClick }) {
 
                     <div style={{ padding: '0 2rem 2rem 2rem' }}>
                       <a 
-                        href={`/${p['URL Slug']}`}
-                        onClick={(e) => handleLinkClick(e, `/${p['URL Slug']}`)}
+                        href={`/${p['URL Slug']}/`}
+                        onClick={(e) => handleLinkClick(e, `/${p['URL Slug']}/`)}
                         className="btn btn-outline"
                         style={{ width: '100%', padding: '0.65rem 0', display: 'flex', justifyContent: 'center', fontSize: '0.85rem' }}
                       >

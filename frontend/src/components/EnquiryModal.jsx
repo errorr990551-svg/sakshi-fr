@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { X, CheckCircle2, Send, Loader2, AlertCircle, Phone, Mail, MapPin } from 'lucide-react';
+import { trackLeadSubmission } from '../utils/analytics';
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://sakshi-fr.errorr990551.workers.dev';
 
@@ -70,6 +71,13 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '',
     if (typeof window !== 'undefined') {
       localStorage.setItem('contactDetailsUnlocked', 'true');
     }
+    // Track GA4 conversion key event
+    trackLeadSubmission({
+      formType: customTitle ? 'unlock_contact_modal' : 'quick_enquiry_modal',
+      product: preselectedProduct,
+      company: formData.company,
+      location: formData.location
+    });
     onUnlockContact();
   };
 

@@ -39,7 +39,9 @@
 /odisha                                    /market-area/odisha/  301!
 /odisha/                                   /market-area/odisha/  301!
 
-# 4. Odd slug redirects
+# 4. Odd slug & soft 404 redirects
 /306-stainless-steel-round-bar             /304-stainless-steel-round-bar/ 301!
 /306-stainless-steel-round-bar/            /304-stainless-steel-round-bar/ 301!
+/forged-pipe-fittings-guide-pressure-classes-standards   /asme-b16-11-forged-fittings/ 301!
+/forged-pipe-fittings-guide-pressure-classes-standards/  /asme-b16-11-forged-fittings/ 301!
 

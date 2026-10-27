@@ -119,22 +119,7 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
             </ul>
           </div>
 
-          {/* Market Area (Replaced Cities We Serve) */}
-          <div className="footer-col">
-            <h4>Market Area</h4>
-            <ul className="footer-links">
-              <li><a href="/market-area/" onClick={(e) => handleLinkClick(e, '/market-area/')} style={{ color: 'var(--primary-yellow)', fontWeight: '700' }}>All Industrial Hubs Directory →</a></li>
-              <li><a href="/market-area/gujarat/" onClick={(e) => handleLinkClick(e, '/market-area/gujarat/')}>Gujarat Belts (Ahmedabad, Vadodara, Vapi...)</a></li>
-              <li><a href="/karnataka/" onClick={(e) => handleLinkClick(e, '/karnataka/')}>Karnataka Hub (Bengaluru, Belagavi, Mysuru...)</a></li>
-              <li><a href="/tamil-nadu/" onClick={(e) => handleLinkClick(e, '/tamil-nadu/')}>Tamil Nadu Hub (Chennai, Coimbatore...)</a></li>
-              <li><a href="/market-area/telangana/" onClick={(e) => handleLinkClick(e, '/market-area/telangana/')}>Telangana Hub (Hyderabad, Sangareddy, Warangal...)</a></li>
-              <li><a href="/market-area/west-bengal/" onClick={(e) => handleLinkClick(e, '/market-area/west-bengal/')}>West Bengal Hub (Kolkata, Haldia, Asansol...)</a></li>
-              <li><a href="/market-area/mumbai/" onClick={(e) => handleLinkClick(e, '/market-area/mumbai/')}>Mumbai Works & Taloja MIDC</a></li>
-              <li><a href="/market-area/pune/" onClick={(e) => handleLinkClick(e, '/market-area/pune/')}>Pune & Chakan MIDC</a></li>
-              <li><a href="/market-area/thane/" onClick={(e) => handleLinkClick(e, '/market-area/thane/')}>Thane-Belapur Chemical Belt</a></li>
-              <li><a href="/market-area/tarapur/" onClick={(e) => handleLinkClick(e, '/market-area/tarapur/')}>Tarapur Chemical Zone</a></li>
-            </ul>
-          </div>
+
 
         </div>
 

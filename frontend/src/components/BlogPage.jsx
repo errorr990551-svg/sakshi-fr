@@ -357,13 +357,8 @@ export default function BlogPage() {
                       <Clock size={12} /> {post.readTime}
                     </span>
                     <a 
-<<<<<<< HEAD
                       href={`/blog/${post.slug}/`} 
-                      onClick={(e) => handleLinkClick(e, `/blog/${post.slug}/`)} 
-=======
-                      href={withSlash(`/blog/${post.slug}`)} 
-                      onClick={(e) => handleLinkClick(e, `/blog/${post.slug}`)} 
->>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
+                      onClick={(e) => handleLinkClick(e, `/blog/${post.slug}/`)}
                       style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', color: 'var(--primary-yellow)', fontSize: '0.85rem', textDecoration: 'none', fontWeight: '700' }}
                     >
                       Read Article <ArrowRight size={14} />

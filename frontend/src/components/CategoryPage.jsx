@@ -207,13 +207,8 @@ export default function CategoryPage({ category, onEnquireClick }) {
 
                   <div style={{ padding: '0 2rem 2rem 2rem' }}>
                     <a 
-<<<<<<< HEAD
                       href={`/${prod['URL Slug']}/`}
                       onClick={(e) => handleLinkClick(e, `/${prod['URL Slug']}/`)}
-=======
-                      href={withSlash(`/${prod['URL Slug']}`)}
-                      onClick={(e) => handleLinkClick(e, `/${prod['URL Slug']}`)}
->>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
                       className="btn btn-outline"
                       style={{ width: '100%', padding: '0.65rem 0', display: 'flex', justifyContent: 'center' }}
                     >
@@ -353,13 +348,8 @@ export default function CategoryPage({ category, onEnquireClick }) {
                   return (
                     <a
                       key={index}
-<<<<<<< HEAD
                       href={`/${matchingProd['URL Slug']}/`}
                       onClick={(e) => handleLinkClick(e, `/${matchingProd['URL Slug']}/`)}
-=======
-                      href={withSlash(`/${matchingProd['URL Slug']}`)}
-                      onClick={(e) => handleLinkClick(e, `/${matchingProd['URL Slug']}`)}
->>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
                       style={{
                         backgroundColor: 'var(--bg-dark-700)',
                         border: '1px solid var(--border-color)',

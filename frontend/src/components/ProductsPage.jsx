@@ -358,13 +358,8 @@ export default function ProductsPage({ onEnquireClick }) {
 
                     <div style={{ padding: '0 2rem 2rem 2rem' }}>
                       <a 
-<<<<<<< HEAD
                         href={`/${p['URL Slug']}/`}
                         onClick={(e) => handleLinkClick(e, `/${p['URL Slug']}/`)}
-=======
-                        href={withSlash(`/${p['URL Slug']}`)}
-                        onClick={(e) => handleLinkClick(e, `/${p['URL Slug']}`)}
->>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
                         className="btn btn-outline"
                         style={{ width: '100%', padding: '0.65rem 0', display: 'flex', justifyContent: 'center', fontSize: '0.85rem' }}
                       >

@@ -15,11 +15,7 @@ export default function BlogPostPage({ post, onEnquireClick }) {
         <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem' }}>The requested blog post could not be located in our database.</p>
         <a 
           href="/blog/" 
-<<<<<<< HEAD
           onClick={(e) => handleLinkClick(e, '/blog/')}
-=======
-          onClick={(e) => handleLinkClick(e, '/blog')}
->>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
           style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1.5rem', backgroundColor: 'var(--primary-yellow)', color: '#000', fontWeight: '700', borderRadius: '4px', textDecoration: 'none' }}
         >
           <ArrowLeft size={16} /> Return to Knowledge Hub

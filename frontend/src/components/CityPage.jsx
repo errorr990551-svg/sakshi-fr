@@ -324,15 +324,9 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.8rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
               <a href="/" onClick={(e) => handleLinkClick(e, '/')} style={{ color: 'inherit', textDecoration: 'none' }}>Home</a>
               <ChevronRight size={12} />
-<<<<<<< HEAD
               <a href="/market-area/" onClick={(e) => handleLinkClick(e, '/market-area/')} style={{ color: 'inherit', textDecoration: 'none' }}>Market Directory</a>
               <ChevronRight size={12} />
               <a href="/tamil-nadu/" onClick={(e) => handleLinkClick(e, '/tamil-nadu/')} style={{ color: 'inherit', textDecoration: 'none' }}>Tamil Nadu</a>
-=======
-              <a href="/market-area/" onClick={(e) => handleLinkClick(e, '/market-area')} style={{ color: 'inherit', textDecoration: 'none' }}>Market Directory</a>
-              <ChevronRight size={12} />
-              <a href="/tamil-nadu/" onClick={(e) => handleLinkClick(e, '/tamil-nadu')} style={{ color: 'inherit', textDecoration: 'none' }}>Tamil Nadu</a>
->>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
               <ChevronRight size={12} />
               <span style={{ color: 'var(--primary-yellow)', fontWeight: '600' }}>{custom.city}</span>
             </div>
@@ -462,11 +456,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
             </div>
 
             <div style={{ textAlign: 'center' }}>
-<<<<<<< HEAD
               <a href={custom.productRange.btnLink || '/electropolished-pipes/'} onClick={(e) => handleLinkClick(e, custom.productRange.btnLink || '/electropolished-pipes/')} className="btn btn-primary" style={{ padding: '0.85rem 2rem', fontWeight: '700' }}>
-=======
-              <a href={withSlash(custom.productRange.btnLink || '/electropolished-pipes')} onClick={(e) => handleLinkClick(e, custom.productRange.btnLink || '/electropolished-pipes')} className="btn btn-primary" style={{ padding: '0.85rem 2rem', fontWeight: '700' }}>
->>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
                 {custom.productRange.btnText}
               </a>
             </div>
@@ -602,7 +592,6 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
                 {custom.areasCovered.stateHubText}
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.65rem' }}>
-<<<<<<< HEAD
                 {custom.areasCovered.siblingCities.map((sib, idx) => {
                   const sPath = (sib.path || '').endsWith('/') ? sib.path : `${sib.path}/`;
                   return (
@@ -612,14 +601,6 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
                   );
                 })}
                 <a href="/tamil-nadu/" onClick={(e) => handleLinkClick(e, '/tamil-nadu/')} style={{ color: 'var(--primary-yellow)', padding: '0.4rem 0.85rem', fontSize: '0.82rem', textDecoration: 'underline', fontWeight: '700' }}>
-=======
-                {custom.areasCovered.siblingCities.map((sib, idx) => (
-                  <a key={idx} href={withSlash(sib.path)} onClick={(e) => handleLinkClick(e, sib.path)} style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', padding: '0.4rem 0.85rem', borderRadius: '4px', color: '#cbd5e1', fontSize: '0.82rem', textDecoration: 'none', fontWeight: '500' }}>
-                    {sib.name}
-                  </a>
-                ))}
-                <a href="/tamil-nadu/" onClick={(e) => handleLinkClick(e, '/tamil-nadu')} style={{ color: 'var(--primary-yellow)', padding: '0.4rem 0.85rem', fontSize: '0.82rem', textDecoration: 'underline', fontWeight: '700' }}>
->>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
                   View All Tamil Nadu Hubs →
                 </a>
               </div>
@@ -806,11 +787,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
               <React.Fragment key={i}>
                 {i < arr.length - 1 ? (
                   <>
-<<<<<<< HEAD
                     <a href={bPath} onClick={(e) => handleLinkClick(e, bPath)} style={{ color: 'inherit', textDecoration: 'none', transition: 'var(--transition-fast)' }} onMouseEnter={(e) => e.target.style.color = 'var(--primary-yellow)'} onMouseLeave={(e) => e.target.style.color = 'inherit'}>{b.name}</a>
-=======
-                    <a href={withSlash(b.path)} onClick={(e) => handleLinkClick(e, b.path)} style={{ color: 'inherit', textDecoration: 'none', transition: 'var(--transition-fast)' }} onMouseEnter={(e) => e.target.style.color = 'var(--primary-yellow)'} onMouseLeave={(e) => e.target.style.color = 'inherit'}>{b.name}</a>
->>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
                     <ChevronRight size={12} style={{ color: 'var(--text-muted)' }} />
                   </>
                 ) : (
@@ -1870,13 +1847,8 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
                   return (
                   <a
                     key={idx}
-<<<<<<< HEAD
                     href={spokePath}
                     onClick={(e) => handleLinkClick(e, spokePath)}
-=======
-                    href={withSlash(spoke.path)}
-                    onClick={(e) => handleLinkClick(e, spoke.path)}
->>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
                     style={{
                       color: 'var(--text-secondary)',
                       textDecoration: 'none',

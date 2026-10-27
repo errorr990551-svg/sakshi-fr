@@ -113,11 +113,7 @@ export default function WestBengalHubPage({ onEnquireClick, onShowContactDetails
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.82rem', marginBottom: '2rem' }}>
             <a href="/" onClick={(e) => handleLinkClick(e, '/')} style={{ color: 'inherit', textDecoration: 'none' }}>Home</a>
             <span>›</span>
-<<<<<<< HEAD
             <a href="/market-area/" onClick={(e) => handleLinkClick(e, '/market-area/')} style={{ color: 'inherit', textDecoration: 'none' }}>Market Areas</a>
-=======
-            <a href="/market-area/" onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>Market Areas</a>
->>>>>>> f22db9c1d02e599422d833ecdfaa07d7f8c0a453
             <span>›</span>
             <span style={{ color: 'var(--primary-yellow)', fontWeight: '600' }}>West Bengal Regional Hub</span>
           </div>

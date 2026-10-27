@@ -630,15 +630,10 @@ async function runPrerender() {
       }
     }
 
-    let schemaBlockHtml = '';
-    if (route.type === 'market-city' && route.data?.schema) {
-      schemaBlockHtml = `<script type="application/ld+json" class="sakshi-seo-schema">\n${route.data.schema}\n</script>`;
-    } else {
-      schemaBlockHtml = `<script type="application/ld+json" class="sakshi-seo-schema">\n${JSON.stringify({
-        "@context": "https://schema.org",
-        "@graph": schemasGraph
-      }, null, 2)}\n</script>`;
-    }
+    const schemaBlockHtml = `<script type="application/ld+json" class="sakshi-seo-schema">\n${JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": schemasGraph
+    }, null, 2)}\n</script>`;
 
     // Replace templates in index.html
     let html = template;

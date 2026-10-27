@@ -214,10 +214,44 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
           },
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Electropolished Stainless Steel Pipes Catalog",
+            "name": "Electropolished Stainless Steel Pipes Supply Catalog",
             "itemListElement": [
-              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "ASTM A270 Electropolished SS 316L Pipe", "material": "SS 316L", "brand": "Sakshi Forge" } },
-              { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "ASME BPE SF4 Sanitary Electropolished Tubing", "material": "SS 304 / 316L", "brand": "Sakshi Forge" } }
+              {
+                "@type": "Offer",
+                "name": "ASTM A270 Electropolished SS 316L Pipe Supply",
+                "description": `High-purity SS 316L electropolished pipes and tubes supplied across industrial plants in ${cityData.city} with certified Ra <= 0.4 um and EN 10204 3.1 MTC.`,
+                "priceCurrency": "INR",
+                "price": "480",
+                "priceValidUntil": "2027-12-31",
+                "availability": "https://schema.org/InStock",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": `ASTM A270 Electropolished SS 316L Pipe Supply in ${cityData.city}`,
+                  "serviceType": "Stainless Steel Pipe Manufacturing",
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "Sakshi Forge"
+                  }
+                }
+              },
+              {
+                "@type": "Offer",
+                "name": "ASME BPE SF4 Sanitary Electropolished Tubing Supply",
+                "description": `ASME BPE compliant sanitary hygienic tubing with internal surface finish SF4 for sterile process lines in ${cityData.city}.`,
+                "priceCurrency": "INR",
+                "price": "520",
+                "priceValidUntil": "2027-12-31",
+                "availability": "https://schema.org/InStock",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": `ASME BPE SF4 Sanitary Electropolished Tubing Supply in ${cityData.city}`,
+                  "serviceType": "Hygienic Tubing Supply",
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "Sakshi Forge"
+                  }
+                }
+              }
             ]
           }
         },

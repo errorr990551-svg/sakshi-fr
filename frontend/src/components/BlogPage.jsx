@@ -69,7 +69,9 @@ export default function BlogPage() {
           {/* Search Box */}
           <div style={{ maxWidth: '560px', margin: '0 auto', position: 'relative' }}>
             <Search size={18} style={{ position: 'absolute', left: '1.1rem', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
-            <input aria-label="Search articles by standard, grade, or keyword (e.g. B16.5, 316L, Electropolish)..." 
+            <label htmlFor="blog-search-input" className="sr-only">Search articles by standard, grade, or keyword</label>
+            <input id="blog-search-input"
+              aria-label="Search articles by standard, grade, or keyword (e.g. B16.5, 316L, Electropolish)..." 
               type="text" 
               placeholder="Search articles by standard, grade, or keyword (e.g. B16.5, 316L, Electropolish)..."
               value={searchQuery}

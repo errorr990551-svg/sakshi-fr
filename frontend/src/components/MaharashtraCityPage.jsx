@@ -610,52 +610,52 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                     <Calculator size={18} /> Pipe Weight Calculator
                   </h4>
                   
-                  <label style={{ display: 'block', fontSize: '0.82rem', color: '#94a3b8', marginBottom: '0.5rem' }}>
-                    Grade:
-                    <select 
+                  <div style={{ marginBottom: '0.75rem' }}>
+                    <label htmlFor="city-calc-grade" style={{ display: 'block', fontSize: '0.82rem', color: '#94a3b8', marginBottom: '0.3rem' }}>Grade:</label>
+                    <select id="city-calc-grade" aria-label="Grade"
                       value={calcGrade} 
                       onChange={(e) => setCalcGrade(e.target.value)}
-                      style={{ width: '100%', padding: '0.6rem', marginTop: '0.3rem', backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', color: '#fff', borderRadius: '4px' }}
+                      style={{ width: '100%', padding: '0.6rem', backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', color: '#fff', borderRadius: '4px' }}
                     >
                       <option value="0.02491">SS 304 / 304L (7.93 g/cm³)</option>
                       <option value="0.02507">SS 316 / 316L (7.98 g/cm³)</option>
                       <option value="0.02450">Duplex 2205 (≈7.80 g/cm³)</option>
                     </select>
-                  </label>
+                  </div>
 
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '0.5rem' }}>
-                    <label style={{ fontSize: '0.82rem', color: '#94a3b8' }}>
-                      OD (mm):
-                      <input 
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '0.75rem' }}>
+                    <div>
+                      <label htmlFor="city-calc-od" style={{ display: 'block', fontSize: '0.82rem', color: '#94a3b8', marginBottom: '0.3rem' }}>OD (mm):</label>
+                      <input id="city-calc-od" aria-label="OD (mm)"
                         type="number" 
                         step="0.01" 
                         value={calcOD} 
                         onChange={(e) => setCalcOD(e.target.value)}
-                        style={{ width: '100%', padding: '0.6rem', marginTop: '0.3rem', backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', color: '#fff', borderRadius: '4px' }}
+                        style={{ width: '100%', padding: '0.6rem', backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', color: '#fff', borderRadius: '4px' }}
                       />
-                    </label>
-                    <label style={{ fontSize: '0.82rem', color: '#94a3b8' }}>
-                      Wall WT (mm):
-                      <input 
+                    </div>
+                    <div>
+                      <label htmlFor="city-calc-wt" style={{ display: 'block', fontSize: '0.82rem', color: '#94a3b8', marginBottom: '0.3rem' }}>Wall WT (mm):</label>
+                      <input id="city-calc-wt" aria-label="Wall WT (mm)"
                         type="number" 
                         step="0.01" 
                         value={calcWT} 
                         onChange={(e) => setCalcWT(e.target.value)}
-                        style={{ width: '100%', padding: '0.6rem', marginTop: '0.3rem', backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', color: '#fff', borderRadius: '4px' }}
+                        style={{ width: '100%', padding: '0.6rem', backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', color: '#fff', borderRadius: '4px' }}
                       />
-                    </label>
+                    </div>
                   </div>
 
-                  <label style={{ display: 'block', fontSize: '0.82rem', color: '#94a3b8', marginBottom: '1rem' }}>
-                    Length (meters):
-                    <input 
+                  <div style={{ marginBottom: '1rem' }}>
+                    <label htmlFor="city-calc-len" style={{ display: 'block', fontSize: '0.82rem', color: '#94a3b8', marginBottom: '0.3rem' }}>Length (meters):</label>
+                    <input id="city-calc-len" aria-label="Length (meters)"
                       type="number" 
                       step="0.1" 
                       value={calcLen} 
                       onChange={(e) => setCalcLen(e.target.value)}
-                      style={{ width: '100%', padding: '0.6rem', marginTop: '0.3rem', backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', color: '#fff', borderRadius: '4px' }}
+                      style={{ width: '100%', padding: '0.6rem', backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', color: '#fff', borderRadius: '4px' }}
                     />
-                  </label>
+                  </div>
 
                   <div style={{ backgroundColor: 'rgba(255, 193, 7, 0.08)', padding: '0.85rem', borderRadius: '6px', borderLeft: '3px solid var(--primary-yellow)', marginBottom: '0.5rem' }}>
                     {weightResult.error ? (
@@ -676,29 +676,29 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                       <Sparkles size={18} /> Ra Surface Roughness Converter
                     </h4>
 
-                    <label style={{ display: 'block', fontSize: '0.82rem', color: '#94a3b8', marginBottom: '0.75rem' }}>
-                      Surface Ra (µm):
-                      <input 
+                    <div style={{ marginBottom: '0.75rem' }}>
+                      <label htmlFor="city-calc-ra-um" style={{ display: 'block', fontSize: '0.82rem', color: '#94a3b8', marginBottom: '0.3rem' }}>Surface Ra (µm):</label>
+                      <input id="city-calc-ra-um" aria-label="Surface Ra (µm)"
                         type="number" 
                         step="0.01" 
                         min="0" 
                         value={raUm} 
                         onChange={(e) => handleRaUmChange(e.target.value)}
-                        style={{ width: '100%', padding: '0.6rem', marginTop: '0.3rem', backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', color: '#fff', borderRadius: '4px' }}
+                        style={{ width: '100%', padding: '0.6rem', backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', color: '#fff', borderRadius: '4px' }}
                       />
-                    </label>
+                    </div>
 
-                    <label style={{ display: 'block', fontSize: '0.82rem', color: '#94a3b8', marginBottom: '1rem' }}>
-                      Surface Ra (µin):
-                      <input 
+                    <div style={{ marginBottom: '1rem' }}>
+                      <label htmlFor="city-calc-ra-uin" style={{ display: 'block', fontSize: '0.82rem', color: '#94a3b8', marginBottom: '0.3rem' }}>Surface Ra (µin):</label>
+                      <input id="city-calc-ra-uin" aria-label="Surface Ra (µin)"
                         type="number" 
                         step="0.1" 
                         min="0" 
                         value={raUin} 
                         onChange={(e) => handleRaUinChange(e.target.value)}
-                        style={{ width: '100%', padding: '0.6rem', marginTop: '0.3rem', backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', color: '#fff', borderRadius: '4px' }}
+                        style={{ width: '100%', padding: '0.6rem', backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', color: '#fff', borderRadius: '4px' }}
                       />
-                    </label>
+                    </div>
 
                     <div style={{ backgroundColor: 'rgba(255, 193, 7, 0.08)', padding: '0.85rem', borderRadius: '6px', borderLeft: '3px solid var(--primary-yellow)', marginBottom: '0.5rem' }}>
                       <div style={{ fontWeight: '700', fontSize: '1rem', color: 'var(--primary-yellow)' }}>

@@ -321,7 +321,7 @@ export function updateSEO({ type, data }) {
     canonicalUrl = `${BASE_URL}/market-area/madhya-pradesh/`;
     robots = "index, follow";
   } else if (type === "andhra-pradesh-hub") {
-    title = "Electropolished Stainless Steel Pipe Manufacturer Across Andhra Pradesh | Sakshi Forge";
+    title = "Electropolished Pipes Across Andhra Pradesh | Sakshi Forge";
     metaDesc = "Sakshi Forge supplies electropolished SS 316L, 304L and duplex 2205 pipes across Andhra Pradesh industrial corridors: Visakhapatnam Vizag SEZ, Anakapalle Parawada Pharma City, Tirupati Sri City, Kakinada Port SEZ, Vijayawada Autonagar, Guntur Spices Park, Rajahmundry, Chittoor, Nellore Krishnapatnam and Kurnool Orvakal.";
     canonicalUrl = `${BASE_URL}/market-area/andhra-pradesh/`;
     robots = "index, follow";
@@ -374,6 +374,47 @@ export function updateSEO({ type, data }) {
     canonicalUrl = `${canonicalUrl}/`;
   }
 
+  
+// SEO Title & Description Guards (ensures strict compliance with Google length recommendations)
+function formatTitle(title) {
+  if (!title) return 'Sakshi Forge | Steel Manufacturer Mumbai';
+  let t = title.trim();
+  if (t.length <= 60) return t;
+  if (t.includes(' | Sakshi Forge')) {
+    const withoutBrand = t.replace(' | Sakshi Forge', '').trim();
+    if (withoutBrand.length + 5 <= 60) return `${withoutBrand} | SF`;
+    if (withoutBrand.length <= 60) return withoutBrand;
+    t = withoutBrand;
+  }
+  t = t.replace(/ Manufacturer & Supplier in India/gi, ' Manufacturer India')
+       .replace(/ Manufacturer & Supplier/gi, ' Manufacturer')
+       .replace(/ Manufacturer in India/gi, ' Manufacturer India')
+       .replace(/ Supplier in India/gi, ' Supplier India')
+       .replace(/ across India/gi, ' India');
+  if (t.length <= 60) return t;
+  const words = t.split(' ');
+  let cur = '';
+  for (const w of words) {
+    if ((cur + (cur ? ' ' : '') + w).length <= 57) {
+      cur += (cur ? ' ' : '') + w;
+    } else {
+      break;
+    }
+  }
+  return cur || t.substring(0, 57);
+}
+
+function formatMetaDesc(desc) {
+  if (!desc) return '';
+  let d = desc.trim();
+  if (d.length <= 160) return d;
+  const periodIdx = d.lastIndexOf('.', 159);
+  if (periodIdx > 100) return d.substring(0, periodIdx + 1).trim();
+  const words = d.substring(0, 156).split(' ');
+  words.pop();
+  return words.join(' ').trim() + '...';
+}
+
   const cleanDash = (str) => {
     if (!str || typeof str !== 'string') return str;
     return str
@@ -384,8 +425,8 @@ export function updateSEO({ type, data }) {
       .replace(/[\u2013\u2014]/g, '-');
   };
 
-  title = cleanDash(title);
-  metaDesc = cleanDash(metaDesc);
+  title = formatTitle(cleanDash(title));
+  metaDesc = formatMetaDesc(cleanDash(metaDesc));
 
   // 2. Inject meta headers in document head
   document.title = title;

@@ -99,7 +99,7 @@ const addMainUrl = (url, changefreq, priority, comment = '', lastmod = TODAY_LAS
   const formatted = formatUrl(url);
   if (mainUrlsSet.has(formatted) || isRedirected(formatted)) return;
   mainUrlsSet.add(formatted);
-  if (comment) mainSitemap += `  <!-- ${comment} -->\n`;
+  // Omit XML comments to ensure 100% strict XML validity without unescaped characters
   mainSitemap += `  <url>
     <loc>${formatted}</loc>
     <lastmod>${lastmod}</lastmod>

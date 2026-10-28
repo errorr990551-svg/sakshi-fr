@@ -11,6 +11,47 @@ const __dirname = path.dirname(__filename);
 
 const BASE_URL = 'https://steelmanufacturer.in';
 
+
+// SEO Title & Description Guards (ensures strict compliance with Google length recommendations)
+function formatTitle(title) {
+  if (!title) return 'Sakshi Forge | Steel Manufacturer Mumbai';
+  let t = title.trim();
+  if (t.length <= 60) return t;
+  if (t.includes(' | Sakshi Forge')) {
+    const withoutBrand = t.replace(' | Sakshi Forge', '').trim();
+    if (withoutBrand.length + 5 <= 60) return `${withoutBrand} | SF`;
+    if (withoutBrand.length <= 60) return withoutBrand;
+    t = withoutBrand;
+  }
+  t = t.replace(/ Manufacturer & Supplier in India/gi, ' Manufacturer India')
+       .replace(/ Manufacturer & Supplier/gi, ' Manufacturer')
+       .replace(/ Manufacturer in India/gi, ' Manufacturer India')
+       .replace(/ Supplier in India/gi, ' Supplier India')
+       .replace(/ across India/gi, ' India');
+  if (t.length <= 60) return t;
+  const words = t.split(' ');
+  let cur = '';
+  for (const w of words) {
+    if ((cur + (cur ? ' ' : '') + w).length <= 57) {
+      cur += (cur ? ' ' : '') + w;
+    } else {
+      break;
+    }
+  }
+  return cur || t.substring(0, 57);
+}
+
+function formatMetaDesc(desc) {
+  if (!desc) return '';
+  let d = desc.trim();
+  if (d.length <= 160) return d;
+  const periodIdx = d.lastIndexOf('.', 159);
+  if (periodIdx > 100) return d.substring(0, periodIdx + 1).trim();
+  const words = d.substring(0, 156).split(' ');
+  words.pop();
+  return words.join(' ').trim() + '...';
+}
+
 async function runPrerender() {
   console.log('Starting static pre-rendering...');
 
@@ -146,8 +187,8 @@ async function runPrerender() {
     { url: `${BASE_URL}/market-area/telangana/`, type: 'telangana-hub', slug: 'market-area/telangana', title: 'Electropolished Pipe Manufacturer Across Telangana | Sakshi Forge', description: 'Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Telangana industrial belts: Hyderabad, Sangareddy, Patancheru, Karimnagar, Mahabubnagar, Warangal, Nizamabad, Siddipet, Ramagundam and Khammam.', data: null },
     { url: `${BASE_URL}/market-area/west-bengal/`, type: 'west-bengal-hub', slug: 'market-area/west-bengal', title: 'Electropolished Pipe Manufacturer Across West Bengal | Sakshi Forge', description: 'Sakshi Forge supplies electropolished SS 316L, 304L and duplex 2205 pipes across West Bengal industrial corridors: Kolkata, Haldia, Kalyani, Howrah, Dankuni, Durgapur, Siliguri, Kharagpur, Asansol and Bardhaman.', data: null },
     { url: `${BASE_URL}/market-area/madhya-pradesh/`, type: 'madhya-pradesh-hub', slug: 'market-area/madhya-pradesh', title: 'Electropolished Pipe Manufacturer Across Madhya Pradesh | Sakshi Forge', description: 'Sakshi Forge supplies electropolished SS 316L and 304L pipes across Madhya Pradesh industrial corridors: Indore, Pithampur SEZ, Dewas, Ujjain Vikram Udyogpuri, Bhopal, Ratlam, Gwalior Malanpur, Jabalpur and Neemuch.', data: null },
-    { url: `${BASE_URL}/market-area/andhra-pradesh/`, type: 'andhra-pradesh-hub', slug: 'market-area/andhra-pradesh', title: 'Electropolished Stainless Steel Pipe Manufacturer Across Andhra Pradesh | Sakshi Forge', description: 'Sakshi Forge supplies electropolished SS 316L, 304L and duplex 2205 pipes across Andhra Pradesh industrial corridors: Visakhapatnam Vizag SEZ, Anakapalle Parawada Pharma City, Tirupati Sri City, Kakinada Port SEZ, Vijayawada Autonagar, Guntur Spices Park, Rajahmundry, Chittoor, Nellore Krishnapatnam and Kurnool Orvakal.', data: null },
-    { url: `${BASE_URL}/market-area/odisha/`, type: 'market-area', slug: 'market-area/odisha', title: 'Electropolished Stainless Steel Pipe Manufacturer Across Odisha | Sakshi Forge', description: 'Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Odisha industrial corridors: Bhubaneswar, Cuttack, Berhampur, Angul, Rourkela, Sambalpur, Jharsuguda, Jajpur, Paradip, and Balasore.', data: null }
+    { url: `${BASE_URL}/market-area/andhra-pradesh/`, type: 'andhra-pradesh-hub', slug: 'market-area/andhra-pradesh', title: 'Electropolished Pipes Across Andhra Pradesh | Sakshi Forge', description: 'Sakshi Forge supplies electropolished SS 316L, 304L and duplex 2205 pipes across Andhra Pradesh industrial corridors: Visakhapatnam Vizag SEZ, Anakapalle Parawada Pharma City, Tirupati Sri City, Kakinada Port SEZ, Vijayawada Autonagar, Guntur Spices Park, Rajahmundry, Chittoor, Nellore Krishnapatnam and Kurnool Orvakal.', data: null },
+    { url: `${BASE_URL}/market-area/odisha/`, type: 'market-area', slug: 'market-area/odisha', title: 'Electropolished Pipes Across Odisha | Sakshi Forge', description: 'Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Odisha industrial corridors: Bhubaneswar, Cuttack, Berhampur, Angul, Rourkela, Sambalpur, Jharsuguda, Jajpur, Paradip, and Balasore.', data: null }
   ];
 
   extraPages.forEach(p => routes.push(p));
@@ -639,8 +680,10 @@ async function runPrerender() {
     let html = template;
     
     // Inject dynamic head tags
-    html = html.replace(/<title>.*?<\/title>/, `<title>${route.title}</title>`);
-    html = html.replace(/<meta name="description" content=".*?" \/>/, `<meta name="description" content="${route.description}" />`);
+    const pageTitle = formatTitle(route.title);
+    const pageDesc = formatMetaDesc(route.description);
+    html = html.replace(/<title>.*?<\/title>/, `<title>${pageTitle}</title>`);
+    html = html.replace(/<meta name="description" content=".*?" \/>/, `<meta name="description" content="${pageDesc}" />`);
     const pageKeywords = route.keywords || 'electropolished pipe, stainless steel 316L, electropolishing, Sakshi Forge';
     const pageRobots = route.robots || 'index, follow';
     html = html.replace(/<meta name="keywords" content=".*?" \/>/, `<meta name="keywords" content="${pageKeywords}" />`);
@@ -674,13 +717,13 @@ async function runPrerender() {
     const ogType = route.type === 'product' ? 'product' : 'website';
     const ogTags = `  <meta property="og:type" content="${ogType}" />
   <meta property="og:site_name" content="Sakshi Forge" />
-  <meta property="og:title" content="${escapeAttr(route.title)}" />
-  <meta property="og:description" content="${escapeAttr(route.description)}" />
+  <meta property="og:title" content="${escapeAttr(pageTitle)}" />
+  <meta property="og:description" content="${escapeAttr(pageDesc)}" />
   <meta property="og:url" content="${canonicalHref}" />
   <meta property="og:image" content="${ogImageUrl}" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="${escapeAttr(route.title)}" />
-  <meta name="twitter:description" content="${escapeAttr(route.description)}" />
+  <meta name="twitter:title" content="${escapeAttr(pageTitle)}" />
+  <meta name="twitter:description" content="${escapeAttr(pageDesc)}" />
   <meta name="twitter:image" content="${ogImageUrl}" />`;
 
     // Remove existing generic og / twitter tags if any, then insert updated

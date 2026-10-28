@@ -112,6 +112,8 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
               <li><a href="/super-duplex-2507-products/" onClick={(e) => handleLinkClick(e, '/super-duplex-2507-products/')}>Super Duplex 2507 Products</a></li>
               <li><a href="/inconel-625-flanges/" onClick={(e) => handleLinkClick(e, '/inconel-625-flanges/')}>Inconel 625 Flanges</a></li>
               <li><a href="/astm-a105-flanges/" onClick={(e) => handleLinkClick(e, '/astm-a105-flanges/')}>ASTM A105 Flanges</a></li>
+              <li><a href="/stainless-steel-flanges-with-hub/" onClick={(e) => handleLinkClick(e, '/stainless-steel-flanges-with-hub/')}>SS Flanges with Hub</a></li>
+              <li><a href="/316ti-stainless-steel-seamless-pipe/" onClick={(e) => handleLinkClick(e, '/316ti-stainless-steel-seamless-pipe/')}>316Ti Seamless Pipes</a></li>
               <li><a href="/sheets-plates-coils/" onClick={(e) => handleLinkClick(e, '/sheets-plates-coils/')}>Sheets, Plates & Coils</a></li>
               <li><a href="/flange-exporter-usa/" onClick={(e) => handleLinkClick(e, '/flange-exporter-usa/')}>Flange Exporter to USA</a></li>
               <li><a href="/flange-supplier-uae/" onClick={(e) => handleLinkClick(e, '/flange-supplier-uae/')}>Flange Supplier to UAE</a></li>

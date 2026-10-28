@@ -2779,8 +2779,15 @@ nav {
   background-color: rgba(255, 193, 7, 0.03);
 }
 
-
-
-
-
-
+/* Screen reader only utility for accessible form labels */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

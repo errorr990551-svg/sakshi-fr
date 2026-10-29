@@ -3,7 +3,10 @@
  * Curated technical articles, metallurgical guides, dimension tables, and engineering specifications.
  */
 
+import { epBuyerGuidePosts } from './blogPostsEPBuyerGuides.js';
+
 export const blogPosts = [
+  ...epBuyerGuidePosts,
     {
     id: "ep-pipes-pharma-biotech-india",
     slug: "ep-pipes-pharma-biotech-india",
@@ -1204,7 +1207,7 @@ Problems found after installation are expensive to fix.<br />
 <p>The table below summarizes surface finish designations established by ASME BPE (Bioprocessing Equipment) for electropolished stainless steel tubing (ASTM A270 / ASTM A312):</p>
 
 <div className="table-responsive">
-  <table className="tech-table">
+  <table class="tech-table">
     <thead>
       <tr>
         <th>ASME BPE Designation</th>
@@ -1251,7 +1254,7 @@ Problems found after installation are expensive to fix.<br />
 <h2>4. Electropolishing vs Mechanical Polishing: Comparison Matrix</h2>
 
 <div className="table-responsive">
-  <table className="tech-table">
+  <table class="tech-table">
     <thead>
       <tr>
         <th>Property / Parameter</th>
@@ -1352,7 +1355,7 @@ Problems found after installation are expensive to fix.<br />
 <p>Below are key nominal dimensions for ASME B16.5 Class 150 Weld Neck (WN) and Slip-On (SO) flanges manufactured by Sakshi Forge:</p>
 
 <div className="table-responsive">
-  <table className="tech-table">
+  <table class="tech-table">
     <thead>
       <tr>
         <th>NPS (Inches)</th>
@@ -1436,7 +1439,7 @@ Problems found after installation are expensive to fix.<br />
 <p>For ASTM A182 F316L (Group 2.2), maximum working pressure drops as temperature increases:</p>
 
 <div className="table-responsive">
-  <table className="tech-table">
+  <table class="tech-table">
     <thead>
       <tr>
         <th>Temperature (°C / °F)</th>
@@ -1534,7 +1537,7 @@ Problems found after installation are expensive to fix.<br />
 <h2>2. Dimension Comparison Matrix: NPS 1" to NPS 10" Pipes</h2>
 
 <div className="table-responsive">
-  <table className="tech-table">
+  <table class="tech-table">
     <thead>
       <tr>
         <th>NPS (Inches)</th>
@@ -1657,7 +1660,7 @@ Problems found after installation are expensive to fix.<br />
 <p>Both Grade 304L and Grade 316L belong to the austenitic family of stainless steels, characterized by a face-centered cubic (FCC) crystal structure that remains ductile even at cryogenic temperatures.</p>
 
 <div className="table-responsive">
-  <table className="tech-table">
+  <table class="tech-table">
     <thead>
       <tr>
         <th>Element</th>
@@ -1721,7 +1724,7 @@ Problems found after installation are expensive to fix.<br />
 <h2>3. Mechanical Property Requirements</h2>
 
 <div className="table-responsive">
-  <table className="tech-table">
+  <table class="tech-table">
     <thead>
       <tr>
         <th>Mechanical Property</th>
@@ -1795,7 +1798,7 @@ Problems found after installation are expensive to fix.<br />
 <h2>2. Detailed Structural Comparison Matrix</h2>
 
 <div className="table-responsive">
-  <table className="tech-table">
+  <table class="tech-table">
     <thead>
       <tr>
         <th>Design Parameter</th>
@@ -1896,7 +1899,7 @@ Problems found after installation are expensive to fix.<br />
 <p>When performing hydrotests on stainless steel (SS 304, SS 316L, Duplex 2205), water quality is of paramount metallurgical importance:</p>
 
 <div className="table-responsive">
-  <table className="tech-table">
+  <table class="tech-table">
     <thead>
       <tr>
         <th>Water Parameter</th>
@@ -1950,5 +1953,16 @@ export function getPostBySlug(slug) {
 }
 
 export function getRelatedPosts(currentSlug, limit = 3) {
-  return blogPosts.filter(p => p.slug !== currentSlug && p.id !== currentSlug).slice(0, limit);
+  const current = getPostBySlug(currentSlug);
+  const others = blogPosts.filter(p => p.slug !== currentSlug && p.id !== currentSlug);
+  if (!current) return others.slice(0, limit);
+  const currentTags = new Set((current.tags || []).map(t => t.toLowerCase()));
+  const score = (p) =>
+    (p.category === current.category ? 2 : 0) +
+    (p.tags || []).filter(t => currentTags.has(t.toLowerCase())).length;
+  return others
+    .map((p, idx) => ({ p, idx, s: score(p) }))
+    .sort((a, b) => b.s - a.s || a.idx - b.idx)
+    .slice(0, limit)
+    .map(x => x.p);
 }

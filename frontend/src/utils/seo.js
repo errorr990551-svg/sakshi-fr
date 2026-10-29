@@ -32,6 +32,14 @@ function schemaTypesOnPage(exceptId) {
   return types;
 }
 
+function toIsoDate(value) {
+  if (!value) return undefined;
+  const d = new Date(value);
+  if (isNaN(d.getTime())) return undefined;
+  const pad = (n) => String(n).padStart(2, '0');
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+}
+
 // Drops nodes whose @type another JSON-LD block on the page already declares, so a
 // component's schema never duplicates FAQPage/BreadcrumbList/Organization nodes.
 export function withoutDuplicateSchemaTypes(schema, ownId) {
@@ -768,12 +776,14 @@ function formatMetaDesc(desc) {
         { "@type": "ListItem", "position": 3, "name": data.title, "item": postUrl }
       ]
     };
+    const publishedDate = toIsoDate(data.date);
     const blogPostingSchema = {
       "@type": "BlogPosting",
       "@id": `${postUrl}#article`,
       "headline": data.title,
       "description": data.desc,
-      "datePublished": data.date,
+      "datePublished": publishedDate,
+      "dateModified": toIsoDate(data.dateModified) || publishedDate,
       "author": {
         "@type": "Organization",
         "name": "Sakshi Forge"
@@ -789,6 +799,17 @@ function formatMetaDesc(desc) {
     };
     graph.push(breadcrumbList);
     graph.push(blogPostingSchema);
+
+    if (data.faqs && data.faqs.length > 0) {
+      graph.push({
+        "@type": "FAQPage",
+        "mainEntity": data.faqs.map(f => ({
+          "@type": "Question",
+          "name": f.q,
+          "acceptedAnswer": { "@type": "Answer", "text": f.a }
+        }))
+      });
+    }
   }
 
   if (type === "maharashtra-city" && data) {

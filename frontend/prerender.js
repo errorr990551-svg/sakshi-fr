@@ -215,6 +215,7 @@ async function runPrerender() {
           description: p.meta,
           robots: 'index, follow',
           keywords: p.primary_kw ? (p.secondary_kws?.length ? `${p.primary_kw}, ${p.secondary_kws.join(', ')}` : p.primary_kw) : '',
+          data: p
         });
       }
     }

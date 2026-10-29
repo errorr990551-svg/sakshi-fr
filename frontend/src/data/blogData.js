@@ -1216,7 +1216,7 @@ Problems found after installation are expensive to fix.<br />
 <h2>3. Surface Finish Classification (ASME BPE Standards)</h2>
 <p>The table below summarizes surface finish designations established by ASME BPE (Bioprocessing Equipment) for electropolished stainless steel tubing (ASTM A270 / ASTM A312):</p>
 
-<div className="table-responsive">
+<div class="table-responsive">
   <table class="tech-table">
     <thead>
       <tr>
@@ -1263,7 +1263,7 @@ Problems found after installation are expensive to fix.<br />
 
 <h2>4. Electropolishing vs Mechanical Polishing: Comparison Matrix</h2>
 
-<div className="table-responsive">
+<div class="table-responsive">
   <table class="tech-table">
     <thead>
       <tr>
@@ -1365,7 +1365,7 @@ Problems found after installation are expensive to fix.<br />
 <h2>3. ASME B16.5 Class 150 Flange Dimension Reference Table (NPS 1 to NPS 8)</h2>
 <p>Below are key nominal dimensions for ASME B16.5 Class 150 Weld Neck (WN) and Slip-On (SO) flanges manufactured by Sakshi Forge:</p>
 
-<div className="table-responsive">
+<div class="table-responsive">
   <table class="tech-table">
     <thead>
       <tr>
@@ -1449,7 +1449,7 @@ Problems found after installation are expensive to fix.<br />
 <h2>4. Maximum Allowable Working Pressure (MAWP) vs Temperature</h2>
 <p>For ASTM A182 F316L (Group 2.2), maximum working pressure drops as temperature increases:</p>
 
-<div className="table-responsive">
+<div class="table-responsive">
   <table class="tech-table">
     <thead>
       <tr>
@@ -1547,7 +1547,7 @@ Problems found after installation are expensive to fix.<br />
 
 <h2>2. Dimension Comparison Matrix: NPS 1" to NPS 10" Pipes</h2>
 
-<div className="table-responsive">
+<div class="table-responsive">
   <table class="tech-table">
     <thead>
       <tr>
@@ -1670,7 +1670,7 @@ Problems found after installation are expensive to fix.<br />
 <h2>1. Chemical Composition Comparison (ASTM A182 / ASTM A312)</h2>
 <p>Both Grade 304L and Grade 316L belong to the austenitic family of stainless steels, characterized by a face-centered cubic (FCC) crystal structure that remains ductile even at cryogenic temperatures.</p>
 
-<div className="table-responsive">
+<div class="table-responsive">
   <table class="tech-table">
     <thead>
       <tr>
@@ -1734,7 +1734,7 @@ Problems found after installation are expensive to fix.<br />
 
 <h2>3. Mechanical Property Requirements</h2>
 
-<div className="table-responsive">
+<div class="table-responsive">
   <table class="tech-table">
     <thead>
       <tr>
@@ -1808,7 +1808,7 @@ Problems found after installation are expensive to fix.<br />
 
 <h2>2. Detailed Structural Comparison Matrix</h2>
 
-<div className="table-responsive">
+<div class="table-responsive">
   <table class="tech-table">
     <thead>
       <tr>
@@ -1909,7 +1909,7 @@ Problems found after installation are expensive to fix.<br />
 <h2>3. Water Quality & Chloride Control for Stainless Steel</h2>
 <p>When performing hydrotests on stainless steel (SS 304, SS 316L, Duplex 2205), water quality is of paramount metallurgical importance:</p>
 
-<div className="table-responsive">
+<div class="table-responsive">
   <table class="tech-table">
     <thead>
       <tr>

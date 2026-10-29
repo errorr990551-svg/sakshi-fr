@@ -40,6 +40,7 @@ RewriteRule ^madhya-pradesh/?$ https://steelmanufacturer.in/market-area/madhya-p
 RewriteRule ^andhra-pradesh/?$ https://steelmanufacturer.in/market-area/andhra-pradesh/ [L,R=301]
 RewriteRule ^odisha/?$ https://steelmanufacturer.in/market-area/odisha/ [L,R=301]
 RewriteRule ^306-stainless-steel-round-bar/?$ https://steelmanufacturer.in/304-stainless-steel-round-bar/ [L,R=301]
+RewriteRule ^forged-pipe-fittings-guide-pressure-classes-standards/?$ https://steelmanufacturer.in/asme-b16-11-forged-fittings/ [L,R=301]
 
 
 # C2. Old WordPress URLs with a clear equivalent page -> 301 to it
@@ -121,7 +122,7 @@ RewriteRule ^ - [R=404,L]
   AddOutputFilterByType BROTLI_COMPRESS text/html text/css application/javascript application/json image/svg+xml
 </IfModule>
 
-# ============ 5. Browser Caching ============
+# ============ 5. Browser Caching & Fast TTFB ============
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType image/webp "access plus 1 year"
@@ -132,7 +133,12 @@ RewriteRule ^ - [R=404,L]
   ExpiresByType text/css "access plus 1 month"
   ExpiresByType application/javascript "access plus 1 month"
   ExpiresByType font/woff2 "access plus 1 year"
-  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType text/html "access plus 1 hour"
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "public, max-age=3600, must-revalidate"
+  </FilesMatch>
 </IfModule>
 FileETag None
 

@@ -533,8 +533,8 @@ export default function ProductPage({ product, onEnquireClick }) {
                   </div>
 
                   <a 
-                    href={withSlash(`/${p['URL Slug']}`)}
-                    onClick={(e) => handleLinkClick(e, `/${p['URL Slug']}`)}
+                    href={`/${p['URL Slug']}/`}
+                    onClick={(e) => handleLinkClick(e, `/${p['URL Slug']}/`)}
                     className="btn btn-outline"
                     style={{ fontSize: '0.8rem', padding: '0.5rem 0', textAlign: 'center', justifyContent: 'center' }}
                   >

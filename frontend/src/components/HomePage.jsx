@@ -185,22 +185,62 @@ export default function HomePage({ onEnquireClick }) {
         <div className="container">
           <div style={{ maxWidth: '1080px' }}>
             <span className="hero-tag" style={{ backgroundColor: 'rgba(255, 193, 7, 0.1)', color: 'var(--primary-yellow)', border: '1px solid rgba(255,193,7,0.3)', padding: '0.45rem 1.15rem', borderRadius: '4px', textTransform: 'uppercase', letterSpacing: '0.08em', fontSize: '0.82rem', fontWeight: '700', display: 'inline-block', marginBottom: '1.25rem' }}>
-              ISO 9001:2015 Certified Manufacturer · Taloja MIDC, Mumbai
+              ISO 9001:2015 Certified Manufacturing Company in Mumbai · Taloja MIDC Plant
             </span>
             <h1 className="hero-title" style={{ fontSize: 'clamp(2.2rem, 4.8vw, 3.5rem)', fontWeight: '850', lineHeight: '1.18', color: '#fff', marginBottom: '1.35rem', textShadow: '0 2px 14px rgba(0, 0, 0, 0.9)' }}>
-              Electropolished Pipe Manufacturer in India: <br className="hidden-mobile" />Hygienic, Corrosion-Resistant, Fully Certified
+              Forged Flanges &amp; Electropolished Pipes Manufacturer in Mumbai
             </h1>
-            <p className="hero-desc" style={{ fontSize: '1.15rem', color: '#cbd5e1', lineHeight: '1.75', marginBottom: '2.25rem', maxWidth: '920px', textShadow: '0 1px 8px rgba(0, 0, 0, 0.8)' }}>
-              Sakshi Forge manufactures electropolished stainless steel pipes and sanitary fittings in-house at our Taloja, Mumbai facility. Available in welded and seamless SS 304, 316L, and duplex alloys finished to Ra ≤0.4 µm inside and out. Every order ships with 100% PMI testing and an EN 10204 3.1 inspection certificate.
+            <p className="hero-desc" style={{ fontSize: '1.15rem', color: '#cbd5e1', lineHeight: '1.75', marginBottom: '2rem', maxWidth: '920px', textShadow: '0 1px 8px rgba(0, 0, 0, 0.8)' }}>
+              Sakshi Forge is a premier manufacturing company in Mumbai producing precision ASME B16.5 forged flanges, electropolished pipes (Ra ≤0.4 µm), butt weld fittings, and custom steel components in SS 304L, 316L, and Duplex alloys. Manufactured at our Taloja, Mumbai works with 100% PMI testing and EN 10204 3.1 inspection certification.
             </p>
 
-            <div style={{ display: 'flex', gap: '1.25rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
-              <button onClick={() => onEnquireClick('Hero: Get a Quote in 30 Minutes')} className="btn btn-primary btn-lg" style={{ padding: '0.95rem 2rem', fontWeight: '700' }}>
-                Get a Quote in 30 Minutes <ArrowRight size={17} />
+            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '1.75rem' }}>
+              <button onClick={() => onEnquireClick('Hero: Request a Quote')} className="btn btn-primary btn-lg" style={{ padding: '0.95rem 2rem', fontWeight: '700' }}>
+                Request a Quote <ArrowRight size={17} />
               </button>
-              <a href="/catalogue/" onClick={handleLinkClick} className="btn btn-outline btn-lg" style={{ padding: '0.95rem 2rem', fontWeight: '600' }}>
-                Download Catalogue PDF
+              <a href="/flanges/" onClick={(e) => handleLinkClick(e, '/flanges/')} className="btn btn-outline btn-lg" style={{ padding: '0.95rem 1.75rem', fontWeight: '600' }}>
+                View Flanges &amp; Fittings
               </a>
+              <a href="/products/" onClick={(e) => handleLinkClick(e, '/products/')} className="btn btn-outline btn-lg" style={{ padding: '0.95rem 1.75rem', fontWeight: '600' }}>
+                All Products
+              </a>
+            </div>
+
+            {/* Above-the-fold Quick Category Navigation */}
+            <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', alignItems: 'center' }}>
+              <span style={{ fontSize: '0.8rem', color: 'var(--primary-yellow)', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em', marginRight: '0.25rem' }}>
+                Core Capabilities:
+              </span>
+              {[
+                { name: 'Industrial Flanges', href: '/flanges/' },
+                { name: 'Forged Fittings', href: '/forged-fittings/' },
+                { name: 'Electropolished Pipes', href: '/electropolished-pipes/' },
+                { name: 'Stainless Steel Pipes', href: '/stainless-steel-pipe/' },
+                { name: 'Round Bars', href: '/stainless-steel-round-bar/' },
+                { name: 'Weight Calculator', href: '/weight-calculator/' }
+              ].map((pill, pIdx) => (
+                <a
+                  key={pIdx}
+                  href={pill.href}
+                  onClick={(e) => handleLinkClick(e, pill.href)}
+                  style={{
+                    backgroundColor: 'rgba(255, 255, 255, 0.08)',
+                    border: '1px solid rgba(255, 255, 255, 0.15)',
+                    color: '#f8fafc',
+                    padding: '0.35rem 0.85rem',
+                    borderRadius: '50px',
+                    fontSize: '0.82rem',
+                    fontWeight: '600',
+                    textDecoration: 'none',
+                    transition: 'all 0.2s ease',
+                    display: 'inline-block'
+                  }}
+                  onMouseEnter={(e) => { e.currentTarget.style.borderColor = 'var(--primary-yellow)'; e.currentTarget.style.color = 'var(--primary-yellow)'; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.15)'; e.currentTarget.style.color = '#f8fafc'; }}
+                >
+                  {pill.name}
+                </a>
+              ))}
             </div>
           </div>
         </div>
@@ -419,7 +459,7 @@ export default function HomePage({ onEnquireClick }) {
           </div>
 
           <div style={{ textAlign: 'center' }}>
-            <a href="/electropolished-pipes/" onClick={handleLinkClick} className="btn btn-primary btn-lg" style={{ padding: '0.9rem 2.25rem', fontWeight: '700' }}>
+            <a href="/electropolished-pipes/" onClick={(e) => handleLinkClick(e, '/electropolished-pipes/')} className="btn btn-primary btn-lg" style={{ padding: '0.9rem 2.25rem', fontWeight: '700' }}>
               Explore Full Electropolished Range <ArrowRight size={16} />
             </a>
           </div>
@@ -940,18 +980,22 @@ export default function HomePage({ onEnquireClick }) {
             ))}
           </div>
 
-          {/* Reference Tools Bar */}
+          {/* Reference Tools & Core Product Hubs */}
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1.5rem', paddingTop: '1.75rem', borderTop: '1px solid var(--border-color)' }}>
-            <a href="/products/" onClick={handleLinkClick} className="btn btn-primary" style={{ padding: '0.75rem 1.75rem', fontWeight: '700' }}>
+            <a href="/products/" onClick={(e) => handleLinkClick(e, '/products/')} className="btn btn-primary" style={{ padding: '0.75rem 1.75rem', fontWeight: '700' }}>
               View All 17 Categories →
             </a>
 
-            <div style={{ display: 'flex', gap: '1.25rem', flexWrap: 'wrap', fontSize: '0.88rem' }}>
-              <span style={{ color: 'var(--text-muted)', fontWeight: '700', textTransform: 'uppercase' }}>Reference Tools:</span>
-              <a href="/pipe-schedule-chart/" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Pipe Schedule Chart</a>
-              <a href="/flange-dimension-chart/" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Flange Dimension Chart</a>
-              <a href="/flange-weight-chart/" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Flange Weight Chart</a>
-              <a href="/flange-bolt-chart/" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Flange Bolt Chart</a>
+            <div style={{ display: 'flex', gap: '1.25rem', flexWrap: 'wrap', fontSize: '0.88rem', alignItems: 'center' }}>
+              <span style={{ color: 'var(--text-muted)', fontWeight: '700', textTransform: 'uppercase' }}>Key Products:</span>
+              <a href="/forged-fittings/" onClick={(e) => handleLinkClick(e, '/forged-fittings/')} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Forged Fittings</a>
+              <a href="/stainless-steel-pipe/" onClick={(e) => handleLinkClick(e, '/stainless-steel-pipe/')} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Stainless Steel Pipe</a>
+              <a href="/ss-347-stainless-steel-coil-2/" onClick={(e) => handleLinkClick(e, '/ss-347-stainless-steel-coil-2/')} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>SS 347 Coil</a>
+              <span style={{ color: 'var(--text-muted)', fontWeight: '700', textTransform: 'uppercase', marginLeft: '0.5rem' }}>Reference Tools:</span>
+              <a href="/pipe-schedule-chart/" onClick={(e) => handleLinkClick(e, '/pipe-schedule-chart/')} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Pipe Schedule Chart</a>
+              <a href="/flange-dimension-chart/" onClick={(e) => handleLinkClick(e, '/flange-dimension-chart/')} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Flange Dimension Chart</a>
+              <a href="/flange-weight-chart/" onClick={(e) => handleLinkClick(e, '/flange-weight-chart/')} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Flange Weight Chart</a>
+              <a href="/flange-bolt-chart/" onClick={(e) => handleLinkClick(e, '/flange-bolt-chart/')} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline' }}>Flange Bolt Chart</a>
             </div>
           </div>
         </div>
@@ -1067,7 +1111,7 @@ export default function HomePage({ onEnquireClick }) {
               {/* Learn More Button */}
               <a 
                 href="/about-us/" 
-                onClick={handleLinkClick} 
+                onClick={(e) => handleLinkClick(e, '/about-us/')}
                 className="btn btn-primary"
                 style={{ padding: '0.85rem 2rem', fontWeight: '700', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
               >
@@ -1120,7 +1164,7 @@ export default function HomePage({ onEnquireClick }) {
           </div>
 
           <div style={{ textAlign: 'center' }}>
-            <a href="/gallery/" onClick={handleLinkClick} className="btn btn-outline" style={{ padding: '0.85rem 2.25rem', fontWeight: '600' }}>
+            <a href="/gallery/" onClick={(e) => handleLinkClick(e, '/gallery/')} className="btn btn-outline" style={{ padding: '0.85rem 2.25rem', fontWeight: '600' }}>
               View Full Gallery & Video Tour →
             </a>
           </div>

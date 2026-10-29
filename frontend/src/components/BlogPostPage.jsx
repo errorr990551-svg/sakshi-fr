@@ -15,7 +15,7 @@ export default function BlogPostPage({ post, onEnquireClick }) {
         <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem' }}>The requested blog post could not be located in our database.</p>
         <a 
           href="/blog/" 
-          onClick={(e) => handleLinkClick(e, '/blog')}
+          onClick={(e) => handleLinkClick(e, '/blog/')}
           style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1.5rem', backgroundColor: 'var(--primary-yellow)', color: '#000', fontWeight: '700', borderRadius: '4px', textDecoration: 'none' }}
         >
           <ArrowLeft size={16} /> Return to Knowledge Hub
@@ -39,8 +39,8 @@ export default function BlogPostPage({ post, onEnquireClick }) {
   };
 
   const breadcrumbItems = [
-    { name: 'Steel Knowledge Hub', url: '/blog' },
-    { name: post.title, url: `/blog/${post.slug}` }
+    { name: 'Steel Knowledge Hub', url: '/blog/' },
+    { name: post.title, url: `/blog/${post.slug}/` }
   ];
 
   return (
@@ -326,7 +326,7 @@ export default function BlogPostPage({ post, onEnquireClick }) {
                 {relatedPosts.map((rel) => (
                   <div 
                     key={rel.slug}
-                    onClick={(e) => handleLinkClick(e, `/blog/${rel.slug}`)}
+                    onClick={(e) => handleLinkClick(e, `/blog/${rel.slug}/`)}
                     style={{
                       backgroundColor: 'var(--bg-dark-800)',
                       border: '1px solid var(--border-color)',

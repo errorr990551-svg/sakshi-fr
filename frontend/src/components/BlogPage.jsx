@@ -25,7 +25,7 @@ export default function BlogPage() {
   const gridPosts = filteredPosts;
 
   const breadcrumbItems = [
-    { name: 'Steel Knowledge Hub', url: '/blog' }
+    { name: 'Steel Knowledge Hub', url: '/blog/' }
   ];
 
   return (
@@ -69,7 +69,9 @@ export default function BlogPage() {
           {/* Search Box */}
           <div style={{ maxWidth: '560px', margin: '0 auto', position: 'relative' }}>
             <Search size={18} style={{ position: 'absolute', left: '1.1rem', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
-            <input aria-label="Search articles by standard, grade, or keyword (e.g. B16.5, 316L, Electropolish)..." 
+            <label htmlFor="blog-search-input" className="sr-only">Search articles by standard, grade, or keyword</label>
+            <input id="blog-search-input"
+              aria-label="Search articles by standard, grade, or keyword (e.g. B16.5, 316L, Electropolish)..." 
               type="text" 
               placeholder="Search articles by standard, grade, or keyword (e.g. B16.5, 316L, Electropolish)..."
               value={searchQuery}
@@ -124,7 +126,7 @@ export default function BlogPage() {
           {/* Featured Article Card (Shown when on "All" and no search query) */}
           {selectedCategory === 'All' && searchQuery === '' && featuredPost && (
             <div 
-              onClick={(e) => handleLinkClick(e, `/blog/${featuredPost.slug}`)}
+              onClick={(e) => handleLinkClick(e, `/blog/${featuredPost.slug}/`)}
               style={{
                 backgroundColor: 'var(--bg-dark-800)',
                 border: '1px solid var(--primary-yellow-solid-glow)',
@@ -145,6 +147,8 @@ export default function BlogPage() {
                   <img loading="lazy" 
                     src={featuredPost.image} 
                     alt={featuredPost.title} 
+                    loading="lazy"
+                    decoding="async"
                     style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                   />
                 </div>
@@ -250,7 +254,7 @@ export default function BlogPage() {
               {gridPosts.map((post) => (
                 <div 
                   key={post.slug} 
-                  onClick={(e) => handleLinkClick(e, `/blog/${post.slug}`)}
+                  onClick={(e) => handleLinkClick(e, `/blog/${post.slug}/`)}
                   className="blog-card"
                   style={{ 
                     backgroundColor: 'var(--bg-dark-800)', 
@@ -270,6 +274,8 @@ export default function BlogPage() {
                         <img loading="lazy" 
                           src={post.image} 
                           alt={post.title} 
+                          loading="lazy"
+                          decoding="async"
                           style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.3s ease' }}
                           className="card-img"
                         />
@@ -353,8 +359,8 @@ export default function BlogPage() {
                       <Clock size={12} /> {post.readTime}
                     </span>
                     <a 
-                      href={withSlash(`/blog/${post.slug}`)} 
-                      onClick={(e) => handleLinkClick(e, `/blog/${post.slug}`)} 
+                      href={`/blog/${post.slug}/`} 
+                      onClick={(e) => handleLinkClick(e, `/blog/${post.slug}/`)}
                       style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', color: 'var(--primary-yellow)', fontSize: '0.85rem', textDecoration: 'none', fontWeight: '700' }}
                     >
                       Read Article <ArrowRight size={14} />

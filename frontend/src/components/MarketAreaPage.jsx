@@ -200,7 +200,7 @@ export default function MarketAreaPage() {
                     {state === 'Gujarat' && (
                       <a 
                         href="/market-area/gujarat/" 
-                        onClick={(e) => handleLinkClick(e, '/market-area/gujarat')}
+                        onClick={(e) => handleLinkClick(e, '/market-area/gujarat/')}
                         style={{ color: 'var(--primary-yellow)', fontSize: '0.85rem', fontWeight: '700', textDecoration: 'none' }}
                       >
                         View Gujarat State Overview →
@@ -221,12 +221,14 @@ export default function MarketAreaPage() {
                   gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
                   gap: '1.25rem'
                 }}>
-                  {cities.map((city) => (
-                    <a
-                      key={city.slug}
-                      href={withSlash(city.path)}
-                      onClick={(e) => handleLinkClick(e, city.path)}
-                      style={{
+                  {cities.map((city) => {
+                    const cityUrl = (city.path || '').endsWith('/') ? city.path : `${city.path}/`;
+                    return (
+                      <a
+                        key={city.slug}
+                        href={cityUrl}
+                        onClick={(e) => handleLinkClick(e, cityUrl)}
+                        style={{
                         backgroundColor: 'var(--bg-dark-800)',
                         border: '1px solid var(--border-color)',
                         borderRadius: '8px',
@@ -252,7 +254,8 @@ export default function MarketAreaPage() {
                     >
                       {city.city}
                     </a>
-                  ))}
+                  );
+                })}
                 </div>
               </div>
             );

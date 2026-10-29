@@ -33,6 +33,7 @@ import { ArrowRight } from 'lucide-react';
 
 // SEO and Router imports
 import { updateSEO } from './utils/seo';
+import { REDIRECTED_PATHS } from './data/redirects';
 import productsData from './data/products.json';
 import categoriesData from './data/categories.json';
 import CategoryPage from './components/CategoryPage';
@@ -148,6 +149,7 @@ function App(props) {
     if (clean === 'andhra-pradesh') return '/market-area/andhra-pradesh/';
     if (clean === 'odisha') return '/market-area/odisha/';
     if (clean === '306-stainless-steel-round-bar') return '/304-stainless-steel-round-bar/';
+    if (clean === 'forged-pipe-fittings-guide-pressure-classes-standards') return '/asme-b16-11-forged-fittings/';
 
     let citySlug = '';
     const m1 = clean.match(/^electropolished-pipes?-(?:manufacturer|supplier)-(?:in-)?(.+)$/);
@@ -348,6 +350,16 @@ function App(props) {
 
     if (cleanPath === '/odisha' || cleanPath === '/market-area/odisha') {
       return { type: 'market-area', data: null };
+    }
+
+    // Handle consolidated redirects
+    const normalizedSlashPath = cleanPath.endsWith('/') ? cleanPath : `${cleanPath}/`;
+    if (REDIRECTED_PATHS[normalizedSlashPath]) {
+      const targetUrl = REDIRECTED_PATHS[normalizedSlashPath];
+      if (typeof window !== 'undefined') {
+        window.location.replace(targetUrl);
+      }
+      return { type: '404', data: null };
     }
 
     // Redirect legacy electropolished-pipe-manufacturer-* and supplier-* to /market-area/*

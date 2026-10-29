@@ -76,6 +76,9 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
             <ul className="footer-links">
               <li><a href="/" onClick={(e) => handleLinkClick(e, '/')}>Home</a></li>
               <li><a href="/products/" onClick={(e) => handleLinkClick(e, '/products/')}>Products Range</a></li>
+              <li><a href="/forged-fittings/" onClick={(e) => handleLinkClick(e, '/forged-fittings/')}>Forged Fittings</a></li>
+              <li><a href="/stainless-steel-pipe/" onClick={(e) => handleLinkClick(e, '/stainless-steel-pipe/')}>Stainless Steel Pipes</a></li>
+              <li><a href="/ss-347-stainless-steel-coil-2/" onClick={(e) => handleLinkClick(e, '/ss-347-stainless-steel-coil-2/')}>SS 347 Coils</a></li>
               <li><a href="/blog/" onClick={(e) => handleLinkClick(e, '/blog/')}>Technical Blogs</a></li>
               <li><a href="/about-us/" onClick={(e) => handleLinkClick(e, '/about-us/')}>About Sakshi Forge</a></li>
               <li><a href="/gallery/" onClick={(e) => handleLinkClick(e, '/gallery/')}>Facility Gallery</a></li>
@@ -109,6 +112,8 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
               <li><a href="/super-duplex-2507-products/" onClick={(e) => handleLinkClick(e, '/super-duplex-2507-products/')}>Super Duplex 2507 Products</a></li>
               <li><a href="/inconel-625-flanges/" onClick={(e) => handleLinkClick(e, '/inconel-625-flanges/')}>Inconel 625 Flanges</a></li>
               <li><a href="/astm-a105-flanges/" onClick={(e) => handleLinkClick(e, '/astm-a105-flanges/')}>ASTM A105 Flanges</a></li>
+              <li><a href="/stainless-steel-flanges-with-hub/" onClick={(e) => handleLinkClick(e, '/stainless-steel-flanges-with-hub/')}>SS Flanges with Hub</a></li>
+              <li><a href="/316ti-stainless-steel-seamless-pipe/" onClick={(e) => handleLinkClick(e, '/316ti-stainless-steel-seamless-pipe/')}>316Ti Seamless Pipes</a></li>
               <li><a href="/sheets-plates-coils/" onClick={(e) => handleLinkClick(e, '/sheets-plates-coils/')}>Sheets, Plates & Coils</a></li>
               <li><a href="/flange-exporter-usa/" onClick={(e) => handleLinkClick(e, '/flange-exporter-usa/')}>Flange Exporter to USA</a></li>
               <li><a href="/flange-supplier-uae/" onClick={(e) => handleLinkClick(e, '/flange-supplier-uae/')}>Flange Supplier to UAE</a></li>
@@ -116,22 +121,7 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
             </ul>
           </div>
 
-          {/* Market Area (Replaced Cities We Serve) */}
-          <div className="footer-col">
-            <h4>Market Area</h4>
-            <ul className="footer-links">
-              <li><a href="/market-area/" onClick={(e) => handleLinkClick(e, '/market-area/')} style={{ color: 'var(--primary-yellow)', fontWeight: '700' }}>All Industrial Hubs Directory →</a></li>
-              <li><a href="/market-area/gujarat/" onClick={(e) => handleLinkClick(e, '/market-area/gujarat/')}>Gujarat Belts (Ahmedabad, Vadodara, Vapi...)</a></li>
-              <li><a href="/karnataka/" onClick={(e) => handleLinkClick(e, '/karnataka/')}>Karnataka Hub (Bengaluru, Belagavi, Mysuru...)</a></li>
-              <li><a href="/tamil-nadu/" onClick={(e) => handleLinkClick(e, '/tamil-nadu/')}>Tamil Nadu Hub (Chennai, Coimbatore...)</a></li>
-              <li><a href="/market-area/telangana/" onClick={(e) => handleLinkClick(e, '/market-area/telangana/')}>Telangana Hub (Hyderabad, Sangareddy, Warangal...)</a></li>
-              <li><a href="/market-area/west-bengal/" onClick={(e) => handleLinkClick(e, '/market-area/west-bengal/')}>West Bengal Hub (Kolkata, Haldia, Asansol...)</a></li>
-              <li><a href="/market-area/mumbai/" onClick={(e) => handleLinkClick(e, '/market-area/mumbai/')}>Mumbai Works & Taloja MIDC</a></li>
-              <li><a href="/market-area/pune/" onClick={(e) => handleLinkClick(e, '/market-area/pune/')}>Pune & Chakan MIDC</a></li>
-              <li><a href="/market-area/thane/" onClick={(e) => handleLinkClick(e, '/market-area/thane/')}>Thane-Belapur Chemical Belt</a></li>
-              <li><a href="/market-area/tarapur/" onClick={(e) => handleLinkClick(e, '/market-area/tarapur/')}>Tarapur Chemical Zone</a></li>
-            </ul>
-          </div>
+
 
         </div>
 

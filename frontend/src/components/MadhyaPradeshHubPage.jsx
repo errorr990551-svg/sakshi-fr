@@ -111,11 +111,11 @@ export default function MadhyaPradeshHubPage({ onEnquireClick, onShowContactDeta
         <div className="container" style={{ maxWidth: '980px' }}>
           {/* Breadcrumb Navigation */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.82rem', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
-            <a href="/" onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>Home</a>
+            <a href="/" onClick={(e) => handleLinkClick(e, '/')} style={{ color: 'inherit', textDecoration: 'none' }}>Home</a>
             <span>›</span>
-            <a href="/electropolished-pipes/" onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>Electropolished Pipes</a>
+            <a href="/electropolished-pipes/" onClick={(e) => handleLinkClick(e, '/electropolished-pipes/')} style={{ color: 'inherit', textDecoration: 'none' }}>Electropolished Pipes</a>
             <span>›</span>
-            <a href="/market-area/" onClick={handleLinkClick} style={{ color: 'inherit', textDecoration: 'none' }}>Market Directory</a>
+            <a href="/market-area/" onClick={(e) => handleLinkClick(e, '/market-area/')} style={{ color: 'inherit', textDecoration: 'none' }}>Market Directory</a>
             <span>›</span>
             <span style={{ color: 'var(--primary-yellow)', fontWeight: '600' }}>Madhya Pradesh</span>
           </div>

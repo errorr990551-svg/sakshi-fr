@@ -75,6 +75,8 @@ export default function Header({ currentPage, onNavigate, onEnquireClick }) {
                 <li><a href="/flanges/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/flanges/'); }}>Industrial Flanges</a></li>
                 <li><a href="/forged-fittings/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/forged-fittings/'); }}>Forged Steel Fittings</a></li>
                 <li><a href="/electropolished-pipes/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/electropolished-pipes/'); }}>Electropolished Pipes</a></li>
+                <li><a href="/stainless-steel-pipe/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/stainless-steel-pipe/'); }}>Stainless Steel Pipes</a></li>
+                <li><a href="/ss-347-stainless-steel-coil-2/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/ss-347-stainless-steel-coil-2/'); }}>SS 347 Stainless Steel Coils</a></li>
                 <li><a href="/stainless-steel-round-bar/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/stainless-steel-round-bar/'); }}>Round Bars & Rods</a></li>
                 <li><a href="/stainless-steel-elbow/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/stainless-steel-elbow/'); }}>SS Elbows (45°/90°/180°)</a></li>
                 <li><a href="/asme-b16-11-forged-fittings/" onClick={(e) => { closeMenu(); handleLinkClick(e, '/asme-b16-11-forged-fittings/'); }}>ASME B16.11 Fittings</a></li>

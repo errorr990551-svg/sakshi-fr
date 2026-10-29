@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowRight, Calculator, Sparkles, Scale, Info, AlertTriangle } from 'lucide-react';
 import { handleLinkClick } from '../utils/router';
+import { trackEvent, trackQuoteRequest } from '../utils/analytics';
 
 export default function WeightCalculatorPage({ onEnquireClick }) {
   const [shape, setShape] = useState('pipe');
@@ -133,6 +134,11 @@ export default function WeightCalculatorPage({ onEnquireClick }) {
         single: weight.toFixed(2),
         total: (weight * qty).toFixed(2),
         quantity: qty
+      });
+      trackEvent('weight_calculated', {
+        shape: shape,
+        grade: grade,
+        calculated_weight_kg: parseFloat((weight * qty).toFixed(2))
       });
     } else {
       setResult(null);
@@ -384,7 +390,11 @@ export default function WeightCalculatorPage({ onEnquireClick }) {
                   </div>
 
                   <button 
-                    onClick={() => onEnquireClick(`SS ${grade} ${shape.charAt(0).toUpperCase() + shape.slice(1)} - Weight: ${result.total}kg`)}
+                    onClick={() => {
+                    const spec = `SS ${grade} ${shape.charAt(0).toUpperCase() + shape.slice(1)} - Weight: ${result.total}kg`;
+                    trackQuoteRequest({ product: spec, source: 'weight_calculator' });
+                    onEnquireClick(spec);
+                  }}
                     className="btn btn-primary"
                     style={{ width: '100%', marginTop: '2rem', padding: '0.9rem 0' }}
                   >

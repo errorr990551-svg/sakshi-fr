@@ -2,8 +2,8 @@
 
 User-agent: *
 Allow: /
+# Form-submission API (POST only, no pages)
+Disallow: /api/
 
+# The index lists sitemap.xml, sitemap-cities.xml and image-sitemap.xml
 Sitemap: https://steelmanufacturer.in/sitemap_index.xml
-Sitemap: https://steelmanufacturer.in/sitemap.xml
-Sitemap: https://steelmanufacturer.in/sitemap-cities.xml
-Sitemap: https://steelmanufacturer.in/image-sitemap.xml

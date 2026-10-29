@@ -1,6 +1,7 @@
 import epBuildSpecData from '../data/ep_build_spec_data.json';
 import { handleLinkClick, withSlash } from '../utils/router';
 import { isRedirectedPath } from '../data/redirects';
+import { blogPosts } from '../data/blogData';
 
 // Crawlable links between the electropolished pipe/tube pages, built from the
 // parent field in ep_build_spec_data.json: the parent page, its child pages and
@@ -23,10 +24,13 @@ export default function EPRelatedLinks({ path, maxSiblings = 12 }) {
     ? [...byUrl.values()].filter((p) => withSlash(p.parent || '') === parent && withSlash(p.url) !== self).map((p) => withSlash(p.url)).slice(0, maxSiblings)
     : [];
 
+  const guides = blogPosts.filter((p) => (p.landingPages || []).some((u) => withSlash(u) === self));
+
   const groups = [
     parent && { heading: 'Back to', urls: [parent] },
     children.length > 0 && { heading: 'In this section', urls: children },
-    siblings.length > 0 && { heading: 'Related pages', urls: siblings }
+    siblings.length > 0 && { heading: 'Related pages', urls: siblings },
+    guides.length > 0 && { heading: 'Buyer guides', urls: guides.map((p) => `/blog/${p.slug}/`), labels: Object.fromEntries(guides.map((p) => [`/blog/${p.slug}/`, p.title])) }
   ].filter(Boolean);
 
   if (groups.length === 0) return null;
@@ -45,7 +49,7 @@ export default function EPRelatedLinks({ path, maxSiblings = 12 }) {
                     onClick={(e) => handleLinkClick(e, url)}
                     style={{ display: 'inline-block', padding: '0.4rem 0.85rem', border: '1px solid var(--border-color, #334155)', borderRadius: '4px', fontSize: '0.85rem', color: 'inherit', textDecoration: 'none' }}
                   >
-                    {labelFor(url)}
+                    {group.labels?.[url] || labelFor(url)}
                   </a>
                 </li>
               ))}

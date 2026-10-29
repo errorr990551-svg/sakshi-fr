@@ -80,6 +80,7 @@ export const blogPosts = [
   <li><strong>Documents:</strong> MTC per EN 10204 3.1, Ra test report, passivation certificate, and heat-lot traceability.</li>
   <li><strong>Packing:</strong> End-capped, clean-wrapped, and protected against contact with carbon steel.</li>
 </ul>
+<p><strong>Buyer guides:</strong> <a href="/blog/electropolished-pipes-pharmaceutical-industry-specification/">system-wise EP pipe specs for pharma plants</a>, <a href="/blog/high-purity-ep-tubing-manufacturer-india/">high purity EP tubing tiers and supplier qualification</a>, <a href="/blog/ss-316l-electropolished-pipes-manufacturer-guide/">how to verify an SS 316L EP pipe manufacturer</a>.</p>
 `,
     faqs: [
       {
@@ -240,6 +241,7 @@ export const blogPosts = [
   <li><strong>What does a failure cost?</strong> If one contaminated batch or one shutdown costs more than the price difference, choose EP.</li>
 </ol>
 <p>For a non-critical line where none of these apply, MP is a sensible, economical choice. Match the finish to the duty, not to a habit.</p>
+<p><strong>Buyer guides:</strong> <a href="/blog/bright-annealed-vs-electropolished-tubes/">bright annealed vs electropolished tubes</a>, <a href="/blog/astm-a270-sanitary-electropolished-tubing-guide/">writing an ASTM A270 EP tubing purchase order</a>, <a href="/blog/cleanroom-stainless-steel-ep-tubing/">specifying cleanroom EP tubing</a>.</p>
 `,
     faqs: [
       {
@@ -337,6 +339,7 @@ export const blogPosts = [
   <li><strong>Layout:</strong> Slope for drainage and avoid dead legs.</li>
   <li><strong>Documents:</strong> MTC, finish report and, where needed, passivation certificate.</li>
 </ul>
+<p><strong>Buyer guides:</strong> <a href="/blog/dairy-electropolished-pipe-supplier-guide/">choosing a dairy EP pipe supplier</a>, <a href="/blog/food-grade-stainless-steel-electropolished-tubes/">what makes EP tube food grade</a>, <a href="/blog/ss-304l-electropolished-tubing-guide/">where SS 304L EP tubing is the right buy</a>.</p>
 `,
     faqs: [
       {
@@ -452,6 +455,7 @@ export const blogPosts = [
   <li>Quote validity and delivery time</li>
 </ul>
 <p>If one supplier is much cheaper than the rest, look for the missing line. Usually it is the finish, the grade, the documents or the inspection.</p>
+<p><strong>Buyer guides:</strong> <a href="/blog/stainless-steel-electropolished-pipe-price-india-calculation/">calculating EP pipe cost per metre</a>, <a href="/blog/ss-316l-electropolished-pipes-manufacturer-guide/">how to verify an SS 316L EP pipe manufacturer</a>, <a href="/blog/ss-304l-electropolished-tubing-guide/">where SS 304L EP tubing is the right buy</a>.</p>
 `,
     faqs: [
       {
@@ -545,6 +549,7 @@ export const blogPosts = [
   <li><strong>Packing and traceability:</strong> Confirm end capping, clean wrapping and marking on each pipe.</li>
   <li><strong>Trial order:</strong> Start with a sample or small lot and inspect it before scaling.</li>
 </ul>
+<p><strong>Buyer guides:</strong> <a href="/blog/electropolished-pipes-manufacturer-mumbai-guide/">sourcing EP pipes from a Mumbai manufacturer</a>, <a href="/blog/ep-grade-stainless-steel-pipes-manufacturer-gujarat/">EP grade pipe specs for Gujarat clusters</a>, <a href="/blog/high-purity-ep-tubing-manufacturer-india/">high purity EP tubing tiers and supplier qualification</a>.</p>
 `,
     faqs: [
       {
@@ -641,6 +646,7 @@ export const blogPosts = [
   <li>Vague answers about who does the electropolishing</li>
 </ul>
 <p>One red flag doesn't mean walk away, but several together mean you should look elsewhere.</p>
+<p><strong>Buyer guides:</strong> <a href="/blog/ss-316l-electropolished-pipes-manufacturer-guide/">how to verify an SS 316L EP pipe manufacturer</a>, <a href="/blog/high-purity-ep-tubing-manufacturer-india/">high purity EP tubing tiers and supplier qualification</a>, <a href="/blog/ss-electropolished-tubes-supplier-pune/">EP tube specs for Pune industrial belts</a>.</p>
 `,
     faqs: [
       {
@@ -791,6 +797,7 @@ export const blogPosts = [
   <li><strong>Is the service mild, and is the budget tight?</strong> 304L EP may be enough.</li>
 </ol>
 <p>Whichever you choose, specify the grade and standard (for example ASTM A270 316L), request the MTC and confirm the actual composition on the certificate.</p>
+<p><strong>Buyer guides:</strong> <a href="/blog/ss-304l-electropolished-tubing-guide/">where SS 304L EP tubing is the right buy</a>, <a href="/blog/ss-316l-electropolished-pipes-manufacturer-guide/">how to verify an SS 316L EP pipe manufacturer</a>, <a href="/blog/industrial-electropolished-tubing-suppliers-chennai/">EP tubing for Chennai plants</a>.</p>
 `,
     faqs: [
       {
@@ -926,6 +933,7 @@ export const blogPosts = [
   <li><strong>Acceptance:</strong> What happens if a pipe exceeds the limit</li>
 </ul>
 <p>Avoid vague terms like "mirror finish", "bright finish" or "pharma finish" without numbers.</p>
+<p><strong>Buyer guides:</strong> <a href="/blog/astm-a270-sanitary-electropolished-tubing-guide/">writing an ASTM A270 EP tubing purchase order</a>, <a href="/blog/bright-annealed-vs-electropolished-tubes/">bright annealed vs electropolished tubes</a>, <a href="/blog/semiconductor-grade-electropolished-stainless-steel-pipes/">semiconductor grade EP pipe to SEMI F19/F20</a>.</p>
 `,
     faqs: [
       {
@@ -1035,6 +1043,7 @@ export const blogPosts = [
   <li>Assuming a customer's approved vendor list includes your chosen pipe supplier</li>
 </ul>
 <p>Fixing these during an audit is costly. Fixing them in the purchase order is cheap.</p>
+<p><strong>Buyer guides:</strong> <a href="/blog/electropolished-pipes-pharmaceutical-industry-specification/">system-wise EP pipe specs for pharma plants</a>, <a href="/blog/semiconductor-grade-electropolished-stainless-steel-pipes/">semiconductor grade EP pipe to SEMI F19/F20</a>, <a href="/blog/seamless-electropolished-stainless-steel-pipe-supplier/">when seamless EP pipe is worth the premium</a>.</p>
 `,
     faqs: [
       {
@@ -1148,6 +1157,7 @@ Problems found after installation are expensive to fix.<br />
   <li>Delivery terms, quote validity and acceptance criteria</li>
 </ul>
 <p>If any line is blank, the supplier will decide for you.</p>
+<p><strong>Buyer guides:</strong> <a href="/blog/stainless-steel-electropolished-pipe-price-india-calculation/">calculating EP pipe cost per metre</a>, <a href="/blog/seamless-electropolished-stainless-steel-pipe-supplier/">when seamless EP pipe is worth the premium</a>, <a href="/blog/instrumentation-tubing-electropolished-finish/">instrumentation tubing with an EP finish</a>.</p>
 `,
     faqs: [
       {
@@ -1300,6 +1310,7 @@ Problems found after installation are expensive to fix.<br />
   <li><strong>Ferroxyl Test & Salt Spray (ASTM B117):</strong> 100-hour exposure test ensuring zero free iron contamination or pinhole pitting.</li>
   <li><strong>Borescope ID Inspection:</strong> Optical video borescope audit across 100% of pipe interior lengths to ensure no chemical stains, pitting, or uneven oxidation.</li>
 </ol>
+<p><strong>Buyer guides:</strong> <a href="/blog/seamless-electropolished-stainless-steel-pipe-supplier/">when seamless EP pipe is worth the premium</a>, <a href="/blog/cleanroom-stainless-steel-ep-tubing/">specifying cleanroom EP tubing</a>, <a href="/blog/instrumentation-tubing-electropolished-finish/">instrumentation tubing with an EP finish</a>.</p>
 `,
     faqs: [
       {

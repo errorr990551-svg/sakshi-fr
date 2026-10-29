@@ -102,9 +102,23 @@ export default function BlogPostPage({ post, onEnquireClick }) {
               <User size={15} style={{ color: 'var(--primary-yellow)' }} />
               <strong>{post.author}</strong> ({post.authorRole})
             </span>
+            {post.reviewedBy && (
+              <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                <CheckCircle2 size={15} style={{ color: 'var(--primary-yellow)' }} />
+                Reviewed by{' '}
+                <a href="/team/" onClick={(e) => handleLinkClick(e, '/team/')} style={{ color: 'var(--primary-yellow)', textDecoration: 'none', fontWeight: '600' }}>
+                  {post.reviewedBy.name}
+                </a>
+                {post.reviewedBy.role && ` (${post.reviewedBy.role})`}
+              </span>
+            )}
             <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
               <Calendar size={15} style={{ color: 'var(--primary-yellow)' }} />
-              {post.date}
+              Published {post.date}
+            </span>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+              <Calendar size={15} style={{ color: 'var(--primary-yellow)' }} />
+              Last updated {post.dateModified || post.date}
             </span>
             <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
               <Clock size={15} style={{ color: 'var(--primary-yellow)' }} />

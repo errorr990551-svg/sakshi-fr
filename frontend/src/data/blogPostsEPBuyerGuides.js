@@ -17,6 +17,7 @@ export const epBuyerGuidePosts = [
     authorRole: "High-Purity Process Division",
     desc: "Buying SS 316L electropolished pipes? Check sulphur range, Ra by size, MTC, ferrite and packing before you choose a manufacturer. RFQ template inside.",
     image: "/electropolished-pipes.webp",
+    landingPages: ["/ss-316l-electropolished-pipes/", "/ss-316l-electropolished-pipes-in-mumbai/"],
     tags: ["SS 316L EP Pipes", "316L Electropolished Tubing", "EP Pipe Manufacturer", "ASME BPE", "ASTM A270", "RFQ Checklist"],
     keyTakeaways: [
       "A genuine 316L EP manufacturer controls the whole chain: certified 316L tube, electropolishing, Ra measurement, passivation, cleaning and capped packing.",
@@ -110,6 +111,7 @@ export const epBuyerGuidePosts = [
 
 <h2>7. Where Sakshi Forge Fits</h2>
 <p>Sakshi Forge manufactures and electropolishes SS 316L and 304L pipes and tubes at its Taloja MIDC works in Navi Mumbai. Every dispatch carries an EN 10204 3.1 MTC, PMI and a measured Ra report, and ships end-capped and sleeved. If you are specifying a complete system, we also supply <a href="/electropolished-pipe-fittings/">electropolished pipe fittings</a> in matching grades and finishes, so fit-up and Ra stay consistent across the line.</p>
+<p><strong>Related buyer guides:</strong> <a href="/blog/ss-304l-electropolished-tubing-guide/">where SS 304L EP tubing is the right buy</a>, <a href="/blog/high-purity-ep-tubing-manufacturer-india/">high purity EP tubing tiers and supplier qualification</a>, <a href="/blog/stainless-steel-electropolished-pipe-price-india-calculation/">calculating EP pipe cost per metre</a>.</p>
 `,
     faqs: [
       { q: "What Ra value should I specify for SS 316L electropolished pipes?", a: "For pharma and bioprocess product-contact lines, ASME BPE SF4 (Ra ≤ 0.38 µm / 15 µin on the ID) is the usual choice. Food and dairy lines commonly use Ra ≤ 0.5–0.8 µm. Always state the surface (ID/OD) and unit." },
@@ -130,6 +132,7 @@ export const epBuyerGuidePosts = [
     authorRole: "Alloy & Metallurgy Division",
     desc: "When is SS 304L electropolished tubing the right buy? Service limits, chloride risk, sizes, Ra options and an RFQ checklist for Indian plants.",
     image: "/electropolish_pipes.webp",
+    landingPages: ["/ss-304l-electropolished-pipes/", "/resources/316l-vs-304l-ep-pipes/"],
     tags: ["SS 304L EP Tubing", "304L Electropolished Tube", "Sanitary Tubing", "Chloride Pitting", "ASTM A270", "Cost Saving"],
     keyTakeaways: [
       "304L EP tubing is a sound, lower-cost choice for dairy, beverage, purified-air and utility lines where chlorides and hot acids are controlled.",
@@ -201,6 +204,7 @@ export const epBuyerGuidePosts = [
   <li>Packing: end-capped, sleeved, kept away from carbon steel.</li>
 </ul>
 <p>Ready to buy? Send the list through our <a href="/request-a-quote/">quote form</a>, or compare the two grades side by side in our <a href="/resources/316l-vs-304l-ep-pipes/">316L vs 304L resource</a>.</p>
+<p><strong>Related buyer guides:</strong> <a href="/blog/ss-316l-electropolished-pipes-manufacturer-guide/">how to verify an SS 316L EP pipe manufacturer</a>, <a href="/blog/food-grade-stainless-steel-electropolished-tubes/">what makes EP tube food grade</a>, <a href="/blog/dairy-electropolished-pipe-supplier-guide/">choosing a dairy EP pipe supplier</a>.</p>
 `,
     faqs: [
       { q: "Is 304L electropolished tubing food grade?", a: "Yes. SS 304L is widely accepted for food and dairy contact surfaces, including under 3-A and USDA dairy guidelines, provided the surface is smooth (typically Ra ≤ 0.8 µm), crevice-free and the media is not chloride-rich." },
@@ -221,6 +225,7 @@ export const epBuyerGuidePosts = [
     authorRole: "High-Purity Process Division",
     desc: "High purity vs ultra-high purity EP tubing explained: Ra, material, cleaning and packing for each tier, plus how Indian buyers qualify a manufacturer.",
     image: "/electropolished-pipes.webp",
+    landingPages: ["/high-purity-stainless-steel-pipes/", "/ultra-high-purity-ep-tubes/"],
     tags: ["High Purity EP Tubing", "UHP Tubing", "ASME BPE", "SEMI F19", "Supplier Qualification", "316L VAR"],
     keyTakeaways: [
       "\"High purity\" is not one specification. Match the tier to your process: hygienic (food), high purity (pharma/biotech, ASME BPE) or ultra-high purity (semiconductor gas, SEMI F19/F20).",
@@ -298,6 +303,7 @@ export const epBuyerGuidePosts = [
 
 <h2>6. Buying From an Indian Manufacturer vs Importing</h2>
 <p>For high purity (pharma-grade) tube, Indian manufacturers now supply most domestic projects, with shorter lead times and easier factory audits. For the UHP tier, buyers should check carefully whether a local supplier can meet SEMI test requirements or whether specific sizes must be imported. We discussed this trade-off in detail in <a href="/blog/locally-made-vs-imported-ep-pipes-india/">locally made vs imported EP pipes</a>.</p>
+<p><strong>Related buyer guides:</strong> <a href="/blog/semiconductor-grade-electropolished-stainless-steel-pipes/">semiconductor grade EP pipe to SEMI F19/F20</a>, <a href="/blog/cleanroom-stainless-steel-ep-tubing/">specifying cleanroom EP tubing</a>, <a href="/blog/electropolished-pipes-pharmaceutical-industry-specification/">system-wise EP pipe specs for pharma plants</a>.</p>
 `,
     faqs: [
       { q: "What is the difference between high purity and ultra-high purity EP tubing?", a: "High purity tubing (ASME BPE) is typically 316L with ID Ra ≤ 0.38 µm for pharma and biotech. Ultra-high purity tubing follows SEMI F19/F20, often uses VAR or VIM-VAR 316L, has Ra ≤ 0.25 µm or lower, and is cleaned and packed in a cleanroom for semiconductor gas service." },
@@ -318,6 +324,7 @@ export const epBuyerGuidePosts = [
     authorRole: "Industrial Piping Systems Team",
     desc: "Seamless vs welded EP stainless steel pipe: where seamless is needed, standards (A312, A269, A270), size limits and what a supplier must document.",
     image: "/electropolish_pipes.webp",
+    landingPages: ["/electropolished-seamless-pipes/", "/electropolished-welded-erw-pipes/"],
     tags: ["Seamless EP Pipe", "Seamless Electropolished Tube", "ASTM A312", "ASTM A269", "Welded vs Seamless", "High Pressure"],
     keyTakeaways: [
       "Seamless EP pipe has no longitudinal weld seam, so the bore finish is uniform all the way round and there is no weld-zone metallurgy to qualify.",
@@ -396,6 +403,7 @@ export const epBuyerGuidePosts = [
 
 <h2>7. RFQ Template for Seamless EP Pipe</h2>
 <p>Include: grade (316L/304L), "seamless" explicitly, standard (A312/A269/A270), NPS × schedule or OD × wall, length, ID/OD finish with maximum Ra, quantity per size, documents required, packing, delivery location and date. Send it through our <a href="/request-a-quote/">request a quote</a> page. If you also need welded sizes on the same project, see our <a href="/electropolished-welded-erw-pipes/">welded EP pipes</a> range so the whole line can be supplied together.</p>
+<p><strong>Related buyer guides:</strong> <a href="/blog/instrumentation-tubing-electropolished-finish/">instrumentation tubing with an EP finish</a>, <a href="/blog/astm-a270-sanitary-electropolished-tubing-guide/">writing an ASTM A270 EP tubing purchase order</a>, <a href="/blog/ss-316l-electropolished-pipes-manufacturer-guide/">how to verify an SS 316L EP pipe manufacturer</a>.</p>
 `,
     faqs: [
       { q: "Is seamless electropolished pipe better than welded?", a: "Not always. Seamless is preferred for high pressure, heavy wall and instrument or gas lines. For most sanitary and pharma tube up to 4\" OD, annealed and bead-conditioned welded tube performs as well at lower cost." },
@@ -416,6 +424,7 @@ export const epBuyerGuidePosts = [
     authorRole: "Hygienic Process Division",
     desc: "ASTM A270 sanitary EP tubing explained for buyers: scope, finishes, the S2 pharmaceutical supplement, tests and the exact clauses to put in your PO.",
     image: "/electropolished-pipes.webp",
+    landingPages: ["/astm-a270-electropolished-tubes/", "/resources/astm-a270-vs-a269/", "/sanitary-hygienic-ep-pipes/"],
     tags: ["ASTM A270", "Sanitary Tubing", "Electropolished Tubing", "S2 Pharmaceutical Quality", "ASME BPE", "Purchase Order"],
     keyTakeaways: [
       "ASTM A270 covers seamless, welded and heavily cold-worked austenitic and duplex sanitary tubing up to 12 in (300 mm) OD for dairy, food and, via a supplement, pharma.",
@@ -498,6 +507,7 @@ export const epBuyerGuidePosts = [
   <li>Visual check of the bore with a light for pits, stains or scratches.</li>
 </ul>
 <p>For a fuller list, see our <a href="/blog/ep-pipe-inspection-checklist/">EP pipe inspection checklist</a>. When you are ready, send your A270 list through <a href="/request-a-quote/">request a quote</a>.</p>
+<p><strong>Related buyer guides:</strong> <a href="/blog/dairy-electropolished-pipe-supplier-guide/">choosing a dairy EP pipe supplier</a>, <a href="/blog/food-grade-stainless-steel-electropolished-tubes/">what makes EP tube food grade</a>, <a href="/blog/seamless-electropolished-stainless-steel-pipe-supplier/">when seamless EP pipe is worth the premium</a>.</p>
 `,
     faqs: [
       { q: "Does ASTM A270 require electropolishing?", a: "No. A270 lists electropolished as one of several finish options. The purchaser must specify the finish, the surface (ID/OD) and the Ra limit in the order." },
@@ -518,6 +528,7 @@ export const epBuyerGuidePosts = [
     authorRole: "Metallurgy & R&D Laboratory",
     desc: "Bright annealed vs electropolished tubes: how each is made, typical Ra, cost, and when to order BA, EP or BA+EP stainless tube for your application.",
     image: "/electropolish_pipes.webp",
+    landingPages: ["/electropolished-tubes/", "/ss-bright-seamless-tubes/"],
     tags: ["Bright Annealed Tubes", "Electropolished Tubes", "BA vs EP", "Instrument Tubing", "Surface Finish", "Stainless Steel Tube"],
     keyTakeaways: [
       "Bright annealing (BA) is a heat treatment in a protective, oxygen-free atmosphere that leaves an oxide-free, bright surface; it does not level the surface profile.",
@@ -589,6 +600,7 @@ export const epBuyerGuidePosts = [
   <li>BA + EP: "Bright annealed, then ID electropolished to Ra ≤ X µm; cleaned and capped."</li>
 </ul>
 <p>Always name the surface (ID/OD) and the Ra unit. For finish terminology, see our <a href="/blog/electropolished-vs-mechanically-polished-pipes/">EP vs mechanically polished guide</a>, and send your list through <a href="/request-a-quote/">request a quote</a>.</p>
+<p><strong>Related buyer guides:</strong> <a href="/blog/instrumentation-tubing-electropolished-finish/">instrumentation tubing with an EP finish</a>, <a href="/blog/astm-a270-sanitary-electropolished-tubing-guide/">writing an ASTM A270 EP tubing purchase order</a>, <a href="/blog/high-purity-ep-tubing-manufacturer-india/">high purity EP tubing tiers and supplier qualification</a>.</p>
 `,
     faqs: [
       { q: "Is bright annealed tube the same as electropolished tube?", a: "No. Bright annealing is a heat treatment in a protective atmosphere that leaves a scale-free bright surface. Electropolishing is an electrochemical process that removes metal, lowers Ra and enriches surface chromium." },
@@ -609,6 +621,7 @@ export const epBuyerGuidePosts = [
     authorRole: "High-Purity Process Division",
     desc: "Spec EP pipes for pharma by system: WFI, PW, clean steam, process and CIP. Grade, Ra, standards, documents and a validation-ready procurement package.",
     image: "/Pharmaceutical and Biotechnology.webp",
+    landingPages: ["/industries/pharmaceutical-electropolished-pipes/", "/industries/biotech-electropolished-pipes/"],
     tags: ["Pharma EP Pipes", "WFI Piping", "Purified Water", "Clean Steam", "ASME BPE", "Validation Documents"],
     keyTakeaways: [
       "Do not use one blanket spec for the whole plant: WFI, purified water, clean steam, process and utility lines each justify a different finish and documentation level.",
@@ -679,6 +692,7 @@ export const epBuyerGuidePosts = [
 
 <h2>8. Next Step</h2>
 <p>Send your piping BOQ, split by system, through <a href="/request-a-quote/">request a quote</a>. We will return a like-for-like offer with grade, finish and documents listed line by line.</p>
+<p><strong>Related buyer guides:</strong> <a href="/blog/ss-316l-electropolished-pipes-manufacturer-guide/">how to verify an SS 316L EP pipe manufacturer</a>, <a href="/blog/high-purity-ep-tubing-manufacturer-india/">high purity EP tubing tiers and supplier qualification</a>, <a href="/blog/astm-a270-sanitary-electropolished-tubing-guide/">writing an ASTM A270 EP tubing purchase order</a>.</p>
 `,
     faqs: [
       { q: "What Ra is required for WFI piping in pharma plants?", a: "There is no single regulatory number, but WFI loops are commonly specified as 316L electropolished to ASME BPE SF4 (Ra ≤ 0.38 µm / 15 µin) on the product-contact surface." },
@@ -699,6 +713,7 @@ export const epBuyerGuidePosts = [
     authorRole: "Hygienic Process Division",
     desc: "What makes SS electropolished tube food grade: material, Ra, FSSAI, 3-A and EHEDG expectations, grade by product type, and a buyer's checklist.",
     image: "/Food, Dairy and Beverage.webp",
+    landingPages: ["/industries/food-processing-electropolished-pipes/", "/industries/beverage-electropolished-pipes/"],
     tags: ["Food Grade EP Tubes", "Food Grade Stainless Steel", "FSSAI", "3-A Sanitary", "EHEDG", "Hygienic Tubing"],
     keyTakeaways: [
       "\"Food grade\" is not a single certificate. It means a suitable stainless grade, a smooth crevice-free contact surface and a hygienic design.",
@@ -773,6 +788,7 @@ export const epBuyerGuidePosts = [
   <li>Matching fittings: see our <a href="/dairy-fittings/">dairy and hygienic fittings</a>.</li>
 </ul>
 <p>Send your list through <a href="/request-a-quote/">request a quote</a> and we will confirm grade suitability before quoting.</p>
+<p><strong>Related buyer guides:</strong> <a href="/blog/dairy-electropolished-pipe-supplier-guide/">choosing a dairy EP pipe supplier</a>, <a href="/blog/astm-a270-sanitary-electropolished-tubing-guide/">writing an ASTM A270 EP tubing purchase order</a>, <a href="/blog/ss-304l-electropolished-tubing-guide/">where SS 304L EP tubing is the right buy</a>.</p>
 `,
     faqs: [
       { q: "What makes stainless steel tube food grade?", a: "A suitable 300-series grade (usually 304L or 316L), a smooth, defect-free product-contact surface (commonly Ra ≤ 0.8 µm), and a design that can be cleaned. Documentation such as an MTC and Ra report supports the claim." },
@@ -793,6 +809,7 @@ export const epBuyerGuidePosts = [
     authorRole: "Hygienic Process Division",
     desc: "Choosing a dairy EP pipe supplier? Line-by-line grade and Ra specs from reception to CIP, inch vs DIN sizes, lead times and a supplier checklist.",
     image: "/Food, Dairy and Beverage.webp",
+    landingPages: ["/industries/dairy-electropolished-pipes/", "/dairy-fittings/"],
     tags: ["Dairy EP Pipes", "Dairy Pipe Supplier", "Sanitary Tube", "DIN 11850", "ASTM A270", "CIP"],
     keyTakeaways: [
       "Split the dairy plant by line: reception and storage, pasteurisation, UHT/hot zones, CIP and utilities each justify a different grade and finish.",
@@ -867,6 +884,7 @@ export const epBuyerGuidePosts = [
   <li>Required delivery date and site location.</li>
 </ul>
 <p>Send it through <a href="/request-a-quote/">request a quote</a>. For dairy layout tips, see our <a href="/blog/dairy-plant-piping-guide/">dairy plant piping guide</a>.</p>
+<p><strong>Related buyer guides:</strong> <a href="/blog/food-grade-stainless-steel-electropolished-tubes/">what makes EP tube food grade</a>, <a href="/blog/ss-304l-electropolished-tubing-guide/">where SS 304L EP tubing is the right buy</a>, <a href="/blog/ep-grade-stainless-steel-pipes-manufacturer-gujarat/">EP grade pipe specs for Gujarat clusters</a>.</p>
 `,
     faqs: [
       { q: "Which stainless grade is best for dairy piping?", a: "304L is standard for most milk-contact lines. Use 316L for UHT and hot zones, acidic products like curd and buttermilk, and CIP lines with hot chemicals or chlorinated sanitisers." },
@@ -887,6 +905,7 @@ export const epBuyerGuidePosts = [
     authorRole: "High-Purity Process Division",
     desc: "How to choose cleanroom SS EP tubing: matching tube purity to ISO 14644 class and service, Ra, cleaning, double-bag packing and installation rules.",
     image: "/semiconductor.webp",
+    landingPages: ["/ultra-high-purity-ep-tubes/", "/industries/high-purity-water-electropolished-pipes/"],
     tags: ["Cleanroom Tubing", "SS EP Tubing", "ISO 14644", "Process Gas Lines", "Orbital Welding", "Double Bagged"],
     keyTakeaways: [
       "The cleanroom class (ISO 14644-1) describes the air, not the tube. Tube purity should be chosen by what flows inside it and where it is used.",
@@ -952,6 +971,7 @@ export const epBuyerGuidePosts = [
 
 <h2>6. Ordering Cleanroom EP Tubing</h2>
 <p>Include the grade, standard, OD × wall, ID Ra limit, OD finish, cleaning requirement, double-bag packing, documents and delivery date. For gas-service small-bore tube, also see our guide to <a href="/blog/instrumentation-tubing-electropolished-finish/">instrumentation tubing with EP finish</a>. Send your list through <a href="/request-a-quote/">request a quote</a>.</p>
+<p><strong>Related buyer guides:</strong> <a href="/blog/semiconductor-grade-electropolished-stainless-steel-pipes/">semiconductor grade EP pipe to SEMI F19/F20</a>, <a href="/blog/instrumentation-tubing-electropolished-finish/">instrumentation tubing with an EP finish</a>, <a href="/blog/industrial-electropolished-tubing-suppliers-chennai/">EP tubing for Chennai plants</a>.</p>
 `,
     faqs: [
       { q: "What tubing is used for cleanroom gas lines?", a: "Typically 316L stainless tube with an electropolished ID, cleaned, capped and double-bagged, joined by orbital welding or face-seal fittings. Semiconductor fabs use SEMI F19/F20 UHP tube." },
@@ -972,6 +992,7 @@ export const epBuyerGuidePosts = [
     authorRole: "Industrial Piping Systems Team",
     desc: "When to choose instrumentation tubing with EP finish: analyser and gas lines, A269/A213 specs, hardness ≤ 90 HRB, OD tolerance and ordering tips.",
     image: "/electropolish_pipes.webp",
+    landingPages: ["/astm-a269-electropolished-tubing/"],
     tags: ["Instrumentation Tubing", "EP Instrument Tube", "ASTM A269", "Compression Fittings", "Tube Hardness", "Analyser Sample Lines"],
     keyTakeaways: [
       "Standard instrument tube is fully annealed seamless 316/316L to ASTM A269 or A213; EP finish is an upgrade for sample, high-purity gas and corrosive service.",
@@ -1039,6 +1060,7 @@ export const epBuyerGuidePosts = [
   <li>Documents: EN 10204 3.1 MTC, Ra report, hardness results.</li>
 </ul>
 <p>Send it through <a href="/request-a-quote/">request a quote</a>. If the tube is going into a cleanroom, also read our <a href="/blog/cleanroom-stainless-steel-ep-tubing/">cleanroom EP tubing guide</a>.</p>
+<p><strong>Related buyer guides:</strong> <a href="/blog/bright-annealed-vs-electropolished-tubes/">bright annealed vs electropolished tubes</a>, <a href="/blog/cleanroom-stainless-steel-ep-tubing/">specifying cleanroom EP tubing</a>, <a href="/blog/seamless-electropolished-stainless-steel-pipe-supplier/">when seamless EP pipe is worth the premium</a>.</p>
 `,
     faqs: [
       { q: "What hardness should instrumentation tubing have?", a: "Fitting manufacturers typically require fully annealed stainless tube with hardness of 90 HRB maximum, and recommend about 80 HRB, for reliable compression-fitting seals." },
@@ -1059,6 +1081,7 @@ export const epBuyerGuidePosts = [
     authorRole: "High-Purity Process Division",
     desc: "Semiconductor grade EP stainless pipe explained: SEMI F19/F20, VIM-VAR 316L, Ra 0.25 µm and below, surface tests, packing and sourcing in India.",
     image: "/semiconductor.webp",
+    landingPages: ["/industries/semiconductor-electropolished-pipes/", "/semiconductor-electropolished-pipes-bengaluru/"],
     tags: ["Semiconductor Grade EP", "SEMI F19", "SEMI F20", "UHP Tubing", "VIM-VAR 316L", "India Semiconductor Mission"],
     keyTakeaways: [
       "Semiconductor grade means tubing and components that meet SEMI F20 material and SEMI F19 wetted-surface requirements, not just a low Ra.",
@@ -1129,6 +1152,7 @@ export const epBuyerGuidePosts = [
 
 <h2>8. Where to Start</h2>
 <p>If your project is in Gujarat, see our <a href="/blog/ep-grade-stainless-steel-pipes-manufacturer-gujarat/">Gujarat EP pipe sourcing guide</a>; for Bengaluru's electronics cluster, our <a href="/semiconductor-electropolished-pipes-bengaluru/">semiconductor EP pipes in Bengaluru</a> page. For background on SEMI F19 finishes, read <a href="/blog/semiconductor-uhp-tubing-semi-f19/">SEMI F19 electropolished tubing</a>. Send your gas list and specification through <a href="/request-a-quote/">request a quote</a>.</p>
+<p><strong>Related buyer guides:</strong> <a href="/blog/high-purity-ep-tubing-manufacturer-india/">high purity EP tubing tiers and supplier qualification</a>, <a href="/blog/cleanroom-stainless-steel-ep-tubing/">specifying cleanroom EP tubing</a>, <a href="/blog/ep-grade-stainless-steel-pipes-manufacturer-gujarat/">EP grade pipe specs for Gujarat clusters</a>.</p>
 `,
     faqs: [
       { q: "What makes stainless steel pipe semiconductor grade?", a: "Compliance with SEMI F20 material requirements (316L, 316L VAR or 316L VIM-VAR) and SEMI F19 wetted-surface requirements, typically with ID Ra ≤ 0.25 µm or lower, verified surface chemistry and defects, and cleanroom cleaning and packing." },
@@ -1149,6 +1173,7 @@ export const epBuyerGuidePosts = [
     authorRole: "Procurement & Commercial Advisory",
     desc: "Sourcing electropolished pipes in Mumbai? How to tell manufacturers from traders, what to witness at the factory, delivery zones and an RFQ checklist.",
     image: "/electropolished-pipes.webp",
+    landingPages: ["/market-area/mumbai/", "/electropolished-pipes-in-mumbai/", "/market-area/thane/", "/market-area/navi-mumbai/"],
     tags: ["EP Pipes Mumbai", "Electropolished Pipe Manufacturer Mumbai", "Taloja MIDC", "Factory Inspection", "Navi Mumbai", "Thane"],
     keyTakeaways: [
       "Mumbai has many EP pipe sellers but far fewer who electropolish in-house; ask where the EP line is and visit it before a large order.",
@@ -1222,6 +1247,7 @@ export const epBuyerGuidePosts = [
   <li>Delivery address (Mumbai, Thane, Navi Mumbai, etc.) and date.</li>
 </ul>
 <p>See our pages for <a href="/electropolished-pipes-in-mumbai/">electropolished pipes in Mumbai</a>, <a href="/ss-316l-electropolished-pipes-in-mumbai/">SS 316L EP pipes in Mumbai</a>, <a href="/market-area/thane/">Thane</a> and <a href="/market-area/navi-mumbai/">Navi Mumbai</a>, or read <a href="/about-sakshi-forge/">about Sakshi Forge</a>. Send your list through <a href="/request-a-quote/">request a quote</a>.</p>
+<p><strong>Related buyer guides:</strong> <a href="/blog/ss-electropolished-tubes-supplier-pune/">EP tube specs for Pune industrial belts</a>, <a href="/blog/stainless-steel-electropolished-pipe-price-india-calculation/">calculating EP pipe cost per metre</a>, <a href="/blog/ss-316l-electropolished-pipes-manufacturer-guide/">how to verify an SS 316L EP pipe manufacturer</a>.</p>
 `,
     faqs: [
       { q: "Where is Sakshi Forge's EP pipe factory?", a: "Our manufacturing and electropolishing works is at Taloja MIDC, Navi Mumbai, within the Mumbai Metropolitan Region, roughly 40–50 km from most Mumbai addresses." },
@@ -1242,6 +1268,7 @@ export const epBuyerGuidePosts = [
     authorRole: "Procurement & Commercial Advisory",
     desc: "Buying SS electropolished tubes in Pune? Specs for Hadapsar biotech, Chakan, Ranjangaon and Kurkumbh, delivery times and what a supplier must provide.",
     image: "/electropolish_pipes.webp",
+    landingPages: ["/market-area/pune/", "/electropolished-pipes-in-pune/"],
     tags: ["SS EP Tubes Pune", "Electropolished Tube Supplier Pune", "Pune MIDC", "Biotech Piping", "Dairy Piping", "316L EP Tube"],
     keyTakeaways: [
       "Pune's demand spans vaccines and biotech (Hadapsar–Manjri), food and FMCG (Chakan, Ranjangaon), dairy (wider Pune district) and chemicals (Kurkumbh).",
@@ -1305,6 +1332,7 @@ export const epBuyerGuidePosts = [
   <li>Site location (Hadapsar, Chakan, Ranjangaon, etc.) and required date.</li>
 </ul>
 <p>Also see <a href="/electropolished-pipes-in-pune/">electropolished pipes in Pune</a> and <a href="/ss-316l-electropolished-pipes-in-pune/">SS 316L EP pipes in Pune</a>, then send your list through <a href="/request-a-quote/">request a quote</a>.</p>
+<p><strong>Related buyer guides:</strong> <a href="/blog/electropolished-pipes-manufacturer-mumbai-guide/">sourcing EP pipes from a Mumbai manufacturer</a>, <a href="/blog/electropolished-pipes-pharmaceutical-industry-specification/">system-wise EP pipe specs for pharma plants</a>, <a href="/blog/dairy-electropolished-pipe-supplier-guide/">choosing a dairy EP pipe supplier</a>.</p>
 `,
     faqs: [
       { q: "How long does delivery of EP tubes to Pune take?", a: "Pune is about 130–150 km from our Taloja MIDC factory, so stock sizes are usually delivered same-day or next-day after dispatch." },
@@ -1325,6 +1353,7 @@ export const epBuyerGuidePosts = [
     authorRole: "Procurement & Commercial Advisory",
     desc: "Sourcing EP grade stainless steel pipes in Gujarat? Grade and Ra by cluster (Ahmedabad, Vapi, Ankleshwar, Dahej, Anand, Sanand), delivery and RFQ tips.",
     image: "/electropolished-pipes.webp",
+    landingPages: ["/market-area/gujarat/", "/market-area/ahmedabad/", "/market-area/vadodara/", "/market-area/vapi/"],
     tags: ["EP Pipes Gujarat", "EP Grade SS Pipes", "Ahmedabad Pharma", "Vapi Ankleshwar Dahej", "Anand Dairy", "Duplex 2205"],
     keyTakeaways: [
       "Gujarat's demand is split across very different clusters: pharma (Ahmedabad, Vadodara), chemicals (Vapi, Ankleshwar, Dahej), dairy (Anand, Mehsana) and electronics (Sanand, Dholera).",
@@ -1393,6 +1422,7 @@ export const epBuyerGuidePosts = [
   <li>Site location and required date.</li>
 </ul>
 <p>City pages: <a href="/market-area/ahmedabad/">Ahmedabad</a>, <a href="/market-area/vadodara/">Vadodara</a>, <a href="/market-area/vapi/">Vapi</a>, <a href="/market-area/ankleshwar/">Ankleshwar</a>, <a href="/market-area/dahej/">Dahej</a>, <a href="/market-area/anand/">Anand</a>. Send your list through <a href="/request-a-quote/">request a quote</a>.</p>
+<p><strong>Related buyer guides:</strong> <a href="/blog/electropolished-pipes-manufacturer-mumbai-guide/">sourcing EP pipes from a Mumbai manufacturer</a>, <a href="/blog/semiconductor-grade-electropolished-stainless-steel-pipes/">semiconductor grade EP pipe to SEMI F19/F20</a>, <a href="/blog/industrial-electropolished-tubing-suppliers-chennai/">EP tubing for Chennai plants</a>.</p>
 `,
     faqs: [
       { q: "What does EP grade stainless steel pipe mean?", a: "It is a trade term for stainless pipe with an electropolished finish. On a purchase order it should be defined by grade (304L/316L/duplex), product standard, maximum Ra and the surface (ID/OD) it applies to." },
@@ -1413,6 +1443,7 @@ export const epBuyerGuidePosts = [
     authorRole: "Procurement & Commercial Advisory",
     desc: "Choosing industrial EP tubing suppliers in Chennai: specs for Sriperumbudur electronics, pharma estates and Manali chemicals, coastal grade advice, delivery.",
     image: "/electropolish_pipes.webp",
+    landingPages: ["/market-area/chennai/", "/electropolished-pipes-in-chennai/", "/tamil-nadu/"],
     tags: ["EP Tubing Chennai", "Electropolished Tube Supplier Chennai", "Sriperumbudur", "Manali", "Coastal Corrosion", "Tamil Nadu"],
     keyTakeaways: [
       "Chennai's EP tubing demand comes from pharma and biotech estates, electronics around Sriperumbudur and Oragadam, food plants, and the Manali–Ennore chemical belt.",
@@ -1477,6 +1508,7 @@ export const epBuyerGuidePosts = [
   <li>Site location and required date.</li>
 </ul>
 <p>See also <a href="/electropolished-pipes-in-chennai/">electropolished pipes in Chennai</a>, and send your list through <a href="/request-a-quote/">request a quote</a>.</p>
+<p><strong>Related buyer guides:</strong> <a href="/blog/ss-electropolished-tubes-supplier-pune/">EP tube specs for Pune industrial belts</a>, <a href="/blog/cleanroom-stainless-steel-ep-tubing/">specifying cleanroom EP tubing</a>, <a href="/blog/bright-annealed-vs-electropolished-tubes/">bright annealed vs electropolished tubes</a>.</p>
 `,
     faqs: [
       { q: "Do you have a warehouse in Chennai?", a: "No. We manufacture at Taloja MIDC, Navi Mumbai, and dispatch to Chennai by road, typically arriving 2–3 days after dispatch." },
@@ -1497,6 +1529,7 @@ export const epBuyerGuidePosts = [
     authorRole: "Procurement & Commercial Advisory",
     desc: "Calculate stainless steel electropolished pipe price in India per metre: weight formula, worked examples, GST and the line items a fair quote includes.",
     image: "/electropolished-pipes.webp",
+    landingPages: ["/resources/electropolished-pipe-price-list/", "/request-a-quote/"],
     tags: ["SS EP Pipe Price India", "EP Pipe Price per Kg", "Price per Metre", "Weight Calculation", "GST", "Quote Comparison"],
     keyTakeaways: [
       "EP pipe is quoted per kg or per metre; convert both to cost per metre using kg/m = (OD − WT) × WT × 0.02491 (mm) for austenitic stainless.",
@@ -1578,6 +1611,7 @@ export const epBuyerGuidePosts = [
 
 <h2>8. Price Check Before You Approve</h2>
 <p>Before approving the PO, recalculate weight from OD and wall, confirm the rate basis (ex-works or delivered, with or without GST), and make sure the finish, Ra and documents in the quote match your enquiry. A five-minute check prevents most pricing disputes.</p>
+<p><strong>Related buyer guides:</strong> <a href="/blog/ss-316l-electropolished-pipes-manufacturer-guide/">how to verify an SS 316L EP pipe manufacturer</a>, <a href="/blog/ss-304l-electropolished-tubing-guide/">where SS 304L EP tubing is the right buy</a>, <a href="/blog/electropolished-pipes-manufacturer-mumbai-guide/">sourcing EP pipes from a Mumbai manufacturer</a>.</p>
 `,
     faqs: [
       { q: "How do I calculate the weight of a stainless steel EP pipe?", a: "Use kg/m = (OD − WT) × WT × 0.02491, with OD and wall thickness in millimetres. For example, 2\" OD × 1.65 mm tube weighs about 2.02 kg per metre." },

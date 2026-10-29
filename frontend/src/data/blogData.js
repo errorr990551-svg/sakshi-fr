@@ -18,7 +18,7 @@ export const blogPosts = [
     author: "Sakshi Metallurgical & EP Technical Team",
     authorRole: "High-Purity Process Division",
     desc: "Indian pharma and biotech plants are moving to EP pipes for cleaner, corrosion-resistant process lines. See the reasons, standards and what to specify.",
-    image: "",
+    image: "/pharmaceutical-biotechnology.webp",
     tags: [
       "EP Pipes",
       "Pharma Piping",
@@ -112,7 +112,7 @@ export const blogPosts = [
     author: "Sakshi Surface Engineering Team",
     authorRole: "Surface Engineering Division",
     desc: "Compare electropolished and mechanically polished stainless steel pipes on finish, corrosion resistance, cleanability and cost. Know which to order.",
-    image: "",
+    image: "/electropolish_pipes.webp",
     tags: [
       "Electropolishing",
       "Mechanical Polishing",
@@ -273,7 +273,7 @@ export const blogPosts = [
     author: "Sakshi Sanitary Applications Team",
     authorRole: "Hygienic Process Division",
     desc: "Why Indian dairy, beverage and food processors choose electropolished pipes: easier cleaning, less contamination risk and support for FSSAI and export audits.",
-    image: "",
+    image: "/food-dairy-beverage.webp",
     tags: [
       "Dairy Piping",
       "Food Processing",
@@ -371,7 +371,7 @@ export const blogPosts = [
     author: "Sakshi Commercial & Technical Estimations",
     authorRole: "Procurement & Commercial Advisory",
     desc: "What decides EP pipe price in India: grade, size, Ra finish, standards and testing. Learn how to compare quotes fairly and avoid hidden costs.",
-    image: "",
+    image: "/electropolished-pipes.webp",
     tags: [
       "EP Pipe Price",
       "Stainless Steel Rates",
@@ -487,7 +487,7 @@ export const blogPosts = [
     author: "Sakshi Sourcing & Engineering Team",
     authorRole: "Supply Chain Strategy Division",
     desc: "Compare locally made and imported EP pipes on cost, lead time, customisation, support and compliance. See why Indian buyers prefer domestic manufacturers.",
-    image: "",
+    image: "/electropolish_pipes.webp",
     tags: [
       "Domestic vs Imported",
       "Indian EP Pipes",
@@ -581,7 +581,7 @@ export const blogPosts = [
     author: "Sakshi Quality Audit & Compliance Team",
     authorRole: "Quality Assurance Division",
     desc: "Choosing an EP pipe manufacturer in India? Use this 10-point checklist covering in-house EP, Ra reports, MTCs, testing, references and red flags.",
-    image: "",
+    image: "/electropolished-pipes.webp",
     tags: [
       "EP Pipe Manufacturer India",
       "Supplier Vetting",
@@ -678,7 +678,7 @@ export const blogPosts = [
     author: "Sakshi Metallurgical Research Division",
     authorRole: "Alloy & Metallurgy Division",
     desc: "304 vs 316L electropolished pipes: compare composition, corrosion resistance, cost and best uses in Indian pharma, food, dairy and chemical plants.",
-    image: "",
+    image: "/electropolish_pipes.webp",
     tags: [
       "304 vs 316L",
       "Molybdenum Content",
@@ -829,7 +829,7 @@ export const blogPosts = [
     author: "Sakshi Metrology & Surface Engineering Lab",
     authorRole: "Surface Metrology Division",
     desc: "What is Ra value on EP pipes? Learn µm vs µin, common Ra limits (0.38, 0.5, 0.8 µm), how Ra is measured and what to specify for pharma and food.",
-    image: "",
+    image: "/electropolished-pipes.webp",
     tags: [
       "Ra Value",
       "Surface Roughness",
@@ -965,7 +965,7 @@ export const blogPosts = [
     author: "Sakshi Regulatory & Validation Team",
     authorRole: "Regulatory Affairs & Validation",
     desc: "How export-oriented Indian plants should specify EP pipes for USFDA, EU-GMP, WHO-GMP and ASME BPE audits: grade, finish, documents and traceability.",
-    image: "",
+    image: "/pharmaceutical-biotechnology.webp",
     tags: [
       "Export Pharma",
       "USFDA 21 CFR",
@@ -1075,7 +1075,7 @@ export const blogPosts = [
     author: "Sakshi Procurement & Engineering Advisory",
     authorRole: "Procurement Advisory Division",
     desc: "Avoid costly errors when buying EP pipes in India: missing Ra specs, wrong grade, poor documents, bad packing and skipped inspection. Fixes included.",
-    image: "",
+    image: "/electropolish_pipes.webp",
     tags: [
       "Buying Mistakes",
       "Procurement Guide",
@@ -1527,7 +1527,7 @@ Problems found after installation are expensive to fix.<br />
     readTime: "6 min read",
     author: "Sakshi Quality Assurance Desk",
     authorRole: "Piping Systems Analysis Group",
-    desc: "A technical analysis of nominal pipe size (NPS), wall thickness tolerances under ASTM A312 / ASME B36.10M / B36.19M, and internal pressure carrying capacity calculations using Barlow's Formula.",
+    desc: "Pipe schedules explained: STD vs XS vs XXS wall thickness under ASME B36.10M/B36.19M, ASTM A312 tolerances and Barlow's formula pressure checks.",
     image: "/hero_forge.webp",
     tags: ["Pipe Schedules", "ASME B36.10M", "Barlow Formula", "Schedule 40", "Schedule 80", "ASTM A312"],
     keyTakeaways: [
@@ -1658,7 +1658,7 @@ Problems found after installation are expensive to fix.<br />
     author: "Chief Metallurgist, Sakshi Forge",
     authorRole: "Metallurgy & R&D Laboratory",
     desc: "Analyze chemical compositions, PREN (Pitting Resistance Equivalence Number), intergranular corrosion testing under ASTM A262, and cost-benefit trade-offs for chemical processing, marine, and offshore applications.",
-    image: "/316L Stainless Steel Flange.webp",
+    image: "/316l-stainless-steel-flange.webp",
     tags: ["SS 304L", "SS 316L", "Corrosion Resistance", "PREN", "ASTM A262", "Metallurgy"],
     keyTakeaways: [
       "SS 316L contains 2.0% - 3.0% Molybdenum (Mo), providing vastly superior resistance to chloride-induced pitting and crevice corrosion compared to SS 304L.",

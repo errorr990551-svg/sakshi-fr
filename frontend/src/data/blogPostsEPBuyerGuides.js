@@ -17,7 +17,7 @@ export const epBuyerGuidePosts = [
     authorRole: "High-Purity Process Division",
     desc: "Buying SS 316L electropolished pipes? Check sulphur range, Ra by size, MTC, ferrite and packing before you choose a manufacturer. RFQ template inside.",
     image: "/electropolished-pipes.webp",
-    landingPages: ["/ss-316l-electropolished-pipes/", "/ss-316l-electropolished-pipes-in-mumbai/"],
+    landingPages: ["/ss-316l-electropolished-pipes/"],
     tags: ["SS 316L EP Pipes", "316L Electropolished Tubing", "EP Pipe Manufacturer", "ASME BPE", "ASTM A270", "RFQ Checklist"],
     keyTakeaways: [
       "A genuine 316L EP manufacturer controls the whole chain: certified 316L tube, electropolishing, Ra measurement, passivation, cleaning and capped packing.",
@@ -620,7 +620,7 @@ export const epBuyerGuidePosts = [
     author: "Sakshi Metallurgical & EP Technical Team",
     authorRole: "High-Purity Process Division",
     desc: "Spec EP pipes for pharma by system: WFI, PW, clean steam, process and CIP. Grade, Ra, standards, documents and a validation-ready procurement package.",
-    image: "/Pharmaceutical and Biotechnology.webp",
+    image: "/pharmaceutical-biotechnology.webp",
     landingPages: ["/industries/pharmaceutical-electropolished-pipes/", "/industries/biotech-electropolished-pipes/"],
     tags: ["Pharma EP Pipes", "WFI Piping", "Purified Water", "Clean Steam", "ASME BPE", "Validation Documents"],
     keyTakeaways: [
@@ -712,7 +712,7 @@ export const epBuyerGuidePosts = [
     author: "Sakshi Hygienic Process Team",
     authorRole: "Hygienic Process Division",
     desc: "What makes SS electropolished tube food grade: material, Ra, FSSAI, 3-A and EHEDG expectations, grade by product type, and a buyer's checklist.",
-    image: "/Food, Dairy and Beverage.webp",
+    image: "/food-dairy-beverage.webp",
     landingPages: ["/industries/food-processing-electropolished-pipes/", "/industries/beverage-electropolished-pipes/"],
     tags: ["Food Grade EP Tubes", "Food Grade Stainless Steel", "FSSAI", "3-A Sanitary", "EHEDG", "Hygienic Tubing"],
     keyTakeaways: [
@@ -808,7 +808,7 @@ export const epBuyerGuidePosts = [
     author: "Sakshi Hygienic Process Team",
     authorRole: "Hygienic Process Division",
     desc: "Choosing a dairy EP pipe supplier? Line-by-line grade and Ra specs from reception to CIP, inch vs DIN sizes, lead times and a supplier checklist.",
-    image: "/Food, Dairy and Beverage.webp",
+    image: "/food-dairy-beverage.webp",
     landingPages: ["/industries/dairy-electropolished-pipes/", "/dairy-fittings/"],
     tags: ["Dairy EP Pipes", "Dairy Pipe Supplier", "Sanitary Tube", "DIN 11850", "ASTM A270", "CIP"],
     keyTakeaways: [
@@ -871,7 +871,7 @@ export const epBuyerGuidePosts = [
 <p>Plan major piping work for the lean season and confirm lead times early. Peak milk arrives in the winter months in most of India, and plants cannot afford shutdowns then.</p>
 
 <h2>5. Dairy Clusters We Supply</h2>
-<p>We regularly supply dairy plants and equipment fabricators in Anand and Kheda in Gujarat, Kolhapur, Pune and Baramati in Maharashtra, and dairy belts in Karnataka, Andhra Pradesh and Tamil Nadu. See our pages on <a href="/dairy-electropolished-pipes-anand/">dairy EP pipes in Anand</a>, <a href="/dairy-electropolished-pipes-kolhapur/">Kolhapur</a> and <a href="/dairy-electropolished-pipes-pune/">Pune</a>.</p>
+<p>We regularly supply dairy plants and equipment fabricators in Anand and Kheda in Gujarat, Kolhapur, Pune and Baramati in Maharashtra, and dairy belts in Karnataka, Andhra Pradesh and Tamil Nadu. See our supply pages for <a href="/market-area/anand/">Anand</a>, <a href="/market-area/kolhapur/">Kolhapur</a> and <a href="/market-area/pune/">Pune</a>.</p>
 
 <h2>6. Dairy RFQ Checklist</h2>
 <ul class="blog-spec-list">
@@ -984,7 +984,7 @@ export const epBuyerGuidePosts = [
     id: "instrumentation-tubing-electropolished-finish",
     slug: "instrumentation-tubing-electropolished-finish",
     seoTitle: "Instrumentation Tubing with EP Finish Guide",
-    title: "Instrumentation Tubing With Electropolished Finish: When You Need It and How to Specify It for Compression Fittings",
+    title: "Instrumentation Tubing With Electropolished Finish: When You Need It and How to Specify It",
     category: "Piping Specifications",
     date: "October 29, 2026",
     readTime: "4 min read",
@@ -1073,7 +1073,7 @@ export const epBuyerGuidePosts = [
     id: "semiconductor-grade-electropolished-stainless-steel-pipes",
     slug: "semiconductor-grade-electropolished-stainless-steel-pipes",
     seoTitle: "Semiconductor Grade EP Stainless Steel Pipes",
-    title: "Semiconductor Grade Electropolished Stainless Steel Pipes: SEMI F19/F20 Specs and Sourcing for India's New Fabs",
+    title: "Semiconductor Grade Electropolished Stainless Steel Pipes: SEMI F19/F20 Specs and Sourcing in India",
     category: "Surface Finish & EP",
     date: "October 29, 2026",
     readTime: "5 min read",
@@ -1081,7 +1081,7 @@ export const epBuyerGuidePosts = [
     authorRole: "High-Purity Process Division",
     desc: "Semiconductor grade EP stainless pipe explained: SEMI F19/F20, VIM-VAR 316L, Ra 0.25 µm and below, surface tests, packing and sourcing in India.",
     image: "/semiconductor.webp",
-    landingPages: ["/industries/semiconductor-electropolished-pipes/", "/semiconductor-electropolished-pipes-bengaluru/"],
+    landingPages: ["/industries/semiconductor-electropolished-pipes/"],
     tags: ["Semiconductor Grade EP", "SEMI F19", "SEMI F20", "UHP Tubing", "VIM-VAR 316L", "India Semiconductor Mission"],
     keyTakeaways: [
       "Semiconductor grade means tubing and components that meet SEMI F20 material and SEMI F19 wetted-surface requirements, not just a low Ra.",
@@ -1151,7 +1151,7 @@ export const epBuyerGuidePosts = [
 </ul>
 
 <h2>8. Where to Start</h2>
-<p>If your project is in Gujarat, see our <a href="/blog/ep-grade-stainless-steel-pipes-manufacturer-gujarat/">Gujarat EP pipe sourcing guide</a>; for Bengaluru's electronics cluster, our <a href="/semiconductor-electropolished-pipes-bengaluru/">semiconductor EP pipes in Bengaluru</a> page. For background on SEMI F19 finishes, read <a href="/blog/semiconductor-uhp-tubing-semi-f19/">SEMI F19 electropolished tubing</a>. Send your gas list and specification through <a href="/request-a-quote/">request a quote</a>.</p>
+<p>If your project is in Gujarat, see our <a href="/blog/ep-grade-stainless-steel-pipes-manufacturer-gujarat/">Gujarat EP pipe sourcing guide</a>; for Bengaluru's electronics cluster, our <a href="/market-area/bengaluru/">EP pipe supply in Bengaluru</a> page. For background on SEMI F19 finishes, read <a href="/blog/semiconductor-uhp-tubing-semi-f19/">SEMI F19 electropolished tubing</a>. Send your gas list and specification through <a href="/request-a-quote/">request a quote</a>.</p>
 <p><strong>Related buyer guides:</strong> <a href="/blog/high-purity-ep-tubing-manufacturer-india/">high purity EP tubing tiers and supplier qualification</a>, <a href="/blog/cleanroom-stainless-steel-ep-tubing/">specifying cleanroom EP tubing</a>, <a href="/blog/ep-grade-stainless-steel-pipes-manufacturer-gujarat/">EP grade pipe specs for Gujarat clusters</a>.</p>
 `,
     faqs: [
@@ -1173,7 +1173,7 @@ export const epBuyerGuidePosts = [
     authorRole: "Procurement & Commercial Advisory",
     desc: "Sourcing electropolished pipes in Mumbai? How to tell manufacturers from traders, what to witness at the factory, delivery zones and an RFQ checklist.",
     image: "/electropolished-pipes.webp",
-    landingPages: ["/market-area/mumbai/", "/electropolished-pipes-in-mumbai/", "/market-area/thane/", "/market-area/navi-mumbai/"],
+    landingPages: ["/market-area/mumbai/", "/market-area/thane/", "/market-area/navi-mumbai/"],
     tags: ["EP Pipes Mumbai", "Electropolished Pipe Manufacturer Mumbai", "Taloja MIDC", "Factory Inspection", "Navi Mumbai", "Thane"],
     keyTakeaways: [
       "Mumbai has many EP pipe sellers but far fewer who electropolish in-house; ask where the EP line is and visit it before a large order.",
@@ -1246,7 +1246,7 @@ export const epBuyerGuidePosts = [
   <li>Inspection: witness points if you plan a factory visit.</li>
   <li>Delivery address (Mumbai, Thane, Navi Mumbai, etc.) and date.</li>
 </ul>
-<p>See our pages for <a href="/electropolished-pipes-in-mumbai/">electropolished pipes in Mumbai</a>, <a href="/ss-316l-electropolished-pipes-in-mumbai/">SS 316L EP pipes in Mumbai</a>, <a href="/market-area/thane/">Thane</a> and <a href="/market-area/navi-mumbai/">Navi Mumbai</a>, or read <a href="/about-sakshi-forge/">about Sakshi Forge</a>. Send your list through <a href="/request-a-quote/">request a quote</a>.</p>
+<p>See our supply pages for <a href="/market-area/thane/">Thane</a> and <a href="/market-area/navi-mumbai/">Navi Mumbai</a>, our <a href="/ss-316l-electropolished-pipes/">SS 316L electropolished pipes</a> range, or read <a href="/about-sakshi-forge/">about Sakshi Forge</a>. Send your list through <a href="/request-a-quote/">request a quote</a>.</p>
 <p><strong>Related buyer guides:</strong> <a href="/blog/ss-electropolished-tubes-supplier-pune/">EP tube specs for Pune industrial belts</a>, <a href="/blog/stainless-steel-electropolished-pipe-price-india-calculation/">calculating EP pipe cost per metre</a>, <a href="/blog/ss-316l-electropolished-pipes-manufacturer-guide/">how to verify an SS 316L EP pipe manufacturer</a>.</p>
 `,
     faqs: [
@@ -1268,7 +1268,7 @@ export const epBuyerGuidePosts = [
     authorRole: "Procurement & Commercial Advisory",
     desc: "Buying SS electropolished tubes in Pune? Specs for Hadapsar biotech, Chakan, Ranjangaon and Kurkumbh, delivery times and what a supplier must provide.",
     image: "/electropolish_pipes.webp",
-    landingPages: ["/market-area/pune/", "/electropolished-pipes-in-pune/"],
+    landingPages: ["/market-area/pune/"],
     tags: ["SS EP Tubes Pune", "Electropolished Tube Supplier Pune", "Pune MIDC", "Biotech Piping", "Dairy Piping", "316L EP Tube"],
     keyTakeaways: [
       "Pune's demand spans vaccines and biotech (Hadapsar–Manjri), food and FMCG (Chakan, Ranjangaon), dairy (wider Pune district) and chemicals (Kurkumbh).",
@@ -1298,7 +1298,7 @@ export const epBuyerGuidePosts = [
 </div>
 
 <h2>3. Biotech and Vaccine Plants: Extra Requirements</h2>
-<p>Biologics and vaccine facilities are among the most demanding EP tube buyers in India. Expect your QA team to require ASME BPE material and surface documentation, sulphur within 0.005–0.017% for orbital welding, lot-wise Ra reports, PMI and passivation records, all mapped to heat numbers. Specify these at RFQ stage; adding them after the PO is slower and more expensive. Our <a href="/pharmaceutical-electropolished-pipes-pune/">pharma EP pipes in Pune</a> page covers this segment.</p>
+<p>Biologics and vaccine facilities are among the most demanding EP tube buyers in India. Expect your QA team to require ASME BPE material and surface documentation, sulphur within 0.005–0.017% for orbital welding, lot-wise Ra reports, PMI and passivation records, all mapped to heat numbers. Specify these at RFQ stage; adding them after the PO is slower and more expensive. Our <a href="/industries/pharmaceutical-electropolished-pipes/">pharma EP pipe solutions</a> page covers this segment.</p>
 
 <div class="blog-mid-cta">
   <div class="blog-mid-cta-content">
@@ -1309,10 +1309,10 @@ export const epBuyerGuidePosts = [
 </div>
 
 <h2>4. Food, FMCG and Dairy Plants</h2>
-<p>For product transfer and CIP in food and FMCG, the main goals are cleanability and corrosion resistance against your product and cleaning chemicals. 304L EP tube works for most low-chloride products; choose 316L for acidic or salty products and hot chlorinated cleaning. For dairy, see our <a href="/dairy-electropolished-pipes-pune/">dairy EP pipes in Pune</a> page and the <a href="/blog/dairy-electropolished-pipe-supplier-guide/">dairy EP pipe supplier guide</a>.</p>
+<p>For product transfer and CIP in food and FMCG, the main goals are cleanability and corrosion resistance against your product and cleaning chemicals. 304L EP tube works for most low-chloride products; choose 316L for acidic or salty products and hot chlorinated cleaning. For dairy, see our <a href="/industries/dairy-electropolished-pipes/">dairy EP pipes</a> page and the <a href="/blog/dairy-electropolished-pipe-supplier-guide/">dairy EP pipe supplier guide</a>.</p>
 
 <h2>5. Equipment OEMs and Fabricators</h2>
-<p>Pune's skid and vessel builders need tube and fittings that fit together first time. Order tube, bends, tees, reducers and ferrules from one source in the same grade, OD tolerance and finish. We supply <a href="/electropolished-pipe-fittings-in-pune/">electropolished pipe fittings in Pune</a> alongside tube for exactly this reason.</p>
+<p>Pune's skid and vessel builders need tube and fittings that fit together first time. Order tube, bends, tees, reducers and ferrules from one source in the same grade, OD tolerance and finish. We supply <a href="/electropolished-pipe-fittings/">electropolished pipe fittings</a> alongside tube for exactly this reason.</p>
 
 <h2>6. Delivery to Pune</h2>
 <ul>
@@ -1331,7 +1331,7 @@ export const epBuyerGuidePosts = [
   <li>Matching fittings list, if any.</li>
   <li>Site location (Hadapsar, Chakan, Ranjangaon, etc.) and required date.</li>
 </ul>
-<p>Also see <a href="/electropolished-pipes-in-pune/">electropolished pipes in Pune</a> and <a href="/ss-316l-electropolished-pipes-in-pune/">SS 316L EP pipes in Pune</a>, then send your list through <a href="/request-a-quote/">request a quote</a>.</p>
+<p>Also see our <a href="/ss-316l-electropolished-pipes/">SS 316L EP pipe range</a>, then send your list through <a href="/request-a-quote/">request a quote</a>.</p>
 <p><strong>Related buyer guides:</strong> <a href="/blog/electropolished-pipes-manufacturer-mumbai-guide/">sourcing EP pipes from a Mumbai manufacturer</a>, <a href="/blog/electropolished-pipes-pharmaceutical-industry-specification/">system-wise EP pipe specs for pharma plants</a>, <a href="/blog/dairy-electropolished-pipe-supplier-guide/">choosing a dairy EP pipe supplier</a>.</p>
 `,
     faqs: [
@@ -1387,7 +1387,7 @@ export const epBuyerGuidePosts = [
 <p>Many of Gujarat's chemical estates sit close to the coast, and process waters and products often carry chlorides. In hot chloride service, 316L can suffer pitting and stress-corrosion cracking. Duplex 2205 (UNS S31803 / S32205) has higher pitting resistance and strength, and can be electropolished for sampling, high-purity and hygienic chemical lines. If your process has chlorides and temperatures above roughly 60 °C, ask for a duplex option alongside 316L. See our <a href="/duplex-2205-products/">duplex 2205 range</a>.</p>
 
 <h2>4. Pharma in Ahmedabad and Vadodara</h2>
-<p>Gujarat is one of India's largest pharma manufacturing states, with many USFDA- and WHO-GMP-inspected plants. Specify 316L to ASME BPE with sulphur control, lot-wise Ra reports, PMI and passivation certificates. Our <a href="/pharmaceutical-electropolished-pipes-ahmedabad/">pharma EP pipes in Ahmedabad</a> page and <a href="/blog/electropolished-pipes-pharmaceutical-industry-specification/">pharma EP pipe specification guide</a> go into detail.</p>
+<p>Gujarat is one of India's largest pharma manufacturing states, with many USFDA- and WHO-GMP-inspected plants. Specify 316L to ASME BPE with sulphur control, lot-wise Ra reports, PMI and passivation certificates. Our <a href="/industries/pharmaceutical-electropolished-pipes/">pharma EP pipe solutions</a> page and <a href="/blog/electropolished-pipes-pharmaceutical-industry-specification/">pharma EP pipe specification guide</a> go into detail.</p>
 
 <div class="blog-mid-cta">
   <div class="blog-mid-cta-content">
@@ -1398,7 +1398,7 @@ export const epBuyerGuidePosts = [
 </div>
 
 <h2>5. Dairy in Anand and Mehsana</h2>
-<p>Anand is India's dairy capital, and the Vitthal Udyognagar estate next to it builds much of the country's dairy equipment. Here the typical need is 304L and 316L sanitary EP tube with matching dairy fittings, in both inch (ASTM A270) and metric (DIN 11850) sizes. See <a href="/dairy-electropolished-pipes-anand/">dairy EP pipes in Anand</a>.</p>
+<p>Anand is India's dairy capital, and the Vitthal Udyognagar estate next to it builds much of the country's dairy equipment. Here the typical need is 304L and 316L sanitary EP tube with matching dairy fittings, in both inch (ASTM A270) and metric (DIN 11850) sizes. See our <a href="/industries/dairy-electropolished-pipes/">dairy EP pipe range</a>.</p>
 
 <h2>6. Electronics and Semiconductor in Sanand and Dholera</h2>
 <p>Semiconductor assembly and fabrication projects in Sanand and Dholera need ultra-high purity tube to SEMI F19/F20, with surface analysis and cleanroom packing. Read our <a href="/blog/semiconductor-grade-electropolished-stainless-steel-pipes/">semiconductor grade EP pipes guide</a> before you issue an RFQ.</p>
@@ -1435,7 +1435,7 @@ export const epBuyerGuidePosts = [
     id: "industrial-electropolished-tubing-suppliers-chennai",
     slug: "industrial-electropolished-tubing-suppliers-chennai",
     seoTitle: "Industrial EP Tubing Suppliers in Chennai",
-    title: "Industrial Electropolished Tubing Suppliers in Chennai: Specs for Pharma, Electronics and Coastal Chemical Plants",
+    title: "Industrial Electropolished Tubing Suppliers in Chennai: Specs for Pharma, Electronics and Coastal Plants",
     category: "Manufacturing & Sourcing",
     date: "October 29, 2026",
     readTime: "4 min read",
@@ -1443,7 +1443,7 @@ export const epBuyerGuidePosts = [
     authorRole: "Procurement & Commercial Advisory",
     desc: "Choosing industrial EP tubing suppliers in Chennai: specs for Sriperumbudur electronics, pharma estates and Manali chemicals, coastal grade advice, delivery.",
     image: "/electropolish_pipes.webp",
-    landingPages: ["/market-area/chennai/", "/electropolished-pipes-in-chennai/", "/tamil-nadu/"],
+    landingPages: ["/market-area/chennai/", "/tamil-nadu/"],
     tags: ["EP Tubing Chennai", "Electropolished Tube Supplier Chennai", "Sriperumbudur", "Manali", "Coastal Corrosion", "Tamil Nadu"],
     keyTakeaways: [
       "Chennai's EP tubing demand comes from pharma and biotech estates, electronics around Sriperumbudur and Oragadam, food plants, and the Manali–Ennore chemical belt.",
@@ -1507,7 +1507,7 @@ export const epBuyerGuidePosts = [
   <li>Documents: MTC 3.1, Ra report, PMI, passivation.</li>
   <li>Site location and required date.</li>
 </ul>
-<p>See also <a href="/electropolished-pipes-in-chennai/">electropolished pipes in Chennai</a>, and send your list through <a href="/request-a-quote/">request a quote</a>.</p>
+<p>Send your list through <a href="/request-a-quote/">request a quote</a>.</p>
 <p><strong>Related buyer guides:</strong> <a href="/blog/ss-electropolished-tubes-supplier-pune/">EP tube specs for Pune industrial belts</a>, <a href="/blog/cleanroom-stainless-steel-ep-tubing/">specifying cleanroom EP tubing</a>, <a href="/blog/bright-annealed-vs-electropolished-tubes/">bright annealed vs electropolished tubes</a>.</p>
 `,
     faqs: [

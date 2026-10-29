@@ -86,7 +86,7 @@ export const tamilNaduCityData = {
         }
       ],
       btnText: "View All Electropolished Pipes →",
-      btnLink: "/electropolished-pipes"
+      btnLink: "/electropolished-pipes/"
     },
     localReality: {
       title: "What Chennai-Region Process Lines Actually Deal With",
@@ -275,7 +275,7 @@ export const tamilNaduCityData = {
         }
       ],
       btnText: "View All Electropolished Pipes →",
-      btnLink: "/electropolished-pipes"
+      btnLink: "/electropolished-pipes/"
     },
     localReality: {
       title: "What Coimbatore Manufacturers Actually Deal With",
@@ -441,7 +441,7 @@ export const tamilNaduCityData = {
         { heading: "Fittings", text: "Elbows (45°, 90°, 180°) to match your pipe." }
       ],
       btnText: "View All Electropolished Pipes →",
-      btnLink: "/electropolished-pipes"
+      btnLink: "/electropolished-pipes/"
     },
     localReality: {
       title: "What Hosur Plants Actually Deal With",
@@ -593,7 +593,7 @@ export const tamilNaduCityData = {
         { heading: "Electropolished Fittings", text: "Elbows (45°, 90°, 180°)." }
       ],
       btnText: "View All Electropolished Pipes →",
-      btnLink: "/electropolished-pipes"
+      btnLink: "/electropolished-pipes/"
     },
     localReality: {
       title: "What Cuddalore Plants Actually Deal With",
@@ -746,7 +746,7 @@ export const tamilNaduCityData = {
         { heading: "Fittings and Custom Components", text: "Elbows (45°, 90°, 180°) and made-to-drawing parts." }
       ],
       btnText: "View All Electropolished Pipes →",
-      btnLink: "/electropolished-pipes"
+      btnLink: "/electropolished-pipes/"
     },
     localReality: {
       title: "What Trichy Fabricators and Plants Actually Deal With",
@@ -899,7 +899,7 @@ export const tamilNaduCityData = {
         { heading: "Fittings", text: "Elbows (45°, 90°, 180°)." }
       ],
       btnText: "View All Electropolished Pipes →",
-      btnLink: "/electropolished-pipes"
+      btnLink: "/electropolished-pipes/"
     },
     localReality: {
       title: "What Salem Plants Actually Deal With",
@@ -1052,7 +1052,7 @@ export const tamilNaduCityData = {
         { heading: "Fittings", text: "Elbows (45°, 90°, 180°)." }
       ],
       btnText: "View All Electropolished Pipes →",
-      btnLink: "/electropolished-pipes"
+      btnLink: "/electropolished-pipes/"
     },
     localReality: {
       title: "What Madurai-Region Plants Actually Deal With",
@@ -1205,7 +1205,7 @@ export const tamilNaduCityData = {
         { heading: "Electropolished Fittings", text: "Elbows (45°, 90°, 180°)." }
       ],
       btnText: "View All Electropolished Pipes →",
-      btnLink: "/electropolished-pipes"
+      btnLink: "/electropolished-pipes/"
     },
     localReality: {
       title: "What Thoothukudi Plants Actually Deal With",
@@ -1357,7 +1357,7 @@ export const tamilNaduCityData = {
         { heading: "Fittings", text: "Elbows (45°, 90°, 180°), tees and reducers finished to match your pipe." }
       ],
       btnText: "View All Electropolished Pipes →",
-      btnLink: "/electropolished-pipes"
+      btnLink: "/electropolished-pipes/"
     },
     localReality: {
       title: "What Erode and Perundurai Plants Actually Deal With",
@@ -1514,7 +1514,7 @@ export const tamilNaduCityData = {
         { heading: "Fittings", text: "Elbows (45°, 90°, 180°) and sanitary fittings." }
       ],
       btnText: "View All Electropolished Pipes →",
-      btnLink: "/electropolished-pipes"
+      btnLink: "/electropolished-pipes/"
     },
     localReality: {
       title: "What Vellore and Ranipet Plants Actually Deal With",

@@ -4,6 +4,8 @@ import productsData from '../data/products.json';
 import { handleLinkClick, withSlash } from '../utils/router';
 import { getParentCategoryName } from '../utils/categories';
 import { PRIORITY_30_CITIES } from '../data/priorityCities';
+import { CATEGORY_GUIDES } from '../data/categoryGuides.js';
+import CategoryGuide from './CategoryGuide';
 
 export default function CategoryPage({ category, onEnquireClick }) {
   // Filter products that belong to this category
@@ -221,6 +223,8 @@ export default function CategoryPage({ category, onEnquireClick }) {
           )}
         </div>
       </section>
+
+      {CATEGORY_GUIDES[category['Category Slug']] && <CategoryGuide guide={CATEGORY_GUIDES[category['Category Slug']]} />}
 
       {/* 2.5 Dedicated Forged Fittings Technical Guide & Pressure Classes (Increases Content Depth for /forged-fittings/) */}
       {category['Category Slug'] === 'forged-fittings' && (

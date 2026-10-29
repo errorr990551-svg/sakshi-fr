@@ -5,6 +5,7 @@ import { REDIRECTED_PATHS, isRedirectedPath } from './src/data/redirects.js';
 import { buildCityFaqs } from './src/data/cityContent.js';
 import { customCityData } from './src/data/customCityData.js';
 import { visibleProductFaqs } from './src/utils/productFaqs.js';
+import { CATEGORY_GUIDES } from './src/data/categoryGuides.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -451,6 +452,13 @@ async function runPrerender() {
       };
       schemasGraph.push(breadcrumbs);
       schemasGraph.push(collectionPage);
+      const guide = CATEGORY_GUIDES[route.data['Category Slug']];
+      if (guide) {
+        schemasGraph.push({
+          "@type": "FAQPage",
+          "mainEntity": guide.faqs.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } }))
+        });
+      }
     }
 
     if (route.type === 'product') {

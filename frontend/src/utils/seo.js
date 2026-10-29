@@ -5,6 +5,7 @@ import corePagesData from '../data/core_pages.json';
 import { customCityData } from '../data/customCityData';
 import { withSlash } from './router';
 import { visibleProductFaqs } from './productFaqs';
+import { CATEGORY_GUIDES } from '../data/categoryGuides.js';
 
 const BASE_URL = "https://steelmanufacturer.in";
 
@@ -597,6 +598,13 @@ function formatMetaDesc(desc) {
 
     graph.push(breadcrumbs);
     graph.push(collectionPage);
+    const guide = CATEGORY_GUIDES[data["Category Slug"]];
+      if (guide) {
+        graph.push({
+          "@type": "FAQPage",
+          "mainEntity": guide.faqs.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } }))
+        });
+      }
   }
 
   // C. Product specific schemas (Breadcrumbs + Product + FAQPage)

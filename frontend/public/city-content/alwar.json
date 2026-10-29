@@ -3,10 +3,10 @@
   "updated": "2026-10-25",
   "sections": [
     {
-      "heading": "Electropolished Tube Buyers in Alwar: Dairy, Food Parks and NH-48 Industry",
+      "heading": "Electropolished Tube Buyers in Alwar: Dairy, Food Parks and Highway Industry",
       "paragraphs": [
-        "Alwar district's industry grew along the Delhi–Jaipur highway, where RIICO developed estates from the 2000s onward, including the Neemrana zone set aside for Japanese companies. The Ministry of MSME's district profile lists an automobile component cluster among Alwar's established clusters. That engineering base matters for us mainly through the fabricators and OEMs who build process equipment for food and dairy customers.",
-        "For hygienic tube specifically, Alwar's growth story is dairy. Union Home and Cooperation Minister Amit Shah laid the foundation stone of a new Alwar Saras dairy plant reported at Rs 200 crore, with a planned capacity of 3 lakh litres per day expandable to 5 lakh. The district milk union has also been reported at about 1.5 lakh litres a day of milk collection. RIICO has run an agro food park in Alwar since 2006-07."
+        "Northern Alwar is about two hours from Delhi along the old National Highway 8 (now NH-48), and the Rajasthan government accelerated industrial estate development along that highway from the 2000s, including the Neemrana estate dedicated to Japanese companies. That engineering base matters for us mainly through the fabricators and OEMs who build process equipment for food and dairy customers.",
+        "For hygienic tube specifically, Alwar's growth story is dairy. Union Home and Cooperation Minister Amit Shah performed the bhoomi pujan for a 3 lakh-litre-a-day milk processing plant in Alwar and said its capacity would soon be increased to 5 lakh litres. The district's milk union, the Alwar Dugdh Sangh, has grown from 500 litres to about 1.5 lakh litres a day of milk collection over 50 years. On the food side, RIICO has operated an agro food park in Alwar district since 2006-07, according to the state's agriculture marketing minister."
       ]
     },
     {
@@ -33,7 +33,10 @@
         "Documents for handover: EN 10204 3.1 certificate per heat, PMI record for every length, and Ra report for each electropolished lot."
       ],
       "links": [
-        { "label": "Send your Alwar RFQ", "href": "/contact/" }
+        {
+          "label": "Send your Alwar RFQ",
+          "href": "/contact/"
+        }
       ]
     },
     {
@@ -43,17 +46,37 @@
         "Nearby clusters:"
       ],
       "links": [
-        { "label": "Bhiwadi", "href": "/market-area/bhiwadi/" },
-        { "label": "Jaipur", "href": "/market-area/jaipur/" },
-        { "label": "Gurugram", "href": "/market-area/gurugram/" }
+        {
+          "label": "Bhiwadi",
+          "href": "/market-area/bhiwadi/"
+        },
+        {
+          "label": "Jaipur",
+          "href": "/market-area/jaipur/"
+        },
+        {
+          "label": "Gurugram",
+          "href": "/market-area/gurugram/"
+        }
       ]
     }
   ],
   "sources": [
-    { "title": "AgroSpectrum: Amit Shah lays foundation stone of new dairy plants and cattle feed plants at Alwar", "url": "https://agrospectrumindia.com/news/62/34628/amit-shah-lays-the-foundation-stone-of-new-dairy-plants-and-cattle-feed-plants-at-alwar-.html" },
-    { "title": "Rasonly: White Revolution 2.0 programme in Alwar", "url": "https://rasonly.com/current-affairs/white-revolution-phase-ii-launched-in-alwar-700-new-dairies-rs175-cr-investment-and-empowered-livelihoods" },
-    { "title": "DC-MSME: Brief industrial profile of Alwar district", "url": "https://dcmsme.gov.in/old/dips/DIPR_Alwar.pdf" },
-    { "title": "Drishti IAS: Rajasthan – Alwar agro food park", "url": "https://www.drishtiias.com/statepcs/24-09-2022/rajasthan" },
-    { "title": "Hiroshima University: Industrial development in Alwar and the Japanese industrial park", "url": "https://ir.lib.hiroshima-u.ac.jp/00041508" }
+    {
+      "title": "AgroSpectrum: Amit Shah lays foundation stone of new dairy plants and cattle feed plants at Alwar",
+      "url": "https://agrospectrumindia.com/news/62/34628/amit-shah-lays-the-foundation-stone-of-new-dairy-plants-and-cattle-feed-plants-at-alwar-.html"
+    },
+    {
+      "title": "Rasonly: White Revolution 2.0 programme in Alwar",
+      "url": "https://rasonly.com/current-affairs/white-revolution-phase-ii-launched-in-alwar-700-new-dairies-rs175-cr-investment-and-empowered-livelihoods"
+    },
+    {
+      "title": "Drishti IAS: Rajasthan – Alwar agro food park",
+      "url": "https://www.drishtiias.com/statepcs/24-09-2022/rajasthan"
+    },
+    {
+      "title": "Hiroshima University: Industrial development in Alwar and the Japanese industrial park",
+      "url": "https://ir.lib.hiroshima-u.ac.jp/00041508"
+    }
   ]
 }

@@ -5,8 +5,8 @@
     {
       "heading": "Electropolished Pipes and Tubes for Agra's Food and Sweet Makers",
       "paragraphs": [
-        "Agra's industrial base runs through the Sikandra Industrial Area and UPSIDA's Runakta estate, with leather, engineering and food processing the main trades. The city sits inside the Taj Trapezium Zone, where pollution rules restrict fuels and industrial expansion; petha makers, for example, depend almost entirely on commercial LPG for cooking because coal and wood firing are not allowed. Any new process line in Agra is therefore built to tighter environmental expectations than in most Uttar Pradesh cities.",
-        "Agra petha is the district's registered One District One Product. A 2021 survey by the Centre for Science and Environment counted about 130 petha units in the city, down from more than 700 before 2013. The units that remain and grow are the ones modernising: moving from open kettles to closed syrup preparation, piped transfer and filling."
+        "Agra's industrial base runs through the Sikandra Industrial Area and UPSIDA's Runakta estate, with leather, engineering and food processing the main trades. The whole district sits inside the Taj Trapezium Zone, a 10,400 sq km protected area notified in 1996 after the Supreme Court's ruling in M. C. Mehta v. Union of India. The court banned coke and coal for industries in the zone and placed industry under regulatory oversight, so every new process line in Agra is planned around cleaner fuels and tighter pollution control than in most Uttar Pradesh cities.",
+        "Within food processing, Agra is best known for petha, the candied ash-gourd sweet, alongside dairy-based sweets and namkeen. The units that grow are the ones modernising: moving from open kettles to closed syrup preparation, piped transfer and hygienic filling, and that is the point at which the choice of tube starts to matter."
       ]
     },
     {
@@ -19,7 +19,7 @@
     {
       "heading": "New Capacity: The Agra Integrated Manufacturing Cluster",
       "paragraphs": [
-        "UPSIDA and the National Industrial Corridor Development Corporation are jointly developing an Integrated Manufacturing Cluster in Agra of about 1,058 acres, with projected investment reported at over Rs 3,400 crore. UPSIDA lists agri-based processing and dairy among its focus sectors. Food and beverage plants that set up there will be designed to FSSAI licensing and, for product-contact piping, to 3-A Sanitary Standards or ASME BPE practice."
+        "UPSIDA and the National Industrial Corridor Development Corporation are developing an Integrated Manufacturing Cluster in Agra on about 1,058 acres along the city's Inner Ring Road, with projected investment of over Rs 3,400 crore, as part of the Amritsar–Kolkata Industrial Corridor. Food and beverage plants that set up there will be designed to FSSAI licensing and, for product-contact piping, to 3-A Sanitary Standards or ASME BPE practice. Because they are new builds, they can specify hygienic tube correctly from the start instead of retrofitting it later."
       ]
     },
     {
@@ -33,7 +33,10 @@
         "Documents your FSSAI auditor or customer expects: we supply an EN 10204 3.1 certificate traced to heat number, PMI records and an Ra report for every electropolished lot."
       ],
       "links": [
-        { "label": "Request a quotation", "href": "/contact/" }
+        {
+          "label": "Request a quotation",
+          "href": "/contact/"
+        }
       ]
     },
     {
@@ -43,17 +46,33 @@
         "Other Uttar Pradesh and NCR clusters we supply:"
       ],
       "links": [
-        { "label": "Noida", "href": "/market-area/noida/" },
-        { "label": "Greater Noida", "href": "/market-area/greater-noida/" },
-        { "label": "Ghaziabad", "href": "/market-area/ghaziabad/" },
-        { "label": "Kanpur", "href": "/market-area/kanpur/" }
+        {
+          "label": "Noida",
+          "href": "/market-area/noida/"
+        },
+        {
+          "label": "Greater Noida",
+          "href": "/market-area/greater-noida/"
+        },
+        {
+          "label": "Ghaziabad",
+          "href": "/market-area/ghaziabad/"
+        },
+        {
+          "label": "Kanpur",
+          "href": "/market-area/kanpur/"
+        }
       ]
     }
   ],
   "sources": [
-    { "title": "Down To Earth (CSE): Bitter sweet – Agra's petha industry", "url": "https://react.magzter.com/stories/Science/Down-To-Earth/Bitter-sweet" },
-    { "title": "Agro & Food Processing: LPG supply disruption hits Agra's petha industry", "url": "https://agronfoodprocessing.com/lpg-supply-disruption-hits-agras-famous-petha-industry-units-halt-production-amid-crisis/" },
-    { "title": "UPSIDA investor guide", "url": "https://www.onlineupsida.com/pdf/investorguide.pdf" },
-    { "title": "InstaFinancials: NICDC and UPSIDA join forces for Agra and Prayagraj clusters", "url": "https://blog.instafinancials.com/2024/11/09/empowering-industries-nicdc-and-upsida-join-forces-for-growth-in-agra-and-prayagraj/" }
+    {
+      "title": "Wikipedia: Taj Trapezium Zone",
+      "url": "https://en.wikipedia.org/wiki/Taj_Trapezium_Zone"
+    },
+    {
+      "title": "InstaFinancials: NICDC and UPSIDA join forces for growth in Agra and Prayagraj",
+      "url": "https://blog.instafinancials.com/2024/11/09/empowering-industries-nicdc-and-upsida-join-forces-for-growth-in-agra-and-prayagraj/"
+    }
   ]
 }

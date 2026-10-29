@@ -3,7 +3,10 @@
  * Curated technical articles, metallurgical guides, dimension tables, and engineering specifications.
  */
 
+import { epBuyerGuidePosts } from './blogPostsEPBuyerGuides.js';
+
 export const blogPosts = [
+  ...epBuyerGuidePosts,
     {
     id: "ep-pipes-pharma-biotech-india",
     slug: "ep-pipes-pharma-biotech-india",
@@ -15,7 +18,7 @@ export const blogPosts = [
     author: "Sakshi Metallurgical & EP Technical Team",
     authorRole: "High-Purity Process Division",
     desc: "Indian pharma and biotech plants are moving to EP pipes for cleaner, corrosion-resistant process lines. See the reasons, standards and what to specify.",
-    image: "",
+    image: "/pharmaceutical-biotechnology.webp",
     tags: [
       "EP Pipes",
       "Pharma Piping",
@@ -77,6 +80,7 @@ export const blogPosts = [
   <li><strong>Documents:</strong> MTC per EN 10204 3.1, Ra test report, passivation certificate, and heat-lot traceability.</li>
   <li><strong>Packing:</strong> End-capped, clean-wrapped, and protected against contact with carbon steel.</li>
 </ul>
+<p><strong>Buyer guides:</strong> <a href="/blog/electropolished-pipes-pharmaceutical-industry-specification/">system-wise EP pipe specs for pharma plants</a>, <a href="/blog/high-purity-ep-tubing-manufacturer-india/">high purity EP tubing tiers and supplier qualification</a>, <a href="/blog/ss-316l-electropolished-pipes-manufacturer-guide/">how to verify an SS 316L EP pipe manufacturer</a>.</p>
 `,
     faqs: [
       {
@@ -108,7 +112,7 @@ export const blogPosts = [
     author: "Sakshi Surface Engineering Team",
     authorRole: "Surface Engineering Division",
     desc: "Compare electropolished and mechanically polished stainless steel pipes on finish, corrosion resistance, cleanability and cost. Know which to order.",
-    image: "",
+    image: "/electropolish_pipes.webp",
     tags: [
       "Electropolishing",
       "Mechanical Polishing",
@@ -237,6 +241,7 @@ export const blogPosts = [
   <li><strong>What does a failure cost?</strong> If one contaminated batch or one shutdown costs more than the price difference, choose EP.</li>
 </ol>
 <p>For a non-critical line where none of these apply, MP is a sensible, economical choice. Match the finish to the duty, not to a habit.</p>
+<p><strong>Buyer guides:</strong> <a href="/blog/bright-annealed-vs-electropolished-tubes/">bright annealed vs electropolished tubes</a>, <a href="/blog/astm-a270-sanitary-electropolished-tubing-guide/">writing an ASTM A270 EP tubing purchase order</a>, <a href="/blog/cleanroom-stainless-steel-ep-tubing/">specifying cleanroom EP tubing</a>.</p>
 `,
     faqs: [
       {
@@ -268,7 +273,7 @@ export const blogPosts = [
     author: "Sakshi Sanitary Applications Team",
     authorRole: "Hygienic Process Division",
     desc: "Why Indian dairy, beverage and food processors choose electropolished pipes: easier cleaning, less contamination risk and support for FSSAI and export audits.",
-    image: "",
+    image: "/food-dairy-beverage.webp",
     tags: [
       "Dairy Piping",
       "Food Processing",
@@ -334,6 +339,7 @@ export const blogPosts = [
   <li><strong>Layout:</strong> Slope for drainage and avoid dead legs.</li>
   <li><strong>Documents:</strong> MTC, finish report and, where needed, passivation certificate.</li>
 </ul>
+<p><strong>Buyer guides:</strong> <a href="/blog/dairy-electropolished-pipe-supplier-guide/">choosing a dairy EP pipe supplier</a>, <a href="/blog/food-grade-stainless-steel-electropolished-tubes/">what makes EP tube food grade</a>, <a href="/blog/ss-304l-electropolished-tubing-guide/">where SS 304L EP tubing is the right buy</a>.</p>
 `,
     faqs: [
       {
@@ -365,7 +371,7 @@ export const blogPosts = [
     author: "Sakshi Commercial & Technical Estimations",
     authorRole: "Procurement & Commercial Advisory",
     desc: "What decides EP pipe price in India: grade, size, Ra finish, standards and testing. Learn how to compare quotes fairly and avoid hidden costs.",
-    image: "",
+    image: "/electropolished-pipes.webp",
     tags: [
       "EP Pipe Price",
       "Stainless Steel Rates",
@@ -449,6 +455,7 @@ export const blogPosts = [
   <li>Quote validity and delivery time</li>
 </ul>
 <p>If one supplier is much cheaper than the rest, look for the missing line. Usually it is the finish, the grade, the documents or the inspection.</p>
+<p><strong>Buyer guides:</strong> <a href="/blog/stainless-steel-electropolished-pipe-price-india-calculation/">calculating EP pipe cost per metre</a>, <a href="/blog/ss-316l-electropolished-pipes-manufacturer-guide/">how to verify an SS 316L EP pipe manufacturer</a>, <a href="/blog/ss-304l-electropolished-tubing-guide/">where SS 304L EP tubing is the right buy</a>.</p>
 `,
     faqs: [
       {
@@ -480,7 +487,7 @@ export const blogPosts = [
     author: "Sakshi Sourcing & Engineering Team",
     authorRole: "Supply Chain Strategy Division",
     desc: "Compare locally made and imported EP pipes on cost, lead time, customisation, support and compliance. See why Indian buyers prefer domestic manufacturers.",
-    image: "",
+    image: "/electropolish_pipes.webp",
     tags: [
       "Domestic vs Imported",
       "Indian EP Pipes",
@@ -542,6 +549,7 @@ export const blogPosts = [
   <li><strong>Packing and traceability:</strong> Confirm end capping, clean wrapping and marking on each pipe.</li>
   <li><strong>Trial order:</strong> Start with a sample or small lot and inspect it before scaling.</li>
 </ul>
+<p><strong>Buyer guides:</strong> <a href="/blog/electropolished-pipes-manufacturer-mumbai-guide/">sourcing EP pipes from a Mumbai manufacturer</a>, <a href="/blog/ep-grade-stainless-steel-pipes-manufacturer-gujarat/">EP grade pipe specs for Gujarat clusters</a>, <a href="/blog/high-purity-ep-tubing-manufacturer-india/">high purity EP tubing tiers and supplier qualification</a>.</p>
 `,
     faqs: [
       {
@@ -573,7 +581,7 @@ export const blogPosts = [
     author: "Sakshi Quality Audit & Compliance Team",
     authorRole: "Quality Assurance Division",
     desc: "Choosing an EP pipe manufacturer in India? Use this 10-point checklist covering in-house EP, Ra reports, MTCs, testing, references and red flags.",
-    image: "",
+    image: "/electropolished-pipes.webp",
     tags: [
       "EP Pipe Manufacturer India",
       "Supplier Vetting",
@@ -638,6 +646,7 @@ export const blogPosts = [
   <li>Vague answers about who does the electropolishing</li>
 </ul>
 <p>One red flag doesn't mean walk away, but several together mean you should look elsewhere.</p>
+<p><strong>Buyer guides:</strong> <a href="/blog/ss-316l-electropolished-pipes-manufacturer-guide/">how to verify an SS 316L EP pipe manufacturer</a>, <a href="/blog/high-purity-ep-tubing-manufacturer-india/">high purity EP tubing tiers and supplier qualification</a>, <a href="/blog/ss-electropolished-tubes-supplier-pune/">EP tube specs for Pune industrial belts</a>.</p>
 `,
     faqs: [
       {
@@ -669,7 +678,7 @@ export const blogPosts = [
     author: "Sakshi Metallurgical Research Division",
     authorRole: "Alloy & Metallurgy Division",
     desc: "304 vs 316L electropolished pipes: compare composition, corrosion resistance, cost and best uses in Indian pharma, food, dairy and chemical plants.",
-    image: "",
+    image: "/electropolish_pipes.webp",
     tags: [
       "304 vs 316L",
       "Molybdenum Content",
@@ -788,6 +797,7 @@ export const blogPosts = [
   <li><strong>Is the service mild, and is the budget tight?</strong> 304L EP may be enough.</li>
 </ol>
 <p>Whichever you choose, specify the grade and standard (for example ASTM A270 316L), request the MTC and confirm the actual composition on the certificate.</p>
+<p><strong>Buyer guides:</strong> <a href="/blog/ss-304l-electropolished-tubing-guide/">where SS 304L EP tubing is the right buy</a>, <a href="/blog/ss-316l-electropolished-pipes-manufacturer-guide/">how to verify an SS 316L EP pipe manufacturer</a>, <a href="/blog/industrial-electropolished-tubing-suppliers-chennai/">EP tubing for Chennai plants</a>.</p>
 `,
     faqs: [
       {
@@ -819,7 +829,7 @@ export const blogPosts = [
     author: "Sakshi Metrology & Surface Engineering Lab",
     authorRole: "Surface Metrology Division",
     desc: "What is Ra value on EP pipes? Learn µm vs µin, common Ra limits (0.38, 0.5, 0.8 µm), how Ra is measured and what to specify for pharma and food.",
-    image: "",
+    image: "/electropolished-pipes.webp",
     tags: [
       "Ra Value",
       "Surface Roughness",
@@ -923,6 +933,7 @@ export const blogPosts = [
   <li><strong>Acceptance:</strong> What happens if a pipe exceeds the limit</li>
 </ul>
 <p>Avoid vague terms like "mirror finish", "bright finish" or "pharma finish" without numbers.</p>
+<p><strong>Buyer guides:</strong> <a href="/blog/astm-a270-sanitary-electropolished-tubing-guide/">writing an ASTM A270 EP tubing purchase order</a>, <a href="/blog/bright-annealed-vs-electropolished-tubes/">bright annealed vs electropolished tubes</a>, <a href="/blog/semiconductor-grade-electropolished-stainless-steel-pipes/">semiconductor grade EP pipe to SEMI F19/F20</a>.</p>
 `,
     faqs: [
       {
@@ -954,7 +965,7 @@ export const blogPosts = [
     author: "Sakshi Regulatory & Validation Team",
     authorRole: "Regulatory Affairs & Validation",
     desc: "How export-oriented Indian plants should specify EP pipes for USFDA, EU-GMP, WHO-GMP and ASME BPE audits: grade, finish, documents and traceability.",
-    image: "",
+    image: "/pharmaceutical-biotechnology.webp",
     tags: [
       "Export Pharma",
       "USFDA 21 CFR",
@@ -1032,6 +1043,7 @@ export const blogPosts = [
   <li>Assuming a customer's approved vendor list includes your chosen pipe supplier</li>
 </ul>
 <p>Fixing these during an audit is costly. Fixing them in the purchase order is cheap.</p>
+<p><strong>Buyer guides:</strong> <a href="/blog/electropolished-pipes-pharmaceutical-industry-specification/">system-wise EP pipe specs for pharma plants</a>, <a href="/blog/semiconductor-grade-electropolished-stainless-steel-pipes/">semiconductor grade EP pipe to SEMI F19/F20</a>, <a href="/blog/seamless-electropolished-stainless-steel-pipe-supplier/">when seamless EP pipe is worth the premium</a>.</p>
 `,
     faqs: [
       {
@@ -1063,7 +1075,7 @@ export const blogPosts = [
     author: "Sakshi Procurement & Engineering Advisory",
     authorRole: "Procurement Advisory Division",
     desc: "Avoid costly errors when buying EP pipes in India: missing Ra specs, wrong grade, poor documents, bad packing and skipped inspection. Fixes included.",
-    image: "",
+    image: "/electropolish_pipes.webp",
     tags: [
       "Buying Mistakes",
       "Procurement Guide",
@@ -1145,6 +1157,7 @@ Problems found after installation are expensive to fix.<br />
   <li>Delivery terms, quote validity and acceptance criteria</li>
 </ul>
 <p>If any line is blank, the supplier will decide for you.</p>
+<p><strong>Buyer guides:</strong> <a href="/blog/stainless-steel-electropolished-pipe-price-india-calculation/">calculating EP pipe cost per metre</a>, <a href="/blog/seamless-electropolished-stainless-steel-pipe-supplier/">when seamless EP pipe is worth the premium</a>, <a href="/blog/instrumentation-tubing-electropolished-finish/">instrumentation tubing with an EP finish</a>.</p>
 `,
     faqs: [
       {
@@ -1203,8 +1216,8 @@ Problems found after installation are expensive to fix.<br />
 <h2>3. Surface Finish Classification (ASME BPE Standards)</h2>
 <p>The table below summarizes surface finish designations established by ASME BPE (Bioprocessing Equipment) for electropolished stainless steel tubing (ASTM A270 / ASTM A312):</p>
 
-<div className="table-responsive">
-  <table className="tech-table">
+<div class="table-responsive">
+  <table class="tech-table">
     <thead>
       <tr>
         <th>ASME BPE Designation</th>
@@ -1250,8 +1263,8 @@ Problems found after installation are expensive to fix.<br />
 
 <h2>4. Electropolishing vs Mechanical Polishing: Comparison Matrix</h2>
 
-<div className="table-responsive">
-  <table className="tech-table">
+<div class="table-responsive">
+  <table class="tech-table">
     <thead>
       <tr>
         <th>Property / Parameter</th>
@@ -1297,6 +1310,7 @@ Problems found after installation are expensive to fix.<br />
   <li><strong>Ferroxyl Test & Salt Spray (ASTM B117):</strong> 100-hour exposure test ensuring zero free iron contamination or pinhole pitting.</li>
   <li><strong>Borescope ID Inspection:</strong> Optical video borescope audit across 100% of pipe interior lengths to ensure no chemical stains, pitting, or uneven oxidation.</li>
 </ol>
+<p><strong>Buyer guides:</strong> <a href="/blog/seamless-electropolished-stainless-steel-pipe-supplier/">when seamless EP pipe is worth the premium</a>, <a href="/blog/cleanroom-stainless-steel-ep-tubing/">specifying cleanroom EP tubing</a>, <a href="/blog/instrumentation-tubing-electropolished-finish/">instrumentation tubing with an EP finish</a>.</p>
 `,
     faqs: [
       {
@@ -1351,8 +1365,8 @@ Problems found after installation are expensive to fix.<br />
 <h2>3. ASME B16.5 Class 150 Flange Dimension Reference Table (NPS 1 to NPS 8)</h2>
 <p>Below are key nominal dimensions for ASME B16.5 Class 150 Weld Neck (WN) and Slip-On (SO) flanges manufactured by Sakshi Forge:</p>
 
-<div className="table-responsive">
-  <table className="tech-table">
+<div class="table-responsive">
+  <table class="tech-table">
     <thead>
       <tr>
         <th>NPS (Inches)</th>
@@ -1435,8 +1449,8 @@ Problems found after installation are expensive to fix.<br />
 <h2>4. Maximum Allowable Working Pressure (MAWP) vs Temperature</h2>
 <p>For ASTM A182 F316L (Group 2.2), maximum working pressure drops as temperature increases:</p>
 
-<div className="table-responsive">
-  <table className="tech-table">
+<div class="table-responsive">
+  <table class="tech-table">
     <thead>
       <tr>
         <th>Temperature (°C / °F)</th>
@@ -1513,7 +1527,7 @@ Problems found after installation are expensive to fix.<br />
     readTime: "6 min read",
     author: "Sakshi Quality Assurance Desk",
     authorRole: "Piping Systems Analysis Group",
-    desc: "A technical analysis of nominal pipe size (NPS), wall thickness tolerances under ASTM A312 / ASME B36.10M / B36.19M, and internal pressure carrying capacity calculations using Barlow's Formula.",
+    desc: "Pipe schedules explained: STD vs XS vs XXS wall thickness under ASME B36.10M/B36.19M, ASTM A312 tolerances and Barlow's formula pressure checks.",
     image: "/hero_forge.webp",
     tags: ["Pipe Schedules", "ASME B36.10M", "Barlow Formula", "Schedule 40", "Schedule 80", "ASTM A312"],
     keyTakeaways: [
@@ -1533,8 +1547,8 @@ Problems found after installation are expensive to fix.<br />
 
 <h2>2. Dimension Comparison Matrix: NPS 1" to NPS 10" Pipes</h2>
 
-<div className="table-responsive">
-  <table className="tech-table">
+<div class="table-responsive">
+  <table class="tech-table">
     <thead>
       <tr>
         <th>NPS (Inches)</th>
@@ -1644,7 +1658,7 @@ Problems found after installation are expensive to fix.<br />
     author: "Chief Metallurgist, Sakshi Forge",
     authorRole: "Metallurgy & R&D Laboratory",
     desc: "Analyze chemical compositions, PREN (Pitting Resistance Equivalence Number), intergranular corrosion testing under ASTM A262, and cost-benefit trade-offs for chemical processing, marine, and offshore applications.",
-    image: "/316L Stainless Steel Flange.webp",
+    image: "/316l-stainless-steel-flange.webp",
     tags: ["SS 304L", "SS 316L", "Corrosion Resistance", "PREN", "ASTM A262", "Metallurgy"],
     keyTakeaways: [
       "SS 316L contains 2.0% - 3.0% Molybdenum (Mo), providing vastly superior resistance to chloride-induced pitting and crevice corrosion compared to SS 304L.",
@@ -1656,8 +1670,8 @@ Problems found after installation are expensive to fix.<br />
 <h2>1. Chemical Composition Comparison (ASTM A182 / ASTM A312)</h2>
 <p>Both Grade 304L and Grade 316L belong to the austenitic family of stainless steels, characterized by a face-centered cubic (FCC) crystal structure that remains ductile even at cryogenic temperatures.</p>
 
-<div className="table-responsive">
-  <table className="tech-table">
+<div class="table-responsive">
+  <table class="tech-table">
     <thead>
       <tr>
         <th>Element</th>
@@ -1720,8 +1734,8 @@ Problems found after installation are expensive to fix.<br />
 
 <h2>3. Mechanical Property Requirements</h2>
 
-<div className="table-responsive">
-  <table className="tech-table">
+<div class="table-responsive">
+  <table class="tech-table">
     <thead>
       <tr>
         <th>Mechanical Property</th>
@@ -1794,8 +1808,8 @@ Problems found after installation are expensive to fix.<br />
 
 <h2>2. Detailed Structural Comparison Matrix</h2>
 
-<div className="table-responsive">
-  <table className="tech-table">
+<div class="table-responsive">
+  <table class="tech-table">
     <thead>
       <tr>
         <th>Design Parameter</th>
@@ -1895,8 +1909,8 @@ Problems found after installation are expensive to fix.<br />
 <h2>3. Water Quality & Chloride Control for Stainless Steel</h2>
 <p>When performing hydrotests on stainless steel (SS 304, SS 316L, Duplex 2205), water quality is of paramount metallurgical importance:</p>
 
-<div className="table-responsive">
-  <table className="tech-table">
+<div class="table-responsive">
+  <table class="tech-table">
     <thead>
       <tr>
         <th>Water Parameter</th>
@@ -1950,5 +1964,16 @@ export function getPostBySlug(slug) {
 }
 
 export function getRelatedPosts(currentSlug, limit = 3) {
-  return blogPosts.filter(p => p.slug !== currentSlug && p.id !== currentSlug).slice(0, limit);
+  const current = getPostBySlug(currentSlug);
+  const others = blogPosts.filter(p => p.slug !== currentSlug && p.id !== currentSlug);
+  if (!current) return others.slice(0, limit);
+  const currentTags = new Set((current.tags || []).map(t => t.toLowerCase()));
+  const score = (p) =>
+    (p.category === current.category ? 2 : 0) +
+    (p.tags || []).filter(t => currentTags.has(t.toLowerCase())).length;
+  return others
+    .map((p, idx) => ({ p, idx, s: score(p) }))
+    .sort((a, b) => b.s - a.s || a.idx - b.idx)
+    .slice(0, limit)
+    .map(x => x.p);
 }

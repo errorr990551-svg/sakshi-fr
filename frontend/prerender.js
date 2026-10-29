@@ -13,6 +13,14 @@ const BASE_URL = 'https://steelmanufacturer.in';
 
 
 // SEO Title & Description Guards (ensures strict compliance with Google length recommendations)
+function toIsoDate(value) {
+  if (!value) return undefined;
+  const d = new Date(value);
+  if (isNaN(d.getTime())) return undefined;
+  const pad = (n) => String(n).padStart(2, '0');
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+}
+
 function formatTitle(title) {
   if (!title) return 'Sakshi Forge | Steel Manufacturer Mumbai';
   let t = title.trim();
@@ -207,6 +215,7 @@ async function runPrerender() {
           description: p.meta,
           robots: 'index, follow',
           keywords: p.primary_kw ? (p.secondary_kws?.length ? `${p.primary_kw}, ${p.secondary_kws.join(', ')}` : p.primary_kw) : '',
+          data: p
         });
       }
     }
@@ -671,6 +680,41 @@ async function runPrerender() {
       }
     }
 
+    if (route.type === 'blog-post' && route.data) {
+      const post = route.data;
+      const publishedDate = toIsoDate(post.date);
+      schemasGraph.push({
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": `${BASE_URL}/` },
+          { "@type": "ListItem", "position": 2, "name": "Steel Knowledge Hub", "item": `${BASE_URL}/blog/` },
+          { "@type": "ListItem", "position": 3, "name": post.title, "item": route.url }
+        ]
+      });
+      schemasGraph.push({
+        "@type": "BlogPosting",
+        "@id": `${route.url}#article`,
+        "headline": post.title,
+        "description": post.desc,
+        "datePublished": publishedDate,
+        "dateModified": toIsoDate(post.dateModified) || publishedDate,
+        "author": { "@type": "Organization", "name": "Sakshi Forge" },
+        "publisher": { "@id": `${BASE_URL}/#org` },
+        "mainEntityOfPage": { "@type": "WebPage", "@id": route.url },
+        "image": post.image ? `${BASE_URL}${encodeURI(post.image)}` : undefined
+      });
+      if (post.faqs && post.faqs.length > 0) {
+        schemasGraph.push({
+          "@type": "FAQPage",
+          "mainEntity": post.faqs.map(f => ({
+            "@type": "Question",
+            "name": f.q,
+            "acceptedAnswer": { "@type": "Answer", "text": f.a }
+          }))
+        });
+      }
+    }
+
     const schemaBlockHtml = `<script type="application/ld+json" class="sakshi-seo-schema">\n${JSON.stringify({
       "@context": "https://schema.org",
       "@graph": schemasGraph
@@ -714,7 +758,10 @@ async function runPrerender() {
       const imgPath = route.data.Image.startsWith('/') ? route.data.Image : `/${route.data.Image}`;
       ogImageUrl = `${BASE_URL}${encodeURI(imgPath)}`;
     }
-    const ogType = route.type === 'product' ? 'product' : 'website';
+    if (route.type === 'blog-post' && route.data?.image) {
+      ogImageUrl = `${BASE_URL}${encodeURI(route.data.image)}`;
+    }
+    const ogType = route.type === 'product' ? 'product' : route.type === 'blog-post' ? 'article' : 'website';
     const ogTags = `  <meta property="og:type" content="${ogType}" />
   <meta property="og:site_name" content="Sakshi Forge" />
   <meta property="og:title" content="${escapeAttr(pageTitle)}" />

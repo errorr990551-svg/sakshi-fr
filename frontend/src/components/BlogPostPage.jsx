@@ -192,7 +192,6 @@ export default function BlogPostPage({ post, onEnquireClick }) {
             onClick={(e) => {
               const target = e.target.closest('a');
               if (target && target.getAttribute('href')?.startsWith('/')) {
-                e.preventDefault();
                 handleLinkClick(e, target.getAttribute('href'));
               }
             }}

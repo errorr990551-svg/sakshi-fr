@@ -186,7 +186,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
       "item": `https://steelmanufacturer.in${b.path}`
     })) : [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://steelmanufacturer.in" },
-      { "@type": "ListItem", "position": 2, "name": "Market Directory", "item": "https://steelmanufacturer.in/market-area" },
+      { "@type": "ListItem", "position": 2, "name": "Market Directory", "item": "https://steelmanufacturer.in/market-area/" },
       { "@type": "ListItem", "position": 3, "name": cityData.city, "item": cityData.fullPageUrl || `https://steelmanufacturer.in${cityData.path}` }
     ];
 
@@ -355,7 +355,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
         }}>
           <div className="container">
             {/* Breadcrumbs */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.8rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
+            <div className="crumbs" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.8rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
               <a href="/" onClick={(e) => handleLinkClick(e, '/')} style={{ color: 'inherit', textDecoration: 'none' }}>Home</a>
               <ChevronRight size={12} />
               <a href="/market-area/" onClick={(e) => handleLinkClick(e, '/market-area/')} style={{ color: 'inherit', textDecoration: 'none' }}>Market Directory</a>
@@ -425,7 +425,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
               </div>
 
               {/* 4 Hero Cards */}
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.25rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(220px, 100%), 1fr))', gap: '1.25rem' }}>
                 {custom.heroCards.map((card, idx) => (
                   <div key={idx} style={{ 
                     backgroundColor: 'var(--bg-dark-800)', 
@@ -480,7 +480,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
             <h2 style={{ fontSize: '2.2rem', fontWeight: '800', marginBottom: '1.25rem' }}>{custom.productRange.title}</h2>
             <div className="accent-line" style={{ width: '80px', height: '3px', backgroundColor: 'var(--primary-yellow)', borderRadius: '2px', marginBottom: '2rem' }}></div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginBottom: '2.5rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1.5rem', marginBottom: '2.5rem' }}>
               {custom.productRange.items.map((item, idx) => (
                 <div key={idx} style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.5rem' }}>
                   <h3 style={{ fontSize: '1.1rem', color: 'var(--primary-yellow)', marginBottom: '0.5rem' }}>{item.heading}</h3>
@@ -504,7 +504,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
             <h2 style={{ fontSize: '2.2rem', fontWeight: '800', marginBottom: '1.25rem' }}>{custom.localReality.title}</h2>
             <div className="accent-line" style={{ width: '80px', height: '3px', backgroundColor: 'var(--primary-yellow)', borderRadius: '2px', marginBottom: '2rem' }}></div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1.5rem' }}>
               {custom.localReality.points.map((pt, idx) => (
                 <div key={idx} style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.75rem', borderLeft: '3px solid var(--primary-yellow)' }}>
                   <h4 style={{ fontSize: '1.05rem', color: '#fff', fontWeight: '700', marginBottom: '0.5rem' }}>{pt.title}</h4>
@@ -553,7 +553,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
             <h2 style={{ fontSize: '2.2rem', fontWeight: '800', marginBottom: '1.25rem' }}>{custom.applications.title}</h2>
             <div className="accent-line" style={{ width: '80px', height: '3px', backgroundColor: 'var(--primary-yellow)', borderRadius: '2px', marginBottom: '2rem' }}></div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1.5rem' }}>
               {custom.applications.items.map((app, idx) => (
                 <div key={idx} style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.5rem' }}>
                   <h3 style={{ fontSize: '1.1rem', color: 'var(--primary-yellow)', marginBottom: '0.4rem' }}>{app.title}</h3>
@@ -595,7 +595,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
             <h2 style={{ fontSize: '2.2rem', fontWeight: '800', marginBottom: '1.25rem' }}>{custom.checklist.title}</h2>
             <div className="accent-line" style={{ width: '80px', height: '3px', backgroundColor: 'var(--primary-yellow)', borderRadius: '2px', marginBottom: '2rem' }}></div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1rem' }}>
               {custom.checklist.points.map((pt, idx) => (
                 <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', backgroundColor: 'var(--bg-dark-800)', padding: '1rem 1.25rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
                   <CheckCircle2 size={18} style={{ color: 'var(--primary-yellow)', flexShrink: 0, marginTop: '2px' }} />
@@ -650,7 +650,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
               <h2 style={{ fontSize: '2.2rem', fontWeight: '800', marginBottom: '1.25rem' }}>{custom.whyChooseUs.title}</h2>
               <div className="accent-line" style={{ width: '80px', height: '3px', backgroundColor: 'var(--primary-yellow)', borderRadius: '2px', marginBottom: '2rem' }}></div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1.5rem' }}>
                 {custom.whyChooseUs.points.map((pt, idx) => (
                   <div key={idx} style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.5rem' }}>
                     <h3 style={{ fontSize: '1.1rem', color: 'var(--primary-yellow)', marginBottom: '0.4rem' }}>{pt.heading}</h3>
@@ -723,7 +723,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
               </div>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem', paddingTop: '2rem', borderTop: '1px solid var(--border-color)' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(250px, 100%), 1fr))', gap: '1.5rem', paddingTop: '2rem', borderTop: '1px solid var(--border-color)' }}>
               <div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary-yellow)', fontWeight: '700', marginBottom: '0.35rem', fontSize: '0.88rem' }}>
                   <MapPin size={16} /> Factory Address
@@ -810,7 +810,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
         <div className="container">
           
           {/* Breadcrumbs */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.8rem', marginBottom: '2.5rem', flexWrap: 'wrap', fontWeight: '500' }}>
+          <div className="crumbs" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.8rem', marginBottom: '2.5rem', flexWrap: 'wrap', fontWeight: '500' }}>
             {(custom?.breadcrumb || [
               { name: 'Home', path: '/' },
               { name: 'Market Directory', path: '/market-area/' },
@@ -894,7 +894,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
                   'ISO 9001:2015 Certified',
                   'EN 10204 3.1 MTC Provided',
                   '100% PMI Tested Metallurgy',
-                  `Fast Road Transit to ${cityData.city}`
+                  'Made at Our Taloja MIDC Works'
                 ]).map((badge, idx) => (
                   <div key={idx} style={{
                     display: 'flex',
@@ -1000,7 +1000,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
       {/* 2. Local Intent & Industrial Relevance Paragraph */}
       <section id="al-ain" style={{ padding: '5rem 0', backgroundColor: 'var(--bg-dark-800)', borderBottom: '1px solid var(--border-color)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1.05fr 0.95fr', gap: '4.5rem', alignItems: 'center' }} className="about-market-grid">
+          <div style={{ display: 'grid', gridTemplateColumns: '1.05fr 0.95fr', gap: '4.5rem', alignItems: 'center' }} className="about-market-grid stack-md">
             <div>
               <span style={{ color: 'var(--primary-yellow)', fontSize: '0.85rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
                 {custom?.localBlock?.eyebrow || 'LOCAL INDUSTRIAL INTEGRATION'}
@@ -1018,7 +1018,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
 
               {/* Sector cards if present (e.g. Al Ain) */}
               {custom?.localBlock?.sectors && (
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.85rem', marginBottom: '1.5rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(220px, 100%), 1fr))', gap: '0.85rem', marginBottom: '1.5rem' }}>
                   {custom.localBlock.sectors.map((sec, idx) => (
                     <div key={idx} style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '10px', padding: '1rem' }}>
                       <h4 style={{ fontSize: '0.95rem', color: 'var(--primary-yellow)', fontWeight: '800', margin: '0 0 0.35rem 0' }}>{sec.title}</h4>
@@ -1042,7 +1042,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
 
               {/* Local Info Cards */}
               {custom?.localBlock?.infoCards ? (
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '1.5rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(200px, 100%), 1fr))', gap: '1rem', marginBottom: '1.5rem' }}>
                   {custom.localBlock.infoCards.map((card, idx) => (
                     <div key={idx} style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '10px', padding: '1rem' }}>
                       <h4 style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: 'var(--text-muted)', letterSpacing: '0.08em', fontWeight: '700', margin: '0 0 0.35rem 0' }}>{card.title}</h4>
@@ -1051,7 +1051,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
                   ))}
                 </div>
               ) : (
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }} className="about-sub-grid-responsive">
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }} className="about-sub-grid-responsive stack-sm">
                   <div style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '12px', padding: '1.25rem' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.4rem' }}>
                       <Building size={16} style={{ color: 'var(--primary-yellow)' }} />
@@ -1206,7 +1206,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(320px, 100%), 1fr))', gap: '2rem' }}>
             {custom?.grades?.cards ? (
               custom.grades.cards.map((card, idx) => (
                 <div key={idx} style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '12px', padding: '2rem' }}>
@@ -1397,7 +1397,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
 
             {/* Logistics Info Cards */}
             {custom.logistics.infoRows && (
-              <div style={{ maxWidth: '850px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1rem' }}>
+              <div style={{ maxWidth: '850px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(260px, 100%), 1fr))', gap: '1rem' }}>
                 {custom.logistics.infoRows.map((info, idx) => (
                   <div key={idx} style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '10px', padding: '1.2rem' }}>
                     <div style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: 'var(--primary-yellow)', fontWeight: '800', letterSpacing: '0.05em', marginBottom: '0.4rem' }}>{info.label}</div>
@@ -1432,7 +1432,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
               )}
             </div>
 
-            <div style={{ maxWidth: '950px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))', gap: '2rem' }}>
+            <div style={{ maxWidth: '950px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(360px, 100%), 1fr))', gap: '2rem' }}>
               {custom.specGuide.checklist && (
                 <div style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '12px', padding: '2rem' }}>
                   <h3 style={{ fontSize: '1.15rem', fontWeight: '800', color: 'var(--primary-yellow)', marginBottom: '1rem' }}>
@@ -1577,7 +1577,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
               </p>
             </div>
 
-            <div style={{ maxWidth: '950px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
+            <div style={{ maxWidth: '950px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(320px, 100%), 1fr))', gap: '2rem' }}>
               {custom.about.companyFacts && (
                 <div style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '12px', padding: '2rem' }}>
                   <h3 style={{ fontSize: '1.15rem', fontWeight: '800', color: 'var(--primary-yellow)', marginBottom: '1rem' }}>
@@ -1626,7 +1626,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
               <div className="accent-line" style={{ margin: '0 auto', width: '80px', height: '3px', backgroundColor: 'var(--primary-yellow)', borderRadius: '2px' }}></div>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(320px, 100%), 1fr))', gap: '2rem' }}>
               {whyPoints.map((point) => (
                 <div key={point.num} style={{ 
                   backgroundColor: 'var(--bg-dark-800)', 

@@ -222,7 +222,7 @@ export default function AndhraPradeshHubPage({ onEnquireClick, onShowContactDeta
 
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(340px, 100%), 1fr))',
             gap: '1.75rem'
           }}>
             {cities.map((c) => (
@@ -306,7 +306,7 @@ export default function AndhraPradeshHubPage({ onEnquireClick, onShowContactDeta
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '2rem' }}>
             <div style={{ padding: '1.75rem', backgroundColor: 'var(--bg-dark-700)', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
               <div style={{ color: 'var(--primary-yellow)', marginBottom: '1rem' }}><CheckCircle2 size={28} /></div>
               <h3 style={{ fontSize: '1.15rem', fontWeight: '700', marginBottom: '0.5rem', color: '#ffffff' }}>Coastal & Marine Duty Alloys</h3>

@@ -110,7 +110,7 @@ export default function MadhyaPradeshHubPage({ onEnquireClick, onShowContactDeta
       }}>
         <div className="container" style={{ maxWidth: '980px' }}>
           {/* Breadcrumb Navigation */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.82rem', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
+          <div className="crumbs" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.82rem', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
             <a href="/" onClick={(e) => handleLinkClick(e, '/')} style={{ color: 'inherit', textDecoration: 'none' }}>Home</a>
             <span>›</span>
             <a href="/electropolished-pipes/" onClick={(e) => handleLinkClick(e, '/electropolished-pipes/')} style={{ color: 'inherit', textDecoration: 'none' }}>Electropolished Pipes</a>
@@ -185,7 +185,7 @@ export default function MadhyaPradeshHubPage({ onEnquireClick, onShowContactDeta
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(320px, 100%), 1fr))', gap: '1.5rem' }}>
             {cities.map((city) => (
               <a
                 key={city.slug}
@@ -273,7 +273,7 @@ export default function MadhyaPradeshHubPage({ onEnquireClick, onShowContactDeta
             </h2>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1.5rem' }}>
             <div style={{ backgroundColor: 'var(--bg-dark-900)', padding: '1.75rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
               <div style={{ color: 'var(--primary-yellow)', fontWeight: '800', fontSize: '1.1rem', marginBottom: '0.5rem' }}>
                 1–2 Day Express Road Transit

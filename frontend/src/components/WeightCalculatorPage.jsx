@@ -194,7 +194,7 @@ export default function WeightCalculatorPage({ onEnquireClick }) {
                 {/* Shape Selection */}
                 <div>
                   <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: '600', color: 'var(--text-secondary)', marginBottom: '0.5rem', textTransform: 'uppercase' }}>Select Shape</label>
-                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0.5rem' }}>
+                  <div className="grid-2-sm" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0.5rem' }}>
                     {[
                       { id: 'pipe', label: 'Pipe / Tube' },
                       { id: 'bar', label: 'Round Bar' },
@@ -254,7 +254,7 @@ export default function WeightCalculatorPage({ onEnquireClick }) {
                 </div>
 
                 {/* Dynamic Dimension Inputs */}
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                <div className="stack-sm" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                   {shape === 'pipe' && (
                     <>
                       <div>

@@ -51,7 +51,7 @@ export default function QualityPage({ onEnquireClick }) {
       {/* Trust Blocks */}
       <section style={{ padding: '4rem 0 2rem 0' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '2rem' }}>
             
             <div style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '2rem' }}>
               <FileText size={32} style={{ color: 'var(--primary-yellow)', marginBottom: '1rem' }} />
@@ -90,7 +90,7 @@ export default function QualityPage({ onEnquireClick }) {
             <div className="accent-line"></div>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(320px, 100%), 1fr))', gap: '2rem' }}>
             {tests.map((t, idx) => (
               <div key={idx} style={{ display: 'flex', gap: '1rem', backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.5rem' }}>
                 <CheckCircle size={20} style={{ color: 'var(--primary-yellow)', flexShrink: 0, marginTop: '0.15rem' }} />

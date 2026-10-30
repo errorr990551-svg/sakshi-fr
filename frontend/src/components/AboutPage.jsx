@@ -146,7 +146,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
             </div>
 
             {/* Stats strip */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1.25rem', paddingTop: '1.75rem', borderTop: '1px solid rgba(255, 255, 255, 0.12)' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(180px, 100%), 1fr))', gap: '1.25rem', paddingTop: '1.75rem', borderTop: '1px solid rgba(255, 255, 255, 0.12)' }}>
               {stats.map((s, idx) => (
                 <div key={idx} style={{ borderLeft: '3px solid var(--primary-yellow)', paddingLeft: '1rem' }}>
                   <div style={{ fontSize: '2rem', fontWeight: '800', color: 'var(--primary-yellow)', lineHeight: '1.1' }}>{s.number}</div>
@@ -236,7 +236,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
               <strong>Our mission:</strong> To deliver high-performance industrial steel products with uncompromised quality, competitive pricing and dependable service, and to build long-term partnerships with our clients.
             </p>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1.5rem' }}>
               <div className="feature-card" style={{ backgroundColor: 'var(--bg-dark-800)', padding: '1.75rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
                 <h3 style={{ fontSize: '1.15rem', color: 'var(--primary-yellow)', marginBottom: '0.5rem' }}>Honest paperwork</h3>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.6', margin: 0 }}>
@@ -279,7 +279,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
             </h2>
             <div className="accent-line-left" style={{ marginBottom: '2rem' }}></div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginBottom: '2.5rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1.5rem', marginBottom: '2.5rem' }}>
               <div style={{ backgroundColor: 'var(--bg-dark-900)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
                 <h3 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '0.5rem' }}>
                   <a href="/electropolished-pipes/" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'none' }}>
@@ -368,7 +368,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
               Forging, machining, heat treatment, electropolishing and testing all happen under one roof. That means no outsourced steps, no waiting on third parties and no gaps in traceability.
             </p>
 
-            <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 2.5rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem' }}>
+            <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 2.5rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1rem' }}>
               {[
                 'Hydraulic forging and induction heating for consistent grain flow and density',
                 'Controlled heat treatment (normalising and annealing) for uniform structure',
@@ -385,7 +385,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
             </ul>
 
             {/* Facility & Product Inspection Photos Grid */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.25rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1.25rem' }}>
               <div style={{ borderRadius: '8px', overflow: 'hidden', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-dark-900)' }}>
                 <img {...imgSize("/about_history.webp")} loading="lazy" src="/about_history.webp" alt="Heavy hydraulic forging press and billet inventory at Sakshi Forge, Taloja MIDC" style={{ width: '100%', height: '220px', objectFit: 'cover', display: 'block' }} />
                 <div style={{ padding: '0.75rem', backgroundColor: 'var(--bg-dark-800)', fontSize: '0.82rem', color: '#e2e8f0' }}>Heavy hydraulic forging press and billet inventory at Taloja Works</div>
@@ -470,7 +470,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
             </h2>
             <div className="accent-line-left" style={{ marginBottom: '1.75rem' }}></div>
 
-            <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 2.5rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem' }}>
+            <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 2.5rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1rem' }}>
               {[
                 'ISO 9001:2015 certified quality management system',
                 '100% PMI testing on every consignment',
@@ -548,7 +548,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
             </h2>
             <div className="accent-line-left" style={{ marginBottom: '2rem' }}></div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.75rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1.75rem' }}>
               <div style={{ backgroundColor: 'var(--bg-dark-800)', padding: '2rem', borderRadius: '10px', border: '1px solid var(--border-color)' }}>
                 <div style={{ width: '56px', height: '56px', borderRadius: '50%', backgroundColor: 'rgba(255, 193, 7, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem', color: 'var(--primary-yellow)' }}>
                   <Award size={28} />
@@ -596,7 +596,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
             </h2>
             <div className="accent-line-left" style={{ marginBottom: '2rem' }}></div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1.5rem' }}>
               <div style={{ backgroundColor: 'var(--bg-dark-900)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
                 <h3 style={{ fontSize: '1.15rem', color: 'var(--primary-yellow)', marginBottom: '0.4rem' }}>One vendor for pipes, fittings and flanges</h3>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', margin: 0 }}>One set of documents, one dispatch.</p>
@@ -697,7 +697,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
               </div>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.5rem', paddingTop: '2rem', borderTop: '1px solid var(--border-color)' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(260px, 100%), 1fr))', gap: '1.5rem', paddingTop: '2rem', borderTop: '1px solid var(--border-color)' }}>
               <div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary-yellow)', fontWeight: '700', marginBottom: '0.4rem', fontSize: '0.9rem' }}>
                   <MapPin size={16} /> Factory Address

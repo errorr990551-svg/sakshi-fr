@@ -55,7 +55,7 @@ export default function CityProductPillars({ cityName = 'Your Facility' }) {
 
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(320px, 100%), 1fr))',
           gap: '1.5rem'
         }}>
           {EP_PRODUCT_PILLARS.map((pillar, idx) => (

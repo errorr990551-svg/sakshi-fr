@@ -52,7 +52,7 @@ export default function StandardPage({ standardData, onEnquireClick }) {
             Pressure Classes & Dimensional Scope ({standardCode})
           </h2>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginBottom: '3.5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1.5rem', marginBottom: '3.5rem' }}>
             {pressureClasses && pressureClasses.map((cls, idx) => (
               <div key={idx} style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.5rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary-yellow)', fontWeight: '700', fontSize: '1.1rem', marginBottom: '0.5rem' }}>

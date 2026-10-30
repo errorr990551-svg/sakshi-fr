@@ -22,7 +22,7 @@ export default function CityLocalSections({ content, city }) {
           <h2 style={h2Style}>Industry in {city} and Where Electropolished Tube Is Used</h2>
           <p style={pStyle}>{intro}</p>
           {industries.length > 0 && (
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.1rem', marginTop: '1.5rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1.1rem', marginTop: '1.5rem' }}>
               {industries.map((item) => (
                 <div key={item.label} style={cardStyle}>
                   <h3 style={{ fontSize: '1.05rem', fontWeight: '800', color: 'var(--primary-yellow)', margin: '0 0 0.6rem 0' }}>{item.label}</h3>

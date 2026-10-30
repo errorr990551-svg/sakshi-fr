@@ -201,7 +201,7 @@ export default function WestBengalHubPage({ onEnquireClick, onShowContactDetails
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', gap: '1.75rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(350px, 100%), 1fr))', gap: '1.75rem' }}>
             {cities.map((c) => (
               <div 
                 key={c.slug}

@@ -167,7 +167,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
       }}>
         <div className="container">
           {/* Breadcrumb Navigation */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.82rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
+          <div className="crumbs" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.82rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
             <a href="/" onClick={(e) => handleLinkClick(e, '/')} style={{ color: 'inherit', textDecoration: 'none' }}>Home</a>
             <span>›</span>
             <a href="/market-area/" onClick={(e) => handleLinkClick(e, '/market-area/')} style={{ color: 'inherit', textDecoration: 'none' }}>Market Areas</a>
@@ -317,7 +317,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
             </div>
 
             {/* Application Blurbs */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.25rem', marginBottom: '2rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1.25rem', marginBottom: '2rem' }}>
               {cityData.regionalCapability.applications.map((app, idx) => (
                 <div key={idx} style={{ backgroundColor: 'var(--bg-dark-900)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
                   <h3 style={{ fontSize: '1.1rem', color: 'var(--primary-yellow)', marginBottom: '0.5rem' }}>
@@ -603,7 +603,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                 </p>
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginBottom: '1.5rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1.5rem', marginBottom: '1.5rem' }}>
                 {/* Weight Calculator Card */}
                 <div style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.5rem' }}>
                   <h4 style={{ color: 'var(--primary-yellow)', fontSize: '1.1rem', margin: '0 0 1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
@@ -732,7 +732,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
             </h2>
             <div className="accent-line-left" style={{ marginBottom: '2.5rem' }}></div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.25rem', marginBottom: '2.5rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(260px, 100%), 1fr))', gap: '1.25rem', marginBottom: '2.5rem' }}>
               {[
                 { step: '01', title: 'Degreasing and Cleaning', desc: 'Oils, cutting fluids and drawing residues are completely removed first. The finish is only as good as the chemical preparation.' },
                 { step: '02', title: 'Pickling / Activation', desc: 'Where weld heat tint or surface oxide is present, it is etched and activated so the pipe surface electropolishes uniformly.' },
@@ -874,7 +874,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
               </p>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2.5rem', marginBottom: '3rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(320px, 100%), 1fr))', gap: '2.5rem', marginBottom: '3rem' }}>
               {/* Form */}
               <div style={{ backgroundColor: 'var(--bg-dark-800)', padding: '2rem', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
                 {formSubmitted ? (
@@ -887,7 +887,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                   </div>
                 ) : (
                   <form onSubmit={handleFormSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                    <div className="stack-sm" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                       <div>
                         <label htmlFor="maharashtra-city-field-1" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Name *</label>
                         <input id="maharashtra-city-field-1" 
@@ -912,7 +912,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                       </div>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                    <div className="stack-sm" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                       <div>
                         <label htmlFor="maharashtra-city-field-3" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Phone Number *</label>
                         <input id="maharashtra-city-field-3" 
@@ -937,7 +937,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                       </div>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                    <div className="stack-sm" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                       <div>
                         <label htmlFor="maharashtra-city-field-5" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Grade & OD × WT *</label>
                         <input id="maharashtra-city-field-5" 

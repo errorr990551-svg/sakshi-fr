@@ -65,7 +65,7 @@ export default function ClientsPage({ onEnquireClick }) {
           <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '2rem', textAlign: 'center' }}>
             Key Industrial Sectors Served
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(320px, 100%), 1fr))', gap: '1.5rem' }}>
             {industries.map((ind, idx) => (
               <div key={idx} style={{ 
                 backgroundColor: 'var(--bg-dark-800)', 
@@ -99,7 +99,7 @@ export default function ClientsPage({ onEnquireClick }) {
             Every batch dispatched undergoes strict Positive Material Identification (PMI) and quality checks accompanied by EN 10204 3.1 MTCs.
           </p>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.25rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(260px, 100%), 1fr))', gap: '1.25rem' }}>
             {clientHighlights.map((c, idx) => (
               <div key={idx} style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.5rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary-yellow)', fontSize: '0.85rem', fontWeight: '700', marginBottom: '0.5rem' }}>
@@ -124,7 +124,7 @@ export default function ClientsPage({ onEnquireClick }) {
           <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '2.5rem', textAlign: 'center' }}>
             What Our B2B Buyers Say
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(320px, 100%), 1fr))', gap: '2rem' }}>
             {testimonials.map((t, idx) => (
               <div key={idx} style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '2rem', position: 'relative' }}>
                 <p style={{ fontSize: '1rem', fontStyle: 'italic', color: 'var(--text-secondary)', lineHeight: '1.6', marginBottom: '1.5rem' }}>

@@ -258,7 +258,7 @@ export default function HomePage({ onEnquireClick }) {
                   Why Choose Sakshi Forge • Trust Highlights
                 </span>
               </div>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(200px, 100%), 1fr))', gap: '1rem' }}>
                 {[
                   { icon: <ShieldCheck size={26} style={{ color: 'var(--primary-yellow)' }} />, title: "ISO 9001:2015 Certified", subtitle: "Audited zero-defect manufacturing" },
                   { icon: <FileText size={26} style={{ color: 'var(--primary-yellow)' }} />, title: "EN 10204 3.1 MTC", subtitle: "100% heat traceability guaranteed" },
@@ -278,7 +278,7 @@ export default function HomePage({ onEnquireClick }) {
             </div>
 
             {/* Stats Band */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1.5rem', paddingTop: '2.5rem', borderTop: '1px solid rgba(255, 255, 255, 0.12)' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(180px, 100%), 1fr))', gap: '1.5rem', paddingTop: '2.5rem', borderTop: '1px solid rgba(255, 255, 255, 0.12)' }}>
               <div>
                 <div style={{ fontSize: '2.3rem', fontWeight: '800', color: 'var(--primary-yellow)', lineHeight: '1.1' }}>10+ Years</div>
                 <div style={{ fontSize: '0.85rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.06em', marginTop: '0.35rem', fontWeight: '600' }}>Manufacturing Heritage</div>
@@ -314,7 +314,7 @@ export default function HomePage({ onEnquireClick }) {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(270px, 1fr))', gap: '1.75rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(270px, 100%), 1fr))', gap: '1.75rem' }}>
             <div className="feature-card" style={{ backgroundColor: 'var(--bg-dark-800)', padding: '2.25rem 1.75rem', borderRadius: '12px', border: '1px solid var(--border-color)', textAlign: 'center' }}>
               <div style={{ color: 'var(--primary-yellow)', marginBottom: '1.25rem', display: 'flex', justifyContent: 'center' }}><FileText size={38} /></div>
               <h3 style={{ fontSize: '1.2rem', color: '#fff', marginBottom: '0.75rem' }}>Documents your auditor will ask for</h3>
@@ -364,7 +364,7 @@ export default function HomePage({ onEnquireClick }) {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', marginBottom: '3rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(320px, 100%), 1fr))', gap: '2rem', marginBottom: '3rem' }}>
             {[
               {
                 title: "SS 304 / 304L Electropolished Pipes",
@@ -470,7 +470,7 @@ export default function HomePage({ onEnquireClick }) {
       {/* 5. TECHNICAL INSIGHT (Content moved to Far Left Margin + Embedded Video) */}
       <section className="section-padding" style={{ backgroundColor: 'var(--bg-dark-900)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))', gap: '3.5rem', alignItems: 'start', marginBottom: '3.5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(360px, 100%), 1fr))', gap: '3.5rem', alignItems: 'start', marginBottom: '3.5rem' }}>
             {/* Left Content Column (Far Left) */}
             <div style={{ textAlign: 'left' }}>
               <span className="hero-tag" style={{ border: 'none', backgroundColor: 'rgba(255, 193, 7, 0.08)', marginBottom: '1rem' }}>
@@ -488,7 +488,7 @@ export default function HomePage({ onEnquireClick }) {
                 Electropolishing is an electrochemical process. Controlled electrolytic removal levels microscopic peaks and strips free iron from the surface, leaving a chromium-rich, ultra-passive oxide barrier behind.
               </p>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+              <div className="stack-sm" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                 <div style={{ backgroundColor: 'var(--bg-dark-800)', padding: '1.25rem', borderRadius: '8px', borderLeft: '3px solid var(--primary-yellow)' }}>
                   <strong style={{ color: '#fff', display: 'block', marginBottom: '0.25rem', fontSize: '0.95rem' }}>A smoother surface:</strong>
                   <span style={{ color: 'var(--text-secondary)', fontSize: '0.85rem' }}>Internal Ra ≤0.4 µm eliminates entrapment zones.</span>
@@ -578,7 +578,7 @@ export default function HomePage({ onEnquireClick }) {
       {/* 6. TECHNICAL PARAMETERS (Content moved to Far Right Margin + Pic on Left with Service Parameters Below) */}
       <section className="section-padding" style={{ backgroundColor: 'var(--bg-dark-800)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))', gap: '3.5rem', alignItems: 'start' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(360px, 100%), 1fr))', gap: '3.5rem', alignItems: 'start' }}>
             {/* Left Side: Pic + Service Parameters Underneath */}
             <div>
               <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid var(--border-color)', boxShadow: '0 10px 30px rgba(0,0,0,0.4)', marginBottom: '1.75rem', backgroundColor: 'var(--bg-dark-900)' }}>
@@ -665,7 +665,7 @@ export default function HomePage({ onEnquireClick }) {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))', gap: '1.75rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(360px, 100%), 1fr))', gap: '1.75rem' }}>
             {[
               {
                 title: "💊 Pharmaceutical & Biotechnology",
@@ -741,7 +741,7 @@ export default function HomePage({ onEnquireClick }) {
             </h2>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.75rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(320px, 100%), 1fr))', gap: '1.75rem' }}>
             {[
               {
                 icon: "/1st card.webp",
@@ -813,7 +813,7 @@ export default function HomePage({ onEnquireClick }) {
             </button>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.75rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(260px, 100%), 1fr))', gap: '1.75rem' }}>
             {[
               { num: '01', title: 'Material Verification', desc: 'Certified prime stainless billets & mother hollows from approved mills, verified by PMI spectro analysis.', icon: <CheckCircle2 size={24} style={{ color: '#000' }} /> },
               { num: '02', title: 'Cutting & Sizing', desc: 'Precision cold cutting to specified lengths, ODs, and calibrated wall thicknesses.', icon: <Scissors size={24} style={{ color: '#000' }} /> },
@@ -842,7 +842,7 @@ export default function HomePage({ onEnquireClick }) {
       {/* 10. STRICT INSPECTION (Styled like Iotaflow Careers 'Why Join Us' Section) */}
       <section className="section-padding" style={{ backgroundColor: 'var(--bg-dark-800)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '3rem', alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(340px, 100%), 1fr))', gap: '3rem', alignItems: 'center' }}>
             {/* Left 1/3 column */}
             <div>
               <span className="hero-tag" style={{ border: 'none', backgroundColor: 'rgba(255, 193, 7, 0.08)' }}>Strict Inspection</span>
@@ -865,7 +865,7 @@ export default function HomePage({ onEnquireClick }) {
 
             {/* Right 2/3 column: Grid of inspection checks */}
             <div>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.25rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(260px, 100%), 1fr))', gap: '1.25rem' }}>
                 {[
                   "ISO 9001:2015 certified quality management system",
                   "100% PMI spectro testing before any material dispatch",
@@ -904,7 +904,7 @@ export default function HomePage({ onEnquireClick }) {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.75rem', marginBottom: '3rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(300px, 100%), 1fr))', gap: '1.75rem', marginBottom: '3rem' }}>
             {[
               {
                 title: "Industrial Flanges",
@@ -1005,7 +1005,7 @@ export default function HomePage({ onEnquireClick }) {
       {/* 12. GLOBAL & DOMESTIC REACH (Left-aligned Content + Right Image) */}
       <section className="section-padding" style={{ backgroundColor: 'var(--bg-dark-800)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))', gap: '3.5rem', alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(360px, 100%), 1fr))', gap: '3.5rem', alignItems: 'center' }}>
             {/* Left Content */}
             <div style={{ textAlign: 'left' }}>
               <span className="hero-tag" style={{ border: 'none', backgroundColor: 'rgba(255, 193, 7, 0.08)' }}>Global & Domestic Reach</span>
@@ -1075,7 +1075,7 @@ export default function HomePage({ onEnquireClick }) {
       {/* 13. CORPORATE PROFILE (Left Image + Right Content + Learn More Button) */}
       <section className="section-padding" style={{ backgroundColor: 'var(--bg-dark-900)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))', gap: '3.5rem', alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(360px, 100%), 1fr))', gap: '3.5rem', alignItems: 'center' }}>
             {/* Left Image */}
             <div>
               <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid var(--border-color)', boxShadow: '0 12px 35px rgba(0,0,0,0.4)', minHeight: '360px' }}>
@@ -1138,7 +1138,7 @@ export default function HomePage({ onEnquireClick }) {
           </div>
 
           {/* 3 Real Gallery Photos with descriptions removed */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.75rem', marginBottom: '2.5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(300px, 100%), 1fr))', gap: '1.75rem', marginBottom: '2.5rem' }}>
             <div style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-dark-900)', height: '280px', boxShadow: '0 6px 20px rgba(0,0,0,0.3)' }}>
               <img {...imgSize("/WhatsApp Image 2026-08-13 at 1.35.50 PM.webp")} loading="lazy" 
                 src="/WhatsApp Image 2026-08-13 at 1.35.50 PM.webp" 
@@ -1242,7 +1242,7 @@ export default function HomePage({ onEnquireClick }) {
               </p>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '2.5rem', alignItems: 'start', marginBottom: '3rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(340px, 100%), 1fr))', gap: '2.5rem', alignItems: 'start', marginBottom: '3rem' }}>
               {/* RFQ Form */}
               <div style={{ backgroundColor: 'var(--bg-dark-900)', padding: '2.25rem', borderRadius: '16px', border: '1px solid var(--border-color)', boxShadow: '0 8px 30px rgba(0,0,0,0.3)' }}>
                 {formSubmitted ? (
@@ -1255,7 +1255,7 @@ export default function HomePage({ onEnquireClick }) {
                   </div>
                 ) : (
                   <form onSubmit={handleFormSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                    <div className="stack-sm" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                       <div>
                         <label htmlFor="home-field-1" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Name *</label>
                         <input id="home-field-1" 
@@ -1280,7 +1280,7 @@ export default function HomePage({ onEnquireClick }) {
                       </div>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                    <div className="stack-sm" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                       <div>
                         <label htmlFor="home-field-3" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Phone Number *</label>
                         <input id="home-field-3" 
@@ -1305,7 +1305,7 @@ export default function HomePage({ onEnquireClick }) {
                       </div>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                    <div className="stack-sm" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                       <div>
                         <label htmlFor="home-field-5" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Grade & Size *</label>
                         <input id="home-field-5" 

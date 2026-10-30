@@ -116,7 +116,7 @@ export default function GradePage({ gradeData, onEnquireClick }) {
           <h2 style={{ fontSize: '1.8rem', fontWeight: '700', marginBottom: '1.5rem', textAlign: 'center' }}>
             Primary Industry Applications for {gradeCode}
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginBottom: '3.5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1.5rem', marginBottom: '3.5rem' }}>
             {applications && applications.map((app, idx) => (
               <div key={idx} style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.5rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary-yellow)', fontWeight: '700', marginBottom: '0.5rem' }}>

@@ -225,7 +225,7 @@ export default function ProductPage({ product, onEnquireClick }) {
                   <h3 style={{ fontSize: '1.1rem', fontWeight: '600', marginBottom: '1rem', color: 'var(--text-primary)' }}>
                     Key Features
                   </h3>
-                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '0.75rem' }}>
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(240px, 100%), 1fr))', gap: '0.75rem' }}>
                     {product['Key Features'].split(';').map((feat, idx) => (
                       <div key={idx} style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
                         <ShieldCheck size={16} style={{ color: 'var(--primary-yellow)' }} />
@@ -504,7 +504,7 @@ export default function ProductPage({ product, onEnquireClick }) {
             <h2 style={{ fontSize: '1.5rem', fontWeight: '700', marginBottom: '2rem', color: 'var(--text-primary)' }}>
               Related Products
             </h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(320px, 100%), 1fr))', gap: '2rem' }}>
               {relatedProducts.map((p) => (
                 <div 
                   key={p['URL Slug']}

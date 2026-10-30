@@ -1727,7 +1727,8 @@ nav {
   .product-simple-grid,
   .product-overview-grid,
   .product-ordering-grid {
-    grid-template-columns: 1fr;
+    /* minmax(0, 1fr): a long unbreakable spec (e.g. C51000/C52100/...) must not widen the page */
+    grid-template-columns: minmax(0, 1fr);
     gap: 2.5rem;
   }
 }
@@ -2790,4 +2791,50 @@ nav {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+/* ============ Phone layout safety net ============
+   Many grids set grid-template-columns inline, which beats normal media queries.
+   These utility classes and rules use !important so phones get one column. */
+@media (max-width: 992px) {
+  .stack-md { grid-template-columns: minmax(0, 1fr) !important; gap: 2.5rem !important; }
+}
+@media (max-width: 640px) {
+  .stack-sm { grid-template-columns: minmax(0, 1fr) !important; }
+  .grid-2-sm { grid-template-columns: repeat(2, 1fr) !important; }
+}
+
+/* Tables inside articles scroll sideways on phones instead of widening the page */
+@media (max-width: 768px) {
+  .blog-content-body table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+@media (max-width: 768px) {
+  /* iOS zooms the page when a focused field is under 16px */
+  input, select, textarea { font-size: 16px !important; }
+  /* Long words, URLs and badge text wrap instead of pushing the page wider */
+  h1, h2, h3, h4, p, li, th { overflow-wrap: break-word; }
+  td { overflow-wrap: anywhere; }
+  /* Long single words (Electropolished, Thiruvananthapuram) at desktop heading sizes
+     are wider than a phone: scale h1 down and hyphenate h1/h2 at syllables */
+  h1 { font-size: clamp(1.7rem, 8.5vw, 2.4rem) !important; line-height: 1.18 !important; }
+  h1, h2 { -webkit-hyphens: auto; hyphens: auto; }
+  .btn { white-space: normal; overflow-wrap: anywhere; text-align: center; }
+  img, video, iframe, svg { max-width: 100%; }
+}
+
+@media (max-width: 768px) {
+  /* Breadcrumb and footer links are short single lines: give them a 24px+ touch target */
+  nav[aria-label="Breadcrumb"] a,
+  .crumbs a,
+  footer a {
+    display: inline-block;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+  }
 }

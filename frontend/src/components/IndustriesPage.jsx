@@ -49,7 +49,7 @@ export default function IndustriesPage() {
       {/* Main Grid */}
       <section style={{ padding: '4rem 0' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(320px, 100%), 1fr))', gap: '2rem' }}>
             {industries.map((ind, idx) => (
               <div key={idx} style={{ 
                 backgroundColor: 'var(--bg-dark-800)', 

@@ -645,7 +645,7 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
                   <h3 style={{ fontSize: '1.4rem', fontWeight: '800', marginBottom: '1.25rem', color: 'var(--text-primary)' }}>
                     Primary Applications
                   </h3>
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                  <div className="stack-sm" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                     {applications.map((app, idx) => (
                       <div key={idx} style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
                         <CheckCircle2 size={16} style={{ color: 'var(--primary-yellow)' }} />
@@ -693,7 +693,7 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
                 <h3 style={{ fontSize: '1.4rem', fontWeight: '800', marginBottom: '1.25rem', color: 'var(--text-primary)' }}>
                   Industry Sectors & Usage
                 </h3>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '1.25rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(220px, 100%), 1fr))', gap: '1.25rem' }}>
                   {sectors.map((sec, idx) => (
                     <div key={idx} style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '6px', padding: '1.25rem' }}>
                       <h4 style={{ fontSize: '1rem', fontWeight: '700', color: 'var(--primary-yellow)', marginBottom: '0.25rem' }}>{sec.key}</h4>
@@ -751,7 +751,7 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
             <div className="accent-line"></div>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1.5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(280px, 100%), 1fr))', gap: '1.5rem' }}>
             {usps.map((usp, idx) => (
               <div key={idx} style={{ 
                 backgroundColor: 'var(--bg-dark-900)', 

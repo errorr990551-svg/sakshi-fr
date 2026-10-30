@@ -38,7 +38,7 @@ export default function CategoryPage({ category, onEnquireClick }) {
       >
         <div className="container">
           {/* Breadcrumbs */}
-          <div 
+          <div className="crumbs" 
             style={{ 
               display: 'flex', 
               alignItems: 'center', 
@@ -115,7 +115,7 @@ export default function CategoryPage({ category, onEnquireClick }) {
             <div 
               style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(min(280px, 100%), 1fr))',
                 gap: '2.25rem'
               }}
             >
@@ -288,7 +288,7 @@ export default function CategoryPage({ category, onEnquireClick }) {
             </div>
 
             {/* Quality and Contextual Navigation Cards */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1.5rem' }}>
               <div style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.75rem' }}>
                 <h4 style={{ color: '#fff', fontSize: '1.15rem', marginBottom: '0.75rem' }}>100% PMI & MTC Documentation</h4>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.6' }}>
@@ -413,7 +413,7 @@ export default function CategoryPage({ category, onEnquireClick }) {
               Sakshi Forge manufactures at Taloja MIDC, Mumbai and dispatches electropolished stainless steel pipes, fittings and flanges directly to engineering and process plants across India:
             </p>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(170px, 1fr))', gap: '0.75rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(170px, 100%), 1fr))', gap: '0.75rem' }}>
             {PRIORITY_30_CITIES.map((c) => (
               <a
                 key={c.slug}

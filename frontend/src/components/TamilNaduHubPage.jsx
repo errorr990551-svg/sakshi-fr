@@ -164,7 +164,7 @@ export default function TamilNaduHubPage({ onEnquireClick, onShowContactDetails 
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.75rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(320px, 100%), 1fr))', gap: '1.75rem' }}>
             {cities.map((c, idx) => (
               <div 
                 key={idx}

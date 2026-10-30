@@ -102,7 +102,7 @@ export default function TelanganaHubPage({ onEnquireClick, onShowContactDetails 
       }}>
         <div className="container" style={{ maxWidth: '980px' }}>
           {/* Breadcrumb Navigation */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.82rem', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
+          <div className="crumbs" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.82rem', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
             <a href="/" onClick={(e) => handleLinkClick(e, '/')} style={{ color: 'inherit', textDecoration: 'none' }}>Home</a>
             <span>›</span>
             <a href="/electropolished-pipes/" onClick={(e) => handleLinkClick(e, '/electropolished-pipes/')} style={{ color: 'inherit', textDecoration: 'none' }}>Electropolished Pipes</a>
@@ -195,7 +195,7 @@ export default function TelanganaHubPage({ onEnquireClick, onShowContactDetails 
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.75rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(320px, 100%), 1fr))', gap: '1.75rem' }}>
             {cities.map((c, idx) => (
               <div 
                 key={idx}

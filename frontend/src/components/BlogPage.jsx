@@ -136,7 +136,7 @@ export default function BlogPage() {
                 marginBottom: '3.5rem',
                 cursor: 'pointer',
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(min(320px, 100%), 1fr))',
                 gap: '2rem',
                 boxShadow: '0 8px 30px rgba(0,0,0,0.4)',
                 transition: 'transform 0.25 ease, border-color 0.25s ease'
@@ -251,7 +251,7 @@ export default function BlogPage() {
               </button>
             </div>
           ) : (
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '2rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(320px, 100%), 1fr))', gap: '2rem' }}>
               {gridPosts.map((post) => (
                 <div 
                   key={post.slug} 

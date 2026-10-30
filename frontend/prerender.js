@@ -1,4 +1,5 @@
 import fs from 'fs';
+import crypto from 'crypto';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { REDIRECTED_PATHS, isRedirectedPath } from './src/data/redirects.js';
@@ -350,9 +351,24 @@ async function runPrerender() {
   const mergedRules = Object.entries(REDIRECTED_PATHS)
     .map(([from, to]) => `RewriteRule ^${escapeRegex(from.replace(/^\/|\/$/g, ''))}/?$ ${BASE_URL}${to} [L,R=301]`)
     .join('\n');
-  fs.writeFileSync(htaccessPath, fs.readFileSync(htaccessPath, 'utf-8').replace('# @MERGED_PAGES@', mergedRules));
+  // Legacy city URLs redirect only to market-area pages that are actually built
+  const citySlugs = routes
+    .map((r) => (r.slug.match(/^market-area\/([a-z0-9-]+)$/) || [])[1])
+    .filter((slug) => slug && !isRedirectedPath(`/market-area/${slug}`));
+  // Each rule line holding @CITY_SLUGS@ is repeated with ~1,500-character slug groups,
+  // keeping every line well under Apache/LiteSpeed's 8 KB config line limit
+  const slugChunks = [];
+  for (const slug of [...new Set(citySlugs)].sort()) {
+    const last = slugChunks[slugChunks.length - 1];
+    if (last && last.join('|').length + slug.length < 1500) last.push(slug);
+    else slugChunks.push([slug]);
+  }
+  fs.writeFileSync(htaccessPath, fs.readFileSync(htaccessPath, 'utf-8')
+    .replace('# @MERGED_PAGES@', mergedRules)
+    .replace(/^.*@CITY_SLUGS@.*$/gm, (line) => slugChunks.map((chunk) => line.replace('@CITY_SLUGS@', chunk.join('|'))).join('\n')));
 
   // 4. Render each route (skipping merged pages the server 301-redirects, see src/data/redirects.js)
+  const contentHashes = {};
   for (const route of routes) {
     if (isRedirectedPath(`/${route.slug}`)) continue;
     // Determine path relative to domain
@@ -368,7 +384,10 @@ async function runPrerender() {
     // and embedded in the page so hydration renders the same markup.
     const citySlugMatch = routePath.match(/^\/market-area\/([^/]+)\/?$/);
     const cityDeepPath = citySlugMatch ? path.join(__dirname, 'public/city-content', `${citySlugMatch[1]}.json`) : null;
-    const cityDeep = cityDeepPath && fs.existsSync(cityDeepPath) ? JSON.parse(fs.readFileSync(cityDeepPath, 'utf-8')) : null;
+    // Cities without a file embed { slug, none: true } so the client does not request a missing JSON
+    const cityDeep = !cityDeepPath ? null
+      : fs.existsSync(cityDeepPath) ? JSON.parse(fs.readFileSync(cityDeepPath, 'utf-8'))
+      : { slug: citySlugMatch[1], none: true };
     globalThis.__CITY_DEEP__ = cityDeep;
 
     let bodyHtml = '';
@@ -795,7 +814,11 @@ async function runPrerender() {
 
     fs.writeFileSync(outputFilePath, html, 'utf-8');
     console.log(`Saved pre-rendered output: ${outputFilePath}`);
+    contentHashes[`${BASE_URL}${routePath.replace(/\/?$/, '/')}`] = crypto
+      .createHash('sha1').update(`${pageTitle}\n${pageDesc}\n${bodyHtml}`).digest('hex').slice(0, 16);
   }
+
+  writeSitemapLastmods(contentHashes);
 
   // Delete temp SSR folder to keep build clean
   try {
@@ -825,6 +848,51 @@ async function runPrerender() {
   console.log('Created dist/404.html pre-rendered error page with noindex.');
 
   console.log('Static pre-rendering complete successfully!');
+}
+
+// Sitemap <lastmod> is the date a page's rendered content (title, description, body) last
+// changed, not the build date. src/data/lastmod.json stores { url: [contentHash, date] };
+// commit it with the content change so later builds keep the same date.
+function writeSitemapLastmods(contentHashes) {
+  const manifestPath = path.join(__dirname, 'src/data/lastmod.json');
+  const today = new Date().toISOString().split('T')[0];
+  const previous = fs.existsSync(manifestPath) ? JSON.parse(fs.readFileSync(manifestPath, 'utf-8')) : {};
+  const manifest = {};
+  for (const url of Object.keys(contentHashes).sort()) {
+    const prev = previous[url];
+    manifest[url] = prev && prev[0] === contentHashes[url] ? prev : [contentHashes[url], today];
+  }
+  fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 0).replace(/\],"/g, '],\n"') + '\n');
+
+  const sitemapLatest = {};
+  for (const file of ['sitemap.xml', 'sitemap-cities.xml', 'image-sitemap.xml']) {
+    for (const dir of ['dist', 'public']) {
+      const filePath = path.join(__dirname, dir, file);
+      if (!fs.existsSync(filePath)) continue;
+      let latest = '';
+      const xml = fs.readFileSync(filePath, 'utf-8').replace(
+        /<loc>([^<]+)<\/loc>(\s*<lastmod>)[^<]*(<\/lastmod>)?/g,
+        (match, loc, lastmodOpen, lastmodClose) => {
+          const date = manifest[loc] && manifest[loc][1];
+          if (date && date > latest) latest = date;
+          return date && lastmodClose ? `<loc>${loc}</loc>${lastmodOpen}${date}${lastmodClose}` : match;
+        }
+      );
+      fs.writeFileSync(filePath, xml);
+      sitemapLatest[file] = latest || today;
+    }
+  }
+  for (const dir of ['dist', 'public']) {
+    const indexPath = path.join(__dirname, dir, 'sitemap_index.xml');
+    if (!fs.existsSync(indexPath)) continue;
+    const xml = fs.readFileSync(indexPath, 'utf-8').replace(
+      /<loc>[^<]+\/([^/<]+\.xml)<\/loc>\s*<lastmod>[^<]*<\/lastmod>/g,
+      (match, file) => (sitemapLatest[file] ? match.replace(/<lastmod>[^<]*</, `<lastmod>${sitemapLatest[file]}<`) : match)
+    );
+    fs.writeFileSync(indexPath, xml);
+  }
+  const changed = Object.keys(manifest).filter((u) => manifest[u][1] === today).length;
+  console.log(`Sitemap lastmod: ${changed} of ${Object.keys(manifest).length} pages dated ${today}, the rest keep their stored date.`);
 }
 
 runPrerender().catch(err => {

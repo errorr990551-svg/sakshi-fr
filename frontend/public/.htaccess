@@ -38,7 +38,7 @@ RewriteRule ^telangana/?$ https://steelmanufacturer.in/market-area/telangana/ [L
 RewriteRule ^west-bengal/?$ https://steelmanufacturer.in/market-area/west-bengal/ [L,R=301]
 RewriteRule ^madhya-pradesh/?$ https://steelmanufacturer.in/market-area/madhya-pradesh/ [L,R=301]
 RewriteRule ^andhra-pradesh/?$ https://steelmanufacturer.in/market-area/andhra-pradesh/ [L,R=301]
-RewriteRule ^odisha/?$ https://steelmanufacturer.in/market-area/odisha/ [L,R=301]
+RewriteRule ^odisha/?$ https://steelmanufacturer.in/market-area/ [L,R=301]
 RewriteRule ^306-stainless-steel-round-bar/?$ https://steelmanufacturer.in/304-stainless-steel-round-bar/ [L,R=301]
 RewriteRule ^forged-pipe-fittings-guide-pressure-classes-standards/?$ https://steelmanufacturer.in/asme-b16-11-forged-fittings/ [L,R=301]
 
@@ -67,10 +67,12 @@ RewriteRule ^(?:ss-pipe-vs-ss-tube-the-definitive-2026-comparison-guide|how-to-c
 RewriteRule ^(?:electropolished-pipes?-(?:manufacturer|supplier)-(?:in-)?|industrial-pipe-flange-manufacturer-in-)(?:karnal|gorakhpur|bathinda|ballari|patiala|hisar|korba|chandigarh|bilaspur|rohtak|kota|dhanbad|tirupur|morbi)(?:-sakshi-forge)?/?$ - [G,L]
 
 # D. 301 Redirect Legacy City URLs to /market-area/<city>/ (covers pipe/pipes, with or without 'in-')
-RewriteRule ^electropolished-pipes?-manufacturer-(?:in-)?([^/]+)/?$ https://steelmanufacturer.in/market-area/$1/ [L,R=301]
-RewriteRule ^electropolished-pipes?-supplier-(?:in-)?([^/]+)/?$ https://steelmanufacturer.in/market-area/$1/ [L,R=301]
+#    Only for cities that have a live page: prerender.js fills the city placeholder with the built
+#    market-area slugs, so a legacy URL for a city without a page falls through to a real 404
+#    instead of a 301 to a 404.
+RewriteRule ^electropolished-pipes?-(?:manufacturer|supplier)-(?:in-)?(@CITY_SLUGS@)/?$ https://steelmanufacturer.in/market-area/$1/ [L,R=301]
 RewriteRule ^(?:electropolished-pipes?(?:-fittings)?-in-|dairy-electropolished-pipes-)(chennai|mumbai|pune|kolhapur)/?$ https://steelmanufacturer.in/market-area/$1/ [L,R=301]
-RewriteRule ^industrial-pipe-flange-manufacturer-in-([^/]+)-sakshi-forge/?$ https://steelmanufacturer.in/market-area/$1/ [L,R=301]
+RewriteRule ^industrial-pipe-flange-manufacturer-in-(@CITY_SLUGS@)-sakshi-forge/?$ https://steelmanufacturer.in/market-area/$1/ [L,R=301]
 
 # E. Add trailing slash to non-file URLs in one 301 hop (excluding API routes)
 RewriteCond %{REQUEST_FILENAME} !-f

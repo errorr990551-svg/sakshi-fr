@@ -199,7 +199,8 @@ async function runPrerender() {
     if (p.url && p.url !== '/') {
       const cleanSlug = p.url.replace(/^\/|\/$/g, '');
       // Avoid duplicate route if already present
-      if (!routes.some(r => r.slug === cleanSlug)) {
+      // Blog posts with the same URL replace the template page
+      if (!routes.some(r => r.slug === cleanSlug) && !blogPosts.some(b => `blog/${b.slug}` === cleanSlug)) {
         routes.push({
           url: `${BASE_URL}/${cleanSlug}/`,
           type: 'ep-spec',
@@ -457,6 +458,37 @@ async function runPrerender() {
         schemasGraph.push({
           "@type": "FAQPage",
           "mainEntity": guide.faqs.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } }))
+        });
+      }
+    }
+
+    if (route.type === 'blog-post' && route.data) {
+      const post = route.data;
+      const isoDate = (d) => { const t = new Date(d); return isNaN(t) ? undefined : t.toISOString().slice(0, 10); };
+      schemasGraph.push({
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": `${BASE_URL}/` },
+          { "@type": "ListItem", "position": 2, "name": "Steel Knowledge Hub", "item": `${BASE_URL}/blog/` },
+          { "@type": "ListItem", "position": 3, "name": post.title, "item": route.url }
+        ]
+      });
+      schemasGraph.push({
+        "@type": "BlogPosting",
+        "@id": `${route.url}#article`,
+        "headline": post.title,
+        "description": post.desc,
+        "datePublished": isoDate(post.date),
+        "dateModified": isoDate(post.date),
+        "author": { "@type": "Organization", "name": "Sakshi Forge" },
+        "publisher": { "@id": `${BASE_URL}/#org` },
+        "mainEntityOfPage": { "@type": "WebPage", "@id": route.url },
+        "image": post.image ? `${BASE_URL}${encodeURI(post.image)}` : undefined
+      });
+      if (post.faqs && post.faqs.length) {
+        schemasGraph.push({
+          "@type": "FAQPage",
+          "mainEntity": post.faqs.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } }))
         });
       }
     }

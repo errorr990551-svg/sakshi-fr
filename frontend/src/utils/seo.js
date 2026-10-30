@@ -781,7 +781,7 @@ function formatMetaDesc(desc) {
       "@id": `${postUrl}#article`,
       "headline": data.title,
       "description": data.desc,
-      "datePublished": data.date,
+      "datePublished": isNaN(new Date(data.date)) ? undefined : new Date(data.date).toISOString().slice(0, 10),
       "author": {
         "@type": "Organization",
         "name": "Sakshi Forge"
@@ -797,6 +797,12 @@ function formatMetaDesc(desc) {
     };
     graph.push(breadcrumbList);
     graph.push(blogPostingSchema);
+    if (data.faqs && data.faqs.length) {
+      graph.push({
+        "@type": "FAQPage",
+        "mainEntity": data.faqs.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } }))
+      });
+    }
   }
 
   if (type === "maharashtra-city" && data) {

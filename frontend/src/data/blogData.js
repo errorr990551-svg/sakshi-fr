@@ -3,7 +3,10 @@
  * Curated technical articles, metallurgical guides, dimension tables, and engineering specifications.
  */
 
+import { deepPosts } from './blogDeepPosts.js';
+
 export const blogPosts = [
+  ...deepPosts,
     {
     id: "ep-pipes-pharma-biotech-india",
     slug: "ep-pipes-pharma-biotech-india",

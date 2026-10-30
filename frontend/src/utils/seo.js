@@ -103,85 +103,11 @@ export function parseKeySpecs(specsString) {
   }).filter(item => item.key);
 }
 
-// Helper to generate Google Rich Results compliant Product Offer and identifier details
-export function getProductOfferDetails(slug, categoryName, pageUrl) {
-  const s = (slug || '').toLowerCase();
-  const cat = (categoryName || '').toLowerCase();
-
-  let lowPrice = "210";
-  let highPrice = "7500";
-
-  if (s.includes('pipe') || s.includes('tube') || cat.includes('pipe')) {
-    lowPrice = "480";
-    highPrice = "14500";
-  } else if (s.includes('fastener') || cat.includes('fastener') || s.includes('bolt') || s.includes('nut')) {
-    lowPrice = "45";
-    highPrice = "1250";
-  } else if (s.includes('round-bar') || s.includes('coil') || cat.includes('bar')) {
-    lowPrice = "290";
-    highPrice = "16500";
-  } else if (s.includes('elbow') || s.includes('tee') || s.includes('flange') || s.includes('fitting') || cat.includes('fitting') || cat.includes('flange')) {
-    lowPrice = "185";
-    highPrice = "6800";
-  }
-
-  const skuCode = `SF-${(slug || 'ITEM').replace(/[^a-zA-Z0-9]/g, '-').toUpperCase()}`;
-
-  return {
-    sku: skuCode,
-    mpn: `MPN-${skuCode}`,
-    offers: {
-      "@type": "AggregateOffer",
-      "url": pageUrl,
-      "priceCurrency": "INR",
-      "lowPrice": lowPrice,
-      "highPrice": highPrice,
-      "offerCount": "100",
-      "priceValidUntil": "2027-12-31",
-      "availability": "https://schema.org/InStock",
-      "itemCondition": "https://schema.org/NewCondition",
-      "seller": {
-        "@type": "Organization",
-        "name": "Sakshi Forge",
-        "url": `${BASE_URL}/`
-      },
-      "hasMerchantReturnPolicy": {
-        "@type": "MerchantReturnPolicy",
-        "applicableCountry": "IN",
-        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-        "merchantReturnDays": 30,
-        "returnMethod": "https://schema.org/ReturnByMail",
-        "returnFees": "https://schema.org/FreeReturn"
-      },
-      "shippingDetails": {
-        "@type": "OfferShippingDetails",
-        "shippingRate": {
-          "@type": "MonetaryAmount",
-          "value": 0,
-          "currency": "INR"
-        },
-        "shippingDestination": [{
-          "@type": "DefinedRegion",
-          "addressCountry": "IN"
-        }],
-        "deliveryTime": {
-          "@type": "ShippingDeliveryTime",
-          "handlingTime": {
-            "@type": "QuantitativeValue",
-            "minValue": 1,
-            "maxValue": 2,
-            "unitCode": "DAY"
-          },
-          "transitTime": {
-            "@type": "QuantitativeValue",
-            "minValue": 1,
-            "maxValue": 4,
-            "unitCode": "DAY"
-          }
-        }
-      }
-    }
-  };
+// Product identifier only. The site publishes no prices, stock levels, return or shipping
+// terms, so Product markup carries no `offers` (an invented AggregateOffer was removed:
+// structured data must match what the page shows).
+export function getProductOfferDetails(slug) {
+  return { sku: `SF-${(slug || 'ITEM').replace(/[^a-zA-Z0-9]/g, '-').toUpperCase()}` };
 }
 
 // Main function to update head elements dynamically

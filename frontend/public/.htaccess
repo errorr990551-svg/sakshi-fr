@@ -139,6 +139,12 @@ RewriteRule ^ - [R=404,L]
   <FilesMatch "\.(html|htm)$">
     Header set Cache-Control "public, max-age=3600, must-revalidate"
   </FilesMatch>
+  # 404/410 responses are served from 404.html: never cache them, or a page
+  # published after someone hit the URL keeps returning 404 for an hour
+  <FilesMatch "^404\.html$">
+    Header set Cache-Control "no-store, max-age=0"
+    Header unset Expires
+  </FilesMatch>
 </IfModule>
 FileETag None
 

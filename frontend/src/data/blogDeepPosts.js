@@ -8,7 +8,7 @@ const cta = (heading, text) => `
     <h4>${heading}</h4>
     <p>${text}</p>
   </div>
-  <a href="/contact/" class="btn btn-primary blog-mid-cta-btn">Request a Quotation</a>
+  <a href="/contact-us/" class="btn btn-primary blog-mid-cta-btn">Request a Quotation</a>
 </div>`;
 
 export const deepPosts = [
@@ -34,7 +34,7 @@ export const deepPosts = [
     content: `
 <h2>1. The Hygienic Function of the Tube Wall</h2>
 <p>In a dairy or food line the inside of the tube is a process surface, not just a pressure boundary. Milk proteins (casein micelles and whey proteins such as β-lactoglobulin), milk fat, lactose and calcium phosphate all interact with stainless steel. Proteins adsorb within seconds of contact; on heated surfaces they denature and bind calcium phosphate into a deposit. Bacteria such as <em>Pseudomonas</em>, <em>Listeria</em> and thermoduric spore-formers attach to that conditioning film and, given time, form biofilm that survives a weak cleaning cycle.</p>
-<p>The surface properties that govern this are topography (roughness peaks, scratches, laps and folds from mechanical polishing), surface chemistry (the composition of the passive film) and geometry (crevices, dead legs and undrained sections). Electropolishing improves the first two; correct installation controls the third. For grade and size selection across a whole plant, see our <a href="/industries/dairy-electropolished-pipes/">dairy electropolished pipes</a> overview and our earlier article on <a href="/blog/ep-pipes-dairy-food-beverage-india/">why Indian dairies choose EP pipes</a>.</p>
+<p>The surface properties that govern this are topography (roughness peaks, scratches, laps and folds from mechanical polishing), surface chemistry (the composition of the passive film) and geometry (crevices, dead legs and undrained sections). Electropolishing improves the first two; correct installation controls the third. For grade and size selection across a whole plant, see our <a href="/industries/dairy-electropolished-pipes/">dairy electropolished pipes</a> overview.</p>
 
 <h2>2. CIP Chemistry and What It Does to Stainless Steel</h2>
 <p>A typical dairy CIP sequence is a pre-rinse, a hot caustic wash, an intermediate rinse, an acid wash, a final rinse and, where required, a sanitising step. Each chemical has a job and each has a limit for stainless steel.</p>
@@ -322,7 +322,7 @@ ${cta('Selecting pipe for an acid or chloride duty?', 'Send the chemical, concen
 <li><strong>Removal of the disturbed layer:</strong> the work-hardened, smeared layer from mechanical polishing goes, along with any abrasive embedded in it.</li>
 <li><strong>Chromium enrichment:</strong> iron dissolves preferentially, so the re-formed film has a higher Cr/Fe ratio than chemical passivation typically produces.</li>
 </ul>
-<p>Electropolishing is usually applied after mechanical polishing: mechanical finishing sets the macro-profile, and electropolishing perfects the micro-profile. See the <a href="/electropolishing-process/">electropolishing process</a> page for how we sequence these steps.</p>
+<p>Electropolishing is usually applied after mechanical polishing: mechanical finishing sets the macro-profile, and electropolishing perfects the micro-profile. See the <a href="/blog/electropolishing-stainless-steel-pipes-guide/">electropolishing process</a> page for how we sequence these steps.</p>
 
 ${cta('Not sure which treatment your line needs?', 'Tell us the service, the cleaning regime and the inspection requirement. We will recommend mechanical polish, electropolish or both, and the passivation step after installation.')}
 

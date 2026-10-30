@@ -19,7 +19,7 @@ Get the URLs in `queue.tsv` out of "Discovered – currently not indexed" in Sea
 5. Do not touch pages outside today's 5, except to add an internal link to a new page.
 6. Never force-push, never rewrite history, never skip a failing check.
 7. **Sources must be opened, not just seen in search snippets.** If WebFetch/curl cannot open source pages (network policy block), write and check the pages but push to the working branch only (status `keep-pending-verify`), do NOT push to `main`, and tell the owner the network access must be widened. At the start of every run, first re-verify any `keep-pending-verify` rows by opening their sources; fix or remove unconfirmed claims, then promote them to `keep` and push to main.
-8. **Transactional intent.** Pages are written for a buyer ready to order. Each city page needs a section that tells that city's buyer exactly what to send in an RFQ for their industry, with a link to /contact/. It must be specific to the city's plants, not a generic checklist.
+8. **Transactional intent.** Pages are written for a buyer ready to order. Each city page needs a section that tells that city's buyer exactly what to send in an RFQ for their industry, with a link to /contact-us/. It must be specific to the city's plants, not a generic checklist.
 
 ## Quality gate (no low-quality content is ever pushed)
 A page is pushed only if it passes **all** of these. Otherwise discard it, log `discard` with the reason, and move on. **It is better to push 0 pages than 1 weak page.**

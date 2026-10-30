@@ -170,7 +170,7 @@ export const CATEGORY_GUIDES = {
           'Export-grade packing: PVC end caps, polyethylene sleeves and seaworthy wooden boxes, with export documentation prepared in-house.',
           'Dispatch and transit confirmed in writing with each quotation, for delivery to your site or your fabricator\'s shop.'
         ],
-        cta: { label: 'Request a quotation for electropolished pipes', href: '/contact/' }
+        cta: { label: 'Request a quotation for electropolished pipes', href: '/contact-us/' }
       }
     ],
     faqs: [

@@ -4,6 +4,7 @@
  */
 
 import { deepPosts } from './blogDeepPosts.js';
+import { isRedirectedPath } from './redirects.js';
 
 export const blogPosts = [
   ...deepPosts,
@@ -1946,7 +1947,7 @@ Problems found after installation are expensive to fix.<br />
       }
     ]
   }
-];
+].filter((p) => !isRedirectedPath(`/blog/${p.slug}/`));
 
 export function getPostBySlug(slug) {
   return blogPosts.find(p => p.slug === slug || p.id === slug);

@@ -40,11 +40,34 @@ const productMerges = {
   '/electropolished-pipe-fittings/': ['/electropolished-pipes/electropolished-pipe-and-fittings/']
 };
 
+// Pages competing for the same search intent: each merged into the stronger page
+const intentMerges = {
+  '/contact-us/': ['/contact/', '/request-a-quote/'],
+  '/about-us/': ['/about-sakshi-forge/'],
+  '/industries/': ['/industries-served/'],
+  '/market-area/': ['/locations/', '/market-area/odisha/'],
+  '/testing-inspection/': ['/quality-certifications/'],
+  '/blog/electropolishing-stainless-steel-pipes-guide/': ['/electropolishing-process/'],
+  '/blog/electropolished-vs-mechanically-polished-pipes/': ['/resources/ep-vs-mechanical-polish-vs-pickled/'],
+  '/blog/304-vs-316l-ep-pipes-india/': ['/resources/316l-vs-304l-ep-pipes/', '/blog/ss-304l-vs-316l-corrosion-guide/'],
+  '/blog/ep-pipe-price-india/': ['/resources/electropolished-pipe-price-list/'],
+  '/blog/ra-value-ep-pipes-surface-finish/': ['/resources/asme-bpe-surface-finish-chart/', '/blog/ra-value-explained-pharma-piping/'],
+  '/blog/dairy-plant-piping-guide/': ['/blog/ep-pipes-dairy-food-beverage-india/'],
+  '/en-10204-31-mtc/': ['/resources/en-10204-31-mtc-sample/'],
+  '/astm-a270-electropolished-tubes/': ['/resources/astm-a270-vs-a269/'],
+  '/ultra-high-purity-ep-tubes/': ['/industries/semiconductor-electropolished-pipes/', '/blog/semiconductor-uhp-tubing-semi-f19/'],
+  '/high-purity-stainless-steel-pipes/': ['/industries/high-purity-water-electropolished-pipes/'],
+  '/industries/mango-pulp-electropolished-pipes/': ['/blog/mango-pulp-plant-piping/'],
+  '/industries/brewery-electropolished-pipes/': ['/blog/brewery-piping-hygienic-design/'],
+  '/seamless-pipes/ss-904l-seamless-pipe/': ['/904l-stainless-steel-seamless-pipe/'],
+  '/seamless-pipes/duplex-2205-seamless-pipe/': ['/duplex-2205-steel-pipe/']
+};
+
 export const REDIRECTED_PATHS = { ...CITY_DUPLICATES };
 for (const [city, slugs] of Object.entries(cityMerges)) {
   for (const slug of slugs) REDIRECTED_PATHS[`/${slug}/`] = `/market-area/${city}/`;
 }
-for (const [target, sources] of Object.entries(productMerges)) {
+for (const [target, sources] of [...Object.entries(productMerges), ...Object.entries(intentMerges)]) {
   for (const source of sources) REDIRECTED_PATHS[source] = target;
 }
 

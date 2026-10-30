@@ -34,6 +34,18 @@ import { ArrowRight } from 'lucide-react';
 // SEO and Router imports
 import { updateSEO } from './utils/seo';
 import { REDIRECTED_PATHS } from './data/redirects';
+
+// Up to 6 other live city pages in the same state (India) or country, taken in a ring over the
+// sorted slugs so every city in a group is linked from the same number of its neighbours.
+const regionOf = (c) => ((c.country || 'India') === 'India' ? c.state : c.country);
+function siblingCities(city) {
+  const group = marketCitiesData
+    .filter((c) => c.path && regionOf(c) === regionOf(city) && !REDIRECTED_PATHS[`${c.path.replace(/\/+$/, '')}/`])
+    .sort((a, b) => a.slug.localeCompare(b.slug));
+  const at = group.findIndex((c) => c.slug === city.slug);
+  if (at < 0) return [];
+  return group.slice(at + 1).concat(group.slice(0, at)).slice(0, 6).map((c) => ({ city: c.city, path: c.path }));
+}
 import productsData from './data/products.json';
 import categoriesData from './data/categories.json';
 import CategoryPage from './components/CategoryPage';
@@ -435,7 +447,7 @@ function App(props) {
       return c.slug === slug || c.slug === customCityKey || normPath === cleanPath || normPath === '/' + slug;
     });
     if (city) {
-      return { type: 'market-city', data: city };
+      return { type: 'market-city', data: city.nearbyCitySpokes ? city : { ...city, nearbyCitySpokes: siblingCities(city) } };
     }
 
     // Check if matching EP Build Spec page (106 URLs)

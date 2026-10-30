@@ -1873,7 +1873,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
                 gap: '0.5rem'
               }}>
                 <MapPin size={14} style={{ color: 'var(--primary-yellow)' }} />
-                Sibling Supply Destinations ({cityData.state}):
+                More cities we supply in {(cityData.country || 'India') === 'India' ? cityData.state : cityData.country}:
               </span>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.6rem' }}>
                 {cityData.nearbyCitySpokes.map((spoke, idx) => {
@@ -1905,7 +1905,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
                       e.currentTarget.style.backgroundColor = 'var(--bg-dark-800)';
                     }}
                   >
-                    EP Pipes in {spoke.city}
+                    {spoke.city}
                   </a>
                 );
               })}

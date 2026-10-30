@@ -48,3 +48,11 @@ date	path	type	status	nearest_overlap_before	nearest_overlap_after	words_before	
 2026-10-25	/market-area/ambala/	city-in	keep	0.500	0.377	1289	1848	scientific instruments cluster 2000+ units (Tribune), IDDC; verified 2026-10-29 against opened sources
 2026-10-25	/market-area/ambernath/	city-in	keep	0.528	0.409	1411	1945	MPCB 2014 unit list, Asston Unit II Jan 2026, PolyPeptide; verified 2026-10-29 against opened sources
 2026-10-25	/market-area/amritsar/	city-in	keep	0.629	0.473	1476	2038	Verka plant, Rs 135 cr sterilised/fermented expansion Apr 2025 (PTI); verified 2026-10-29 against opened sources
+2026-10-30	/market-area/angul/	city-in	discard	0.590	-	2367	-	no meaningful EP buyer base (aluminium, steel, power); page left as is
+2026-10-30	/market-area/bahadurgarh/	city-in	discard	0.678	-	1508	-	no meaningful EP buyer base (footwear, engineering, packaging); page left as is
+2026-10-30	/market-area/badlapur/	city-in	discard	0.611	-	1521	-	insufficient openable sources (Fierce Pharma 403; MPCB file names estate only); retry later
+2026-10-30	/market-area/bhubaneswar/	city-in	discard	-	-	-	-	insufficient openable sources on pharma/dairy plants; retry later
+2026-10-30	/market-area/ankleshwar/	city-in	keep	0.506	0.413	2087	2673	GIDC 1967/1,605 ha/AIA counts (DTE 1995), Zydus/Glenmark/Sun/Torrent (Wikipedia), Ami Organics Rs190 cr (2022)
+2026-10-30	/market-area/belagavi/	city-in	keep	0.466	0.382	1996	2546	BEMUL units 1 lakh L Belagavi/Gokak/Athani/Ramdurg (The Goan 2021), mega dairy 25 acres (Agro&Food 2026), foundry history (Wikipedia)
+2026-10-30	/market-area/bengaluru/	city-in	keep	0.497	0.405	1986	2565	Karnataka bioeconomy $39.2B/21% (BioSpectrum 2026), E-City 1,300+ biotech (Invest India), Biocon (Wikipedia), Cipla Bommasandra EIR (2020)
+2026-10-30	/market-area/bhopal/	city-in	keep	0.471	0.398	2234	2765	Mandideep 650+ units/2,000 acres/Rs10,000 cr (Wikipedia), NGT Govindpura 2014

@@ -1,0 +1,83 @@
+{
+  "slug": "bengaluru",
+  "updated": "2026-10-30",
+  "sections": [
+    {
+      "heading": "Bengaluru: India's Biotech Capital and Its Manufacturing Belt",
+      "paragraphs": [
+        "Karnataka's bioeconomy crossed USD 39.2 billion in 2025, about 21 percent of India's total, and Bengaluru is its centre. Electronic City alone hosts more than 1,300 biotech start-ups and companies, including Biocon and Syngene. Biocon, headquartered in Electronic City, runs its research centre and biologics operations at Biocon Park in Bommasandra and sells APIs in about 120 countries, alongside biosimilar insulins and antibodies.",
+        "The manufacturing belt runs south along Hosur Road through Electronic City, Bommasandra and Jigani, where biologics, API and formulation plants sit close to each other. Cipla, for example, received a USFDA Establishment Inspection Report for its Bommasandra API facility in 2020. These are export plants, inspected by regulators who look closely at water systems and product-contact surfaces, and their expansion projects specify tube accordingly."
+      ]
+    },
+    {
+      "heading": "Biologics and Biosimilars: Why Bengaluru Specifies SF4",
+      "paragraphs": [
+        "Biologics are made by living cells, so every surface that touches media, buffer or product must be cleanable to a validated limit and must not shed metal ions that affect the culture or the protein. Biopharmaceutical plants therefore build their WFI, clean steam, media and buffer preparation, and product transfer in 316L tube to ASME BPE with an SF4 electropolished internal finish as standard.",
+        "Single-use systems have taken over some steps, but the fixed utilities that feed them, especially WFI and clean steam distribution, are still stainless. A Bengaluru biologics plant expanding capacity will usually add or extend WFI loops, clean steam headers and CIP circuits, and those need tube and fittings with matching finish and complete documentation.",
+        "Metal-ion pick-up is the specific risk in cell culture. Iron and other ions released by a poorly passivated surface can affect cell growth and protein quality, which is why biologics buyers care about the chromium-rich passive film that electropolishing leaves, not only about the Ra number."
+      ]
+    },
+    {
+      "heading": "Contract Research, Pilot Plants and Process Equipment Makers",
+      "paragraphs": [
+        "Bengaluru also has a dense layer of contract research organisations, pilot plants and equipment builders who make skids, bioreactor systems and purified-water units for pharma customers across India. They buy smaller, mixed quantities: several sizes of electropolished tube, a few fittings, cut to drawing, with certificates that pass straight into their customer's turnover package."
+      ]
+    },
+    {
+      "heading": "Requesting a Quote for Bengaluru Biopharma Tubing",
+      "bullets": [
+        "State the service for each line: WFI, clean steam, media or buffer preparation, harvest and product transfer, or CIP.",
+        "Specify ASME BPE dimensions and the surface finish designation, normally SF4 (Ra 0.38 µm max) for biologics; tell us if your specification is tighter.",
+        "Say whether your validation team expects borescope records or a particular Ra measurement method in the surface report.",
+        "List matching electropolished fittings and clamp ferrules, so the whole loop carries one finish and one documentation set.",
+        "Delivery to your site in Electronic City, Bommasandra, Jigani or elsewhere, or to your skid builder; dispatch and transit are confirmed in writing with the quotation.",
+        "We supply an EN 10204 3.1 certificate traced to heat number, PMI on every length and a measured Ra report for every electropolished lot."
+      ],
+      "links": [
+        {
+          "label": "Request a Bengaluru quotation",
+          "href": "/contact/"
+        }
+      ]
+    },
+    {
+      "heading": "Delivery to Bengaluru",
+      "paragraphs": [
+        "Bengaluru is supplied by road from our Taloja MIDC works; dispatch and transit are confirmed in writing with each quotation.",
+        "Nearby clusters:"
+      ],
+      "links": [
+        {
+          "label": "Hosur",
+          "href": "/market-area/hosur/"
+        },
+        {
+          "label": "Tumakuru",
+          "href": "/market-area/tumakuru/"
+        },
+        {
+          "label": "Mysuru",
+          "href": "/market-area/mysuru/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "BioSpectrum (2026): Karnataka's BioEconomy crosses $39.2 B in 2025",
+      "url": "https://www.biospectrumindia.com/news/96/27376/karnatakas-bioeconomy-crosses-39-2-b-in-2025-contributing-21-to-indias-bioeconomy.html"
+    },
+    {
+      "title": "Invest India: Top five biotech clusters in India",
+      "url": "https://www.investindia.gov.in/team-india-blogs/top-five-biotech-clusters-india-investment-hubs-government-incentives-growth"
+    },
+    {
+      "title": "Wikipedia: Biocon",
+      "url": "https://en.wikipedia.org/wiki/Biocon"
+    },
+    {
+      "title": "Medical Dialogues (2020): Cipla gets USFDA EIR for Bommasandra API facility",
+      "url": "https://medicaldialogues.in/news/industry/pharma/cipla-gets-usfda-eir-for-bommasandra-api-facility-65615"
+    }
+  ]
+}

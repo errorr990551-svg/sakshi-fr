@@ -1,0 +1,61 @@
+{
+  "slug": "ankleshwar",
+  "updated": "2026-10-30",
+  "sections": [
+    {
+      "heading": "Ankleshwar GIDC: Gujarat's Oldest Chemical and API Estate",
+      "paragraphs": [
+        "Ankleshwar's industrial estate was set up by the Gujarat Industrial Development Corporation in 1967. A 1995 Down To Earth investigation described it as a 1,605 hectare estate packed with about 1,500 units, and the Ankleshwar Industries Association's membership then included 220 chemical, 156 dye and dye-intermediate, 196 engineering and 69 pharmaceutical units. The estate has grown since, and nearby Panoli GIDC extends the same chemical and pharmaceutical belt.",
+        "Pharmaceutical majors run API plants in the Ankleshwar GIDC estate, among them Zydus, Glenmark, Sun Pharmaceutical and Torrent. Mid-sized API makers are still adding capacity: in 2022 Ami Organics earmarked Rs 190 crore to expand API production in Ankleshwar. For a supplier of electropolished tube, that makes Ankleshwar one of India's densest concentrations of API buyers."
+      ]
+    },
+    {
+      "heading": "Where an Ankleshwar API Plant Needs Electropolished 316L",
+      "paragraphs": [
+        "An API plant is two plants in one. Synthesis, solvent handling and recovery run in reactors and process piping where corrosion resistance decides the material, and the finish matters less. After the final crystallisation, everything changes: purification, centrifuging, drying and milling of the active ingredient happen under GMP, and the purified water, product transfer and CIP lines serving those steps are where electropolished 316L tube belongs.",
+        "Plants exporting to regulated markets are inspected on exactly those steps. A smooth, chromium-rich bore resists the rouge and residue that complicate cleaning validation between campaigns, and it gives the quality team a documented surface finish for the qualification file. Purified-water loops for API final steps are commonly SF1 at ambient temperature and SF4 electropolished where the loop is hot-sanitised."
+      ]
+    },
+    {
+      "heading": "Solvents, Chlorides and Grade Selection in Ankleshwar",
+      "bullets": [
+        "Purified water, final API transfer and CIP in the GMP area: 316L, SF4 electropolished, ASTM A270 with ASME BPE dimensions.",
+        "Solvent transfer between reactors and recovery: 316L or 304L pipe to ASTM A312 is usually adequate; finish is secondary to weld quality.",
+        "Hydrochloric acid, chlorinated solvents or brines at temperature: 316L will pit; discuss duplex 2205 or a higher alloy before ordering.",
+        "Dye and intermediate units without GMP duty rarely need electropolishing; we will say so and quote the economical option."
+      ]
+    },
+    {
+      "heading": "RFQ Checklist for Ankleshwar and Panoli Plants",
+      "bullets": [
+        "Name the service for each size: WFI or purified water, final API transfer, CIP, solvent, or utility.",
+        "For process lines, list the chemicals, concentration and maximum temperature so the grade is chosen for the real duty.",
+        "State whether your customer audits to USFDA or EU GMP, so the Ra limit and documentation match what their inspector will ask for.",
+        "Give OD × wall and metres per size, and say whether matching electropolished bends, tees, reducers and ferrules are needed.",
+        "Delivery to your plot in Ankleshwar GIDC or Panoli GIDC, or to your fabricator; dispatch and transit are confirmed in writing with the quotation.",
+        "Each lot is supplied with an EN 10204 3.1 certificate traced to heat number, PMI on every length, and a measured Ra report for electropolished tube."
+      ],
+      "links": [
+        { "label": "Request an Ankleshwar quotation", "href": "/contact/" }
+      ]
+    },
+    {
+      "heading": "Delivery to Ankleshwar",
+      "paragraphs": [
+        "Ankleshwar is on the Mumbai–Ahmedabad corridor and is supplied by road from our Taloja MIDC works; dispatch and transit are confirmed in writing with each quotation. Hazira Port is the nearest listed sea gateway for export-bound equipment.",
+        "Nearby Gujarat clusters:"
+      ],
+      "links": [
+        { "label": "Dahej", "href": "/market-area/dahej/" },
+        { "label": "Vadodara", "href": "/market-area/vadodara/" },
+        { "label": "Surat", "href": "/market-area/surat/" },
+        { "label": "Vapi", "href": "/market-area/vapi/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Down To Earth (1995) via India Environment Portal: Blood on its hands", "url": "https://indiaenvironmentportal.org.in/news-clippings/blood-on-its-hands" },
+    { "title": "Wikipedia: Pharmaceutical industry in Gujarat", "url": "https://en.wikipedia.org/wiki/Pharmaceutical_industry_in_Gujarat" },
+    { "title": "Indian Pharma Post: Ami Organics earmarks Rs 190 cr to expand API production in Ankleshwar", "url": "https://www.indianpharmapost.com/news/lite/ami-organics-earmarks-rs-190-cr-to-expand-api-production-in-ankleshwar-12093" }
+  ]
+}

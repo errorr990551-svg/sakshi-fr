@@ -1,0 +1,79 @@
+{
+  "slug": "bhopal",
+  "updated": "2026-10-30",
+  "sections": [
+    {
+      "heading": "Bhopal's Industry: Govindpura in the City, Mandideep to the South",
+      "paragraphs": [
+        "Bhopal's manufacturing sits in two places. Govindpura is the established industrial area inside the city. Mandideep, an industrial township about 23 km south in Raisen district that grew from the late 1970s, now spreads across some 2,000 acres with more than 650 units, including Lupin Laboratories, Procter & Gamble, Godrej Foods and HEG, and a total investment reported at over Rs 10,000 crore.",
+        "For electropolished tube, the buyers are the pharmaceutical plants, led by Lupin's Mandideep operations, the food processors, and the fabricators who build equipment for both."
+      ]
+    },
+    {
+      "heading": "Pharmaceutical Plants Around Bhopal",
+      "paragraphs": [
+        "Formulation plants around Bhopal supply the domestic market and, in the larger units, regulated export markets. Their purified-water systems should be built in 316L from the RO permeate onward: SF1 mechanically polished tube for an ambient loop serving oral solids, SF4 electropolished tube for hot-sanitised loops, liquid orals and points of use feeding product directly. WFI and clean steam, where sterile products are made, are SF4 as standard.",
+        "Inspectors read the water-system qualification file closely, so the material evidence matters as much as the tube: heat-traceable certificates, PMI records for each length, and a measured Ra report for every electropolished lot.",
+        "Expansion is where most tube orders come from. When a Mandideep plant adds a new block or upgrades to meet revised Schedule M, it usually extends the purified-water loop rather than replacing it, so the new tube must match the existing grade, wall and finish, and the certificates must tie into the original qualification records."
+      ]
+    },
+    {
+      "heading": "Food Plants and Environmental Scrutiny in Govindpura",
+      "paragraphs": [
+        "Food manufacturers in Mandideep need sanitary product and CIP lines: 304 or 304L for most duty, 316L for salty or acidic products, and electropolishing where product sticks or lines are cleaned between every batch. In Govindpura, pollution from industrial units was the subject of a National Green Tribunal judgment in 2014, a reminder that local plants operate under close environmental attention. Lines that clean in fewer, shorter cycles reduce wash-water and detergent load to treatment."
+      ]
+    },
+    {
+      "heading": "Ordering Tube for a Bhopal or Mandideep Plant",
+      "bullets": [
+        "For each line, say whether it carries purified water, WFI, product, CIP solution or a utility.",
+        "Give the loop temperature and sanitisation method: ambient, hot water at 80 °C, or ozone; that decides SF1 or SF4.",
+        "Provide OD × wall and metres per size, and whether you need ASME BPE dimensions or ASTM A270 sanitary tube.",
+        "List matching electropolished bends, tees, reducers and clamp ferrules to complete the loop.",
+        "Delivery to your plot in Mandideep or Govindpura, or to your fabricator; dispatch and transit are confirmed in writing with the quotation.",
+        "Each lot is documented with an EN 10204 3.1 certificate traced to heat number, PMI on every length and a measured Ra report for electropolished tube."
+      ],
+      "links": [
+        {
+          "label": "Send a Bhopal enquiry",
+          "href": "/contact/"
+        }
+      ]
+    },
+    {
+      "heading": "Delivery to Bhopal",
+      "paragraphs": [
+        "Bhopal and Mandideep are supplied by road from our Taloja MIDC works; dispatch and transit are confirmed in writing with each quotation.",
+        "Other Madhya Pradesh clusters:"
+      ],
+      "links": [
+        {
+          "label": "Mandideep",
+          "href": "/market-area/mandideep/"
+        },
+        {
+          "label": "Indore",
+          "href": "/market-area/indore/"
+        },
+        {
+          "label": "Pithampur",
+          "href": "/market-area/pithampur/"
+        },
+        {
+          "label": "Dewas",
+          "href": "/market-area/dewas/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia: Mandideep",
+      "url": "https://en.wikipedia.org/wiki/Mandideep"
+    },
+    {
+      "title": "India Environment Portal: NGT judgment on pollution by units in Govindpura industrial area (2014)",
+      "url": "https://www.indiaenvironmentportal.org.in/in-court/judgement-of-the-national-green-tribunal-regarding-pollution-being-caused-by-various-units-in-the-industrial-area-at-govindpura-in-bhopal-29042014"
+    }
+  ]
+}

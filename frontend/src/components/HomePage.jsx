@@ -189,7 +189,7 @@ export default function HomePage({ onEnquireClick }) {
               ISO 9001:2015 Certified Manufacturing Company in Mumbai · Taloja MIDC Plant
             </span>
             <h1 className="hero-title" style={{ fontSize: 'clamp(2.2rem, 4.8vw, 3.5rem)', fontWeight: '850', lineHeight: '1.18', color: '#fff', marginBottom: '1.35rem', textShadow: '0 2px 14px rgba(0, 0, 0, 0.9)' }}>
-              Forged Flanges &amp; Electropolished Pipes Manufacturer in Mumbai
+              Electropolished Stainless Steel Pipes &amp; Tubes Manufacturer in Mumbai
             </h1>
             <p className="hero-desc" style={{ fontSize: '1.15rem', color: '#cbd5e1', lineHeight: '1.75', marginBottom: '2rem', maxWidth: '920px', textShadow: '0 1px 8px rgba(0, 0, 0, 0.8)' }}>
               Sakshi Forge is a premier manufacturing company in Mumbai producing precision ASME B16.5 forged flanges, electropolished pipes (Ra ≤0.4 µm), butt weld fittings, and custom steel components in SS 304L, 316L, and Duplex alloys. Manufactured at our Taloja, Mumbai works with 100% PMI testing and EN 10204 3.1 inspection certification.

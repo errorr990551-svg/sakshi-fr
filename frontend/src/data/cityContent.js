@@ -44,7 +44,11 @@ function regulatorNotes(r) {
 function transitSentence(ctx) {
   const { r } = ctx;
   if (ctx.india) {
-    return `Material for ${ctx.city} leaves our Taloja MIDC works in Mumbai by road (typical transit: ${r.transit.replace(/ from our Mumbai works$/, '')}). For export-bound projects the nearest gateway is ${r.gateway}.`;
+    // Rows without a confirmed transit time (no day count) say it is confirmed per quotation
+    const transit = /\d|day/.test(r.transit)
+      ? `by road (typical transit: ${r.transit.replace(/ from our Mumbai works$/, '')})`
+      : 'by road, with the transit time for your site confirmed in writing with each quotation';
+    return `Material for ${ctx.city} leaves our Taloja MIDC works in Mumbai ${transit}. For export-bound projects the nearest gateway is ${r.gateway}.`;
   }
   return `${ctx.city} is supplied by sea from Nhava Sheva (JNPT) through ${r.gateway}; ocean transit is typically ${r.transit.replace(/ from Nhava Sheva.*$/, '')}, plus time for customs clearance and inland delivery.`;
 }

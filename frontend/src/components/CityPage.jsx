@@ -322,8 +322,8 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
     if (!text) return [
       { num: '1', title: 'Ultra-Smooth Internal Surface (Ra ≤ 0.38 µm / SF4)', desc: 'Electrochemical dissolution eliminates micro-burrs and microscopic crevices, preventing bio-film accumulation.' },
       { num: '2', title: '100% PMI & EN 10204 3.1 MTC Certified', desc: 'Every batch undergoes Positive Material Identification (PMI) and hydrostatic pressure testing before dispatch.' },
-      { num: '3', title: 'Fast Road Transit from Mumbai Plant', desc: `${cityData.transitLine || 'Direct daily dispatch via express road lanes to ' + cityData.city + '.'}` },
-      { num: '4', title: 'Comprehensive Sanitary Fittings & Flanges Stock', desc: 'Single-source procurement for EP pipes, tri-clamp fittings, weld neck flanges, and high-purity valves.' },
+      { num: '3', title: 'Road Dispatch from Our Mumbai Plant', desc: `${cityData.transitLine || 'Road dispatch from Taloja MIDC to ' + cityData.city + ', with transit time confirmed in writing with each quotation.'}` },
+      { num: '4', title: 'Sanitary Fittings & Flanges from One Source', desc: 'Single-source procurement for EP pipes, tri-clamp fittings, weld neck flanges, and high-purity valves.' },
       { num: '5', title: 'Protective Export-Grade Crate Packaging', desc: 'All pipes are end-capped, polyethylene sleeved, and packed in reinforced wooden crates to ensure pristine delivery.' }
     ];
     const points = [];

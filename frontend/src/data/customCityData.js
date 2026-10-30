@@ -14,8 +14,8 @@ export const customCityData = {
     eyebrow: 'Export Supply · Canberra, ACT, Australia',
     breadcrumb: [
       { name: 'Home', path: '/' },
-      { name: 'Market Directory', path: '/market-area' },
-      { name: 'Australia', path: '/market-area#australia' },
+      { name: 'Market Directory', path: '/market-area/' },
+      { name: 'Australia', path: '/market-area/#australia' },
       { name: 'Canberra', path: '/market-area/canberra-australia' }
     ],
     heroIntro: 'Sakshi Forge manufactures ASTM A270 / ASME BPE electropolished stainless steel tubing in Mumbai and ships it to Canberra through Port Botany, Sydney. We supply SS 316L and 304L EP tube with internal finishes down to Ra ≤ 0.38 µm (SF4). Every batch is 100% PMI-tested and ships with EN 10204 3.1 MTCs, for pharma, laboratory, hospital, brewery and food process lines across the ACT and Queanbeyan.',
@@ -220,8 +220,8 @@ export const customCityData = {
     eyebrow: 'Export Supply · Abu Dhabi, United Arab Emirates',
     breadcrumb: [
       { name: 'Home', path: '/' },
-      { name: 'Market Directory', path: '/market-area' },
-      { name: 'UAE', path: '/market-area#uae' },
+      { name: 'Market Directory', path: '/market-area/' },
+      { name: 'UAE', path: '/market-area/#uae' },
       { name: 'Abu Dhabi', path: '/market-area/abu-dhabi-uae' }
     ],
     heroIntro: 'Sakshi Forge manufactures ASTM A270 / ASME BPE electropolished stainless steel tubing in Mumbai and ships it to Abu Dhabi through Khalifa Port or Jebel Ali. We supply SS 316L and 304L EP tube with internal finishes down to Ra ≤ 0.38 µm (SF4). Every batch is 100% PMI-tested and ships with EN 10204 3.1 MTCs, for pharmaceutical, biotech, hospital, laboratory, dairy and food process lines across Abu Dhabi and Al Ain.',
@@ -439,8 +439,8 @@ export const customCityData = {
     reviewerByline: 'Technically reviewed by Quality Assurance Team · Metallurgy & High-Purity Piping · Last reviewed: 29 Sep 2026',
     breadcrumb: [
       { name: 'Home', path: '/' },
-      { name: 'Market Directory', path: '/market-area' },
-      { name: 'UAE', path: '/market-area#uae' },
+      { name: 'Market Directory', path: '/market-area/' },
+      { name: 'UAE', path: '/market-area/#uae' },
       { name: 'Al Ain', path: '/market-area/al-ain-uae' }
     ],
     heroIntro: 'Sakshi Forge manufactures ASTM A270 / ASME BPE electropolished stainless steel tubing in Mumbai and supplies process plants in Al Ain through Khalifa Port and Jebel Ali. Our 316L and 304L EP tube is finished to an internal Ra as low as 0.38 µm (SF4), 100% PMI-tested and shipped with EN 10204 3.1 MTCs. This page explains how we make it, how to specify it for dairy, water, food and pharma lines, and what arrives with every shipment.',

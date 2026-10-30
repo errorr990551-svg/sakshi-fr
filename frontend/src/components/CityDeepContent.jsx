@@ -33,12 +33,12 @@ export default function CityDeepContent({ slug }) {
     let cancelled = false;
     fetch(`/city-content/${slug}.json`)
       .then((res) => (res.ok ? res.json() : null))
-      .then((json) => { if (!cancelled) setData(json); })
-      .catch(() => { if (!cancelled) setData(null); });
+      .then((json) => { if (!cancelled) setData(json || { slug, none: true }); })
+      .catch(() => { if (!cancelled) setData({ slug, none: true }); });
     return () => { cancelled = true; };
   }, [slug, data]);
 
-  if (!data || data.slug !== slug) return null;
+  if (!data || data.slug !== slug || data.none) return null;
 
   return (
     <article style={{ padding: '4.5rem 0', backgroundColor: 'var(--bg-dark-900)', borderTop: '1px solid var(--border-color)' }}>

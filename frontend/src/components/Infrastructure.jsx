@@ -1,5 +1,6 @@
 import React from 'react';
 import { Award, Flame, Cpu, ShieldAlert } from 'lucide-react';
+import { imgSize } from '../utils/imgSize';
 
 export default function Infrastructure() {
   return (
@@ -35,14 +36,14 @@ export default function Infrastructure() {
             </div>
           </div>
           <div className="infra-image-wrap">
-            <img loading="lazy" src="/hero_forge.webp" alt="Heavy duty forging hook crane moving glowing metal cylinder" />
+            <img {...imgSize("/hero_forge.webp")} loading="lazy" src="/hero_forge.webp" alt="Heavy duty forging hook crane moving glowing metal cylinder" />
           </div>
         </div>
 
         {/* Row 2: Manufacturing Infrastructure */}
         <div className="infra-grid infra-reverse">
           <div className="infra-image-wrap">
-            <img loading="lazy" src="/molten_furnace.webp" alt="Molten steel manufacturing forge furnace glowing" />
+            <img {...imgSize("/molten_furnace.webp")} loading="lazy" src="/molten_furnace.webp" alt="Molten steel manufacturing forge furnace glowing" />
           </div>
           <div className="infra-content">
             <span className="hero-tag" style={{ border: 'none', backgroundColor: 'rgba(255, 193, 7, 0.08)' }}>Infrastructure</span>

@@ -3,6 +3,7 @@ import { Calendar, User, Clock, ArrowRight, Search, FileText, Sparkles, Filter }
 import Breadcrumbs from './Breadcrumbs';
 import { blogPosts } from '../data/blogData';
 import { handleLinkClick, withSlash } from '../utils/router';
+import { imgSize } from '../utils/imgSize';
 
 export default function BlogPage() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -144,7 +145,7 @@ export default function BlogPage() {
             >
               {featuredPost.image ? (
                 <div style={{ height: '100%', minHeight: '260px', overflow: 'hidden', backgroundColor: '#12151c' }}>
-                  <img loading="lazy" 
+                  <img {...imgSize(featuredPost.image)} loading="lazy" 
                     src={featuredPost.image} 
                     alt={featuredPost.title} 
                     loading="lazy"
@@ -271,7 +272,7 @@ export default function BlogPage() {
                   <div>
                     {post.image ? (
                       <div style={{ height: '180px', overflow: 'hidden', backgroundColor: '#12151c', borderBottom: '1px solid var(--border-color)' }}>
-                        <img loading="lazy" 
+                        <img {...imgSize(post.image)} loading="lazy" 
                           src={post.image} 
                           alt={post.title} 
                           loading="lazy"

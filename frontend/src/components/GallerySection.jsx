@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { Play, Pause, Maximize2, Video, Image as ImageIcon, ArrowRight, X, ChevronLeft, ChevronRight, Send } from 'lucide-react';
 import { galleryItems } from '../data/galleryData';
 import { handleLinkClick } from '../utils/router';
+import { imgSize } from '../utils/imgSize';
 
 function HomeGalleryCard({ item, index, onSelect }) {
   const videoRef = useRef(null);
@@ -59,7 +60,7 @@ function HomeGalleryCard({ item, index, onSelect }) {
           </>
         ) : (
           <>
-            <img
+            <img {...imgSize(item.src)}
               src={item.src}
               alt={item.title}
               loading="lazy"
@@ -163,7 +164,7 @@ export default function GallerySection({ onEnquireClick }) {
               {currentItem.type === 'video' ? (
                 <video src={currentItem.src} controls autoPlay className="lightbox-video" />
               ) : (
-                <img loading="lazy" src={currentItem.src} alt={currentItem.title} className="lightbox-image" />
+                <img {...imgSize(currentItem.src)} loading="lazy" src={currentItem.src} alt={currentItem.title} className="lightbox-image" />
               )}
             </div>
 

@@ -3,6 +3,7 @@ import { Calendar, User, Clock, ArrowLeft, ArrowRight, CheckCircle2, Share2, Hel
 import Breadcrumbs from './Breadcrumbs';
 import { getRelatedPosts } from '../data/blogData';
 import { handleLinkClick } from '../utils/router';
+import { imgSize } from '../utils/imgSize';
 
 export default function BlogPostPage({ post, onEnquireClick }) {
   const [openFaq, setOpenFaq] = useState(null);
@@ -139,7 +140,7 @@ export default function BlogPostPage({ post, onEnquireClick }) {
               maxHeight: '400px',
               backgroundColor: 'var(--bg-dark-800)'
             }}>
-              <img loading="lazy" 
+              <img {...imgSize(post.image)} loading="lazy" 
                 src={post.image} 
                 alt={post.title} 
                 style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} 

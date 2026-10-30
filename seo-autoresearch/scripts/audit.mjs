@@ -31,7 +31,7 @@ for(const[k,v]of Object.entries(descs))if(v.length>1)add('duplicate description'
 // sitemap
 const locs=[];for(const f of fs.readdirSync(dist).filter(f=>/sitemap.*\.xml$/.test(f))){const x=fs.readFileSync(path.join(dist,f),'utf8');for(const m of x.matchAll(/<loc>([^<]+)<\/loc>/g))locs.push([f,m[1]])}
 const smSet=new Set();
-for(const[f,l]of locs){if(l.endsWith('.xml'))continue; if(f==='image-sitemap.xml'&&/\.(webp|png|jpe?g)/i.test(l))continue;
+for(const[f,l]of locs){if(l.endsWith('.xml'))continue; if(f==='image-sitemap.xml')continue;
  if(!l.startsWith(SITE+'/'))add('sitemap non-canonical host',`${f}: ${l}`);
  const p=l.replace(SITE,''); if(!p.endsWith('/'))add('sitemap URL w/o slash',`${f}: ${l}`); else if(!exists.has(p))add('sitemap URL not prerendered (404)',`${f}: ${l}`);
  if(smSet.has(l))add('sitemap duplicate loc',`${f}: ${l}`); smSet.add(l)}

@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { Play, Pause, Maximize2, X, ChevronLeft, ChevronRight, Video, Image as ImageIcon, Send, Filter } from 'lucide-react';
 import Breadcrumbs from './Breadcrumbs';
 import { galleryItems } from '../data/galleryData';
+import { imgSize } from '../utils/imgSize';
 
 function GalleryCard({ item, index, onSelect }) {
   const videoRef = useRef(null);
@@ -61,7 +62,7 @@ function GalleryCard({ item, index, onSelect }) {
           </>
         ) : (
           <>
-            <img
+            <img {...imgSize(item.src)}
               src={item.src}
               alt={item.title}
               loading="lazy"
@@ -218,7 +219,7 @@ export default function GalleryPage({ onEnquireClick }) {
                   className="lightbox-video"
                 />
               ) : (
-                <img loading="lazy"
+                <img {...imgSize(currentItem.src)} loading="lazy"
                   src={currentItem.src}
                   alt={currentItem.title}
                   className="lightbox-image"

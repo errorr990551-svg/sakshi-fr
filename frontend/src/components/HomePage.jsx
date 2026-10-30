@@ -9,6 +9,7 @@ import {
 import { handleLinkClick, withSlash } from '../utils/router';
 import { withoutDuplicateSchemaTypes } from '../utils/seo';
 import { PRIORITY_30_CITIES } from '../data/priorityCities';
+import { imgSize } from '../utils/imgSize';
 
 export default function HomePage({ onEnquireClick }) {
   const [openFaq, setOpenFaq] = useState(0);
@@ -424,7 +425,7 @@ export default function HomePage({ onEnquireClick }) {
                 }}
               >
                 <div style={{ height: '220px', width: '100%', overflow: 'hidden', backgroundColor: '#070a10', position: 'relative' }}>
-                  <img loading="lazy" 
+                  <img {...imgSize(prod.img)} loading="lazy" 
                     src={prod.img} 
                     alt={prod.title} 
                     style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.4s ease' }} 
@@ -581,7 +582,7 @@ export default function HomePage({ onEnquireClick }) {
             {/* Left Side: Pic + Service Parameters Underneath */}
             <div>
               <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid var(--border-color)', boxShadow: '0 10px 30px rgba(0,0,0,0.4)', marginBottom: '1.75rem', backgroundColor: 'var(--bg-dark-900)' }}>
-                <img loading="lazy" 
+                <img {...imgSize("/technical parameter.webp")} loading="lazy" 
                   src="/technical parameter.webp" 
                   alt="Technical Parameters - Sakshi Forge Electropolished Pipe" 
                   style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }} 
@@ -775,7 +776,7 @@ export default function HomePage({ onEnquireClick }) {
             ].map((card, idx) => (
               <div key={idx} className="utility-plant-card">
                 <div className="utility-icon-box">
-                  <img loading="lazy" src={card.icon} alt={card.title} className="utility-icon-img" />
+                  <img {...imgSize(card.icon)} loading="lazy" src={card.icon} alt={card.title} className="utility-icon-img" />
                   <h3 className="utility-title">{card.title}</h3>
                 </div>
                 <div className="utility-details">
@@ -956,7 +957,7 @@ export default function HomePage({ onEnquireClick }) {
                 }}
               >
                 <div style={{ height: '200px', width: '100%', overflow: 'hidden', backgroundColor: '#000' }}>
-                  <img loading="lazy" src={cat.img} alt={cat.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <img {...imgSize(cat.img)} loading="lazy" src={cat.img} alt={cat.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
                   <h3 style={{ fontSize: '1.2rem', color: 'var(--primary-yellow)', marginBottom: '0.5rem', fontWeight: '700' }}>
@@ -1060,7 +1061,7 @@ export default function HomePage({ onEnquireClick }) {
             {/* Right Photo */}
             <div>
               <div style={{ borderRadius: '16px', overflow: 'hidden', padding: '1rem', backgroundColor: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.08)' }}>
-                <img loading="lazy" 
+                <img {...imgSize("/global section.webp")} loading="lazy" 
                   src="/global section.webp" 
                   alt="Sakshi Forge Global and Domestic Supply Map" 
                   style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'contain', filter: 'drop-shadow(0 15px 30px rgba(0,0,0,0.5))' }}
@@ -1078,7 +1079,7 @@ export default function HomePage({ onEnquireClick }) {
             {/* Left Image */}
             <div>
               <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid var(--border-color)', boxShadow: '0 12px 35px rgba(0,0,0,0.4)', minHeight: '360px' }}>
-                <img loading="lazy" 
+                <img {...imgSize("/about_structure.webp")} loading="lazy" 
                   src="/about_structure.webp" 
                   alt="Sakshi Forge Corporate Facility Taloja MIDC" 
                   style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
@@ -1139,7 +1140,7 @@ export default function HomePage({ onEnquireClick }) {
           {/* 3 Real Gallery Photos with descriptions removed */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.75rem', marginBottom: '2.5rem' }}>
             <div style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-dark-900)', height: '280px', boxShadow: '0 6px 20px rgba(0,0,0,0.3)' }}>
-              <img loading="lazy" 
+              <img {...imgSize("/WhatsApp Image 2026-08-13 at 1.35.50 PM.webp")} loading="lazy" 
                 src="/WhatsApp Image 2026-08-13 at 1.35.50 PM.webp" 
                 alt="Forged Steel Flange Stock & Machining Facility" 
                 style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.4s ease' }} 
@@ -1147,7 +1148,7 @@ export default function HomePage({ onEnquireClick }) {
             </div>
 
             <div style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-dark-900)', height: '280px', boxShadow: '0 6px 20px rgba(0,0,0,0.3)' }}>
-              <img loading="lazy" 
+              <img {...imgSize("/WhatsApp Image 2026-08-13 at 1.38.01 PM.webp")} loading="lazy" 
                 src="/WhatsApp Image 2026-08-13 at 1.38.01 PM.webp" 
                 alt="Hot Precision Forging Hammer & Furnace Operations" 
                 style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.4s ease' }} 
@@ -1155,7 +1156,7 @@ export default function HomePage({ onEnquireClick }) {
             </div>
 
             <div style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-dark-900)', height: '280px', boxShadow: '0 6px 20px rgba(0,0,0,0.3)' }}>
-              <img loading="lazy" 
+              <img {...imgSize("/WhatsApp Image 2026-08-13 at 1.48.03 PM.webp")} loading="lazy" 
                 src="/WhatsApp Image 2026-08-13 at 1.48.03 PM.webp" 
                 alt="Finished Electropolished Products and Warehouse Inventory" 
                 style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.4s ease' }} 

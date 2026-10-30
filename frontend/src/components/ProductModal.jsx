@@ -1,5 +1,6 @@
 import React from 'react';
 import { X, ArrowRight } from 'lucide-react';
+import { imgSize } from '../utils/imgSize';
 
 export default function ProductModal({ product, onClose, onEnquireTrigger }) {
   if (!product) return null;
@@ -18,7 +19,7 @@ export default function ProductModal({ product, onClose, onEnquireTrigger }) {
 
         <div className="modal-body-wrap">
           <div className="product-details-wrap">
-            <img loading="lazy" src={product.image} alt={product.name} className="details-hero-img" />
+            <img {...imgSize(product.image)} loading="lazy" src={product.image} alt={product.name} className="details-hero-img" />
             
             <div className="details-content">
               <p>{product.longDesc}</p>

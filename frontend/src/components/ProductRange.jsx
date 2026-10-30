@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import categoriesData from '../data/categories.json';
 import { handleLinkClick, withSlash } from '../utils/router';
+import { imgSize } from '../utils/imgSize';
 
 export default function ProductRange() {
   const [startIndex, setStartIndex] = useState(0);
@@ -68,7 +69,7 @@ export default function ProductRange() {
             {visibleCategories.map((c) => (
               <div className="product-card" key={c['Category Slug']}>
                 <div className="product-img-wrap">
-                  <img loading="lazy" src={getCategoryImage(c['Parent Category'])} alt={c['Parent Category']} />
+                  <img {...imgSize(getCategoryImage(c['Parent Category']))} loading="lazy" src={getCategoryImage(c['Parent Category'])} alt={c['Parent Category']} />
                 </div>
                 <div className="product-info">
                   <div>

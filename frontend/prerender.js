@@ -7,6 +7,7 @@ import { buildCityFaqs } from './src/data/cityContent.js';
 import { customCityData } from './src/data/customCityData.js';
 import { visibleProductFaqs } from './src/utils/productFaqs.js';
 import { CATEGORY_GUIDES } from './src/data/categoryGuides.js';
+import { PHONE, EMAIL, GBP, localBusinessSchema } from './src/data/business.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -365,15 +366,12 @@ async function runPrerender() {
       "name": "Sakshi Forge",
       "url": `${BASE_URL}/`,
       "logo": `${BASE_URL}/favicon.svg`,
-      "sameAs": [
-        "https://www.sakshiforge.com",
-        "https://www.indiamart.com/sakshiforge"
-      ],
+      "sameAs": [GBP.mapsUrl],
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+91-8045815130",
+        "telephone": PHONE,
         "contactType": "sales",
-        "email": "info@sakshiforge.in"
+        "email": EMAIL
       }
     };
     const website = {
@@ -387,27 +385,7 @@ async function runPrerender() {
     schemasGraph.push(website);
 
     if (route.type === 'home' || route.type === 'contact-us') {
-      const local = {
-        "@type": "LocalBusiness",
-        "@id": `${BASE_URL}/#local`,
-        "name": "Sakshi Forge",
-        "image": `${BASE_URL}/favicon.svg`,
-        "telephone": "+91-8045815130",
-        "email": "info@sakshiforge.in",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "113/117 Dr. M.G. Mahimtura Marg, 3rd Kumbharwada, Shop No. 5, Ground Floor",
-          "addressLocality": "Mumbai",
-          "addressRegion": "Maharashtra",
-          "postalCode": "400004",
-          "addressCountry": "IN"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": "18.9602",
-          "longitude": "72.8263"
-        }
-      };
+      const local = localBusinessSchema(BASE_URL);
       schemasGraph.push(local);
     }
 
@@ -619,28 +597,14 @@ async function runPrerender() {
         ]
       });
 
-      // LocalBusiness
-      schemasGraph.push({
-        "@type": "LocalBusiness",
-        "@id": `${BASE_URL}/#org`,
-        "name": "Sakshi Forge",
-        "url": `${BASE_URL}/`,
-        "telephone": "+918291366340",
-        "email": "sales@steelmanufacturer.in",
+      // LocalBusiness (same NAP as the Google Business Profile; areaServed is this city)
+      schemasGraph.push(localBusinessSchema(BASE_URL, {
         "description": "ISO 9001:2015 certified manufacturer of electropolished stainless steel pipes and tubes, industrial flanges and forged fittings.",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Balaji Industrial Compound, Taloja MIDC",
-          "addressLocality": "Navi Mumbai",
-          "addressRegion": "Maharashtra",
-          "postalCode": "410208",
-          "addressCountry": "IN"
-        },
         "areaServed": [
           { "@type": "City", "name": cityName },
           ...(stateName ? [{ "@type": "AdministrativeArea", "name": stateName }] : [])
         ]
-      });
+      }));
 
       // Product
       const cityEpOffer = getProductOfferDetails('electropolished-pipes-' + citySlug, 'Electropolished Pipes', currentUrl);

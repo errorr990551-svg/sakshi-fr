@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Calendar, CheckSquare, Truck, Handshake, Shield, HelpCircle, FileText, ArrowRight, Phone, MessageSquare, MapPin, Mail, Award, CheckCircle, Factory, ShieldCheck, Cpu } from 'lucide-react';
 import { handleLinkClick, withSlash } from '../utils/router';
+import { PHONE, EMAIL, GBP, postalAddressSchema } from '../data/business.js';
 import { withoutDuplicateSchemaTypes } from '../utils/schemaHelpers';
 import { imgSize } from '../utils/imgSize';
 
@@ -80,27 +81,17 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
           "name": "Sakshi Forge",
           "url": "https://steelmanufacturer.in/",
           "logo": "https://steelmanufacturer.in/favicon.svg",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Balaji Industrial Compound, Taloja MIDC",
-            "addressLocality": "Mumbai",
-            "addressRegion": "Maharashtra",
-            "postalCode": "410208",
-            "addressCountry": "IN"
-          },
+          "address": postalAddressSchema(),
           "contactPoint": [
             {
               "@type": "ContactPoint",
-              "telephone": "+91-8291366340",
+              "telephone": PHONE,
               "contactType": "sales",
               "areaServed": ["IN", "US", "AE", "EU", "SG", "MY"],
               "availableLanguage": ["English", "Hindi"]
             }
           ],
-          "sameAs": [
-            "https://www.linkedin.com/company/sakshi-forge",
-            "https://www.indiamart.com/sakshiforge/"
-          ]
+          "sameAs": [GBP.mapsUrl]
         }
       ]
     };

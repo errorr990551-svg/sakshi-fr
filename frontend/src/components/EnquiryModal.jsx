@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, CheckCircle2, Send, Loader2, AlertCircle, Phone, Mail, MapPin } from 'lucide-react';
 import { trackLeadSubmission } from '../utils/analytics';
+import { ADDRESS_LINE } from '../data/business.js';
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://sakshi-fr.errorr990551.workers.dev';
 
@@ -204,7 +205,7 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '',
                   <MapPin size={18} style={{ color: 'var(--primary-yellow)', flexShrink: 0, marginTop: '0.2rem' }} />
                   <div>
                     <strong style={{ fontSize: '0.75rem', color: 'var(--text-muted)', display: 'block', textTransform: 'uppercase' }}>Office Address</strong>
-                    <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>113 / 117, Dr. M. G. Mahimtura Marg, 3rd Kumbharwada, Shop No. 5, Ground Floor, Mumbai - 400 004.</span>
+                    <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>{ADDRESS_LINE}</span>
                   </div>
                 </div>
 

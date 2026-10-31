@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, Send, ShieldCheck, MessageSquare } from 'lucide-react';
 import { trackLeadSubmission } from '../utils/analytics';
+import { ADDRESS_LINE } from '../data/business.js';
+import GoogleReviews from './GoogleReviews';
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://sakshi-fr.errorr990551.workers.dev';
 
@@ -165,7 +167,7 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
                   <div>
                     <h4 style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: '700', marginBottom: '0.25rem' }}>Registered Head Office</h4>
                     <p style={{ fontSize: '0.95rem', lineHeight: '1.5', color: 'var(--text-secondary)' }}>
-                      113/117 Dr. M.G. Mahimtura Marg, 3rd Kumbharwada, Shop No. 5, Ground Floor, Mumbai, Maharashtra 400004, India.
+                      {ADDRESS_LINE}, India
                     </p>
                   </div>
                 </div>
@@ -301,6 +303,13 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
             </div>
 
           </div>
+        </div>
+      </section>
+
+      {/* Google Business Profile reviews */}
+      <section style={{ padding: '0 0 4rem' }}>
+        <div className="container">
+          <GoogleReviews />
         </div>
       </section>
 

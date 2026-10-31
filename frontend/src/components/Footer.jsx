@@ -1,6 +1,7 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Globe, Lock } from 'lucide-react';
 import { handleLinkClick } from '../utils/router';
+import { ADDRESS_LINE } from '../data/business.js';
 
 export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact = false, onShowContactDetails }) {
   const currentYear = new Date().getFullYear();
@@ -43,7 +44,7 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
                   <MapPin size={16} className="infra-feature-icon" style={{ flexShrink: 0, marginTop: '0.2rem' }} />
                   <span style={{ fontSize: '0.9rem', lineHeight: '1.4' }}>
                     <strong>Office Address:</strong><br />
-                    113 / 117, Dr. M. G. Mahimtura Marg, 3rd Kumbharwada, Shop No. 5, Ground Floor, Mumbai - 400 004.
+                    {ADDRESS_LINE}
                   </span>
                 </div>
               </div>

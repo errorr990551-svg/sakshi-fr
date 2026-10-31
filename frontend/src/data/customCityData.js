@@ -1,6 +1,7 @@
 // Custom Rich City Content Data for International EP Pipes Handoff Pages
 // Built specifically for Canberra (Australia), Abu Dhabi (UAE), and Al Ain (UAE)
 import { tamilNaduCityData } from './tamilNaduCityData.js';
+import { ADDRESS_LINE } from './business.js';
 
 export const customCityData = {
   'canberra-australia': {
@@ -757,7 +758,7 @@ export const customCityData = {
       title: 'About Sakshi Forge',
       body: 'Sakshi Forge is an ISO 9001:2015 certified manufacturer of electropolished pipes, industrial flanges, forged fittings and high-precision stainless steel components located in Mumbai, India.',
       companyFacts: [
-        { field: 'Head Office', value: '113/117, Dr. M. G. Mahimtura Marg, 3rd Kumbharwada, Shop No. 5, Ground Floor, Mumbai 400 004, India' },
+        { field: 'Head Office', value: `${ADDRESS_LINE}, India` },
         { field: 'Quality System', value: 'ISO 9001:2015 Certified Manufacturing & Quality Assurance' },
         { field: 'Testing Laboratory', value: 'NABL Accredited Partner Laboratory (ILAC-MRA Signatory)' },
         { field: 'Sales & Inquiries', value: 'Fast 30-minute response via official RFQ desk' },

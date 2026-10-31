@@ -2,6 +2,7 @@
  * SEO utility to dynamically inject Meta Tags and JSON-LD Schema markup in the document head.
  */
 import corePagesData from '../data/core_pages.json';
+import { GBP, localBusinessSchema } from '../data/business.js';
 import { customCityData } from '../data/customCityData';
 import { withSlash } from './router';
 import { visibleProductFaqs } from './productFaqs';
@@ -360,10 +361,7 @@ function formatMetaDesc(desc) {
     "name": "Sakshi Forge",
     "url": `${BASE_URL}/`,
     "logo": `${BASE_URL}/favicon.svg`,
-    "sameAs": [
-      "https://www.sakshiforge.com",
-      "https://www.indiamart.com/sakshiforge"
-    ],
+    "sameAs": [GBP.mapsUrl],
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+91 82913 66340",
@@ -386,27 +384,7 @@ function formatMetaDesc(desc) {
   graph.push(websiteSchema);
 
   if (isHomeOrContact) {
-    const localSchema = {
-      "@type": "LocalBusiness",
-      "@id": `${BASE_URL}/#local`,
-      "name": "Sakshi Forge",
-      "image": `${BASE_URL}/favicon.svg`,
-      "telephone": "+91 82913 66340",
-      "email": "sales@steelmanufacturer.in",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "113/117 Dr. M.G. Mahimtura Marg, 3rd Kumbharwada, Shop No. 5, Ground Floor",
-        "addressLocality": "Mumbai",
-        "addressRegion": "Maharashtra",
-        "postalCode": "400004",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "18.9602",
-        "longitude": "72.8263"
-      }
-    };
+    const localSchema = localBusinessSchema(BASE_URL);
     graph.push(localSchema);
   }
 
@@ -665,27 +643,13 @@ function formatMetaDesc(desc) {
     };
     graph.push(breadcrumbList);
 
-    const localBusiness = {
-      "@type": "LocalBusiness",
-      "@id": `${BASE_URL}/#org`,
-      "name": "Sakshi Forge",
-      "url": `${BASE_URL}/`,
-      "telephone": "+91 82913 66340",
-      "email": "sales@steelmanufacturer.in",
+    const localBusiness = localBusinessSchema(BASE_URL, {
       "description": "ISO 9001:2015 certified manufacturer of electropolished stainless steel pipes and tubes, industrial flanges and forged fittings.",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Balaji Industrial Compound, Taloja MIDC",
-        "addressLocality": "Navi Mumbai",
-        "addressRegion": "Maharashtra",
-        "postalCode": "410208",
-        "addressCountry": "IN"
-      },
       "areaServed": [
         { "@type": "City", "name": data.city },
         ...(data.state ? [{ "@type": "AdministrativeArea", "name": data.state }] : [])
       ]
-    };
+    });
     graph.push(localBusiness);
 
     const cityOfferDetails = getProductOfferDetails('ep-pipes-' + (data.city || '').toLowerCase(), 'Electropolished Pipes', currentUrl);

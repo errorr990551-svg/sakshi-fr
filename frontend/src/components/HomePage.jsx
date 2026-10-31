@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { 
   ArrowRight, ShieldCheck, Award, FileText, CheckCircle2, ChevronDown, 
-  ChevronUp, MapPin, Phone, Mail, Clock, Download, ExternalLink, HelpCircle, 
+  ChevronUp, Phone, Mail, Clock, Download, ExternalLink, HelpCircle, 
   Layers, Factory, Globe, Truck, Check, AlertTriangle, MessageSquare,
   Play, Sparkles, Package, Cpu, Scissors, Zap, Droplet, Building2, FlaskConical,
-  Compass, ArrowUpRight
+  ArrowUpRight
 } from 'lucide-react';
 import { handleLinkClick, withSlash } from '../utils/router';
+import GoogleReviews from './GoogleReviews';
+import { PHONE, EMAIL, postalAddressSchema } from '../data/business.js';
 import { withoutDuplicateSchemaTypes } from '../utils/schemaHelpers';
 import { PRIORITY_30_CITIES } from '../data/priorityCities';
 import { imgSize } from '../utils/imgSize';
@@ -102,18 +104,11 @@ export default function HomePage({ onEnquireClick }) {
           "name": "Sakshi Forge",
           "url": "https://steelmanufacturer.in/",
           "logo": "https://steelmanufacturer.in/favicon.svg",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Balaji Industrial Compound, Taloja MIDC",
-            "addressLocality": "Mumbai",
-            "addressRegion": "Maharashtra",
-            "postalCode": "410208",
-            "addressCountry": "IN"
-          },
+          "address": postalAddressSchema(),
           "contactPoint": [
             {
               "@type": "ContactPoint",
-              "telephone": "+91-8291366340",
+              "telephone": PHONE,
               "contactType": "sales",
               "areaServed": ["IN", "US", "AE", "EU", "SG", "MY"],
               "availableLanguage": ["English", "Hindi"]
@@ -125,16 +120,9 @@ export default function HomePage({ onEnquireClick }) {
           "@id": "https://steelmanufacturer.in/#localbusiness",
           "name": "Sakshi Forge",
           "image": "https://steelmanufacturer.in/hero_bg.webp",
-          "telephone": "+91-8291366340",
-          "email": "sakshiforge1737@gmail.com",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Balaji Industrial Compound, Taloja MIDC",
-            "addressLocality": "Mumbai",
-            "addressRegion": "Maharashtra",
-            "postalCode": "410208",
-            "addressCountry": "IN"
-          },
+          "telephone": PHONE,
+          "email": EMAIL,
+          "address": postalAddressSchema(),
           "priceRange": "$$",
           "openingHours": "Mo-Sa 09:00-19:00"
         },
@@ -1348,39 +1336,14 @@ export default function HomePage({ onEnquireClick }) {
                 )}
               </div>
 
-              {/* Location & Map Card (Hidden direct address/phone/email as requested + Google Maps Link) */}
+              {/* Google Business Profile: map, live Google rating and reviews (no street address or phone shown here, as requested) */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-                <div style={{ backgroundColor: 'var(--bg-dark-900)', padding: '1.75rem', borderRadius: '16px', border: '1px solid var(--border-color)' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', color: 'var(--primary-yellow)', fontWeight: '700', marginBottom: '0.5rem', fontSize: '1.1rem' }}>
-                    <MapPin size={22} /> Factory Location & Navigation
-                  </div>
-                  <p style={{ margin: '0 0 1.25rem', color: 'var(--text-secondary)', fontSize: '0.92rem', lineHeight: '1.6' }}>
-                    Our manufacturing unit and testing laboratory is conveniently accessible in the Taloja MIDC industrial corridor, Mumbai. Click below to view live route navigation:
-                  </p>
-                  <a 
-                    href="https://maps.app.goo.gl/yzWiJgEDNj3iNwsB9" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="btn btn-outline"
-                    style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.6rem', padding: '0.8rem 1.2rem', fontWeight: '700', fontSize: '0.9rem' }}
-                  >
-                    <Compass size={18} style={{ color: 'var(--primary-yellow)' }} /> Open in Google Maps <ExternalLink size={15} />
-                  </a>
-                </div>
-
-                {/* Embedded Interactive Map Frame */}
-                <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid var(--border-color)', height: '280px', width: '100%', boxShadow: '0 6px 20px rgba(0,0,0,0.3)' }}>
-                  <iframe
-                    title="Sakshi Forge Factory Location Google Maps"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.5562725359196!2d73.1257!3d19.0392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e9db863c5f2d%3A0xc3e1c6b1a134a4bc!2sTaloja%20MIDC!5e0!3m2!1sen!2sin!4v1695000000000!5m2!1sen!2sin"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  ></iframe>
-                </div>
+                <GoogleReviews
+                  title="Find Us on Google"
+                  intro="See directions, photos, our star rating and customer reviews on the Sakshi Forge Google Business Profile."
+                  showWrite={false}
+                  mapHeight={360}
+                />
               </div>
             </div>
           </div>

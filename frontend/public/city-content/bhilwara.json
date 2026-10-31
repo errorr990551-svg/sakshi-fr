@@ -1,0 +1,57 @@
+{
+  "slug": "bhilwara",
+  "updated": "2026-10-31",
+  "sections": [
+    {
+      "heading": "Bhilwara: Textile City with a Growing Cooperative Dairy",
+      "paragraphs": [
+        "Bhilwara is known as the textile city of Rajasthan. More than 850 manufacturing units in the town make mainly synthetic fabric for trousers, an industry that began with Mewar Textile Mills in 1938 and grew after L. N. Jhunjhunwala started his first synthetic textile unit in 1961. Spinning, weaving and dyeing use plenty of stainless steel, but they do not need electropolished tube.",
+        "The buyer for electropolished tube in Bhilwara is the district milk union, the Bhilwara Zila Dugdh Utpadak Sahakari Sangh, which sells under the Saras brand and has just added ultra-high-temperature processing with aseptic packing."
+      ]
+    },
+    {
+      "heading": "The Bhilwara Dairy UHT Aseptic Plant",
+      "paragraphs": [
+        "The union's UHT aseptic processing and packaging plant was built for Rs 46.82 crore under the National Programme for Dairy Development (Component B, JICA-assisted) with technical support from the National Dairy Development Board. It is described as fully automatic and is the first plant in Rajasthan able to pack UHT products in sizes down to 200 ml. The Prime Minister inaugurated it by video link.",
+        "In UHT processing the product is held at 135 to 150 °C for a few seconds and then filled into sterile packs, which keep for up to six months without refrigeration. The first products are Saras chhachh, lassi and cream in 180 ml aseptic packs, with more products planned."
+      ]
+    },
+    {
+      "heading": "Which Bhilwara Dairy Lines Need Electropolished 316L",
+      "paragraphs": [
+        "A UHT plant has two hygiene zones. Everything upstream of the sterilising section, from milk reception to standardisation and pre-heating, is cleaned in place after each run, and SF1 mechanically polished 304L tube is the usual choice there.",
+        "Everything downstream of the holding tube is the aseptic zone: product coolers, the aseptic buffer tank and the line to the filler. It is steam-sterilised before every production run and must stay sterile for the length of the run, so a smooth, clean internal surface matters more here than anywhere else in the dairy. SF4 electropolished tube removes the polishing grooves where residue and biofilm can lodge, and its chromium-rich passive layer recovers well after repeated steam and caustic cycles.",
+        "Grade matters too. Chhachh is salted and both chhachh and lassi are acidic, and in cream the fat fouls the hot sections. That favours 316L for product-contact tube in the aseptic zone, with 304L kept for utilities and raw-milk duty."
+      ]
+    },
+    {
+      "heading": "Ordering for the Bhilwara Plant or Its Process Contractor",
+      "bullets": [
+        "Mark each line as aseptic zone or non-aseptic, and give the sterilisation temperature and time the aseptic zone is validated to.",
+        "Name the products each line carries (milk, chhachh, lassi or cream), because salt and acidity decide between 304L and 316L.",
+        "Give OD × wall and metres per size, and say whether the system is built to ASME BPE tube dimensions or ASTM A270 sanitary tube.",
+        "List matching electropolished bends, tees, reducers and clamp ferrules, and whether the joints in the aseptic zone are orbital-welded.",
+        "Each lot ships with an EN 10204 3.1 certificate traced to heat number, PMI on every length and a measured Ra report for electropolished tube; dispatch and transit are confirmed in writing with each quotation."
+      ],
+      "links": [
+        { "label": "Send a Bhilwara enquiry", "href": "/contact-us/" }
+      ]
+    },
+    {
+      "heading": "Delivery to Bhilwara",
+      "paragraphs": [
+        "Bhilwara is supplied by road from our Taloja MIDC works in Navi Mumbai, to the dairy, its process contractor or a fabricator's shop; dispatch and transit are confirmed in writing with each quotation.",
+        "Other Rajasthan pages:"
+      ],
+      "links": [
+        { "label": "Udaipur", "href": "/market-area/udaipur/" },
+        { "label": "Jaipur", "href": "/market-area/jaipur/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Patrika: PM Modi to inaugurate Bhilwara Dairy's UHT plant (Rs 46.82 crore, first 200 ml aseptic plant in Rajasthan)", "url": "https://www.patrika.com/bhilwara-news/pm-modi-to-inaugurate-bhilwara-dairys-uht-plant-20015227" },
+    { "title": "Dairy Business Middle East & Africa: India's PM inaugurates Rajasthan's first UHT milk processing and packaging plant", "url": "https://dairybusinessmea.com/?p=2122548" },
+    { "title": "Wikipedia: Bhilwara", "url": "https://en.wikipedia.org/wiki/Bhilwara" }
+  ]
+}

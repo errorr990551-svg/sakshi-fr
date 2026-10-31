@@ -1,0 +1,66 @@
+{
+  "slug": "dewas",
+  "updated": "2026-10-31",
+  "sections": [
+    {
+      "heading": "Dewas: Bank Note Press Town with a Pharmaceutical Base",
+      "paragraphs": [
+        "Dewas is an industrialised city in Madhya Pradesh, best known nationally for the government Bank Note Press. Its pharmaceutical base is what matters for electropolished tube: two listed drug makers have plants here, one with both bulk-drug and formulation sites, the other with a newer greenfield unit for intermediates and APIs.",
+        "That mix means Dewas buyers order tube for two quite different duties: purified water for the final steps of API manufacture, and water and product systems in finished-dosage plants."
+      ]
+    },
+    {
+      "heading": "Sun Pharma's API and Formulation Sites in Dewas",
+      "paragraphs": [
+        "The site list in Sun Pharmaceutical Industries' sustainability reporting boundary, an older undated document, names Dewas twice: once among its API (bulk drug) sites, alongside Toansa, Maduranthakam, Ahmednagar and Panoli, and once among its formulation sites, alongside Dadra and Halol.",
+        "For a supplier this means two separate specifications on one company's purchase orders. The bulk-drug site buys tube for final-step utilities, while the formulation site's water system is qualified against the dosage forms it makes."
+      ]
+    },
+    {
+      "heading": "Ipca's Greenfield Dewas Unit",
+      "paragraphs": [
+        "Ipca Laboratories built a greenfield unit at Dewas for drug intermediates and APIs, with a capital outlay of about Rs 250 crore. The company told the stock exchanges that the first of its two plants began trial production on 2 February 2022 and the second on 30 September 2022.",
+        "Plants that have recently started up are often still extending their utilities: adding a purified-water branch to a new building, a loop to a new final-isolation room, or a second distribution ring once volumes grow. Each extension has to match the grade, wall and finish of the tube already installed and validated."
+      ]
+    },
+    {
+      "heading": "Choosing Grade and Finish for Dewas API and Formulation Plants",
+      "paragraphs": [
+        "In API plants, use electropolished tube only for the clean end of the process. Purified water for final crystallisation and cake washing is usually an ambient loop in SF1 mechanically polished 316L; move to SF4 where the loop is hot-sanitised or delivers straight into the final isolation and packing room.",
+        "In formulation plants, ambient purified-water loops for tablets and capsules are commonly SF1. Water for injection, clean steam and loops feeding liquid or sterile products should be SF4 electropolished 316L. Both kinds of plant should keep 304L for non-contact utilities, and should never mix finishes within one validated loop."
+      ]
+    },
+    {
+      "heading": "Ordering Tube for a Dewas Plant",
+      "bullets": [
+        "State whether the line serves an API final step, a formulation block or a utility, and what it carries: purified water, WFI, clean steam or product.",
+        "Give loop temperature and sanitisation method, and the finish of the tube already installed if you are extending a validated loop.",
+        "Provide OD × wall and metres per size, to ASME BPE dimensions or ASTM A270 / A269.",
+        "Include the electropolished bends, tees, reducers and clamp ferrules needed to complete the line.",
+        "Each lot comes with an EN 10204 3.1 certificate traced to heat number, PMI on every length and a measured Ra report for electropolished tube; dispatch and transit are confirmed in writing with each quotation."
+      ],
+      "links": [
+        { "label": "Send a Dewas enquiry", "href": "/contact-us/" }
+      ]
+    },
+    {
+      "heading": "Delivery to Dewas",
+      "paragraphs": [
+        "Dewas is supplied by road from our Taloja MIDC works in Navi Mumbai, to the plant or its piping contractor; dispatch and transit are confirmed in writing with each quotation.",
+        "Other Madhya Pradesh pages:"
+      ],
+      "links": [
+        { "label": "Indore", "href": "/market-area/indore/" },
+        { "label": "Ujjain", "href": "/market-area/ujjain/" },
+        { "label": "Pithampur", "href": "/market-area/pithampur/" },
+        { "label": "Bhopal", "href": "/market-area/bhopal/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Sun Pharmaceutical Industries: sustainability reporting boundary (site list)", "url": "https://sunpharma.com/responsibility/sustainability-old-working/pdf/Reporting-boundary.pdf" },
+    { "title": "Ipca Laboratories filing via NSE: first Dewas API plant commences trial production (3 Feb 2022)", "url": "https://nsearchives.nseindia.com/corporate/IPCALAB_03022022154341_IpcaUpdatesDewas.pdf" },
+    { "title": "Ipca Laboratories filing via NSE: second Dewas API plant commences trial production (30 Sep 2022)", "url": "https://nsearchives.nseindia.com/corporate/IPCALAB_30092022180950_IpcaDewasUpdate.pdf" },
+    { "title": "Wikipedia: Dewas", "url": "https://en.wikipedia.org/wiki/Dewas" }
+  ]
+}

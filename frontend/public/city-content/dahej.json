@@ -1,0 +1,59 @@
+{
+  "slug": "dahej",
+  "updated": "2026-10-31",
+  "sections": [
+    {
+      "heading": "Dahej: Deep-Water Port and the Gujarat PCPIR",
+      "paragraphs": [
+        "Dahej sits on the south-west coast of Bharuch district, about 45 km from Bharuch. Its natural deep-water port takes vessels of up to 25 m draft and has captive facilities for Petronet LNG, the Gujarat Chemical Port Terminal Company liquid terminal, Birla Copper, Torrent Pharmaceuticals and Reliance Industries. Behind the port, a special economic zone is being developed over some 30,000 hectares.",
+        "The area lies inside the Gujarat Petroleum, Chemicals and Petrochemicals Investment Region declared under the PCPIR Policy of 2007. Most plants here make chemicals and petrochemicals, but active pharmaceutical ingredient (API) makers have been moving in, and they are the buyers who need electropolished tube."
+      ]
+    },
+    {
+      "heading": "API Plants Arriving at Dahej",
+      "paragraphs": [
+        "In November 2023 Ahmedabad-based Cadila Pharmaceuticals opened a Rs 200 crore API plant at Dahej, run on a distributed control system. It is one of the projects under the company's Rs 1,000 crore investment MoU with the Gujarat government.",
+        "In September 2023 Gharda Chemicals bought 38 acres in Payal Industrial Park, a 3,500-acre park at Dahej, for a Rs 600 crore plant making APIs and agrochemical formulations. Sites like this, with pharmaceutical and agrochemical production on one campus, need especially careful piping design."
+      ]
+    },
+    {
+      "heading": "Where Electropolished Tube Belongs in a Dahej API Plant",
+      "paragraphs": [
+        "Most of an API plant does not need electropolished tube. Reactor bays, solvent headers and recovery lines are built in glass-lined steel, alloy C-276 or 316L pipe chosen for corrosion, not surface finish. The electropolished tube goes into the last steps, where the drug substance is crystallised, washed, dried and packed.",
+        "Purified water for the final crystallisation, the centrifuge or filter-dryer wash and equipment rinsing is usually an ambient loop, and SF1 mechanically polished 316L meets it. If the loop is hot-sanitised, or feeds the final isolation room directly, SF4 electropolished tube is the safer choice, because a smoother surface sheds rouge and biofilm and gives cleaner rinse samples during cleaning validation.",
+        "On a combined campus like Gharda's, keep the pharmaceutical water and product lines on their own headers, with no physical connection to agrochemical lines, because auditors look for that separation. Order the API-grade tube as a separate, separately certified lot."
+      ]
+    },
+    {
+      "heading": "Ordering Tube for a Dahej Plant",
+      "bullets": [
+        "Identify each line as purified water, final-step product transfer, clean nitrogen or utility, and say which block or building it serves.",
+        "Give the loop temperature and sanitisation method; ambient loops can be SF1, hot-sanitised or final-isolation lines should be SF4.",
+        "State OD × wall and metres per size, and whether the design follows ASME BPE or ASTM A270 / A269 dimensions.",
+        "Say whether pharmaceutical and agrochemical lines share a site, so the API tube is supplied and certified as its own lot.",
+        "Every lot carries an EN 10204 3.1 certificate traced to heat number, PMI on each length and a measured Ra report for electropolished tube; dispatch and transit are confirmed in writing with the quotation."
+      ],
+      "links": [
+        { "label": "Send a Dahej enquiry", "href": "/contact-us/" }
+      ]
+    },
+    {
+      "heading": "Delivery to Dahej",
+      "paragraphs": [
+        "Dahej, Payal Industrial Park and the PCPIR estates are supplied by road from our Taloja MIDC works in Navi Mumbai, to the plant gate or the EPC contractor's fabrication yard; dispatch and transit are confirmed in writing with each quotation.",
+        "Nearby South Gujarat pages:"
+      ],
+      "links": [
+        { "label": "Ankleshwar", "href": "/market-area/ankleshwar/" },
+        { "label": "Vadodara", "href": "/market-area/vadodara/" },
+        { "label": "Surat", "href": "/market-area/surat/" },
+        { "label": "Vapi", "href": "/market-area/vapi/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "BioSpectrum: Cadila Pharma invests Rs 200 Cr in new API manufacturing plant at Dahej (27 Nov 2023)", "url": "https://biospectrumindia.com/news/73/23889/cadila-pharma-invests-rs-200-cr-in-new-api-manufacturing-plant-at-dahej.html" },
+    { "title": "BioSpectrum: Gharda Chemicals invests Rs 600 Cr to set up new facility in Gujarat for API production (6 Sep 2023)", "url": "https://biospectrumindia.com/news/73/23555/gharda-chemicals-invests-rs-600-cr-to-set-up-new-facility-in-gujarat-for-api-production.html" },
+    { "title": "Wikipedia: Dahej Port", "url": "https://en.wikipedia.org/wiki/Dahej_Port" }
+  ]
+}

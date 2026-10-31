@@ -1,0 +1,58 @@
+{
+  "slug": "dehradun",
+  "updated": "2026-10-31",
+  "sections": [
+    {
+      "heading": "Dehradun's Pharma Estates: Selaqui and Mohabewala",
+      "paragraphs": [
+        "Pharmaceutical manufacturing in Dehradun is concentrated in industrial estates. The state industrial development corporation SIIDCUL, set up in 2002 and headquartered in Dehradun, lists Pharma City in the Selaqui Industrial Area, Dehradun, among the integrated industrial estates it runs across Uttarakhand. Mohabewala Industrial Area, also in Dehradun, is where Windlas Biotech, a formulations contract manufacturer, has its registered office.",
+        "For a formulation plant that shapes what it needs in tube: a purified-water system qualified to GMP and, once sterile products are added, loops for water for injection and clean steam."
+      ]
+    },
+    {
+      "heading": "Windlas Biotech: Injectables and a Sixth Dehradun Plant",
+      "paragraphs": [
+        "Windlas Biotech's recent filings show the kind of expansion that brings tube orders to Dehradun. In January 2025 it announced that its new injectable facility had received GMP certification from the Food Safety & Drugs Administration Authority of Uttarakhand after an inspection in December 2024. It said all five of its plants now comply with WHO GMP.",
+        "In its results for the quarter to June 2026, the company reported that injectables and a Plant-2 extension were driving growth, and that commercial production at Plant-6 was on track for the first half of FY27. New blocks like these are where Dehradun's demand for electropolished tube comes from."
+      ]
+    },
+    {
+      "heading": "Injectables or Oral Solids in Dehradun: SF4 or SF1",
+      "paragraphs": [
+        "The dosage form decides the finish. A tablet or capsule block needs purified water for granulation, coating and equipment washing; an ambient 316L loop in SF1 mechanically polished tube is a sound, inspectable design for that duty.",
+        "An injectable block is different. Water for injection is normally kept hot, around 80 °C, and circulated continuously, and clean steam is piped to autoclaves and sterilise-in-place points. Both should be SF4 electropolished 316L, because the smoother, chromium-rich surface slows rouge formation at temperature and leaves less for endotoxin and particulate tests to find. Where an existing site adds an injectable line, the new WFI loop usually runs alongside an older purified-water loop, and the two must not be mixed up on drawings or in the store.",
+        "The Uttarakhand drug authority's GMP inspection is the moment the water system's records are read. Material certificates that match each tube to its heat, PMI evidence and roughness reports should be ready when the qualification file is assembled, not chased afterwards."
+      ]
+    },
+    {
+      "heading": "Ordering Tube for a Selaqui or Mohabewala Plant",
+      "bullets": [
+        "Say whether the line is purified water, water for injection, clean steam or product transfer, and which block it serves.",
+        "Give loop temperature and sanitisation: hot WFI and clean steam call for SF4; ambient purified water can be SF1.",
+        "Provide OD × wall and metres per size, and whether drawings follow ASME BPE dimensions or ASTM A270 sanitary tube.",
+        "Add the electropolished bends, tees, reducers and clamp ferrules needed to finish each loop, and whether joints are orbital-welded.",
+        "We supply an EN 10204 3.1 certificate traced to heat number, PMI on every length and a measured Ra report for each electropolished lot; dispatch and transit are confirmed in writing with the quotation."
+      ],
+      "links": [
+        { "label": "Send a Dehradun enquiry", "href": "/contact-us/" }
+      ]
+    },
+    {
+      "heading": "Delivery to Dehradun",
+      "paragraphs": [
+        "Selaqui, Mohabewala and other Dehradun sites are supplied by road from our Taloja MIDC works in Navi Mumbai; dispatch and transit are confirmed in writing with each quotation.",
+        "Other Uttarakhand pages:"
+      ],
+      "links": [
+        { "label": "Haridwar", "href": "/market-area/haridwar/" },
+        { "label": "Rudrapur", "href": "/market-area/rudrapur/" },
+        { "label": "Kashipur", "href": "/market-area/kashipur/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Windlas Biotech press release via NSE: new injectable facility receives GMP certification (10 Jan 2025)", "url": "https://nsearchives.nseindia.com/corporate/WINDLAS_10012025124829_Press_Release_100125.pdf" },
+    { "title": "Windlas Biotech press release via NSE: Q1 FY27 financial results (10 Aug 2026)", "url": "https://nsearchives.nseindia.com/corporate/WINDLAS_10082026160834_PR_up.pdf" },
+    { "title": "Wikipedia: State Infrastructure and Industrial Development Corporation of Uttarakhand (SIIDCUL)", "url": "https://en.wikipedia.org/wiki/State_Infrastructure_and_Industrial_Development_Corporation_of_Uttarakhand_Limited" }
+  ]
+}

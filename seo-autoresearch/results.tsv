@@ -56,3 +56,11 @@ date	path	type	status	nearest_overlap_before	nearest_overlap_after	words_before	
 2026-10-30	/market-area/belagavi/	city-in	keep	0.466	0.382	1996	2546	BEMUL units 1 lakh L Belagavi/Gokak/Athani/Ramdurg (The Goan 2021), mega dairy 25 acres (Agro&Food 2026), foundry history (Wikipedia)
 2026-10-30	/market-area/bengaluru/	city-in	keep	0.497	0.405	1986	2565	Karnataka bioeconomy $39.2B/21% (BioSpectrum 2026), E-City 1,300+ biotech (Invest India), Biocon (Wikipedia), Cipla Bommasandra EIR (2020)
 2026-10-30	/market-area/bhopal/	city-in	keep	0.471	0.398	2234	2765	Mandideep 650+ units/2,000 acres/Rs10,000 cr (Wikipedia), NGT Govindpura 2014
+2026-10-31	/market-area/bhavnagar/	city-in	discard	-	-	-	-	insufficient verifiable sources: only directory listings and a GIDC plot auction; no openable source on Sarvottam Dairy capacity or pharma plants; retry later
+2026-10-31	/market-area/bhilai/	city-in	discard	-	-	-	-	no meaningful EP buyer base (steel, cement, power; no pharma or dairy plant found); page left as is
+2026-10-31	/market-area/bhilwara/	city-in	keep	0.688	0.504	1462	2077	Bhilwara Dairy UHT aseptic plant Rs 46.82 cr, NPDD/JICA + NDDB, 180 ml Saras chhachh/lassi/cream (Patrika, Dairy Business MEA); 850+ textile units (Wikipedia)
+2026-10-31	/market-area/bokaro/	city-in	discard	-	-	-	-	no meaningful EP buyer base (steel; one Sudha dairy unit only); page left as is
+2026-10-31	/market-area/chakan/	city-in	discard	-	-	-	-	only EP-relevant lead is Amul Khed City plant (groundbreaking Nov 2022), operating status unconfirmed; Tetra Pak plant makes packaging material; retry later
+2026-10-31	/market-area/dahej/	city-in	keep	0.433	0.358	2159	2752	Cadila Rs 200 cr API plant Nov 2023, Gharda 38 acres/Rs 600 cr at Payal Industrial Park Sep 2023 (BioSpectrum); port 25 m draft, captive jetties (Wikipedia)
+2026-10-31	/market-area/dehradun/	city-in	keep	0.624	0.473	1578	2174	Windlas injectable GMP from Uttarakhand FSDA Jan 2025, Plant-6 H1 FY27 (NSE filings); SIIDCUL Pharma City Selaqui (Wikipedia). Existing template claims semiconductors/electronics in Dehradun: unverified, owner to confirm
+2026-10-31	/market-area/dewas/	city-in	keep	0.527	0.432	2154	2757	Ipca greenfield API unit Rs 250 cr, trial production Feb and Sep 2022 (NSE filings); Sun Pharma API + formulation sites (Sun reporting boundary, undated); Bank Note Press (Wikipedia)

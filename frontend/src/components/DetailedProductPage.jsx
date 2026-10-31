@@ -5,8 +5,9 @@ import {
   CheckCircle2, XCircle, ArrowUpRight, Award, Zap, Package, Compass, Settings
 } from 'lucide-react';
 import { handleLinkClick } from '../utils/router';
-import { parseKeySpecs } from '../utils/seo';
+import { parseKeySpecs } from '../utils/schemaHelpers';
 import categoriesData from '../data/categories.json';
+import { responsiveImg } from '../utils/imgSize';
 
 export default function DetailedProductPage({ product, onEnquireClick }) {
   const [activeTab, setActiveTab] = useState('overview');
@@ -215,6 +216,7 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
                 {product.Image ? (
                   <img 
                     src={product.Image} 
+                    {...responsiveImg(product.Image)}
                     alt={product['Product Name']}
                     className="product-detail-image"
                     width={800}

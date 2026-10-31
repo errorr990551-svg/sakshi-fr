@@ -2,8 +2,9 @@ import React, { useState, useMemo } from 'react';
 import { Search, ArrowRight, Layers, Tag, Compass, FileText, ChevronLeft, ChevronRight } from 'lucide-react';
 import productsData from '../data/products.json';
 import categoriesData from '../data/categories.json';
-import { handleLinkClick, withSlash } from '../utils/router';
+import { handleLinkClick, navigate, withSlash } from '../utils/router';
 import { getParentCategoryName } from '../utils/categories';
+import { responsiveImg } from '../utils/imgSize';
 
 export default function ProductsPage({ onEnquireClick }) {
   const [searchQuery, setSearchQuery] = useState('');
@@ -287,8 +288,7 @@ export default function ProductsPage({ onEnquireClick }) {
                     className="catalog-product-card"
                     onClick={(e) => {
                       if (e.target.tagName === 'A' || e.target.closest('a')) return;
-                      window.history.pushState(null, '', `/${p['URL Slug']}/`);
-                      window.dispatchEvent(new PopStateEvent('popstate'));
+                      navigate(`/${p['URL Slug']}/`);
                     }}
                   >
                     <div>
@@ -296,6 +296,7 @@ export default function ProductsPage({ onEnquireClick }) {
                         <div style={{ width: '100%', aspectRatio: '3/2', overflow: 'hidden', borderBottom: '1px solid var(--border-color)', backgroundColor: 'var(--bg-dark-900)' }}>
                           <img loading="lazy" 
                             src={p.Image} 
+                            {...responsiveImg(p.Image)}
                             alt={p['Product Name']} 
                             style={{ 
                               width: '100%', 

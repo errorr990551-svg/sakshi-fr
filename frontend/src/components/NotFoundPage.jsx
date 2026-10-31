@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Home, Search, FileText, ArrowRight, CornerDownRight } from 'lucide-react';
-import { handleLinkClick, withSlash } from '../utils/router';
+import { handleLinkClick, navigate, withSlash } from '../utils/router';
 import categoriesData from '../data/categories.json';
 
 export default function NotFoundPage() {
@@ -12,8 +12,7 @@ export default function NotFoundPage() {
   const handleSearchSubmit = (e) => {
     e.preventDefault();
     if (query.trim()) {
-      window.history.pushState(null, '', `/products?q=${encodeURIComponent(query)}`);
-      window.dispatchEvent(new PopStateEvent('popstate'));
+      navigate(`/products/?q=${encodeURIComponent(query)}`);
     }
   };
 

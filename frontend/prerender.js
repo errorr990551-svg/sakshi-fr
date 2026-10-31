@@ -79,6 +79,30 @@ async function runPrerender() {
   const templatePath = path.join(__dirname, 'dist/index.html');
   const template = fs.readFileSync(templatePath, 'utf-8');
 
+  // Each page component is its own chunk: preload the page's chunk (and its imports and CSS)
+  // so it downloads in parallel with the entry script instead of after it.
+  const manifest = JSON.parse(fs.readFileSync(path.join(__dirname, 'dist/.vite/manifest.json'), 'utf-8'));
+  const entryKey = Object.keys(manifest).find((k) => manifest[k].isEntry);
+  const entryDeps = new Set();
+  const collectDeps = (key, into) => {
+    if (!manifest[key] || into.has(key)) return;
+    into.add(key);
+    (manifest[key].imports || []).forEach((k) => collectDeps(k, into));
+  };
+  collectDeps(entryKey, entryDeps);
+  const pageAssetTags = (component) => {
+    const keys = new Set();
+    collectDeps(`src/components/${component}.jsx`, keys);
+    const tags = [];
+    keys.forEach((k) => {
+      if (entryDeps.has(k)) return;
+      tags.push(`<link rel="modulepreload" crossorigin href="/${manifest[k].file}">`);
+      (manifest[k].css || []).forEach((css) => tags.push(`<link rel="stylesheet" crossorigin href="/${css}">`));
+    });
+    return tags.join('\n    ');
+  };
+  const embedRoute = (route) => `<script id="route-data" type="application/json">${JSON.stringify(route).replace(/</g, '\\u003c')}</script>`;
+
   const corePages = JSON.parse(fs.readFileSync(path.join(__dirname, 'src/data/core_pages.json'), 'utf-8'));
   const categories = JSON.parse(fs.readFileSync(path.join(__dirname, 'src/data/categories.json'), 'utf-8'));
   const products = JSON.parse(fs.readFileSync(path.join(__dirname, 'src/data/products.json'), 'utf-8'));
@@ -317,11 +341,18 @@ async function runPrerender() {
     globalThis.__CITY_DEEP__ = cityDeep;
 
     let bodyHtml = '';
+    let rendered = null;
     try {
-      bodyHtml = render(routePath);
+      rendered = await render(routePath);
+      bodyHtml = rendered.html;
+      // The browser hydrates from the embedded JSON copy of the route: it must render the same HTML
+      const fromJson = await render(routePath, JSON.parse(JSON.stringify(rendered.route)));
+      if (fromJson.html !== bodyHtml) {
+        throw new Error(`route data for ${routePath} does not survive JSON embedding (hydration would differ)`);
+      }
     } catch (err) {
       console.error(`Failed rendering path ${routePath}:`, err);
-      bodyHtml = '';
+      process.exit(1);
     }
 
     // Build Schemas graph
@@ -725,8 +756,9 @@ async function runPrerender() {
     }
     globalThis.__CITY_DEEP__ = null;
 
-    // Inject rendered body
-    html = html.replace('<div id="root"></div>', `<div id="root">${bodyHtml}</div>`);
+    html = html.replace('</head>', `    ${pageAssetTags(rendered.component)}\n  </head>`);
+    // Inject rendered body and the route it was rendered from
+    html = html.replace('<div id="root"></div>', () => `<div id="root">${bodyHtml}</div>${embedRoute(rendered.route)}`);
 
     // 5. Write to output folder
     let outputFilePath = '';
@@ -741,25 +773,21 @@ async function runPrerender() {
     fs.writeFileSync(outputFilePath, html, 'utf-8');
     console.log(`Saved pre-rendered output: ${outputFilePath}`);
     contentHashes[`${BASE_URL}${routePath.replace(/\/?$/, '/')}`] = crypto
-      .createHash('sha1').update(`${pageTitle}\n${pageDesc}\n${bodyHtml}`).digest('hex').slice(0, 16);
+      .createHash('sha1').update(`${pageTitle}\n${pageDesc}\n${bodyHtml.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ')}`).digest('hex').slice(0, 16);
   }
 
   writeSitemapLastmods(contentHashes);
 
-  // Delete temp SSR folder to keep build clean
-  try {
-    fs.rmSync(path.join(__dirname, 'dist/server'), { recursive: true, force: true });
-  } catch (err) {
-    // ignore
-  }
 
   // Create genuine 404.html pre-rendered page
-  let body404Html = '';
+  let rendered404 = null;
   try {
-    body404Html = render('/404');
+    rendered404 = await render('/404');
   } catch (err) {
     console.error('Failed to render SSR 404 page:', err);
+    process.exit(1);
   }
+  const body404Html = rendered404.html;
   let html404 = template;
   html404 = html404.replace(/<title>.*?<\/title>/, '<title>404 - Page Not Found | Sakshi Forge</title>');
   html404 = html404.replace(/<meta name="description" content=".*?" \/>/, '<meta name="description" content="The page you requested could not be found. Explore Sakshi Forge electropolished pipes, flanges, and forged steel products." />');
@@ -769,14 +797,23 @@ async function runPrerender() {
     html404 = html404.replace('</head>', '  <meta name="robots" content="noindex, follow" />\n  </head>');
   }
   html404 = html404.replace(/<link rel="canonical" href=".*?" \/?>/, `<link rel="canonical" href="${BASE_URL}/404.html" />`);
-  html404 = html404.replace('<div id="root"></div>', `<div id="root">${body404Html}</div>`);
+  html404 = html404.replace('</head>', `    ${pageAssetTags(rendered404.component)}\n  </head>`);
+  html404 = html404.replace('<div id="root"></div>', () => `<div id="root">${body404Html}</div>${embedRoute(rendered404.route)}`);
   fs.writeFileSync(path.join(__dirname, 'dist/404.html'), html404, 'utf-8');
   console.log('Created dist/404.html pre-rendered error page with noindex.');
+
+  // Delete temp SSR folder (after the last render: pages load their chunks from it)
+  try {
+    fs.rmSync(path.join(__dirname, 'dist/server'), { recursive: true, force: true });
+    fs.rmSync(path.join(__dirname, 'dist/.vite'), { recursive: true, force: true });
+  } catch (err) {
+    // ignore
+  }
 
   console.log('Static pre-rendering complete successfully!');
 }
 
-// Sitemap <lastmod> is the date a page's rendered content (title, description, body) last
+// Sitemap <lastmod> is the date a page's rendered content (title, description, body text) last
 // changed, not the build date. src/data/lastmod.json stores { url: [contentHash, date] };
 // commit it with the content change so later builds keep the same date.
 function writeSitemapLastmods(contentHashes) {

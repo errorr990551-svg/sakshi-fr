@@ -4,16 +4,12 @@ import {
   ArrowRight, Award, Factory, HelpCircle, ChevronDown, ChevronUp, MapPin, Truck, 
   Sparkles, Layers, Check, Calculator, Star, ExternalLink 
 } from 'lucide-react';
-import epBuildSpecData from '../data/ep_build_spec_data.json';
 import { handleLinkClick, withSlash } from '../utils/router';
 import { RaConverterTool, PipeWeightCalculatorTool } from './EPTools';
 import { PRIORITY_30_CITIES } from '../data/priorityCities';
 
-export default function EPBuildSpecRenderer({ path, onEnquireClick, hasUnlockedContact = false, onShowContactDetails }) {
+export default function EPBuildSpecRenderer({ pageData, onEnquireClick, hasUnlockedContact = false, onShowContactDetails }) {
   const handleShowContact = onShowContactDetails || (() => onEnquireClick && onEnquireClick('Contact Request - EP Spec'));
-  const pageData = epBuildSpecData.find(
-    (p) => p.url === path || p.url === `${path}/` || `${p.url}/` === path
-  );
 
   const [openFaq, setOpenFaq] = useState(0);
 
@@ -24,7 +20,7 @@ export default function EPBuildSpecRenderer({ path, onEnquireClick, hasUnlockedC
     parent, faqs, notes, cta, image_alt
   } = pageData;
 
-  const cleanPath = path.endsWith('/') ? path.slice(0, -1) : path;
+  const cleanPath = pageData.url.replace(/\/$/, '');
   const parentName = parent === '/' ? 'Home' : parent.replace(/^\/|\/$/g, '').replace(/-/g, ' ');
 
   return (

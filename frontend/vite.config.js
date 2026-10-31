@@ -6,6 +6,8 @@ export default defineConfig(({ isSsrBuild }) => ({
   plugins: [react()],
   build: {
     chunkSizeWarningLimit: 1000,
+    // prerender.js reads the manifest to preload each page's own chunk
+    manifest: !isSsrBuild,
     rollupOptions: isSsrBuild ? {} : {
       output: {
         manualChunks(id) {
@@ -17,18 +19,6 @@ export default defineConfig(({ isSsrBuild }) => ({
               return 'vendor-icons';
             }
             return 'vendor';
-          }
-          if (id.includes('products.json')) {
-            return 'data-products';
-          }
-          if (id.includes('market_cities.json')) {
-            return 'data-cities';
-          }
-          if (id.includes('ep_build_spec_data.json') || id.includes('blogData.js')) {
-            return 'data-content';
-          }
-          if (id.includes('CityData.js')) {
-            return 'data-regional-cities';
           }
         }
       }

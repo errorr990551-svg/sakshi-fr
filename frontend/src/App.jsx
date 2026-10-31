@@ -1,90 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import AboutSection from './components/AboutSection';
-import ProductRange from './components/ProductRange';
-import Infrastructure from './components/Infrastructure';
-import WhyChooseUs from './components/WhyChooseUs';
-import AboutPage from './components/AboutPage';
-import HomePage from './components/HomePage';
-import TamilNaduHubPage from './components/TamilNaduHubPage';
-import KarnatakaHubPage from './components/KarnatakaHubPage';
-import GujaratHubPage from './components/GujaratHubPage';
-import TelanganaHubPage from './components/TelanganaHubPage';
-import WestBengalHubPage from './components/WestBengalHubPage';
-import MadhyaPradeshHubPage from './components/MadhyaPradeshHubPage';
-import AndhraPradeshHubPage from './components/AndhraPradeshHubPage';
-import { customCityData } from './data/customCityData';
-import { maharashtraCityData } from './data/maharashtraCityData';
-import { karnatakaCityData } from './data/karnatakaCityData';
-import { gujaratCityData } from './data/gujaratCityData';
-import { telanganaCityData } from './data/telanganaCityData';
-import { westBengalCityData } from './data/westBengalCityData';
-import { madhyaPradeshCityData } from './data/madhyaPradeshCityData';
-import { andhraPradeshCityData } from './data/andhraPradeshCityData';
-import { odishaCityData } from './data/odishaCityData';
-import MaharashtraCityPage from './components/MaharashtraCityPage';
 import Footer from './components/Footer';
 import EPRelatedLinks from './components/EPRelatedLinks';
 import CityDeepContent from './components/CityDeepContent';
 import ProductModal from './components/ProductModal';
 import EnquiryModal from './components/EnquiryModal';
 import { ArrowRight } from 'lucide-react';
-
-// SEO and Router imports
-import { updateSEO } from './utils/seo';
 import { REDIRECTED_PATHS } from './data/redirects';
-
-// Up to 6 other live city pages in the same state (India) or country, taken in a ring over the
-// sorted slugs so every city in a group is linked from the same number of its neighbours.
-const regionOf = (c) => ((c.country || 'India') === 'India' ? c.state : c.country);
-function siblingCities(city) {
-  const group = marketCitiesData
-    .filter((c) => c.path && regionOf(c) === regionOf(city) && !REDIRECTED_PATHS[`${c.path.replace(/\/+$/, '')}/`])
-    .sort((a, b) => a.slug.localeCompare(b.slug));
-  const at = group.findIndex((c) => c.slug === city.slug);
-  if (at < 0) return [];
-  return group.slice(at + 1).concat(group.slice(0, at)).slice(0, 6).map((c) => ({ city: c.city, path: c.path }));
-}
-import productsData from './data/products.json';
-import categoriesData from './data/categories.json';
-import CategoryPage from './components/CategoryPage';
-import ProductPage from './components/ProductPage';
-import NotFoundPage from './components/NotFoundPage';
-import ProductsPage from './components/ProductsPage';
-import QualityPage from './components/QualityPage';
-import IndustriesPage from './components/IndustriesPage';
-import ContactPage from './components/ContactPage';
-import CertificationsPage from './components/CertificationsPage';
-import BlogPage from './components/BlogPage';
-import BlogPostPage from './components/BlogPostPage';
-import { blogPosts } from './data/blogData';
-import PrivacyPolicyPage from './components/PrivacyPolicyPage';
-import TermsPage from './components/TermsPage';
-import WeightCalculatorPage from './components/WeightCalculatorPage';
-import MarketAreaPage from './components/MarketAreaPage';
-import CityPage from './components/CityPage';
-import marketCitiesData from './data/market_cities.json';
-
-import ClientsPage from './components/ClientsPage';
-import CataloguePage from './components/CataloguePage';
-import TeamPage from './components/TeamPage';
-import GradePage from './components/GradePage';
-import StandardPage from './components/StandardPage';
-import ChartToolsPage from './components/ChartToolsPage';
-import ExportPage from './components/ExportPage';
-import ElbowProductPage from './components/ElbowProductPage';
-import GalleryPage from './components/GalleryPage';
-import GallerySection from './components/GallerySection';
-import { gradePages, standardPages } from './data/seo_master_data';
-import epBuildSpecData from './data/ep_build_spec_data.json';
-import EPBuildSpecRenderer from './components/EPBuildSpecRenderer';
-
+import { navigate } from './utils/router';
 
 // Helper kept for backward compatibility
 export const isTrailingSlashCityPath = () => false;
 
-function App(props) {
+// `route` ({ type, data, ... }) comes from routes.js: resolved at build time and embedded in
+// each prerendered page. `Page` is that route type's component (see pages.js).
+function App({ path, route, Page }) {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isEnquiryOpen, setIsEnquiryOpen] = useState(false);
   const [preselectedProduct, setPreselectedProduct] = useState('');
@@ -92,15 +22,8 @@ function App(props) {
   const [hasUnlockedContact, setHasUnlockedContact] = useState(() => {
     return typeof window !== 'undefined' && localStorage.getItem('contactDetailsUnlocked') === 'true';
   });
-  const [currentPath, setCurrentPath] = useState(() => {
-    if (props.path) {
-      return props.path;
-    }
-    if (typeof window !== 'undefined') {
-      return window.location.pathname;
-    }
-    return '/';
-  });
+  const currentPath = path;
+  const resolvedRoute = route;
 
   const handleOpenContactDetailsForm = () => {
     if (hasUnlockedContact) return;
@@ -133,90 +56,42 @@ function App(props) {
     }
   }, []);
 
-  // Sync state with browser URL navigation
+  // Every URL is a prerendered page, so links load the next page. A history entry with a
+  // different path (pushed by older code) is shown by loading that page.
   useEffect(() => {
-    if (typeof window === 'undefined') return;
     const handlePopState = () => {
-      setCurrentPath(window.location.pathname);
+      if (window.location.pathname !== currentPath) window.location.reload();
     };
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
-  }, []);
+  }, [currentPath]);
 
-  // Helper to resolve legacy city URLs to 301 destinations or /electropolished-pipes/ fallback
-  const getLegacyRedirect = (rawPath) => {
-    if (!rawPath) return null;
-    const clean = rawPath.split('?')[0].split('#')[0].replace(/^\/+|\/+$/g, '').toLowerCase();
-
-    if (clean === 'home') return '/';
-    if (clean === 'marketplace') return '/market-area/';
-    if (clean === 'about') return '/about-us/';
-    if (clean === 'delhi') return '/market-area/delhi/';
-    if (clean === 'bangalore') return '/market-area/bengaluru/';
-    if (clean === 'industrial-flanges') return '/flanges/';
-    if (clean === 'gujarat') return '/market-area/gujarat/';
-    if (clean === 'telangana') return '/market-area/telangana/';
-    if (clean === 'west-bengal') return '/market-area/west-bengal/';
-    if (clean === 'madhya-pradesh') return '/market-area/madhya-pradesh/';
-    if (clean === 'andhra-pradesh') return '/market-area/andhra-pradesh/';
-    if (clean === 'odisha') return '/market-area/odisha/';
-    if (clean === '306-stainless-steel-round-bar') return '/304-stainless-steel-round-bar/';
-    if (clean === 'forged-pipe-fittings-guide-pressure-classes-standards') return '/asme-b16-11-forged-fittings/';
-
-    let citySlug = '';
-    const m1 = clean.match(/^electropolished-pipes?-(?:manufacturer|supplier)-(?:in-)?(.+)$/);
-    if (m1) {
-      citySlug = m1[1];
-    } else {
-      const m2 = clean.match(/^industrial-pipe-flange-manufacturer-in-(.+)-sakshi-forge$/);
-      if (m2) {
-        citySlug = m2[1];
-      }
-    }
-
-    if (!citySlug) return null;
-
-    if (citySlug === 'delhi' || citySlug === 'new-delhi') return '/market-area/delhi/';
-    if (citySlug === 'bangalore' || citySlug === 'bengaluru') return '/market-area/bengaluru/';
-
-    const cityExists = marketCitiesData.some(c => c.slug === citySlug || c.path === `/market-area/${citySlug}`) ||
-      Boolean(maharashtraCityData[citySlug] || karnatakaCityData[citySlug] || gujaratCityData[citySlug] ||
-      telanganaCityData[citySlug] || westBengalCityData[citySlug] || madhyaPradeshCityData[citySlug] ||
-      andhraPradeshCityData[citySlug] || odishaCityData[citySlug] || customCityData[citySlug]);
-
-    return cityExists ? `/market-area/${citySlug}/` : '/electropolished-pipes/';
-  };
-
-  // Handle static assets/redirection paths that might land in the SPA router
+  // Unknown URLs get the 404 page: send stray, merged and legacy URLs on to the right page
   useEffect(() => {
-    if (typeof window === 'undefined') return;
+    if (resolvedRoute.type !== '404') return;
+    const clean = currentPath.split('?')[0].split('#')[0];
 
-    if (currentPath === '/sitemap' || currentPath === '/sitemap.xml') {
+    if (clean === '/sitemap' || clean === '/sitemap.xml') {
       window.location.replace('/sitemap.xml');
       return;
     }
-    if (
-      currentPath === '/robots' || 
-      currentPath === '/robots.txt' || 
-      currentPath === '/robts' || 
-      currentPath === '/robts.txt'
-    ) {
+    if (['/robots', '/robots.txt', '/robts', '/robts.txt'].includes(clean)) {
       window.location.replace('/robots.txt');
       return;
     }
-
-    const legacyDest = getLegacyRedirect(currentPath);
-    if (legacyDest) {
-      window.location.replace(legacyDest);
+    const slashed = clean.endsWith('/') ? clean : `${clean}/`;
+    if (REDIRECTED_PATHS[slashed]) {
+      window.location.replace(REDIRECTED_PATHS[slashed]);
+      return;
     }
-  }, [currentPath]);
+    import('./routes').then(({ getLegacyRedirect }) => {
+      const legacyDest = getLegacyRedirect(clean);
+      if (legacyDest) window.location.replace(legacyDest);
+    });
+  }, [currentPath, resolvedRoute.type]);
 
-  // Resolve current route and data
+  // Scroll to hash element if present (e.g. /#products)
   useEffect(() => {
-    // Scroll to top of the page on route change
-    window.scrollTo(0, 0);
-
-    // Scroll to hash element if present (e.g. /#products)
     const hash = window.location.hash;
     if (hash) {
       setTimeout(() => {
@@ -226,243 +101,6 @@ function App(props) {
       }, 300);
     }
   }, [currentPath]);
-
-  // Determine current page type and parameters
-  const resolvedRoute = (() => {
-    const rawPath = currentPath ? currentPath.split('?')[0].split('#')[0] : '/';
-    const cleanPath = rawPath === '/' ? '/' : rawPath.replace(/\/+$/, '');
-    
-    if (cleanPath === '/' || cleanPath === '') {
-      return { type: 'home', data: null };
-    }
-    if (cleanPath === '/about-us' || cleanPath === '/about') {
-      return { type: 'about', data: null };
-    }
-    if (cleanPath === '/products') {
-      return { type: 'products', data: null };
-    }
-    if (cleanPath === '/quality-assurance') {
-      return { type: 'quality-assurance', data: null };
-    }
-    if (cleanPath === '/industries') {
-      return { type: 'industries', data: null };
-    }
-    if (cleanPath === '/contact-us') {
-      return { type: 'contact-us', data: null };
-    }
-    if (cleanPath === '/certifications') {
-      return { type: 'certifications', data: null };
-    }
-    if (cleanPath === '/blog') {
-      return { type: 'blog', data: null };
-    }
-    if (cleanPath.startsWith('/blog/')) {
-      const blogSlug = cleanPath.replace(/^\/blog\//, '').replace(/\/+$/, '');
-      const post = blogPosts.find(p => p.slug === blogSlug || p.id === blogSlug);
-      if (post) {
-        return { type: 'blog-post', data: post };
-      }
-    }
-    if (cleanPath === '/privacy-policy') {
-      return { type: 'privacy-policy', data: null };
-    }
-    if (cleanPath === '/terms-and-conditions') {
-      return { type: 'terms-and-conditions', data: null };
-    }
-    if (cleanPath === '/weight-calculator') {
-      return { type: 'weight-calculator', data: null };
-    }
-    
-    if (cleanPath === '/market-area' || cleanPath === '/marketplace') {
-      return { type: 'market-area', data: null };
-    }
-    if (cleanPath === '/clients') {
-      return { type: 'clients', data: null };
-    }
-    if (cleanPath === '/catalogue') {
-      return { type: 'catalogue', data: null };
-    }
-    if (cleanPath === '/team') {
-      return { type: 'team', data: null };
-    }
-    if (cleanPath === '/stainless-steel-elbow') {
-      return { type: 'stainless-steel-elbow', data: null };
-    }
-    if (cleanPath === '/gallery' || cleanPath === '/media-gallery') {
-      return { type: 'gallery', data: null };
-    }
-    
-    // Check chart tool slugs
-    if (['/flange-dimension-chart', '/flange-weight-chart', '/flange-bolt-chart', '/pipe-schedule-chart'].includes(cleanPath)) {
-      const toolType = cleanPath.substring(1);
-      return { type: 'chart-tool', data: { toolType, slug: toolType } };
-    }
-
-    // Check export slugs
-    if (['/flange-exporter-usa', '/flange-supplier-uae', '/flange-supplier-saudi-arabia'].includes(cleanPath)) {
-      const countryType = cleanPath === '/flange-exporter-usa' ? 'usa' : cleanPath === '/flange-supplier-uae' ? 'uae' : 'saudi-arabia';
-      return { type: 'export', data: { countryType, slug: cleanPath.substring(1) } };
-    }
-
-    const slug = cleanPath.substring(1);
-
-    // Check grade pages
-    if (gradePages[slug]) {
-      return { type: 'grade', data: gradePages[slug] };
-    }
-
-    // Check standard pages
-    if (standardPages[slug]) {
-      return { type: 'standard', data: standardPages[slug] };
-    }
-    
-    // Check if matching category slug
-    const category = categoriesData.find(c => c['Category Slug'] === slug);
-    if (category) {
-      return { type: 'category', data: category };
-    }
-    
-    // Check if matching product slug
-    const product = productsData.find(p => p['URL Slug'] === slug);
-    if (product) {
-      return { type: 'product', data: product };
-    }
-    
-    if (cleanPath === '/tamil-nadu' || cleanPath === '/market-area/tamil-nadu') {
-      return { type: 'tamil-nadu-hub', data: null };
-    }
-
-    if (cleanPath === '/karnataka' || cleanPath === '/market-area/karnataka') {
-      return { type: 'karnataka-hub', data: null };
-    }
-
-    if (cleanPath === '/gujarat' || cleanPath === '/market-area/gujarat') {
-      return { type: 'gujarat-hub', data: null };
-    }
-
-    if (cleanPath === '/telangana' || cleanPath === '/market-area/telangana') {
-      return { type: 'telangana-hub', data: null };
-    }
-
-    if (cleanPath === '/west-bengal' || cleanPath === '/market-area/west-bengal') {
-      return { type: 'west-bengal-hub', data: null };
-    }
-
-    if (cleanPath === '/madhya-pradesh' || cleanPath === '/market-area/madhya-pradesh') {
-      return { type: 'madhya-pradesh-hub', data: null };
-    }
-
-    if (cleanPath === '/andhra-pradesh' || cleanPath === '/market-area/andhra-pradesh') {
-      return { type: 'andhra-pradesh-hub', data: null };
-    }
-
-    if (cleanPath === '/maharashtra' || cleanPath === '/market-area/maharashtra') {
-      return { type: 'market-area', data: null };
-    }
-
-    if (cleanPath === '/odisha' || cleanPath === '/market-area/odisha') {
-      return { type: 'market-area', data: null };
-    }
-
-    // Handle consolidated redirects
-    const normalizedSlashPath = cleanPath.endsWith('/') ? cleanPath : `${cleanPath}/`;
-    if (REDIRECTED_PATHS[normalizedSlashPath]) {
-      const targetUrl = REDIRECTED_PATHS[normalizedSlashPath];
-      if (typeof window !== 'undefined') {
-        window.location.replace(targetUrl);
-      }
-      return { type: '404', data: null };
-    }
-
-    // Redirect legacy electropolished-pipe-manufacturer-* and supplier-* to /market-area/*
-    const legacyTarget = getLegacyRedirect(cleanPath);
-    if (legacyTarget) {
-      if (typeof window !== 'undefined') {
-        window.location.replace(legacyTarget);
-      }
-      return { type: '404', data: null };
-    }
-
-    // Check if market-area path is for Maharashtra, Karnataka, Gujarat, Telangana, West Bengal, MP, AP, or Odisha rich cities
-    if (cleanPath.startsWith('/market-area/')) {
-      const marketCityKey = cleanPath.replace('/market-area/', '');
-      if (maharashtraCityData[marketCityKey]) {
-        return { type: 'maharashtra-city', data: maharashtraCityData[marketCityKey] };
-      }
-      if (karnatakaCityData[marketCityKey]) {
-        return { type: 'maharashtra-city', data: karnatakaCityData[marketCityKey] };
-      }
-      if (gujaratCityData[marketCityKey]) {
-        return { type: 'maharashtra-city', data: gujaratCityData[marketCityKey] };
-      }
-      if (telanganaCityData[marketCityKey]) {
-        return { type: 'maharashtra-city', data: telanganaCityData[marketCityKey] };
-      }
-      if (westBengalCityData[marketCityKey]) {
-        return { type: 'maharashtra-city', data: westBengalCityData[marketCityKey] };
-      }
-      if (madhyaPradeshCityData[marketCityKey]) {
-        return { type: 'maharashtra-city', data: madhyaPradeshCityData[marketCityKey] };
-      }
-      if (andhraPradeshCityData[marketCityKey]) {
-        return { type: 'maharashtra-city', data: andhraPradeshCityData[marketCityKey] };
-      }
-      if (odishaCityData[marketCityKey]) {
-        return { type: 'maharashtra-city', data: odishaCityData[marketCityKey] };
-      }
-    }
-
-    // Check if direct slug matches Karnataka, Gujarat, Telangana, West Bengal, MP, AP, or Odisha rich cities
-    if (karnatakaCityData[slug]) {
-      return { type: 'maharashtra-city', data: karnatakaCityData[slug] };
-    }
-    if (gujaratCityData[slug]) {
-      return { type: 'maharashtra-city', data: gujaratCityData[slug] };
-    }
-    if (telanganaCityData[slug]) {
-      return { type: 'maharashtra-city', data: telanganaCityData[slug] };
-    }
-    if (westBengalCityData[slug]) {
-      return { type: 'maharashtra-city', data: westBengalCityData[slug] };
-    }
-    if (madhyaPradeshCityData[slug]) {
-      return { type: 'maharashtra-city', data: madhyaPradeshCityData[slug] };
-    }
-    if (andhraPradeshCityData[slug]) {
-      return { type: 'maharashtra-city', data: andhraPradeshCityData[slug] };
-    }
-    if (odishaCityData[slug]) {
-      return { type: 'maharashtra-city', data: odishaCityData[slug] };
-    }
-
-    // Check custom rich city data (Tamil Nadu, Canberra, Abu Dhabi, etc.)
-    const customCityKey = cleanPath.startsWith('/market-area/') ? cleanPath.replace('/market-area/', '') : slug;
-    if (customCityData[customCityKey]) {
-      return { type: 'market-city', data: customCityData[customCityKey] };
-    }
-
-    // Check if matching market city slug from standard dataset
-    let city = marketCitiesData.find(c => {
-      const normPath = c.path ? c.path.replace(/\/+$/, '') : '';
-      return c.slug === slug || c.slug === customCityKey || normPath === cleanPath || normPath === '/' + slug;
-    });
-    if (city) {
-      return { type: 'market-city', data: city.nearbyCitySpokes ? city : { ...city, nearbyCitySpokes: siblingCities(city) } };
-    }
-
-    // Check if matching EP Build Spec page (106 URLs)
-    const epPage = epBuildSpecData.find(p => p.url === cleanPath || p.url === `${cleanPath}/` || p.url === `/${slug}` || p.url === `/${slug}/`);
-    if (epPage) {
-      return { type: 'ep-spec', data: epPage };
-    }
-    
-    return { type: '404', data: null };
-  })();
-
-  // Update SEO Meta Tags & structured schemas
-  useEffect(() => {
-    updateSEO({ type: resolvedRoute.type, data: resolvedRoute.data });
-  }, [currentPath, resolvedRoute.type, resolvedRoute.data]);
 
   const handleOpenProduct = (product) => {
     setSelectedProduct(product);
@@ -482,21 +120,17 @@ function App(props) {
       {/* Navigation Header */}
       <Header 
         currentPage={resolvedRoute.type} 
-        onNavigate={(path) => {
-          // Fallback legacy navigation if any header link calls it
-          window.history.pushState(null, '', path);
-          window.dispatchEvent(new PopStateEvent('popstate'));
-        }} 
+        onNavigate={navigate} 
         onEnquireClick={() => handleOpenEnquiry('')} 
       />
 
       {/* Main Body Routing */}
       {resolvedRoute.type === 'home' && (
-        <HomePage onEnquireClick={handleOpenEnquiry} />
+        <Page onEnquireClick={handleOpenEnquiry} />
       )}
 
       {resolvedRoute.type === 'tamil-nadu-hub' && (
-        <TamilNaduHubPage 
+        <Page 
           onEnquireClick={handleOpenEnquiry} 
           hasUnlockedContact={hasUnlockedContact}
           onShowContactDetails={handleOpenContactDetailsForm}
@@ -504,7 +138,7 @@ function App(props) {
       )}
 
       {resolvedRoute.type === 'karnataka-hub' && (
-        <KarnatakaHubPage 
+        <Page 
           onEnquireClick={handleOpenEnquiry} 
           hasUnlockedContact={hasUnlockedContact}
           onShowContactDetails={handleOpenContactDetailsForm}
@@ -512,7 +146,7 @@ function App(props) {
       )}
 
       {resolvedRoute.type === 'gujarat-hub' && (
-        <GujaratHubPage 
+        <Page 
           onEnquireClick={handleOpenEnquiry} 
           hasUnlockedContact={hasUnlockedContact}
           onShowContactDetails={handleOpenContactDetailsForm}
@@ -520,7 +154,7 @@ function App(props) {
       )}
 
       {resolvedRoute.type === 'telangana-hub' && (
-        <TelanganaHubPage 
+        <Page 
           onEnquireClick={handleOpenEnquiry} 
           hasUnlockedContact={hasUnlockedContact}
           onShowContactDetails={handleOpenContactDetailsForm}
@@ -528,7 +162,7 @@ function App(props) {
       )}
 
       {resolvedRoute.type === 'west-bengal-hub' && (
-        <WestBengalHubPage 
+        <Page 
           onEnquireClick={handleOpenEnquiry} 
           hasUnlockedContact={hasUnlockedContact}
           onShowContactDetails={handleOpenContactDetailsForm}
@@ -536,7 +170,7 @@ function App(props) {
       )}
 
       {resolvedRoute.type === 'madhya-pradesh-hub' && (
-        <MadhyaPradeshHubPage 
+        <Page 
           onEnquireClick={handleOpenEnquiry} 
           hasUnlockedContact={hasUnlockedContact}
           onShowContactDetails={handleOpenContactDetailsForm}
@@ -544,7 +178,7 @@ function App(props) {
       )}
 
       {resolvedRoute.type === 'andhra-pradesh-hub' && (
-        <AndhraPradeshHubPage 
+        <Page 
           onEnquireClick={handleOpenEnquiry} 
           hasUnlockedContact={hasUnlockedContact}
           onShowContactDetails={handleOpenContactDetailsForm}
@@ -552,11 +186,11 @@ function App(props) {
       )}
 
       {resolvedRoute.type === 'gallery' && (
-        <GalleryPage onEnquireClick={handleOpenEnquiry} />
+        <Page onEnquireClick={handleOpenEnquiry} />
       )}
 
       {resolvedRoute.type === 'about' && (
-        <AboutPage 
+        <Page 
           onEnquireClick={() => handleOpenEnquiry('')} 
           hasUnlockedContact={hasUnlockedContact}
           onShowContactDetails={handleOpenContactDetailsForm}
@@ -564,35 +198,38 @@ function App(props) {
       )}
 
       {resolvedRoute.type === 'category' && (
-        <CategoryPage 
+        <Page 
           category={resolvedRoute.data} 
+          products={resolvedRoute.products}
+          crossLinkSlugs={resolvedRoute.crossLinkSlugs}
           onEnquireClick={handleOpenEnquiry} 
         />
       )}
 
       {resolvedRoute.type === 'product' && (
-        <ProductPage 
+        <Page 
           product={resolvedRoute.data} 
+          relatedProducts={resolvedRoute.relatedProducts}
           onEnquireClick={handleOpenEnquiry} 
         />
       )}
 
       {resolvedRoute.type === 'products' && (
-        <ProductsPage 
+        <Page 
           onEnquireClick={handleOpenEnquiry} 
         />
       )}
 
       {resolvedRoute.type === 'quality-assurance' && (
-        <QualityPage onEnquireClick={handleOpenEnquiry} />
+        <Page onEnquireClick={handleOpenEnquiry} />
       )}
 
       {resolvedRoute.type === 'industries' && (
-        <IndustriesPage />
+        <Page />
       )}
 
       {resolvedRoute.type === 'contact-us' && (
-        <ContactPage 
+        <Page 
           onEnquireClick={handleOpenEnquiry} 
           hasUnlockedContact={hasUnlockedContact}
           onShowContactDetails={handleOpenContactDetailsForm}
@@ -600,36 +237,37 @@ function App(props) {
       )}
 
       {resolvedRoute.type === 'certifications' && (
-        <CertificationsPage />
+        <Page />
       )}
 
       {resolvedRoute.type === 'blog' && (
-        <BlogPage />
+        <Page />
       )}
 
       {resolvedRoute.type === 'blog-post' && (
-        <BlogPostPage post={resolvedRoute.data} onEnquireClick={handleOpenEnquiry} />
+        <Page post={resolvedRoute.data} onEnquireClick={handleOpenEnquiry} />
       )}
 
       {resolvedRoute.type === 'privacy-policy' && (
-        <PrivacyPolicyPage />
+        <Page />
       )}
 
       {resolvedRoute.type === 'terms-and-conditions' && (
-        <TermsPage />
+        <Page />
       )}
 
       {resolvedRoute.type === 'weight-calculator' && (
-        <WeightCalculatorPage onEnquireClick={handleOpenEnquiry} />
+        <Page onEnquireClick={handleOpenEnquiry} />
       )}
 
       {resolvedRoute.type === 'market-area' && (
-        <MarketAreaPage />
+        <Page cities={resolvedRoute.cities} />
       )}
 
       {resolvedRoute.type === 'market-city' && (
-        <CityPage 
+        <Page 
           cityData={resolvedRoute.data} 
+          custom={resolvedRoute.custom}
           onEnquireClick={handleOpenEnquiry} 
           hasUnlockedContact={hasUnlockedContact}
           onShowContactDetails={handleOpenContactDetailsForm}
@@ -637,7 +275,7 @@ function App(props) {
       )}
 
       {resolvedRoute.type === 'maharashtra-city' && (
-        <MaharashtraCityPage 
+        <Page 
           cityData={resolvedRoute.data} 
           onEnquireClick={handleOpenEnquiry} 
           hasUnlockedContact={hasUnlockedContact}
@@ -646,40 +284,40 @@ function App(props) {
       )}
 
       {resolvedRoute.type === 'clients' && (
-        <ClientsPage onEnquireClick={handleOpenEnquiry} />
+        <Page onEnquireClick={handleOpenEnquiry} />
       )}
 
       {resolvedRoute.type === 'catalogue' && (
-        <CataloguePage onEnquireClick={handleOpenEnquiry} />
+        <Page onEnquireClick={handleOpenEnquiry} />
       )}
 
       {resolvedRoute.type === 'team' && (
-        <TeamPage onEnquireClick={handleOpenEnquiry} />
+        <Page onEnquireClick={handleOpenEnquiry} />
       )}
 
       {resolvedRoute.type === 'stainless-steel-elbow' && (
-        <ElbowProductPage onEnquireClick={handleOpenEnquiry} />
+        <Page onEnquireClick={handleOpenEnquiry} />
       )}
 
       {resolvedRoute.type === 'grade' && (
-        <GradePage gradeData={resolvedRoute.data} onEnquireClick={handleOpenEnquiry} />
+        <Page gradeData={resolvedRoute.data} onEnquireClick={handleOpenEnquiry} />
       )}
 
       {resolvedRoute.type === 'standard' && (
-        <StandardPage standardData={resolvedRoute.data} onEnquireClick={handleOpenEnquiry} />
+        <Page standardData={resolvedRoute.data} onEnquireClick={handleOpenEnquiry} />
       )}
 
       {resolvedRoute.type === 'chart-tool' && (
-        <ChartToolsPage toolType={resolvedRoute.data.toolType} onEnquireClick={handleOpenEnquiry} />
+        <Page toolType={resolvedRoute.data.toolType} onEnquireClick={handleOpenEnquiry} />
       )}
 
       {resolvedRoute.type === 'export' && (
-        <ExportPage countryType={resolvedRoute.data.countryType} onEnquireClick={handleOpenEnquiry} />
+        <Page countryType={resolvedRoute.data.countryType} onEnquireClick={handleOpenEnquiry} />
       )}
 
       {resolvedRoute.type === 'ep-spec' && (
-        <EPBuildSpecRenderer 
-          path={currentPath} 
+        <Page 
+          pageData={resolvedRoute.data} 
           onEnquireClick={handleOpenEnquiry} 
           hasUnlockedContact={hasUnlockedContact}
           onShowContactDetails={handleOpenContactDetailsForm}
@@ -688,7 +326,7 @@ function App(props) {
 
 
       {resolvedRoute.type === '404' && (
-        <NotFoundPage />
+        <Page />
       )}
 
       {/* Call To Action Banner */}
@@ -715,14 +353,11 @@ function App(props) {
       {(resolvedRoute.type === 'market-city' || resolvedRoute.type === 'maharashtra-city') && currentPath.startsWith('/market-area/') && (
         <CityDeepContent slug={currentPath.replace(/^\/market-area\/|\/$/g, '')} />
       )}
-      {resolvedRoute.type !== '404' && <EPRelatedLinks path={currentPath} />}
+      {resolvedRoute.type !== '404' && <EPRelatedLinks groups={resolvedRoute.related} />}
 
       {/* Footer Sitemap */}
       <Footer 
-        onNavigate={(path) => {
-          window.history.pushState(null, '', path);
-          window.dispatchEvent(new PopStateEvent('popstate'));
-        }} 
+        onNavigate={navigate} 
         onEnquireClick={() => handleOpenEnquiry('')} 
         hasUnlockedContact={hasUnlockedContact}
         onShowContactDetails={handleOpenContactDetailsForm}

@@ -1,15 +1,15 @@
 import React, { useMemo, useEffect } from 'react';
 import { handleLinkClick, withSlash } from '../utils/router';
-import marketCitiesData from '../data/market_cities.json';
 import { isRedirectedPath } from '../data/redirects';
 
-export default function MarketAreaPage() {
+// `cities` ({ city, state, path, slug } per market city) is resolved at build time by routes.js
+export default function MarketAreaPage({ cities = [] }) {
   // Group cities by state and sort alphabetically
   const citiesByState = useMemo(() => {
     const grouped = {};
     const seenCityInState = new Set();
 
-    marketCitiesData.forEach(city => {
+    cities.forEach(city => {
       if (isRedirectedPath(city.path)) return;
       const state = city.state || 'Other';
       const key = `${state}::${(city.city || '').toLowerCase().trim()}`;
@@ -28,7 +28,7 @@ export default function MarketAreaPage() {
       result[state] = grouped[state].sort((a, b) => a.city.localeCompare(b.city));
     });
     return result;
-  }, []);
+  }, [cities]);
 
   const statesList = useMemo(() => Object.keys(citiesByState), [citiesByState]);
 
@@ -76,7 +76,7 @@ export default function MarketAreaPage() {
       
       {/* 1. Hero Header Section */}
       <section style={{ 
-        background: 'linear-gradient(to right, rgba(10, 14, 23, 0.82) 0%, rgba(10, 14, 23, 0.58) 55%, rgba(10, 14, 23, 0.38) 100%), linear-gradient(to bottom, rgba(10, 14, 23, 0.42) 0%, rgba(10, 14, 23, 0.10) 50%, rgba(10, 14, 23, 0.80) 100%), url("/sakshi-forge-banner.webp")',
+        background: 'linear-gradient(to right, rgba(10, 14, 23, 0.82) 0%, rgba(10, 14, 23, 0.58) 55%, rgba(10, 14, 23, 0.38) 100%), linear-gradient(to bottom, rgba(10, 14, 23, 0.42) 0%, rgba(10, 14, 23, 0.10) 50%, rgba(10, 14, 23, 0.80) 100%), url("/hero_forge.webp")',
         backgroundPosition: 'left top',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',

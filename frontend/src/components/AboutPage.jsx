@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Calendar, CheckSquare, Truck, Handshake, Shield, HelpCircle, FileText, ArrowRight, Phone, MessageSquare, MapPin, Mail, Award, CheckCircle, Factory, ShieldCheck, Cpu } from 'lucide-react';
 import { handleLinkClick, withSlash } from '../utils/router';
-import { withoutDuplicateSchemaTypes } from '../utils/seo';
+import { withoutDuplicateSchemaTypes } from '../utils/schemaHelpers';
 import { imgSize } from '../utils/imgSize';
 
 export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, onShowContactDetails }) {

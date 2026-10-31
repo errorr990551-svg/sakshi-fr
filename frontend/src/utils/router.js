@@ -33,17 +33,8 @@ export function withSlash(href) {
 }
 
 export function navigate(path) {
-  const targetPath = withSlash(normalizePath(path || '/'));
-  // Leaving the pre-rendered page: from now on the head is managed client-side.
-  if (typeof window !== 'undefined') {
-    window.__SAKSHI_HYDRATED_PATH__ = null;
-  }
-  // Update browser address bar without page reload
-  window.history.pushState(null, "", targetPath);
-  // Trigger popstate event so our App router hears it and updates the view
-  window.dispatchEvent(new PopStateEvent("popstate"));
-  // Scroll to top of the page smoothly
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  // Every URL is a prerendered page: load it (the page ships only its own code and data)
+  window.location.assign(withSlash(normalizePath(path || '/')));
 }
 
 export function handleLinkClick(e, path) {

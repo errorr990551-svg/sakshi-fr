@@ -7,7 +7,7 @@ import {
   Compass, ArrowUpRight
 } from 'lucide-react';
 import { handleLinkClick, withSlash } from '../utils/router';
-import { withoutDuplicateSchemaTypes } from '../utils/seo';
+import { withoutDuplicateSchemaTypes } from '../utils/schemaHelpers';
 import { PRIORITY_30_CITIES } from '../data/priorityCities';
 import { imgSize } from '../utils/imgSize';
 
@@ -174,7 +174,7 @@ export default function HomePage({ onEnquireClick }) {
           position: 'relative', 
           minHeight: 'auto', 
           height: 'auto',
-          background: 'linear-gradient(to right, rgba(10, 14, 23, 0.82) 0%, rgba(10, 14, 23, 0.58) 55%, rgba(10, 14, 23, 0.38) 100%), linear-gradient(to bottom, rgba(10, 14, 23, 0.42) 0%, rgba(10, 14, 23, 0.10) 50%, rgba(10, 14, 23, 0.80) 100%), url(/sakshi-forge-banner.webp)',
+          background: 'linear-gradient(to right, rgba(10, 14, 23, 0.82) 0%, rgba(10, 14, 23, 0.58) 55%, rgba(10, 14, 23, 0.38) 100%), linear-gradient(to bottom, rgba(10, 14, 23, 0.42) 0%, rgba(10, 14, 23, 0.10) 50%, rgba(10, 14, 23, 0.80) 100%), url(/hero_forge.webp)',
           backgroundPosition: 'left top',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',

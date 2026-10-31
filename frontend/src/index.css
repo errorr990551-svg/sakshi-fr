@@ -466,7 +466,7 @@ nav {
   background: 
     linear-gradient(to right, rgba(10, 14, 23, 0.82) 0%, rgba(10, 14, 23, 0.58) 55%, rgba(10, 14, 23, 0.38) 100%),
     linear-gradient(to bottom, rgba(10, 14, 23, 0.42) 0%, rgba(10, 14, 23, 0.10) 50%, rgba(10, 14, 23, 0.80) 100%),
-    url('/sakshi-forge-banner.webp') no-repeat left top;
+    url('/hero_forge.webp') no-repeat left top;
   background-size: cover;
   z-index: 1;
 }
@@ -2834,7 +2834,11 @@ nav {
   .crumbs a,
   footer a {
     display: inline-block;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
   }
+  /* Small labels: at least 12px on phones (inline styles are written as font-size:0.7rem) */
+  .app-pill, .stage-num-tag, .text-\[10px\],
+  [style*="font-size:0.6rem"], [style*="font-size:0.65rem"], [style*="font-size:0.68rem"],
+  [style*="font-size:0.7rem"], [style*="font-size:0.72rem"] { font-size: 0.75rem !important; }
 }

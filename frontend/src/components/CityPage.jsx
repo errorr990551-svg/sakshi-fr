@@ -1,10 +1,9 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { ChevronRight, ShieldCheck, Truck, Sparkles, MapPin, HelpCircle, ChevronDown, ChevronUp, Phone, Mail, FileText, Globe, Building, Award, Activity, ArrowRight, Shield, Layers, FileCheck, HelpCircle as FaqIcon, CheckCircle2, Sliders, Cpu, Zap, Box, MessageSquare } from 'lucide-react';
 import { handleLinkClick, withSlash } from '../utils/router';
-import { stripPrerenderedSchemaTypes } from '../utils/seo';
+import { stripPrerenderedSchemaTypes } from '../utils/schemaHelpers';
 import { buildCityContent } from '../data/cityContent';
 import CityLocalSections from './CityLocalSections';
-import { customCityData } from '../data/customCityData';
 import CityProductPillars from './CityProductPillars';
 
 // Premium Live Delivery Widget Component
@@ -160,10 +159,9 @@ const LiveDeliveryWidget = ({ city, state, country, transitLine, freightBasis })
   );
 };
 
-export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact = false, onShowContactDetails }) {
+export default function CityPage({ cityData, custom = null, onEnquireClick, hasUnlockedContact = false, onShowContactDetails }) {
   const [openFaq, setOpenFaq] = useState(0);
   const handleShowContact = onShowContactDetails || (() => onEnquireClick && onEnquireClick(`Contact Request - ${cityData?.city || 'General'}`));
-  const custom = customCityData[cityData.slug];
   const localContent = useMemo(() => (custom ? null : buildCityContent(cityData)), [cityData, custom]);
   const cityFaqs = localContent?.faqs || cityData.faqs;
   const isInternational = cityData.country && cityData.country !== 'India';
@@ -345,7 +343,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
       <div className="city-page-wrapper" style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '2rem', paddingTop: '5.5rem' }}>
         {/* 1. HERO */}
         <section style={{ 
-          background: 'linear-gradient(to right, rgba(10, 14, 23, 0.82) 0%, rgba(10, 14, 23, 0.58) 55%, rgba(10, 14, 23, 0.38) 100%), linear-gradient(to bottom, rgba(10, 14, 23, 0.42) 0%, rgba(10, 14, 23, 0.10) 50%, rgba(10, 14, 23, 0.80) 100%), url("/sakshi-forge-banner.webp")',
+          background: 'linear-gradient(to right, rgba(10, 14, 23, 0.82) 0%, rgba(10, 14, 23, 0.58) 55%, rgba(10, 14, 23, 0.38) 100%), linear-gradient(to bottom, rgba(10, 14, 23, 0.42) 0%, rgba(10, 14, 23, 0.10) 50%, rgba(10, 14, 23, 0.80) 100%), url("/hero_forge.webp")',
           backgroundPosition: 'left top',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
@@ -789,7 +787,7 @@ export default function CityPage({ cityData, onEnquireClick, hasUnlockedContact 
       
       {/* 1. Hero / Header & Intro */}
       <section style={{ 
-        background: 'linear-gradient(to right, rgba(10, 14, 23, 0.82) 0%, rgba(10, 14, 23, 0.58) 55%, rgba(10, 14, 23, 0.38) 100%), linear-gradient(to bottom, rgba(10, 14, 23, 0.42) 0%, rgba(10, 14, 23, 0.10) 50%, rgba(10, 14, 23, 0.80) 100%), url("/sakshi-forge-banner.webp")',
+        background: 'linear-gradient(to right, rgba(10, 14, 23, 0.82) 0%, rgba(10, 14, 23, 0.58) 55%, rgba(10, 14, 23, 0.38) 100%), linear-gradient(to bottom, rgba(10, 14, 23, 0.42) 0%, rgba(10, 14, 23, 0.10) 50%, rgba(10, 14, 23, 0.80) 100%), url("/hero_forge.webp")',
         backgroundPosition: 'left top',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',

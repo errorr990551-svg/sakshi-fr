@@ -1,19 +1,14 @@
 import React, { useMemo } from 'react';
 import { ArrowRight, ArrowLeftRight, ChevronRight, FileText } from 'lucide-react';
-import productsData from '../data/products.json';
-import { handleLinkClick, withSlash } from '../utils/router';
-import { getParentCategoryName } from '../utils/categories';
+import { handleLinkClick, navigate, withSlash } from '../utils/router';
 import { PRIORITY_30_CITIES } from '../data/priorityCities';
 import { CATEGORY_GUIDES } from '../data/categoryGuides.js';
 import CategoryGuide from './CategoryGuide';
+import { responsiveImg } from '../utils/imgSize';
 
-export default function CategoryPage({ category, onEnquireClick }) {
-  // Filter products that belong to this category
-  const filteredProducts = useMemo(() => {
-    return productsData.filter(
-      (p) => getParentCategoryName(p).toLowerCase() === category['Parent Category']?.toLowerCase()
-    );
-  }, [category]);
+// `products` (this category's products) and `crossLinkSlugs` (tag -> product slug) are
+// resolved at build time by utils/categoryProducts.js, so the page ships without the catalogue.
+export default function CategoryPage({ category, products: filteredProducts = [], crossLinkSlugs = {}, onEnquireClick }) {
 
   // Parse cross-links
   const crossLinks = useMemo(() => {
@@ -136,8 +131,7 @@ export default function CategoryPage({ category, onEnquireClick }) {
                   }}
                   onClick={(e) => {
                     if (e.target.tagName === 'A' || e.target.closest('a')) return;
-                    window.history.pushState(null, '', `/${prod['URL Slug']}/`);
-                    window.dispatchEvent(new PopStateEvent('popstate'));
+                    navigate(`/${prod['URL Slug']}/`);
                   }}
                 >
                   <div>
@@ -145,6 +139,7 @@ export default function CategoryPage({ category, onEnquireClick }) {
                       <div style={{ width: '100%', aspectRatio: '3/2', overflow: 'hidden', borderBottom: '1px solid var(--border-color)', backgroundColor: 'var(--bg-dark-900)' }}>
                         <img loading="lazy" 
                           src={prod.Image} 
+                          {...responsiveImg(prod.Image)}
                           alt={prod['Product Name']} 
                           style={{ 
                             width: '100%', 
@@ -344,9 +339,7 @@ export default function CategoryPage({ category, onEnquireClick }) {
               {crossLinks.map((tag, index) => {
                 // Check if this tag matches any product slug or name to link to it
                 // We'll search if tag is a product name
-                const matchingProd = productsData.find(
-                  (p) => p['Product Name']?.toLowerCase() === tag.toLowerCase() || p['URL Slug']?.replace(/-/g, ' ').toLowerCase() === tag.toLowerCase()
-                );
+                const matchingProd = crossLinkSlugs[tag] ? { 'URL Slug': crossLinkSlugs[tag] } : null;
                 
                 if (matchingProd) {
                   return (

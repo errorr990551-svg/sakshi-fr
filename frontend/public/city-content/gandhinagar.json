@@ -1,0 +1,69 @@
+{
+  "slug": "gandhinagar",
+  "updated": "2026-11-01",
+  "sections": [
+    {
+      "heading": "AmulFed Dairy, Gandhinagar: the Largest Hygienic-Tube Buyer in the Capital",
+      "paragraphs": [
+        "In Gandhinagar the main user of hygienic stainless tube is AmulFed Dairy, a unit of the Gujarat Cooperative Milk Marketing Federation (GCMMF), the body that markets Amul products. Its Gandhinagar site makes skim milk powder, dairy whitener and butter, and stores long-life milk in cartons.",
+        "A plant of this size buys tube for three kinds of work: new process lines when capacity is added, replacement spools during planned shutdowns, and extensions to clean-in-place (CIP) circuits as new equipment is tied into the existing system."
+      ]
+    },
+    {
+      "heading": "The Rs 415 Crore Expansion Commissioned at Gandhinagar in 2021",
+      "paragraphs": [
+        "In November 2021 Union Minister Amit Shah inaugurated four AmulFed projects in Gandhinagar worth Rs 415 crore in total. The largest, at Rs 257 crore, added a milk powder plant of 150 tonnes per day and raised the dairy's handling capacity from 35 lakh to 50 lakh litres of milk a day.",
+        "The same programme included a Rs 85 crore butter plant that took butter capacity from 40 to 120 tonnes a day, and a Rs 23 crore robotic warehouse that holds 50 lakh litres of long-life milk in cartons. A Rs 50 crore expansion doubled the site's poly film packaging plant from 20,000 to 40,000 tonnes a year.",
+        "For a tube supplier, the butter expansion matters as much as the powder plant: a tripled butter line means more cream handling, more heat-treatment and more CIP return pipework, all in hygienic stainless steel."
+      ]
+    },
+    {
+      "heading": "Inside the GEA Powder Plant at AmulFed Gandhinagar",
+      "paragraphs": [
+        "GEA built the Gandhinagar powder plant as a turnkey project, with a design output of 150 tonnes per day of skim milk powder and 120 tonnes per day of dairy whitener. Its scope ran from milk processing to powder packing, including utilities, piping and automation. GEA says the plant stands on the same site as AmulFed's existing 60 and 100 tonne-per-day powder plants, and that the whole project was completed in 20 months.",
+        "The plant uses mechanical vapour recompression (MVR) evaporators, which GEA describes as the largest it had delivered to India, followed by a spray dryer whose chamber door has an inflatable gasket to prevent leaks during CIP. Exhaust air passes through cyclones to a SANICIP bag filter, and the recovered fines go back to the drying chamber.",
+        "These are the lines where tube finish shows up in operation. Milk concentrate leaving an evaporator is viscous and fouls hot surfaces, so a smoother bore releases deposits faster during CIP and reduces the number of cycles needed to get a clean result."
+      ]
+    },
+    {
+      "heading": "SF1 or SF4 Tube for a Gandhinagar Powder and Butter Plant",
+      "paragraphs": [
+        "Raw milk reception, chilled storage and most product transfer lines in a dairy are normally 304L or 316L tube with an SF1 mechanically polished bore. That finish is accepted for dairy service and is easier to match when a spool is replaced inside an existing line.",
+        "SF4 electropolished 316L earns its cost in the places where deposits form or sterility is critical: concentrate lines after the evaporator, hot CIP supply and return headers that see caustic and acid every day, and any line downstream of UHT treatment that feeds long-life carton filling. Electropolishing removes the smeared surface layer left by mechanical polishing, which makes the bore less prone to holding milk solids and easier to clean.",
+        "Whatever finish is chosen, keep it uniform within one cleaning circuit, because a rougher spool set into an electropolished line becomes the point that sets how long every CIP cycle must run."
+      ]
+    },
+    {
+      "heading": "What a Gandhinagar Dairy Buyer Should Put in an RFQ",
+      "bullets": [
+        "Name the section the tube is for: evaporator and concentrate, spray-dryer feed, butter and cream, CIP headers, UHT and long-life filling, or utilities.",
+        "Give product temperature and the CIP chemicals and temperatures the line will see, so grade and finish can be matched to the duty.",
+        "List OD × wall and metres per size, to ASME BPE dimensions or ASTM A270 / A269, and state whether SF1 or SF4 is required.",
+        "If the tube joins an existing line, give the finish and wall of the installed tube so the new spool matches it.",
+        "Every lot ships with an EN 10204 3.1 certificate traced to heat number, PMI on every length and a measured Ra report for electropolished tube; dispatch and transit are confirmed in writing with each quotation."
+      ],
+      "links": [
+        { "label": "Send a Gandhinagar enquiry", "href": "/contact-us/" }
+      ]
+    },
+    {
+      "heading": "Delivery to Gandhinagar",
+      "paragraphs": [
+        "Gandhinagar is supplied by road from Mumbai, directly to the plant or to its piping contractor; dispatch and transit are confirmed in writing with each quotation.",
+        "Other Gujarat pages:"
+      ],
+      "links": [
+        { "label": "Ahmedabad", "href": "/market-area/ahmedabad/" },
+        { "label": "Mehsana", "href": "/market-area/mehsana/" },
+        { "label": "Anand", "href": "/market-area/anand/" },
+        { "label": "Sanand", "href": "/market-area/sanand/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "DeshGujarat: Amit Shah to inaugurate Amul's milk powder, packaging film plants in Gandhinagar (27 Nov 2021)", "url": "https://deshgujarat.com/2021/11/27/amit-shah-to-inaugurate-amuls-milk-powder-packaging-film-plants-in-gandhinagar/" },
+    { "title": "FoodTechBiz: Amul invests Rs 415 crore in four new projects in Gandhinagar (29 Nov 2021)", "url": "https://www.foodtechbiz.com/business-updates/amul-invests-rs-415-crore-in-four-new-projects-in-gandhinagar" },
+    { "title": "GEA customer case: skim milk powder plant with sustainable technologies at AmulFed, Gandhinagar", "url": "https://www.gea.com/en/customer-cases/skim-milk-powder-plant-sustainable-technologies/" },
+    { "title": "Dairy Industries International: GEA to build powder plant for Amul (13 Jul 2017)", "url": "https://www.dairyindustries.com/news/22141/gea-build-powder-plant-amul/" }
+  ]
+}

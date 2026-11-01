@@ -1,0 +1,60 @@
+{
+  "slug": "faridabad",
+  "updated": "2026-11-01",
+  "sections": [
+    {
+      "heading": "Faridabad: Haryana's Factory City and Where Hygienic Tube Fits",
+      "paragraphs": [
+        "Faridabad is often called the industrial capital of Haryana. In 2013 it had 2,499 of the state's 11,665 registered working factories, more than Gurgaon's 2,116. Large employers include Escorts, India Yamaha Motor, Havells, JCB, Whirlpool, ABB and the Indian Oil research centre.",
+        "Most of that base is engineering, automotive and electrical work, which buys ordinary pipe and tube rather than electropolished tube. The plants that do need hygienic stainless tube are fewer, and the largest of them is the Amul dairy run by Banas Dairy at IMT Faridabad."
+      ]
+    },
+    {
+      "heading": "Banas Dairy's Amul Plant at IMT Faridabad",
+      "paragraphs": [
+        "Banas Dairy, the Banaskantha district milk union and a member of the federation that markets Amul, laid the foundation stone for its Faridabad plant in February 2014 with a planned investment of Rs 300 crore. The plant was planned to process 10 lakh litres of milk a day in its first years, expandable to 15 lakh litres.",
+        "A report on a February 2026 student visit by J.C. Bose University of Science and Technology, YMCA, Faridabad describes the Amul plant at IMT Faridabad as one of the brand's significant production facilities. Students followed milk through collection, quality testing, pasteurisation, homogenisation, packaging and storage.",
+        "A liquid-milk plant at this scale runs long stainless lines between reception, silos, pasteurisers, homogenisers and packing machines, all tied into clean-in-place (CIP) circuits. Each added packing line or silo needs new hygienic pipework that matches the tube already installed."
+      ]
+    },
+    {
+      "heading": "Choosing Grade and Finish for a Faridabad Liquid-Milk Plant",
+      "paragraphs": [
+        "For raw milk reception, silo and chilled transfer lines, 304L tube with an SF1 mechanically polished bore is the usual choice, and it is the easiest finish to match during a shutdown spool replacement. Move to 316L where lines carry hot caustic and acid CIP solutions every day, because 316L resists chloride pitting better.",
+        "SF4 electropolished 316L is worth specifying on the hot side: pasteuriser holding tubes and product lines that run at heat-treatment temperature, and CIP supply and return headers. A smoother electropolished bore holds less milk film and protein deposit, so cleaning cycles reach a verified clean surface sooner.",
+        "Research laboratories in the city, such as the Indian Oil centre, buy a different item: small-bore tube for analytical and specialty gas lines. Where gas purity matters, that tube is usually electropolished 316L, ordered in short lengths with matching fittings."
+      ]
+    },
+    {
+      "heading": "What a Faridabad Buyer Should Put in an RFQ",
+      "bullets": [
+        "Name the duty: milk reception, silo transfer, pasteuriser and holding tube, packing feed, CIP header, or laboratory gas line.",
+        "Give product and CIP temperatures and the cleaning chemicals used, so grade and finish can be matched.",
+        "List OD × wall and metres per size, to ASME BPE dimensions or ASTM A270 / A269, and whether SF1 or SF4 is required.",
+        "For a spool replacement, state the finish and wall of the installed tube so the new length matches it.",
+        "Each lot ships with an EN 10204 3.1 certificate traced to heat number, PMI on every length and a measured Ra report for electropolished tube; dispatch and transit are confirmed in writing with each quotation."
+      ],
+      "links": [
+        { "label": "Send a Faridabad enquiry", "href": "/contact-us/" }
+      ]
+    },
+    {
+      "heading": "Delivery to Faridabad and the NCR",
+      "paragraphs": [
+        "Faridabad is supplied by road from Mumbai, directly to the plant or to its piping contractor; dispatch and transit are confirmed in writing with each quotation.",
+        "Other National Capital Region pages:"
+      ],
+      "links": [
+        { "label": "Gurugram", "href": "/market-area/gurugram/" },
+        { "label": "Delhi", "href": "/market-area/delhi/" },
+        { "label": "Noida", "href": "/market-area/noida/" },
+        { "label": "Greater Noida", "href": "/market-area/greater-noida/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Wikipedia: Faridabad (industry and economy)", "url": "https://en.wikipedia.org/wiki/Faridabad" },
+    { "title": "Wikipedia: Banas Dairy (Faridabad plant, citing Business Standard, 19 Feb 2014)", "url": "https://en.wikipedia.org/wiki/Banas_Dairy" },
+    { "title": "J.C. Bose University of Science and Technology, YMCA, Faridabad: report on industrial visit to Amul Plant, IMT Faridabad (6 Feb 2026)", "url": "https://www.jcboseust.ac.in/assets/files/06-02-26_Report_on_industrial_visit_on_amul_plant_1.pdf" }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "slug": "guwahati",
+  "updated": "2026-11-01",
+  "sections": [
+    {
+      "heading": "Guwahati's Two Hygienic-Tube Buyers: Purabi Dairy and Sun Pharma Palashbari",
+      "paragraphs": [
+        "Demand for electropolished and hygienic stainless tube around Guwahati comes from two very different plants. One is Purabi Dairy at Panjabari, run by the West Assam Milk Producers' Cooperative Union (WAMUL). The other is Sun Pharma's sterile-products facility at Palashbari in Kamrup district.",
+        "The dairy needs tube for milk processing, fermented products and cleaning circuits, while the pharmaceutical plant needs it for purified water, water for injection and clean steam. The two specifications differ, so a Guwahati enquiry should say which kind of plant it is for."
+      ]
+    },
+    {
+      "heading": "Purabi Dairy, Panjabari: Doubling to 3 Lakh Litres a Day",
+      "paragraphs": [
+        "In February 2021 WAMUL said it was expanding the Panjabari plant two and a half times, to 1.5 lakh litres of milk a day by September 2022. That expansion was funded under the Assam Project for Agri-Business and Rural Transformation (APART), with an outlay of Rs 46.84 crore.",
+        "A second expansion followed. At the Advantage Assam 2.0 summit in February 2025, the National Dairy Development Board and WAMUL signed an agreement for a Rs 100 crore project to double milk processing from 1.5 to 3 lakh litres a day, raise fermented milk products from 20 to 50 tonnes a day and add a 20,000 litre-per-day ice cream plant.",
+        "Chief Minister Himanta Biswa Sarma performed the bhoomi poojan for this expansion in July 2025. Reports at the time described Purabi's Panjabari plant as the largest dairy processing facility in north-east India."
+      ]
+    },
+    {
+      "heading": "Sun Pharma's Sterile-Products Plant at Palashbari, Kamrup",
+      "paragraphs": [
+        "In October 2018 Assam Chief Minister Sarbananda Sonowal inaugurated a new production line at Sun Pharma's Palashbari facility. The company had spent Rs 120 crore on that line, which added capacity for liquid vials, injectables, eye drops and tablets, and the state government said Sun had already invested Rs 700 crore at the site, with a further Rs 200 crore to follow.",
+        "Sun Pharma's managing director Dilip Shanghvi said he expected Palashbari to become one of the largest sterile-products facilities in the company's network. The plant has automated equipment for granulation, compression, capsule filling, eye drops, vial and ampoule filling, coating and packing.",
+        "Injectables and eye drops are the products that drive tube specification. Water for injection and clean steam reach the filling rooms through distribution loops that are qualified and validated, and those loops are where electropolished 316L tube is normally specified."
+      ]
+    },
+    {
+      "heading": "Choosing Tube for a Guwahati Dairy or Sterile Plant",
+      "paragraphs": [
+        "At Panjabari, milk reception, pasteurisation and transfer lines are normally 304L or 316L with an SF1 mechanically polished bore. The new fermented-milk and ice cream sections justify SF4 electropolished 316L on mix and culture lines, and on hot CIP headers, because a smoother bore holds less product and cleans faster.",
+        "In a sterile plant like Palashbari, water for injection, pure steam and product-contact lines in the filling areas should be SF4 electropolished 316L to ASME BPE. Ambient purified-water loops for oral solid dosage blocks are often SF1. Do not mix finishes inside one validated loop, and keep 304L for non-contact utilities."
+      ]
+    },
+    {
+      "heading": "What to Send With a Guwahati Enquiry",
+      "bullets": [
+        "Say whether the tube is for a dairy section (pasteurisation, fermented products, ice cream mix, CIP) or a pharmaceutical system (purified water, WFI, pure steam, product transfer).",
+        "Give operating and sanitisation temperatures and the CIP or SIP regime, so grade and finish match the duty.",
+        "List OD × wall and metres per size, to ASME BPE dimensions or ASTM A270 / A269, and the finish of any existing loop being extended.",
+        "Include the electropolished bends, tees, reducers and clamp ferrules needed to complete the line.",
+        "Each lot ships with an EN 10204 3.1 certificate traced to heat number, PMI on every length and a measured Ra report for electropolished tube; dispatch and transit are confirmed in writing with each quotation."
+      ],
+      "links": [
+        { "label": "Send a Guwahati enquiry", "href": "/contact-us/" }
+      ]
+    },
+    {
+      "heading": "Delivery to Guwahati and Assam",
+      "paragraphs": [
+        "Guwahati is supplied by road from Mumbai, to the plant or its piping contractor; dispatch and transit are confirmed in writing with each quotation.",
+        "Other eastern and north-eastern pages:"
+      ],
+      "links": [
+        { "label": "Dibrugarh", "href": "/market-area/dibrugarh/" },
+        { "label": "Siliguri", "href": "/market-area/siliguri/" },
+        { "label": "Kolkata", "href": "/market-area/kolkata/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "EastMojo: Purabi Dairy to ramp up output to 1.5 lakh litres daily (24 Feb 2021)", "url": "https://eastmojo.com/assam/2021/02/24/purabi-dairy-to-ramp-up-output-to-1-5-lakh-litres-daily/" },
+    { "title": "Agro & Food Processing: NDDB and WAMUL sign MoU to double milk processing capacity at Purabi Dairy (28 Feb 2025)", "url": "https://agronfoodprocessing.com/nddb-and-wamul-sign-mou-to-double-milk-processing-capacity-at-purabi-dairy-in-assam/" },
+    { "title": "FoodTechBiz: Chief Minister of Assam performs bhoomi poojan for expansion of Purabi Dairy plant at Guwahati (24 Jul 2025)", "url": "https://www.foodtechbiz.com/business-updates/chief-minister-of-assam-performs-bhoomi-poojan-for-expansion-of-purabi-dairy-plant-at-guwahati" },
+    { "title": "Business Standard (PTI): Sun Pharma to pump in Rs 200 crore more in Assam plant (13 Oct 2018)", "url": "https://www.business-standard.com/article/pti-stories/sun-pharma-to-pump-in-rs-200-crore-more-in-assam-plant-118101300499_1.html" }
+  ]
+}

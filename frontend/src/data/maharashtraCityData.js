@@ -18,7 +18,7 @@ export const maharashtraCityData = {
     transitInfo: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.',
     regionalCapability: {
       title: "Electropolished Pipe for Pune's Industrial Belts",
-      description: "Pune's process industry is spread across several MIDC zones, and each asks something different of a pipe. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
+      description: "Pune's process industry is spread across several MIDC zones, and each asks something different of a pipe.",
       zones: [
         { zone: 'Hadapsar / Manjri', endUse: 'Biotech, vaccine and pharma', application: 'WFI loops, purified water, clean steam, CIP', spec: '316L, internal Ra ≤0.4 µm, surface report' },
         { zone: 'Chakan MIDC', endUse: 'Auto, engineering, food, some pharma', application: 'Hygienic utility, process and CIP lines', spec: '304L or 316L by media' },
@@ -76,7 +76,7 @@ export const maharashtraCityData = {
     transitInfo: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.',
     regionalCapability: {
       title: "Electropolished Pipe for Mumbai's Industrial Belts",
-      description: "Mumbai's process industry sits in several separate pockets, and each asks something different of a pipe. Pharma and life-science plants cluster in the north-eastern suburbs, small manufacturers fill the MIDC estates around Andheri, and the Chembur–Trombay–Mahul belt in the east carries oil, fertiliser and chemical-terminal operations. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
+      description: "Mumbai's process industry sits in several separate pockets, and each asks something different of a pipe. Pharma and life-science plants cluster in the north-eastern suburbs, small manufacturers fill the MIDC estates around Andheri, and the Chembur–Trombay–Mahul belt in the east carries oil, fertiliser and chemical-terminal operations.",
       zones: [
         { zone: 'Andheri MIDC / Marol', endUse: 'Small and mid-size manufacturers, pharma and engineering units', application: 'Purified water, process utility, skid piping', spec: '316L / 304L, cut to drawing' },
         { zone: 'SEEPZ, Andheri East', endUse: 'Export-oriented units', application: 'Clean utility, audit-ready document packs', spec: '316L, full documentation' },
@@ -92,7 +92,7 @@ export const maharashtraCityData = {
         { title: 'Export-oriented units', desc: 'A full document pack that survives overseas customer audits.' }
       ],
       localNotes: [
-        'Same metro region: The factory is about 40-50 km from most Mumbai addresses, so you can visit, witness testing or send a third-party inspector the same day.',
+        'Same city: we are in Mumbai, so you can send a third-party inspector to check the tube against the MTC before dispatch.',
         'Mumbai is coastal: Humid, salt-laden air favours 316L on exposed runs, while 304L is fine for most interior hygienic lines.',
         'Honest fit: Main process piping in refinery-type plants is mostly carbon or alloy steel. Our EP pipe suits clean utilities, laboratories, pharma and food lines, and we will say so before you order.'
       ]
@@ -324,7 +324,7 @@ export const maharashtraCityData = {
       ],
       localNotes: [
         'A new industrial city is still being built: Plants in the AURIC area decide piping at design stage, so the earlier you send drawings, the better the quote and the lead time. We will mark up your spec and flag anything that does not suit electropolished pipe.',
-        'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends and sleeve every length so the finish arrives undamaged, and we plan consolidated dispatches for larger orders.',
+        'We cap the pipe ends and sleeve every length so the finish arrives undamaged, and we plan consolidated dispatches for larger orders.',
         'Honest fit: In automotive and engineering plants, EP pipe belongs on clean utilities and process-water lines, not on the main plant piping. We will say so before you order.'
       ]
     },
@@ -385,7 +385,7 @@ export const maharashtraCityData = {
         'Where we fit: Dye-house water and dosing lines, food and agro plants, and design-stage projects are our best match here. We will say plainly if a line does not suit electropolished pipe.',
         'A textile park still being built: Plants in a new park decide piping at design stage, so send drawings early and we will mark up the specification and flag anything unsuitable.',
         'Dye-house salts and chlorides: Salt in dyeing liquor attacks 304 by pitting. For lines carrying it, 316L is usually the safer grade. Tell us the media and temperature and we will confirm.',
-        'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey, and we quote consolidated dispatches for larger orders.'
+        'We cap the pipe ends, sleeve every length and pack for the journey, and we quote consolidated dispatches for larger orders.'
       ]
     },
     areas: ['Amravati', 'Badnera', 'Nandgaon Peth', 'Achalpur', 'Anjangaon Surji', 'Daryapur', 'Morshi', 'Warud', 'Dhamangaon Railway', 'Chandur Railway'],

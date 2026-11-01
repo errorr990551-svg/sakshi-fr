@@ -105,7 +105,7 @@ export const telanganaCityData = {
         "Hyderabad has local stockists, and we're not one of them. Our strength is made-to-drawing pipe, measured Ra, in-house electropolishing and the full document pack. We're the better fit when you need a specific size, finish or paperwork.",
         "Inland and hot. Hyderabad has no coastal chloride problem, so choose the grade by media and cleaning chemistry. 304L suits most food and utility lines, and 316L suits pharma and chloride-bearing cleaning agents.",
         "Buy for the whole region together. Hyderabad, its Genome Valley and Pharma City estates and the Patancheru belt (our Sangareddy page) sit within about 60 km of each other. If you run plants in more than one, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -270,7 +270,7 @@ export const telanganaCityData = {
         "Medical-device makers need small lots and exact sizes. At Sultanpur, many units are small or new. We supply cut lengths and custom sizes to drawing, with the same document pack as large orders.",
         "Zaheerabad is a new-build market. Don't plan around the estate's timeline. Send your drawings whenever your project is ready, and we'll mark up the specification and flag anything that doesn't suit electropolished pipe.",
         "We're on your way in. Sangareddy district is the first industrial belt on the Pune highway as it enters Hyderabad, so it is natural for us to make it the first drop on a consolidated run to Hyderabad.",
-        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -412,7 +412,7 @@ export const telanganaCityData = {
         "New and expanding plants decide early. If you're building in a food park or extending a dairy line, send your drawings or existing tube dimensions and we'll mark up the specification, tell you honestly what we can match, and flag anything that doesn't suit electropolished pipe.",
         "Large dairies may buy through tenders. If yours does, send us the tender specification and we'll respond with a technical and commercial offer and the document pack.",
         "On the Hyderabad–Karimnagar–Ramagundam road. Karimnagar is about 70 km from Warangal and 160 km from Hyderabad. If you also buy for Hyderabad, Warangal or Ramagundam, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -555,7 +555,7 @@ export const telanganaCityData = {
         "Dry processing isn't the target. Rice, groundnut and cotton handling are mostly dry. We'd rather tell you than sell you something you don't need.",
         "Large new plants specify early and exactly. If you're building at Divitipally or a similar site, send your specification with your enquiry. For DI or DM water, the right grade and finish depend on the purity you need, and we'll tell you what we can guarantee and what we can't.",
         "Food-park and pharma buyers need paperwork. Auditors expect heat-number traceability, a measured Ra report and passivation records, so every order ships with them.",
-        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -691,7 +691,7 @@ export const telanganaCityData = {
         "The park is new, so don't plan around the press timeline. Plants will come up unit by unit over several years. Send your drawings whenever your project is ready, and we'll mark up the specification and flag anything that doesn't suit electropolished pipe.",
         "Large groups often procure centrally. If your procurement team sits in another state, we can quote centrally and deliver to your Warangal site. If your company has a vendor-registration process, send us the form and we'll complete it.",
         "On the Hyderabad–Warangal–Karimnagar road. Warangal is about 70 km from Karimnagar and 150 km from Hyderabad. If you also buy for either, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -829,7 +829,7 @@ export const telanganaCityData = {
         "Food-park units are often new and small. If you're a tenant, or setting up beside the park, send your drawings or specification and we'll mark up the specification and flag anything that doesn't suit electropolished pipe. We supply cut lengths and custom sizes, in small lots as well as large ones.",
         "Wet food lines are cleaning-driven. 304L is the usual grade. 316L is the safer choice where sanitisers or the product carry chlorides. Send us your CIP chemistry.",
         "On the Hyderabad–Nizamabad–Nagpur highway. Nizamabad is about 175 km from Hyderabad and roughly 80-100 km from Karimnagar. If you also buy for either, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -969,7 +969,7 @@ export const telanganaCityData = {
         "Don't plan around the park's timeline. Plants here will come up unit by unit over several years. Send your drawings whenever your project is ready, and we'll mark up the specification and flag anything that doesn't suit electropolished pipe. New plants usually buy through EPC contractors, and we supply them with the document pack their client's inspector expects.",
         "Handloom and agro aren't the target. Those are craft or dry processes. We'd rather tell you than sell you something you don't need.",
         "Between Hyderabad and Karimnagar. Siddipet is about 100 km from Hyderabad and about 60 km from Karimnagar. If you also buy for either, or for the rest of Genome Valley (our Hyderabad page), send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -1116,7 +1116,7 @@ export const telanganaCityData = {
         "Plan around shutdowns. Maintenance outages have fixed dates. If you tell us the shutdown window when you enquire, we'll plan manufacture and dispatch against it, and we'll say plainly if the lead time doesn't fit.",
         "Dry processing isn't the target. Cement, coal handling and rice and cotton milling are mostly dry. We'd rather tell you than sell you something you don't need.",
         "Between Karimnagar and the Godavari. Ramagundam is about 70 km from Karimnagar. If you also buy for Karimnagar, Hyderabad or Warangal, send the requirements together and we'll quote one consolidated dispatch.",
-        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -1259,7 +1259,7 @@ export const telanganaCityData = {
         "Large plants buy formally. Public-sector and large private plants generally purchase through tenders, approved-vendor lists and registered contractors. If yours does, send us the tender specification and we'll respond with a technical and commercial offer and the document pack.",
         "Dry processing isn't the target. Rice, granite and coal handling are dry or abrasive. We'd rather tell you than sell you something you don't need.",
         "On the Hyderabad–Vijayawada road. Khammam is about 200 km from Hyderabad and about 100 km from Kothagudem. If you also buy for Hyderabad, Warangal or Nalgonda, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [

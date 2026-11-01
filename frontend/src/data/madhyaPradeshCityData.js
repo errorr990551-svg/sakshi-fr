@@ -96,7 +96,7 @@ export const madhyaPradeshCityData = {
         }
       ],
       "localNotes": [
-        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your plant needs a few lengths this week, tell us.",
+        "If your plant needs a few lengths this week, tell us.",
         "Pharma and food side by side. Sanwer Road and Rau have both. Pharma lines need measured Ra, passivation records and a document trail. Food and snack lines need cleanability and hot-oil or brine resistance. We recommend by media, not habit.",
         "Namkeen and snack lines. Frying oil lines are cleaned with hot caustic, and brine or acidic products can attack 304 by pitting. 304L suits most oil and dry-side lines, and 316L is the safer choice for brine, pickle and acidic products. Send us your product and cleaning chemistry.",
         "Many plants supply regulated markets. Pharma and food exporters are audited, so every order ships with heat-number traceability, a surface report and passivation records.",
@@ -542,7 +542,7 @@ export const madhyaPradeshCityData = {
         "Pharma buyers want paperwork. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
         "Plastics and chemicals aren't the target. Their main processes don't use electropolished pipe. We'd rather tell you than sell you something you don't need.",
         "Part of one belt. Vikram Udyogpuri is about 15 km from Dewas and 45 km from Indore. If you also buy for Dewas, Indore or Pithampur, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -696,7 +696,7 @@ export const madhyaPradeshCityData = {
         "Many Bhopal buyers are fabricators and vendors. If you build equipment, you need repeatable wall thickness, clean cut ends and a document pack your own customer can audit. We supply to drawing and in cut lengths, in small lots as well as large ones.",
         "Bhopal has local stockists, and we're not one of them. Our strength is made-to-drawing pipe, measured Ra, in-house electropolishing and the full document pack.",
         "Between Mandideep and Indore. Bhopal is about 25 km from Mandideep and about 190 km from Indore. If you also buy for either, or for Dewas or Ujjain, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -845,7 +845,7 @@ export const madhyaPradeshCityData = {
         "Soya processing has a clean side and a solvent side. Solvent-extraction and hexane lines aren't a fit for electropolished pipe. Refined-oil, condensate and clean-utility lines can be. Send us the line and media and we'll say honestly which it is. Avoid hydrofluoric acid and abrasive slurries.",
         "The investment region is still being planned. Don't plan around its timeline. Send your drawings or specification whenever your project is ready, and we'll mark up the specification, flag anything that doesn't suit electropolished pipe, and prepare the document pack you'll need for commissioning.",
         "Between Indore and Gujarat. Ratlam is about 140 km from Indore and about 85 km from Ujjain. If you also buy for Indore, Ujjain or Dewas, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -1001,7 +1001,7 @@ export const madhyaPradeshCityData = {
         "Dairy is a 304L market, with exceptions. Milk lines are cleaned with caustic and acid cycles, and 304L is the standard grade. Curd, buttermilk and flavoured products can be acidic or salted, so 316L is the safer choice there. Send us your product and CIP chemistry.",
         "Gwalior has local stockists, and we're not one of them. At roughly 1,150-1,250 km, freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Bhopal or Mandideep, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
+        "If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       ]
     },
     "areas": [
@@ -1149,9 +1149,9 @@ export const madhyaPradeshCityData = {
         "Defence and public-sector buyers buy formally. Government establishments and their vendors generally purchase through tenders, registered vendors, and inspection by a designated quality authority. If yours does, send us the tender specification and the inspection requirement and we'll tell you what we can meet and respond with a technical and commercial offer and the document pack.",
         "The vendor base is a big part of the market. If you're a precision-metalwork or machinery shop, you need repeatable wall thickness, clean cut ends and a document pack your own customer can audit. We supply to drawing and in cut lengths, in small lots as well as large ones.",
         "Dairy is a 304L market, with exceptions. Milk lines are cleaned with caustic and acid cycles, and 304L is the standard grade. Curd, buttermilk and flavoured products can be acidic or salted, so 316L is the safer choice there.",
-        "We're a long way from Jabalpur, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Bhopal or Mandideep, or for Nagpur, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
+        "If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       ]
     },
     "areas": [
@@ -1294,10 +1294,7 @@ export const madhyaPradeshCityData = {
         }
       ],
       "localNotes": [
-        "Soya has a clean side and a solvent side. Solvent-extraction and hexane lines aren't a fit for electropolished pipe. Soy-milk, paneer, refined-oil, condensate and clean-utility lines can be. Send us the line and media and we'll say honestly which it is. Avoid hydrofluoric acid and abrasive slurries.",
-        "Herbal extraction varies by solvent. Wate",
-        "<truncated 21128 bytes>",
-        "NOTE: The output was truncated because it was too long. Use a more targeted query or a smaller range to get the information you need."
+        "Soya has a clean side and a solvent side. Solvent-extraction and hexane lines aren't a fit for electropolished pipe. Soy-milk, paneer, refined-oil, condensate and clean-utility lines can be. Send us the line and media and we'll say honestly which it is. Avoid hydrofluoric acid and abrasive slurries."
       ]
     },
     "areas": [
@@ -1446,7 +1443,7 @@ export const madhyaPradeshCityData = {
         "Large plants may buy formally. Multinational and large Indian plants often purchase through approved-vendor lists. If yours does, send us the form and we'll complete it.",
         "Mandideep has local stockists, and we're not one of them. Our strength is made-to-drawing pipe, measured Ra, in-house electropolishing and the full document pack.",
         "Bhopal is next door. Mandideep is about 25 km from Bhopal. If you also buy for Bhopal, Indore or Dewas, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -1594,7 +1591,7 @@ export const madhyaPradeshCityData = {
         }
       ],
       "localNotes": [
-        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your plant needs a few lengths this week, tell us.",
+        "If your plant needs a few lengths this week, tell us.",
         "Pharma and food side by side. Sanwer Road and Rau have both. Pharma lines need measured Ra, passivation records and a document trail. Food and snack lines need cleanability and hot-oil or brine resistance. We recommend by media, not habit.",
         "Namkeen and snack lines. Frying oil lines are cleaned with hot caustic, and brine or acidic products can attack 304 by pitting. 304L suits most oil and dry-side lines, and 316L is the safer choice for brine, pickle and acidic products. Send us your product and cleaning chemistry.",
         "Many plants supply regulated markets. Pharma and food exporters are audited, so every order ships with heat-number traceability, a surface report and passivation records.",
@@ -1900,7 +1897,7 @@ export const madhyaPradeshCityData = {
         "Pharma buyers want paperwork. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
         "Plastics and chemicals aren't the target. Their main processes don't use electropolished pipe. We'd rather tell you than sell you something you don't need.",
         "Part of one belt. Vikram Udyogpuri is about 15 km from Dewas and 45 km from Indore. If you also buy for Dewas, Indore or Pithampur, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -2054,7 +2051,7 @@ export const madhyaPradeshCityData = {
         "Many Bhopal buyers are fabricators and vendors. If you build equipment, you need repeatable wall thickness, clean cut ends and a document pack your own customer can audit. We supply to drawing and in cut lengths, in small lots as well as large ones.",
         "Bhopal has local stockists, and we're not one of them. Our strength is made-to-drawing pipe, measured Ra, in-house electropolishing and the full document pack.",
         "Between Mandideep and Indore. Bhopal is about 25 km from Mandideep and about 190 km from Indore. If you also buy for either, or for Dewas or Ujjain, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -2210,7 +2207,7 @@ export const madhyaPradeshCityData = {
         "Dairy is a 304L market, with exceptions. Milk lines are cleaned with caustic and acid cycles, and 304L is the standard grade. Curd, buttermilk and flavoured products can be acidic or salted, so 316L is the safer choice there. Send us your product and CIP chemistry.",
         "Gwalior has local stockists, and we're not one of them. At roughly 1,150-1,250 km, freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Bhopal or Mandideep, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
+        "If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       ]
     },
     "areas": [
@@ -2360,7 +2357,7 @@ export const madhyaPradeshCityData = {
         "Large plants may buy formally. Multinational and large Indian plants often purchase through approved-vendor lists. If yours does, send us the form and we'll complete it.",
         "Mandideep has local stockists, and we're not one of them. Our strength is made-to-drawing pipe, measured Ra, in-house electropolishing and the full document pack.",
         "Bhopal is next door. Mandideep is about 25 km from Bhopal. If you also buy for Bhopal, Indore or Dewas, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [

@@ -47,7 +47,7 @@ export const gujaratCityData = {
         "Pharma and dye units sit side by side. In Vatva and Naroda, a pharma purified-water line and a dye-intermediate line can be a few hundred metres apart. We recommend by media, not habit, and say plainly where electropolished pipe doesn't suit. Avoid hydrofluoric acid and abrasive slurries.",
         "Many plants supply regulated overseas markets. That means surface reports, heat-number traceability and passivation records matter at audit time, so every order ships with them.",
         "Inland site, so choose by media. Ahmedabad has no coastal chloride problem. 304L suits most food and utility lines, and 316L suits pharma and chloride-bearing cleaning agents.",
-        "A moderate supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey. If you also buy for Sanand, Vadodara or Anand, send the requirements together and we'll quote one consolidated dispatch."
+        "We cap the pipe ends, sleeve every length and pack for the journey. If you also buy for Sanand, Vadodara or Anand, send the requirements together and we'll quote one consolidated dispatch."
       ]
     },
     areas: ['Ahmedabad', 'Naroda', 'Vatva', 'Odhav', 'Narol', 'Sarkhej', 'Matoda', 'Moraiya', 'Thaltej', 'Kathwada', 'Bapunagar', 'Gandhinagar (nearby)', 'Kalol (nearby)'],
@@ -116,7 +116,7 @@ export const gujaratCityData = {
         "Vadodara has local stockists, and we're not one of them. Our strength is made-to-drawing pipe, measured Ra, in-house electropolishing and the full document pack. We're the better fit when you need a specific size, finish or paperwork.",
         "Honest fit in the refinery belt. Main process piping there is mostly carbon or alloy steel. Our pipe suits clean utilities, laboratories and instrument lines. Avoid hydrofluoric acid and abrasive slurries.",
         "Inland site, so choose by media. 304L suits most food and utility lines, and 316L suits pharma and chloride-bearing cleaning agents. Tell us the media.",
-        "A moderate supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey. If you also buy for Ahmedabad, Anand or Ankleshwar, send the requirements together and we'll quote one consolidated dispatch."
+        "We cap the pipe ends, sleeve every length and pack for the journey. If you also buy for Ahmedabad, Anand or Ankleshwar, send the requirements together and we'll quote one consolidated dispatch."
       ]
     },
     areas: ['Vadodara (Baroda)', 'Makarpura', 'Nandesari', 'Waghodia', 'Por', 'Ramangamdi', 'Savli', 'Halol', 'Padra', 'Koyali', 'Karjan', 'Dabhoi', 'Jarod'],
@@ -180,7 +180,7 @@ export const gujaratCityData = {
         { title: 'High-purity gas and ultra-pure water lines', desc: 'Guaranteed Ra roughness to SF4 standards with complete profilometer logs.' }
       ],
       localNotes: [
-        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your plant needs a few lengths this week, tell us.",
+        "If your plant needs a few lengths this week, tell us.",
         "Plants here operate under close scrutiny. The estate's effluent system and its regulators make leak-tested, fully documented piping part of the compliance picture. Every order ships with hydro and PMI certificates.",
         "Chemical hub honesty. Reactor-side solvent, acid and halide lines can need other materials, and we'll tell you which are which. Send us the fluid, concentration and temperature before you order. Avoid hydrofluoric acid and abrasive slurries.",
         "Next door to the Union Territories. Daman and Silvassa, just across the border, have large pharma and manufacturing clusters. We supply those on the same route.",
@@ -253,7 +253,7 @@ export const gujaratCityData = {
         "Auto and electronics are utility buyers. For DM or DI water, 304L or 316L depends on the purity you need. Send us your specification.",
         "Close to Ahmedabad, so buy together. Sanand is about 30 km from Ahmedabad. If you also buy for Ahmedabad, Vadodara or Mehsana, send the requirements together and we'll quote one consolidated dispatch.",
         "Sanand has local stockists nearby, and we're not one of them. Our strength is made-to-drawing pipe, measured Ra, in-house electropolishing and the full document pack.",
-        "A moderate supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     areas: ['Sanand', 'Sanand GIDC', 'Khoraj', 'Bol', 'Changodar', 'Bavla', 'Dholka', 'Santej', 'Kalol', 'Viramgam', 'Mandal', 'Becharaji (nearby)'],
@@ -321,7 +321,7 @@ export const gujaratCityData = {
         "Many pharma plants here supply regulated overseas markets. Surface reports, heat-number traceability and passivation records matter at audit time.",
         "Protect the finish. Humid, chemical-laden air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation.",
         "Several sites in the belt. If your company has plants in Ankleshwar, Panoli, Jhagadia and Dahej, or also buys for Vadodara or Surat, send all the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A moderate supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation."
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation."
       ]
     },
     areas: ['Ankleshwar', 'Ankleshwar GIDC', 'Panoli', 'Jhagadia', 'Valia', 'Netrang', 'Kosamba (nearby)', 'Bharuch (nearby)'],
@@ -388,7 +388,7 @@ export const gujaratCityData = {
         "Weaving, embroidery and diamonds aren't the target. Those processes are mostly dry. We'd rather tell you than sell you something you don't need.",
         "Surat has local stockists, and we're not one of them. Our strength is made-to-drawing pipe, measured Ra, in-house electropolishing and the full document pack.",
         "Hazira is coastal. Salt air and chloride-bearing water attack plain 304, so we steer coastal runs towards 316L or duplex 2205.",
-        "On the route to Vapi and Ankleshwar. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If you also buy for either, send the requirements together and we'll quote one consolidated dispatch.",
+        "If you also buy for either, send the requirements together and we'll quote one consolidated dispatch.",
         "Protect the finish. Humid air near the coast can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
     },
@@ -458,7 +458,7 @@ export const gujaratCityData = {
         "Honest fit. Main process piping in large petrochemical units is mostly carbon or alloy steel. Our electropolished pipe suits clean utilities, laboratories, pharma and instrument lines, and we'll say so before you order. Avoid hydrofluoric acid and abrasive slurries.",
         "Protect the finish. Humid coastal air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation.",
         "Next to Ankleshwar. Bharuch district's other chemical estates are close by. If you also buy for Ankleshwar, Vadodara or Surat, send the requirements together and we'll quote one consolidated dispatch.",
-        "A moderate supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation."
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation."
       ]
     },
     areas: ['Dahej', 'Dahej PCPIR', 'Vilayat', 'Saykha', 'Vagra', 'Bharuch', 'Bharuch GIDC', 'Jambusar (nearby)', 'Ankleshwar (nearby)'],
@@ -527,7 +527,7 @@ export const gujaratCityData = {
         "Tube standards. Our sanitary tube is ASTM A270. If your dairy customers ask for 3-A or DIN 11850 tube, send us the specification and we'll tell you what we can meet.",
         "Not every plant here needs electropolished pipe. Heavy engineering, gearboxes and glass-lined reactor makers use EP pipe only on clean utilities, and we'll say so before you order.",
         "Anand is central Gujarat, so buy together. Anand is about 40 km from Vadodara and about 70 km from Ahmedabad. If you also buy for either, or for Mehsana, send the requirements together and we'll quote one consolidated dispatch.",
-        "A moderate supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     areas: ['Anand', 'Vitthal Udyognagar', 'Vallabh Vidyanagar', 'Karamsad', 'Mogar', 'Nadiad', 'Khambhat', 'Petlad', 'Borsad', 'Umreth', 'Sojitra', 'Kheda (nearby)'],
@@ -595,7 +595,7 @@ export const gujaratCityData = {
         "Big cooperative unions buy formally. Large dairy unions generally purchase through tenders and approved-vendor lists. If yours does, send us the tender specification and we'll respond with a technical and commercial offer and the document pack.",
         "Many of the machines come from Anand. Dairy equipment is largely built in the Anand and Vitthal Udyognagar belt, about 150 km south. If you're an equipment maker, see our Anand page.",
         "Dry processing isn't the target. Spice and cattle-feed handling are mostly dry. We'd rather tell you than sell you something you don't need.",
-        "A long-ish supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey. If you also buy for Ahmedabad, Sanand or Anand, send the requirements together and we'll quote one consolidated dispatch."
+        "We cap the pipe ends, sleeve every length and pack for the journey. If you also buy for Ahmedabad, Sanand or Anand, send the requirements together and we'll quote one consolidated dispatch."
       ]
     },
     areas: ['Mehsana', 'Kadi', 'Kalol', 'Patan', 'Sidhpur', 'Unjha', 'Dediyasan', 'Visnagar', 'Vijapur', 'Vadnagar', 'Becharaji (nearby)', 'Himmatnagar (nearby)', 'Palanpur (nearby)'],

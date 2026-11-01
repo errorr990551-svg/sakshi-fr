@@ -320,7 +320,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
     if (!text) return [
       { num: '1', title: 'Ultra-Smooth Internal Surface (Ra ≤ 0.38 µm / SF4)', desc: 'Electrochemical dissolution eliminates micro-burrs and microscopic crevices, preventing bio-film accumulation.' },
       { num: '2', title: '100% PMI & EN 10204 3.1 MTC Certified', desc: 'Every batch undergoes Positive Material Identification (PMI) and hydrostatic pressure testing before dispatch.' },
-      { num: '3', title: 'Dispatch from Mumbai', desc: `Dispatch from Mumbai to ${cityData.city}; delivery time depends on size, quantity and stock, and is confirmed in writing with each quotation.` },
+      { num: '3', title: 'Dispatch from Mumbai', desc: `Each length is end-capped and sleeved, then dispatched from Mumbai to ${cityData.city} with its EN 10204 3.1 certificate and Ra report.` },
       { num: '4', title: 'Sanitary Fittings & Flanges from One Source', desc: 'Single-source procurement for EP pipes, tri-clamp fittings, weld neck flanges, and high-purity valves.' },
       { num: '5', title: 'Protective Export-Grade Crate Packaging', desc: 'All pipes are end-capped, polyethylene sleeved, and packed in reinforced wooden crates to ensure pristine delivery.' }
     ];
@@ -882,7 +882,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
                 {custom?.heroIntro ? (
                   <span>{custom.heroIntro}</span>
                 ) : (
-                  <>Sakshi Forge is a premier manufacturer and supplier of ASTM A270 &amp; ASME BPE compliant <strong>electropolished stainless steel pipes</strong> for pharmaceutical, biotechnology, semiconductor, and high-purity chemical units in <strong>{cityData.city}</strong>. We deliver 100% PMI-tested SS 304, 316L, and 904L EP tubing with internal surface roughness Ra ≤ 0.38 µm (SF4) dispatched from Mumbai.</>
+                  <>Sakshi Forge is a manufacturer and supplier of ASTM A270 &amp; ASME BPE compliant <strong>electropolished stainless steel pipes</strong> for pharmaceutical, biotechnology, semiconductor, and high-purity chemical units in <strong>{cityData.city}</strong>. We deliver 100% PMI-tested SS 304, 316L, and 904L EP tubing with internal surface roughness Ra ≤ 0.38 µm (SF4) dispatched from Mumbai.</>
                 )}
               </p>
 

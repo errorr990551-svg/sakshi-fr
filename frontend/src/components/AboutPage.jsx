@@ -8,10 +8,10 @@ import { imgSize } from '../utils/imgSize';
 export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, onShowContactDetails }) {
   const handleShowContact = onShowContactDetails || (() => onEnquireClick && onEnquireClick('About Page Contact Request'));
   const stats = [
-    { number: '10+', label: 'Years' },
-    { number: '100+', label: 'Clients' },
-    { number: '500+', label: 'Projects Supplied' },
-    { number: '5,000+', label: 'Tons Forged Annually' }
+    { number: 'ISO', label: '9001:2015 Certified' },
+    { number: '3.1', label: 'EN 10204 Certificates' },
+    { number: 'NABL', label: 'Lab Chemical Analysis' },
+    { number: '24 h', label: 'Quote Turnaround' }
   ];
 
   const processes = [
@@ -67,7 +67,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
           "@id": "https://steelmanufacturer.in/about-us/#webpage",
           "url": "https://steelmanufacturer.in/about-us/",
           "name": "About Sakshi Forge | Electropolished Pipe & Forged Flange Manufacturer, Mumbai",
-          "description": "Sakshi Forge is an ISO 9001:2015 manufacturer in Mumbai. 10+ years making electropolished pipes, flanges and forged fittings with 100% PMI testing.",
+          "description": "Sakshi Forge is an ISO 9001:2015 manufacturer in Mumbai making electropolished pipes, flanges and forged fittings with 100% PMI testing.",
           "isPartOf": {
             "@type": "WebSite",
             "@id": "https://steelmanufacturer.in/#website",
@@ -182,7 +182,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
             <div className="accent-line-left" style={{ marginBottom: '1.5rem' }}></div>
             
             <p className="about-p" style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
-              Sakshi Forge started with a simple idea: industrial buyers should get steel that matches its paperwork. Over 10+ years, we have built that idea into a manufacturing business in Mumbai.
+              Sakshi Forge started with a simple idea: industrial buyers should get steel that matches its paperwork. Over the years we have built that idea into a manufacturing business in Mumbai.
             </p>
             <p className="about-p" style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
               We began with forged flanges and fittings, products where tolerance, material grade and traceability decide whether a pipeline is safe. That discipline shaped everything we did next.
@@ -191,11 +191,11 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
               As customers in pharma, food, dairy and process industries asked for cleaner, more corrosion-resistant piping, we moved into <a href="/electropolished-pipes/" onClick={handleLinkClick} style={{ color: 'var(--primary-yellow)', textDecoration: 'underline', fontWeight: '600' }}>electropolished pipes and tubes</a> and built the process in-house. Controlling forging, machining, electropolishing and testing ourselves meant we could stand behind every certificate we issued.
             </p>
             <p className="about-p" style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
-              Today we supply 100+ clients across India and export to the USA, UAE, Europe and Southeast Asia. We have delivered 500+ projects, and the aim is still the same as on day one: material you can trust and answers you can rely on.
+              Today we supply process plants across India and in export markets, and the aim is still the same as on day one: material you can trust and answers you can rely on.
             </p>
 
             <div style={{ backgroundColor: 'var(--bg-dark-900)', borderLeft: '4px solid var(--primary-yellow)', padding: '1.25rem 1.5rem', borderRadius: '0 8px 8px 0', margin: '1.5rem 0 2.5rem' }}>
-              <h3 style={{ fontSize: '1.25rem', color: 'var(--primary-yellow)', marginBottom: '0.4rem' }}>10+ years of growth</h3>
+              <h3 style={{ fontSize: '1.25rem', color: 'var(--primary-yellow)', marginBottom: '0.4rem' }}>Steady growth</h3>
               <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.95rem' }}>
                 From standard flanges to custom-engineered components and a full electropolished range, we have grown by doing the basics well: right material, right testing, right delivery.
               </p>

@@ -22,7 +22,6 @@ function formatTitle(title) {
   if (t.length <= 60) return t;
   if (t.includes(' | Sakshi Forge')) {
     const withoutBrand = t.replace(' | Sakshi Forge', '').trim();
-    if (withoutBrand.length + 5 <= 60) return `${withoutBrand} | SF`;
     if (withoutBrand.length <= 60) return withoutBrand;
     t = withoutBrand;
   }

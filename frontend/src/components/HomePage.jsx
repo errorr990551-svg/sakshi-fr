@@ -248,10 +248,10 @@ export default function HomePage({ onEnquireClick }) {
               </div>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(200px, 100%), 1fr))', gap: '1rem' }}>
                 {[
-                  { icon: <ShieldCheck size={26} style={{ color: 'var(--primary-yellow)' }} />, title: "ISO 9001:2015 Certified", subtitle: "Audited zero-defect manufacturing" },
+                  { icon: <ShieldCheck size={26} style={{ color: 'var(--primary-yellow)' }} />, title: "ISO 9001:2015 Certified", subtitle: "Audited quality management system" },
                   { icon: <FileText size={26} style={{ color: 'var(--primary-yellow)' }} />, title: "EN 10204 3.1 MTC", subtitle: "100% heat traceability guaranteed" },
                   { icon: <Sparkles size={26} style={{ color: 'var(--primary-yellow)' }} />, title: "ASTM A269 / A270", subtitle: "Sanitary bioprocess Ra ≤0.4 µm" },
-                  { icon: <Award size={26} style={{ color: 'var(--primary-yellow)' }} />, title: "100% PMI Tested", subtitle: "Thermo Niton XRF verified" },
+                  { icon: <Award size={26} style={{ color: 'var(--primary-yellow)' }} />, title: "100% PMI Tested", subtitle: "Verified by XRF analyser" },
                   { icon: <Globe size={26} style={{ color: 'var(--primary-yellow)' }} />, title: "Global & Domestic", subtitle: "Exports to USA, UAE, Europe, SE Asia" }
                 ].map((item, idx) => (
                   <div key={idx} className="trust-highlight-card">
@@ -268,20 +268,20 @@ export default function HomePage({ onEnquireClick }) {
             {/* Stats Band */}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(180px, 100%), 1fr))', gap: '1.5rem', paddingTop: '2.5rem', borderTop: '1px solid rgba(255, 255, 255, 0.12)' }}>
               <div>
-                <div style={{ fontSize: '2.3rem', fontWeight: '800', color: 'var(--primary-yellow)', lineHeight: '1.1' }}>10+ Years</div>
-                <div style={{ fontSize: '0.85rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.06em', marginTop: '0.35rem', fontWeight: '600' }}>Manufacturing Heritage</div>
+                <div style={{ fontSize: '2.3rem', fontWeight: '800', color: 'var(--primary-yellow)', lineHeight: '1.1' }}>ISO 9001:2015</div>
+                <div style={{ fontSize: '0.85rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.06em', marginTop: '0.35rem', fontWeight: '600' }}>Certified Quality System</div>
               </div>
               <div>
-                <div style={{ fontSize: '2.3rem', fontWeight: '800', color: 'var(--primary-yellow)', lineHeight: '1.1' }}>100+ Clients</div>
-                <div style={{ fontSize: '0.85rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.06em', marginTop: '0.35rem', fontWeight: '600' }}>Global & Domestic Plants</div>
+                <div style={{ fontSize: '2.3rem', fontWeight: '800', color: 'var(--primary-yellow)', lineHeight: '1.1' }}>EN 10204 3.1</div>
+                <div style={{ fontSize: '0.85rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.06em', marginTop: '0.35rem', fontWeight: '600' }}>Certificate with Every Lot</div>
               </div>
               <div>
-                <div style={{ fontSize: '2.3rem', fontWeight: '800', color: 'var(--primary-yellow)', lineHeight: '1.1' }}>500+ Projects</div>
-                <div style={{ fontSize: '0.85rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.06em', marginTop: '0.35rem', fontWeight: '600' }}>Process Lines Commissioned</div>
+                <div style={{ fontSize: '2.3rem', fontWeight: '800', color: 'var(--primary-yellow)', lineHeight: '1.1' }}>NABL</div>
+                <div style={{ fontSize: '0.85rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.06em', marginTop: '0.35rem', fontWeight: '600' }}>Accredited Lab Chemical Analysis</div>
               </div>
               <div>
-                <div style={{ fontSize: '2.3rem', fontWeight: '800', color: 'var(--primary-yellow)', lineHeight: '1.1' }}>5,000+ Tons</div>
-                <div style={{ fontSize: '0.85rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.06em', marginTop: '0.35rem', fontWeight: '600' }}>Manufactured Annually</div>
+                <div style={{ fontSize: '2.3rem', fontWeight: '800', color: 'var(--primary-yellow)', lineHeight: '1.1' }}>24 Hours</div>
+                <div style={{ fontSize: '0.85rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.06em', marginTop: '0.35rem', fontWeight: '600' }}>Quote Turnaround</div>
               </div>
             </div>
           </div>
@@ -840,7 +840,7 @@ export default function HomePage({ onEnquireClick }) {
               {/* Rounded Accent Bar like iotaflow/careers */}
               <span style={{ display: 'block', height: '6px', width: '90px', backgroundColor: 'var(--primary-yellow)', borderRadius: '50px', margin: '1rem 0 1.5rem' }}></span>
               <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', lineHeight: '1.7', marginBottom: '2rem' }}>
-                Our zero-defect testing regime ensures every pipe, fitting, and flange leaves our factory with complete chemical, mechanical, and surface records that any auditor or third-party inspection agency can sign off on.
+                Our testing regime ensures every pipe, fitting, and flange leaves our factory with complete chemical, mechanical, and surface records that any auditor or third-party inspection agency can sign off on.
               </p>
               <button 
                 onClick={() => onEnquireClick('Sample Test Certificate Request')} 

@@ -94,7 +94,7 @@ export const andhraPradeshCityData = {
         "Pharma here is mostly API. Reactor-side solvent, acid and halide lines in bulk-drug plants can need other materials. Purified water, WFI and clean utility suit electropolished 316L very well. Send us the fluid, concentration and temperature before you order. Avoid hydrofluoric acid and abrasive slurries.",
         "Pharma and heavy industry buy formally. Large plants generally purchase through tenders, approved-vendor lists and registered contractors, and many have procurement teams in Hyderabad or Mumbai. If yours does, send us the form or tender specification and the delivery site, and we'll respond with a technical and commercial offer and the document pack.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
-        "Plan around turnarounds. Shutdown windows are fixed. If you tell us the date when you enquire, we'll plan manufacture and dispatch against it, and we'll say plainly if the lead time doesn't fit. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
+        "Plan around turnarounds. Shutdown windows are fixed. If you tell us the date when you enquire, we'll plan manufacture and dispatch against it, and we'll say plainly if the lead time doesn't fit.",
         "We're a long way from Vizag, and we'll say so. Freight is a large share of any small order, and Vizag has local stockists. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for the pharma estates at Parawada and Atchutapuram, or for Kakinada, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid, saline air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
@@ -251,7 +251,7 @@ export const andhraPradeshCityData = {
         "Big plants buy through EPC contractors and approved-vendor lists. If you're an EPC or a fabricator, we supply with the document pack your client's inspector expects. If your plant has a vendor registration process, send us the form and we'll complete it.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
         "We're a long way from Parawada, and we'll say so. Freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
-        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
+        "If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Visakhapatnam city, Kakinada or Rajahmundry, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid, saline air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
@@ -410,7 +410,7 @@ export const andhraPradeshCityData = {
         "Automotive and textiles aren't the target. Their main processes don't use electropolished pipe. We'd rather tell you than sell you something you don't need.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
         "Sri City is on the Chennai corridor. It is about 55 km from Chennai, so a combined dispatch with Chennai or Hosur sites is natural. If you also buy for them, or for Chittoor or Nellore, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. Freight is a large share of any small order, and for a few plain lengths a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "Freight is a large share of any small order, and for a few plain lengths a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Protect the finish. Humid, coastal-corridor air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
     },
@@ -569,8 +569,8 @@ export const andhraPradeshCityData = {
         "Seafood is a brine problem. Shrimp and fish processing uses brine, ice-water and chlorinated wash. 316L is usually the minimum, and a smooth electropolished interior is easier to clean and sanitise. Send us your cleaning chemistry and chloride levels.",
         "Large plants buy formally. Major plants generally purchase through tenders, approved-vendor lists and registered contractors. If yours does, send us the tender specification and we'll respond with a technical and commercial offer and the document pack, including 100% PMI results and a 3.1 MTC tied to heat numbers.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
-        "We're a long way from Kakinada, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
-        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your turnaround has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
+        "For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "If your turnaround has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Rajahmundry, Anakapalle or Visakhapatnam, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid, saline air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
@@ -728,7 +728,7 @@ export const andhraPradeshCityData = {
         "Vijayawada has many local stockists, and we're not one of them. At roughly 1,000-1,100 km, freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Guntur, Hyderabad or Kakinada, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
+        "If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       ]
     },
     "areas": [
@@ -878,7 +878,7 @@ export const andhraPradeshCityData = {
         "Cotton, tobacco and dry chilli grinding aren't the target. Those are dry processes. We'd rather tell you than sell you something you don't need.",
         "Guntur has many local stockists, and we're not one of them. At roughly 1,030-1,130 km, freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Vijayawada, Hyderabad or Nellore, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
+        "If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       ]
     },
     "areas": [
@@ -1028,7 +1028,7 @@ export const andhraPradeshCityData = {
         "Rice mills aren't the target. Rice milling is dry. We'd rather tell you than sell you something you don't need.",
         "Large mills buy formally. Major plants generally purchase through tenders, approved-vendor lists and registered contractors. If yours does, send us the tender specification and we'll respond with a technical and commercial offer and the document pack.",
         "Plan around shutdowns. Mill and plant maintenance windows are fixed. If you tell us the date when you enquire, we'll plan manufacture and dispatch against it, and we'll say plainly if the lead time doesn't fit.",
-        "We're a long way from Rajahmundry, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Kakinada, Vijayawada or Anakapalle, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid delta air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
@@ -1179,7 +1179,7 @@ export const andhraPradeshCityData = {
         "The pulp sector has been under pressure, and we won't oversell. Many units are cautious about new investment. We can't promise that a smoother pipe will pay for itself in your plant, because that depends on your product, your cleaning cycle and your volumes. If a repair or a plain stainless tube is the better choice for you, we'll say so.",
         "Rice and granite aren't the target. Those are dry processes. We'd rather tell you than sell you something you don't need.",
         "Between Chennai and Bengaluru. Chittoor is roughly 160 km from Chennai and 180 km from Bengaluru. If you also buy for Tirupati, Hosur, Bengaluru or Chennai, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "We're a long way from Chittoor, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Exporters are audited. Pulp exporters face hygiene and traceability audits from overseas buyers, so every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your own audit file but don't replace it."
       ]
     },
@@ -1333,7 +1333,7 @@ export const andhraPradeshCityData = {
         "New plants usually buy through EPC contractors. If you're an EPC or a fabricator, we supply with the document pack your client's inspector expects. If your client has an approved-vendor process, send us the form and we'll complete it.",
         "We'll say plainly where electropolished pipe isn't the answer. Main process lines in refineries and petrochemical plants are carbon or alloy steel. Our pipe is for the clean side. Send us the line, the media and the temperature and we'll say honestly whether it fits. Avoid hydrofluoric acid and abrasive slurries.",
         "Seafood is a brine problem. Shrimp and fish processing uses brine, ice-water and chlorinated wash. 316L is usually the minimum, and a smooth electropolished interior is easier to clean and sanitise. Send us your cleaning chemistry and chloride levels.",
-        "We're a long way from Nellore, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Tirupati, Guntur or Chennai, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid, saline air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
@@ -1486,7 +1486,7 @@ export const andhraPradeshCityData = {
         "Bulk-drug plants have mixed lines. Purified water, WFI and clean utility suit electropolished 316L very well. Reactor-side solvent, acid and halide lines can need other materials, and we'll tell you honestly which are which. Send us the fluid, concentration and temperature before you order. Avoid hydrofluoric acid and abrasive slurries.",
         "EV and electrical plants aren't the target. Assembly and machining don't use electropolished pipe, and most DI-water systems use other materials. If your specification calls for stainless, send it and we'll say plainly what we can guarantee.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
-        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. Freight is a large share of any small order, and a local dealer will usually be cheaper for a few plain lengths. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "Freight is a large share of any small order, and a local dealer will usually be cheaper for a few plain lengths. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Kurnool is about three hours from Hyderabad. If you also buy for Hyderabad, Mahabubnagar or Guntur, send the requirements together and we'll quote one consolidated dispatch with one document format."
       ]
     },
@@ -1634,7 +1634,7 @@ export const andhraPradeshCityData = {
         "Pharma here is mostly API. Reactor-side solvent, acid and halide lines in bulk-drug plants can need other materials. Purified water, WFI and clean utility suit electropolished 316L very well. Send us the fluid, concentration and temperature before you order. Avoid hydrofluoric acid and abrasive slurries.",
         "Pharma and heavy industry buy formally. Large plants generally purchase through tenders, approved-vendor lists and registered contractors, and many have procurement teams in Hyderabad or Mumbai. If yours does, send us the form or tender specification and the delivery site, and we'll respond with a technical and commercial offer and the document pack.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
-        "Plan around turnarounds. Shutdown windows are fixed. If you tell us the date when you enquire, we'll plan manufacture and dispatch against it, and we'll say plainly if the lead time doesn't fit. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
+        "Plan around turnarounds. Shutdown windows are fixed. If you tell us the date when you enquire, we'll plan manufacture and dispatch against it, and we'll say plainly if the lead time doesn't fit.",
         "We're a long way from Vizag, and we'll say so. Freight is a large share of any small order, and Vizag has local stockists. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for the pharma estates at Parawada and Atchutapuram, or for Kakinada, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid, saline air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
@@ -1791,7 +1791,7 @@ export const andhraPradeshCityData = {
         "Big plants buy through EPC contractors and approved-vendor lists. If you're an EPC or a fabricator, we supply with the document pack your client's inspector expects. If your plant has a vendor registration process, send us the form and we'll complete it.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
         "We're a long way from Parawada, and we'll say so. Freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
-        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
+        "If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Visakhapatnam city, Kakinada or Rajahmundry, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid, saline air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
@@ -1949,7 +1949,7 @@ export const andhraPradeshCityData = {
         "Big plants buy through EPC contractors and approved-vendor lists. If you're an EPC or a fabricator, we supply with the document pack your client's inspector expects. If your plant has a vendor registration process, send us the form and we'll complete it.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
         "We're a long way from Parawada, and we'll say so. Freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
-        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
+        "If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Visakhapatnam city, Kakinada or Rajahmundry, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid, saline air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
@@ -2108,7 +2108,7 @@ export const andhraPradeshCityData = {
         "Automotive and textiles aren't the target. Their main processes don't use electropolished pipe. We'd rather tell you than sell you something you don't need.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
         "Sri City is on the Chennai corridor. It is about 55 km from Chennai, so a combined dispatch with Chennai or Hosur sites is natural. If you also buy for them, or for Chittoor or Nellore, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. Freight is a large share of any small order, and for a few plain lengths a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "Freight is a large share of any small order, and for a few plain lengths a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Protect the finish. Humid, coastal-corridor air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
     },
@@ -2268,7 +2268,7 @@ export const andhraPradeshCityData = {
         "Automotive and textiles aren't the target. Their main processes don't use electropolished pipe. We'd rather tell you than sell you something you don't need.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
         "Sri City is on the Chennai corridor. It is about 55 km from Chennai, so a combined dispatch with Chennai or Hosur sites is natural. If you also buy for them, or for Chittoor or Nellore, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. Freight is a large share of any small order, and for a few plain lengths a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "Freight is a large share of any small order, and for a few plain lengths a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Protect the finish. Humid, coastal-corridor air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
     },
@@ -2429,7 +2429,7 @@ export const andhraPradeshCityData = {
         "Vijayawada has many local stockists, and we're not one of them. At roughly 1,000-1,100 km, freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Guntur, Hyderabad or Kakinada, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
+        "If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       ]
     },
     "areas": [
@@ -2579,7 +2579,7 @@ export const andhraPradeshCityData = {
         "Rice mills aren't the target. Rice milling is dry. We'd rather tell you than sell you something you don't need.",
         "Large mills buy formally. Major plants generally purchase through tenders, approved-vendor lists and registered contractors. If yours does, send us the tender specification and we'll respond with a technical and commercial offer and the document pack.",
         "Plan around shutdowns. Mill and plant maintenance windows are fixed. If you tell us the date when you enquire, we'll plan manufacture and dispatch against it, and we'll say plainly if the lead time doesn't fit.",
-        "We're a long way from Rajahmundry, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Kakinada, Vijayawada or Anakapalle, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid delta air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
@@ -2730,7 +2730,7 @@ export const andhraPradeshCityData = {
         "New plants usually buy through EPC contractors. If you're an EPC or a fabricator, we supply with the document pack your client's inspector expects. If your client has an approved-vendor process, send us the form and we'll complete it.",
         "We'll say plainly where electropolished pipe isn't the answer. Main process lines in refineries and petrochemical plants are carbon or alloy steel. Our pipe is for the clean side. Send us the line, the media and the temperature and we'll say honestly whether it fits. Avoid hydrofluoric acid and abrasive slurries.",
         "Seafood is a brine problem. Shrimp and fish processing uses brine, ice-water and chlorinated wash. 316L is usually the minimum, and a smooth electropolished interior is easier to clean and sanitise. Send us your cleaning chemistry and chloride levels.",
-        "We're a long way from Nellore, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Tirupati, Guntur or Chennai, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid, saline air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
@@ -2883,7 +2883,7 @@ export const andhraPradeshCityData = {
         "Bulk-drug plants have mixed lines. Purified water, WFI and clean utility suit electropolished 316L very well. Reactor-side solvent, acid and halide lines can need other materials, and we'll tell you honestly which are which. Send us the fluid, concentration and temperature before you order. Avoid hydrofluoric acid and abrasive slurries.",
         "EV and electrical plants aren't the target. Assembly and machining don't use electropolished pipe, and most DI-water systems use other materials. If your specification calls for stainless, send it and we'll say plainly what we can guarantee.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
-        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. Freight is a large share of any small order, and a local dealer will usually be cheaper for a few plain lengths. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "Freight is a large share of any small order, and a local dealer will usually be cheaper for a few plain lengths. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Kurnool is about three hours from Hyderabad. If you also buy for Hyderabad, Mahabubnagar or Guntur, send the requirements together and we'll quote one consolidated dispatch with one document format."
       ]
     },
@@ -3040,7 +3040,7 @@ export const andhraPradeshCityData = {
         "Vijayawada has many local stockists, and we're not one of them. At roughly 1,000-1,100 km, freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Guntur, Hyderabad or Kakinada, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
+        "If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       ]
     },
     "areas": [
@@ -3196,7 +3196,7 @@ export const andhraPradeshCityData = {
         "Automotive and textiles aren't the target. Their main processes don't use electropolished pipe. We'd rather tell you than sell you something you don't need.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
         "Sri City is on the Chennai corridor. It is about 55 km from Chennai, so a combined dispatch with Chennai or Hosur sites is natural. If you also buy for them, or for Chittoor or Nellore, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. Freight is a large share of any small order, and for a few plain lengths a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "Freight is a large share of any small order, and for a few plain lengths a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Protect the finish. Humid, coastal-corridor air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
     },

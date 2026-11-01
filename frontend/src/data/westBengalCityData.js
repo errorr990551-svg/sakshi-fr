@@ -87,9 +87,9 @@ export const westBengalCityData = {
         }
       ],
       "localNotes": [
-        "We're a long way from Kolkata, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a Kolkata stockist will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "For a few plain lengths, a Kolkata stockist will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you have several sizes, or several sites in West Bengal and the east, send them together and we'll quote one dispatch with one document format.",
-        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
+        "If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
         "Humid, saline air. Kolkata's climate and the saline Hooghly water near Falta are hard on stainless in storage and in service. We cap the pipe ends and sleeve every length, and we recommend keeping the sleeves on until installation. For exposed or saline duty, 316L is usually the better grade.",
         "Pharma at Falta. The park is focused on pharma and allied products. Purified water, WFI and clean utility suit electropolished 316L very well. Reactor-side solvent and acid lines can need other materials, and we'll tell you honestly which are which. Avoid hydrofluoric acid and abrasive slurries.",
         "Jute, leather and foundry aren't the target. Those processes are mostly dry or abrasive. We'd rather tell you than sell you something you don't need."
@@ -322,10 +322,10 @@ export const westBengalCityData = {
         "We'll say plainly where electropolished pipe isn't the answer. Main process lines in a petrochemical complex or refinery are carbon or alloy steel. Our pipe is for the clean side. Send us the line, the media and the temperature and we'll say honestly whether it fits. Avoid hydrofluoric acid and abrasive slurries.",
         "PMI is routine here, and so are we. Plants in this belt typically require positive material identification on stainless. Every length we supply is 100% PMI tested, with the result on the certificate and a 3.1 MTC tied to heat numbers.",
         "Large plants buy formally. Major plants generally purchase through tenders, approved-vendor lists, registered contractors and third-party inspection. If yours does, send us the tender specification and we'll respond with a technical and commercial offer and the document pack.",
-        "Plan around turnarounds. Shutdown windows are fixed. If you tell us the date when you enquire, we'll plan manufacture and dispatch against it, and we'll say plainly if the lead time doesn't fit. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
+        "Plan around turnarounds. Shutdown windows are fixed. If you tell us the date when you enquire, we'll plan manufacture and dispatch against it, and we'll say plainly if the lead time doesn't fit.",
         "Send the whole requirement at once. Haldia is about 140 km from Kolkata. If you also buy for Kolkata, Kalyani or Falta, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid, saline air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation.",
-        "A very long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local stockist will be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack."
+        "For a few plain lengths, a local stockist will be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack."
       ]
     },
     "qualityDoc": [
@@ -548,7 +548,7 @@ export const westBengalCityData = {
         "Dairy is the fit. Milk lines are cleaned with caustic and acid cycles, and 304L is the standard grade. Curd and buttermilk are acidic and often salted, so 316L is the safer choice where acidity or chlorides are higher. Send us your product and CIP chemistry. Our internal Ra of 0.4 µm or better sits well inside the usual dairy band of 0.8 µm.",
         "Engineering and metal-based plants aren't the target. Their main processes don't use electropolished pipe. We'd rather tell you than sell you something you don't need.",
         "The parks are full, so growth is at Haringhata. If you're setting up there, send your drawings or specification and we'll mark up the specification, flag anything that doesn't suit electropolished pipe, and prepare the document pack you'll need for commissioning. Don't plan around the park's timeline.",
-        "We're a long way from Kalyani, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a Kolkata stockist will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "For a few plain lengths, a Kolkata stockist will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Kalyani is a 50-minute drive from Kolkata. If you also buy for Kolkata, Dankuni or Howrah, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
@@ -773,7 +773,7 @@ export const westBengalCityData = {
         "Food parks are our fit. Wet food lines are cleaned with caustic and acid cycles, and 304L is the standard grade. 316L is the safer choice where sanitisers or the product carry chlorides. Send us your product and CIP chemistry. Our internal Ra of 0.4 µm or better sits well inside the usual food band of 0.8 µm.",
         "Foundry, wire and hosiery aren't the target. Those processes are dry or abrasive. We'd rather tell you than sell you something you don't need.",
         "Fabricators need paperwork. If you build equipment in Howrah, you need repeatable wall thickness, clean cut ends and a document pack your own customer can audit. We supply to drawing and in cut lengths.",
-        "We're a long way from Howrah, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local stockist will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "For a few plain lengths, a local stockist will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Howrah is across the river from Kolkata. If you also buy for Kolkata, Dankuni or Kalyani, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid, riverside air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
@@ -1012,7 +1012,7 @@ export const westBengalCityData = {
         "Large plants may buy formally. Major dairies and FMCG plants often purchase through tenders and approved-vendor lists. If yours does, send us the tender specification and we'll respond with a technical and commercial offer and the document pack.",
         "Warehouses and forging aren't the target. Logistics, cold chain and forging don't use electropolished pipe. We'd rather tell you than sell you something you don't need.",
         "Dankuni is a logistics gateway. If you want your order delivered to a Dankuni warehouse for onward distribution to plants elsewhere in the east, tell us when you enquire and we'll plan the dispatch around it.",
-        "We're a long way from Dankuni, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local stockist will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "For a few plain lengths, a local stockist will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Dankuni is next to Kolkata and Howrah. If you also buy for either, or for Kalyani, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
@@ -1253,10 +1253,10 @@ export const westBengalCityData = {
       "localNotes": [
         "We'll say plainly where electropolished pipe isn't the answer. Steel-making, power, cement and chemical services use carbon steel and specialty alloy. Our pipe is for the clean side. Send us the line, the media and the temperature and we'll say honestly whether it fits, or whether a plain stainless or alloy tube is the better and cheaper choice. Avoid hydrofluoric acid and abrasive slurries.",
         "Large plants buy formally. Public-sector and large private plants generally purchase through tenders, approved-vendor lists, registered contractors and third-party inspection. If yours does, send us the tender specification and we'll respond with a technical and commercial offer and the document pack, including 100% PMI results and a 3.1 MTC tied to heat numbers.",
-        "Plan around shutdowns. Maintenance outages have fixed dates. If you tell us the window when you enquire, we'll plan manufacture and dispatch against it, and we'll say plainly if the lead time doesn't fit. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
+        "Plan around shutdowns. Maintenance outages have fixed dates. If you tell us the window when you enquire, we'll plan manufacture and dispatch against it, and we'll say plainly if the lead time doesn't fit.",
         "On the Delhi–Kolkata highway. Durgapur sits on the road between Asansol and Kolkata, so it is natural for us to make it a drop on a consolidated run to Kolkata . If you also buy for Asansol, Bardhaman, Kolkata or Kalyani, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Dry processing isn't the target. Cement, coal handling and steel rolling are dry or abrasive. We'd rather tell you than sell you something you don't need.",
-        "A very long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local stockist will be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack."
+        "For a few plain lengths, a local stockist will be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack."
       ]
     },
     "qualityDoc": [
@@ -1489,8 +1489,8 @@ export const westBengalCityData = {
       "localNotes": [
         "Pineapple and tomato are acidic. Fruit pulp and juice are acidic and often sweetened or salted, and chlorides plus acid attack 304. For pulp and juice lines, 316L is usually the safer grade, and 304L suits wash water and dry-side lines. Tell us your product and CIP chemistry and we'll confirm the grade.",
         "Tea making is mostly dry. Withering, rolling and drying don't need electropolished pipe. We'd rather tell you than sell you something you don't need. Liquid-tea, extract and ready-to-drink lines are different, and we'll say honestly if yours is one.",
-        "We're the farthest supplier you'll consider, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a Kolkata or Siliguri stockist will be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
-        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
+        "We're the farthest supplier you'll consider, and we'll say so. For a few plain lengths, a Kolkata or Siliguri stockist will be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
         "Heavy rain and humidity. The foothills are very wet. We cap the pipe ends and sleeve every length, and we recommend keeping the sleeves on until installation, as humid storage can mark an electropolished surface.",
         "Siliguri is where the north-east buys from. If your order is for a plant in Sikkim or the north-east, tell us the delivery location when you enquire and we'll quote to it, or to a Siliguri depot if you prefer.",
         "Send the whole requirement at once. If you also buy for Kolkata, send the requirements together and we'll quote one consolidated dispatch with one document format."
@@ -1711,7 +1711,7 @@ export const westBengalCityData = {
       "localNotes": [
         "We'll say plainly where electropolished pipe isn't the answer. Iron, steel, cement and railway-workshop processes are dry or heavy. Our pipe is for the clean side. Send us the line, the media and the temperature and we'll say honestly whether it fits, or whether a plain stainless tube is the better and cheaper choice. Avoid hydrofluoric acid and abrasive slurries.",
         "Institutions buy formally. Educational and public-sector buyers generally purchase through tenders, registered vendors and quotations. If yours does, send us the tender specification and we'll respond with a technical and commercial offer and the document pack.",
-        "The closest West Bengal city to us, and we'll still say it's far. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local stockist will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "For a few plain lengths, a local stockist will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "On the road to Kolkata. Kharagpur lies on the main route from western India to Kolkata, so it is a natural drop on a consolidated run . If you also buy for Kolkata, Haldia or Durgapur, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Dry processing isn't the target. Steel, cement and iron casting are dry or abrasive. We'd rather tell you than sell you something you don't need.",
         "Protect the finish. Humid air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
@@ -2165,9 +2165,9 @@ export const westBengalCityData = {
       "localNotes": [
         "Rice and jute aren't the target. Rice milling, parboiling and jute processing are dry or steam-boiler processes, and cold storage uses refrigeration. We'd rather tell you than sell you something you don't need. Send us the line and we'll say honestly whether electropolished pipe suits it.",
         "Potato lines are cleaning-driven. Starch and oil foul pipes quickly, and a smooth electropolished interior is easier to clean. 304L is the usual grade, and 316L is the safer choice where brine or sanitisers carry chlorides. Send us your product and CIP chemistry.",
-        "We're a long way from Bardhaman, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Bardhaman is between Durgapur and Kolkata. If you also buy for Durgapur, Asansol, Dankuni or Kolkata, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
+        "If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
         "Protect the finish. Humid air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
     },

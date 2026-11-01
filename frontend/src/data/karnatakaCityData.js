@@ -39,7 +39,7 @@ export const karnatakaCityData = {
       localNotes: [
         "Bengaluru has stockists for standard sizes, and we're not one of them. Our strength is made-to-drawing pipe, measured Ra, in-house electropolishing and the full document pack. We're the better fit when you need a specific size, finish or paperwork, and a stockist is better when you need a standard length tomorrow.",
         "Inland site, so choose by media. Bengaluru has no coastal chloride problem. 304L suits most food and utility lines, and 316L suits pharma, biotech and chloride-bearing cleaning agents. Tell us the media and the cleaning chemistry.",
-        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey, and we quote consolidated dispatches for orders covering several sites.",
+        "We cap the pipe ends, sleeve every length and pack for the journey, and we quote consolidated dispatches for orders covering several sites.",
         "Multi-site buyers. If you run plants across Bengaluru and nearby Hosur, send all your requirements together and we'll quote one dispatch with one document format."
       ]
     },
@@ -103,7 +103,7 @@ export const karnatakaCityData = {
         "We're on your supply route. The Pune–Bengaluru highway runs through Tumakuru, so it is natural for us to make Tumakuru the first drop on a consolidated run to Bengaluru. If you also have a Bengaluru plant, send both requirements and we'll quote one dispatch.",
         "Pharma and bulk-drug lines vary a lot. Purified water and clean utility suit electropolished 316L well. Reactor-side solvent and acid lines may need other materials, and we'll say so. Tell us the media, concentration and temperature before you order.",
         "New-build plants decide early. If you're building in the Vasanthanarasapura zone, send drawings early and we'll mark up the specification and flag anything that doesn't suit electropolished pipe.",
-        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     areas: ['Tumakuru (Tumkur)', 'Vasanthanarasapura', 'Antharasanahalli', 'Kora', 'Gubbi', 'Tiptur', 'Sira', 'Madhugiri', 'Kunigal', 'Koratagere'],
@@ -168,7 +168,7 @@ export const karnatakaCityData = {
         "One belt, several industries. In Nanjangud, a pharma line, a food line and a distillery line can sit within a few kilometres of each other. We recommend by media, not habit, and say plainly where electropolished pipe doesn't suit. Raw distillery streams such as spent wash are corrosive, and EP pipe belongs on the clean side.",
         "Smaller buyers in Hebbal. Medical-device and precision units often need small lots and exact sizes. We supply cut lengths and custom sizes to drawing, with the same document pack as large orders.",
         "Mysuru has local stockists for standard sizes. Our edge is made-to-drawing pipe, measured Ra, in-house electropolishing and full documentation.",
-        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey. If you also buy for Bengaluru, send both requirements together and we'll quote one consolidated dispatch."
+        "We cap the pipe ends, sleeve every length and pack for the journey. If you also buy for Bengaluru, send both requirements together and we'll quote one consolidated dispatch."
       ]
     },
     areas: ['Mysuru (Mysore)', 'Hebbal', 'Hootagalli', 'Belawadi', 'Belagola', 'Koorgalli', 'Metagalli', 'Kadakola', 'Thandya', 'Immavu', 'Nanjangud', 'Srirangapatna', 'Mandya (nearby)'],
@@ -235,7 +235,7 @@ export const karnatakaCityData = {
         "Seafood and cashew lines. Chlorinated wash water and brine are tough on stainless. 316L is the usual choice, and we'll confirm after seeing your media. Dry-side product lines can often use 304L.",
         "Honest fit. Main process piping inside refinery and petrochemical units is mostly carbon or alloy steel. Our electropolished pipe suits clean utilities, laboratories, pharma, food and seafood lines, and we'll say so before you order. Avoid hydrofluoric acid and abrasive slurries.",
         "Protect the pipe before it's installed. Humid coastal storage can spoil an electropolished surface. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation.",
-        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We pack for the journey and quote consolidated dispatches for larger orders."
+        "We pack for the journey and quote consolidated dispatches for larger orders."
       ]
     },
     areas: ['Mangaluru (Mangalore)', 'Baikampady', 'New Mangalore Port', 'Yeyyadi', 'Panambur', 'Surathkal', 'Katipalla', 'Bajpe', 'Mulki', 'Ganjimutt', 'Balkunje', 'Udupi (nearby)', 'Puttur (nearby)'],
@@ -298,7 +298,7 @@ export const karnatakaCityData = {
         "Synthesis plants have mixed lines. Purified water, WFI and clean utility suit electropolished 316L very well. Reactor-side solvent, acid and halide lines can need other materials, and we'll tell you honestly which are which. Send us the fluid, concentration and temperature before you order. Avoid hydrofluoric acid and abrasive slurries.",
         "Expanding units decide early. Several estates here are growing, and expansion projects specify piping at design stage. Send drawings early and we'll mark up the specification and flag anything that doesn't suit electropolished pipe.",
         "Distillery streams. Raw process liquids such as spent wash are corrosive, and EP pipe belongs on the clean side.",
-        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey, and we quote consolidated dispatches for orders covering several units."
+        "We cap the pipe ends, sleeve every length and pack for the journey, and we quote consolidated dispatches for orders covering several units."
       ]
     },
     areas: ['Bidar', 'Kolhar', 'Humnabad', 'Balki', 'Bhalki', 'Malachapura', 'Hallikhed', 'Baroor', 'Basavakalyan', 'Aurad', 'Kalaburagi (nearby)'],
@@ -362,7 +362,7 @@ export const karnatakaCityData = {
         "Be honest about dry processing. Chilli, spice and grain handling are mostly dry, so electropolished pipe isn't needed there. We'd rather tell you than sell you something you don't need. Wash-water, slurry-free liquid lines and beverage lines are where it earns its cost.",
         "An engineering city. Hubballi's valve, electrical and engineering shops need cut lengths, small lots and traceability to pass on to their own customers. We supply to drawing, with the same document pack as large orders.",
         "Wet food lines are cleaning-driven. 304L is the usual grade. 316L is the safer choice where sanitisers or the product carry chlorides. Send us your CIP chemistry.",
-        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey. If you also buy for Belagavi, about 100 km away, send both requirements together and we'll quote one consolidated dispatch."
+        "We cap the pipe ends, sleeve every length and pack for the journey. If you also buy for Belagavi, about 100 km away, send both requirements together and we'll quote one consolidated dispatch."
       ]
     },
     areas: ['Hubballi (Hubli)', 'Dharwad', 'Gokul Road', 'Tarihal', 'Gamanagatti', 'Belur', 'Rayapur', 'Lakamanahalli', 'Mummigatti', 'Navanagar', 'Kundgol', 'Byadgi'],
@@ -424,7 +424,7 @@ export const karnatakaCityData = {
         { title: 'Fabricators and skid builders', desc: 'Cut-to-length pipe with heat-number traceability for the Udyambag cluster\'s engineering shops.' }
       ],
       localNotes: [
-        "One of our closest Karnataka cities. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. That means shorter transit and lower freight than most of Karnataka. If you also buy for Kolhapur or Hubballi–Dharwad, send both requirements together and we'll quote one consolidated dispatch.",
+        "That means shorter transit and lower freight than most of Karnataka. If you also buy for Kolhapur or Hubballi–Dharwad, send both requirements together and we'll quote one consolidated dispatch.",
         "Foundries aren't the target. Foundry process lines don't need electropolished pipe. Our fit in Udyambag is the fabricators and the clean-utility side of the plants, and we'll say so before you order.",
         "Sugar and distillery streams. Raw process liquids such as spent wash or molasses can be corrosive or abrasive. Electropolished pipe belongs on the clean side. Tell us the media, temperature and concentration and we'll confirm.",
         "Small shops need small lots. Belagavi's engineering and food units often order a few lengths at a time. We supply cut lengths and custom sizes to drawing, with the same document pack as large orders.",
@@ -495,7 +495,7 @@ export const karnatakaCityData = {
         "Dry spice and coffee aren't the target. Spice, coconut and coffee handling is mostly dry, so electropolished pipe isn't needed there. We'd rather tell you than sell you something you don't need.",
         "Smaller zones, early decisions. If you're building or expanding in either SEZ, send drawings early and we'll mark up the specification and flag anything that doesn't suit electropolished pipe.",
         "On the Bengaluru–Mangaluru highway. Hassan sits between Bengaluru and Mangaluru. If you also buy for Tumakuru, Mysuru or Mangaluru, send all your requirements together and we'll quote one consolidated dispatch.",
-        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     areas: ['Hassan', 'Shantigrama', 'Hassan Industrial Area', 'Channarayapatna', 'Arsikere', 'Belur', 'Holenarasipura', 'Alur', 'Sakleshpur'],
@@ -561,7 +561,7 @@ export const karnatakaCityData = {
         "Planned parks decide late. Plans for a bulk-drug park near Kadechur have been announced, but we don't depend on them. If you're building or expanding in Kadechur or anywhere in Yadgir, send drawings early and we'll quote against your specification, regardless of the park's timeline.",
         "Synthesis plants have mixed lines. Purified water and clean utility suit electropolished 316L very well. Reactor-side solvent and acid lines can need other materials, and we'll tell you honestly which are which. Avoid hydrofluoric acid and abrasive slurries.",
         "Dry processing isn't the target. Rice, cotton and grain handling are mostly dry. We'd rather tell you than sell you something you don't need.",
-        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey. If you also buy for Bidar or Hubballi–Dharwad, send the requirements together and we'll quote one consolidated dispatch."
+        "We cap the pipe ends, sleeve every length and pack for the journey. If you also buy for Bidar or Hubballi–Dharwad, send the requirements together and we'll quote one consolidated dispatch."
       ]
     },
     areas: ['Raichur', 'Raichur Growth Centre', 'Deosugur', 'Shaktinagar', 'Sindhanur', 'Manvi', 'Lingasugur', 'Yadgir', 'Kadechur', 'Shahapur', 'Kalaburagi (nearby)', 'Koppal (nearby)'],
@@ -628,7 +628,7 @@ export const karnatakaCityData = {
         "Dairy is the strongest fit. Milk lines are cleaned with caustic and acid cycles. 304L is the standard grade, and our internal Ra ≤0.4 µm is well inside the usual dairy band. Where sanitisers carry chlorides, 316L is the safer choice.",
         "Rice mills and garments aren't the target. Those processes are mostly dry. We'd rather tell you than sell you something you don't need.",
         "Between Bengaluru and Mysuru. Mandya is roughly 100 km from Bengaluru and 45 km from Mysuru. If you also buy for either, send the requirements together and we'll quote one consolidated dispatch.",
-        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     areas: ['Mandya', 'Tubinakere', 'Maddur', 'Somanahalli', 'Gejjalegere', 'Pandavapura', 'Srirangapatna', 'Malavalli', 'Nagamangala', 'Krishnarajpet'],

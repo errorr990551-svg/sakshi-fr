@@ -4,7 +4,7 @@ import Breadcrumbs from './Breadcrumbs';
 
 export default function TeamPage({ onEnquireClick }) {
   const leadership = [
-    { name: 'Executive Leadership Team', role: 'Managing Directors & Founders', experience: '30+ Years Forging & Metallurgical Experience', desc: 'Over three decades of expertise in steel drop forging, heavy machining, and international B2B industrial piping supply.' },
+    { name: 'Executive Leadership Team', role: 'Managing Directors & Founders', experience: 'Forging & Metallurgy', desc: 'Expertise in steel drop forging, heavy machining, and international B2B industrial piping supply.' },
     { name: 'Senior Metallurgical & Engineering Head', role: 'Head of Production & Engineering', experience: 'ASME & ASTM Standards Specialist', desc: 'Directs forging heat treatment, normalization, and precision CNC flange machining to ASME B16.5 & DIN specifications.' },
     { name: 'Quality Assurance & Inspection Lead', role: 'Chief QA/QC Auditor (ASNT Level II)', experience: 'PMI, MPI & Hydrostatic Testing Certified', desc: 'Oversees 100% material inspection using Olympus XRF Spectrometers, Ultrasonic flaw detectors, and MTC 3.1 verification.' }
   ];

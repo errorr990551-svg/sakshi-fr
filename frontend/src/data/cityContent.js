@@ -55,7 +55,7 @@ function transitSentence(ctx) {
 const FAQ = {
   1: (c, ind) => ({
     q: `Do you supply electropolished pipes in ${c.city}?`,
-    a: `Yes. We supply electropolished stainless pipes and tubes to plants in and around ${c.estates}${ind.length ? `, mainly for ${listJoin(ind.map((i) => i.label.toLowerCase()))}` : ''}. ${transitSentence(c)}`
+    a: `Yes. We supply electropolished stainless pipes and tubes to plants in and around ${c.estates}${ind.length ? `, mainly for ${listJoin(ind.map((i) => i.label.toLowerCase()))}` : ''}. Send the plant address with your enquiry so we can quote delivery to your site.`
   }),
   2: (c) => ({
     q: `How long does delivery take to ${c.city}?`,
@@ -64,7 +64,7 @@ const FAQ = {
   3: (c, ind) => ({
     q: `Which industries in ${c.city} use electropolished tubing?`,
     a: ind.length
-      ? `The main users in ${c.city} are ${listJoin(ind.map((i) => i.label.toLowerCase()))}. ${ind.slice(0, 2).map((i) => fill(i.text, c).split('. ')[0] + '.').join(' ')}`
+      ? `The main users in ${c.city} are ${listJoin(ind.map((i) => i.label.toLowerCase()))}. ${ind.slice(0, 2).map((i) => fill(i.text, c).split('. ')[0].replace(/\.$/, '') + '.').join(' ')}`
       : `The industrial base of ${c.city} is ${c.r.industryMix}. EP tube is used where those plants need cleanable, high-purity lines.`
   }),
   4: (c) => ({

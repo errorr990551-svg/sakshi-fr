@@ -328,7 +328,7 @@ export const tamilNaduCityData = {
         "Specification and drawing check.",
         "In-house manufacture and testing (Ra, PMI, hydro, passivation verification).",
         "Document pack prepared.",
-        "Capped, sleeved and dispatched from Mumbai. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
+        "Capped, sleeved and dispatched from Mumbai.",
         "After-delivery support."
       ],
       note: "We manufacture in Mumbai and ship to Coimbatore. We have no local warehouse."
@@ -494,7 +494,7 @@ export const tamilNaduCityData = {
         "Spec and document check.",
         "In-house manufacture and testing.",
         "Document pack prepared.",
-        "Dispatch from Mumbai. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
         "After-delivery support."
       ],
       note: "We manufacture in Mumbai. No local warehouse."
@@ -646,7 +646,7 @@ export const tamilNaduCityData = {
         "Grade and spec check, including media compatibility.",
         "In-house manufacture and testing.",
         "Document pack prepared.",
-        "Dispatch from Mumbai. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
         "After-delivery support."
       ],
       note: "We manufacture in Mumbai. No local warehouse."
@@ -799,7 +799,7 @@ export const tamilNaduCityData = {
         "Specification check, including weld and passivation requirements.",
         "In-house manufacture and testing (Ra, PMI, hydro, passivation verification).",
         "Document pack prepared.",
-        "Dispatch from Mumbai. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
         "After-delivery support."
       ],
       note: "We manufacture in Mumbai. No local warehouse."
@@ -952,7 +952,7 @@ export const tamilNaduCityData = {
         "Specification check.",
         "In-house manufacture and testing.",
         "Document pack prepared.",
-        "Dispatch from Mumbai. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
         "After-delivery support."
       ],
       note: "We manufacture in Mumbai. No local warehouse."
@@ -1106,7 +1106,7 @@ export const tamilNaduCityData = {
         "Specification check.",
         "In-house manufacture and testing.",
         "Document pack prepared.",
-        "Dispatch from Mumbai. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
         "After-delivery support."
       ],
       note: "We manufacture in Mumbai. No local warehouse."
@@ -1258,7 +1258,7 @@ export const tamilNaduCityData = {
         "Grade and spec check.",
         "In-house manufacture and testing.",
         "Document pack prepared.",
-        "Dispatch from Mumbai. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
         "After-delivery support."
       ],
       note: "We manufacture in Mumbai. No local warehouse."
@@ -1410,7 +1410,7 @@ export const tamilNaduCityData = {
         "Specification check.",
         "In-house manufacture and testing.",
         "Document pack prepared.",
-        "Dispatch from Mumbai. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
         "After-delivery support."
       ],
       note: "We manufacture in Mumbai. No local warehouse."
@@ -1567,7 +1567,7 @@ export const tamilNaduCityData = {
         "Specification check.",
         "In-house manufacture and testing.",
         "Document pack prepared.",
-        "Dispatch from Mumbai. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
         "After-delivery support."
       ],
       note: "We manufacture in Mumbai. No local warehouse."

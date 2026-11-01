@@ -27,7 +27,7 @@ export default function GujaratHubPage({ onEnquireClick, onShowContactDetails })
       slug: "vapi",
       path: "/market-area/vapi",
       clusters: "Vapi GIDC (Phases I-IV), Sarigam, Umbergaon, Atul, Daman & Silvassa Corridor",
-      focus: "Duplex 2205 & 316L for Specialty Chemical, Dyes, Pesticides & Fast Same-Day Express Supply",
+      focus: "Duplex 2205 & 316L for Specialty Chemical, Dyes, Pesticides Process Lines",
       tag: "Chemical & Dye Capital"
     },
     {

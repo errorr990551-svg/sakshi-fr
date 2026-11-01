@@ -161,7 +161,7 @@ export const CATEGORY_GUIDES = {
       {
         h2: 'Why Buyers Choose SteelManufacturer.in for Electropolished Pipes',
         paragraphs: [
-          'We manufacture and finish electropolished pipe and tube at Mumbai in Navi Mumbai and supply buyers across India and in export markets including the USA, UAE, Europe and Southeast Asia.'
+          'We manufacture and finish electropolished pipe and tube and supply it from Mumbai to buyers across India and in export markets.'
         ],
         bullets: [
           'Custom cut lengths and custom sizes, in small lots as well as large ones, with heat-number traceability that survives fabrication.',

@@ -1939,7 +1939,7 @@ Problems found after installation are expensive to fix.<br />
     faqs: [
       {
         q: "What is the recommended hold time during a shop hydrostatic test?",
-        a: "Per ASME B31.3, the hydrotest pressure must be held for a minimum of 10 to 24 hours to allow thorough visual inspection of all flanged joints, welds, and valve packing glands."
+        a: "Per ASME B31.3, the hydrotest pressure must be held for a minimum of 10 to 30 minutes to allow thorough visual inspection of all flanged joints, welds, and valve packing glands."
       },
       {
         q: "Can pneumatic testing be performed instead of hydrostatic testing?",

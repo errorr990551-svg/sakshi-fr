@@ -92,7 +92,7 @@ export const gradePages = {
   },
   'inconel-625-flanges': {
     slug: 'inconel-625-flanges',
-    title: 'Inconel 625 Flanges Supplier | 30-Min Quote | Sakshi Forge',
+    title: 'Inconel 625 Flanges Supplier | 24-Hour Quote | Sakshi Forge',
     h1: 'Inconel 625 (UNS N06625) Forged Flanges & Fittings',
     gradeCode: 'Inconel 625 (UNS N06625 / 2.4856)',
     category: 'High-Nickel Superalloy',

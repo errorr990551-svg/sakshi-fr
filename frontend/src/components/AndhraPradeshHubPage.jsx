@@ -134,7 +134,7 @@ export default function AndhraPradeshHubPage({ onEnquireClick, onShowContactDeta
               marginBottom: '1.25rem'
             }}>
               <Factory size={14} />
-              Taloja MIDC Factory Direct · Fast Dispatch to Andhra Pradesh
+              Direct from the Manufacturer · Dispatch from Mumbai to Andhra Pradesh
             </span>
 
             <h1 style={{ 
@@ -148,7 +148,7 @@ export default function AndhraPradeshHubPage({ onEnquireClick, onShowContactDeta
             </h1>
 
             <p style={{ color: '#cbd5e1', fontSize: '1.15rem', lineHeight: '1.75', marginBottom: '2rem', maxWidth: '880px' }}>
-              Direct manufacturer supply of electropolished SS 316L, 304L and duplex 2205 pipes and tubes (Ra ≤0.4 µm) from our Taloja MIDC works. Serving Jawaharlal Nehru Pharma City at Parawada, Visakhapatnam SEZ, Sri City, Kakinada Port SEZ, Krishna Delta food processing, Guntur Spices Park and Autonagar fabricators with 100% PMI testing and EN 10204 3.1 MTC.
+              Direct manufacturer supply of electropolished SS 316L, 304L and duplex 2205 pipes and tubes (Ra ≤0.4 µm) dispatched from Mumbai. Serving Jawaharlal Nehru Pharma City at Parawada, Visakhapatnam SEZ, Sri City, Kakinada Port SEZ, Krishna Delta food processing, Guntur Spices Park and Autonagar fabricators with 100% PMI testing and EN 10204 3.1 MTC.
             </p>
 
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
@@ -165,7 +165,7 @@ export default function AndhraPradeshHubPage({ onEnquireClick, onShowContactDeta
                   fontSize: '0.95rem'
                 }}
               >
-                Get Andhra Pradesh Quote in 30 Min
+                Get Andhra Pradesh Quote in 24 Hours
               </button>
               <a 
                 href="https://wa.me/918291366340?text=Hi%20Sakshi%20Forge,%20I%20need%20a%20quote%20for%20Electropolished%20Pipes%20in%20Andhra%20Pradesh" 
@@ -302,7 +302,7 @@ export default function AndhraPradeshHubPage({ onEnquireClick, onShowContactDeta
               Why Andhra Pradesh Pharma & Food Exporters Choose Sakshi Forge
             </h2>
             <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', lineHeight: '1.6' }}>
-              Local honesty: We manufacture and electropolish in-house at our Taloja MIDC works near Mumbai, supplying Andhra Pradesh's coastal and inland corridors directly with verified Ra reports, mill traceability and coastal protective packing.
+              Local honesty: We are a Mumbai-based manufacturer supplying Andhra Pradesh's coastal and inland corridors directly with verified Ra reports, mill traceability and coastal protective packing.
             </p>
           </div>
 

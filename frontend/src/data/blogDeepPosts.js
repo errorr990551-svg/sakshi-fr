@@ -92,7 +92,7 @@ ${cta('Specifying a new dairy or food line?', 'Send us the line list with produc
 </ul>
 
 <h2>Procurement: Sanitary EP Tube and Fittings from Sakshi Forge</h2>
-<p>We manufacture sanitary tube and electropolished fittings at our Taloja MIDC works in Navi Mumbai and supply dairy, beverage and food plants across India and in export markets. Every lot ships with an EN 10204 3.1 certificate traced to heat number, PMI on every length and a measured Ra report for electropolished material. Send your line list, sizes, grades and CIP chemistry, and we will confirm the specification, dispatch and transit in writing with the quotation.</p>
+<p>We are a Mumbai-based manufacturer of sanitary tube and electropolished fittings, supplying dairy, beverage and food plants across India and in export markets. Every lot ships with an EN 10204 3.1 certificate traced to heat number, PMI on every length and a measured Ra report for electropolished material. Send your line list, sizes, grades and CIP chemistry, and we will confirm the specification, dispatch and transit in writing with the quotation.</p>
 `,
     faqs: [
       { q: "Is 304L or 316L better for dairy CIP circuits?", a: "304L is adequate for most milk and cream lines. 316L is the safer choice for hot caustic CIP supply, salted products, whey and acidic flavours, because its molybdenum content improves resistance to chloride pitting and crevice corrosion at temperature." },
@@ -171,7 +171,7 @@ ${cta('Need tube and fittings matched for orbital welding?', 'We supply electrop
 <p>Field welds cannot be electropolished. After installation the system is cleaned and chemically passivated to restore the passive film on welds and any handling marks, following ASTM A380 and A967 and the owner's procedure. Heavily tinted welds are cut out and remade, not passivated over: passivation does not remove heat tint or the chromium-depleted layer beneath it. The differences between passivation, pickling and electropolishing are covered in our article on <a href="/blog/passivation-after-electropolishing/">passivation versus electropolishing</a>.</p>
 
 <h2>Procurement: Tube and Fittings Prepared for Orbital Welding</h2>
-<p>Sakshi Forge supplies electropolished tube and orbital weld fittings from our Taloja MIDC works with heat-number traceability on every length, EN 10204 3.1 certificates, PMI records and measured Ra reports, so your weld map can reference every heat that meets in a joint. Send your sizes, wall thicknesses, sulphur requirements and quantities for a quotation; dispatch and transit are confirmed in writing.</p>
+<p>Sakshi Forge supplies electropolished tube and orbital weld fittings from Mumbai with heat-number traceability on every length, EN 10204 3.1 certificates, PMI records and measured Ra reports, so your weld map can reference every heat that meets in a joint. Send your sizes, wall thicknesses, sulphur requirements and quantities for a quotation; dispatch and transit are confirmed in writing.</p>
 `,
     faqs: [
       { q: "What oxygen level should the purge reach before orbital welding EP tube?", a: "Measure it at the purge exit with an oxygen analyser and weld only when the reading is stable at your qualified target. High-purity fabricators commonly work in the single-digit to low double-digit ppm range. ASME BPE states acceptance in terms of permitted discolouration, so qualify the ppm level that achieves the required colour on coupons." },
@@ -366,7 +366,7 @@ ${cta('Not sure which treatment your line needs?', 'Tell us the service, the cle
 <p>Every installation involves welding, cutting and handling. The weld bead and heat-affected zone, field cuts and tool marks are never electropolished. Passivating the completed system after cleaning restores a uniform passive film on those areas and removes any free iron introduced during installation. Electropolishing and passivation are therefore complementary, not alternatives.</p>
 
 <h2>Procurement: Electropolished and Passivated Piping Supply</h2>
-<p>Sakshi Forge supplies mechanically polished and electropolished pipe, tube and fittings from our Taloja MIDC works, with EN 10204 3.1 certificates, PMI on every length and measured Ra reports for electropolished lots, and passivation records where passivation is part of the order. Send your specification, sizes and quantities; dispatch and transit are confirmed in writing with the quotation.</p>
+<p>Sakshi Forge supplies mechanically polished and electropolished pipe, tube and fittings from Mumbai, with EN 10204 3.1 certificates, PMI on every length and measured Ra reports for electropolished lots, and passivation records where passivation is part of the order. Send your specification, sizes and quantities; dispatch and transit are confirmed in writing with the quotation.</p>
 `,
     faqs: [
       { q: "Is passivation the same as electropolishing?", a: "No. Passivation is a chemical treatment that removes free iron and contaminants so a uniform passive film can form; it does not change roughness. Electropolishing removes a controlled layer of metal electrochemically, levels the surface, removes embedded particles and burrs and leaves a chromium-enriched film." },

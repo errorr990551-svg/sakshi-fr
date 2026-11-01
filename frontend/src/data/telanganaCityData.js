@@ -11,8 +11,8 @@ export const telanganaCityData = {
     "pageUrl": "/market-area/hyderabad",
     "pageTitle": "Electropolished Pipe Manufacturer Hyderabad | Sakshi Forge",
     "metaDescription": "Electropolished 316L & 304L SS pipes for Hyderabad Jeedimetla, Bachupally and Cherlapally pharma plants. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Hyderabad: 316L and 304L EP Tubes for Jeedimetla, Balanagar, Cherlapally and Bachupally Plants",
-    "subHeadline": "Hyderabad is India's bulk-drug and life-sciences capital, with pharma, food and engineering plants spread across industrial estates around the city. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply Hyderabad's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Hyderabad",
+    "subHeadline": "Hyderabad is India's bulk-drug and life-sciences capital, with pharma, food and engineering plants spread across industrial estates around the city. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Hyderabad's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -25,7 +25,7 @@ export const telanganaCityData = {
       "type": "ALL"
     },
     "hasDuplex": true,
-    "transitInfo": "Hyderabad is roughly 680-720 km from our factory, and delivery is typically 2-3 days with end-capping, sleeving and dedicated road transit.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Hyderabad's Industrial Belts",
       "description": "Hyderabad's industry is spread across several belts around the city. Jeedimetla, in the north-west, is one of the oldest and most diversified industrial estates, with bulk-drug, pharma, chemical and engineering units. Balanagar and Sanathnagar sit nearby, and Cherlapally, Mallapur, Nacharam and Uppal in the east host pharma, food and engineering plants. To the north-west, Bachupally, Kukatpally and Gandimaisamma are among the main pharma and medical-manufacturing zones. Life-sciences estates on the edge of the city, such as Genome Valley to the north and Hyderabad Pharma City to the south, are also served from here, and the pharma belt to the west at Patancheru is covered on our Sangareddy page.\n\nA word on fit. Much of Hyderabad's pharma industry makes bulk drugs by chemical synthesis, and reactor-side solvent and acid lines in those plants can need other materials. Where we're useful is the clean side: purified water, WFI, clean utilities, laboratory lines, formulation and food lines.",
@@ -105,7 +105,7 @@ export const telanganaCityData = {
         "Hyderabad has local stockists, and we're not one of them. Our strength is made-to-drawing pipe, measured Ra, in-house electropolishing and the full document pack. We're the better fit when you need a specific size, finish or paperwork.",
         "Inland and hot. Hyderabad has no coastal chloride problem, so choose the grade by media and cleaning chemistry. 304L suits most food and utility lines, and 316L suits pharma and chloride-bearing cleaning agents.",
         "Buy for the whole region together. Hyderabad, its Genome Valley and Pharma City estates and the Patancheru belt (our Sangareddy page) sit within about 60 km of each other. If you run plants in more than one, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A long supply line. Hyderabad is roughly 680-720 km from our factory. We cap the pipe ends, sleeve every length and pack for the journey."
+        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -151,7 +151,7 @@ export const telanganaCityData = {
     "faqs": [
       {
         "q": "How fast can you deliver to Hyderabad, and how is the finish protected over that distance?",
-        "a": "Hyderabad is roughly 680-720 km from our Taloja MIDC factory, and delivery is typically 2-3 days. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged."
       },
       {
         "q": "Should I choose 316L or 304L for my Hyderabad pharma, food or engineering plant?",
@@ -175,8 +175,8 @@ export const telanganaCityData = {
     "pageUrl": "/market-area/sangareddy",
     "pageTitle": "Electropolished Pipe Manufacturer Sangareddy | Sakshi Forge",
     "metaDescription": "Electropolished 316L & 304L SS pipes for Sangareddy, Patancheru, Pashamylaram and Zaheerabad plants. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Sangareddy: 316L and 304L EP Tubes for Patancheru, Pashamylaram, Bollaram, Sultanpur and Zaheerabad Plants",
-    "subHeadline": "Sangareddy district is Hyderabad's western industrial belt, with pharma and chemical estates at Patancheru, Pashamylaram and Bollaram, a medical-devices park at Sultanpur and a large new industrial area at Zaheerabad. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply the district directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Sangareddy",
+    "subHeadline": "Sangareddy district is Hyderabad's western industrial belt, with pharma and chemical estates at Patancheru, Pashamylaram and Bollaram, a medical-devices park at Sultanpur and a large new industrial area at Zaheerabad. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply the district directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -189,7 +189,7 @@ export const telanganaCityData = {
       "type": "ALL"
     },
     "hasDuplex": true,
-    "transitInfo": "Sangareddy-district estates are roughly 560-680 km from our factory, with Zaheerabad nearest and Patancheru farthest; transit is 2-3 days.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Sangareddy District's Industrial Belts",
       "description": "Sangareddy is the district headquarters on the Pune–Hyderabad highway, and the industry around it falls into three groups. The first is the pharma and chemical belt at the Hyderabad end of the district: the Patancheru industrial area is the oldest estate, Pashamylaram is one of the main pharma and medical-manufacturing zones around Hyderabad, and IDA Bollaram in Jinnaram mandal, Gaddapotharam, Gummadidala, Bonthapally and Khazipally list pharma and other manufacturers. The second is the Telangana Medical Devices Park at Sultanpur, a purpose-built estate with dozens of companies committed to it. The third is the Zaheerabad Industrial Area, a 3,245-acre smart industrial area on National Highway 65 under the Hyderabad–Nagpur Industrial Corridor.\n\nA word on fit. Many plants in the pharma belt make bulk drugs by chemical synthesis, and their reactor-side solvent and acid lines can need other materials. Where we're useful is the clean side: purified water, WFI, clean utilities, laboratory lines, formulation lines and the clean-water systems of medical-device plants. Zaheerabad is a design-stage market, so we quote against drawings there.",
@@ -270,7 +270,7 @@ export const telanganaCityData = {
         "Medical-device makers need small lots and exact sizes. At Sultanpur, many units are small or new. We supply cut lengths and custom sizes to drawing, with the same document pack as large orders.",
         "Zaheerabad is a new-build market. Don't plan around the estate's timeline. Send your drawings whenever your project is ready, and we'll mark up the specification and flag anything that doesn't suit electropolished pipe.",
         "We're on your way in. Sangareddy district is the first industrial belt on the Pune highway as it enters Hyderabad, so it is natural for us to make it the first drop on a consolidated run to Hyderabad.",
-        "A long supply line. The district's estates are roughly 560-680 km from our factory, with Zaheerabad nearest and Patancheru farthest. We cap the pipe ends, sleeve every length and pack for the journey."
+        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -306,7 +306,7 @@ export const telanganaCityData = {
     "faqs": [
       {
         "q": "How fast can you deliver to Sangareddy district, and how is the finish protected over that distance?",
-        "a": "Sangareddy-district estates are roughly 560-680 km from our Taloja MIDC factory, with Zaheerabad nearest and Patancheru farthest, and delivery is typically 2-3 days. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged."
       },
       {
         "q": "Is electropolished 316L suitable for API and bulk-drug lines at Patancheru, Pashamylaram or Bollaram?",
@@ -329,9 +329,9 @@ export const telanganaCityData = {
     "country": "India",
     "pageUrl": "/market-area/karimnagar",
     "pageTitle": "Electropolished Pipe Manufacturer Karimnagar | Sakshi Forge",
-    "metaDescription": "Electropolished 304L & 316L SS pipes for Karimnagar dairy, food and rice-processing plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Karimnagar: 304L and 316L EP Tubes for Dairy, Food and Agro-Processing Plants",
-    "subHeadline": "Karimnagar is north Telangana's agri-industrial city, known for rice milling, dairy processing and packaging, and a growing food-park belt around Jammikunta. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja and supply Karimnagar's dairies, food plants and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "metaDescription": "Electropolished 304L & 316L SS pipes for Karimnagar dairy, food and rice-processing plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Karimnagar",
+    "subHeadline": "Karimnagar is north Telangana's agri-industrial city, known for rice milling, dairy processing and packaging, and a growing food-park belt around Jammikunta. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply Karimnagar's dairies, food plants and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -344,7 +344,7 @@ export const telanganaCityData = {
       "type": "ALL"
     },
     "hasDuplex": true,
-    "transitInfo": "Karimnagar is roughly 830-870 km from our factory, and delivery is typically 3-4 days with end-capping, sleeving and consolidated dispatch.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Karimnagar's Industrial Belts",
       "description": "Karimnagar sits on the Godavari basin in north Telangana, about 160 km from Hyderabad, and its economy is built on farm produce. The district has long been known for rice milling and cotton ginning, and it has emerged as a centre for dairy processing and packaging. The city has its own industrial development area and industrial park, and newer industrial parks such as the Jammikunta food park are adding food-processing capacity. Power, fertiliser and coal in the Ramagundam and Godavarikhani belt, in neighbouring Peddapalli district, are covered on a separate page.\n\nA word on fit. Rice milling, cotton ginning and granite cutting are mostly dry and don't need electropolished pipe. Where we're useful is milk and dairy-product lines, wet food lines, CIP, expansion projects at existing plants, and the fabricators who supply them.",
@@ -412,7 +412,7 @@ export const telanganaCityData = {
         "New and expanding plants decide early. If you're building in a food park or extending a dairy line, send your drawings or existing tube dimensions and we'll mark up the specification, tell you honestly what we can match, and flag anything that doesn't suit electropolished pipe.",
         "Large dairies may buy through tenders. If yours does, send us the tender specification and we'll respond with a technical and commercial offer and the document pack.",
         "On the Hyderabad–Karimnagar–Ramagundam road. Karimnagar is about 70 km from Warangal and 160 km from Hyderabad. If you also buy for Hyderabad, Warangal or Ramagundam, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A long supply line. Karimnagar is roughly 830-870 km from our factory. We cap the pipe ends, sleeve every length and pack for the journey."
+        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -444,7 +444,7 @@ export const telanganaCityData = {
     "faqs": [
       {
         "q": "How fast can you deliver to Karimnagar, and how is the finish protected over that distance?",
-        "a": "Karimnagar is roughly 830-870 km from our Taloja MIDC factory, and delivery is typically 3-4 days. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged."
       },
       {
         "q": "Is 304L enough for a milk or dairy line in Karimnagar, given caustic and acid CIP?",
@@ -468,8 +468,8 @@ export const telanganaCityData = {
     "pageUrl": "/market-area/mahabubnagar",
     "pageTitle": "Electropolished Pipe Supplier Mahabubnagar | Sakshi Forge",
     "metaDescription": "Electropolished 304L & 316L SS pipes for Mahabubnagar, Jadcherla and Kothur food, pharma and mixed plants. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Mahabubnagar: 304L and 316L EP Tubes for Jadcherla, Divitipally and Kothur Plants",
-    "subHeadline": "Mahabubnagar sits on the Hyderabad–Bengaluru highway about 100 km south of Hyderabad, with pharma and food units at Jadcherla, large new plants at Divitipally and a strip of manufacturing running up towards Kothur. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja and supply Mahabubnagar's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Mahabubnagar",
+    "subHeadline": "Mahabubnagar sits on the Hyderabad–Bengaluru highway about 100 km south of Hyderabad, with pharma and food units at Jadcherla, large new plants at Divitipally and a strip of manufacturing running up towards Kothur. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply Mahabubnagar's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -482,7 +482,7 @@ export const telanganaCityData = {
       "type": "ALL"
     },
     "hasDuplex": true,
-    "transitInfo": "Mahabubnagar is roughly 780-820 km from our factory, and delivery is typically 3 days with end-capping, sleeving and direct corridor transit.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Mahabubnagar's Industrial Belts",
       "description": "Mahabubnagar district's industry is spread along National Highway 44 and around the district town. Jadcherla, about 21 km from Mahabubnagar town, has a pharmaceutical special economic zone and a green industrial park, alongside a well-known metal-toys cluster. Divitipally, on the highway nearby, hosts a large battery factory and an IT tower, which signals a newer, larger class of plant coming to the district. North towards Hyderabad, the Kothur, Shadnagar and Farooqnagar stretch holds pharma and food units. The district also features a central Mega Food Park, and a pharma-packaging unit operates at Vemula–Moosapet.\n\nA word on fit. Rice, groundnut and cotton processing are mostly dry and don't need electropolished pipe. Where we're useful is the pharma units, wet food and dairy-style lines, clean utilities in the larger new plants, and the fabricators who serve them.",
@@ -555,7 +555,7 @@ export const telanganaCityData = {
         "Dry processing isn't the target. Rice, groundnut and cotton handling are mostly dry. We'd rather tell you than sell you something you don't need.",
         "Large new plants specify early and exactly. If you're building at Divitipally or a similar site, send your specification with your enquiry. For DI or DM water, the right grade and finish depend on the purity you need, and we'll tell you what we can guarantee and what we can't.",
         "Food-park and pharma buyers need paperwork. Auditors expect heat-number traceability, a measured Ra report and passivation records, so every order ships with them.",
-        "A long supply line. Mahabubnagar is roughly 780-820 km from our factory. We cap the pipe ends, sleeve every length and pack for the journey."
+        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -585,7 +585,7 @@ export const telanganaCityData = {
     "faqs": [
       {
         "q": "How fast can you deliver to Mahabubnagar, and how is the finish protected over that distance?",
-        "a": "Mahabubnagar is roughly 780-820 km from our Taloja MIDC factory, and delivery is typically 3 days. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged."
       },
       {
         "q": "Should I choose 304L or 316L for a food or pharma line at Jadcherla or Kothur?",
@@ -608,9 +608,9 @@ export const telanganaCityData = {
     "country": "India",
     "pageUrl": "/market-area/warangal",
     "pageTitle": "Electropolished Pipe Manufacturer Warangal | Sakshi Forge",
-    "metaDescription": "Electropolished 316L & 304L SS pipes for Warangal textile-processing, food and agro plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Warangal: 316L and 304L EP Tubes for the Kakatiya Mega Textile Park, Food and Agro Plants",
-    "subHeadline": "Warangal is Telangana's second city and home to the Kakatiya Mega Textile Park, the country's first operational PM MITRA park, set in a cotton-growing region with rice, chilli and food processing around it. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply Warangal's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "metaDescription": "Electropolished 316L & 304L SS pipes for Warangal textile-processing, food and agro plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Warangal",
+    "subHeadline": "Warangal is Telangana's second city and home to the Kakatiya Mega Textile Park, the country's first operational PM MITRA park, set in a cotton-growing region with rice, chilli and food processing around it. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Warangal's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -623,7 +623,7 @@ export const telanganaCityData = {
       "type": "ALL"
     },
     "hasDuplex": true,
-    "transitInfo": "Warangal is roughly 840-880 km from our factory, and delivery is typically 3-4 days with end-capping, sleeving and protective transit packaging.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Warangal's Industrial Belts",
       "description": "Warangal and its twin city Hanamkonda sit about 150 km north-east of Hyderabad, in the heart of Telangana's cotton belt. The region's best-known industrial project is the Kakatiya Mega Textile Park, a 1,200-acre integrated textile cluster near Shayampet, developed under the national PM MITRA scheme as the first fully functional park of its kind in India. The park was planned to house spinning, weaving, processing, garment-making and technical textiles together. Outside the park, the region has rice mills, agro and food processors, and MSME engineering manufacturers.\n\nA word on fit. Spinning, weaving and garment-making are mostly dry. Where we're useful is the wet-processing side of textiles (dyeing, finishing and effluent-side clean lines), food and agro processing, and the fabricators and EPC contractors building these plants. The park is new, so many buyers are still at design stage.",
@@ -691,7 +691,7 @@ export const telanganaCityData = {
         "The park is new, so don't plan around the press timeline. Plants will come up unit by unit over several years. Send your drawings whenever your project is ready, and we'll mark up the specification and flag anything that doesn't suit electropolished pipe.",
         "Large groups often procure centrally. If your procurement team sits in another state, we can quote centrally and deliver to your Warangal site. If your company has a vendor-registration process, send us the form and we'll complete it.",
         "On the Hyderabad–Warangal–Karimnagar road. Warangal is about 70 km from Karimnagar and 150 km from Hyderabad. If you also buy for either, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A long supply line. Warangal is roughly 840-880 km from our factory. We cap the pipe ends, sleeve every length and pack for the journey."
+        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -723,7 +723,7 @@ export const telanganaCityData = {
     "faqs": [
       {
         "q": "How fast can you deliver to Warangal, and how is the finish protected over that distance?",
-        "a": "Warangal is roughly 840-880 km from our Taloja MIDC factory, and delivery is typically 3-4 days. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged."
       },
       {
         "q": "Is electropolished pipe used in textile plants like those at the Kakatiya Mega Textile Park?",
@@ -747,8 +747,8 @@ export const telanganaCityData = {
     "pageUrl": "/market-area/nizamabad",
     "pageTitle": "Electropolished Pipe Manufacturer Nizamabad | Sakshi Forge",
     "metaDescription": "Electropolished 304L & 316L SS pipes for Nizamabad food-park, sugar, distillery and rice-processing plants. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Nizamabad: 304L and 316L EP Tubes for Food-Park, Sugar, Distillery and Agro Plants",
-    "subHeadline": "Nizamabad is a north-west Telangana agri-industrial district, with a central-government-backed Mega Food Park, sugar and distillery units at Bodhan, and a strong rice, turmeric and cotton economy. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja and supply Nizamabad's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Nizamabad",
+    "subHeadline": "Nizamabad is a north-west Telangana agri-industrial district, with a central-government-backed Mega Food Park, sugar and distillery units at Bodhan, and a strong rice, turmeric and cotton economy. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply Nizamabad's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -761,7 +761,7 @@ export const telanganaCityData = {
       "type": "ALL"
     },
     "hasDuplex": true,
-    "transitInfo": "Nizamabad is roughly 750-800 km from our factory, and delivery is typically 3 days with end-capping, sleeving and dedicated road transit.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Nizamabad's Industrial Belts",
       "description": "Nizamabad sits on National Highway 44, about 175 km north of Hyderabad. Its best-known industrial project is the Mega Food Park at Nandipet mandal (Lakkampally and Chimrajpally), designed with primary processing centres feeding it from neighbouring areas. At Bodhan, a sugar factory and its distillery division operate in Shakkarnagar, and a cooperative sugar factory is located at Sarangapur. Around them, the district is known for rice milling, turmeric trade and processing, cotton ginning and some textile units.\n\nA word on fit. Rice milling, turmeric polishing and cotton ginning are mostly dry or boiler-based and don't need electropolished pipe, and raw sugar and distillery streams are corrosive or abrasive. Where we're useful is wet food lines in the food park, the clean side of sugar and ethanol plants, and expansion projects.",
@@ -829,7 +829,7 @@ export const telanganaCityData = {
         "Food-park units are often new and small. If you're a tenant, or setting up beside the park, send your drawings or specification and we'll mark up the specification and flag anything that doesn't suit electropolished pipe. We supply cut lengths and custom sizes, in small lots as well as large ones.",
         "Wet food lines are cleaning-driven. 304L is the usual grade. 316L is the safer choice where sanitisers or the product carry chlorides. Send us your CIP chemistry.",
         "On the Hyderabad–Nizamabad–Nagpur highway. Nizamabad is about 175 km from Hyderabad and roughly 80-100 km from Karimnagar. If you also buy for either, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A long supply line. Nizamabad is roughly 750-800 km from our factory. We cap the pipe ends, sleeve every length and pack for the journey."
+        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -862,7 +862,7 @@ export const telanganaCityData = {
     "faqs": [
       {
         "q": "How fast can you deliver to Nizamabad, and how is the finish protected over that distance?",
-        "a": "Nizamabad is roughly 750-800 km from our Taloja MIDC factory, and delivery is typically 3 days. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged."
       },
       {
         "q": "Can electropolished pipe be used in a sugar mill or distillery at Bodhan?",
@@ -886,8 +886,8 @@ export const telanganaCityData = {
     "pageUrl": "/market-area/siddipet",
     "pageTitle": "Electropolished Pipe Manufacturer Siddipet | Sakshi Forge",
     "metaDescription": "Electropolished 316L & 304L SS pipes for Siddipet, Karkapatla and Gajwel biotech, vaccine and food plants. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Siddipet: 316L and 304L EP Tubes for Karkapatla Biotech Park, Gajwel and Siddipet Plants",
-    "subHeadline": "Siddipet district holds the third phase of Genome Valley at Karkapatla, where vaccine and biologics plants are being built, and a planned food-processing zone around Gajwel. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and quote against your drawings from design stage, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Siddipet",
+    "subHeadline": "Siddipet district holds the third phase of Genome Valley at Karkapatla, where vaccine and biologics plants are being built, and a planned food-processing zone around Gajwel. We manufacture and electropolish SS 316L and 304L pipes and tubes and quote against your drawings from design stage, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -900,7 +900,7 @@ export const telanganaCityData = {
       "type": "ALL"
     },
     "hasDuplex": true,
-    "transitInfo": "Siddipet district is roughly 720-780 km from our factory, and delivery is typically 3 days with end-capping, sleeving and direct dispatch.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Siddipet District's Industrial Belts",
       "description": "Siddipet is a district town about 100 km north-east of Hyderabad, on the road to Karimnagar. Industry here falls into two very different groups. The first is Karkapatla, in Markook mandal, developed as Biotech Park Phase III, the third phase of Genome Valley after Turkapally and Lalgadi Malakpet, housing high-containment biologics and veterinary-vaccine plants. The second is food and agro around Gajwel, where a special food-processing zone has been planned. Siddipet town itself is well known for handloom weaving and local MSME units.\n\nA word on fit. Handloom and most grain and cotton processing are dry or craft processes and don't need electropolished pipe. Where we're useful is the biotech and vaccine side at Karkapatla, wet food lines in any food zone, and the fabricators and EPC contractors serving both.",
@@ -969,7 +969,7 @@ export const telanganaCityData = {
         "Don't plan around the park's timeline. Plants here will come up unit by unit over several years. Send your drawings whenever your project is ready, and we'll mark up the specification and flag anything that doesn't suit electropolished pipe. New plants usually buy through EPC contractors, and we supply them with the document pack their client's inspector expects.",
         "Handloom and agro aren't the target. Those are craft or dry processes. We'd rather tell you than sell you something you don't need.",
         "Between Hyderabad and Karimnagar. Siddipet is about 100 km from Hyderabad and about 60 km from Karimnagar. If you also buy for either, or for the rest of Genome Valley (our Hyderabad page), send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A long supply line. Siddipet district is roughly 720-780 km from our factory. We cap the pipe ends, sleeve every length and pack for the journey."
+        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -1003,7 +1003,7 @@ export const telanganaCityData = {
     "faqs": [
       {
         "q": "How fast can you deliver to Siddipet district, and how is the finish protected over that distance?",
-        "a": "Siddipet district is roughly 720-780 km from our Taloja MIDC factory, and delivery is typically 3 days. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged."
       },
       {
         "q": "Do you supply ASME BPE electropolished tube for vaccine and biologics plants at Karkapatla?",
@@ -1027,8 +1027,8 @@ export const telanganaCityData = {
     "pageUrl": "/market-area/ramagundam",
     "pageTitle": "Electropolished Pipe Manufacturer Ramagundam | Sakshi Forge",
     "metaDescription": "Electropolished 304L & 316L SS pipes for Ramagundam power-plant DM-water, sampling and laboratory lines. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Ramagundam: 304L and 316L EP Tubes for Power-Plant, Fertiliser-Complex and Contractor Clean-Utility Lines",
-    "subHeadline": "Ramagundam is Telangana's power and fertiliser town, with a super thermal power station, coal mining at Godavarikhani and cement plants around it. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja and supply the clean-utility, DM-water, sampling and laboratory lines of these plants, and the contractors who serve them, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Ramagundam",
+    "subHeadline": "Ramagundam is Telangana's power and fertiliser town, with a super thermal power station, coal mining at Godavarikhani and cement plants around it. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply the clean-utility, DM-water, sampling and laboratory lines of these plants, and the contractors who serve them, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -1041,7 +1041,7 @@ export const telanganaCityData = {
       "type": "ALL"
     },
     "hasDuplex": true,
-    "transitInfo": "Ramagundam is roughly 880-940 km from our factory, and delivery is typically 3-4 days with end-capping, sleeving and protective packing.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Ramagundam's Industrial Belt",
       "description": "Ramagundam is in Peddapalli district, on the Godavari, about 210 km north-east of Hyderabad on the Hyderabad–Ramagundam highway and the north–south railway line. Its industry is heavy and public-sector led: NTPC's Ramagundam Super Thermal Power Station is one of the major power stations in South India; Singareni's coal operations run through Godavarikhani; and fertiliser, cement and agro mills are located across Peddapalli district.\n\nA word on fit. Power, coal, fertiliser and cement plants run mostly on carbon steel and specialty alloys, and their main process piping isn't electropolished. Where we're useful is the small set of clean lines inside those plants: DM water, boiler-chemistry and water-analysis sampling lines, instrument and laboratory lines, and food and utility lines in the town. We also supply the fabricators and contractors who maintain and extend the plants.",
@@ -1116,7 +1116,7 @@ export const telanganaCityData = {
         "Plan around shutdowns. Maintenance outages have fixed dates. If you tell us the shutdown window when you enquire, we'll plan manufacture and dispatch against it, and we'll say plainly if the lead time doesn't fit.",
         "Dry processing isn't the target. Cement, coal handling and rice and cotton milling are mostly dry. We'd rather tell you than sell you something you don't need.",
         "Between Karimnagar and the Godavari. Ramagundam is about 70 km from Karimnagar. If you also buy for Karimnagar, Hyderabad or Warangal, send the requirements together and we'll quote one consolidated dispatch.",
-        "A long supply line. Ramagundam is roughly 880-940 km from our factory. We cap the pipe ends, sleeve every length and pack for the journey."
+        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -1146,7 +1146,7 @@ export const telanganaCityData = {
     "faqs": [
       {
         "q": "How fast can you deliver to Ramagundam, and how is the finish protected over that distance?",
-        "a": "Ramagundam is roughly 880-940 km from our Taloja MIDC factory, and delivery is typically 3-4 days. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged."
       },
       {
         "q": "Where does electropolished pipe fit in a power plant?",
@@ -1170,8 +1170,8 @@ export const telanganaCityData = {
     "pageUrl": "/market-area/khammam",
     "pageTitle": "Electropolished Pipe Manufacturer Khammam | Sakshi Forge",
     "metaDescription": "Electropolished 304L & 316L SS pipes for Khammam food-park, agro and Kothagudem-belt clean-utility lines. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Khammam: 304L and 316L EP Tubes for the Mega Food Park, Agro Plants and Kothagudem Belt",
-    "subHeadline": "Khammam is a food-and-agro city on the Hyderabad–Vijayawada road, with a Mega Food Park at Buggapadu and a coal, power and paperboard belt in Kothagudem and Bhadrachalam. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja and supply Khammam's food plants, clean-utility lines and contractors directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Khammam",
+    "subHeadline": "Khammam is a food-and-agro city on the Hyderabad–Vijayawada road, with a Mega Food Park at Buggapadu and a coal, power and paperboard belt in Kothagudem and Bhadrachalam. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply Khammam's food plants, clean-utility lines and contractors directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -1184,7 +1184,7 @@ export const telanganaCityData = {
       "type": "ALL"
     },
     "hasDuplex": true,
-    "transitInfo": "Khammam is roughly 880-930 km from our factory, and delivery is typically 3-4 days with end-capping, sleeving and consolidated dispatch.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Khammam's Industrial Belts",
       "description": "Khammam city is about 200 km east of Hyderabad on the road to Vijayawada, and the district stretches north-east into forest, coal and river country. Its most relevant project is the Mega Food Park at Buggapadu, developed by the state's industrial infrastructure corporation to provide common infrastructure for food processors. Khammam also has long-standing rice-mill and granite-polishing clusters. In the north-east, Kothagudem and Manuguru have coal mining, Paloncha has iron and steel, ferro-alloy and power plants, and the Bhadrachalam belt has a large paper and pulp mill.\n\nA word on fit. Rice milling, granite polishing, coal, power, sponge iron and ferro-alloys are dry or heavy processes. Where we're useful is wet agro lines in the food park, chilli and spice pastes, clean utilities such as DM water and laboratory lines inside the large plants, and the contractors who maintain them.",
@@ -1259,7 +1259,7 @@ export const telanganaCityData = {
         "Large plants buy formally. Public-sector and large private plants generally purchase through tenders, approved-vendor lists and registered contractors. If yours does, send us the tender specification and we'll respond with a technical and commercial offer and the document pack.",
         "Dry processing isn't the target. Rice, granite and coal handling are dry or abrasive. We'd rather tell you than sell you something you don't need.",
         "On the Hyderabad–Vijayawada road. Khammam is about 200 km from Hyderabad and about 100 km from Kothagudem. If you also buy for Hyderabad, Warangal or Nalgonda, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A long supply line. Khammam is roughly 880-930 km from our factory. We cap the pipe ends, sleeve every length and pack for the journey."
+        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -1287,7 +1287,7 @@ export const telanganaCityData = {
     "faqs": [
       {
         "q": "How fast can you deliver to Khammam, and how is the finish protected over that distance?",
-        "a": "Khammam is roughly 880-930 km from our Taloja MIDC factory, and delivery is typically 3-4 days. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged."
       },
       {
         "q": "Is 304L or 316L better for chilli paste, sauces and food-park processing in Khammam?",

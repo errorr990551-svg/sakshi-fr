@@ -7,8 +7,8 @@ export const madhyaPradeshCityData = {
     "pageUrl": "/market-area/indore",
     "pageTitle": "Electropolished Pipe Manufacturer Indore | Sakshi Forge",
     "metaDescription": "Electropolished 316L & 304L SS pipes for Indore Sanwer Road, Rau and Pigdamber pharma and food plants. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Indore: 316L and 304L EP Tubes for Sanwer Road, Rau and Pigdamber Pharma, Food and FMCG Plants",
-    "subHeadline": "Indore is Madhya Pradesh's commercial and pharma capital, with industrial estates ringing the city and the Pithampur–Dewas–Ujjain belt next door. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja, about a day's drive away, and supply Indore's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Indore",
+    "subHeadline": "Indore is Madhya Pradesh's commercial and pharma capital, with industrial estates ringing the city and the Pithampur–Dewas–Ujjain belt next door. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Indore's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -21,7 +21,7 @@ export const madhyaPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Indore is roughly 600-660 km from our Taloja MIDC factory, and delivery is typically 1-2 days with protective capping and sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Indore's Industrial Belts",
       "description": "Indore is the largest city in Madhya Pradesh and its main commercial hub, and its industry sits in several belts. The Sanwer Road Industrial Area, on the north-west side, is a large estate of about 1,000 acres hosting pharma and many other manufacturers, with pharma units also on Rau Road, at Pigdamber and Lasudia Mori (Dewas Naka), on Kanadia Road and in the older Industrial Estate in the city. The Indore Special Economic Zone, including its dedicated pharma zone, sits in Pithampur, about 30 km away, and the satellite towns of Pithampur, Mhow and Dewas are covered on separate pages. Food processing is a growing part of the mix, and the state has been developing a namkeen cluster at Sukhliya in Indore for the city's famous snack makers.\n\nA word on fit. Textile trade and auto assembly, two of Indore's best-known sectors, don't use electropolished pipe on their main processes. Where we're useful is pharma purified water and clean utilities, food and snack lines, dairy and beverage plants, and the fabricators who serve them.",
@@ -96,7 +96,7 @@ export const madhyaPradeshCityData = {
         }
       ],
       "localNotes": [
-        "A day's drive from our factory. Indore is roughly 600-660 km from Taloja, so urgent top-up orders, factory visits and witnessed testing are realistic. If your plant needs a few lengths this week, tell us.",
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your plant needs a few lengths this week, tell us.",
         "Pharma and food side by side. Sanwer Road and Rau have both. Pharma lines need measured Ra, passivation records and a document trail. Food and snack lines need cleanability and hot-oil or brine resistance. We recommend by media, not habit.",
         "Namkeen and snack lines. Frying oil lines are cleaned with hot caustic, and brine or acidic products can attack 304 by pitting. 304L suits most oil and dry-side lines, and 316L is the safer choice for brine, pickle and acidic products. Send us your product and cleaning chemistry.",
         "Many plants supply regulated markets. Pharma and food exporters are audited, so every order ships with heat-number traceability, a surface report and passivation records.",
@@ -140,7 +140,7 @@ export const madhyaPradeshCityData = {
     "faqs": [
       {
         "q": "How fast can you deliver to Indore, and how is the finish protected in transit?",
-        "a": "Indore is roughly 600-660 km from our Taloja MIDC factory, and delivery is typically 1-2 days. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged, and factory visits and witnessed testing are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged."
       },
       {
         "q": "Should I choose 316L or 304L for a pharma, snack or food line in Indore?",
@@ -163,9 +163,9 @@ export const madhyaPradeshCityData = {
     "country": "India",
     "pageUrl": "/market-area/pithampur",
     "pageTitle": "Electropolished Pipe Manufacturer Pithampur | Sakshi Forge",
-    "metaDescription": "Electropolished 316L & 304L SS pipes for Pithampur pharma SEZ, auto and engineering plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Pithampur: 316L and 304L EP Tubes for the Indore SEZ Pharma Zone, Auto and Engineering Plants",
-    "subHeadline": "Pithampur is Madhya Pradesh's largest industrial area, known as the \"Detroit of India\" for its automotive plants and home to a dedicated pharma zone in the Indore SEZ. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja, about a day's drive away, and supply Pithampur's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "metaDescription": "Electropolished 316L & 304L SS pipes for Pithampur pharma SEZ, auto and engineering plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Pithampur",
+    "subHeadline": "Pithampur is Madhya Pradesh's largest industrial area, known as the \"Detroit of India\" for its automotive plants and home to a dedicated pharma zone in the Indore SEZ. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Pithampur's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -178,7 +178,7 @@ export const madhyaPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Pithampur is roughly 570-620 km from our Taloja MIDC factory, and delivery is typically 1-2 days with protective capping and sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Pithampur's Industrial Belt",
       "description": "Pithampur sits in Dhar district about 30 km from Indore, and its workforce largely commutes from the city. It is the state's largest industrial area, with more than 1,250 industries in operation by one count and around 1,500 by another across Phases I, II and III. The Indore Special Economic Zone, established in 2003, is also here, with a pharma zone in Phase II and Sector III that hosts a large share of the state's export-oriented pharma manufacturing. Alongside pharma, the area is known for several major automobile and auto-component makers, engineering and machinery plants, and an apparel park. An ESDM (electronics) park with common facilities has been proposed in Sector 7, and the state describes a multi-product industrial area of about 469 hectares in Dhar district as one of its fastest-growing.\n\nA word on fit. Auto assembly, machining and apparel don't use electropolished pipe on their main processes. Where we're useful is the pharma zone, clean utilities such as DM and DI water inside the auto and engineering plants, food and beverage units, and the fabricators who serve them.",
@@ -250,7 +250,7 @@ export const madhyaPradeshCityData = {
         "Supplying an SEZ unit. If your order is for a unit inside the Indore SEZ, tick the box on the quote form. We'll prepare the commercial and material documents your SEZ procedure asks for, and you should confirm the invoicing and tax treatment with your own adviser.",
         "Export-oriented pharma is audited. Plants supplying regulated overseas markets are audited on documents as much as on steel. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records.",
         "Auto plants are utility buyers. Assembly and machining don't need electropolished pipe. For DM or DI water, the right grade and finish depend on the purity you need. Send us your specification and we'll say plainly what we can guarantee.",
-        "We're about 30 km further from Taloja than Indore is nearer to you. Pithampur is roughly 570-620 km from our factory, one of the closest large industrial areas we supply, so urgent top-up orders, factory visits and witnessed testing are realistic.",
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
         "Pithampur has local stockists, and we're not one of them. Our strength is made-to-drawing pipe, measured Ra, in-house electropolishing and the full document pack.",
         "Buy for the whole belt together. Pithampur, Indore, Dewas and Ujjain sit within about 100 km of each other. If you run plants in more than one, send the requirements together and we'll quote one consolidated dispatch with one document format."
       ]
@@ -289,7 +289,7 @@ export const madhyaPradeshCityData = {
     "faqs": [
       {
         "q": "How fast can you deliver to Pithampur, and how is the finish protected in transit?",
-        "a": "Pithampur is roughly 570-620 km from our Taloja MIDC factory, and delivery is typically 1-2 days. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged, and factory visits and witnessed testing are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged."
       },
       {
         "q": "Which grade should I use for pharma lines in the Indore SEZ, and what documents will our auditors expect?",
@@ -312,9 +312,9 @@ export const madhyaPradeshCityData = {
     "country": "India",
     "pageUrl": "/market-area/dewas",
     "pageTitle": "Electropolished Pipe Manufacturer Dewas | Sakshi Forge",
-    "metaDescription": "Electropolished 316L & 304L SS pipes for Dewas pharma, engineering and food plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Dewas: 316L and 304L EP Tubes for Pharma, Engineering and Food Plants in the Dewas Industrial Area",
-    "subHeadline": "Dewas is one of Madhya Pradesh's oldest industrial hubs, home to pharma, engineering and food plants on the road between Indore and Ujjain. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply Dewas's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "metaDescription": "Electropolished 316L & 304L SS pipes for Dewas pharma, engineering and food plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Dewas",
+    "subHeadline": "Dewas is one of Madhya Pradesh's oldest industrial hubs, home to pharma, engineering and food plants on the road between Indore and Ujjain. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Dewas's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -327,7 +327,7 @@ export const madhyaPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Dewas is roughly 650-700 km from our Taloja MIDC factory, and delivery is typically 2 days with protective capping and sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Dewas's Industrial Belt",
       "description": "Dewas sits about 35 km north-east of Indore on the highway towards Ujjain and Bhopal. Its industrial growth started around 1975, when major engineering, engine, tractor, gear and pharma companies set up plants there, and it is counted among the state's oldest industrial hubs. The Dewas industrial areas include Industrial Area No. 3, where pharma units are listed, and the state's investment material names Dewas among its food-processing centres and as one of its industrial regions. Dewas is also the neighbour of the new Vikram Udyogpuri township and of the Pithampur and Indore belts, so many Dewas plants belong to companies with sister sites nearby.\n\nA word on fit. Engine, tractor, gear and automotive plants don't use electropolished pipe on their main processes. Where we're useful is the pharma units, food and beverage lines, clean utilities such as DM and DI water inside the engineering plants, and the fabricators who maintain them.",
@@ -395,7 +395,7 @@ export const madhyaPradeshCityData = {
         "Many Dewas plants belong to companies with sites in Indore or Pithampur. If you buy for more than one, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records.",
         "Dewas has local stockists, and we're not one of them. Our strength is made-to-drawing pipe, measured Ra, in-house electropolishing and the full document pack.",
-        "A day or two from our factory. Dewas is roughly 650-700 km from Taloja, so urgent top-up orders, factory visits and witnessed testing are realistic."
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation."
       ]
     },
     "areas": [
@@ -429,7 +429,7 @@ export const madhyaPradeshCityData = {
     "faqs": [
       {
         "q": "How fast can you deliver to Dewas, and how is the finish protected in transit?",
-        "a": "Dewas is roughly 650-700 km from our Taloja MIDC factory, and delivery is typically 2 days. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged, and factory visits and witnessed testing are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged."
       },
       {
         "q": "Which grade should I use for pharma lines in Dewas, and what documents will our auditors expect?",
@@ -453,8 +453,8 @@ export const madhyaPradeshCityData = {
     "pageUrl": "/market-area/ujjain",
     "pageTitle": "Electropolished Pipe Manufacturer Ujjain | Sakshi Forge",
     "metaDescription": "Electropolished 316L & 304L SS pipes for Ujjain Vikram Udyogpuri pharma, food and medical-device projects. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Ujjain: 316L and 304L EP Tubes for Vikram Udyogpuri Pharma, Food and Medical-Device Plants",
-    "subHeadline": "Ujjain is home to Vikram Udyogpuri, a large new industrial township where pharma, dairy and food, and a medical-devices park are being built, close to the Dewas–Indore–Pithampur belt. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and quote against your drawings from design stage, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Ujjain",
+    "subHeadline": "Ujjain is home to Vikram Udyogpuri, a large new industrial township where pharma, dairy and food, and a medical-devices park are being built, close to the Dewas–Indore–Pithampur belt. We manufacture and electropolish SS 316L and 304L pipes and tubes and quote against your drawings from design stage, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -467,10 +467,10 @@ export const madhyaPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Ujjain is roughly 640-700 km from our Taloja MIDC factory, and delivery is typically 2 days with protective capping and sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Ujjain's Industrial Belt",
-      "description": "Ujjain's modern industry centres on Vikram Udyogpuri, an integrated industrial township of about 1,100 acres on the Ujjain–Dewas railway line, developed under the Delhi–Mumbai Industrial Corridor as part of the Pithampur–Dhar–Mhow Investment Region. It sits about 15 km from both Ujjain and Dewas, 45 km from Indore city and about 600 km from the JNPT port near our factory. The township's own material describes a dairy cooperative as its anchor investor, with 12 operating units and more than 16 under construction. Of the roughly 358 acres of allottable industrial land, about 226 acres have been allotted, including about 157 acres to the pharmaceutical sector, about 35 acres to food processing, about 23 acres to plastics and about 7 acres to chemicals. A further 360 acres have been allotted for a Medical Device Park, a project sanctioned by the central government. The state also lists Ujjain among its food-processing centres and pharma hubs.\n\nA word on fit. Plastics, chemicals and general manufacturing don't use electropolished pipe on their main processes. Where we're useful is the pharma sector, dairy and food processing, the medical-device park's clean utilities, and the EPC contractors and fabricators who build all of it.",
+      "description": "Ujjain's modern industry centres on Vikram Udyogpuri, an integrated industrial township of about 1,100 acres on the Ujjain–Dewas railway line, developed under the Delhi–Mumbai Industrial Corridor as part of the Pithampur–Dhar–Mhow Investment Region. It sits about 15 km from both Ujjain and Dewas, 45 km from Indore city. The township's own material describes a dairy cooperative as its anchor investor, with 12 operating units and more than 16 under construction. Of the roughly 358 acres of allottable industrial land, about 226 acres have been allotted, including about 157 acres to the pharmaceutical sector, about 35 acres to food processing, about 23 acres to plastics and about 7 acres to chemicals. A further 360 acres have been allotted for a Medical Device Park, a project sanctioned by the central government. The state also lists Ujjain among its food-processing centres and pharma hubs.\n\nA word on fit. Plastics, chemicals and general manufacturing don't use electropolished pipe on their main processes. Where we're useful is the pharma sector, dairy and food processing, the medical-device park's clean utilities, and the EPC contractors and fabricators who build all of it.",
       "zones": [
         {
           "zone": "Vikram Udyogpuri, pharma sector (about 157 acres allotted)",
@@ -542,7 +542,7 @@ export const madhyaPradeshCityData = {
         "Pharma buyers want paperwork. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
         "Plastics and chemicals aren't the target. Their main processes don't use electropolished pipe. We'd rather tell you than sell you something you don't need.",
         "Part of one belt. Vikram Udyogpuri is about 15 km from Dewas and 45 km from Indore. If you also buy for Dewas, Indore or Pithampur, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A day or two from our factory. Ujjain is roughly 640-700 km from Taloja. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -578,7 +578,7 @@ export const madhyaPradeshCityData = {
     "faqs": [
       {
         "q": "How fast can you deliver to Ujjain, and how is the finish protected in transit?",
-        "a": "Ujjain is roughly 640-700 km from our Taloja MIDC factory, and delivery is typically 2 days. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged, and factory visits and witnessed testing are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged."
       },
       {
         "q": "Vikram Udyogpuri is still being built. Can you quote my project now?",
@@ -602,8 +602,8 @@ export const madhyaPradeshCityData = {
     "pageUrl": "/market-area/bhopal",
     "pageTitle": "Electropolished Pipe Manufacturer Bhopal | Sakshi Forge",
     "metaDescription": "Electropolished 316L & 304L SS pipes for Bhopal Govindpura, hospital, food and engineering clean-utility lines. ASTM A270, MTC EN 10204 3.1.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Bhopal: 316L and 304L EP Tubes for Govindpura, Hospitals, Food Plants and Engineering Works",
-    "subHeadline": "Bhopal is Madhya Pradesh's capital, with a large heavy-electrical and engineering base, the older Govindpura industrial estate, and hospitals, universities and laboratories that buy through formal procurement. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply Bhopal's plants, institutions and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Bhopal",
+    "subHeadline": "Bhopal is Madhya Pradesh's capital, with a large heavy-electrical and engineering base, the older Govindpura industrial estate, and hospitals, universities and laboratories that buy through formal procurement. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Bhopal's plants, institutions and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -616,7 +616,7 @@ export const madhyaPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Bhopal is roughly 780-840 km from our Taloja MIDC factory, and delivery is typically 2-3 days with protective capping and sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Bhopal's Industry and Institutions",
       "description": "Bhopal's industrial history began in the middle of the last century around a large heavy-electrical works, which created an ecosystem of hundreds of smaller vendors supplying components, castings and engineering services. Govindpura Industrial Area, in the heart of the city, is one of the state's oldest hubs, smaller and older than the newer estates, with light engineering and small-scale units. The Bhopal Industrial Area is a versatile zone supporting businesses from printing to food processing. A textile park at Acharpura, near the city, is also listed. Mandideep, on the south-east edge of Bhopal, is the region's largest estate and has its own page. The capital also hosts hospitals, medical colleges, universities and state laboratories, and the state lists Bhopal among its food-processing centres and its electronics-manufacturing locations.\n\nA word on fit. Heavy-electrical work, textile and printing don't use electropolished pipe. Where we're useful is institutional clean utilities (laboratory, clean-steam and purified-water lines), food processing, the clean side of engineering plants, and the fabricators who build for all of them.",
@@ -696,7 +696,7 @@ export const madhyaPradeshCityData = {
         "Many Bhopal buyers are fabricators and vendors. If you build equipment, you need repeatable wall thickness, clean cut ends and a document pack your own customer can audit. We supply to drawing and in cut lengths, in small lots as well as large ones.",
         "Bhopal has local stockists, and we're not one of them. Our strength is made-to-drawing pipe, measured Ra, in-house electropolishing and the full document pack.",
         "Between Mandideep and Indore. Bhopal is about 25 km from Mandideep and about 190 km from Indore. If you also buy for either, or for Dewas or Ujjain, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A couple of days from our factory. Bhopal is roughly 780-840 km from Taloja. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -733,7 +733,7 @@ export const madhyaPradeshCityData = {
     "faqs": [
       {
         "q": "How fast can you deliver to Bhopal, and how is the finish protected in transit?",
-        "a": "Bhopal is roughly 780-840 km from our Taloja MIDC factory, and delivery is typically 2-3 days. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged, and factory visits and witnessed testing are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged."
       },
       {
         "q": "We are a hospital, university or state laboratory. Can you respond to a tender, and what documents will you supply?",
@@ -756,9 +756,9 @@ export const madhyaPradeshCityData = {
     "country": "India",
     "pageUrl": "/market-area/ratlam",
     "pageTitle": "Electropolished Pipe Manufacturer Ratlam | Sakshi Forge",
-    "metaDescription": "Electropolished 304L & 316L SS pipes for Ratlam namkeen, food and soya-processing plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Ratlam: 304L and 316L EP Tubes for Namkeen, Food and Agro-Processing Plants",
-    "subHeadline": "Ratlam is a railway and agro-processing town in western Madhya Pradesh, famous for its namkeen and sev, with a purpose-built snack cluster and a planned investment region around it. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja and supply Ratlam's food plants, oil and soya processors and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "metaDescription": "Electropolished 304L & 316L SS pipes for Ratlam namkeen, food and soya-processing plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Ratlam",
+    "subHeadline": "Ratlam is a railway and agro-processing town in western Madhya Pradesh, famous for its namkeen and sev, with a purpose-built snack cluster and a planned investment region around it. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply Ratlam's food plants, oil and soya processors and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -771,7 +771,7 @@ export const madhyaPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Ratlam is roughly 770-840 km from our Taloja MIDC factory, and delivery is typically 2-3 days with protective capping and sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Ratlam's Industrial Belt",
       "description": "Ratlam sits on the Mumbai–Delhi rail line and the road to Jhabua, about 140 km from Indore. Its best-known industry is namkeen, and the state developed a dedicated Namkeen Cluster and Allied Food Industries area at Karmadi, about 3 km from the city on the Ratlam–Jhabua highway, with 124 plots and about ₹22.75 crore approved under the central micro and small enterprises cluster programme (reported in 2017). The district grows soybean, wheat, jowar, gram and maize, and soya and oilseed processing is a natural extension. The district has six industrial areas listed in the district industrial profile. Ratlam is also part of the planned Ratlam–Nagda Investment Region, a node of the Delhi–Mumbai Industrial Corridor identified for engineering, auto components, pharma, apparel, gems and jewellery and herbal industries.\n\nA word on fit. Gems and jewellery, apparel and most grain processing are dry. Where we're useful is the oil, wash and utility lines of snack and food plants, edible-oil and soya processing on the clean side, and design-stage projects in the investment region.",
@@ -845,7 +845,7 @@ export const madhyaPradeshCityData = {
         "Soya processing has a clean side and a solvent side. Solvent-extraction and hexane lines aren't a fit for electropolished pipe. Refined-oil, condensate and clean-utility lines can be. Send us the line and media and we'll say honestly which it is. Avoid hydrofluoric acid and abrasive slurries.",
         "The investment region is still being planned. Don't plan around its timeline. Send your drawings or specification whenever your project is ready, and we'll mark up the specification, flag anything that doesn't suit electropolished pipe, and prepare the document pack you'll need for commissioning.",
         "Between Indore and Gujarat. Ratlam is about 140 km from Indore and about 85 km from Ujjain. If you also buy for Indore, Ujjain or Dewas, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A couple of days from our factory. Ratlam is roughly 770-840 km from Taloja. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -882,7 +882,7 @@ export const madhyaPradeshCityData = {
     "faqs": [
       {
         "q": "How fast can you deliver to Ratlam, and how is the finish protected in transit?",
-        "a": "Ratlam is roughly 770-840 km from our Taloja MIDC factory, and delivery is typically 2-3 days. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged, and factory visits and witnessed testing are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged."
       },
       {
         "q": "Is 304L enough for a namkeen frying-oil or product line, or should I choose 316L?",
@@ -906,8 +906,8 @@ export const madhyaPradeshCityData = {
     "pageUrl": "/market-area/gwalior",
     "pageTitle": "Electropolished Pipe Manufacturer Gwalior | Sakshi Forge",
     "metaDescription": "Electropolished 316L & 304L SS pipes for Gwalior and Malanpur pharma, food, dairy and chemical plants. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Gwalior: 316L and 304L EP Tubes for Malanpur Pharma, Food, Dairy and Chemical Plants",
-    "subHeadline": "Gwalior is the main city of northern Madhya Pradesh, with the large Malanpur Industrial Area, a dry port and a mix of pharma, food, dairy, chemical and engineering plants on its doorstep. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply Gwalior's plants and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Gwalior",
+    "subHeadline": "Gwalior is the main city of northern Madhya Pradesh, with the large Malanpur Industrial Area, a dry port and a mix of pharma, food, dairy, chemical and engineering plants on its doorstep. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Gwalior's plants and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -920,7 +920,7 @@ export const madhyaPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Gwalior is roughly 1,150-1,250 km from our Taloja MIDC factory, and delivery is typically 3-4 days with protective capping and sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Gwalior and the Malanpur Industrial Area",
       "description": "The industry around Gwalior is concentrated at Malanpur, a multi-product industrial area of about 1,389 hectares north of the city with an inland container depot that works as a dry port. The state names Malanpur among its pharma hubs and food-processing centres, and it hosts medium and large units ranging from chemicals to consumer durables. Gwalior itself has a long engineering and agro-processing tradition, producing chemicals, engineering tools, sandstone and agro-processed foods, with cereal and dairy processing rated among its strongest food sectors. The state also lists Gwalior among its electronics-manufacturing locations. Other estates in the surrounding Chambal region, such as the Pipersewa industrial area in Morena district (about 80 hectares), add smaller units.\n\nA word on fit. Sandstone, engineering tools and most construction materials don't use electropolished pipe. Where we're useful is Malanpur's pharma units, food and dairy plants, clean utilities in the chemical and consumer-durables plants, and the fabricators who serve them.",
@@ -1001,7 +1001,7 @@ export const madhyaPradeshCityData = {
         "Dairy is a 304L market, with exceptions. Milk lines are cleaned with caustic and acid cycles, and 304L is the standard grade. Curd, buttermilk and flavoured products can be acidic or salted, so 316L is the safer choice there. Send us your product and CIP chemistry.",
         "Gwalior has local stockists, and we're not one of them. At roughly 1,150-1,250 km, freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Bhopal or Mandideep, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "Plan the lead time. Typical road transit is 3-4 days after manufacture and testing. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
+        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       ]
     },
     "areas": [
@@ -1038,7 +1038,7 @@ export const madhyaPradeshCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Gwalior take, and how is the finish protected over that distance?",
-        "a": "Gwalior is roughly 1,150-1,250 km from our Taloja MIDC factory, and typical road transit is 3-4 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Which grade should I use in a Malanpur pharma or dairy plant, 316L or 304L?",
@@ -1062,8 +1062,8 @@ export const madhyaPradeshCityData = {
     "pageUrl": "/market-area/jabalpur",
     "pageTitle": "Electropolished Pipe Manufacturer Jabalpur | Sakshi Forge",
     "metaDescription": "Electropolished 316L & 304L SS pipes for Jabalpur pharma, dairy, food and defence-support clean-utility lines. ASTM A270, MTC EN 10204 3.1.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Jabalpur: 316L and 304L EP Tubes for Pharma, Dairy, Food and Defence-Support Clean Utilities",
-    "subHeadline": "Jabalpur is eastern Madhya Pradesh's largest city and the headquarters of the West Central Railway, with a cluster of defence factories, pharma units, dairy and grain processors and a large base of small engineering vendors. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply Jabalpur's plants and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Jabalpur",
+    "subHeadline": "Jabalpur is eastern Madhya Pradesh's largest city and the headquarters of the West Central Railway, with a cluster of defence factories, pharma units, dairy and grain processors and a large base of small engineering vendors. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Jabalpur's plants and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -1076,7 +1076,7 @@ export const madhyaPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Jabalpur is roughly 1,100-1,200 km from our Taloja MIDC factory, and delivery is typically 3-4 days with protective capping and sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Jabalpur's Industrial Belt",
       "description": "Jabalpur sits on the Narmada, connected by national highways to Nagpur, Varanasi and Jhansi, and it grew around its military and railway establishments. The city has four well-known defence factories that make heavy vehicles, gun carriages, ammunition and castings, and a large ecosystem of small workshops and vendors specialising in precision metalwork and machinery has grown around them. The area's mines also feed mineral processing, including cement and stone finishing. The state lists Jabalpur among its pharma hubs, and pharma addresses in the city include units at Gwarighat, and among its electronics (ESDM) locations. Food processing is rated among the city's strongest sectors, with grain milling and dairy products at the centre.\n\nA word on fit. Defence vehicle and ordnance manufacture, cement and stone finishing are heavy or dry, and their main processes don't use electropolished pipe. Where we're useful is the pharma units, dairy and food lines, clean utilities such as DM and DI water and laboratory lines inside the larger plants and institutions, and the fabricators who serve them.",
@@ -1149,9 +1149,9 @@ export const madhyaPradeshCityData = {
         "Defence and public-sector buyers buy formally. Government establishments and their vendors generally purchase through tenders, registered vendors, and inspection by a designated quality authority. If yours does, send us the tender specification and the inspection requirement and we'll tell you what we can meet and respond with a technical and commercial offer and the document pack.",
         "The vendor base is a big part of the market. If you're a precision-metalwork or machinery shop, you need repeatable wall thickness, clean cut ends and a document pack your own customer can audit. We supply to drawing and in cut lengths, in small lots as well as large ones.",
         "Dairy is a 304L market, with exceptions. Milk lines are cleaned with caustic and acid cycles, and 304L is the standard grade. Curd, buttermilk and flavoured products can be acidic or salted, so 316L is the safer choice there.",
-        "We're a long way from Jabalpur, and we'll say so. Our factory is in Taloja, about 1,100-1,200 km away, and freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "We're a long way from Jabalpur, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Bhopal or Mandideep, or for Nagpur, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "Plan the lead time. Typical road transit is 3-4 days after manufacture and testing. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
+        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       ]
     },
     "areas": [
@@ -1187,7 +1187,7 @@ export const madhyaPradeshCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Jabalpur take, and how is the finish protected over that distance?",
-        "a": "Jabalpur is roughly 1,100-1,200 km from our Taloja MIDC factory, and typical road transit is 3-4 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Where does electropolished pipe fit in a defence factory or its vendors?",
@@ -1211,8 +1211,8 @@ export const madhyaPradeshCityData = {
     "pageUrl": "/market-area/neemuch",
     "pageTitle": "Electropolished Pipe Manufacturer Neemuch | Sakshi Forge",
     "metaDescription": "Electropolished 316L & 304L SS pipes for Neemuch pharma-grade, herbal, soya and spice-processing plants. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Neemuch: 316L and 304L EP Tubes for Herbal, Soya, Spice and Pharma-Grade Processing Plants",
-    "subHeadline": "Neemuch, on Madhya Pradesh's border with Rajasthan, is a spice, herb and oilseed trading centre with soya, garlic and onion processors, herbal-extract exporters and a major government alkaloid works. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply Neemuch's food, herbal and utility buyers directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Neemuch",
+    "subHeadline": "Neemuch, on Madhya Pradesh's border with Rajasthan, is a spice, herb and oilseed trading centre with soya, garlic and onion processors, herbal-extract exporters and a major government alkaloid works. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Neemuch's food, herbal and utility buyers directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -1225,7 +1225,7 @@ export const madhyaPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Neemuch is roughly 880-950 km from our Taloja MIDC factory, and delivery is typically 2-3 days with protective capping and sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Neemuch's Industrial Belt",
       "description": "Neemuch is in the Malwa region, a road and rail junction with a large agricultural produce market that trades cereals, pulses, spices, oilseeds and herbs. Its district authorities list coriander, fenugreek, ajwain, poppy seed, cumin, soybean, mustard, flax, garlic, onion and isabgol among its traded produce, and its major exports include isabgol, ashwagandha and other herbs, soya products such as oil, de-oiled cake, soya paneer and soy milk, garlic and onion powder, dehydrated flakes, and red chilli powder. The town also hosts a government-owned opium and alkaloid works, one of only two in India, whose opium factory dates from 1935 and alkaloid works from 1976. Cement plants and soy-oil plants operate in the vicinity, and handloom weaving is a traditional industry. The district's industrial profile lists several industrial areas, including Neemuch, Sandiya and Morka near Jawad.\n\nA word on fit. Spice grinding, cement and handloom are dry processes and don't use electropolished pipe, and a government alkaloid works is a regulated facility with its own procurement rules (see the FAQ). Where we're useful is wet food and herbal lines (soy milk, soya paneer, extracts, washing and blanching for garlic and onion), and clean utilities in the larger plants.",
@@ -1333,7 +1333,7 @@ export const madhyaPradeshCityData = {
     "faqs": [
       {
         "q": "How fast can you deliver to Neemuch, and how is the finish protected in transit?",
-        "a": "Neemuch is roughly 880-950 km from our Taloja MIDC factory, and delivery is typically 2-3 days. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged, and factory visits and witnessed testing are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged."
       },
       {
         "q": "Is 304L enough for a soy-milk or garlic/onion wash line, or should I choose 316L?",
@@ -1356,9 +1356,9 @@ export const madhyaPradeshCityData = {
     "country": "India",
     "pageUrl": "/market-area/mandideep",
     "pageTitle": "Electropolished Pipe Manufacturer Mandideep | Sakshi Forge",
-    "metaDescription": "Electropolished 316L & 304L SS pipes for Mandideep pharma, chemical and food plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Mandideep: 316L and 304L EP Tubes for Pharma, Chemical and Food Plants in the Mandideep Industrial Area",
-    "subHeadline": "Mandideep is the industrial area on the south-east edge of Bhopal, with more than 450 units in pharma, chemicals, food processing and engineering. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply Mandideep's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "metaDescription": "Electropolished 316L & 304L SS pipes for Mandideep pharma, chemical and food plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Mandideep",
+    "subHeadline": "Mandideep is the industrial area on the south-east edge of Bhopal, with more than 450 units in pharma, chemicals, food processing and engineering. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Mandideep's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -1371,7 +1371,7 @@ export const madhyaPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Mandideep is roughly 790-850 km from our Taloja MIDC factory, and delivery is typically 2-3 days with protective capping and sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for the Mandideep Industrial Area",
       "description": "Mandideep is in Raisen district, close to Bhopal, and is widely considered the largest and most important industrial hub of the Bhopal region. The state describes it as a multi-product industrial area spread over about 1,102 hectares, and the local industrial association says more than 450 small and large industries operate there. It is known as a chemical and pharma powerhouse, with food processing and engineering alongside, and it hosts a number of multinational corporations. Much of its workforce commutes from Bhopal. Around the estate, hundreds of smaller vendors supply components, castings and engineering services to the large electrical and engineering works in Bhopal, which creates a sizeable fabrication base.\n\nA word on fit. Chemical and bulk-drug plants run reactor-side solvent and acid lines that can need other materials, and engineering and casting work doesn't use electropolished pipe. Where we're useful is the clean side of pharma and chemical plants (purified water, WFI, laboratory lines), food lines, and the fabricators who build skids and headers for them.",
@@ -1446,7 +1446,7 @@ export const madhyaPradeshCityData = {
         "Large plants may buy formally. Multinational and large Indian plants often purchase through approved-vendor lists. If yours does, send us the form and we'll complete it.",
         "Mandideep has local stockists, and we're not one of them. Our strength is made-to-drawing pipe, measured Ra, in-house electropolishing and the full document pack.",
         "Bhopal is next door. Mandideep is about 25 km from Bhopal. If you also buy for Bhopal, Indore or Dewas, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A couple of days from our factory. Mandideep is roughly 790-850 km from Taloja. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -1481,7 +1481,7 @@ export const madhyaPradeshCityData = {
     "faqs": [
       {
         "q": "How fast can you deliver to Mandideep, and how is the finish protected in transit?",
-        "a": "Mandideep is roughly 790-850 km from our Taloja MIDC factory, and delivery is typically 2-3 days. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged, and factory visits and witnessed testing are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged."
       },
       {
         "q": "Which grade should I use in a Mandideep pharma or chemical plant, 316L or duplex 2205?",
@@ -1505,8 +1505,8 @@ export const madhyaPradeshCityData = {
     "pageUrl": "/market-area/indore",
     "pageTitle": "Electropolished Pipe Manufacturer Indore | Sakshi Forge",
     "metaDescription": "Electropolished 316L & 304L SS pipes for Indore Sanwer Road, Rau and Pigdamber pharma and food plants. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Indore: 316L and 304L EP Tubes for Sanwer Road, Rau and Pigdamber Pharma, Food and FMCG Plants",
-    "subHeadline": "Indore is Madhya Pradesh's commercial and pharma capital, with industrial estates ringing the city and the Pithampur–Dewas–Ujjain belt next door. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja, about a day's drive away, and supply Indore's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Indore",
+    "subHeadline": "Indore is Madhya Pradesh's commercial and pharma capital, with industrial estates ringing the city and the Pithampur–Dewas–Ujjain belt next door. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Indore's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -1519,7 +1519,7 @@ export const madhyaPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Indore is roughly 600-660 km from our Taloja MIDC factory, and delivery is typically 1-2 days with protective capping and sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Indore's Industrial Belts",
       "description": "Indore is the largest city in Madhya Pradesh and its main commercial hub, and its industry sits in several belts. The Sanwer Road Industrial Area, on the north-west side, is a large estate of about 1,000 acres hosting pharma and many other manufacturers, with pharma units also on Rau Road, at Pigdamber and Lasudia Mori (Dewas Naka), on Kanadia Road and in the older Industrial Estate in the city. The Indore Special Economic Zone, including its dedicated pharma zone, sits in Pithampur, about 30 km away, and the satellite towns of Pithampur, Mhow and Dewas are covered on separate pages. Food processing is a growing part of the mix, and the state has been developing a namkeen cluster at Sukhliya in Indore for the city's famous snack makers.\n\nA word on fit. Textile trade and auto assembly, two of Indore's best-known sectors, don't use electropolished pipe on their main processes. Where we're useful is pharma purified water and clean utilities, food and snack lines, dairy and beverage plants, and the fabricators who serve them.",
@@ -1594,7 +1594,7 @@ export const madhyaPradeshCityData = {
         }
       ],
       "localNotes": [
-        "A day's drive from our factory. Indore is roughly 600-660 km from Taloja, so urgent top-up orders, factory visits and witnessed testing are realistic. If your plant needs a few lengths this week, tell us.",
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your plant needs a few lengths this week, tell us.",
         "Pharma and food side by side. Sanwer Road and Rau have both. Pharma lines need measured Ra, passivation records and a document trail. Food and snack lines need cleanability and hot-oil or brine resistance. We recommend by media, not habit.",
         "Namkeen and snack lines. Frying oil lines are cleaned with hot caustic, and brine or acidic products can attack 304 by pitting. 304L suits most oil and dry-side lines, and 316L is the safer choice for brine, pickle and acidic products. Send us your product and cleaning chemistry.",
         "Many plants supply regulated markets. Pharma and food exporters are audited, so every order ships with heat-number traceability, a surface report and passivation records.",
@@ -1638,7 +1638,7 @@ export const madhyaPradeshCityData = {
     "faqs": [
       {
         "q": "How fast can you deliver to Indore, and how is the finish protected in transit?",
-        "a": "Indore is roughly 600-660 km from our Taloja MIDC factory, and delivery is typically 1-2 days. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged, and factory visits and witnessed testing are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged."
       },
       {
         "q": "Should I choose 316L or 304L for a pharma, snack or food line in Indore?",
@@ -1661,9 +1661,9 @@ export const madhyaPradeshCityData = {
     "country": "India",
     "pageUrl": "/market-area/pithampur",
     "pageTitle": "Electropolished Pipe Manufacturer Pithampur | Sakshi Forge",
-    "metaDescription": "Electropolished 316L & 304L SS pipes for Pithampur pharma SEZ, auto and engineering plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Pithampur: 316L and 304L EP Tubes for the Indore SEZ Pharma Zone, Auto and Engineering Plants",
-    "subHeadline": "Pithampur is Madhya Pradesh's largest industrial area, known as the \"Detroit of India\" for its automotive plants and home to a dedicated pharma zone in the Indore SEZ. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja, about a day's drive away, and supply Pithampur's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "metaDescription": "Electropolished 316L & 304L SS pipes for Pithampur pharma SEZ, auto and engineering plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Pithampur",
+    "subHeadline": "Pithampur is Madhya Pradesh's largest industrial area, known as the \"Detroit of India\" for its automotive plants and home to a dedicated pharma zone in the Indore SEZ. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Pithampur's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -1676,7 +1676,7 @@ export const madhyaPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Pithampur is roughly 570-620 km from our Taloja MIDC factory, and delivery is typically 1-2 days with protective capping and sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Pithampur's Industrial Belt",
       "description": "Pithampur sits in Dhar district about 30 km from Indore, and its workforce largely commutes from the city. It is the state's largest industrial area, with more than 1,250 industries in operation by one count and around 1,500 by another across Phases I, II and III. The Indore Special Economic Zone, established in 2003, is also here, with a pharma zone in Phase II and Sector III that hosts a large share of the state's export-oriented pharma manufacturing. Alongside pharma, the area is known for several major automobile and auto-component makers, engineering and machinery plants, and an apparel park. An ESDM (electronics) park with common facilities has been proposed in Sector 7, and the state describes a multi-product industrial area of about 469 hectares in Dhar district as one of its fastest-growing.\n\nA word on fit. Auto assembly, machining and apparel don't use electropolished pipe on their main processes. Where we're useful is the pharma zone, clean utilities such as DM and DI water inside the auto and engineering plants, food and beverage units, and the fabricators who serve them.",
@@ -1748,7 +1748,7 @@ export const madhyaPradeshCityData = {
         "Supplying an SEZ unit. If your order is for a unit inside the Indore SEZ, tick the box on the quote form. We'll prepare the commercial and material documents your SEZ procedure asks for, and you should confirm the invoicing and tax treatment with your own adviser.",
         "Export-oriented pharma is audited. Plants supplying regulated overseas markets are audited on documents as much as on steel. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records.",
         "Auto plants are utility buyers. Assembly and machining don't need electropolished pipe. For DM or DI water, the right grade and finish depend on the purity you need. Send us your specification and we'll say plainly what we can guarantee.",
-        "We're about 30 km further from Taloja than Indore is nearer to you. Pithampur is roughly 570-620 km from our factory, one of the closest large industrial areas we supply, so urgent top-up orders, factory visits and witnessed testing are realistic.",
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
         "Pithampur has local stockists, and we're not one of them. Our strength is made-to-drawing pipe, measured Ra, in-house electropolishing and the full document pack.",
         "Buy for the whole belt together. Pithampur, Indore, Dewas and Ujjain sit within about 100 km of each other. If you run plants in more than one, send the requirements together and we'll quote one consolidated dispatch with one document format."
       ]
@@ -1787,7 +1787,7 @@ export const madhyaPradeshCityData = {
     "faqs": [
       {
         "q": "How fast can you deliver to Pithampur, and how is the finish protected in transit?",
-        "a": "Pithampur is roughly 570-620 km from our Taloja MIDC factory, and delivery is typically 1-2 days. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged, and factory visits and witnessed testing are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged."
       },
       {
         "q": "Which grade should I use for pharma lines in the Indore SEZ, and what documents will our auditors expect?",
@@ -1811,8 +1811,8 @@ export const madhyaPradeshCityData = {
     "pageUrl": "/market-area/ujjain",
     "pageTitle": "Electropolished Pipe Manufacturer Ujjain | Sakshi Forge",
     "metaDescription": "Electropolished 316L & 304L SS pipes for Ujjain Vikram Udyogpuri pharma, food and medical-device projects. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Ujjain: 316L and 304L EP Tubes for Vikram Udyogpuri Pharma, Food and Medical-Device Plants",
-    "subHeadline": "Ujjain is home to Vikram Udyogpuri, a large new industrial township where pharma, dairy and food, and a medical-devices park are being built, close to the Dewas–Indore–Pithampur belt. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and quote against your drawings from design stage, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Ujjain",
+    "subHeadline": "Ujjain is home to Vikram Udyogpuri, a large new industrial township where pharma, dairy and food, and a medical-devices park are being built, close to the Dewas–Indore–Pithampur belt. We manufacture and electropolish SS 316L and 304L pipes and tubes and quote against your drawings from design stage, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -1825,10 +1825,10 @@ export const madhyaPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Ujjain is roughly 640-700 km from our Taloja MIDC factory, and delivery is typically 2 days with protective capping and sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Ujjain's Industrial Belt",
-      "description": "Ujjain's modern industry centres on Vikram Udyogpuri, an integrated industrial township of about 1,100 acres on the Ujjain–Dewas railway line, developed under the Delhi–Mumbai Industrial Corridor as part of the Pithampur–Dhar–Mhow Investment Region. It sits about 15 km from both Ujjain and Dewas, 45 km from Indore city and about 600 km from the JNPT port near our factory. The township's own material describes a dairy cooperative as its anchor investor, with 12 operating units and more than 16 under construction. Of the roughly 358 acres of allottable industrial land, about 226 acres have been allotted, including about 157 acres to the pharmaceutical sector, about 35 acres to food processing, about 23 acres to plastics and about 7 acres to chemicals. A further 360 acres have been allotted for a Medical Device Park, a project sanctioned by the central government. The state also lists Ujjain among its food-processing centres and pharma hubs.\n\nA word on fit. Plastics, chemicals and general manufacturing don't use electropolished pipe on their main processes. Where we're useful is the pharma sector, dairy and food processing, the medical-device park's clean utilities, and the EPC contractors and fabricators who build all of it.",
+      "description": "Ujjain's modern industry centres on Vikram Udyogpuri, an integrated industrial township of about 1,100 acres on the Ujjain–Dewas railway line, developed under the Delhi–Mumbai Industrial Corridor as part of the Pithampur–Dhar–Mhow Investment Region. It sits about 15 km from both Ujjain and Dewas, 45 km from Indore city. The township's own material describes a dairy cooperative as its anchor investor, with 12 operating units and more than 16 under construction. Of the roughly 358 acres of allottable industrial land, about 226 acres have been allotted, including about 157 acres to the pharmaceutical sector, about 35 acres to food processing, about 23 acres to plastics and about 7 acres to chemicals. A further 360 acres have been allotted for a Medical Device Park, a project sanctioned by the central government. The state also lists Ujjain among its food-processing centres and pharma hubs.\n\nA word on fit. Plastics, chemicals and general manufacturing don't use electropolished pipe on their main processes. Where we're useful is the pharma sector, dairy and food processing, the medical-device park's clean utilities, and the EPC contractors and fabricators who build all of it.",
       "zones": [
         {
           "zone": "Vikram Udyogpuri, pharma sector (about 157 acres allotted)",
@@ -1900,7 +1900,7 @@ export const madhyaPradeshCityData = {
         "Pharma buyers want paperwork. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
         "Plastics and chemicals aren't the target. Their main processes don't use electropolished pipe. We'd rather tell you than sell you something you don't need.",
         "Part of one belt. Vikram Udyogpuri is about 15 km from Dewas and 45 km from Indore. If you also buy for Dewas, Indore or Pithampur, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A day or two from our factory. Ujjain is roughly 640-700 km from Taloja. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -1936,7 +1936,7 @@ export const madhyaPradeshCityData = {
     "faqs": [
       {
         "q": "How fast can you deliver to Ujjain, and how is the finish protected in transit?",
-        "a": "Ujjain is roughly 640-700 km from our Taloja MIDC factory, and delivery is typically 2 days. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged, and factory visits and witnessed testing are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged."
       },
       {
         "q": "Vikram Udyogpuri is still being built. Can you quote my project now?",
@@ -1960,8 +1960,8 @@ export const madhyaPradeshCityData = {
     "pageUrl": "/market-area/bhopal",
     "pageTitle": "Electropolished Pipe Manufacturer Bhopal | Sakshi Forge",
     "metaDescription": "Electropolished 316L & 304L SS pipes for Bhopal Govindpura, hospital, food and engineering clean-utility lines. ASTM A270, MTC EN 10204 3.1.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Bhopal: 316L and 304L EP Tubes for Govindpura, Hospitals, Food Plants and Engineering Works",
-    "subHeadline": "Bhopal is Madhya Pradesh's capital, with a large heavy-electrical and engineering base, the older Govindpura industrial estate, and hospitals, universities and laboratories that buy through formal procurement. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply Bhopal's plants, institutions and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Bhopal",
+    "subHeadline": "Bhopal is Madhya Pradesh's capital, with a large heavy-electrical and engineering base, the older Govindpura industrial estate, and hospitals, universities and laboratories that buy through formal procurement. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Bhopal's plants, institutions and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -1974,7 +1974,7 @@ export const madhyaPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Bhopal is roughly 780-840 km from our Taloja MIDC factory, and delivery is typically 2-3 days with protective capping and sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Bhopal's Industry and Institutions",
       "description": "Bhopal's industrial history began in the middle of the last century around a large heavy-electrical works, which created an ecosystem of hundreds of smaller vendors supplying components, castings and engineering services. Govindpura Industrial Area, in the heart of the city, is one of the state's oldest hubs, smaller and older than the newer estates, with light engineering and small-scale units. The Bhopal Industrial Area is a versatile zone supporting businesses from printing to food processing. A textile park at Acharpura, near the city, is also listed. Mandideep, on the south-east edge of Bhopal, is the region's largest estate and has its own page. The capital also hosts hospitals, medical colleges, universities and state laboratories, and the state lists Bhopal among its food-processing centres and its electronics-manufacturing locations.\n\nA word on fit. Heavy-electrical work, textile and printing don't use electropolished pipe. Where we're useful is institutional clean utilities (laboratory, clean-steam and purified-water lines), food processing, the clean side of engineering plants, and the fabricators who build for all of them.",
@@ -2054,7 +2054,7 @@ export const madhyaPradeshCityData = {
         "Many Bhopal buyers are fabricators and vendors. If you build equipment, you need repeatable wall thickness, clean cut ends and a document pack your own customer can audit. We supply to drawing and in cut lengths, in small lots as well as large ones.",
         "Bhopal has local stockists, and we're not one of them. Our strength is made-to-drawing pipe, measured Ra, in-house electropolishing and the full document pack.",
         "Between Mandideep and Indore. Bhopal is about 25 km from Mandideep and about 190 km from Indore. If you also buy for either, or for Dewas or Ujjain, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A couple of days from our factory. Bhopal is roughly 780-840 km from Taloja. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -2091,7 +2091,7 @@ export const madhyaPradeshCityData = {
     "faqs": [
       {
         "q": "How fast can you deliver to Bhopal, and how is the finish protected in transit?",
-        "a": "Bhopal is roughly 780-840 km from our Taloja MIDC factory, and delivery is typically 2-3 days. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged, and factory visits and witnessed testing are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged."
       },
       {
         "q": "We are a hospital, university or state laboratory. Can you respond to a tender, and what documents will you supply?",
@@ -2115,8 +2115,8 @@ export const madhyaPradeshCityData = {
     "pageUrl": "/market-area/gwalior",
     "pageTitle": "Electropolished Pipe Manufacturer Gwalior | Sakshi Forge",
     "metaDescription": "Electropolished 316L & 304L SS pipes for Gwalior and Malanpur pharma, food, dairy and chemical plants. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Gwalior: 316L and 304L EP Tubes for Malanpur Pharma, Food, Dairy and Chemical Plants",
-    "subHeadline": "Gwalior is the main city of northern Madhya Pradesh, with the large Malanpur Industrial Area, a dry port and a mix of pharma, food, dairy, chemical and engineering plants on its doorstep. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply Gwalior's plants and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Gwalior",
+    "subHeadline": "Gwalior is the main city of northern Madhya Pradesh, with the large Malanpur Industrial Area, a dry port and a mix of pharma, food, dairy, chemical and engineering plants on its doorstep. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Gwalior's plants and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -2129,7 +2129,7 @@ export const madhyaPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Gwalior is roughly 1,150-1,250 km from our Taloja MIDC factory, and delivery is typically 3-4 days with protective capping and sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Gwalior and the Malanpur Industrial Area",
       "description": "The industry around Gwalior is concentrated at Malanpur, a multi-product industrial area of about 1,389 hectares north of the city with an inland container depot that works as a dry port. The state names Malanpur among its pharma hubs and food-processing centres, and it hosts medium and large units ranging from chemicals to consumer durables. Gwalior itself has a long engineering and agro-processing tradition, producing chemicals, engineering tools, sandstone and agro-processed foods, with cereal and dairy processing rated among its strongest food sectors. The state also lists Gwalior among its electronics-manufacturing locations. Other estates in the surrounding Chambal region, such as the Pipersewa industrial area in Morena district (about 80 hectares), add smaller units.\n\nA word on fit. Sandstone, engineering tools and most construction materials don't use electropolished pipe. Where we're useful is Malanpur's pharma units, food and dairy plants, clean utilities in the chemical and consumer-durables plants, and the fabricators who serve them.",
@@ -2210,7 +2210,7 @@ export const madhyaPradeshCityData = {
         "Dairy is a 304L market, with exceptions. Milk lines are cleaned with caustic and acid cycles, and 304L is the standard grade. Curd, buttermilk and flavoured products can be acidic or salted, so 316L is the safer choice there. Send us your product and CIP chemistry.",
         "Gwalior has local stockists, and we're not one of them. At roughly 1,150-1,250 km, freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Bhopal or Mandideep, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "Plan the lead time. Typical road transit is 3-4 days after manufacture and testing. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
+        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       ]
     },
     "areas": [
@@ -2247,7 +2247,7 @@ export const madhyaPradeshCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Gwalior take, and how is the finish protected over that distance?",
-        "a": "Gwalior is roughly 1,150-1,250 km from our Taloja MIDC factory, and typical road transit is 3-4 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Which grade should I use in a Malanpur pharma or dairy plant, 316L or 304L?",
@@ -2270,9 +2270,9 @@ export const madhyaPradeshCityData = {
     "country": "India",
     "pageUrl": "/market-area/mandideep",
     "pageTitle": "Electropolished Pipe Manufacturer Mandideep | Sakshi Forge",
-    "metaDescription": "Electropolished 316L & 304L SS pipes for Mandideep pharma, chemical and food plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Mandideep: 316L and 304L EP Tubes for Pharma, Chemical and Food Plants in the Mandideep Industrial Area",
-    "subHeadline": "Mandideep is the industrial area on the south-east edge of Bhopal, with more than 450 units in pharma, chemicals, food processing and engineering. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply Mandideep's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "metaDescription": "Electropolished 316L & 304L SS pipes for Mandideep pharma, chemical and food plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Mandideep",
+    "subHeadline": "Mandideep is the industrial area on the south-east edge of Bhopal, with more than 450 units in pharma, chemicals, food processing and engineering. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Mandideep's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -2285,7 +2285,7 @@ export const madhyaPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Mandideep is roughly 790-850 km from our Taloja MIDC factory, and delivery is typically 2-3 days with protective capping and sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for the Mandideep Industrial Area",
       "description": "Mandideep is in Raisen district, close to Bhopal, and is widely considered the largest and most important industrial hub of the Bhopal region. The state describes it as a multi-product industrial area spread over about 1,102 hectares, and the local industrial association says more than 450 small and large industries operate there. It is known as a chemical and pharma powerhouse, with food processing and engineering alongside, and it hosts a number of multinational corporations. Much of its workforce commutes from Bhopal. Around the estate, hundreds of smaller vendors supply components, castings and engineering services to the large electrical and engineering works in Bhopal, which creates a sizeable fabrication base.\n\nA word on fit. Chemical and bulk-drug plants run reactor-side solvent and acid lines that can need other materials, and engineering and casting work doesn't use electropolished pipe. Where we're useful is the clean side of pharma and chemical plants (purified water, WFI, laboratory lines), food lines, and the fabricators who build skids and headers for them.",
@@ -2360,7 +2360,7 @@ export const madhyaPradeshCityData = {
         "Large plants may buy formally. Multinational and large Indian plants often purchase through approved-vendor lists. If yours does, send us the form and we'll complete it.",
         "Mandideep has local stockists, and we're not one of them. Our strength is made-to-drawing pipe, measured Ra, in-house electropolishing and the full document pack.",
         "Bhopal is next door. Mandideep is about 25 km from Bhopal. If you also buy for Bhopal, Indore or Dewas, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A couple of days from our factory. Mandideep is roughly 790-850 km from Taloja. We cap the pipe ends, sleeve every length and pack for the journey."
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     "areas": [
@@ -2395,7 +2395,7 @@ export const madhyaPradeshCityData = {
     "faqs": [
       {
         "q": "How fast can you deliver to Mandideep, and how is the finish protected in transit?",
-        "a": "Mandideep is roughly 790-850 km from our Taloja MIDC factory, and delivery is typically 2-3 days. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged, and factory visits and witnessed testing are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged."
       },
       {
         "q": "Which grade should I use in a Mandideep pharma or chemical plant, 316L or duplex 2205?",

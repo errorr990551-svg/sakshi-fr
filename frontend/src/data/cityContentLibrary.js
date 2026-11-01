@@ -1,7 +1,7 @@
 // Reusable, fact-checked building blocks for city pages that have a VERIFIED research
 // row (market_cities.json -> research). Placeholders: {city}, {estates}, {lead}, {region},
 // {country}. Company facts used here are limited to ones already published on the site:
-// ISO 9001:2015, manufacturing at Taloja MIDC (Mumbai), PMI on every length,
+// ISO 9001:2015, based in Mumbai (owner, 2026-11-01), PMI on every length,
 // hydrostatic / eddy-current testing, EN 10204 3.1 MTC, end caps and sleeving,
 // ASME BPE SF4 (Ra <= 0.38 um), payment by LC at sight or TT.
 
@@ -235,8 +235,18 @@ export const REGULATORS = [
 
 export const isIndia = (country) => !country || /india/i.test(country);
 
-export function fill(text, ctx) {
+// Indian regulations (PESO/OISD, IBR) are named only on Indian pages; foreign pages get the
+// neutral wording so a buyer abroad is never pointed at Indian rules.
+function localise(text, ctx) {
+  if (ctx.india !== false) return text;
   return text
+    .replace(/hazardous-service lines follow PESO\/OISD or local equivalents/g, 'hazardous-service lines follow local regulations')
+    .replace(/, PESO \/ OISD rules on hazardous service in India/g, ', plus local rules on hazardous service')
+    .replace(/Boiler-code \(IBR\) requirements apply/g, 'Boiler-code requirements apply');
+}
+
+export function fill(text, ctx) {
+  return localise(text, ctx)
     .replace(/\{city\}/g, ctx.city)
     .replace(/\{estates\}/g, ctx.estates)
     .replace(/\{lead\}/g, ctx.lead)

@@ -72,7 +72,7 @@ const LiveDeliveryWidget = ({ city, state, country, transitLine, freightBasis })
           Supply Route & Logistics
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
-          <div style={{ fontWeight: '800', fontSize: '1.1rem', color: 'var(--text-primary)' }}>Mumbai Works</div>
+          <div style={{ fontWeight: '800', fontSize: '1.1rem', color: 'var(--text-primary)' }}>Mumbai</div>
           <ArrowRight size={16} style={{ color: 'var(--primary-yellow)' }} />
           <div style={{ fontWeight: '800', fontSize: '1.1rem', color: 'var(--primary-yellow)' }}>{city} Site</div>
         </div>
@@ -265,7 +265,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
           "@type": "VideoObject",
           "@id": `https://steelmanufacturer.in${cityData.path}#video`,
           "name": "Electropolished Stainless Steel Pipes Manufacturing & Testing",
-          "description": "Electropolishing process, borescope internal inspection and Ra profilometer testing for high-purity stainless steel tube at Sakshi Forge Mumbai works.",
+          "description": "Electropolishing process, borescope internal inspection and Ra profilometer testing for high-purity stainless steel tube by Sakshi Forge, Mumbai.",
           "thumbnailUrl": `https://i.ytimg.com/vi/${custom.logistics.videoId}/hqdefault.jpg`,
           "uploadDate": "2026-01-01T08:00:00+05:30",
           "embedUrl": `https://www.youtube.com/embed/${custom.logistics.videoId}`
@@ -320,7 +320,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
     if (!text) return [
       { num: '1', title: 'Ultra-Smooth Internal Surface (Ra ≤ 0.38 µm / SF4)', desc: 'Electrochemical dissolution eliminates micro-burrs and microscopic crevices, preventing bio-film accumulation.' },
       { num: '2', title: '100% PMI & EN 10204 3.1 MTC Certified', desc: 'Every batch undergoes Positive Material Identification (PMI) and hydrostatic pressure testing before dispatch.' },
-      { num: '3', title: 'Road Dispatch from Our Mumbai Plant', desc: `${cityData.transitLine || 'Road dispatch from Taloja MIDC to ' + cityData.city + ', with transit time confirmed in writing with each quotation.'}` },
+      { num: '3', title: 'Dispatch from Mumbai', desc: `Dispatch from Mumbai to ${cityData.city}; delivery time depends on size, quantity and stock, and is confirmed in writing with each quotation.` },
       { num: '4', title: 'Sanitary Fittings & Flanges from One Source', desc: 'Single-source procurement for EP pipes, tri-clamp fittings, weld neck flanges, and high-purity valves.' },
       { num: '5', title: 'Protective Export-Grade Crate Packaging', desc: 'All pipes are end-capped, polyethylene sleeved, and packed in reinforced wooden crates to ensure pristine delivery.' }
     ];
@@ -380,7 +380,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
                 marginBottom: '1.25rem'
               }}>
                 <Globe size={12} />
-                Factory Direct · ISO 9001:2015 · Taloja, Mumbai
+                Manufacturer · ISO 9001:2015 · Mumbai
               </span>
 
               <h1 style={{ 
@@ -705,7 +705,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
         <section style={{ padding: '5rem 0', backgroundColor: 'var(--bg-dark-900)' }}>
           <div className="container" style={{ maxWidth: '980px', backgroundColor: 'var(--bg-dark-800)', borderRadius: '12px', border: '1px solid var(--border-color)', padding: '3rem 2rem' }}>
             <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
-              <span style={{ color: 'var(--primary-yellow)', fontSize: '0.8rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '0.5rem' }}>30-Minute Response Guarantee</span>
+              <span style={{ color: 'var(--primary-yellow)', fontSize: '0.8rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '0.5rem' }}>24-Hour Quote Turnaround</span>
               <h2 style={{ fontSize: '2.2rem', fontWeight: '800', margin: '0 0 1rem 0' }}>{custom.cta.title}</h2>
               <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', maxWidth: '750px', margin: '0 auto 2rem auto', lineHeight: '1.7' }}>
                 {custom.cta.desc}
@@ -882,7 +882,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
                 {custom?.heroIntro ? (
                   <span>{custom.heroIntro}</span>
                 ) : (
-                  <>Sakshi Forge is a premier manufacturer and supplier of ASTM A270 &amp; ASME BPE compliant <strong>electropolished stainless steel pipes</strong> for pharmaceutical, biotechnology, semiconductor, and high-purity chemical units in <strong>{cityData.city}</strong>. We deliver 100% PMI-tested SS 304, 316L, and 904L EP tubing with internal surface roughness Ra ≤ 0.38 µm (SF4) directly from our Mumbai manufacturing plant.</>
+                  <>Sakshi Forge is a premier manufacturer and supplier of ASTM A270 &amp; ASME BPE compliant <strong>electropolished stainless steel pipes</strong> for pharmaceutical, biotechnology, semiconductor, and high-purity chemical units in <strong>{cityData.city}</strong>. We deliver 100% PMI-tested SS 304, 316L, and 904L EP tubing with internal surface roughness Ra ≤ 0.38 µm (SF4) dispatched from Mumbai.</>
                 )}
               </p>
 
@@ -892,7 +892,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
                   'ISO 9001:2015 Certified',
                   'EN 10204 3.1 MTC Provided',
                   '100% PMI Tested Metallurgy',
-                  'Made at Our Taloja MIDC Works'
+                  'Quote within 24 Hours'
                 ]).map((badge, idx) => (
                   <div key={idx} style={{
                     display: 'flex',

@@ -47,7 +47,7 @@ export function updateSEO({ type, data }) {
   clearExistingSchemas();
 
   let title = "Electropolished Pipes Manufacturer in India | SS 316L EP Tubes | Sakshi Forge";
-  let metaDesc = "ISO 9001:2015 electropolished pipe manufacturer in Mumbai, India. SS 304, 316L and duplex EP pipes, Ra ≤0.4 µm, 100% PMI tested, 3.1 MTC. Quote in 30 minutes.";
+  let metaDesc = "ISO 9001:2015 electropolished pipe manufacturer in Mumbai, India. SS 304, 316L and duplex EP pipes, Ra ≤0.4 µm, 100% PMI tested, 3.1 MTC. Quote within 24 hours.";
   let keywords = "electropolished pipes manufacturer in India, SS 316L EP tubes, Sakshi Forge, industrial flanges, forged steel, steel pipes, butt weld fittings, forged fittings";
   let canonicalUrl = BASE_URL;
   let robots = "index, follow";
@@ -189,7 +189,7 @@ export function updateSEO({ type, data }) {
     canonicalUrl = `${BASE_URL}/team/`;
   } else if (type === "stainless-steel-elbow") {
     title = "SS Elbow Manufacturer: 45°, 90°, 180° | Sakshi Forge";
-    metaDesc = "ASME B16.9 buttweld and ASME B16.11 forged elbows in SS 304, 316L, and Duplex. 30-minute quotes.";
+    metaDesc = "ASME B16.9 buttweld and ASME B16.11 forged elbows in SS 304, 316L, and Duplex. quotes within 24 hours.";
     canonicalUrl = `${BASE_URL}/stainless-steel-elbow/`;
   } else if (type === "grade" && data) {
     title = data.title;

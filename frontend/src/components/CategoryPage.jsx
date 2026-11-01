@@ -403,7 +403,7 @@ export default function CategoryPage({ category, products: filteredProducts = []
               Supply & Express Dispatch to 30 Major Industrial Hubs
             </h3>
             <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', margin: 0 }}>
-              Sakshi Forge manufactures at Taloja MIDC, Mumbai and dispatches electropolished stainless steel pipes, fittings and flanges directly to engineering and process plants across India:
+              Sakshi Forge is based in Mumbai and dispatches electropolished stainless steel pipes, fittings and flanges directly to engineering and process plants across India:
             </p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(170px, 100%), 1fr))', gap: '0.75rem' }}>

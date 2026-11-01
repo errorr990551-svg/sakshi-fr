@@ -200,7 +200,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
               marginBottom: '1.25rem'
             }}>
               <Factory size={14} />
-              ISO 9001:2015 Manufacturer · Taloja MIDC Works
+              ISO 9001:2015 Manufacturer · Mumbai
             </span>
 
             <h1 style={{ 
@@ -223,7 +223,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                 className="btn btn-primary btn-lg" 
                 style={{ padding: '0.9rem 1.85rem', fontWeight: '700' }}
               >
-                {['A', 'E', 'I', 'O', 'U'].includes(cityData.city[0].toUpperCase()) ? 'Get an' : 'Get a'} {cityData.city} Quote in 30 Minutes <ArrowRight size={16} />
+                {['A', 'E', 'I', 'O', 'U'].includes(cityData.city[0].toUpperCase()) ? 'Get an' : 'Get a'} {cityData.city} Quote within 24 Hours <ArrowRight size={16} />
               </button>
               <a 
                 href="/catalogue/" 
@@ -865,12 +865,12 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
         <div className="container">
           <div style={{ maxWidth: '980px', margin: '0 auto' }}>
             <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
-              <span className="hero-tag" style={{ border: 'none', backgroundColor: 'rgba(255, 193, 7, 0.08)' }}>30-Minute Guarantee</span>
+              <span className="hero-tag" style={{ border: 'none', backgroundColor: 'rgba(255, 193, 7, 0.08)' }}>24-Hour Quote</span>
               <h2 style={{ fontSize: '2.3rem', margin: '0.75rem 0' }}>
                 Specify Electropolished Pipe for Your {cityData.city} Plant
               </h2>
               <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', maxWidth: '700px', margin: '0 auto' }}>
-                Send your grade, OD × wall, Ra requirement, length and quantity. We'll quote within 30 minutes.
+                Send your grade, OD × wall, Ra requirement, length and quantity. We'll quote within 24 hours.
               </p>
             </div>
 
@@ -974,7 +974,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                     </div>
 
                     <button type="submit" className="btn btn-primary" style={{ padding: '0.85rem', fontWeight: '700', width: '100%', marginTop: '0.5rem' }}>
-                      Request {cityData.city} Quote in 30 Min <ArrowRight size={16} />
+                      Request {cityData.city} Quote in 24 Hours <ArrowRight size={16} />
                     </button>
                   </form>
                 )}
@@ -984,14 +984,11 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
                 <div style={{ backgroundColor: 'var(--bg-dark-800)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', color: 'var(--primary-yellow)', fontWeight: '700', marginBottom: '0.4rem' }}>
-                    <MapPin size={18} /> Direct Manufacturing Works
+                    <MapPin size={18} /> Our Address
                   </div>
                   <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.5' }}>
-                    Balaji Industrial Compound, Taloja MIDC, Navi Mumbai, Maharashtra 410208
+                    Shop No. 05, Ground Floor, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai, Maharashtra 400004
                   </p>
-                  <small style={{ color: 'var(--text-muted)', display: 'block', marginTop: '0.35rem' }}>
-                    {cityData.transitInfo}
-                  </small>
                 </div>
 
                 {hasUnlockedContact ? (
@@ -1017,7 +1014,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                 ) : (
                   <div style={{ backgroundColor: 'var(--bg-dark-800)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', color: 'var(--primary-yellow)', fontWeight: '700', marginBottom: '0.5rem' }}>
-                      <Phone size={18} /> Direct Works & Engineering Hotline
+                      <Phone size={18} /> Sales & Engineering Hotline
                     </div>
                     <p style={{ margin: '0 0 1.25rem 0', color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.5' }}>
                       Click below to view our direct engineer phone numbers, dispatch contacts, and official sales email.
@@ -1047,7 +1044,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                     <Clock size={18} /> Delivery Schedule
                   </div>
                   <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.5' }}>
-                    {cityData.transitInfo || 'Same-day to next-day road transit from Taloja works. Urgent site deliveries supported.'}
+                    {cityData.transitInfo || 'Delivery time depends on size, quantity and stock, and is confirmed in writing with each quotation.'}
                   </p>
                 </div>
               </div>

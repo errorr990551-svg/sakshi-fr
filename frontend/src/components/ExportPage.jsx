@@ -29,7 +29,7 @@ export default function ExportPage({ countryType, onEnquireClick }) {
         'Rapid 7-day sea freight transit from Nhava Sheva to Jebel Ali Port (Dubai).',
         'NACE MR0175 / ISO 15156 sour gas compliance for UAE oil & gas fields.',
         'Custom heavy forging capabilities for high-pressure oilfield manifolds.',
-        'Competitive USD / AED commercial quotes returned within 30 minutes.'
+        'Competitive USD / AED commercial quotes returned within 24 hours.'
       ]
     },
     'saudi-arabia': {
@@ -115,7 +115,7 @@ export default function ExportPage({ countryType, onEnquireClick }) {
               Request USD / Global Currency Export Quote
             </h2>
             <p style={{ color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto 1.5rem auto' }}>
-              Get direct mill prices, shipping freight options, and dispatch timelines within 30 minutes.
+              Get direct mill prices, shipping freight options, and dispatch timelines within 24 hours.
             </p>
             <button onClick={() => onEnquireClick(`Export RFQ for ${current.countryName}`)} className="btn btn-primary btn-lg" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
               Contact Export Sales Team <ArrowRight size={18} />

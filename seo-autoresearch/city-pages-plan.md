@@ -145,3 +145,30 @@ redirects.js so it is versioned and reversible.
 - Delete pages, change URLs without a redirect entry, or deploy without "merge to main".
 - Invent factory, lab, certification, transit-time or customer details.
 - Claim any page is indexed or ranking without Search Console evidence from the owner.
+
+## Update 2026-11-01 (after owner answers)
+
+Owner answers: real address is Shop No. 05, Ground Floor, 113/117, Dr. MG Mahimtura Marg,
+3rd Kumbharwada, Mumbai 400004 (no Taloja works); NABL lab analysis: yes; 904L supplied
+electropolished: yes; quote time: 24 hours; delivery time: depends on the order; ISO 9001:2015:
+current. Priority keywords: electropolished pipes manufacturer / supplier in [city], electropolished
+tube manufacturer / supplier in [city]. Promote electropolished products only.
+
+Done in this change (branch only, not deployed):
+- Taloja, the Balaji Industrial Compound address, distance and transit-day claims, "factory
+  visits" and "30-minute quote" removed sitewide (city data, hubs, home, about, contact, quote form,
+  rewritten city pages, llms.txt, meta descriptions). Quote time now says 24 hours.
+- Foreign city pages no longer show Indian PESO/OISD/IBR rules.
+- Every city page: title "Electropolished Pipes Manufacturer in [City]", H1 "Electropolished Pipes &
+  Tubes Manufacturer and Supplier in [City]" (Mumbai page title uses "Supplier" so it does not
+  duplicate the home page title).
+- /mumbai/ (354 impressions, 12 clicks in Search Console, was a 404) now 301s to /market-area/mumbai/;
+  two other 404s with impressions now 301 to their equivalent pages; two junk URLs return 410.
+
+Search Console (16 months, owner export): 369 clicks / 10,670 impressions sitewide; /market-area/
+pages 7 clicks / 162 impressions. City pages with impressions get rewritten first: hosur, savli,
+tiruchirappalli, coimbatore, chennai, kolhapur, cuddalore, rajkot, solapur, mumbai, thoothukudi,
+surat, hyderabad.
+
+Still open: which foreign countries are real export markets (owner said "all 17 countries in middle
+east", but only 6 of the 17 are in the Middle East: UAE, Saudi Arabia, Oman, Kuwait, Qatar, Bahrain).

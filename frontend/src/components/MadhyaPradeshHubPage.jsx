@@ -135,7 +135,7 @@ export default function MadhyaPradeshHubPage({ onEnquireClick, onShowContactDeta
             gap: '0.5rem',
             marginBottom: '1rem'
           }}>
-            <Factory size={14} /> Direct Works Road Transit · Taloja Works to MP Industrial Corridors
+            <Factory size={14} /> Direct Road Dispatch · Mumbai to MP Industrial Corridors
           </span>
 
           <h1 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: '850', lineHeight: '1.2', marginBottom: '1rem', color: '#fff' }}>
@@ -143,7 +143,7 @@ export default function MadhyaPradeshHubPage({ onEnquireClick, onShowContactDeta
           </h1>
 
           <p style={{ color: '#cbd5e1', fontSize: '1.1rem', lineHeight: '1.7', marginBottom: '2rem' }}>
-            Direct manufacturer supply of ASTM A269 and ASTM A270 compliant SS 316L and 304L electropolished pipes and tubes to Madhya Pradesh's key industrial hubs: Indore, the Pithampur SEZ pharma corridor, Dewas, Vikram Udyogpuri, Bhopal, Ratlam, Malanpur, Jabalpur, and Neemuch. In-house electropolished at our Taloja MIDC works with certified internal Ra ≤0.4 µm, 100% PMI testing, and full MTC EN 10204 3.1 traceability on every order.
+            Direct manufacturer supply of ASTM A269 and ASTM A270 compliant SS 316L and 304L electropolished pipes and tubes to Madhya Pradesh's key industrial hubs: Indore, the Pithampur SEZ pharma corridor, Dewas, Vikram Udyogpuri, Bhopal, Ratlam, Malanpur, Jabalpur, and Neemuch. In-house electropolished with certified internal Ra ≤0.4 µm, 100% PMI testing, and full MTC EN 10204 3.1 traceability on every order.
           </p>
 
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
@@ -152,7 +152,7 @@ export default function MadhyaPradeshHubPage({ onEnquireClick, onShowContactDeta
               className="btn btn-primary btn-lg"
               style={{ padding: '0.85rem 1.75rem', fontWeight: '700' }}
             >
-              Request MP Quote in 30 Min <ArrowRight size={16} />
+              Request MP Quote in 24 Hours <ArrowRight size={16} />
             </button>
             <button 
               onClick={handleShowContact}
@@ -168,7 +168,7 @@ export default function MadhyaPradeshHubPage({ onEnquireClick, onShowContactDeta
             <span>✓ EN 10204 3.1 Heat Traceability</span>
             <span>✓ 100% PMI Handheld XRF Verified</span>
             <span>✓ Internal Ra ≤0.4 µm (SF4 / Mirror Finish)</span>
-            <span>✓ 1–2 Day Express Road Transit from Taloja</span>
+            <span>✓ Delivery Time Confirmed with Each Quotation</span>
           </div>
         </div>
       </section>
@@ -269,7 +269,7 @@ export default function MadhyaPradeshHubPage({ onEnquireClick, onShowContactDeta
           <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
             <span className="hero-tag" style={{ border: 'none', backgroundColor: 'rgba(255, 193, 7, 0.08)' }}>Direct Manufacturer Advantage</span>
             <h2 style={{ fontSize: '2rem', fontWeight: '850', marginTop: '0.5rem' }}>
-              Why Madhya Pradesh Plants Source Directly from Sakshi Forge Taloja
+              Why Madhya Pradesh Plants Source Directly from Sakshi Forge
             </h2>
           </div>
 
@@ -279,7 +279,7 @@ export default function MadhyaPradeshHubPage({ onEnquireClick, onShowContactDeta
                 1–2 Day Express Road Transit
               </div>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.6', margin: 0 }}>
-                Our Taloja MIDC works sits roughly 570–660 km from the Indore–Pithampur–Dewas–Ujjain belt. Urgent top-up lots, replacement spools and witnessed factory testing are fast and seamless via direct highway dispatches.
+                We supply the Indore–Pithampur–Dewas–Ujjain belt directly by road from Mumbai. Top-up lots and replacement spools are quoted like any order, with delivery time confirmed in writing with each quotation.
               </p>
             </div>
 

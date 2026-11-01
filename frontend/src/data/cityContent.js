@@ -43,14 +43,11 @@ function regulatorNotes(r) {
 
 function transitSentence(ctx) {
   const { r } = ctx;
+  // Owner (2026-11-01): delivery time depends on the order, so no day counts are stated.
   if (ctx.india) {
-    // Rows without a confirmed transit time (no day count) say it is confirmed per quotation
-    const transit = /\d|day/.test(r.transit)
-      ? `by road (typical transit: ${r.transit.replace(/ from our Mumbai works$/, '')})`
-      : 'by road, with the transit time for your site confirmed in writing with each quotation';
-    return `Material for ${ctx.city} leaves our Taloja MIDC works in Mumbai ${transit}. For export-bound projects the nearest gateway is ${r.gateway}.`;
+    return `Material for ${ctx.city} is dispatched from Mumbai by road; delivery time depends on size, quantity and stock, and is confirmed in writing with each quotation. For export-bound projects the nearest gateway is ${r.gateway}.`;
   }
-  return `${ctx.city} is supplied by sea from Nhava Sheva (JNPT) through ${r.gateway}; ocean transit is typically ${r.transit.replace(/ from Nhava Sheva.*$/, '')}, plus time for customs clearance and inland delivery.`;
+  return `${ctx.city} is supplied by sea from Nhava Sheva (JNPT) through ${r.gateway}; delivery time depends on size, quantity, stock and sailing schedules, and is confirmed in writing with each quotation.`;
 }
 
 // FAQ answers keyed by the client's FAQ-bank number. Numbers whose answer needs a company
@@ -76,7 +73,7 @@ const FAQ = {
   }),
   5: (c) => ({
     q: `Are you a manufacturer or a trader for ${c.city} buyers?`,
-    a: `We are the manufacturer. Pipes and tubes are electropolished, tested and certified at our Taloja MIDC works in Mumbai and supplied to ${c.city} directly, so the EN 10204 3.1 certificate you receive is issued by the plant that made the material.`
+    a: `We are the manufacturer, based in Mumbai. Pipes and tubes are electropolished, tested and certified before they are supplied to ${c.city} directly, with an EN 10204 3.1 certificate traced to heat number, so there is no trading intermediary between us and your plant.`
   }),
   6: (c) => ({
     q: `Can I get bulk or project pricing for a plant in ${c.city}?`,
@@ -86,7 +83,7 @@ const FAQ = {
     q: `What is the nearest port for shipments to or from ${c.city}?`,
     a: c.india
       ? `For ${c.city} the reference gateway is ${c.r.gateway}. Domestic deliveries go by road from Mumbai; export-bound project material is routed through this gateway.`
-      : `Shipments to ${c.city} arrive through ${c.r.gateway}. Ocean transit from Nhava Sheva is typically ${c.r.transit.replace(/ from Nhava Sheva.*$/, '')}.`
+      : `Shipments to ${c.city} arrive through ${c.r.gateway}. Sailing time depends on the schedule at the time of shipment and is confirmed with the quotation.`
   }),
   9: (c, ind) => {
     const keys = new Set(ind.map((i) => i.key));
@@ -259,11 +256,11 @@ export function buildCityContent(cityData) {
   return {
     intro: `${c.city}'s industrial base is concentrated in ${r.estates}${r.leadEstate && r.leadEstate !== r.estates ? `, with ${r.leadEstate} the main cluster` : ''}. The dominant industries are ${r.industryMix.toLowerCase()}. ${fill(angle.intro, c)}`,
     industries: ind.map((i) => ({ label: i.label, text: fill(i.text, c) })),
-    angle: { heading: fill(angle.heading, c), points: angle.points },
+    angle: { heading: fill(angle.heading, c), points: angle.points.map((pt) => fill(pt, c)) },
     compliance: regulatorNotes(r),
     manufacturer: {
       heading: r.h2Manufacturer,
-      text: `We manufacture, electropolish and test the tube at our ISO 9001:2015 works in Taloja MIDC, Mumbai${c.india ? '' : ', and export it'} - there is no trading intermediary between the plant and your site in ${c.city}. Every length is checked by PMI before dispatch, lots are hydrostatically and eddy-current tested, and each shipment carries an EN 10204 3.1 certificate traced to heat number, with an internal Ra report on electropolished lots.`
+      text: `We are an ISO 9001:2015 certified manufacturer based in Mumbai: we manufacture, electropolish and test the tube${c.india ? '' : ' and export it'} - there is no trading intermediary between the plant and your site in ${c.city}. Every length is checked by PMI before dispatch, lots are hydrostatically and eddy-current tested, and each shipment carries an EN 10204 3.1 certificate traced to heat number, with an internal Ra report on electropolished lots.`
     },
     supplier: {
       heading: r.h2Supplier,

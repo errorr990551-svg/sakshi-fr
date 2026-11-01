@@ -132,7 +132,7 @@ export default function WestBengalHubPage({ onEnquireClick, onShowContactDetails
               display: 'inline-block',
               marginBottom: '1rem'
             }}>
-              Direct Supply from Taloja MIDC, Navi Mumbai to Eastern India
+              Direct Supply from Mumbai to Eastern India
             </span>
 
             <h1 style={{ fontSize: 'clamp(2rem, 3.8vw, 3.2rem)', fontWeight: '900', lineHeight: '1.2', marginBottom: '1.25rem', color: '#fff' }}>
@@ -140,7 +140,7 @@ export default function WestBengalHubPage({ onEnquireClick, onShowContactDetails
             </h1>
 
             <p style={{ fontSize: '1.08rem', color: 'var(--text-secondary)', lineHeight: '1.7', marginBottom: '2rem', maxWidth: '880px' }}>
-              West Bengal is eastern India's industrial backbone and gateway to the North-East, spanning Kolkata's business & pharma headquarters, the Falta Pharma SEZ, Haldia's coastal petrochemical complex, Nadia's dairy belt, Sankrail's food parks, Purba Bardhaman's rice and potato processing belt, and the Durgapur–Asansol steel corridor. We manufacture and electropolish SS 316L, 304L and duplex 2205 pipes in-house at Taloja MIDC (Navi Mumbai) and supply engineering buyers, EPC contractors and manufacturing plants across West Bengal with EN 10204 3.1 MTC, 100% PMI testing and certified Ra ≤0.4 µm surface reports.
+              West Bengal is eastern India's industrial backbone and gateway to the North-East, spanning Kolkata's business & pharma headquarters, the Falta Pharma SEZ, Haldia's coastal petrochemical complex, Nadia's dairy belt, Sankrail's food parks, Purba Bardhaman's rice and potato processing belt, and the Durgapur–Asansol steel corridor. We manufacture and electropolish SS 316L, 304L and duplex 2205 pipes and supply engineering buyers, EPC contractors and manufacturing plants across West Bengal with EN 10204 3.1 MTC, 100% PMI testing and certified Ra ≤0.4 µm surface reports.
             </p>
 
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
@@ -149,7 +149,7 @@ export default function WestBengalHubPage({ onEnquireClick, onShowContactDetails
                 className="btn btn-primary"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.85rem 1.8rem', fontSize: '0.95rem', fontWeight: '700' }}
               >
-                Request West Bengal Quote (30 Min)
+                Request West Bengal Quote (24 Hours)
                 <ArrowRight size={18} />
               </button>
               
@@ -197,7 +197,7 @@ export default function WestBengalHubPage({ onEnquireClick, onShowContactDetails
               West Bengal Industrial Corridors We Serve
             </h2>
             <p style={{ color: 'var(--text-secondary)', fontSize: '0.98rem', lineHeight: '1.6' }}>
-              Select your industrial zone below to inspect local application fit, technical grade recommendations (316L, 304L, Duplex 2205), transit schedules from Taloja, and live dimensional calculators.
+              Select your industrial zone below to inspect local application fit, technical grade recommendations (316L, 304L, Duplex 2205), dispatch details, and live dimensional calculators.
             </p>
           </div>
 
@@ -290,14 +290,14 @@ export default function WestBengalHubPage({ onEnquireClick, onShowContactDetails
               Transparent Manufacturing & Dispatch Policy
             </span>
             <h2 style={{ fontSize: '1.85rem', fontWeight: '800', color: '#fff', marginTop: '0.5rem' }}>
-              Manufacturing at Taloja MIDC (Navi Mumbai) with Consolidated Road Dispatch
+              Consolidated Road Dispatch from Mumbai
             </h2>
           </div>
 
           <div style={{ backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '10px', padding: '2rem', lineHeight: '1.7', fontSize: '0.95rem', color: 'var(--text-secondary)' }}>
             <p style={{ marginBottom: '1rem' }}>
               <strong style={{ color: '#fff' }}>Local Honesty Notice: </strong> 
-              Sakshi Forge operates our state-of-the-art pipe manufacturing, cold-drawing, and automated electropolishing facility in <strong style={{ color: 'var(--primary-yellow)' }}>Taloja MIDC, Navi Mumbai, Maharashtra (PIN 410208)</strong>. We do not operate local warehouse stockists or sales showrooms in West Bengal.
+              Sakshi Forge is based in <strong style={{ color: 'var(--primary-yellow)' }}>Mumbai, Maharashtra</strong> and supplies West Bengal directly. We do not operate local warehouse stockists or sales showrooms in West Bengal.
             </p>
             <p style={{ marginBottom: '1rem' }}>
               <strong style={{ color: '#fff' }}>Why Eastern India Plants Choose Sakshi Forge: </strong> 
@@ -305,7 +305,7 @@ export default function WestBengalHubPage({ onEnquireClick, onShowContactDetails
             </p>
             <p style={{ margin: 0 }}>
               <strong style={{ color: '#fff' }}>Packaging & Transit Protection: </strong> 
-              West Bengal is roughly 1,800 to 2,500 km from our factory. Every single pipe length is capped at both ends with heavy-duty PE push caps, individually wrapped in protective poly-sleeves to guard against humid estuarine air, and packed into reinforced wooden crates or rigid steel cages for damage-free delivery via direct national freight corridors.
+              Delivery time depends on size, quantity and stock, and is confirmed in writing with each quotation. Every single pipe length is capped at both ends with heavy-duty PE push caps, individually wrapped in protective poly-sleeves to guard against humid estuarine air, and packed into reinforced wooden crates or rigid steel cages for damage-free delivery via direct national freight corridors.
             </p>
           </div>
         </div>
@@ -318,7 +318,7 @@ export default function WestBengalHubPage({ onEnquireClick, onShowContactDetails
             Specify Electropolished Stainless Steel for Your West Bengal Project
           </h2>
           <p style={{ color: 'var(--text-secondary)', fontSize: '1.02rem', lineHeight: '1.6', marginBottom: '2rem' }}>
-            Share your bill of materials, media chemistry, OD × wall thickness, Ra requirement, and project drawings. Our engineering team responds with technical validation and competitive commercial quotations within 30 minutes.
+            Share your bill of materials, media chemistry, OD × wall thickness, Ra requirement, and project drawings. Our engineering team responds with technical validation and competitive commercial quotations within 24 hours.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <button 

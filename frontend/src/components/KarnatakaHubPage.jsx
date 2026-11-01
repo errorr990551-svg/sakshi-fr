@@ -141,12 +141,12 @@ export default function KarnatakaHubPage({ onEnquireClick, onShowContactDetails 
             Electropolished Stainless Steel Pipe Manufacturer Across Karnataka
           </h1>
           <p style={{ fontSize: '1.15rem', color: '#cbd5e1', lineHeight: '1.7', marginBottom: '2rem' }}>
-            Sakshi Forge manufactures and electropolishes SS 316L, 304L, and Duplex 2205 pipes and tubes in-house at Taloja MIDC, supplying Karnataka’s biotech, pharmaceutical, food, dairy, coastal marine, and engineering belts directly with EN 10204 3.1 MTCs, 100% PMI testing, and guaranteed internal Ra ≤0.4 µm.
+            Sakshi Forge manufactures and electropolishes SS 316L, 304L, and Duplex 2205 pipes and tubes and supplies Karnataka’s biotech, pharmaceutical, food, dairy, coastal marine, and engineering belts directly with EN 10204 3.1 MTCs, 100% PMI testing, and guaranteed internal Ra ≤0.4 µm.
           </p>
 
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
             <button onClick={() => onEnquireClick('Karnataka State Hub RFQ')} className="btn btn-primary btn-lg" style={{ padding: '0.9rem 1.85rem', fontWeight: '700' }}>
-              Request Karnataka Quote in 30 Min <ArrowRight size={16} />
+              Request Karnataka Quote in 24 Hours <ArrowRight size={16} />
             </button>
             <button 
               onClick={handleShowContact} 

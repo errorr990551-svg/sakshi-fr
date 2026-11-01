@@ -9,9 +9,9 @@ export const westBengalCityData = {
     "country": "India",
     "pageUrl": "/market-area/kolkata",
     "pageTitle": "Electropolished Pipe Manufacturer Kolkata | Sakshi Forge",
-    "metaDescription": "Electropolished 316L & 304L SS pipes for Kolkata, Falta pharma park and port-belt plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer for Kolkata: 316L and 304L EP Tubes for the Falta Pharma Park, the Port Belt and Eastern-India Projects",
-    "subHeadline": "Kolkata is eastern India's business capital, with plants around the city, a dedicated pharma park at Falta and the head offices where many eastern projects are bought. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja, in western India, and ship to Kolkata and its industrial belts, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "metaDescription": "Electropolished 316L & 304L SS pipes for Kolkata, Falta pharma park and port-belt plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Kolkata",
+    "subHeadline": "Kolkata is eastern India's business capital, with plants around the city, a dedicated pharma park at Falta and the head offices where many eastern projects are bought. We manufacture and electropolish SS 316L and 304L pipes and tubes, in western India, and ship to Kolkata and its industrial belts, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -24,7 +24,7 @@ export const westBengalCityData = {
       "type": "ALL"
     },
     "hasDuplex": true,
-    "transitInfo": "Kolkata is roughly 1,950-2,050 km from our Taloja MIDC factory , and typical road transit is 6-8 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for Kolkata's humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for Kolkata's humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Kolkata and the Plants Around It",
       "description": "",
@@ -87,9 +87,9 @@ export const westBengalCityData = {
         }
       ],
       "localNotes": [
-        "We're a long way from Kolkata, and we'll say so. Our factory is in Taloja, about 2,000 km away , and freight is a bigger share of the order than for any other region we supply. For a few plain lengths, a Kolkata stockist will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "We're a long way from Kolkata, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a Kolkata stockist will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you have several sizes, or several sites in West Bengal and the east, send them together and we'll quote one dispatch with one document format.",
-        "Plan the lead time. Typical road transit is 6-8 days , on top of manufacture and testing. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
+        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
         "Humid, saline air. Kolkata's climate and the saline Hooghly water near Falta are hard on stainless in storage and in service. We cap the pipe ends and sleeve every length, and we recommend keeping the sleeves on until installation. For exposed or saline duty, 316L is usually the better grade.",
         "Pharma at Falta. The park is focused on pharma and allied products. Purified water, WFI and clean utility suit electropolished 316L very well. Reactor-side solvent and acid lines can need other materials, and we'll tell you honestly which are which. Avoid hydrofluoric acid and abrasive slurries.",
         "Jute, leather and foundry aren't the target. Those processes are mostly dry or abrasive. We'd rather tell you than sell you something you don't need."
@@ -176,7 +176,7 @@ export const westBengalCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Kolkata take, and how is the finish protected over that distance?",
-        "a": "Kolkata is roughly 1,950-2,050 km from our Taloja MIDC factory , and typical road transit is 6-8 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for Kolkata's humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for Kolkata's humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Is it worth ordering from Mumbai for a small lot in Kolkata?",
@@ -241,8 +241,8 @@ export const westBengalCityData = {
     "pageUrl": "/market-area/haldia",
     "pageTitle": "Electropolished Pipe Manufacturer Haldia | Sakshi Forge",
     "metaDescription": "Electropolished 316L & duplex SS pipes for Haldia petrochemical, port and chemical-belt clean utilities. ASTM A270/A790, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Haldia: 316L and Duplex EP Tubes for the Petrochemical, Port and Chemical Belt",
-    "subHeadline": "Haldia is eastern India's petrochemical and port city, with a refinery, a large petrochemical complex and chemical and fertiliser plants on a salt-air estuary. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes in-house at Taloja and supply the clean-utility, sampling and laboratory lines of these plants, and the contractors who serve them, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Haldia",
+    "subHeadline": "Haldia is eastern India's petrochemical and port city, with a refinery, a large petrochemical complex and chemical and fertiliser plants on a salt-air estuary. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes and supply the clean-utility, sampling and laboratory lines of these plants, and the contractors who serve them, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -255,7 +255,7 @@ export const westBengalCityData = {
       "type": "ALL"
     },
     "hasDuplex": true,
-    "transitInfo": "Haldia is roughly 2,050-2,150 km from our Taloja MIDC factory , and typical road transit is 7-9 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for the humid, saline air, so the electropolished finish arrives undamaged. If your turnaround has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for the humid, saline air, so the electropolished finish arrives undamaged. If your turnaround has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Haldia's Industrial Belt",
       "description": "",
@@ -322,10 +322,10 @@ export const westBengalCityData = {
         "We'll say plainly where electropolished pipe isn't the answer. Main process lines in a petrochemical complex or refinery are carbon or alloy steel. Our pipe is for the clean side. Send us the line, the media and the temperature and we'll say honestly whether it fits. Avoid hydrofluoric acid and abrasive slurries.",
         "PMI is routine here, and so are we. Plants in this belt typically require positive material identification on stainless. Every length we supply is 100% PMI tested, with the result on the certificate and a 3.1 MTC tied to heat numbers.",
         "Large plants buy formally. Major plants generally purchase through tenders, approved-vendor lists, registered contractors and third-party inspection. If yours does, send us the tender specification and we'll respond with a technical and commercial offer and the document pack.",
-        "Plan around turnarounds. Shutdown windows are fixed. If you tell us the date when you enquire, we'll plan manufacture and dispatch against it, and we'll say plainly if the lead time doesn't fit. Haldia is roughly 2,100 km from our factory, so build in the transit time.",
+        "Plan around turnarounds. Shutdown windows are fixed. If you tell us the date when you enquire, we'll plan manufacture and dispatch against it, and we'll say plainly if the lead time doesn't fit. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
         "Send the whole requirement at once. Haldia is about 140 km from Kolkata. If you also buy for Kolkata, Kalyani or Falta, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid, saline air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation.",
-        "A very long supply line. Haldia is roughly 2,050-2,150 km from our factory , and freight is a large share of any small order. For a few plain lengths, a local stockist will be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack."
+        "A very long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local stockist will be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack."
       ]
     },
     "qualityDoc": [
@@ -409,7 +409,7 @@ export const westBengalCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Haldia take, and how is the finish protected over that distance?",
-        "a": "Haldia is roughly 2,050-2,150 km from our Taloja MIDC factory , and typical road transit is 7-9 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for the humid, saline air, so the electropolished finish arrives undamaged. If your turnaround has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for the humid, saline air, so the electropolished finish arrives undamaged. If your turnaround has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Which grade should I use on the Haldia estuary: 316L, duplex 2205 or super duplex?",
@@ -461,9 +461,9 @@ export const westBengalCityData = {
     "country": "India",
     "pageUrl": "/market-area/kalyani",
     "pageTitle": "Electropolished Pipe Manufacturer Kalyani | Sakshi Forge",
-    "metaDescription": "Electropolished 304L & 316L SS pipes for Kalyani dairy, food and engineering plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Kalyani: 304L and 316L EP Tubes for Kalyani Industrial Park, Haringhata and the Nadia Dairy Belt",
-    "subHeadline": "Kalyani is a planned industrial town in Nadia district, about 50 km north of Kolkata, with three industrial park phases of engineering, chemical and agro-based units and a new park taking shape at Haringhata. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja and supply Kalyani's dairies, food plants and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "metaDescription": "Electropolished 304L & 316L SS pipes for Kalyani dairy, food and engineering plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Kalyani",
+    "subHeadline": "Kalyani is a planned industrial town in Nadia district, about 50 km north of Kolkata, with three industrial park phases of engineering, chemical and agro-based units and a new park taking shape at Haringhata. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply Kalyani's dairies, food plants and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -476,7 +476,7 @@ export const westBengalCityData = {
       "type": "ALL"
     },
     "hasDuplex": true,
-    "transitInfo": "Kalyani is roughly 2,000-2,100 km from our Taloja MIDC factory , and typical road transit is 7-8 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Kalyani's Industrial Belt",
       "description": "",
@@ -548,7 +548,7 @@ export const westBengalCityData = {
         "Dairy is the fit. Milk lines are cleaned with caustic and acid cycles, and 304L is the standard grade. Curd and buttermilk are acidic and often salted, so 316L is the safer choice where acidity or chlorides are higher. Send us your product and CIP chemistry. Our internal Ra of 0.4 µm or better sits well inside the usual dairy band of 0.8 µm.",
         "Engineering and metal-based plants aren't the target. Their main processes don't use electropolished pipe. We'd rather tell you than sell you something you don't need.",
         "The parks are full, so growth is at Haringhata. If you're setting up there, send your drawings or specification and we'll mark up the specification, flag anything that doesn't suit electropolished pipe, and prepare the document pack you'll need for commissioning. Don't plan around the park's timeline.",
-        "We're a long way from Kalyani, and we'll say so. Our factory is in Taloja, about 2,000 km away , and freight is a large share of any small order. For a few plain lengths, a Kolkata stockist will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "We're a long way from Kalyani, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a Kolkata stockist will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Kalyani is a 50-minute drive from Kolkata. If you also buy for Kolkata, Dankuni or Howrah, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
@@ -634,7 +634,7 @@ export const westBengalCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Kalyani take, and how is the finish protected over that distance?",
-        "a": "Kalyani is roughly 2,000-2,100 km from our Taloja MIDC factory , and typical road transit is 7-8 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Is 304L enough for a milk or dairy line in Kalyani, given caustic and acid CIP?",
@@ -686,9 +686,9 @@ export const westBengalCityData = {
     "country": "India",
     "pageUrl": "/market-area/howrah",
     "pageTitle": "Electropolished Pipe Manufacturer Howrah | Sakshi Forge",
-    "metaDescription": "Electropolished 304L & 316L SS pipes for Howrah food-park, engineering and fabricator needs. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Howrah: 304L and 316L EP Tubes for Sankrail Food Parks, Uluberia and Howrah Fabricators",
-    "subHeadline": "Howrah is Kolkata's industrial twin across the river, known for foundries, wire and engineering workshops, with a cluster of food parks at Sankrail and industrial parks at Uluberia, Amta and Bagnan. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja and supply Howrah's food plants and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "metaDescription": "Electropolished 304L & 316L SS pipes for Howrah food-park, engineering and fabricator needs. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Howrah",
+    "subHeadline": "Howrah is Kolkata's industrial twin across the river, known for foundries, wire and engineering workshops, with a cluster of food parks at Sankrail and industrial parks at Uluberia, Amta and Bagnan. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply Howrah's food plants and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -701,7 +701,7 @@ export const westBengalCityData = {
       "type": "ALL"
     },
     "hasDuplex": true,
-    "transitInfo": "Howrah is roughly 1,950-2,050 km from our Taloja MIDC factory , and typical road transit is 6-8 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for humid, riverside air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for humid, riverside air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Howrah's Industrial Belts",
       "description": "",
@@ -773,7 +773,7 @@ export const westBengalCityData = {
         "Food parks are our fit. Wet food lines are cleaned with caustic and acid cycles, and 304L is the standard grade. 316L is the safer choice where sanitisers or the product carry chlorides. Send us your product and CIP chemistry. Our internal Ra of 0.4 µm or better sits well inside the usual food band of 0.8 µm.",
         "Foundry, wire and hosiery aren't the target. Those processes are dry or abrasive. We'd rather tell you than sell you something you don't need.",
         "Fabricators need paperwork. If you build equipment in Howrah, you need repeatable wall thickness, clean cut ends and a document pack your own customer can audit. We supply to drawing and in cut lengths.",
-        "We're a long way from Howrah, and we'll say so. Our factory is in Taloja, about 2,000 km away , and freight is a large share of any small order. For a few plain lengths, a local stockist will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "We're a long way from Howrah, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local stockist will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Howrah is across the river from Kolkata. If you also buy for Kolkata, Dankuni or Kalyani, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid, riverside air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
@@ -859,7 +859,7 @@ export const westBengalCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Howrah take, and how is the finish protected over that distance?",
-        "a": "Howrah is roughly 1,950-2,050 km from our Taloja MIDC factory , and typical road transit is 6-8 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for humid, riverside air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for humid, riverside air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Is 304L enough for a food line in a Sankrail food park, or should I choose 316L?",
@@ -918,9 +918,9 @@ export const westBengalCityData = {
     "country": "India",
     "pageUrl": "/market-area/dankuni",
     "pageTitle": "Electropolished Pipe Manufacturer Dankuni | Sakshi Forge",
-    "metaDescription": "Electropolished 304L & 316L SS pipes for Dankuni dairy, food-park and FMCG plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Dankuni: 304L and 316L EP Tubes for Dairy, Food-Park and Hooghly-Belt Plants",
-    "subHeadline": "Dankuni, in Hooghly district about 25 km from central Kolkata, is Eastern India's logistics gateway and also home to a major dairy plant, food and FMCG factories and a modular food park. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja and supply Dankuni's dairy, food and fabricator buyers directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "metaDescription": "Electropolished 304L & 316L SS pipes for Dankuni dairy, food-park and FMCG plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Dankuni",
+    "subHeadline": "Dankuni, in Hooghly district about 25 km from central Kolkata, is Eastern India's logistics gateway and also home to a major dairy plant, food and FMCG factories and a modular food park. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply Dankuni's dairy, food and fabricator buyers directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -933,7 +933,7 @@ export const westBengalCityData = {
       "type": "ALL"
     },
     "hasDuplex": true,
-    "transitInfo": "Dankuni is roughly 1,980-2,070 km from our Taloja MIDC factory , and typical road transit is 7-8 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Dankuni's Industrial Belt",
       "description": "",
@@ -1012,7 +1012,7 @@ export const westBengalCityData = {
         "Large plants may buy formally. Major dairies and FMCG plants often purchase through tenders and approved-vendor lists. If yours does, send us the tender specification and we'll respond with a technical and commercial offer and the document pack.",
         "Warehouses and forging aren't the target. Logistics, cold chain and forging don't use electropolished pipe. We'd rather tell you than sell you something you don't need.",
         "Dankuni is a logistics gateway. If you want your order delivered to a Dankuni warehouse for onward distribution to plants elsewhere in the east, tell us when you enquire and we'll plan the dispatch around it.",
-        "We're a long way from Dankuni, and we'll say so. Our factory is in Taloja, about 2,000 km away , and freight is a large share of any small order. For a few plain lengths, a local stockist will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "We're a long way from Dankuni, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local stockist will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Dankuni is next to Kolkata and Howrah. If you also buy for either, or for Kalyani, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
@@ -1098,7 +1098,7 @@ export const westBengalCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Dankuni take, and how is the finish protected over that distance?",
-        "a": "Dankuni is roughly 1,980-2,070 km from our Taloja MIDC factory , and typical road transit is 7-8 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Is 304L enough for a milk or dairy line in Dankuni, given caustic and acid CIP?",
@@ -1162,8 +1162,8 @@ export const westBengalCityData = {
     "pageUrl": "/market-area/durgapur",
     "pageTitle": "Electropolished Pipe Manufacturer Durgapur | Sakshi Forge",
     "metaDescription": "Electropolished 304L & 316L SS pipes for Durgapur steel, power and engineering clean-utility lines. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Durgapur: 304L and 316L EP Tubes for Steel, Power and Engineering Clean-Utility Lines",
-    "subHeadline": "Durgapur is West Bengal's steel and heavy-engineering city, built around a large steel plant, power stations and engineering works. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja and supply the clean-utility, DM-water, sampling and laboratory lines of these plants, and the contractors who maintain them, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Durgapur",
+    "subHeadline": "Durgapur is West Bengal's steel and heavy-engineering city, built around a large steel plant, power stations and engineering works. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply the clean-utility, DM-water, sampling and laboratory lines of these plants, and the contractors who maintain them, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -1176,7 +1176,7 @@ export const westBengalCityData = {
       "type": "ALL"
     },
     "hasDuplex": true,
-    "transitInfo": "Durgapur is roughly 1,950-2,050 km from our Taloja MIDC factory , and typical road transit is 7-8 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your shutdown has a fixed window, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your shutdown has a fixed window, tell us when you enquire and we'll say plainly whether it fits.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Durgapur's Industrial Belt",
       "description": "",
@@ -1253,10 +1253,10 @@ export const westBengalCityData = {
       "localNotes": [
         "We'll say plainly where electropolished pipe isn't the answer. Steel-making, power, cement and chemical services use carbon steel and specialty alloy. Our pipe is for the clean side. Send us the line, the media and the temperature and we'll say honestly whether it fits, or whether a plain stainless or alloy tube is the better and cheaper choice. Avoid hydrofluoric acid and abrasive slurries.",
         "Large plants buy formally. Public-sector and large private plants generally purchase through tenders, approved-vendor lists, registered contractors and third-party inspection. If yours does, send us the tender specification and we'll respond with a technical and commercial offer and the document pack, including 100% PMI results and a 3.1 MTC tied to heat numbers.",
-        "Plan around shutdowns. Maintenance outages have fixed dates. If you tell us the window when you enquire, we'll plan manufacture and dispatch against it, and we'll say plainly if the lead time doesn't fit. Durgapur is roughly 2,000 km from our factory, so build in the transit time.",
+        "Plan around shutdowns. Maintenance outages have fixed dates. If you tell us the window when you enquire, we'll plan manufacture and dispatch against it, and we'll say plainly if the lead time doesn't fit. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
         "On the Delhi–Kolkata highway. Durgapur sits on the road between Asansol and Kolkata, so it is natural for us to make it a drop on a consolidated run to Kolkata . If you also buy for Asansol, Bardhaman, Kolkata or Kalyani, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Dry processing isn't the target. Cement, coal handling and steel rolling are dry or abrasive. We'd rather tell you than sell you something you don't need.",
-        "A very long supply line. Durgapur is roughly 1,950-2,050 km from our factory , and freight is a large share of any small order. For a few plain lengths, a local stockist will be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack."
+        "A very long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local stockist will be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack."
       ]
     },
     "qualityDoc": [
@@ -1340,7 +1340,7 @@ export const westBengalCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Durgapur take, and how is the finish protected over that distance?",
-        "a": "Durgapur is roughly 1,950-2,050 km from our Taloja MIDC factory , and typical road transit is 7-8 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your shutdown has a fixed window, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your shutdown has a fixed window, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Where does electropolished pipe fit in a steel plant or power station?",
@@ -1397,9 +1397,9 @@ export const westBengalCityData = {
     "country": "India",
     "pageUrl": "/market-area/siliguri",
     "pageTitle": "Electropolished Pipe Manufacturer Siliguri | Sakshi Forge",
-    "metaDescription": "Electropolished 304L & 316L SS pipes for Siliguri fruit, food, dairy and beverage plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Siliguri: 304L and 316L EP Tubes for Dabgram, Fulbari and North Bengal Food and Beverage Plants",
-    "subHeadline": "Siliguri is North Bengal's commercial hub and the gateway to Sikkim and the north-east, with a food, feed and tea-processing park at Dabgram and a fruit belt in the hills around it. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja, in western India, and ship to Siliguri's food, beverage and dairy plants, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "metaDescription": "Electropolished 304L & 316L SS pipes for Siliguri fruit, food, dairy and beverage plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Siliguri",
+    "subHeadline": "Siliguri is North Bengal's commercial hub and the gateway to Sikkim and the north-east, with a food, feed and tea-processing park at Dabgram and a fruit belt in the hills around it. We manufacture and electropolish SS 304L and 316L pipes and tubes, in western India, and ship to Siliguri's food, beverage and dairy plants, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -1412,7 +1412,7 @@ export const westBengalCityData = {
       "type": "ALL"
     },
     "hasDuplex": true,
-    "transitInfo": "Siliguri is roughly 2,450-2,550 km from our Taloja MIDC factory , and typical road transit is 9-11 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for the foothills' heavy rain and humidity, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for the foothills' heavy rain and humidity, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Siliguri's Industrial Belts",
       "description": "",
@@ -1489,8 +1489,8 @@ export const westBengalCityData = {
       "localNotes": [
         "Pineapple and tomato are acidic. Fruit pulp and juice are acidic and often sweetened or salted, and chlorides plus acid attack 304. For pulp and juice lines, 316L is usually the safer grade, and 304L suits wash water and dry-side lines. Tell us your product and CIP chemistry and we'll confirm the grade.",
         "Tea making is mostly dry. Withering, rolling and drying don't need electropolished pipe. We'd rather tell you than sell you something you don't need. Liquid-tea, extract and ready-to-drink lines are different, and we'll say honestly if yours is one.",
-        "We're the farthest supplier you'll consider, and we'll say so. Our factory is in Taloja, about 2,500 km from Siliguri , and freight is a very large share of any small order. For a few plain lengths, a Kolkata or Siliguri stockist will be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
-        "Plan the lead time. Typical road transit is 9-11 days after manufacture and testing . If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
+        "We're the farthest supplier you'll consider, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a Kolkata or Siliguri stockist will be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
         "Heavy rain and humidity. The foothills are very wet. We cap the pipe ends and sleeve every length, and we recommend keeping the sleeves on until installation, as humid storage can mark an electropolished surface.",
         "Siliguri is where the north-east buys from. If your order is for a plant in Sikkim or the north-east, tell us the delivery location when you enquire and we'll quote to it, or to a Siliguri depot if you prefer.",
         "Send the whole requirement at once. If you also buy for Kolkata, send the requirements together and we'll quote one consolidated dispatch with one document format."
@@ -1577,7 +1577,7 @@ export const westBengalCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Siliguri take, and how is the finish protected over that distance?",
-        "a": "Siliguri is roughly 2,450-2,550 km from our Taloja MIDC factory , and typical road transit is 9-11 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for the foothills' heavy rain and humidity, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for the foothills' heavy rain and humidity, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Should I choose 304L or 316L for a pineapple, orange or tomato pulp line?",
@@ -1626,8 +1626,8 @@ export const westBengalCityData = {
     "pageUrl": "/market-area/kharagpur",
     "pageTitle": "Electropolished Pipe Manufacturer Kharagpur | Sakshi Forge",
     "metaDescription": "Electropolished 304L & 316L SS pipes for Kharagpur engineering, lab and clean-utility lines. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Kharagpur: 304L and 316L EP Tubes for the Industrial Park, Engineering Works and Laboratory Lines",
-    "subHeadline": "Kharagpur is a railway, education and engineering town in Paschim Medinipur, about 115 km west of Kolkata, with a general industrial park and large steel and cement parks nearby. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja and supply Kharagpur's engineering plants, laboratories and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Kharagpur",
+    "subHeadline": "Kharagpur is a railway, education and engineering town in Paschim Medinipur, about 115 km west of Kolkata, with a general industrial park and large steel and cement parks nearby. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply Kharagpur's engineering plants, laboratories and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -1640,7 +1640,7 @@ export const westBengalCityData = {
       "type": "ALL"
     },
     "hasDuplex": true,
-    "transitInfo": "Kharagpur is roughly 1,800-1,900 km from our Taloja MIDC factory , and typical road transit is 6-8 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Kharagpur's Industrial Belt",
       "description": "",
@@ -1711,7 +1711,7 @@ export const westBengalCityData = {
       "localNotes": [
         "We'll say plainly where electropolished pipe isn't the answer. Iron, steel, cement and railway-workshop processes are dry or heavy. Our pipe is for the clean side. Send us the line, the media and the temperature and we'll say honestly whether it fits, or whether a plain stainless tube is the better and cheaper choice. Avoid hydrofluoric acid and abrasive slurries.",
         "Institutions buy formally. Educational and public-sector buyers generally purchase through tenders, registered vendors and quotations. If yours does, send us the tender specification and we'll respond with a technical and commercial offer and the document pack.",
-        "The closest West Bengal city to us, and we'll still say it's far. Kharagpur is roughly 1,800-1,900 km from our factory , which is shorter than Kolkata but still a very long haul. For a few plain lengths, a local stockist will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "The closest West Bengal city to us, and we'll still say it's far. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local stockist will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "On the road to Kolkata. Kharagpur lies on the main route from western India to Kolkata, so it is a natural drop on a consolidated run . If you also buy for Kolkata, Haldia or Durgapur, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Dry processing isn't the target. Steel, cement and iron casting are dry or abrasive. We'd rather tell you than sell you something you don't need.",
         "Protect the finish. Humid air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
@@ -1798,7 +1798,7 @@ export const westBengalCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Kharagpur take, and how is the finish protected over that distance?",
-        "a": "Kharagpur is roughly 1,800-1,900 km from our Taloja MIDC factory , and typical road transit is 6-8 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Where does electropolished pipe fit in an iron, steel or engineering plant?",
@@ -1851,8 +1851,8 @@ export const westBengalCityData = {
     "pageUrl": "/market-area/asansol",
     "pageTitle": "Electropolished Pipe Manufacturer Asansol | Sakshi Forge",
     "metaDescription": "Electropolished 304L & 316L SS pipes for Asansol steel, coal-belt power and Raniganj engineering plants. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Asansol: 304L and 316L EP Tubes for IISCO Burnpur, Raniganj and Paschim Bardhaman Plants",
-    "subHeadline": "Asansol is the heart of West Bengal's coal, steel and railway belt in Paschim Bardhaman, anchored by the IISCO Steel Plant at Burnpur, Eastern Coalfields operations and thermal power plants. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja and supply the clean-utility, DM-water, sampling and laboratory lines of these plants, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Asansol",
+    "subHeadline": "Asansol is the heart of West Bengal's coal, steel and railway belt in Paschim Bardhaman, anchored by the IISCO Steel Plant at Burnpur, Eastern Coalfields operations and thermal power plants. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply the clean-utility, DM-water, sampling and laboratory lines of these plants, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -1865,7 +1865,7 @@ export const westBengalCityData = {
       "type": "ALL"
     },
     "hasDuplex": true,
-    "transitInfo": "Asansol is roughly 1,980-2,080 km from our Taloja MIDC factory, and typical road transit is 7-8 days after manufacture and testing. We cap pipe ends, sleeve each length and pack for safe transit.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap pipe ends, sleeve each length and pack for safe transit.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Asansol and the Raniganj Industrial Belt",
       "description": "Asansol is the principal commercial and industrial hub of Paschim Bardhaman, forming the western anchor of the Durgapur–Raniganj–Asansol industrial corridor. The city is anchored by the historic IISCO Steel Plant (SAIL) at Burnpur, extensive coal operations under Eastern Coalfields Limited (ECL), thermal and captive power generation, railway workshops, and secondary metallurgical clusters at Jamuria, Kulti and Raniganj.\n\nA word on fit. Main process piping in coal mining, steel making, and heavy engineering relies on carbon steel and heavy alloy piping. Electropolished stainless steel pipe is specifically utilised on clean-utility circuits: demineralised (DM) water loops, boiler-water and steam-chemistry sampling stations, analytical instrumentation, laboratory gas lines, and skid assemblies.",
@@ -1932,7 +1932,7 @@ export const westBengalCityData = {
         "Public-sector and major corporate buyers (SAIL, ECL, power boards) purchase through tenders, approved-vendor lists, and third-party inspection (TÜV, Bureau Veritas). We provide 100% PMI certificates and EN 10204 3.1 MTCs tied to heat numbers.",
         "Plan around shutdown windows: maintenance outages have fixed timelines. Share your shutdown dates during enquiry so we schedule production and dispatch accordingly.",
         "NH-19 corridor consolidation: Asansol sits directly on the National Highway 19 corridor with Durgapur and Kolkata, allowing consolidated dispatch with unified document sets.",
-        "Distance is roughly 1,980-2,080 km from our factory. We cap pipe ends, sleeve every length, and pack for long-haul road transit."
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation."
       ]
     },
     "qualityDoc": [
@@ -2016,7 +2016,7 @@ export const westBengalCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Asansol take, and how is the finish protected over that distance?",
-        "a": "Asansol is roughly 1,980-2,080 km from our Taloja MIDC factory, and typical road transit is 7-8 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your shutdown has a fixed window, tell us when you enquire and we will plan accordingly."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your shutdown has a fixed window, tell us when you enquire and we will plan accordingly."
       },
       {
         "q": "Where does electropolished pipe fit in steel plants like IISCO Burnpur or power stations?",
@@ -2079,9 +2079,9 @@ export const westBengalCityData = {
     "country": "India",
     "pageUrl": "/market-area/bardhaman",
     "pageTitle": "Electropolished Pipe Manufacturer Bardhaman | Sakshi Forge",
-    "metaDescription": "Electropolished 304L & 316L SS pipes for Bardhaman food, potato and agro-processing plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Bardhaman: 304L and 316L EP Tubes for Rice-Belt Food, Potato and Agro-Processing Plants",
-    "subHeadline": "Bardhaman is the district town of West Bengal's \"rice bowl\", on the Grand Trunk Road between Durgapur and Kolkata, with rice mills, agro-based industry and one of the state's main potato belts around it. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja and supply Bardhaman's food plants and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "metaDescription": "Electropolished 304L & 316L SS pipes for Bardhaman food, potato and agro-processing plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Bardhaman",
+    "subHeadline": "Bardhaman is the district town of West Bengal's \"rice bowl\", on the Grand Trunk Road between Durgapur and Kolkata, with rice mills, agro-based industry and one of the state's main potato belts around it. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply Bardhaman's food plants and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -2094,7 +2094,7 @@ export const westBengalCityData = {
       "type": "ALL"
     },
     "hasDuplex": true,
-    "transitInfo": "Bardhaman is roughly 2,000-2,100 km from our Taloja MIDC factory, and typical road transit is 7-8 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Bardhaman's Agro-Industrial Belt",
       "description": "Purba Bardhaman district was carved out of the old Bardhaman district in 2017, with the district town at Bardhaman and other towns at Memari, Guskara, Kalna, Katwa and Dainhat. The state's district profile calls it the \"rice bowl\" of West Bengal, with a growing base of rice mills and agro-based industries. The district also grows large volumes of potato, sugarcane and jute, and it sits in the Burdwan division that includes the Durgapur–Asansol industrial belt, which has its own pages. The town is about 105 km from Kolkata's airport, about 100 km from Asansol and on the Howrah–Bardhaman main and chord rail lines.\n\nA word on fit. Rice milling, parboiling, jute processing and cold-storage refrigeration don't use electropolished pipe. Where we're useful is wet food lines (potato washing, blanching and frying, rice-based foods and edible oil), small dairy and sweet-making units, and the fabricators who build for them.",
@@ -2165,9 +2165,9 @@ export const westBengalCityData = {
       "localNotes": [
         "Rice and jute aren't the target. Rice milling, parboiling and jute processing are dry or steam-boiler processes, and cold storage uses refrigeration. We'd rather tell you than sell you something you don't need. Send us the line and we'll say honestly whether electropolished pipe suits it.",
         "Potato lines are cleaning-driven. Starch and oil foul pipes quickly, and a smooth electropolished interior is easier to clean. 304L is the usual grade, and 316L is the safer choice where brine or sanitisers carry chlorides. Send us your product and CIP chemistry.",
-        "We're a long way from Bardhaman, and we'll say so. Our factory is in Taloja, about 2,000-2,100 km away, and freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "We're a long way from Bardhaman, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Bardhaman is between Durgapur and Kolkata. If you also buy for Durgapur, Asansol, Dankuni or Kolkata, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "Plan the lead time. Typical road transit is 7-8 days after manufacture and testing. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
+        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
         "Protect the finish. Humid air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
     },
@@ -2252,7 +2252,7 @@ export const westBengalCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Bardhaman take, and how is the finish protected over that distance?",
-        "a": "Bardhaman is roughly 2,000-2,100 km from our Taloja MIDC factory, and typical road transit is 7-8 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Do rice mills, jute units and potato cold storages need electropolished pipe?",

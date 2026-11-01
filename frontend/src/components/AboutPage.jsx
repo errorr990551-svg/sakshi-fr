@@ -67,7 +67,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
           "@id": "https://steelmanufacturer.in/about-us/#webpage",
           "url": "https://steelmanufacturer.in/about-us/",
           "name": "About Sakshi Forge | Electropolished Pipe & Forged Flange Manufacturer, Mumbai",
-          "description": "Sakshi Forge is an ISO 9001:2015 manufacturer in Taloja, Mumbai. 10+ years making electropolished pipes, flanges and forged fittings with 100% PMI testing.",
+          "description": "Sakshi Forge is an ISO 9001:2015 manufacturer in Mumbai. 10+ years making electropolished pipes, flanges and forged fittings with 100% PMI testing.",
           "isPartOf": {
             "@type": "WebSite",
             "@id": "https://steelmanufacturer.in/#website",
@@ -119,13 +119,13 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
         <div className="container">
           <div style={{ maxWidth: '950px' }}>
             <span className="hero-tag" style={{ backgroundColor: 'rgba(255, 193, 7, 0.1)', color: 'var(--primary-yellow)', border: '1px solid rgba(255,193,7,0.3)', padding: '0.4rem 1rem', borderRadius: '4px', textTransform: 'uppercase', letterSpacing: '0.08em', fontSize: '0.8rem', fontWeight: '700', display: 'inline-block', marginBottom: '1.25rem' }}>
-              ISO 9001:2015 Certified Manufacturer · Taloja MIDC, Mumbai
+              ISO 9001:2015 Certified Manufacturer · Mumbai
             </span>
             <h1 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: '800', lineHeight: '1.2', color: '#fff', marginBottom: '1.25rem' }}>
               About Sakshi Forge: Electropolished Pipe and Forged Steel Manufacturer in Mumbai
             </h1>
             <p style={{ fontSize: '1.15rem', color: '#cbd5e1', lineHeight: '1.7', marginBottom: '2rem' }}>
-              We make stainless steel pipes, flanges and fittings for the people who have to sign off on them. Every product leaves our Taloja facility with its test certificate, its heat number and a surface report you can put in front of an auditor.
+              We make stainless steel pipes, flanges and fittings for the people who have to sign off on them. Every product leaves us with its test certificate, its heat number and a surface report you can put in front of an auditor.
             </p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '2.5rem' }}>
               <button onClick={() => onEnquireClick('About Page Hero Quote')} className="btn btn-primary" style={{ padding: '0.85rem 1.75rem', fontWeight: '700' }}>
@@ -159,7 +159,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
             </h2>
             <div className="accent-line-left" style={{ marginBottom: '1.5rem' }}></div>
             <p className="about-p" style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
-              Sakshi Forge is an ISO 9001:2015 certified manufacturer based in Taloja MIDC, Mumbai, Maharashtra. We make electropolished stainless steel pipes and tubes, industrial flanges, forged fittings, butt weld fittings, SS elbows, round bars and plates.
+              Sakshi Forge is an ISO 9001:2015 certified manufacturer based in Mumbai, Maharashtra. We make electropolished stainless steel pipes and tubes, industrial flanges, forged fittings, butt weld fittings, SS elbows, round bars and plates.
             </p>
             <p className="about-p" style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
               Most buyers know us first for electropolished pipes, the clean, mirror-finish tubing used in pharma, food, dairy, semiconductor and chemical plants. Our forging work supplies oil and gas, petrochemical, power and heavy engineering customers who need the same thing: material that matches its paperwork.
@@ -182,7 +182,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
             <div className="accent-line-left" style={{ marginBottom: '1.5rem' }}></div>
             
             <p className="about-p" style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
-              Sakshi Forge started with a simple idea: industrial buyers should get steel that matches its paperwork. Over 10+ years, we have built that idea into a manufacturing business in Taloja, Mumbai.
+              Sakshi Forge started with a simple idea: industrial buyers should get steel that matches its paperwork. Over 10+ years, we have built that idea into a manufacturing business in Mumbai.
             </p>
             <p className="about-p" style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
               We began with forged flanges and fittings, products where tolerance, material grade and traceability decide whether a pipeline is safe. That discipline shaped everything we did next.
@@ -245,7 +245,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
               <div className="feature-card" style={{ backgroundColor: 'var(--bg-dark-800)', padding: '1.75rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
                 <h3 style={{ fontSize: '1.15rem', color: 'var(--primary-yellow)', marginBottom: '0.5rem' }}>Straight answers</h3>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.6', margin: 0 }}>
-                  Technical questions get technical answers, and quotes come within 30 minutes.
+                  Technical questions get technical answers, and quotes come within 24 hours.
                 </p>
               </div>
 
@@ -351,7 +351,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
           <div style={{ maxWidth: '960px', margin: '0 auto' }}>
             <span className="hero-tag" style={{ border: 'none', backgroundColor: 'rgba(255, 193, 7, 0.08)' }}>Facility Audit</span>
             <h2 style={{ fontSize: '2.3rem', marginBottom: '1.25rem', lineHeight: '1.25' }}>
-              Inside Our Taloja Manufacturing Facility
+              Inside Our Manufacturing
             </h2>
             <div className="accent-line-left" style={{ marginBottom: '1.5rem' }}></div>
 
@@ -378,11 +378,11 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
             {/* Facility & Product Inspection Photos Grid */}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1.25rem' }}>
               <div style={{ borderRadius: '8px', overflow: 'hidden', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-dark-900)' }}>
-                <img {...imgSize("/about_history.webp")} loading="lazy" src="/about_history.webp" alt="Heavy hydraulic forging press and billet inventory at Sakshi Forge, Taloja MIDC" style={{ width: '100%', height: '220px', objectFit: 'cover', display: 'block' }} />
-                <div style={{ padding: '0.75rem', backgroundColor: 'var(--bg-dark-800)', fontSize: '0.82rem', color: '#e2e8f0' }}>Heavy hydraulic forging press and billet inventory at Taloja Works</div>
+                <img {...imgSize("/about_history.webp")} loading="lazy" src="/about_history.webp" alt="Heavy hydraulic forging press and billet inventory at Sakshi Forge" style={{ width: '100%', height: '220px', objectFit: 'cover', display: 'block' }} />
+                <div style={{ padding: '0.75rem', backgroundColor: 'var(--bg-dark-800)', fontSize: '0.82rem', color: '#e2e8f0' }}>Heavy hydraulic forging press and billet inventory</div>
               </div>
               <div style={{ borderRadius: '8px', overflow: 'hidden', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-dark-900)' }}>
-                <img {...imgSize("/about_structure.webp")} loading="lazy" src="/about_structure.webp" alt="CNC machining and turning line for ASME B16.5 flanges at Sakshi Forge, Taloja" style={{ width: '100%', height: '220px', objectFit: 'cover', display: 'block' }} />
+                <img {...imgSize("/about_structure.webp")} loading="lazy" src="/about_structure.webp" alt="CNC machining and turning line for ASME B16.5 flanges at Sakshi Forge" style={{ width: '100%', height: '220px', objectFit: 'cover', display: 'block' }} />
                 <div style={{ padding: '0.75rem', backgroundColor: 'var(--bg-dark-800)', fontSize: '0.82rem', color: '#e2e8f0' }}>CNC automated machining centers & facing lathes</div>
               </div>
               <div style={{ borderRadius: '8px', overflow: 'hidden', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-dark-900)' }}>
@@ -602,7 +602,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
               </div>
               <div style={{ backgroundColor: 'var(--bg-dark-900)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
                 <h3 style={{ fontSize: '1.15rem', color: 'var(--primary-yellow)', marginBottom: '0.4rem' }}>Fast, clear quotes</h3>
-                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', margin: 0 }}>30-minute quote guarantee.</p>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', margin: 0 }}>24-hour quote turnaround.</p>
               </div>
               <div style={{ backgroundColor: 'var(--bg-dark-900)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
                 <h3 style={{ fontSize: '1.15rem', color: 'var(--primary-yellow)', marginBottom: '0.4rem' }}>Export experience</h3>
@@ -672,7 +672,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
               <span className="hero-tag" style={{ border: 'none', backgroundColor: 'rgba(255, 193, 7, 0.08)' }}>Get a Factory-Direct Quote</span>
               <h2 style={{ fontSize: '2.2rem', margin: '0.75rem 0' }}>Let's Talk About Your Project</h2>
               <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem' }}>
-                Send us your grade, size, quantity and standard. We'll quote within 30 minutes.
+                Send us your grade, size, quantity and standard. We'll quote within 24 hours.
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', marginTop: '1.5rem' }}>
                 <button onClick={() => onEnquireClick('About Page Bottom RFQ')} className="btn btn-primary" style={{ padding: '0.85rem 2rem', fontWeight: '700' }}>
@@ -691,10 +691,10 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(260px, 100%), 1fr))', gap: '1.5rem', paddingTop: '2rem', borderTop: '1px solid var(--border-color)' }}>
               <div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary-yellow)', fontWeight: '700', marginBottom: '0.4rem', fontSize: '0.9rem' }}>
-                  <MapPin size={16} /> Factory Address
+                  <MapPin size={16} /> Address
                 </div>
                 <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.85rem', lineHeight: '1.5' }}>
-                  Balaji Industrial Compound, Taloja MIDC, Mumbai, Maharashtra 410208
+                  Shop No. 05, Ground Floor, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai, Maharashtra 400004
                 </p>
               </div>
 

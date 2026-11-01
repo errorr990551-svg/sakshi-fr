@@ -49,7 +49,7 @@ export default function CityProductPillars({ cityName = 'Your Facility' }) {
             lineHeight: '1.65',
             margin: 0
           }}>
-            Every pipe dispatched to {cityName} from our Taloja facility adheres to strict international hygienic standards. Explore our core product specifications, Ra roughness certifications, and alloy grade properties:
+            Every pipe dispatched to {cityName} from Mumbai adheres to strict international hygienic standards. Explore our core product specifications, Ra roughness certifications, and alloy grade properties:
           </p>
         </div>
 

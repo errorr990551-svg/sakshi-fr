@@ -150,7 +150,7 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '',
             textTransform: 'none',
             marginBottom: '0.5rem'
           }}>
-            {customTitle || <>Fill this form and get a quote in <span>30 minutes — guaranteed</span></>}
+            {customTitle || <>Fill this form and get a quote within <span>24 hours</span></>}
           </h2>
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', margin: 0 }}>
             {isContactDetailsForm 
@@ -212,8 +212,8 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '',
                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', color: 'var(--text-primary)' }}>
                   <MapPin size={18} style={{ color: 'var(--primary-yellow)', flexShrink: 0, marginTop: '0.2rem' }} />
                   <div>
-                    <strong style={{ fontSize: '0.75rem', color: 'var(--text-muted)', display: 'block', textTransform: 'uppercase' }}>Factory Address</strong>
-                    <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Balaji Industrial Compound, Taloja MIDC</span>
+                    <strong style={{ fontSize: '0.75rem', color: 'var(--text-muted)', display: 'block', textTransform: 'uppercase' }}>Address</strong>
+                    <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Shop No. 05, 3rd Kumbharwada, Mumbai 400004</span>
                   </div>
                 </div>
               </div>

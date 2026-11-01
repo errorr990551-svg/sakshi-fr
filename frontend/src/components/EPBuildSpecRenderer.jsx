@@ -393,7 +393,7 @@ export default function EPBuildSpecRenderer({ pageData, onEnquireClick, hasUnloc
             </div>
 
             <p className="text-slate-300 text-sm leading-relaxed mb-6">
-              Sakshi Forge manufactures electropolished pipes and tubes at Taloja MIDC, Mumbai, and maintains direct logistics routes with daily dispatches across major pharmaceutical, chemical, biotechnology, and food processing belts in India:
+              Sakshi Forge is a Mumbai-based manufacturer of electropolished pipes and tubes, supplying major pharmaceutical, chemical, biotechnology, and food processing belts in India:
             </p>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2.5">

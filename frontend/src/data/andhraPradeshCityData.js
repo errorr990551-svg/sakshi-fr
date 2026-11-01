@@ -7,8 +7,8 @@ export const andhraPradeshCityData = {
     "pageUrl": "/market-area/visakhapatnam",
     "pageTitle": "Electropolished Pipe Supplier Visakhapatnam | Sakshi Forge",
     "metaDescription": "Electropolished 316L & duplex SS pipes for Visakhapatnam SEZ pharma, port and coastal-plant clean utilities. ASTM A270/A790, MTC EN 10204 3.1.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Visakhapatnam: 316L and Duplex EP Tubes for Vizag SEZ Pharma, Port and Coastal Plants",
-    "subHeadline": "Visakhapatnam is Andhra Pradesh's port and industrial capital, with a pharma SEZ at Duvvada, a coastal steel, refining and port belt, and the country's densest bulk-drug region south of the city. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes in-house at Taloja and supply Vizag's plants, contractors and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Visakhapatnam",
+    "subHeadline": "Visakhapatnam is Andhra Pradesh's port and industrial capital, with a pharma SEZ at Duvvada, a coastal steel, refining and port belt, and the country's densest bulk-drug region south of the city. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes and supply Vizag's plants, contractors and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -21,7 +21,7 @@ export const andhraPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Visakhapatnam is roughly 1,350-1,450 km from our Taloja MIDC factory, and delivery is typically 5-6 days with protective capping, sleeving and sea-salt barrier packaging.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Visakhapatnam's Industrial Belts",
       "description": "Visakhapatnam is a deep-water port city on the Bay of Bengal, and its industry sits in several belts. The Visakhapatnam Special Economic Zone at Duvvada is one of India's older multi-product SEZs and hosts formulation plants for large pharma makers. The APIIC industrial park at Aganampudi lists pharma units, and a large pharma SEZ at Chippada village, north-east of the city, has been operating for years. The port, steel plant and refinery form the city's heavy-industry core, and the coastal location means salt-laden air and chloride-bearing water are part of every project. Further south, the Jawaharlal Nehru Pharma City at Parawada, the Atchutapuram SEZ and Nakkapalli have their own page.\n\nA word on fit. Steel-making, refining and port operations run on carbon steel and specialty alloy, and their main process piping isn't electropolished. Where we're useful is the pharma plants' purified water, WFI and clean utilities, DM-water and sampling lines inside the heavy plants, chloride-heavy duty where duplex outperforms standard stainless, and the contractors who maintain them.",
@@ -94,7 +94,7 @@ export const andhraPradeshCityData = {
         "Pharma here is mostly API. Reactor-side solvent, acid and halide lines in bulk-drug plants can need other materials. Purified water, WFI and clean utility suit electropolished 316L very well. Send us the fluid, concentration and temperature before you order. Avoid hydrofluoric acid and abrasive slurries.",
         "Pharma and heavy industry buy formally. Large plants generally purchase through tenders, approved-vendor lists and registered contractors, and many have procurement teams in Hyderabad or Mumbai. If yours does, send us the form or tender specification and the delivery site, and we'll respond with a technical and commercial offer and the document pack.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
-        "Plan around turnarounds. Shutdown windows are fixed. If you tell us the date when you enquire, we'll plan manufacture and dispatch against it, and we'll say plainly if the lead time doesn't fit. Visakhapatnam is roughly 1,350-1,450 km from our factory, so build in the transit time.",
+        "Plan around turnarounds. Shutdown windows are fixed. If you tell us the date when you enquire, we'll plan manufacture and dispatch against it, and we'll say plainly if the lead time doesn't fit. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
         "We're a long way from Vizag, and we'll say so. Freight is a large share of any small order, and Vizag has local stockists. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for the pharma estates at Parawada and Atchutapuram, or for Kakinada, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid, saline air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
@@ -133,7 +133,7 @@ export const andhraPradeshCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Visakhapatnam take, and how is the finish protected over that distance?",
-        "a": "Visakhapatnam is roughly 1,350-1,450 km from our Taloja MIDC factory, and typical road transit is 5-6 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for the humid, saline air, so the electropolished finish arrives undamaged. If your turnaround has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for the humid, saline air, so the electropolished finish arrives undamaged. If your turnaround has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Which grade should I use on the Vizag coast: 316L, duplex 2205 or super duplex?",
@@ -157,8 +157,8 @@ export const andhraPradeshCityData = {
     "pageUrl": "/market-area/anakapalle",
     "pageTitle": "Electropolished Pipe Manufacturer Anakapalle | Sakshi Forge",
     "metaDescription": "Electropolished 316L & duplex SS pipes for Parawada Pharma City, Atchutapuram SEZ and Nakkapalli API and pharma plants. ASTM A270/A790, MTC 3.1.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Anakapalle: 316L and Duplex EP Tubes for Parawada Pharma City, Atchutapuram SEZ and Nakkapalli Plants",
-    "subHeadline": "Anakapalle district holds Andhra Pradesh's densest pharma and bulk-drug cluster: Jawaharlal Nehru Pharma City at Parawada, the Atchutapuram SEZ and the Nakkapalli industrial area, on the coast south of Visakhapatnam. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes in-house at Taloja and supply these plants and the contractors who build them directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Anakapalle",
+    "subHeadline": "Anakapalle district holds Andhra Pradesh's densest pharma and bulk-drug cluster: Jawaharlal Nehru Pharma City at Parawada, the Atchutapuram SEZ and the Nakkapalli industrial area, on the coast south of Visakhapatnam. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes and supply these plants and the contractors who build them directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -171,7 +171,7 @@ export const andhraPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Anakapalle & Parawada are roughly 1,330-1,430 km from our Taloja MIDC factory, and delivery is typically 5-6 days with protective capping and sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Parawada, Atchutapuram and Nakkapalli",
       "description": "Anakapalle sits on the coast about 40 km south-west of Visakhapatnam, and the industry around it falls into three belts. Jawaharlal Nehru Pharma City at Parawada, about 33 km south of Vizag, is a theme-based pharma park of roughly 2,400 acres developed by the state's industrial infrastructure corporation with a private partner, built to host bulk drug, pharmaceutical and fine-chemical makers, with a sector-specific pharma SEZ inside it and shared utilities and effluent infrastructure. The Andhra Pradesh Special Economic Zone at Atchutapuram and Rambilli, a multi-product SEZ of about 5,595 acres, hosts further API and formulation plants alongside other sectors. Nakkapalli, in the Visakhapatnam–Kakinada petroleum, chemicals and petrochemicals investment region, is a larger industrial area planned for chemicals and related industry, and Lankelapalem also lists pharma units.\n\nA word on fit. Most plants here make bulk drugs and APIs by chemical synthesis, and their reactor-side solvent, acid and halide lines can need other materials. The coast adds salt air and chloride-bearing water. Where we're useful is the clean side of these plants (purified water, WFI, clean utilities, laboratory lines and formulation lines), chloride-heavy duty where duplex 2205 is the better answer, and the EPC contractors and fabricators who build them.",
@@ -251,7 +251,7 @@ export const andhraPradeshCityData = {
         "Big plants buy through EPC contractors and approved-vendor lists. If you're an EPC or a fabricator, we supply with the document pack your client's inspector expects. If your plant has a vendor registration process, send us the form and we'll complete it.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
         "We're a long way from Parawada, and we'll say so. Freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
-        "Plan the lead time. Anakapalle is roughly 1,330-1,430 km from our factory, and typical road transit is 5-6 days after manufacture and testing. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
+        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Visakhapatnam city, Kakinada or Rajahmundry, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid, saline air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
@@ -291,7 +291,7 @@ export const andhraPradeshCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Parawada or Anakapalle take, and how is the finish protected over that distance?",
-        "a": "Anakapalle is roughly 1,330-1,430 km from our Taloja MIDC factory, and typical road transit is 5-6 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for the humid, saline air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for the humid, saline air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Is electropolished 316L suitable for API and bulk-drug lines at Parawada, Atchutapuram or Nakkapalli?",
@@ -315,8 +315,8 @@ export const andhraPradeshCityData = {
     "pageUrl": "/market-area/tirupati",
     "pageTitle": "Electropolished Pipe Manufacturer Tirupati | Sakshi Forge",
     "metaDescription": "Electropolished 316L & 304L SS pipes for Tirupati, Sri City and Renigunta pharma, food, FMCG and electronics plants. ASTM A270, MTC EN 10204 3.1.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Tirupati: 316L and 304L EP Tubes for Sri City, Renigunta and Srikalahasti Pharma, Food and FMCG Plants",
-    "subHeadline": "Tirupati district is the heart of southern Andhra Pradesh's industry, with Sri City on the Tamil Nadu border, electronics clusters at Tirupati and Renigunta, and pharma and food plants in the APIIC parks around them. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply these plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Tirupati",
+    "subHeadline": "Tirupati district is the heart of southern Andhra Pradesh's industry, with Sri City on the Tamil Nadu border, electronics clusters at Tirupati and Renigunta, and pharma and food plants in the APIIC parks around them. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply these plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -329,7 +329,7 @@ export const andhraPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": false,
-    "transitInfo": "Tirupati is roughly 1,200-1,300 km and Sri City roughly 1,300-1,400 km from our Taloja MIDC factory, with typical road transit of 4-5 days with protective packaging.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Tirupati, Sri City and the Plants Around Them",
       "description": "Tirupati district runs from the temple city down to the Tamil Nadu border, and its industry sits in a few places. Sri City, a privately developed integrated township of more than 7,500 acres in Satyavedu and Varadaiahpalem mandals, is the largest, with land leased for 99 years, about 62,000 workers, and clusters in food processing, automotive, engineering, textiles and electronics. Global food and FMCG companies have committed close to a billion dollars there. Two Electronics Manufacturing Clusters, one at Tirupati and Renigunta and one at Sri City, house electronics plants, and APIIC industrial parks such as Attivaram in Ozili mandal list pharma units. Smaller estates, including Pagali near Yerpedu, add MSME manufacturing. Sri City is about 55 km north of Chennai, with the Tirupati and Chennai airports both within about 100 km.\n\nA word on fit. Automotive assembly, textiles and most electronics assembly don't use electropolished pipe on their main processes. Where we're useful is food and FMCG plants, pharma units, dairy and beverage lines, DI-water and clean utilities in electronics plants, and the fabricators who serve them.",
@@ -410,7 +410,7 @@ export const andhraPradeshCityData = {
         "Automotive and textiles aren't the target. Their main processes don't use electropolished pipe. We'd rather tell you than sell you something you don't need.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
         "Sri City is on the Chennai corridor. It is about 55 km from Chennai, so a combined dispatch with Chennai or Hosur sites is natural. If you also buy for them, or for Chittoor or Nellore, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A long supply line. Tirupati is roughly 1,200-1,300 km from our factory, and Sri City roughly 1,300-1,400 km, similar to our Tamil Nadu deliveries. Freight is a large share of any small order, and for a few plain lengths a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. Freight is a large share of any small order, and for a few plain lengths a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Protect the finish. Humid, coastal-corridor air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
     },
@@ -451,7 +451,7 @@ export const andhraPradeshCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Tirupati or Sri City take, and how is the finish protected over that distance?",
-        "a": "Tirupati is roughly 1,200-1,300 km from our Taloja MIDC factory, and Sri City roughly 1,300-1,400 km, with typical road transit of 4-5 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Is 304L enough for a food, beverage or FMCG line in Sri City, or do I need 316L?",
@@ -475,8 +475,8 @@ export const andhraPradeshCityData = {
     "pageUrl": "/market-area/kakinada",
     "pageTitle": "Electropolished Pipe Manufacturer Kakinada | Sakshi Forge",
     "metaDescription": "Electropolished 316L & duplex SS pipes for Kakinada SEZ, port, fertiliser, chemical and seafood plants. ASTM A270/A790, MTC EN 10204 3.1.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Kakinada: 316L and Duplex EP Tubes for the Kakinada SEZ, Port, Chemical and Seafood Plants",
-    "subHeadline": "Kakinada is a deep-water port city on the Godavari delta, with a multi-product SEZ, a pharma SEZ, fertiliser and chemical plants, liquid-storage terminals and one of India's busiest seafood-processing coasts. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes in-house at Taloja and supply Kakinada's plants, contractors and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Kakinada",
+    "subHeadline": "Kakinada is a deep-water port city on the Godavari delta, with a multi-product SEZ, a pharma SEZ, fertiliser and chemical plants, liquid-storage terminals and one of India's busiest seafood-processing coasts. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes and supply Kakinada's plants, contractors and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -489,7 +489,7 @@ export const andhraPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Kakinada is roughly 1,270-1,370 km from our Taloja MIDC factory, and typical road transit is 5 days with protective end-capping and humidity sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Kakinada's Industrial Belt",
       "description": "Kakinada sits on the Bay of Bengal in East Godavari district, and the state's presentations treat it as a port-led industrial corridor, with a deep-water port, an anchorage port and a SEZ. The Kakinada Special Economic Zone is a multi-product SEZ listed with sectors that include agro-based industry and liquid storage, and a separate pharma SEZ, formerly known as Ramky Pharma City, is notified at Kakinada Rural. The area sits at the southern end of the petroleum, chemicals and petrochemicals investment region that stretches 640 sq km between Visakhapatnam and Kakinada, with pharma, organic chemicals, industrial gases, agro-chemicals and fertiliser companies. The port handles liquid cargoes, including chemicals and speciality-chemical ships. The Godavari coast is also a major centre for aquaculture and seafood processing, and the district's other industrial estates include Peddapuram.\n\nA word on fit. Main process piping in fertiliser, petrochemical and gas plants is carbon steel or specialty alloy, and it isn't electropolished. Where we're useful is the clean side of those plants (DM water, sampling, instrument and laboratory lines), the pharma SEZ's purified-water and WFI systems, seafood and food lines where brine rules out 304, and the contractors who maintain the plants.",
@@ -569,8 +569,8 @@ export const andhraPradeshCityData = {
         "Seafood is a brine problem. Shrimp and fish processing uses brine, ice-water and chlorinated wash. 316L is usually the minimum, and a smooth electropolished interior is easier to clean and sanitise. Send us your cleaning chemistry and chloride levels.",
         "Large plants buy formally. Major plants generally purchase through tenders, approved-vendor lists and registered contractors. If yours does, send us the tender specification and we'll respond with a technical and commercial offer and the document pack, including 100% PMI results and a 3.1 MTC tied to heat numbers.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
-        "We're a long way from Kakinada, and we'll say so. Kakinada is roughly 1,270-1,370 km from our factory, and freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
-        "Plan the lead time. Typical road transit is 5 days after manufacture and testing. If your turnaround has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
+        "We're a long way from Kakinada, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your turnaround has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Rajahmundry, Anakapalle or Visakhapatnam, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid, saline air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
@@ -608,7 +608,7 @@ export const andhraPradeshCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Kakinada take, and how is the finish protected over that distance?",
-        "a": "Kakinada is roughly 1,270-1,370 km from our Taloja MIDC factory, and typical road transit is 5 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for the humid, saline air, so the electropolished finish arrives undamaged. If your turnaround has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for the humid, saline air, so the electropolished finish arrives undamaged. If your turnaround has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Which grade should I use on the Kakinada coast: 316L, duplex 2205 or super duplex?",
@@ -632,8 +632,8 @@ export const andhraPradeshCityData = {
     "pageUrl": "/market-area/vijayawada",
     "pageTitle": "Electropolished Pipe Manufacturer Vijayawada | Sakshi Forge",
     "metaDescription": "Electropolished 304L & 316L SS pipes for Vijayawada Autonagar, food-park, dairy and pharma plants. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Vijayawada: 304L and 316L EP Tubes for Autonagar, the Krishna Food Park and Krishna-Delta Plants",
-    "subHeadline": "Vijayawada is Andhra Pradesh's business capital and rail hub, with Autonagar's thousands of engineering and fabrication workshops, a Mega Food Park nearby and rice, fruit-pulp and dairy processors in the Krishna delta. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja and supply Vijayawada's food plants, pharma units and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Vijayawada",
+    "subHeadline": "Vijayawada is Andhra Pradesh's business capital and rail hub, with Autonagar's thousands of engineering and fabrication workshops, a Mega Food Park nearby and rice, fruit-pulp and dairy processors in the Krishna delta. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply Vijayawada's food plants, pharma units and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -646,7 +646,7 @@ export const andhraPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": false,
-    "transitInfo": "Vijayawada is roughly 1,000-1,100 km from our Taloja MIDC factory, and typical road transit is 4 days with protective end-capping and sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Vijayawada and the Krishna Delta",
       "description": "Vijayawada sits on the Krishna river at the head of its delta, and the fertile land around it has long fed local mills and food processors. Autonagar is widely recognised as the city's main industrial hub, housing thousands of micro, small and medium enterprises, engineering workshops and manufacturing units, and the state is upgrading older estates such as the one at Kanuru. Rice mills, dal processing units and food packaging are abundant, and recent investment has moved towards higher-value food processing, including fruit pulp extraction and dairy products. A Mega Food Park operates in Krishna district near the city, listed among the central government's operational parks, and pharma units sit in the wider district, including API sites at Jaggayyapeta and formulation sites along Nuzvid Road.\n\nA word on fit. Rice milling, dal processing and general engineering workshops don't use electropolished pipe. Where we're useful is fruit-pulp, dairy and wet food lines, the pharma units' clean utilities, and the fabricators and equipment builders who serve them, which is a large part of Autonagar.",
@@ -728,7 +728,7 @@ export const andhraPradeshCityData = {
         "Vijayawada has many local stockists, and we're not one of them. At roughly 1,000-1,100 km, freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Guntur, Hyderabad or Kakinada, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "Plan the lead time. Typical road transit is 4 days after manufacture and testing. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
+        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       ]
     },
     "areas": [
@@ -765,7 +765,7 @@ export const andhraPradeshCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Vijayawada take, and how is the finish protected over that distance?",
-        "a": "Vijayawada is roughly 1,000-1,100 km from our Taloja MIDC factory, and typical road transit is 4 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Should I choose 304L or 316L for a mango or fruit-pulp line, or a dairy line?",
@@ -788,9 +788,9 @@ export const andhraPradeshCityData = {
     "country": "India",
     "pageUrl": "/market-area/guntur",
     "pageTitle": "Electropolished Pipe Manufacturer Guntur | Sakshi Forge",
-    "metaDescription": "Electropolished 316L & 304L SS pipes for Guntur chilli, spice, food and edible-oil plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Guntur: 316L and 304L EP Tubes for Chilli, Spice, Food and Edible-Oil Plants",
-    "subHeadline": "Guntur is the centre of India's chilli trade and a major cotton, tobacco and spice-processing city, with a government-backed Spices Park near it. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply Guntur's food, paste, sauce and oil processors and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "metaDescription": "Electropolished 316L & 304L SS pipes for Guntur chilli, spice, food and edible-oil plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Guntur",
+    "subHeadline": "Guntur is the centre of India's chilli trade and a major cotton, tobacco and spice-processing city, with a government-backed Spices Park near it. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Guntur's food, paste, sauce and oil processors and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -803,7 +803,7 @@ export const andhraPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": false,
-    "transitInfo": "Guntur is roughly 1,030-1,130 km from our Taloja MIDC factory, and typical road transit is 4 days with protective end-capping and sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Guntur's Industrial Belt",
       "description": "Guntur sits on the Krishna delta's southern edge, and its trade centres on chilli, cotton, tobacco and other agricultural produce. The central government approved a Spices Park for chilli at Guntur, on about 125 acres in Venkayalapadu and Maidavolu villages of Edlapadu mandal, with plant and machinery for processing chilli and land allotted to exporters to build their own units. The state's presentations list a Spices Park at Guntur among its commodity-based food parks, and a Guntur textiles park and garment units add to the district's industry. A mega food park is also listed at Karlapalem village in Guntur district.\n\nA word on fit. Drying, cleaning and grinding dry chilli, cotton ginning and tobacco handling are dry processes and don't need electropolished pipe. Where we're useful is the wet side of spice and food processing (chilli paste, sauces, pickles and edible oil), steam and wash lines in processing plants, and the fabricators who build the equipment.",
@@ -878,7 +878,7 @@ export const andhraPradeshCityData = {
         "Cotton, tobacco and dry chilli grinding aren't the target. Those are dry processes. We'd rather tell you than sell you something you don't need.",
         "Guntur has many local stockists, and we're not one of them. At roughly 1,030-1,130 km, freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Vijayawada, Hyderabad or Nellore, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "Plan the lead time. Typical road transit is 4 days after manufacture and testing. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
+        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       ]
     },
     "areas": [
@@ -915,7 +915,7 @@ export const andhraPradeshCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Guntur take, and how is the finish protected over that distance?",
-        "a": "Guntur is roughly 1,030-1,130 km from our Taloja MIDC factory, and typical road transit is 4 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Should I choose 304L or 316L for a chilli paste, sauce or pickle line?",
@@ -939,8 +939,8 @@ export const andhraPradeshCityData = {
     "pageUrl": "/market-area/rajahmundry",
     "pageTitle": "Electropolished Pipe Manufacturer Rajahmundry | Sakshi Forge",
     "metaDescription": "Electropolished 304L & 316L SS pipes for Rajahmundry food, oil, fruit and paper-mill clean utilities. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Rajahmundry: 304L and 316L EP Tubes for Food, Edible-Oil, Fruit and Paper-Mill Clean Utilities",
-    "subHeadline": "Rajahmundry (Rajamahendravaram) is the Godavari delta's industrial city, home to long-established paper mills, rice and oil processors, coconut and fruit processing, and gas-related industry. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja and supply Rajahmundry's food, oil and mill buyers and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Rajahmundry",
+    "subHeadline": "Rajahmundry (Rajamahendravaram) is the Godavari delta's industrial city, home to long-established paper mills, rice and oil processors, coconut and fruit processing, and gas-related industry. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply Rajahmundry's food, oil and mill buyers and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -953,7 +953,7 @@ export const andhraPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": false,
-    "transitInfo": "Rajahmundry is roughly 1,200-1,300 km from our Taloja MIDC factory, and typical road transit is 5 days with protective delta-humidity sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Rajahmundry's Industrial Belt",
       "description": "Rajahmundry sits on the Godavari, just above the head of its delta, and it is the main industrial city of the East Godavari region after Kakinada. Paper-making is one of its oldest industries: the area has two mills of a large integrated pulp and paper company, at Rajahmundry and nearby Kadiyam, with a combined capacity of around 241,000 tonnes a year, and other paper units operate in the city. The delta's agriculture feeds a large agro-processing sector, with rice milling, coconut and palm-oil units, and fruit processing around mango and banana, since the district is among the country's leading producers of coconut and banana. The discovery of gas in the nearby KG Basin has also drawn energy-related ancillary industry to the area, and small units make textiles, fabricated metal and plastics.\n\nA word on fit. Rice milling is dry, and pulp-making and paper-making are heavy chemical and mechanical processes whose main lines use carbon steel and specialty alloy. Where we're useful is the wet food and oil lines, fruit and banana processing, DM-water and clean utilities inside the mills and gas facilities, and the fabricators who serve them.",
@@ -1028,7 +1028,7 @@ export const andhraPradeshCityData = {
         "Rice mills aren't the target. Rice milling is dry. We'd rather tell you than sell you something you don't need.",
         "Large mills buy formally. Major plants generally purchase through tenders, approved-vendor lists and registered contractors. If yours does, send us the tender specification and we'll respond with a technical and commercial offer and the document pack.",
         "Plan around shutdowns. Mill and plant maintenance windows are fixed. If you tell us the date when you enquire, we'll plan manufacture and dispatch against it, and we'll say plainly if the lead time doesn't fit.",
-        "We're a long way from Rajahmundry, and we'll say so. Rajahmundry is roughly 1,200-1,300 km from our factory, and freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "We're a long way from Rajahmundry, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Kakinada, Vijayawada or Anakapalle, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid delta air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
@@ -1067,7 +1067,7 @@ export const andhraPradeshCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Rajahmundry take, and how is the finish protected over that distance?",
-        "a": "Rajahmundry is roughly 1,200-1,300 km from our Taloja MIDC factory, and typical road transit is 5 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for humid delta air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for humid delta air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Where does electropolished pipe fit in a paper mill?",
@@ -1091,8 +1091,8 @@ export const andhraPradeshCityData = {
     "pageUrl": "/market-area/chittoor",
     "pageTitle": "Electropolished Pipe Manufacturer Chittoor | Sakshi Forge",
     "metaDescription": "Electropolished 316L & 304L SS pipes for Chittoor mango-pulp, fruit, tomato and food-park plants. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Chittoor: 316L and 304L EP Tubes for Mango-Pulp, Fruit, Tomato and Food-Park Plants",
-    "subHeadline": "Chittoor is India's biggest mango-pulp district, with dozens of pulp units, a Mega Food Park at Mogili and a large tomato and fruit belt around Madanapalle and Piler. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply Chittoor's fruit and food processors and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Chittoor",
+    "subHeadline": "Chittoor is India's biggest mango-pulp district, with dozens of pulp units, a Mega Food Park at Mogili and a large tomato and fruit belt around Madanapalle and Piler. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Chittoor's fruit and food processors and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -1105,7 +1105,7 @@ export const andhraPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": false,
-    "transitInfo": "Chittoor is roughly 1,150-1,250 km from our Taloja MIDC factory, and typical road transit is 4-5 days with protective capping and sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Chittoor's Fruit and Food Belt",
       "description": "Chittoor lies in the far south of Andhra Pradesh, bordering Tamil Nadu and Karnataka, and it is the state's largest mango-producing district, with around 80,000 hectares of mango and an annual output of roughly 7.5 lakh tonnes, much of it the Totapuri variety grown for pulp. The district hosts around 40 or more mango-pulp processing units with a combined annual capacity of about 4 lakh tonnes, many of them exporting pulp. The Srini Food Park at Mogili in Bangarupalem mandal is a central-government-assisted Mega Food Park listed as operational, with a common multi-fruit processing line of about 10 tonnes an hour for mango, papaya, guava and tomato. Around Madanapalle and Piler, tomato, banana and other fruit feed further processing, including farmer-owned tomato units. The district's industrial profile also lists a fruit-processing cluster, a rice-mill cluster and a granite cluster.\n\nA word on fit. Rice milling and granite are dry processes and don't use electropolished pipe. Where we're useful is the fruit and tomato lines (pulping, heating, filling), CIP, aseptic and hot-fill systems, and the fabricators who build and repair that equipment. The mango-pulp trade has been through a hard patch, so many buyers are repairing or upgrading rather than building new lines.",
@@ -1179,7 +1179,7 @@ export const andhraPradeshCityData = {
         "The pulp sector has been under pressure, and we won't oversell. Many units are cautious about new investment. We can't promise that a smoother pipe will pay for itself in your plant, because that depends on your product, your cleaning cycle and your volumes. If a repair or a plain stainless tube is the better choice for you, we'll say so.",
         "Rice and granite aren't the target. Those are dry processes. We'd rather tell you than sell you something you don't need.",
         "Between Chennai and Bengaluru. Chittoor is roughly 160 km from Chennai and 180 km from Bengaluru. If you also buy for Tirupati, Hosur, Bengaluru or Chennai, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "We're a long way from Chittoor, and we'll say so. Chittoor is roughly 1,150-1,250 km from our factory, and freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "We're a long way from Chittoor, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Exporters are audited. Pulp exporters face hygiene and traceability audits from overseas buyers, so every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your own audit file but don't replace it."
       ]
     },
@@ -1221,7 +1221,7 @@ export const andhraPradeshCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Chittoor take, and how is the finish protected over that distance?",
-        "a": "Chittoor is roughly 1,150-1,250 km from our Taloja MIDC factory, and typical road transit is 4-5 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your shutdown has a fixed window, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your shutdown has a fixed window, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Should I choose 304L or 316L for a mango-pulp or tomato line?",
@@ -1245,8 +1245,8 @@ export const andhraPradeshCityData = {
     "pageUrl": "/market-area/nellore",
     "pageTitle": "Electropolished Pipe Manufacturer Nellore | Sakshi Forge",
     "metaDescription": "Electropolished 316L & duplex SS pipes for Nellore Krishnapatnam, IFFCO agro-SEZ, food and seafood projects. ASTM A270/A790, MTC EN 10204 3.1.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Nellore: 316L and Duplex EP Tubes for Krishnapatnam, the IFFCO Agro-SEZ, Food and Seafood Plants",
-    "subHeadline": "Nellore, on the Chennai–Kolkata highway about 26 km from Krishnapatnam Port, is the centre of a coast where a port-led industrial city, a large agro-processing SEZ and a planned refinery and petrochemical project are being built. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes in-house at Taloja and quote against your drawings from design stage, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Nellore",
+    "subHeadline": "Nellore, on the Chennai–Kolkata highway about 26 km from Krishnapatnam Port, is the centre of a coast where a port-led industrial city, a large agro-processing SEZ and a planned refinery and petrochemical project are being built. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes and quote against your drawings from design stage, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -1259,7 +1259,7 @@ export const andhraPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Nellore is roughly 1,250-1,350 km from our Taloja MIDC factory, and typical road transit is 4-5 days with protective packaging.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Nellore's Coastal Industrial Belt",
       "description": "Nellore is a municipal corporation of about 6 lakh people on National Highway 16, with Krishnapatnam Port, India's largest private-sector deep-water port, about 26 km away. Three large projects shape its industrial future. Krishnapatnam Industrial Area (KRIS City), a Chennai–Bengaluru Industrial Corridor node, is planned as a port-led industrial city, with a first-phase area of about 2,500 acres and focus sectors that include auto components, electronics, agro and food processing, pharma and biotech, and textiles. The IFFCO Kisan SEZ, an agribusiness SEZ of about 2,776 acres, is designed as an integrated agro-park for food processing and global manufacturers. Further up the coast, a refinery and petrochemical project requiring about 6,000 acres, and the Ramayapatnam port, are in development stages in the Kavali area. The district's coast is also known for aquaculture and seafood processing.\n\nA word on fit. Large refinery and petrochemical plants run on carbon steel and specialty alloy, and their main process piping isn't electropolished. Where we're useful is the clean utilities and food, seafood and pharma lines in the new industrial city and agro-SEZ, chloride-heavy coastal duty where duplex outperforms standard stainless, and the EPC contractors who build all of it.",
@@ -1333,7 +1333,7 @@ export const andhraPradeshCityData = {
         "New plants usually buy through EPC contractors. If you're an EPC or a fabricator, we supply with the document pack your client's inspector expects. If your client has an approved-vendor process, send us the form and we'll complete it.",
         "We'll say plainly where electropolished pipe isn't the answer. Main process lines in refineries and petrochemical plants are carbon or alloy steel. Our pipe is for the clean side. Send us the line, the media and the temperature and we'll say honestly whether it fits. Avoid hydrofluoric acid and abrasive slurries.",
         "Seafood is a brine problem. Shrimp and fish processing uses brine, ice-water and chlorinated wash. 316L is usually the minimum, and a smooth electropolished interior is easier to clean and sanitise. Send us your cleaning chemistry and chloride levels.",
-        "We're a long way from Nellore, and we'll say so. Nellore is roughly 1,250-1,350 km from our factory, and freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "We're a long way from Nellore, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Tirupati, Guntur or Chennai, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid, saline air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
@@ -1374,7 +1374,7 @@ export const andhraPradeshCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Nellore take, and how is the finish protected over that distance?",
-        "a": "Nellore is roughly 1,250-1,350 km from our Taloja MIDC factory, and typical road transit is 4-5 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for the humid, saline air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for the humid, saline air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Which grade should I use on the Nellore coast: 316L, duplex 2205 or super duplex?",
@@ -1398,8 +1398,8 @@ export const andhraPradeshCityData = {
     "pageUrl": "/market-area/kurnool",
     "pageTitle": "Electropolished Pipe Manufacturer Kurnool | Sakshi Forge",
     "metaDescription": "Electropolished 316L & 304L SS pipes for Kurnool Orvakal hub, food-park, maize and bulk-drug projects. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Kurnool: 316L and 304L EP Tubes for the Orvakal Industrial Hub, Food-Park and Agro-Processing Projects",
-    "subHeadline": "Kurnool, about three hours from Hyderabad on the Solapur–Kurnool–Chennai corridor, is the site of the Orvakal industrial node, planned for bulk drugs, machinery, electrical equipment and EV manufacturing, and of a Mega Food Park at Tangadacha. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and quote against your drawings from design stage, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Kurnool",
+    "subHeadline": "Kurnool, about three hours from Hyderabad on the Solapur–Kurnool–Chennai corridor, is the site of the Orvakal industrial node, planned for bulk drugs, machinery, electrical equipment and EV manufacturing, and of a Mega Food Park at Tangadacha. We manufacture and electropolish SS 316L and 304L pipes and tubes and quote against your drawings from design stage, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -1412,7 +1412,7 @@ export const andhraPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": false,
-    "transitInfo": "Kurnool is roughly 800-880 km from our Taloja MIDC factory, and typical road transit is 3 days with protective packaging.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Kurnool's Industrial Projects",
       "description": "Kurnool sits in the Rayalaseema region, on National Highways 44 and 40, with an airport that began operations in 2021 and a rail link to Hyderabad and Bengaluru. Its industrial future centres on the Orvakal node, being developed as a Mega Industrial Hub under the Hyderabad–Bengaluru Industrial Corridor. Industries named for it include bulk drugs, machinery and electrical equipment, and a proposed electric-vehicle park. A Mega Food Park of about 758 acres at Tangadacha in Jupadu Bungalow mandal was launched for fruit, vegetable and spice processing, agri-biotech and research, and a maize-processing unit was announced at Orvakal.\n\nA word on fit. EV assembly, machinery and electrical-equipment plants don't use electropolished pipe on their main processes. Where we're useful is the bulk-drug and pharma plants' purified water and clean utilities, the food-park and agro-processing lines, DM and DI water in the larger plants, and the EPC contractors and fabricators who build all of it.",
@@ -1486,7 +1486,7 @@ export const andhraPradeshCityData = {
         "Bulk-drug plants have mixed lines. Purified water, WFI and clean utility suit electropolished 316L very well. Reactor-side solvent, acid and halide lines can need other materials, and we'll tell you honestly which are which. Send us the fluid, concentration and temperature before you order. Avoid hydrofluoric acid and abrasive slurries.",
         "EV and electrical plants aren't the target. Assembly and machining don't use electropolished pipe, and most DI-water systems use other materials. If your specification calls for stainless, send it and we'll say plainly what we can guarantee.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
-        "The nearest Andhra city to our factory, and still a long way. Kurnool is roughly 800-880 km from Taloja, on the Solapur–Kurnool corridor. Freight is a large share of any small order, and a local dealer will usually be cheaper for a few plain lengths. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. Freight is a large share of any small order, and a local dealer will usually be cheaper for a few plain lengths. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Kurnool is about three hours from Hyderabad. If you also buy for Hyderabad, Mahabubnagar or Guntur, send the requirements together and we'll quote one consolidated dispatch with one document format."
       ]
     },
@@ -1523,7 +1523,7 @@ export const andhraPradeshCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Kurnool take, and how is the finish protected over that distance?",
-        "a": "Kurnool is roughly 800-880 km from our Taloja MIDC factory, and typical road transit is 3 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "The Orvakal hub and the food park are still being developed. Can you quote my project now?",
@@ -1547,8 +1547,8 @@ export const andhraPradeshCityData = {
     "pageUrl": "/market-area/visakhapatnam",
     "pageTitle": "Electropolished Pipe Supplier Visakhapatnam | Sakshi Forge",
     "metaDescription": "Electropolished 316L & duplex SS pipes for Visakhapatnam SEZ pharma, port and coastal-plant clean utilities. ASTM A270/A790, MTC EN 10204 3.1.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Visakhapatnam: 316L and Duplex EP Tubes for Vizag SEZ Pharma, Port and Coastal Plants",
-    "subHeadline": "Visakhapatnam is Andhra Pradesh's port and industrial capital, with a pharma SEZ at Duvvada, a coastal steel, refining and port belt, and the country's densest bulk-drug region south of the city. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes in-house at Taloja and supply Vizag's plants, contractors and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Visakhapatnam",
+    "subHeadline": "Visakhapatnam is Andhra Pradesh's port and industrial capital, with a pharma SEZ at Duvvada, a coastal steel, refining and port belt, and the country's densest bulk-drug region south of the city. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes and supply Vizag's plants, contractors and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -1561,7 +1561,7 @@ export const andhraPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Visakhapatnam is roughly 1,350-1,450 km from our Taloja MIDC factory, and delivery is typically 5-6 days with protective capping, sleeving and sea-salt barrier packaging.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Visakhapatnam's Industrial Belts",
       "description": "Visakhapatnam is a deep-water port city on the Bay of Bengal, and its industry sits in several belts. The Visakhapatnam Special Economic Zone at Duvvada is one of India's older multi-product SEZs and hosts formulation plants for large pharma makers. The APIIC industrial park at Aganampudi lists pharma units, and a large pharma SEZ at Chippada village, north-east of the city, has been operating for years. The port, steel plant and refinery form the city's heavy-industry core, and the coastal location means salt-laden air and chloride-bearing water are part of every project. Further south, the Jawaharlal Nehru Pharma City at Parawada, the Atchutapuram SEZ and Nakkapalli have their own page.\n\nA word on fit. Steel-making, refining and port operations run on carbon steel and specialty alloy, and their main process piping isn't electropolished. Where we're useful is the pharma plants' purified water, WFI and clean utilities, DM-water and sampling lines inside the heavy plants, chloride-heavy duty where duplex outperforms standard stainless, and the contractors who maintain them.",
@@ -1634,7 +1634,7 @@ export const andhraPradeshCityData = {
         "Pharma here is mostly API. Reactor-side solvent, acid and halide lines in bulk-drug plants can need other materials. Purified water, WFI and clean utility suit electropolished 316L very well. Send us the fluid, concentration and temperature before you order. Avoid hydrofluoric acid and abrasive slurries.",
         "Pharma and heavy industry buy formally. Large plants generally purchase through tenders, approved-vendor lists and registered contractors, and many have procurement teams in Hyderabad or Mumbai. If yours does, send us the form or tender specification and the delivery site, and we'll respond with a technical and commercial offer and the document pack.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
-        "Plan around turnarounds. Shutdown windows are fixed. If you tell us the date when you enquire, we'll plan manufacture and dispatch against it, and we'll say plainly if the lead time doesn't fit. Visakhapatnam is roughly 1,350-1,450 km from our factory, so build in the transit time.",
+        "Plan around turnarounds. Shutdown windows are fixed. If you tell us the date when you enquire, we'll plan manufacture and dispatch against it, and we'll say plainly if the lead time doesn't fit. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
         "We're a long way from Vizag, and we'll say so. Freight is a large share of any small order, and Vizag has local stockists. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for the pharma estates at Parawada and Atchutapuram, or for Kakinada, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid, saline air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
@@ -1673,7 +1673,7 @@ export const andhraPradeshCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Visakhapatnam take, and how is the finish protected over that distance?",
-        "a": "Visakhapatnam is roughly 1,350-1,450 km from our Taloja MIDC factory, and typical road transit is 5-6 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for the humid, saline air, so the electropolished finish arrives undamaged. If your turnaround has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for the humid, saline air, so the electropolished finish arrives undamaged. If your turnaround has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Which grade should I use on the Vizag coast: 316L, duplex 2205 or super duplex?",
@@ -1697,8 +1697,8 @@ export const andhraPradeshCityData = {
     "pageUrl": "/market-area/anakapalle",
     "pageTitle": "Electropolished Pipe Manufacturer Anakapalle | Sakshi Forge",
     "metaDescription": "Electropolished 316L & duplex SS pipes for Parawada Pharma City, Atchutapuram SEZ and Nakkapalli API and pharma plants. ASTM A270/A790, MTC 3.1.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Anakapalle: 316L and Duplex EP Tubes for Parawada Pharma City, Atchutapuram SEZ and Nakkapalli Plants",
-    "subHeadline": "Anakapalle district holds Andhra Pradesh's densest pharma and bulk-drug cluster: Jawaharlal Nehru Pharma City at Parawada, the Atchutapuram SEZ and the Nakkapalli industrial area, on the coast south of Visakhapatnam. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes in-house at Taloja and supply these plants and the contractors who build them directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Anakapalle",
+    "subHeadline": "Anakapalle district holds Andhra Pradesh's densest pharma and bulk-drug cluster: Jawaharlal Nehru Pharma City at Parawada, the Atchutapuram SEZ and the Nakkapalli industrial area, on the coast south of Visakhapatnam. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes and supply these plants and the contractors who build them directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -1711,7 +1711,7 @@ export const andhraPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Anakapalle & Parawada are roughly 1,330-1,430 km from our Taloja MIDC factory, and delivery is typically 5-6 days with protective capping and sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Parawada, Atchutapuram and Nakkapalli",
       "description": "Anakapalle sits on the coast about 40 km south-west of Visakhapatnam, and the industry around it falls into three belts. Jawaharlal Nehru Pharma City at Parawada, about 33 km south of Vizag, is a theme-based pharma park of roughly 2,400 acres developed by the state's industrial infrastructure corporation with a private partner, built to host bulk drug, pharmaceutical and fine-chemical makers, with a sector-specific pharma SEZ inside it and shared utilities and effluent infrastructure. The Andhra Pradesh Special Economic Zone at Atchutapuram and Rambilli, a multi-product SEZ of about 5,595 acres, hosts further API and formulation plants alongside other sectors. Nakkapalli, in the Visakhapatnam–Kakinada petroleum, chemicals and petrochemicals investment region, is a larger industrial area planned for chemicals and related industry, and Lankelapalem also lists pharma units.\n\nA word on fit. Most plants here make bulk drugs and APIs by chemical synthesis, and their reactor-side solvent, acid and halide lines can need other materials. The coast adds salt air and chloride-bearing water. Where we're useful is the clean side of these plants (purified water, WFI, clean utilities, laboratory lines and formulation lines), chloride-heavy duty where duplex 2205 is the better answer, and the EPC contractors and fabricators who build them.",
@@ -1791,7 +1791,7 @@ export const andhraPradeshCityData = {
         "Big plants buy through EPC contractors and approved-vendor lists. If you're an EPC or a fabricator, we supply with the document pack your client's inspector expects. If your plant has a vendor registration process, send us the form and we'll complete it.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
         "We're a long way from Parawada, and we'll say so. Freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
-        "Plan the lead time. Anakapalle is roughly 1,330-1,430 km from our factory, and typical road transit is 5-6 days after manufacture and testing. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
+        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Visakhapatnam city, Kakinada or Rajahmundry, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid, saline air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
@@ -1831,7 +1831,7 @@ export const andhraPradeshCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Parawada or Anakapalle take, and how is the finish protected over that distance?",
-        "a": "Anakapalle is roughly 1,330-1,430 km from our Taloja MIDC factory, and typical road transit is 5-6 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for the humid, saline air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for the humid, saline air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Is electropolished 316L suitable for API and bulk-drug lines at Parawada, Atchutapuram or Nakkapalli?",
@@ -1855,8 +1855,8 @@ export const andhraPradeshCityData = {
     "pageUrl": "/market-area/anakapalle",
     "pageTitle": "Electropolished Pipe Manufacturer Anakapalle | Sakshi Forge",
     "metaDescription": "Electropolished 316L & duplex SS pipes for Parawada Pharma City, Atchutapuram SEZ and Nakkapalli API and pharma plants. ASTM A270/A790, MTC 3.1.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Anakapalle: 316L and Duplex EP Tubes for Parawada Pharma City, Atchutapuram SEZ and Nakkapalli Plants",
-    "subHeadline": "Anakapalle district holds Andhra Pradesh's densest pharma and bulk-drug cluster: Jawaharlal Nehru Pharma City at Parawada, the Atchutapuram SEZ and the Nakkapalli industrial area, on the coast south of Visakhapatnam. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes in-house at Taloja and supply these plants and the contractors who build them directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Anakapalle",
+    "subHeadline": "Anakapalle district holds Andhra Pradesh's densest pharma and bulk-drug cluster: Jawaharlal Nehru Pharma City at Parawada, the Atchutapuram SEZ and the Nakkapalli industrial area, on the coast south of Visakhapatnam. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes and supply these plants and the contractors who build them directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -1869,7 +1869,7 @@ export const andhraPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Anakapalle & Parawada are roughly 1,330-1,430 km from our Taloja MIDC factory, and delivery is typically 5-6 days with protective capping and sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Parawada, Atchutapuram and Nakkapalli",
       "description": "Anakapalle sits on the coast about 40 km south-west of Visakhapatnam, and the industry around it falls into three belts. Jawaharlal Nehru Pharma City at Parawada, about 33 km south of Vizag, is a theme-based pharma park of roughly 2,400 acres developed by the state's industrial infrastructure corporation with a private partner, built to host bulk drug, pharmaceutical and fine-chemical makers, with a sector-specific pharma SEZ inside it and shared utilities and effluent infrastructure. The Andhra Pradesh Special Economic Zone at Atchutapuram and Rambilli, a multi-product SEZ of about 5,595 acres, hosts further API and formulation plants alongside other sectors. Nakkapalli, in the Visakhapatnam–Kakinada petroleum, chemicals and petrochemicals investment region, is a larger industrial area planned for chemicals and related industry, and Lankelapalem also lists pharma units.\n\nA word on fit. Most plants here make bulk drugs and APIs by chemical synthesis, and their reactor-side solvent, acid and halide lines can need other materials. The coast adds salt air and chloride-bearing water. Where we're useful is the clean side of these plants (purified water, WFI, clean utilities, laboratory lines and formulation lines), chloride-heavy duty where duplex 2205 is the better answer, and the EPC contractors and fabricators who build them.",
@@ -1949,7 +1949,7 @@ export const andhraPradeshCityData = {
         "Big plants buy through EPC contractors and approved-vendor lists. If you're an EPC or a fabricator, we supply with the document pack your client's inspector expects. If your plant has a vendor registration process, send us the form and we'll complete it.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
         "We're a long way from Parawada, and we'll say so. Freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
-        "Plan the lead time. Anakapalle is roughly 1,330-1,430 km from our factory, and typical road transit is 5-6 days after manufacture and testing. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
+        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Visakhapatnam city, Kakinada or Rajahmundry, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid, saline air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
@@ -1989,7 +1989,7 @@ export const andhraPradeshCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Parawada or Anakapalle take, and how is the finish protected over that distance?",
-        "a": "Anakapalle is roughly 1,330-1,430 km from our Taloja MIDC factory, and typical road transit is 5-6 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for the humid, saline air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for the humid, saline air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Is electropolished 316L suitable for API and bulk-drug lines at Parawada, Atchutapuram or Nakkapalli?",
@@ -2013,8 +2013,8 @@ export const andhraPradeshCityData = {
     "pageUrl": "/market-area/tirupati",
     "pageTitle": "Electropolished Pipe Manufacturer Tirupati | Sakshi Forge",
     "metaDescription": "Electropolished 316L & 304L SS pipes for Tirupati, Sri City and Renigunta pharma, food, FMCG and electronics plants. ASTM A270, MTC EN 10204 3.1.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Tirupati: 316L and 304L EP Tubes for Sri City, Renigunta and Srikalahasti Pharma, Food and FMCG Plants",
-    "subHeadline": "Tirupati district is the heart of southern Andhra Pradesh's industry, with Sri City on the Tamil Nadu border, electronics clusters at Tirupati and Renigunta, and pharma and food plants in the APIIC parks around them. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply these plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Tirupati",
+    "subHeadline": "Tirupati district is the heart of southern Andhra Pradesh's industry, with Sri City on the Tamil Nadu border, electronics clusters at Tirupati and Renigunta, and pharma and food plants in the APIIC parks around them. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply these plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -2027,7 +2027,7 @@ export const andhraPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": false,
-    "transitInfo": "Tirupati is roughly 1,200-1,300 km and Sri City roughly 1,300-1,400 km from our Taloja MIDC factory, with typical road transit of 4-5 days with protective packaging.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Tirupati, Sri City and the Plants Around Them",
       "description": "Tirupati district runs from the temple city down to the Tamil Nadu border, and its industry sits in a few places. Sri City, a privately developed integrated township of more than 7,500 acres in Satyavedu and Varadaiahpalem mandals, is the largest, with land leased for 99 years, about 62,000 workers, and clusters in food processing, automotive, engineering, textiles and electronics. Global food and FMCG companies have committed close to a billion dollars there. Two Electronics Manufacturing Clusters, one at Tirupati and Renigunta and one at Sri City, house electronics plants, and APIIC industrial parks such as Attivaram in Ozili mandal list pharma units. Smaller estates, including Pagali near Yerpedu, add MSME manufacturing. Sri City is about 55 km north of Chennai, with the Tirupati and Chennai airports both within about 100 km.\n\nA word on fit. Automotive assembly, textiles and most electronics assembly don't use electropolished pipe on their main processes. Where we're useful is food and FMCG plants, pharma units, dairy and beverage lines, DI-water and clean utilities in electronics plants, and the fabricators who serve them.",
@@ -2108,7 +2108,7 @@ export const andhraPradeshCityData = {
         "Automotive and textiles aren't the target. Their main processes don't use electropolished pipe. We'd rather tell you than sell you something you don't need.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
         "Sri City is on the Chennai corridor. It is about 55 km from Chennai, so a combined dispatch with Chennai or Hosur sites is natural. If you also buy for them, or for Chittoor or Nellore, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A long supply line. Tirupati is roughly 1,200-1,300 km from our factory, and Sri City roughly 1,300-1,400 km, similar to our Tamil Nadu deliveries. Freight is a large share of any small order, and for a few plain lengths a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. Freight is a large share of any small order, and for a few plain lengths a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Protect the finish. Humid, coastal-corridor air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
     },
@@ -2149,7 +2149,7 @@ export const andhraPradeshCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Tirupati or Sri City take, and how is the finish protected over that distance?",
-        "a": "Tirupati is roughly 1,200-1,300 km from our Taloja MIDC factory, and Sri City roughly 1,300-1,400 km, with typical road transit of 4-5 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Is 304L enough for a food, beverage or FMCG line in Sri City, or do I need 316L?",
@@ -2173,8 +2173,8 @@ export const andhraPradeshCityData = {
     "pageUrl": "/market-area/tirupati",
     "pageTitle": "Electropolished Pipe Manufacturer Tirupati | Sakshi Forge",
     "metaDescription": "Electropolished 316L & 304L SS pipes for Tirupati, Sri City and Renigunta pharma, food, FMCG and electronics plants. ASTM A270, MTC EN 10204 3.1.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Tirupati: 316L and 304L EP Tubes for Sri City, Renigunta and Srikalahasti Pharma, Food and FMCG Plants",
-    "subHeadline": "Tirupati district is the heart of southern Andhra Pradesh's industry, with Sri City on the Tamil Nadu border, electronics clusters at Tirupati and Renigunta, and pharma and food plants in the APIIC parks around them. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply these plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Tirupati",
+    "subHeadline": "Tirupati district is the heart of southern Andhra Pradesh's industry, with Sri City on the Tamil Nadu border, electronics clusters at Tirupati and Renigunta, and pharma and food plants in the APIIC parks around them. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply these plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -2187,7 +2187,7 @@ export const andhraPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": false,
-    "transitInfo": "Tirupati is roughly 1,200-1,300 km and Sri City roughly 1,300-1,400 km from our Taloja MIDC factory, with typical road transit of 4-5 days with protective packaging.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Tirupati, Sri City and the Plants Around Them",
       "description": "Tirupati district runs from the temple city down to the Tamil Nadu border, and its industry sits in a few places. Sri City, a privately developed integrated township of more than 7,500 acres in Satyavedu and Varadaiahpalem mandals, is the largest, with land leased for 99 years, about 62,000 workers, and clusters in food processing, automotive, engineering, textiles and electronics. Global food and FMCG companies have committed close to a billion dollars there. Two Electronics Manufacturing Clusters, one at Tirupati and Renigunta and one at Sri City, house electronics plants, and APIIC industrial parks such as Attivaram in Ozili mandal list pharma units. Smaller estates, including Pagali near Yerpedu, add MSME manufacturing. Sri City is about 55 km north of Chennai, with the Tirupati and Chennai airports both within about 100 km.\n\nA word on fit. Automotive assembly, textiles and most electronics assembly don't use electropolished pipe on their main processes. Where we're useful is food and FMCG plants, pharma units, dairy and beverage lines, DI-water and clean utilities in electronics plants, and the fabricators who serve them.",
@@ -2268,7 +2268,7 @@ export const andhraPradeshCityData = {
         "Automotive and textiles aren't the target. Their main processes don't use electropolished pipe. We'd rather tell you than sell you something you don't need.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
         "Sri City is on the Chennai corridor. It is about 55 km from Chennai, so a combined dispatch with Chennai or Hosur sites is natural. If you also buy for them, or for Chittoor or Nellore, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A long supply line. Tirupati is roughly 1,200-1,300 km from our factory, and Sri City roughly 1,300-1,400 km, similar to our Tamil Nadu deliveries. Freight is a large share of any small order, and for a few plain lengths a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. Freight is a large share of any small order, and for a few plain lengths a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Protect the finish. Humid, coastal-corridor air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
     },
@@ -2309,7 +2309,7 @@ export const andhraPradeshCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Tirupati or Sri City take, and how is the finish protected over that distance?",
-        "a": "Tirupati is roughly 1,200-1,300 km from our Taloja MIDC factory, and Sri City roughly 1,300-1,400 km, with typical road transit of 4-5 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Is 304L enough for a food, beverage or FMCG line in Sri City, or do I need 316L?",
@@ -2333,8 +2333,8 @@ export const andhraPradeshCityData = {
     "pageUrl": "/market-area/vijayawada",
     "pageTitle": "Electropolished Pipe Manufacturer Vijayawada | Sakshi Forge",
     "metaDescription": "Electropolished 304L & 316L SS pipes for Vijayawada Autonagar, food-park, dairy and pharma plants. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Vijayawada: 304L and 316L EP Tubes for Autonagar, the Krishna Food Park and Krishna-Delta Plants",
-    "subHeadline": "Vijayawada is Andhra Pradesh's business capital and rail hub, with Autonagar's thousands of engineering and fabrication workshops, a Mega Food Park nearby and rice, fruit-pulp and dairy processors in the Krishna delta. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja and supply Vijayawada's food plants, pharma units and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Vijayawada",
+    "subHeadline": "Vijayawada is Andhra Pradesh's business capital and rail hub, with Autonagar's thousands of engineering and fabrication workshops, a Mega Food Park nearby and rice, fruit-pulp and dairy processors in the Krishna delta. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply Vijayawada's food plants, pharma units and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -2347,7 +2347,7 @@ export const andhraPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": false,
-    "transitInfo": "Vijayawada is roughly 1,000-1,100 km from our Taloja MIDC factory, and typical road transit is 4 days with protective end-capping and sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Vijayawada and the Krishna Delta",
       "description": "Vijayawada sits on the Krishna river at the head of its delta, and the fertile land around it has long fed local mills and food processors. Autonagar is widely recognised as the city's main industrial hub, housing thousands of micro, small and medium enterprises, engineering workshops and manufacturing units, and the state is upgrading older estates such as the one at Kanuru. Rice mills, dal processing units and food packaging are abundant, and recent investment has moved towards higher-value food processing, including fruit pulp extraction and dairy products. A Mega Food Park operates in Krishna district near the city, listed among the central government's operational parks, and pharma units sit in the wider district, including API sites at Jaggayyapeta and formulation sites along Nuzvid Road.\n\nA word on fit. Rice milling, dal processing and general engineering workshops don't use electropolished pipe. Where we're useful is fruit-pulp, dairy and wet food lines, the pharma units' clean utilities, and the fabricators and equipment builders who serve them, which is a large part of Autonagar.",
@@ -2429,7 +2429,7 @@ export const andhraPradeshCityData = {
         "Vijayawada has many local stockists, and we're not one of them. At roughly 1,000-1,100 km, freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Guntur, Hyderabad or Kakinada, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "Plan the lead time. Typical road transit is 4 days after manufacture and testing. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
+        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       ]
     },
     "areas": [
@@ -2466,7 +2466,7 @@ export const andhraPradeshCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Vijayawada take, and how is the finish protected over that distance?",
-        "a": "Vijayawada is roughly 1,000-1,100 km from our Taloja MIDC factory, and typical road transit is 4 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Should I choose 304L or 316L for a mango or fruit-pulp line, or a dairy line?",
@@ -2490,8 +2490,8 @@ export const andhraPradeshCityData = {
     "pageUrl": "/market-area/rajahmundry",
     "pageTitle": "Electropolished Pipe Manufacturer Rajahmundry | Sakshi Forge",
     "metaDescription": "Electropolished 304L & 316L SS pipes for Rajahmundry food, oil, fruit and paper-mill clean utilities. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Rajahmundry: 304L and 316L EP Tubes for Food, Edible-Oil, Fruit and Paper-Mill Clean Utilities",
-    "subHeadline": "Rajahmundry (Rajamahendravaram) is the Godavari delta's industrial city, home to long-established paper mills, rice and oil processors, coconut and fruit processing, and gas-related industry. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja and supply Rajahmundry's food, oil and mill buyers and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Rajahmundry",
+    "subHeadline": "Rajahmundry (Rajamahendravaram) is the Godavari delta's industrial city, home to long-established paper mills, rice and oil processors, coconut and fruit processing, and gas-related industry. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply Rajahmundry's food, oil and mill buyers and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -2504,7 +2504,7 @@ export const andhraPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": false,
-    "transitInfo": "Rajahmundry is roughly 1,200-1,300 km from our Taloja MIDC factory, and typical road transit is 5 days with protective delta-humidity sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Rajahmundry's Industrial Belt",
       "description": "Rajahmundry sits on the Godavari, just above the head of its delta, and it is the main industrial city of the East Godavari region after Kakinada. Paper-making is one of its oldest industries: the area has two mills of a large integrated pulp and paper company, at Rajahmundry and nearby Kadiyam, with a combined capacity of around 241,000 tonnes a year, and other paper units operate in the city. The delta's agriculture feeds a large agro-processing sector, with rice milling, coconut and palm-oil units, and fruit processing around mango and banana, since the district is among the country's leading producers of coconut and banana. The discovery of gas in the nearby KG Basin has also drawn energy-related ancillary industry to the area, and small units make textiles, fabricated metal and plastics.\n\nA word on fit. Rice milling is dry, and pulp-making and paper-making are heavy chemical and mechanical processes whose main lines use carbon steel and specialty alloy. Where we're useful is the wet food and oil lines, fruit and banana processing, DM-water and clean utilities inside the mills and gas facilities, and the fabricators who serve them.",
@@ -2579,7 +2579,7 @@ export const andhraPradeshCityData = {
         "Rice mills aren't the target. Rice milling is dry. We'd rather tell you than sell you something you don't need.",
         "Large mills buy formally. Major plants generally purchase through tenders, approved-vendor lists and registered contractors. If yours does, send us the tender specification and we'll respond with a technical and commercial offer and the document pack.",
         "Plan around shutdowns. Mill and plant maintenance windows are fixed. If you tell us the date when you enquire, we'll plan manufacture and dispatch against it, and we'll say plainly if the lead time doesn't fit.",
-        "We're a long way from Rajahmundry, and we'll say so. Rajahmundry is roughly 1,200-1,300 km from our factory, and freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "We're a long way from Rajahmundry, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Kakinada, Vijayawada or Anakapalle, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid delta air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
@@ -2618,7 +2618,7 @@ export const andhraPradeshCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Rajahmundry take, and how is the finish protected over that distance?",
-        "a": "Rajahmundry is roughly 1,200-1,300 km from our Taloja MIDC factory, and typical road transit is 5 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for humid delta air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for humid delta air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Where does electropolished pipe fit in a paper mill?",
@@ -2642,8 +2642,8 @@ export const andhraPradeshCityData = {
     "pageUrl": "/market-area/nellore",
     "pageTitle": "Electropolished Pipe Manufacturer Nellore | Sakshi Forge",
     "metaDescription": "Electropolished 316L & duplex SS pipes for Nellore Krishnapatnam, IFFCO agro-SEZ, food and seafood projects. ASTM A270/A790, MTC EN 10204 3.1.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Nellore: 316L and Duplex EP Tubes for Krishnapatnam, the IFFCO Agro-SEZ, Food and Seafood Plants",
-    "subHeadline": "Nellore, on the Chennai–Kolkata highway about 26 km from Krishnapatnam Port, is the centre of a coast where a port-led industrial city, a large agro-processing SEZ and a planned refinery and petrochemical project are being built. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes in-house at Taloja and quote against your drawings from design stage, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Nellore",
+    "subHeadline": "Nellore, on the Chennai–Kolkata highway about 26 km from Krishnapatnam Port, is the centre of a coast where a port-led industrial city, a large agro-processing SEZ and a planned refinery and petrochemical project are being built. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes and quote against your drawings from design stage, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -2656,7 +2656,7 @@ export const andhraPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Nellore is roughly 1,250-1,350 km from our Taloja MIDC factory, and typical road transit is 4-5 days with protective packaging.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Nellore's Coastal Industrial Belt",
       "description": "Nellore is a municipal corporation of about 6 lakh people on National Highway 16, with Krishnapatnam Port, India's largest private-sector deep-water port, about 26 km away. Three large projects shape its industrial future. Krishnapatnam Industrial Area (KRIS City), a Chennai–Bengaluru Industrial Corridor node, is planned as a port-led industrial city, with a first-phase area of about 2,500 acres and focus sectors that include auto components, electronics, agro and food processing, pharma and biotech, and textiles. The IFFCO Kisan SEZ, an agribusiness SEZ of about 2,776 acres, is designed as an integrated agro-park for food processing and global manufacturers. Further up the coast, a refinery and petrochemical project requiring about 6,000 acres, and the Ramayapatnam port, are in development stages in the Kavali area. The district's coast is also known for aquaculture and seafood processing.\n\nA word on fit. Large refinery and petrochemical plants run on carbon steel and specialty alloy, and their main process piping isn't electropolished. Where we're useful is the clean utilities and food, seafood and pharma lines in the new industrial city and agro-SEZ, chloride-heavy coastal duty where duplex outperforms standard stainless, and the EPC contractors who build all of it.",
@@ -2730,7 +2730,7 @@ export const andhraPradeshCityData = {
         "New plants usually buy through EPC contractors. If you're an EPC or a fabricator, we supply with the document pack your client's inspector expects. If your client has an approved-vendor process, send us the form and we'll complete it.",
         "We'll say plainly where electropolished pipe isn't the answer. Main process lines in refineries and petrochemical plants are carbon or alloy steel. Our pipe is for the clean side. Send us the line, the media and the temperature and we'll say honestly whether it fits. Avoid hydrofluoric acid and abrasive slurries.",
         "Seafood is a brine problem. Shrimp and fish processing uses brine, ice-water and chlorinated wash. 316L is usually the minimum, and a smooth electropolished interior is easier to clean and sanitise. Send us your cleaning chemistry and chloride levels.",
-        "We're a long way from Nellore, and we'll say so. Nellore is roughly 1,250-1,350 km from our factory, and freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "We're a long way from Nellore, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Tirupati, Guntur or Chennai, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid, saline air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
@@ -2771,7 +2771,7 @@ export const andhraPradeshCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Nellore take, and how is the finish protected over that distance?",
-        "a": "Nellore is roughly 1,250-1,350 km from our Taloja MIDC factory, and typical road transit is 4-5 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for the humid, saline air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for the humid, saline air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Which grade should I use on the Nellore coast: 316L, duplex 2205 or super duplex?",
@@ -2795,8 +2795,8 @@ export const andhraPradeshCityData = {
     "pageUrl": "/market-area/kurnool",
     "pageTitle": "Electropolished Pipe Manufacturer Kurnool | Sakshi Forge",
     "metaDescription": "Electropolished 316L & 304L SS pipes for Kurnool Orvakal hub, food-park, maize and bulk-drug projects. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Kurnool: 316L and 304L EP Tubes for the Orvakal Industrial Hub, Food-Park and Agro-Processing Projects",
-    "subHeadline": "Kurnool, about three hours from Hyderabad on the Solapur–Kurnool–Chennai corridor, is the site of the Orvakal industrial node, planned for bulk drugs, machinery, electrical equipment and EV manufacturing, and of a Mega Food Park at Tangadacha. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and quote against your drawings from design stage, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Kurnool",
+    "subHeadline": "Kurnool, about three hours from Hyderabad on the Solapur–Kurnool–Chennai corridor, is the site of the Orvakal industrial node, planned for bulk drugs, machinery, electrical equipment and EV manufacturing, and of a Mega Food Park at Tangadacha. We manufacture and electropolish SS 316L and 304L pipes and tubes and quote against your drawings from design stage, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -2809,7 +2809,7 @@ export const andhraPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": false,
-    "transitInfo": "Kurnool is roughly 800-880 km from our Taloja MIDC factory, and typical road transit is 3 days with protective packaging.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Kurnool's Industrial Projects",
       "description": "Kurnool sits in the Rayalaseema region, on National Highways 44 and 40, with an airport that began operations in 2021 and a rail link to Hyderabad and Bengaluru. Its industrial future centres on the Orvakal node, being developed as a Mega Industrial Hub under the Hyderabad–Bengaluru Industrial Corridor. Industries named for it include bulk drugs, machinery and electrical equipment, and a proposed electric-vehicle park. A Mega Food Park of about 758 acres at Tangadacha in Jupadu Bungalow mandal was launched for fruit, vegetable and spice processing, agri-biotech and research, and a maize-processing unit was announced at Orvakal.\n\nA word on fit. EV assembly, machinery and electrical-equipment plants don't use electropolished pipe on their main processes. Where we're useful is the bulk-drug and pharma plants' purified water and clean utilities, the food-park and agro-processing lines, DM and DI water in the larger plants, and the EPC contractors and fabricators who build all of it.",
@@ -2883,7 +2883,7 @@ export const andhraPradeshCityData = {
         "Bulk-drug plants have mixed lines. Purified water, WFI and clean utility suit electropolished 316L very well. Reactor-side solvent, acid and halide lines can need other materials, and we'll tell you honestly which are which. Send us the fluid, concentration and temperature before you order. Avoid hydrofluoric acid and abrasive slurries.",
         "EV and electrical plants aren't the target. Assembly and machining don't use electropolished pipe, and most DI-water systems use other materials. If your specification calls for stainless, send it and we'll say plainly what we can guarantee.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
-        "The nearest Andhra city to our factory, and still a long way. Kurnool is roughly 800-880 km from Taloja, on the Solapur–Kurnool corridor. Freight is a large share of any small order, and a local dealer will usually be cheaper for a few plain lengths. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. Freight is a large share of any small order, and a local dealer will usually be cheaper for a few plain lengths. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Kurnool is about three hours from Hyderabad. If you also buy for Hyderabad, Mahabubnagar or Guntur, send the requirements together and we'll quote one consolidated dispatch with one document format."
       ]
     },
@@ -2920,7 +2920,7 @@ export const andhraPradeshCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Kurnool take, and how is the finish protected over that distance?",
-        "a": "Kurnool is roughly 800-880 km from our Taloja MIDC factory, and typical road transit is 3 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "The Orvakal hub and the food park are still being developed. Can you quote my project now?",
@@ -2944,8 +2944,8 @@ export const andhraPradeshCityData = {
     "pageUrl": "/market-area/vijayawada",
     "pageTitle": "Electropolished Pipe Manufacturer Vijayawada | Sakshi Forge",
     "metaDescription": "Electropolished 304L & 316L SS pipes for Vijayawada Autonagar, food-park, dairy and pharma plants. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Vijayawada: 304L and 316L EP Tubes for Autonagar, the Krishna Food Park and Krishna-Delta Plants",
-    "subHeadline": "Vijayawada is Andhra Pradesh's business capital and rail hub, with Autonagar's thousands of engineering and fabrication workshops, a Mega Food Park nearby and rice, fruit-pulp and dairy processors in the Krishna delta. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja and supply Vijayawada's food plants, pharma units and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Vijayawada",
+    "subHeadline": "Vijayawada is Andhra Pradesh's business capital and rail hub, with Autonagar's thousands of engineering and fabrication workshops, a Mega Food Park nearby and rice, fruit-pulp and dairy processors in the Krishna delta. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply Vijayawada's food plants, pharma units and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -2958,7 +2958,7 @@ export const andhraPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": false,
-    "transitInfo": "Vijayawada is roughly 1,000-1,100 km from our Taloja MIDC factory, and typical road transit is 4 days with protective end-capping and sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Vijayawada and the Krishna Delta",
       "description": "Vijayawada sits on the Krishna river at the head of its delta, and the fertile land around it has long fed local mills and food processors. Autonagar is widely recognised as the city's main industrial hub, housing thousands of micro, small and medium enterprises, engineering workshops and manufacturing units, and the state is upgrading older estates such as the one at Kanuru. Rice mills, dal processing units and food packaging are abundant, and recent investment has moved towards higher-value food processing, including fruit pulp extraction and dairy products. A Mega Food Park operates in Krishna district near the city, listed among the central government's operational parks, and pharma units sit in the wider district, including API sites at Jaggayyapeta and formulation sites along Nuzvid Road.\n\nA word on fit. Rice milling, dal processing and general engineering workshops don't use electropolished pipe. Where we're useful is fruit-pulp, dairy and wet food lines, the pharma units' clean utilities, and the fabricators and equipment builders who serve them, which is a large part of Autonagar.",
@@ -3040,7 +3040,7 @@ export const andhraPradeshCityData = {
         "Vijayawada has many local stockists, and we're not one of them. At roughly 1,000-1,100 km, freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Guntur, Hyderabad or Kakinada, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "Plan the lead time. Typical road transit is 4 days after manufacture and testing. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
+        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       ]
     },
     "areas": [
@@ -3077,7 +3077,7 @@ export const andhraPradeshCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Vijayawada take, and how is the finish protected over that distance?",
-        "a": "Vijayawada is roughly 1,000-1,100 km from our Taloja MIDC factory, and typical road transit is 4 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Should I choose 304L or 316L for a mango or fruit-pulp line, or a dairy line?",
@@ -3101,8 +3101,8 @@ export const andhraPradeshCityData = {
     "pageUrl": "/market-area/tirupati",
     "pageTitle": "Electropolished Pipe Manufacturer Tirupati | Sakshi Forge",
     "metaDescription": "Electropolished 316L & 304L SS pipes for Tirupati, Sri City and Renigunta pharma, food, FMCG and electronics plants. ASTM A270, MTC EN 10204 3.1.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Tirupati: 316L and 304L EP Tubes for Sri City, Renigunta and Srikalahasti Pharma, Food and FMCG Plants",
-    "subHeadline": "Tirupati district is the heart of southern Andhra Pradesh's industry, with Sri City on the Tamil Nadu border, electronics clusters at Tirupati and Renigunta, and pharma and food plants in the APIIC parks around them. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply these plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Tirupati",
+    "subHeadline": "Tirupati district is the heart of southern Andhra Pradesh's industry, with Sri City on the Tamil Nadu border, electronics clusters at Tirupati and Renigunta, and pharma and food plants in the APIIC parks around them. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply these plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -3115,7 +3115,7 @@ export const andhraPradeshCityData = {
       "ra": "0.4"
     },
     "hasDuplex": false,
-    "transitInfo": "Tirupati is roughly 1,200-1,300 km and Sri City roughly 1,300-1,400 km from our Taloja MIDC factory, with typical road transit of 4-5 days with protective packaging.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Tirupati, Sri City and the Plants Around Them",
       "description": "Tirupati district runs from the temple city down to the Tamil Nadu border, and its industry sits in a few places. Sri City, a privately developed integrated township of more than 7,500 acres in Satyavedu and Varadaiahpalem mandals, is the largest, with land leased for 99 years, about 62,000 workers, and clusters in food processing, automotive, engineering, textiles and electronics. Global food and FMCG companies have committed close to a billion dollars there. Two Electronics Manufacturing Clusters, one at Tirupati and Renigunta and one at Sri City, house electronics plants, and APIIC industrial parks such as Attivaram in Ozili mandal list pharma units. Smaller estates, including Pagali near Yerpedu, add MSME manufacturing. Sri City is about 55 km north of Chennai, with the Tirupati and Chennai airports both within about 100 km.\n\nA word on fit. Automotive assembly, textiles and most electronics assembly don't use electropolished pipe on their main processes. Where we're useful is food and FMCG plants, pharma units, dairy and beverage lines, DI-water and clean utilities in electronics plants, and the fabricators who serve them.",
@@ -3196,7 +3196,7 @@ export const andhraPradeshCityData = {
         "Automotive and textiles aren't the target. Their main processes don't use electropolished pipe. We'd rather tell you than sell you something you don't need.",
         "Regulated pharma is audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
         "Sri City is on the Chennai corridor. It is about 55 km from Chennai, so a combined dispatch with Chennai or Hosur sites is natural. If you also buy for them, or for Chittoor or Nellore, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A long supply line. Tirupati is roughly 1,200-1,300 km from our factory, and Sri City roughly 1,300-1,400 km, similar to our Tamil Nadu deliveries. Freight is a large share of any small order, and for a few plain lengths a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "A long supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. Freight is a large share of any small order, and for a few plain lengths a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Protect the finish. Humid, coastal-corridor air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
     },
@@ -3237,7 +3237,7 @@ export const andhraPradeshCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Tirupati or Sri City take, and how is the finish protected over that distance?",
-        "a": "Tirupati is roughly 1,200-1,300 km from our Taloja MIDC factory, and Sri City roughly 1,300-1,400 km, with typical road transit of 4-5 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Is 304L enough for a food, beverage or FMCG line in Sri City, or do I need 316L?",

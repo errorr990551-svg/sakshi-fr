@@ -61,7 +61,7 @@ export default function HomePage({ onEnquireClick }) {
     },
     {
       q: "Do you perform electropolishing in-house?",
-      a: "Yes. Our complete chemical pickling, passivation, and electrolytic polishing baths operate in-house at Taloja MIDC, ensuring stringent quality control and fast lead times."
+      a: "Yes. Pickling, passivation and electropolishing are part of our process, and every electropolished lot ships with a measured Ra report."
     },
     {
       q: "Which documents accompany an order?",
@@ -85,7 +85,7 @@ export default function HomePage({ onEnquireClick }) {
     },
     {
       q: "How fast can I get a formal quote?",
-      a: "Within 30 minutes during standard working hours directly from our technical sales metallurgists."
+      a: "Within 24 hours, from our technical sales team."
     }
   ];
 
@@ -174,13 +174,13 @@ export default function HomePage({ onEnquireClick }) {
         <div className="container">
           <div style={{ maxWidth: '1080px' }}>
             <span className="hero-tag" style={{ backgroundColor: 'rgba(255, 193, 7, 0.1)', color: 'var(--primary-yellow)', border: '1px solid rgba(255,193,7,0.3)', padding: '0.45rem 1.15rem', borderRadius: '4px', textTransform: 'uppercase', letterSpacing: '0.08em', fontSize: '0.82rem', fontWeight: '700', display: 'inline-block', marginBottom: '1.25rem' }}>
-              ISO 9001:2015 Certified Manufacturing Company in Mumbai · Taloja MIDC Plant
+              ISO 9001:2015 Certified Manufacturing Company in Mumbai
             </span>
             <h1 className="hero-title" style={{ fontSize: 'clamp(2.2rem, 4.8vw, 3.5rem)', fontWeight: '850', lineHeight: '1.18', color: '#fff', marginBottom: '1.35rem', textShadow: '0 2px 14px rgba(0, 0, 0, 0.9)' }}>
               Electropolished Stainless Steel Pipes &amp; Tubes Manufacturer in Mumbai
             </h1>
             <p className="hero-desc" style={{ fontSize: '1.15rem', color: '#cbd5e1', lineHeight: '1.75', marginBottom: '2rem', maxWidth: '920px', textShadow: '0 1px 8px rgba(0, 0, 0, 0.8)' }}>
-              Sakshi Forge is a premier manufacturing company in Mumbai producing precision ASME B16.5 forged flanges, electropolished pipes (Ra ≤0.4 µm), butt weld fittings, and custom steel components in SS 304L, 316L, and Duplex alloys. Manufactured at our Taloja, Mumbai works with 100% PMI testing and EN 10204 3.1 inspection certification.
+              Sakshi Forge is a premier manufacturing company in Mumbai producing precision ASME B16.5 forged flanges, electropolished pipes (Ra ≤0.4 µm), butt weld fittings, and custom steel components in SS 304L, 316L, and Duplex alloys. Supplied from Mumbai with 100% PMI testing and EN 10204 3.1 inspection certification.
             </p>
 
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '1.75rem' }}>
@@ -298,7 +298,7 @@ export default function HomePage({ onEnquireClick }) {
             </h2>
             <div className="accent-line" style={{ margin: '0 auto 1.5rem' }}></div>
             <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', margin: '0 auto' }}>
-              Every order leaves our Taloja factory with airtight documentation, verified heat tracking, and physical test reports ready for rigorous third-party inspection sign-off.
+              Every order leaves us with airtight documentation, verified heat tracking, and physical test reports ready for rigorous third-party inspection sign-off.
             </p>
           </div>
 
@@ -313,7 +313,7 @@ export default function HomePage({ onEnquireClick }) {
 
             <div className="feature-card" style={{ backgroundColor: 'var(--bg-dark-800)', padding: '2.25rem 1.75rem', borderRadius: '12px', border: '1px solid var(--border-color)', textAlign: 'center' }}>
               <div style={{ color: 'var(--primary-yellow)', marginBottom: '1.25rem', display: 'flex', justifyContent: 'center' }}><Clock size={38} /></div>
-              <h3 style={{ fontSize: '1.2rem', color: '#fff', marginBottom: '0.75rem' }}>A quote in 30 minutes</h3>
+              <h3 style={{ fontSize: '1.2rem', color: '#fff', marginBottom: '0.75rem' }}>A quote within 24 hours</h3>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.92rem', lineHeight: '1.6', margin: 0 }}>
                 Send grade, size and quantity. You get a priced quote from an engineer who can discuss metallurgical and dimensional specs on the same call.
               </p>
@@ -759,7 +759,7 @@ export default function HomePage({ onEnquireClick }) {
               {
                 icon: "/6th card.webp",
                 title: "Quotes in minutes",
-                desc: "Our guaranteed 30-minute quote turnaround ensures your plant shutdown, maintenance, or project procurement timeline never waits."
+                desc: "Our 24-hour quote turnaround ensures your plant shutdown, maintenance, or project procurement timeline never waits."
               }
             ].map((card, idx) => (
               <div key={idx} className="utility-plant-card">
@@ -1069,7 +1069,7 @@ export default function HomePage({ onEnquireClick }) {
               <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid var(--border-color)', boxShadow: '0 12px 35px rgba(0,0,0,0.4)', minHeight: '360px' }}>
                 <img {...imgSize("/about_structure.webp")} loading="lazy" 
                   src="/about_structure.webp" 
-                  alt="Sakshi Forge Corporate Facility Taloja MIDC" 
+                  alt="Sakshi Forge, Mumbai" 
                   style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                 />
               </div>
@@ -1221,12 +1221,12 @@ export default function HomePage({ onEnquireClick }) {
         <div className="container">
           <div style={{ maxWidth: '1050px', margin: '0 auto' }}>
             <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-              <span className="hero-tag" style={{ border: 'none', backgroundColor: 'rgba(255, 193, 7, 0.08)' }}>30-Minute Guarantee</span>
+              <span className="hero-tag" style={{ border: 'none', backgroundColor: 'rgba(255, 193, 7, 0.08)' }}>24-Hour Quote</span>
               <h2 style={{ fontSize: '2.4rem', margin: '0.75rem 0' }}>
-                Tell Us What You Need. We'll Quote in 30 Minutes.
+                Tell Us What You Need. We'll Quote within 24 Hours.
               </h2>
               <p style={{ color: 'var(--text-secondary)', fontSize: '1.08rem', maxWidth: '750px', margin: '0 auto' }}>
-                Submit your grade, size, quantity and surface finish requirements. An engineer will formulate a firm, transparent quotation within 30 minutes.
+                Submit your grade, size, quantity and surface finish requirements. An engineer will formulate a firm, transparent quotation within 24 hours.
               </p>
             </div>
 
@@ -1238,7 +1238,7 @@ export default function HomePage({ onEnquireClick }) {
                     <CheckCircle2 size={52} style={{ color: '#10b981', margin: '0 auto 1rem' }} />
                     <h3 style={{ fontSize: '1.35rem', color: '#fff', marginBottom: '0.5rem' }}>RFQ Received Successfully</h3>
                     <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>
-                      Thank you. Our technical metallurgical team is reviewing your requirements and will return your quote within 30 minutes.
+                      Thank you. Our technical metallurgical team is reviewing your requirements and will return your quote within 24 hours.
                     </p>
                   </div>
                 ) : (
@@ -1330,7 +1330,7 @@ export default function HomePage({ onEnquireClick }) {
                     </div>
 
                     <button type="submit" className="btn btn-primary" style={{ padding: '0.9rem', fontWeight: '700', width: '100%', marginTop: '0.5rem' }}>
-                      Submit RFQ for 30-Min Quote <ArrowRight size={16} />
+                      Submit RFQ for a 24-Hour Quote <ArrowRight size={16} />
                     </button>
                   </form>
                 )}

@@ -9,16 +9,16 @@ export const maharashtraCityData = {
     country: 'India',
     pageUrl: '/market-area/pune',
     pageTitle: 'Electropolished SS Pipe Manufacturer in Pune | Sakshi Forge',
-    metaDescription: '316L & 304L electropolished SS pipes and tubes for Pune MIDC plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.',
-    h1: 'Electropolished Stainless Steel Pipe Manufacturer in Pune: 316L and 304L EP Tubes for Pharma, Biotech and Food Plants',
-    subHeadline: "We manufacture and electropolish SS 316L and 304L pipes and tubes at our Taloja MIDC facility and supply Pune's pharma, biotech, food and process plants directly. Every order ships with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report.",
+    metaDescription: '316L & 304L electropolished SS pipes and tubes for Pune MIDC plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.',
+    h1: 'Electropolished Pipes & Tubes Manufacturer and Supplier in Pune',
+    subHeadline: "We manufacture and electropolish SS 316L and 304L pipes and tubes at Mumbai and supply Pune's pharma, biotech, food and process plants directly. Every order ships with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report.",
     trustStrip: ['ISO 9001:2015', 'EN 10204 3.1 MTC', '100% PMI Tested', 'Internal Ra ≤0.4 µm', 'ASTM A269 / A270'],
     defaultFilter: { grade: '316L', ra: '0.4' },
     hasDuplex: true,
-    transitInfo: 'Taloja to Pune is roughly 130-150 km by road, so deliveries are typically same-day to next-day.',
+    transitInfo: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.',
     regionalCapability: {
       title: "Electropolished Pipe for Pune's Industrial Belts",
-      description: "Pune's process industry is spread across several MIDC zones, and each asks something different of a pipe. Taloja to Pune is roughly 130-150 km by road, so deliveries are typically same-day to next-day.",
+      description: "Pune's process industry is spread across several MIDC zones, and each asks something different of a pipe. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
       zones: [
         { zone: 'Hadapsar / Manjri', endUse: 'Biotech, vaccine and pharma', application: 'WFI loops, purified water, clean steam, CIP', spec: '316L, internal Ra ≤0.4 µm, surface report' },
         { zone: 'Chakan MIDC', endUse: 'Auto, engineering, food, some pharma', application: 'Hygienic utility, process and CIP lines', spec: '304L or 316L by media' },
@@ -35,7 +35,7 @@ export const maharashtraCityData = {
       ],
       localNotes: [
         'Inland process market: Pune has no coastal air chloride threat, so 304L is safe and economical for interior food lines, while 316L remains mandatory for pharma WFI loops.',
-        'Rapid corridor transit: Our Taloja factory is right on the expressway corridor, ensuring express transport and same-day delivery to Chakan, Bhosari and Hadapsar.',
+        'Rapid corridor transit: Our Mumbai is right on the expressway corridor, ensuring express transport and same-day delivery to Chakan, Bhosari and Hadapsar.',
         'Auditable traceability: Full EN 10204 3.1 MTCs with heat number stamping ensure smooth FDA and GMP validation audits.'
       ]
     },
@@ -43,7 +43,7 @@ export const maharashtraCityData = {
     faqs: [
       {
         q: 'Do you have a warehouse or office in Pune?',
-        a: 'No. We manufacture and electropolish at our Taloja MIDC facility in the Navi Mumbai region and dispatch to Pune plants by road, typically same-day to next-day. Our factory address is on this page so you can inspect the facility.'
+        a: 'No. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.'
       },
       {
         q: 'Which surface roughness (Ra) should I specify for pharma, dairy and semiconductor lines?',
@@ -67,16 +67,16 @@ export const maharashtraCityData = {
     country: 'India',
     pageUrl: '/market-area/mumbai',
     pageTitle: 'Electropolished Pipe Manufacturer in Mumbai | Sakshi Forge',
-    metaDescription: '316L & 304L electropolished SS pipes for Mumbai pharma, chemical and food plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Made in Taloja.',
-    h1: 'Electropolished Stainless Steel Pipe Manufacturer in Mumbai: 316L and 304L EP Tubes, Made in Taloja MIDC',
-    subHeadline: "We manufacture and electropolish SS 316L and 304L pipes and tubes at our own Taloja MIDC facility, inside the Mumbai Metropolitan Region, and supply Mumbai's pharma, chemical, food and laboratory customers directly. Every order ships with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report.",
+    metaDescription: '316L & 304L electropolished SS pipes for Mumbai pharma, chemical and food plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Made in Mumbai.',
+    h1: 'Electropolished Pipes & Tubes Manufacturer and Supplier in Mumbai',
+    subHeadline: "We manufacture and electropolish SS 316L and 304L pipes and tubes at our own Mumbai, inside the Mumbai Metropolitan Region, and supply Mumbai's pharma, chemical, food and laboratory customers directly. Every order ships with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report.",
     trustStrip: ['ISO 9001:2015', 'EN 10204 3.1 MTC', '100% PMI Tested', 'Internal Ra ≤0.4 µm', 'ASTM A269 / A270'],
     defaultFilter: { grade: '316L', ra: '0.4' },
     hasDuplex: true,
-    transitInfo: 'The factory is about 40-50 km from most Mumbai addresses, so you can inspect material and witness testing without losing a day.',
+    transitInfo: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.',
     regionalCapability: {
       title: "Electropolished Pipe for Mumbai's Industrial Belts",
-      description: "Mumbai's process industry sits in several separate pockets, and each asks something different of a pipe. Pharma and life-science plants cluster in the north-eastern suburbs, small manufacturers fill the MIDC estates around Andheri, and the Chembur–Trombay–Mahul belt in the east carries oil, fertiliser and chemical-terminal operations. Our factory is a short drive from all of them, so you can inspect material and witness testing without losing a day.",
+      description: "Mumbai's process industry sits in several separate pockets, and each asks something different of a pipe. Pharma and life-science plants cluster in the north-eastern suburbs, small manufacturers fill the MIDC estates around Andheri, and the Chembur–Trombay–Mahul belt in the east carries oil, fertiliser and chemical-terminal operations. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
       zones: [
         { zone: 'Andheri MIDC / Marol', endUse: 'Small and mid-size manufacturers, pharma and engineering units', application: 'Purified water, process utility, skid piping', spec: '316L / 304L, cut to drawing' },
         { zone: 'SEEPZ, Andheri East', endUse: 'Export-oriented units', application: 'Clean utility, audit-ready document packs', spec: '316L, full documentation' },
@@ -100,8 +100,8 @@ export const maharashtraCityData = {
     areas: ['Andheri', 'Marol', 'SEEPZ', 'Vikhroli', 'Powai', 'Kanjurmarg', 'Chembur', 'Trombay', 'Mahul', 'Govandi', 'Kurla', 'Bhandup', 'Mulund', 'Mahape', 'Navi Mumbai'],
     faqs: [
       {
-        q: 'Where is your factory, and can I inspect it?',
-        a: 'Our factory is at Balaji Industrial Compound, Taloja MIDC, in the Mumbai Metropolitan Region. Mumbai customers can visit, witness testing or appoint an inspector. Typical delivery to most Mumbai addresses is same-day to next-day.'
+        q: 'Where are you based, and can I have the tube inspected before dispatch?',
+        a: 'We are at Shop No. 05, Ground Floor, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai 400004. You can appoint a third-party inspector to check the tube against the MTC before dispatch, and delivery time is confirmed in writing with each quotation.'
       },
       {
         q: 'Which grade should I choose given Mumbai\'s coastal air?',
@@ -125,13 +125,13 @@ export const maharashtraCityData = {
     country: 'India',
     pageUrl: '/market-area/thane',
     pageTitle: 'Electropolished Pipe Manufacturer in Thane | Sakshi Forge',
-    metaDescription: '316L & 304L electropolished SS pipes for Thane, Ambernath and Wagle Estate plants. ASTM A270, MTC EN 10204 3.1, 100% PMI tested. Quote in 30 min.',
-    h1: 'Electropolished Stainless Steel Pipe Manufacturer in Thane: 316L and 304L EP Tubes for Wagle Estate, Ambernath and Badlapur Plants',
-    subHeadline: "Thane district is one of Maharashtra's densest chemical and pharma belts, and our Taloja MIDC factory is a short drive away. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house and supply Thane's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    metaDescription: '316L & 304L electropolished SS pipes for Thane, Ambernath and Wagle Estate plants. ASTM A270, MTC EN 10204 3.1, 100% PMI tested. Quote within 24 hours.',
+    h1: 'Electropolished Pipes & Tubes Manufacturer and Supplier in Thane',
+    subHeadline: "Thane district is one of Maharashtra's densest chemical and pharma belts, and Mumbai is a short drive away. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house and supply Thane's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     trustStrip: ['ISO 9001:2015', 'EN 10204 3.1 MTC', '100% PMI Tested', 'Internal Ra ≤0.4 µm', 'ASTM A269 / A270'],
     defaultFilter: { grade: '316L', ra: '0.4' },
     hasDuplex: true,
-    transitInfo: 'The factory is about 30-40 km from most Thane locations, so urgent top-up orders and factory visits are realistic.',
+    transitInfo: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.',
     regionalCapability: {
       title: "Electropolished Pipe for Thane's Industrial Belts",
       description: "Thane district is one of the most industrialised in Maharashtra, and the belts inside it do different work. Wagle Industrial Estate, the state's first MIDC estate, hosts pharma and life-science units. The Ambernath, Badlapur and Dombivli estates are the district's chemical belts, with pharma alongside. Further out, the Trans-Thane Creek (TTC) area and the Atgaon complex at Shahapur add more pharma and process plants. A pipe for a pharma purified-water loop and one for a chemical transfer line are different problems, and we supply both.",
@@ -152,7 +152,7 @@ export const maharashtraCityData = {
       ],
       localNotes: [
         'Regulated, closely watched belts: Chemical estates in Thane district operate under close regulatory scrutiny, so leak-tested, fully documented piping matters. Every order ships with hydro and PMI certificates.',
-        'Short supply line: The factory is about 30-40 km from most Thane locations, so urgent top-up orders and factory visits are realistic.',
+        'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.',
         'Mixed media: A Wagle pharma unit and an Ambernath chemical plant need different grades. We recommend by media, not habit, and flag the hard limits upfront: no hydrofluoric acid, and no abrasive slurries.'
       ]
     },
@@ -160,7 +160,7 @@ export const maharashtraCityData = {
     faqs: [
       {
         q: 'How quickly can you deliver to Thane?',
-        a: 'From our Taloja MIDC factory, typically same-day to next-day for most Thane locations. Factory visits and witnessed testing are welcome.'
+        a: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.'
       },
       {
         q: 'Is 316L enough for Ambernath chemical lines, or do I need duplex?',
@@ -184,13 +184,13 @@ export const maharashtraCityData = {
     country: 'India',
     pageUrl: '/market-area/tarapur',
     pageTitle: 'Electropolished Pipe Manufacturer in Tarapur | Sakshi Forge',
-    metaDescription: 'Electropolished 316L & duplex pipes for Tarapur MIDC pharma and chemical plants. ASTM A270/A790, MTC EN 10204 3.1, PMI tested. Quote in 30 min.',
-    h1: 'Electropolished Stainless Steel Pipe Manufacturer in Tarapur: 316L and Duplex EP Tubes for Boisar-Tarapur MIDC Pharma and Chemical Plants',
-    subHeadline: 'Tarapur MIDC is a planned chemical hub with pharma and intermediates plants spread across more than a thousand hectares. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes in-house at Taloja and supply Tarapur\'s clean-utility and process lines, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.',
+    metaDescription: 'Electropolished 316L & duplex pipes for Tarapur MIDC pharma and chemical plants. ASTM A270/A790, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.',
+    h1: 'Electropolished Pipes & Tubes Manufacturer and Supplier in Tarapur',
+    subHeadline: 'Tarapur MIDC is a planned chemical hub with pharma and intermediates plants spread across more than a thousand hectares. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes and supply Tarapur\'s clean-utility and process lines, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.',
     trustStrip: ['ISO 9001:2015', 'EN 10204 3.1 MTC', '100% PMI Tested', 'Internal Ra ≤0.4 µm', 'ASTM A269 / A270 / A790'],
     defaultFilter: { grade: '316L', ra: '0.4' },
     hasDuplex: true,
-    transitInfo: 'Tarapur is roughly 110-130 km from our Taloja MIDC factory, and delivery is typically same-day to next-day.',
+    transitInfo: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.',
     regionalCapability: {
       title: 'Electropolished Pipe for Tarapur and Boisar',
       description: 'Tarapur MIDC sits on the Palghar coast north of Mumbai and is one of Maharashtra\'s main planned chemical estates. Pharma and API units, specialty-chemical plants and intermediates makers work side by side, and so do textile-processing units. They need different things. A pharma unit needs a measured surface finish and a document trail its auditors can follow. A chemical unit needs the right alloy for its media. We supply both from one factory, and we ask for your media before we quote.',
@@ -215,8 +215,8 @@ export const maharashtraCityData = {
     areas: ['Tarapur MIDC', 'Boisar', 'Salwad', 'Kolavade', 'Palghar', 'Dahanu', 'Wada'],
     faqs: [
       {
-        q: 'How far is Tarapur from your factory, and how fast can you deliver?',
-        a: 'Tarapur is roughly 110-130 km from our Taloja MIDC factory, and delivery is typically same-day to next-day. Factory visits and witnessed testing are welcome.'
+        q: 'How fast can you deliver to Tarapur?',
+        a: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.'
       },
       {
         q: 'Which grade should I choose for Tarapur chemical plants, 316L or duplex?',
@@ -240,13 +240,13 @@ export const maharashtraCityData = {
     country: 'India',
     pageUrl: '/market-area/nashik',
     pageTitle: 'Electropolished Pipe Manufacturer in Nashik | Sakshi Forge',
-    metaDescription: 'Electropolished 316L & 304L pipes for Nashik pharma, wine and beverage plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.',
-    h1: 'Electropolished Stainless Steel Pipe Manufacturer in Nashik: 316L and 304L EP Tubes for Satpur, Ambad and Sinnar MIDC Plants',
-    subHeadline: 'Nashik combines automotive and engineering estates, a large wine and beverage sector, and growing food and pharma capacity. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply Nashik\'s plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.',
+    metaDescription: 'Electropolished 316L & 304L pipes for Nashik pharma, wine and beverage plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.',
+    h1: 'Electropolished Pipes & Tubes Manufacturer and Supplier in Nashik',
+    subHeadline: 'Nashik combines automotive and engineering estates, a large wine and beverage sector, and growing food and pharma capacity. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Nashik\'s plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.',
     trustStrip: ['ISO 9001:2015', 'EN 10204 3.1 MTC', '100% PMI Tested', 'Internal Ra ≤0.4 µm', 'ASTM A269 / A270'],
     defaultFilter: { grade: '304L', ra: '0.4' },
     hasDuplex: true,
-    transitInfo: 'Nashik is roughly 180-200 km from our Taloja MIDC factory, and delivery is typically next-day with protective capped and sleeved packing.',
+    transitInfo: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.',
     regionalCapability: {
       title: "Electropolished Pipe for Nashik's Industrial Belts",
       description: "Nashik's industry is spread across several MIDC estates. Satpur is the oldest and hosts automotive and engineering plants. Ambad is a base for small and mid-size precision engineering and plastics units, and it has a container freight station that supports exports. Sinnar and the Malegaon MIDC are the district's large-manufacturing, power and logistics zone, and Igatpuri, Dindori and Vinchur add agro and food processing. On top of the estates, Nashik is India's main wine region, with wineries across the valley. A wine fermentation line, a pharma purified-water loop and a skid-builder's frame are three different jobs, and we supply all three.",
@@ -274,7 +274,7 @@ export const maharashtraCityData = {
     faqs: [
       {
         q: 'How fast can you deliver to Nashik?',
-        a: 'Nashik is roughly 180-200 km from our Taloja MIDC factory, and delivery is typically next-day. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged, and factory visits and witnessed testing are welcome.'
+        a: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged.'
       },
       {
         q: 'Which grade is right for wine and beverage lines, 304L or 316L?',
@@ -298,13 +298,13 @@ export const maharashtraCityData = {
     country: 'India',
     pageUrl: '/market-area/aurangabad',
     pageTitle: 'Electropolished Pipe Manufacturer Aurangabad | Sakshi Forge',
-    metaDescription: 'Electropolished 316L & 304L pipes for Aurangabad Waluj, Chikalthana and Shendra plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.',
-    h1: 'Electropolished Stainless Steel Pipe Manufacturer in Aurangabad (Chhatrapati Sambhajinagar): 316L and 304L EP Tubes for Waluj, Chikalthana and Shendra-Bidkin Plants',
-    subHeadline: 'Aurangabad pairs long-established MIDC estates with the new Shendra-Bidkin industrial city, where plants are being built from scratch. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply Aurangabad\'s plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.',
+    metaDescription: 'Electropolished 316L & 304L pipes for Aurangabad Waluj, Chikalthana and Shendra plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.',
+    h1: 'Electropolished Pipes & Tubes Manufacturer and Supplier in Aurangabad (Chhatrapati Sambhajinagar)',
+    subHeadline: 'Aurangabad pairs long-established MIDC estates with the new Shendra-Bidkin industrial city, where plants are being built from scratch. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Aurangabad\'s plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.',
     trustStrip: ['ISO 9001:2015', 'EN 10204 3.1 MTC', '100% PMI Tested', 'Internal Ra ≤0.4 µm', 'ASTM A269 / A270'],
     defaultFilter: { grade: '316L', ra: '0.4' },
     hasDuplex: true,
-    transitInfo: 'Aurangabad is roughly 330-350 km from our factory, and delivery is typically 1-2 days with protective sleeve packaging.',
+    transitInfo: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.',
     regionalCapability: {
       title: "Electropolished Pipe for Aurangabad's Industrial Belts",
       description: 'Aurangabad\'s industry is concentrated in a few large belts. Waluj MIDC is the biggest and most established, with a heavy engineering and automotive base. Chikalthana MIDC adds a mix of pharma and light engineering units. To the south, the Shendra-Bidkin Industrial Area (AURIC), developed under the Delhi–Mumbai Industrial Corridor, is a greenfield industrial city. Its published focus sectors include automobiles, pharmaceuticals and biotechnology, heavy engineering, food processing and electronics. Plants in an area like that specify their piping early, so we work from drawings as well as from stock.',
@@ -324,7 +324,7 @@ export const maharashtraCityData = {
       ],
       localNotes: [
         'A new industrial city is still being built: Plants in the AURIC area decide piping at design stage, so the earlier you send drawings, the better the quote and the lead time. We will mark up your spec and flag anything that does not suit electropolished pipe.',
-        'Longer supply line: Aurangabad is roughly 330-350 km from our factory. We cap the pipe ends and sleeve every length so the finish arrives undamaged, and we plan consolidated dispatches for larger orders.',
+        'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends and sleeve every length so the finish arrives undamaged, and we plan consolidated dispatches for larger orders.',
         'Honest fit: In automotive and engineering plants, EP pipe belongs on clean utilities and process-water lines, not on the main plant piping. We will say so before you order.'
       ]
     },
@@ -332,7 +332,7 @@ export const maharashtraCityData = {
     faqs: [
       {
         q: 'How fast can you deliver to Aurangabad, and how is the finish protected in transit?',
-        a: 'Aurangabad is roughly 330-350 km from our Taloja MIDC factory, and delivery is typically 1-2 days. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged, and factory visits and witnessed testing are welcome.'
+        a: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged.'
       },
       {
         q: 'Should I choose 316L or 304L for Waluj and Chikalthana plants?',
@@ -356,13 +356,13 @@ export const maharashtraCityData = {
     country: 'India',
     pageUrl: '/market-area/amravati',
     pageTitle: 'Electropolished Pipe Manufacturer Amravati | Sakshi Forge',
-    metaDescription: 'Electropolished 316L & 304L pipes for Amravati MIDC food, agro and process plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.',
-    h1: 'Electropolished Stainless Steel Pipe Manufacturer in Amravati: 316L and 304L EP Tubes for Amravati MIDC, Nandgaon Peth and PM MITRA Park Plants',
-    subHeadline: "Amravati is building one of India's largest textile regions, and its MIDC estates also host food and agro-processing units that need clean, easy-to-sanitise pipe. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply Amravati's plants directly, packed for the long haul, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    metaDescription: 'Electropolished 316L & 304L pipes for Amravati MIDC food, agro and process plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.',
+    h1: 'Electropolished Pipes & Tubes Manufacturer and Supplier in Amravati',
+    subHeadline: "Amravati is building one of India's largest textile regions, and its MIDC estates also host food and agro-processing units that need clean, easy-to-sanitise pipe. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Amravati's plants directly, packed for the long haul, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     trustStrip: ['ISO 9001:2015', 'EN 10204 3.1 MTC', '100% PMI Tested', 'Internal Ra ≤0.4 µm', 'ASTM A269 / A270'],
     defaultFilter: { grade: '316L', ra: '0.4' },
     hasDuplex: true,
-    transitInfo: 'Amravati is roughly 780-820 km from our factory, and delivery is typically 2-3 days with protective capping and sleeving for the long haul.',
+    transitInfo: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.',
     regionalCapability: {
       title: "Electropolished Pipe for Amravati's Industrial Belts",
       description: "Amravati district has a string of MIDC estates. The main ones are the Amravati MIDC and the Additional Amravati MIDC at Nandgaon Peth, with smaller estates at Achalpur, Anjangaon Surji, Daryapur, Morshi, Warud and elsewhere. Next to the Nandgaon Peth estate, the PM MITRA integrated textile park covers 1,020 acres, about 30 km from the Samruddhi Expressway, and has a common effluent treatment plant. Around the city, the district's farming belt feeds food and agro-processing units. A word on fit: Spinning, weaving and garment-making don't use electropolished pipe. Where we are useful is the water and dosing lines in textile wet-processing units, food and agro plants, and new-build projects that specify clean utilities at design stage.",
@@ -385,14 +385,14 @@ export const maharashtraCityData = {
         'Where we fit: Dye-house water and dosing lines, food and agro plants, and design-stage projects are our best match here. We will say plainly if a line does not suit electropolished pipe.',
         'A textile park still being built: Plants in a new park decide piping at design stage, so send drawings early and we will mark up the specification and flag anything unsuitable.',
         'Dye-house salts and chlorides: Salt in dyeing liquor attacks 304 by pitting. For lines carrying it, 316L is usually the safer grade. Tell us the media and temperature and we will confirm.',
-        'A long supply line: Amravati is roughly 780-820 km from our factory. We cap the pipe ends, sleeve every length and pack for the journey, and we quote consolidated dispatches for larger orders.'
+        'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey, and we quote consolidated dispatches for larger orders.'
       ]
     },
     areas: ['Amravati', 'Badnera', 'Nandgaon Peth', 'Achalpur', 'Anjangaon Surji', 'Daryapur', 'Morshi', 'Warud', 'Dhamangaon Railway', 'Chandur Railway'],
     faqs: [
       {
         q: 'How fast can you deliver to Amravati, and how is the finish protected over that distance?',
-        a: 'Amravati is roughly 780-820 km from our Taloja MIDC factory, and delivery is typically 2-3 days. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. Factory visits and witnessed testing before dispatch are welcome.'
+        a: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged.'
       },
       {
         q: 'Amravati is a textile hub. Is electropolished pipe used in textile units?',

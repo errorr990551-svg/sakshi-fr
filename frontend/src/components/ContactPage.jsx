@@ -93,7 +93,7 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
             Contact <span>Sakshi Forge</span>
           </h1>
           <p style={{ color: 'var(--text-secondary)', maxWidth: '700px', margin: '0 auto', fontSize: '1.1rem', lineHeight: '1.6' }}>
-            Get a firm commercial quotation within 30 minutes. Contact our Mumbai sales desk or send your details using the form below.
+            Get a firm commercial quotation within 24 hours. Contact our Mumbai sales desk or send your details using the form below.
           </p>
         </div>
       </section>
@@ -223,7 +223,7 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
                   <MessageSquare size={36} style={{ color: 'var(--primary-yellow)', margin: '0 auto 1rem auto' }} />
                   <h4 style={{ fontSize: '1.25rem', fontWeight: '700', marginBottom: '0.5rem' }}>Quote Request Sent!</h4>
                   <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
-                    Thank you for reaching out. A sales engineer has been assigned and will reply with a detailed pricing sheet shortly (usually within 30 minutes).
+                    Thank you for reaching out. A sales engineer has been assigned and will reply with a detailed pricing sheet shortly (usually within 24 hours).
                   </p>
                 </div>
               ) : (

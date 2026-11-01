@@ -127,7 +127,7 @@ export default function GujaratHubPage({ onEnquireClick, onShowContactDetails })
             gap: '0.5rem',
             marginBottom: '1rem'
           }}>
-            <Factory size={14} /> Direct Works Road Transit · Taloja Works to Gujarat Corridor
+            <Factory size={14} /> Direct Road Dispatch · Mumbai to Gujarat Corridor
           </span>
 
           <h1 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: '850', lineHeight: '1.2', marginBottom: '1rem', color: '#fff' }}>
@@ -135,7 +135,7 @@ export default function GujaratHubPage({ onEnquireClick, onShowContactDetails })
           </h1>
 
           <p style={{ color: '#cbd5e1', fontSize: '1.1rem', lineHeight: '1.7', marginBottom: '2rem' }}>
-            Direct manufacturer supply of ASTM A270 and ASME BPE compliant SS 316L, 304L and duplex 2205 electropolished tubes to Gujarat's premier pharma, chemical, dairy, textile and EPC infrastructure clusters. In-house electropolished at Taloja MIDC with certified Ra ≤0.4 µm, 100% PMI testing, and EN 10204 3.1 MTCs on every order.
+            Direct manufacturer supply of ASTM A270 and ASME BPE compliant SS 316L, 304L and duplex 2205 electropolished tubes to Gujarat's premier pharma, chemical, dairy, textile and EPC infrastructure clusters. Electropolished with certified Ra ≤0.4 µm, 100% PMI testing, and EN 10204 3.1 MTCs on every order.
           </p>
 
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
@@ -144,7 +144,7 @@ export default function GujaratHubPage({ onEnquireClick, onShowContactDetails })
               className="btn btn-primary btn-lg"
               style={{ padding: '0.85rem 1.75rem', fontWeight: '700' }}
             >
-              Request Gujarat Quote in 30 Min <ArrowRight size={16} />
+              Request Gujarat Quote in 24 Hours <ArrowRight size={16} />
             </button>
             <button 
               onClick={handleShowContact}

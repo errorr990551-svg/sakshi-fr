@@ -7,8 +7,8 @@ export const odishaCityData = {
     "pageUrl": "/market-area/bhubaneswar",
     "pageTitle": "Electropolished Pipe Manufacturer Bhubaneswar | Sakshi Forge",
     "metaDescription": "Electropolished 316L & 304L SS pipes for Bhubaneswar and Khurda biotech, food, seafood and institutional clean-utility lines. ASTM A270, MTC 3.1.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Bhubaneswar: 316L and 304L EP Tubes for Mancheswar, Chandaka, Khurda and Deras Food-Park Plants",
-    "subHeadline": "Bhubaneswar is Odisha's capital and its fastest-growing industrial and institutional hub, with MSME estates at Mancheswar and Chandaka, a biotech and pharma park, electronics at Info Valley, and food and seafood parks at Khurda and Deras. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja, in western India, and supply Bhubaneswar's plants, institutions and fabricators, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Bhubaneswar",
+    "subHeadline": "Bhubaneswar is Odisha's capital and its fastest-growing industrial and institutional hub, with MSME estates at Mancheswar and Chandaka, a biotech and pharma park, electronics at Info Valley, and food and seafood parks at Khurda and Deras. We manufacture and electropolish SS 316L and 304L pipes and tubes, in western India, and supply Bhubaneswar's plants, institutions and fabricators, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -21,7 +21,7 @@ export const odishaCityData = {
       "ra": "0.4"
     },
     "hasDuplex": false,
-    "transitInfo": "Bhubaneswar is roughly 1,800-1,900 km from our Taloja MIDC factory, and typical road transit is 7-8 days with protective capping, sleeving and sea-air barrier packaging.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Bhubaneswar and the Khordha Belt",
       "description": "Khordha district, which holds the capital, is described by the state as its economic hub, strongest in MSME, IT, electronics and food processing. The state's industrial infrastructure corporation runs the main estates: Mancheswar Industrial Estate in Bhubaneswar, with others at Patia and Rasulgarh, and Chandaka Industrial Estate, which includes the Infocity SEZ, a 145-acre IT zone in operation. A Biotech Pharma IT Park industrial estate is listed among the corporation's estates [CONFIRM current tenants], and the Info Valley area at Gaudakasipur is a dedicated electronics-hardware cluster with a sector-specific SEZ planned over 262 acres. South of the city, Khurda has its own industrial estate, a food park of about 162 acres, an apparel park, and a Mega Food Park and Seafood Park of about 153 acres at Deras under the central scheme [CONFIRM operating status and tenants]. A private industrial estate of 343 acres at Malipada near Khurda hosts food and beverage processing, and Bhubaneswar also has major hospitals, universities and research institutes.\n\nA word on fit. IT parks, electronics assembly and apparel don't use electropolished pipe. Where we're useful is the pharma and biotech units, food, beverage and seafood lines, institutional laboratory and clean-steam systems, and the fabricators who serve them.",
@@ -96,14 +96,14 @@ export const odishaCityData = {
         }
       ],
       "localNotes": [
-        "We're a very long way from Bhubaneswar, and we'll say so. Our factory is in Taloja, about 1,800-1,900 km away, and freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "We're a very long way from Bhubaneswar, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Institutions buy formally. Hospitals, universities and state bodies generally purchase through tenders, registered vendors and public procurement portals. If yours does, send us the tender specification, quantities and delivery schedule and we'll respond with a technical and commercial offer and the document pack.",
         "Seafood is a brine problem. Shrimp and fish processing uses brine, ice-water and chlorinated wash. 316L is usually the minimum, and a smooth electropolished interior is easier to clean and sanitise. Send us your cleaning chemistry and chloride levels.",
         "The parks are still developing. Don't plan around their timelines. Send your drawings or specification whenever your project is ready, and we'll quote against them and flag anything that doesn't suit electropolished pipe.",
         "Pharma and biotech are audited. Every order ships with heat-number traceability, a measured Ra surface report, and passivation and ferrite records. These support your validation file but don't replace your own validation documentation.",
         "Electronics and IT aren't the target. Their main processes don't use electropolished pipe. We'd rather tell you than sell you something you don't need.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Cuttack, Paradeep or Berhampur, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "Plan the lead time. Typical road transit is 7-8 days after manufacture and testing. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
+        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
         "Protect the finish. Humid, coastal-region air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
     },
@@ -146,7 +146,7 @@ export const odishaCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Bhubaneswar take, and how is the finish protected over that distance?",
-        "a": "Bhubaneswar is roughly 1,800-1,900 km from our Taloja MIDC factory, and typical road transit is 7-8 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "We run a shrimp or seafood plant at Khurda or Deras. Which grade should we use?",
@@ -170,8 +170,8 @@ export const odishaCityData = {
     "pageUrl": "/market-area/cuttack",
     "pageTitle": "Electropolished Pipe Manufacturer Cuttack | Sakshi Forge",
     "metaDescription": "Electropolished 304L & 316L SS pipes for Cuttack and Choudwar estates, hospitals, food and utility lines. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Cuttack: 304L and 316L EP Tubes for Jagatpur, Ramdaspur and Choudwar Plants and Institutions",
-    "subHeadline": "Cuttack is Odisha's old commercial capital on the Mahanadi delta, with MSME estates at Jagatpur, Ramdaspur and Khapuria, a heavy-industry belt at Choudwar, and a large hospital and institute base. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja and supply Cuttack's plants, institutions and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Cuttack",
+    "subHeadline": "Cuttack is Odisha's old commercial capital on the Mahanadi delta, with MSME estates at Jagatpur, Ramdaspur and Khapuria, a heavy-industry belt at Choudwar, and a large hospital and institute base. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply Cuttack's plants, institutions and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -184,7 +184,7 @@ export const odishaCityData = {
       "ra": "0.4"
     },
     "hasDuplex": false,
-    "transitInfo": "Cuttack is roughly 1,820-1,920 km from our Taloja MIDC factory, and typical road transit is 7-8 days with protective capping and humid-delta sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Cuttack and Choudwar",
       "description": "Cuttack sits at the head of the Mahanadi delta, about 30 km from Bhubaneswar [CONFIRM], and its industry grew from the city's trading and craft traditions. The state's industrial infrastructure corporation runs several estates here, including Jagatpur Industrial Estate, Ramdaspur Industrial Estate and Khapuria Industrial Estate. A textile park at Ramdaspur and Choudwar and an industrial estate for auto and auto components at Cuttack are listed among its projects [CONFIRM status of each]. North of the city, the Choudwar area is a heavy-industry belt of ferro-alloys, thermal power, pulp and paper, and coke ovens. Cuttack also has a large government medical college and hospital and other institutes [CONFIRM].\n\nA word on fit. Silver filigree and other craft metalwork are dry, and the Choudwar plants run on carbon steel and specialty alloy. Where we're useful is institutional clean utilities (clean steam, purified water, laboratory lines), food and small engineering units in the estates, DM-water and clean-utility lines inside the Choudwar plants, and the fabricators who serve them.",
@@ -268,9 +268,9 @@ export const odishaCityData = {
         "We'll say plainly where electropolished pipe isn't the answer. Ferro-alloy, power, paper and coke-oven processes use carbon steel and specialty alloy, and craft metalwork is dry. Our pipe is for the clean side. Send us the line, the media and the temperature and we'll say honestly whether it fits. Avoid hydrofluoric acid and abrasive slurries.",
         "Institutions buy formally. Hospitals, medical colleges and state bodies generally purchase through tenders, registered vendors and public procurement portals. If yours does, send us the tender specification, quantities and delivery schedule and we'll respond with a technical and commercial offer and the document pack.",
         "Large plants buy formally. Major plants at Choudwar generally purchase through tenders, approved-vendor lists and registered contractors. If yours does, send us the tender specification and we'll respond with the document pack, including 100% PMI results and a 3.1 MTC tied to heat numbers.",
-        "We're a very long way from Cuttack, and we'll say so. Cuttack is roughly 1,820-1,920 km from our factory, and freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "We're a very long way from Cuttack, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Cuttack is next to Bhubaneswar. If you also buy for Bhubaneswar, Khurda or Paradeep, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "Plan the lead time. Typical road transit is 7-8 days after manufacture and testing. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
+        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits.",
         "Protect the finish. Humid delta air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
     },
@@ -311,7 +311,7 @@ export const odishaCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Cuttack take, and how is the finish protected over that distance?",
-        "a": "Cuttack is roughly 1,820-1,920 km from our Taloja MIDC factory, and typical road transit is 7-8 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Where does electropolished pipe fit in the Choudwar power, paper and alloy plants?",
@@ -335,8 +335,8 @@ export const odishaCityData = {
     "pageUrl": "/market-area/berhampur",
     "pageTitle": "Electropolished Pipe Manufacturer Berhampur | Sakshi Forge",
     "metaDescription": "Electropolished 316L & 304L SS pipes for Berhampur and Gopalpur food, chemical and port-park projects. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Berhampur: 316L and 304L EP Tubes for Gopalpur Industrial Park, Cashew, Herbal and Food Plants",
-    "subHeadline": "Berhampur (Brahmapur) is southern Odisha's commercial centre and the gateway to Gopalpur Industrial Park, a large port-adjacent industrial park for chemicals, renewable-energy equipment and food processing, with cashew, herbal and small-industry clusters around it. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and quote against your drawings from design stage, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Berhampur",
+    "subHeadline": "Berhampur (Brahmapur) is southern Odisha's commercial centre and the gateway to Gopalpur Industrial Park, a large port-adjacent industrial park for chemicals, renewable-energy equipment and food processing, with cashew, herbal and small-industry clusters around it. We manufacture and electropolish SS 316L and 304L pipes and tubes and quote against your drawings from design stage, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -349,7 +349,7 @@ export const odishaCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Berhampur is roughly 1,650-1,800 km from our Taloja MIDC factory, and typical road transit is 6-7 days with protective capping and marine-saline barrier sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Berhampur, Gopalpur and Ganjam",
       "description": "Berhampur is the headquarters of Ganjam district on the Bay of Bengal coast, about 160 km south of Bhubaneswar [CONFIRM]. The district lists around seven industrial estates, including Berhampur, Autonagar and Chhatrapur, and four industrial or MSME parks, among them Saraf Titanium Park and the Barapalli, Hinjili, Khairabethi and Balarampur MSME parks [CONFIRM current tenants]. Its small-industry clusters include about 76 cashew-processing units, a kewra (essential-oil) processing cluster, granite, and an ayurvedic cluster of around 38 units around Aska, Kabisuryanagar and Berhampur. The district also has a handful of large plants, including a rayon and chemicals complex and a ferro-chrome plant. The new anchor is Gopalpur Industrial Park, developed by a Tata Steel subsidiary on about 2,970 acres, about 2.5 km from Gopalpur Port with both SEZ and domestic-tariff-area land. Its stated investment pipeline exceeds ₹65,400 crore, spanning green hydrogen, renewable-energy equipment, speciality chemicals, tyres, mineral processing and food processing [CONFIRM which projects are operating].\n\nA word on fit. Cashew shelling, granite, silk and coir are dry or craft processes, and tyre and mineral-processing plants run on carbon steel and specialty alloy. Where we're useful is food and herbal-extract lines, the clean utilities and gas lines of the chemical and green-hydrogen projects where the specification calls for stainless, seafood and coastal duty, and the EPC contractors and fabricators who build the park.",
@@ -429,7 +429,7 @@ export const odishaCityData = {
         "New plants usually buy through EPC contractors. If you're an EPC or a fabricator, we supply with the document pack your client's inspector expects. If your client has an approved-vendor process, send us the form and we'll complete it.",
         "Plain 304 is a poor bet on this coast. Salt-laden air and chloride-bearing water attack 304 by pitting. We steer exposed and wet runs towards 316L or duplex 2205.",
         "Cashew shelling, granite and silk aren't the target. Those are dry or craft processes. We'd rather tell you than sell you something you don't need.",
-        "We're a very long way from Berhampur, and we'll say so. Berhampur is roughly 1,650-1,800 km from our factory, and freight is a large share of any small order. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "We're a very long way from Berhampur, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. For a few plain lengths, a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Between Bhubaneswar and Visakhapatnam. If you also buy for Bhubaneswar, or for Visakhapatnam and Anakapalle in Andhra Pradesh, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Protect the finish. Humid, saline air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
@@ -473,7 +473,7 @@ export const odishaCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Berhampur or Gopalpur take, and how is the finish protected over that distance?",
-        "a": "Berhampur is roughly 1,650-1,800 km from our Taloja MIDC factory, and typical road transit is 6-7 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for the humid, saline air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for the humid, saline air, so the electropolished finish arrives undamaged. If your project has a fixed date, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Gopalpur Industrial Park is still being built. Can you quote my project now, and what about hydrogen or high-purity lines?",
@@ -497,8 +497,8 @@ export const odishaCityData = {
     "pageUrl": "/market-area/angul",
     "pageTitle": "Electropolished Pipe Manufacturer Angul | Sakshi Forge",
     "metaDescription": "Electropolished 304L & 316L SS pipes for Angul-Talcher aluminium, power and steel clean utilities. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Angul: 304L and 316L EP Tubes for Aluminium, Power and Steel Clean Utilities in Angul and Talcher",
-    "subHeadline": "Angul and Talcher form Odisha's coal, aluminium and power belt, with an aluminium smelter and captive power complex, thermal power stations, steel and ferro-alloy plants and a new Aluminium Park for downstream industry. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja and supply the clean-utility, DM-water, sampling and laboratory lines of these plants, and the contractors who maintain them, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Angul",
+    "subHeadline": "Angul and Talcher form Odisha's coal, aluminium and power belt, with an aluminium smelter and captive power complex, thermal power stations, steel and ferro-alloy plants and a new Aluminium Park for downstream industry. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply the clean-utility, DM-water, sampling and laboratory lines of these plants, and the contractors who maintain them, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -511,7 +511,7 @@ export const odishaCityData = {
       "ra": "0.4"
     },
     "hasDuplex": false,
-    "transitInfo": "Angul is roughly 1,600-1,700 km from our Taloja MIDC factory, and typical road transit is 6-7 days with protective capping and shutdown priority dispatch.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for the Angul–Talcher Industrial Belt",
       "description": "Angul is in central Odisha, and with Talcher it forms one of the state's main industrial belts, which the state's minerals department describes as thermal power, aluminium, coal washeries, ferro-alloys and coal mines. A national aluminium producer runs its smelter and captive power plant at Angul, and a large private steel maker also operates here. The state's industrial infrastructure corporation is developing the Angul Aluminium Park jointly with the aluminium company, with a first phase of about 223 acres, to attract downstream and ancillary units, and a larger area of about 400 acres has been proposed [CONFIRM current status and tenants].\n\nA word on fit. Aluminium smelting, coal mining, thermal power and steel-making are heavy processes whose main lines use carbon steel and specialty alloy, and aluminium and alkali services can be unsuitable for 304 or 316. Where we're useful is the small set of clean lines inside those plants (DM water, boiler-feed, sampling, instrument and laboratory lines), the utilities of downstream units in the Aluminium Park, and the fabricators and contractors who maintain the plants.",
@@ -589,10 +589,10 @@ export const odishaCityData = {
         "We'll say plainly where electropolished pipe isn't the answer. Aluminium-smelting, alumina, caustic, coal and steel-making services use carbon steel and specialty alloy. Our pipe is for the clean side. Send us the line, the media and the temperature and we'll say honestly whether it fits, or whether a plain stainless or alloy tube is the better and cheaper choice. Avoid hydrofluoric acid and abrasive slurries.",
         "Large plants buy formally. Public-sector and large private plants generally purchase through tenders, approved-vendor lists, registered contractors and third-party inspection. If yours does, send us the tender specification and we'll respond with a technical and commercial offer and the document pack, including 100% PMI results and a 3.1 MTC tied to heat numbers.",
         "Plan around shutdowns. Annual overhauls have fixed dates. If you tell us the window when you enquire, we'll plan manufacture and dispatch against it, and we'll say plainly if the lead time doesn't fit.",
-        "We're a long way from Angul, and we'll say so. Angul is roughly 1,600-1,700 km from our factory, and freight is a large share of any small order. The belt is full of established stockists and workshops, and for a few plain lengths a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "We're a long way from Angul, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. The belt is full of established stockists and workshops, and for a few plain lengths a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Dry processing isn't the target. Coal handling, smelting and rolling are heavy or dry processes. We'd rather tell you than sell you something you don't need.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Jharsuguda, Sambalpur or Rourkela, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "Plan the lead time. Typical road transit is 6-7 days after manufacture and testing."
+        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation."
       ]
     },
     "areas": [
@@ -631,7 +631,7 @@ export const odishaCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Angul take, and how is the finish protected over that distance?",
-        "a": "Angul is roughly 1,600-1,700 km from our Taloja MIDC factory, and typical road transit is 6-7 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your shutdown has a fixed window, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your shutdown has a fixed window, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Where does electropolished pipe fit in an aluminium smelter or power station?",
@@ -655,8 +655,8 @@ export const odishaCityData = {
     "pageUrl": "/market-area/rourkela",
     "pageTitle": "Electropolished Pipe Manufacturer Rourkela | Sakshi Forge",
     "metaDescription": "Electropolished 304L & 316L SS pipes for Rourkela steel-plant clean utilities, institutions and fabricators. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Rourkela: 304L and 316L EP Tubes for Steel-Plant Clean Utilities, Institutions and Fabricators",
-    "subHeadline": "Rourkela is Odisha's steel city, built around one of India's earliest integrated steel plants, with a dense base of engineering workshops, an industrial estate at Kalunga, an engineering institute and large hospitals. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja and supply Rourkela's clean-utility lines, institutions and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Rourkela",
+    "subHeadline": "Rourkela is Odisha's steel city, built around one of India's earliest integrated steel plants, with a dense base of engineering workshops, an industrial estate at Kalunga, an engineering institute and large hospitals. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply Rourkela's clean-utility lines, institutions and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -669,7 +669,7 @@ export const odishaCityData = {
       "ra": "0.4"
     },
     "hasDuplex": false,
-    "transitInfo": "Rourkela is roughly 1,500-1,600 km from our Taloja MIDC factory, and typical road transit is 6-7 days with protective capping and industrial sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Rourkela's Industrial Belt",
       "description": "Rourkela is a planned city in Sundargarh district, in northern Odisha on the Howrah–Mumbai rail line, and it grew around the steel plant that India's first public-sector steel project built there in the 1950s with German collaboration. The state acquired about 80 square miles around it for the plant. Today the city is nicknamed the \"Industrial Capital of Odisha\", and its industry includes the steel plant and its captive utilities, a fertiliser unit listed under the plant in a regulator's records [CONFIRM operating], and Rourkela Industrial Estate at Kalunga, whose listed units are mostly iron and steel. The wider Sundargarh district adds iron-and-steel, sponge-iron and cement works around Rajgangpur and other iron-ore areas. The city also hosts an engineering institute, a large steel-plant hospital and other institutions [CONFIRM].\n\nA word on fit. Steel-making, sponge iron and cement are heavy or dry processes whose main lines use carbon steel and specialty alloy. Where we're useful is the small set of clean lines inside the plant (DM water, boiler-feed, sampling, instrument and laboratory lines), the many fabricators and engineering workshops that serve it, and institutional laboratory and clean-steam systems.",
@@ -745,7 +745,7 @@ export const odishaCityData = {
         "Rourkela has many local dealers, and we're not one of them. At roughly 1,500-1,600 km, freight is a large share of any small order, and for a few plain lengths a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Dry processing isn't the target. Sponge iron, cement and ore handling are dry or abrasive. We'd rather tell you than sell you something you don't need.",
         "Send the whole requirement at once. Consolidated orders spread freight better. If you also buy for Jharsuguda, Sambalpur or Angul, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "Plan the lead time. Typical road transit is 6-7 days after manufacture and testing."
+        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation."
       ]
     },
     "areas": [
@@ -785,7 +785,7 @@ export const odishaCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Rourkela take, and how is the finish protected over that distance?",
-        "a": "Rourkela is roughly 1,500-1,600 km from our Taloja MIDC factory, and typical road transit is 6-7 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your shutdown has a fixed window, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your shutdown has a fixed window, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Where does electropolished pipe fit in a steel plant?",
@@ -809,8 +809,8 @@ export const odishaCityData = {
     "pageUrl": "/market-area/sambalpur",
     "pageTitle": "Electropolished Pipe Manufacturer Sambalpur | Sakshi Forge",
     "metaDescription": "Electropolished 304L & 316L SS pipes for Sambalpur and Hirakud aluminium, steel, institutional and fabricator needs. ASTM A270, MTC EN 10204 3.1.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Sambalpur: 304L and 316L EP Tubes for Hirakud Aluminium, Steel and Institutional Clean Utilities",
-    "subHeadline": "Sambalpur is western Odisha's main city, on the Mahanadi below the Hirakud dam, with an aluminium smelter and rolling mills at Hirakud, steel and sponge-iron units around it, and a university, medical college and hospital at Burla. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja and supply Sambalpur's plants, institutions and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Sambalpur",
+    "subHeadline": "Sambalpur is western Odisha's main city, on the Mahanadi below the Hirakud dam, with an aluminium smelter and rolling mills at Hirakud, steel and sponge-iron units around it, and a university, medical college and hospital at Burla. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply Sambalpur's plants, institutions and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -823,7 +823,7 @@ export const odishaCityData = {
       "ra": "0.4"
     },
     "hasDuplex": false,
-    "transitInfo": "Sambalpur is roughly 1,400-1,500 km from our Taloja MIDC factory, and typical road transit is 5-6 days with protective capping and sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Sambalpur's Industrial Belt",
       "description": "Sambalpur sits in western Odisha, on the Howrah–Mumbai rail line and the road between Nagpur–Raipur and Bhubaneswar, and the state's minerals department lists the Hirakud area for aluminium and rolling mills. A national aluminium and copper group is based at Hirakud, and the district also holds integrated steel and sponge-iron units around Rengali, Bamloi and Lapanga in its pollution-control board's records [CONFIRM operating plants]. Sambalpur Industrial Estate, one of the state's industrial estates, houses smaller manufacturers. The city is home to a technical university and a medical college and hospital at Burla [CONFIRM], and it is famous for Sambalpuri handloom textiles.\n\nA word on fit. Aluminium smelting and rolling, steel-making and sponge iron are heavy processes whose main lines use carbon steel and specialty alloy. Handloom weaving is a craft, and its dyeing is small-scale. Where we're useful is the clean side of the plants (DM water, boiler-feed, sampling and laboratory lines), institutional laboratory and clean-steam systems, and the fabricators who serve them.",
@@ -898,8 +898,8 @@ export const odishaCityData = {
         "Plan around shutdowns. Overhauls have fixed dates. If you tell us the window when you enquire, we'll plan manufacture and dispatch against it, and we'll say plainly if the lead time doesn't fit.",
         "Sambalpur has local dealers, and we're not one of them. At roughly 1,400-1,500 km, freight is a large share of any small order, and for a few plain lengths a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Handloom and heavy dry processes aren't the target. We'd rather tell you than sell you something you don't need.",
-        "Send the whole requirement at once. Consolidated orders spread freight better. Sambalpur is the closest Odisha city to our factory on the Nagpur–Raipur route. If you also buy for Jharsuguda, Rourkela or Angul, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "Plan the lead time. Typical road transit is 5-6 days after manufacture and testing."
+        "Send the whole requirement at once. Consolidated orders spread freight better. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If you also buy for Jharsuguda, Rourkela or Angul, send the requirements together and we'll quote one consolidated dispatch with one document format.",
+        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation."
       ]
     },
     "areas": [
@@ -940,7 +940,7 @@ export const odishaCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Sambalpur take, and how is the finish protected over that distance?",
-        "a": "Sambalpur is roughly 1,400-1,500 km from our Taloja MIDC factory, and typical road transit is 5-6 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your shutdown has a fixed window, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your shutdown has a fixed window, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Where does electropolished pipe fit in an aluminium smelter, rolling mill or steel plant?",
@@ -964,8 +964,8 @@ export const odishaCityData = {
     "pageUrl": "/market-area/jharsuguda",
     "pageTitle": "Electropolished Pipe Manufacturer Jharsuguda | Sakshi Forge",
     "metaDescription": "Electropolished 304L & 316L SS pipes for Jharsuguda aluminium, steel and power clean utilities. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Jharsuguda: 304L and 316L EP Tubes for Aluminium, Steel and Power-Plant Clean Utilities",
-    "subHeadline": "Jharsuguda is western Odisha's aluminium and power town, with a large aluminium smelter, a cluster of steel and sponge-iron plants, thermal power stations and the Ib Valley coalfield and refractories belt around it. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja and supply the clean-utility, DM-water, sampling and laboratory lines of these plants, and the contractors who maintain them, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Jharsuguda",
+    "subHeadline": "Jharsuguda is western Odisha's aluminium and power town, with a large aluminium smelter, a cluster of steel and sponge-iron plants, thermal power stations and the Ib Valley coalfield and refractories belt around it. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply the clean-utility, DM-water, sampling and laboratory lines of these plants, and the contractors who maintain them, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -978,7 +978,7 @@ export const odishaCityData = {
       "ra": "0.4"
     },
     "hasDuplex": false,
-    "transitInfo": "Jharsuguda is roughly 1,450-1,550 km from our Taloja MIDC factory, and typical road transit is 5-6 days with protective capping and industrial packing.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Jharsuguda and the Ib Valley",
       "description": "Jharsuguda sits in the north-west of Odisha on the Howrah–Mumbai rail line, near the Chhattisgarh border, and the state's minerals department lists it for aluminium smelting and coal-based industry. A private aluminium smelter is the district's best-known plant, and the pollution-control board's records list a string of iron-and-steel units at Hirma, Lahandabud, Sripura, Badmal, Kelendamal and Katapali, some of which are noted as not in operation [CONFIRM current status]. The Ib Valley area, around Brajrajnagar and Belpahar, adds thermal power, sponge iron, refractories and coal mines. The state's industrial infrastructure corporation runs a Jharsuguda Industrial Estate, and has listed an office tower at Jharsuguda among its upcoming projects [CONFIRM status].\n\nA word on fit. Aluminium smelting, steel-making, sponge iron, coal mining and refractories are heavy, dry or abrasive processes whose main lines use carbon steel and specialty alloy. Where we're useful is the small set of clean lines inside the smelter's and power stations' utility blocks (DM water, boiler-feed, sampling, instrument and laboratory lines), and the fabricators and contractors who maintain the plants.",
@@ -1060,7 +1060,7 @@ export const odishaCityData = {
         "Jharsuguda has local dealers, and we're not one of them. At roughly 1,450-1,550 km, freight is a large share of any small order, and for a few plain lengths a local dealer will usually be cheaper. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Dry processing isn't the target. Coal handling, refractories and mining are dry or abrasive. We'd rather tell you than sell you something you don't need.",
         "Send the whole requirement at once. Consolidated orders spread freight better. Jharsuguda is about 60 km from Sambalpur. If you also buy for Sambalpur, Rourkela or Angul, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "Plan the lead time. Typical road transit is 5-6 days after manufacture and testing."
+        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation."
       ]
     },
     "areas": [
@@ -1098,7 +1098,7 @@ export const odishaCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Jharsuguda take, and how is the finish protected over that distance?",
-        "a": "Jharsuguda is roughly 1,450-1,550 km from our Taloja MIDC factory, and typical road transit is 5-6 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your shutdown has a fixed window, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey so the electropolished finish arrives undamaged. If your shutdown has a fixed window, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Where does electropolished pipe fit in an aluminium smelter, steel plant or thermal power station?",
@@ -1122,8 +1122,8 @@ export const odishaCityData = {
     "pageUrl": "/market-area/jajpur",
     "pageTitle": "Electropolished Pipe Manufacturer Jajpur | Sakshi Forge",
     "metaDescription": "Electropolished 304L & 316L SS pipes for Jajpur and Kalinganagar steel, ferro-alloy and utility clean lines. ASTM A270, MTC EN 10204 3.1, PMI tested.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Jajpur: 304L and 316L EP Tubes for Kalinganagar Steel, Ferro-Alloy and Utility Clean Lines",
-    "subHeadline": "Jajpur district is home to the Kalinganagar–Duburi industrial cluster, one of India's densest steel and ferro-alloy zones, with a stainless-steel mill, rubber works and Odisha's chromite belt around it. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja and supply the clean-utility, DM-water, sampling and laboratory lines of these plants, and the contractors who maintain them, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Jajpur",
+    "subHeadline": "Jajpur district is home to the Kalinganagar–Duburi industrial cluster, one of India's densest steel and ferro-alloy zones, with a stainless-steel mill, rubber works and Odisha's chromite belt around it. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply the clean-utility, DM-water, sampling and laboratory lines of these plants, and the contractors who maintain them, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -1136,7 +1136,7 @@ export const odishaCityData = {
       "ra": "0.4"
     },
     "hasDuplex": false,
-    "transitInfo": "Jajpur & Kalinganagar are roughly 1,850-1,950 km from our Taloja MIDC factory, and typical road transit is 7-8 days with protective packaging.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Jajpur and Kalinganagar",
       "description": "Jajpur district lies in north-eastern Odisha on the Howrah–Chennai rail line, with Jajpur Road as its main rail junction. Its industry is concentrated in the Kalinganagar Industrial Complex, which spans Jakhapura, Dangadi and Duburi and is described as one of India's most concentrated steel manufacturing zones. Large integrated steel plants and a stainless-steel mill operate there, with ferro-alloy and rubber works alongside, and the pollution-control board's records list a string of iron-and-steel units at Kalinganagar, several of which are noted as not in operation [CONFIRM current status]. The district also holds Odisha's chromite deposits. The state's industrial infrastructure corporation developed the Kalinganagar complex, and Jajpur is within easy reach of Cuttack, Bhubaneswar and Paradeep.\n\nA word on fit. Steel-making, ferro-alloy smelting, chromite mining and rubber processing are heavy, dry or abrasive processes whose main lines use carbon steel and specialty alloy. The district also makes stainless steel itself, so local buyers have easy access to ordinary stainless in other forms. Where we're useful is the small set of clean lines inside the plants (DM water, boiler-feed, sampling, instrument and laboratory lines), finished electropolished tube for fabricators who need a measured Ra and documents, and the contractors who maintain the plants.",
@@ -1210,9 +1210,9 @@ export const odishaCityData = {
         "Some local units have stopped. The regulator's list shows several Kalinganagar steel units as not in operation. Check that your plant's utility project is real before you spend time on a quote, and we'll do the same.",
         "Large plants buy formally. Major plants generally purchase through tenders, approved-vendor lists, registered contractors and third-party inspection. If yours does, send us the tender specification and we'll respond with a technical and commercial offer and the document pack, including 100% PMI results and a 3.1 MTC tied to heat numbers.",
         "Plan around shutdowns. Overhauls have fixed dates. If you tell us the window when you enquire, we'll plan manufacture and dispatch against it, and we'll say plainly if the lead time doesn't fit.",
-        "We're a very long way from Jajpur, and we'll say so. Jajpur is roughly 1,850-1,950 km from our factory, and freight is a large share of any small order. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
+        "We're a very long way from Jajpur, and we'll say so. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We're the better choice when you need a measured Ra, heat-number traceability, a particular size or finish, or the full document pack.",
         "Send the whole requirement at once. Consolidated orders spread freight better. Jajpur is close to Cuttack, Bhubaneswar and Paradeep. If you also buy for any of them, send the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "Plan the lead time. Typical road transit is 7-8 days after manufacture and testing."
+        "Plan the lead time. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation."
       ]
     },
     "areas": [
@@ -1253,7 +1253,7 @@ export const odishaCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Jajpur take, and how is the finish protected over that distance?",
-        "a": "Jajpur is roughly 1,850-1,950 km from our Taloja MIDC factory, and typical road transit is 7-8 days after manufacture and testing. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your shutdown has a fixed window, tell us when you enquire and we'll say plainly whether it fits. Factory visits and witnessed testing before dispatch are welcome."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve each length and pack for the journey and for humid air, so the electropolished finish arrives undamaged. If your shutdown has a fixed window, tell us when you enquire and we'll say plainly whether it fits."
       },
       {
         "q": "Where does electropolished pipe fit in a steel or ferro-alloy plant?",
@@ -1277,8 +1277,8 @@ export const odishaCityData = {
     "pageUrl": "/market-area/paradip",
     "pageTitle": "Electropolished Pipe Manufacturer Paradip | Sakshi Forge",
     "metaDescription": "Electropolished 316L & duplex SS pipes for Paradip refinery, petrochemical, fertiliser and port-complex clean utilities. ASTM A270/A790, MTC EN 10204 3.1.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Paradip: 316L and Duplex 2205 EP Tubes for Refinery, Petrochemical and Fertiliser Plants",
-    "subHeadline": "Paradip is eastern India's premier deep-water port hub and petrochemical investment region (PCPIR), anchored by major oil refining, petrochemical, fertiliser and polymer clusters along the Bay of Bengal. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes in-house at Taloja and supply Paradip's coastal plants, refineries and EPC contractors directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Paradip",
+    "subHeadline": "Paradip is eastern India's premier deep-water port hub and petrochemical investment region (PCPIR), anchored by major oil refining, petrochemical, fertiliser and polymer clusters along the Bay of Bengal. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes and supply Paradip's coastal plants, refineries and EPC contractors directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -1291,7 +1291,7 @@ export const odishaCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Paradip is roughly 1,850-1,950 km from our Taloja MIDC factory, and typical road transit is 7-8 days with sea-salt moisture barrier packaging, end-capping and humidity-resistant sleeving.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Paradip Port & Petrochemical Corridor",
       "description": "Paradip represents Odisha's major maritime gateway and petroleum, chemicals and petrochemical investment region (PCPIR). Its heavy industrial landscape includes a 15 MMTPA integrated oil refinery, large phosphatic fertiliser complexes, carbon black units, and an emerging plastic park.\n\nA word on fit. Heavy crude refining, bulk fertiliser production and cargo handling rely primarily on carbon steel and specialty nickel alloys. Where Sakshi Forge is critical is high-purity clean utilities: DM water, boiler-feed analysis lines, process sampling loops, marine-grade saline utility lines, and hygienic process lines inside downstream polymer and packaging units.",
@@ -1363,7 +1363,7 @@ export const odishaCityData = {
         "Marine salt air is severe in Paradip. Bare 304 exposed to coastal winds will pit rapidly. We recommend 316L minimum for external runs and duplex 2205 for seawater-adjacent utility lines.",
         "Refinery and fertiliser units purchase through formal vendor registrations and tender bids. We provide comprehensive MTC EN 10204 3.1, 100% PMI and third-party inspection certifications.",
         "Consolidated dispatch saves freight: Paradip orders can be combined with Cuttack, Bhubaneswar and Jajpur requirements into a single dedicated shipment.",
-        "Transit planning: Average road transit from our Taloja MIDC works is 7-8 days. We pack with double-end protective caps and heavy-duty sealed polythene sleeving."
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We pack with double-end protective caps and heavy-duty sealed polythene sleeving."
       ]
     },
     "areas": [
@@ -1403,7 +1403,7 @@ export const odishaCityData = {
     "faqs": [
       {
         "q": "How long will delivery to Paradip take, and how is the mirror finish protected during coastal transit?",
-        "a": "Paradip is roughly 1,850-1,950 km from our Taloja MIDC factory, and typical road transit is 7-8 days after manufacture and testing. We cap the pipe ends with plastic caps, sleeve each length in sealed UV-resistant plastic, and crate them to protect against humid, salt-laden coastal air."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends with plastic caps, sleeve each length in sealed UV-resistant plastic, and crate them to protect against humid, salt-laden coastal air."
       },
       {
         "q": "Which grade should be specified for Paradip: SS 316L or Duplex 2205?",
@@ -1427,8 +1427,8 @@ export const odishaCityData = {
     "pageUrl": "/market-area/balasore",
     "pageTitle": "Electropolished Pipe Manufacturer Balasore | Sakshi Forge",
     "metaDescription": "Electropolished 304L & 316L SS pipes for Balasore Somnathpur, Chhanpur, chemical, paper and institutional clean utilities. ASTM A270, MTC EN 10204 3.1.",
-    "h1": "Electropolished Stainless Steel Pipe Manufacturer in Balasore: 304L and 316L EP Tubes for Somnathpur, Chhanpur, Polymer and Chemical Plants",
-    "subHeadline": "Balasore (Baleswar) is northern Odisha's key industrial and manufacturing hub, featuring IDCO industrial estates at Somnathpur and Chhanpur, plastics and polymer compounding clusters, paper and rubber mills, and defence research installations at Chandipur. We manufacture and electropolish SS 304L and 316L pipes and tubes in-house at Taloja and supply Balasore's factories, laboratories and engineering workshops, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Balasore",
+    "subHeadline": "Balasore (Baleswar) is northern Odisha's key industrial and manufacturing hub, featuring IDCO industrial estates at Somnathpur and Chhanpur, plastics and polymer compounding clusters, paper and rubber mills, and defence research installations at Chandipur. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply Balasore's factories, laboratories and engineering workshops, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
       "ISO 9001:2015",
       "EN 10204 3.1 MTC",
@@ -1441,7 +1441,7 @@ export const odishaCityData = {
       "ra": "0.4"
     },
     "hasDuplex": true,
-    "transitInfo": "Balasore is roughly 1,800-1,900 km from our Taloja MIDC factory, and typical road transit is 7-8 days with protective end-capping and moisture-barrier packaging.",
+    "transitInfo": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
     "regionalCapability": {
       "title": "Electropolished Pipe for Balasore Industrial Estates & Maritime Belt",
       "description": "Balasore is strategically located on the Golden Quadrilateral NH-16 connecting Kolkata and Bhubaneswar. It hosts dense manufacturing across Somnathpur Industrial Estate, Chhanpur, and Ganeswarpur, spanning plastics, chemicals, paper, engineering, and marine food processing.\n\nA word on fit. Commercial plastics extrusion, rubber molding and heavy paper pulp digestion run on standard carbon steel and cast alloys. Where Sakshi Forge provides high value is clean utility loops: DM water, chemical dosing lines, clean steam for processing, laboratory and instrument tubing for defence and testing facilities, and passivated marine-grade stainless for coastal seafood freezing plants.",
@@ -1510,7 +1510,7 @@ export const odishaCityData = {
         }
       ],
       "localNotes": [
-        "Balasore sits directly on NH-16 between Kolkata and Cuttack. We route dedicated trucks via Nagpur–Raipur–Sambalpur or via Kharagpur for efficient 7-8 day road transit.",
+        "Balasore sits directly on NH-16 between Kolkata and Cuttack. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.",
         "Coastal proximity at Chandipur requires protective packaging: every length is individually sleeved and end-capped to protect the internal electropolished Ra finish from humidity.",
         "Tenders and institutional procurement: We regularly supply government bodies, defence laboratories, and educational institutions with complete paperwork dossiers.",
         "Combine orders with nearby coastal hubs: Balasore orders can be paired with Cuttack, Jajpur or Kolkata dispatches for optimal logistics rates."
@@ -1554,7 +1554,7 @@ export const odishaCityData = {
     "faqs": [
       {
         "q": "How long does delivery to Balasore take, and how is the finish protected?",
-        "a": "Balasore is roughly 1,800-1,900 km from our Taloja MIDC factory, and typical road transit is 7-8 days after manufacturing and testing. We cap pipe ends, sleeve each length in polythene, and pack in robust timber-framed crates to ensure zero surface scratching or humidity degradation."
+        "a": "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap pipe ends, sleeve each length in polythene, and pack in robust timber-framed crates to ensure zero surface scratching or humidity degradation."
       },
       {
         "q": "Which stainless grade is best for Balasore chemical, polymer and paper units?",

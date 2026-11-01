@@ -17,13 +17,13 @@ export const gujaratCityData = {
     country: 'India',
     pageUrl: '/market-area/ahmedabad',
     pageTitle: 'Electropolished Pipe Manufacturer Ahmedabad | Sakshi Forge',
-    metaDescription: 'Electropolished 316L & 304L SS pipes for Ahmedabad Naroda, Vatva and Odhav pharma plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.',
-    h1: 'Electropolished Stainless Steel Pipe Manufacturer in Ahmedabad: 316L and 304L EP Tubes for Naroda, Vatva, Odhav and Sarkhej Plants',
-    subHeadline: "Ahmedabad is the centre of Gujarat's pharma, biotech and dye-and-chemical industry, with industrial estates ringing the city. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply Ahmedabad's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    metaDescription: 'Electropolished 316L & 304L SS pipes for Ahmedabad Naroda, Vatva and Odhav pharma plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.',
+    h1: 'Electropolished Pipes & Tubes Manufacturer and Supplier in Ahmedabad',
+    subHeadline: "Ahmedabad is the centre of Gujarat's pharma, biotech and dye-and-chemical industry, with industrial estates ringing the city. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Ahmedabad's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     trustStrip: ['ISO 9001:2015', 'EN 10204 3.1 MTC', '100% PMI Tested', 'Internal Ra ≤0.4 µm', 'ASTM A269 / A270'],
     defaultFilter: { grade: '316L', ra: '0.4' },
     hasDuplex: true,
-    transitInfo: 'Ahmedabad is roughly 560-580 km from our Taloja MIDC factory, and delivery is typically 1-2 days with protective capping and sleeving.',
+    transitInfo: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.',
     regionalCapability: {
       title: "Electropolished Pipe for Ahmedabad's Industrial Belts",
       description: "Ahmedabad's industry sits in several estates, and each asks something different of a pipe. Naroda and Vatva, in the north-east and south-east, are the city's long-established GIDC estates, with chemical, dye, pharma and engineering units. Odhav, in the east, is a dense engineering and manufacturing belt. To the south and south-west, Narol, Sarkhej, Matoda and Moraiya add more pharma and manufacturing units, and the Thaltej area hosts pharma research and development. Newer estates further out, such as Sanand and Changodar, have their own page. A word on fit: Dye and chemical units make up much of the older estates, and their reactor-side process lines often use glass-lined or specialty-alloy piping. Where we're useful is the clean side: purified water, WFI, clean utilities, laboratory lines and food lines.",
@@ -47,7 +47,7 @@ export const gujaratCityData = {
         "Pharma and dye units sit side by side. In Vatva and Naroda, a pharma purified-water line and a dye-intermediate line can be a few hundred metres apart. We recommend by media, not habit, and say plainly where electropolished pipe doesn't suit. Avoid hydrofluoric acid and abrasive slurries.",
         "Many plants supply regulated overseas markets. That means surface reports, heat-number traceability and passivation records matter at audit time, so every order ships with them.",
         "Inland site, so choose by media. Ahmedabad has no coastal chloride problem. 304L suits most food and utility lines, and 316L suits pharma and chloride-bearing cleaning agents.",
-        "A moderate supply line. Ahmedabad is roughly 560-580 km from our factory. We cap the pipe ends, sleeve every length and pack for the journey. If you also buy for Sanand, Vadodara or Anand, send the requirements together and we'll quote one consolidated dispatch."
+        "A moderate supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey. If you also buy for Sanand, Vadodara or Anand, send the requirements together and we'll quote one consolidated dispatch."
       ]
     },
     areas: ['Ahmedabad', 'Naroda', 'Vatva', 'Odhav', 'Narol', 'Sarkhej', 'Matoda', 'Moraiya', 'Thaltej', 'Kathwada', 'Bapunagar', 'Gandhinagar (nearby)', 'Kalol (nearby)'],
@@ -60,7 +60,7 @@ export const gujaratCityData = {
     faqs: [
       {
         q: 'How fast can you deliver to Ahmedabad, and how is the finish protected in transit?',
-        a: 'Ahmedabad is roughly 560-580 km from our Taloja MIDC factory, and delivery is typically 1-2 days. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged, and factory visits and witnessed testing are welcome.'
+        a: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged.'
       },
       {
         q: 'Should I choose 316L or 304L for Naroda, Vatva or Odhav plants?',
@@ -84,13 +84,13 @@ export const gujaratCityData = {
     country: 'India',
     pageUrl: '/market-area/vadodara',
     pageTitle: 'Electropolished Pipe Manufacturer Vadodara | Sakshi Forge',
-    metaDescription: 'Electropolished 316L & 304L SS pipes for Vadodara Makarpura, Savli and Nandesari plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.',
-    h1: 'Electropolished Stainless Steel Pipe Manufacturer in Vadodara: 316L and 304L EP Tubes for Makarpura, Nandesari, Savli and Halol Plants',
-    subHeadline: "Vadodara is an engineering, machinery, chemical and pharma city on the Ahmedabad–Mumbai corridor, and one of the closer Gujarat cities to our factory. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply Vadodara's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    metaDescription: 'Electropolished 316L & 304L SS pipes for Vadodara Makarpura, Savli and Nandesari plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.',
+    h1: 'Electropolished Pipes & Tubes Manufacturer and Supplier in Vadodara (Baroda)',
+    subHeadline: "Vadodara is an engineering, machinery, chemical and pharma city on the Ahmedabad–Mumbai corridor. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Vadodara's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     trustStrip: ['ISO 9001:2015', 'EN 10204 3.1 MTC', '100% PMI Tested', 'Internal Ra ≤0.4 µm', 'ASTM A269 / A270'],
     defaultFilter: { grade: '316L', ra: '0.4' },
     hasDuplex: true,
-    transitInfo: 'Vadodara is roughly 470-500 km from our Taloja MIDC factory, and delivery is typically 1-2 days.',
+    transitInfo: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.',
     regionalCapability: {
       title: "Electropolished Pipe for Vadodara's Industrial Belts",
       description: "Vadodara's industry is spread across the city and the estates around it. The Makarpura GIDC estate, set up in 1970, is the city's oldest, with engineering, machinery and auto-component units. Nandesari, to the north-east, is a chemical and pharma estate. To the east and north, the Waghodia, Por–Ramangamdi and Savli estates are larger and newer, and Halol, across the district border in Panchmahal, adds engineering, automotive and chemical plants. Savli and Halol together form a Special Investment Region. West of the city, the Koyali–Padra belt holds the refinery and its fertiliser, alkali and petrochemical neighbours. A word on fit: Plants have been moving out of the older city estates towards Waghodia, Savli, Por and Halol, so check where your customers are now. Refinery and petrochemical main process piping is mostly carbon or alloy steel. Where we're useful is the clean side: purified water, utilities, laboratory lines, food lines and the equipment builders who make machinery for these plants.",
@@ -116,7 +116,7 @@ export const gujaratCityData = {
         "Vadodara has local stockists, and we're not one of them. Our strength is made-to-drawing pipe, measured Ra, in-house electropolishing and the full document pack. We're the better fit when you need a specific size, finish or paperwork.",
         "Honest fit in the refinery belt. Main process piping there is mostly carbon or alloy steel. Our pipe suits clean utilities, laboratories and instrument lines. Avoid hydrofluoric acid and abrasive slurries.",
         "Inland site, so choose by media. 304L suits most food and utility lines, and 316L suits pharma and chloride-bearing cleaning agents. Tell us the media.",
-        "A moderate supply line. Vadodara is roughly 470-500 km from our factory. We cap the pipe ends, sleeve every length and pack for the journey. If you also buy for Ahmedabad, Anand or Ankleshwar, send the requirements together and we'll quote one consolidated dispatch."
+        "A moderate supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey. If you also buy for Ahmedabad, Anand or Ankleshwar, send the requirements together and we'll quote one consolidated dispatch."
       ]
     },
     areas: ['Vadodara (Baroda)', 'Makarpura', 'Nandesari', 'Waghodia', 'Por', 'Ramangamdi', 'Savli', 'Halol', 'Padra', 'Koyali', 'Karjan', 'Dabhoi', 'Jarod'],
@@ -129,7 +129,7 @@ export const gujaratCityData = {
     faqs: [
       {
         q: 'How fast can you deliver to Vadodara, and how is the finish protected in transit?',
-        a: 'Vadodara is roughly 470-500 km from our Taloja MIDC factory, and delivery is typically 1-2 days. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged, and factory visits and witnessed testing are welcome.'
+        a: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged.'
       },
       {
         q: 'Should I choose 316L or 304L for Makarpura, Savli or Nandesari plants?',
@@ -154,12 +154,12 @@ export const gujaratCityData = {
     pageUrl: '/market-area/vapi',
     pageTitle: 'Electropolished Pipe Manufacturer in Vapi | Sakshi Forge',
     metaDescription: 'Electropolished 316L & duplex SS pipes for Vapi, Sarigam and Umbergaon chemical and pharma plants. ASTM A270/A790, MTC EN 10204 3.1, PMI tested.',
-    h1: 'Electropolished Stainless Steel Pipe Manufacturer in Vapi: 316L and Duplex EP Tubes for Vapi GIDC, Sarigam and Umbergaon Plants',
-    subHeadline: "Vapi is Gujarat's chemical, dye and pharma hub, and the closest Gujarat industrial belt to our factory. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes in-house at Taloja and supply Vapi's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    h1: 'Electropolished Pipes & Tubes Manufacturer and Supplier in Vapi',
+    subHeadline: "Vapi is Gujarat's chemical, dye and pharma hub. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes and supply Vapi's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     trustStrip: ['ISO 9001:2015', 'EN 10204 3.1 MTC', '100% PMI Tested', 'Internal Ra ≤0.4 µm', 'ASTM A269 / A270 / A790'],
     defaultFilter: { grade: '316L', ra: '0.4' },
     hasDuplex: true,
-    transitInfo: 'Vapi is roughly 190-210 km from our Taloja MIDC factory, and delivery is typically same-day to next-day.',
+    transitInfo: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.',
     regionalCapability: {
       title: "Electropolished Pipe for Vapi's Industrial Belts",
       description: "Vapi sits in Valsad district on the Mumbai–Surat highway, on the Gujarat side of the Maharashtra border. Its GIDC estate, about 1,135 hectares, is one of the largest chemical estates in the country, with specialty chemicals, dyes and intermediates, pesticides, pharma, paper and textile units. Sarigam GIDC, about 395 hectares to the south, and the Umbergaon area add more chemical, pharma and engineering plants, and Valsad itself has a smaller GIDC estate. Effluent from the Vapi estate is handled through a dedicated common effluent company, so plants here operate under close regulatory scrutiny. A word on fit: Much of the reactor-side piping in dye and chemical plants uses glass-lined or specialty-alloy materials, and paper and pulp lines carry aggressive chemistry. Where we're useful is the clean side: purified water, WFI, clean utilities, laboratory lines and food lines, plus chloride-bearing duties where duplex 2205 is the better answer.",
@@ -180,7 +180,7 @@ export const gujaratCityData = {
         { title: 'High-purity gas and ultra-pure water lines', desc: 'Guaranteed Ra roughness to SF4 standards with complete profilometer logs.' }
       ],
       localNotes: [
-        "The closest Gujarat belt to our factory. Vapi is roughly 190-210 km from Taloja, so urgent top-up orders, factory visits and witnessed testing are realistic. If your plant needs a few lengths this week, tell us.",
+        "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If your plant needs a few lengths this week, tell us.",
         "Plants here operate under close scrutiny. The estate's effluent system and its regulators make leak-tested, fully documented piping part of the compliance picture. Every order ships with hydro and PMI certificates.",
         "Chemical hub honesty. Reactor-side solvent, acid and halide lines can need other materials, and we'll tell you which are which. Send us the fluid, concentration and temperature before you order. Avoid hydrofluoric acid and abrasive slurries.",
         "Next door to the Union Territories. Daman and Silvassa, just across the border, have large pharma and manufacturing clusters. We supply those on the same route.",
@@ -197,7 +197,7 @@ export const gujaratCityData = {
     faqs: [
       {
         q: 'How fast can you deliver to Vapi, and can you handle urgent orders?',
-        a: 'Vapi is roughly 190-210 km from our Taloja MIDC factory, and delivery is typically same-day to next-day. If you need a few lengths urgently, tell us when you enquire. We cap the pipe ends and sleeve each length so the finish arrives undamaged, and factory visits and witnessed testing are welcome.'
+        a: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If you need a few lengths urgently, tell us when you enquire. We cap the pipe ends and sleeve each length so the finish arrives undamaged.'
       },
       {
         q: 'Which grade should I use in a Vapi chemical, dye or pharma plant, 316L or duplex 2205?',
@@ -221,13 +221,13 @@ export const gujaratCityData = {
     country: 'India',
     pageUrl: '/market-area/sanand',
     pageTitle: 'Electropolished Pipe Manufacturer in Sanand | Sakshi Forge',
-    metaDescription: 'Electropolished 316L & 304L SS pipes for Sanand, Changodar and Bavla pharma plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.',
-    h1: 'Electropolished Stainless Steel Pipe Manufacturer in Sanand: 316L and 304L EP Tubes for Sanand, Changodar, Bavla and Dholka Plants',
-    subHeadline: "Sanand and the estates around it are where Ahmedabad's newer industry sits, with pharma, electronics, engineering and the state's automobile cluster. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply Sanand's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    metaDescription: 'Electropolished 316L & 304L SS pipes for Sanand, Changodar and Bavla pharma plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.',
+    h1: 'Electropolished Pipes & Tubes Manufacturer and Supplier in Sanand',
+    subHeadline: "Sanand and the estates around it are where Ahmedabad's newer industry sits, with pharma, electronics, engineering and the state's automobile cluster. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Sanand's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     trustStrip: ['ISO 9001:2015', 'EN 10204 3.1 MTC', '100% PMI Tested', 'Internal Ra ≤0.4 µm', 'ASTM A269 / A270'],
     defaultFilter: { grade: '316L', ra: '0.4' },
     hasDuplex: true,
-    transitInfo: 'Sanand is roughly 590-610 km from our factory, and delivery is typically 1-2 days.',
+    transitInfo: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.',
     regionalCapability: {
       title: "Electropolished Pipe for Sanand's Industrial Belts",
       description: "Sanand is a large GIDC industrial estate about 30 km from Ahmedabad, on the highway towards Saurashtra and Kutch. Its first two phases, Sanand I and Sanand II (Bol), host pharma, textile, food and engineering plants. Sanand III at Khoraj is the Japan Industrial Township, a newer estate for electronics, pharma and engineering, and the state's automobile cluster is centred here. Along the Sarkhej–Bavla highway, the Changodar estate is a younger pharma and engineering belt, with Bavla and Dholka further south adding more pharma and manufacturing units. GIDC describes Sanand as a zero-discharge estate. A word on fit: Automobile and electronics plants use electropolished pipe mainly on clean utilities such as DM water, not on the main plant piping. Our strongest match here is pharma, plus new-build plants that specify clean utilities at design stage.",
@@ -253,7 +253,7 @@ export const gujaratCityData = {
         "Auto and electronics are utility buyers. For DM or DI water, 304L or 316L depends on the purity you need. Send us your specification.",
         "Close to Ahmedabad, so buy together. Sanand is about 30 km from Ahmedabad. If you also buy for Ahmedabad, Vadodara or Mehsana, send the requirements together and we'll quote one consolidated dispatch.",
         "Sanand has local stockists nearby, and we're not one of them. Our strength is made-to-drawing pipe, measured Ra, in-house electropolishing and the full document pack.",
-        "A moderate supply line. Sanand is roughly 590-610 km from our factory. We cap the pipe ends, sleeve every length and pack for the journey."
+        "A moderate supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     areas: ['Sanand', 'Sanand GIDC', 'Khoraj', 'Bol', 'Changodar', 'Bavla', 'Dholka', 'Santej', 'Kalol', 'Viramgam', 'Mandal', 'Becharaji (nearby)'],
@@ -266,7 +266,7 @@ export const gujaratCityData = {
     faqs: [
       {
         q: 'How fast can you deliver to Sanand, and how is the finish protected in transit?',
-        a: 'Sanand is roughly 590-610 km from our Taloja MIDC factory, and delivery is typically 1-2 days. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged, and factory visits and witnessed testing are welcome.'
+        a: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged.'
       },
       {
         q: 'We are building a new plant at Khoraj or Sanand. Can you quote at design stage?',
@@ -291,12 +291,12 @@ export const gujaratCityData = {
     pageUrl: '/market-area/ankleshwar',
     pageTitle: 'Electropolished Pipe Manufacturer Ankleshwar | Sakshi Forge',
     metaDescription: 'Electropolished 316L & duplex SS pipes for Ankleshwar, Panoli and Jhagadia pharma and chemical plants. ASTM A270/A790, MTC EN 10204 3.1, PMI tested.',
-    h1: 'Electropolished Stainless Steel Pipe Manufacturer in Ankleshwar: 316L and Duplex EP Tubes for Ankleshwar, Panoli and Jhagadia GIDC Plants',
-    subHeadline: "Ankleshwar, Panoli and Jhagadia form the core of Bharuch district's chemical and pharma belt, which the state government calls the \"Chemical Capital of India\". We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes in-house at Taloja and supply these plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    h1: 'Electropolished Pipes & Tubes Manufacturer and Supplier in Ankleshwar',
+    subHeadline: "Ankleshwar, Panoli and Jhagadia form the core of Bharuch district's chemical and pharma belt, which the state government calls the \"Chemical Capital of India\". We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes and supply these plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     trustStrip: ['ISO 9001:2015', 'EN 10204 3.1 MTC', '100% PMI Tested', 'Internal Ra ≤0.4 µm', 'ASTM A269 / A270 / A790'],
     defaultFilter: { grade: '316L', ra: '0.4' },
     hasDuplex: true,
-    transitInfo: 'Ankleshwar is roughly 420-440 km from our factory, with typical delivery in 1-2 days.',
+    transitInfo: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.',
     regionalCapability: {
       title: "Electropolished Pipe for Ankleshwar, Panoli and Jhagadia",
       description: "Bharuch district holds one of India's densest concentrations of chemical and pharma plants, and three of its largest GIDC estates are on this page. Ankleshwar GIDC, about 1,072 hectares with a later expansion, is the oldest and best known, with pharma, API, dye, pesticide and specialty-chemical units. Panoli GIDC, about 1,053 hectares, sits to the south-west with chemical, pharma and intermediates plants. Jhagadia GIDC, about 1,839 hectares, is a newer mega estate, with the Valia–Jhagadia belt around the fertiliser and chemical complex. Treated effluent from these estates is discharged deep into the sea through a designated pipeline, and plants here operate under close regulatory scrutiny. Dahej, Vilayat and Saykha, the district's other chemical belt, have their own page. A word on fit: Much of the reactor-side piping in chemical and API plants uses glass-lined or specialty-alloy materials. Where we're useful is the clean side: purified water, WFI, clean utilities, laboratory and QC lines, and chloride-bearing duties where duplex 2205 is the better answer.",
@@ -321,7 +321,7 @@ export const gujaratCityData = {
         "Many pharma plants here supply regulated overseas markets. Surface reports, heat-number traceability and passivation records matter at audit time.",
         "Protect the finish. Humid, chemical-laden air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation.",
         "Several sites in the belt. If your company has plants in Ankleshwar, Panoli, Jhagadia and Dahej, or also buys for Vadodara or Surat, send all the requirements together and we'll quote one consolidated dispatch with one document format.",
-        "A moderate supply line. Ankleshwar is roughly 420-440 km from our factory."
+        "A moderate supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation."
       ]
     },
     areas: ['Ankleshwar', 'Ankleshwar GIDC', 'Panoli', 'Jhagadia', 'Valia', 'Netrang', 'Kosamba (nearby)', 'Bharuch (nearby)'],
@@ -334,7 +334,7 @@ export const gujaratCityData = {
     faqs: [
       {
         q: 'How fast can you deliver to Ankleshwar, and how is the finish protected in transit?',
-        a: 'Ankleshwar is roughly 420-440 km from our Taloja MIDC factory, and delivery is typically 1-2 days. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged, and factory visits and witnessed testing are welcome.'
+        a: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged.'
       },
       {
         q: 'Which grade should I use in an Ankleshwar chemical or pharma plant, 316L or duplex 2205?',
@@ -358,13 +358,13 @@ export const gujaratCityData = {
     country: 'India',
     pageUrl: '/market-area/surat',
     pageTitle: 'Electropolished Pipe Manufacturer in Surat | Sakshi Forge',
-    metaDescription: 'Electropolished 316L & 304L SS pipes for Surat Sachin, Pandesara and Hazira plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.',
-    h1: 'Electropolished Stainless Steel Pipe Manufacturer in Surat: 316L and 304L EP Tubes for Sachin, Pandesara and Hazira Plants',
-    subHeadline: "Surat combines textile processing, chemical and pharma estates, and a heavy-industry coast at Hazira, all within a few hours of our factory. We manufacture and electropolish SS 316L and 304L pipes and tubes in-house at Taloja and supply Surat's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    metaDescription: 'Electropolished 316L & 304L SS pipes for Surat Sachin, Pandesara and Hazira plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.',
+    h1: 'Electropolished Pipes & Tubes Manufacturer and Supplier in Surat',
+    subHeadline: "Surat combines textile processing, chemical and pharma estates, and a heavy-industry coast at Hazira. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Surat's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     trustStrip: ['ISO 9001:2015', 'EN 10204 3.1 MTC', '100% PMI Tested', 'Internal Ra ≤0.4 µm', 'ASTM A269 / A270 / A790'],
     defaultFilter: { grade: '316L', ra: '0.4' },
     hasDuplex: true,
-    transitInfo: 'Surat is roughly 320-340 km from our Taloja MIDC factory, and delivery is typically next-day.',
+    transitInfo: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.',
     regionalCapability: {
       title: "Electropolished Pipe for Surat's Industrial Belts",
       description: "Surat's industry is concentrated in a few large estates. Sachin GIDC, over 1,300 hectares with close to 5,000 operating units, is the biggest, with textile, chemical, pharma, engineering and packaging plants side by side, including makers of textile-processing machinery. Pandesara GIDC, about 810 hectares, is the dedicated textile hub, with dyeing, printing, weaving and garment units alongside dye and chemical makers. Hazira, on the south-western coast, is a heavy-industry and energy zone with its own marine terminal. Textile-processing and chemical belts also extend to Kosamba, Olpad and Palsana. A word on fit: Weaving, embroidery, garment-making and diamond polishing are mostly dry, so they don't call for electropolished pipe. Where we're useful is the wet side: process-water, dosing and steam-condensate lines in dye houses, the chemical and pharma units, and the machine builders who make equipment for them.",
@@ -388,7 +388,7 @@ export const gujaratCityData = {
         "Weaving, embroidery and diamonds aren't the target. Those processes are mostly dry. We'd rather tell you than sell you something you don't need.",
         "Surat has local stockists, and we're not one of them. Our strength is made-to-drawing pipe, measured Ra, in-house electropolishing and the full document pack.",
         "Hazira is coastal. Salt air and chloride-bearing water attack plain 304, so we steer coastal runs towards 316L or duplex 2205.",
-        "On the route to Vapi and Ankleshwar. Surat sits between them on the same highway, roughly 320-340 km from our factory. If you also buy for either, send the requirements together and we'll quote one consolidated dispatch.",
+        "On the route to Vapi and Ankleshwar. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. If you also buy for either, send the requirements together and we'll quote one consolidated dispatch.",
         "Protect the finish. Humid air near the coast can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation."
       ]
     },
@@ -402,7 +402,7 @@ export const gujaratCityData = {
     faqs: [
       {
         q: 'How fast can you deliver to Surat, and how is the finish protected in transit?',
-        a: 'Surat is roughly 320-340 km from our Taloja MIDC factory, and delivery is typically next-day. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged, and factory visits and witnessed testing are welcome.'
+        a: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged.'
       },
       {
         q: 'Surat is a textile and diamond city. Is electropolished pipe used there?',
@@ -427,12 +427,12 @@ export const gujaratCityData = {
     pageUrl: '/market-area/dahej',
     pageTitle: 'Electropolished Pipe Manufacturer in Dahej | Sakshi Forge',
     metaDescription: 'Electropolished 316L & duplex SS pipes for Dahej, Bharuch, Vilayat and Saykha chemical and pharma plants. ASTM A270/A790, MTC EN 10204 3.1, PMI tested.',
-    h1: 'Electropolished Stainless Steel Pipe Manufacturer in Dahej: 316L and Duplex EP Tubes for Dahej PCPIR, Vilayat, Saykha and Bharuch Plants',
-    subHeadline: "Dahej is the heart of Gujarat's petroleum, chemicals and petrochemicals investment region, on a salt-air coast with its own port. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes in-house at Taloja and supply plants, fabricators and EPC contractors here directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    h1: 'Electropolished Pipes & Tubes Manufacturer and Supplier in Dahej',
+    subHeadline: "Dahej is the heart of Gujarat's petroleum, chemicals and petrochemicals investment region, on a salt-air coast with its own port. We manufacture and electropolish SS 316L and duplex 2205 pipes and tubes and supply plants, fabricators and EPC contractors here directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     trustStrip: ['ISO 9001:2015', 'EN 10204 3.1 MTC', '100% PMI Tested', 'Internal Ra ≤0.4 µm', 'ASTM A269 / A270 / A790'],
     defaultFilter: { grade: 'Duplex 2205', ra: '0.4' },
     hasDuplex: true,
-    transitInfo: 'Dahej is roughly 460-490 km from our Taloja MIDC factory, and delivery is typically 1-2 days.',
+    transitInfo: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.',
     regionalCapability: {
       title: "Electropolished Pipe for Dahej, Bharuch, Vilayat and Saykha",
       description: "The Gujarat PCPIR, the first operational petroleum, chemicals and petrochemicals investment region in India, spans about 11,158 hectares around Dahej, Vilayat and Saykha. It includes five GIDC estates (Dahej I, II and III, Vilayat and Saykha), a port with a liquid-chemical terminal, a Dahej SEZ, a multi-modal logistics park and a large desalination plant. Treated effluent from Dahej and Vilayat is discharged into the sea through a designated outfall. Bharuch, about 44 km inland, has its own GIDC estate and the engineering and fabrication shops that serve the whole district. A word on fit: Dahej is dominated by large chemical and petrochemical plants, and their main process piping is mostly carbon or alloy steel, often procured through EPC contractors. Where we're useful is the clean side: purified water, DM water, laboratory and sampling lines, pharma units, and the fabricators and EPC firms who build clean utilities for these plants. On a coast with a desalination plant and heavy salt air, grade selection matters more than finish.",
@@ -458,7 +458,7 @@ export const gujaratCityData = {
         "Honest fit. Main process piping in large petrochemical units is mostly carbon or alloy steel. Our electropolished pipe suits clean utilities, laboratories, pharma and instrument lines, and we'll say so before you order. Avoid hydrofluoric acid and abrasive slurries.",
         "Protect the finish. Humid coastal air can mark an electropolished surface in storage. We cap the ends and sleeve every length, and we recommend keeping the sleeves on until installation.",
         "Next to Ankleshwar. Bharuch district's other chemical estates are close by. If you also buy for Ankleshwar, Vadodara or Surat, send the requirements together and we'll quote one consolidated dispatch.",
-        "A moderate supply line. Dahej is roughly 460-490 km from our factory."
+        "A moderate supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation."
       ]
     },
     areas: ['Dahej', 'Dahej PCPIR', 'Vilayat', 'Saykha', 'Vagra', 'Bharuch', 'Bharuch GIDC', 'Jambusar (nearby)', 'Ankleshwar (nearby)'],
@@ -471,7 +471,7 @@ export const gujaratCityData = {
     faqs: [
       {
         q: 'How fast can you deliver to Dahej, and how is the finish protected in transit?',
-        a: 'Dahej is roughly 460-490 km from our Taloja MIDC factory, and delivery is typically 1-2 days. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged, and we recommend keeping the sleeves on until installation, as humid coastal air can mark the surface. Factory visits and witnessed testing are welcome.'
+        a: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged, and we recommend keeping the sleeves on until installation, as humid coastal air can mark the surface.'
       },
       {
         q: 'Which grade should I use on the Dahej coast, 316L, duplex 2205 or super duplex?',
@@ -496,12 +496,12 @@ export const gujaratCityData = {
     pageUrl: '/market-area/anand',
     pageTitle: 'Electropolished Pipe Manufacturer in Anand | Sakshi Forge',
     metaDescription: 'Electropolished 304L & 316L sanitary pipes for Anand and Nadiad dairy, food and equipment plants. ASTM A270, MTC EN 10204 3.1, PMI tested.',
-    h1: 'Electropolished Stainless Steel Pipe Manufacturer in Anand: 304L and 316L Sanitary EP Tubes for Dairy Plants and Equipment Makers at Vitthal Udyognagar',
-    subHeadline: "Anand is India's dairy capital, and Vitthal Udyognagar next door is home to the engineering shops that build dairy equipment. We manufacture and electropolish SS 304L and 316L sanitary pipes and tubes in-house at Taloja and supply Anand's dairies, food plants and equipment makers directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    h1: 'Electropolished Pipes & Tubes Manufacturer and Supplier in Anand',
+    subHeadline: "Anand is India's dairy capital, and Vitthal Udyognagar next door is home to the engineering shops that build dairy equipment. We manufacture and electropolish SS 304L and 316L sanitary pipes and tubes and supply Anand's dairies, food plants and equipment makers directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     trustStrip: ['ISO 9001:2015', 'EN 10204 3.1 MTC', '100% PMI Tested', 'Internal Ra ≤0.4 µm', 'ASTM A269 / A270'],
     defaultFilter: { grade: '304L', ra: '0.4' },
     hasDuplex: true,
-    transitInfo: 'Anand is roughly 530-550 km from our factory, and delivery is typically 1-2 days.',
+    transitInfo: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.',
     regionalCapability: {
       title: "Electropolished Pipe for Anand's Dairy and Equipment Belts",
       description: "Anand's industry has two halves that feed each other. The first is dairy and food processing: the district is home to the Amul dairy cooperative, with processing plants in Anand and nearby Mogar, and the Anand Agricultural University runs its own training dairy. The second is engineering. Vitthal Udyognagar, a large GIDC belt on the outskirts of Anand towards Vallabh Vidyanagar and Karamsad, hosts a cluster of dairy-equipment manufacturers who build pasteurisers, tanks, crate washers and milk-handling machinery, along with electrical and general engineering firms. Nadiad, a short distance away in Kheda district, has its own GIDC estate with food and manufacturing units. That makes Anand an unusually good fit for sanitary tube. The dairies need smooth, easy-to-clean lines, and the equipment makers need a reliable source of sanitary tube to build into their machines.",
@@ -527,7 +527,7 @@ export const gujaratCityData = {
         "Tube standards. Our sanitary tube is ASTM A270. If your dairy customers ask for 3-A or DIN 11850 tube, send us the specification and we'll tell you what we can meet.",
         "Not every plant here needs electropolished pipe. Heavy engineering, gearboxes and glass-lined reactor makers use EP pipe only on clean utilities, and we'll say so before you order.",
         "Anand is central Gujarat, so buy together. Anand is about 40 km from Vadodara and about 70 km from Ahmedabad. If you also buy for either, or for Mehsana, send the requirements together and we'll quote one consolidated dispatch.",
-        "A moderate supply line. Anand is roughly 530-550 km from our factory. We cap the pipe ends, sleeve every length and pack for the journey."
+        "A moderate supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
     areas: ['Anand', 'Vitthal Udyognagar', 'Vallabh Vidyanagar', 'Karamsad', 'Mogar', 'Nadiad', 'Khambhat', 'Petlad', 'Borsad', 'Umreth', 'Sojitra', 'Kheda (nearby)'],
@@ -540,7 +540,7 @@ export const gujaratCityData = {
     faqs: [
       {
         q: 'How fast can you deliver to Anand, and how is the finish protected in transit?',
-        a: 'Anand is roughly 530-550 km from our Taloja MIDC factory, and delivery is typically 1-2 days. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged, and factory visits and witnessed testing are welcome.'
+        a: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged.'
       },
       {
         q: 'Is 304L enough for a milk or dairy line in Anand, given caustic and acid CIP?',
@@ -564,13 +564,13 @@ export const gujaratCityData = {
     country: 'India',
     pageUrl: '/market-area/mehsana',
     pageTitle: 'Electropolished Pipe Manufacturer in Mehsana | Sakshi Forge',
-    metaDescription: 'Electropolished 304L & 316L sanitary pipes for Mehsana, Kadi and Patan dairy plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote in 30 min.',
-    h1: 'Electropolished Stainless Steel Pipe Manufacturer in Mehsana: 304L and 316L Sanitary EP Tubes for Dairy Plants in Mehsana, Kadi and Patan',
-    subHeadline: "Mehsana is North Gujarat's dairy capital, home to one of Asia's largest dairy cooperatives and a ring of processing plants around it. We manufacture and electropolish SS 304L and 316L sanitary pipes and tubes in-house at Taloja and supply Mehsana's dairies, food plants and equipment makers directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
+    metaDescription: 'Electropolished 304L & 316L sanitary pipes for Mehsana, Kadi and Patan dairy plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.',
+    h1: 'Electropolished Pipes & Tubes Manufacturer and Supplier in Mehsana',
+    subHeadline: "Mehsana is North Gujarat's dairy capital, home to one of Asia's largest dairy cooperatives and a ring of processing plants around it. We manufacture and electropolish SS 304L and 316L sanitary pipes and tubes and supply Mehsana's dairies, food plants and equipment makers directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     trustStrip: ['ISO 9001:2015', 'EN 10204 3.1 MTC', '100% PMI Tested', 'Internal Ra ≤0.4 µm', 'ASTM A269 / A270'],
     defaultFilter: { grade: '304L', ra: '0.4' },
     hasDuplex: true,
-    transitInfo: 'Mehsana is roughly 660-680 km from our factory, and delivery is typically 2 days.',
+    transitInfo: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation.',
     regionalCapability: {
       title: "Electropolished Pipe for Mehsana's Dairy Belt",
       description: "Mehsana's industry is built around milk. The Mehsana District Co-operative Milk Producers' Union, known as Dudhsagar Dairy, was registered in 1960 and has more than 500,000 member farmers, making it one of Asia's largest dairy cooperatives. Its main plant is at Mehsana, and it runs other dairies in the district, including one at Kadi that makes curd (dahi) and one at Patan. The union also supported the start of Banas Dairy at Palanpur, and Sabar Dairy at Himmatnagar is another nearby dairy cooperative, so North Gujarat holds a cluster of processing plants. Unjha, in the same district, is a major market yard for spices. The district also has GIDC estates for engineering and small manufacturing, including Dediyasan near Mehsana city, and Kadi and Kalol have their own industrial belts. A word on fit: Spice and cattle-feed processing are mostly dry and don't need electropolished pipe. Where we're useful is milk and dairy-product lines, CIP, expansion projects at existing plants, and the fabricators who supply them.",
@@ -595,7 +595,7 @@ export const gujaratCityData = {
         "Big cooperative unions buy formally. Large dairy unions generally purchase through tenders and approved-vendor lists. If yours does, send us the tender specification and we'll respond with a technical and commercial offer and the document pack.",
         "Many of the machines come from Anand. Dairy equipment is largely built in the Anand and Vitthal Udyognagar belt, about 150 km south. If you're an equipment maker, see our Anand page.",
         "Dry processing isn't the target. Spice and cattle-feed handling are mostly dry. We'd rather tell you than sell you something you don't need.",
-        "A long-ish supply line. Mehsana is roughly 660-680 km from our factory. We cap the pipe ends, sleeve every length and pack for the journey. If you also buy for Ahmedabad, Sanand or Anand, send the requirements together and we'll quote one consolidated dispatch."
+        "A long-ish supply line. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends, sleeve every length and pack for the journey. If you also buy for Ahmedabad, Sanand or Anand, send the requirements together and we'll quote one consolidated dispatch."
       ]
     },
     areas: ['Mehsana', 'Kadi', 'Kalol', 'Patan', 'Sidhpur', 'Unjha', 'Dediyasan', 'Visnagar', 'Vijapur', 'Vadnagar', 'Becharaji (nearby)', 'Himmatnagar (nearby)', 'Palanpur (nearby)'],
@@ -608,7 +608,7 @@ export const gujaratCityData = {
     faqs: [
       {
         q: 'How fast can you deliver to Mehsana, and how is the finish protected in transit?',
-        a: 'Mehsana is roughly 660-680 km from our Taloja MIDC factory, and delivery is typically 2 days. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged, and factory visits and witnessed testing are welcome.'
+        a: 'We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation. We cap the pipe ends and sleeve each length so the electropolished finish arrives undamaged.'
       },
       {
         q: 'Is 304L enough for milk and curd lines, or do I need 316L?',

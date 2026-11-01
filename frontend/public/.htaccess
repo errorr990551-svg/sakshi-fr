@@ -31,6 +31,8 @@ RewriteRule ^home/?$ https://steelmanufacturer.in/ [L,R=301]
 RewriteRule ^marketplace/?$ https://steelmanufacturer.in/market-area/ [L,R=301]
 RewriteRule ^about/?$ https://steelmanufacturer.in/about-us/ [L,R=301]
 RewriteRule ^delhi/?$ https://steelmanufacturer.in/market-area/delhi/ [L,R=301]
+# Old root city page with Search Console clicks (was a 404)
+RewriteRule ^mumbai/?$ https://steelmanufacturer.in/market-area/mumbai/ [L,R=301]
 RewriteRule ^bangalore/?$ https://steelmanufacturer.in/market-area/bengaluru/ [L,R=301]
 RewriteRule ^industrial-flanges/?$ https://steelmanufacturer.in/flanges/ [L,R=301]
 RewriteRule ^gujarat/?$ https://steelmanufacturer.in/market-area/gujarat/ [L,R=301]
@@ -56,13 +58,14 @@ RewriteRule ^stainless-steel-seamless-pipe-range/?$ https://steelmanufacturer.in
 RewriteRule ^stainless-steel-pipe-range/?$ https://steelmanufacturer.in/stainless-steel-pipes/ [L,R=301]
 RewriteRule ^asme-b16-11-stainless-steel-forged-fittings-manufacturer/?$ https://steelmanufacturer.in/asme-b16-11-forged-fittings/ [L,R=301]
 RewriteRule ^metal-weight-calculation-formulas-technical-charts-sakshi-forge/?$ https://steelmanufacturer.in/weight-calculator/ [L,R=301]
-RewriteRule ^stainless-steel-dairy-fittings-manufacturer-in-mumbai/?$ https://steelmanufacturer.in/ss-dairy-fittings/ [L,R=301]
+RewriteRule ^stainless-steel-dairy-fittings-manufacturer-in-(?:mumbai|india)/?$ https://steelmanufacturer.in/ss-dairy-fittings/ [L,R=301]
+RewriteRule ^stainless-steel-flanges-a-complete-buyers-guide-for-indian-industries/?$ https://steelmanufacturer.in/stainless-steel-flanges/ [L,R=301]
 RewriteRule ^the-ultimate-guide-to-asme-b16-5-flanges-specifications-ratings-and-selection-for-2026/?$ https://steelmanufacturer.in/blog/asme-b16-5-flange-dimensions-pressure-ratings/ [L,R=301]
 RewriteRule ^forged-fittings-vs-buttweld-fittings-the-ultimate-comparison-guide/?$ https://steelmanufacturer.in/blog/butt-weld-vs-forged-fittings-guide/ [L,R=301]
 
 # C3. Old WordPress URLs and city pages with no equivalent -> 410 Gone (Google drops them faster than 404)
 RewriteRule ^(?:wp-content|wp-json|wp-admin|wp-includes|category|tag|author|feed)(?:/.*)?$ - [G,L]
-RewriteRule ^(?:plate-flange|olets|plates|electropolished-pipe-fittings/bs-4825-fittings)/?$ - [G,L]
+RewriteRule ^(?:plate-flange|olets|plates|electropolished-pipe-fittings/bs-4825-fittings|hello-world|ss-pipe-fittings-complete-guide-2)/?$ - [G,L]
 RewriteRule ^(?:ss-pipe-vs-ss-tube-the-definitive-2026-comparison-guide|how-to-choose-right-industrial-flange-engineering-guide|ss-pipe-fittings-complete-guide|forged-pipe-fittings-guide-pressure-classes-standards|types-of-industrial-flanges-complete-guide|butt-weld-pipe-fittings-asme-b16-9-complete-guide|stainless-steel-flanges-grades-standards-applications|india-steel-manufacturing-industry-growth-2024|ansi-vs-din-vs-jis-flange-standard-comparison|how-stainless-steel-pipe-and-tube-price-is-calculated-[a-z0-9-]+|stainless-steel-pipe-and-tube-standards-[a-z0-9-]+|socket-weld-vs-threaded-pipe-fittings-[a-z0-9-]+|the-complete-guide-to-industrial-flanges|astm-a182-stainless-steel-flanges-[a-z0-9-]+|stainless-steel-flanges-oil-gas-industry-specifications|corrosion-resistance-stainless-steel-industrial-guide|complete-guide-to-ss-pipe-fittings-[a-z0-9-]+|carbon-steel-flanges-price-in-india-[a-z0-9-]+|stainless-steel-pipe-vs-tube-the-definitive-[a-z0-9-]+|stainless-steel-pipes-industrial-guide-grades-applications|forged-flanges-vs-cast-flanges-[a-z0-9-]+|stainless-steel-flanges-for-oil-gas-industry-in-india-[a-z0-9-]+|304-vs-316-vs-202-vs-duplex-stainless-steel-[a-z0-9-]+|seamless-vs-welded-erw-stainless-steel-pipe-and-tube-[a-z0-9-]+|how-to-select-the-right-flange-for-industrial-piping-[a-z0-9-]+|stainless-steel-price-per-kg-in-india-[a-z0-9-]+)/?$ - [G,L]
 RewriteRule ^(?:electropolished-pipes?-(?:manufacturer|supplier)-(?:in-)?|industrial-pipe-flange-manufacturer-in-)(?:karnal|gorakhpur|bathinda|ballari|patiala|hisar|korba|chandigarh|bilaspur|rohtak|kota|dhanbad|tirupur|morbi)(?:-sakshi-forge)?/?$ - [G,L]
 

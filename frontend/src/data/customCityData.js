@@ -11,7 +11,7 @@ export const customCityData = {
     country: 'Australia',
     pageTitle: 'Electropolished Pipes Manufacturer for Canberra, ACT | Sakshi Forge',
     metaDescription: 'ASTM A270 / ASME BPE electropolished 316L & 304L tube shipped from Mumbai to Canberra. Duty-free under AI-ECTA, EN 10204 3.1 MTC, Ra-tested. Request a quote.',
-    h1: 'Electropolished Pipes Manufacturer for Canberra, ACT',
+    h1: 'Electropolished Pipes & Tubes Manufacturer and Supplier in Canberra',
     eyebrow: 'Export Supply · Canberra, ACT, Australia',
     breadcrumb: [
       { name: 'Home', path: '/' },
@@ -46,7 +46,7 @@ export const customCityData = {
     },
     logistics: {
       title: 'How We Ship Electropolished Pipes from Mumbai to Canberra',
-      routeNodes: ['Mumbai Works', 'Nhava Sheva Port', 'Port Botany, Sydney', 'Canberra Site'],
+      routeNodes: ['Mumbai', 'Nhava Sheva Port', 'Port Botany, Sydney', 'Canberra Site'],
       processSteps: [
         { num: 1, text: 'Heat-number traceability and PMI check on incoming material' },
         { num: 2, text: 'Precision cold drawing, sizing and dimensional calibration check' },
@@ -58,7 +58,7 @@ export const customCityData = {
       videoId: 'SJqbbUzYjXg',
       infoRows: [
         { label: 'Incoterms', value: 'FOB Nhava Sheva · CIF Port Botany · DAP Canberra site' },
-        { label: 'Lead time', value: 'Prompt scheduled production + sea freight to Port Botany + expedited clearance and road transit to Canberra' },
+        { label: 'Lead time', value: 'Confirmed with each quotation' },
         { label: 'Import duty', value: 'Duty-free under the India–Australia ECTA with a valid Certificate of Origin' },
         { label: 'Shipping documents', value: 'Commercial invoice, packing list, bill of lading, ECTA Certificate of Origin, EN 10204 3.1 MTC, Ra report, packaging declaration' }
       ],
@@ -217,7 +217,7 @@ export const customCityData = {
     country: 'UAE',
     pageTitle: 'Electropolished Pipes Manufacturer for Abu Dhabi, UAE | Sakshi Forge',
     metaDescription: 'ASTM A270 / ASME BPE electropolished 316L & 304L tube shipped from Mumbai to Abu Dhabi. CEPA Certificate of Origin, EN 10204 3.1 MTC, Ra-tested. Request a quote.',
-    h1: 'Electropolished Pipes Manufacturer for Abu Dhabi, UAE',
+    h1: 'Electropolished Pipes & Tubes Manufacturer and Supplier in Abu Dhabi',
     eyebrow: 'Export Supply · Abu Dhabi, United Arab Emirates',
     breadcrumb: [
       { name: 'Home', path: '/' },
@@ -253,7 +253,7 @@ export const customCityData = {
     },
     logistics: {
       title: 'How We Ship Electropolished Pipes from Mumbai to Abu Dhabi',
-      routeNodes: ['Mumbai Works', 'Nhava Sheva Port', 'Khalifa Port, Abu Dhabi', 'Your Site'],
+      routeNodes: ['Mumbai', 'Nhava Sheva Port', 'Khalifa Port, Abu Dhabi', 'Your Site'],
       processSteps: [
         { num: 1, text: 'Heat-number traceability and PMI check on incoming material' },
         { num: 2, text: 'Precision sizing, forming and dimensional check' },
@@ -435,7 +435,7 @@ export const customCityData = {
     country: 'UAE',
     pageTitle: 'Electropolished Pipes Manufacturer for Al Ain, UAE | Sakshi Forge',
     metaDescription: 'ASTM A270 / ASME BPE electropolished 316L & 304L tube for Al Ain dairy, water, food and pharma lines. QA-reviewed specs, EN 10204 3.1 MTC, CEPA CoO. Get a quote.',
-    h1: 'Electropolished Pipes Manufacturer for Al Ain, UAE',
+    h1: 'Electropolished Pipes & Tubes Manufacturer and Supplier in Al Ain',
     eyebrow: 'Export Supply · Al Ain, Abu Dhabi Emirate, UAE',
     reviewerByline: 'Technically reviewed by Quality Assurance Team · Metallurgy & High-Purity Piping · Last reviewed: 29 Sep 2026',
     breadcrumb: [
@@ -692,7 +692,7 @@ export const customCityData = {
         { stage: 'Visual bore inspection', check: 'Bore appearance', method: 'High-resolution borescope examination', receives: 'Surface inspection report' },
         { stage: 'Before dispatch', check: 'Cleanliness, caps, packaging', method: 'Visual; heat number marked on every tube', receives: 'Packing list & shipping label' }
       ],
-      tpiNote: 'Third-party inspection (TPI) is welcome at our Mumbai plant — Bureau Veritas, SGS, TUV, DNV or any agency nominated by the client.',
+      tpiNote: 'Third-party inspection (TPI) is welcome in Mumbai — Bureau Veritas, SGS, TUV, DNV or any agency nominated by the client.',
       storageGuidelines: [
         'Keep hygienic end caps and poly sleeves on until the tube is cut for installation; they keep wind-blown dust and desert sand out of the bore.',
         'Store under shaded cover, out of direct intense sunlight. Heat and UV weaken plastic caps and sleeves over time.',
@@ -705,7 +705,7 @@ export const customCityData = {
       eyebrow: 'EXPORT & LOGISTICS',
       title: 'Shipping Electropolished Tube from Mumbai to Al Ain',
       body: 'Al Ain is inland, so every shipment ends with a road leg. We ship by sea from Nhava Sheva to Khalifa Port in Abu Dhabi or Jebel Ali in Dubai — whichever gives your clearing agent the faster route — and deliver by road to your site via the E66 from Dubai or the E22 from Abu Dhabi.',
-      routeNodes: ['Mumbai Works', 'Nhava Sheva Port', 'Khalifa Port / Jebel Ali', 'Al Ain Site (by road)'],
+      routeNodes: ['Mumbai', 'Nhava Sheva Port', 'Khalifa Port / Jebel Ali', 'Al Ain Site (by road)'],
       videoId: 'SJqbbUzYjXg',
       processSteps: [
         { num: 1, text: 'Sound ASTM A270 base tube selection with heat traceability and incoming PMI verification' },
@@ -731,7 +731,7 @@ export const customCityData = {
       eyebrow: 'EXPORT & LOGISTICS',
       title: 'Shipping Electropolished Tube from Mumbai to Al Ain',
       body: 'Al Ain is inland, so every shipment ends with a road leg. We ship by sea from Nhava Sheva to Khalifa Port in Abu Dhabi or Jebel Ali in Dubai — whichever gives your clearing agent the faster route — and deliver by road to your site via the E66 from Dubai or the E22 from Abu Dhabi.',
-      routeNodes: ['Mumbai Works', 'Nhava Sheva Port', 'Khalifa Port / Jebel Ali', 'Al Ain Site (by road)'],
+      routeNodes: ['Mumbai', 'Nhava Sheva Port', 'Khalifa Port / Jebel Ali', 'Al Ain Site (by road)'],
       videoId: 'SJqbbUzYjXg',
       processSteps: [
         { num: 1, text: 'Sound ASTM A270 base tube selection with heat traceability and incoming PMI verification' },
@@ -761,10 +761,10 @@ export const customCityData = {
         { field: 'Head Office', value: `${ADDRESS_LINE}, India` },
         { field: 'Quality System', value: 'ISO 9001:2015 Certified Manufacturing & Quality Assurance' },
         { field: 'Testing Laboratory', value: 'NABL Accredited Partner Laboratory (ILAC-MRA Signatory)' },
-        { field: 'Sales & Inquiries', value: 'Fast 30-minute response via official RFQ desk' },
+        { field: 'Sales & Inquiries', value: 'Quote within 24 hours via the official RFQ desk' },
       ],
       notSupply: [
-        'We do not operate a local Al Ain warehouse; every consignment is custom manufactured and dispatched direct from our Mumbai works for maximum quality control.',
+        'We do not operate a local Al Ain warehouse; every consignment is custom manufactured and dispatched direct from Mumbai for maximum quality control.',
         'We do not supply 904L tube under ASTM A270 — 904L is manufactured under ASTM B677, B673 or B674.',
         'We never disclose client proprietary installation projects without express written authorization.'
       ]
@@ -772,7 +772,7 @@ export const customCityData = {
     faqs: [
       {
         q: 'Do you supply electropolished pipes to Al Ain?',
-        a: 'Yes. We ship from our Mumbai plant by sea to Khalifa Port or Jebel Ali and deliver by road to sites across Al Ain, including Al Ain Industrial City. Every order carries EN 10204 3.1 MTCs.'
+        a: 'Yes. We ship from Mumbai by sea to Khalifa Port or Jebel Ali and deliver by road to sites across Al Ain, including Al Ain Industrial City. Every order carries EN 10204 3.1 MTCs.'
       },
       {
         q: 'Do I need electropolished tube for a dairy or bottled-water line?',
@@ -796,7 +796,7 @@ export const customCityData = {
       },
       {
         q: 'Can we inspect the tube before it ships?',
-        a: 'Yes. Your own inspector or a third-party agency can witness inspection at our Mumbai plant before dispatch, with scheduled advance notice.'
+        a: 'Yes. Your own inspector or a third-party agency can witness inspection in Mumbai before dispatch, with scheduled advance notice.'
       },
       {
         q: 'How do I order electropolished tube for Al Ain?',

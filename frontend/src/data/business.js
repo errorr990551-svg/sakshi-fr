@@ -2,7 +2,7 @@
 // Matches the Google Business Profile exactly (checked 2026-10-31); change it here only if the
 // profile changes, so the website and Google never disagree.
 export const PHONE = '+91 82913 66340';
-export const EMAIL = 'sales@steelmanufacturer.in';
+export const EMAIL = 'info@steelmanufacturer.in';
 
 export const ADDRESS = {
   street: 'Shop No. 05, Ground Floor, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada',

@@ -19,9 +19,14 @@ function App({ path, route, Page }) {
   const [isEnquiryOpen, setIsEnquiryOpen] = useState(false);
   const [preselectedProduct, setPreselectedProduct] = useState('');
   const [enquiryCustomTitle, setEnquiryCustomTitle] = useState('');
-  const [hasUnlockedContact, setHasUnlockedContact] = useState(() => {
-    return typeof window !== 'undefined' && localStorage.getItem('contactDetailsUnlocked') === 'true';
-  });
+  // Start locked so the first client render matches the prerendered HTML (no hydration
+  // mismatch), then read the visitor's saved unlock after hydration.
+  const [hasUnlockedContact, setHasUnlockedContact] = useState(false);
+  useEffect(() => {
+    try {
+      if (localStorage.getItem('contactDetailsUnlocked') === 'true') setHasUnlockedContact(true);
+    } catch { /* storage blocked: stay locked */ }
+  }, []);
   const currentPath = path;
   const resolvedRoute = route;
 

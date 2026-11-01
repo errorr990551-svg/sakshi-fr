@@ -747,7 +747,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
                       <Mail size={16} /> Email
                     </div>
                     <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.85rem', lineHeight: '1.5' }}>
-                      sales@steelmanufacturer.in
+                      info@steelmanufacturer.in
                     </p>
                   </div>
                 </>

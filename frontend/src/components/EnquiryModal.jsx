@@ -187,17 +187,17 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '',
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: 'var(--text-primary)' }}>
                   <Phone size={18} style={{ color: 'var(--primary-yellow)' }} />
                   <div>
-                    <strong style={{ fontSize: '0.75rem', color: 'var(--text-muted)', display: 'block', textTransform: 'uppercase' }}>Phone Numbers</strong>
-                    <a href="tel:+918291366340" style={{ color: 'var(--primary-yellow)', fontWeight: '700', textDecoration: 'none', fontSize: '0.95rem' }}>+91 82913 66340</a> /{' '}
-                    <a href="tel:+917976476375" style={{ color: 'var(--primary-yellow)', fontWeight: '700', textDecoration: 'none', fontSize: '0.95rem' }}>+91 79764 76375</a>
+                    <strong style={{ fontSize: '0.75rem', color: 'var(--text-muted)', display: 'block', textTransform: 'uppercase' }}>Phone Number</strong>
+                    <a href="tel:+918291366340" style={{ color: 'var(--primary-yellow)', fontWeight: '700', textDecoration: 'none', fontSize: '0.95rem' }}>+91 82913 66340</a>
                   </div>
                 </div>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: 'var(--text-primary)' }}>
                   <Mail size={18} style={{ color: 'var(--primary-yellow)' }} />
                   <div>
-                    <strong style={{ fontSize: '0.75rem', color: 'var(--text-muted)', display: 'block', textTransform: 'uppercase' }}>Email Address</strong>
-                    <a href="mailto:sales@steelmanufacturer.in" style={{ color: 'var(--text-primary)', fontWeight: '600', textDecoration: 'none', fontSize: '0.95rem' }}>sales@steelmanufacturer.in</a>
+                    <strong style={{ fontSize: '0.75rem', color: 'var(--text-muted)', display: 'block', textTransform: 'uppercase' }}>Email</strong>
+                    <a href="mailto:info@steelmanufacturer.in" style={{ color: 'var(--text-primary)', fontWeight: '600', textDecoration: 'none', fontSize: '0.95rem' }}>info@steelmanufacturer.in</a>
+                    <a href="mailto:sakshiforge1737@gmail.com" style={{ color: 'var(--text-primary)', fontWeight: '600', textDecoration: 'none', fontSize: '0.95rem', display: 'block' }}>sakshiforge1737@gmail.com</a>
                   </div>
                 </div>
 
@@ -209,13 +209,6 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '',
                   </div>
                 </div>
 
-                <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', color: 'var(--text-primary)' }}>
-                  <MapPin size={18} style={{ color: 'var(--primary-yellow)', flexShrink: 0, marginTop: '0.2rem' }} />
-                  <div>
-                    <strong style={{ fontSize: '0.75rem', color: 'var(--text-muted)', display: 'block', textTransform: 'uppercase' }}>Address</strong>
-                    <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Shop No. 05, 3rd Kumbharwada, Mumbai 400004</span>
-                  </div>
-                </div>
               </div>
 
               <button 

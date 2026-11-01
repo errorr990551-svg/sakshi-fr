@@ -118,9 +118,9 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
                         <Phone size={20} />
                       </div>
                       <div>
-                        <h4 style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: '700', marginBottom: '0.25rem' }}>Phone Numbers</h4>
+                        <h4 style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: '700', marginBottom: '0.25rem' }}>Phone Number</h4>
                         <p style={{ fontWeight: '600', fontSize: '1.05rem' }}>
-                          <a href="tel:+918291366340" style={{ color: 'inherit', textDecoration: 'none' }}>+91 82913 66340</a> / <a href="tel:+917976476375" style={{ color: 'inherit', textDecoration: 'none' }}>+91 79764 76375</a>
+                          <a href="tel:+918291366340" style={{ color: 'inherit', textDecoration: 'none' }}>+91 82913 66340</a>
                         </p>
                       </div>
                     </div>
@@ -130,9 +130,10 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
                         <Mail size={20} />
                       </div>
                       <div>
-                        <h4 style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: '700', marginBottom: '0.25rem' }}>Email Address</h4>
+                        <h4 style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: '700', marginBottom: '0.25rem' }}>Email</h4>
                         <p style={{ fontWeight: '600', fontSize: '1.05rem' }}>
-                          <a href="mailto:sales@steelmanufacturer.in" style={{ color: 'inherit', textDecoration: 'none' }}>sales@steelmanufacturer.in</a>
+                          <a href="mailto:info@steelmanufacturer.in" style={{ color: 'inherit', textDecoration: 'none' }}>info@steelmanufacturer.in</a><br />
+                          <a href="mailto:sakshiforge1737@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>sakshiforge1737@gmail.com</a>
                         </p>
                       </div>
                     </div>

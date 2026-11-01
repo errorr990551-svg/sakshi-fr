@@ -366,7 +366,7 @@ function formatMetaDesc(desc) {
       "@type": "ContactPoint",
       "telephone": "+91 82913 66340",
       "contactType": "sales",
-      "email": "sales@steelmanufacturer.in"
+      "email": "info@steelmanufacturer.in"
     }
   };
 

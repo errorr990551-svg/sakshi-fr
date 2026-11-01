@@ -705,7 +705,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
                       <Phone size={16} /> Direct Phones
                     </div>
                     <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.85rem', lineHeight: '1.5' }}>
-                      <a href="tel:+918291366340" style={{ color: 'inherit', textDecoration: 'none' }}>+91 82913 66340</a> | <a href="tel:+917976476375" style={{ color: 'inherit', textDecoration: 'none' }}>+91 79764 76375</a>
+                      <a href="tel:+918291366340" style={{ color: 'inherit', textDecoration: 'none' }}>+91 82913 66340</a>
                     </p>
                   </div>
 
@@ -714,7 +714,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
                       <Mail size={16} /> Email
                     </div>
                     <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.85rem', lineHeight: '1.5' }}>
-                      <a href="mailto:sales@steelmanufacturer.in" style={{ color: 'inherit', textDecoration: 'none' }}>sales@steelmanufacturer.in</a>
+                      <a href="mailto:info@steelmanufacturer.in" style={{ color: 'inherit', textDecoration: 'none' }}>info@steelmanufacturer.in</a>
                     </p>
                   </div>
                 </>

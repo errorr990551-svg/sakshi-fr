@@ -998,7 +998,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                         <Phone size={18} /> Direct Works Hotline
                       </div>
                       <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.5', fontWeight: '600' }}>
-                        <a href="tel:+918291366340" style={{ color: '#fff', textDecoration: 'none' }}>+91 82913 66340</a> | <a href="tel:+917976476375" style={{ color: '#fff', textDecoration: 'none' }}>+91 79764 76375</a>
+                        <a href="tel:+918291366340" style={{ color: '#fff', textDecoration: 'none' }}>+91 82913 66340</a>
                       </p>
                     </div>
 
@@ -1007,7 +1007,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                         <Mail size={18} /> Email
                       </div>
                       <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.5' }}>
-                        <a href="mailto:sales@steelmanufacturer.in" style={{ color: '#fff', textDecoration: 'none' }}>sales@steelmanufacturer.in</a>
+                        <a href="mailto:info@steelmanufacturer.in" style={{ color: '#fff', textDecoration: 'none' }}>info@steelmanufacturer.in</a>
                       </p>
                     </div>
                   </>

@@ -194,13 +194,13 @@ export const customCityData = {
       },
       {
         q: 'How do I order electropolished pipes from Australia?',
-        a: 'Send the grade, OD × wall, finish, length and quantity through the RFQ form or to sales@steelmanufacturer.in. You will receive a quote within one business day (AEST).'
+        a: 'Send the grade, OD × wall, finish, length and quantity through the RFQ form or to info@steelmanufacturer.in. You will receive a quote within one business day (AEST).'
       }
     ],
     rfq: {
       title: 'Request a Manufacturer Quotation for Canberra',
       body: 'Get FOB Nhava Sheva, CIF Port Botany or DAP Canberra pricing on ASTM A270 electropolished 316L and 304L tube, sanitary fittings and flanges. Quotes within one business day (AEST). Sample MTC and Ra report on request.',
-      email: 'sales@steelmanufacturer.in',
+      email: 'info@steelmanufacturer.in',
       footnote: 'EN 10204 3.1 Mill Test Certificates and NABL-accredited Ra profilometer reports are supplied with every dispatch.'
     },
     closing: {
@@ -412,13 +412,13 @@ export const customCityData = {
       },
       {
         q: 'How do I order electropolished pipes for Abu Dhabi?',
-        a: 'Send the grade, OD × wall, finish, length and quantity through the RFQ form, on WhatsApp, or to sales@steelmanufacturer.in. You will receive a quote within one business day.'
+        a: 'Send the grade, OD × wall, finish, length and quantity through the RFQ form, on WhatsApp, or to info@steelmanufacturer.in. You will receive a quote within one business day.'
       }
     ],
     rfq: {
       title: 'Request a Manufacturer Quotation for Abu Dhabi',
       body: 'Get FOB Nhava Sheva, CIF Khalifa Port / Jebel Ali or DAP Abu Dhabi pricing on ASTM A270 electropolished 316L and 304L tube, sanitary fittings and flanges. Quotes in USD or AED within one business day. Sample MTC and Ra report on request.',
-      email: 'sales@steelmanufacturer.in',
+      email: 'info@steelmanufacturer.in',
       footnote: 'EN 10204 3.1 Mill Test Certificates and NABL-accredited Ra profilometer reports are supplied with every dispatch.'
     },
     closing: {
@@ -800,13 +800,13 @@ export const customCityData = {
       },
       {
         q: 'How do I order electropolished tube for Al Ain?',
-        a: 'Send the grade, OD × wall, finish, length and quantity through the RFQ form, on WhatsApp, or to sales@steelmanufacturer.in. You will receive a quote within one business day.'
+        a: 'Send the grade, OD × wall, finish, length and quantity through the RFQ form, on WhatsApp, or to info@steelmanufacturer.in. You will receive a quote within one business day.'
       }
     ],
     rfq: {
       title: 'Request a Manufacturer Quotation for Al Ain',
       body: 'Get FOB Nhava Sheva, CIF Khalifa Port / Jebel Ali or DAP Al Ain pricing on ASTM A270 316L and 304L tube — electropolished or mechanically polished, whichever your specification needs. Quotes in USD or AED within one business day, with a sample MTC and Ra report on request.',
-      email: 'sales@steelmanufacturer.in',
+      email: 'info@steelmanufacturer.in',
       footnote: 'EN 10204 3.1 Mill Test Certificates and NABL-accredited Ra profilometer reports are supplied with every dispatch.'
     },
     closing: {

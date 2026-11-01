@@ -30,14 +30,14 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: 'var(--text-secondary)' }}>
                   <Phone size={16} className="infra-feature-icon" />
                   <span style={{ fontSize: '0.9rem' }}>
-                    <a href="tel:+918291366340" style={{ color: 'inherit', textDecoration: 'none' }}>+91 82913 66340</a> /{' '}
-                    <a href="tel:+917976476375" style={{ color: 'inherit', textDecoration: 'none' }}>+91 79764 76375</a>
+                    <a href="tel:+918291366340" style={{ color: 'inherit', textDecoration: 'none' }}>+91 82913 66340</a>
                   </span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', color: 'var(--text-secondary)' }}>
                   <Mail size={16} className="infra-feature-icon" />
                   <span style={{ fontSize: '0.9rem' }}>
-                    <a href="mailto:sales@steelmanufacturer.in" style={{ color: 'inherit', textDecoration: 'none' }}>sales@steelmanufacturer.in</a>
+                    <a href="mailto:info@steelmanufacturer.in" style={{ color: 'inherit', textDecoration: 'none' }}>info@steelmanufacturer.in</a><br />
+                    <a href="mailto:sakshiforge1737@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>sakshiforge1737@gmail.com</a>
                   </span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', color: 'var(--text-secondary)' }}>

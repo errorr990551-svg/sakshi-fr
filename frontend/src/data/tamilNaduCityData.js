@@ -200,8 +200,8 @@ export const tamilNaduCityData = {
     cta: {
       title: "Ready to Specify Electropolished Pipe for Your Chennai Plant?",
       desc: "Send your grade, size, quantity and finish. Quotes are factory-direct, with full documentation, delivered anywhere in Chennai, Manali, Ambattur, Sriperumbudur or Oragadam.",
-      phones: ["+91 82913 66340", "+91 79764 76375"],
-      email: "sales@steelmanufacturer.in",
+      phones: ["+91 82913 66340"],
+      email: "info@steelmanufacturer.in",
       address: "Shop No. 05, Ground Floor, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai, Maharashtra 400004"
     }
   },
@@ -381,8 +381,8 @@ export const tamilNaduCityData = {
     cta: {
       title: "Ready to Specify Electropolished Pipe for Your Coimbatore Business?",
       desc: "Send your grade, size, quantity and drawing. Factory-direct quote with full documentation.",
-      phones: ["+91 82913 66340", "+91 79764 76375"],
-      email: "sales@steelmanufacturer.in",
+      phones: ["+91 82913 66340"],
+      email: "info@steelmanufacturer.in",
       address: "Shop No. 05, Ground Floor, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai, Maharashtra 400004"
     }
   },
@@ -534,8 +534,8 @@ export const tamilNaduCityData = {
     cta: {
       title: "Ready to Specify Electropolished Pipe for Your Hosur Plant?",
       desc: "Send your requirements for direct factory pricing with 24-hour quote turnaround.",
-      phones: ["+91 82913 66340", "+91 79764 76375"],
-      email: "sales@steelmanufacturer.in",
+      phones: ["+91 82913 66340"],
+      email: "info@steelmanufacturer.in",
       address: "Shop No. 05, Ground Floor, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai, Maharashtra 400004"
     }
   },
@@ -686,8 +686,8 @@ export const tamilNaduCityData = {
     cta: {
       title: "Ready to Specify Electropolished Pipe for Your Cuddalore Plant?",
       desc: "Send your requirements for direct factory pricing with 24-hour quote turnaround.",
-      phones: ["+91 82913 66340", "+91 79764 76375"],
-      email: "sales@steelmanufacturer.in",
+      phones: ["+91 82913 66340"],
+      email: "info@steelmanufacturer.in",
       address: "Shop No. 05, Ground Floor, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai, Maharashtra 400004"
     }
   },
@@ -839,8 +839,8 @@ export const tamilNaduCityData = {
     cta: {
       title: "Ready to Specify Electropolished Pipe for Your Trichy Business?",
       desc: "Send your requirements for direct factory pricing with 24-hour quote turnaround.",
-      phones: ["+91 82913 66340", "+91 79764 76375"],
-      email: "sales@steelmanufacturer.in",
+      phones: ["+91 82913 66340"],
+      email: "info@steelmanufacturer.in",
       address: "Shop No. 05, Ground Floor, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai, Maharashtra 400004"
     }
   },
@@ -992,8 +992,8 @@ export const tamilNaduCityData = {
     cta: {
       title: "Ready to Specify Electropolished Pipe for Your Salem Plant?",
       desc: "Send your requirements for direct factory pricing with 24-hour quote turnaround.",
-      phones: ["+91 82913 66340", "+91 79764 76375"],
-      email: "sales@steelmanufacturer.in",
+      phones: ["+91 82913 66340"],
+      email: "info@steelmanufacturer.in",
       address: "Shop No. 05, Ground Floor, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai, Maharashtra 400004"
     }
   },
@@ -1146,8 +1146,8 @@ export const tamilNaduCityData = {
     cta: {
       title: "Ready to Specify Electropolished Pipe for Your Madurai Plant?",
       desc: "Send your requirements for direct factory pricing with 24-hour quote turnaround.",
-      phones: ["+91 82913 66340", "+91 79764 76375"],
-      email: "sales@steelmanufacturer.in",
+      phones: ["+91 82913 66340"],
+      email: "info@steelmanufacturer.in",
       address: "Shop No. 05, Ground Floor, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai, Maharashtra 400004"
     }
   },
@@ -1298,8 +1298,8 @@ export const tamilNaduCityData = {
     cta: {
       title: "Ready to Specify Electropolished Pipe for Your Thoothukudi Plant?",
       desc: "Send your requirements for direct factory pricing with 24-hour quote turnaround.",
-      phones: ["+91 82913 66340", "+91 79764 76375"],
-      email: "sales@steelmanufacturer.in",
+      phones: ["+91 82913 66340"],
+      email: "info@steelmanufacturer.in",
       address: "Shop No. 05, Ground Floor, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai, Maharashtra 400004"
     }
   },
@@ -1452,8 +1452,8 @@ export const tamilNaduCityData = {
     cta: {
       title: "Ready to Specify Electropolished Pipe for Your Erode Plant?",
       desc: "Send your requirements for direct factory pricing with 24-hour quote turnaround.",
-      phones: ["+91 82913 66340", "+91 79764 76375"],
-      email: "sales@steelmanufacturer.in",
+      phones: ["+91 82913 66340"],
+      email: "info@steelmanufacturer.in",
       address: "Shop No. 05, Ground Floor, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai, Maharashtra 400004"
     }
   },
@@ -1609,8 +1609,8 @@ export const tamilNaduCityData = {
     cta: {
       title: "Ready to Specify Electropolished Pipe for Your Vellore or Ranipet Plant?",
       desc: "Send your requirements for direct factory pricing with 24-hour quote turnaround.",
-      phones: ["+91 82913 66340", "+91 79764 76375"],
-      email: "sales@steelmanufacturer.in",
+      phones: ["+91 82913 66340"],
+      email: "info@steelmanufacturer.in",
       address: "Shop No. 05, Ground Floor, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai, Maharashtra 400004"
     }
   }

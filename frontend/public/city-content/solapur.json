@@ -1,0 +1,86 @@
+{
+  "slug": "solapur",
+  "updated": "2026-11-02",
+  "sections": [
+    {
+      "heading": "Hatsun Agro's Solapur Dairy: 6 Lakh Litres a Day",
+      "paragraphs": [
+        "The largest hygienic-process plant we can document in Solapur district is Hatsun Agro Product's greenfield dairy. Hatsun, which sells under the Arokya, Hatsun, Arun Icecreams and Ibaco brands, informed the stock exchanges of commercial production at the plant in February 2021. It stands on 72 acres, cost Rs 130 crore and uses specialised equipment imported from Germany to process 6 lakh litres of milk a day.",
+        "Solapur was Hatsun's 19th manufacturing location and its first in Maharashtra, set up to serve customers in Maharashtra and Goa. The company's filing lists milk, curd, buttermilk, chaas and lassi among the plant's products, and the design brief it describes puts product hygiene alongside employee safety."
+      ]
+    },
+    {
+      "heading": "Curd, Buttermilk and Lassi Lines in Solapur: Where Finish Matters",
+      "paragraphs": [
+        "Cultured products put different demands on pipework from plain liquid milk. Milk is heat-treated, cooled to incubation temperature, dosed with culture and held, and the set or stirred product is then pumped to filling. A line that carries live culture must be cleaned and sanitised completely between batches, because any residue left in a crevice or rough patch can seed the next batch with the wrong organisms.",
+        "That is the case for specifying SF4 electropolished 316L on culture dosing lines, inoculated-milk transfer and the CIP circuits that serve the fermentation tanks. Raw-milk reception, chilling and pasteurised milk transfer upstream of the culture step can usually stay on SF1 mechanically polished 304L or 316L tube."
+      ]
+    },
+    {
+      "heading": "Balaji Amines at Chincholi MIDC: Solvents for Pharma Supply Chains",
+      "paragraphs": [
+        "At Chincholi MIDC in Solapur, Balaji Amines runs its Unit III on Plot Nos. E-7 and E-8, and on 24 September 2026 began commercial production at its expanded and modernised acetonitrile plant. Installed capacity is now 1,440 tonnes a month, or up to 17,280 tonnes a year, for domestic and export customers.",
+        "The company positions Unit III as a speciality-solvents and pharmaceutical-intermediates platform, and acetonitrile is a solvent used across pharmaceutical, agrochemical and chemical-intermediate supply chains. In a solvent plant most piping is conventional process pipe; polished or electropolished 316L tube belongs at the high-purity end, in product rundown, filling and drumming stations and sample points, where low hold-up makes it easier to prove a line is clean after a grade change."
+      ]
+    },
+    {
+      "heading": "What a Solapur Buyer Should Put in an RFQ",
+      "bullets": [
+        "For dairy lines: which stage the tube serves (reception, pasteurisation, culture dosing, fermentation tanks, filling or CIP), and the product and CIP temperatures.",
+        "For solvent and intermediate plants: the fluid, its purity grade and whether the line is product rundown, filling or sampling.",
+        "OD x wall and metres per size to ASME BPE or ASTM A270 / A269 dimensions, or pipe sizes to ASTM A312.",
+        "Internal finish required (SF1 mechanically polished or SF4 electropolished) and the Ra limit in your specification.",
+        "Each lot comes with an EN 10204 3.1 certificate traced to heat number, PMI on every length and an Ra report for electropolished tube, with chemical analysis by an NABL-accredited lab; quotations go out within 24 hours."
+      ],
+      "links": [
+        {
+          "label": "Send a Solapur enquiry",
+          "href": "/contact-us/"
+        }
+      ]
+    },
+    {
+      "heading": "Delivery to Solapur",
+      "paragraphs": [
+        "Solapur is reached by road from Mumbai through Pune, and the dispatch and transit for each order are set out in writing in the quotation.",
+        "Other Maharashtra pages:"
+      ],
+      "links": [
+        {
+          "label": "Pune",
+          "href": "/market-area/pune/"
+        },
+        {
+          "label": "Sangli",
+          "href": "/market-area/sangli/"
+        },
+        {
+          "label": "Satara",
+          "href": "/market-area/satara/"
+        },
+        {
+          "label": "Kolhapur",
+          "href": "/market-area/kolhapur/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hatsun Agro Product Ltd: press release on commercial production at the Solapur facility (Feb 2021)",
+      "url": "https://hap.in/pdf/Board-Meeting/Press%20release-Solapur-facility-Commercial-production.pdf"
+    },
+    {
+      "title": "AgroSpectrum: HAP begins commercial dairy processing plant in Maharashtra",
+      "url": "https://agrospectrumindia.com/news/58/25035/hap-begins-commercial-dairy-processing-plant-in-maharashtra.html"
+    },
+    {
+      "title": "Indian Chemical News: Balaji Amines starts commercial production at enhanced acetonitrile plant (25 Sep 2026)",
+      "url": "https://www.indianchemicalnews.com/chemical/balaji-amines-starts-commercial-production-at-enhanced-acetonitrile-plant-32032"
+    },
+    {
+      "title": "DSIJ: Balaji Amines' expanded acetonitrile plant at Chincholi MIDC begins operations (24 Sep 2026)",
+      "url": "https://insights.dsij.in/appmindshare/balaji-amines-big-chemical-bet-pays-off-as-expanded-plant-begins-operations"
+    }
+  ]
+}

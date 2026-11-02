@@ -1,0 +1,74 @@
+{
+  "slug": "thoothukudi",
+  "updated": "2026-11-02",
+  "sections": [
+    {
+      "heading": "Thoothukudi's Industry: Port, Chemicals, Salt and Seafood",
+      "paragraphs": [
+        "Thoothukudi is a port city on the Gulf of Mannar whose economy is built on the V.O. Chidambaranar Port, power stations, chemical plants, salt pans and fishing. Its listed industrial units include Southern Petrochemical Industries Corporation (SPIC), Thoothukudi Alkali Chemicals and Fertilizers, a Heavy Water Board plant, DCW, Kilburn Chemicals, salt manufacturers and seafood exporters such as Nila Sea Foods.",
+        "The Marine Products Export Development Authority (MPEDA) runs a sub-regional office at Millerpuram, and the Spices Board of India has a laboratory in Thoothukudi. Most of Thoothukudi's heavy industry needs process pipe rather than hygienic tube; the buyers for polished and electropolished stainless tube are the seafood, spice and food processors, and the consumer-goods plants now being built on the SIPCOT estates."
+      ]
+    },
+    {
+      "heading": "Reliance Consumer Products' Rs 1,156 Crore Plant at SIPCOT Allikulam",
+      "paragraphs": [
+        "In September 2025 Tamil Nadu Industries Minister T.R.B. Rajaa announced that Reliance Consumer Products would invest Rs 1,156 crore in an integrated manufacturing facility on 60 acres at the SIPCOT Allikulam Industrial Park in Thoothukudi. The plant is to make regional snacks, biscuits, spices and edible oil among other products, and is expected to create 2,000 local jobs over five years.",
+        "The same report recalls the state's first TN Rising Investment Conclave, held in Thoothukudi, at which 41 MoUs worth Rs 32,553.85 crore were signed. A multi-product food site like Allikulam is mostly dry processing; its hygienic stainless pipework is concentrated in edible-oil handling, liquid ingredient and flavour dosing, water treatment, and the CIP system that cleans those lines."
+      ]
+    },
+    {
+      "heading": "Seafood Processing on the Thoothukudi Coast: Chlorides and Grade Choice",
+      "paragraphs": [
+        "Seafood plants wash product and equipment with chlorinated water and handle brine and ice, and on this coast the outside of every line is also exposed to salt air. Chlorides cause pitting in stainless steel, and 316L, with its molybdenum content, resists them far better than 304L. For wash-water, brine and CIP lines in a Thoothukudi seafood unit, 316L should be the default grade.",
+        "Finish matters as well. Electropolishing removes the deformed surface layer left by mechanical polishing and leaves a chromium-rich passive film, which helps the tube resist pitting and lets fish proteins and scale wash off more easily. SF4 electropolished 316L is worth specifying on product-contact lines that see chlorinated water every day; SF1 mechanically polished tube is usually enough for utilities and lines away from product."
+      ]
+    },
+    {
+      "heading": "What a Thoothukudi Buyer Should Put in an RFQ",
+      "bullets": [
+        "What the line carries: seafood wash water, brine, edible oil, liquid flavour or ingredient, purified water or CIP solution.",
+        "Chloride level of the water or brine if you know it, and the line temperature, so 316L or 304L can be confirmed for the duty.",
+        "Whether the tube runs outdoors near the shore or indoors, which affects external corrosion.",
+        "OD x wall and metres per size to ASME BPE or ASTM A270 / A269, and the internal finish (SF1 or SF4) with its Ra limit.",
+        "Every lot comes with an EN 10204 3.1 certificate traced to heat number, PMI on every length and a measured Ra report for electropolished tube, and we send the quotation within 24 hours."
+      ],
+      "links": [
+        {
+          "label": "Send a Thoothukudi enquiry",
+          "href": "/contact-us/"
+        }
+      ]
+    },
+    {
+      "heading": "Delivery to Thoothukudi",
+      "paragraphs": [
+        "Thoothukudi is supplied from Mumbai by road, and each quotation states in writing how the order will be dispatched and how long transit will take.",
+        "Other Tamil Nadu pages:"
+      ],
+      "links": [
+        {
+          "label": "Madurai",
+          "href": "/market-area/madurai/"
+        },
+        {
+          "label": "Tiruchirappalli",
+          "href": "/market-area/tiruchirappalli/"
+        },
+        {
+          "label": "Cuddalore",
+          "href": "/market-area/cuddalore/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia: Thoothukudi (economy and industries)",
+      "url": "https://en.wikipedia.org/wiki/Thoothukudi"
+    },
+    {
+      "title": "Outlook Business / PTI: Reliance Consumer Products to invest Rs 1,156 crore in Tamil Nadu (24 Sep 2025)",
+      "url": "https://www.outlookbusiness.com/corporate/reliance-consumer-products-to-invest-1156-cr-in-tn-minister-trb-rajaa"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "slug": "rajkot",
+  "updated": "2026-11-02",
+  "sections": [
+    {
+      "heading": "Rajkot Dairy: the City's Largest Hygienic-Tube User",
+      "paragraphs": [
+        "Rajkot District Co-operative Milk Producers' Union, known as Rajkot Dairy, is a member of the Gujarat Cooperative Milk Marketing Federation (GCMMF), which markets its members' products under the Amul brand. In 2014 the union commissioned a fully automatic processing plant built with the National Dairy Development Board, which put up 82 per cent of the investment of about 17 million US dollars. The plant added 3 lakh litres a day and took Rajkot Dairy's processing capacity to 6 lakh litres a day, with machinery imported from Germany, France and Canada.",
+        "In 2013-14 the union's average milk procurement was 3.87 lakh litres a day, and it also announced a chilling centre of 1 lakh litres near Wankaner and plans for a fully automatic packaging plant. Chilling, processing and packing each add hygienic stainless pipework, and an automatic plant leans on clean-in-place circuits that run to a fixed schedule, so CIP headers and return lines are a recurring purchase for a dairy of this size."
+      ]
+    },
+    {
+      "heading": "GCMMF's Planned Saurashtra Dairy on the Outskirts of Rajkot",
+      "paragraphs": [
+        "GCMMF has been planning a large processing plant near Rajkot to serve Saurashtra for several years. A 2018 report put the project at Rs 125 crore and 30 lakh litres of milk a day, and noted that nearly 14 cooperative milk producers' societies in the region had no processing facility of their own. In July 2022 the Gujarat government was reported to have allotted GCMMF 114 acres on the edge of Rajkot city for Rs 90 crore, and the plant's cost was then put at Rs 500 crore.",
+        "We have not found a published commissioning date, so treat this as a planned project rather than a running plant. For the dairy's projects team and its EPC contractor, the useful step now is to fix the hygienic tube specification, OD series and documentation in the tender, before the piping package is awarded, so that every contractor prices the same material."
+      ]
+    },
+    {
+      "heading": "Snack Manufacturing in Rajkot District: Gopal Snacks at Nagadka, Gondal",
+      "paragraphs": [
+        "Rajkot district also has a growing packaged-snacks base. In January 2025 Gopal Snacks announced trial operations at a new manufacturing facility at Nagadka, Gondal, in Rajkot district. Namkeen and snack lines handle mostly flour, spices and frying oil, so the greater part of their pipework does not need an electropolished bore.",
+        "Hygienic tube does matter in a snack plant in a few places: oil transfer lines that are emptied and cleaned between products, liquid seasoning and slurry dosing, potable water, and the CIP system serving them. SF1 mechanically polished 304L or 316L tube normally meets that duty; SF4 electropolished tube is only worth specifying where the buyer's own hygiene standard asks for it."
+      ]
+    },
+    {
+      "heading": "SF1 or SF4 for a Rajkot Milk Plant",
+      "paragraphs": [
+        "In a liquid-milk plant of Rajkot Dairy's type, raw-milk reception, chilled storage and pasteurised milk transfer usually run in 304L or 316L tube with an SF1 bore, which dairy service accepts and which is easy to match when a single spool is replaced. SF4 electropolished 316L earns its cost on hot CIP supply and return headers, after UHT or other high-heat treatment, and on lines feeding long-life or aseptic packing, where deposits and bacterial harbourage are hardest to remove.",
+        "Plants built with imported equipment usually follow the equipment maker's piping standard. Ask the project team for that document before ordering, because the tube OD series, wall thickness and finish have to match the equipment connections exactly."
+      ]
+    },
+    {
+      "heading": "What a Rajkot Buyer Should Put in an RFQ",
+      "bullets": [
+        "The plant section the tube is for: milk reception, pasteurisation, CIP headers, UHT and packing, or a snack plant's oil, seasoning or water lines.",
+        "The OD series used on the equipment drawings (for example ASME BPE or ASTM A270), with OD x wall and metres per size.",
+        "Required internal finish, SF1 or SF4, and whether new tube must match an existing line's finish and wall.",
+        "Product and CIP temperatures and chemicals, so that 304L or 316L can be chosen for the duty.",
+        "For the planned Saurashtra plant: quantities by project phase, so one specification can be priced across all contractors.",
+        "Every lot ships with an EN 10204 3.1 certificate traced to heat number, PMI on every length and a measured Ra report for electropolished tube; we quote within 24 hours."
+      ],
+      "links": [
+        {
+          "label": "Send a Rajkot enquiry",
+          "href": "/contact-us/"
+        }
+      ]
+    },
+    {
+      "heading": "Delivery to Rajkot",
+      "paragraphs": [
+        "Rajkot is supplied by road from Mumbai, to the plant or to its piping contractor, and we state dispatch and transit for each order in the written quotation.",
+        "Other Gujarat pages:"
+      ],
+      "links": [
+        {
+          "label": "Jamnagar",
+          "href": "/market-area/jamnagar/"
+        },
+        {
+          "label": "Bhavnagar",
+          "href": "/market-area/bhavnagar/"
+        },
+        {
+          "label": "Ahmedabad",
+          "href": "/market-area/ahmedabad/"
+        },
+        {
+          "label": "Vadodara",
+          "href": "/market-area/vadodara/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "TheCattleSite: Rajkot Dairy installs state-of-the-art milk processing plant (25 Jun 2014)",
+      "url": "https://www.thecattlesite.com/news/45998/rajkot-dairy-installs-state-of-the-art-milk-processing-plant"
+    },
+    {
+      "title": "Indian Cooperative: Amul to invest in Rajkot (16 Feb 2018)",
+      "url": "https://www.indiancooperative.com/co-op-news-snippets/amul-invest-rajkot/"
+    },
+    {
+      "title": "Indian Cooperative: Amul to set up milk processing plant in Rajkot (31 Jul 2022)",
+      "url": "https://www.indiancooperative.com/co-op-news-snippets/amul-to-set-up-milk-processing-plant-in-rajkot/"
+    },
+    {
+      "title": "Gopal Snacks Ltd, NSE filing: trial operations at new facility in Nagadka, Gondal, Rajkot (13 Jan 2025)",
+      "url": "https://nsearchives.nseindia.com/corporate/GOPALSNACKS_13012025150437_Update13012025.pdf"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "slug": "mumbai",
+  "updated": "2026-11-02",
+  "sections": [
+    {
+      "heading": "Mumbai: Head Office City for India's Drug Makers",
+      "paragraphs": [
+        "Mumbai's textile mills have given way to engineering, diamond polishing, healthcare, pharmaceutical marketing and information technology, the city is India's main financial centre, and several major drug companies are headquartered here: Cipla, Glenmark Pharmaceuticals and Lupin are all based in Mumbai, and Wockhardt's global headquarters is at Wockhardt Towers in the Bandra Kurla Complex.",
+        "When a company is headquartered in Mumbai and its plants are elsewhere, the tube specification and the vendor approval may be handled here while the material goes to the plant. We are based in Mumbai too, at Kumbharwada, so a head-office team can deal with a supplier in its own city."
+      ]
+    },
+    {
+      "heading": "Vendor Approval from a Mumbai Head Office",
+      "paragraphs": [
+        "Before a corporate quality team adds a tube supplier to its approved list, it usually wants documents it can check on paper. These are the ones we can provide with a Mumbai vendor-approval file:"
+      ],
+      "bullets": [
+        "ISO 9001:2015 certificate for our quality management system.",
+        "A specimen EN 10204 3.1 certificate showing how each tube length is traced to its heat number.",
+        "Chemical analysis from an NABL-accredited laboratory, and PMI records for every length.",
+        "A specimen internal Ra report, as issued with every electropolished lot.",
+        "The tube standards we supply to: ASTM A270, A269, A249 and A312, with SF1 and SF4 finishes as defined in ASME BPE; grades 304, 304L, 316, 316L, and 904L supplied electropolished."
+      ]
+    },
+    {
+      "heading": "Aarey and the Bombay Milk Scheme: Mumbai's Dairy History",
+      "paragraphs": [
+        "Mumbai also has one of India's best-known public dairy projects. In 1949 the government handed about 1,300 hectares of forest at Aarey, in Goregaon East, to Bombay's dairy development board. Under milk commissioner Dara Khurody the buffaloes and dairy farmers kept in sheds around the city were moved to Aarey Milk Colony, which Prime Minister Jawaharlal Nehru inaugurated in 1951.",
+        "The Bombay Milk Scheme run from Aarey supplied the city from a centralised, government-run dairy to milk booths across Mumbai, replacing milk that had often been unhygienic. Aarey still has milk plants, and about 16,000 cattle are kept there on 32 cattle farms, so dairy equipment and hygienic stainless pipework remain part of the city's industrial life."
+      ]
+    },
+    {
+      "heading": "Writing a Group-Wide Tube Specification in Mumbai",
+      "paragraphs": [
+        "A specification written once at head office and applied to several plants should say which lines need SF4 electropolished 316L (water for injection, clean steam, hot-sanitised purified water and product contact after the final purification step) and which can run on SF1 mechanically polished tube, such as ambient purified water and utilities. It should also fix one OD series, usually ASME BPE, so spares and spools are interchangeable between sites.",
+        "Write the documents into the specification too: the 3.1 certificate per heat, PMI, the Ra report and the installer's weld and passivation records. When every plant buys against the same document, a validation team at any site receives the same evidence and does not have to argue about it again."
+      ]
+    },
+    {
+      "heading": "What a Mumbai Buyer Should Put in an RFQ",
+      "bullets": [
+        "The plant the tube will be delivered to, even if the order is placed from a Mumbai office.",
+        "The service of each line (WFI, clean steam, purified water, product, CIP or utilities) and the required finish, SF1 or SF4, with your Ra limit.",
+        "OD x wall and metres per size to ASME BPE or ASTM A270 / A269, or pipe sizes to ASTM A312.",
+        "Your vendor-approval document list, so we can send it with the quotation.",
+        "We reply with a quotation within 24 hours; delivery time depends on size, quantity and stock and is confirmed in writing."
+      ],
+      "links": [
+        {
+          "label": "Send a Mumbai enquiry",
+          "href": "/contact-us/"
+        }
+      ]
+    },
+    {
+      "heading": "Delivery Across Mumbai, Thane and Navi Mumbai",
+      "paragraphs": [
+        "Our address is Shop No. 05, Ground Floor, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai 400004, and we deliver across the city and the wider region.",
+        "Nearby pages:"
+      ],
+      "links": [
+        {
+          "label": "Thane",
+          "href": "/market-area/thane/"
+        },
+        {
+          "label": "Navi Mumbai",
+          "href": "/market-area/navi-mumbai/"
+        },
+        {
+          "label": "Pune",
+          "href": "/market-area/pune/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia: Economy of Mumbai",
+      "url": "https://en.wikipedia.org/wiki/Economy_of_Mumbai"
+    },
+    {
+      "title": "Wikipedia: Cipla (headquarters Mumbai)",
+      "url": "https://en.wikipedia.org/wiki/Cipla"
+    },
+    {
+      "title": "Wikipedia: Glenmark Pharmaceuticals (headquarters Mumbai)",
+      "url": "https://en.wikipedia.org/wiki/Glenmark_Pharmaceuticals"
+    },
+    {
+      "title": "Wikipedia: Lupin Limited (headquarters Mumbai)",
+      "url": "https://en.wikipedia.org/wiki/Lupin_Limited"
+    },
+    {
+      "title": "Wikipedia: Wockhardt (Wockhardt Towers, Bandra Kurla Complex)",
+      "url": "https://en.wikipedia.org/wiki/Wockhardt"
+    },
+    {
+      "title": "Wikipedia: Aarey Milk Colony",
+      "url": "https://en.wikipedia.org/wiki/Aarey_Milk_Colony"
+    },
+    {
+      "title": "Scroll.in: Years before tree-cutting protests, Aarey Milk Colony was an Indian welfare state dream project (3 Nov 2019)",
+      "url": "https://scroll.in/article/941964/years-before-tree-cutting-protests-aarey-milk-colony-was-an-indian-welfare-state-dream-project"
+    }
+  ]
+}

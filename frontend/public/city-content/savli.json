@@ -1,6 +1,6 @@
 {
   "slug": "savli",
-  "updated": "2026-10-25",
+  "updated": "2026-11-02",
   "sections": [
     {
       "heading": "Savli and Manjusar: Vadodara's Pharma and Process-Equipment Estate",
@@ -29,21 +29,57 @@
       ]
     },
     {
+      "heading": "Drug Makers Listed at Savli: Merck, Novartis, Sanofi, Sandoz and Others",
+      "paragraphs": [
+        "The Wikipedia list of pharmaceutical plants in Gujarat gives Savli as the plant location for at least eight drug makers: Merck, Novartis India, Sanofi India, Jubilant Life Sciences, Sandoz, Indoco Remedies, Sava Healthcare and Chemo Pharma Laboratories. The same list places Thermax and Gujarat Fluorochemicals at Savli, so formulation and API units share the estate with utility-equipment and fluorochemical plants.",
+        "Compiled lists like this lag behind sales and mergers, so confirm the current owner of a site before you quote it. What the list does show is the kind of buyer Savli has: multinational sites that issue their own piping specification and expect every spool to be matched to it, rather than a supplier's standard offer."
+      ]
+    },
+    {
+      "heading": "Bajaj Healthcare's USFDA-Inspected API Plant at Savli",
+      "paragraphs": [
+        "In November 2022 the US FDA carried out its first pre-approval inspection at Bajaj Healthcare's API manufacturing facility in Savli. In September 2023 the company reported that it had received the Establishment Inspection Report with zero Form 483 observations, and said the result lets it file its own Drug Master Files with the USFDA and pursue contract development and manufacturing work.",
+        "In an API plant the stainless tube an inspector cares about most sits after the final purification step: crystallisation, filtration and drying, the solvent lines feeding them, and the purified water used for final washes. Specify those lines in 316L with a stated internal finish and heat-traceable certificates, so the equipment file already answers the questions a pre-approval inspection asks."
+      ]
+    },
+    {
       "heading": "Delivery to Savli and Manjusar",
       "paragraphs": [
         "Savli and Manjusar are supplied by road from Mumbai; dispatch and transit are confirmed in writing per quotation. Hazira Port, about 155 km away, is the nearest listed sea gateway for export-bound projects.",
         "Nearby clusters:"
       ],
       "links": [
-        { "label": "Vadodara", "href": "/market-area/vadodara/" },
-        { "label": "Halol", "href": "/market-area/halol/" },
-        { "label": "Anand", "href": "/market-area/anand/" }
+        {
+          "label": "Vadodara",
+          "href": "/market-area/vadodara/"
+        },
+        {
+          "label": "Halol",
+          "href": "/market-area/halol/"
+        },
+        {
+          "label": "Anand",
+          "href": "/market-area/anand/"
+        }
       ]
     }
   ],
   "sources": [
-    { "title": "Savli - Wikipedia", "url": "https://en.wikipedia.org/wiki/Savli" },
-    { "title": "Pharmaceutical industry in Gujarat - Wikipedia", "url": "https://en.wikipedia.org/wiki/Pharmaceutical_industry_in_Gujarat" },
-    { "title": "SSMB: Conart Engineers bags construction orders (Manjusar pharma plant, 2022)", "url": "https://ssmb.in/2022/01/17/conart-engineers-bags-construction-orders" }
+    {
+      "title": "Savli - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Savli"
+    },
+    {
+      "title": "Pharmaceutical industry in Gujarat - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pharmaceutical_industry_in_Gujarat"
+    },
+    {
+      "title": "SSMB: Conart Engineers bags construction orders (Manjusar pharma plant, 2022)",
+      "url": "https://ssmb.in/2022/01/17/conart-engineers-bags-construction-orders"
+    },
+    {
+      "title": "Indian Pharma Post: Bajaj Healthcare announces receipt of EIR from USFDA for its Savli API facility (14 Sep 2023)",
+      "url": "https://www.indianpharmapost.com/regulatory/bajaj-healthcare-announces-receipt-of-eir-from-usfda-14655"
+    }
   ]
 }

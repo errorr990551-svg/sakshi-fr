@@ -6,7 +6,7 @@
 
 export const SPEC_GUIDES = {
   '/electropolished-tubes/': {
-    updated: '2026-10-30',
+    updated: '2026-11-03',
     sections: [
       {
         h2: 'Tube, Not Pipe: How Electropolished Tubes Are Sized and Specified',
@@ -99,7 +99,7 @@ export const SPEC_GUIDES = {
   },
 
   '/ss-316l-electropolished-pipes/': {
-    updated: '2026-10-30',
+    updated: '2026-11-03',
     sections: [
       {
         h2: 'SS 316L Electropolished Pipe: The Default Grade for Pharma and Chloride Service',
@@ -138,7 +138,7 @@ export const SPEC_GUIDES = {
         bullets: [
           'Required: WFI, clean steam and hot purified water; bioprocess media, buffer and product lines; salted, acidic or brine food products; hot CIP supply; chloride-bearing process streams.',
           'Usually over-specified: ambient purified water for oral solids where the owner accepts [304L](/ss-304l-electropolished-pipes/); plain milk and beverage lines; utilities with no product contact.',
-          'Not enough: hot concentrated chlorides, seawater, and service where chloride stress corrosion cracking is a risk above roughly 60 °C. Look at [duplex electropolished pipe](/electropolished-pipes/duplex-electropolished-pipe/) or higher alloys.'
+          'Not enough: hot concentrated chlorides, seawater, and service where chloride stress corrosion cracking is a risk above roughly 60 °C. Review a higher alloy with your materials engineer.'
         ]
       },
       {
@@ -176,7 +176,7 @@ export const SPEC_GUIDES = {
   },
 
   '/ss-304l-electropolished-pipes/': {
-    updated: '2026-10-30',
+    updated: '2026-11-03',
     sections: [
       {
         h2: 'SS 304L Electropolished Pipe: Where the Lower-Cost Grade Is the Right Grade',
@@ -238,7 +238,7 @@ export const SPEC_GUIDES = {
   },
 
   '/electropolished-seamless-pipes/': {
-    updated: '2026-10-30',
+    updated: '2026-11-03',
     sections: [
       {
         h2: 'Electropolished Seamless Pipe: When the Specification Excludes a Weld Seam',
@@ -300,7 +300,7 @@ export const SPEC_GUIDES = {
   },
 
   '/electropolished-welded-erw-pipes/': {
-    updated: '2026-10-30',
+    updated: '2026-11-03',
     sections: [
       {
         h2: 'Welded Electropolished Pipe and Tube: How It Is Made and Why It Dominates Hygienic Systems',
@@ -364,7 +364,7 @@ export const SPEC_GUIDES = {
   },
 
   '/internal-electropolished-pipes/': {
-    updated: '2026-10-30',
+    updated: '2026-11-03',
     sections: [
       {
         h2: 'Internally Electropolished Pipe: Paying for the Surface That Touches the Product',
@@ -427,7 +427,7 @@ export const SPEC_GUIDES = {
   },
 
   '/high-purity-stainless-steel-pipes/': {
-    updated: '2026-10-30',
+    updated: '2026-11-03',
     sections: [
       {
         h2: 'High-Purity Stainless Steel Pipe for Pharmaceutical Water and Steam Systems',
@@ -487,7 +487,7 @@ export const SPEC_GUIDES = {
   },
 
   '/ultra-high-purity-ep-tubes/': {
-    updated: '2026-10-30',
+    updated: '2026-11-03',
     sections: [
       {
         h2: 'Ultra-High-Purity Electropolished Tube: A Different Specification From Pharma Grade',
@@ -553,7 +553,7 @@ export const SPEC_GUIDES = {
   },
 
   '/low-ra-electropolished-pipes/': {
-    updated: '2026-10-30',
+    updated: '2026-11-03',
     sections: [
       {
         h2: 'Low-Ra Electropolished Pipe: Specifying Roughness So It Can Be Measured and Accepted',
@@ -619,7 +619,7 @@ export const SPEC_GUIDES = {
   },
 
   '/sanitary-hygienic-ep-pipes/': {
-    updated: '2026-10-30',
+    updated: '2026-11-03',
     sections: [
       {
         h2: 'Sanitary Electropolished Pipe: Matching the Dimension Series to Your Fittings',

@@ -17,6 +17,7 @@ import { blogPosts } from './data/blogData';
 import marketCitiesData from './data/market_cities.json';
 import { gradePages, standardPages } from './data/seo_master_data';
 import epBuildSpecData from './data/ep_build_spec_data.json';
+import { SPEC_GUIDES } from './data/specGuides.js';
 import { epRelatedGroups } from './utils/epRelated';
 import { relatedProductsFor } from './utils/productLinks';
 import { categoryProducts, crossLinkSlugs } from './utils/categoryProducts';
@@ -293,7 +294,9 @@ function matchRoute(currentPath) {
   // Check if matching EP Build Spec page (106 URLs)
   const epPage = epBuildSpecData.find(p => p.url === cleanPath || p.url === `${cleanPath}/` || p.url === `/${slug}` || p.url === `/${slug}/`);
   if (epPage) {
-    return { type: 'ep-spec', data: epPage };
+    // A page-specific guide replaces the template content and its FAQs (visible and in schema)
+    const guide = SPEC_GUIDES[epPage.url.replace(/\/?$/, '/')];
+    return { type: 'ep-spec', data: guide ? { ...epPage, guide, faqs: guide.faqs.map((f) => ({ question: f.q, answer: f.a })) } : epPage };
   }
 
   return { type: '404', data: null };

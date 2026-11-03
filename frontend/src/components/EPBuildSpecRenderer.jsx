@@ -7,6 +7,7 @@ import {
 import { handleLinkClick, withSlash } from '../utils/router';
 import { RaConverterTool, PipeWeightCalculatorTool } from './EPTools';
 import { PRIORITY_30_CITIES } from '../data/priorityCities';
+import CategoryGuide from './CategoryGuide';
 
 export default function EPBuildSpecRenderer({ pageData, onEnquireClick, hasUnlockedContact = false, onShowContactDetails }) {
   const handleShowContact = onShowContactDetails || (() => onEnquireClick && onEnquireClick('Contact Request - EP Spec'));
@@ -20,6 +21,8 @@ export default function EPBuildSpecRenderer({ pageData, onEnquireClick, hasUnloc
     parent, faqs, notes, cta, image_alt
   } = pageData;
 
+  // Page-specific guide (src/data/specGuides.js, attached in routes.js) replaces the shared template blocks and FAQs
+  const guide = pageData.guide;
   const cleanPath = pageData.url.replace(/\/$/, '');
   const parentName = parent === '/' ? 'Home' : parent.replace(/^\/|\/$/g, '').replace(/-/g, ' ');
 
@@ -105,7 +108,7 @@ export default function EPBuildSpecRenderer({ pageData, onEnquireClick, hasUnloc
                   Instant Quote Response
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">Get Price & Spec Sheet</h3>
-                <p className="text-xs text-slate-400 mb-6">Receive detailed quotation with MTC sample & lead time in 24 hours.</p>
+                <p className="text-xs text-slate-400 mb-6">Receive a detailed quotation with MTC sample within 24 hours; delivery time is confirmed with it.</p>
                 
                 <form onSubmit={(e) => { e.preventDefault(); onEnquireClick(h1); }} className="space-y-4">
                   <div>
@@ -146,7 +149,9 @@ export default function EPBuildSpecRenderer({ pageData, onEnquireClick, hasUnloc
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* A. SPECIFICATION & TECHNICAL TABLES (FOR PRODUCTS & STANDARDS) */}
-          {(page_type.includes('Product') || page_type.includes('Standard') || page_type.includes('Category Hub')) && (
+          {guide && <CategoryGuide guide={guide} />}
+
+          {!guide && (page_type.includes('Product') || page_type.includes('Standard') || page_type.includes('Category Hub')) && (
             <div className="mb-16 space-y-12">
               <div>
                 <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 flex items-center space-x-3">
@@ -154,7 +159,7 @@ export default function EPBuildSpecRenderer({ pageData, onEnquireClick, hasUnloc
                   <span>Electropolished Pipe & Tube Dimensional Specifications</span>
                 </h2>
                 <p className="text-slate-300 mb-6 leading-relaxed">
-                  Sakshi Forge manufactures electropolished stainless steel pipes and tubes adhering to ASTM A270, ASTM A312, ASTM A269, and ASME BPE SF4 standards. Our internal electropolishing process guarantees roughness values down to Ra 0.38 µm (15 µin).
+                  Sakshi Forge supplies electropolished stainless steel pipes and tubes to ASTM A270, ASTM A312, ASTM A269 and ASME BPE SF4, with internal roughness down to Ra 0.38 µm (15 µin) and a measured Ra report for each electropolished lot.
                 </p>
 
                 <div className="overflow-x-auto border border-slate-800 rounded-xl bg-slate-900/60 shadow-xl">
@@ -291,7 +296,7 @@ export default function EPBuildSpecRenderer({ pageData, onEnquireClick, hasUnloc
           )}
 
           {/* C. INDUSTRY & CITY SPECIFIC BLOCKS */}
-          {page_type.includes('Industry') && (
+          {!guide && page_type.includes('Industry') && (
             <div className="mb-16 space-y-8">
               <h2 className="text-2xl sm:text-3xl font-bold text-white flex items-center space-x-3">
                 <span className="w-2 h-8 bg-emerald-500 rounded-full inline-block"></span>
@@ -331,7 +336,7 @@ export default function EPBuildSpecRenderer({ pageData, onEnquireClick, hasUnloc
                   </div>
                   <div className="flex items-center space-x-3 bg-slate-950 p-3.5 rounded-xl border border-slate-800">
                     <Truck className="w-5 h-5 text-emerald-400 shrink-0" />
-                    <span>24–72 Hr Dispatch Lead Time</span>
+                    <span>Quotation Within 24 Hours</span>
                   </div>
                   <div className="flex items-center space-x-3 bg-slate-950 p-3.5 rounded-xl border border-slate-800">
                     <ShieldCheck className="w-5 h-5 text-cyan-400 shrink-0" />
@@ -343,7 +348,7 @@ export default function EPBuildSpecRenderer({ pageData, onEnquireClick, hasUnloc
           )}
 
           {/* D. FREQUENTLY ASKED QUESTIONS (FAQS) */}
-          {faqs && faqs.length > 0 && (
+          {!guide && faqs && faqs.length > 0 && (
             <div className="mb-16">
               <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8 flex items-center space-x-3">
                 <HelpCircle className="w-7 h-7 text-blue-400" />
@@ -377,7 +382,7 @@ export default function EPBuildSpecRenderer({ pageData, onEnquireClick, hasUnloc
           <div className="mb-16 bg-slate-900/60 border border-slate-800 rounded-2xl p-6 sm:p-8">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
               <div>
-                <span className="text-xs font-bold text-yellow-400 uppercase tracking-wider block mb-1">Direct Works Dispatch Across India</span>
+                <span className="text-xs font-bold text-yellow-400 uppercase tracking-wider block mb-1">Dispatch Across India</span>
                 <h3 className="text-xl sm:text-2xl font-bold text-white flex items-center gap-2">
                   <MapPin className="w-5 h-5 text-yellow-400 shrink-0" />
                   <span>30 Major Industrial Cities We Serve</span>

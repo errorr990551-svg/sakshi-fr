@@ -1,0 +1,90 @@
+{
+  "slug": "hyderabad",
+  "updated": "2026-11-03",
+  "sections": [
+    {
+      "heading": "Genome Valley, Hyderabad: The Vaccine Cluster",
+      "paragraphs": [
+        "Hyderabad is the base of India's largest vaccine cluster. In July 2022 the Telangana government said the city accounts for one third of global vaccine production, with capacity of about nine billion doses a year.",
+        "Bharat Biotech developed and manufactured Covaxin, its inactivated COVID-19 vaccine, in a BSL-3 bio-containment facility at Genome Valley. Biological E commissioned its typhoid conjugate vaccine plant in the Genome Valley Special Economic Zone in February 2020, and in July 2022 announced an investment of about Rs 1,800 crore across its three Genome Valley facilities to expand vaccine and generic injectable manufacturing, adding five billion doses a year to take its cumulative capacity to about 14 billion."
+      ]
+    },
+    {
+      "heading": "New Injectable Capacity: Bharat Serums and Vaccines and Genome Valley Phase II",
+      "paragraphs": [
+        "In September 2023 Bharat Serums and Vaccines broke ground on a Rs 200 crore plant on 10 acres in Genome Valley. The first phase is a fill-finish line for injectables, and a multi-product line follows in the second; the planned range includes women's health products, rabies vaccines, immunoglobulins and hormones, built to Schedule M and to the requirements of regulated export markets such as the USA and EU.",
+        "In February 2024 the Chief Minister announced Genome Valley Phase II, planned at 300 acres with an investment of Rs 2,000 crore across greenfield pharma clusters in Vikarabad, Medak and Nalgonda districts. New plants in those clusters will specify their water, steam and process piping from scratch."
+      ]
+    },
+    {
+      "heading": "Why Vaccine and Injectable Lines Around Hyderabad Specify SF4",
+      "paragraphs": [
+        "A vaccine or sterile injectable plant has more product-critical stainless than an oral-solids plant: water for injection generation and distribution, pure steam for sterilising vessels and filters, buffer and media preparation, harvest and purification transfer, and the feed to fill-finish. Each is cleaned and steamed in place, often daily, and each must be shown free of residue and microbial growth.",
+        "Electropolished 316L tube to ASME BPE SF4, at Ra 0.38 micrometre or better, suits that duty. The electropolished surface has fewer sites where biofilm can attach, drains fully when the line is sloped, and makes rouge or discolouration easier to see on borescope inspection. In a BSL-3 containment suite, where lines are decontaminated by steam before any maintenance, a smooth, fully drained bore also helps make sure decontamination reaches every part of the line."
+      ]
+    },
+    {
+      "heading": "What a Genome Valley Buyer Should Put in an RFQ",
+      "bullets": [
+        "The plant and phase: an existing Genome Valley site, a new fill-finish block, or a Phase II cluster site in Vikarabad, Medak or Nalgonda.",
+        "The service of each line (WFI, pure steam, buffer or media, product transfer, CIP return or utilities) and whether it sits inside a containment area.",
+        "Finish per line, SF4 for WFI, steam and product contact or SF1 for utilities, with the Ra limit your qualification protocol will check.",
+        "Sizes as OD x wall to ASME BPE or ASTM A270, with metres per size, and any requirement for 3.1 certificates by heat, PMI by length and an Ra report per electropolished lot, all of which we supply.",
+        "We quote within 24 hours; delivery time depends on the order and is confirmed in writing with the quotation."
+      ],
+      "links": [
+        {
+          "label": "Send a Hyderabad enquiry",
+          "href": "/contact-us/"
+        }
+      ]
+    },
+    {
+      "heading": "Delivery to Hyderabad and the Telangana Pharma Belt",
+      "paragraphs": [
+        "Hyderabad is supplied by road from our Mumbai address, with dispatch and transit confirmed in writing with each quotation. Every electropolished length is end-capped and sleeved so the bore arrives as clean as it left.",
+        "Nearby pages:"
+      ],
+      "links": [
+        {
+          "label": "Medak and Patancheru",
+          "href": "/market-area/medak-patancheru/"
+        },
+        {
+          "label": "Sangareddy",
+          "href": "/market-area/sangareddy/"
+        },
+        {
+          "label": "Warangal",
+          "href": "/market-area/warangal/"
+        },
+        {
+          "label": "Vijayawada",
+          "href": "/market-area/vijayawada/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "The South First – Biological E to invest Rs 1,800 crore in Genome Valley (Jul 2022)",
+      "url": "https://thesouthfirst.com/health/hyderabad-biological-e-to-invest-%e2%82%b91800-crore-in-genome-valley-to-create-over-2500-jobs/"
+    },
+    {
+      "title": "Gulf News (PTI) – Hyderabad emerges as COVID-19 vaccine capital; Covaxin made in Bharat Biotech's BSL-3 facility at Genome Valley (Dec 2020)",
+      "url": "https://gulfnews.com/world/asia/india/indias-hyderabad-emerges-as-covid-19-vaccine-capital-of-the-world-1.1608459680466"
+    },
+    {
+      "title": "Coalition against Typhoid – Biological E commissions plant in Genome Valley SEZ (Feb 2020)",
+      "url": "https://www.coalitionagainsttyphoid.org/typhoid-news/biological-e-unveils-typhoid-conjugate-vaccine-commissions-%e2%82%b9300-cr-plant-near-hyderabad/"
+    },
+    {
+      "title": "BioSpectrum India – Bharat Serums and Vaccines invests Rs 200 crore in Genome Valley plant (Sep 2023)",
+      "url": "https://biospectrumindia.com/news/95/23620/bharat-serums-and-vaccines-invests-rs-200-cr-in-new-biopharmaceutical-manufacturing-plant-in-genome-valley.html"
+    },
+    {
+      "title": "BioSpectrum India – Genome Valley Phase-II with Rs 2,000 crore investment (Feb 2024)",
+      "url": "https://www.biospectrumindia.com/public/news/86/24292/genome-valley-phase-ii-expansion-to-begin-in-hyderabad-with-rs-2000-cr-investment.html"
+    }
+  ]
+}

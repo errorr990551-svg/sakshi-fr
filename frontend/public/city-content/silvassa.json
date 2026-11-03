@@ -1,12 +1,12 @@
 {
   "slug": "silvassa",
-  "updated": "2026-10-25",
+  "updated": "2026-11-03",
   "sections": [
     {
       "heading": "Silvassa: Textiles, Plastics and a Pharmaceutical Minority",
       "paragraphs": [
         "Silvassa, capital of the former Dadra and Nagar Haveli, grew into an industrial hub on the back of its proximity to Mumbai and the Vadodara petrochemical complex. Its estates - Silvassa Industrial Estate, Masat, Dadra, Naroli and Amli among them - are dominated by textiles and plastics. Government investment material describes the combined Dadra and Nagar Haveli and Daman and Diu territory as a leader in integrated textile plants, accounting for around 80 percent of India's texturising yarn production.",
-        "Pharmaceutical formulation is a smaller but established presence; investment guides list major drugmakers with manufacturing in the territory. For a hygienic-tube supplier that makes Silvassa a market where the first job is to separate the lines that truly need an electropolished bore from the many that do not."
+        "Pharmaceutical formulation is a smaller but established presence, and two Ipca Laboratories tablet and capsule plants are among the named examples. For a hygienic-tube supplier that makes Silvassa a market where the first job is to separate the lines that truly need an electropolished bore from the many that do not."
       ]
     },
     {
@@ -19,7 +19,7 @@
     {
       "heading": "Chemical Additive and Compounding Units around Naroli",
       "paragraphs": [
-        "Government listings show chemical producers in the Silvassa-Naroli area making PVC stabilisers and stearates, PVC compounds, fatty acids and plasticisers for the plastics industry. These are corrosion and temperature problems rather than hygiene problems. 316L is the usual starting point for stainless dosing and transfer lines; duplex 2205 is worth considering where chlorides or stress-corrosion risk are present. An electropolished finish adds little here except on laboratory and sampling lines where carry-over between batches matters."
+        "Government listings show chemical producers in the Silvassa-Naroli area making PVC stabilisers and stearates, PVC compounds, fatty acids and plasticisers for the plastics industry. These are corrosion and temperature problems rather than hygiene problems. 316L is the usual starting point for stainless dosing and transfer lines; a higher alloy is worth reviewing with your process engineer where chlorides or stress-corrosion risk are present. An electropolished finish adds little here except on laboratory and sampling lines where carry-over between batches matters."
       ]
     },
     {
@@ -29,22 +29,83 @@
       ]
     },
     {
+      "heading": "Ipca at Athal and Piparia, and the US FDA Record in Silvassa",
+      "paragraphs": [
+        "Ipca Laboratories lists two formulation plants in the territory. The Athal unit, on Plot No. 255/1 in Athal village, has run since October 1995; the Piparia unit, on Plots 65, 99 and 126 of the Danudyog Industrial Estate, has run since September 2004. Both make tablets and capsules. The US FDA inspected the Piparia unit from 19 to 23 August 2019 and again from 18 to 26 April 2023, and each inspection closed with a Form 483 listing three observations.",
+        "In August 2026 the US FDA issued a warning letter to Dabur India over its Silvassa pharmaceutical facility. As reported, the letter cites data integrity failures, inadequate quality oversight, incomplete laboratory records and weak validation, and products from the plant were placed under import alert.",
+        "Those findings are about records and validation more than hardware, but a purified-water loop is where the two meet. Tube that cannot be traced to its heat, or a bore finish that was never measured, becomes an open item when an inspector follows up on corrective actions. When a Silvassa plant replaces or extends a loop, we send the EN 10204 3.1 certificate for every heat, a PMI result for every length and, on SF4 tube, an internal Ra report for the lot, ready to file with the change control."
+      ]
+    },
+    {
+      "heading": "What a Silvassa Formulation Plant Should Put in an RFQ",
+      "bullets": [
+        "The unit and estate the tube is for (Athal, Piparia and Danudyog, Masat, Naroli or Dadra) and whether the line sits inside a qualified purified-water or product system.",
+        "Whether the work answers a Form 483 or warning-letter commitment, so the material documents can be matched to the corrective-action file.",
+        "Sizes as OD x wall to ASME BPE or ASTM A270, the finish (SF1 or SF4) and the Ra limit written in your user requirement specification.",
+        "For granulation binder or coating-suspension transfer lines, how they are cleaned, manually or by CIP, so the finish can be matched to the cleaning method.",
+        "We quote within 24 hours; delivery time depends on the order and is confirmed with the quotation."
+      ],
+      "links": [
+        {
+          "label": "Send a Silvassa enquiry",
+          "href": "/contact-us/"
+        }
+      ]
+    },
+    {
       "heading": "Delivery to Silvassa, Masat and Dadra",
       "paragraphs": [
         "Silvassa is supplied by road from Mumbai, with dispatch and transit confirmed per quotation. Hazira Port, about 120 km away, is the nearest listed sea gateway for export-bound projects. Every electropolished length is end-capped and sleeved before dispatch.",
         "Neighbouring clusters:"
       ],
       "links": [
-        { "label": "Daman", "href": "/market-area/daman/" },
-        { "label": "Vapi", "href": "/market-area/vapi/" },
-        { "label": "Valsad and Umbergaon", "href": "/market-area/valsad/" }
+        {
+          "label": "Daman",
+          "href": "/market-area/daman/"
+        },
+        {
+          "label": "Vapi",
+          "href": "/market-area/vapi/"
+        },
+        {
+          "label": "Valsad and Umbergaon",
+          "href": "/market-area/valsad/"
+        }
       ]
     }
   ],
   "sources": [
-    { "title": "Silvassa - Wikipedia", "url": "https://en.wikipedia.org/wiki/Silvassa" },
-    { "title": "IndBiz: Dadra and Nagar Haveli and Daman and Diu", "url": "https://indbiz.gov.in/state/dadra-and-nagar-haveli-daman-diu" },
-    { "title": "MSME-DI: Dadra and Nagar Haveli State Profile 2016-17", "url": "https://dcmsme.gov.in/old/dips/state_wise_profile_16-17/4. Dadara Nagar State Profile 2016-17.pdf" },
-    { "title": "IBEF: Dadra Nagar Haveli and Daman Diu Infographics (April 2026)", "url": "https://www.ibef.org/uploads/states/infographics/large/Dadra-Nagra-Haveli-and-Daman-Diu-Infographics-April-2026.pdf" }
+    {
+      "title": "Silvassa - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Silvassa"
+    },
+    {
+      "title": "IndBiz: Dadra and Nagar Haveli and Daman and Diu",
+      "url": "https://indbiz.gov.in/state/dadra-and-nagar-haveli-daman-diu"
+    },
+    {
+      "title": "MSME-DI: Dadra and Nagar Haveli State Profile 2016-17",
+      "url": "https://dcmsme.gov.in/old/dips/state_wise_profile_16-17/4. Dadara Nagar State Profile 2016-17.pdf"
+    },
+    {
+      "title": "IBEF: Dadra Nagar Haveli and Daman Diu Infographics (April 2026)",
+      "url": "https://www.ibef.org/uploads/states/infographics/large/Dadra-Nagra-Haveli-and-Daman-Diu-Infographics-April-2026.pdf"
+    },
+    {
+      "title": "Ipca Laboratories – formulations manufacturing units (Athal and Piparia, Silvassa)",
+      "url": "https://www.ipca.com/sitemap/infrastructure-formulations"
+    },
+    {
+      "title": "Medical Dialogues – Ipca Labs gets 3 USFDA observations for Silvassa unit (Aug 2019)",
+      "url": "https://business.medicaldialogues.in/ipca-labs-gets-3-usfda-observations-for-silvassa-unit"
+    },
+    {
+      "title": "Indian Pharma Post – Ipca gets 3 observations for Piparia, Silvassa unit (Apr 2023)",
+      "url": "https://www.indianpharmapost.com/regulatory/ipca-laboratories-gets-3-observations-for-piparia-silvassa-unit-14054"
+    },
+    {
+      "title": "Free Press Journal – USFDA warning letter to Dabur over Silvassa plant (Aug 2026)",
+      "url": "https://freepressjournal.in/business/usfda-issues-warning-letter-to-dabur-over-data-integrity-manufacturing-lapses-at-silvassa-plant"
+    }
   ]
 }

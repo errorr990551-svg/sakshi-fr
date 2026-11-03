@@ -1,6 +1,6 @@
 {
   "slug": "halol",
-  "updated": "2026-10-25",
+  "updated": "2026-11-03",
   "sections": [
     {
       "heading": "Halol: Export Pharma and an Automotive Corridor in Panchmahal",
@@ -32,20 +32,71 @@
       ]
     },
     {
+      "heading": "Sun Pharma's Halol Facility: Import Alert and the 2025 Inspection",
+      "paragraphs": [
+        "The US FDA ran a GMP inspection of Sun Pharma's Halol facility from 26 April to 9 May 2022 and issued a Form 483 with ten observations. In December 2022 the company disclosed that the facility had been listed under import alert, which makes products from the unit subject to refusal of admission into the US until the site is found compliant with cGMP.",
+        "The FDA inspected Halol again from 2 to 13 June 2025 and classified the facility Official Action Indicated, meaning it considers the site not fully compliant with certain cGMP requirements; the import alert remained in place.",
+        "For engineers working through a remediation programme at a site like this, any utility or product-contact line that is replaced will be examined at the next inspection. Specify the finish and its measurement up front, keep one dimensional standard across each system, and insist that material records arrive with the tube rather than after installation. Our SF4 lots ship with a measured Ra report, and each heat with its EN 10204 3.1 certificate, so the turnover package is complete on delivery."
+      ]
+    },
+    {
+      "heading": "What a Halol Buyer Should Put in an RFQ",
+      "bullets": [
+        "Whether the line is on the Halol-Baroda Highway pharma side or in the Halol Expansion Industrial Estate, and the service it carries.",
+        "For pharma: whether the order is part of a remediation commitment, the system it belongs to (WFI, clean steam, purified water or product) and the Ra limit your validation team will verify.",
+        "For automotive and engineering plants: the conductivity or particle limit of the deionised water, so we can say honestly whether SF4 adds anything over SF1.",
+        "OD x wall to ASME BPE or ASTM A270 / A269, or pipe sizes to ASTM A312, with metres per size.",
+        "Quotation within 24 hours; delivery time depends on the order and is confirmed in writing with it."
+      ],
+      "links": [
+        {
+          "label": "Send a Halol enquiry",
+          "href": "/contact-us/"
+        }
+      ]
+    },
+    {
       "heading": "Delivery to Halol",
       "paragraphs": [
         "Halol is supplied by road from Mumbai, with dispatch and transit confirmed in writing per quotation. Hazira Port, about 200 km away, is the nearest listed sea gateway for export-bound projects.",
         "Nearby clusters:"
       ],
       "links": [
-        { "label": "Savli and Manjusar", "href": "/market-area/savli/" },
-        { "label": "Vadodara", "href": "/market-area/vadodara/" },
-        { "label": "Ahmedabad", "href": "/market-area/ahmedabad/" }
+        {
+          "label": "Savli and Manjusar",
+          "href": "/market-area/savli/"
+        },
+        {
+          "label": "Vadodara",
+          "href": "/market-area/vadodara/"
+        },
+        {
+          "label": "Ahmedabad",
+          "href": "/market-area/ahmedabad/"
+        }
       ]
     }
   ],
   "sources": [
-    { "title": "GIDC: Halol Expansion Industrial Estate presentation", "url": "https://gidc.gujarat.gov.in/pdf/gidc-presentation/Halol_Expansion_Industrial_Estate_27-10.pdf" },
-    { "title": "Sun Pharmaceutical Industries: registered plant locations", "url": "https://voguestock.in/fundamental/locations/sun-pharmaceutical-industries-ltd" }
+    {
+      "title": "GIDC: Halol Expansion Industrial Estate presentation",
+      "url": "https://gidc.gujarat.gov.in/pdf/gidc-presentation/Halol_Expansion_Industrial_Estate_27-10.pdf"
+    },
+    {
+      "title": "Sun Pharmaceutical Industries: registered plant locations",
+      "url": "https://voguestock.in/fundamental/locations/sun-pharmaceutical-industries-ltd"
+    },
+    {
+      "title": "Outlook Business (PTI) – Sun Pharma gets Form 483 with 10 observations for Halol plant (May 2022)",
+      "url": "https://www.outlookbusiness.com/amp/story/news/sun-pharma-gets-form-483-from-usfda-for-regulatory-violations-at-halol-plant-news-195901"
+    },
+    {
+      "title": "Outlook Business (PTI) – Sun Pharma's Halol facility listed under USFDA import alert (Dec 2022)",
+      "url": "https://www.outlookbusiness.com/news/sun-pharma-s-halol-facility-listed-under-usfda-import-alert-news-243277"
+    },
+    {
+      "title": "Indian Pharma Post – Sun Pharma's Halol plant gets OAI classification (Sep 2025)",
+      "url": "https://www.indianpharmapost.com/regulatory/lite/fda-prohibits-sun-pharmas-halol-plant-from-exporting-drugs-to-us-17761"
+    }
   ]
 }

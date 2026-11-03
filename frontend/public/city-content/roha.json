@@ -1,12 +1,19 @@
 {
   "slug": "roha",
-  "updated": "2026-10-25",
+  "updated": "2026-11-03",
   "sections": [
     {
       "heading": "Roha and MIDC Dhatav: A Declared Chemical Industry Zone",
       "paragraphs": [
         "MIDC's industrial area at Dhatav, near Roha in Raigad district, is declared a Chemical Industry Zone, and most of its units are chemical process industries. The town grew quickly with the chemical industry in the late 1970s and early 1980s; the downturn of the early 2000s closed some units, but a substantial base remains.",
         "Maharashtra Pollution Control Board listings show the range: pigments and colourants, aroma chemicals, specialty and electrochemicals, dyes and dye intermediates, and technical-grade agrochemicals. Effluent is treated at a common plant of about 10 MLD operated by the industries' co-operative at Dhatav. It is a varied chemical estate rather than a pharmaceutical one, which changes what a hygienic-tube supplier is useful for."
+      ]
+    },
+    {
+      "heading": "Named Units at MIDC Dhatav: Sudarshan, Clariant, Rhodia, Sadhana and Excel",
+      "paragraphs": [
+        "The Maharashtra Pollution Control Board's Raigad-II industry listing names the larger consented units in MIDC Dhatav. Sudarshan Chemical Industries (Plot 46), Rhodia Speciality Chemicals India (Plots 103 to 105), Clariant Chemical (India) (Plots 113 and 114) and Sadhana Nitro Chem (Plot 47) are all classed under basic chemicals and electrochemicals, with recorded investments of roughly Rs 84 to Rs 191 crore each. Excel Industries is listed for technical-grade pesticides, excluding formulation.",
+        "Those consent records date from 2014 to 2017, so some names and products may have changed since. The pattern still holds: these are large, continuous chemical sites where most stainless is bought for corrosion resistance, and electropolished tube is a small, targeted purchase for the lines where cleanliness or purity is the point."
       ]
     },
     {
@@ -30,21 +37,54 @@
       ]
     },
     {
+      "heading": "What a Roha Buyer Should Put in an RFQ",
+      "bullets": [
+        "The unit at Dhatav and the stream each line carries, with chloride level, pH and temperature, so we can tell you whether 316L is suitable at all.",
+        "Which lines are purity or carry-over critical (aroma distillate receivers, pigment shade-change lines, QC sampling) and should be SF4, and which can stay pickled.",
+        "Whether the tube must meet a customer audit, such as a food or cosmetic grade colour or fragrance going to an audited buyer.",
+        "Sizes as OD x wall to ASTM A269 / A270 or pipe to ASTM A312, with metres per size; we quote within 24 hours and confirm delivery time with the quotation."
+      ],
+      "links": [
+        {
+          "label": "Send a Roha enquiry",
+          "href": "/contact-us/"
+        }
+      ]
+    },
+    {
       "heading": "Delivery to Roha and Dhatav",
       "paragraphs": [
         "Roha is a short road run from Mumbai. Dispatch and transit are confirmed in writing with each quotation. JNPT Nhava Sheva, about 110 km away, is the nearest listed gateway for export-bound material.",
         "Nearby chemical zones:"
       ],
       "links": [
-        { "label": "Mahad", "href": "/market-area/mahad/" },
-        { "label": "Lote Parshuram", "href": "/market-area/lote-parshuram/" },
-        { "label": "Navi Mumbai and Taloja", "href": "/market-area/navi-mumbai/" }
+        {
+          "label": "Mahad",
+          "href": "/market-area/mahad/"
+        },
+        {
+          "label": "Lote Parshuram",
+          "href": "/market-area/lote-parshuram/"
+        },
+        {
+          "label": "Navi Mumbai",
+          "href": "/market-area/navi-mumbai/"
+        }
       ]
     }
   ],
   "sources": [
-    { "title": "Roha - Wikipedia", "url": "https://en.wikipedia.com/wiki/Roha" },
-    { "title": "MPCB: Raigad-II industry list (Dhatav units, CETP)", "url": "https://mpcb.gov.in/sites/default/files/industrial-statistics/sro-industry/Raigad-II.pdf" },
-    { "title": "MPCB: SRO Raigad-2 database (2014)", "url": "https://mpcb.gov.in/sites/default/files/industrial-statistics/sro-industry/SRORaigad2SROdatabase_31072014.pdf" }
+    {
+      "title": "Roha - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Roha"
+    },
+    {
+      "title": "MPCB: Raigad-II industry list (Dhatav units, CETP)",
+      "url": "https://mpcb.gov.in/sites/default/files/industrial-statistics/sro-industry/Raigad-II.pdf"
+    },
+    {
+      "title": "MPCB: SRO Raigad-2 database (2014)",
+      "url": "https://mpcb.gov.in/sites/default/files/industrial-statistics/sro-industry/SRORaigad2SROdatabase_31072014.pdf"
+    }
   ]
 }

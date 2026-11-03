@@ -1,6 +1,6 @@
 {
   "slug": "puducherry",
-  "updated": "2026-10-25",
+  "updated": "2026-11-03",
   "sections": [
     {
       "heading": "Puducherry's Industrial Estates: Mettupalayam, Sedarapet and Thirubuvanai",
@@ -29,20 +29,66 @@
       ]
     },
     {
+      "heading": "Solara's Ibuprofen API Plant in Puducherry",
+      "paragraphs": [
+        "Alongside the formulators, Puducherry has an active pharmaceutical ingredient plant: Solara Active Pharma Sciences runs a facility dedicated to ibuprofen and its derivatives. The US FDA made an unannounced inspection there from 2 to 6 February 2026 and issued four Form 483 observations, which the company describes as procedural. In April 2026 Solara reported that the agency had issued an Establishment Inspection Report classifying the inspection Voluntary Action Indicated and closing it.",
+        "An API plant uses stainless tube differently from a tablet plant. Reaction and solvent sections are a corrosion and pressure question, usually answered with pickled 316L pipe. Electropolished 316L tube earns its cost after the final purification step: transfer of the crystallised product, centrifuge and dryer feed lines, purified-water supply to final washes, and sampling points, where a smooth, crevice-free bore drains completely and shows any residue during visual inspection after cleaning."
+      ]
+    },
+    {
+      "heading": "What a Puducherry Buyer Should Put in an RFQ",
+      "bullets": [
+        "The estate (Mettupalayam, Sedarapet, Thirubuvanai or elsewhere) and whether the plant makes formulations or an API.",
+        "For WHO-GMP formulators: the purified-water loop temperature and sanitisation method, which decides between SF1 and SF4.",
+        "For API lines: which lines sit before and after the final purification step, so electropolished tube goes only where it is needed.",
+        "For food units: the product and its salt or acid content, which decides between 304 and 316L.",
+        "Sizes as OD x wall to ASME BPE or ASTM A270, or pipe to ASTM A312. We quote within 24 hours, and delivery time is confirmed with the quotation."
+      ],
+      "links": [
+        {
+          "label": "Send a Puducherry enquiry",
+          "href": "/contact-us/"
+        }
+      ]
+    },
+    {
       "heading": "Delivery to Puducherry",
       "paragraphs": [
         "Puducherry is supplied by road from Mumbai; dispatch and transit are confirmed in writing with each quotation. Chennai Port, about 160 km away, is the nearest listed sea gateway for export-bound material.",
         "Nearby Tamil Nadu clusters:"
       ],
       "links": [
-        { "label": "Cuddalore", "href": "/market-area/cuddalore/" },
-        { "label": "Chennai", "href": "/market-area/chennai/" },
-        { "label": "Ranipet", "href": "/market-area/ranipet/" }
+        {
+          "label": "Cuddalore",
+          "href": "/market-area/cuddalore/"
+        },
+        {
+          "label": "Chennai",
+          "href": "/market-area/chennai/"
+        },
+        {
+          "label": "Ranipet",
+          "href": "/market-area/ranipet/"
+        }
       ]
     }
   ],
   "sources": [
-    { "title": "Government of Puducherry, Industries: Industrial estates", "url": "https://industry.py.gov.in/industrial-estate" },
-    { "title": "NGT: Affidavit by Govt. of Puducherry & Puducherry PCC in OA No. 497 of 2024", "url": "https://www.greentribunal.gov.in/sites/default/files/news_updates/AFFIDAVIT BY R-34 GOVT. OF PUDUCHERRY & R-70 PUDUCHERRY PCC IN OA NO. 497 of 2024 News item titled Impact of Pharmaceutical toxicity on the environment and its regulatory aspects.pdf" }
+    {
+      "title": "Government of Puducherry, Industries: Industrial estates",
+      "url": "https://industry.py.gov.in/industrial-estate"
+    },
+    {
+      "title": "NGT: Affidavit by Govt. of Puducherry & Puducherry PCC in OA No. 497 of 2024",
+      "url": "https://www.greentribunal.gov.in/sites/default/files/news_updates/AFFIDAVIT BY R-34 GOVT. OF PUDUCHERRY & R-70 PUDUCHERRY PCC IN OA NO. 497 of 2024 News item titled Impact of Pharmaceutical toxicity on the environment and its regulatory aspects.pdf"
+    },
+    {
+      "title": "Indian Pharma Post – Solara announces closure of US FDA inspection at Puducherry facility (Apr 2026)",
+      "url": "https://www.indianpharmapost.com/regulatory/lite/solara-announces-closure-of-us-fda-inspection-at-puducherry-facility-19986"
+    },
+    {
+      "title": "Solara Active Pharma Sciences – NSE intimation on US FDA EIR, Puducherry (28 Apr 2026)",
+      "url": "https://nsearchives.nseindia.com/corporate/SOLARA_28042026165601_SE_Intimation_PressReleaseUSFDA.pdf"
+    }
   ]
 }

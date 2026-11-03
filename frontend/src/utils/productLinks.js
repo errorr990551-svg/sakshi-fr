@@ -1,4 +1,5 @@
 import productsData from '../data/products.json';
+import { isRedirectedPath } from '../data/redirects.js';
 import categoriesData from '../data/categories.json';
 
 // The fields the related-products cards render
@@ -12,7 +13,7 @@ const card = (p) => ({
 
 // Products/categories a (non-detailed) product page links to, parsed from its Internal Links field
 export function relatedProductsFor(product) {
-  return findRelated(product).map(card);
+  return findRelated(product).filter((p) => !isRedirectedPath(`/${p['URL Slug']}`)).map(card);
 }
 
 function findRelated(product) {

@@ -1,4 +1,8 @@
-import productsData from '../data/products.json';
+import allProducts from '../data/products.json';
+import { isRedirectedPath } from '../data/redirects.js';
+
+// Products merged into another page (src/data/redirects.js) are never listed or linked
+const productsData = allProducts.filter((p) => !isRedirectedPath(`/${p['URL Slug']}`));
 import { getParentCategoryName } from './categories';
 
 // The fields the category page's product cards render

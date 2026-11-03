@@ -69,8 +69,8 @@ export default function CategoryGuide({ guide }) {
             )}
           </div>
         ))}
-        <h2 style={{ fontSize: '1.7rem', marginBottom: '1rem', color: 'var(--text-primary)' }}>Frequently Asked Questions</h2>
-        {guide.faqs.map((f) => (
+        {guide.faqs?.length > 0 && <h2 style={{ fontSize: '1.7rem', marginBottom: '1rem', color: 'var(--text-primary)' }}>Frequently Asked Questions</h2>}
+        {guide.faqs?.map((f) => (
           <div key={f.q} style={{ marginBottom: '1.5rem' }}>
             <h3 style={{ fontSize: '1.1rem', marginBottom: '0.5rem', color: 'var(--text-primary)' }}>{f.q}</h3>
             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.75 }}>{f.a}</p>

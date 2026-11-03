@@ -40,6 +40,22 @@ const productMerges = {
   '/electropolished-pipe-fittings/': ['/electropolished-pipes/electropolished-pipe-and-fittings/']
 };
 
+// Electropolished fitting pages that described the same product under another name (2026-11-03,
+// plan: seo-autoresearch/fitting-merge-plan.md). The survivor is the page with Search Console
+// impressions where one had any, otherwise the most widely used product name.
+const fittingMerges = {
+  '/electropolished-pipe-fittings/electropolished-tee/': ['/electropolished-pipe-fittings/electropolished-equal-tee/', '/electropolished-pipe-fittings/electropolished-sanitary-tee/'],
+  '/electropolished-pipe-fittings/electropolished-elbow/': ['/electropolished-pipe-fittings/electropolished-sanitary-elbow/'],
+  '/electropolished-pipe-fittings/electropolished-concentric-reducer/': ['/electropolished-pipe-fittings/electropolished-sanitary-reducer/'],
+  '/electropolished-pipe-fittings/electropolished-cross/': ['/electropolished-pipe-fittings/electropolished-sanitary-cross/'],
+  '/electropolished-pipe-fittings/electropolished-end-cap/': ['/electropolished-pipe-fittings/electropolished-sanitary-end-cap/'],
+  '/electropolished-pipe-fittings/electropolished-tri-clover-clamp/': ['/electropolished-pipe-fittings/electropolished-tri-clamp/', '/electropolished-pipe-fittings/electropolished-sanitary-clamp/', '/electropolished-pipe-fittings/electropolished-clamp-gasket/'],
+  '/electropolished-pipe-fittings/electropolished-clamp-ferrule/': ['/electropolished-pipe-fittings/electropolished-ferrule/', '/electropolished-pipe-fittings/electropolished-sanitary-ferrule/'],
+  '/electropolished-pipe-fittings/electropolished-coupling/': ['/electropolished-pipe-fittings/electropolished-full-coupling/'],
+  '/electropolished-pipe-fittings/electropolished-bushing/': ['/electropolished-pipe-fittings/electropolished-hex-bushing/'],
+  '/electropolished-pipe-fittings/electropolished-barrel-nipple/': ['/electropolished-pipe-fittings/electropolished-pipe-nipple/']
+};
+
 // Pages competing for the same search intent: each merged into the stronger page
 const intentMerges = {
   '/contact-us/': ['/contact/', '/request-a-quote/'],
@@ -67,7 +83,7 @@ export const REDIRECTED_PATHS = { ...CITY_DUPLICATES };
 for (const [city, slugs] of Object.entries(cityMerges)) {
   for (const slug of slugs) REDIRECTED_PATHS[`/${slug}/`] = `/market-area/${city}/`;
 }
-for (const [target, sources] of [...Object.entries(productMerges), ...Object.entries(intentMerges)]) {
+for (const [target, sources] of [...Object.entries(productMerges), ...Object.entries(fittingMerges), ...Object.entries(intentMerges)]) {
   for (const source of sources) REDIRECTED_PATHS[source] = target;
 }
 

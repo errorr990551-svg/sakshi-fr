@@ -1,6 +1,10 @@
 import React, { useState, useMemo } from 'react';
 import { Search, ArrowRight, Layers, Tag, Compass, FileText, ChevronLeft, ChevronRight } from 'lucide-react';
-import productsData from '../data/products.json';
+import allProducts from '../data/products.json';
+import { isRedirectedPath } from '../data/redirects';
+
+// Products merged into another page (src/data/redirects.js) are not listed
+const productsData = allProducts.filter((p) => !isRedirectedPath(`/${p['URL Slug']}`));
 import categoriesData from '../data/categories.json';
 import { handleLinkClick, navigate, withSlash } from '../utils/router';
 import { getParentCategoryName } from '../utils/categories';

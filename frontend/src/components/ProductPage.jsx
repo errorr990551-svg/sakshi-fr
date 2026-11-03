@@ -5,6 +5,8 @@ import { handleLinkClick, withSlash } from '../utils/router';
 import { parseKeySpecs } from '../utils/schemaHelpers';
 import DetailedProductPage from './DetailedProductPage';
 import { responsiveImg } from '../utils/imgSize';
+import CategoryGuide from './CategoryGuide';
+import { FITTING_GUIDES } from '../data/fittingGuides.js';
 
 export default function ProductPage({ product, relatedProducts = [], onEnquireClick }) {
   const isDetailed = !!product['What Is This Product? (150-200 words)'];
@@ -62,7 +64,7 @@ export default function ProductPage({ product, relatedProducts = [], onEnquireCl
       },
       {
         q: `Does Sakshi Forge provide Material Test Certificates (MTC) for ${product['Product Name']}?`,
-        a: "Yes. Sakshi Forge provides EN 10204 3.1 Material Test Certificates (MTC) for all shipments of our products. We also accommodate third-party inspection audits (TPIA) from companies like SGS, TUV, DNV, or LLOYDS to verify material compliance."
+        a: "Yes. Sakshi Forge provides EN 10204 3.1 Material Test Certificates (MTC) for all shipments of our products."
       }
     ];
   }, [product]);
@@ -381,7 +383,7 @@ export default function ProductPage({ product, relatedProducts = [], onEnquireCl
 
                 <div style={{ textAlign: 'center' }}>
                   <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-                    Response time: Less than 2 hours
+                    Quotation within 24 hours
                   </span>
                 </div>
               </div>
@@ -391,6 +393,9 @@ export default function ProductPage({ product, relatedProducts = [], onEnquireCl
           </div>
         </div>
       </section>
+
+      {/* Page-specific guide (src/data/fittingGuides.js); its FAQs live in the product's FAQs field */}
+      {FITTING_GUIDES[product['URL Slug']] && <CategoryGuide guide={FITTING_GUIDES[product['URL Slug']]} />}
 
       {/* 3. Product FAQs Accordion */}
       <section style={{ backgroundColor: 'var(--bg-dark-800)', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)', padding: '5rem 0' }}>

@@ -682,5 +682,138 @@ export const SPEC_GUIDES = {
       { q: 'Is 304L or 316L better for sanitary pipe?', a: '304L suits milk, beverages and most neutral products. 316L is safer for salted, acidic or chloride-bearing products and hot CIP supply.' },
       { q: 'Do food plants need electropolished pipe?', a: 'Not by regulation for ordinary duty. It is justified on lines where product sticks or ferments, on flavoured and cultured products and on CIP return legs used to verify cleaning.' }
     ]
+  },
+
+  '/asme-bpe-electropolished-tubes/': {
+    updated: '2026-11-03',
+    sections: [
+      {
+        h2: 'What ASME BPE Covers, and Why Tube Buyers Cite It',
+        paragraphs: [
+          'ASME BPE is the American Society of Mechanical Engineers standard for bioprocessing equipment. It covers the design, materials, fabrication, inspection and testing of equipment and piping that touches product in biopharmaceutical, pharmaceutical and similar high-purity plants. For tube, it does three things a buyer needs: it fixes the outside diameters, walls and tolerances so that tube, clamp ferrules and orbital weld heads fit together; it defines surface finish designations (SF0 to SF6) by a maximum Ra; and it sets material requirements such as the sulphur window for 316L tube.',
+          'The tube itself is still made to a product standard, normally [ASTM A270](/astm-a270-electropolished-tubes/). ASME BPE sits on top of it and adds the tighter requirements. A purchase order that says only "A270" is not a BPE order; one that says "ASME BPE, SF4" is, and the supplier must meet both. Standard OD and wall combinations are tabulated on our [electropolished tubes](/electropolished-tubes/) page.'
+        ]
+      },
+      {
+        h2: 'ASME BPE Surface Finish Designations',
+        table: {
+          caption: 'ASME BPE product-contact surface finish designations (maximum Ra)',
+          head: ['Designation', 'Ra max (µin)', 'Ra max (µm)', 'Finishing route'],
+          rows: [
+            ['SF0', 'No requirement', '-', 'As manufactured'],
+            ['SF1', '20', '0.51', 'Mechanically polished'],
+            ['SF2', '25', '0.64', 'Mechanically polished'],
+            ['SF3', '30', '0.76', 'Mechanically polished'],
+            ['SF4', '15', '0.38', 'Mechanically polished and electropolished'],
+            ['SF5', '20', '0.51', 'Mechanically polished and electropolished'],
+            ['SF6', '25', '0.64', 'Mechanically polished and electropolished']
+          ]
+        },
+        subsections: [
+          {
+            h3: 'How the Ra Value Is Read',
+            paragraphs: [
+              'BPE Ra values are maximums, not averages, and are measured with a stylus profilometer across the lay of the polish, using the method of ASME B46.1. A reading taken along the polishing lines will look better than the surface really is. When you receive a finish report, check the direction, the number of readings and where on the length they were taken.'
+            ]
+          },
+          {
+            h3: 'SF1 or SF4: the Usual Decision',
+            paragraphs: [
+              'SF1 (0.51 µm, mechanically polished) is common for ambient purified water and many formulation lines. SF4 (0.38 µm, electropolished) is the usual choice for water for injection, pure steam, buffer and media preparation and other lines that are sanitised hot and must be shown free of residue. Electropolishing does more than lower Ra: it removes the smeared surface layer left by mechanical polishing and leaves a chromium-rich passive film, which is why SF4 is preferred where rouge and corrosion products are a concern.'
+            ]
+          }
+        ]
+      },
+      {
+        h2: 'Material Requirements That Catch Buyers Out',
+        bullets: [
+          'Sulphur window: BPE limits sulphur in 316L tube to 0.005 to 0.017 percent. Two heats far apart in sulphur weld differently in an orbital welder, so mixing them in one system causes lack-of-fusion or weld pool shift. The mill certificate must show sulphur, not just "316L".',
+          'Grade: 316L is the default product-contact alloy. If the owner calls for a different alloy, the finish and tolerance clauses still apply.',
+          'Visual acceptance: BPE also lists surface defects (pits, inclusions, scratches and similar) that are not acceptable on product-contact surfaces, so a tube can meet its Ra limit and still be rejected on inspection.',
+          'Traceability: each length should be marked so that it can be traced to its heat and to the certificate in the turnover package.'
+        ]
+      },
+      {
+        h2: 'ASME BPE or ASTM A270 S2?',
+        paragraphs: [
+          'ASTM A270 has a supplementary requirement, S2, for pharmaceutical-quality tubing, which adds finish and cleanliness requirements to the base standard. Some owners specify A270 S2; others specify ASME BPE. The two overlap but are not identical, and the dimensional tolerance and sulphur clauses come from BPE. If your user requirement specification names one, quote it exactly in the enquiry; if it names both, say which takes precedence.'
+        ]
+      },
+      {
+        h2: 'Ordering ASME BPE Electropolished Tube',
+        bullets: [
+          'Standard and edition named in your specification (ASME BPE, ASTM A270, A270 S2).',
+          'OD and wall for each size, and the surface finish designation for the ID (for example SF4) and, if needed, the OD.',
+          'Grade and the sulphur window if your welding procedure depends on it.',
+          'Documents: we supply an EN 10204 3.1 certificate traced to heat number, a PMI record for each length and a measured Ra report for each electropolished lot.',
+          'Metres per size and matching [electropolished fittings](/electropolished-pipe-fittings/).'
+        ],
+        cta: { label: 'Request an ASME BPE tube quotation', href: '/contact-us/' }
+      }
+    ],
+    faqs: [
+      { q: 'What Ra does ASME BPE SF4 require?', a: 'A maximum of 15 µin (0.38 µm) Ra on the product-contact surface, achieved by mechanical polishing followed by electropolishing.' },
+      { q: 'Is every ASME BPE finish electropolished?', a: 'No. SF1, SF2 and SF3 are mechanically polished only. SF4, SF5 and SF6 are mechanically polished and electropolished. SF0 has no finish requirement.' },
+      { q: 'Why does ASME BPE limit sulphur in 316L tube?', a: 'Sulphur affects how the weld pool flows in autogenous orbital welding. Holding it between 0.005 and 0.017 percent keeps weld penetration consistent between heats.' },
+      { q: 'Is ASTM A270 tube the same as ASME BPE tube?', a: 'No. A270 is the product standard. ASME BPE adds tighter dimensional tolerances, surface finish designations, sulphur limits and visual acceptance criteria. A BPE order must meet both.' }
+    ]
+  },
+
+  '/industries/dairy-electropolished-pipes/': {
+    updated: '2026-11-03',
+    sections: [
+      {
+        h2: 'Where Electropolished Pipe Pays in a Dairy, and Where It Does Not',
+        paragraphs: [
+          'Most of a dairy runs well on mechanically polished 304L sanitary tube. Raw milk reception, chilled storage and plain pasteurised milk lines are cleaned every day by a well-designed CIP system and do not need an electropolished bore. The finish earns its cost on lines where product sticks, burns on, or carries cultures from one batch to the next.',
+          'Those lines are cultured products (curd, yoghurt, buttermilk and lassi) where a stray culture in a transfer line changes the next batch; evaporator concentrate and milk-powder feed lines, where protein deposits build up fastest; ice-cream mix and flavoured-milk lines where sugar and stabilisers cling to the wall; and the CIP return leg that is used to confirm a line is clean.'
+        ],
+        table: {
+          caption: 'Typical specification by dairy line',
+          head: ['Line', 'Grade', 'Internal finish'],
+          rows: [
+            ['Raw milk reception and chilled storage', '304L', 'Mechanically polished'],
+            ['Pasteurised milk filling', '304L', 'Mechanically polished'],
+            ['Curd, yoghurt and buttermilk transfer', '304L or 316L', 'Electropolished'],
+            ['Evaporator concentrate and powder feed', '316L', 'Electropolished'],
+            ['Cheese brine and salted butter', '316L', 'Mechanically polished or electropolished'],
+            ['Ice-cream mix and flavoured milk', '304L or 316L', 'Electropolished'],
+            ['CIP supply and return', '316L', 'Electropolished on the return leg']
+          ]
+        }
+      },
+      {
+        h2: '304L or 316L in a Dairy',
+        paragraphs: [
+          'Milk itself is not aggressive to 304L. Chloride is the problem: cheese brine, salted butter and some flavoured products carry salt, and acid CIP steps and sanitisers add more corrosive conditions at temperature. Choose 316L for brine and salted-product lines, for hot CIP supply, and for any line where chlorinated water stands for long periods. Keep 304L for the large volume of plain milk piping, where it is the economical and proven choice.'
+        ]
+      },
+      {
+        h2: 'Designing Dairy Lines So CIP Works',
+        bullets: [
+          'Size lines so CIP reaches the flow velocity your cleaning validation assumes; a line sized only for product flow is often too large to clean well.',
+          'Slope horizontal runs so they drain completely, and keep branches to the dead-leg limits your design standard sets.',
+          'Use one dimension series throughout. Many Indian dairies use SMS / ISO 2037 tube with SMS unions; mixing it with DIN or inch tube creates steps at every joint that hold milk solids. See our [sanitary electropolished pipe](/sanitary-hygienic-ep-pipes/) page for the series side by side.',
+          'Weld orbitally where possible and inspect weld beads with a borescope; a good bore finish is wasted at a poor weld.'
+        ]
+      },
+      {
+        h2: 'Ordering Electropolished Pipe for a Dairy Project',
+        bullets: [
+          'The product each line carries (milk, curd, concentrate, brine, ice-cream mix or CIP), so we can advise grade and finish line by line.',
+          'Dimension series and sizes, with the fittings they connect to ([dairy fittings](/dairy-fittings/), clamp or SMS).',
+          'Internal finish per line and the Ra limit, if your customer or auditor sets one.',
+          'Documents: EN 10204 3.1 certificate traced to heat number, PMI per length and a measured Ra report for each electropolished lot.',
+          'We quote within 24 hours; delivery time depends on the order and is confirmed with the quotation.'
+        ],
+        cta: { label: 'Request a dairy EP pipe quotation', href: '/contact-us/' }
+      }
+    ],
+    faqs: [
+      { q: 'Does a dairy need electropolished pipe on every line?', a: 'No. Plain milk lines usually run well on mechanically polished 304L. Electropolished pipe is worth it on cultured-product, concentrate and powder-feed, ice-cream mix and CIP return lines, where product sticks or carries over between batches.' },
+      { q: 'Should dairy pipe be 304L or 316L?', a: '304L for plain milk. 316L for cheese brine, salted butter and other salted products, for hot CIP supply and where chlorinated water stands in the line.' },
+      { q: 'Which tube series do Indian dairies use?', a: 'Many use SMS / ISO 2037 tube with SMS unions; others use DIN 11850 or inch ASME BPE / 3-A tube. The important rule is to use one series throughout a plant.' },
+      { q: 'What documents come with dairy EP pipe?', a: 'An EN 10204 3.1 certificate traced to heat number, a PMI record for each length and a measured Ra report for each electropolished lot.' }
+    ]
   }
 };

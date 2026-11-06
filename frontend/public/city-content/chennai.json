@@ -1,0 +1,79 @@
+{
+  "slug": "chennai",
+  "updated": "2026-11-06",
+  "sections": [
+    {
+      "heading": "Chennai's Metro Dairies: Madhavaram, Ambattur and Sholinganallur",
+      "paragraphs": [
+        "The Tamil Nadu Co-operative Milk Producers' Federation (Aavin) is headquartered at Madhavaram Milk Colony and runs four metro dairies for the Chennai region: Madhavaram and Ambattur at 5 lakh litres per day each, Sholinganallur at 4.5 lakh litres per day, and the Ambattur Product Dairy, which makes ice cream, paneer, buttermilk and other value-added products. These plants take milk from the district unions, process it and pack it for the city.",
+        "For a supplier of hygienic tube, the product dairy is the more demanding site. Fermented products such as buttermilk and curd carry cultures that must not reach the next batch, and ice-cream mix leaves sugar and protein films that a rough bore holds on to."
+      ]
+    },
+    {
+      "heading": "Caplin Steriles at Gummidipoondi: Injectables Under US FDA Inspection",
+      "paragraphs": [
+        "North of the city, Caplin Steriles, a subsidiary of Caplin Point Laboratories, runs an injectable and ophthalmic plant at Gummidipoondi. The US FDA inspected it unannounced from 5 to 9 August 2024 with zero Form 483 observations, and issued the Establishment Inspection Report in January 2025. A second unannounced inspection, from 13 to 21 August 2026, closed with a Form 483 listing 10 observations that the company describes as procedural, with no data-integrity or repeat findings.",
+        "Sterile injectable and ophthalmic plants are where electropolished 316L tube is a specification rather than an option: water for injection generation and distribution, pure steam, compounding and transfer to filling are sanitised hot and inspected for residue, rouge and particles. Every inspection that follows will look at the material records behind any line that is changed.",
+        "When tube arrives at a sterile site, check three things before it goes into the store: the heat number on each length against the 3.1 certificate, the measured Ra on the lot report against your specification, and the end caps, which should still be intact. A length with a missing cap stays in quarantine until its bore has been inspected, because particles picked up in transit end up in the WFI loop."
+      ]
+    },
+    {
+      "heading": "Specifying for a Chennai Sterile or Dairy Project",
+      "bullets": [
+        "Injectable and ophthalmic plants: 316L tube to ASME BPE with an SF4 electropolished bore (Ra 0.38 µm maximum) for WFI, pure steam and product contact; SF1 for ambient purified water where your risk assessment allows.",
+        "Dairy product lines: 304L for plain milk; electropolished 304L or 316L for cultured products and ice-cream mix; 316L for hot CIP supply.",
+        "One dimension series per plant, so tube, ferrules and fittings line up at every weld and clamp."
+      ]
+    },
+    {
+      "heading": "What a Chennai Buyer Should Put in an RFQ",
+      "bullets": [
+        "The site (Gummidipoondi, Ambattur, Madhavaram, Sholinganallur or elsewhere) and the system each line belongs to.",
+        "For regulated plants, whether the change sits under a corrective action or change control, so the certificate pack can be matched to it.",
+        "OD x wall to ASME BPE or ASTM A270, metres per size and the Ra limit your qualification will measure.",
+        "Expect our quotation within a day; delivery depends on the order and is written into the quotation."
+      ],
+      "links": [
+        {
+          "label": "Send a Chennai enquiry",
+          "href": "/contact-us/"
+        }
+      ]
+    },
+    {
+      "heading": "Delivery Across Chennai and Its Industrial Belt",
+      "paragraphs": [
+        "Chennai is supplied by road from Mumbai, with dispatch and transit confirmed in writing for each order, and every electropolished length is end-capped and sleeved.",
+        "Nearby pages:"
+      ],
+      "links": [
+        {
+          "label": "Sriperumbudur",
+          "href": "/market-area/sriperumbudur/"
+        },
+        {
+          "label": "Ranipet",
+          "href": "/market-area/ranipet/"
+        },
+        {
+          "label": "Puducherry",
+          "href": "/market-area/puducherry/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia – Aavin (metro dairies and capacities)",
+      "url": "https://en.wikipedia.org/wiki/Aavin"
+    },
+    {
+      "title": "Indian Pharma Post – Caplin Steriles gets Form 483 with 10 observations at Gummidipoondi (Aug 2026)",
+      "url": "https://www.indianpharmapost.com/news/caplin-steriles-gets-us-fda-form-483-with-10-observations-at-gummidipoondi-unit-21511"
+    },
+    {
+      "title": "Medical Dialogues – USFDA issues EIR for Caplin Steriles Gummidipoondi facility (Jan 2025)",
+      "url": "https://medicaldialogues.in/amp/news/industry/pharma/usfda-issues-eir-for-caplin-steriles-gummidipoondi-facility-141103"
+    }
+  ]
+}

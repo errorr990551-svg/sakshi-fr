@@ -1,0 +1,77 @@
+{
+  "slug": "tiruchirappalli",
+  "updated": "2026-11-06",
+  "sections": [
+    {
+      "heading": "Aavin's Kottapattu Complex in Tiruchirappalli",
+      "paragraphs": [
+        "The main hygienic-process site in Tiruchirappalli is the Aavin dairy complex at Kottapattu, run by the Tiruchy District Milk Producers' Cooperative Union. In 2021 Aavin tendered an ice-cream plant of 6,000 litres a day there, with a fermented-dairy unit of 10,000 litres a day, under the Dairy Processing and Infrastructure Development Fund.",
+        "In January 2026 the union reported that the Rs 21.57 crore ice-cream and fermented-dairy plant was nearing production, with trial runs of ice cream, lassi, curd and buttermilk completed, and its output to be sold in Tiruchirappalli and the neighbouring districts."
+      ]
+    },
+    {
+      "heading": "Why Fermented Dairy and Ice Cream Lines Need a Better Bore",
+      "paragraphs": [
+        "A plain milk plant can run most of its lines on mechanically polished 304L. A plant that adds curd, lassi and buttermilk adds live cultures, and a culture left in a transfer line or valve body changes the next batch. Ice-cream mix brings sugar, fat and stabilisers that leave films on any rough surface, and the mix is aged for hours before freezing.",
+        "Electropolished tube on culture dosing, fermented-product transfer and ice-cream mix lines gives a surface that drains fully and shows any residue when the line is inspected after cleaning. Use 316L where hot CIP or salted products are involved, and keep one dimension series across the new plant and the existing milk lines it connects to.",
+        "Fermented products are also handled gently: curd set in a tank is pumped at low speed so the body does not break. Low production velocities mean the CIP flow must be much higher than the product flow to sweep the tube clean, so size the transfer lines with the CIP pump in mind, not only the product pump.",
+        "Ice-cream freezers and hardening equipment usually arrive as skids, and the tube that joins them to the mix plant is run on site. Specify that site-run tube to the same finish as the skid piping, so the cleaning validation has no weak link between the two."
+      ]
+    },
+    {
+      "heading": "Specifying for a Kottapattu-Type Expansion",
+      "bullets": [
+        "Milk reception and pasteurised milk: 304L, mechanically polished.",
+        "Curd, lassi and buttermilk transfer and culture dosing: 304L or 316L, electropolished.",
+        "Ice-cream mix preparation, ageing and transfer to freezers: electropolished, with fully drainable slopes.",
+        "CIP supply 316L; CIP return electropolished, so the return line can be used to confirm cleaning."
+      ]
+    },
+    {
+      "heading": "What a Tiruchirappalli Buyer Should Put in an RFQ",
+      "bullets": [
+        "The line list with the product on each line and whether it carries cultures, mix or plain milk.",
+        "Tube series and sizes, matched to the fittings already in the plant.",
+        "Finish per line and the Ra limit, if your customer or auditor sets one.",
+        "You get a quotation within 24 hours; the delivery period for the order is stated with it."
+      ],
+      "links": [
+        {
+          "label": "Send a Tiruchirappalli enquiry",
+          "href": "/contact-us/"
+        }
+      ]
+    },
+    {
+      "heading": "Delivery to Tiruchirappalli",
+      "paragraphs": [
+        "Tiruchirappalli is supplied by road from Mumbai, with dispatch and transit confirmed in writing for each order. Electropolished lengths are capped and sleeved for the journey.",
+        "Nearby pages:"
+      ],
+      "links": [
+        {
+          "label": "Madurai",
+          "href": "/market-area/madurai/"
+        },
+        {
+          "label": "Salem",
+          "href": "/market-area/salem/"
+        },
+        {
+          "label": "Cuddalore",
+          "href": "/market-area/cuddalore/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "DairyNews.today – Aavin's new ice cream plant in Trichy set to boost regional dairy production (Jan 2026)",
+      "url": "https://dairynews.today/news/aavin-s-new-ice-cream-plant-in-trichy-set-to-boost-regional-dairy-production.html"
+    },
+    {
+      "title": "Wikipedia – Aavin (Kottapattu ice cream and fermented dairy tender, 2021)",
+      "url": "https://en.wikipedia.org/wiki/Aavin"
+    }
+  ]
+}

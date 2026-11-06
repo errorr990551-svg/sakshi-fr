@@ -1,0 +1,77 @@
+{
+  "slug": "surat",
+  "updated": "2026-11-06",
+  "sections": [
+    {
+      "heading": "Sumul: The Dairy That Feeds Surat and Tapi",
+      "paragraphs": [
+        "The largest hygienic-process buyer in the Surat area is Sumul, the Surat and Tapi District Co-operative Milk Producers' Union, set up in 1951 and part of the GCMMF (Amul) network. CRISIL's March 2025 rating rationale puts its milk processing capacity at 30 lakh litres per day, with a 30 tonne-per-day powder plant, a 1 lakh litre-per-day ice-cream plant and a 10 tonne-per-day bakery unit at Navi Pardi. Average procurement rose to 23.5 lakh litres a day in fiscal 2024 from 18.6 lakh in fiscal 2023.",
+        "The same rationale records about Rs 350 crore of capital spending in the three years to fiscal 2024 on the ice-cream plant, a cone and candy line and a butter warehouse, and plans of about Rs 500 crore through 2028, including about Rs 250 crore for milk processing units in Maharashtra and Goa. In February 2024 DeshGujarat reported Sumul's Rs 28 crore cone plant at Navi Pardi, with capacity for 12 crore ice-cream cones a year."
+      ]
+    },
+    {
+      "heading": "Where Electropolished Tube Fits in a Surat Dairy",
+      "paragraphs": [
+        "Plain milk reception and pasteurised-milk lines run well on mechanically polished 304L tube. The lines that justify an electropolished bore in a plant like Sumul's are the ones where product sticks or carries over: ice-cream mix preparation and ageing, where sugar and stabilisers cling to the wall; evaporator concentrate and powder-plant feed, where protein fouls fastest; and the return legs of CIP circuits that are used to prove a line is clean.",
+        "Butter and other salted products bring chloride into the plant, so their lines and hot CIP supply are better in 316L. A new processing unit, like those planned in Maharashtra and Goa, is the cheapest time to split the line list by finish, because changing it after commissioning means cutting out welded tube."
+      ]
+    },
+    {
+      "heading": "Dye Houses and Chemical Units: Honest Scope Beyond Dairy",
+      "paragraphs": [
+        "Outside dairy, the dye houses and chemical units in Surat's estates use stainless mainly for corrosion resistance. Electropolished tube is a targeted purchase there: pharma purified-water loops, dye-kitchen dosing lines where colour carry-over between shades costs a batch, and laboratory and sampling lines. For bulk dye-liquor and effluent lines we will advise a pickled finish or a different material rather than sell a finish the duty does not need."
+      ]
+    },
+    {
+      "heading": "What a Surat Buyer Should Send With an Enquiry",
+      "bullets": [
+        "The plant and the product on each line: milk, ice-cream mix, concentrate, butter, CIP, purified water or dye dosing.",
+        "Grade and finish per line, for example 304L mechanically polished for milk, 316L SF4 electropolished for concentrate and CIP return.",
+        "The tube series your fittings use (ASME BPE inch, DIN 11850 or SMS) and metres per size.",
+        "Whether the order is for an existing Gujarat plant or one of the new units outside the state, so documents and dispatch are planned for that site.",
+        "A quotation comes back within 24 hours, with the delivery time for your order stated on it."
+      ],
+      "links": [
+        {
+          "label": "Send a Surat enquiry",
+          "href": "/contact-us/"
+        }
+      ]
+    },
+    {
+      "heading": "Delivery to Surat, Navi Pardi and Sachin",
+      "paragraphs": [
+        "Surat is supplied by road from our Mumbai address, with dispatch and transit confirmed in writing for each order. Electropolished lengths travel capped and sleeved.",
+        "Nearby pages:"
+      ],
+      "links": [
+        {
+          "label": "Ankleshwar",
+          "href": "/market-area/ankleshwar/"
+        },
+        {
+          "label": "Vapi",
+          "href": "/market-area/vapi/"
+        },
+        {
+          "label": "Valsad",
+          "href": "/market-area/valsad/"
+        },
+        {
+          "label": "Vadodara",
+          "href": "/market-area/vadodara/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "CRISIL – Rating rationale, Surat & Tapi District Co-operative Milk Producers' Union (Mar 2025)",
+      "url": "https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/Surat_TapiDistrictCo_operativeMilkProducersUnionLimited_March%2021_%202025_RR_364974.html"
+    },
+    {
+      "title": "DeshGujarat – Sumul's plant to produce 12 crore ice cream cones annually (Feb 2024)",
+      "url": "https://deshgujarat.com/2024/02/04/sumuls-soon-to-be-inaugurated-plant-to-produce-12-crore-ice-cream-cones-annually"
+    }
+  ]
+}

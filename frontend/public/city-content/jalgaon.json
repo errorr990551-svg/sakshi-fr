@@ -1,0 +1,77 @@
+{
+  "slug": "jalgaon",
+  "updated": "2026-11-07",
+  "sections": [
+    {
+      "heading": "Jalgaon's Dairy: The Vikas Brand and NDDB's New Plant",
+      "paragraphs": [
+        "Jalgaon's largest hygienic-processing plant is the dairy of Jalgaon Milk Union, which sells under the Vikas brand. A 2023-24 report by SSCOET Jalgaon describes the union as procuring more than 3 lakh litres a day in peak season and selling about 2 lakh litres a day at retail, with a SCADA-controlled processing plant of 5 lakh litres a day, 3 lakh litres a day of packing and storage, a 15 tonne powder facility and a 2019-20 turnover of Rs 506 crore.",
+        "NDDB's engineering division lists a new 500 thousand-litre-a-day dairy plant and a new 40 thousand-litre-a-day product plant at Jalgaon among its ongoing projects. New dairy and product plants are specified from scratch, which is when tube grade and internal finish are chosen line by line."
+      ]
+    },
+    {
+      "heading": "Fruit Processing at Jalgaon",
+      "paragraphs": [
+        "Jalgaon is also a fruit-processing district. In 2015 Jain Irrigation's fruit and vegetable division opened an IQF plant at Jalgaon with 40 tonnes a day of individual quick freezing and 16 tonnes a day of block freezing, designed for about 60,000 tonnes a year of mango, banana, pomegranate, papaya, jamun, strawberry and sapota, and certified to BRC among other standards, with output planned for export to the US, Europe, Japan and the Middle East.",
+        "A freezing line is mostly conveyors and tunnels, so it buys little tube. Where tube matters in fruit processing is in wash and blanching water, pulp and puree transfer, and the CIP circuits that clean them, because fruit pulp is acidic and sugary and leaves films that feed spoilage organisms."
+      ]
+    },
+    {
+      "heading": "Choosing Grade and Finish for Jalgaon's Lines",
+      "paragraphs": [
+        "For milk reception, chilling and pasteurised milk, 304L with an SF1 mechanical polish is usually the right balance of cost and cleanability. For curd, buttermilk and other cultured products from a new product plant, and for acidic fruit pulp, 316L is the safer grade, and an SF4 electropolished bore is worth specifying on post-pasteurisation and post-inoculation lines where residue would shorten shelf life.",
+        "Export customers of a fruit processor audit hygiene against their own standards, so the material record of each product line matters as much as the finish. Ask for heat-number traceability on every length when the line is ordered, not when the auditor arrives."
+      ]
+    },
+    {
+      "heading": "What to Send With a Jalgaon Enquiry",
+      "bullets": [
+        "Product per line: raw milk, pasteurised milk, cultured product, fruit pulp or utility water.",
+        "pH and temperature of acidic pulp lines, and the CIP regime.",
+        "OD x wall to ASTM A270, A269 or ASME BPE, metres per size and the fittings required.",
+        "The documents you need. We supply an EN 10204 3.1 certificate traced to the heat number, PMI on every length and an Ra report for each electropolished lot, and quote within 24 hours with delivery time confirmed in the quotation."
+      ],
+      "links": [
+        {
+          "label": "Send a Jalgaon enquiry",
+          "href": "/contact-us/"
+        }
+      ]
+    },
+    {
+      "heading": "Delivery to Jalgaon and Khandesh",
+      "paragraphs": [
+        "Jalgaon is served by road from Mumbai; the dispatch date and transit for each order are set out in writing when it is confirmed, and polished tube ships with end caps and protective sleeves.",
+        "Nearby pages:"
+      ],
+      "links": [
+        {
+          "label": "Nashik",
+          "href": "/market-area/nashik/"
+        },
+        {
+          "label": "Aurangabad",
+          "href": "/market-area/aurangabad/"
+        },
+        {
+          "label": "Indore",
+          "href": "/market-area/indore/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "NDDB – Engineering services: ongoing projects",
+      "url": "https://nddb.coop/services/engineering/ongoing"
+    },
+    {
+      "title": "SSCOET Jalgaon – IIC activity report 2023-24 (Jalgaon Milk Union profile)",
+      "url": "https://sscoetjalgaon.ac.in/public/pdfs/iic/2023-24/1.pdf"
+    },
+    {
+      "title": "BW Businessworld – Jain Irrigation launches IQF plant in Maharashtra (Jun 2015)",
+      "url": "https://businessworld.in/article/jain-irrigation-launches-iqf-plant-in-maharashtra-82788"
+    }
+  ]
+}

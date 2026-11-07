@@ -1,0 +1,81 @@
+{
+  "slug": "haldia",
+  "updated": "2026-11-07",
+  "sections": [
+    {
+      "heading": "Haldia: Port, Petrochemicals and Edible Oil Refining",
+      "paragraphs": [
+        "Haldia sits near the mouth of the Hooghly in Purba Medinipur, and its industry grew around the Haldia Dock Complex. The West Bengal Industrial Development Corporation (WBIDC) lists the belt's major projects as Indian Oil, Haldia Petrochemicals, Mitsubishi Chemicals, South Asian Petrochemicals, Tata Chemicals, Exide, Shaw Wallace and Hindustan Lever, and is developing a further industrial park of about 334 acres in the township. National Highway 41 links the port to NH-6 at Kolaghat.",
+        "The port also made Haldia a centre for edible oil refining, because imported crude oil can be refined next to the berth. Emami Agrotech said in 2016 that its Haldia refinery ran at about 3,000 tonnes a day and laid the foundation for a Rs 300 crore expansion of another 1,000 tonnes a day. Adani Group announced in 2018 that it would invest Rs 7.5 billion to double its Haldia refinery from 1,600 tonnes a day, with packaging going from 1,200 to 1,800 tonnes. In March 2025 Halder Venture bought KS Oil's closed 500 tonne-a-day refinery at Haldia Port for Rs 58 crore and said it would restart it."
+      ]
+    },
+    {
+      "heading": "Haldia's Edible Oil Refineries: Where Finish Is Worth Paying For",
+      "paragraphs": [
+        "A refinery's degumming, bleaching and deodorising sections run hot and under vacuum, and their piping is chosen for temperature, pressure and cost. An electropolished bore adds little there. The case for it starts after the deodoriser, on the lines that carry finished oil to day tanks, filling machines and sampling points. Oil that lingers in a rough bore or a dead leg oxidises, and the film it leaves can taint the next batch.",
+        "For most of those lines 304L is enough, since refined oil carries little chloride. 316L earns its extra cost where a line also sees hot caustic cleaning or brine. We often advise an SF1 mechanical polish rather than SF4 electropolishing for oil service, and we will tell a Haldia buyer when the cheaper finish is the right one."
+      ]
+    },
+    {
+      "heading": "Chemical and Consumer Units on the Haldia Belt: Honest Scope",
+      "paragraphs": [
+        "Petrochemical and fertiliser plants buy stainless steel to resist the process, and electropolished tube is rarely part of that order. Where it does belong is on analyser and sample lines, laboratory water and any transfer line where carry-over between grades would spoil a product. A consumer-goods unit filling liquids for personal care is a stronger fit, because product-contact lines there are cleaned often and inspected for residue. Send the stream data and we will say plainly which lines need a polished bore and which do not."
+      ]
+    },
+    {
+      "heading": "What to Send With a Haldia Enquiry",
+      "bullets": [
+        "Which section each line serves: crude, refining, finished oil, filling or utilities.",
+        "Operating temperature and the cleaning method, since hot caustic decides between 304L and 316L.",
+        "For chemical units, the stream's chloride content, pH and temperature.",
+        "OD x wall, dimension series (ASTM A270, A269 or A312) and metres per size.",
+        "Whether you need a measured Ra report, an EN 10204 3.1 certificate traced to the heat number and PMI records; we include them as standard and quote within 24 hours, with delivery time confirmed in the quotation."
+      ],
+      "links": [
+        {
+          "label": "Send a Haldia enquiry",
+          "href": "/contact-us/"
+        }
+      ]
+    },
+    {
+      "heading": "Delivery to Haldia and Purba Medinipur",
+      "paragraphs": [
+        "We ship to Haldia from Mumbai by road; each order's dispatch date and transit are confirmed in writing, and polished tube travels with end caps and sleeves.",
+        "Nearby pages:"
+      ],
+      "links": [
+        {
+          "label": "Kolkata",
+          "href": "/market-area/kolkata/"
+        },
+        {
+          "label": "Howrah",
+          "href": "/market-area/howrah/"
+        },
+        {
+          "label": "Kharagpur",
+          "href": "/market-area/kharagpur/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "WBIDC – Haldia Industrial Park",
+      "url": "https://wbidc.com/home/industrial-parks/haldia-industrial-park"
+    },
+    {
+      "title": "Millennium Post – Suvendu lays foundation stone for EAL expansion at Haldia (Jul 2016)",
+      "url": "https://www.millenniumpost.in/suvendu-lays-foundation-stone-for-eal-expansion-at-haldia-155683"
+    },
+    {
+      "title": "Business Standard – Adani Group to pump in Rs 7.5 bn in West Bengal's Haldia oil refinery (Jan 2018)",
+      "url": "https://www.business-standard.com/article/pti-stories/adani-to-pump-in-rs-750cr-in-west-bengal-118011700471_1.html"
+    },
+    {
+      "title": "ThePrint (PTI) – Halder Venture acquires KS Oil's Haldia refinery for Rs 58 crore (Mar 2025)",
+      "url": "https://theprint.in/economy/halder-venture-acquires-ks-oils-haldia-refinery-for-rs-58-crore/2572599"
+    }
+  ]
+}

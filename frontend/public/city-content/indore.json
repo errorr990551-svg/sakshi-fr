@@ -1,0 +1,94 @@
+{
+  "slug": "indore",
+  "updated": "2026-11-07",
+  "sections": [
+    {
+      "heading": "Pithampur: Indore's Pharmaceutical Estate",
+      "paragraphs": [
+        "Indore's pharmaceutical industry is concentrated at Pithampur in neighbouring Dhar district, where several large formulators run US FDA-inspected plants. Lupin's Pithampur Unit-3 makes metered dose inhalers, dry powder inhalers, topical formulations and nasal solutions. Cipla, Torrent and Alembic also manufacture at Pithampur.",
+        "Inhalation, nasal and topical products are made from purified water, and the compounding vessels, transfer lines and filling manifolds that carry them are product-contact surfaces. That is the core of Indore's demand for electropolished 316L tube."
+      ]
+    },
+    {
+      "heading": "What Recent US FDA Inspections at Pithampur Show",
+      "paragraphs": [
+        "The US FDA inspected Lupin's Unit-3 from July 7 to July 17, 2025, and Lupin announced the Establishment Inspection Report in November 2025. Torrent's plant was inspected in September 2024 and classified Voluntary Action Indicated. Cipla's Pithampur site received eight observations in February 2023 and a warning letter in November 2023; a follow-up inspection in August 2026 ended with a Form 483 of seven observations, which Cipla has not detailed.",
+        "None of these reports is public in detail, so we do not claim they concerned piping. The general lesson for an engineering team is that an inspector reads the water system and product-contact equipment against its documents. A purified-water loop or compounding line built in traceable 316L, with a heat-number certificate and a measured surface finish on file, leaves fewer questions open."
+      ]
+    },
+    {
+      "heading": "New Capacity: Alembic's Pithampur Formulation Plant",
+      "paragraphs": [
+        "Alembic Pharmaceuticals commissioned a new formulation plant at Pithampur in April 2025, an investment of about Rs 205 crore, to bring third-party products in-house. A new plant needs its water generation, storage and distribution loops, and every product transfer later moved in from a contract manufacturer brings its own line. Those are the projects where tube grade, internal finish and weld documentation are decided, and they are cheaper to get right before commissioning than after an audit."
+      ]
+    },
+    {
+      "heading": "The Milk Federation's Indore Powder Plant",
+      "paragraphs": [
+        "On the dairy side, a Rs 79 crore milk powder plant of the Madhya Pradesh milk federation was inaugurated in Indore in October 2025. In a powder plant, milk is concentrated in an evaporator and dried, and the concentrate lines and CIP circuits need a cleanable bore; SF1 polished 304L usually serves, with 316L where cleaning runs hot and acidic. We do not recommend SF4 electropolishing on a powder plant unless the customer specifies it."
+      ]
+    },
+    {
+      "heading": "What to Send With an Indore or Pithampur Enquiry",
+      "bullets": [
+        "Whether the line is purified water, water for injection, product transfer or CIP.",
+        "Required internal finish: Ra 0.38 µm (15 µin) SF4 electropolished, or SF1 mechanical polish.",
+        "OD x wall to ASTM A270 or ASME BPE, and metres per size.",
+        "Documents your quality team needs; we supply an EN 10204 3.1 certificate traced to the heat number, PMI on every length and an Ra report for each electropolished lot, and quote within 24 hours with delivery time confirmed in the quotation."
+      ],
+      "links": [
+        {
+          "label": "Send an Indore enquiry",
+          "href": "/contact-us/"
+        }
+      ]
+    },
+    {
+      "heading": "Delivery to Indore, Pithampur and Dewas",
+      "paragraphs": [
+        "Indore orders go from Mumbai by road; we put the dispatch date and transit in writing with each order confirmation and ship polished tube capped and sleeved.",
+        "Nearby pages:"
+      ],
+      "links": [
+        {
+          "label": "Pithampur",
+          "href": "/market-area/pithampur/"
+        },
+        {
+          "label": "Dewas",
+          "href": "/market-area/dewas/"
+        },
+        {
+          "label": "Ujjain",
+          "href": "/market-area/ujjain/"
+        },
+        {
+          "label": "Bhopal",
+          "href": "/market-area/bhopal/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pharma Industrial India – Lupin receives EIR from US FDA for its Pithampur Unit-3 facility (Nov 2025)",
+      "url": "https://www.pharmaindustrial-india.com/news/lupin-receives-eir-from-us-fda-for-its-pithampur-unit-3-facility"
+    },
+    {
+      "title": "Indian Pharma Post – Cipla's Pithampur facility receives seven USFDA observations following follow-up inspection (Aug 2026)",
+      "url": "https://www.indianpharmapost.com/news/ciplas-pithampur-facility-receives-seven-usfda-observations-following-follow-up-inspection-21566"
+    },
+    {
+      "title": "Medical Dialogues – Torrent Pharma receives USFDA clearance for Pithampur facility with VAI classification (Nov 2024)",
+      "url": "https://medicaldialogues.in/news/industry/pharma/torrent-pharma-receives-usfda-clearance-for-pithampur-facility-with-vai-classification-138554"
+    },
+    {
+      "title": "Medical Dialogues – Alembic Pharma commissions new manufacturing facility in Pithampur (Apr 2025)",
+      "url": "https://medicaldialogues.in/amp/news/industry/pharma/alembic-pharma-commissions-new-manufacturing-facility-in-pithampur-to-expand-business-147402"
+    },
+    {
+      "title": "The Hitavada – PM unveils Rs 79 crore milk powder plant in Indore (Oct 2025)",
+      "url": "https://www.thehitavada.com/Encyc/2025/10/12/pm-unveils-rs-79-crore-milk-powder-plant-for-rural-prosperity-in-indore-.html"
+    }
+  ]
+}

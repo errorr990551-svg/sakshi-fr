@@ -1,0 +1,83 @@
+{
+  "slug": "kochi",
+  "updated": "2026-11-08",
+  "sections": [
+    {
+      "heading": "Milma's Ernakulam Union: Kochi's Dairy Base",
+      "paragraphs": [
+        "Kochi's dairy processing is run by Milma's Ernakulam Regional Co-operative Milk Producers' Union, whose plants include the Ernakulam Dairy at Thrippunithura and the Edappally Products Dairy. In November 2024, at an event at Ernakulam Dairy, Union Minister of State George Kurian inaugurated a 2 MW solar power plant for the union, and Kerala's Dairy Minister J. Chinchurani laid the foundation stone, online, for an expansion of the Edappally Products Dairy to widen its product range, including new ice cream variants.",
+        "At the same event Milma Federation Chairman K.S. Mani handed the keys of Milma's Central Quality Control Lab at Edappally to NDDB Chairman Dr Meenesh Shah, for operation by NDDB CALF Ltd."
+      ]
+    },
+    {
+      "heading": "NDDB Support for the Ernakulam Union",
+      "paragraphs": [
+        "Reports of the November 2024 event record NDDB assistance to the Ernakulam union of a Rs 296.72 lakh grant and an interest-free loan of Rs 490.50 lakh, supporting projects that include strengthening the union's Kottayam Dairy. For Kochi's plant engineers, a funded expansion of a products dairy is the point at which new process lines are specified, and tube grade and internal finish are decided for each one."
+      ]
+    },
+    {
+      "heading": "A Planned Private Dairy at Angamaly, Ernakulam District",
+      "paragraphs": [
+        "In July 2022 the Kerala State Industrial Development Corporation signed an MoU with Muralya Dairy Products, an arm of the UAE-based SFC group, for a Rs 100 crore dairy project and logistics unit on 4.60 acres of leased land in KSIDC's industrial area at Angamaly. The report put its installed capacity at 100 KLPD of liquid milk, including farm-fresh, A2 and UHT milk, to serve central and north Kerala, with commercial operation expected in two to three years. We have not found a later report confirming that the plant is running, so treat it as a planned project.",
+        "A UHT line is the case where a hygienic bore matters most in a liquid-milk plant, because product leaves the steriliser for aseptic filling with no further heat step. Those downstream lines warrant 316L SF4."
+      ]
+    },
+    {
+      "heading": "Ice Cream and Products Lines: Grade and Finish at Kochi",
+      "paragraphs": [
+        "An ice cream line carries mix that is rich in sugar, fat and milk solids: blending, pasteurisation, homogenisation, ageing, freezing and filling. After pasteurisation the mix is held cold for hours, and any residue left in a rough bore, a dead leg or a poor weld is where spoilage organisms survive cleaning. We recommend 316L electropolished to SF4 on post-pasteurisation mix lines, ageing-vat connections and freezer and filler feeds, and on curd or other cultured-product lines.",
+        "Kochi's coastal air is another reason to prefer 316L for exposed external runs. Raw-milk reception, chilling and utility water do not need an electropolished bore; SF1 or mill-finish 304L is the economical choice there, and we will quote it."
+      ]
+    },
+    {
+      "heading": "What to Send With a Kochi Enquiry",
+      "bullets": [
+        "The product on each line: raw milk, pasteurised milk, ice cream mix, cultured product, CIP or utility.",
+        "Mix viscosity and CIP chemistry and temperatures, so the grade and finish suit the duty.",
+        "OD x wall to ASTM A270 or ASME BPE, metres per size, and the bends, tees and clamp ferrules required.",
+        "The records your quality team keeps. We send an EN 10204 3.1 certificate traced to the heat number, PMI on every length and an Ra report for each electropolished lot, quote within 24 hours and confirm delivery time in the quotation."
+      ],
+      "links": [
+        {
+          "label": "Send a Kochi enquiry",
+          "href": "/contact-us/"
+        }
+      ]
+    },
+    {
+      "heading": "Delivery to Kochi and Central Kerala",
+      "paragraphs": [
+        "Tube for Kochi goes by road from Mumbai, with electropolished lengths capped and sleeved; the dispatch date and transit are stated in writing when each order is confirmed.",
+        "Nearby pages:"
+      ],
+      "links": [
+        {
+          "label": "Thrissur",
+          "href": "/market-area/thrissur/"
+        },
+        {
+          "label": "Kozhikode",
+          "href": "/market-area/kozhikode/"
+        },
+        {
+          "label": "Coimbatore",
+          "href": "/market-area/coimbatore/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dairy Business MEA – Kerala's dairy sector boosts capacity with Edappally expansion (Nov 2024)",
+      "url": "https://dairybusinessmea.com/2024/11/19/keralas-dairy-sector-boosts-capacity-with-edappally-expansion/"
+    },
+    {
+      "title": "Indian Cooperative – MoS Kurian inaugurates solar-powered project of Milma (Nov 2024)",
+      "url": "https://indiancooperative.com/?p=78124"
+    },
+    {
+      "title": "Dairy News 7x7 – MoU inked to set up dairy project and logistics unit in Kerala (Jul 2022)",
+      "url": "https://dairynews7x7.com/mou-inked-to-set-up-dairy-project-and-logistics-unit-in-kerala"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "slug": "kakinada",
+  "updated": "2026-11-08",
+  "sections": [
+    {
+      "heading": "Lyfius Pharma's Penicillin-G Plant at Kakinada",
+      "paragraphs": [
+        "Kakinada's largest new hygienic-process project is a fermentation plant. Lyfius Pharma, a wholly owned step-down subsidiary of Aurobindo Pharma, built a Penicillin-G facility at Kakinada with a capacity of 15,000 tonnes a year, an investment of about Rs 2,500 crore under the government's Production Linked Incentive scheme. Aurobindo's press release of 29 October 2024 announced its inauguration by the Prime Minister and described it as one of the largest fermentation-based antibiotic intermediate plants in India, built to reduce the country's dependence on imported Penicillin-G.",
+        "Penicillin-G is the starting material for a family of semi-synthetic penicillins. Making it in India means large fermenters, seed vessels, media preparation, broth handling, solvent extraction and crystallisation, all running on site at Kakinada rather than at an overseas supplier."
+      ]
+    },
+    {
+      "heading": "The 2025 Fire and the Restart of Production",
+      "paragraphs": [
+        "A fire on 27 April 2025 damaged some ancillary equipment at the Kakinada plant. The company said there was no impact on the core manufacturing infrastructure, paused operations as a precaution while equipment was replaced, and put the loss at about Rs 4 crore. In an exchange filing on 29 June 2025 it said the Andhra Pradesh Pollution Control Board had granted consent to operate and Penicillin-G production had restarted.",
+        "Repair work and restarts are when a plant's engineering team replaces damaged lines and reviews the ones beside them. Tube bought for that work should carry the same grade, finish and documentation as the original installation, so the plant's validation record stays consistent."
+      ]
+    },
+    {
+      "heading": "Fermentation Lines: Grade and Finish at Kakinada",
+      "paragraphs": [
+        "In an antibiotic fermentation plant the lines that matter most are the ones that must stay sterile: media transfer after sterilisation, seed transfer, inoculation, sterile air and nutrient feeds. Any crevice, pit or rough weld in those lines can hold organisms through a steam cycle and contaminate a batch, and a lost fermenter batch costs far more than the tube. We recommend 316L electropolished to SF4 for these services, with orbital welds and short, self-draining branches.",
+        "Purified water and water-for-injection loops, and the CIP supply and return to product vessels, also justify 316L SF4. Downstream extraction and crystallisation lines are chosen against the solvent and pH involved, so send the stream data and we will advise. Cooling water, chilled water and other utilities do not need an electropolished bore; SF1 or mill-finish 304L is the economical choice there, and we will quote it."
+      ]
+    },
+    {
+      "heading": "What to Send With a Kakinada Enquiry",
+      "bullets": [
+        "Service for each line: sterile media, seed transfer, sterile air, purified water, WFI, solvent, CIP or utility.",
+        "Steam-sterilisation temperature and CIP chemistry, so the grade and finish match the duty.",
+        "OD x wall to ASTM A270 or ASME BPE, metres per size, and the bends, tees and clamp ferrules required.",
+        "The validation documents your quality team files. Each order carries an EN 10204 3.1 certificate traced to the heat number, PMI on every length and an Ra report for each electropolished lot; we quote within 24 hours and confirm delivery time in the quotation."
+      ],
+      "links": [
+        {
+          "label": "Send a Kakinada enquiry",
+          "href": "/contact-us/"
+        }
+      ]
+    },
+    {
+      "heading": "Delivery to Kakinada and the Godavari Districts",
+      "paragraphs": [
+        "Kakinada orders travel by road from Mumbai; we confirm the dispatch date and transit in writing for each order, and electropolished tube is end-capped and sleeved so the bore arrives clean.",
+        "Nearby pages:"
+      ],
+      "links": [
+        {
+          "label": "Rajahmundry",
+          "href": "/market-area/rajahmundry/"
+        },
+        {
+          "label": "Visakhapatnam",
+          "href": "/market-area/visakhapatnam/"
+        },
+        {
+          "label": "Vijayawada",
+          "href": "/market-area/vijayawada/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Aurobindo Pharma – Press release: PM inaugurates Lyfius Pharma's Penicillin-G facility (29 Oct 2024)",
+      "url": "https://www.aurobindo.com/api/uploads/corporateannouncements/LtrToSEsLyfiusPressRelease29102024.pdf"
+    },
+    {
+      "title": "Medical Dialogues – PM Modi inaugurates Lyfius Pharma Penicillin-G facility in AP (Oct 2024)",
+      "url": "https://medicaldialogues.in/news/industry/pharma/pm-modi-inaugurates-lyfius-pharma-penicillin-g-facility-in-ap-137295"
+    },
+    {
+      "title": "Pharma Industrial India – Aurobindo's Lyfius Pharma resumes Penicillin-G production at Kakinada plant (Jul 2025)",
+      "url": "https://www.pharmaindustrial-india.com/news/aurobindos-lyfius-pharma-resumes-penicillin-g-production-at-kakinada-plant-"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "slug": "kanpur",
+  "updated": "2026-11-08",
+  "sections": [
+    {
+      "heading": "NDDB Takes Over the Kanpur Dairy Plant",
+      "paragraphs": [
+        "In June 2025 the Uttar Pradesh government signed an agreement with the National Dairy Development Board under which the operation of three state dairy plants, at Kanpur, Gorakhpur and Kannauj, and a cattle feed plant at Ambedkar Nagar passed from the Pradeshik Co-operative Dairy Federation to NDDB. Kanpur's is the largest of the three: a plant built at a cost of Rs 160.84 crore with a capacity of 4 lakh litres of milk a day. Gorakhpur (Rs 61.80 crore) and Kannauj (Rs 88.05 crore) are each rated at 1 lakh litres a day.",
+        "Reports of the agreement say the plants had been fully built but had struggled to run at full capacity, because of a lack of commercial buyers and high operating costs. Under NDDB management they are expected to move towards full operating capacity."
+      ]
+    },
+    {
+      "heading": "What a Restart Means for Kanpur's Process Lines",
+      "paragraphs": [
+        "A dairy that has run below capacity for years usually has sections that were never commissioned, lines that stood idle, and product ranges that a new operator wants to add. When a plant of 4 lakh litres a day is brought up towards its rating, the engineering work is in reception, pasteurisation, storage, CIP and the packing and product sections, and that is where replacement and extension tube is ordered.",
+        "Idle stainless lines are worth inspecting before they go back into product service. Stagnant water, chloride residues and incomplete drying can leave pitting at welds and in the bottom of horizontal runs, and a pitted bore will not clean reliably under CIP."
+      ]
+    },
+    {
+      "heading": "Grade and Finish for a Kanpur Dairy",
+      "paragraphs": [
+        "For raw-milk reception, chilling, and utility services such as cooling and chilled water, SF1 mechanically polished 304L tube is the economical choice and cleans well. We will quote it there rather than an electropolished tube the line does not need.",
+        "Electropolished 316L to SF4 earns its cost on the lines after pasteurisation, and on any curd, lassi or other cultured product line, where a rough or pitted bore holds residue that shortens shelf life. Lactic acid and hot acid-and-caustic CIP are the reasons to move from 304L to 316L on those services, with orbital welds and short, self-draining branches."
+      ]
+    },
+    {
+      "heading": "What to Send With a Kanpur Enquiry",
+      "bullets": [
+        "A line list separating raw milk, pasteurised product, cultured product, CIP and utilities.",
+        "Whether the order replaces existing lines (send the existing OD x wall and finish) or extends the plant.",
+        "OD x wall to ASTM A270 or ASME BPE, metres per size, and the bends, tees and clamp ferrules needed.",
+        "Documentation for your records: an EN 10204 3.1 certificate traced to the heat number, PMI on every length and an Ra report for each electropolished lot come with every order. We quote within 24 hours and confirm delivery time in the quotation."
+      ],
+      "links": [
+        {
+          "label": "Send a Kanpur enquiry",
+          "href": "/contact-us/"
+        }
+      ]
+    },
+    {
+      "heading": "Delivery to Kanpur and Central Uttar Pradesh",
+      "paragraphs": [
+        "Kanpur orders are sent by road from Mumbai; the dispatch date and transit are confirmed in writing with each order, and electropolished tube is end-capped and sleeved to protect the bore.",
+        "Nearby pages:"
+      ],
+      "links": [
+        {
+          "label": "Lucknow",
+          "href": "/market-area/lucknow/"
+        },
+        {
+          "label": "Agra",
+          "href": "/market-area/agra/"
+        },
+        {
+          "label": "Moradabad",
+          "href": "/market-area/moradabad/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Indian Cooperative – UP: NDDB takes over three dairy plants; Yogi hopeful of turnaround (Jun 2025)",
+      "url": "https://www.indiancooperative.com/from-states/up-nddb-takes-over-3-dairy-plants-yogi-hopeful-of-turnaround/"
+    },
+    {
+      "title": "Dairy Business MEA – Uttar Pradesh government taps NDDB to boost dairy processing (Jun 2025)",
+      "url": "https://dairybusinessmea.com/2025/06/30/uttar-pradesh-government-taps-nddb-to-boost-dairy-processing/"
+    }
+  ]
+}

@@ -156,3 +156,10 @@ date	path	type	status	nearest_overlap_before	nearest_overlap_after	words_before	
 2026-11-08	/market-area/jamshedpur/	city-in	discard	0.675	-	1582	-	no verifiable source on an operating hygienic-process plant; retry later
 2026-11-08	/market-area/jodhpur/	city-in	discard	0.560	-	1438	-	no verifiable source on an operating hygienic-process plant; retry later
 2026-11-08	/market-area/kalyani/	city-in	discard	0.580	-	2133	-	only source found does not name Kalyani; not used; retry later
+2026-11-08	/market-area/kozhikode/	city	keep	0.721	0.529	1352	1918	MRCMPU units/profile + DairyNews7x7
+2026-11-08	/market-area/ludhiana/	city	keep	0.675	0.507	1528	2100	Verka Ludhiana + Tribune 2022 plant
+2026-11-08	/market-area/kutch-bhuj/	city	keep	0.487	0.370	1480	2084	Sarhad Dairy: 2x IANS 2026 + DairyNews7x7
+2026-11-08	/market-area/mehsana/	city	keep	0.500	0.410	2113	2695	Dudhsagar about/milestones + ICRA 2022
+2026-11-08	/market-area/mangaluru/	city	keep	0.449	0.359	2027	2646	DKMUL about/milestones + DairyNews.today Apr 2026
+2026-11-08	/market-area/kashipur/	city	discard	0.534	0.534	1608	1608	not enough verifiable sources
+2026-11-08	/market-area/meerut/	city	discard	0.643	0.643	1390	1390	only lead was an old Amul PDF

@@ -1379,5 +1379,171 @@ export const FITTING_GUIDES = {
         }
       }
     ]
+  },
+  "electropolished-pipes/duplex-electropolished-pipe": {
+    "updated": "2026-11-09",
+    "sections": [
+      {
+        "h2": "When to choose duplex electropolished pipe over 316L",
+        "paragraphs": [
+          "Type 316L electropolished pipe is the default for clean process lines, but chlorides are its weak point: pitting, crevice corrosion and chloride stress-corrosion cracking start in warm brine, seawater and chloride-bearing chemicals. Duplex stainless steel combines a ferritic and an austenitic phase, which gives it higher chloride resistance and roughly twice the yield strength of 316L. Electropolishing the bore and outside surface then removes the cold-worked layer and leaves a smooth, chromium-rich passive film that is easier to clean and sterilise.",
+          "Resistance to pitting is compared with the Pitting Resistance Equivalent Number, PREN = %Cr + 3.3 × %Mo + 16 × %N. 316L sits at about 24, Duplex 2205 at about 35, and super duplex grades 2507 and S32760 at 40 or more. Typical duties are seawater and brackish-water lines, desalination, offshore topsides, chemical dosing and chloride-bearing process streams. For chloride-free service, [316L electropolished pipe](/ss-316l-electropolished-pipes/) is usually the more economical choice."
+        ]
+      },
+      {
+        "h2": "Duplex and super duplex grades",
+        "paragraphs": [
+          "Chemical composition limits per ASTM A790 / A789 (weight %). Carbon is 0.030% maximum for all four grades."
+        ],
+        "table": {
+          "caption": "Duplex and super duplex grades for electropolished pipe and tube",
+          "head": [
+            "UNS",
+            "Common name",
+            "EN number",
+            "Cr",
+            "Ni",
+            "Mo",
+            "N",
+            "Other"
+          ],
+          "rows": [
+            [
+              "S31803",
+              "Duplex 2205",
+              "1.4462",
+              "21.0–23.0",
+              "4.5–6.5",
+              "2.5–3.5",
+              "0.08–0.20",
+              "—"
+            ],
+            [
+              "S32205",
+              "Duplex 2205",
+              "1.4462",
+              "22.0–23.0",
+              "4.5–6.5",
+              "3.0–3.5",
+              "0.14–0.20",
+              "—"
+            ],
+            [
+              "S32750",
+              "Super Duplex 2507",
+              "1.4410",
+              "24.0–26.0",
+              "6.0–8.0",
+              "3.0–5.0",
+              "0.24–0.32",
+              "Cu 0.5 max"
+            ],
+            [
+              "S32760",
+              "Super duplex (W, Cu)",
+              "1.4501",
+              "24.0–26.0",
+              "6.0–8.0",
+              "3.0–4.0",
+              "0.20–0.30",
+              "W 0.50–1.00, Cu 0.50–1.00"
+            ]
+          ]
+        },
+        "bullets": [
+          "S32205 is the tighter, higher-PREN version of 2205; material certified to S32205 normally also meets S31803, but not the other way round. State the UNS number on your enquiry.",
+          "Confirm limits against the edition of ASTM A790 / A789 named on your purchase order."
+        ]
+      },
+      {
+        "h2": "Mechanical properties compared with 316L",
+        "table": {
+          "caption": "Minimum tensile properties (ASTM A790 pipe)",
+          "head": [
+            "Grade",
+            "Tensile strength, min",
+            "Yield strength, min"
+          ],
+          "rows": [
+            [
+              "S31803",
+              "620 MPa",
+              "450 MPa"
+            ],
+            [
+              "S32205",
+              "655 MPa",
+              "450 MPa"
+            ],
+            [
+              "S32750",
+              "800 MPa",
+              "550 MPa"
+            ],
+            [
+              "S32760",
+              "750 MPa",
+              "550 MPa"
+            ],
+            [
+              "316L (ASTM A312, for comparison)",
+              "485 MPa",
+              "170 MPa"
+            ]
+          ]
+        },
+        "paragraphs": [
+          "Duplex grades have more than twice the minimum yield strength of 316L. The higher yield strength lets a designer use a thinner wall for the same pressure rating, which partly offsets the higher cost of the alloy; check the wall against your piping code before reducing it."
+        ]
+      },
+      {
+        "h2": "Ferrite balance and ASTM A923 testing",
+        "paragraphs": [
+          "Duplex properties depend on a roughly equal ferrite–austenite microstructure. Incorrect solution annealing, slow cooling or heavy welding heat input can push the ferrite outside its window or form sigma and other intermetallic phases, typically after exposure in the range of about 600–1000 °C. These phases cut toughness and corrosion resistance without changing the chemistry shown on the mill certificate.",
+          "ASTM A923 detects detrimental intermetallic phases: Method A is a metallographic etch screen, Method B a Charpy impact test and Method C a ferric chloride corrosion test. Sakshi Forge provides a ferrite measurement and ASTM A923 test report on request. State the method and your acceptance criteria, including the ferrite range, on the enquiry."
+        ]
+      },
+      {
+        "h2": "What comes with every duplex EP pipe lot",
+        "bullets": [
+          "EN 10204 3.1 certificate traced to the heat number; EN 10204 3.2 on request.",
+          "PMI on every length to confirm the grade.",
+          "Measured Ra report for each electropolished lot.",
+          "Hydrostatic, ultrasonic and dye-penetrant testing.",
+          "Third-party inspection by SGS, BV or TUV on request.",
+          "Ferrite / ASTM A923 test report on request.",
+          "Ends capped and each length sleeved to protect the electropolished surface."
+        ],
+        "paragraphs": [
+          "See [quality assurance](/quality-assurance/) for how inspection and documentation are handled."
+        ]
+      },
+      {
+        "h2": "How to get a duplex electropolished pipe quote in 24 hours",
+        "paragraphs": [
+          "Include these details and you will receive a written quotation within 24 hours:"
+        ],
+        "bullets": [
+          "Grade and UNS number (S31803, S32205, S32750 or S32760).",
+          "Product standard: ASTM A790 pipe or ASTM A789 tube; seamless or welded.",
+          "Size (1/2\" to 12\"), schedule or wall thickness, and length.",
+          "Quantity in metres or lengths.",
+          "Electropolished surface: bore, outside or both, and target Ra if you have one.",
+          "Documents and tests: 3.1 or 3.2, third-party inspection, ferrite / A923 report."
+        ],
+        "subsections": [
+          {
+            "h3": "Related electropolished products",
+            "paragraphs": [
+              "Compare with [electropolished pipes](/electropolished-pipes/), [electropolished tubes](/electropolished-tubes/), [electropolished seamless pipes](/electropolished-seamless-pipes/) and [low-Ra electropolished pipes](/low-ra-electropolished-pipes/)."
+            ]
+          }
+        ],
+        "cta": {
+          "label": "Request a duplex EP pipe quotation",
+          "href": "/contact-us/"
+        }
+      }
+    ]
   }
 };

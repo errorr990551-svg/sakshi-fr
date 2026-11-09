@@ -662,7 +662,7 @@ async function runPrerender() {
     const pageTitle = formatTitle(route.title);
     const pageDesc = formatMetaDesc(route.description);
     html = html.replace(/<title>.*?<\/title>/, `<title>${pageTitle}</title>`);
-    html = html.replace(/<meta name="description" content=".*?" \/>/, `<meta name="description" content="${pageDesc}" />`);
+    html = html.replace(/<meta name="description" content=".*?" \/>/, `<meta name="description" content="${(pageDesc || '').replace(/"/g, '&quot;')}" />`);
     const pageKeywords = route.keywords || 'electropolished pipe, stainless steel 316L, electropolishing, Sakshi Forge';
     const pageRobots = route.robots || 'index, follow';
     html = html.replace(/<meta name="keywords" content=".*?" \/>/, `<meta name="keywords" content="${pageKeywords}" />`);

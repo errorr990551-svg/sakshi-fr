@@ -14,7 +14,7 @@ for(const p of pages){const r=route(p);const h=fs.readFileSync(p,'utf8');
  const d=[...h.matchAll(/<meta name="description" content="[^"]*"[^>]*>/g)];
  if(d.length!==1)add('meta description count != 1',`${r} (${d.length})`);
  const dc=(d[d.length-1]?.[0].match(/content="([^"]*)"/)||[])[1]||''; (descs[dc]??=[]).push(r);
- if(dc.length<70||dc.length>165)add('description length out of 70-165',`${r} (${dc.length})`);
+ const dlen=dc.replace(/&quot;/g,'"').replace(/&amp;/g,'&').length; if(dlen<70||dlen>165)add('description length out of 70-165',`${r} (${dlen})`);
  const c=[...h.matchAll(/<link[^>]+rel="canonical"[^>]*>/g)].map(m=>(m[0].match(/href="([^"]*)"/)||[])[1]);
  if(c.length!==1)add('canonical count != 1',`${r} (${c.length}: ${c.join(' | ')})`);
  if(c.length && c[c.length-1]!==SITE+r)add('canonical != self URL',`${r} -> ${c[c.length-1]}`);

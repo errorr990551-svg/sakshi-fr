@@ -1,0 +1,120 @@
+{
+  "slug": "pimpri-chinchwad",
+  "updated": "2026-11-09",
+  "sections": [
+    {
+      "heading": "Hindustan Antibiotics, Pimpri: Where Pimpri-Chinchwad's Industry Began",
+      "paragraphs": [
+        "Pimpri-Chinchwad's industrial history starts with a pharmaceutical plant. Hindustan Antibiotics Limited (HAL) was incorporated on 10 March 1954 with support from WHO and UNICEF, has its registered office at Pimpri, Pune 411018, and began production in 1955. The Department of Pharmaceuticals describes it as the first public sector undertaking in drugs and pharmaceuticals and the first Indian unit to make antibiotics commercially, starting with penicillin and streptomycin and later gentamicin, ampicillin and amoxycillin.",
+        "HAL also moved into biotechnology early: it launched rHu-Erythropoietin under the name Hemax in 1993, recorded as India's first recombinant DNA product. Its formulation range now covers injectables, capsules, tablets, large volume parenterals and liquid orals made to pharmacopoeial standards, as well as agro-veterinary products.",
+        "Fermentation, sterile injectables and large volume parenterals are the services where electropolished tube matters most. Fermenter feed and sterile-air lines, harvest and transfer lines, water-for-injection loops and pure-steam headers all have to be cleaned and sterilised in place and then shown to be free of residue. An SF4 electropolished 316L bore has fewer surface defects for broth, protein or endotoxin to hold on to, which is why these lines are specified tighter than general plant pipework.",
+        "In a fermentation suite of the kind HAL built in Pimpri, the hardest lines to keep clean are the small ones: inoculum transfer from the seed vessel, sampling valves on the main fermenter, and antifoam and nutrient addition lines that sit full of liquid between batches. These lines run hot during steam-in-place and cool during the batch, so any polishing groove or weld undercut becomes a place where residue survives sterilisation. Specifying SF4 316L for them, and asking for the Ra report with the tube, gives the validation team a measured starting surface rather than an assumed one."
+      ]
+    },
+    {
+      "heading": "Bhosari MIDC and the Pimpri-Chinchwad Industrial Belt",
+      "paragraphs": [
+        "HAL's arrival in 1954 started the industrialisation of Pimpri, Chinchwad and Bhosari, and industry now covers about 2,048 hectares, roughly 12 per cent of the city's area. Bhosari MIDC is the largest industrial area in the region and is home to companies such as Tata Motors, Philips, Thermax and Century Enka, alongside a dense base of automotive and engineering suppliers. The Pune-Nashik highway runs along its edge.",
+        "Most of this belt is not a food or pharma market, but it is where a lot of process equipment for those markets is designed and built. Pimpri-Chinchwad fabricators and OEMs make skids, vessels, heat-exchange packages and utility systems that end up in pharma, dairy and chemical plants across India. For them, electropolished tube is a bought-in component that must arrive with paperwork their own customer's QA will accept, cut to a length plan that matches the fabrication drawings.",
+        "That changes what a Bhosari or Chinchwad buyer needs from a tube supplier. A fabricator usually orders several sizes in small quantities for one job, wants the heat number marked on each length so it can be carried onto weld maps and turnover packs, and needs the Ra value on paper because the end customer will ask for it at factory acceptance testing."
+      ]
+    },
+    {
+      "heading": "Steam and Instrumentation at Kasarwadi and Pimpri",
+      "paragraphs": [
+        "Pimpri-Chinchwad is also a centre for steam engineering. Forbes Marshall, founded in 1926 and headquartered in Pune, opened its first steam-products factory at Kasarwadi in 1958 and moved into control instrumentation in 1962; its flow meters and control valves are made at its Pimpri facilities. Its products include boilers, steam systems, process analysers, control valves and flowmeters.",
+        "Steam and instrumentation work brings its own tube needs. Clean-steam and pure-steam distribution in a pharmaceutical plant uses 316L, and SF4 electropolishing keeps the inside of the line passive and less prone to rouge. Sample lines to process analysers and impulse lines to transmitters use small-bore ASTM A269 instrument tube, where a clean, smooth bore keeps samples representative and stops deposits from building up at bends and fittings.",
+        "For a plant buying clean-steam distribution, the details that matter are drainability and condensate. Headers should be laid with a continuous fall to traps, branch take-offs kept short so condensate does not collect in dead legs, and the tube bore left smooth enough that the passive layer is not broken up at every weld. Electropolished 316L does not stop rouge on its own, but a cleaner, chromium-enriched starting surface slows its growth and makes periodic derouging and repassivation more effective when the plant schedules them."
+      ]
+    },
+    {
+      "heading": "SF1 or SF4, 304L or 316L for Pimpri-Chinchwad Projects",
+      "paragraphs": [
+        "Because so much Pimpri-Chinchwad demand is fabricator demand, the right finish depends on where the finished equipment will be installed, not on the city itself. A CIP skid going to a dairy can often use SF1 304L or 316L. A WFI skid, a pure-steam generator outlet or a bioreactor package for an injectables or biotech plant should be SF4 316L, matching the standard HAL-type sterile and fermentation services have always demanded.",
+        "Mixing finishes inside one skid is common and sensible: SF4 on the product and WFI side, SF1 on cooling, utility and drain lines. State on the RFQ which lines are which, so the quote prices only the lengths that need electropolishing. Where a line will see hot chlorides or aggressive cleaning acids, 904L electropolished is available, and the choice should be made against the actual medium and temperature."
+      ]
+    },
+    {
+      "heading": "Building a Skid in Chinchwad or Bhosari: Length Plans, Weld Maps and Turnover Packs",
+      "paragraphs": [
+        "A process skid built in a Chinchwad or Bhosari shop is normally inspected twice: once by the shop's own QC during fabrication and again by the end customer at factory acceptance testing before it leaves Pimpri-Chinchwad. Hygienic tube on such a skid is joined by orbital welding, and every weld is logged against the heat numbers of the two pieces it joins. If the heat number is missing from a length, the weld map has a gap, and the end customer's QA will ask the fabricator to explain it.",
+        "That is why ordering electropolished tube for a fabrication job is closer to ordering a controlled component than buying stock material. The useful order states the cut lengths or a length plan taken from the isometrics, so offcuts are kept to a minimum and no length is joined only to make up distance. It says whether the ends must stay capped until the tube reaches the welding bay, because an uncapped SF4 bore stored on an open shop floor near grinding and cutting can pick up iron particles that later show up as surface rust.",
+        "The turnover pack the fabricator hands over with the skid then carries our EN 10204 3.1 certificate for each heat, the PMI record for each length, and the Ra report for each electropolished lot, filed alongside the shop's own weld logs, borescope records and pressure-test reports. Keeping our documents in the same heat-number order as the weld map saves the fabricator a day of cross-referencing at handover and answers the first questions an auditor asks."
+      ]
+    },
+    {
+      "heading": "What a Pimpri-Chinchwad Fabricator or Plant Should Send in an RFQ",
+      "paragraphs": [
+        "A Pimpri-Chinchwad enquiry is usually for a fabrication job or a plant line with a fixed drawing set. Sending the following lets us return a quotation within 24 hours of a complete enquiry."
+      ],
+      "bullets": [
+        "Whether the order is for your own plant in Pimpri, Chinchwad, Bhosari or Kasarwadi, or for a skid or package your shop will ship to an end customer, and that customer's industry.",
+        "A line list with grade and finish for each service: SF4 316L for WFI, pure steam, fermentation and product lines; SF1 304L or 316L for utilities; 904L electropolished where the medium needs it.",
+        "Size, wall and quantity per size, with the standard: ASTM A270 or A269 for hygienic and instrument tube, A249 for welded tube, A312 for pipe.",
+        "The documents your end customer's QA expects in the turnover pack: EN 10204 3.1 certificates traced to heat number, PMI on every length, NABL-lab chemical analysis and the Ra report for each electropolished lot.",
+        "The delivery point (your shop or the plant) and the date the fabrication schedule needs the tube on site."
+      ],
+      "links": [
+        {
+          "label": "Send your Pimpri-Chinchwad RFQ",
+          "href": "/contact-us/"
+        },
+        {
+          "label": "Electropolished pipes",
+          "href": "/electropolished-pipes/"
+        },
+        {
+          "label": "Electropolished tubes",
+          "href": "/electropolished-tubes/"
+        }
+      ]
+    },
+    {
+      "heading": "Delivery to Pimpri, Chinchwad and Bhosari",
+      "paragraphs": [
+        "Our base is in Mumbai (Shop No. 05, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai 400004), and electropolished pipes and tubes go by road to fabricators and plants across Pimpri-Chinchwad, Bhosari MIDC and Kasarwadi. Dispatch and transit are confirmed in writing with each quotation, with ends capped so the bore reaches your shop clean.",
+        "Other Pune-region markets we supply:"
+      ],
+      "links": [
+        {
+          "label": "Pune",
+          "href": "/market-area/pune/"
+        },
+        {
+          "label": "Chakan",
+          "href": "/market-area/chakan/"
+        },
+        {
+          "label": "Ranjangaon",
+          "href": "/market-area/ranjangaon/"
+        },
+        {
+          "label": "Satara",
+          "href": "/market-area/satara/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Department of Pharmaceuticals: Hindustan Antibiotics Limited (Pimpri)",
+      "url": "https://www.pharma-dept.gov.in/hindustan-antibiotics-limited"
+    },
+    {
+      "title": "Wikipedia: Hindustan Antibiotics (1954, WHO/UNICEF, Hemax 1993)",
+      "url": "https://en.wikipedia.org/wiki/Hindustan_Antibiotics"
+    },
+    {
+      "title": "Wikipedia: Pimpri-Chinchwad (industrialisation from 1954, industrial land use)",
+      "url": "https://en.wikipedia.org/wiki/Pimpri-Chinchwad"
+    },
+    {
+      "title": "Wikipedia: Bhosari (Bhosari MIDC companies)",
+      "url": "https://en.wikipedia.org/wiki/Bhosari"
+    },
+    {
+      "title": "Wikipedia: Forbes Marshall (Kasarwadi factory 1958, Pimpri instrumentation)",
+      "url": "https://en.wikipedia.org/wiki/Forbes_Marshall"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "slug": "visakhapatnam",
+  "updated": "2026-11-09",
+  "sections": [
+    {
+      "heading": "AMTZ at Nadupuru: Visakhapatnam's Medical Device Park",
+      "paragraphs": [
+        "The Andhra Pradesh MedTech Zone (AMTZ) sits in Nadupuru village next to the Visakhapatnam Steel Plant on about 270 acres. It was conceived in November 2015 as India's first medical device park, incorporated on 30 April 2016, and had its foundation stone laid on 19 August 2016. AMTZ says the park was built in 342 days and now holds more than 100 companies, with shared manufacturing and scientific facilities that a single small device maker could not afford alone.",
+        "The testing labs on the campus shape what device makers in Nadupuru buy. AMTZ runs centres for EMC and electrical safety, biomaterial testing (sterility, histopathology, physico-chemical tests, accelerated ageing and package validation), gamma irradiation, MRI superconducting magnets, lasers, 3-D printing, and mould and machining. The Kalam Institute of Health Technology, a WHO Collaborating Centre since 2022, is on the same site. During COVID the park reported output of over 100 ventilators, 500 oxygen concentrators and a million RT-PCR kits a day.",
+        "For tube, this means two kinds of demand. Device makers building dialysis, oxygen, ventilator or diagnostic equipment need small-bore stainless tube in fluid and gas paths that will be checked for particulates and cleanability, where an electropolished 316L bore holds less residue and is easier to validate. The shared labs and pilot plants need purified-water, compressed-air and process-gas lines for clean rooms and test rigs, which are usually specified to ASTM A269 or A270 with a stated internal finish."
+      ]
+    },
+    {
+      "heading": "VSEZ Duvvada: Formulation and Injectable Units in Visakhapatnam",
+      "paragraphs": [
+        "The Visakhapatnam Special Economic Zone at Duvvada has drawn pharmaceutical formulation plants since the mid-2000s. Business Standard reported in 2005 that Dr Reddy's (15 acres), Gland Pharma (10 acres, for high-value injections) and Med Chem (4 acres) were setting up formulation units there as export-oriented units. The same report noted that bulk drug manufacture was not allowed in the zone because of environmental concerns, so only formulation work was permitted.",
+        "That rule is useful for a buyer to know, because a formulation or injectable plant has a different piping list from an API plant. There are fewer solvent reactor lines and many more clean utilities: purified water and water-for-injection loops, pure steam to sterilisers and vessels, CIP and SIP returns, and transfer lines from compounding vessels to filling. These are the lines a CDSCO or importing-country inspector traces back to drawings, weld logs and material certificates under Schedule M and the buyer's own GMP audits.",
+        "For a VSEZ injectables plant, 316L in SF4 electropolished finish is the normal choice for WFI and pure-steam distribution, because the smoother, chromium-rich bore resists rouging and supports the low bioburden the loop must show. Purified-water generation and non-product utilities often use SF1 316L to keep the project cost sensible without lowering what touches the product."
+      ]
+    },
+    {
+      "heading": "Visakhapatnam Port's Seafood Plants and Their Process Lines",
+      "paragraphs": [
+        "Visakhapatnam is now India's largest seafood port. Maritime Gateway, citing MPEDA data, reported in May 2026 that the port shipped a record 5.12 lakh tonnes of seafood in 2025-26, more than 26 per cent of India's 19.32 lakh tonnes, ahead of JNPT at 3.28 lakh tonnes and Kochi at 1.83 lakh tonnes. When US tariffs cut the value of shipments to the United States, Vizag exporters moved volume to the European Union (up 37.9 per cent) and China (up 22.7 per cent), helped by the National Traceability Framework introduced in 2025.",
+        "EU and Chinese buyers audit processing plants against their own food-safety rules on top of FSSAI and MPEDA requirements. In a shrimp or fish processing and freezing plant, the stainless lines that come under that audit are chilled and chlorinated wash-water headers, brine and glazing-water lines, ice-slurry transfer, and the CIP supply and return pipework around graders, cookers and IQF freezers.",
+        "All of these lines see chloride every day, from salt, brine and chlorine sanitiser, inside a building that also breathes coastal air. A rough or poorly passivated surface pits first at welds and under deposits, and a pitted line is hard to clean and easy for an auditor to flag. That is why seafood exporters around the port are better served by 316L than 304L for anything wet."
+      ]
+    },
+    {
+      "heading": "Choosing SF1, SF4 and Grade for Visakhapatnam's Coastal Plants",
+      "paragraphs": [
+        "Vizag's three tube markets ask different questions. An injectables line at Duvvada is driven by validation and needs SF4 316L on WFI, pure steam and product transfer. A seafood plant near the port is driven by chloride and cleaning, so 316L is the grade floor and SF1 is usually enough on wash and brine headers, with SF4 kept for the CIP circuit and any line in direct product contact. A device maker at AMTZ is driven by particulates and cleanability in small bores, where SF4 on 316L instrument tube makes the internal surface easier to prove.",
+        "Ask for the Ra value you need, not only the finish name. We issue an internal Ra report for every electropolished lot, along with an EN 10204 3.1 certificate traced to the heat number and PMI on each length, so the finish and the alloy can be checked by your QA team or an outside auditor. Where a line carries hot brine or acidic cleaning chemicals that would pit 316L, 904L electropolished is the upgrade we can supply; send the medium and temperature so the grade is chosen against the real duty."
+      ]
+    },
+    {
+      "heading": "What a Visakhapatnam Buyer Should Put in an RFQ",
+      "paragraphs": [
+        "Enquiries from Visakhapatnam reach a firm price fastest when they say which of the city's industries the tube is for and what the inspector will look at. With a complete enquiry we send a quotation within 24 hours."
+      ],
+      "bullets": [
+        "The site and service: an AMTZ device or lab line at Nadupuru, a WFI, pure-steam or CIP line in a Duvvada VSEZ formulation unit, or a wash, brine or CIP line in a seafood plant near the port.",
+        "Grade and finish per line, for example SF4 316L for WFI loops and product transfer, SF1 316L for wash-water headers, and any line where 904L electropolished should be considered.",
+        "The standard, outer diameter, wall thickness and total length for each size: ASTM A270 or A269 for sanitary and instrument tube, A249 for welded tube, A312 for process pipe.",
+        "The paperwork your auditor needs: EN 10204 3.1 certificates, PMI records, NABL-lab chemical analysis and the Ra report for each electropolished lot, and whether an EU or other importer's audit pack must include them.",
+        "Where the tube should be delivered: the plant gate, a unit inside the Duvvada SEZ, or a fabricator's shop that will build the skids first."
+      ],
+      "links": [
+        { "label": "Send your Visakhapatnam RFQ", "href": "/contact-us/" },
+        { "label": "Electropolished pipes", "href": "/electropolished-pipes/" },
+        { "label": "Electropolished tubes", "href": "/electropolished-tubes/" }
+      ]
+    },
+    {
+      "heading": "Delivery to Visakhapatnam, Duvvada and Nadupuru",
+      "paragraphs": [
+        "We operate from Mumbai (Shop No. 05, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai 400004) and send electropolished pipes and tubes to Visakhapatnam city, the Duvvada SEZ, AMTZ at Nadupuru and plants along the port. Dispatch and transit are confirmed in writing with each quotation. Ends are capped and lengths packed to protect the bore finish on the long road to the east coast.",
+        "Nearby Andhra Pradesh markets we also supply:"
+      ],
+      "links": [
+        { "label": "Anakapalle", "href": "/market-area/anakapalle/" },
+        { "label": "Kakinada", "href": "/market-area/kakinada/" },
+        { "label": "Rajahmundry", "href": "/market-area/rajahmundry/" },
+        { "label": "Vijayawada", "href": "/market-area/vijayawada/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Wikipedia: Andhra Pradesh MedTech Zone (Nadupuru, 270 acres, labs, Kalam Institute)", "url": "https://en.wikipedia.org/wiki/Andhra_Pradesh_Medtech_Zone" },
+    { "title": "AMTZ: Andhra Pradesh MedTech Zone (testing centres, 342-day build, COVID output)", "url": "https://amtz.in/" },
+    { "title": "Maritime Gateway: Vizag Port leads India's seafood exports (FY2025-26, MPEDA data)", "url": "https://www.maritimegateway.com/vizag-port-leads-indias-seafood-exports/" },
+    { "title": "Business Standard: Vizag SEZ to see Rs 65 cr investments from 3 pharma majors (2005)", "url": "https://www.business-standard.com/article/economy-policy/vizag-sez-to-see-rs-65cr-investments-from-3-pharma-majors-105032301061_1.html" }
+  ]
+}

@@ -139,10 +139,16 @@ RewriteRule ^ - [R=404,L]
   ExpiresByType application/javascript "access plus 1 month"
   ExpiresByType font/woff2 "access plus 1 year"
   ExpiresByType text/html "access plus 1 hour"
+  ExpiresByType video/mp4 "access plus 1 month"
 </IfModule>
 <IfModule mod_headers.c>
   <FilesMatch "\.(html|htm)$">
     Header set Cache-Control "public, max-age=3600, must-revalidate"
+  </FilesMatch>
+  # Vite build files in /assets/ carry a content hash in their name, so a
+  # changed file always gets a new URL and can be cached for a year.
+  <FilesMatch "-[A-Za-z0-9_-]{8,}\.(js|css)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
   # 404/410 responses are served from 404.html: never cache them, or a page
   # published after someone hit the URL keeps returning 404 for an hour

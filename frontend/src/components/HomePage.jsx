@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { 
   ArrowRight, ShieldCheck, Award, FileText, CheckCircle2, ChevronDown, 
   ChevronUp, Phone, Mail, Clock, Download, ExternalLink, HelpCircle, 
@@ -15,6 +15,27 @@ import { imgSize } from '../utils/imgSize';
 
 export default function HomePage({ onEnquireClick }) {
   const [openFaq, setOpenFaq] = useState(0);
+  const videoRef = useRef(null);
+
+  // Load the 1.4 MB lab video only when it scrolls near the viewport, so it
+  // does not compete with the hero image and page scripts on first load.
+  useEffect(() => {
+    const v = videoRef.current;
+    if (!v) return;
+    const start = () => {
+      if (v.dataset.loaded) return;
+      v.dataset.loaded = '1';
+      v.src = '/technical insight.mp4';
+      const p = v.play();
+      if (p && p.catch) p.catch(() => {});
+    };
+    if (!('IntersectionObserver' in window)) { start(); return; }
+    const io = new IntersectionObserver((entries) => {
+      if (entries.some((e) => e.isIntersecting)) { start(); io.disconnect(); }
+    }, { rootMargin: '200px' });
+    io.observe(v);
+    return () => io.disconnect();
+  }, []);
   const [formData, setFormData] = useState({
     name: '',
     company: '',
@@ -500,7 +521,8 @@ export default function HomePage({ onEnquireClick }) {
             <div style={{ position: 'sticky', top: '100px' }}>
               <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255, 193, 7, 0.25)', boxShadow: '0 12px 35px rgba(0,0,0,0.6)', backgroundColor: '#070a10' }}>
                 <video 
-                  src="/technical insight.mp4" 
+                  ref={videoRef}
+                  preload="none"
                   controls 
                   playsInline 
                   autoPlay 

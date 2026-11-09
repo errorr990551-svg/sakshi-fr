@@ -1,0 +1,91 @@
+{
+ "slug": "aurangabad",
+ "updated": "2026-11-09",
+ "sections": [
+  {
+   "heading": "Chhatrapati Sambhajinagar (Aurangabad): Waluj, Chikalthana, Paithan and Shendra",
+   "paragraphs": [
+    "Lokmat Times reports that more than ten pharmaceutical companies operate across Waluj, Paithan, Chikalthana and Shendra in Chhatrapati Sambhajinagar, many with drugs approved by the US FDA, and that a biopharma institute under the NIPER model has been proposed for the city.",
+    "For a supplier of process tube, that spread matters: Shendra hosts newer export blocks inside an SEZ, while Waluj and Chikalthana carry older, expanding plants that often need extensions matched to existing pipework."
+   ]
+  },
+  {
+   "heading": "Wockhardt's Shendra SEZ and Lupin's US FDA EIR",
+   "paragraphs": [
+    "Wockhardt's site at E1/1, MIDC Shendra SEZ was established in 2006 with separate blocks for injectables, oral solids and liquids, ointments and inhalers. Each block has its own utility station and an HVAC technical floor, and the site lists WHO-GMP certification through CDSCO and FDA Maharashtra, along with approvals from HPRA Ireland and the UK MHRA. Its parenteral range covers vials, cartridges, dispopens and pre-filled syringes.",
+    "In November 2025 Medical Dialogues reported that Lupin had received an Establishment Inspection Report from the US FDA for its Aurangabad facility after a product-specific pre-approval inspection held from 1 to 5 September 2025.",
+    "The Wockhardt site's postal code is 431154. Because it sits inside an SEZ, buyers there should say so on the enquiry, and we will issue heat-numbered certificates that the site's stores and quality teams can file against each block."
+   ]
+  },
+  {
+   "heading": "Tube for Aurangabad Injectable, Cartridge and Inhaler Blocks",
+   "paragraphs": [
+    "A plant filling cartridges and pre-filled syringes needs WFI and clean-steam distribution that will stand up to European and UK inspectors as well as Maharashtra FDA checks under Schedule M. For those systems we recommend 316L to ASTM A270 with an SF4 electropolished bore per ASME BPE, because each block's own utility station means a separate validated loop rather than one shared header.",
+    "Inhaler and oral-liquid blocks typically take 316L SF1 for purified water and product transfer, while HVAC chilled-water and compressed-air lines on the technical floor can be 304L to ASTM A312 without electropolishing."
+   ]
+  },
+  {
+   "heading": "Sending an Enquiry From Chhatrapati Sambhajinagar",
+   "paragraphs": [
+    "Group the line list by block (injectable, oral, ointment, inhaler) and by system, with OD, wall and metres, the grade, the finish and the Ra limit your protocol sets. If the tender references an EU or UK approval, say so; we will match the paperwork to it.",
+    "Every electropolished lot is supplied with an internal Ra report and an EN 10204 3.1 certificate traced to the heat number, with PMI on each length. See the electropolished pipes and electropolished tubes pages for size ranges; a complete enquiry is quoted within 24 hours."
+   ],
+   "links": [
+    {
+     "label": "Electropolished pipes",
+     "href": "/electropolished-pipes/"
+    },
+    {
+     "label": "Electropolished tubes",
+     "href": "/electropolished-tubes/"
+    },
+    {
+     "label": "Send an Aurangabad enquiry",
+     "href": "/contact-us/"
+    }
+   ],
+   "bullets": [
+    "Block and dosage form: injectable (vials, cartridges, dispopens, pre-filled syringes), oral, ointment or inhaler",
+    "System per line: WFI, clean steam, purified water, product transfer, CIP or HVAC utility",
+    "OD by wall, metres per size, and the Ra limit for each electropolished line",
+    "Which regulator's approval the block holds (US FDA, HPRA, MHRA or WHO-GMP) so certificates are assembled to suit",
+    "Whether the order is for Shendra SEZ, Waluj or Chikalthana, as SEZ paperwork differs"
+   ]
+  },
+  {
+   "heading": "Delivery to Aurangabad and Marathwada",
+   "paragraphs": [
+    "Orders for Shendra, Waluj or Chikalthana travel by road from Mumbai with each electropolished length sealed at both ends; dispatch and transit are confirmed in writing with each quotation.",
+    "Other Maharashtra pages:"
+   ],
+   "links": [
+    {
+     "label": "Jalgaon",
+     "href": "/market-area/jalgaon/"
+    },
+    {
+     "label": "Nashik",
+     "href": "/market-area/nashik/"
+    },
+    {
+     "label": "Pune",
+     "href": "/market-area/pune/"
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wockhardt – Shendra, India manufacturing unit",
+   "url": "https://www.wockhardt.com/about-us/our-manufacturing-units/shendra-india/"
+  },
+  {
+   "title": "Medical Dialogues – Lupin gets EIR from USFDA for Aurangabad facility",
+   "url": "https://medicaldialogues.in/amp/news/industry/pharma/lupin-gets-eir-from-usfda-for-aurangabad-facility-158551"
+  },
+  {
+   "title": "Lokmat Times – Chhatrapati Sambhajinagar could get a biopharma institute",
+   "url": "https://www.lokmattimes.com/aurangabad/chhatrapati-sambhajinagar-could-get-a-biopharma-institute/"
+  }
+ ]
+}

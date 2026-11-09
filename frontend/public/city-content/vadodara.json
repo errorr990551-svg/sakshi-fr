@@ -1,0 +1,87 @@
+{
+ "slug": "vadodara",
+ "updated": "2026-11-09",
+ "sections": [
+  {
+   "heading": "Vadodara's Pharma Heritage: Alembic, the Drugs Laboratory and LM College",
+   "paragraphs": [
+    "Vadodara's drug industry is older than most in India. Alembic was founded in the city in 1907, and in 1947 a Drugs Laboratory was set up in Vadodara that later grew into the L.M. College of Pharmacy. That early base of chemists and pharmacists is part of why the district now hosts plants from domestic and multinational companies alike.",
+    "Gujarat as a whole makes about a third of India's medicines, and Vadodara district's sites stretch from Makarpura inside the city to Padra in the west, Piparia and Panelav to the east, and Karakhadi further out."
+   ]
+  },
+  {
+   "heading": "Makarpura, Padra, Panelav, Karakhadi and Piparia",
+   "paragraphs": [
+    "Pfizer and Dr. Reddy's are listed at Makarpura; Sterling and Astec at Padra; Alembic at both Panelav and Karakhadi, with J.B. Chemicals also at Karakhadi; Aleor at Panelav; IPCA at Piparia; and Torrent at Indrad. Each location has its own mix of oral solids, topicals and APIs, so a pipe specification that suits one plant may be over-built for the next.",
+    "In August 2019 Industrial Info reported that the US FDA had cleared Alembic's export-oriented Vadodara facility with zero Form 483 observations after an inspection that ended on 20 August, a result that depends partly on how well water and process systems are documented.",
+    "Further out, Sun Pharma is listed at Halol and a group of multinationals at Savli. Those estates have their own pages; this one covers the plants inside Vadodara city and its nearer talukas."
+   ]
+  },
+  {
+   "heading": "Topicals, Orals and APIs: Picking 316L SF1 or SF4 in Vadodara",
+   "paragraphs": [
+    "Creams and ointments of the kind made at Panelav are compounded in jacketed vessels and transferred through heated lines that must be cleaned between batches; 316L to ASTM A270 with an SF1 finish is the usual choice, stepping up to SF4 per ASME BPE where the purified-water loop feeds a sterile or ophthalmic product.",
+    "API plants in Padra and Piparia move solvents and slurries where 316L pipe to ASTM A312 is more relevant than mirror finish. Gujarat FDCA and CDSCO inspectors under Schedule M look for traceable material certificates on every process-contact line, whichever finish is chosen."
+   ]
+  },
+  {
+   "heading": "What a Vadodara Buyer Should Include",
+   "paragraphs": [
+    "List each loop as purified water, WFI, product transfer, CIP or utility, with OD, wall and metres, and note the grade (304L or 316L) and the target Ra. If the project is a brownfield extension at Makarpura or Karakhadi, mention the existing tube standard so new lengths match the old.",
+    "We supply an EN 10204 3.1 certificate traced to the heat number and an internal Ra report for every electropolished lot, and PMI-check each length before dispatch. Product data is on the electropolished pipes and electropolished tubes pages, and a complete enquiry gets a quotation within 24 hours."
+   ],
+   "links": [
+    {
+     "label": "Electropolished pipes",
+     "href": "/electropolished-pipes/"
+    },
+    {
+     "label": "Electropolished tubes",
+     "href": "/electropolished-tubes/"
+    },
+    {
+     "label": "Send a Vadodara enquiry",
+     "href": "/contact-us/"
+    }
+   ],
+   "bullets": [
+    "Plant and block: Makarpura, Padra, Panelav, Karakhadi, Piparia or a site outside the city",
+    "Dosage form the loop serves, such as topical, oral solid, oral liquid or API, since that sets SF1 or SF4",
+    "Existing tube OD and standard on brownfield lines so replacement lengths match",
+    "Grade (304L, 316L or 904L) and the Ra figure your validation protocol asks for",
+    "Quantities in metres per size and any fittings to be quoted together"
+   ]
+  },
+  {
+   "heading": "Delivery to Vadodara District",
+   "paragraphs": [
+    "Tube for Vadodara plants is trucked from Mumbai along the western corridor, packed with end caps and protective sleeves; dispatch and transit are confirmed in writing with each quotation.",
+    "Related central Gujarat pages:"
+   ],
+   "links": [
+    {
+     "label": "Halol",
+     "href": "/market-area/halol/"
+    },
+    {
+     "label": "Savli",
+     "href": "/market-area/savli/"
+    },
+    {
+     "label": "Ankleshwar",
+     "href": "/market-area/ankleshwar/"
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "title": "Wikipedia – Pharmaceutical industry in Gujarat",
+   "url": "https://en.wikipedia.org/wiki/Pharmaceutical_industry_in_Gujarat"
+  },
+  {
+   "title": "Industrial Info – US FDA clears Alembic's Vadodara pharma plant",
+   "url": "https://www.industrialinfo.com/news/article/us-fda-clears-alembics-vadodara-pharma-plant-in-india-an-industrial-info-market-brief--276680"
+  }
+ ]
+}

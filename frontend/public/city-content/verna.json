@@ -1,0 +1,87 @@
+{
+ "slug": "verna",
+ "updated": "2026-11-09",
+ "sections": [
+  {
+   "heading": "Verna Industrial Estate: South Goa's Pharma Address",
+   "paragraphs": [
+    "Verna sits about 10 km north of Margão and 23 km south-east of Panjim, with Dabolim Airport roughly 14 km away and Madgaon railway station about 11 km off. The village itself counted 6,632 residents in the 2011 census, yet it lends its name to the Verna Industrial Area, one of the busiest manufacturing estates in Goa.",
+    "Reporting on a January 2025 inauguration, The Goan put Goa's share of India's pharmaceutical production and exports at around 30 percent. A large part of that output leaves from plants on the Verna plateau, which is why most process tube enquiries from this estate come from drug makers rather than general engineering units."
+   ]
+  },
+  {
+   "heading": "Marksans, Centaur and Indoco Plants at Verna",
+   "paragraphs": [
+    "In January 2025 Chief Minister Pramod Sawant inaugurated a new Marksans Pharma facility at Verna Industrial Estate, where the company already ran a plant serving US exports; the same report noted a USFDA final ANDA approval for Loratadine. In August 2026 the State Environment Impact Assessment Authority granted Centaur Pharmaceuticals clearance for an industrial shed on the estate, on condition that 80 percent of its workforce be local Goans, reported in six-monthly compliance filings.",
+    "Indoco Remedies runs two co-located units at Verna: Plant II for sterile products and Plant III for solid dosage. After a US FDA inspection from 27 May to 4 June 2019, which closed with four Form 483 observations, both plants received an Establishment Inspection Report. At that time Indoco had 33 ANDAs pending, of which 17 were ophthalmic and 5 injectable."
+   ]
+  },
+  {
+   "heading": "Sterile and Ophthalmic Lines in Verna: SF4 or SF1?",
+   "paragraphs": [
+    "Eye drops and injectables made in Verna's sterile blocks are filled from water-for-injection and purified-water loops that the Goa Directorate of Food and Drugs Administration and CDSCO inspect against Schedule M, and that export customers audit against their own GMP rules. For those loops, and for product transfer into filling, we recommend 316L to ASTM A270 with an SF4 electropolished bore per ASME BPE, where the smoother passive layer limits biofilm and rouge.",
+    "Solid-dosage halls such as granulation and coating suites rarely need that level. Their purified-water drops and CIP returns are normally specified as 316L SF1, while compressed air and chilled-water headers can run in 304L to ASTM A312. Marking each loop on the P&ID lets one quotation price SF4, SF1 and utility pipe separately."
+   ]
+  },
+  {
+   "heading": "Putting Together a Verna RFQ",
+   "paragraphs": [
+    "A Verna enquiry is quickest to price when it states the outside diameter, wall and metres for each system, the grade, and the finish required: SF4 for sterile WFI, SF1 for oral-dosage water, mill finish for utilities. Mention whether the validation file cites ASTM A270, ASTM A269 or ASME BPE and what Ra ceiling the qualification protocol sets.",
+    "Every electropolished lot we supply carries an internal Ra report and an EN 10204 3.1 certificate traced to the heat number, and each length is PMI-checked. Specifications for straight runs are on the electropolished pipes and electropolished tubes pages; a complete enquiry receives a quotation within 24 hours."
+   ],
+   "links": [
+    {
+     "label": "Electropolished pipes",
+     "href": "/electropolished-pipes/"
+    },
+    {
+     "label": "Electropolished tubes",
+     "href": "/electropolished-tubes/"
+    },
+    {
+     "label": "Send a Verna enquiry",
+     "href": "/contact-us/"
+    }
+   ]
+  },
+  {
+   "heading": "Delivery to Verna and South Goa",
+   "paragraphs": [
+    "Orders for Verna leave Mumbai by road, with every electropolished length capped at both ends and bagged so the bore arrives as clean as it left the polishing line; dispatch and transit are confirmed in writing with each quotation.",
+    "Other Goa and border pages:"
+   ],
+   "links": [
+    {
+     "label": "Ponda",
+     "href": "/market-area/ponda/"
+    },
+    {
+     "label": "Panaji",
+     "href": "/market-area/panaji/"
+    },
+    {
+     "label": "Belagavi",
+     "href": "/market-area/belagavi/"
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "title": "The Goan – CM inaugurates Marksans Pharma facility at Verna",
+   "url": "https://www.thegoan.net/goa-news/cm-inaugurates-marksans-pharma-facility-at-verna/124567.html"
+  },
+  {
+   "title": "The Goan – 80% Goan workforce clause for pharma company",
+   "url": "https://www.thegoan.net/goa-news/vocal-for-local-finally-80-goan-workforce-clause-for-pharma-co/152609.html"
+  },
+  {
+   "title": "Wikipedia – Verna, Goa",
+   "url": "https://en.wikipedia.org/wiki/Verna,_Goa"
+  },
+  {
+   "title": "Industrial Info – US FDA clears Indoco's Goa plants",
+   "url": "https://www.industrialinfo.com/news/article/us-fda-clears-indocos-goa-plants-an-industrial-info-market-brief--275671"
+  }
+ ]
+}

@@ -170,3 +170,8 @@ date	path	type	status	nearest_overlap_before	nearest_overlap_after	words_before	
 2026-11-09	/market-area/moradabad/	city	discard	0.659	-	1560	-	only verified plant (Milk Food) closing, land sold
 2026-11-09	/market-area/mysuru/	city	discard	0.491	-	1926	-	MyMUL, Nestle, Jubilant sites unreachable; not enough verifiable sources
 2026-11-09	/market-area/nashik/	city	discard	0.539	-	1829	-	Sula site JS-only; no verifiable plant data
+2026-11-09	/market-area/verna/	city	keep	0.67	0.495	1428	2040	Verna estate, Marksans/Centaur/Indoco, ophthalmic SF4
+2026-11-09	/market-area/ahmedabad/	city	keep	0.496	0.383	2005	2646	Changodar/Matoda SEZ/Naroda/Vatva plants, RFQ checklist
+2026-11-09	/market-area/vadodara/	city	keep	0.496	0.376	2058	2667	Alembic heritage, Makarpura/Padra/Panelav/Karakhadi, topical SF1
+2026-11-09	/market-area/aurangabad/	city	keep	0.531	0.421	1869	2462	Wockhardt Shendra SEZ blocks, Lupin EIR, cartridge/PFS SF4
+2026-11-09	/market-area/tarapur/	city	keep	0.552	0.434	1755	2336	Lupin T-142, Anupran E-8 API unit, fermentation vs solvent lines

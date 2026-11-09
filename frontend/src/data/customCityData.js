@@ -233,7 +233,6 @@ export const customCityData = {
       'CEPA Certificate of Origin'
     ],
     primaryBtnText: 'Request a Quote for Abu Dhabi',
-    whatsappLink: 'https://wa.me/918291366340?text=RFQ%20-%20Electropolished%20pipes%20for%20Abu%20Dhabi',
     localBlock: {
       eyebrow: 'ABU DHABI & UAE SUPPLY',
       title: "Electropolished Tubing for Abu Dhabi's Pharma, Biotech & Food Plants",
@@ -412,7 +411,7 @@ export const customCityData = {
       },
       {
         q: 'How do I order electropolished pipes for Abu Dhabi?',
-        a: 'Send the grade, OD × wall, finish, length and quantity through the RFQ form, on WhatsApp, or to info@steelmanufacturer.in. You will receive a quote within one business day.'
+        a: 'Send the grade, OD × wall, finish, length and quantity through the RFQ form, by phone on +91 82913 66340, or to info@steelmanufacturer.in. You will receive a quote within one business day.'
       }
     ],
     rfq: {
@@ -453,7 +452,6 @@ export const customCityData = {
       'Sample MTC Available on Request'
     ],
     primaryBtnText: 'Request a Quote for Al Ain',
-    whatsappLink: 'https://wa.me/918291366340?text=RFQ%20-%20Electropolished%20pipes%20for%20Al%20Ain',
     jumpLinks: [
       { label: 'Al Ain industries we supply', href: '#al-ain' },
       { label: 'How we make EP tube', href: '#process' },
@@ -800,7 +798,7 @@ export const customCityData = {
       },
       {
         q: 'How do I order electropolished tube for Al Ain?',
-        a: 'Send the grade, OD × wall, finish, length and quantity through the RFQ form, on WhatsApp, or to info@steelmanufacturer.in. You will receive a quote within one business day.'
+        a: 'Send the grade, OD × wall, finish, length and quantity through the RFQ form, by phone on +91 82913 66340, or to info@steelmanufacturer.in. You will receive a quote within one business day.'
       }
     ],
     rfq: {

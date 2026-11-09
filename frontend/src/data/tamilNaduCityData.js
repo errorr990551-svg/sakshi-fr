@@ -137,7 +137,7 @@ export const tamilNaduCityData = {
     orderSteps: {
       title: "How an Order Reaches Your Plant in Chennai",
       steps: [
-        "Send your requirement. Grade, size, quantity and finish, by phone, WhatsApp or the form.",
+        "Send your requirement. Grade, size, quantity and finish, by phone, email or the form.",
         "Quote within 24 hours. From someone who can answer technical questions on the same call.",
         "Drawing and specification check. We confirm sizes, standards and documents before production.",
         "Manufacture and testing in-house. Electropolishing, Ra testing, PMI, hydro and passivation verification.",

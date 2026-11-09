@@ -168,9 +168,7 @@ export default function AndhraPradeshHubPage({ onEnquireClick, onShowContactDeta
                 Get Andhra Pradesh Quote in 24 Hours
               </button>
               <a 
-                href="https://wa.me/918291366340?text=Hi%20Sakshi%20Forge,%20I%20need%20a%20quote%20for%20Electropolished%20Pipes%20in%20Andhra%20Pradesh" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="tel:+918291366340"
                 style={{
                   backgroundColor: 'rgba(255, 255, 255, 0.08)',
                   color: '#ffffff',
@@ -184,7 +182,7 @@ export default function AndhraPradeshHubPage({ onEnquireClick, onShowContactDeta
                   gap: '0.5rem'
                 }}
               >
-                WhatsApp Inquiry
+                Call +91 82913 66340
               </a>
             </div>
           </div>

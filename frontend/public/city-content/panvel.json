@@ -1,0 +1,68 @@
+{
+  "slug": "panvel",
+  "updated": "2026-11-10",
+  "sections": [
+    {
+      "heading": "Panvel: Where the Raigad Chemical Belt Meets the New Airport",
+      "paragraphs": [
+        "Panvel sits at the junction of two things that shape demand for process piping in this part of the Mumbai region: the chemical and pharmaceutical estates of Raigad district, and the new Navi Mumbai International Airport. Raigad is one of Maharashtra's chemical-designated industrial districts, and its main industrial belts are Patalganga, Taloja, Mahad, Roha and Vile Bhagad. ASCC, a Mumbai land and industrial property consultancy, lists chemicals, Ayurveda medicines, pharmaceuticals and engineering goods as the district's major export items.",
+        "On 8 October 2025 the Prime Minister inaugurated the Navi Mumbai International Airport, built by Adani Airport Holdings and CIDCO at Ulwe near Panvel. Adani describes it as spanning 1,160 hectares, opening at 20 million passengers a year and scaling up to 90 million at full build-out, with two parallel runways and dedicated cargo facilities. Road links run over the Atal Setu from South Mumbai and along the Sion–Panvel Highway."
+      ]
+    },
+    {
+      "heading": "Patalganga MIDC, 18 km from Panvel",
+      "paragraphs": [
+        "The largest process estate on Panvel's side of Raigad is Patalganga, an MIDC industrial area next to Mohopada village, between Panvel and Khopoli. It is one of the 13 chemical industrial areas developed by MIDC. ASCC gives its distances as 6.5 km from the old Mumbai–Pune highway, 11 km from the Mumbai–Pune Expressway, 35 km from the JNPT seaport and 23 km from the Navi Mumbai airport site, with Rasayani railway station 3 km away and Panvel station 18 km away.",
+        "ASCC describes the estate's industry as petrochemical, pharmaceutical, chemical, engineering and food processing. Its list of units there includes pharmaceutical makers Cipla and V-Ensure Pharma Technologies, enzyme and life-science producers Novozymes and Merck Life Science, lubricant plants of Castrol, ExxonMobil, HPCL and BPCL, and food plants of Parle Agro and Jubilant Food. These names are given only to show the estate's mix of industries; the point for a tube buyer is that hygienic, chemical and utility services all sit within one short drive of Panvel."
+      ]
+    },
+    {
+      "heading": "Matching Electropolished Tube to Panvel-Area Process Lines",
+      "paragraphs": [
+        "Each of those industries uses stainless tube differently. Pharmaceutical and enzyme plants need SF4 bores, mechanically polished then electropolished to ASME BPE surface designations, on purified water and WFI loops, product transfer, fermentation and CIP return, where a smooth, passive bore cleans faster and gives biofilm less to hold. Food and beverage plants use the same SF4 316L on product and CIP lines, and SF1 mechanically polished 304L or 316L on utility and cooling water.",
+        "Chemical and petrochemical units use far less hygienic tube but rely on clean small-bore lines: analyser sample lines, impulse lines to transmitters, and chemical dosing. Electropolishing removes the cold-worked surface from drawing and leaves a chromium-rich passive film, so trace contaminants are less likely to stick to the wall. For acid or chloride-heavy streams, the grade to price is 904L, which we supply electropolished. For larger headers we offer ASTM A312 pipe in 304L and 316L."
+      ]
+    },
+    {
+      "heading": "Inspection Documents for Panvel and Raigad Projects",
+      "paragraphs": [
+        "Every heat we supply carries an EN 10204 3.1 certificate traced to its heat number, with chemical analysis by a NABL-accredited laboratory. Each length is PMI checked before it leaves us, which matters on multi-product sites where 304L, 316L and 904L lengths may be stored side by side. Each electropolished lot has our internal Ra report so the finish can be checked against the line list, and our quality system is certified to ISO 9001:2015.",
+        "Product standards covered are ASTM A270 sanitary tube, ASTM A269 seamless and A249 welded tube, and ASTM A312 pipe, in grades 304, 304L, 316 and 316L. Where a pharmaceutical validation team or a third-party inspector wants witness points or a set marking format, put it in the enquiry so the quotation covers it."
+      ]
+    },
+    {
+      "heading": "Sending a Panvel RFQ",
+      "paragraphs": [
+        "We return a quotation within 24 hours of receiving a complete enquiry. For Panvel, Patalganga, Rasayani or airport-area work, the following lets us quote without a second round of questions:"
+      ],
+      "bullets": [
+        "The plant and service: pharmaceutical, enzyme, food, chemical or lubricant unit, and the system the tube is for, plus your role as owner, EPC contractor or skid builder.",
+        "Grade and finish per line: SF4 316L for product contact, purified water and CIP; SF1 304L or 316L for utilities; 904L electropolished for corrosive chemical service.",
+        "Outside diameter, wall, length, quantity and the standard: ASTM A270, A269, A249 or A312.",
+        "Your inspection or validation requirements and the delivery point, whether in Patalganga MIDC, Panvel or elsewhere in Raigad."
+      ],
+      "links": [
+        { "label": "Send a Panvel enquiry", "href": "/contact-us/" },
+        { "label": "Electropolished pipes", "href": "/electropolished-pipes/" },
+        { "label": "Electropolished tubes", "href": "/electropolished-tubes/" }
+      ]
+    },
+    {
+      "heading": "Supplying Panvel from Mumbai",
+      "paragraphs": [
+        "Panvel is a short road run from our Mumbai base at Shop No. 05, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai 400004. Lengths travel with capped ends and the heat number marked on each one, and your quotation confirms the dispatch date and transit to site in writing.",
+        "Nearby markets we also supply:"
+      ],
+      "links": [
+        { "label": "Navi Mumbai", "href": "/market-area/navi-mumbai/" },
+        { "label": "Mumbai", "href": "/market-area/mumbai/" },
+        { "label": "Roha", "href": "/market-area/roha/" },
+        { "label": "Pune", "href": "/market-area/pune/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "ASCC: Patalganga Industrial Area (MIDC chemical zone, distances, industries and units)", "url": "https://www.ascconline.com/blog/patalganga-industrial-area/" },
+    { "title": "Adani: PM inaugurates Navi Mumbai International Airport (8 Oct 2025, 1,160 ha, 20 to 90 MPPA)", "url": "https://www.adani.com/newsroom/media-releases/pm-modi-inaugurates-navi-mumbai-international-airport" }
+  ]
+}

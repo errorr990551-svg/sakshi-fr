@@ -1,0 +1,68 @@
+{
+  "slug": "noida",
+  "updated": "2026-11-10",
+  "sections": [
+    {
+      "heading": "Noida and the Yamuna Expressway: A Semiconductor Belt Taking Shape",
+      "paragraphs": [
+        "South of Noida, along the Yamuna Expressway towards the new Noida International Airport at Jewar, Uttar Pradesh is building an electronics and semiconductor belt. Invest UP reports that HCL and Foxconn will set up a semiconductor unit as a joint venture near Jewar airport in the Yamuna Expressway Industrial Development Authority (YEIDA) area, with an investment of about INR 3,700 crore. The unit is to make display driver chips for mobile phones, laptops, automobiles and PCs, with a stated design output of 36 million units a month and a facility capacity of 20,000 wafers a month.",
+        "The state has identified 1,000 acres next to the Jewar airport for semiconductor manufacturing units. Its Semiconductor Policy 2024 covers fabrication, ATMP and OSAT, compound semiconductors, silicon photonics, sensor fabs and chip design, and Invest UP lists five applications with a proposed investment of INR 32,652 crore. The same page names polymer processing, metals and chemicals as the ancillary industries these zones are planned to host alongside the fabs themselves."
+      ]
+    },
+    {
+      "heading": "Where Our Electropolished Tube Fits Around a Noida-Region Fab",
+      "paragraphs": [
+        "Be clear about scope. The ultra-high-purity gas lines inside a semiconductor fab are normally built from specialist tubing qualified to the fab owner's own specification, and we do not claim that qualification. Our electropolished pipes and tubes are aimed at the plants and systems around it: the chemical, polymer and metal-finishing units the state policy lists as ancillary industries, process water and treated water loops in support buildings, chemical transfer and dosing skids, and instrument and sample tubing on utility packages.",
+        "In those services the reason to specify electropolished 316L is the same as in a pharmaceutical plant. Electropolishing removes the cold-worked surface left by drawing, lowers the bore roughness, and leaves a chromium-rich passive film, so the line sheds fewer particles, holds back less residue and resists pitting better than a mill-finish tube. For acid or chloride-heavy chemical streams, 904L is the grade to price, and we supply it electropolished."
+      ]
+    },
+    {
+      "heading": "The YEIDA Medical Device Park in Sector 28, an Hour from Noida",
+      "paragraphs": [
+        "The second project that brings hygienic tube demand to the Noida region is the medical device park. YEIDA was nominated State Implementing Agency by the Department of Pharmaceuticals, Ministry of Chemicals and Fertilizers, and is developing North India's first dedicated medical device park over 350 acres in Sector 28, of which about 195 acres, or 55%, is earmarked for manufacturing units. The detailed project report has been approved by the Government of India and a grant-in-aid of INR 30 crore received under the scheme for promotion of medical device parks.",
+        "YEIDA reports that 37 plots have been allotted in phase 1, for target segments that include cancer care and radiotherapy, radiology and imaging, anaesthetics and cardio-respiratory devices, renal care and implantable electronic devices. It gives the park's distance as 3 km from Noida International Airport, 60 km from Noida, 40 km from Greater Noida and 53 km from Faridabad."
+      ]
+    },
+    {
+      "heading": "SF1 or SF4 for Noida Medical Device and Cleanroom Utilities",
+      "paragraphs": [
+        "A medical device plant is not a drug plant, but many of its utilities are built the same way. Purified water for component washing and rinsing, cleanroom humidification, and any line that touches a product or a contact surface are where an SF4 bore, mechanically polished then electropolished to ASME BPE surface designations, makes cleaning faster and gives biofilm less to grip. SF1 mechanically polished 304L or 316L covers chilled water, compressed-air drops and general transfer lines that are cleaned but not validated.",
+        "We supply ASTM A270 sanitary tube, ASTM A269 seamless and A249 welded tube, and ASTM A312 pipe in 304, 304L, 316 and 316L. Each heat has an EN 10204 3.1 certificate traced to its heat number, with chemical analysis from a NABL-accredited laboratory, and every length is checked by PMI before dispatch. Each electropolished lot carries our internal Ra report, and our quality system is certified to ISO 9001:2015, which helps when a device maker's own quality file needs supplier records for every utility line."
+      ]
+    },
+    {
+      "heading": "Sending a Noida RFQ",
+      "paragraphs": [
+        "Quotations go out within 24 hours once we have a complete enquiry. For plants in Noida, Greater Noida or the YEIDA sectors, please tell us:"
+      ],
+      "bullets": [
+        "The plant and the system: ancillary chemical or polymer unit, medical device line, purified water loop, cleanroom utilities or a skid you are building for one of them.",
+        "Grade and bore finish for each line, for example SF4 316L for product contact and purified water, SF1 304L or 316L for utilities, 904L electropolished for aggressive chemicals.",
+        "OD, wall, length, quantity and the standard to quote against: ASTM A270, A269, A249 or A312.",
+        "Any inspection or documentation requirement from your quality team, and the YEIDA sector or site address for delivery."
+      ],
+      "links": [
+        { "label": "Send a Noida enquiry", "href": "/contact-us/" },
+        { "label": "Electropolished pipes", "href": "/electropolished-pipes/" },
+        { "label": "Electropolished tubes", "href": "/electropolished-tubes/" }
+      ]
+    },
+    {
+      "heading": "Delivering to Noida, Greater Noida and the YEIDA Sectors",
+      "paragraphs": [
+        "Our base is Shop No. 05, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai 400004. Tube for Noida and the Yamuna Expressway sites is dispatched from Mumbai by road with end caps fitted and the heat number marked on every length, and the quotation confirms dispatch and transit for your site in writing.",
+        "Nearby markets we also supply:"
+      ],
+      "links": [
+        { "label": "Greater Noida", "href": "/market-area/greater-noida/" },
+        { "label": "Ghaziabad", "href": "/market-area/ghaziabad/" },
+        { "label": "Delhi", "href": "/market-area/delhi/" },
+        { "label": "Faridabad", "href": "/market-area/faridabad/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Invest UP: Semiconductor sector (HCL–Foxconn unit near Jewar, UP Semiconductor Policy 2024, 1,000 acres)", "url": "https://invest.up.gov.in/semiconductor-sector" },
+    { "title": "YEIDA: Medical Device Park, Sector 28 (350 acres, INR 30 crore grant, 37 plots, target segments, distances)", "url": "https://www.yamunaexpresswayauthority.com/projects/medical-device-park" }
+  ]
+}

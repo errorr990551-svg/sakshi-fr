@@ -1,0 +1,69 @@
+{
+  "slug": "nellore",
+  "updated": "2026-11-10",
+  "sections": [
+    {
+      "heading": "Krishnapatnam Port: Nellore's Deep-Water Gateway",
+      "paragraphs": [
+        "Nellore district's industrial story now runs through Krishnapatnam, a privately built, all-weather, deep-water port on the east coast that sits about 18 km east of Nellore city and roughly 190 km north of Chennai Port. It opened in 2008 and was run by Krishnapatnam Port Company Limited, then majority-owned by Hyderabad's CVR Group. Adani Ports & SEZ bought a 75% stake in October 2020 and took full ownership in April 2021, when it acquired the remaining 25%.",
+        "The port handled about 64 million tonnes of cargo in 2020-21 across 14 berths. Adani describes it as able to take Cape-size vessels and as serving the land-locked hinterland of South India, with road and rail access close to National Highway 16 and the Chennai–Kolkata main line. A 12,000-acre special economic zone is being set up next to the port by Krishnapatnam Infratech, a special purpose vehicle, so the area around the harbour is planned as industrial land rather than as a pure transit point."
+      ]
+    },
+    {
+      "heading": "The Krishnapatnam Industrial Node on the Chennai–Bengaluru Corridor",
+      "paragraphs": [
+        "On 30 December 2020 the Cabinet Committee on Economic Affairs approved DPIIT's proposal to build trunk infrastructure for the Krishnapatnam Industrial Area at an estimated cost of Rs 2,139.44 crore. Krishnapatnam and Tumakuru in Karnataka were approved together to start development of the Chennai Bengaluru Industrial Corridor, and both are planned as greenfield industrial cities built around multimodal connectivity, with road and rail freight links to ports and logistics hubs and reliable power.",
+        "The government's own estimate is that the Krishnapatnam node will employ around 98,000 people once its first phase is complete, of whom about 58,000 are expected to work on the site itself. For a tube supplier, the point is less the headline number than what it implies: developed plots handed to new manufacturers, each of which arrives with a fresh line list, a new piping specification and package vendors building skids for it."
+      ]
+    },
+    {
+      "heading": "Choosing Stainless Tube for a New Nellore Plant on the Coast",
+      "paragraphs": [
+        "A greenfield site lets the piping specification be written properly from the start instead of patched around existing lines. Where a Nellore project is a pharmaceutical, food, beverage or specialty chemical plant, the stainless content is concentrated in product transfer lines, purified and process water loops, CIP supply and return, and the instrument and sampling tube on skids and panels. These are the lines where bore finish decides how easily the system cleans and how much product or residue it holds back.",
+        "Location matters too. Plants near the Krishnapatnam coast see salt-laden air, and chlorides settling on outdoor pipe racks attack 304L faster than 316L, so 316L is the usual starting grade for exposed runs. Electropolishing helps here as well as inside the bore, because it strips the cold-worked surface and leaves a chromium-rich passive film with fewer sites for pitting to start. For strongly acidic or chloride-heavy process streams, ask us to quote 904L, which we supply electropolished."
+      ]
+    },
+    {
+      "heading": "SF1 or SF4 on a Nellore Line List, and the Paperwork Behind It",
+      "paragraphs": [
+        "Following ASME BPE surface designations, SF1 is a mechanically polished bore and SF4 is mechanically polished then electropolished. On a typical Nellore process plant, SF1 304L or 316L suits utility water, cooling, and transfer lines that are flushed but not validated. SF4 316L belongs on product contact, purified water and WFI distribution, sterile and fermentation lines, and CIP return, where a smoother bore cuts rinse time and leaves biofilm less to hold on to. We supply ASTM A270 sanitary tube, A269 seamless and A249 welded tube, and A312 pipe in 304, 304L, 316 and 316L.",
+        "Every heat ships with an EN 10204 3.1 certificate traced to its heat number, and chemical analysis is done by a NABL-accredited laboratory. Each length is PMI checked before dispatch, and each electropolished lot has our internal Ra report so the finish can be matched to the line list. Our quality system is certified to ISO 9001:2015. If your consultant's inspection plan calls for witness points or particular marking, include it with the enquiry."
+      ]
+    },
+    {
+      "heading": "Sending a Nellore RFQ",
+      "paragraphs": [
+        "Send a complete enquiry and the quotation comes back within 24 hours. For Krishnapatnam node and Nellore district projects, these details let us price it correctly the first time:"
+      ],
+      "bullets": [
+        "What the plant makes and which system the tube is for, and whether you are the owner, the EPC contractor or a skid or panel fabricator.",
+        "Grade and surface per line: SF4 316L for product contact and CIP, SF1 304L or 316L for utilities, 904L electropolished where the stream is aggressive.",
+        "Outside diameter, wall, length and quantity, and the governing standard (ASTM A270, A269, A249 or A312).",
+        "Inspection test plan, third-party inspection agency if any, and the site delivery address."
+      ],
+      "links": [
+        { "label": "Send a Nellore enquiry", "href": "/contact-us/" },
+        { "label": "Electropolished pipes", "href": "/electropolished-pipes/" },
+        { "label": "Electropolished tubes", "href": "/electropolished-tubes/" }
+      ]
+    },
+    {
+      "heading": "Supplying Nellore and the Krishnapatnam Coast",
+      "paragraphs": [
+        "We are based at Shop No. 05, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai 400004, and material for Nellore leaves Mumbai with capped ends and heat-number marking on each length. Dispatch and transit to your site are confirmed in writing on every quotation.",
+        "Nearby markets we also supply:"
+      ],
+      "links": [
+        { "label": "Tirupati", "href": "/market-area/tirupati/" },
+        { "label": "Chittoor", "href": "/market-area/chittoor/" },
+        { "label": "Chennai", "href": "/market-area/chennai/" },
+        { "label": "Guntur", "href": "/market-area/guntur/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "PIB: Cabinet approves Industrial Corridor nodes at Krishnapatnam and Tumakuru under CBIC (30 Dec 2020)", "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=1684629" },
+    { "title": "Wikipedia: Krishnapatnam Port (location, ownership, cargo, SEZ)", "url": "https://en.wikipedia.org/wiki/Krishnapatnam_Port" },
+    { "title": "Adani Ports: Krishnapatnam Port (Cape-size vessels, NH 16 and rail connectivity)", "url": "https://www.adaniports.com/ports-and-terminals/krishnapatnam-port" }
+  ]
+}

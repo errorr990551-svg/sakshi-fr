@@ -162,10 +162,10 @@ async function runPrerender() {
     url: `${BASE_URL}/market-area/`,
     type: 'market-area',
     slug: 'market-area',
-    title: 'Sakshi Forge | India Cities We Serve - Electropolished Pipes & Fittings Supply',
-    description: 'Explore the commercial and industrial cities served by Sakshi Forge across India. High-quality electropolished pipes and industrial steel supply.',
+    title: 'Market Area | Electropolished Pipes & Tubes Across India | Sakshi Forge',
+    description: 'States and cities across India where Sakshi Forge supplies electropolished stainless steel pipes and tubes, listed state by state with a page for each city.',
     robots: 'index, follow',
-    keywords: 'market area, industrial cities, sakshi forge locations, steel pipes supply India',
+    keywords: 'electropolished pipes market area, electropolished tubes supplier India, electropolished pipe cities',
     data: null
   });
 
@@ -217,6 +217,7 @@ async function runPrerender() {
     { url: `${BASE_URL}/market-area/odisha/`, type: 'market-area', slug: 'market-area/odisha', title: 'Electropolished Pipes Across Odisha | Sakshi Forge', description: 'Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Odisha industrial corridors: Bhubaneswar, Cuttack, Berhampur, Angul, Rourkela, Sambalpur, Jharsuguda, Jajpur, Paradip, and Balasore.', data: null }
   ];
 
+  extraPages.push({ url: `${BASE_URL}/sitemap/`, type: 'sitemap', slug: 'sitemap', title: 'Sitemap | Sakshi Forge', description: 'HTML sitemap of steelmanufacturer.in: electropolished pipes and tubes, products, standards, industries, resources, market area cities and blog.', robots: 'index, follow', data: null });
   extraPages.forEach(p => routes.push(p));
 
   // EP Build Spec 106 Pages

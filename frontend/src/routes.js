@@ -10,7 +10,7 @@ import { westBengalCityData } from './data/westBengalCityData';
 import { madhyaPradeshCityData } from './data/madhyaPradeshCityData';
 import { andhraPradeshCityData } from './data/andhraPradeshCityData';
 import { odishaCityData } from './data/odishaCityData';
-import { REDIRECTED_PATHS } from './data/redirects';
+import { REDIRECTED_PATHS, isRedirectedPath } from './data/redirects';
 import productsData from './data/products.json';
 import categoriesData from './data/categories.json';
 import { blogPosts } from './data/blogData';
@@ -140,6 +140,9 @@ function matchRoute(currentPath) {
   }
   if (cleanPath === '/gallery' || cleanPath === '/media-gallery') {
     return { type: 'gallery', data: null };
+  }
+  if (cleanPath === '/sitemap') {
+    return { type: 'sitemap', data: null };
   }
 
   // Check chart tool slugs
@@ -302,6 +305,113 @@ function matchRoute(currentPath) {
   return { type: '404', data: null };
 }
 
+// State hub pages that exist; every other state is an anchor on /market-area/.
+export const STATE_HUBS = {
+  'Tamil Nadu': '/tamil-nadu/',
+  Karnataka: '/karnataka/',
+  Gujarat: '/market-area/gujarat/',
+  Telangana: '/market-area/telangana/',
+  'West Bengal': '/market-area/west-bengal/',
+  'Madhya Pradesh': '/market-area/madhya-pradesh/',
+  'Andhra Pradesh': '/market-area/andhra-pradesh/',
+};
+
+const slashed = (u) => (u.endsWith('/') ? u : `${u}/`);
+const cleanTitle = (t) => String(t || '').split(' | ')[0].trim();
+
+// The HTML sitemap: only live pages (not 404, not 301-redirected), each listed once.
+function buildSitemapGroups() {
+  const seen = new Set();
+  const live = (url) => {
+    const u = slashed(url);
+    if (seen.has(u) || isRedirectedPath(u) || matchRoute(u).type === '404') return false;
+    seen.add(u);
+    return true;
+  };
+  const link = (name, url) => (live(url) ? { name, url: slashed(url) } : null);
+  const links = (arr) => arr.filter(Boolean);
+  const ep = (type) => epBuildSpecData.filter((p) => p.page_type === type).map((p) => link(p.h1, p.url));
+
+  const company = links([
+    link('Home', '/'), link('About Us', '/about-us/'), link('Quality Assurance', '/quality-assurance/'),
+    link('Certifications', '/certifications/'), link('Testing & Inspection', '/testing-inspection/'),
+    link('Industries We Serve', '/industries/'), link('Clients', '/clients/'), link('Our Team', '/team/'),
+    link('Gallery', '/gallery/'), link('Catalogue', '/catalogue/'), link('Contact Us', '/contact-us/'),
+    link('Market Area', '/market-area/'), link('Blog', '/blog/'), link('Sitemap', '/sitemap/'),
+    link('Privacy Policy', '/privacy-policy/'), link('Terms & Conditions', '/terms-and-conditions/'),
+  ]);
+
+  const electropolished = links(ep('Product (Money)'));
+
+  const categories = categoriesData.map((c) => {
+    const url = `/${c['Category Slug']}/`;
+    const head = live(url);
+    const items = links(categoryProducts(c).map((p) => link(p['Product Name'], `/${p['URL Slug']}/`)));
+    return head || items.length ? { title: c['Parent Category'], url: head ? url : undefined, links: items } : null;
+  }).filter(Boolean);
+  const otherProducts = links([link('Products Catalogue', '/products/'), link('Stainless Steel Elbows', '/stainless-steel-elbow/')]);
+
+  const standards = links([
+    link('Standards', '/standards/'),
+    ...ep('Standard'),
+    ...Object.values(standardPages).map((g) => link(cleanTitle(g.title), `/${g.slug}/`)),
+  ]);
+  const grades = links(Object.values(gradePages).map((g) => link(cleanTitle(g.title), `/${g.slug}/`)));
+  const industries = links(ep('Industry'));
+  const resources = links([
+    link('Resources', '/resources/'),
+    ...epBuildSpecData.filter((p) => p.page_type.startsWith('Resource/')).map((p) => link(p.h1, p.url)),
+    link('Metal Weight Calculator', '/weight-calculator/'),
+    link('Flange Dimension Chart', '/flange-dimension-chart/'), link('Flange Weight Chart', '/flange-weight-chart/'),
+    link('Flange Bolt Chart', '/flange-bolt-chart/'), link('Pipe Schedule Chart', '/pipe-schedule-chart/'),
+  ]);
+  const exportPages = links([
+    link('Flange Exporter USA', '/flange-exporter-usa/'), link('Flange Supplier UAE', '/flange-supplier-uae/'),
+    link('Flange Supplier Saudi Arabia', '/flange-supplier-saudi-arabia/'),
+  ]);
+
+  const byRegion = (india) => {
+    const map = new Map();
+    marketCitiesData
+      .filter((c) => c.path && ((c.country || 'India') === 'India') === india)
+      .forEach((c) => {
+        const key = india ? c.state : c.country;
+        const l = link(c.city, c.path);
+        if (!l) return;
+        if (!map.has(key)) map.set(key, []);
+        map.get(key).push(l);
+      });
+    return [...map.entries()]
+      .sort(([a], [b]) => a.localeCompare(b))
+      .map(([title, items]) => ({
+        title,
+        url: india && STATE_HUBS[title] && live(STATE_HUBS[title]) ? STATE_HUBS[title] : undefined,
+        links: items.sort((a, b) => a.name.localeCompare(b.name)),
+      }));
+  };
+  const india = byRegion(true);
+  const world = byRegion(false);
+
+  const blog = links([
+    ...blogPosts.map((p) => link(p.title, `/blog/${p.slug}/`)),
+    ...ep('Blog'),
+  ]);
+
+  return [
+    { title: 'Company', links: company },
+    { title: 'Electropolished Pipes & Tubes', links: electropolished },
+    { title: 'Products', links: otherProducts, children: categories },
+    { title: 'Standards', links: standards },
+    { title: 'Grades', links: grades },
+    { title: 'Industries', links: industries },
+    { title: 'Resources & Tools', links: resources },
+    { title: 'Export', links: exportPages },
+    { title: 'Market Area: India', url: '/market-area/', links: [], children: india },
+    { title: 'Market Area: International', links: [], children: world },
+    { title: 'Blog', links: blog },
+  ].filter((g) => g.links.length || (g.children && g.children.length));
+}
+
 // Adds what the page would otherwise import from the large data files (custom city copy,
 // related products, category products, the city directory, related EP links), so the page's own code stays small.
 export function resolveRoute(path) {
@@ -313,7 +423,11 @@ export function resolveRoute(path) {
     route.relatedProducts = relatedProductsFor(route.data);
   }
   if (route.type === 'market-area') {
-    route.cities = marketCitiesData.map(({ city, state, path: cityPath, slug }) => ({ city, state, path: cityPath, slug }));
+    route.cities = marketCitiesData.map(({ city, state, country, path: cityPath, slug }) => ({ city, state, country: country || 'India', path: cityPath, slug }));
+    route.stateHubs = STATE_HUBS;
+  }
+  if (route.type === 'sitemap') {
+    route.sitemap = buildSitemapGroups();
   }
   if (route.type === 'category') {
     route.products = categoryProducts(route.data);

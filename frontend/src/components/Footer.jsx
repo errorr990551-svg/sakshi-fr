@@ -129,7 +129,7 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
         <div className="footer-bottom">
           <p>© {currentYear} Sakshi Forge. All Rights Reserved. Manufactured in India.</p>
           <div className="footer-bottom-links">
-            <a href="/sitemap.xml" target="_blank">Sitemap</a>
+            <a href="/sitemap/" onClick={(e) => handleLinkClick(e, '/sitemap/')}>Sitemap</a>
             <a href="/privacy-policy/" onClick={(e) => handleLinkClick(e, '/privacy-policy/')}>Privacy Policy</a>
             <a href="/terms-and-conditions/" onClick={(e) => handleLinkClick(e, '/terms-and-conditions/')}>Terms & Conditions</a>
           </div>

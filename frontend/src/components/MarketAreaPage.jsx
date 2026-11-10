@@ -1,268 +1,142 @@
 import React, { useMemo, useEffect } from 'react';
 import { handleLinkClick, withSlash } from '../utils/router';
 import { isRedirectedPath } from '../data/redirects';
+import Breadcrumbs from './Breadcrumbs';
 
-// `cities` ({ city, state, path, slug } per market city) is resolved at build time by routes.js
-export default function MarketAreaPage({ cities = [] }) {
-  // Group cities by state and sort alphabetically
-  const citiesByState = useMemo(() => {
-    const grouped = {};
-    const seenCityInState = new Set();
+const getStateSlug = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
-    cities.forEach(city => {
-      if (isRedirectedPath(city.path)) return;
-      const state = city.state || 'Other';
-      const key = `${state}::${(city.city || '').toLowerCase().trim()}`;
-      if (seenCityInState.has(key)) return;
-      seenCityInState.add(key);
+// Groups cities by `key` (state or country), drops redirected pages and duplicates, sorts A-Z.
+function groupBy(cities, key) {
+  const grouped = {};
+  const seen = new Set();
+  cities.forEach((c) => {
+    if (!c.path || isRedirectedPath(c.path)) return;
+    const group = c[key] || 'Other';
+    const id = `${group}::${(c.city || '').toLowerCase().trim()}`;
+    if (seen.has(id)) return;
+    seen.add(id);
+    (grouped[group] = grouped[group] || []).push(c);
+  });
+  return Object.keys(grouped)
+    .sort((a, b) => a.localeCompare(b))
+    .map((name) => ({ name, cities: grouped[name].sort((a, b) => a.city.localeCompare(b.city)) }));
+}
 
-      if (!grouped[state]) {
-        grouped[state] = [];
-      }
-      grouped[state].push(city);
-    });
+const linkStyle = { color: 'var(--text-secondary)', textDecoration: 'none' };
+const h2Style = {
+  fontSize: '1.5rem', fontWeight: 800, margin: '0 0 1rem', color: 'var(--text-primary)',
+  borderLeft: '3px solid var(--primary-yellow)', paddingLeft: '0.75rem',
+};
+const h3Style = { fontSize: '1.15rem', fontWeight: 700, margin: '0 0 0.75rem', color: 'var(--text-primary)' };
+const listStyle = {
+  listStyle: 'disc', paddingLeft: '1.25rem', margin: 0,
+  display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(200px, 100%), 1fr))', gap: '0.45rem 1.5rem',
+};
+const boxStyle = {
+  backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)',
+  borderRadius: '10px', padding: '1.5rem', scrollMarginTop: '6.5rem',
+};
 
-    const sortedStates = Object.keys(grouped).sort();
-    const result = {};
-    sortedStates.forEach(state => {
-      result[state] = grouped[state].sort((a, b) => a.city.localeCompare(b.city));
-    });
-    return result;
-  }, [cities]);
+function CityList({ cities }) {
+  return (
+    <ul style={listStyle}>
+      {cities.map((c) => {
+        const url = withSlash(c.path);
+        return (
+          <li key={c.slug || url}>
+            <a href={url} onClick={(e) => handleLinkClick(e, url)} style={linkStyle}>
+              {c.city}
+            </a>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
 
-  const statesList = useMemo(() => Object.keys(citiesByState), [citiesByState]);
+// `cities` ({ city, state, country, path, slug }) and `stateHubs` ({ State: url }) come from routes.js
+export default function MarketAreaPage({ cities = [], stateHubs = {} }) {
+  const states = useMemo(() => groupBy(cities.filter((c) => (c.country || 'India') === 'India'), 'state'), [cities]);
+  const countries = useMemo(() => groupBy(cities.filter((c) => (c.country || 'India') !== 'India'), 'country'), [cities]);
+  const indiaCount = states.reduce((n, s) => n + s.cities.length, 0);
 
-  const getStateSlug = (stateName) => {
-    return stateName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-  };
-
+  // Scroll to #state, or to the state named in the path (e.g. /market-area/odisha/)
   useEffect(() => {
-    const hash = window.location.hash;
-    if (hash) {
-      setTimeout(() => {
-        const el = document.querySelector(hash);
-        if (el) el.scrollIntoView({ behavior: 'smooth' });
-      }, 150);
-    } else if (window.location.pathname.includes('maharashtra')) {
-      setTimeout(() => {
-        const el = document.getElementById('maharashtra');
-        if (el) el.scrollIntoView({ behavior: 'smooth' });
-      }, 150);
-    } else if (window.location.pathname.includes('karnataka')) {
-      setTimeout(() => {
-        const el = document.getElementById('karnataka');
-        if (el) el.scrollIntoView({ behavior: 'smooth' });
-      }, 150);
-    } else if (window.location.pathname.includes('gujarat')) {
-      setTimeout(() => {
-        const el = document.getElementById('gujarat');
-        if (el) el.scrollIntoView({ behavior: 'smooth' });
-      }, 150);
-    } else if (window.location.pathname.includes('telangana')) {
-      setTimeout(() => {
-        const el = document.getElementById('telangana');
-        if (el) el.scrollIntoView({ behavior: 'smooth' });
-      }, 150);
-    } else if (window.location.pathname.includes('odisha')) {
-      setTimeout(() => {
-        const el = document.getElementById('odisha');
-        if (el) el.scrollIntoView({ behavior: 'smooth' });
-      }, 150);
+    let target = window.location.hash ? window.location.hash.slice(1) : '';
+    if (!target) {
+      const last = window.location.pathname.replace(/\/+$/, '').split('/').pop();
+      if (last && last !== 'market-area') target = last;
     }
+    if (!target) return;
+    const t = setTimeout(() => {
+      const el = document.getElementById(target);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }, 150);
+    return () => clearTimeout(t);
   }, []);
 
   return (
     <div className="market-area-page-wrapper" style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '6rem', paddingTop: '5.5rem' }}>
-      
-      {/* 1. Hero Header Section */}
-      <section style={{ 
-        background: 'linear-gradient(to right, rgba(10, 14, 23, 0.82) 0%, rgba(10, 14, 23, 0.58) 55%, rgba(10, 14, 23, 0.38) 100%), linear-gradient(to bottom, rgba(10, 14, 23, 0.42) 0%, rgba(10, 14, 23, 0.10) 50%, rgba(10, 14, 23, 0.80) 100%), url("/hero_forge.webp")',
-        backgroundPosition: 'left top',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        padding: '5.5rem 0 3.5rem 0',
-        borderBottom: '1px solid var(--border-color)',
-        textAlign: 'center'
-      }}>
-        <div className="container">
-          <span style={{ 
-            backgroundColor: 'var(--primary-yellow-glow)', 
-            color: 'var(--primary-yellow)', 
-            border: '1px solid var(--primary-yellow-solid-glow)',
-            display: 'inline-block',
-            fontSize: '0.75rem',
-            fontWeight: '700',
-            padding: '0.35rem 0.85rem',
-            borderRadius: '50px',
-            marginBottom: '1rem',
-            textTransform: 'uppercase',
-            letterSpacing: '0.05em'
-          }}>
-            Domestic Presence
-          </span>
-          <h1 style={{ fontSize: '2.8rem', fontWeight: '800', marginBottom: '1rem', lineHeight: '1.2' }}>
-            India Cities <span>We Serve</span>
-          </h1>
-          <p style={{ color: 'var(--text-secondary)', maxWidth: '700px', margin: '0 auto', fontSize: '1.1rem', lineHeight: '1.6' }}>
-            Discover the commercial hubs, industrial zones, and major cities across India where Sakshi Forge supplies premium, high-precision electropolished steel pipes and fittings.
-          </p>
-        </div>
-      </section>
+      <Breadcrumbs items={[{ name: 'Market Area', url: '/market-area/' }]} />
 
-      {/* 2. Jump To State Panel */}
-      <section style={{ padding: '3rem 0 1rem 0' }}>
-        <div className="container">
-          <div style={{
-            backgroundColor: 'var(--bg-dark-800)',
-            border: '1px solid var(--border-color)',
-            borderRadius: '12px',
-            padding: '2rem',
-            boxShadow: '0 4px 20px rgba(0,0,0,0.15)'
-          }}>
-            <h3 style={{
-              fontSize: '0.85rem',
-              fontWeight: '800',
-              textTransform: 'uppercase',
-              color: 'var(--text-primary)',
-              letterSpacing: '0.1em',
-              marginBottom: '1.25rem',
-              borderLeft: '3px solid var(--primary-yellow)',
-              paddingLeft: '0.75rem'
-            }}>
-              Jump to State
-            </h3>
-            <div style={{
-              display: 'flex',
-              flexWrap: 'wrap',
-              gap: '0.6rem'
-            }}>
-              {statesList.map((state) => (
-                <a
-                  key={state}
-                  href={`#${getStateSlug(state)}`}
-                  style={{
-                    backgroundColor: 'var(--bg-dark-700)',
-                    border: '1px solid var(--border-color)',
-                    color: 'var(--text-secondary)',
-                    textDecoration: 'none',
-                    fontSize: '0.8rem',
-                    fontWeight: '600',
-                    padding: '0.5rem 1rem',
-                    borderRadius: '6px',
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.03em',
-                    transition: 'var(--transition-fast)'
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = 'var(--primary-yellow)';
-                    e.currentTarget.style.color = 'var(--primary-yellow)';
-                    e.currentTarget.style.backgroundColor = 'var(--bg-dark-600)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = 'var(--border-color)';
-                    e.currentTarget.style.color = 'var(--text-secondary)';
-                    e.currentTarget.style.backgroundColor = 'var(--bg-dark-700)';
-                  }}
-                >
-                  {state}
+      <div className="container" style={{ paddingTop: '2.5rem' }}>
+        <h1 style={{ fontSize: '2.4rem', fontWeight: 800, margin: '0 0 1rem', lineHeight: 1.2 }}>Market Area</h1>
+        <p style={{ color: 'var(--text-secondary)', maxWidth: '820px', fontSize: '1.05rem', lineHeight: 1.7, margin: '0 0 2.5rem' }}>
+          Sakshi Forge supplies electropolished stainless steel pipes and tubes from Mumbai to the {states.length} Indian
+          states and {indiaCount} cities listed below. Each city link opens a page on electropolished pipe and tube
+          supply for that city. To ask about a city that is not listed, call +91 82913 66340, email
+          info@steelmanufacturer.in or use the{' '}
+          <a href="/contact-us/" onClick={(e) => handleLinkClick(e, '/contact-us/')} style={{ color: 'var(--primary-yellow)' }}>
+            contact page
+          </a>.
+        </p>
+
+        <section style={{ ...boxStyle, marginBottom: '2.5rem' }} aria-labelledby="states-heading">
+          <h2 id="states-heading" style={h2Style}>Indian States We Serve</h2>
+          <ul style={listStyle}>
+            {states.map((s) => (
+              <li key={s.name}>
+                <a href={`#${getStateSlug(s.name)}`} style={linkStyle}>
+                  {s.name} ({s.cities.length})
                 </a>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+              </li>
+            ))}
+          </ul>
+        </section>
 
-
-
-      {/* 3. States and Cities Directory */}
-      <section style={{ padding: '2rem 0' }}>
-        <div className="container" style={{ display: 'flex', flexDirection: 'column', gap: '3.5rem' }}>
-          {statesList.map((state) => {
-            const slug = getStateSlug(state);
-            const cities = citiesByState[state];
-
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+          {states.map((s) => {
+            const hub = stateHubs[s.name] && !isRedirectedPath(stateHubs[s.name]) ? withSlash(stateHubs[s.name]) : null;
             return (
-              <div key={state} id={slug} className="state-section" style={{ scrollMarginTop: '6.5rem' }}>
-                {/* State Section Title */}
-                <div style={{ marginBottom: '1.75rem', position: 'relative' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.75rem', marginBottom: '0.5rem' }}>
-                    <h2 style={{
-                      fontSize: '1.6rem',
-                      fontWeight: '800',
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.03em',
-                      color: 'var(--text-primary)',
-                      margin: 0
-                    }}>
-                      {state}
-                    </h2>
-
-                    {state === 'Gujarat' && (
-                      <a 
-                        href="/market-area/gujarat/" 
-                        onClick={(e) => handleLinkClick(e, '/market-area/gujarat/')}
-                        style={{ color: 'var(--primary-yellow)', fontSize: '0.85rem', fontWeight: '700', textDecoration: 'none' }}
-                      >
-                        View Gujarat State Overview →
-                      </a>
-                    )}
-                  </div>
-                  <div style={{
-                    height: '2px',
-                    width: '60px',
-                    backgroundColor: 'var(--primary-yellow)',
-                    borderRadius: '2px'
-                  }}></div>
-                </div>
-
-                {/* Cities Grid */}
-                <div style={{
-                  display: 'grid',
-                  gridTemplateColumns: 'repeat(auto-fill, minmax(min(220px, 100%), 1fr))',
-                  gap: '1.25rem'
-                }}>
-                  {cities.map((city) => {
-                    const cityUrl = (city.path || '').endsWith('/') ? city.path : `${city.path}/`;
-                    return (
-                      <a
-                        key={city.slug}
-                        href={cityUrl}
-                        onClick={(e) => handleLinkClick(e, cityUrl)}
-                        style={{
-                        backgroundColor: 'var(--bg-dark-800)',
-                        border: '1px solid var(--border-color)',
-                        borderRadius: '8px',
-                        padding: '1.25rem',
-                        textAlign: 'center',
-                        textDecoration: 'none',
-                        color: 'var(--text-primary)',
-                        fontWeight: '600',
-                        fontSize: '0.95rem',
-                        transition: 'var(--transition-smooth)',
-                        display: 'block'
-                      }}
-                      onMouseEnter={(e) => {
-                        e.currentTarget.style.borderColor = 'var(--primary-yellow)';
-                        e.currentTarget.style.boxShadow = '0 6px 16px var(--primary-yellow-glow)';
-                        e.currentTarget.style.transform = 'translateY(-2px)';
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.borderColor = 'var(--border-color)';
-                        e.currentTarget.style.boxShadow = 'none';
-                        e.currentTarget.style.transform = 'none';
-                      }}
-                    >
-                      {city.city}
+              <section key={s.name} id={getStateSlug(s.name)} style={boxStyle}>
+                <h3 style={h3Style}>Cities of {s.name}</h3>
+                <CityList cities={s.cities} />
+                {hub && (
+                  <p style={{ margin: '1rem 0 0' }}>
+                    <a href={hub} onClick={(e) => handleLinkClick(e, hub)} style={{ color: 'var(--primary-yellow)', fontWeight: 700, textDecoration: 'none' }}>
+                      Electropolished pipes across {s.name} →
                     </a>
-                  );
-                })}
-                </div>
-              </div>
+                  </p>
+                )}
+              </section>
             );
           })}
         </div>
-      </section>
 
+        {countries.length > 0 && (
+          <>
+            <h2 style={{ ...h2Style, marginTop: '3rem' }}>International Markets</h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+              {countries.map((c) => (
+                <section key={c.name} id={getStateSlug(c.name)} style={boxStyle}>
+                  <h3 style={h3Style}>Cities of {c.name}</h3>
+                  <CityList cities={c.cities} />
+                </section>
+              ))}
+            </div>
+          </>
+        )}
+      </div>
     </div>
   );
 }

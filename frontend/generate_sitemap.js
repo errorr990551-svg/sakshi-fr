@@ -135,6 +135,7 @@ newPages.forEach(slug => {
 
 // Market Area Hub (with trailing slash)
 addMainUrl(`${BASE_URL}/market-area/`, 'weekly', '0.8', 'Market Area Hub');
+addMainUrl(`${BASE_URL}/sitemap/`, 'monthly', '0.5', 'HTML Sitemap');
 
 // EP Build Spec Pages (excluding city pages handled exclusively by sitemap-cities.xml)
 const stateHubSlugs = ['gujarat', 'telangana', 'west-bengal', 'madhya-pradesh', 'andhra-pradesh', 'odisha'];

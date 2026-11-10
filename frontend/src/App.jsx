@@ -76,7 +76,7 @@ function App({ path, route, Page }) {
     if (resolvedRoute.type !== '404') return;
     const clean = currentPath.split('?')[0].split('#')[0];
 
-    if (clean === '/sitemap' || clean === '/sitemap.xml') {
+    if (clean === '/sitemap.xml') {
       window.location.replace('/sitemap.xml');
       return;
     }
@@ -266,7 +266,11 @@ function App({ path, route, Page }) {
       )}
 
       {resolvedRoute.type === 'market-area' && (
-        <Page cities={resolvedRoute.cities} />
+        <Page cities={resolvedRoute.cities} stateHubs={resolvedRoute.stateHubs} />
+      )}
+
+      {resolvedRoute.type === 'sitemap' && (
+        <Page groups={resolvedRoute.sitemap} />
       )}
 
       {resolvedRoute.type === 'market-city' && (

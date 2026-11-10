@@ -2402,9 +2402,15 @@
   </url>
   <url>
     <loc>https://steelmanufacturer.in/market-area/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steelmanufacturer.in/sitemap/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://steelmanufacturer.in/electropolished-tubes/</loc>

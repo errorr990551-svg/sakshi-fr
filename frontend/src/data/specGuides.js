@@ -4,7 +4,10 @@
 // Inline links use [anchor](/path/). Company claims are limited to those stated elsewhere
 // on the site; sizes are standard dimension series, not stock claims.
 
+import { INDUSTRY_GUIDES } from './industryGuides.js';
+
 export const SPEC_GUIDES = {
+  ...INDUSTRY_GUIDES,
   '/electropolished-tubes/': {
     updated: '2026-11-03',
     sections: [

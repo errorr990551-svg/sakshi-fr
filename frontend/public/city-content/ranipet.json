@@ -1,0 +1,71 @@
+{
+  "slug": "ranipet",
+  "updated": "2026-11-12",
+  "sections": [
+    {
+      "heading": "Ranipet: SIPCOT, Leather and an API Plant on the Palar",
+      "paragraphs": [
+        "Ranipet became a district headquarters on 28 November 2019, when Vellore district was split in three, but it has been an industrial town for far longer. It sits on the northern bank of the Palar opposite Arcot, and Wikipedia describes its industrial base as leather tanning, chemical manufacturing and engineering. The SIPCOT Industrial Complex, Ranipet, has its Phase I at Mukundarayapuram, with Phases II and III spread over 730 acres, and a special economic zone has been set up at Nellikuppam on the edge of the town.",
+        "The leather trade is the historic anchor. Vellore-region leather accounts for more than 37 percent of India's exports of leather and leather products, and Ranipet's tanneries and finished-leather factories make shoes and garments for export alongside the small chemical and tool-making units that serve them. Engineering came later: BHEL's Boiler Auxiliaries Plant is at Ranipet, and SAME Deutz-Fahr builds 35 to 70 HP tractors and engines in the SIPCOT complex for export and domestic sale. EID Parry, one of the town's oldest employers, runs a ceramics plant and a fertiliser unit here."
+      ]
+    },
+    {
+      "heading": "Malladi's Two Ranipet Sites: Where Electropolished Tube Is Needed",
+      "paragraphs": [
+        "For a supplier of hygienic stainless tube, the plant that matters most in Ranipet is Malladi Drugs and Pharmaceuticals. The company lists two manufacturing sites in Ranipet: a multi-product facility established in 1982 for chemical transformations, and a second multi-product facility from 1991 with fermentation capability. Malladi built its business on ephedrine and pseudoephedrine salts, has made phenylephrine salts and other APIs for more than 20 years, supplies APIs to 70 countries and has filed 22 drug master files with the US FDA and other agencies, with approvals it lists from the USFDA, KFDA, CDSCO, PMDA, ANVISA and Health Canada.",
+        "A multi-product API site that is inspected by that many regulators has two piping problems at once. The fermentation block needs the same discipline as a biotech plant: media and seed transfer, broth harvest and the CIP return in SF4 electropolished 316L, so that one campaign's organisms do not reach the next. The chemical synthesis blocks switch between products, and the final-stage lines after purification, the purified water loop, and the solvent and product lines around crystallisation and drying are where an electropolished bore makes cleaning verifiable rather than hopeful."
+      ]
+    },
+    {
+      "heading": "316L, 904L and SF1 for Ranipet's Chemical and Tannery Lines",
+      "paragraphs": [
+        "Grade follows chemistry. Fermentation media, purified water, caustic and acid CIP and most finishing solvents are 316L service. Where an API step runs with hydrochloric acid, chloride-bearing intermediates at temperature or other aggressive reagents, ask us to quote 904L, which we supply electropolished. Early-stage synthesis, solvent recovery and effluent lines that are flushed rather than validated do not need an electropolished bore; SF1 mechanically polished 304L or 316L, to ASME BPE surface designations, is the right call there.",
+        "Ranipet's tanneries and leather-chemical units are a different market. Their process liquors carry chrome salts, sulphides and high chloride loads, so most of their piping is plastic or rubber-lined rather than stainless. The stainless that does belong there is small-bore: chemical dosing and metering lines, sample lines to the effluent plant analysers and instrument impulse lines, where an electropolished 316L or 904L bore keeps the measurement honest and resists pitting in salt-laden liquor."
+      ]
+    },
+    {
+      "heading": "Paperwork for a Ranipet Regulated Plant",
+      "paragraphs": [
+        "A US FDA and PMDA inspected API site keeps supplier records for every product-contact line, and ours are built for that file. Each heat carries an EN 10204 3.1 certificate traced to its heat number, with chemical analysis from a NABL-accredited laboratory. Every length is PMI tested before dispatch so a 304L tube cannot be installed where the isometric says 316L, and each electropolished lot has our internal Ra report. Our quality system is certified to ISO 9001:2015.",
+        "We supply ASTM A270 sanitary tube, ASTM A269 seamless and A249 welded tube, and ASTM A312 pipe in grades 304, 304L, 316 and 316L. If your qualification protocol asks for witness points, extra tests or a defined marking format, include it in the enquiry so the quotation covers it."
+      ]
+    },
+    {
+      "heading": "Sending a Ranipet RFQ",
+      "paragraphs": [
+        "We return a quotation within 24 hours of receiving a complete enquiry. For API, fermentation, leather-chemical or engineering plants in the SIPCOT complex or around Ranipet, please tell us:"
+      ],
+      "bullets": [
+        "The block and system the tube serves: fermentation, synthesis, purified water, CIP, chemical dosing or an analyser or impulse line, and whether you are the plant, a project contractor or a skid builder.",
+        "Grade and finish for each line: SF4 316L for product contact, fermentation and CIP; SF1 304L or 316L for utilities and flushed lines; 904L electropolished for acid or chloride service.",
+        "Tube or pipe OD, wall, length and quantity, with the governing standard: ASTM A270, A269, A249 or A312.",
+        "Documentation or inspection requirements from your quality unit, and the delivery address in Ranipet or the SIPCOT phase."
+      ],
+      "links": [
+        { "label": "Send a Ranipet enquiry", "href": "/contact-us/" },
+        { "label": "Electropolished pipes", "href": "/electropolished-pipes/" },
+        { "label": "Electropolished tubes", "href": "/electropolished-tubes/" }
+      ]
+    },
+    {
+      "heading": "Supplying Ranipet and the Vellore–Chennai Belt",
+      "paragraphs": [
+        "Tube for Ranipet is dispatched by road from Mumbai, where we are located at Shop No. 05, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai 400004. Lengths travel capped at both ends and marked with their heat number, and the quotation puts the dispatch date and transit to your plant in writing.",
+        "Nearby markets we also supply:"
+      ],
+      "links": [
+        { "label": "Chennai", "href": "/market-area/chennai/" },
+        { "label": "Sriperumbudur", "href": "/market-area/sriperumbudur/" },
+        { "label": "Hosur", "href": "/market-area/hosur/" },
+        { "label": "Puducherry", "href": "/market-area/puducherry/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Wikipedia: Ranipet district (formed 28 Nov 2019; SIPCOT Phase I at Mukundarayapuram, Phases II and III 730 acres; SDFI tractors; EID Parry; Nellikuppam SEZ)", "url": "https://en.wikipedia.org/wiki/Ranipet_district" },
+    { "title": "Wikipedia: Economy of Vellore (Vellore leather over 37% of India's leather exports; BHEL Boiler Auxiliaries Plant at Ranipet)", "url": "https://en.wikipedia.org/wiki/Economy_of_Vellore" },
+    { "title": "Wikipedia: Ranipet (Palar river, Arcot; leather tanning, chemical and engineering base)", "url": "https://en.wikipedia.org/wiki/Ranipet" },
+    { "title": "Malladi Drugs and Pharmaceuticals: Facilities (two Ranipet sites, 1982 and 1991, fermentation capability)", "url": "https://www.malladi.com/facilities" },
+    { "title": "Malladi Drugs and Pharmaceuticals: Home and About (ephedrine and pseudoephedrine APIs, 70 countries, 22 DMFs, regulatory approvals)", "url": "https://www.malladi.com/" }
+  ]
+}

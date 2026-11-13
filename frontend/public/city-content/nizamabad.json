@@ -1,0 +1,68 @@
+{
+  "slug": "nizamabad",
+  "updated": "2026-11-10",
+  "sections": [
+    {
+      "heading": "Nizamabad: Headquarters of the National Turmeric Board",
+      "paragraphs": [
+        "Nizamabad's standing in the turmeric trade was made formal in 2025. Union Commerce and Industry Minister Piyush Goyal launched the National Turmeric Board on 14 January 2025, at Makar Sankranti, with its headquarters set up in Nizamabad and Palle Ganga Reddy appointed as its first chairperson. The board serves turmeric cultivators across 20 states. On 29 June 2025 Union Home Minister Amit Shah inaugurated the board's national headquarters in Nizamabad itself, with Union ministers G Kishan Reddy and Bandi Sanjay Kumar present.",
+        "The figures given at the launch explain the weight placed on it. In 2023-24 India had 3.05 lakh hectares under turmeric and produced 10.74 lakh tonnes, more than 70 percent of world output, across 30 varieties. India holds over 62 percent of world turmeric trade, and in 2023-24 exported 1.62 lakh tonnes of turmeric and turmeric products worth 226.5 million US dollars. The board includes representatives of the Ministry of AYUSH, the Department of Pharmaceuticals, the Department of Agriculture and Farmers Welfare and the Department of Commerce."
+      ]
+    },
+    {
+      "heading": "From Turmeric Trade to Value-Added Products in the Nizamabad Belt",
+      "paragraphs": [
+        "The board's stated brief goes beyond the farm gate. According to the minister, it will promote research and development of new turmeric products, look into value addition of turmeric products for export markets, raise awareness of turmeric's medicinal properties, and work on quality and safety standards for production and exports. The presence of AYUSH and the Department of Pharmaceuticals on the board points the same way: towards processed products such as extracts, oleoresins, nutraceutical and ayurvedic formulations, rather than only dried rhizome and powder.",
+        "That shift changes the equipment list. A spice-grinding unit needs very little stainless tube, but an extraction or formulation plant does: solvent and extract transfer lines, concentrate and oleoresin handling, purified water for formulation, and CIP circuits for vessels and lines that change between batches. These are hygienic services where the bore finish of the tube decides how cleanly one batch is separated from the next."
+      ]
+    },
+    {
+      "heading": "Why Turmeric Extract Lines in Nizamabad Suit Electropolished Tube",
+      "paragraphs": [
+        "Turmeric extracts are strongly coloured and sticky, and a residue that hangs up in a rough bore shows up as carry-over, staining and longer cleaning cycles. Electropolishing takes off the cold-worked surface left by tube drawing, lowers the bore roughness and leaves a chromium-rich passive layer, so product and residue have fewer pits and scratches to lodge in and CIP clears the line faster. For an exporter whose product must meet a buyer's quality and safety standard, cleanability of contact lines is part of meeting that standard.",
+        "Under ASME BPE surface designations, SF4 is mechanically polished then electropolished, and SF1 is mechanically polished only. For a Nizamabad processing plant, SF4 316L is the usual choice for extract and product-contact lines, purified water and CIP return, while SF1 304L or 316L covers cooling water, solvent recovery utilities and general transfer. Where a process uses acids or chloride-bearing streams, ask us to price 904L, which we supply electropolished."
+      ]
+    },
+    {
+      "heading": "Grades, Standards and Test Documents for Nizamabad Buyers",
+      "paragraphs": [
+        "We supply ASTM A270 sanitary tube, ASTM A269 seamless tube, ASTM A249 welded tube and ASTM A312 pipe in grades 304, 304L, 316 and 316L. Every heat ships with an EN 10204 3.1 certificate traced to its heat number, supported by chemical analysis from a NABL-accredited laboratory, and PMI is carried out on every length so a 304L tube cannot be installed where 316L was specified.",
+        "Each electropolished lot is accompanied by our internal Ra report, which a plant's quality team or an export customer's auditor can match against the specified finish. Our quality management system is certified to ISO 9001:2015. If your buyer or consultant asks for a particular inspection or marking requirement, send it with the enquiry so it is priced into the quotation."
+      ]
+    },
+    {
+      "heading": "Sending a Nizamabad RFQ",
+      "paragraphs": [
+        "A complete enquiry gets a quotation from us within 24 hours. For turmeric processing, extraction or formulation projects around Nizamabad, include:"
+      ],
+      "bullets": [
+        "The product and process: powder, extract, oleoresin or a formulation line, and whether you are the processor, a machinery builder or an installation contractor.",
+        "Grade and finish per line, such as SF4 316L for extract contact and CIP, SF1 304L or 316L for utilities, or 904L electropolished for acid service.",
+        "Tube or pipe size, wall, length and quantity, with the standard: ASTM A270, A269, A249 or A312.",
+        "Any test or documentation needs from your export buyer, and the delivery address in Nizamabad district."
+      ],
+      "links": [
+        { "label": "Send a Nizamabad enquiry", "href": "/contact-us/" },
+        { "label": "Electropolished pipes", "href": "/electropolished-pipes/" },
+        { "label": "Electropolished tubes", "href": "/electropolished-tubes/" }
+      ]
+    },
+    {
+      "heading": "Supplying Nizamabad and North Telangana",
+      "paragraphs": [
+        "Material for Nizamabad is dispatched from Mumbai, where we are located at Shop No. 05, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai 400004. Each length leaves with capped ends and its heat number marked, and the dispatch date and transit to your plant are stated in writing on the quotation.",
+        "Nearby markets we also supply:"
+      ],
+      "links": [
+        { "label": "Hyderabad", "href": "/market-area/hyderabad/" },
+        { "label": "Karimnagar", "href": "/market-area/karimnagar/" },
+        { "label": "Medak and Patancheru", "href": "/market-area/medak-patancheru/" },
+        { "label": "Siddipet", "href": "/market-area/siddipet/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "ETV Bharat: Govt launches National Turmeric Board, HQ in Nizamabad (14 Jan 2025; production, export and board membership figures)", "url": "https://www.etvbharat.com/en/!bharat/govt-launches-national-turmeric-board-to-support-farmers-enn25011403620" },
+    { "title": "Deccan Chronicle: Amit Shah inaugurates National Turmeric Board HQ in Nizamabad (29 Jun 2025)", "url": "https://www.deccanchronicle.com/southern-states/telangana/amit-shah-inaugurates-national-turmeric-board-hq-in-telangana-1888230" }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "slug": "ranjangaon",
+  "updated": "2026-11-12",
+  "sections": [
+    {
+      "heading": "Ranjangaon MIDC: Consumer Goods, White Goods and Coatings on the Pune–Ahmednagar Road",
+      "paragraphs": [
+        "Ranjangaon is a village in Shirur taluka about 50 km from Pune on the Pune–Ahmednagar highway, known to pilgrims for its Ganpati shrine and to industry for the MIDC estate beside it. The park developer ESR, which runs two industrial parks there of 18 and 25 acres, lists the estate's tenants as Whirlpool, LG, Tata Steel Processing, Bombay Dyeing, 3M, ITC, Bekaert, Dow Corning and Jotun, and describes the demand it serves as engineering, automobile, electronics, FMCG and logistics.",
+        "That mix is unusual for a Pune estate. Chakan and Talegaon are vehicle and component towns; Ranjangaon has household appliances, consumer goods, steel processing, a paint maker, a silicones producer and a wire company side by side. For a supplier of stainless tube that means fewer bulk pharmaceutical orders than in Hinjawadi or Hadapsar and more enquiries for process water, coatings and food lines, each with a different grade and finish."
+      ]
+    },
+    {
+      "heading": "ITC's Ranjangaon Food Facility and What It Asks of Its Piping",
+      "paragraphs": [
+        "The plant most relevant to hygienic tube is ITC's Integrated Consumer Goods Manufacturing and Logistics facility at Ranjangaon. ITC reports that the unit was awarded Platinum-level certification by the Alliance for Water Stewardship after a third-party audit of its water governance, water balance and water quality, making it the third ITC unit to be certified, after the Kovai paperboard factory and the Malur food factory, the sixth facility in India under the AWS standard and only the fourth food and beverage production site in Asia to reach Platinum.",
+        "A food plant that has been audited that closely on water treats its process and CIP water as part of the product. Product transfer lines, syrup and ingredient dosing, and the CIP return leg are where an SF4 electropolished 316L bore pays, because a smoother passive surface releases residue faster to the CIP cycle and uses less water and chemical to reach a verified clean. Treated process water and utilities run well on SF1 mechanically polished 304L."
+      ]
+    },
+    {
+      "heading": "The Ranjangaon Electronics Manufacturing Cluster",
+      "paragraphs": [
+        "On 31 October 2022 the Union IT ministry approved MIDC's proposal for an Electronics Manufacturing Cluster on 297.11 acres in the Ranjangaon industrial area. The development cost was put at Rs 492.85 crore, of which the Government of India funds Rs 207.98 crore and MIDC Rs 284.87 crore, and the cluster is targeted to draw Rs 2,000 to 3,000 crore of investment and 5,000 to 6,000 jobs. The state highway from Shirur to Satara passes through the site.",
+        "Electronics assembly plants are not pharmaceutical plants, but their utilities overlap. Deionised and high-purity rinse water loops, process cooling, clean compressed air and nitrogen drops, and the chemical lines of plating and surface-treatment shops all call for stainless tube, and the water and gas lines to cleanroom points of use are specified electropolished for the same reason as in a device plant: the bore must not shed particles or grow biofilm into a process that is measured in parts per million."
+      ]
+    },
+    {
+      "heading": "Grade and Finish for a Ranjangaon Line List",
+      "paragraphs": [
+        "Using ASME BPE surface designations, SF4 316L, mechanically polished then electropolished, is the finish for food product and CIP return lines, for DI and high-purity water loops in the electronics cluster and for any pharmaceutical or personal-care line a Ranjangaon plant adds later. SF1 mechanically polished 304L or 316L suits treated process water, chilled water, CIP supply and the transfer lines of a paint, silicone or steel-processing plant that are flushed but not validated. Where a plating or chemical line carries acids or chlorides at temperature, we quote 904L, which we supply electropolished.",
+        "Each heat we ship carries an EN 10204 3.1 certificate traced to its heat number with chemical analysis by a NABL-accredited laboratory, every length is PMI tested, and each electropolished lot has our internal Ra report. Our quality system is certified to ISO 9001:2015, and we supply ASTM A270 sanitary tube, ASTM A269 seamless and A249 welded tube and ASTM A312 pipe in 304, 304L, 316 and 316L."
+      ]
+    },
+    {
+      "heading": "Sending a Ranjangaon RFQ",
+      "paragraphs": [
+        "Once we have a complete enquiry the quotation follows within 24 hours. For plants in Ranjangaon MIDC or the new electronics cluster, please include:"
+      ],
+      "bullets": [
+        "The plant type and the system: food product or CIP line, DI or high-purity water loop, plating or chemical line, process cooling or plant utilities, and whether you are the owner, an EPC contractor or an equipment builder.",
+        "Grade and finish per line: SF4 316L for product contact, CIP return and high-purity water; SF1 304L or 316L for utilities; 904L electropolished for acid service.",
+        "Tube OD, wall, length and quantity, with the standard: ASTM A270, A269, A249 or A312, and the fittings they join to.",
+        "Inspection or documentation requirements from your quality or EHS team, and the plot address in Ranjangaon MIDC."
+      ],
+      "links": [
+        { "label": "Send a Ranjangaon enquiry", "href": "/contact-us/" },
+        { "label": "Electropolished pipes", "href": "/electropolished-pipes/" },
+        { "label": "Electropolished tubes", "href": "/electropolished-tubes/" }
+      ]
+    },
+    {
+      "heading": "Supplying Ranjangaon and Shirur from Mumbai",
+      "paragraphs": [
+        "Ranjangaon is reached by road from our Mumbai premises at Shop No. 05, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai 400004. Every length is dispatched with end caps and its heat number marked, and your quotation states dispatch and transit to the plot in writing.",
+        "Nearby markets we also supply:"
+      ],
+      "links": [
+        { "label": "Pune", "href": "/market-area/pune/" },
+        { "label": "Chakan", "href": "/market-area/chakan/" },
+        { "label": "Pimpri-Chinchwad", "href": "/market-area/pimpri-chinchwad/" },
+        { "label": "Satara", "href": "/market-area/satara/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "ESR: Ranjangaon MIDC area (Pune–Ahmednagar highway; tenants Whirlpool, LG, Tata Steel Processing, Bombay Dyeing, 3M, ITC, Bekaert, Dow Corning, Jotun; 18 and 25 acre parks)", "url": "https://in.esr.com/ranjangaon-midc-area" },
+    { "title": "ITC: ICML Ranjangaon awarded Platinum-level certification by the Alliance for Water Stewardship", "url": "https://itcportal.com/media-centre/itc-stories/itc-icml-ranjangaon-platinum-level-certification-water-stewardship.html" },
+    { "title": "The Hitavada, 1 Nov 2022: Rs 500 crore Electronics Manufacturing Cluster at Ranjangaon (297.11 acres, Rs 492.85 crore, Shirur–Satara highway)", "url": "https://thehitavada.com/Encyc/2022/11/1/Rs-500-cr-Electronics-Manufacturing-Cluster-to-come-up-near-Pune.html" },
+    { "title": "Wikipedia: Ranjangaon (village in Pune district about 50 km from Pune; MIDC industrial area and Ganpati shrine)", "url": "https://en.wikipedia.org/wiki/Ranjangaon" }
+  ]
+}

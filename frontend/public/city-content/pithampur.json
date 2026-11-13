@@ -1,0 +1,71 @@
+{
+  "slug": "pithampur",
+  "updated": "2026-11-11",
+  "sections": [
+    {
+      "heading": "Pithampur and the Indore SEZ: 59 Plants, 22 of Them Pharmaceutical",
+      "paragraphs": [
+        "Pithampur is an industrial town in Dhar district and part of the Indore Metropolitan Region. The Pithampur Industrial Area is described as the leading industrial area of Madhya Pradesh, and the regional office of the state's industrial development corporation, MPIDC, oversees not just the main estate but the Smart Industrial Park, the Special Economic Zone and the Bijepur and Mohana industrial areas around it.",
+        "The Indore Special Economic Zone sits inside the Pithampur Industrial Area on 572 hectares. According to the SEZ commissioner's office, it houses 59 plants across pharmaceuticals, packaging materials, engineering, textiles and food processing, and 22 of those plants are pharmaceutical. Medicines make up about 70 percent of what the zone exports, and the United States is among the top buyers. The SEZ also has a separately designated pharma SEZ within it that houses multinational and large Indian pharmaceutical units."
+      ]
+    },
+    {
+      "heading": "What Pithampur's Export Figures Say About Its Pharma Lines",
+      "paragraphs": [
+        "The zone's export numbers track the fortunes of its drug plants. Exports from the Indore SEZ were Rs 14,265.63 crore in 2023-24 and fell 9.25 percent to Rs 12,948 crore in 2024-25, which the commerce ministry official attributed to delays in US FDA approval for some products of a major drug unit in the zone and lower international orders at others. In the first seven months of 2025-26 exports recovered, rising 32 percent to Rs 8,127.67 crore from Rs 6,157.11 crore a year earlier, again on orders at pharmaceutical units.",
+        "That dependence on US FDA approvals is the point for anyone specifying piping at Pithampur. A regulated-market plant is inspected on its water systems, its cleaning validation and its product-contact surfaces, and a line that cannot be cleaned and documented is a finding waiting to happen. The tube in purified water and WFI loops, product transfer lines and CIP circuits is part of what the inspector is assessing, not a commodity bought on price alone."
+      ]
+    },
+    {
+      "heading": "SF4 316L for Pithampur's Regulated-Market Plants, SF1 for the Rest",
+      "paragraphs": [
+        "Following ASME BPE surface designations, SF4 is a mechanically polished bore that is then electropolished, and SF1 is mechanically polished only. In a Pithampur formulation or API plant exporting to the US, SF4 316L belongs on WFI and purified water distribution, product transfer and holding lines, sterile and aseptic fill support lines and CIP return. Electropolishing strips the cold-worked surface left by drawing, lowers the bore roughness and leaves a chromium-rich passive film, so the line rinses faster, holds less residue between batches and resists rouging in hot WFI service.",
+        "SF1 304L or 316L covers utility water, cooling, compressed-air drops and transfer lines that are cleaned but not validated, and the food, textile and packaging units in the SEZ use the same split between product lines and utilities. For acidic or chloride-bearing API process streams, ask us to price 904L, which we supply electropolished. We supply ASTM A270 sanitary tube, ASTM A269 seamless and A249 welded tube, and ASTM A312 pipe in 304, 304L, 316 and 316L."
+      ]
+    },
+    {
+      "heading": "Documents a Pithampur Quality Team Will Ask For",
+      "paragraphs": [
+        "Every heat we ship carries an EN 10204 3.1 certificate traced to its heat number, with chemical analysis from a NABL-accredited laboratory. PMI is done on every length before dispatch, so a 304L tube cannot end up in a 316L WFI loop. Each electropolished lot has our internal Ra report, which your validation team can file against the line list, and our quality system is certified to ISO 9001:2015.",
+        "If your plant's engineering standard or your consultant's inspection plan calls for additional tests, witness points or a particular marking format, state it in the enquiry and the quotation will price it in."
+      ]
+    },
+    {
+      "heading": "Sending a Pithampur RFQ",
+      "paragraphs": [
+        "Quotations go out within 24 hours of a complete enquiry. For units in the Pithampur Industrial Area, the Indore SEZ or the Smart Industrial Park, please send:"
+      ],
+      "bullets": [
+        "The plant and system: formulation, API or biotech unit, WFI or purified water loop, CIP circuit, or a food or packaging line, and whether you are the owner, a project contractor or a skid builder.",
+        "Grade and bore finish per line: SF4 316L for product contact, WFI and CIP, SF1 304L or 316L for utilities, 904L electropolished for aggressive process streams.",
+        "OD, wall, length, quantity and the standard to quote against: ASTM A270, A269, A249 or A312.",
+        "Any validation or inspection requirement from your quality team, and the sector or plot address for delivery."
+      ],
+      "links": [
+        { "label": "Send a Pithampur enquiry", "href": "/contact-us/" },
+        { "label": "Electropolished pipes", "href": "/electropolished-pipes/" },
+        { "label": "Electropolished tubes", "href": "/electropolished-tubes/" }
+      ]
+    },
+    {
+      "heading": "Supplying Pithampur, the SEZ and the Dhar–Indore Belt",
+      "paragraphs": [
+        "Tube for Pithampur travels by road from our Mumbai base at Shop No. 05, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai 400004, capped at both ends and marked with its heat number, and the quotation sets out dispatch and transit to your plant in writing.",
+        "Nearby markets we also supply:"
+      ],
+      "links": [
+        { "label": "Indore", "href": "/market-area/indore/" },
+        { "label": "Dewas", "href": "/market-area/dewas/" },
+        { "label": "Ujjain", "href": "/market-area/ujjain/" },
+        { "label": "Bhopal", "href": "/market-area/bhopal/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Outlook Business: Exports from Indore SEZ decline by over 9% to Rs 12,948 crore in FY25 (572 ha, 59 plants, 22 pharma, US FDA delays)", "url": "https://www.outlookbusiness.com/economy-and-policy/exports-from-indore-sez-decline-by-over-9-to-rs-12948-crore-in-fy25" },
+    { "title": "Medical Dialogues, 25 Nov 2025: Indore SEZ exports surge 32 percent on strong pharma demand (Rs 8,127.67 crore, Apr–Oct)", "url": "https://medicaldialogues.in/news/industry/pharma/indore-sez-exports-surge-32-percent-on-strong-pharma-demand-159390" },
+    { "title": "Free Press Journal: Indore SEZ exports highest quantity of medicines to United States (pharma SEZ within the zone)", "url": "https://www.freepressjournal.in/indore/indore-special-economic-zone-exports-highest-quantity-of-medicines-to-united-states" },
+    { "title": "Free Press Journal: Units in Pithampur need not pay property tax (MPIDC regional office; Smart Industrial Park, SEZ, Bijepur, Mohana)", "url": "https://www.freepressjournal.in/indore/units-in-madhya-pardeshs-pithampur-need-not-pay-property-tax" },
+    { "title": "Wikipedia: Pithampur (Dhar district, Indore Metropolitan Region)", "url": "https://en.wikipedia.org/wiki/Pithampur" }
+  ]
+}

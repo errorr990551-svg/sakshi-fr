@@ -1,0 +1,72 @@
+{
+  "slug": "sanand",
+  "updated": "2026-11-12",
+  "sections": [
+    {
+      "heading": "Sanand GIDC: From the Nano Plant to India's Chip-Packaging Hub",
+      "paragraphs": [
+        "Sanand, in Ahmedabad district about 30 km from the city, grew into an industrial centre after Tata Motors moved its Nano project here in 2008 onto 1,100 acres in the villages of Khoda and Bol. The GIDC Sanand Industrial Estate now covers more than 2,000 hectares, and GIDC's own estate brochure lists Nestlé, Hindustan Coca-Cola, Colgate-Palmolive, Bosch, Honda Motorcycle and Maxxis among its occupants, with pharmaceuticals among the sectors it serves.",
+        "Since 2023 the estate has become the centre of India's back-end semiconductor industry. Micron announced in June 2023 that it would build an assembly and test facility in Sanand for DRAM and NAND products, investing up to US$825 million of its own money, with the Union government covering 50 percent and Gujarat 20 percent of project cost under the modified ATMP scheme, for a combined investment of up to US$2.75 billion over two phases; the first phase was planned with 500,000 square feet of cleanroom. India Briefing reports the Micron facility began operations in February 2026, Kaynes Semicon's OSAT plant making intelligent power modules was inaugurated on 31 March 2026, and the CG Power, Renesas and Stars Microelectronics unit ran its pilot in August 2025."
+      ]
+    },
+    {
+      "heading": "Nestlé, Coca-Cola and the Food Side of Sanand",
+      "paragraphs": [
+        "Sanand is also a food and beverage town. Nestlé India's factory in Sanand GIDC was commissioned in 2021 on more than 82 acres and makes MAGGI noodles, MAGGI Masala-ae-Magic, KITKAT and MUNCH, employing about 700 people, running biomass boilers and natural-gas ovens and buying wheat flour and oils from around 38 local suppliers. Hindustan Coca-Cola Beverages already bottles in Sanand, and in December 2023 The Coca-Cola Company was allotted a 1.6 lakh square metre plot in Sanand Industrial Estate-II, next to that bottling plant, for a Rs 3,000 crore beverage base and concentrates facility.",
+        "A concentrate plant is the most demanding piping job in the beverage business. Flavour concentrates and beverage bases are made in small batches, are expensive, and must not carry over between flavours, so product, dosing and CIP return lines are built in SF4 electropolished 316L. A noodle and confectionery factory uses the same finish on its seasoning, syrup and chocolate-mass lines and on CIP return, with SF1 mechanically polished 304L on treated water and utilities."
+      ]
+    },
+    {
+      "heading": "What a Sanand Semiconductor Back-End Plant Buys, and What It Does Not",
+      "paragraphs": [
+        "Assembly, test and packaging plants are not wafer fabs, and we should be clear about where our tube fits. The ultra-high-purity gas distribution inside a cleanroom is normally specified to the owner's own standard and bought from specialist UHP suppliers; we do not claim that qualification. The surrounding systems are a different matter: deionised and ultrapure water make-up and distribution to the facility, process cooling water, clean compressed air and nitrogen to the building, chemical delivery and neutralisation lines, and the water and gas lines serving test floors and support buildings.",
+        "On those systems the case for an electropolished bore is particle shedding and biofilm. A mechanically polished tube keeps releasing fines and holds biofilm in its torn surface layer; electropolishing removes that layer, lowers the Ra and leaves a chromium-rich passive film that sheds less into water that is measured in parts per billion. For these lines we supply SF4 316L tube to ASME BPE surface designations and, for acid and chloride-bearing chemical lines, 904L electropolished. Our [ultra high purity EP tubes](/ultra-high-purity-ep-tubes/) page covers the handling, capping and bagging those lines need."
+      ]
+    },
+    {
+      "heading": "Grades and Documents for Sanand's Food, Pharma and Electronics Plants",
+      "paragraphs": [
+        "Across all three industries in Sanand the split is the same: SF4 316L for product contact, concentrate, CIP return and high-purity water; SF1 304L or 316L for treated water, cooling and utilities; 904L electropolished where chemistry is aggressive. We supply ASTM A270 sanitary tube, ASTM A269 seamless and A249 welded tube and ASTM A312 pipe in 304, 304L, 316 and 316L.",
+        "Every heat ships with an EN 10204 3.1 certificate traced to its heat number and chemical analysis from a NABL-accredited laboratory. Every length is PMI tested before it leaves, and each electropolished lot has our internal Ra report, so a food auditor, a pharma validation team or a semiconductor facility engineer can file the tube records against the line list. Our quality system is certified to ISO 9001:2015."
+      ]
+    },
+    {
+      "heading": "Sending a Sanand RFQ",
+      "paragraphs": [
+        "A complete enquiry gets our quotation within 24 hours. For plants in Sanand GIDC, Sanand-II or the Khoda–Bol automotive belt, please send:"
+      ],
+      "bullets": [
+        "The plant and system: food product or CIP line, concentrate or dosing line, DI or ultrapure water, clean gas to a test floor, chemical delivery, or plant utilities, and whether you are the owner, an EPC contractor or a skid or panel builder.",
+        "Grade and finish per line: SF4 316L for product contact, CIP return and high-purity water; SF1 304L or 316L for utilities; 904L electropolished for acid or chloride chemistry.",
+        "Tube OD, wall, length and quantity, with the standard: ASTM A270, A269, A249 or A312, and the fittings or point-of-use connections they must suit.",
+        "Validation, cleanliness or packaging requirements (capped, bagged, cleanroom-ready) and the plot address in the estate."
+      ],
+      "links": [
+        { "label": "Send a Sanand enquiry", "href": "/contact-us/" },
+        { "label": "Electropolished pipes", "href": "/electropolished-pipes/" },
+        { "label": "Electropolished tubes", "href": "/electropolished-tubes/" }
+      ]
+    },
+    {
+      "heading": "Supplying Sanand and the Ahmedabad Industrial Ring",
+      "paragraphs": [
+        "Sanand is a road run from our Mumbai premises at Shop No. 05, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai 400004. Tube leaves with end caps fitted and the heat number marked on every length, and the quotation confirms dispatch and transit to your plot in writing.",
+        "Nearby markets we also supply:"
+      ],
+      "links": [
+        { "label": "Ahmedabad", "href": "/market-area/ahmedabad/" },
+        { "label": "Gandhinagar", "href": "/market-area/gandhinagar/" },
+        { "label": "Vadodara", "href": "/market-area/vadodara/" },
+        { "label": "Mehsana", "href": "/market-area/mehsana/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "India Briefing, 31 Mar 2026: Sanand semiconductor cluster (GIDC estate over 2,000 ha; Micron operations Feb 2026; Kaynes Semicon 31 Mar 2026; CG Power–Renesas pilot Aug 2025)", "url": "https://www.india-briefing.com/news/india-semiconductor-manufacturing-sanand-gujarat-2026-43814.html" },
+    { "title": "DeshGujarat, 22 Jun 2023: Micron announces US$825 million assembly and test facility in Sanand (US$2.75 billion combined, 500,000 sq ft cleanroom, ATMP scheme)", "url": "https://deshgujarat.com/2023/06/22/micron-technology-announces-825-million-investment-for-semiconductor-facility-in-gujarat" },
+    { "title": "The CSR Universe: Nestlé India's Sanand factory marks five years (commissioned 2021, 82 acres, products, 700 employees)", "url": "https://thecsruniverse.com/articles/nestl-india-s-sanand-factory-marks-five-years-of-sustainable-manufacturing" },
+    { "title": "DeshGujarat, 8 Dec 2023: Coca-Cola to invest Rs 3,000 crore in Sanand (plot SM-52, Sanand Industrial Estate-II, next to HCCB bottling plant)", "url": "https://deshgujarat.com/2023/12/08/coca-cola-to-invest-rs-3000-crore-in-sanand" },
+    { "title": "GIDC: Sanand Industrial Estate presentation, June 2022 (Ahmedabad 30 km; occupants and sectors)", "url": "https://gidc.gujarat.gov.in/pdf/June%202022%20GIDC%20Sanand%20Industrial%20Estate.pdf" },
+    { "title": "Wikipedia: Sanand (Ahmedabad district; Tata Nano project, 1,100 acres at Khoda and Bol)", "url": "https://en.wikipedia.org/wiki/Sanand" }
+  ]
+}

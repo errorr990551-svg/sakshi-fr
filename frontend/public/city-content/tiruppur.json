@@ -1,0 +1,62 @@
+{
+  "slug": "tiruppur",
+  "updated": "2026-11-14",
+  "sections": [
+    {
+      "heading": "Tiruppur: India's Knitwear Capital and Its Water Problem",
+      "paragraphs": [
+        "Tiruppur, on the Noyyal river in western Tamil Nadu, is the centre of India's cotton knitwear trade. Wikipedia records that in 2021-22 the city exported garments worth about US$4.5 billion, nearly 54.2 percent of India's textile exports, that it accounts for around 90 percent of the country's cotton knitwear exports, and that some 10,000 garment and allied units employ more than 600,000 people. Supporting estates include the Tiruppur Export Knitwear Industrial Complex with 189 sheds and the Nethaji Apparel Park with 53 companies.",
+        "Knitwear needs dyeing and bleaching, and dyeing needs water and chemicals. Effluent from the dye houses polluted the Noyyal badly enough that the Madras High Court ordered the units shut in 2011. Business Standard reported in December 2012 that before the closure there were 494 dyeing and 162 bleaching units, that 16 of 18 common effluent treatment plants had restarted, and that Tiruppur had become the first textile cluster in India to run on zero liquid discharge. Gulf News reported in July 2025 that the city now recycles up to 130 million litres of water a day, with the Dyers Association of Tiruppur counting 360 dyeing units served by 18 common plants and 60 individual effluent plants."
+      ]
+    },
+    {
+      "heading": "Where Electropolished Tube Fits in Tiruppur's Zero Liquid Discharge Plants",
+      "paragraphs": [
+        "A dye house itself is not a hygienic plant, and most of its process piping is plastic, rubber-lined or plain stainless. The electropolished stainless in Tiruppur is concentrated in the zero liquid discharge plants that make the cluster possible. A ZLD train takes the dye-house effluent through chemical treatment, reverse osmosis and then multiple-effect evaporators and crystallisers that recover the salt, and the recovered water goes back to the dye house. Every stage of that train has small-bore lines that must stay clean and corrosion-free: antiscalant and acid dosing to the RO membranes, permeate and conductivity sample lines, reject and brine lines to the evaporators, and condensate returns.",
+        "The streams are salt-laden, so the grade matters as much as the finish. RO reject and evaporator brine carry chlorides and sulphates at temperature, which pit 304L and, in time, 316L; those lines are where we quote 904L, which we supply electropolished. The recovered water that returns to the dye house, and the permeate lines that are sampled to prove the plant is working, benefit from an electropolished 316L bore, because a smooth, chromium-rich passive surface sheds fewer particles and holds less scale and biofilm than a mechanically polished one."
+      ]
+    },
+    {
+      "heading": "SF1, SF4 and 904L on a Tiruppur ZLD or Dye-House Line List",
+      "paragraphs": [
+        "Following ASME BPE surface designations, SF4 is a mechanically polished bore that is then electropolished, and SF1 is mechanically polished only. For a Tiruppur effluent plant, SF4 316L is the right finish for RO permeate and recovered-water lines, conductivity and pH sample lines and dosing lines for membrane chemicals; 904L electropolished belongs on RO reject, evaporator feed and brine, and crystalliser mother-liquor lines; and SF1 304L or 316L covers softened water, steam condensate and utility runs. On the dye house side, steam and dye-liquor lines do not need an electropolished bore, but the instrument tube on dyeing machines and boilers does benefit from one.",
+        "We supply ASTM A269 seamless instrument tube, ASTM A270 sanitary tube, ASTM A249 welded tube and ASTM A312 pipe in 304, 304L, 316 and 316L, with 904L electropolished on request. Each heat carries an EN 10204 3.1 certificate traced to its heat number with chemical analysis from a NABL-accredited laboratory, every length is PMI tested before dispatch, and each electropolished lot has our internal Ra report. Our quality system is certified to ISO 9001:2015."
+      ]
+    },
+    {
+      "heading": "Sending a Tiruppur RFQ",
+      "paragraphs": [
+        "A complete enquiry gets our quotation within 24 hours. For common or individual effluent plants, ZLD upgrades, dye houses or garment units in Tiruppur, include:"
+      ],
+      "bullets": [
+        "The system and stream: RO permeate or reject, evaporator brine, dosing, sample or impulse line, recovered water, or dye-house instrument tube, with the stream's chloride and sulphate level and temperature if known, and whether you are the plant, an EPC contractor or an equipment builder.",
+        "Grade and finish per line: SF4 316L for permeate, recovered water and sample lines; 904L electropolished for reject, brine and acid service; SF1 304L or 316L for utilities.",
+        "Tube OD, wall, length and quantity, with the standard: ASTM A269, A270, A249 or A312, and the fittings or instruments they connect to.",
+        "Inspection or documentation required by the pollution control board consent or your consultant, and the delivery address in Tiruppur district."
+      ],
+      "links": [
+        { "label": "Send a Tiruppur enquiry", "href": "/contact-us/" },
+        { "label": "Electropolished pipes", "href": "/electropolished-pipes/" },
+        { "label": "Electropolished tubes", "href": "/electropolished-tubes/" }
+      ]
+    },
+    {
+      "heading": "Supplying Tiruppur and the Kongu Belt",
+      "paragraphs": [
+        "Tube for Tiruppur is dispatched by road from our Mumbai base at Shop No. 05, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai 400004, each length capped and marked with its heat number. The quotation puts the dispatch date and transit to your plant in writing.",
+        "Nearby markets we also supply:"
+      ],
+      "links": [
+        { "label": "Coimbatore", "href": "/market-area/coimbatore/" },
+        { "label": "Erode", "href": "/market-area/erode/" },
+        { "label": "Salem", "href": "/market-area/salem/" },
+        { "label": "Madurai", "href": "/market-area/madurai/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Wikipedia: Tiruppur (2021-22 exports US$4.5 billion, 54.2% of textile exports, 90% of cotton knitwear exports, 10,000 units, 600,000 workers, knitwear complex and apparel park)", "url": "https://en.wikipedia.org/wiki/Tiruppur" },
+    { "title": "Business Standard, 7 Dec 2012: Tirupur textile units achieve zero liquid discharge (494 dyeing and 162 bleaching units, 16 of 18 CETPs)", "url": "https://business-standard.com/article/economy-policy/tirupur-textile-units-achieve-zero-liquid-discharge-112120702031_1.html" },
+    { "title": "Gulf News, 3 Jul 2025: India's knitwear capital Tiruppur goes green (130 million litres a day recycled; 360 dyeing units, 18 CETPs, 60 IETPs)", "url": "https://gulfnews.com/world/asia/india/indias-knitwear-capital-tiruppur-goes-green-1.500184882" }
+  ]
+}

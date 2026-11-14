@@ -502,8 +502,9 @@ async function runPrerender() {
       }
     }
 
-    if (route.type === 'ep-spec' && route.data) {
-      const parentPath = route.data.parent || "/";
+    const epData = route.type === 'ep-spec' ? (route.data || rendered.route?.data) : null;
+    if (epData) {
+      const parentPath = epData.parent || "/";
       const parentName = parentPath === "/" ? "Home" : parentPath.replace(/^\/|\/$/g, "").replace(/-/g, " ");
 
       const breadcrumbList = {
@@ -524,51 +525,30 @@ async function runPrerender() {
         breadcrumbList.itemListElement.push({
           "@type": "ListItem",
           "position": 3,
-          "name": route.data.h1 || route.title,
+          "name": epData.h1 || route.title,
           "item": route.url
         });
       } else {
         breadcrumbList.itemListElement.push({
           "@type": "ListItem",
           "position": 2,
-          "name": route.data.h1 || route.title,
+          "name": epData.h1 || route.title,
           "item": route.url
         });
       }
 
       schemasGraph.push(breadcrumbList);
 
-      if (route.data.faqs && route.data.faqs.length > 0) {
-        const faqEntities = route.data.faqs.map(f => ({
+      if (epData.faqs && epData.faqs.length > 0) {
+        const plain = (t) => String(t || '').replace(/\[([^\]]+)\]\([^)]+\)/g, '$1');
+        const faqEntities = epData.faqs.map(f => ({
           "@type": "Question",
-          "name": f.question || f.q,
-          "acceptedAnswer": { "@type": "Answer", "text": f.answer || f.a }
+          "name": plain(f.question || f.q),
+          "acceptedAnswer": { "@type": "Answer", "text": plain(f.answer || f.a) }
         }));
         schemasGraph.push({
           "@type": "FAQPage",
           "mainEntity": faqEntities
-        });
-      }
-
-      if (route.data.page_type && route.data.page_type.includes("Product")) {
-        const epOffer = getProductOfferDetails(route.slug, 'Electropolished Pipes', route.url);
-        schemasGraph.push({
-          "@type": "Product",
-          "name": route.data.h1 || route.title,
-          "url": route.url,
-          "image": [ `${BASE_URL}/electropolish_pipes.webp` ],
-          "description": route.description,
-          "sku": epOffer.sku,
-          "mpn": epOffer.mpn,
-          "brand": { "@type": "Brand", "name": "Sakshi Forge" },
-          "manufacturer": { "@id": `${BASE_URL}/#org` },
-          "material": "Stainless Steel 316L / 304L",
-          "additionalProperty": [
-            { "@type": "PropertyValue", "name": "Surface Finish", "value": "Ra 0.38 um (15 uin) - ASME BPE SF4" },
-            { "@type": "PropertyValue", "name": "Standard", "value": "ASTM A270 / ASTM A312" },
-            { "@type": "PropertyValue", "name": "Certification", "value": "EN 10204 3.1 MTC" }
-          ],
-          "offers": epOffer.offers
         });
       }
     }

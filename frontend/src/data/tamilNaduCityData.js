@@ -914,7 +914,7 @@ export const tamilNaduCityData = {
         },
         {
           title: "A stainless-literate buyer base",
-          desc: "Salem purchasers often compare chemistry, ferrite content and passivation records. We provide them upfront: PMI, ferrite check, passivation verification and a surface report."
+          desc: "Salem purchasers often compare chemistry, ferrite content and passivation records. Every length we supply is PMI tested, each heat has an EN 10204 3.1 certificate, and each electropolished lot has our internal Ra report; ask in the enquiry for any further records you need."
         },
         {
           title: "Check the hygiene detail, not just the polish",
@@ -985,7 +985,7 @@ export const tamilNaduCityData = {
     faqs: [
       { q: "Do you have a Salem warehouse?", a: "No. We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation." },
       { q: "Which grade for starch and sago processing?", a: "Usually 304L. 316L if your media or cleaning chemicals demand it." },
-      { q: "Do you provide ferrite and passivation records?", a: "Yes, with every consignment." },
+      { q: "Which test records come with a Salem order?", a: "An EN 10204 3.1 certificate per heat with NABL-lab chemical analysis, a PMI result for every length and our internal Ra report for each electropolished lot. Ferrite, passivation or other records can be asked for in the enquiry, and the quotation will state what is included." },
       { q: "Do you supply small lots?", a: "Yes, small project lots and large runs." },
       { q: "What documents come with the pipes?", a: "MTC EN 10204 3.1, mill traceability, QA report, surface report, PMI and hydro certificates." }
     ],

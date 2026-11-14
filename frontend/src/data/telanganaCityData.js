@@ -101,7 +101,7 @@ export const telanganaCityData = {
       ],
       "localNotes": [
         "The bulk-drug capital has mixed lines. Purified water, WFI and clean utility suit electropolished 316L very well. Reactor-side solvent, acid and halide lines can need other materials, and we'll tell you honestly which are which. Send us the fluid, concentration and temperature before you order. Avoid hydrofluoric acid and abrasive slurries.",
-        "Many plants supply regulated overseas markets. Surface reports, heat-number traceability and passivation records matter at audit time, so every order ships with them.",
+        "Many plants supply regulated overseas markets. Surface reports, heat-number traceability and passivation records matter at audit time. We supply a 3.1 certificate per heat, PMI on every length and an Ra report per electropolished lot.",
         "Hyderabad has local stockists, and we're not one of them. Our strength is made-to-drawing pipe, measured Ra, in-house electropolishing and the full document pack. We're the better fit when you need a specific size, finish or paperwork.",
         "Inland and hot. Hyderabad has no coastal chloride problem, so choose the grade by media and cleaning chemistry. 304L suits most food and utility lines, and 316L suits pharma and chloride-bearing cleaning agents.",
         "Buy for the whole region together. Hyderabad, its Genome Valley and Pharma City estates and the Patancheru belt (our Sangareddy page) sit within about 60 km of each other. If you run plants in more than one, send the requirements together and we'll quote one consolidated dispatch with one document format.",
@@ -266,7 +266,7 @@ export const telanganaCityData = {
       "localNotes": [
         "The Patancheru–Bollaram belt has a long history of close regulatory attention. Effluent has been under scrutiny there for years, so leak-tested, fully documented piping is part of the compliance picture. Every order ships with hydro and PMI certificates.",
         "Synthesis plants have mixed lines. Purified water, WFI and clean utility suit electropolished 316L very well. Reactor-side solvent, acid and halide lines can need other materials, and we'll tell you honestly which are which. Send us the fluid, concentration and temperature before you order. Avoid hydrofluoric acid and abrasive slurries.",
-        "Many plants supply regulated overseas markets. Surface reports, heat-number traceability and passivation records matter at audit time, so every order ships with them.",
+        "Many plants supply regulated overseas markets. Surface reports, heat-number traceability and passivation records matter at audit time. We supply a 3.1 certificate per heat, PMI on every length and an Ra report per electropolished lot.",
         "Medical-device makers need small lots and exact sizes. At Sultanpur, many units are small or new. We supply cut lengths and custom sizes to drawing, with the same document pack as large orders.",
         "Zaheerabad is a new-build market. Don't plan around the estate's timeline. Send your drawings whenever your project is ready, and we'll mark up the specification and flag anything that doesn't suit electropolished pipe.",
         "We're on your way in. Sangareddy district is the first industrial belt on the Pune highway as it enters Hyderabad, so it is natural for us to make it the first drop on a consolidated run to Hyderabad.",
@@ -554,7 +554,7 @@ export const telanganaCityData = {
         "On the National Highway 44 corridor. Mahabubnagar is the next major stretch south of Hyderabad on the same highway, so it makes sense to supply it together with Hyderabad and Sangareddy. If you buy for more than one, send the requirements together and we'll quote one consolidated dispatch with one document format.",
         "Dry processing isn't the target. Rice, groundnut and cotton handling are mostly dry. We'd rather tell you than sell you something you don't need.",
         "Large new plants specify early and exactly. If you're building at Divitipally or a similar site, send your specification with your enquiry. For DI or DM water, the right grade and finish depend on the purity you need, and we'll tell you what we can guarantee and what we can't.",
-        "Food-park and pharma buyers need paperwork. Auditors expect heat-number traceability, a measured Ra report and passivation records, so every order ships with them.",
+        "Food-park and pharma buyers need paperwork. Auditors expect heat-number traceability, a measured Ra report and passivation records. We supply the 3.1 certificate per heat, PMI on every length and the Ra report for each electropolished lot; ask in the enquiry for anything further.",
         "We cap the pipe ends, sleeve every length and pack for the journey."
       ]
     },
@@ -964,7 +964,7 @@ export const telanganaCityData = {
       ],
       "localNotes": [
         "Karkapatla buyers specify precisely. Vaccine and biologics plants usually work to their own specifications, often built on ASME BPE. Send your specification with your enquiry. We'll tell you what we can meet and what we can't, and we won't claim a standard we don't certify.",
-        "Documentation is half the product. Auditors expect heat-number traceability, a measured Ra surface report, and passivation and ferrite records, so every order ships with them.",
+        "Documentation is half the product. Auditors expect heat-number traceability, a measured Ra surface report, and passivation and ferrite records. Each heat we supply has a 3.1 certificate, every length is PMI tested and each electropolished lot has an Ra report; list any further records in the enquiry and the quotation will confirm them.",
         "We supply the tube, not the validation. We provide material and finish documentation that supports your validation file. Orbital welding, installation and validation stay with your contractors.",
         "Don't plan around the park's timeline. Plants here will come up unit by unit over several years. Send your drawings whenever your project is ready, and we'll mark up the specification and flag anything that doesn't suit electropolished pipe. New plants usually buy through EPC contractors, and we supply them with the document pack their client's inspector expects.",
         "Handloom and agro aren't the target. Those are craft or dry processes. We'd rather tell you than sell you something you don't need.",

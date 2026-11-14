@@ -1411,11 +1411,11 @@ export const odishaCityData = {
       },
       {
         "q": "Can you supply documentation for refinery and petrochemical third-party inspectors in Paradip?",
-        "a": "Yes. Every order ships with a complete document dossier: EN 10204 3.1 mill test certificates, 100% PMI spectrometry report, Ra surface roughness profilometer graph, hydrostatic test certificate, and passivation records. TPI by agencies like EIL, Bureau Veritas or TÜV is supported."
+        "a": "Each heat carries an EN 10204 3.1 certificate traced to its heat number, with chemical analysis from a NABL-accredited laboratory. Every length is PMI tested, and each electropolished lot has our internal Ra report. If your inspection test plan calls for a hydrostatic test certificate, third-party witness or other records, list them in the enquiry and the quotation will state what is included."
       },
       {
         "q": "Can you combine our Paradip shipment with Cuttack or Bhubaneswar sites?",
-        "a": "Yes. We frequently consolidate dispatches for multiple plant sites across the Cuttack–Bhubaneswar–Paradip coastal industrial corridor under a single commercial invoice and unified documentation pack."
+        "a": "Tell us every delivery address in the enquiry. The quotation will set out how material for Paradip, Cuttack or Bhubaneswar sites is dispatched and documented, with dispatch and transit confirmed in writing."
       }
     ]
   },

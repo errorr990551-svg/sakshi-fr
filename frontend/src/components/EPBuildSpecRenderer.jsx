@@ -18,7 +18,7 @@ export default function EPBuildSpecRenderer({ pageData, onEnquireClick, hasUnloc
 
   const {
     id, h1, title, meta, page_type, primary_kw, secondary_kws,
-    parent, faqs, notes, cta, image_alt
+    parent, faqs
   } = pageData;
 
   // Page-specific guide (src/data/specGuides.js, attached in routes.js) replaces the shared template blocks and FAQs

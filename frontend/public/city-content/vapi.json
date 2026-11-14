@@ -1,0 +1,61 @@
+{
+  "slug": "vapi",
+  "updated": "2026-11-14",
+  "sections": [
+    {
+      "heading": "Vapi GIDC: More Than 500 Chemical, Dye, Paper and Pharma Units on the Daman Ganga",
+      "paragraphs": [
+        "Vapi sits on the Daman Ganga river at the southern tip of Gujarat, bisected by the national highway, with the original town to the west and the GIDC industrial estate and newer housing to the east; the Daman coast is about 7 km away and the city is the road link between Daman and Silvassa. Down To Earth describes the GIDC estate as comprising more than 500 industries, all of which drain to a single common effluent treatment plant with a capacity of 55 million litres a day that discharges into the Daman Ganga.",
+        "The same report gives the clearest public picture of what Vapi makes. Of the treated effluent reaching the common plant, 32.4 percent comes from chemical factories, 12.6 percent from dyes and dye intermediates, 6.3 percent from textiles, 4.4 percent from paper and pulp, 3.3 percent from pharmaceuticals and 1.8 percent from pesticides, with the rest from other units. Each factory's own effluent plant is required to bring chemical oxygen demand down to 1,000 mg/l before the common plant takes it to 250 mg/l, and the plant has been under National Green Tribunal monitoring since a 2018 case, with joint inspections finding chloride, sulphate and dissolved-solids treatment below the mark in 2022."
+      ]
+    },
+    {
+      "heading": "Where Electropolished Tube Fits in a Vapi Chemical or Pharma Unit",
+      "paragraphs": [
+        "Most of Vapi's piping is specified for corrosion and pressure, not cleanability, and much of it is glass-lined, plastic or alloy. Electropolished stainless has three jobs here. The first is in the pharmaceutical and intermediate units: product lines after the final purification step, purified water loops and CIP circuits, where a multi-product plant has to prove that one campaign's residue does not reach the next and an SF4 electropolished 316L bore, to ASME BPE surface designations, makes that cleaning verifiable. The second is high-purity and electronic-grade chemicals, where metal pick-up and residue from a rough bore are quality failures.",
+        "The third is the effluent side that the tribunal watches. Every factory's effluent plant and the common plant run on measurement: pH, conductivity, COD and chloride analysers, flow and level transmitters, and dosing pumps for acid, alkali and polymer. Their sample, impulse and dosing lines are small-bore stainless, and in Vapi's chloride- and sulphate-rich streams the grade is the first decision. 904L, which we supply electropolished, resists those liquors far better than 316L, and the electropolished bore keeps the analyser reading the stream rather than the tube wall."
+      ]
+    },
+    {
+      "heading": "Grade and Finish for a Vapi Line List",
+      "paragraphs": [
+        "SF4 316L: purified water and product-contact lines in pharmaceutical and intermediate units, high-purity chemical product lines and CIP return. 904L electropolished: acid and chloride-bearing process streams, effluent sample and dosing lines, and any line where sulphate liquors stand at temperature. SF1 mechanically polished 304L or 316L: cooling water, steam condensate, solvent recovery and other utility runs that are flushed but not validated. Where a stream is hot concentrated hydrochloric acid, wet chlorine or strong caustic, no stainless finish is the answer, and we will say so rather than quote.",
+        "We supply ASTM A270 sanitary tube, ASTM A269 seamless instrument tube, ASTM A249 welded tube and ASTM A312 pipe in 304, 304L, 316 and 316L, with 904L electropolished on request. Each heat carries an EN 10204 3.1 certificate traced to its heat number with chemical analysis from a NABL-accredited laboratory, every length is PMI tested, and each electropolished lot has our internal Ra report. Our quality system is certified to ISO 9001:2015."
+      ]
+    },
+    {
+      "heading": "Sending a Vapi RFQ",
+      "paragraphs": [
+        "Quotations go out within 24 hours of a complete enquiry. For pharmaceutical, intermediate, dye, specialty chemical or effluent-plant work in Vapi GIDC, please send:"
+      ],
+      "bullets": [
+        "The unit and service: product line after purification, purified water or CIP, high-purity chemical transfer, effluent sample or dosing line, or utilities, with the stream's composition, concentration and temperature where known, and whether you are the plant, an EPC contractor or a skid or panel builder.",
+        "Grade and finish per line: SF4 316L for product contact and purified water; 904L electropolished for acid, chloride and sulphate service; SF1 304L or 316L for utilities.",
+        "Tube or pipe OD, wall, length and quantity, with the standard: ASTM A270, A269, A249 or A312, and the fittings they connect to.",
+        "Inspection or pollution-board documentation required, and the plot address in GIDC Vapi."
+      ],
+      "links": [
+        { "label": "Send a Vapi enquiry", "href": "/contact-us/" },
+        { "label": "Electropolished pipes", "href": "/electropolished-pipes/" },
+        { "label": "Electropolished tubes", "href": "/electropolished-tubes/" }
+      ]
+    },
+    {
+      "heading": "Supplying Vapi, Daman and Silvassa",
+      "paragraphs": [
+        "Vapi is a short road run north from our Mumbai base at Shop No. 05, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai 400004. Each length is dispatched with end caps and its heat number marked, and the quotation states dispatch and transit to your plot in writing.",
+        "Nearby markets we also supply:"
+      ],
+      "links": [
+        { "label": "Daman", "href": "/market-area/daman/" },
+        { "label": "Silvassa", "href": "/market-area/silvassa/" },
+        { "label": "Valsad", "href": "/market-area/valsad/" },
+        { "label": "Surat", "href": "/market-area/surat/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Down To Earth, 24 May 2023: Treated effluents from Vapi CETP don't meet safety standards (GIDC estate of more than 500 industries; 55 MLD CETP; sector shares of effluent; NGT monitoring)", "url": "https://www.downtoearth.org.in/news/governance/critically-polluted-treated-effluents-from-vapi-cetp-don-t-meet-safety-standards-find-pollution-control-boards-89547" },
+    { "title": "Wikipedia: Vapi (Daman Ganga river, highway bisecting the city, GIDC estate to the east, 7 km from the coast, link between Daman and Silvassa)", "url": "https://en.wikipedia.org/wiki/Vapi" }
+  ]
+}

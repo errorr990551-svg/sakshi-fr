@@ -4,10 +4,12 @@
  */
 
 import { deepPosts } from './blogDeepPosts.js';
+import { deepPosts2 } from './blogDeepPosts2.js';
 import { isRedirectedPath } from './redirects.js';
 
 export const blogPosts = [
   ...deepPosts,
+  ...deepPosts2,
     {
     id: "ep-pipes-pharma-biotech-india",
     slug: "ep-pipes-pharma-biotech-india",

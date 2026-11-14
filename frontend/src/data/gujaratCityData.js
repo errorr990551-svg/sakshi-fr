@@ -45,7 +45,7 @@ export const gujaratCityData = {
       localNotes: [
         "Ahmedabad has many stainless stockists, and we're not one of them. Our strength is made-to-drawing pipe, measured Ra, in-house electropolishing and the full document pack. We're the better fit when you need a specific size, finish or paperwork, and a stockist is better when you need a standard length tomorrow.",
         "Pharma and dye units sit side by side. In Vatva and Naroda, a pharma purified-water line and a dye-intermediate line can be a few hundred metres apart. We recommend by media, not habit, and say plainly where electropolished pipe doesn't suit. Avoid hydrofluoric acid and abrasive slurries.",
-        "Many plants supply regulated overseas markets. That means surface reports, heat-number traceability and passivation records matter at audit time, so every order ships with them.",
+        "Many plants supply regulated overseas markets. That means surface reports, heat-number traceability and passivation records matter at audit time. We supply a 3.1 certificate per heat, PMI on every length and an Ra report per electropolished lot.",
         "Inland site, so choose by media. Ahmedabad has no coastal chloride problem. 304L suits most food and utility lines, and 316L suits pharma and chloride-bearing cleaning agents.",
         "We cap the pipe ends, sleeve every length and pack for the journey. If you also buy for Sanand, Vadodara or Anand, send the requirements together and we'll quote one consolidated dispatch."
       ]

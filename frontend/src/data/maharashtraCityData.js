@@ -35,7 +35,7 @@ export const maharashtraCityData = {
       ],
       localNotes: [
         'Inland process market: Pune has no coastal air chloride threat, so 304L is safe and economical for interior food lines, while 316L remains mandatory for pharma WFI loops.',
-        'Rapid corridor transit: Our Mumbai is right on the expressway corridor, ensuring express transport and same-day delivery to Chakan, Bhosari and Hadapsar.',
+        'Road transit: material for Chakan, Bhosari and Hadapsar travels from Mumbai by road along the expressway, and the dispatch date and transit are confirmed in writing on the quotation.',
         'Auditable traceability: Full EN 10204 3.1 MTCs with heat number stamping ensure smooth FDA and GMP validation audits.'
       ]
     },

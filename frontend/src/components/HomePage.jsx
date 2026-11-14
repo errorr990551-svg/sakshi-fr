@@ -86,7 +86,7 @@ export default function HomePage({ onEnquireClick }) {
     },
     {
       q: "Which documents accompany an order?",
-      a: "Every order ships with an EN 10204 3.1 MTC, 100% PMI spectro report, hydro test certificate, surface roughness (Ra) profile report, and complete mill heat traceability."
+      a: "Each heat carries an EN 10204 3.1 certificate traced to its heat number, with chemical analysis from a NABL-accredited laboratory. Every length is PMI tested, and each electropolished lot comes with our internal Ra report. If you need a hydrostatic test certificate or third-party inspection, say so in the enquiry and the quotation will confirm it."
     },
     {
       q: "Is electropolished pipe suitable for every application?",

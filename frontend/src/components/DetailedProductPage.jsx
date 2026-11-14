@@ -629,7 +629,7 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
                     {product['Lead Times']}
                   </p>
                   <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', lineHeight: '1.5', marginTop: '1.5rem' }}>
-                    * Urgent hot-tracked shipping is available for emergency pipeline shutdowns. Speak to our dispatch managers directly.
+                    * For a shutdown or other fixed date, give the required date in your enquiry and the quotation will confirm in writing what can be met.
                   </p>
                 </div>
               </div>

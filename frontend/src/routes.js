@@ -299,7 +299,10 @@ function matchRoute(currentPath) {
   if (epPage) {
     // A page-specific guide replaces the template content and its FAQs (visible and in schema)
     const guide = SPEC_GUIDES[epPage.url.replace(/\/?$/, '/')];
-    return { type: 'ep-spec', data: guide ? { ...epPage, guide, faqs: guide.faqs.map((f) => ({ question: f.q, answer: f.a })) } : epPage };
+    // Content-brief fields (word targets, link plans, writer notes) are not page content and must not be published
+    // eslint-disable-next-line no-unused-vars
+    const { priority, phase, word_count, schema_types, internal_links_out, notes, cta, image_alt, ...pageData } = epPage;
+    return { type: 'ep-spec', data: guide ? { ...pageData, guide, faqs: guide.faqs.map((f) => ({ question: f.q, answer: f.a })) } : pageData };
   }
 
   return { type: '404', data: null };

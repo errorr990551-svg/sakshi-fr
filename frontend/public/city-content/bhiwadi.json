@@ -1,6 +1,6 @@
 {
   "slug": "bhiwadi",
-  "updated": "2026-10-25",
+  "updated": "2026-11-15",
   "sections": [
     {
       "heading": "Bhiwadi: Rajasthan's NCR Industrial Gateway",
@@ -35,22 +35,68 @@
       ]
     },
     {
+      "heading": "What a Bhiwadi Parenteral or Biotech Unit Should Send With an RFQ",
+      "paragraphs": [
+        "For a WFI or clean-steam package in the RIICO phases: the loop temperature and sanitisation method (hot, ozone or steam), the OD and wall of every size on the isometric, the surface finish and any Ra limit written into your URS, and whether the drawings call for ASTM A270 with the S2 pharmaceutical supplement. Tell us which documents your validation team will put in the IQ file so the certificates arrive in the order they are needed.",
+        "Bhiwadi has ranked among the most polluted cities in the world in recent air-quality reports, so plan for fine dust on site: ask for tube ends to stay capped until the welder needs them, and budget a final rinse after installation. For Chopanki biotech units, list the media, buffer and WFI lines separately, so each line can be quoted with its own size range and finish. Send this through our contact page and we reply with a quotation within 24 hours."
+      ],
+      "links": [
+        {
+          "label": "Send an RFQ",
+          "href": "/contact-us/"
+        },
+        {
+          "label": "Electropolished tubes",
+          "href": "/electropolished-tubes/"
+        },
+        {
+          "label": "Electropolished pipes",
+          "href": "/electropolished-pipes/"
+        }
+      ]
+    },
+    {
       "heading": "Delivery to Bhiwadi, Chopanki and Khushkhera",
       "paragraphs": [
-        "Bhiwadi is supplied by road from Mumbai; dispatch and transit are confirmed in writing per quotation. Give us the phase or cluster name with your enquiry so the consignment is routed directly.",
+        "Bhiwadi is supplied by road from Mumbai. The town lies on the Rajasthan-Haryana border, about 60 km from New Delhi and 26 km from Rewari Junction, and is reached from NH48 through Dharuhera; dispatch and transit are confirmed in writing per quotation. Give us the phase or cluster name with your enquiry so the consignment is routed directly.",
         "Nearby NCR and Rajasthan clusters:"
       ],
       "links": [
-        { "label": "Alwar and Neemrana", "href": "/market-area/alwar/" },
-        { "label": "Gurugram and Manesar", "href": "/market-area/gurugram/" },
-        { "label": "Jaipur", "href": "/market-area/jaipur/" },
-        { "label": "Faridabad", "href": "/market-area/faridabad/" }
+        {
+          "label": "Alwar and Neemrana",
+          "href": "/market-area/alwar/"
+        },
+        {
+          "label": "Gurugram and Manesar",
+          "href": "/market-area/gurugram/"
+        },
+        {
+          "label": "Jaipur",
+          "href": "/market-area/jaipur/"
+        },
+        {
+          "label": "Faridabad",
+          "href": "/market-area/faridabad/"
+        }
       ]
     }
   ],
   "sources": [
-    { "title": "Outlook Business: Path to prosperity (Bhiwadi and RIICO clusters)", "url": "https://www.outlookbusiness.com/magazine/story/path-to-prosperity-1428" },
-    { "title": "Pharmaguddu: Pharmaceutical companies in Bhiwadi", "url": "https://pharmaguddu.com/list-of-pharmaceuticals-companies-in-bhiwadi-rajasthan/" },
-    { "title": "Secured Engineers: Khushkhera industrial area", "url": "https://www.securedengineers.com/industrial-zones/rajasthan/khushkhera-industrial-area/" }
+    {
+      "title": "Outlook Business: Path to prosperity (Bhiwadi and RIICO clusters)",
+      "url": "https://www.outlookbusiness.com/magazine/story/path-to-prosperity-1428"
+    },
+    {
+      "title": "Pharmaguddu: Pharmaceutical companies in Bhiwadi",
+      "url": "https://pharmaguddu.com/list-of-pharmaceuticals-companies-in-bhiwadi-rajasthan/"
+    },
+    {
+      "title": "Secured Engineers: Khushkhera industrial area",
+      "url": "https://www.securedengineers.com/industrial-zones/rajasthan/khushkhera-industrial-area/"
+    },
+    {
+      "title": "Wikipedia: Bhiwadi (location, NH48 access, Rewari Junction, air-quality rankings)",
+      "url": "https://en.wikipedia.org/wiki/Bhiwadi"
+    }
   ]
 }

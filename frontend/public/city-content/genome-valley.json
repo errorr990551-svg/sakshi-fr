@@ -1,12 +1,19 @@
 {
   "slug": "genome-valley",
-  "updated": "2026-10-25",
+  "updated": "2026-11-15",
   "sections": [
     {
       "heading": "Genome Valley: India's Vaccine Hub",
       "paragraphs": [
         "Genome Valley, spread across Shameerpet, Karkapatla, Turkapally and neighbouring areas north of Hyderabad, is one of Asia's largest life-sciences clusters. CBRE's market research puts it at more than 200 biotech and pharmaceutical companies from 18 countries, and it is widely known as India's vaccine hub, with established vaccine and biologics manufacturers alongside contract research and development organisations. Telangana's own life-sciences material credits the state with more than a third of India's vaccine exports.",
         "This makes Genome Valley the most demanding market we serve for surface finish and documentation. Biologics and vaccine processes are sensitive to things that a tablet plant can tolerate: trace residues, rough welds, rouge and particulate."
+      ]
+    },
+    {
+      "heading": "Genome Valley's Parks: Turakapally, Shamirpet and the Phase III Extension",
+      "paragraphs": [
+        "Genome Valley began in 1999 as S. P. Biotech Park, a public-private partnership with Bharat Biotech, and now covers about 2,000 acres across Turakapally, Shamirpet, Medchal and neighbouring suburbs, with a Phase III about 11 km from Phases I and II. Inside it sit distinct campuses: IKP Knowledge Park on about 200 acres at Turakapally, built around laboratory 'innovation corridors', and Neovantage Innovation Parks (formerly MN Park), with roughly 850,000 sq ft of built R&D and production space leased to multinational tenants.",
+        "The mix matters for tube buying. Laboratory modules at IKP and Neovantage are fitted out by tenants and their contractors, often in short runs of small-bore 316L SF4 tube for purified water, WFI points of use and bench-scale bioreactors. Vaccine and biologics manufacturers, including Bharat Biotech and Biological E, which Wikipedia lists among the cluster's producers, run full-scale WFI generation, clean-steam and SIP circuits where larger sizes and longer runs are needed."
       ]
     },
     {
@@ -30,21 +37,64 @@
       ]
     },
     {
+      "heading": "What a Genome Valley Biologics or Lab Tenant Should Send With an RFQ",
+      "paragraphs": [
+        "For a production suite: the URS clause that sets the internal finish (SF4 or tighter, with the Ra limit), whether ASTM A270 S2 is required, any sulphur range for orbital weldability, the OD and wall of each size, and the loop temperatures for WFI and clean steam. Say whether the tube will be welded on site or into skids by an equipment builder, because that decides how lengths and documents should be grouped.",
+        "For an IKP or Neovantage lab fit-out: list the points of use, the small ODs and the approximate length of each, and name the contractor who will weld it, so certificates can be issued against their purchase order. Send this through our contact page and we reply with a quotation within 24 hours, with an EN 10204 3.1 certificate traced to heat number, NABL-lab chemical analysis, PMI on every length and an internal Ra report for each electropolished lot."
+      ],
+      "links": [
+        {
+          "label": "Send an RFQ",
+          "href": "/contact-us/"
+        },
+        {
+          "label": "Electropolished tubes",
+          "href": "/electropolished-tubes/"
+        },
+        {
+          "label": "Electropolished pipes",
+          "href": "/electropolished-pipes/"
+        }
+      ]
+    },
+    {
       "heading": "Delivery to Genome Valley",
       "paragraphs": [
         "Genome Valley is supplied by road from Mumbai; dispatch and transit are confirmed in writing per quotation. Krishnapatnam Port is the nearest listed sea gateway for export-bound material. For cleanroom-bound tube we recommend unpacking only in a controlled area and inspecting end caps and sleeves on receipt.",
         "Other Hyderabad clusters:"
       ],
       "links": [
-        { "label": "Hyderabad", "href": "/market-area/hyderabad/" },
-        { "label": "Medak-Patancheru", "href": "/market-area/medak-patancheru/" },
-        { "label": "Sangareddy", "href": "/market-area/sangareddy/" }
+        {
+          "label": "Hyderabad",
+          "href": "/market-area/hyderabad/"
+        },
+        {
+          "label": "Medak-Patancheru",
+          "href": "/market-area/medak-patancheru/"
+        },
+        {
+          "label": "Sangareddy",
+          "href": "/market-area/sangareddy/"
+        }
       ]
     }
   ],
   "sources": [
-    { "title": "CBRE: Hyderabad's Genome Valley - capitalising on the life sciences growth trajectory", "url": "https://www.cbre.co.in/insights/reports/hyderabad-s-genome-valley-capitalising-on-the-life-sciences-growth-trajectory" },
-    { "title": "CBRE: Global Life Sciences Atlas - Hyderabad", "url": "https://www.cbre.com/insights/local-response/global-life-sciences-atlas-market-profiles-hyderabad-india" },
-    { "title": "Maritime Gateway: Telangana, front runner in life sciences", "url": "https://www.maritimegateway.com/telangana-front-runner-life-sciences/" }
+    {
+      "title": "CBRE: Hyderabad's Genome Valley - capitalising on the life sciences growth trajectory",
+      "url": "https://www.cbre.co.in/insights/reports/hyderabad-s-genome-valley-capitalising-on-the-life-sciences-growth-trajectory"
+    },
+    {
+      "title": "CBRE: Global Life Sciences Atlas - Hyderabad",
+      "url": "https://www.cbre.com/insights/local-response/global-life-sciences-atlas-market-profiles-hyderabad-india"
+    },
+    {
+      "title": "Maritime Gateway: Telangana, front runner in life sciences",
+      "url": "https://www.maritimegateway.com/telangana-front-runner-life-sciences/"
+    },
+    {
+      "title": "Wikipedia: Genome Valley (history, area, IKP Knowledge Park, Neovantage Innovation Parks, manufacturers)",
+      "url": "https://en.wikipedia.org/wiki/Genome_Valley"
+    }
   ]
 }

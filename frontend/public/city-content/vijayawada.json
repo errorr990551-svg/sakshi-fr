@@ -1,0 +1,111 @@
+{
+  "slug": "vijayawada",
+  "updated": "2026-11-15",
+  "sections": [
+    {
+      "heading": "Vijayawada's Processing Base: Mallavalli, Gannavaram and Kondapalli",
+      "paragraphs": [
+        "Vijayawada sits on the Krishna river at the centre of one of Andhra Pradesh's richest farming districts, and its hygienic-process industry follows the crops. The Nunna Mango Market on the city's edge is described as one of the largest mango markets in Asia, and the APIIC Mega Food Park at Mallavalli, near Gannavaram airport, was built to turn that fruit into pulp and juice close to the orchards.",
+        "To the west, Kondapalli and Ibrahimpatnam are the city's heavy-industry belt: the Dr Narla Tata Rao Thermal Power Station (1,760 MW), a Lanco gas-based plant and a railway wagon workshop at Rayanapadu. Those sites buy utility and condensate piping rather than sanitary tube, so on this page we concentrate on the food and dairy lines where electropolished 304L and 316L tube actually earns its cost."
+      ]
+    },
+    {
+      "heading": "Mallavalli Mega Food Park: Mango, Tomato and Guava Pulp Lines",
+      "paragraphs": [
+        "According to The Hans India (March 2022), the Mallavalli park covers 57.95 acres at a project cost of Rs 112.94 crore, with an adjacent APIIC State Food Park on a further 42.55 acres. Its core processing centre has eight ripening chambers of 120 tonnes each, a concentration line of 6 to 10 tonnes of pulp per hour, an aseptic pulp line rated at ten tonnes of mango, six of tomato or guava, five of papaya or four of banana per hour, and a Tetrapak line filling 7,500 packs of 200 ml an hour.",
+        "Fruit pulp is acidic (mango and tomato sit well below pH 5), sugary and full of fibre, and it is held hot through concentration and aseptic sterilisation. That combination is why pulp lines downstream of the pulper are usually specified in 316L: the molybdenum resists pitting from acid and from the chloride that builds up in hard-water CIP. An electropolished SF4 bore also stops fibre and caramelised sugar from anchoring in the grain lines of a mechanically polished surface, which shortens the caustic and acid wash between mango and tomato campaigns."
+      ],
+      "links": [
+        {
+          "label": "Mango pulp electropolished piping",
+          "href": "/industries/mango-pulp-electropolished-pipes/"
+        },
+        {
+          "label": "Food processing electropolished piping",
+          "href": "/industries/food-processing-electropolished-pipes/"
+        }
+      ]
+    },
+    {
+      "heading": "Krishna Milk Union and the Veeravalli Dairy",
+      "paragraphs": [
+        "The Krishna Milk Union (KMU), known for its Vijaya Dairy brand, runs its first plant inside Vijayawada city and in March 2024 opened a second, fully automated unit at Veeravalli in Bapulapadu mandal. Dairy Business MEA reported a cost of about Rs 180 crore on 22.75 acres, an initial capacity of 4 lakh litres a day expandable to 10 lakh, and a fall in processing cost from Rs 2.50 to Rs 1.25 per litre. Dairy News 7x7 described production of about 3 lakh litres of milk and 1 lakh litres of curd a day.",
+        "A plant of that size cleans its raw-milk reception, pasteuriser, separator and filler circuits by CIP every shift. For milk and curd, 304L SF1 tube is usually enough on product lines; 316L SF4 is worth specifying on the CIP supply and return loops, on any line that handles brine or salted products, and wherever the plant wants a lower bacterial-retention surface for extended-shelf-life milk. Automated plants also tend to use more orbital welding, which rewards tight OD and wall tolerances from ASTM A270 tube."
+      ],
+      "links": [
+        {
+          "label": "Dairy electropolished piping",
+          "href": "/industries/dairy-electropolished-pipes/"
+        }
+      ]
+    },
+    {
+      "heading": "What a Vijayawada Plant Should Send With an RFQ",
+      "paragraphs": [
+        "For a pulp or juice line at Mallavalli: the fruit list and the highest pulp temperature, whether the line feeds an aseptic steriliser or the Tetrapak filler, the concentration of acid and caustic used in CIP, and the surface finish your process engineer or equipment supplier has written into the line drawing (SF1 or SF4, and any Ra limit).",
+        "For a dairy or curd plant: the circuits involved (reception, pasteuriser, filling or CIP), the OD and wall in inches or millimetres, the welding method (orbital or manual), and the inspection documents your quality team files for FSSAI audits. Send this through our contact page and we reply with a quotation within 24 hours, including the grade, ASTM specification, finish and the paperwork that comes with each length: an EN 10204 3.1 certificate traced to heat number, NABL-lab chemical analysis, PMI on every length and an internal Ra report for each electropolished lot."
+      ],
+      "links": [
+        {
+          "label": "Send an RFQ",
+          "href": "/contact-us/"
+        },
+        {
+          "label": "Electropolished tubes",
+          "href": "/electropolished-tubes/"
+        },
+        {
+          "label": "Electropolished pipes",
+          "href": "/electropolished-pipes/"
+        }
+      ]
+    },
+    {
+      "heading": "Delivery to Vijayawada and the Krishna Delta",
+      "paragraphs": [
+        "We are based in Mumbai and dispatch to Vijayawada, Gannavaram, Mallavalli and Bapulapadu by road. Dispatch and transit are confirmed in writing with each quotation, because they depend on the sizes, quantity and finish ordered.",
+        "Plants elsewhere in coastal Andhra and Telangana can use the pages for Guntur, Rajahmundry, Kakinada and Hyderabad, which cover the industries specific to those cities."
+      ],
+      "links": [
+        {
+          "label": "Guntur",
+          "href": "/market-area/guntur/"
+        },
+        {
+          "label": "Rajahmundry",
+          "href": "/market-area/rajahmundry/"
+        },
+        {
+          "label": "Kakinada",
+          "href": "/market-area/kakinada/"
+        },
+        {
+          "label": "Hyderabad",
+          "href": "/market-area/hyderabad/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia: Vijayawada (economy: Nunna Mango Market, APIIC Mega Food Park, Gannavaram)",
+      "url": "https://en.wikipedia.org/wiki/Vijayawada"
+    },
+    {
+      "title": "Wikipedia: Kondapalli (thermal station, gas plant, Rayanapadu workshop)",
+      "url": "https://en.wikipedia.org/wiki/Kondapalli"
+    },
+    {
+      "title": "The Hans India, 25 Mar 2022: Vijayawada Mega Food Park to become operational by April",
+      "url": "https://www.thehansindia.com/news/cities/vijayawada/vijayawada-mega-food-park-to-become-operational-by-april-734941"
+    },
+    {
+      "title": "Dairy Business MEA, 12 Mar 2024: Krishna Milk Union expands operations with launch of second unit",
+      "url": "https://www.dairybusinessmea.com/2024/03/12/krishna-milk-union-expands-operations-with-launch-of-second-unit/"
+    },
+    {
+      "title": "Dairy News 7x7, 13 Mar 2024: Krishna Milk Union goes big with launch of second unit",
+      "url": "https://dairynews7x7.com/krishna-milk-union-goes-big-with-launch-of-second-unit/"
+    }
+  ]
+}

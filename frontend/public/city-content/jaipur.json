@@ -1,6 +1,6 @@
 {
   "slug": "jaipur",
-  "updated": "2026-10-25",
+  "updated": "2026-11-15",
   "sections": [
     {
       "heading": "Jaipur's Industrial Areas: Sitapura, VKIA and Mahindra World City",
@@ -13,12 +13,13 @@
       "heading": "Pharmaceutical and Biotech Units",
       "paragraphs": [
         "Pharmaceutical and biotech units in Sitapura and around the city need the standard hygienic package: 316L throughout purified-water systems, SF1 mechanically polished tube for ambient loops, and SF4 electropolished tube for hot-sanitised loops, WFI, clean steam and critical product contact. Biotech units add small-diameter, low-Ra service for media and buffer preparation.",
-        "Jaipur is far from the coastal pharma belts, so lead time and completeness of the first delivery matter. Ordering spools, spares and test pieces with the main order avoids waiting on a second consignment during installation."
+        "Jaipur is far from the coastal pharma belts, so completeness of the first delivery matters. Ordering spare lengths and test pieces with the main order avoids waiting on a second consignment during installation."
       ]
     },
     {
-      "heading": "Food Processing, Dairy and Spices",
+      "heading": "Jaipur Dairy, Food Processing and Spices",
       "paragraphs": [
+        "The city's largest hygienic-process plant is Jaipur Dairy, the Jaipur District Milk Producers' Cooperative Union Limited. An IANS report of June 2026 described a Rs 133 crore modernisation that lifts processing to 20 lakh litres of milk a day and pouch packing from 10 to 16.5 lakh litres a day, with new boilers and a plant designed for up to 70 tonnes of ghee a day alongside butter and whey-based products.",
         "Food processors around Jaipur handle dairy, edible oils, spices and packaged foods. Dairy and liquid-food product lines need 3-A-style hygienic tube - 304 for most duty, 316L where CIP chemistry or salt is aggressive. Spice extraction and edible-oil units need corrosion-resistant, cleanable product lines; electropolishing is worth it where flavour or colour carry-over between batches matters.",
         "Utility and non-contact lines do not need an electropolished finish, and we will quote the economical option where that is the right answer."
       ]
@@ -30,22 +31,68 @@
       ]
     },
     {
+      "heading": "What a Jaipur Dairy or Sitapura Pharma Unit Should Send With an RFQ",
+      "paragraphs": [
+        "For dairy work at Jaipur Dairy or its contractors: the circuit (raw-milk reception, pasteuriser, pouch-filler feed, ghee or whey line, or CIP supply and return), the highest product and CIP temperature, the acid and caustic strengths used, the OD and wall in inches, and whether the line is welded orbitally. Ghee and butter-oil lines run hot and fatty, so state the temperature: it decides whether 304L SF1 is enough or 316L SF4 is worth paying for on the hottest sections.",
+        "For a pharmaceutical or biotech unit at Sitapura: the purified-water or WFI drawing, the sanitisation method, the Ra limit in your URS and the documents your Rajasthan drug-licensing file needs. Send this through our contact page and we reply with a quotation within 24 hours, with an EN 10204 3.1 certificate traced to heat number, PMI on every length and an internal Ra report for each electropolished lot."
+      ],
+      "links": [
+        {
+          "label": "Send an RFQ",
+          "href": "/contact-us/"
+        },
+        {
+          "label": "Electropolished tubes",
+          "href": "/electropolished-tubes/"
+        },
+        {
+          "label": "Electropolished pipes",
+          "href": "/electropolished-pipes/"
+        }
+      ]
+    },
+    {
       "heading": "Delivery to Jaipur",
       "paragraphs": [
         "Jaipur is supplied by road from Mumbai; dispatch and transit are confirmed in writing per quotation. Mundra Port is the nearest listed sea gateway for export-bound material.",
         "Other Rajasthan and NCR clusters:"
       ],
       "links": [
-        { "label": "Bhiwadi", "href": "/market-area/bhiwadi/" },
-        { "label": "Alwar and Neemrana", "href": "/market-area/alwar/" },
-        { "label": "Jodhpur", "href": "/market-area/jodhpur/" },
-        { "label": "Udaipur", "href": "/market-area/udaipur/" }
+        {
+          "label": "Bhiwadi",
+          "href": "/market-area/bhiwadi/"
+        },
+        {
+          "label": "Alwar and Neemrana",
+          "href": "/market-area/alwar/"
+        },
+        {
+          "label": "Jodhpur",
+          "href": "/market-area/jodhpur/"
+        },
+        {
+          "label": "Udaipur",
+          "href": "/market-area/udaipur/"
+        }
       ]
     }
   ],
   "sources": [
-    { "title": "eGov (Elets): RIICO - Rajasthan's industrial lifeline (2019)", "url": "https://egov.eletsonline.com/2019/03/riico-rajasthans-industrial-lifeline/" },
-    { "title": "India.gov.in: Jaipur Special Economic Zone", "url": "https://www.india.gov.in/website-jaipur-special-economic-zone" },
-    { "title": "CSE: Jaipur air quality report (industrial areas list)", "url": "https://cseindia.org/content/downloadreports/10613" }
+    {
+      "title": "eGov (Elets): RIICO - Rajasthan's industrial lifeline (2019)",
+      "url": "https://egov.eletsonline.com/2019/03/riico-rajasthans-industrial-lifeline/"
+    },
+    {
+      "title": "India.gov.in: Jaipur Special Economic Zone",
+      "url": "https://www.india.gov.in/website-jaipur-special-economic-zone"
+    },
+    {
+      "title": "CSE: Jaipur air quality report (industrial areas list)",
+      "url": "https://cseindia.org/content/downloadreports/10613"
+    },
+    {
+      "title": "IANS via SocialNews.XYZ, 13 Jun 2026: Jaipur Dairy's high-tech makeover sets stage for new White Revolution",
+      "url": "https://www.socialnews.xyz/2026/06/13/jaipur-dairys-high-tech-makeover-sets-stage-for-new-white-revolution/amp/"
+    }
   ]
 }

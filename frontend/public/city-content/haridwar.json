@@ -1,11 +1,12 @@
 {
   "slug": "haridwar",
-  "updated": "2026-10-25",
+  "updated": "2026-11-15",
   "sections": [
     {
       "heading": "SIIDCUL Haridwar: A Multi-Product Estate Near Delhi NCR",
       "paragraphs": [
         "The Integrated Industrial Estate at Haridwar, developed by SIIDCUL (formerly SIDCUL), the Uttarakhand industrial development corporation, sits beside the BHEL Haridwar complex and has built a reputation as a multi-product estate within reach of Delhi NCR. SIIDCUL's own material lists FMCG, automotive and pharmaceutical manufacturers among its occupants, including a large contract formulation manufacturer and personal-care producers.",
+        "Wikipedia's Haridwar article, citing SIIDCUL's allottee list, puts the estate at about 2,034 acres with more than 650 companies, among them ITC, Hindustan Unilever, Dabur, Mahindra & Mahindra and Havells. It lies about 3 km off the Delhi-Haridwar national highway, next to the BHEL township and the older bypass-road industrial area of BHEL ancillaries.",
         "Haridwar's hygienic-tube demand therefore comes from two directions: pharmaceutical formulation, much of it contract manufacturing for other brands, and FMCG - personal care, food and home-care products."
       ]
     },
@@ -30,21 +31,64 @@
       ]
     },
     {
+      "heading": "What a SIIDCUL Haridwar Formulator or FMCG Plant Should Send With an RFQ",
+      "paragraphs": [
+        "For a contract formulation plant: the purified-water loop drawing with its sanitisation method and temperature, the OD and wall of each size, the internal finish your URS sets (SF1 or SF4, with any Ra limit), and the documents each client's auditor expects to see in the water-system file. If several clients share one system, tell us, so that one set of heat-traceable certificates can serve every audit.",
+        "For a personal-care, ayurvedic or food line: the product family (cream, gel, syrup, juice or herbal extract), its pH and any salt or acid content, the CIP chemicals and their strength, and whether the line feeds a filler directly. That decides between 304L and 316L and between SF1 and SF4 for each circuit. Send this through our contact page and we reply with a quotation within 24 hours."
+      ],
+      "links": [
+        {
+          "label": "Send an RFQ",
+          "href": "/contact-us/"
+        },
+        {
+          "label": "Electropolished tubes",
+          "href": "/electropolished-tubes/"
+        },
+        {
+          "label": "Electropolished pipes",
+          "href": "/electropolished-pipes/"
+        }
+      ]
+    },
+    {
       "heading": "Delivery to SIIDCUL Haridwar and Bahadrabad",
       "paragraphs": [
-        "Haridwar is a long-haul road delivery from Mumbai; dispatch and transit are confirmed in writing with each quotation. ICD Dadri, about 200 km away, is the nearest listed container gateway for export-bound material.",
+        "Haridwar is a long-haul road delivery from Mumbai; dispatch and transit are confirmed in writing with each quotation. ICD Dadri, about 200 km away, is the nearest listed container gateway for export-bound material; the nearest airport is Jolly Grant at Dehradun, about 35 km away.",
         "Other Uttarakhand clusters:"
       ],
       "links": [
-        { "label": "Dehradun and Selaqui", "href": "/market-area/dehradun/" },
-        { "label": "Rudrapur and Pantnagar", "href": "/market-area/rudrapur/" },
-        { "label": "Kashipur", "href": "/market-area/kashipur/" },
-        { "label": "Paonta Sahib", "href": "/market-area/paonta-sahib/" }
+        {
+          "label": "Dehradun and Selaqui",
+          "href": "/market-area/dehradun/"
+        },
+        {
+          "label": "Rudrapur and Pantnagar",
+          "href": "/market-area/rudrapur/"
+        },
+        {
+          "label": "Kashipur",
+          "href": "/market-area/kashipur/"
+        },
+        {
+          "label": "Paonta Sahib",
+          "href": "/market-area/paonta-sahib/"
+        }
       ]
     }
   ],
   "sources": [
-    { "title": "State Infrastructure and Industrial Development Corporation of Uttarakhand - Wikipedia", "url": "https://en.wikipedia.org/wiki/State_Infrastructure_and_Industrial_Development_Corporation_of_Uttarakhand_Limited" },
-    { "title": "SIIDCUL: Success projects", "url": "https://www.siidcul.com/uploads/images/news/news_2244254_Success Projects.pdf" }
+    {
+      "title": "State Infrastructure and Industrial Development Corporation of Uttarakhand - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/State_Infrastructure_and_Industrial_Development_Corporation_of_Uttarakhand_Limited"
+    },
+    {
+      "title": "SIIDCUL: Success projects",
+      "url": "https://www.siidcul.com/uploads/images/news/news_2244254_Success Projects.pdf"
+    },
+    {
+      "title": "Wikipedia: Haridwar (SIDCUL estate area, companies, allottee count, transport)",
+      "url": "https://en.wikipedia.org/wiki/Haridwar"
+    }
   ]
 }

@@ -28,7 +28,7 @@ function Table({ table }) {
         </thead>
         <tbody>
           {table.rows.map((r) => (
-            <tr key={r[0]}>{r.map((c, i) => <td key={i} style={{ padding: '0.6rem', borderBottom: '1px solid var(--border-color)', color: 'var(--text-secondary)' }}>{c}</td>)}</tr>
+            <tr key={r[0]}>{r.map((c, i) => <td key={i} style={{ padding: '0.6rem', borderBottom: '1px solid var(--border-color)', color: 'var(--text-secondary)', whiteSpace: c.length <= 14 ? 'nowrap' : undefined }}><RichText text={c} /></td>)}</tr>
           ))}
         </tbody>
       </table>

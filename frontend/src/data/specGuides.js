@@ -5,9 +5,11 @@
 // on the site; sizes are standard dimension series, not stock claims.
 
 import { INDUSTRY_GUIDES } from './industryGuides.js';
+import { STANDARD_GUIDES } from './standardGuides.js';
 
 export const SPEC_GUIDES = {
   ...INDUSTRY_GUIDES,
+  ...STANDARD_GUIDES,
   '/electropolished-tubes/': {
     updated: '2026-11-03',
     sections: [

@@ -209,8 +209,8 @@ async function runPrerender() {
     url: `${BASE_URL}/blog/`,
     type: 'blog',
     slug: 'blog',
-    title: 'Steel Knowledge Hub & Technical Guides | Sakshi Forge',
-    description: 'Deep technical briefings, ASME dimension matrices, surface electropolishing standards, and metallurgical grade selection guides curated by Sakshi Forge engineers.',
+    title: 'Electropolished Pipe & Tube Guides | Sakshi Forge',
+    description: 'Practical guides to electropolished pipes and tubes: Ra values, ASME BPE finishes, 304L vs 316L, orbital welding, passivation, inspection and prices in India.',
     robots: 'index, follow',
     keywords: 'steel knowledge hub, electropolished pipes guide, ASME BPE standards, pharma piping specs',
     data: null

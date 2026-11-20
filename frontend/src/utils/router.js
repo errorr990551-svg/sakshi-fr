@@ -14,10 +14,6 @@ export function normalizePath(path) {
   return `${cleanBase}${rest}`;
 }
 
-export function isTrailingSlashCityPath(pathname) {
-  return true;
-}
-
 /**
  * Normalizes an internal link to the canonical trailing-slash form so links
  * never hit the sitewide trailing-slash 301. External URLs, anchors, mailto/tel

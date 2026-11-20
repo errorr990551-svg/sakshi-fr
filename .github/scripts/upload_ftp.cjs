@@ -56,9 +56,7 @@ async function run() {
   const client = new ftp.Client(30000); // 30s timeout
   client.ftp.verbose = false;
 
-  let connected = false;
-
-  // 1. Try secure FTPS first
+  // FTPS only: never fall back to plain FTP, which would send the password unencrypted.
   try {
     console.log("🔒 Connecting with secure FTPS (Port 21, TLS)...");
     await client.access({
@@ -67,31 +65,18 @@ async function run() {
       password: password,
       port: 21,
       secure: true,
+      // shortcut: certificate not checked because FTP_SERVER is an IP address the certificate cannot match; set FTP_SERVER to the certificate's hostname, then remove this line
       secureOptions: { rejectUnauthorized: false }
     });
-    connected = true;
     console.log("✅ FTPS connection established successfully!");
-  } catch (ftpsErr) {
-    console.log(`⚠️ FTPS connection note (${ftpsErr.message}). Retrying with plain FTP...`);
-    try {
-      await client.access({
-        host: host,
-        user: user,
-        password: password,
-        port: 21,
-        secure: false
-      });
-      connected = true;
-      console.log("✅ FTP connection established successfully!");
-    } catch (ftpErr) {
-      console.error("----------------------------------------------------------------");
-      console.error(`❌ FTP Connection failed: ${ftpErr.message}`);
-      if (ftpErr.message.includes("530") || ftpErr.message.toLowerCase().includes("login") || ftpErr.message.toLowerCase().includes("authentication")) {
-        console.error("👉 530 Login Authentication Failed: Please check your FTP_USERNAME and FTP_PASSWORD in GitHub Secrets.");
-      }
-      console.error("----------------------------------------------------------------");
-      process.exit(1);
+  } catch (ftpErr) {
+    console.error("----------------------------------------------------------------");
+    console.error(`❌ FTPS connection failed: ${ftpErr.message}`);
+    if (ftpErr.message.includes("530") || ftpErr.message.toLowerCase().includes("login") || ftpErr.message.toLowerCase().includes("authentication")) {
+      console.error("👉 530 Login Authentication Failed: Please check your FTP_USERNAME and FTP_PASSWORD in GitHub Secrets.");
     }
+    console.error("----------------------------------------------------------------");
+    process.exit(1);
   }
 
   // 2. Change remote directory if needed

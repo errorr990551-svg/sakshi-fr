@@ -1,5 +1,4 @@
-// Title and meta-description length guards, shared by the browser (seo.js) and the
-// prerender step so both always produce the same <title> and description.
+// Title and meta-description length guards used by the prerender (prerender.js).
 
 // Words a cut title must not end on: they leave "Pipes &", "Guide:" or "(2026" in search results.
 const DANGLING = /^(&|and|or|for|in|of|the|to|with|vs\.?|a|an|-|–|—|\|)$/i;
@@ -24,12 +23,10 @@ export function formatTitle(title) {
     if ([...words, w].join(' ').length > 57) break;
     words.push(w);
   }
-  // Drop an unclosed "(..." word, trailing joiners like "&"/"for", and trailing ":" or ",".
-  while (words.length > 1) {
-    const last = words[words.length - 1];
-    if ((last.includes('(') && !last.includes(')')) || DANGLING.test(last)) { words.pop(); continue; }
-    break;
-  }
+  // A cut inside "( ... )" drops the whole bracket part, then trailing joiners like "&"/"for".
+  const open = words.findLastIndex((w) => w.includes('('));
+  if (open > 0 && !words.slice(open).join(' ').includes(')')) words.length = open;
+  while (words.length > 1 && DANGLING.test(words[words.length - 1])) words.pop();
   const cut = words.join(' ').replace(/[\s:;,\-–—|]+$/, '');
   return cut || t.substring(0, 57);
 }

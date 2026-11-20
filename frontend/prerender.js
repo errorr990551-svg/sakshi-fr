@@ -7,6 +7,7 @@ import { buildCityFaqs } from './src/data/cityContent.js';
 import { customCityData } from './src/data/customCityData.js';
 import { visibleProductFaqs } from './src/utils/productFaqs.js';
 import { formatTitle, formatMetaDesc } from './src/utils/titles.js';
+import { parseKeySpecs, getProductOfferDetails } from './src/utils/schemaHelpers.js';
 import { CATEGORY_GUIDES } from './src/data/categoryGuides.js';
 import { PHONE, EMAIL, GBP, localBusinessSchema } from './src/data/business.js';
 
@@ -231,34 +232,6 @@ async function runPrerender() {
 
   console.log(`Prepared ${routes.length} routes to render.`);
 
-  // Helper to parse key specs
-  function parseSpecs(specsString) {
-    if (!specsString) return [];
-    if (specsString.includes('\n')) {
-      const lines = specsString.split('\n').map(l => l.trim()).filter(Boolean);
-      const parsed = [];
-      lines.forEach(line => {
-        if (line.includes('|')) {
-          const parts = line.split('|').map(p => p.trim());
-          if (parts[0].toLowerCase() === 'specification' || parts[0].toLowerCase() === 'property') return;
-          parsed.push({ key: parts[0], value: parts[1] || '' });
-        }
-      });
-      return parsed;
-    }
-    return specsString.split('|').map(item => {
-      const parts = item.split(':');
-      return { key: parts[0]?.trim() || '', value: parts[1]?.trim() || '' };
-    }).filter(item => item.key);
-  }
-
-  // Product identifier only. The site publishes no prices, stock levels, return or shipping
-  // terms, so Product markup carries no `offers` (an invented AggregateOffer was removed:
-  // structured data must match what the page shows).
-  function getProductOfferDetails(slug) {
-    return { sku: `SF-${(slug || 'ITEM').replace(/[^a-zA-Z0-9]/g, '-').toUpperCase()}` };
-  }
-
   // Write the merged-page 301 rules into the deployed .htaccess
   const htaccessPath = path.join(__dirname, 'dist/.htaccess');
   const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -423,7 +396,7 @@ async function runPrerender() {
         ]
       };
 
-      const specsList = parseSpecs(route.data['Key Specs']);
+      const specsList = parseKeySpecs(route.data['Key Specs']);
       const addProps = specsList.map(s => ({
         "@type": "PropertyValue",
         "name": s.key,

@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 
-export const sendMail = async ({ to, cc, subject, html, attachments = [], apiKey }) => {
+export const sendMail = async ({ to, cc, subject, html, replyTo, apiKey }) => {
   try {
     const key = apiKey || (typeof process !== "undefined" ? process.env?.RESEND_API_KEY : undefined);
     if (!key) {
@@ -19,10 +19,7 @@ export const sendMail = async ({ to, cc, subject, html, attachments = [], apiKey
         : undefined,
       subject,
       html,
-      attachments: attachments.map((file) => ({
-        filename: file.filename,
-        content: file.content,
-      })),
+      replyTo,
     });
 
     if (response.error) {

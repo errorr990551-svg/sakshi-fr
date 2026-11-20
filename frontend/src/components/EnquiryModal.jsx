@@ -69,9 +69,8 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '',
 
   const handleSuccessUnlock = () => {
     setIsSubmitted(true);
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('contactDetailsUnlocked', 'true');
-    }
+    // The enquiry was sent: a blocked storage must not turn that into an error message
+    try { localStorage.setItem('contactDetailsUnlocked', 'true'); } catch { /* storage blocked */ }
     // Track GA4 conversion key event
     trackLeadSubmission({
       formType: customTitle ? 'unlock_contact_modal' : 'quick_enquiry_modal',

@@ -9,9 +9,6 @@ import { ArrowRight } from 'lucide-react';
 import { REDIRECTED_PATHS } from './data/redirects';
 import { navigate } from './utils/router';
 
-// Helper kept for backward compatibility
-export const isTrailingSlashCityPath = () => false;
-
 // `route` ({ type, data, ... }) comes from routes.js: resolved at build time and embedded in
 // each prerendered page. `Page` is that route type's component (see pages.js).
 function App({ path, route, Page }) {
@@ -51,11 +48,13 @@ function App({ path, route, Page }) {
   // Trigger automatic Enquiry Popup for new visitors on any page
   useEffect(() => {
     if (typeof window === 'undefined') return;
-    const hasSeenPopup = sessionStorage.getItem('hasSeenEnquiryPopup');
+    let hasSeenPopup;
+    // Storage blocked (e.g. all cookies blocked): skip the pop-up instead of crashing the page
+    try { hasSeenPopup = sessionStorage.getItem('hasSeenEnquiryPopup'); } catch { return; }
     if (!hasSeenPopup) {
       const timer = setTimeout(() => {
         setIsEnquiryOpen(true);
-        sessionStorage.setItem('hasSeenEnquiryPopup', 'true');
+        try { sessionStorage.setItem('hasSeenEnquiryPopup', 'true'); } catch { /* storage blocked */ }
       }, 25000);
       return () => clearTimeout(timer);
     }

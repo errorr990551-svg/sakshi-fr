@@ -75,6 +75,8 @@ const handleContact = async (c) => {
         to: "sakshiforge1737@gmail.com",
         cc: ["akshat99055@gmail.com", "errorr990551@gmail.com"],
         subject: "New Contact Us Enquiry",
+        // Reply goes to the customer; skipped for a malformed address, which Resend would reject (losing the enquiry)
+        replyTo: /^[^\s@<>"]+@[^\s@<>"]+\.[^\s@<>"]+$/.test(String(email).trim()) ? String(email).trim() : undefined,
         html: `
           <h2>New Contact Enquiry</h2>
           <p><b>Name:</b> ${esc(name, 200)}</p>
@@ -108,121 +110,6 @@ const handleContact = async (c) => {
 };
 app.post("/api/contact", handleContact);
 app.post("/api/contact/", handleContact);
-
-// Complaint Form Endpoint
-const handleComplaint = async (c) => {
-  try {
-    const data = await c.req.parseBody();
-    const attachments = [];
-
-    if (data.image && typeof data.image === "object" && data.image.name) {
-      const file = data.image;
-      const arrayBuffer = await file.arrayBuffer();
-      attachments.push({
-        filename: file.name,
-        content: Buffer.from(arrayBuffer),
-        contentType: file.type,
-      });
-    }
-
-    const apiKey = c.env?.RESEND_API_KEY || process.env.RESEND_API_KEY;
-
-    await sendMail({
-      to: "sakshiforge1737@gmail.com",
-      cc: ["errorr990551@gmail.com", "akshat99055@gmail.com"],
-      subject: "New Complaint Form Submitted",
-      html: `
-        <h2>New Complaint Received</h2>
-        <p><b>Customer Name:</b> ${esc(data.customerName || "N/A")}</p>
-        <p><b>Contact Person:</b> ${esc(data.contactPerson || "N/A")}</p>
-        <p><b>Email:</b> ${esc(data.email || "N/A")}</p>
-        <p><b>Phone:</b> ${esc(data.phone || "N/A")}</p>
-        <hr/>
-        <p><b>Flow Meter Model:</b> ${esc(data.flowMeterModel || "N/A")}</p>
-        <p><b>Serial Number:</b> ${esc(data.serialNumber || "N/A")}</p>
-        <p><b>Flow Meter Size:</b> ${esc(data.flowMeterSize || "N/A")}</p>
-        <p><b>Make / Brand:</b> ${esc(data.makeBrand || "N/A")}</p>
-        <p><b>Warranty Status:</b> ${esc(data.warrantyStatus || "N/A")}</p>
-        <hr/>
-        <p><b>Nature of Complaint:</b> ${esc(data.complaintNature || "N/A")}</p>
-        <p><b>Frequency of Issue:</b> ${esc(data.frequency || "N/A")}</p>
-        <p><b>Issue Description:</b><br/>${esc(data.issueDescription || "N/A")}</p>
-        <hr/>
-        <p><b>On-Site Visit Required:</b> ${esc(data.onSiteVisit || "N/A")}</p>
-        <p><b>Calibration Certificate Available:</b> ${esc(data.calibrationCertificate || "N/A")}</p>
-        <p><b>Preferred Contact Method:</b> ${esc(data.contactMethod || "N/A")}</p>
-        <p><b>Attachment:</b> ${data.image ? "Attached with this email" : "No attachment provided"}</p>
-      `,
-      attachments,
-      apiKey,
-    });
-
-    return c.json({
-      success: true,
-      message: "Complaint submitted successfully! We will review it shortly.",
-    });
-  } catch (error) {
-    console.error("Complaint Form processing error:", error);
-    return c.json(
-      { success: false, message: "Something went wrong. Please try again." },
-      500
-    );
-  }
-};
-app.post("/api/complaint", handleComplaint);
-app.post("/api/complaint/", handleComplaint);
-
-// Job Application Endpoint
-const handleApply = async (c) => {
-  try {
-    const data = await c.req.parseBody();
-    const { fullName, email, mobile, location, role } = data;
-
-    if (!data.resume || typeof data.resume !== "object" || !data.resume.name) {
-      return c.json({ success: false, message: "Resume required" }, 400);
-    }
-
-    const file = data.resume;
-    const arrayBuffer = await file.arrayBuffer();
-    const attachments = [
-      {
-        filename: file.name,
-        content: Buffer.from(arrayBuffer),
-        contentType: file.type,
-      },
-    ];
-
-    const apiKey = c.env?.RESEND_API_KEY || process.env.RESEND_API_KEY;
-
-    await sendMail({
-      to: "sales@miraitechnologies.net",
-      subject: `New Job Application - ${role || "Position"}`,
-      html: `
-        <h2>New Job Application</h2>
-        <p><b>Name:</b> ${esc(fullName || "N/A")}</p>
-        <p><b>Email:</b> ${esc(email || "N/A")}</p>
-        <p><b>Mobile:</b> ${esc(mobile || "N/A")}</p>
-        <p><b>Location:</b> ${esc(location || "N/A")}</p>
-        <p><b>Applied For:</b> ${esc(role || "N/A")}</p>
-      `,
-      attachments,
-      apiKey,
-    });
-
-    return c.json({
-      success: true,
-      message: "Application submitted successfully!",
-    });
-  } catch (err) {
-    console.error("Application processing error:", err);
-    return c.json(
-      { success: false, message: "Something went wrong. Please try again." },
-      500
-    );
-  }
-};
-app.post("/api/apply", handleApply);
-app.post("/api/apply/", handleApply);
 
 // 404 Handler
 app.notFound((c) => {

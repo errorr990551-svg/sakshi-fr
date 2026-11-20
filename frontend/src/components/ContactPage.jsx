@@ -34,7 +34,8 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
           phone: formData.phone,
           company: formData.company || 'Not Provided',
           location: 'Not Provided',
-          message: formData.message || `Enquiry for ${formData.product || 'General'}`
+          // Always send the chosen product, also when the visitor typed a message
+          message: [formData.product && `Product: ${formData.product}`, formData.message].filter(Boolean).join('\n') || 'General enquiry'
         })
       });
       const data = await res.json();

@@ -1,5 +1,4 @@
-// Schema/spec helpers used by page components. Kept apart from seo.js so a page does not
-// pull in the data files seo.js needs for client-side head updates.
+// Schema/spec helpers used by page components and by the prerender.
 
 const graphOf = (schema) => (Array.isArray(schema["@graph"]) ? schema["@graph"] : [schema]);
 

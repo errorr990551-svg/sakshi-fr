@@ -108,12 +108,15 @@
       <button onclick="ccDecline()" style="background:transparent;color:#fff;border:1px solid #fff;padding:8px 18px;cursor:pointer;border-radius:4px">Decline</button>
     </div>
     <script>
+      // Storage can be blocked (all cookies blocked): then the banner still hides, the choice is just not remembered
+      function ccGet(){ try { return localStorage.getItem('cc'); } catch (e) { return null; } }
+      function ccSet(v){ try { localStorage.setItem('cc', v); } catch (e) {} }
       function ccHide(){
         var banner = document.getElementById('cc-banner');
         if (banner) banner.style.display = 'none';
       }
       function ccAccept(){
-        localStorage.setItem('cc', '1');
+        ccSet('1');
         if(typeof gtag === 'function') {
           gtag('consent', 'update', {
             'analytics_storage': 'granted'
@@ -125,12 +128,12 @@
         ccHide();
       }
       function ccDecline(){
-        localStorage.setItem('cc', '0');
+        ccSet('0');
         ccHide();
       }
-      if(localStorage.getItem('cc')){
+      if(ccGet()){
         ccHide();
-        if(localStorage.getItem('cc') === '1') {
+        if(ccGet() === '1') {
           // Wait slightly for gtag/clarity to initialize if loaded async
           setTimeout(function() {
             if(typeof gtag === 'function') {

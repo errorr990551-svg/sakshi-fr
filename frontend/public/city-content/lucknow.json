@@ -1,6 +1,6 @@
 {
   "slug": "lucknow",
-  "updated": "2026-10-25",
+  "updated": "2026-11-20",
   "sections": [
     {
       "heading": "Lucknow's Industrial Enclaves",
@@ -27,6 +27,34 @@
       "heading": "Engineering Units",
       "paragraphs": [
         "Engineering firms in Lucknow's estates that build tanks, skids and process equipment for food and pharma customers need tube cut to drawing and certificates they can hand over at commissioning. Units serving other industries rarely need a hygienic finish, and we will recommend the economical option where it fits."
+      ]
+    },
+    {
+      "heading": "Lucknow's Drug Research Institutes and the 2026 Pharma Conclave",
+      "paragraphs": [
+        "Lucknow's distinctive buyers are its research institutions. The city is home to the Central Drug Research Institute (CDRI), the Indian Institute of Toxicology Research, the National Botanical Research Institute and the Central Institute of Medical and Aromatic Plants, as well as the R&D centre for the National Dairy Development Board's National Milk Grid. Pilot plants, kilo labs and analytical facilities in institutes like these use short runs of 316L tube for purified water, clean utilities and pilot process skids, where traceable material and a documented bore finish matter more than volume.",
+        "Uttar Pradesh is also courting pharma investment from Lucknow. At the state's first Pharma Conclave, held at Hotel Taj, Lucknow on 3 February 2026, the government reported eleven MoUs worth nearly Rs 10,000 crore, including Rs 1,250 crore each from Arna Pharma and Biogenta Lifesciences and Rs 737 crore from Shukra Pharmaceuticals, and highlighted the Lalitpur Bulk Drug Pharma Park. The press release does not give the plant sites, so we do not assume they are in Lucknow; wherever in the state they are built, their water systems and process skids will need certified electropolished tube."
+      ]
+    },
+    {
+      "heading": "What a Lucknow Pharma Unit or Research Lab Should Send With an RFQ",
+      "paragraphs": [
+        "For a formulation unit upgrading to revised Schedule M: the purified-water generation and loop drawing, whether the loop is ambient or hot-sanitised, the Ra limit in your URS and the OD series of existing valves and instruments. For a CDRI-type pilot plant or kilo lab: the skid drawing, the solvents and cleaning agents used, and whether a short run must match tube already installed, so we can quote SF1 or SF4 on the sections that justify it.",
+        "For aromatic and essential-oil work of the kind CIMAP researches, state the oils handled and how often the distillate line changes product. Every order ships with an EN 10204 3.1 certificate traced to heat number, PMI on every length and an internal Ra report for each electropolished lot; send the line list through our contact page and we reply with a quotation within 24 hours."
+      ],
+      "links": [
+        {
+          "label": "Send an RFQ",
+          "href": "/contact-us/"
+        },
+        {
+          "label": "Electropolished tubes",
+          "href": "/electropolished-tubes/"
+        },
+        {
+          "label": "Electropolished pipes",
+          "href": "/electropolished-pipes/"
+        }
       ]
     },
     {
@@ -67,6 +95,18 @@
     {
       "title": "India Briefing: Revised Schedule M compliance timeline",
       "url": "https://india-briefing.com/news/india-extends-gmp-compliance-deadline-to-december-2025-35679.html"
+    },
+    {
+      "title": "Wikipedia: Lucknow (economy, research institutes)",
+      "url": "https://en.wikipedia.org/wiki/Lucknow"
+    },
+    {
+      "title": "Invest UP press release: Uttar Pradesh Pharma Conclave, ~Rs 10,000 crore MoUs",
+      "url": "https://invest.up.gov.in/wp-content/uploads/2026/02/Eng_PressRelease_Pharma_03Feb-2025_090226.pdf"
+    },
+    {
+      "title": "BioSpectrum India, 3 Feb 2026: CM inaugurates Uttar Pradesh Pharma Conclave 1.0 in Lucknow",
+      "url": "https://www.biospectrumindia.com/news/110/27275/cm-yogi-adityanath-inaugurates-uttar-pradesh-pharma-conclave-1-0-in-lucknow.html"
     }
   ]
 }

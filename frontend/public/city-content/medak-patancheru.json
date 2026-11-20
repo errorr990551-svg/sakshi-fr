@@ -1,6 +1,6 @@
 {
   "slug": "medak-patancheru",
-  "updated": "2026-10-25",
+  "updated": "2026-11-20",
   "sections": [
     {
       "heading": "Patancheru, Bollaram and Pashamylaram: India's Oldest Bulk-Drug Belt",
@@ -33,22 +33,79 @@
       ]
     },
     {
+      "heading": "Patancheru in the Pollution Control Board's 2024 Report",
+      "paragraphs": [
+        "Patancheru lies about 32 km from Hyderabad's city centre on the Hyderabad-Solapur highway and is home to ICRISAT; Wikipedia lists Aurobindo Pharma and Biological E among the companies located there, and records that a 2009 study found 21 different manufactured drugs in local water, which it attributes to wastewater from more than 90 pharmaceutical manufacturers.",
+        "The Telangana Pollution Control Board's report to the National Green Tribunal, dated 17 August 2024 in OA 497 of 2024, counts 257 bulk-drug industries in the state, 242 operating and 15 sick, and puts 189 as complying with effluent and hazardous-waste norms. It states that major units have zero liquid discharge systems, others send effluent to common treatment plants, four CETPs are under online monitoring, and organic hazardous waste goes to cement kilns for co-processing. The largest share of entries in its annexure of units carries Sangareddy district addresses, at IDA Bollaram, Pashamylaram and Patancheru mandal."
+      ]
+    },
+    {
+      "heading": "What a Patancheru or Bollaram Bulk-Drug Unit Should Send With an RFQ",
+      "paragraphs": [
+        "Give the block and stage for each line: final crystallisation, centrifuge or filter-dryer wash, drying and packing, or purified water. Say whether the line is a replacement in a running plant, and if so send the existing OD, wall and dimensional standard so the new tube welds to the old; include the shutdown date so the quotation states dispatch against it. If a line touches recovered water or ZLD condensate, send its chloride analysis, because that decides the alloy before finish.",
+        "State the Ra limit from your URS or cleaning-validation protocol and the documents your export customers' auditors expect. We supply an EN 10204 3.1 certificate traced to heat number, NABL-lab chemical analysis, PMI on every length and an internal Ra report for each electropolished lot, and reply with a quotation within 24 hours of a complete enquiry."
+      ],
+      "links": [
+        {
+          "label": "Send an RFQ",
+          "href": "/contact-us/"
+        },
+        {
+          "label": "Electropolished tubes",
+          "href": "/electropolished-tubes/"
+        },
+        {
+          "label": "Electropolished pipes",
+          "href": "/electropolished-pipes/"
+        }
+      ]
+    },
+    {
       "heading": "Delivery to Patancheru and Bollaram",
       "paragraphs": [
         "The belt is supplied by road from Mumbai; dispatch and transit are confirmed in writing per quotation. Krishnapatnam Port is the nearest listed sea gateway for export-bound material. Deliveries into running plants are usually scheduled around shutdown windows - tell us the date at RFQ stage.",
         "Other Hyderabad-area clusters:"
       ],
       "links": [
-        { "label": "Hyderabad", "href": "/market-area/hyderabad/" },
-        { "label": "Genome Valley", "href": "/market-area/genome-valley/" },
-        { "label": "Sangareddy", "href": "/market-area/sangareddy/" }
+        {
+          "label": "Hyderabad",
+          "href": "/market-area/hyderabad/"
+        },
+        {
+          "label": "Genome Valley",
+          "href": "/market-area/genome-valley/"
+        },
+        {
+          "label": "Sangareddy",
+          "href": "/market-area/sangareddy/"
+        }
       ]
     }
   ],
   "sources": [
-    { "title": "Down To Earth: Supreme abuse (Patancheru effluent and court orders)", "url": "https://www.downtoearth.org.in/environment/supreme-abuse-51876" },
-    { "title": "Down To Earth: Hearing impaired", "url": "https://www.downtoearth.org.in/environment/hearing-impaired-9599" },
-    { "title": "Vidhi Centre for Legal Policy: An unequal fight - industrial pollution in Patancheru", "url": "https://vidhilegalpolicy.in/videos/an-unequal-fight-a-documentary-on-industrial-pollution-in-patancheru/" },
-    { "title": "Chemistry World: Pollution from Indian drugmakers drives drug resistance", "url": "https://www.chemistryworld.com/news/pollution-from-indian-drugmakers-drives-drug-resistance/3007349.article" }
+    {
+      "title": "Down To Earth: Supreme abuse (Patancheru effluent and court orders)",
+      "url": "https://www.downtoearth.org.in/environment/supreme-abuse-51876"
+    },
+    {
+      "title": "Down To Earth: Hearing impaired",
+      "url": "https://www.downtoearth.org.in/environment/hearing-impaired-9599"
+    },
+    {
+      "title": "Vidhi Centre for Legal Policy: An unequal fight - industrial pollution in Patancheru",
+      "url": "https://vidhilegalpolicy.in/videos/an-unequal-fight-a-documentary-on-industrial-pollution-in-patancheru/"
+    },
+    {
+      "title": "Chemistry World: Pollution from Indian drugmakers drives drug resistance",
+      "url": "https://www.chemistryworld.com/news/pollution-from-indian-drugmakers-drives-drug-resistance/3007349.article"
+    },
+    {
+      "title": "Wikipedia: Patancheru",
+      "url": "https://en.wikipedia.org/wiki/Patancheru"
+    },
+    {
+      "title": "Telangana PCB report to NGT, OA 497 of 2024 (17 Aug 2024), with list of bulk-drug industries",
+      "url": "https://www.greentribunal.gov.in/sites/default/files/news_updates/REPORT%20BY%20TELANGANA%20SPCB%20IN%20OA%20NO.%20497%20OF%202024%20NEWS%20ITEM%20TITLED%20IMPACT%20OF%20PHARMACEUTICAL%20TOXICITY%20ON%20THE%20ENVIRONMENT%20AND%20ITS%20REGULATORY%20ASPECTS.pdf"
+    }
   ]
 }

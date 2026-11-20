@@ -1,6 +1,6 @@
 {
   "slug": "lote-parshuram",
-  "updated": "2026-10-25",
+  "updated": "2026-11-20",
   "sections": [
     {
       "heading": "Lote Parshuram MIDC: Konkan's Chemical and API Zone",
@@ -30,22 +30,75 @@
       ]
     },
     {
+      "heading": "Supriya Lifescience's Module E at Lote Parshuram",
+      "paragraphs": [
+        "The clearest recent investment in the zone is Supriya Lifescience's Module E, a multipurpose API production block inaugurated at its Lote Parshuram site in December 2024. Medical Dialogues reported an investment of about Rs 125 crore and 335 kilolitres of added reactor capacity, taking the site from 597 to 932 kilolitres, an increase of more than 55%. The block covers about 5,000 square metres over four levels and houses 33 stainless steel and glass-lined reactors from 1.6 KL to 16 KL, with closed-system handling at critical stages and process-control automation.",
+        "In a multi-level, multipurpose block, product and solvent move between floors through closed transfer lines, and the same trains are switched between molecules. The company states that its Khed facility holds approvals including USFDA, EU GMP and EDQM. For pipework, that combination points to electropolished 316L tube on the lines an inspector traces between campaigns: crystalliser discharge to the centrifuge or filter-dryer, solvent-wash headers, and the purified-water branches that serve final washing and equipment cleaning."
+      ]
+    },
+    {
+      "heading": "What a Lote Parshuram API Plant Should Send With an RFQ",
+      "paragraphs": [
+        "Tell us the stage each line serves - reaction, solvent recovery, final crystallisation, centrifuge wash, drying or purified water - because only the last few justify an electropolished bore. For any line in a multipurpose block, list the solvents and acids it will see across all campaigns, not just the current molecule, and the chloride content of any wash or recovered stream; that decides between 316L and a higher alloy before finish is even discussed.",
+        "Give OD and wall to match the reactor and filter-dryer nozzles already on site, the Ra limit in your URS or cleaning-validation protocol, and whether spools are welded orbitally. Plants that export to regulated markets should state which documents the audit file needs; we supply an EN 10204 3.1 certificate traced to heat number, NABL-lab chemical analysis, PMI on every length and an internal Ra report per electropolished lot, and reply with a quotation within 24 hours of a complete enquiry."
+      ],
+      "links": [
+        {
+          "label": "Send an RFQ",
+          "href": "/contact-us/"
+        },
+        {
+          "label": "Electropolished tubes",
+          "href": "/electropolished-tubes/"
+        },
+        {
+          "label": "Electropolished pipes",
+          "href": "/electropolished-pipes/"
+        }
+      ]
+    },
+    {
       "heading": "Delivery to Lote Parshuram",
       "paragraphs": [
         "Lote is reached by road down the Mumbai-Goa highway from Mumbai; dispatch and transit are confirmed in writing with each quotation. JNPT Nhava Sheva, about 215 km away, is the nearest listed gateway for export-bound material.",
         "Other Konkan and Raigad chemical zones:"
       ],
       "links": [
-        { "label": "Mahad", "href": "/market-area/mahad/" },
-        { "label": "Roha and Dhatav", "href": "/market-area/roha/" },
-        { "label": "Kolhapur", "href": "/market-area/kolhapur/" }
+        {
+          "label": "Mahad",
+          "href": "/market-area/mahad/"
+        },
+        {
+          "label": "Roha and Dhatav",
+          "href": "/market-area/roha/"
+        },
+        {
+          "label": "Kolhapur",
+          "href": "/market-area/kolhapur/"
+        }
       ]
     }
   ],
   "sources": [
-    { "title": "Lote, India - Wikipedia", "url": "https://en.wikipedia.org/wiki/Lote,_India" },
-    { "title": "Down To Earth: Factories poison Khed", "url": "https://www.downtoearth.org.in/environment/factories-poison-khed-890" },
-    { "title": "MPCB: SRO Chiplun industry database (2014)", "url": "https://mpcb.gov.in/sites/default/files/industrial-statistics/sro-industry/SROchiplun_SROdatabase_31072014.pdf" },
-    { "title": "Ascent: Information memorandum, sale of plots at Lote Parshuram MIDC", "url": "https://www.ascconline.com/blog/wp-content/uploads/2023/11/Information-Memorandum-of-Sale-of-Plots-at-Lote-Parshuram-MIDC-.pdf" }
+    {
+      "title": "Lote, India - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lote,_India"
+    },
+    {
+      "title": "Down To Earth: Factories poison Khed",
+      "url": "https://www.downtoearth.org.in/environment/factories-poison-khed-890"
+    },
+    {
+      "title": "MPCB: SRO Chiplun industry database (2014)",
+      "url": "https://mpcb.gov.in/sites/default/files/industrial-statistics/sro-industry/SROchiplun_SROdatabase_31072014.pdf"
+    },
+    {
+      "title": "Ascent: Information memorandum, sale of plots at Lote Parshuram MIDC",
+      "url": "https://www.ascconline.com/blog/wp-content/uploads/2023/11/Information-Memorandum-of-Sale-of-Plots-at-Lote-Parshuram-MIDC-.pdf"
+    },
+    {
+      "title": "Medical Dialogues, 20 Dec 2024: Supriya Lifescience inaugurates Rs 125 crore API production block at Lote Parshuram site",
+      "url": "https://medicaldialogues.in/news/industry/pharma/supriya-lifescience-inaugurates-rs-125-crore-api-production-block-at-lote-parshuram-site-140151"
+    }
   ]
 }

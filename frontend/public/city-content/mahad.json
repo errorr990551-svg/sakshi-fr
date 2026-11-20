@@ -1,6 +1,6 @@
 {
   "slug": "mahad",
-  "updated": "2026-10-25",
+  "updated": "2026-11-20",
   "sections": [
     {
       "heading": "MIDC Mahad: A Chemical Zone on the Savitri",
@@ -32,22 +32,79 @@
       ]
     },
     {
+      "heading": "Mahad-Birwadi and Additional Mahad: Who Operates There",
+      "paragraphs": [
+        "Mahad has two industrial zones, Mahad-Birwadi and the Additional Mahad industrial area. Wikipedia's article on the town describes the MIDC near Birwadi as a chemical cluster of polymer, pharmaceutical, organic, pigment, fertiliser and aroma-chemical makers, and lists Pidilite, Piramal Healthcare, Sandoz, Vinati Organics, Hikal, Privi Organics and BlueJet HealthCare among its notable industries. The same article notes that Mahad lies on the proposed Panvel-Mahad-Chiplun-Panjim economic corridor under the Bharatmala programme.",
+        "Not every Mahad site is a bulk-drug plant. Piramal Pharma's facility at Plot K-1, Additional MIDC, makes oral solids, tablets, liquid drug products, human and animal nutrition premixes, straight vitamins in solid and liquid form and spray-dried vitamin powders, and the company says its human-nutrition facility is USFDA-inspected for dietary ingredients. Liquid oral and vitamin-solution lines are where an electropolished bore pays: syrup and solution preparation, transfer to filling and the purified water feeding them, all cleaned between products."
+      ]
+    },
+    {
+      "heading": "What a Mahad Plant Should Send With an RFQ",
+      "paragraphs": [
+        "Name the plant type first, because Mahad buyers range from API finishing sections to liquid orals and aroma chemicals. For a liquid-oral or vitamin-solution line, give the product range, the cleaning agents and temperatures, the Ra limit in your URS and the filling-machine connection sizes. For an aroma-chemical or fragrance-ingredient unit, say how often the line changes product: odour carry-over between batches is the case for an electropolished bore, while a dedicated single-product line may not need one.",
+        "For bulk-drug intermediates, list the solvents, acids and chloride levels on each line so we can confirm 316L is suitable before quoting a finish. With every order we supply an EN 10204 3.1 certificate traced to heat number, PMI on every length and an internal Ra report for each electropolished lot; send the line list through our contact page for a quotation within 24 hours."
+      ],
+      "links": [
+        {
+          "label": "Send an RFQ",
+          "href": "/contact-us/"
+        },
+        {
+          "label": "Electropolished tubes",
+          "href": "/electropolished-tubes/"
+        },
+        {
+          "label": "Electropolished pipes",
+          "href": "/electropolished-pipes/"
+        }
+      ]
+    },
+    {
       "heading": "Delivery to MIDC Mahad",
       "paragraphs": [
         "Mahad is a road run down the Konkan coast from Mumbai. Dispatch and transit are confirmed in writing per quotation. For export-bound project material the nearest listed gateway is JNPT Nhava Sheva, about 120 km away.",
         "Nearby chemical zones:"
       ],
       "links": [
-        { "label": "Roha and Dhatav", "href": "/market-area/roha/" },
-        { "label": "Lote Parshuram", "href": "/market-area/lote-parshuram/" },
-        { "label": "Navi Mumbai and Taloja", "href": "/market-area/navi-mumbai/" }
+        {
+          "label": "Roha and Dhatav",
+          "href": "/market-area/roha/"
+        },
+        {
+          "label": "Lote Parshuram",
+          "href": "/market-area/lote-parshuram/"
+        },
+        {
+          "label": "Navi Mumbai and Taloja",
+          "href": "/market-area/navi-mumbai/"
+        }
       ]
     }
   ],
   "sources": [
-    { "title": "MPCB: Raigad environmental report", "url": "https://www.mpcb.gov.in/sites/default/files/focus-area-reports-documents/envreportraigad.pdf" },
-    { "title": "MPCB: Affidavit on MIDC Mahad CETP", "url": "https://www.mpcb.gov.in/sites/default/files/common-effluent-treatment-plant/general/affadavit/Affidavit_5012012.pdf" },
-    { "title": "MPCB: SRO Mahad industry database (2014)", "url": "https://mpcb.gov.in/sites/default/files/industrial-statistics/sro-industry/SRO_Mahad_srodatabase_31072014.pdf" },
-    { "title": "MPCB: Savitri river action plan (2019)", "url": "https://mpcb.gov.in/sites/default/files/river-polluted/action-plan-priority/Action_plans_priority_V_SAVITRI_2019_03072019.pdf" }
+    {
+      "title": "MPCB: Raigad environmental report",
+      "url": "https://www.mpcb.gov.in/sites/default/files/focus-area-reports-documents/envreportraigad.pdf"
+    },
+    {
+      "title": "MPCB: Affidavit on MIDC Mahad CETP",
+      "url": "https://www.mpcb.gov.in/sites/default/files/common-effluent-treatment-plant/general/affadavit/Affidavit_5012012.pdf"
+    },
+    {
+      "title": "MPCB: SRO Mahad industry database (2014)",
+      "url": "https://mpcb.gov.in/sites/default/files/industrial-statistics/sro-industry/SRO_Mahad_srodatabase_31072014.pdf"
+    },
+    {
+      "title": "MPCB: Savitri river action plan (2019)",
+      "url": "https://mpcb.gov.in/sites/default/files/river-polluted/action-plan-priority/Action_plans_priority_V_SAVITRI_2019_03072019.pdf"
+    },
+    {
+      "title": "Wikipedia: Mahad (Mahad MIDC, industrial zones, Bharatmala corridor)",
+      "url": "https://en.wikipedia.org/wiki/Mahad"
+    },
+    {
+      "title": "Piramal Pharma Solutions: Mahad, India facility",
+      "url": "https://piramalpharmasolutions.com/our-facilities/mahad"
+    }
   ]
 }

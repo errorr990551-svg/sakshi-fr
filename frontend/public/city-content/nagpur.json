@@ -1,6 +1,6 @@
 {
   "slug": "nagpur",
-  "updated": "2026-10-25",
+  "updated": "2026-11-20",
   "sections": [
     {
       "heading": "Nagpur: Butibori, Hingna and the MIHAN Hub",
@@ -26,6 +26,34 @@
       "heading": "Defence and Engineering Units",
       "paragraphs": [
         "Nagpur's defence and engineering manufacturers rarely need hygienic tube in their core processes. Where they buy high-cleanliness stainless, it is for hydraulic test rigs, fluid systems and laboratory utilities, where traceability and documented cleanliness matter more than a sanitary finish. We supply certified tube for these applications and will advise when a standard finish is the right call."
+      ]
+    },
+    {
+      "heading": "Mother Dairy at Butibori and Patanjali's MIHAN Fruit Plant",
+      "paragraphs": [
+        "Two food investments define Nagpur's demand for sanitary tube. In November 2023 the foundation stone was laid for Mother Dairy's greenfield milk plant on a 25-acre campus in Butibori Industrial Estate, reported by Deccan Herald at over Rs 500 crore, with 6 lakh litres a day of processing capacity expandable to 10 lakh, making poly-pack milk, ice cream, chaach, lassi and paneer. In March 2025 Patanjali's 223-acre food and herbal park at MIHAN began production, built to process 800 tonnes a day of oranges, lemons and limes into juice, concentrate, pulp, paste and puree, with mangoes, guavas, tomatoes and other fruit also planned.",
+        "The two plants need different specifications. Milk reception, pasteurisation and pouch-filler lines are well served by 304L tube with an SF1 polished bore, with 316L on hot acid-CIP circuits and on lines where product stands for long periods. Citrus juice, concentrate and tomato paste are acidic and are often held hot, so 316L is the safer grade throughout, and an electropolished bore is justified on aseptic sterilisation, concentrate transfer and filling, where sugar and pectin films are hardest to clean."
+      ]
+    },
+    {
+      "heading": "What a Nagpur Dairy or Fruit Processor Should Send With an RFQ",
+      "paragraphs": [
+        "For a Butibori dairy project or its contractors: the circuit (reception, pasteuriser, ice-cream mix, curd and lassi, paneer, or CIP supply and return), the highest product and CIP temperatures, acid and caustic strengths, OD and wall in inches, and whether lines are orbitally welded. For a MIHAN fruit line: the fruit and product form, the pH range, hold temperature, aseptic or hot-fill, and the Ra limit your equipment supplier specifies.",
+        "Send that through our contact page and we reply with a quotation within 24 hours, with an EN 10204 3.1 certificate traced to heat number, PMI on every length and an internal Ra report for each electropolished lot, documents that also support an FSSAI audit file."
+      ],
+      "links": [
+        {
+          "label": "Send an RFQ",
+          "href": "/contact-us/"
+        },
+        {
+          "label": "Electropolished tubes",
+          "href": "/electropolished-tubes/"
+        },
+        {
+          "label": "Electropolished pipes",
+          "href": "/electropolished-pipes/"
+        }
       ]
     },
     {
@@ -66,6 +94,14 @@
     {
       "title": "MPCB: SRO Nagpur-II industry list",
       "url": "https://mpcb.gov.in/sites/default/files/industrial-statistics/sro-industry/SRONagpur_II.pdf"
+    },
+    {
+      "title": "Deccan Herald, 25 Nov 2023: Mother Dairy mega milk processing plant launches in Nagpur",
+      "url": "https://www.deccanherald.com/india/maharashtra/mother-dairy-mega-milk-processing-plant-launches-in-nagpur-2784719"
+    },
+    {
+      "title": "Nagpur Today, 9 Mar 2025: Patanjali Food Park inaugurated in Nagpur",
+      "url": "https://www.nagpurtoday.in/patanjali-food-park-inaugurated-in-nagpur-promises-big-gains-for-farmers/"
     }
   ]
 }

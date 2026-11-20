@@ -6,6 +6,7 @@ import { REDIRECTED_PATHS, isRedirectedPath } from './src/data/redirects.js';
 import { buildCityFaqs } from './src/data/cityContent.js';
 import { customCityData } from './src/data/customCityData.js';
 import { visibleProductFaqs } from './src/utils/productFaqs.js';
+import { formatTitle, formatMetaDesc } from './src/utils/titles.js';
 import { CATEGORY_GUIDES } from './src/data/categoryGuides.js';
 import { PHONE, EMAIL, GBP, localBusinessSchema } from './src/data/business.js';
 
@@ -15,44 +16,6 @@ const __dirname = path.dirname(__filename);
 const BASE_URL = 'https://steelmanufacturer.in';
 
 
-// SEO Title & Description Guards (ensures strict compliance with Google length recommendations)
-function formatTitle(title) {
-  if (!title) return 'Sakshi Forge | Steel Manufacturer Mumbai';
-  let t = title.trim();
-  if (t.length <= 60) return t;
-  if (t.includes(' | Sakshi Forge')) {
-    const withoutBrand = t.replace(' | Sakshi Forge', '').trim();
-    if (withoutBrand.length <= 60) return withoutBrand;
-    t = withoutBrand;
-  }
-  t = t.replace(/ Manufacturer & Supplier in India/gi, ' Manufacturer India')
-       .replace(/ Manufacturer & Supplier/gi, ' Manufacturer')
-       .replace(/ Manufacturer in India/gi, ' Manufacturer India')
-       .replace(/ Supplier in India/gi, ' Supplier India')
-       .replace(/ across India/gi, ' India');
-  if (t.length <= 60) return t;
-  const words = t.split(' ');
-  let cur = '';
-  for (const w of words) {
-    if ((cur + (cur ? ' ' : '') + w).length <= 57) {
-      cur += (cur ? ' ' : '') + w;
-    } else {
-      break;
-    }
-  }
-  return cur || t.substring(0, 57);
-}
-
-function formatMetaDesc(desc) {
-  if (!desc) return '';
-  let d = desc.trim();
-  if (d.length <= 160) return d;
-  const periodIdx = d.lastIndexOf('.', 159);
-  if (periodIdx > 100) return d.substring(0, periodIdx + 1).trim();
-  const words = d.substring(0, 156).split(' ');
-  words.pop();
-  return words.join(' ').trim() + '...';
-}
 
 async function runPrerender() {
   console.log('Starting static pre-rendering...');

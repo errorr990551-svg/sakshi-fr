@@ -9,14 +9,40 @@ dotenv.config();
 const app = new Hono();
 
 // Global CORS Middleware
+// Only the live site (and local dev) may post forms. Browsers always send Origin on these
+// cross-site POSTs; anything else is a script or bot.
+const ALLOWED_ORIGINS = [
+  "https://steelmanufacturer.in",
+  "https://www.steelmanufacturer.in",
+  "http://localhost:5173",
+  "http://localhost:4173",
+];
+
 app.use(
   "*",
   cors({
-    origin: "*",
-    allowMethods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowHeaders: ["Content-Type", "Authorization"],
+    origin: (origin) => (ALLOWED_ORIGINS.includes(origin) ? origin : null),
+    allowMethods: ["GET", "POST", "OPTIONS"],
+    allowHeaders: ["Content-Type"],
   })
 );
+
+app.use("/api/*", async (c, next) => {
+  if (c.req.method === "POST" && !ALLOWED_ORIGINS.includes(c.req.header("origin") || "")) {
+    return c.json({ success: false, message: "Forbidden" }, 403);
+  }
+  await next();
+});
+
+// Escape form text before it goes into the email HTML, so a visitor cannot inject links or markup.
+const esc = (v, max = 5000) =>
+  String(v ?? "")
+    .slice(0, max)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
 
 // Health Check Routes
 app.get("/", (c) => c.text("Sakshi Forge API is running!"));
@@ -51,19 +77,19 @@ const handleContact = async (c) => {
         subject: "New Contact Us Enquiry",
         html: `
           <h2>New Contact Enquiry</h2>
-          <p><b>Name:</b> ${name}</p>
-          <p><b>Email:</b> ${email}</p>
-          <p><b>Phone:</b> ${phone}</p>
-          <p><b>Location:</b> ${location || "Not Provided"}</p>
-          <p><b>Company:</b> ${company || "Not Provided"}</p>
-          <p><b>Message:</b><br/>${message}</p>
+          <p><b>Name:</b> ${esc(name, 200)}</p>
+          <p><b>Email:</b> ${esc(email, 200)}</p>
+          <p><b>Phone:</b> ${esc(phone, 50)}</p>
+          <p><b>Location:</b> ${esc(location || "Not Provided", 200)}</p>
+          <p><b>Company:</b> ${esc(company || "Not Provided", 200)}</p>
+          <p><b>Message:</b><br/>${esc(message).replace(/\n/g, "<br/>")}</p>
         `,
         apiKey,
       });
     } catch (emailErr) {
       console.error("Failed to send contact email:", emailErr);
       return c.json(
-        { success: false, message: `Failed to send email: ${emailErr.message || "Email error"}` },
+        { success: false, message: "Could not send your message. Please call +91 82913 66340 or email info@steelmanufacturer.in." },
         500
       );
     }
@@ -107,24 +133,24 @@ const handleComplaint = async (c) => {
       subject: "New Complaint Form Submitted",
       html: `
         <h2>New Complaint Received</h2>
-        <p><b>Customer Name:</b> ${data.customerName || "N/A"}</p>
-        <p><b>Contact Person:</b> ${data.contactPerson || "N/A"}</p>
-        <p><b>Email:</b> ${data.email || "N/A"}</p>
-        <p><b>Phone:</b> ${data.phone || "N/A"}</p>
+        <p><b>Customer Name:</b> ${esc(data.customerName || "N/A")}</p>
+        <p><b>Contact Person:</b> ${esc(data.contactPerson || "N/A")}</p>
+        <p><b>Email:</b> ${esc(data.email || "N/A")}</p>
+        <p><b>Phone:</b> ${esc(data.phone || "N/A")}</p>
         <hr/>
-        <p><b>Flow Meter Model:</b> ${data.flowMeterModel || "N/A"}</p>
-        <p><b>Serial Number:</b> ${data.serialNumber || "N/A"}</p>
-        <p><b>Flow Meter Size:</b> ${data.flowMeterSize || "N/A"}</p>
-        <p><b>Make / Brand:</b> ${data.makeBrand || "N/A"}</p>
-        <p><b>Warranty Status:</b> ${data.warrantyStatus || "N/A"}</p>
+        <p><b>Flow Meter Model:</b> ${esc(data.flowMeterModel || "N/A")}</p>
+        <p><b>Serial Number:</b> ${esc(data.serialNumber || "N/A")}</p>
+        <p><b>Flow Meter Size:</b> ${esc(data.flowMeterSize || "N/A")}</p>
+        <p><b>Make / Brand:</b> ${esc(data.makeBrand || "N/A")}</p>
+        <p><b>Warranty Status:</b> ${esc(data.warrantyStatus || "N/A")}</p>
         <hr/>
-        <p><b>Nature of Complaint:</b> ${data.complaintNature || "N/A"}</p>
-        <p><b>Frequency of Issue:</b> ${data.frequency || "N/A"}</p>
-        <p><b>Issue Description:</b><br/>${data.issueDescription || "N/A"}</p>
+        <p><b>Nature of Complaint:</b> ${esc(data.complaintNature || "N/A")}</p>
+        <p><b>Frequency of Issue:</b> ${esc(data.frequency || "N/A")}</p>
+        <p><b>Issue Description:</b><br/>${esc(data.issueDescription || "N/A")}</p>
         <hr/>
-        <p><b>On-Site Visit Required:</b> ${data.onSiteVisit || "N/A"}</p>
-        <p><b>Calibration Certificate Available:</b> ${data.calibrationCertificate || "N/A"}</p>
-        <p><b>Preferred Contact Method:</b> ${data.contactMethod || "N/A"}</p>
+        <p><b>On-Site Visit Required:</b> ${esc(data.onSiteVisit || "N/A")}</p>
+        <p><b>Calibration Certificate Available:</b> ${esc(data.calibrationCertificate || "N/A")}</p>
+        <p><b>Preferred Contact Method:</b> ${esc(data.contactMethod || "N/A")}</p>
         <p><b>Attachment:</b> ${data.image ? "Attached with this email" : "No attachment provided"}</p>
       `,
       attachments,
@@ -173,11 +199,11 @@ const handleApply = async (c) => {
       subject: `New Job Application - ${role || "Position"}`,
       html: `
         <h2>New Job Application</h2>
-        <p><b>Name:</b> ${fullName || "N/A"}</p>
-        <p><b>Email:</b> ${email || "N/A"}</p>
-        <p><b>Mobile:</b> ${mobile || "N/A"}</p>
-        <p><b>Location:</b> ${location || "N/A"}</p>
-        <p><b>Applied For:</b> ${role || "N/A"}</p>
+        <p><b>Name:</b> ${esc(fullName || "N/A")}</p>
+        <p><b>Email:</b> ${esc(email || "N/A")}</p>
+        <p><b>Mobile:</b> ${esc(mobile || "N/A")}</p>
+        <p><b>Location:</b> ${esc(location || "N/A")}</p>
+        <p><b>Applied For:</b> ${esc(role || "N/A")}</p>
       `,
       attachments,
       apiKey,
@@ -206,7 +232,7 @@ app.notFound((c) => {
 // Error Handler
 app.onError((err, c) => {
   console.error("Unhandled Worker Error:", err);
-  return c.json({ success: false, message: err.message || "Internal Server Error" }, 500);
+  return c.json({ success: false, message: "Internal Server Error" }, 500);
 });
 
 // Export default app for Cloudflare Workers / Wrangler

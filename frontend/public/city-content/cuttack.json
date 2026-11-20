@@ -1,0 +1,63 @@
+{
+  "slug": "cuttack",
+  "updated": "2026-11-20",
+  "sections": [
+    {
+      "heading": "OMFED's Arilo Dairy: Cuttack's Largest Hygienic Process Plant",
+      "paragraphs": [
+        "The single biggest user of sanitary stainless tube around Cuttack is the dairy of the Odisha State Cooperative Milk Producers Federation (OMFED) at Arilo. The Chief Minister inaugurated the newly commissioned, automated plant on 10 November 2021. The National Dairy Development Board (NDDB) provided the technical consultancy and describes it as a 5 lakh litres per day plant with a 20 tonnes per day powder plant, making butter, ghee, flavoured milk and paneer. NDDB puts the outlay at about Rs 250 crore; the IANS report of the inauguration gives Rs 263 crore and calls it the biggest dairy plant in Odisha.",
+        "A plant of that size runs several very different circuits under one roof: raw milk reception and chilling, pasteurisation and pouch filling, curd and lassi, butter and ghee, paneer, flavoured milk, an evaporator and spray dryer for powder, and the CIP system that cleans all of them. Each circuit has its own temperature and cleaning regime, and each is a separate line on a tube enquiry."
+      ]
+    },
+    {
+      "heading": "Choosing Grade and Finish for a Cuttack Dairy Line",
+      "paragraphs": [
+        "Most milk circuits at a plant like Arilo are well served by 304L tube with a mechanically polished SF1 bore: reception, chilled storage, pasteuriser product lines and pouch fillers. Move to 316L where hot acid CIP runs every day, where brine or salt is present (paneer and some cheese lines), and on ghee and butter-oil lines that run hot for long periods.",
+        "An electropolished SF4 bore is worth paying for in fewer places, but they matter. Flavoured milk with a long shelf life, aseptic or UHT filling, and the concentrate and powder lines feeding a spray dryer all leave protein and sugar films that are hardest to remove from a rough surface. On those lines a smoother, passive bore shortens CIP and makes swab results easier to hold. We will tell you plainly when SF1 is enough; most Cuttack dairy enquiries need both finishes, not one."
+      ]
+    },
+    {
+      "heading": "Jagatpur, Khapuria, Choudwar and Athagarh: Cuttack's Industrial Estates",
+      "paragraphs": [
+        "Cuttack's industry is spread across about eight estates. Jagatpur and Khapuria lie inside the city; the Jagatpur Industrial Area sits north of the Mahanadi, with the Birupa separating it from Choudwar. Most of the 11 large-scale units around the city are at Choudwar and Athagarh, in steel, power, automobiles, alloys and fireclay, and Cuttack has the largest concentration of small and medium units in the state, many of them ancillaries to Odisha's big industrial houses.",
+        "Those plants rarely need an electropolished bore in their main process. Where they buy certified stainless tube from us it is usually for demineralised water, boiler and steam sampling, laboratory utilities and instrument lines, where bright-annealed or SF1 tube in 316L with a heat-traceable certificate is the right specification. Fabricators in Jagatpur and Khapuria who build tanks, skids and pipework for dairy and food customers are a different case: they need the hygienic finish their end customer has written into the contract, and a certificate they can hand over at commissioning."
+      ]
+    },
+    {
+      "heading": "Chhena, Sweets and Food Processors Around Cuttack",
+      "paragraphs": [
+        "Cuttack is known across Odisha for its dairy sweets: chhena poda and the rasagulla of Salepur are made from fresh chhena, the unripened curd cheese made from cow or buffalo milk. Commercial sweet makers and small dairies scaling up chhena production heat, curdle and drain large volumes of milk, and their milk-handling pipework benefits from the same 304L and 316L sanitary tube used in bigger plants. For these buyers the practical question is usually cleanability on a modest budget: SF1 tube with orbital-weld-ready ends on milk lines, and 316L wherever whey, acid or salt is in contact.",
+        "The National Rice Research Institute in Cuttack and the region's rice and food processors use stainless tube mainly for laboratory, water and utility lines, where we supply 316L with full certification rather than an electropolished finish."
+      ]
+    },
+    {
+      "heading": "What to Send With a Cuttack RFQ",
+      "paragraphs": [
+        "For a dairy project at Arilo or its contractors: list each circuit separately (reception, pasteuriser, curd and lassi, paneer, ghee, flavoured milk, evaporator and powder, CIP supply and return), with the highest product and CIP temperatures, acid and caustic strengths, OD and wall in inches or millimetres, and whether the lines will be orbitally welded. For an engineering plant at Choudwar or Athagarh: the service (DM water, steam sampling, laboratory gas or instrument line), pressure and temperature, and the certificate your quality team needs.",
+        "Send the line list through our contact page and we reply with a quotation within 24 hours. Every order ships with an EN 10204 3.1 certificate traced to heat number, PMI on every length and an internal Ra report for each electropolished lot; delivery to Cuttack is confirmed in writing with each quotation."
+      ],
+      "links": [
+        { "label": "Request a quotation for Cuttack", "href": "/contact-us/" },
+        { "label": "Electropolished tubes", "href": "/electropolished-tubes/" },
+        { "label": "Electropolished pipes", "href": "/electropolished-pipes/" }
+      ]
+    },
+    {
+      "heading": "Supplying Cuttack, Paradip and Central Odisha",
+      "paragraphs": [
+        "Material for Cuttack is dispatched from Mumbai by road. Paradip Port is about 85 km from the city for export-linked projects. We also supply the neighbouring industrial centres listed below; one consolidated line list for several Odisha sites can be quoted together."
+      ],
+      "links": [
+        { "label": "Bhubaneswar", "href": "/market-area/bhubaneswar/" },
+        { "label": "Paradip", "href": "/market-area/paradip/" },
+        { "label": "Jajpur", "href": "/market-area/jajpur/" },
+        { "label": "Angul", "href": "/market-area/angul/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "NDDB, 10 Nov 2021: CM of Odisha inaugurates ultra-modern dairy plant set up by NDDB (Arilo, 5 LLPD, 20 MTPD powder, about Rs 250 crore)", "url": "https://nddb.coop/node/2276" },
+    { "title": "Lokmat Times (IANS), 11 Nov 2021: Odisha CM inaugurates ultra-modern dairy plant in Cuttack (Rs 263 crore, biggest dairy plant in the state)", "url": "https://english.lokmat.com/politics/odisha-cm-inaugurates-ultra-modern-dairy-plant-in-cuttack/" },
+    { "title": "Wikipedia: Cuttack (industrial estates, Choudwar and Athagarh, Paradip Port distance, chhena sweets, NRRI)", "url": "https://en.wikipedia.org/wiki/Cuttack" }
+  ]
+}

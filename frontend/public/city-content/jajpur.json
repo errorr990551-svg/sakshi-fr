@@ -1,0 +1,62 @@
+{
+  "slug": "jajpur",
+  "updated": "2026-11-20",
+  "sections": [
+    {
+      "heading": "Kalinganagar, Jajpur: Odisha's Planned Steel Hub",
+      "paragraphs": [
+        "Kalinganagar in Jajpur district is a planned industrial town laid out by the Odisha Industrial Infrastructure Development Corporation (IDCO). Around 15 plants operate there, including NINL, Tata Steel, Jindal, VISA Steel and Mesco. It lies about 100 km from Bhubaneswar and 65 km from Cuttack, with rail access through Jajpur Keonjhar Road, Baghuapal, Sukinda Road and Jakhapura stations.",
+        "The largest site is Tata Steel Kalinganagar. On 22 May 2025 the Chief Minister of Odisha inaugurated its Phase II expansion, which takes crude steel capacity from 3 to 8 million tonnes a year for an investment of Rs 27,000 crore. Phase II includes India's largest blast furnace, 5,870 cubic metres, together with a pellet plant, a coke plant and a cold rolling mill."
+      ]
+    },
+    {
+      "heading": "Where a Steel Plant Uses Electropolished Tube",
+      "paragraphs": [
+        "Blast furnaces, coke ovens and rolling mills are not electropolished pipe markets, and we will not suggest they are. The useful questions in Kalinganagar are smaller and more specific. Coke plants and blast furnaces run continuous gas analysers on coke-oven gas and top gas; spectrometer laboratories need high-purity argon; and oxygen, nitrogen and argon from air separation units reach laboratory and instrument users through small-bore tube.",
+        "On analyser sample lines and laboratory gas supply, an electropolished 316L bore holds less moisture and fewer particles, so instruments settle faster after a purge or a shutdown. For ordinary instrument air, hydraulic and lubrication lines, cooling water and DM water distribution, bright-annealed or SF1 316L tube with a heat-traceable certificate is the right specification and costs less."
+      ]
+    },
+    {
+      "heading": "Cold Rolling Mills, Stainless Steel and Process Chemistry",
+      "paragraphs": [
+        "Jindal Stainless began building its integrated stainless steel complex at Kalinganagar in 2003 and commissioned the Jajpur plant in 2011. Stainless and carbon-steel cold rolling both depend on chemistry: pickling and passivation lines, rinse water, and rolling-emulsion systems. Stainless tube for acid service needs the grade checked against the actual acid, concentration and temperature, and we will flag where 316L is not enough rather than quoting it anyway.",
+        "Water chemistry laboratories and the steam and water sampling panels in captive power units are a steady demand for certified 316L tube to ASTM A269. Electropolished tube is worth specifying there only on lines feeding trace-level analysers."
+      ]
+    },
+    {
+      "heading": "Contractors and Fabricators Serving Kalinganagar Projects",
+      "paragraphs": [
+        "Expansion projects on this scale are built by EPC contractors, instrumentation contractors and local fabricators working to the plant owner's specification. These buyers usually need a mix of finishes on one order: electropolished tube for analyser shelters and gas panels, and standard 316L for the rest of the instrument scope. We quote both on one line list, with each item's finish, standard and test requirement stated so the inspection agency can check material against the purchase order."
+      ]
+    },
+    {
+      "heading": "What to Send With a Jajpur RFQ",
+      "paragraphs": [
+        "List each line with its service (analyser sample, laboratory gas, instrument air, DM water, acid or rinse), the fluid or gas and its concentration, design pressure and temperature, OD and wall, quantity per size, joining method, any Ra limit and the client's specification number.",
+        "Send it through our contact page and we return a quotation within 24 hours. Every order ships with an EN 10204 3.1 certificate traced to heat number and PMI on every length; electropolished lots also carry our internal Ra report. Dispatch and transit to Kalinganagar are confirmed in writing with each quotation."
+      ],
+      "links": [
+        { "label": "Request a quotation for Jajpur", "href": "/contact-us/" },
+        { "label": "Electropolished tubes", "href": "/electropolished-tubes/" },
+        { "label": "Electropolished pipes", "href": "/electropolished-pipes/" }
+      ]
+    },
+    {
+      "heading": "Supplying Jajpur and the Odisha Coast",
+      "paragraphs": [
+        "Material for Jajpur is dispatched from Mumbai by road. We also quote for the industrial centres below, and one combined line list for several sites is welcome."
+      ],
+      "links": [
+        { "label": "Cuttack", "href": "/market-area/cuttack/" },
+        { "label": "Paradip", "href": "/market-area/paradip/" },
+        { "label": "Bhubaneswar", "href": "/market-area/bhubaneswar/" },
+        { "label": "Angul", "href": "/market-area/angul/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Tata Steel, 22 May 2025: Tata Steel inaugurates Phase II expansion of Kalinganagar operations (3 to 8 MTPA, Rs 27,000 crore, 5,870 m3 blast furnace)", "url": "https://www.tatasteel.com/newsroom/press-releases/india/2025/tata-steel-inaugurates-phase-ii-expansion-of-kalinganagar-operations/" },
+    { "title": "Wikipedia: Kalinganagar (IDCO planned town, about 15 plants, distances and rail stations)", "url": "https://en.wikipedia.org/wiki/Kalinganagar" },
+    { "title": "Wikipedia: Jindal Stainless (Kalinganagar complex begun 2003, Jajpur plant commissioned 2011)", "url": "https://en.wikipedia.org/wiki/Jindal_Stainless" }
+  ]
+}

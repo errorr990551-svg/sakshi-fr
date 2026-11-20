@@ -1,0 +1,63 @@
+{
+  "slug": "sambalpur",
+  "updated": "2026-11-20",
+  "sections": [
+    {
+      "heading": "Hirakud and Aditya Aluminium: Sambalpur's Two Smelters",
+      "paragraphs": [
+        "Sambalpur district has two Hindalco smelters. The Hirakud smelter was set up by INDAL in 1959 with 10,000 tonnes a year of capacity; after the move to prebake technology and a 235 kA potline added in 2013, Hindalco now gives its total capacity as 216,000 tonnes a year, backed by a captive power plant expanded to 467.5 MW. The larger Aditya Aluminium complex is also in Sambalpur district, and in January 2026 Hindalco announced a Rs 21,000 crore expansion there adding 3.6 lakh tonnes a year of smelting capacity.",
+        "A smelter expansion of that size brings new potlines, a casthouse, power units and laboratories. Very little of that is electropolished pipe work, but the instrument, sampling and gas-supply packages that come with it do use certified stainless tube, and some of it is specified with an electropolished bore."
+      ]
+    },
+    {
+      "heading": "Specifying Tube for Smelter Laboratories and Sampling",
+      "paragraphs": [
+        "In smelter and casthouse laboratories, electropolished 316L tube suits high-purity argon to spark spectrometers, carrier gas to chromatographs and calibration gas to emission analysers. These are short runs where a smooth, low-adsorption bore shortens purge time and keeps readings stable after maintenance.",
+        "Captive power plants at both Sambalpur smelters need steam and water sampling tube, demineralised water lines and chemical dosing lines. Seamless 316L to ASTM A269 or A213 in bright-annealed condition covers most of this. We reserve electropolished tube for sample lines feeding trace-level silica, sodium or dissolved-oxygen analysers, and we will tell you when the extra finishing cost is not justified."
+      ]
+    },
+    {
+      "heading": "OMFED's Planned Sambalpur Milk Plant and Dairy Lines",
+      "paragraphs": [
+        "In November 2024 the Odisha government said it was planning three new OMFED milk plants, at Sambalpur, Berhampur and Balasore. Earlier, in 2014, the state had proposed an ice-cream plant at Sambalpur. We have not confirmed construction of either, so treat both as announcements; we mention them because a dairy plant is the one Sambalpur project likely to need hygienic tube in volume.",
+        "If the Sambalpur milk plant goes ahead, most of its milk circuits would use 304L tube with an SF1 bore, with 316L on hot CIP, curd and brine lines. Ice-cream mix, flavoured milk and any long-life product lines are where an SF4 electropolished bore pays back in easier cleaning and steadier swab results."
+      ]
+    },
+    {
+      "heading": "Hospitals, Universities and Laboratories in Sambalpur",
+      "paragraphs": [
+        "Sambalpur and Burla are home to VIMSAR, the Veer Surendra Sai Institute of Medical Sciences and Research, along with VSSUT, Sambalpur University and IIM Sambalpur. Their laboratories, research facilities and hospital utilities buy small quantities of high-purity tube for gas manifolds and purified water. For those buyers we quote small lots in 316L with full certification and an electropolished bore where the purity grade of the gas or water calls for it."
+      ]
+    },
+    {
+      "heading": "What to Send With a Sambalpur RFQ",
+      "paragraphs": [
+        "Tell us the service for each line: gas type and purity, steam or water sampling, dairy circuit or laboratory water. Add OD and wall, lengths per size, design pressure and temperature, the joining method and any Ra limit. For smelter and power contractors, include the client's material specification and inspection requirements.",
+        "We reply with a quotation within 24 hours. Each order carries an EN 10204 3.1 certificate traced to heat number and PMI on every length; electropolished lots also include our internal Ra report. Dispatch and transit to Sambalpur are confirmed in writing with each quotation."
+      ],
+      "links": [
+        { "label": "Request a quotation for Sambalpur", "href": "/contact-us/" },
+        { "label": "Electropolished tubes", "href": "/electropolished-tubes/" },
+        { "label": "Electropolished pipes", "href": "/electropolished-pipes/" }
+      ]
+    },
+    {
+      "heading": "Supplying Sambalpur and Nearby Industrial Towns",
+      "paragraphs": [
+        "Sambalpur Junction is the headquarters of a railway division of the East Coast Railway, and Jharsuguda airport is about 62 km away. Material is dispatched from Mumbai, and one line list for several western Odisha sites can be quoted together."
+      ],
+      "links": [
+        { "label": "Jharsuguda", "href": "/market-area/jharsuguda/" },
+        { "label": "Rourkela", "href": "/market-area/rourkela/" },
+        { "label": "Angul", "href": "/market-area/angul/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Hindalco: Hirakud smelter (set up by INDAL in 1959, 216,000 TPA, captive power plant 467.5 MW)", "url": "https://www.hindalco.com/about-us/manufacturing/hirakud" },
+    { "title": "Business Today, 27 Jan 2026: Hindalco's Rs 21,000-crore Odisha expansion at the Aditya Aluminium complex, Sambalpur (+3.6 lakh tonnes a year)", "url": "https://www.businesstoday.in/latest/corporate/story/hindalco-expands-aluminium-operations-odisha-21000-crore-investment-513095-2026-01-27" },
+    { "title": "Dairy News 7x7, 18 Nov 2024: OMFED to set up three new milk plants in Odisha (Sambalpur, Berhampur, Balasore)", "url": "https://dairynews7x7.com/news/omfed-to-set-up-three-new-milk-plants-in-odisha" },
+    { "title": "Business Standard, Aug 2014: Dairy plants to come up at Keonjhar and Angul (ice-cream plant proposed at Sambalpur)", "url": "https://www.business-standard.com/article/companies/dairy-plants-to-come-up-at-keonjhar-and-angul-114080701344_1.html" },
+    { "title": "Wikipedia: Sambalpur (VIMSAR, VSSUT, IIM Sambalpur, railway division, Jharsuguda airport 62 km)", "url": "https://en.wikipedia.org/wiki/Sambalpur" }
+  ]
+}

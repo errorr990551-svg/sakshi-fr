@@ -1,0 +1,62 @@
+{
+  "slug": "jharsuguda",
+  "updated": "2026-11-20",
+  "sections": [
+    {
+      "heading": "Jharsuguda: Aluminium, Steel and Power, and Where EP Tube Belongs",
+      "paragraphs": [
+        "Jharsuguda is called the Powerhouse of Odisha because of its aluminium, steel and power projects. The largest is Vedanta's aluminium complex. Business Standard reported in 2016 that Vedanta's second smelter there, rated at 1.25 million tonnes a year, sits inside a product-specific special economic zone next to the original standalone smelter. Small and medium iron and steel units have also grown up around the town.",
+        "That industrial mix tells you honestly where electropolished pipe and tube fit. Potlines, casthouses, sponge-iron kilns and boilers do not need an electropolished bore. The tube we are asked for in plants like these goes into laboratories, gas supply to analytical instruments, analyser sampling, water chemistry and instrument lines, and only some of those justify an SF4 finish."
+      ]
+    },
+    {
+      "heading": "Argon and Calibration Gas Lines for Metal Analysis Laboratories",
+      "paragraphs": [
+        "Every smelter casthouse and steel melt shop checks its chemistry with a spark optical emission spectrometer, and that instrument burns in a stream of high-purity argon. Oxygen or moisture picked up between the cylinder bank and the spark stand shows up as unstable readings and repeat burns. The same applies to the carrier and zero gases feeding gas chromatographs and to the calibration gases for stack and process analysers.",
+        "For these short, small-bore runs, electropolished 316L tube is a sensible choice: the smooth, passive bore releases less adsorbed moisture and particles, so a new or reopened line purges clean faster. Pair it with clean-for-gas-service fittings and a cleaned, capped delivery. For bulk argon, nitrogen and compressed air headers elsewhere in the plant, bright-annealed 316L is normally sufficient and costs less."
+      ]
+    },
+    {
+      "heading": "Captive Power, Water Chemistry and Utility Tube",
+      "paragraphs": [
+        "Aluminium smelting needs large, steady power, so Jharsuguda's plants run big thermal units with demineralisation plants, condensate polishing and steam and water analysis panels. Sample coolers and the tube from the sampling points to the analysers should be 316L to ASTM A269 or A213, seamless where pressures are high, with a 3.1 certificate the plant's quality team can file.",
+        "An electropolished bore can help on sample lines feeding analysers that measure at very low levels, such as silica, sodium and dissolved oxygen, because the line conditions and stabilises sooner after a start-up. On ordinary DM water distribution and chemical dosing lines it rarely pays for itself, and we will quote SF1 or bright-annealed tube instead when that is the right answer."
+      ]
+    },
+    {
+      "heading": "Food Processing Plans in Jharsuguda District",
+      "paragraphs": [
+        "Hygienic process buyers are few in Jharsuguda today. In 2015 the Odisha Small Industries Corporation said it planned a mega food park in the district on 58 acres to process chillies and freshwater fish; we have not confirmed whether it was built. Spice and fish processing would mostly use 304L or 316L tube with an SF1 bore, with 316L preferred wherever brine, salt or chilli oleoresin is handled."
+      ]
+    },
+    {
+      "heading": "What to Send With a Jharsuguda RFQ",
+      "paragraphs": [
+        "For laboratory and gas lines: the gas, its purity grade, the pressure, OD and wall, lengths per size and the fitting system. For power plant sampling: sampling points, design pressure and temperature, the analysers being fed and the applicable standard. For any electropolished line, state the maximum Ra your specification allows.",
+        "Send the list through our contact page and we return a quotation within 24 hours. Orders carry an EN 10204 3.1 certificate traced to heat number, PMI on every length and, for electropolished lots, our internal Ra report. Dispatch and transit to Jharsuguda are confirmed in writing with each quotation."
+      ],
+      "links": [
+        { "label": "Request a quotation for Jharsuguda", "href": "/contact-us/" },
+        { "label": "Electropolished tubes", "href": "/electropolished-tubes/" },
+        { "label": "Electropolished pipes", "href": "/electropolished-pipes/" }
+      ]
+    },
+    {
+      "heading": "Reaching Jharsuguda and Western Odisha",
+      "paragraphs": [
+        "Jharsuguda is an important junction on the Tatanagar to Bilaspur section of the Howrah to Mumbai rail line, and Veer Surendra Sai Airport has served the town since its inauguration on 22 September 2018. We dispatch from Mumbai and can quote one line list for several western Odisha sites."
+      ],
+      "links": [
+        { "label": "Sambalpur", "href": "/market-area/sambalpur/" },
+        { "label": "Rourkela", "href": "/market-area/rourkela/" },
+        { "label": "Angul", "href": "/market-area/angul/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Business Standard, Apr 2016: Vedanta kicks off ramp up of second smelter at Jharsuguda (1.25 mtpa rated, inside an SEZ next to the standalone smelter)", "url": "https://www.business-standard.com/article/economy-policy/vedanta-kicks-off-ramp-up-of-second-smelter-at-jharsuguda-116041500597_1.html" },
+    { "title": "Business Standard, Apr 2015: OSIC to set up mega food park in Jharsuguda (58 acres, chilli and freshwater fish)", "url": "https://www.business-standard.com/article/companies/osic-to-set-up-mega-food-park-in-jharsuguda-115042801146_1.html" },
+    { "title": "Wikipedia: Jharsuguda (Powerhouse of Odisha, rail junction, VSS Airport)", "url": "https://en.wikipedia.org/wiki/Jharsuguda" },
+    { "title": "Wikipedia: Jharsuguda district (small and medium iron and steel units)", "url": "https://en.wikipedia.org/wiki/Jharsuguda_district" }
+  ]
+}

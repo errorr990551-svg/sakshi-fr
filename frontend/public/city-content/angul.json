@@ -1,0 +1,65 @@
+{
+  "slug": "angul",
+  "updated": "2026-11-20",
+  "sections": [
+    {
+      "heading": "Where Electropolished Tube Fits in Angul and Talcher",
+      "paragraphs": [
+        "Angul district is heavy industry: coal from the Talcher coalfield in the Brahmani valley, the NALCO aluminium smelter, NTPC's Talcher Super Thermal Power Station, the Jindal Steel complex and the Talcher Fertilizers project. None of these plants runs its main process through electropolished pipe. Smelter pots, blast furnaces and boiler headers are carbon steel and refractory work, and we will not pretend otherwise.",
+        "Electropolished 316L tube earns its place in a narrower set of jobs that every one of these sites still has: analyser sample lines carrying gas at low concentrations, trace-moisture measurement, high-purity carrier and calibration gas to laboratory instruments, and small-bore lines where a clean, low-adsorption bore saves time at every start-up. Most other stainless tube in Angul plants is better bought as bright-annealed or SF1 316L with full certification."
+      ]
+    },
+    {
+      "heading": "Coal Gasification at Angul: Syngas and Analyser Sample Lines",
+      "paragraphs": [
+        "Jindal Steel's Angul plant turns locally mined high-ash coal into synthesis gas for steelmaking, and the company describes it as India's only steel plant using a coal-gasification route to produce syngas-based DRI. The Talcher Fertilizers project, reviving the old FCIL Talcher unit, is a coal-gasification urea plant with an installed capacity of 12.7 lakh tonnes per year; in January 2023 the government called it India's first and largest coal-gasification urea plant.",
+        "Gasification plants depend on continuous analysers for hydrogen, carbon monoxide, carbon dioxide, methane, oxygen and moisture. Sample tubing between the tap and the analyser shelter decides how fast and how truthfully those readings arrive. An electropolished bore holds far less moisture on its surface, so a trace-moisture analyser dries down and settles sooner after a purge or shutdown. For reactive sulphur compounds at very low levels, many analyser makers specify inert-coated tube instead; follow the sample-system designer's specification and send it with the enquiry."
+      ]
+    },
+    {
+      "heading": "Fertiliser, Power and Smelter Utilities",
+      "paragraphs": [
+        "The urea synthesis section of a fertiliser plant uses special urea-grade stainless steels chosen by the process licensor; that material is outside this page. What a plant of this size also needs in quantity is ordinary instrument and utility tube: demineralised water, steam and water sampling panels, instrument air, laboratory gas manifolds and the impulse lines to pressure and flow transmitters.",
+        "Business Standard reported in 2017 that NALCO's Angul smelter could produce about 0.46 million tonnes a year on four potlines, with a fifth potline planned. Smelters, the NTPC station and captive power plants all run boiler water chemistry labs and sampling systems. For those services we recommend seamless or welded 316L tube to ASTM A269 in bright-annealed or SF1 condition, and we say so in the quotation rather than selling an electropolished finish the service does not need."
+      ]
+    },
+    {
+      "heading": "Heavy Water Board, Laboratories and Food Plans in Angul District",
+      "paragraphs": [
+        "Talcher also hosts a Heavy Water Board facility working on special chemicals and isotopes for the nuclear programme. Process work of that kind is governed by the Board's own specifications, so we quote strictly to the drawing and the grade, finish and test plan written on it.",
+        "On the food side, the Odisha government announced in 2014 that it would build a 30,000 litres-per-day dairy plant at Angul, at about Rs 8 crore, alongside one at Keonjhar. We have not confirmed its present status. Any dairy or beverage unit in the district would buy 304L or 316L sanitary tube with an SF1 bore for most milk circuits, and SF4 electropolished tube where long-life products or hot acid CIP are involved."
+      ]
+    },
+    {
+      "heading": "What to Send With an Angul RFQ",
+      "paragraphs": [
+        "For analyser and gas service: the gas composition and the lowest concentration you need to measure, line pressure and temperature, OD and wall, total length per size, whether compression fittings or orbital welds will be used, and any surface-roughness limit in your specification. For utility and laboratory tube: the service, grade, standard and the certificate your inspection agency will ask for.",
+        "We reply with a quotation within 24 hours. Each order is supplied with an EN 10204 3.1 certificate traced to heat number and PMI on every length; electropolished lots also carry our internal Ra report. Dispatch and transit to Angul are confirmed in writing with each quotation."
+      ],
+      "links": [
+        { "label": "Request a quotation for Angul", "href": "/contact-us/" },
+        { "label": "Electropolished tubes", "href": "/electropolished-tubes/" },
+        { "label": "Electropolished pipes", "href": "/electropolished-pipes/" }
+      ]
+    },
+    {
+      "heading": "Supplying Angul and Neighbouring Odisha Industrial Towns",
+      "paragraphs": [
+        "Material for Angul is sent from Mumbai by road. A single line list covering several plants in the Brahmani and Mahanadi belt can be quoted together, which helps contractors working across more than one site."
+      ],
+      "links": [
+        { "label": "Jajpur", "href": "/market-area/jajpur/" },
+        { "label": "Cuttack", "href": "/market-area/cuttack/" },
+        { "label": "Jharsuguda", "href": "/market-area/jharsuguda/" },
+        { "label": "Sambalpur", "href": "/market-area/sambalpur/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "PIB, 7 Jan 2023: Dharmendra Pradhan reviews progress of coal gasification based Talcher Fertilizers Project (12.7 LMTPA, India's first and largest coal gasification urea plant)", "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=1889360" },
+    { "title": "Business Standard, 2017: Nalco set to join one million tonne aluminium club in 3 yrs (Angul smelter 0.46 million tonnes a year, four potlines)", "url": "https://www.business-standard.com/article/companies/nalco-set-to-join-one-million-tonne-aluminium-club-in-3-yrs-117041000817_1.html" },
+    { "title": "Business Standard, Aug 2014: Dairy plants to come up at Keonjhar and Angul (30,000 litres per day each, Rs 8 crore each)", "url": "https://www.business-standard.com/article/companies/dairy-plants-to-come-up-at-keonjhar-and-angul-114080701344_1.html" },
+    { "title": "Wikipedia: Jindal Steel (Angul coal gasification, syngas-based DRI)", "url": "https://en.wikipedia.org/wiki/Jindal_Steel" },
+    { "title": "Wikipedia: Talcher (Talcher coalfield, NTPC, NALCO, Talcher Fertilizers, Heavy Water Board)", "url": "https://en.wikipedia.org/wiki/Talcher" }
+  ]
+}

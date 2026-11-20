@@ -1,0 +1,62 @@
+{
+  "slug": "kalyani",
+  "updated": "2026-11-20",
+  "sections": [
+    {
+      "heading": "Kalyani's Planned Industrial Zone and Nadia's New Dairy",
+      "paragraphs": [
+        "Kalyani is a planned city in Nadia district, inside the Kolkata Metropolitan Development Authority area. Its grid of blocks puts government offices in Block B, the main station, State General Hospital and medical college in Block A, and small and medium industries in Block D, the industrial zone. The city is linked to Kolkata by the Kalyani Expressway and to the Sealdah–Ranaghat suburban line, with Kolkata airport about 45 km to the south.",
+        "The biggest recent hygienic process investment in the area is at Haringhata, also in Nadia district and also within the Kolkata metropolitan area. In December 2025 the state's Animal Resources Development department commissioned a new Banglar Dairy milk processing and milk products plant on its Haringhata campus."
+      ]
+    },
+    {
+      "heading": "The Haringhata Banglar Dairy Plant",
+      "paragraphs": [
+        "Millennium Post reported on 22 December 2025 that the plant starts at 1 lakh litres of milk a day and can be extended to 2 lakh litres. It is designed to make 20,000 kg of curd, 2,000 kg of paneer, 2,000 kg of ghee and 5,000 litres of lassi a day. The project cost Rs 65.58 crore and construction began in September 2023. Another trade report gives the capacity as 1.5 lakh litres a day; we quote the figures from the dated news report.",
+        "An expansion from 1 to 2 lakh litres a day would add reception, processing and CIP capacity, and with it new product lines. Contractors and fabricators around Kalyani who build or service that equipment are the local buyers of sanitary tube."
+      ]
+    },
+    {
+      "heading": "Grade and Finish for Curd, Paneer, Ghee and Lassi",
+      "paragraphs": [
+        "Each product at a plant like Haringhata has its own tube requirement. Milk reception and pasteuriser lines usually run on 304L with an SF1 bore. Paneer whey and any brine contact call for 316L. Ghee lines stay hot for long periods and are better in 316L too.",
+        "Curd and lassi are cultured, sweetened or both, and these are the lines where an electropolished SF4 bore helps: it sheds protein and culture films more readily, so CIP is shorter and microbiological results are steadier. We mark each line on the quotation with the finish we recommend and explain where SF1 is enough."
+      ]
+    },
+    {
+      "heading": "AIIMS Kalyani and Laboratory Buyers",
+      "paragraphs": [
+        "AIIMS Kalyani, at Saguna, was notified in January 2018 under the Pradhan Mantri Swasthya Suraksha Yojana and began operating in 2019. Hospitals and medical colleges buy small quantities of stainless tube for laboratory gas manifolds, purified water and research equipment. For those buyers we quote small lots in 316L with full certification and an electropolished bore where the purity grade of the gas or water requires it."
+      ]
+    },
+    {
+      "heading": "What to Send With a Kalyani RFQ",
+      "paragraphs": [
+        "For dairy work: the product on each line, highest product and CIP temperatures, chemical strengths, OD and wall, length per size and the joining method. For laboratory or hospital work: the gas or water grade, pressure, OD and wall, and the drawing or line list from the equipment supplier.",
+        "We reply with a quotation within 24 hours. Every order carries an EN 10204 3.1 certificate traced to heat number and PMI on every length; electropolished lots also include our internal Ra report. Dispatch and transit to Kalyani are confirmed in writing with each quotation."
+      ],
+      "links": [
+        { "label": "Request a quotation for Kalyani", "href": "/contact-us/" },
+        { "label": "Electropolished tubes", "href": "/electropolished-tubes/" },
+        { "label": "Electropolished pipes", "href": "/electropolished-pipes/" }
+      ]
+    },
+    {
+      "heading": "Supplying Kalyani and North of Kolkata",
+      "paragraphs": [
+        "Material is dispatched from Mumbai. We also supply the neighbouring centres below and can quote several Kolkata-region sites together."
+      ],
+      "links": [
+        { "label": "Kolkata", "href": "/market-area/kolkata/" },
+        { "label": "Dankuni", "href": "/market-area/dankuni/" },
+        { "label": "Howrah", "href": "/market-area/howrah/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Millennium Post, 22 Dec 2025: State commissions new Banglar Dairy milk plant in Nadia (Haringhata, 1 to 2 lakh litres a day, Rs 65.58 crore)", "url": "https://www.millenniumpost.in/bengal/state-commissions-new-banglar-dairy-milk-plant-in-nadia-640732" },
+    { "title": "Wikipedia: Kalyani, West Bengal (planned blocks, Block D industrial zone, expressway, rail, airport distance)", "url": "https://en.wikipedia.org/wiki/Kalyani,_West_Bengal" },
+    { "title": "Wikipedia: Haringhata (Nadia district, KMDA area)", "url": "https://en.wikipedia.org/wiki/Haringhata" },
+    { "title": "Wikipedia: AIIMS Kalyani (Saguna, notified January 2018, operating since 2019)", "url": "https://en.wikipedia.org/wiki/All_India_Institute_of_Medical_Sciences,_Kalyani" }
+  ]
+}

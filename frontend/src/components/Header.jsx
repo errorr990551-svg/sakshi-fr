@@ -27,7 +27,7 @@ export default function Header({ currentPage, onNavigate, onEnquireClick }) {
   };
 
   return (
-    <header className={`header-wrapper ${isScrolled ? 'header-scrolled' : ''}`}>
+    <header className={`header-wrapper ${isScrolled ? 'header-scrolled' : ''} ${isMenuOpen ? 'menu-open' : ''}`}>
       <div className="container header-container">
         <a 
           href="/" 

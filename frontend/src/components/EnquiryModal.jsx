@@ -47,7 +47,8 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '',
 
     if (!formData.phone.trim()) {
       tempErrors.phone = 'Phone Number is required';
-    } else if (!/^\+?[0-9\s-]{8,15}$/.test(formData.phone.trim())) {
+    } else if (!/^\+?[\d\s().-]+$/.test(formData.phone.trim()) || !/^\d{8,15}$/.test(formData.phone.replace(/\D/g, ''))) {
+      // Count digits, so "+91 022 2345 6789" or "(022) 2345-6789" are accepted
       tempErrors.phone = 'Valid phone number is required';
     }
 

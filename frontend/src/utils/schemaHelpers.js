@@ -74,9 +74,3 @@ export function parseKeySpecs(specsString) {
   }).filter(item => item.key);
 }
 
-// Product identifier only. The site publishes no prices, stock levels, return or shipping
-// terms, so Product markup carries no `offers` (an invented AggregateOffer was removed:
-// structured data must match what the page shows).
-export function getProductOfferDetails(slug) {
-  return { sku: `SF-${(slug || 'ITEM').replace(/[^a-zA-Z0-9]/g, '-').toUpperCase()}` };
-}

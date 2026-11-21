@@ -26,22 +26,22 @@ export default function TermsPage() {
       {/* Content */}
       <section style={{ padding: '3.5rem 0' }}>
         <div className="container" style={{ maxWidth: '800px', lineHeight: '1.8', color: 'var(--text-secondary)' }}>
-          <h3 style={{ color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '0.5rem', fontSize: '1.25rem' }}>1. Validity of Quotations</h3>
+          <h2 style={{ color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '0.5rem', fontSize: '1.25rem' }}>1. Validity of Quotations</h2>
           <p>
             Due to volatility in nickel, chromium, and raw steel commodity rates, all written and verbal price quotations issued by Sakshi Forge sales engineers are valid for 5 business days from the date of the quote unless specified otherwise in the official proforma invoice.
           </p>
 
-          <h3 style={{ color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '0.5rem', fontSize: '1.25rem' }}>2. Material Testing & Certification</h3>
+          <h2 style={{ color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '0.5rem', fontSize: '1.25rem' }}>2. Material Testing & Certification</h2>
           <p>
-            We guarantee all materials correspond to the agreed ASTM, ASME, or EN standards. Quality reports including EN 10204 3.1 Mill Test Certificates (MTC), NDT reports, and heat trace logs are handed over alongside delivery documents. Any third-party inspection (SGS/BV/TUV) charges are to the buyer's account unless otherwise negotiated.
+            We guarantee all materials correspond to the agreed ASTM, ASME, or EN standards. Quality reports including EN 10204 3.1 Mill Test Certificates (MTC), NDT reports, and heat trace logs are handed over alongside delivery documents. Any third-party inspection charges are to the buyer's account unless otherwise negotiated.
           </p>
 
-          <h3 style={{ color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '0.5rem', fontSize: '1.25rem' }}>3. Shipping & Delivery</h3>
+          <h2 style={{ color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '0.5rem', fontSize: '1.25rem' }}>3. Shipping & Delivery</h2>
           <p>
-            Ex-stock catalog items ship from our Mumbai stockyard in 2-4 working days. Made-to-order forged flanges or large-volume production timelines will be explicitly declared. Sakshi Forge is not liable for transport delays caused by maritime congestion, custom clearance holdups at destination ports, or domestic courier disruptions.
+            Dispatch and transit are confirmed in writing with each quotation. Sakshi Forge is not liable for transport delays caused by maritime congestion, custom clearance holdups at destination ports, or domestic courier disruptions.
           </p>
 
-          <h3 style={{ color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '0.5rem', fontSize: '1.25rem' }}>4. Payment Terms</h3>
+          <h2 style={{ color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '0.5rem', fontSize: '1.25rem' }}>4. Payment Terms</h2>
           <p>
             Standard billing terms: 30% advance deposit at the time of order booking, with the remaining 70% balance payable against material readiness inspection at our facility or scan of shipping bills, prior to release of logistics files.
           </p>

@@ -285,7 +285,7 @@ export default function CategoryPage({ category, products: filteredProducts = []
             {/* Quality and Contextual Navigation Cards */}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1.5rem' }}>
               <div style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.75rem' }}>
-                <h4 style={{ color: '#fff', fontSize: '1.15rem', marginBottom: '0.75rem' }}>100% PMI & MTC Documentation</h4>
+                <h3 style={{ color: '#fff', fontSize: '1.15rem', marginBottom: '0.75rem' }}>100% PMI & MTC Documentation</h3>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.6' }}>
                   Every forged fitting shipment includes EN 10204 3.1 inspection certification with full melt chemistry, mechanical tensile test data, and heat treatment traceability.
                 </p>
@@ -295,7 +295,7 @@ export default function CategoryPage({ category, products: filteredProducts = []
               </div>
 
               <div style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.75rem' }}>
-                <h4 style={{ color: '#fff', fontSize: '1.15rem', marginBottom: '0.75rem' }}>ASME B16.11 Dimension Standards</h4>
+                <h3 style={{ color: '#fff', fontSize: '1.15rem', marginBottom: '0.75rem' }}>ASME B16.11 Dimension Standards</h3>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.6' }}>
                   Detailed bore diameter, socket depth, wall thickness, and thread engagement matrices for engineering layout and piping fabrication projects.
                 </p>
@@ -305,7 +305,7 @@ export default function CategoryPage({ category, products: filteredProducts = []
               </div>
 
               <div style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.75rem' }}>
-                <h4 style={{ color: '#fff', fontSize: '1.15rem', marginBottom: '0.75rem' }}>Complementary Industrial Products</h4>
+                <h3 style={{ color: '#fff', fontSize: '1.15rem', marginBottom: '0.75rem' }}>Complementary Industrial Products</h3>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.6' }}>
                   Complete your piping assembly with matching <a href="/flanges/" onClick={(e) => handleLinkClick(e, '/flanges/')} style={{ color: 'var(--primary-yellow)' }}>Forged Flanges</a> and <a href="/stainless-steel-pipe/" onClick={(e) => handleLinkClick(e, '/stainless-steel-pipe/')} style={{ color: 'var(--primary-yellow)' }}>Stainless Steel Pipes</a>.
                 </p>

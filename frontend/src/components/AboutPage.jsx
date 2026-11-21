@@ -468,8 +468,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
                 'EN 10204 3.1 MTCs with full mill traceability',
                 'Ra surface roughness, hydro, passivation and ferrite testing on electropolished products',
                 'Ultrasonic and MPI testing on forged items',
-                'Chemical and mechanical analysis to the specified standard',
-                'Third-party inspection accepted on request (SGS, TUV, BV, DNV, Lloyd\'s)'
+                'Chemical and mechanical analysis to the specified standard'
               ].map((item, idx) => (
                 <li key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', backgroundColor: 'var(--bg-dark-800)', padding: '1rem', borderRadius: '6px', border: '1px solid var(--border-color)' }}>
                   <ShieldCheck size={20} style={{ color: 'var(--primary-yellow)', flexShrink: 0, marginTop: '2px' }} />

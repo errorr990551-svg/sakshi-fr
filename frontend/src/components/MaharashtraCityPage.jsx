@@ -778,8 +778,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                     { doc: 'Ra surface roughness test (stylus profilometer) & surface report', status: 'Confirmed (Supplied with measured Ra values)' },
                     { doc: 'Hydro (leak and pressure) test & certificate', status: 'Confirmed (Hydrostatic tested per ASTM spec)' },
                     { doc: 'Passivation verification and ferrite check', status: 'Confirmed (Reported in quality dossier)' },
-                    { doc: 'QA inspection report and mill traceability', status: 'Confirmed (Approved origin mills)' },
-                    { doc: 'Third-party inspection (TÜV / Bureau Veritas / SGS / DNV)', status: 'Accepted upon customer request' }
+                    { doc: 'QA inspection report and mill traceability', status: 'Confirmed (Approved origin mills)' }
                   ].map((row, idx) => (
                     <tr key={idx} style={{ borderBottom: '1px solid var(--border-color)', backgroundColor: idx % 2 === 0 ? 'var(--bg-dark-800)' : 'transparent' }}>
                       <td style={{ padding: '0.9rem 1.25rem', fontWeight: '600', color: '#fff' }}>{row.doc}</td>

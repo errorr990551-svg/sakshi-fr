@@ -13,7 +13,7 @@ export default function TeamPage({ onEnquireClick }) {
     { title: 'Positive Material Identification (PMI)', detail: 'Handheld XRF analyzer testing on 100% of alloy and stainless steel dispatches to guarantee chemical compliance.' },
     { title: 'Hydrostatic & Pneumatic Testing', detail: 'High-pressure water test benches for flange rating validation up to Class 2500.' },
     { title: 'Non-Destructive Testing (NDT)', detail: 'Magnetic Particle Inspection (MPI) and Dye Penetrant Testing (DPT) for defect-free surface integrity.' },
-    { title: 'EN 10204 3.1 & 3.2 Certification', detail: 'Traceable raw material heat numbers mapped to physical test reports for full quality compliance.' }
+    { title: 'EN 10204 3.1 Certification', detail: 'Traceable raw material heat numbers mapped to physical test reports for full quality compliance.' }
   ];
 
   return (

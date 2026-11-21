@@ -278,7 +278,7 @@ export default function HomePage({ onEnquireClick }) {
                   <div key={idx} className="trust-highlight-card">
                     <div style={{ flexShrink: 0 }}>{item.icon}</div>
                     <div>
-                      <h4 style={{ fontSize: '0.92rem', fontWeight: '700', color: '#fff', margin: '0 0 2px' }}>{item.title}</h4>
+                      <p style={{ fontSize: '0.92rem', fontWeight: '700', color: '#fff', margin: '0 0 2px' }}>{item.title}</p>
                       <p style={{ fontSize: '0.78rem', color: '#94a3b8', margin: 0, lineHeight: '1.4' }}>{item.subtitle}</p>
                     </div>
                   </div>
@@ -882,8 +882,7 @@ export default function HomePage({ onEnquireClick }) {
                   "Ra surface roughness profilometer testing with full surface report",
                   "Hydrostatic leak & proof-pressure testing and passivation check",
                   "Chemical composition spectro analysis and mechanical tensile testing",
-                  "EN 10204 3.1 certificates tied directly to mill heat numbers",
-                  "Third-party inspection warmly accepted (SGS, TUV, BV, DNV, Lloyd's)"
+                  "EN 10204 3.1 certificates tied directly to mill heat numbers"
                 ].map((item, idx) => (
                   <div key={idx} className="inspection-card">
                     <span className="inspection-check-badge">
@@ -1106,7 +1105,7 @@ export default function HomePage({ onEnquireClick }) {
               <div className="accent-line-left" style={{ marginBottom: '1.5rem' }}></div>
 
               <p style={{ fontSize: '1.08rem', color: '#cbd5e1', lineHeight: '1.8', marginBottom: '1.5rem' }}>
-                Sakshi Forge is an ISO 9001:2015 certified manufacturer of electropolished pipes, industrial flanges, forged fittings, round bars and stainless steel components, based in Mumbai, Maharashtra. For 10+ years we have supplied oil and gas, petrochemical, power, pharma and heavy engineering customers who need material they can trust and paperwork they can show an auditor.
+                Sakshi Forge is an ISO 9001:2015 certified manufacturer of electropolished pipes, industrial flanges, forged fittings, round bars and stainless steel components, based in Mumbai, Maharashtra. We supply oil and gas, petrochemical, power, pharma and heavy engineering customers who need material they can trust and paperwork they can show an auditor.
               </p>
 
               {/* Identity notice */}

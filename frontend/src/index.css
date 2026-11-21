@@ -12,7 +12,7 @@
   --primary-yellow-solid-glow: rgba(255, 193, 7, 0.3);
   --text-primary: #f8f9fa;
   --text-secondary: #9ca3af;
-  --text-muted: #6b7280;
+  --text-muted: #8b93a1;
   --border-color: #262c3a;
   
   /* Fonts */
@@ -21,6 +21,11 @@
   /* Transitions */
   --transition-smooth: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-fast: all 0.15s ease;
+}
+
+/* Links with no colour of their own were browser-default blue (#0000ee) on the dark background */
+:where(a) {
+  color: var(--primary-yellow);
 }
 
 /* Global Reset */
@@ -1194,7 +1199,7 @@ nav {
   transform: translateY(-3px);
 }
 
-.footer-col h4 {
+.footer-col h2 {
   font-size: 1.1rem;
   text-transform: uppercase;
   margin-bottom: 1.75rem;
@@ -1202,7 +1207,7 @@ nav {
   padding-bottom: 0.5rem;
 }
 
-.footer-col h4::after {
+.footer-col h2::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -2155,7 +2160,7 @@ nav {
   gap: 2rem;
 }
 
-.gallery-cta-box h3 {
+.gallery-cta-box h2 {
   font-size: 1.75rem;
   font-weight: 800;
   margin-bottom: 0.5rem;
@@ -2713,7 +2718,7 @@ nav {
   min-width: 260px;
 }
 
-.blog-mid-cta-content h4 {
+.blog-mid-cta-content .blog-mid-cta-title {
   color: var(--primary-yellow);
   font-size: 1.25rem;
   font-weight: 800;

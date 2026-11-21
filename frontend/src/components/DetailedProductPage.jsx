@@ -260,9 +260,9 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
                   <span style={{ color: 'var(--primary-yellow)', fontSize: '0.8rem', fontWeight: '700', textTransform: 'uppercase', display: 'block', marginBottom: '0.35rem' }}>
                     Hygienic Steel Grade
                   </span>
-                  <h3 style={{ fontSize: '1.6rem', fontWeight: '800', color: 'var(--text-primary)', lineHeight: '1.2' }}>
+                  <h2 style={{ fontSize: '1.6rem', fontWeight: '800', color: 'var(--text-primary)', lineHeight: '1.2' }}>
                     Request Price Quote
-                  </h3>
+                  </h2>
                 </div>
 
                 <div style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
@@ -775,9 +775,9 @@ export default function DetailedProductPage({ product, onEnquireClick }) {
                 }}>
                   <Award size={22} />
                 </div>
-                <h4 style={{ fontSize: '1.1rem', fontWeight: '700', color: 'var(--text-primary)', marginBottom: '0.5rem' }}>
+                <h3 style={{ fontSize: '1.1rem', fontWeight: '700', color: 'var(--text-primary)', marginBottom: '0.5rem' }}>
                   {usp.key}
-                </h4>
+                </h3>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', lineHeight: '1.5' }}>
                   {usp.value}
                 </p>

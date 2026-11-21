@@ -119,14 +119,6 @@ export const westBengalCityData = {
       {
         "name": "QA inspection report and mill traceability pack",
         "status": "Confirmed"
-      },
-      {
-        "name": "MTC EN 10204 3.2 (Independent Inspection)",
-        "status": "Available on request"
-      },
-      {
-        "name": "Third-party inspection (TÜV / Bureau Veritas / DNV)",
-        "status": "Accepted on request"
       }
     ],
     "specifications": {
@@ -352,14 +344,6 @@ export const westBengalCityData = {
       {
         "name": "QA inspection report and mill traceability pack",
         "status": "Confirmed"
-      },
-      {
-        "name": "MTC EN 10204 3.2 (Independent Inspection)",
-        "status": "Available on request"
-      },
-      {
-        "name": "Third-party inspection (TÜV / Bureau Veritas / DNV)",
-        "status": "Accepted on request"
       }
     ],
     "specifications": {
@@ -577,14 +561,6 @@ export const westBengalCityData = {
       {
         "name": "QA inspection report and mill traceability pack",
         "status": "Confirmed"
-      },
-      {
-        "name": "MTC EN 10204 3.2 (Independent Inspection)",
-        "status": "Available on request"
-      },
-      {
-        "name": "Third-party inspection (TÜV / Bureau Veritas / DNV)",
-        "status": "Accepted on request"
       }
     ],
     "specifications": {
@@ -802,14 +778,6 @@ export const westBengalCityData = {
       {
         "name": "QA inspection report and mill traceability pack",
         "status": "Confirmed"
-      },
-      {
-        "name": "MTC EN 10204 3.2 (Independent Inspection)",
-        "status": "Available on request"
-      },
-      {
-        "name": "Third-party inspection (TÜV / Bureau Veritas / DNV)",
-        "status": "Accepted on request"
       }
     ],
     "specifications": {
@@ -1041,14 +1009,6 @@ export const westBengalCityData = {
       {
         "name": "QA inspection report and mill traceability pack",
         "status": "Confirmed"
-      },
-      {
-        "name": "MTC EN 10204 3.2 (Independent Inspection)",
-        "status": "Available on request"
-      },
-      {
-        "name": "Third-party inspection (TÜV / Bureau Veritas / DNV)",
-        "status": "Accepted on request"
       }
     ],
     "specifications": {
@@ -1283,14 +1243,6 @@ export const westBengalCityData = {
       {
         "name": "QA inspection report and mill traceability pack",
         "status": "Confirmed"
-      },
-      {
-        "name": "MTC EN 10204 3.2 (Independent Inspection)",
-        "status": "Available on request"
-      },
-      {
-        "name": "Third-party inspection (TÜV / Bureau Veritas / DNV)",
-        "status": "Accepted on request"
       }
     ],
     "specifications": {
@@ -1520,14 +1472,6 @@ export const westBengalCityData = {
       {
         "name": "QA inspection report and mill traceability pack",
         "status": "Confirmed"
-      },
-      {
-        "name": "MTC EN 10204 3.2 (Independent Inspection)",
-        "status": "Available on request"
-      },
-      {
-        "name": "Third-party inspection (TÜV / Bureau Veritas / DNV)",
-        "status": "Accepted on request"
       }
     ],
     "specifications": {
@@ -1741,14 +1685,6 @@ export const westBengalCityData = {
       {
         "name": "QA inspection report and mill traceability pack",
         "status": "Confirmed"
-      },
-      {
-        "name": "MTC EN 10204 3.2 (Independent Inspection)",
-        "status": "Available on request"
-      },
-      {
-        "name": "Third-party inspection (TÜV / Bureau Veritas / DNV)",
-        "status": "Accepted on request"
       }
     ],
     "specifications": {
@@ -1929,7 +1865,7 @@ export const westBengalCityData = {
       ],
       "localNotes": [
         "We'll say plainly where electropolished pipe isn't the answer: steel melting, coal extraction, and slurry handling use heavy carbon or alloy steel. Electropolished pipe is dedicated to clean utilities, DM water, and analytical lines.",
-        "Public-sector and major corporate buyers (SAIL, ECL, power boards) purchase through tenders, approved-vendor lists, and third-party inspection (TÜV, Bureau Veritas). We provide 100% PMI certificates and EN 10204 3.1 MTCs tied to heat numbers.",
+        "Public-sector and major corporate buyers (SAIL, ECL, power boards) purchase through tenders and approved-vendor lists. We provide 100% PMI certificates and EN 10204 3.1 MTCs tied to heat numbers.",
         "Plan around shutdown windows: maintenance outages have fixed timelines. Share your shutdown dates during enquiry so we schedule production and dispatch accordingly.",
         "NH-19 corridor consolidation: Asansol sits directly on the National Highway 19 corridor with Durgapur and Kolkata, allowing consolidated dispatch with unified document sets.",
         "We dispatch from Mumbai, and delivery time depends on size, quantity and stock; it is confirmed in writing with each quotation."
@@ -1959,14 +1895,6 @@ export const westBengalCityData = {
       {
         "name": "QA inspection report and mill traceability pack",
         "status": "Confirmed"
-      },
-      {
-        "name": "MTC EN 10204 3.2 (Independent Inspection)",
-        "status": "Available on request"
-      },
-      {
-        "name": "Third-party inspection (TÜV / Bureau Veritas / DNV)",
-        "status": "Accepted on request"
       }
     ],
     "specifications": {
@@ -2195,14 +2123,6 @@ export const westBengalCityData = {
       {
         "name": "QA inspection report and mill traceability pack",
         "status": "Confirmed"
-      },
-      {
-        "name": "MTC EN 10204 3.2 (Independent Inspection)",
-        "status": "Available on request"
-      },
-      {
-        "name": "Third-party inspection (TÜV / Bureau Veritas / DNV)",
-        "status": "Accepted on request"
       }
     ],
     "specifications": {

@@ -107,7 +107,7 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
             {/* Left: Contact Info */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
               <div>
-                <h3 style={{ fontSize: '1.5rem', fontWeight: '800', marginBottom: '0.5rem' }}>Sales & Support Desk</h3>
+                <h2 style={{ fontSize: '1.5rem', fontWeight: '800', marginBottom: '0.5rem' }}>Sales & Support Desk</h2>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>Our team is ready to assist you with material selection, technical drawings, and custom pricing inquiries.</p>
               </div>
 
@@ -119,7 +119,7 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
                         <Phone size={20} />
                       </div>
                       <div>
-                        <h4 style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: '700', marginBottom: '0.25rem' }}>Phone Number</h4>
+                        <h3 style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: '700', marginBottom: '0.25rem' }}>Phone Number</h3>
                         <p style={{ fontWeight: '600', fontSize: '1.05rem' }}>
                           <a href="tel:+918291366340" style={{ color: 'inherit', textDecoration: 'none' }}>+91 82913 66340</a>
                         </p>
@@ -131,7 +131,7 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
                         <Mail size={20} />
                       </div>
                       <div>
-                        <h4 style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: '700', marginBottom: '0.25rem' }}>Email</h4>
+                        <h3 style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: '700', marginBottom: '0.25rem' }}>Email</h3>
                         <p style={{ fontWeight: '600', fontSize: '1.05rem' }}>
                           <a href="mailto:info@steelmanufacturer.in" style={{ color: 'inherit', textDecoration: 'none' }}>info@steelmanufacturer.in</a><br />
                           <a href="mailto:sakshiforge1737@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>sakshiforge1737@gmail.com</a>
@@ -167,7 +167,7 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
                     <MapPin size={20} />
                   </div>
                   <div>
-                    <h4 style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: '700', marginBottom: '0.25rem' }}>Registered Head Office</h4>
+                    <h3 style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: '700', marginBottom: '0.25rem' }}>Registered Head Office</h3>
                     <p style={{ fontSize: '0.95rem', lineHeight: '1.5', color: 'var(--text-secondary)' }}>
                       {ADDRESS_LINE}, India
                     </p>
@@ -179,7 +179,7 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
                     <Clock size={20} />
                   </div>
                   <div>
-                    <h4 style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: '700', marginBottom: '0.25rem' }}>Business Hours</h4>
+                    <h3 style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: '700', marginBottom: '0.25rem' }}>Business Hours</h3>
                     <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)' }}>
                       Monday - Saturday: 9:00 AM - 7:00 PM IST
                     </p>
@@ -197,7 +197,7 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
 
             {/* Right: RFQ Form */}
             <div style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '12px', padding: '2.5rem' }}>
-              <h3 style={{ fontSize: '1.5rem', fontWeight: '800', marginBottom: '1.5rem' }}>Request a Quote</h3>
+              <h2 style={{ fontSize: '1.5rem', fontWeight: '800', marginBottom: '1.5rem' }}>Request a Quote</h2>
               
               {errorMsg && (
                 <div style={{
@@ -223,7 +223,7 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
                   color: 'var(--text-primary)'
                 }}>
                   <MessageSquare size={36} style={{ color: 'var(--primary-yellow)', margin: '0 auto 1rem auto' }} />
-                  <h4 style={{ fontSize: '1.25rem', fontWeight: '700', marginBottom: '0.5rem' }}>Quote Request Sent!</h4>
+                  <h3 style={{ fontSize: '1.25rem', fontWeight: '700', marginBottom: '0.5rem' }}>Quote Request Sent!</h3>
                   <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
                     Thank you for reaching out. A sales engineer has been assigned and will reply with a detailed pricing sheet shortly (usually within 24 hours).
                   </p>

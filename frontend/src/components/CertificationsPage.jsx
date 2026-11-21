@@ -4,9 +4,9 @@ import { Award, ShieldCheck, FileCheck, Layers, Landmark } from 'lucide-react';
 export default function CertificationsPage() {
   const certifications = [
     { icon: <Award size={36} />, name: 'ISO 9001:2015 Certification', body: 'Quality Management Systems certified for the manufacture, stocking, and supply of forged flanges, fittings, and stainless steel pipes.' },
-    { icon: <FileCheck size={36} />, name: 'EN 10204 3.1 & 3.2 Compliance', body: 'Full chemical and physical traceability certificates supplied with every dispatch. Heat-code markings checked at dispatch.' },
+    { icon: <FileCheck size={36} />, name: 'EN 10204 3.1 Compliance', body: 'Full chemical and physical traceability certificates supplied with every dispatch. Heat-code markings checked at dispatch.' },
     { icon: <ShieldCheck size={36} />, name: 'ASME B16.5 & ASME BPE Standards', body: 'Dimensional compliance audit sheets generated for all flanges and sanitary electropolished tubes to ensure direct site fitting.' },
-    { icon: <Landmark size={36} />, name: 'IEC Export Registry & GST Compliance', body: 'Fully registered exporter from India (Mumbai Port) with regular shipping documentation compliance to GCC and SE Asia.' }
+    { icon: <Landmark size={36} />, name: 'IEC Export Registry & GST Compliance', body: 'Fully registered exporter from India (Mumbai Port) with export shipping documentation prepared for each order.' }
   ];
 
   return (
@@ -64,7 +64,7 @@ export default function CertificationsPage() {
                   {c.icon}
                 </div>
                 <div>
-                  <h3 style={{ fontSize: '1.3rem', fontWeight: '700', color: 'var(--text-primary)', marginBottom: '0.5rem' }}>{c.name}</h3>
+                  <h2 style={{ fontSize: '1.3rem', fontWeight: '700', color: 'var(--text-primary)', marginBottom: '0.5rem' }}>{c.name}</h2>
                   <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', lineHeight: '1.6', margin: 0 }}>{c.body}</p>
                 </div>
               </div>

@@ -89,7 +89,7 @@ export default function CataloguePage({ onEnquireClick }) {
                   <CheckCircle2 size={16} style={{ color: '#4ade80' }} /> Chemical Composition & Mechanical Property Matrix
                 </li>
                 <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.925rem' }}>
-                  <CheckCircle2 size={16} style={{ color: '#4ade80' }} /> Sample EN 10204 3.1 & 3.2 Mill Test Certificate Format
+                  <CheckCircle2 size={16} style={{ color: '#4ade80' }} /> Sample EN 10204 3.1 Mill Test Certificate Format
                 </li>
                 <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.925rem' }}>
                   <CheckCircle2 size={16} style={{ color: '#4ade80' }} /> Instant Weight Sizing & Bolt Torque Specification Guide

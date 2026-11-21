@@ -15,7 +15,7 @@ export default function ExportPage({ countryType, onEnquireClick }) {
         'Complete ASME B16.5, B16.47, and B16.11 compliance with US thread standards (NPT).',
         'Incoterms support: DDP, CIF Houston / Los Angeles / New York, FOB Nhava Sheva.',
         'Seaworthy VCI anti-rust wooden crate packaging with heat treatment IPPC marking.',
-        'EN 10204 3.1 & 3.2 test certificates with 100% PMI heat number traceability.'
+        'EN 10204 3.1 test certificates traced to the heat number, with PMI on every length.'
       ]
     },
     'uae': {

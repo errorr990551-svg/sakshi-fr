@@ -1506,11 +1506,10 @@ export const FITTING_GUIDES = {
       {
         "h2": "What comes with every duplex EP pipe lot",
         "bullets": [
-          "EN 10204 3.1 certificate traced to the heat number; EN 10204 3.2 on request.",
+          "EN 10204 3.1 certificate traced to the heat number.",
           "PMI on every length to confirm the grade.",
           "Measured Ra report for each electropolished lot.",
           "Hydrostatic, ultrasonic and dye-penetrant testing.",
-          "Third-party inspection by SGS, BV or TUV on request.",
           "Ferrite / ASTM A923 test report on request.",
           "Ends capped and each length sleeved to protect the electropolished surface."
         ],
@@ -1529,7 +1528,7 @@ export const FITTING_GUIDES = {
           "Size (1/2\" to 12\"), schedule or wall thickness, and length.",
           "Quantity in metres or lengths.",
           "Electropolished surface: bore, outside or both, and target Ra if you have one.",
-          "Documents and tests: 3.1 or 3.2, third-party inspection, ferrite / A923 report."
+          "Documents and tests: EN 10204 3.1 certificate traced to the heat number; name any extra tests your specification calls for, such as ferrite or ASTM A923."
         ],
         "subsections": [
           {

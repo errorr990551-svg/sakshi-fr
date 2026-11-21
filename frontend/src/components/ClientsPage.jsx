@@ -105,7 +105,7 @@ export default function ClientsPage({ onEnquireClick }) {
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary-yellow)', fontSize: '0.85rem', fontWeight: '700', marginBottom: '0.5rem' }}>
                   <Building2 size={16} /> {c.region}
                 </div>
-                <h4 style={{ fontSize: '1.05rem', fontWeight: '700', marginBottom: '0.5rem' }}>{c.name}</h4>
+                <h3 style={{ fontSize: '1.05rem', fontWeight: '700', marginBottom: '0.5rem' }}>{c.name}</h3>
                 <p style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', marginBottom: '0.75rem' }}>
                   <strong>Supplied:</strong> {c.supply}
                 </p>

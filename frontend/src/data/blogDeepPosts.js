@@ -5,7 +5,7 @@
 const cta = (heading, text) => `
 <div class="blog-mid-cta">
   <div class="blog-mid-cta-content">
-    <h4>${heading}</h4>
+    <p class="blog-mid-cta-title">${heading}</p>
     <p>${text}</p>
   </div>
   <a href="/contact-us/" class="btn btn-primary blog-mid-cta-btn">Request a Quotation</a>

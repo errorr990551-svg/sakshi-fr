@@ -73,7 +73,7 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
 
           {/* Quick Links (Header pages + Market Area) */}
           <div className="footer-col">
-            <h4>Quick Links</h4>
+            <h2>Quick Links</h2>
             <ul className="footer-links">
               <li><a href="/" onClick={(e) => handleLinkClick(e, '/')}>Home</a></li>
               <li><a href="/products/" onClick={(e) => handleLinkClick(e, '/products/')}>Products Range</a></li>
@@ -92,7 +92,7 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
 
           {/* Engineering Tools & Company */}
           <div className="footer-col">
-            <h4>Tools & Company</h4>
+            <h2>Tools & Company</h2>
             <ul className="footer-links">
               <li><a href="/blog/" onClick={(e) => handleLinkClick(e, '/blog/')} style={{ color: 'var(--primary-yellow)', fontWeight: '700' }}>EP Pipes &amp; Steel Blogs →</a></li>
               <li><a href="/flange-dimension-chart/" onClick={(e) => handleLinkClick(e, '/flange-dimension-chart/')}>Flange Dimension Chart</a></li>
@@ -107,7 +107,7 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
 
           {/* Grades, Standards & Export */}
           <div className="footer-col">
-            <h4>Grades, Standards & Export</h4>
+            <h2>Grades, Standards & Export</h2>
             <ul className="footer-links">
               <li><a href="/astm-a270-electropolished-tubes/" onClick={(e) => handleLinkClick(e, '/astm-a270-electropolished-tubes/')}>ASTM A270 Electropolished Tubes</a></li>
               <li><a href="/super-duplex-2507-products/" onClick={(e) => handleLinkClick(e, '/super-duplex-2507-products/')}>Super Duplex 2507 Products</a></li>

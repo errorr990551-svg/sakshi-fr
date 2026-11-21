@@ -435,7 +435,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
                     justifyContent: 'space-between' 
                   }}>
                     <div>
-                      <h3 style={{ fontSize: '1.05rem', color: '#fff', fontWeight: '700', marginBottom: '0.25rem' }}>{card.title}</h3>
+                      <h2 style={{ fontSize: '1.05rem', color: '#fff', fontWeight: '700', marginBottom: '0.25rem' }}>{card.title}</h2>
                       <div style={{ color: 'var(--primary-yellow)', fontSize: '0.8rem', fontWeight: '600', marginBottom: '0.75rem' }}>{card.subtitle}</div>
                       <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', lineHeight: '1.5', marginBottom: '1.25rem' }}>{card.desc}</p>
                     </div>
@@ -505,7 +505,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1.5rem' }}>
               {custom.localReality.points.map((pt, idx) => (
                 <div key={idx} style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.75rem', borderLeft: '3px solid var(--primary-yellow)' }}>
-                  <h4 style={{ fontSize: '1.05rem', color: '#fff', fontWeight: '700', marginBottom: '0.5rem' }}>{pt.title}</h4>
+                  <h3 style={{ fontSize: '1.05rem', color: '#fff', fontWeight: '700', marginBottom: '0.5rem' }}>{pt.title}</h3>
                   <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.6', margin: 0 }}>{pt.desc}</p>
                 </div>
               ))}
@@ -1019,7 +1019,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(220px, 100%), 1fr))', gap: '0.85rem', marginBottom: '1.5rem' }}>
                   {custom.localBlock.sectors.map((sec, idx) => (
                     <div key={idx} style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '10px', padding: '1rem' }}>
-                      <h4 style={{ fontSize: '0.95rem', color: 'var(--primary-yellow)', fontWeight: '800', margin: '0 0 0.35rem 0' }}>{sec.title}</h4>
+                      <h3 style={{ fontSize: '0.95rem', color: 'var(--primary-yellow)', fontWeight: '800', margin: '0 0 0.35rem 0' }}>{sec.title}</h3>
                       <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.25rem' }}><strong>Plant runs:</strong> {sec.runs}</div>
                       <div style={{ fontSize: '0.82rem', color: 'var(--text-secondary)' }}><strong>We supply:</strong> {sec.supply}</div>
                     </div>
@@ -1043,7 +1043,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(200px, 100%), 1fr))', gap: '1rem', marginBottom: '1.5rem' }}>
                   {custom.localBlock.infoCards.map((card, idx) => (
                     <div key={idx} style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '10px', padding: '1rem' }}>
-                      <h4 style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: 'var(--text-muted)', letterSpacing: '0.08em', fontWeight: '700', margin: '0 0 0.35rem 0' }}>{card.title}</h4>
+                      <h3 style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: 'var(--text-muted)', letterSpacing: '0.08em', fontWeight: '700', margin: '0 0 0.35rem 0' }}>{card.title}</h3>
                       <p style={{ color: 'var(--text-primary)', fontSize: '0.85rem', fontWeight: '600', margin: 0, lineHeight: '1.4' }}>{card.text}</p>
                     </div>
                   ))}
@@ -1053,7 +1053,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
                   <div style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '12px', padding: '1.25rem' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.4rem' }}>
                       <Building size={16} style={{ color: 'var(--primary-yellow)' }} />
-                      <h4 style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: 'var(--text-muted)', letterSpacing: '0.08em', fontWeight: '700', margin: 0 }}>Named Industrial Zones</h4>
+                      <h3 style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: 'var(--text-muted)', letterSpacing: '0.08em', fontWeight: '700', margin: 0 }}>Named Industrial Zones</h3>
                     </div>
                     <p style={{ color: 'var(--text-primary)', fontSize: '0.9rem', fontWeight: '700', margin: 0, lineHeight: '1.4' }}>
                       {cityData.industrialAreas}
@@ -1063,7 +1063,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
                   <div style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '12px', padding: '1.25rem' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.4rem' }}>
                       <Activity size={16} style={{ color: 'var(--primary-yellow)' }} />
-                      <h4 style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: 'var(--text-muted)', letterSpacing: '0.08em', fontWeight: '700', margin: 0 }}>Dominant Industry Mix</h4>
+                      <h3 style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: 'var(--text-muted)', letterSpacing: '0.08em', fontWeight: '700', margin: 0 }}>Dominant Industry Mix</h3>
                     </div>
                     <p style={{ color: 'var(--text-primary)', fontSize: '0.9rem', fontWeight: '700', margin: 0, lineHeight: '1.4' }}>
                       {cityData.keyIndustries}

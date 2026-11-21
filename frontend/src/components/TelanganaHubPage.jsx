@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { MapPin, ArrowRight, ShieldCheck, Phone, Mail, Award, CheckCircle2, Factory } from 'lucide-react';
 import { handleLinkClick, withSlash } from '../utils/router';
+import HubOrderingSection from './HubOrderingSection';
 
 export default function TelanganaHubPage({ onEnquireClick, onShowContactDetails }) {
   const handleShowContact = onShowContactDetails || (() => onEnquireClick && onEnquireClick('Telangana State Hub Contact Request'));
@@ -266,6 +267,7 @@ export default function TelanganaHubPage({ onEnquireClick, onShowContactDetails 
           </div>
         </div>
       </section>
+      <HubOrderingSection state="Telangana" onEnquireClick={onEnquireClick} />
     </div>
   );
 }

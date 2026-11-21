@@ -184,7 +184,7 @@ export default function GalleryPage({ onEnquireClick }) {
         <div className="container">
           <div className="gallery-cta-box">
             <div>
-              <h3>Need Custom Forged Steel Components or Factory Audit?</h3>
+              <h2>Need Custom Forged Steel Components or Factory Audit?</h2>
               <p>Contact our engineering team to request sample material test certificates, plant visit arrangements, or detailed technical RFQ quotes.</p>
             </div>
             <button className="btn btn-primary btn-lg" onClick={() => onEnquireClick('Gallery Enquiry')}>

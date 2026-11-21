@@ -158,9 +158,9 @@ export default function BlogPostPage({ post, onEnquireClick }) {
               padding: '1.75rem 2rem', 
               marginBottom: '3rem' 
             }}>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: '700', color: 'var(--primary-yellow)', marginBottom: '1rem', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+              <h2 style={{ fontSize: '1.1rem', fontWeight: '700', color: 'var(--primary-yellow)', marginBottom: '1rem', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
                 Executive Key Takeaways
-              </h3>
+              </h2>
               <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
                 {post.keyTakeaways.map((point, idx) => (
                   <li key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', fontSize: '0.95rem', color: 'var(--text-primary)', lineHeight: '1.5' }}>

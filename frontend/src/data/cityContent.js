@@ -156,7 +156,7 @@ const FAQ = {
   }),
   27: () => ({
     q: 'What is the difference between EN 10204 3.1 and 3.2?',
-    a: 'A 3.1 certificate is validated by the manufacturer\'s own independent inspection function. A 3.2 certificate is additionally countersigned by the purchaser\'s inspector or a third-party agency. Ask for 3.2 when your client or regulator requires witnessed testing.'
+    a: 'A 3.1 certificate is validated by the manufacturer\'s own independent inspection function. A 3.2 certificate is additionally countersigned by the purchaser\'s inspector or a third-party agency. Sakshi Forge supplies EN 10204 3.1, traced to the heat number.'
   }),
   28: () => ({
     q: 'Which standards apply to semiconductor UHP tubing?',

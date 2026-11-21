@@ -107,7 +107,7 @@ export default function EPBuildSpecRenderer({ pageData, onEnquireClick, hasUnloc
                 <div className="absolute top-0 right-0 transform translate-x-2 -translate-y-2 bg-yellow-500 text-slate-950 text-[10px] uppercase tracking-wider font-extrabold px-3 py-1 rounded-full shadow">
                   Instant Quote Response
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">Get Price & Spec Sheet</h3>
+                <h2 className="text-xl font-bold text-white mb-2">Get Price & Spec Sheet</h2>
                 <p className="text-xs text-slate-400 mb-6">Receive a detailed quotation with MTC sample within 24 hours; delivery time is confirmed with it.</p>
                 
                 <form onSubmit={(e) => {

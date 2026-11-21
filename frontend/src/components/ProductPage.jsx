@@ -181,9 +181,9 @@ export default function ProductPage({ product, relatedProducts = [], onEnquireCl
 
               {product['Key Features'] && (
                 <div style={{ marginBottom: '2.5rem' }}>
-                  <h3 style={{ fontSize: '1.1rem', fontWeight: '600', marginBottom: '1rem', color: 'var(--text-primary)' }}>
+                  <h2 style={{ fontSize: '1.1rem', fontWeight: '600', marginBottom: '1rem', color: 'var(--text-primary)' }}>
                     Key Features
-                  </h3>
+                  </h2>
                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(240px, 100%), 1fr))', gap: '0.75rem' }}>
                     {product['Key Features'].split(';').map((feat, idx) => (
                       <div key={idx} style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
@@ -487,9 +487,9 @@ export default function ProductPage({ product, relatedProducts = [], onEnquireCl
                     <span style={{ color: 'var(--primary-yellow)', fontSize: '0.75rem', fontWeight: '600', textTransform: 'uppercase' }}>
                       {p['Category']}
                     </span>
-                    <h4 style={{ fontSize: '1.1rem', fontWeight: '700', color: 'var(--text-primary)', marginTop: '0.25rem', marginBottom: '0.5rem' }}>
+                    <h3 style={{ fontSize: '1.1rem', fontWeight: '700', color: 'var(--text-primary)', marginTop: '0.25rem', marginBottom: '0.5rem' }}>
                       {p['Product Name']}
-                    </h4>
+                    </h3>
                     <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', lineHeight: '1.5' }}>
                       {p['Meta Description (<=160 chars)']}
                     </p>

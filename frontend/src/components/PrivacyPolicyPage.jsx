@@ -26,22 +26,22 @@ export default function PrivacyPolicyPage() {
       {/* Content */}
       <section style={{ padding: '3.5rem 0' }}>
         <div className="container" style={{ maxWidth: '800px', lineHeight: '1.8', color: 'var(--text-secondary)' }}>
-          <h3 style={{ color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '0.5rem', fontSize: '1.25rem' }}>1. Data Collection & Processing</h3>
+          <h2 style={{ color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '0.5rem', fontSize: '1.25rem' }}>1. Data Collection & Processing</h2>
           <p>
             Sakshi Forge collects minimal contact details (name, email address, telephone number, and company name) supplied voluntarily via our Request for Quote (RFQ) forms. We process this data solely to submit commercial steel quotations and fulfill shipping orders.
           </p>
 
-          <h3 style={{ color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '0.5rem', fontSize: '1.25rem' }}>2. Consent & Web Analytics</h3>
+          <h2 style={{ color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '0.5rem', fontSize: '1.25rem' }}>2. Consent & Web Analytics</h2>
           <p>
             By submitting an RFQ or using our cookies consent tool, you agree to our processing. We utilize <strong>Google Analytics (GA4/GTM)</strong> and <strong>Microsoft Clarity</strong> to analyze website behavior through heatmaps, session replays, and usage statistics to improve user experience. We support Google Consent Mode v2 and respect your preferences; non-essential analytics and tracking storage are active only after you explicitly click "Accept" on our Cookie consent banner.
           </p>
 
-          <h3 style={{ color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '0.5rem', fontSize: '1.25rem' }}>3. Data Storage & Security</h3>
+          <h2 style={{ color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '0.5rem', fontSize: '1.25rem' }}>3. Data Storage & Security</h2>
           <p>
             All commercial communication is stored securely in line with corporate database protection rules in India. We do not sell, rent, or lease customer lists to third parties.
           </p>
 
-          <h3 style={{ color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '0.5rem', fontSize: '1.25rem' }}>4. Your Rights</h3>
+          <h2 style={{ color: 'var(--text-primary)', marginTop: '2rem', marginBottom: '0.5rem', fontSize: '1.25rem' }}>4. Your Rights</h2>
           <p>
             Under India's DPDP Act 2023, you have the right to withdraw consent, request rectification, or ask for the deletion of your personal contact records from our active sales directory. To exercise these rights, email us at <a href="mailto:info@steelmanufacturer.in" style={{ color: 'var(--primary-yellow)', textDecoration: 'none' }}>info@steelmanufacturer.in</a>.
           </p>

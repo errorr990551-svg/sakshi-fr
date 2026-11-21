@@ -160,9 +160,9 @@ export default function ProductsPage({ onEnquireClick }) {
 
           {/* Category Tabs / Filters */}
           <div>
-            <h3 style={{ fontSize: '1rem', fontWeight: '700', textTransform: 'uppercase', color: 'var(--text-primary)', marginBottom: '1rem', letterSpacing: '0.05em' }}>
+            <h2 style={{ fontSize: '1rem', fontWeight: '700', textTransform: 'uppercase', color: 'var(--text-primary)', marginBottom: '1rem', letterSpacing: '0.05em' }}>
               Filter by Category
-            </h3>
+            </h2>
             
             <div 
               style={{ 

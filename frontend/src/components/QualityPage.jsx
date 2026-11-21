@@ -55,7 +55,7 @@ export default function QualityPage({ onEnquireClick }) {
             
             <div style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '2rem' }}>
               <FileText size={32} style={{ color: 'var(--primary-yellow)', marginBottom: '1rem' }} />
-              <h3 style={{ fontSize: '1.25rem', fontWeight: '700', marginBottom: '0.75rem' }}>EN 10204 3.1 Traceability</h3>
+              <h2 style={{ fontSize: '1.25rem', fontWeight: '700', marginBottom: '0.75rem' }}>EN 10204 3.1 Traceability</h2>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.5' }}>
                 We provide Mill Test Certificates (MTC) conforming to EN 10204 3.1 standards, logging exact chemical composition, physical attributes, and heat code identity.
               </p>
@@ -63,7 +63,7 @@ export default function QualityPage({ onEnquireClick }) {
 
             <div style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '2rem' }}>
               <ShieldCheck size={32} style={{ color: 'var(--primary-yellow)', marginBottom: '1rem' }} />
-              <h3 style={{ fontSize: '1.25rem', fontWeight: '700', marginBottom: '0.75rem' }}>In-House Testing Lab</h3>
+              <h2 style={{ fontSize: '1.25rem', fontWeight: '700', marginBottom: '0.75rem' }}>In-House Testing Lab</h2>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.5' }}>
                 Equipped with dynamic raw material analysis, pressure loops, hardness testers, and calibrated roughness profilometers to verify every specification.
               </p>
@@ -71,9 +71,9 @@ export default function QualityPage({ onEnquireClick }) {
 
             <div style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '2rem' }}>
               <Users size={32} style={{ color: 'var(--primary-yellow)', marginBottom: '1rem' }} />
-              <h3 style={{ fontSize: '1.25rem', fontWeight: '700', marginBottom: '0.75rem' }}>Third-Party Inspection</h3>
+              <h2 style={{ fontSize: '1.25rem', fontWeight: '700', marginBottom: '0.75rem' }}>PMI &amp; Ra Reports</h2>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.5' }}>
-                We welcome inspection visits from globally recognized agencies like SGS, Bureau Veritas, TUV, DNV, and Lloyds to audit and approve orders before dispatch.
+                Every length is PMI-checked, and every electropolished lot ships with an internal Ra report and an EN 10204 3.1 certificate traced to the heat number.
               </p>
             </div>
 
@@ -95,7 +95,7 @@ export default function QualityPage({ onEnquireClick }) {
               <div key={idx} style={{ display: 'flex', gap: '1rem', backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1.5rem' }}>
                 <CheckCircle size={20} style={{ color: 'var(--primary-yellow)', flexShrink: 0, marginTop: '0.15rem' }} />
                 <div>
-                  <h4 style={{ fontSize: '1.05rem', fontWeight: '700', color: 'var(--text-primary)', marginBottom: '0.4rem' }}>{t.name}</h4>
+                  <h3 style={{ fontSize: '1.05rem', fontWeight: '700', color: 'var(--text-primary)', marginBottom: '0.4rem' }}>{t.name}</h3>
                   <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', lineHeight: '1.5' }}>{t.desc}</p>
                 </div>
               </div>

@@ -56,7 +56,7 @@ export const blogPosts = [
 
 <div class="blog-mid-cta">
   <div class="blog-mid-cta-content">
-    <h4>Planning a pharma piping project?</h4>
+    <p class="blog-mid-cta-title">Planning a pharma piping project?</p>
     <p>Get EP pipe technical specifications, certified Ra reports, and a fast factory-direct quote.</p>
   </div>
   <a href="/contact-us/" class="btn btn-primary blog-mid-cta-btn">Get EP Pipe Specs &amp; Quote</a>
@@ -205,7 +205,7 @@ export const blogPosts = [
 
 <div class="blog-mid-cta">
   <div class="blog-mid-cta-content">
-    <h4>Not sure which finish your project needs?</h4>
+    <p class="blog-mid-cta-title">Not sure which finish your project needs?</p>
     <p>Our metallurgy and surface finishing engineers can review your process conditions and recommend the optimal finish.</p>
   </div>
   <a href="/contact-us/" class="btn btn-primary blog-mid-cta-btn">Talk to Our Engineering Team</a>
@@ -308,7 +308,7 @@ export const blogPosts = [
 
 <div class="blog-mid-cta">
   <div class="blog-mid-cta-content">
-    <h4>Upgrading a dairy or beverage line?</h4>
+    <p class="blog-mid-cta-title">Upgrading a dairy or beverage line?</p>
     <p>Get food-grade ASTM A270 sanitary EP pipes with certified finish and complete material test certificates.</p>
   </div>
   <a href="/contact-us/" class="btn btn-primary blog-mid-cta-btn">Request an EP Pipe Quote</a>
@@ -418,7 +418,7 @@ export const blogPosts = [
 
 <div class="blog-mid-cta">
   <div class="blog-mid-cta-content">
-    <h4>Have a bill of materials or specification?</h4>
+    <p class="blog-mid-cta-title">Have a bill of materials or specification?</p>
     <p>Send your pipe schedule, grade, and Ra requirements to receive a fast, itemized, like-for-like quote.</p>
   </div>
   <a href="/contact-us/" class="btn btn-primary blog-mid-cta-btn">Send Spec for EP Pipe Quote</a>
@@ -520,7 +520,7 @@ export const blogPosts = [
 
 <div class="blog-mid-cta">
   <div class="blog-mid-cta-content">
-    <h4>Need custom lengths or a small trial lot?</h4>
+    <p class="blog-mid-cta-title">Need custom lengths or a small trial lot?</p>
     <p>Talk directly with our EP pipe technical sales team for immediate dispatch and custom cutting requirements.</p>
   </div>
   <a href="/contact-us/" class="btn btn-primary blog-mid-cta-btn">Talk to Our EP Pipe Team</a>
@@ -615,7 +615,7 @@ export const blogPosts = [
 
 <div class="blog-mid-cta">
   <div class="blog-mid-cta-content">
-    <h4>Want to see our MTC and Ra report format?</h4>
+    <p class="blog-mid-cta-title">Want to see our MTC and Ra report format?</p>
     <p>Request sample mill test certificates, Ra profilometer charts, and passivation test records.</p>
   </div>
   <a href="/contact-us/" class="btn btn-primary blog-mid-cta-btn">Request Sample Documents</a>
@@ -756,7 +756,7 @@ export const blogPosts = [
 
 <div class="blog-mid-cta">
   <div class="blog-mid-cta-content">
-    <h4>Not sure which grade fits your process line?</h4>
+    <p class="blog-mid-cta-title">Not sure which grade fits your process line?</p>
     <p>Share your operating temperature, media chemistry, and cleaning regime for an engineering recommendation.</p>
   </div>
   <a href="/contact-us/" class="btn btn-primary blog-mid-cta-btn">Share Media &amp; Get Advice</a>
@@ -896,7 +896,7 @@ export const blogPosts = [
 
 <div class="blog-mid-cta">
   <div class="blog-mid-cta-content">
-    <h4>Need a specific certified Ra finish?</h4>
+    <p class="blog-mid-cta-title">Need a specific certified Ra finish?</p>
     <p>We supply EP pipes certified down to Ra ≤ 0.38 µm (15 µin) and Ra ≤ 0.5 µm (20 µin) with calibrated profilometer reports.</p>
   </div>
   <a href="/contact-us/" class="btn btn-primary blog-mid-cta-btn">Request Certified Ra Quote</a>
@@ -993,7 +993,7 @@ export const blogPosts = [
 
 <div class="blog-mid-cta">
   <div class="blog-mid-cta-content">
-    <h4>Building or revamping an export-oriented plant?</h4>
+    <p class="blog-mid-cta-title">Building or revamping an export-oriented plant?</p>
     <p>Ask for ASME BPE-aligned EP pipe documentation, MTC 3.1 certificates, and passivation dossiers.</p>
   </div>
   <a href="/contact-us/" class="btn btn-primary blog-mid-cta-btn">Ask for BPE-Aligned EP Docs</a>
@@ -1105,7 +1105,7 @@ The cheapest quote often leaves out the finish, the documents, the inspection or
 
 <div class="blog-mid-cta">
   <div class="blog-mid-cta-content">
-    <h4>Ready to request quotes without ambiguity?</h4>
+    <p class="blog-mid-cta-title">Ready to request quotes without ambiguity?</p>
     <p>Send your bill of quantities to get a fully transparent, like-for-like quote with all documentation included.</p>
   </div>
   <a href="/contact-us/" class="btn btn-primary blog-mid-cta-btn">Get a Like-for-Like Quote</a>

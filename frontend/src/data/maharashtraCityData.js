@@ -113,7 +113,7 @@ export const maharashtraCityData = {
       },
       {
         q: 'Can I appoint third-party inspection before dispatch?',
-        a: 'Factory-witness inspection can be arranged, and third-party inspection (for example TÜV or Bureau Veritas) on request. Standard documents include MTC EN 10204 3.1, PMI, hydro and a surface report with measured Ra.'
+        a: 'Standard documents include MTC EN 10204 3.1, PMI, hydro and a surface report with measured Ra.'
       }
     ]
   },

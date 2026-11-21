@@ -37,7 +37,9 @@ export function formatMetaDesc(desc) {
   if (d.length <= 160) return d;
   const periodIdx = d.lastIndexOf('.', 159);
   if (periodIdx > 100) return d.substring(0, periodIdx + 1).trim();
-  const words = d.substring(0, 156).split(' ');
-  words.pop();
-  return words.join(' ').trim() + '...';
+  // No sentence end in range: end at the last list comma instead of a trailing "...".
+  const commaIdx = Math.max(d.lastIndexOf(', ', 158), d.lastIndexOf('; ', 158));
+  const words = (commaIdx > 90 ? d.substring(0, commaIdx) : d.substring(0, 158).replace(/\s+\S*$/, '')).split(' ');
+  while (words.length > 1 && DANGLING.test(words[words.length - 1])) words.pop();
+  return words.join(' ').replace(/[\s:;,\-–—|(]+$/, '') + '.';
 }

@@ -448,7 +448,7 @@ export const STANDARD_GUIDES = {
       { q: "Which standard should I use for pharmaceutical EP tube?", a: "ASTM A270 with supplement S2, combined with ASME BPE, in 316L with an SF4 electropolished bore. Most pharmaceutical water and bioprocess specifications use this combination." },
       { q: "Is ASME BPE a replacement for ASTM A270?", a: "No. A270 is the tube product standard; ASME BPE adds dimensions, surface designations, sulphur limits and acceptance criteria. A BPE tube order meets both." },
       { q: "What is the difference between tube and pipe standards?", a: "Tube standards (A270, A269, A249) are dimensioned by actual OD and wall. The pipe standard A312 is dimensioned by nominal pipe size and schedule. A 2 in tube has a 2.000 in OD; a 2 in pipe has a 2.375 in OD." },
-      { q: "Which certificate type should I ask for?", a: "EN 10204 3.1 for almost all electropolished process piping. Ask for 3.2 only when a contract, owner or notified body requires third-party validation." }
+      { q: "Which certificate type should I ask for?", a: "EN 10204 3.1 covers almost all electropolished process piping, and it is what Sakshi Forge supplies, traced to the heat number. A 3.2 is only needed when a contract, owner or notified body requires third-party validation." }
     ]
   },
 

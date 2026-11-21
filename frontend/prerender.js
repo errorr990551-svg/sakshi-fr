@@ -7,7 +7,6 @@ import { buildCityFaqs } from './src/data/cityContent.js';
 import { customCityData } from './src/data/customCityData.js';
 import { visibleProductFaqs } from './src/utils/productFaqs.js';
 import { formatTitle, formatMetaDesc } from './src/utils/titles.js';
-import { parseKeySpecs, getProductOfferDetails } from './src/utils/schemaHelpers.js';
 import { CATEGORY_GUIDES } from './src/data/categoryGuides.js';
 import { PHONE, EMAIL, GBP, localBusinessSchema } from './src/data/business.js';
 
@@ -181,7 +180,7 @@ async function runPrerender() {
     { url: `${BASE_URL}/market-area/odisha/`, type: 'market-area', slug: 'market-area/odisha', title: 'Electropolished Pipes Across Odisha | Sakshi Forge', description: 'Sakshi Forge supplies electropolished SS 316L, 304L and duplex pipes across Odisha industrial corridors: Bhubaneswar, Cuttack, Berhampur, Angul, Rourkela, Sambalpur, Jharsuguda, Jajpur, Paradip, and Balasore.', data: null }
   ];
 
-  extraPages.push({ url: `${BASE_URL}/sitemap/`, type: 'sitemap', slug: 'sitemap', title: 'Sitemap | Sakshi Forge', description: 'HTML sitemap of steelmanufacturer.in: electropolished pipes and tubes, products, standards, industries, resources, market area cities and blog.', robots: 'index, follow', data: null });
+  extraPages.push({ url: `${BASE_URL}/sitemap/`, type: 'sitemap', slug: 'sitemap', title: 'HTML Sitemap: All Pages | Sakshi Forge', description: 'HTML sitemap of steelmanufacturer.in: electropolished pipes and tubes, products, standards, industries, resources, market area cities and blog.', robots: 'index, follow', data: null });
   extraPages.forEach(p => routes.push(p));
 
   // EP Build Spec 106 Pages
@@ -396,33 +395,8 @@ async function runPrerender() {
         ]
       };
 
-      const specsList = parseKeySpecs(route.data['Key Specs']);
-      const addProps = specsList.map(s => ({
-        "@type": "PropertyValue",
-        "name": s.key,
-        "value": s.value
-      }));
-      const materialGrade = specsList.find(s => s.key.toLowerCase().includes("grade") || s.key.toLowerCase().includes("material"))?.value || "Stainless Steel";
-
-      const offerData = getProductOfferDetails(route.slug, route.data['Category'], route.url);
-
-      const productSchema = {
-        "@type": "Product",
-        "name": route.data['Product Name'],
-        "url": route.url,
-        "image": [ `${BASE_URL}${encodeURI(route.data['Image'] || '/flanges_pipes.webp')}` ],
-        "description": route.description,
-        "sku": offerData.sku,
-        "mpn": offerData.mpn,
-        "brand": { "@type": "Brand", "name": "Sakshi Forge" },
-        "manufacturer": { "@id": `${BASE_URL}/#org` },
-        "material": materialGrade,
-        "additionalProperty": addProps,
-        "offers": offerData.offers
-      };
-
+      // No Product schema: the site shows no price, so Google rejects Product markup without offers.
       schemasGraph.push(breadcrumbs);
-      schemasGraph.push(productSchema);
 
       const productFaqs = visibleProductFaqs(route.data);
       if (productFaqs.length > 0) {
@@ -501,7 +475,6 @@ async function runPrerender() {
       // Must match the FAQs CityPage shows: custom city data first, then generated research FAQs
       const customCity = customCityData[citySlug];
       const faqsList = richData?.faqs || (customCity ? customCity.faqs : buildCityFaqs(route.data)) || route.data.faqs;
-      const hasDuplex = richData?.hasDuplex || route.data.hasDuplex;
 
       // BreadcrumbList
       schemasGraph.push({
@@ -522,33 +495,6 @@ async function runPrerender() {
         ]
       }));
 
-      // Product
-      const cityEpOffer = getProductOfferDetails('electropolished-pipes-' + citySlug, 'Electropolished Pipes', currentUrl);
-      schemasGraph.push({
-        "@type": "Product",
-        "@id": `${currentUrl}#product`,
-        "name": hasDuplex 
-          ? `Electropolished SS 316L and Duplex 2205 Pipes and Tubes - ${cityName}`
-          : `Electropolished SS 304L / 316L Sanitary Pipes and Tubes - ${cityName}`,
-        "description": route.data.metaDescription || `Welded and seamless electropolished stainless steel pipes and tubes in 316L, 304L${hasDuplex ? ' and duplex 2205' : ''} for ${cityName}, supplied with MTC EN 10204 3.1 and 100% PMI testing.`,
-        "image": [ `${BASE_URL}/electropolish_pipes.webp` ],
-        "sku": cityEpOffer.sku,
-        "mpn": cityEpOffer.mpn,
-        "brand": { "@type": "Brand", "name": "Sakshi Forge" },
-        "manufacturer": { "@id": `${BASE_URL}/#org` },
-        "material": hasDuplex
-          ? "SS 316L (UNS S31603 / 1.4404), SS 304L (UNS S30403 / 1.4307), Duplex 2205 (UNS S31803 / 1.4462)"
-          : "SS 304L (UNS S30403 / 1.4307), SS 316L (UNS S31603 / 1.4404)",
-        "category": "Electropolished stainless steel pipes and tubes",
-        "additionalProperty": [
-          { "@type": "PropertyValue", "name": "Internal surface roughness (Ra)", "maxValue": 0.4, "unitCode": "4H", "unitText": "µm" },
-          { "@type": "PropertyValue", "name": "Manufacturing standards", "value": hasDuplex ? "ASTM A269, ASTM A270, ASTM A790 (duplex)" : "ASTM A269, ASTM A270" },
-          { "@type": "PropertyValue", "name": "Material certificate", "value": "EN 10204 3.1" },
-          { "@type": "PropertyValue", "name": "Testing", "value": "100% PMI, Ra test, hydro test, passivation verification, ferrite check" },
-          { "@type": "PropertyValue", "name": "Types", "value": "Welded and seamless" }
-        ],
-        "offers": cityEpOffer.offers
-      });
 
       // FAQPage
       if (faqsList && faqsList.length > 0) {

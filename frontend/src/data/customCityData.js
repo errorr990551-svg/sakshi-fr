@@ -690,7 +690,7 @@ export const customCityData = {
         { stage: 'Visual bore inspection', check: 'Bore appearance', method: 'High-resolution borescope examination', receives: 'Surface inspection report' },
         { stage: 'Before dispatch', check: 'Cleanliness, caps, packaging', method: 'Visual; heat number marked on every tube', receives: 'Packing list & shipping label' }
       ],
-      tpiNote: 'Third-party inspection (TPI) is welcome in Mumbai — Bureau Veritas, SGS, TUV, DNV or any agency nominated by the client.',
+      
       storageGuidelines: [
         'Keep hygienic end caps and poly sleeves on until the tube is cut for installation; they keep wind-blown dust and desert sand out of the bore.',
         'Store under shaded cover, out of direct intense sunlight. Heat and UV weaken plastic caps and sleeves over time.',

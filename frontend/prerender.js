@@ -255,6 +255,10 @@ async function runPrerender() {
 
   // 4. Render each route (skipping merged pages the server 301-redirects, see src/data/redirects.js)
   const contentHashes = {};
+  // Same manifest and rule as writeSitemapLastmods, so schema dateModified matches the sitemap <lastmod>
+  const lastmodPath = path.join(__dirname, 'src/data/lastmod.json');
+  const lastmods = fs.existsSync(lastmodPath) ? JSON.parse(fs.readFileSync(lastmodPath, 'utf-8')) : {};
+  const buildDay = new Date().toISOString().split('T')[0];
   for (const route of routes) {
     if (isRedirectedPath(`/${route.slug}`)) continue;
     // Determine path relative to domain
@@ -290,6 +294,13 @@ async function runPrerender() {
       console.error(`Failed rendering path ${routePath}:`, err);
       process.exit(1);
     }
+
+    const pageTitle = formatTitle(route.title);
+    const pageDesc = formatMetaDesc(route.description);
+    const pageUrl = `${BASE_URL}${routePath.replace(/\/?$/, '/')}`;
+    contentHashes[pageUrl] = crypto
+      .createHash('sha1').update(`${pageTitle}\n${pageDesc}\n${bodyHtml.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ')}`).digest('hex').slice(0, 16);
+    const dateModified = lastmods[pageUrl]?.[0] === contentHashes[pageUrl] ? lastmods[pageUrl][1] : buildDay;
 
     // Build Schemas graph
     const schemasGraph = [];
@@ -513,6 +524,13 @@ async function runPrerender() {
       }
     }
 
+    // Every page states when its content last changed (blog posts keep their own date if later)
+    const article = schemasGraph.find((n) => n['@type'] === 'BlogPosting');
+    if (article && !(article.dateModified > dateModified)) article.dateModified = dateModified;
+    const pageNode = schemasGraph.find((n) => n['@type'] === 'CollectionPage');
+    if (pageNode) pageNode.dateModified = dateModified;
+    else schemasGraph.push({ "@type": "WebPage", "@id": pageUrl, "url": pageUrl, "name": pageTitle, "isPartOf": { "@id": `${BASE_URL}/#website` }, "dateModified": dateModified });
+
     const schemaBlockHtml = `<script type="application/ld+json" class="sakshi-seo-schema">\n${JSON.stringify({
       "@context": "https://schema.org",
       "@graph": schemasGraph
@@ -522,8 +540,6 @@ async function runPrerender() {
     let html = template;
     
     // Inject dynamic head tags
-    const pageTitle = formatTitle(route.title);
-    const pageDesc = formatMetaDesc(route.description);
     html = html.replace(/<title>.*?<\/title>/, `<title>${pageTitle}</title>`);
     html = html.replace(/<meta name="description" content=".*?" \/>/, `<meta name="description" content="${(pageDesc || '').replace(/"/g, '&quot;')}" />`);
     const pageKeywords = route.keywords || 'electropolished pipe, stainless steel 316L, electropolishing, Sakshi Forge';
@@ -598,8 +614,6 @@ async function runPrerender() {
 
     fs.writeFileSync(outputFilePath, html, 'utf-8');
     console.log(`Saved pre-rendered output: ${outputFilePath}`);
-    contentHashes[`${BASE_URL}${routePath.replace(/\/?$/, '/')}`] = crypto
-      .createHash('sha1').update(`${pageTitle}\n${pageDesc}\n${bodyHtml.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ')}`).digest('hex').slice(0, 16);
   }
 
   writeSitemapLastmods(contentHashes);

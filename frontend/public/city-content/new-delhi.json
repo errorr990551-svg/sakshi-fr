@@ -1,6 +1,6 @@
 {
   "slug": "new-delhi",
-  "updated": "2026-10-25",
+  "updated": "2026-11-21",
   "sections": [
     {
       "heading": "Okhla, Naraina and Bawana: Delhi's Planned Industrial Estates",
@@ -29,23 +29,83 @@
       ]
     },
     {
+      "heading": "Mother Dairy at Patparganj and Delhi's Dairy Lines",
+      "paragraphs": [
+        "Delhi also has a large city dairy. Mother Dairy was commissioned in 1974 as a wholly owned subsidiary of the National Dairy Development Board under Operation Flood, and Delhi NCR still accounted for over 65 percent of its sales in 2025. Its milk plant at Patparganj in east Delhi receives milk by tanker from Punjab, Haryana and Rajasthan, according to a BIMTECH plant-visit report; we have not seen a company figure for the plant's capacity.",
+        "A city dairy of that scale keeps replacing and extending product lines: milk reception, pasteurisation, curd, lassi, ice cream and flavoured milk, all on daily CIP. Most milk and cream lines run well on 304L with an SF1 bore, and 316L is the safer grade on hot acid CIP returns and brine. An electropolished SF4 bore pays back on cultured and sweetened products, where protein and sugar films are hardest to remove, and on lines that the plant's own swab results keep flagging."
+      ]
+    },
+    {
+      "heading": "What a Delhi Buyer Should Send With an RFQ",
+      "paragraphs": [
+        "Head offices and consultants buying for a plant elsewhere: the delivery site, the end plant's specification sheet and the vendor-approval documents its quality team will ask for. Dairy and food engineers in Delhi: each circuit with its product, highest product and CIP temperatures, acid and caustic strengths, OD and wall, length per size and whether joints are orbital welds or clamps.",
+        "Hospitals and laboratories: the water or gas grade at each point of use, the drawing from the equipment supplier and the tender reference. Send it through our contact page and we return a quotation within 24 hours. Every order carries an EN 10204 3.1 certificate traced to heat number and PMI on every length; electropolished lots add our internal Ra report."
+      ],
+      "links": [
+        {
+          "label": "Request a quotation for Delhi",
+          "href": "/contact-us/"
+        },
+        {
+          "label": "Electropolished tubes",
+          "href": "/electropolished-tubes/"
+        },
+        {
+          "label": "Electropolished pipes",
+          "href": "/electropolished-pipes/"
+        }
+      ]
+    },
+    {
       "heading": "Delivery to Delhi",
       "paragraphs": [
         "Delhi is supplied by road from Mumbai; dispatch and transit are confirmed in writing with each quotation. ICD Tughlakabad, about 15 km from the city centre, is the nearest listed container gateway for export-bound material.",
         "Nearby NCR clusters:"
       ],
       "links": [
-        { "label": "Delhi", "href": "/market-area/delhi/" },
-        { "label": "Gurugram and Manesar", "href": "/market-area/gurugram/" },
-        { "label": "Noida", "href": "/market-area/noida/" },
-        { "label": "Faridabad", "href": "/market-area/faridabad/" },
-        { "label": "Ghaziabad", "href": "/market-area/ghaziabad/" }
+        {
+          "label": "Delhi",
+          "href": "/market-area/delhi/"
+        },
+        {
+          "label": "Gurugram and Manesar",
+          "href": "/market-area/gurugram/"
+        },
+        {
+          "label": "Noida",
+          "href": "/market-area/noida/"
+        },
+        {
+          "label": "Faridabad",
+          "href": "/market-area/faridabad/"
+        },
+        {
+          "label": "Ghaziabad",
+          "href": "/market-area/ghaziabad/"
+        }
       ]
     }
   ],
   "sources": [
-    { "title": "DSIIDC: Bawana Industrial Area", "url": "https://dsiidc.delhi.gov.in/bawana-industrial-area" },
-    { "title": "DSIIDC: About the relocation scheme", "url": "https://dsiidc.delhi.gov.in/relocation" },
-    { "title": "The Week: Delhi industry dept to auction plots in Narela, Bawana (2024)", "url": "https://www.theweek.in/wire-updates/business/2024/07/18/nrg11-dl-plots-auction.html" }
+    {
+      "title": "DSIIDC: Bawana Industrial Area",
+      "url": "https://dsiidc.delhi.gov.in/bawana-industrial-area"
+    },
+    {
+      "title": "DSIIDC: About the relocation scheme",
+      "url": "https://dsiidc.delhi.gov.in/relocation"
+    },
+    {
+      "title": "The Week: Delhi industry dept to auction plots in Narela, Bawana (2024)",
+      "url": "https://www.theweek.in/wire-updates/business/2024/07/18/nrg11-dl-plots-auction.html"
+    },
+    {
+      "title": "Wikipedia: Mother Dairy (commissioned 1974 as NDDB subsidiary under Operation Flood; Delhi NCR over 65% of sales in 2025)",
+      "url": "https://en.wikipedia.org/wiki/Mother_Dairy"
+    },
+    {
+      "title": "BIMTECH: Visit to Mother Dairy Plant, Patparganj, New Delhi (milk tankers from Punjab, Haryana and Rajasthan)",
+      "url": "https://www.bimtech.ac.in/public/uploads/page_section_attributes/31jTY5IoEOiwkpum7OJseEwUfe8GPsJjlcCVhbqZ.pdf"
+    }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "slug": "patna",
-  "updated": "2026-10-25",
+  "updated": "2026-11-21",
   "sections": [
     {
       "heading": "Patna's Industrial Areas: Patliputra and Fatuha",
@@ -29,23 +29,79 @@
       ]
     },
     {
+      "heading": "Sudha and COMFED: Patna's Dairy Network",
+      "paragraphs": [
+        "Bihar's dairy industry is built on the Bihar State Milk Co-operative Federation (COMFED), set up in 1983 and selling under the Sudha brand. The state government lists 22 COMFED dairy plants, 19 in Bihar and 3 in Jharkhand, with a total handling capacity of 54.05 lakh litres a day, plus ice-cream plants at Patna and Bihar Sharif, four milk powder plants and a UHT plant. Polypack milk sales averaged 18.11 lakh litres a day in 2025-26. The Vaishali Patliputra milk union, based in Patna, covers Patna, Vaishali, Saran and Sheikhpura districts.",
+        "Ice cream is the Patna product that most justifies an electropolished bore. Mix lines carry sugar, milk solids, stabilisers and fat that bake onto warm surfaces, and they are cleaned between flavours; an SF4 bore releases those films faster in CIP. Curd, lassi and flavoured-milk lines are the next candidates, while raw milk reception, chilling and utility lines run well on 304L with an SF1 bore."
+      ]
+    },
+    {
+      "heading": "What a Patna Dairy or Food Buyer Should Send",
+      "paragraphs": [
+        "Dairy plants and their contractors at Phulwari Sharif, Fatuha or Patliputra: each circuit with its product (milk, curd, lassi, ice-cream mix, paneer whey), highest product and CIP temperatures, acid and caustic strengths, OD and wall, length per size, and whether joints are orbital welds or clamps. Beverage bottlers should add syrup Brix and temperature, the CIP regime and how often flavours change.",
+        "Send it through our contact page and we return a quotation within 24 hours. Every order carries an EN 10204 3.1 certificate traced to heat number and PMI on every length; electropolished lots add our internal Ra report."
+      ],
+      "links": [
+        {
+          "label": "Request a quotation for Patna",
+          "href": "/contact-us/"
+        },
+        {
+          "label": "Electropolished tubes",
+          "href": "/electropolished-tubes/"
+        },
+        {
+          "label": "Electropolished pipes",
+          "href": "/electropolished-pipes/"
+        }
+      ]
+    },
+    {
       "heading": "Delivery to Patna",
       "paragraphs": [
         "Patna is a long-haul road delivery from Mumbai; dispatch and transit are confirmed in writing with each quotation. Haldia Port is the nearest listed sea gateway for export-bound material.",
         "Other eastern India clusters:"
       ],
       "links": [
-        { "label": "Muzaffarpur", "href": "/market-area/muzaffarpur/" },
-        { "label": "Kolkata", "href": "/market-area/kolkata/" },
-        { "label": "Ranchi", "href": "/market-area/ranchi/" },
-        { "label": "Varanasi", "href": "/market-area/varanasi/" }
+        {
+          "label": "Muzaffarpur",
+          "href": "/market-area/muzaffarpur/"
+        },
+        {
+          "label": "Kolkata",
+          "href": "/market-area/kolkata/"
+        },
+        {
+          "label": "Ranchi",
+          "href": "/market-area/ranchi/"
+        },
+        {
+          "label": "Varanasi",
+          "href": "/market-area/varanasi/"
+        }
       ]
     }
   ],
   "sources": [
-    { "title": "UNI India: Amul to set up Rs 200 cr dairy processing unit in Fatuha", "url": "https://www.uniindia.com/bihar-amul-to-set-up-rs-200-cr-dairy-processing-unit-in-fatuha-200-jobs-likely/east/news/3871638.html" },
-    { "title": "Patna Press: Amul dairy processing plant at Fatuha", "url": "https://patnapress.com/amul-rs-200-crore-dairy-processing-plant-patna-fatuha-bihar/" },
-    { "title": "MSME-DI: Patna district industrial profile", "url": "https://dcmsme.gov.in/old/dips/Patna.pdf" },
-    { "title": "CPCB: Ganga pollution inventory, Bihar (dairy and bottling units)", "url": "https://cpcb.nic.in/ngrba/GPI_BR.pdf" }
+    {
+      "title": "UNI India: Amul to set up Rs 200 cr dairy processing unit in Fatuha",
+      "url": "https://www.uniindia.com/bihar-amul-to-set-up-rs-200-cr-dairy-processing-unit-in-fatuha-200-jobs-likely/east/news/3871638.html"
+    },
+    {
+      "title": "Patna Press: Amul dairy processing plant at Fatuha",
+      "url": "https://patnapress.com/amul-rs-200-crore-dairy-processing-plant-patna-fatuha-bihar/"
+    },
+    {
+      "title": "MSME-DI: Patna district industrial profile",
+      "url": "https://dcmsme.gov.in/old/dips/Patna.pdf"
+    },
+    {
+      "title": "CPCB: Ganga pollution inventory, Bihar (dairy and bottling units)",
+      "url": "https://cpcb.nic.in/ngrba/GPI_BR.pdf"
+    },
+    {
+      "title": "Government of Bihar: COMFED (established 1983; 22 dairy plants, 54.05 lakh litres a day; ice-cream plants at Patna and Bihar Sharif; 18.11 lakh litres a day polypack sales 2025-26; Vaishali Patliputra union districts)",
+      "url": "https://betastate.bihar.gov.in/Comfed.aspx"
+    }
   ]
 }

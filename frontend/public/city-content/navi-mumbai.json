@@ -1,11 +1,11 @@
 {
   "slug": "navi-mumbai",
-  "updated": "2026-10-25",
+  "updated": "2026-11-21",
   "sections": [
     {
       "heading": "Navi Mumbai: Supplied from Across the Harbour",
       "paragraphs": [
-        "We are based in Mumbai, across the harbour from Navi Mumbai's industrial belt, so plants here are supplied by a short road run rather than long-distance freight.",
+        "We are based in Mumbai, across the harbour from Navi Mumbai's industrial belt, so plants here are supplied by road across the harbour rather than by long-distance freight.",
         "Navi Mumbai's industry sits in two main MIDC areas. The Trans-Thane Creek (TTC) industrial area runs along the Thane-Belapur Road through Rabale, Mahape, Turbhe and Pawane; pollution-board filings describe it as a large, mature estate of around 27 square kilometres with over 3,000 units in chemicals, dyes and intermediates, bulk drugs, pharmaceuticals and pesticides. Taloja MIDC, near Panvel, is the newer chemical zone where land has been cheaper than in TTC."
       ]
     },
@@ -13,7 +13,7 @@
       "heading": "TTC Pharma and Bulk-Drug Units",
       "paragraphs": [
         "TTC hosts pharmaceutical formulation, bulk-drug and R&D facilities. Formulation plants need purified-water loops and product-contact lines in 316L - SF1 mechanically polished for ambient purified water, SF4 electropolished for hot-sanitised loops, WFI and critical product contact. Bulk-drug plants need electropolished tube mainly in their finishing sections and water systems, with alloy selection driving everything upstream.",
-        "R&D and pilot plants have a different need: many small lengths in several sizes, often at short notice, with full certification for each. Being in the same city as these labs makes that practical."
+        "R&D and pilot plants have a different need: many small lengths in several sizes, often at short notice, with full certification for each. Being across the harbour from these labs makes that practical."
       ]
     },
     {
@@ -26,9 +26,38 @@
     {
       "heading": "Breakdowns and Shutdowns: What Proximity Allows",
       "bullets": [
-        "Short-notice replacement lengths for a failed purified-water or product line; we confirm what is in stock and the delivery time when you call.",
+        "Replacement lengths for a failed purified-water or product line; we confirm availability and delivery in writing once you send the sizes.",
         "Small quantities for maintenance stores without the minimum-freight problem of long-distance supply.",
         "Coordinated deliveries timed to a planned shutdown window rather than a single bulk dispatch."
+      ]
+    },
+    {
+      "heading": "ACTREC Kharghar: Navi Mumbai's Cancer Research Laboratories",
+      "paragraphs": [
+        "One of Navi Mumbai's main research buyers is outside the MIDC estates. The Advanced Centre for Treatment, Research and Education in Cancer (ACTREC), the research and development wing of Tata Memorial Centre, sits at the foothills of the Sahyadris in Kharghar. It brings together the Cancer Research Institute, the Clinical Research Centre and the Centre for Cancer Epidemiology, and its scientists work with human tumours, experimental animals and cells in culture.",
+        "Cell-culture and molecular biology laboratories of that kind run purified-water distribution, carbon dioxide lines to incubators and nitrogen and specialty gas manifolds. Electropolished 316L tube is the usual choice on the high-purity gas and water runs into those rooms, because a smooth, passive bore sheds fewer particles and holds less moisture after maintenance. Tata Memorial Centre is an autonomous grant-in-aid institution of the Department of Atomic Energy, so purchases go through formal procurement; we quote to the tender line items and supply each length with its certificate."
+      ]
+    },
+    {
+      "heading": "What a TTC, Taloja or Kharghar Buyer Should Send",
+      "paragraphs": [
+        "Formulation and bulk-drug plants in Rabale, Mahape, Turbhe and Taloja: the line list from your P&ID with the service on each line (purified water, WFI, clean steam, product transfer, CIP), design temperature and sanitisation method, OD and wall per size, total length, and whether lines will be orbitally welded or clamped. Mark which lines your quality team classes as product contact, because that decides SF1 or SF4.",
+        "Laboratories and research institutes: the gas or water grade at each point of use, pressure, tube OD, the room or equipment served, and the tender or indent reference. Chemical units should add the process chemistry, so we can say whether 316L is suitable at all before finish is discussed.",
+        "Send it through our contact page and we return a quotation within 24 hours. Orders carry an EN 10204 3.1 certificate traced to heat number, PMI on every length and an internal Ra report for each electropolished lot; dispatch and delivery to your gate are confirmed in writing with each quotation."
+      ],
+      "links": [
+        {
+          "label": "Request a quotation for Navi Mumbai",
+          "href": "/contact-us/"
+        },
+        {
+          "label": "Electropolished tubes",
+          "href": "/electropolished-tubes/"
+        },
+        {
+          "label": "Electropolished pipes",
+          "href": "/electropolished-pipes/"
+        }
       ]
     },
     {
@@ -73,6 +102,14 @@
     {
       "title": "MPCB: Navi Mumbai-I industry list",
       "url": "https://mpcb.gov.in/sites/default/files/industrial-statistics/sro-industry/Navi-Mumbai-I.pdf"
+    },
+    {
+      "title": "ACTREC: Overview (R&D wing of Tata Memorial Centre at Kharghar; CRI, CRC and CCE; research on tumours, animals and cells in culture)",
+      "url": "https://actrec.gov.in/overview"
+    },
+    {
+      "title": "ACTREC: History (Tata Memorial Centre, autonomous grant-in-aid institution of the Department of Atomic Energy)",
+      "url": "https://actrec.gov.in/history"
     }
   ]
 }

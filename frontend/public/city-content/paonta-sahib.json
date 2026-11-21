@@ -1,6 +1,6 @@
 {
   "slug": "paonta-sahib",
-  "updated": "2026-10-25",
+  "updated": "2026-11-21",
   "sections": [
     {
       "heading": "Paonta Sahib: Sirmaur's Pharmaceutical Estate on the Yamuna",
@@ -23,13 +23,37 @@
       ]
     },
     {
-      "heading": "Documentation a Sterile-Product Auditor Will Ask For",
+      "heading": "Documentation a Paonta Sahib Sterile-Product Auditor Will Ask For",
       "bullets": [
         "EN 10204 3.1 material certificate traced to the heat number on every length.",
         "PMI (positive material identification) record confirming 316L chemistry.",
         "Internal Ra report for each electropolished lot, stating the measurement method.",
         "From your fabricator: weld maps, orbital weld logs, borescope records and passivation records for the installed system.",
         "Dimensional records if your validation protocol requires incoming verification."
+      ],
+      "paragraphs": [
+        "Paonta Sahib knows the cost of weak records. The US FDA issued warning letters to Ranbaxy's Paonta Sahib plant in June 2006 and to its Batamandi (Unit II) site in September 2008, placed the Paonta Sahib and Dewas facilities on an import alert, and took Application Integrity Policy action against the Paonta Sahib facility in February 2009. In January 2012 the US Department of Justice filed a consent decree of permanent injunction against Ranbaxy, and Sun Pharma completed its merger with Ranbaxy in March 2015. We have not checked the sites' present status. The lesson for any plant here is that inspectors follow the paper trail down to component materials, so tube records must be complete and consistent from the first delivery:"
+      ]
+    },
+    {
+      "heading": "What a Paonta Sahib Injectable or Formulation Plant Should Send",
+      "paragraphs": [
+        "Sterile plants: the WFI, clean-steam and product-transfer line lists with design and sanitisation temperatures, OD and wall, length per size, slope and drain points, and the Ra limit in your user requirement specification. Say whether tube will be orbitally welded on site or prefabricated into spools, because that changes the lengths and end preparation we quote.",
+        "Oral-solid and chemical units: the service on each line and, for chemical service, the process chemistry, so we can say where 316L with an SF1 bore is enough. Send the list through our contact page and we return a quotation within 24 hours, with dispatch and transit to Paonta Sahib confirmed in writing."
+      ],
+      "links": [
+        {
+          "label": "Request a quotation for Paonta Sahib",
+          "href": "/contact-us/"
+        },
+        {
+          "label": "Electropolished tubes",
+          "href": "/electropolished-tubes/"
+        },
+        {
+          "label": "Electropolished pipes",
+          "href": "/electropolished-pipes/"
+        }
       ]
     },
     {
@@ -39,15 +63,41 @@
         "Related pages for other Himachal and nearby clusters:"
       ],
       "links": [
-        { "label": "Baddi", "href": "/market-area/baddi/" },
-        { "label": "Solan and Parwanoo", "href": "/market-area/solan/" },
-        { "label": "Dehradun", "href": "/market-area/dehradun/" },
-        { "label": "Haridwar", "href": "/market-area/haridwar/" }
+        {
+          "label": "Baddi",
+          "href": "/market-area/baddi/"
+        },
+        {
+          "label": "Solan and Parwanoo",
+          "href": "/market-area/solan/"
+        },
+        {
+          "label": "Dehradun",
+          "href": "/market-area/dehradun/"
+        },
+        {
+          "label": "Haridwar",
+          "href": "/market-area/haridwar/"
+        }
       ]
     }
   ],
   "sources": [
-    { "title": "MSME-DI: Brief Industries Profile of Sirmaur (H.P.)", "url": "https://dcmsme.gov.in/dips/Brief Industries Profile of  Sirmaur (H.P.)_28416.pdf" },
-    { "title": "Pharmaceutical Technology: Kilitch Drugs manufacturing plant, Paonta Sahib", "url": "https://www.pharmaceutical-technology.com/projects/kilitch-drugs-manufacturing-plant/" }
+    {
+      "title": "MSME-DI: Brief Industries Profile of Sirmaur (H.P.)",
+      "url": "https://dcmsme.gov.in/dips/Brief Industries Profile of  Sirmaur (H.P.)_28416.pdf"
+    },
+    {
+      "title": "Pharmaceutical Technology: Kilitch Drugs manufacturing plant, Paonta Sahib",
+      "url": "https://www.pharmaceutical-technology.com/projects/kilitch-drugs-manufacturing-plant/"
+    },
+    {
+      "title": "US FDA: Regulatory actions against Ranbaxy and Sun Pharma (Paonta Sahib warning letters 2006 and 2008, AIP action Feb 2009, consent decree Jan 2012, merger March 2015)",
+      "url": "https://www.fda.gov/drugs/enforcement-activities-fda/regulatory-actions-against-ranbaxy-and-sun-pharma"
+    },
+    {
+      "title": "US FDA: Questions and answers on drugs manufactured at the Dewas and Paonta Sahib facilities of Ranbaxy (import alert)",
+      "url": "https://www.fda.gov/drugs/enforcement-activities-fda/questions-and-answers-drugs-manufactured-dewas-and-paonta-sahib-facilities-ranbaxy-laboratories-ltd"
+    }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "slug": "panaji",
-  "updated": "2026-10-25",
+  "updated": "2026-11-21",
   "sections": [
     {
       "heading": "Goa's Pharmaceutical Industry, Seen from Panaji",
@@ -30,19 +30,63 @@
       ]
     },
     {
+      "heading": "CSIR-NIO at Dona Paula and Panaji's Laboratories",
+      "paragraphs": [
+        "A major laboratory user near Panaji is the CSIR National Institute of Oceanography at Dona Paula. Founded on 1 January 1966 as one of CSIR's constituent laboratories, NIO is headquartered in Goa with regional offices in Kochi, Mumbai and Visakhapatnam, and about 80 percent of its staff work on the Dona Paula campus. Its research runs on a large number of laboratories and on research vessels, the smallest being the 23 m coastal vessel CRV Sagar Sukti.",
+        "Chemistry, biology and geology laboratories on a campus like this need gas manifolds for instrument carrier and calibration gases, purified-water distribution and vacuum lines. Where gas purity or trace analysis matters, electropolished 316L tube from cylinder or generator to instrument is worth the extra cost; for general utilities, bright-annealed 316L to ASTM A269 is enough. In Goa's salt-laden air, 316L is also the minimum grade for any exposed gas run."
+      ]
+    },
+    {
+      "heading": "What a Corlim, Pilerne or Dona Paula Buyer Should Send",
+      "paragraphs": [
+        "Export formulation plants: the line list with the service and sanitisation method on each line, design temperature, OD and wall, length per size, joining method, and the surface-finish and certificate clauses of your user requirement specification, so the documents we send match what the overseas inspector will check. Food and seafood units: the product, its salt content, and the CIP chemistry and temperature.",
+        "Laboratories and institutes: the gas or water grade at each point of use, pressure, OD, and the tender or indent reference. Send it through our contact page and we return a quotation within 24 hours. Every order carries an EN 10204 3.1 certificate traced to heat number and PMI on every length; electropolished lots add our internal Ra report."
+      ],
+      "links": [
+        {
+          "label": "Request a quotation for Panaji",
+          "href": "/contact-us/"
+        },
+        {
+          "label": "Electropolished tubes",
+          "href": "/electropolished-tubes/"
+        },
+        {
+          "label": "Electropolished pipes",
+          "href": "/electropolished-pipes/"
+        }
+      ]
+    },
+    {
       "heading": "Delivery to Panaji, Corlim and Pilerne",
       "paragraphs": [
         "Goa is reached by road down the coast from Mumbai; dispatch and transit are confirmed in writing per quotation. Mormugao Port, about 30 km away, is the nearest sea gateway.",
         "Other Goa estates:"
       ],
       "links": [
-        { "label": "Ponda and Kundaim", "href": "/market-area/ponda/" },
-        { "label": "Verna", "href": "/market-area/verna/" }
+        {
+          "label": "Ponda and Kundaim",
+          "href": "/market-area/ponda/"
+        },
+        {
+          "label": "Verna",
+          "href": "/market-area/verna/"
+        }
       ]
     }
   ],
   "sources": [
-    { "title": "Herald Goa: Pharma better option for Goa, say experts", "url": "https://www.heraldgoa.in/goa/pharma-better-option-for-goa-say-experts/373339" },
-    { "title": "Diplomatist: Pharma manufacturing in Goa", "url": "https://diplomatist.com/pharma-manufacturing-in-goa/" }
+    {
+      "title": "Herald Goa: Pharma better option for Goa, say experts",
+      "url": "https://www.heraldgoa.in/goa/pharma-better-option-for-goa-say-experts/373339"
+    },
+    {
+      "title": "Diplomatist: Pharma manufacturing in Goa",
+      "url": "https://diplomatist.com/pharma-manufacturing-in-goa/"
+    },
+    {
+      "title": "Wikipedia: National Institute of Oceanography, India (founded 1 January 1966, Dona Paula campus with about 80% of staff, regional offices, laboratories, CRV Sagar Sukti)",
+      "url": "https://en.wikipedia.org/wiki/National_Institute_of_Oceanography,_India"
+    }
   ]
 }

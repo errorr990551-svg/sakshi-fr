@@ -20,7 +20,13 @@
       "heading": "What a Sanand Semiconductor Back-End Plant Buys, and What It Does Not",
       "paragraphs": [
         "Assembly, test and packaging plants are not wafer fabs, and we should be clear about where our tube fits. The ultra-high-purity gas distribution inside a cleanroom is normally specified to the owner's own standard and bought from specialist UHP suppliers; we do not claim that qualification. The surrounding systems are a different matter: deionised and ultrapure water make-up and distribution to the facility, process cooling water, clean compressed air and nitrogen to the building, chemical delivery and neutralisation lines, and the water and gas lines serving test floors and support buildings.",
-        "On those systems the case for an electropolished bore is particle shedding and biofilm. A mechanically polished tube keeps releasing fines and holds biofilm in its torn surface layer; electropolishing removes that layer, lowers the Ra and leaves a chromium-rich passive film that sheds less into water that is measured in parts per billion. For these lines we supply SF4 316L tube to ASME BPE surface designations and, for acid and chloride-bearing chemical lines, 904L electropolished. Our [ultra high purity EP tubes](/ultra-high-purity-ep-tubes/) page covers the handling, capping and bagging those lines need."
+        "On those systems the case for an electropolished bore is particle shedding and biofilm. A mechanically polished tube keeps releasing fines and holds biofilm in its torn surface layer; electropolishing removes that layer, lowers the Ra and leaves a chromium-rich passive film that sheds less into water that is measured in parts per billion. For these lines we supply SF4 316L tube to ASME BPE surface designations and, for acid and chloride-bearing chemical lines, 904L electropolished. Our ultra high purity EP tubes page covers the handling, capping and bagging those lines need."
+      ],
+      "links": [
+        {
+          "label": "Ultra high purity EP tubes",
+          "href": "/ultra-high-purity-ep-tubes/"
+        }
       ]
     },
     {
@@ -42,9 +48,18 @@
         "Validation, cleanliness or packaging requirements (capped, bagged, cleanroom-ready) and the plot address in the estate."
       ],
       "links": [
-        { "label": "Send a Sanand enquiry", "href": "/contact-us/" },
-        { "label": "Electropolished pipes", "href": "/electropolished-pipes/" },
-        { "label": "Electropolished tubes", "href": "/electropolished-tubes/" }
+        {
+          "label": "Send a Sanand enquiry",
+          "href": "/contact-us/"
+        },
+        {
+          "label": "Electropolished pipes",
+          "href": "/electropolished-pipes/"
+        },
+        {
+          "label": "Electropolished tubes",
+          "href": "/electropolished-tubes/"
+        }
       ]
     },
     {
@@ -54,19 +69,49 @@
         "Nearby markets we also supply:"
       ],
       "links": [
-        { "label": "Ahmedabad", "href": "/market-area/ahmedabad/" },
-        { "label": "Gandhinagar", "href": "/market-area/gandhinagar/" },
-        { "label": "Vadodara", "href": "/market-area/vadodara/" },
-        { "label": "Mehsana", "href": "/market-area/mehsana/" }
+        {
+          "label": "Ahmedabad",
+          "href": "/market-area/ahmedabad/"
+        },
+        {
+          "label": "Gandhinagar",
+          "href": "/market-area/gandhinagar/"
+        },
+        {
+          "label": "Vadodara",
+          "href": "/market-area/vadodara/"
+        },
+        {
+          "label": "Mehsana",
+          "href": "/market-area/mehsana/"
+        }
       ]
     }
   ],
   "sources": [
-    { "title": "India Briefing, 31 Mar 2026: Sanand semiconductor cluster (GIDC estate over 2,000 ha; Micron operations Feb 2026; Kaynes Semicon 31 Mar 2026; CG Power–Renesas pilot Aug 2025)", "url": "https://www.india-briefing.com/news/india-semiconductor-manufacturing-sanand-gujarat-2026-43814.html" },
-    { "title": "DeshGujarat, 22 Jun 2023: Micron announces US$825 million assembly and test facility in Sanand (US$2.75 billion combined, 500,000 sq ft cleanroom, ATMP scheme)", "url": "https://deshgujarat.com/2023/06/22/micron-technology-announces-825-million-investment-for-semiconductor-facility-in-gujarat" },
-    { "title": "The CSR Universe: Nestlé India's Sanand factory marks five years (commissioned 2021, 82 acres, products, 700 employees)", "url": "https://thecsruniverse.com/articles/nestl-india-s-sanand-factory-marks-five-years-of-sustainable-manufacturing" },
-    { "title": "DeshGujarat, 8 Dec 2023: Coca-Cola to invest Rs 3,000 crore in Sanand (plot SM-52, Sanand Industrial Estate-II, next to HCCB bottling plant)", "url": "https://deshgujarat.com/2023/12/08/coca-cola-to-invest-rs-3000-crore-in-sanand" },
-    { "title": "GIDC: Sanand Industrial Estate presentation, June 2022 (Ahmedabad 30 km; occupants and sectors)", "url": "https://gidc.gujarat.gov.in/pdf/June%202022%20GIDC%20Sanand%20Industrial%20Estate.pdf" },
-    { "title": "Wikipedia: Sanand (Ahmedabad district; Tata Nano project, 1,100 acres at Khoda and Bol)", "url": "https://en.wikipedia.org/wiki/Sanand" }
+    {
+      "title": "India Briefing, 31 Mar 2026: Sanand semiconductor cluster (GIDC estate over 2,000 ha; Micron operations Feb 2026; Kaynes Semicon 31 Mar 2026; CG Power–Renesas pilot Aug 2025)",
+      "url": "https://www.india-briefing.com/news/india-semiconductor-manufacturing-sanand-gujarat-2026-43814.html"
+    },
+    {
+      "title": "DeshGujarat, 22 Jun 2023: Micron announces US$825 million assembly and test facility in Sanand (US$2.75 billion combined, 500,000 sq ft cleanroom, ATMP scheme)",
+      "url": "https://deshgujarat.com/2023/06/22/micron-technology-announces-825-million-investment-for-semiconductor-facility-in-gujarat"
+    },
+    {
+      "title": "The CSR Universe: Nestlé India's Sanand factory marks five years (commissioned 2021, 82 acres, products, 700 employees)",
+      "url": "https://thecsruniverse.com/articles/nestl-india-s-sanand-factory-marks-five-years-of-sustainable-manufacturing"
+    },
+    {
+      "title": "DeshGujarat, 8 Dec 2023: Coca-Cola to invest Rs 3,000 crore in Sanand (plot SM-52, Sanand Industrial Estate-II, next to HCCB bottling plant)",
+      "url": "https://deshgujarat.com/2023/12/08/coca-cola-to-invest-rs-3000-crore-in-sanand"
+    },
+    {
+      "title": "GIDC: Sanand Industrial Estate presentation, June 2022 (Ahmedabad 30 km; occupants and sectors)",
+      "url": "https://gidc.gujarat.gov.in/pdf/June%202022%20GIDC%20Sanand%20Industrial%20Estate.pdf"
+    },
+    {
+      "title": "Wikipedia: Sanand (Ahmedabad district; Tata Nano project, 1,100 acres at Khoda and Bol)",
+      "url": "https://en.wikipedia.org/wiki/Sanand"
+    }
   ]
 }

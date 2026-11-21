@@ -5,7 +5,7 @@ import App from './App.jsx'
 import { loadPage } from './pages.js'
 import { initGlobalClickTracking } from './utils/analytics.js'
 
-// Initialize sitewide GA4 click tracking for tel, mailto, whatsapp & catalogue downloads
+// Initialize sitewide GA4 click tracking for tel, mailto & catalogue downloads
 initGlobalClickTracking();
 
 const container = document.getElementById('root')

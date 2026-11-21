@@ -1,19 +1,32 @@
 # llms.txt — https://steelmanufacturer.in/llms.txt
-# Sakshi Forge — Electropolished Pipe, SS Fittings & Flanges Manufacturer, Mumbai, India
+# Sakshi Forge — Electropolished Stainless Steel Pipes & Tubes Manufacturer, Mumbai, India
 
-> Sakshi Forge manufactures electropolished stainless steel pipes (ASTM A270/A269/A312, ASME BPE),
-> EP pipe fittings (3-A, BS 4825, ASME BPE), forged flanges to 60" (ASME B16.5/B16.47),
-> buttweld & forged fittings, SS pipes, round bars and fasteners. EN 10204 3.1/3.2 MTC,
-> PMI & NDT tested. Exporting from Mumbai to GCC & Southeast Asia. Quote within 24 hours.
+> Sakshi Forge manufactures electropolished (EP) stainless steel pipes and tubes in grades
+> 304, 304L, 316 and 316L (904L supplied electropolished), to ASTM A270, A269, A249 and A312,
+> with ASME BPE surface finishes SF1 and SF4. Every order ships with an EN 10204 3.1 certificate
+> traced to the heat number, PMI on every length and an internal Ra report for each EP lot.
+> ISO 9001:2015; NABL-accredited laboratory testing. Quotation within 24 hours; dispatch and
+> transit are confirmed in writing with each quotation.
 
-## Products
-- [Electropolished Pipes](https://steelmanufacturer.in/electropolished-pipes/): SS 304L/316L/904L/Duplex, 1/8"-24", Ra <= 0.4 um
-- [EP Pipe Fittings](https://steelmanufacturer.in/electropolished-pipe-fittings/): 3-A, BS 4825, ASME BPE
-- [Flanges](https://steelmanufacturer.in/flanges/): 10 types, 1/2"-60", Class 150-2500
-- [Buttweld Fittings](https://steelmanufacturer.in/buttweld-fittings/): ASME B16.9, 1/2"-48"
-- [SS Pipes & Tubes](https://steelmanufacturer.in/stainless-steel-pipes/): A312 seamless/welded, duplex
+## Electropolished pipes & tubes
+- [Electropolished Pipes](https://steelmanufacturer.in/electropolished-pipes/): main EP pipe page
+- [Electropolished Tubes](https://steelmanufacturer.in/electropolished-tubes/)
+- [SS 316L Electropolished Pipes](https://steelmanufacturer.in/ss-316l-electropolished-pipes/)
+- [SS 304L Electropolished Pipes](https://steelmanufacturer.in/ss-304l-electropolished-pipes/)
+- [ASTM A270 EP Tubes](https://steelmanufacturer.in/astm-a270-electropolished-tubes/)
+- [ASTM A269 EP Tubing](https://steelmanufacturer.in/astm-a269-electropolished-tubing/)
+- [ASTM A312 EP Pipes](https://steelmanufacturer.in/astm-a312-electropolished-pipes/)
+- [ASME BPE EP Tubes](https://steelmanufacturer.in/asme-bpe-electropolished-tubes/)
+- [Ultra High Purity EP Tubes](https://steelmanufacturer.in/ultra-high-purity-ep-tubes/)
+- [Industries served](https://steelmanufacturer.in/industries/): pharma, dairy, food, beverage, biotech and more
+- [EP pipe suppliers by Indian city](https://steelmanufacturer.in/market-area/)
+
+## Other products
+- [EP Pipe Fittings](https://steelmanufacturer.in/electropolished-pipe-fittings/)
+- [Flanges](https://steelmanufacturer.in/flanges/), [Buttweld Fittings](https://steelmanufacturer.in/buttweld-fittings/), [SS Pipes](https://steelmanufacturer.in/stainless-steel-pipes/)
 - [Weight Calculator](https://steelmanufacturer.in/weight-calculator/): free tool
 
 ## Company
-- [Quality Assurance](https://steelmanufacturer.in/quality-assurance/): MTC, PMI, NDT, third-party inspection
-- [Contact](https://steelmanufacturer.in/contact-us/): +91 82913 66340, info@steelmanufacturer.in, sakshiforge1737@gmail.com, Mumbai 400004
+- [Quality Assurance](https://steelmanufacturer.in/quality-assurance/)
+- [Contact / enquiry form](https://steelmanufacturer.in/contact-us/): +91 82913 66340, info@steelmanufacturer.in
+- Address: Shop No. 05, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai 400004, India

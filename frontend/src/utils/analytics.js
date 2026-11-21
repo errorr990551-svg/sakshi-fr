@@ -70,18 +70,6 @@ export function trackPhoneClick(phoneNumber, placement = 'unknown') {
 }
 
 /**
- * Key Event: Direct WhatsApp Chat Click
- */
-export function trackWhatsAppClick(placement = 'unknown') {
-  trackEvent('whatsapp_click', {
-    event_category: 'Contact',
-    event_label: 'WhatsApp Chat',
-    contact_method: 'whatsapp',
-    placement: placement
-  });
-}
-
-/**
  * Key Event: Direct Email Click
  */
 export function trackEmailClick(emailAddress, placement = 'unknown') {
@@ -107,7 +95,7 @@ export function trackCatalogueDownload(fileName = 'Sakshi_Forge_Master_Product_C
 }
 
 /**
- * Global auto-binder for tel:, mailto:, and whatsapp clicks sitewide
+ * Global auto-binder for tel:, mailto: and PDF download clicks sitewide
  */
 export function initGlobalClickTracking() {
   if (typeof window === 'undefined') return;
@@ -128,11 +116,6 @@ export function initGlobalClickTracking() {
     else if (href.startsWith('mailto:')) {
       const email = href.replace('mailto:', '');
       trackEmailClick(email, target.dataset.placement || target.className || 'link');
-    }
-
-    // Track WhatsApp clicks
-    else if (href.includes('api.whatsapp.com') || href.includes('wa.me')) {
-      trackWhatsAppClick(target.dataset.placement || target.className || 'button');
     }
 
     // Track catalogue PDF download clicks

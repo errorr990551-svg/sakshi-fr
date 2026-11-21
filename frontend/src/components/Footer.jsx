@@ -137,7 +137,7 @@ export default function Footer({ onNavigate, onEnquireClick, hasUnlockedContact 
 
         <div className="footer-signature-wrap" style={{ textAlign: 'center', marginTop: '1.25rem', paddingTop: '1rem', borderTop: '1px solid rgba(255, 255, 255, 0.06)' }}>
           <p className="site-credit" style={{ fontSize: '0.82rem', color: '#94a3b8', margin: 0 }}>
-            Designed and Promoted by <a href="https://errorr.in/" rel="nofollow" target="_blank" style={{ color: 'var(--primary-yellow)', fontWeight: '700', textDecoration: 'none' }}>errorr.in</a> • Best Digital Marketing Company in India
+            Designed and Promoted by <a href="https://errorr.in/" rel="nofollow noopener noreferrer" target="_blank" style={{ color: 'var(--primary-yellow)', fontWeight: '700', textDecoration: 'none' }}>errorr.in</a> • Best Digital Marketing Company in India
           </p>
         </div>
       </div>

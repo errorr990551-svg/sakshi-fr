@@ -1393,7 +1393,7 @@ export default function HomePage({ onEnquireClick }) {
           color: '#94a3b8' 
         }}
       >
-        Designed and Promoted by <a href="https://errorr.in/" rel="nofollow" target="_blank" style={{ color: 'var(--primary-yellow)', fontWeight: '700', textDecoration: 'none' }}>errorr.in</a> • Best Digital Marketing Company in India
+        Designed and Promoted by <a href="https://errorr.in/" rel="nofollow noopener noreferrer" target="_blank" style={{ color: 'var(--primary-yellow)', fontWeight: '700', textDecoration: 'none' }}>errorr.in</a> • Best Digital Marketing Company in India
       </div>
     </div>
   );

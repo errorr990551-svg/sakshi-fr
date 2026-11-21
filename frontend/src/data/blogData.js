@@ -817,14 +817,14 @@ export const blogPosts = [
   {
     id: "ra-value-ep-pipes-surface-finish",
     slug: "ra-value-ep-pipes-surface-finish",
-    seoTitle: "Ra Value Explained: EP Pipe Surface Finish for Pharma & Food Buyers",
-    title: "Ra Value Explained: Surface Finish Specs Indian Pharma and Food Buyers Ask For",
+    seoTitle: "ASME BPE Surface Finish Chart & Ra Values for EP Pipes",
+    title: "Ra Value and the ASME BPE Surface Finish Chart: What Indian Pharma and Food Buyers Specify",
     category: "Surface Finish & EP",
     date: "September 29, 2026",
     readTime: "7 min read",
     author: "Sakshi Metrology & Surface Engineering Lab",
     authorRole: "Surface Metrology Division",
-    desc: "What is Ra value on EP pipes? Learn µm vs µin, common Ra limits (0.38, 0.5, 0.8 µm), how Ra is measured and what to specify for pharma and food.",
+    desc: "ASME BPE surface finish chart: SF1 to SF6 Ra limits in µm and µin, which finishes are electropolished, how Ra is measured and what to specify for EP pipe.",
     image: "",
     tags: [
       "Ra Value",
@@ -913,8 +913,25 @@ export const blogPosts = [
 <p>That is why high-purity pipes often start with a controlled mechanical polish and then go through EP. The combination reaches lower Ra, and a more even surface, than either step alone.</p>
 <p>Remember that Ra is a number, not the whole story. Two pipes with the same Ra can behave differently if one has directional scratches or pits. EP helps because it removes the sharp features that Ra alone doesn't capture.</p>
 
-<h2>6. How Standards Treat Surface Finish</h2>
-<p><strong>ASME BPE:</strong> The bioprocessing equipment standard defines surface finish categories with maximum Ra limits (SF1 to SF6) and indicates whether electropolishing is required for each. Higher-purity categories call for lower Ra and EP.</p>
+<h2>6. ASME BPE Surface Finish Chart and Other Standards</h2>
+<p><strong>ASME BPE:</strong> The bioprocessing equipment standard defines surface finish designations with maximum Ra limits (SF1 to SF6) and states whether electropolishing is required for each. SF1 to SF3 are mechanically polished only; SF4 to SF6 are mechanically polished and then electropolished.</p>
+<div class="table-responsive">
+  <table class="tech-table">
+    <caption>ASME BPE surface finish chart for product-contact surfaces</caption>
+    <thead>
+      <tr><th>Designation</th><th>Max Ra (µm)</th><th>Max Ra (µin)</th><th>Surface treatment</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>SF1</td><td>0.51</td><td>20</td><td>Mechanically polished</td></tr>
+      <tr><td>SF2</td><td>0.64</td><td>25</td><td>Mechanically polished</td></tr>
+      <tr><td>SF3</td><td>0.76</td><td>30</td><td>Mechanically polished</td></tr>
+      <tr><td>SF4</td><td>0.38</td><td>15</td><td>Mechanically polished and electropolished</td></tr>
+      <tr><td>SF5</td><td>0.51</td><td>20</td><td>Mechanically polished and electropolished</td></tr>
+      <tr><td>SF6</td><td>0.64</td><td>25</td><td>Mechanically polished and electropolished</td></tr>
+    </tbody>
+  </table>
+</div>
+<p>SF4 is the designation most often asked for on pharma and biotech product-contact tube. Sakshi Forge supplies SF1 and SF4 finishes, with an internal Ra report for each EP lot. To convert a reading between µm and µin and see which designation it falls into, use the <a href="/resources/ra-surface-finish-converter/">Ra surface finish converter</a>.</p>
 <p><strong>Food and dairy standards:</strong> Standards such as 3-A Sanitary Standards and EHEDG guidance focus on cleanability, and commonly reference product-contact Ra limits around 0.8 µm for many applications.</p>
 <p>Standards get revised, and your project may apply a particular edition. Check the current text, and quote the exact category or limit on your purchase order rather than writing "as per BPE".</p>
 
@@ -931,6 +948,10 @@ export const blogPosts = [
 <p>Avoid vague terms like "mirror finish", "bright finish" or "pharma finish" without numbers.</p>
 `,
     faqs: [
+      {
+        q: "What is SF4 surface finish in ASME BPE?",
+        a: "SF4 is a mechanically polished and electropolished surface with a maximum Ra of 0.38 µm (15 µin). It is the designation most often specified for pharma and biotech product-contact tube. Quote the ASME BPE edition your project applies on the purchase order."
+      },
       {
         q: "What Ra value is needed for pharma pipes?",
         a: "It depends on your design standard. Many pharma product-contact lines specify around 0.38-0.5 µm (15-20 µin) on the inside, but follow your project specification."

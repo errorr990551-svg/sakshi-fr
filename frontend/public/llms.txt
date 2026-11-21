@@ -46,7 +46,7 @@
 ## Guides (EP pipe specification, finish, standards)
 - [How to Specify Electropolished Pipe and Tube: Standard, Grade, Size, Finish, Testing and Documents](https://steelmanufacturer.in/blog/how-to-specify-electropolished-pipe/)
 - [ASTM A270 vs A269 vs A249 vs A312: Which Stainless Steel Tube or Pipe Standard to Specify](https://steelmanufacturer.in/blog/astm-a270-vs-a269-vs-a249-vs-a312/)
-- [Ra Value Explained: Surface Finish Specs Indian Pharma and Food Buyers Ask For](https://steelmanufacturer.in/blog/ra-value-ep-pipes-surface-finish/)
+- [Ra Value and the ASME BPE Surface Finish Chart (SF1 to SF6)](https://steelmanufacturer.in/blog/ra-value-ep-pipes-surface-finish/)
 - [Electropolished vs Mechanically Polished Pipes: What Indian Buyers Should Know Before Ordering](https://steelmanufacturer.in/blog/electropolished-vs-mechanically-polished-pipes/)
 - [304 vs 316L EP Pipes: Which Grade Do Indian Industries Buy and Why?](https://steelmanufacturer.in/blog/304-vs-316l-ep-pipes-india/)
 - [The Ultimate Guide to Electropolishing Stainless Steel Pipes & Tubes](https://steelmanufacturer.in/blog/electropolishing-stainless-steel-pipes-guide/)

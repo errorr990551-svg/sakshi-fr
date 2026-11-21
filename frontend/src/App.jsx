@@ -16,6 +16,7 @@ function App({ path, route, Page }) {
   const [isEnquiryOpen, setIsEnquiryOpen] = useState(false);
   const [preselectedProduct, setPreselectedProduct] = useState('');
   const [enquiryCustomTitle, setEnquiryCustomTitle] = useState('');
+  const [enquiryPrefill, setEnquiryPrefill] = useState(null);
   // Start locked so the first client render matches the prerendered HTML (no hydration
   // mismatch), then read the visitor's saved unlock after hydration.
   const [hasUnlockedContact, setHasUnlockedContact] = useState(false);
@@ -31,12 +32,15 @@ function App({ path, route, Page }) {
     if (hasUnlockedContact) return;
     setEnquiryCustomTitle('Fill details to get email & phone number');
     setPreselectedProduct('');
+    setEnquiryPrefill(null);
     setIsEnquiryOpen(true);
   };
 
-  const handleOpenEnquiry = (productName = '') => {
+  // prefill: what the visitor already typed in an on-page form ({ name, phone, message })
+  const handleOpenEnquiry = (productName = '', prefill = null) => {
     setEnquiryCustomTitle('');
-    setPreselectedProduct(productName || '');
+    setPreselectedProduct(typeof productName === 'string' ? productName : '');
+    setEnquiryPrefill(prefill && typeof prefill === 'object' && !prefill.nativeEvent ? prefill : null);
     setIsEnquiryOpen(true);
   };
 
@@ -386,6 +390,7 @@ function App({ path, route, Page }) {
         onClose={handleCloseEnquiry} 
         preselectedProduct={preselectedProduct}
         customTitle={enquiryCustomTitle}
+        prefill={enquiryPrefill}
         onUnlockContact={() => setHasUnlockedContact(true)}
       />
     </>

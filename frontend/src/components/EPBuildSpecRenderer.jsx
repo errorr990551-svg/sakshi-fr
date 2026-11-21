@@ -110,7 +110,17 @@ export default function EPBuildSpecRenderer({ pageData, onEnquireClick, hasUnloc
                 <h3 className="text-xl font-bold text-white mb-2">Get Price & Spec Sheet</h3>
                 <p className="text-xs text-slate-400 mb-6">Receive a detailed quotation with MTC sample within 24 hours; delivery time is confirmed with it.</p>
                 
-                <form onSubmit={(e) => { e.preventDefault(); onEnquireClick(h1); }} className="space-y-4">
+                <form onSubmit={(e) => {
+                  e.preventDefault();
+                  // Carry what was typed into the enquiry form, so the visitor only adds an email and sends
+                  const f = e.currentTarget.elements;
+                  const qty = f['ep-spec-field-4'].value.trim();
+                  onEnquireClick(h1, {
+                    name: f['ep-spec-field-1'].value.trim(),
+                    phone: f['ep-spec-field-2'].value.trim(),
+                    message: `Enquiry for product: ${h1}\nGrade: ${f['ep-spec-field-3'].value}${qty ? `\nQuantity / OD: ${qty}` : ''}`
+                  });
+                }} className="space-y-4">
                   <div>
                     <label htmlFor="ep-spec-field-1" className="block text-xs text-slate-400 mb-1">Your Name / Company *</label>
                     <input id="ep-spec-field-1" type="text" required placeholder="e.g. Reliance / Sun Pharma" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-yellow-500" />

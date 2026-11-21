@@ -5,7 +5,7 @@ import { ADDRESS_LINE } from '../data/business.js';
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://sakshi-fr.errorr990551.workers.dev';
 
-export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '', customTitle = '', onUnlockContact = () => {} }) {
+export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '', customTitle = '', prefill = null, onUnlockContact = () => {} }) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -24,14 +24,16 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProduct = '',
     if (isOpen) {
       setFormData(prev => ({
         ...prev,
-        message: preselectedProduct ? `Enquiry for product: ${preselectedProduct}` : prev.message
+        name: prefill?.name || prev.name,
+        phone: prefill?.phone || prev.phone,
+        message: prefill?.message || (preselectedProduct ? `Enquiry for product: ${preselectedProduct}` : prev.message)
       }));
       setIsSubmitted(false);
       setIsSubmitting(false);
       setSubmitError('');
       setErrors({});
     }
-  }, [isOpen, preselectedProduct]);
+  }, [isOpen, preselectedProduct, prefill]);
 
   if (!isOpen) return null;
 

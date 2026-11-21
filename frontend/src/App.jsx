@@ -52,16 +52,19 @@ function App({ path, route, Page }) {
   // Trigger automatic Enquiry Popup for new visitors on any page
   useEffect(() => {
     if (typeof window === 'undefined') return;
-    let hasSeenPopup;
+    let start;
     // Storage blocked (e.g. all cookies blocked): skip the pop-up instead of crashing the page
-    try { hasSeenPopup = sessionStorage.getItem('hasSeenEnquiryPopup'); } catch { return; }
-    if (!hasSeenPopup) {
-      const timer = setTimeout(() => {
-        setIsEnquiryOpen(true);
-        try { sessionStorage.setItem('hasSeenEnquiryPopup', 'true'); } catch { /* storage blocked */ }
-      }, 25000);
-      return () => clearTimeout(timer);
-    }
+    try {
+      if (sessionStorage.getItem('hasSeenEnquiryPopup')) return;
+      // Every link loads a new page, so count the 25 s from the first page of the visit, not this one
+      start = Number(sessionStorage.getItem('enquiryPopupStart')) || Date.now();
+      sessionStorage.setItem('enquiryPopupStart', String(start));
+    } catch { return; }
+    const timer = setTimeout(() => {
+      setIsEnquiryOpen(true);
+      try { sessionStorage.setItem('hasSeenEnquiryPopup', 'true'); } catch { /* storage blocked */ }
+    }, Math.max(25000 - (Date.now() - start), 3000));
+    return () => clearTimeout(timer);
   }, []);
 
   // Every URL is a prerendered page, so links load the next page. A history entry with a

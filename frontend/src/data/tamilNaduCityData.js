@@ -18,7 +18,7 @@ export const tamilNaduCityData = {
         subtitle: "Pharma and Biotech Lines in Chennai",
         desc: "Ra ≤0.4 µm inside and out, for WFI, purified water and sterile process lines.",
         actions: [
-          { text: "Download Chennai Brochure", type: "download", link: "/catalogue" },
+          { text: "Download EP Catalogue (PDF)", type: "download", link: "/catalogue" },
           { text: "Get Quote for Chennai", type: "quote" }
         ]
       },

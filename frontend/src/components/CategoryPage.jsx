@@ -318,7 +318,7 @@ export default function CategoryPage({ category, products: filteredProducts = []
                   Complete your piping assembly with matching <a href="/flanges/" onClick={(e) => handleLinkClick(e, '/flanges/')} style={{ color: 'var(--primary-yellow)' }}>Forged Flanges</a> and <a href="/stainless-steel-pipe/" onClick={(e) => handleLinkClick(e, '/stainless-steel-pipe/')} style={{ color: 'var(--primary-yellow)' }}>Stainless Steel Pipes</a>.
                 </p>
                 <a href="/catalogue/" onClick={(e) => handleLinkClick(e, '/catalogue/')} style={{ color: 'var(--primary-yellow)', fontSize: '0.88rem', fontWeight: '700', textDecoration: 'underline' }}>
-                  Download Complete Product Catalogue →
+                  Download the EP pipe and tube catalogue (PDF) →
                 </a>
               </div>
             </div>

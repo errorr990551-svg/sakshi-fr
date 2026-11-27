@@ -521,7 +521,7 @@ export const STANDARD_GUIDES = {
   },
 
   '/resources/ep-pipe-size-chart/': {
-    updated: '2026-11-15',
+    updated: '2026-11-27',
     sections: [
       {
         h2: "Pipe or Tube? Read the Size the Right Way First",
@@ -582,7 +582,8 @@ export const STANDARD_GUIDES = {
       {
         h2: "Metric Hygienic Tube: DIN 11850 Series 2",
         paragraphs: [
-          "Equipment designed in Europe often uses metric hygienic tube to DIN 11850 rather than inch OD tube. The two series do not interchange: a 25.4 mm clamp ferrule does not fit a 29 mm tube. Series 2 is the most common in dairy and beverage equipment."
+          "Equipment designed in Europe often uses metric hygienic tube to DIN 11850 rather than inch OD tube. The two series do not interchange: a 25.4 mm clamp ferrule does not fit a 29 mm tube. Series 2 is the most common in dairy and beverage equipment.",
+          "This table is here so metric tube can be recognised on a drawing or on imported equipment. It is not a list of sizes we supply."
         ],
         table: {
           caption: "DIN 11850 series 2 hygienic tube: OD x wall (mm), ID and mass (304L)",
@@ -624,7 +625,7 @@ export const STANDARD_GUIDES = {
   },
 
   '/resources/download-ep-pipe-catalogue/': {
-    updated: '2026-11-15',
+    updated: '2026-11-27',
     sections: [
       {
         h2: "Electropolished Pipe and Tube Range at a Glance",
@@ -643,6 +644,29 @@ export const STANDARD_GUIDES = {
             ["Electropolished fittings", "ASME BPE and as ordered", "304L, 316L", "To match the tube", "[EP fittings](/electropolished-pipe-fittings/)"]
           ]
         }
+      },
+      {
+        h2: "Download the Sheet as a PDF",
+        paragraphs: [
+          "The [PDF version of this sheet](/Sakshi_Forge_Master_Product_Catalogue.pdf) runs to three A4 pages and is dated November 2026. Page one carries the range table above, the two finish designations and the document list. Page two has the ASME BPE tube and ASME B36.19M pipe tables from the [size chart](/resources/ep-pipe-size-chart/). Page three has the enquiry checklist with our address, phone and email. It is produced from the text of this page and the size chart, so the printed copy and the web pages state the same specifications."
+        ],
+        cta: { label: "Download the PDF", href: "/Sakshi_Forge_Master_Product_Catalogue.pdf" }
+      },
+      {
+        h2: "Using the Sheet in a Vendor File or Tender",
+        paragraphs: [
+          "Buyers often keep supplier literature on file when they register a new vendor or compare bids. The sheet is written for that file: it names the standard, grade and finish of each product line and the documents each order carries, so a reviewer can hold it against the project specification line by line. It is not a quotation and carries no prices; price, dispatch and transit are confirmed in writing in the quotation for your line list."
+        ]
+      },
+      {
+        h2: "Points a Reviewer Checks Against the Project Specification",
+        bullets: [
+          "Tube or pipe. A270, A269 and A249 lines are tube, named by actual OD and wall; A312 lines are pipe, named by NPS and schedule. If a piping class says 2 in without naming the standard, settle which is meant before comparing bids: the two ODs differ by 9.53 mm.",
+          "Finish wording. Tube to ASME BPE is ordered by designation, SF1 or SF4; pipe to A312 is ordered by a maximum Ra on the bore. If a specification asks for SF4 on A312 pipe, confirm that it means the SF4 limit of 0.38 µm Ra and write that number into the order.",
+          "Certificate type. The sheet lists EN 10204 3.1. A 3.2 certificate must also be validated by the purchaser's inspector or an inspector designated by official regulations, so name it in the enquiry if the specification calls for it.",
+          "Outside finish. It is a separate item from the bore. Specify it wherever tube will be on view, for example on a skid or in a clean room.",
+          "Supplementary tests. An intergranular corrosion test to ASTM A262, for example, is not part of the standard documents; list each extra test so the quotation can confirm it."
+        ]
       },
       {
         h2: "Finishes We Quote",
@@ -690,7 +714,7 @@ export const STANDARD_GUIDES = {
   },
 
   '/resources/': {
-    updated: '2026-11-15',
+    updated: '2026-11-27',
     sections: [
       {
         h2: "Tools for Each Step From Specification to Purchase Order",
@@ -719,6 +743,33 @@ export const STANDARD_GUIDES = {
         ]
       },
       {
+        h2: "Glossary of Electropolished Pipe and Tube Terms",
+        paragraphs: [
+          "Short definitions of the terms used across these resources, each with the page that covers it in depth."
+        ],
+        bullets: [
+          "Electropolishing: the pipe is made the anode in an acid electrolyte, and a controlled current dissolves a thin surface layer, peaks first, leaving a smoother, chromium-rich passive surface. See the [electropolishing guide](/blog/electropolishing-stainless-steel-pipes-guide/).",
+          "Mechanical polishing: abrasive belts or flap wheels of finer and finer grit cut the bore down to a lower Ra, leaving fine directional scratches. SF4 tube is mechanically polished first and electropolished after. Compared in [EP vs mechanically polished pipes](/blog/electropolished-vs-mechanically-polished-pipes/).",
+          "Ra: the average distance of the surface profile from its mean line, measured with a stylus profilometer; 1 µm equals 39.37 µin. Explained in the [Ra values guide](/blog/ra-value-ep-pipes-surface-finish/).",
+          "SF1 and SF4: ASME BPE designations for product-contact surfaces. SF1 is mechanically polished to 0.51 µm Ra maximum; SF4 is mechanically polished and electropolished to 0.38 µm. See [ASME BPE tubes](/asme-bpe-electropolished-tubes/).",
+          "Passivation: a nitric or citric acid treatment, covered by ASTM A967, that removes free iron so the chromium oxide film can form again. When it is worth doing after electropolishing: [passivation after electropolishing](/blog/passivation-after-electropolishing/).",
+          "Tube size and pipe size: tube is named by its real outside diameter, so 2 in tube measures 50.80 mm across; pipe is named by nominal pipe size (NPS), so 2 in pipe measures 60.33 mm. Both are on the [size chart](/resources/ep-pipe-size-chart/).",
+          "Schedule: the wall series of a pipe size. Stainless schedules under ASME B36.19M carry an S (5S, 10S, 40S, 80S); the OD stays the same and the wall grows with the schedule. See the [pipe schedule chart](/pipe-schedule-chart/).",
+          "ASTM A270: welded and seamless austenitic tubing for sanitary service such as dairy and food, with supplementary requirement S2 for pharmaceutical quality. See [A270 tubes](/astm-a270-electropolished-tubes/).",
+          "ASTM A269: seamless and welded austenitic tubing for general corrosion-resisting and low- or high-temperature service, common on instrument lines. See [A269 tubing](/astm-a269-electropolished-tubing/).",
+          "ASTM A249: welded austenitic tubes for boilers, superheaters, heat exchangers and condensers. See [welded EP pipes](/electropolished-welded-erw-pipes/).",
+          "ASTM A312: seamless and welded austenitic stainless pipe for high-temperature and general corrosive service, named by NPS and schedule. See [A312 pipes](/astm-a312-electropolished-pipes/).",
+          "Heat number: the identity of the melt the steel came from. Chemistry is reported per heat, so the heat number ties each length to its analysis.",
+          "EN 10204 3.1: an inspection certificate issued by the manufacturer and validated by an inspection representative independent of production, with test results for the products actually supplied. See the [3.1 certificate guide](/en-10204-31-mtc/).",
+          "PMI (positive material identification): a check, often with a handheld XRF analyser, that each piece is the alloy ordered. XRF reads molybdenum, which separates 316L from 304L, but not carbon, so the L is confirmed from the heat chemistry. See [testing and inspection](/testing-inspection/).",
+          "Orbital welding: automatic TIG welding in which the torch travels around a clamped tube, with inert gas outside and a purge inside, for a repeatable, smooth bead. See [orbital welding of EP tube](/blog/orbital-welding-ep-tube/).",
+          "Dead leg: a branch where liquid stands while the main line flows, out of reach of full cleaning flow. For new designs ASME BPE recommends no more than about two branch diameters. See [WFI loop piping design](/blog/wfi-loop-piping-design/).",
+          "CIP (clean in place): cleaning a plant by circulating rinse water and detergent solutions through the installed lines without taking them apart. A dairy example is on the [dairy EP pipes page](/industries/dairy-electropolished-pipes/).",
+          "UHP (ultra-high purity): tubing for semiconductor and specialty gas lines, specified with tighter limits on roughness, surface defects and cleanliness than pharmaceutical tube. See [ultra-high purity EP tubes](/ultra-high-purity-ep-tubes/).",
+          "L grades: 304L and 316L have a lower carbon limit than 304 and 316, which limits chromium carbide formation in the heat-affected zone, so welded lines keep their corrosion resistance. Compared in [304 vs 316L EP pipes](/blog/304-vs-316l-ep-pipes-india/)."
+        ]
+      },
+      {
         h2: "When You Are Ready to Order",
         paragraphs: [
           "Send your sizes, grade, standard and finish through the contact page. We reply with a quotation within 24 hours of a complete enquiry; each order comes with an EN 10204 3.1 certificate traced to heat number, PMI on every length and an Ra report for each electropolished lot."
@@ -728,7 +779,7 @@ export const STANDARD_GUIDES = {
     ],
     faqs: [
       { q: "Are these tools free?", a: "Yes. The size chart, Ra converter and weight calculator can be used without registering." },
-      { q: "Where do I find the OD of a pipe or tube size?", a: "On the EP pipe size chart, which lists ASME B36.19M pipe schedules, ASME BPE tube sizes and DIN 11850 series 2 tube with ID and weight per metre." }
+      { q: "Where do I find the OD of a pipe or tube size?", a: "On the EP pipe size chart, which lists ASME B36.19M pipe schedules and ASME BPE tube sizes with ID and weight per metre. A DIN 11850 table on the same page helps tell metric tube from inch tube." }
     ]
   },
 

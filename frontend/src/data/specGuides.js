@@ -943,7 +943,7 @@ export const SPEC_GUIDES = {
   },
 
   '/industries/dairy-electropolished-pipes/': {
-    updated: '2026-11-03',
+    updated: '2026-11-27',
     sections: [
       {
         h2: 'Where Electropolished Pipe Pays in a Dairy, and Where It Does Not',
@@ -981,6 +981,30 @@ export const SPEC_GUIDES = {
         ]
       },
       {
+        h2: 'Milk Deposits, CIP and What They Ask of the Bore',
+        paragraphs: [
+          'Milk leaves two kinds of soil. Once it is heated above 60 °C, fouling starts to form on hot surfaces: calcium and magnesium phosphates, protein and fat, which change from whitish to brownish on runs of more than eight hours. On cold surfaces such as pipelines, pumps and tanks, a film of milk stays on the wall and becomes harder to remove once it dries, so cleaning should start soon after production stops.',
+          'Tetra Pak\'s Dairy Processing Handbook, listed under References, sets out the usual answer. Heated surfaces get an alkaline and an acid wash, in either order, with water rinses between them; cold surfaces normally need only the alkaline step, with acid used occasionally. Sodium hydroxide and nitric acid are the common chemicals. The handbook\'s example programmes show what the bore of a dairy line sees every day:'
+        ],
+        table: {
+          caption: 'Example dairy CIP programmes, from the Dairy Processing Handbook',
+          head: ['Step', 'Heated surfaces', 'Cold surfaces (pipelines, pumps, tanks)'],
+          rows: [
+            ['Pre-rinse', 'Warm water, about 10 min', 'About 3 min'],
+            ['Alkaline wash', '0.5 to 2%, about 30 min at 75 °C', '0.5 to 1.5%, about 10 min at 75 °C'],
+            ['Intermediate rinse', 'About 5 min', 'About 3 min'],
+            ['Acid wash', '0.5 to 1.5%, about 20 min at 70 °C', 'Not in the example; used occasionally'],
+            ['Last steps', 'Post-rinse, then cooling', 'Hot water at 90 to 95 °C for 5 min, then about 10 min cooling']
+          ]
+        },
+        bullets: [
+          'A finish inside the hygienic limit. A 3-A Sanitary Standards newsletter article notes that the maximum roughness for product-contact surfaces is often set at 0.8 µm (32 µin) Ra, a value accepted across 3-A, USDA and EHEDG practice. Its author goes further and suggests 20 µin or smoother, citing a study by Kukhtyn and colleagues, while concluding that 32 µin may be adequate for many applications. SF1 is held to that 20 µin (0.51 µm), and SF4 to 15 µin (0.38 µm).',
+          'Fewer crevices. The same article cites studies that found less bacterial build-up on surfaces with smaller crevices. Ra is an average over the measured length, so one pit or deep scratch barely changes it: a low Ra figure alone does not prove a defect-free bore.',
+          'Flow the bore can carry. The handbook gives 1.5 to 3.0 m/s in pipes during CIP, which makes the flow very turbulent. From the ID column of the [EP pipe size chart](/resources/ep-pipe-size-chart/), 1.5 m/s takes about 5.1 m³/h in 1-1/2 in ASME BPE tube (34.80 mm bore) and about 9.6 m³/h in 2 in tube (47.50 mm bore).',
+          'Nowhere for rinse water to stand. The handbook warns that pockets or traps which cannot drain become places where bacteria multiply quickly, and that there must be no dead ends the detergent cannot reach or flow through. That is the reason behind the slope and branch rules above.'
+        ]
+      },
+      {
         h2: 'Ordering Electropolished Pipe for a Dairy Project',
         bullets: [
           'The product each line carries (milk, curd, concentrate, brine, ice-cream mix or CIP), so we can advise grade and finish line by line.',
@@ -996,7 +1020,13 @@ export const SPEC_GUIDES = {
       { q: 'Does a dairy need electropolished pipe on every line?', a: 'No. Plain milk lines usually run well on mechanically polished 304L. Electropolished pipe is worth it on cultured-product, concentrate and powder-feed, ice-cream mix and CIP return lines, where product sticks or carries over between batches.' },
       { q: 'Should dairy pipe be 304L or 316L?', a: '304L for plain milk. 316L for cheese brine, salted butter and other salted products, for hot CIP supply and where chlorinated water stands in the line.' },
       { q: 'Which tube series do Indian dairies use?', a: 'Many use SMS / ISO 2037 tube with SMS unions; others use DIN 11850 or inch ASME BPE / 3-A tube. The important rule is to use one series throughout a plant.' },
-      { q: 'What documents come with dairy EP pipe?', a: 'An EN 10204 3.1 certificate traced to heat number, a PMI record for each length and a measured Ra report for each electropolished lot.' }
+      { q: 'What documents come with dairy EP pipe?', a: 'An EN 10204 3.1 certificate traced to heat number, a PMI record for each length and a measured Ra report for each electropolished lot.' },
+      { q: 'What CIP flow velocity do dairy pipelines need?', a: 'Tetra Pak\'s Dairy Processing Handbook gives 1.5 to 3.0 m/s in pipes. In 1-1/2 in ASME BPE tube, with a 34.80 mm bore, 1.5 m/s is about 5.1 m³/h.' },
+      { q: 'What surface roughness is accepted for dairy product-contact surfaces?', a: 'A maximum of 0.8 µm (32 µin) Ra is the figure often set under 3-A, USDA and EHEDG practice, according to a 3-A Sanitary Standards newsletter article. SF1 (0.51 µm maximum) and SF4 (0.38 µm maximum) are both below it.' }
+    ],
+    sources: [
+      'https://dairyprocessinghandbook.tetrapak.com/chapter/cleaning-dairy-equipment',
+      'https://www.3-a.org/newsletter-article/the-right-finish-for-a-food-contact-surface-are-we-protecting-consumers'
     ]
   }
 };

@@ -107,7 +107,7 @@ export default function EPBuildSpecRenderer({ pageData, onEnquireClick, hasUnloc
             <div className="lg:col-span-5">
               <div className="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 shadow-2xl relative">
                 <div className="absolute top-0 right-0 transform translate-x-2 -translate-y-2 bg-yellow-500 text-slate-950 text-[10px] uppercase tracking-wider font-extrabold px-3 py-1 rounded-full shadow">
-                  Instant Quote Response
+                  Quote within 24 hours
                 </div>
                 <h2 className="text-xl font-bold text-white mb-2">Get Price & Spec Sheet</h2>
                 <p className="text-xs text-slate-400 mb-6">Receive a detailed quotation with MTC sample within 24 hours; delivery time is confirmed with it.</p>
@@ -295,17 +295,30 @@ export default function EPBuildSpecRenderer({ pageData, onEnquireClick, hasUnloc
             </div>
           )}
 
-          {/* B. INTERACTIVE TOOLS FOR RESOURCE PAGES */}
+          {/* B. INTERACTIVE TOOLS: each tool lives on its own page; other resource pages link to it, so the pages do not share the tool text */}
           {page_type.includes('Resource') && (
             <div className="mb-16">
-              {cleanPath.includes('ra-surface-finish-converter') && <RaConverterTool />}
-              {cleanPath.includes('ss-pipe-weight-calculator') && <PipeWeightCalculatorTool onEnquireClick={onEnquireClick} />}
-              {(!cleanPath.includes('ra-surface-finish-converter') && !cleanPath.includes('ss-pipe-weight-calculator')) && (
-                <>
-                  <RaConverterTool />
-                  <PipeWeightCalculatorTool onEnquireClick={onEnquireClick} />
-                </>
-              )}
+              {cleanPath.includes('ra-surface-finish-converter') ? <RaConverterTool />
+                : cleanPath.includes('ss-pipe-weight-calculator') ? <PipeWeightCalculatorTool onEnquireClick={onEnquireClick} />
+                : (
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    {[
+                      ['/resources/ss-pipe-weight-calculator/', 'Open the weight calculator'],
+                      ['/resources/ra-surface-finish-converter/', 'Open the Ra converter'],
+                    ].map(([href, label]) => (
+                      <a
+                        key={href}
+                        href={href}
+                        onClick={(e) => handleLinkClick(e, href)}
+                        className="inline-flex items-center justify-center gap-2 bg-slate-900 border border-slate-700 hover:border-yellow-500 text-white font-semibold text-sm px-5 py-3 rounded-xl transition"
+                      >
+                        <Calculator className="w-4 h-4 text-yellow-400" />
+                        <span>{label}</span>
+                        <ArrowRight className="w-4 h-4" />
+                      </a>
+                    ))}
+                  </div>
+                )}
             </div>
           )}
 

@@ -1,5 +1,7 @@
 # Usage (from frontend/): python3 ../seo-autoresearch/scripts/quality.py <slug> [<slug> ...]
 # Hard quality gate for public/city-content/<slug>.json. Exit 1 if any page fails.
+# Guide text in any data file: python3 ../seo-autoresearch/scripts/quality.py --text FILE [FILE ...]
+#   lists filler phrases and forbidden claims with file:line. Exit 1 if any are found.
 import json, re, sys, os, glob
 FILLER = ['leading manufacturer', 'one-stop', 'top-notch', 'world-class', 'unmatched', 'best quality',
           'cutting-edge', 'state-of-the-art', 'second to none', 'unparalleled', 'look no further',
@@ -7,6 +9,26 @@ FILLER = ['leading manufacturer', 'one-stop', 'top-notch', 'world-class', 'unmat
           'trusted partner', 'wide range of', 'highest quality', 'premium quality']
 BANNED_FACTS = [r'\b\d+\s*[-–]\s*\d+\s*(?:day|week)s?\b', r'\bin stock\b', r'\bMOQ\b', r'\bminimum order\b',
                 r'\bour (?:client|customer)s? (?:include|in)\b', r'\bwarehouse in\b', r'\boffice in\b']
+# Never allowed, even next to "confirmed": a price for goods, price claims, a factory location, ratings or reviews
+NEVER = [r'(?:₹|\bRs\.?|\bINR)\s?[\d,.]+\s*(?:/-?\s*|per\s+)(?:kg|kilo|kilogram|metre|meter|mtr|m|piece|pc|pcs|nos|length|tonne|ton|unit)\b',
+         r'\b(?:better|best|lowest|cheapest|competitive)\s+(?:price|pricing|rate)s?\b',
+         r'\b(?:our|we|sakshi forge)\b[^.]{0,60}\btaloja\b', r'\bour (?:factory|plant|works|mill|facility|manufacturing unit)s? (?:in|at)\b',
+         r'\b\d(?:\.\d)?\s*(?:out of 5|/\s*5)\s*(?:stars?|rating)\b|\b\d(?:\.\d)?\s*stars?\b|\b\d+\+?\s*(?:reviews|testimonials)\b']
+def claims(text):
+    """Filler phrases, unconfirmed company facts and never-allowed claims in text."""
+    out = [f'filler phrase: "{f}"' for f in FILLER if f in text.lower()]
+    for p in BANNED_FACTS:
+        m = re.search(p, text, re.I)
+        if m and 'confirm' not in text[max(0, m.start()-80):m.end()+80]: out.append(f'unconfirmed company fact: "{m.group(0)}"')
+    out += [f'forbidden claim: "{m.group(0)}"' for p in NEVER for m in re.finditer(p, text, re.I)]
+    return out
+if sys.argv[1:2] == ['--text']:
+    n = 0
+    for f in sys.argv[2:]:
+        for i, line in enumerate(open(f, encoding='utf-8'), 1):
+            for h in claims(line): print(f'{f}:{i}: {h}'); n += 1
+    print(f'{n} problem(s) in {len(sys.argv) - 2} file(s)')
+    sys.exit(1 if n else 0)
 def sents(d):
     for s in d['sections']:
         for t in s.get('paragraphs', []) + s.get('bullets', []):
@@ -20,16 +42,12 @@ bad = 0
 for slug in sys.argv[1:]:
     d = json.load(open(f'public/city-content/{slug}.json')); errs = []
     text = ' '.join(t for s in d['sections'] for t in s.get('paragraphs', []) + s.get('bullets', []))
-    low = text.lower(); words = len(text.split())
+    words = len(text.split())
     if words < 450: errs.append(f'only {words} words (min 450)')
     if not 4 <= len(d['sections']) <= 7: errs.append(f'{len(d["sections"])} sections (need 4-7)')
     srcs = [s['url'] for s in d.get('sources', [])]
     if len(set(re.sub(r'^https?://(www\.)?', '', u).split('/')[0] for u in srcs)) < 2: errs.append('fewer than 2 independent source domains')
-    for f in FILLER:
-        if f in low: errs.append(f'filler phrase: "{f}"')
-    for p in BANNED_FACTS:
-        m = re.search(p, text, re.I)
-        if m and not re.search(r'confirm', text[max(0, m.start()-80):m.end()+80]) and 'confirmed in writing' not in text[max(0, m.start()-80):m.end()+80]: errs.append(f'unconfirmed company fact: "{m.group(0)}"')
+    errs += claims(text)
     toks = [t for t in slug.split('-') if len(t) > 3]
     if not any(any(t in s['heading'].lower() for t in toks) for s in d['sections']): errs.append('no heading names the place')
     mine = set(sents(d))

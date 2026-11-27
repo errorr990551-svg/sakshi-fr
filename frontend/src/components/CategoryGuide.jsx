@@ -65,6 +65,9 @@ const STANDARDS = [
   [/\bA249\b/, 'https://www.astm.org/Standards/A249.htm', 'ASTM A249/A249M: Welded Austenitic Steel Boiler, Heat-Exchanger and Condenser Tubes (ASTM International)'],
   [/\bA312\b/, 'https://www.astm.org/Standards/A312.htm', 'ASTM A312/A312M: Seamless, Welded and Heavily Cold Worked Stainless Steel Pipes (ASTM International)'],
   [/\bA967\b/, 'https://www.astm.org/Standards/A967.htm', 'ASTM A967/A967M: Chemical Passivation Treatments for Stainless Steel Parts (ASTM International)'],
+  // ASME pages opened and checked 2026-11-27
+  [/\bB16\.11\b/, 'https://www.asme.org/codes-standards/find-codes-standards/b16-11-forged-fittings-socket-welding-threaded', 'ASME B16.11: Forged Fittings, Socket-Welding and Threaded (ASME)'],
+  [/\bB31\.3\b/, 'https://www.asme.org/codes-standards/find-codes-standards/b31-3-process-piping', 'ASME B31.3: Process Piping (ASME)'],
   [/\bBPE\b/, 'https://www.asme.org/codes-standards/find-codes-standards/bpe-bioprocessing-equipment', 'ASME BPE: Bioprocessing Equipment standard (ASME)'],
 ];
 const SOURCE_TITLES = {

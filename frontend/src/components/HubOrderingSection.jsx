@@ -13,7 +13,7 @@ export default function HubOrderingSection({ state, onEnquireClick }) {
         </h2>
         <p style={{ color: 'var(--text-secondary)', fontSize: '1.02rem', lineHeight: '1.7', marginBottom: '2rem' }}>
           Sakshi Forge manufactures and electropolishes stainless steel pipes and tubes in Mumbai and supplies buyers across {state}.
-          Send your requirement and we reply with a quotation within 24 hours. Dispatch and transit are confirmed in writing with each quotation.
+          Send your requirement and we reply with a quotation within 30 minutes. Dispatch and transit are confirmed in writing with each quotation.
         </p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(300px, 100%), 1fr))', gap: '1.5rem' }}>
           <div style={card}>

@@ -29,7 +29,7 @@
         "A line list separating raw milk, pasteurised product, cultured product, CIP and utilities.",
         "Whether the order replaces existing lines (send the existing OD x wall and finish) or extends the plant.",
         "OD x wall to ASTM A270 or ASME BPE, metres per size, and the bends, tees and clamp ferrules needed.",
-        "Documentation for your records: an EN 10204 3.1 certificate traced to the heat number, PMI on every length and an Ra report for each electropolished lot come with every order. We quote within 24 hours and confirm delivery time in the quotation."
+        "Documentation for your records: an EN 10204 3.1 certificate traced to the heat number, PMI on every length and an Ra report for each electropolished lot come with every order. We quote within 30 minutes and confirm delivery time in the quotation."
       ],
       "links": [
         {

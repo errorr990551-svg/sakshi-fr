@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import { handleLinkClick, withSlash } from '../utils/router';
 import GoogleReviews from './GoogleReviews';
+import RfqForm from './RfqForm';
 import { PHONE, EMAIL, postalAddressSchema } from '../data/business.js';
 import { withoutDuplicateSchemaTypes } from '../utils/schemaHelpers';
 import { PRIORITY_30_CITIES } from '../data/priorityCities';
@@ -16,27 +17,8 @@ import { EP_PROCESS_VIDEO as EPV } from '../data/videos';
 
 export default function HomePage({ onEnquireClick }) {
   const [openFaq, setOpenFaq] = useState(0);
-  const [formData, setFormData] = useState({
-    name: '',
-    company: '',
-    phone: '',
-    email: '',
-    gradeAndSize: '',
-    quantity: '',
-    message: ''
-  });
-  const [formSubmitted, setFormSubmitted] = useState(false);
-
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? -1 : index);
-  };
-
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-    setFormSubmitted(true);
-    if (onEnquireClick) {
-      onEnquireClick(`Homepage RFQ: ${formData.gradeAndSize} (${formData.quantity}) - ${formData.company}`);
-    }
   };
 
   const faqs = [
@@ -86,7 +68,7 @@ export default function HomePage({ onEnquireClick }) {
     },
     {
       q: "How fast can I get a formal quote?",
-      a: "Within 24 hours, from our technical sales team."
+      a: "Within 30 minutes, 24×7, from our technical sales team."
     }
   ];
 
@@ -281,7 +263,7 @@ export default function HomePage({ onEnquireClick }) {
                 <div style={{ fontSize: '0.85rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.06em', marginTop: '0.35rem', fontWeight: '600' }}>Accredited Lab Chemical Analysis</div>
               </div>
               <div>
-                <div style={{ fontSize: '2.3rem', fontWeight: '800', color: 'var(--primary-yellow)', lineHeight: '1.1' }}>24 Hours</div>
+                <div style={{ fontSize: '2.3rem', fontWeight: '800', color: 'var(--primary-yellow)', lineHeight: '1.1' }}>30 Minutes</div>
                 <div style={{ fontSize: '0.85rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.06em', marginTop: '0.35rem', fontWeight: '600' }}>Quote Turnaround</div>
               </div>
             </div>
@@ -314,7 +296,7 @@ export default function HomePage({ onEnquireClick }) {
 
             <div className="feature-card" style={{ backgroundColor: 'var(--bg-dark-800)', padding: '2.25rem 1.75rem', borderRadius: '12px', border: '1px solid var(--border-color)', textAlign: 'center' }}>
               <div style={{ color: 'var(--primary-yellow)', marginBottom: '1.25rem', display: 'flex', justifyContent: 'center' }}><Clock size={38} /></div>
-              <h3 style={{ fontSize: '1.2rem', color: '#fff', marginBottom: '0.75rem' }}>A quote within 24 hours</h3>
+              <h3 style={{ fontSize: '1.2rem', color: '#fff', marginBottom: '0.75rem' }}>A quote within 30 minutes</h3>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.92rem', lineHeight: '1.6', margin: 0 }}>
                 Send grade, size and quantity. You get a priced quote from an engineer who can discuss metallurgical and dimensional specs on the same call.
               </p>
@@ -764,7 +746,7 @@ export default function HomePage({ onEnquireClick }) {
               {
                 icon: "/6th card.webp",
                 title: "Quotes in minutes",
-                desc: "Our 24-hour quote turnaround ensures your plant shutdown, maintenance, or project procurement timeline never waits."
+                desc: "Our 30-minute quote turnaround ensures your plant shutdown, maintenance, or project procurement timeline never waits."
               }
             ].map((card, idx) => (
               <div key={idx} className="utility-plant-card">
@@ -1225,119 +1207,19 @@ export default function HomePage({ onEnquireClick }) {
         <div className="container">
           <div style={{ maxWidth: '1050px', margin: '0 auto' }}>
             <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-              <span className="hero-tag" style={{ border: 'none', backgroundColor: 'rgba(255, 193, 7, 0.08)' }}>24-Hour Quote</span>
+              <span className="hero-tag" style={{ border: 'none', backgroundColor: 'rgba(255, 193, 7, 0.08)' }}>30-Minute Quote</span>
               <h2 style={{ fontSize: '2.4rem', margin: '0.75rem 0' }}>
-                Tell Us What You Need. We'll Quote within 24 Hours.
+                Tell Us What You Need. Get Your Quote in 30 Minutes.
               </h2>
               <p style={{ color: 'var(--text-secondary)', fontSize: '1.08rem', maxWidth: '750px', margin: '0 auto' }}>
-                Submit your grade, size, quantity and surface finish requirements. An engineer will formulate a firm, transparent quotation within 24 hours.
+                Pick the product, grade and quantity. Your quote arrives within 30 minutes, 24×7.
               </p>
             </div>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(340px, 100%), 1fr))', gap: '2.5rem', alignItems: 'start', marginBottom: '3rem' }}>
               {/* RFQ Form */}
               <div style={{ backgroundColor: 'var(--bg-dark-900)', padding: '2.25rem', borderRadius: '16px', border: '1px solid var(--border-color)', boxShadow: '0 8px 30px rgba(0,0,0,0.3)' }}>
-                {formSubmitted ? (
-                  <div style={{ textAlign: 'center', padding: '2.5rem 1rem' }}>
-                    <CheckCircle2 size={52} style={{ color: '#10b981', margin: '0 auto 1rem' }} />
-                    <h3 style={{ fontSize: '1.35rem', color: '#fff', marginBottom: '0.5rem' }}>RFQ Received Successfully</h3>
-                    <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>
-                      Thank you. Our technical metallurgical team is reviewing your requirements and will return your quote within 24 hours.
-                    </p>
-                  </div>
-                ) : (
-                  <form onSubmit={handleFormSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                    <div className="stack-sm" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                      <div>
-                        <label htmlFor="home-field-1" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Name *</label>
-                        <input id="home-field-1" 
-                          type="text" 
-                          required 
-                          placeholder="Your Full Name"
-                          value={formData.name}
-                          onChange={(e) => setFormData({...formData, name: e.target.value})}
-                          style={{ width: '100%', padding: '0.75rem', backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '6px', color: '#fff' }}
-                        />
-                      </div>
-                      <div>
-                        <label htmlFor="home-field-2" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Company *</label>
-                        <input id="home-field-2" 
-                          type="text" 
-                          required 
-                          placeholder="Company / Plant Name"
-                          value={formData.company}
-                          onChange={(e) => setFormData({...formData, company: e.target.value})}
-                          style={{ width: '100%', padding: '0.75rem', backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '6px', color: '#fff' }}
-                        />
-                      </div>
-                    </div>
-
-                    <div className="stack-sm" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                      <div>
-                        <label htmlFor="home-field-3" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Phone Number *</label>
-                        <input id="home-field-3" 
-                          type="tel" 
-                          required 
-                          placeholder="+91..."
-                          value={formData.phone}
-                          onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                          style={{ width: '100%', padding: '0.75rem', backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '6px', color: '#fff' }}
-                        />
-                      </div>
-                      <div>
-                        <label htmlFor="home-field-4" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Email *</label>
-                        <input id="home-field-4" 
-                          type="email" 
-                          required 
-                          placeholder="procurement@company.com"
-                          value={formData.email}
-                          onChange={(e) => setFormData({...formData, email: e.target.value})}
-                          style={{ width: '100%', padding: '0.75rem', backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '6px', color: '#fff' }}
-                        />
-                      </div>
-                    </div>
-
-                    <div className="stack-sm" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                      <div>
-                        <label htmlFor="home-field-5" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Grade & Size *</label>
-                        <input id="home-field-5" 
-                          type="text" 
-                          required 
-                          placeholder="e.g. SS 316L, 2 inch, Sch 10"
-                          value={formData.gradeAndSize}
-                          onChange={(e) => setFormData({...formData, gradeAndSize: e.target.value})}
-                          style={{ width: '100%', padding: '0.75rem', backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '6px', color: '#fff' }}
-                        />
-                      </div>
-                      <div>
-                        <label htmlFor="home-field-6" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Quantity *</label>
-                        <input id="home-field-6" 
-                          type="text" 
-                          required 
-                          placeholder="e.g. 500 meters / 40 lengths"
-                          value={formData.quantity}
-                          onChange={(e) => setFormData({...formData, quantity: e.target.value})}
-                          style={{ width: '100%', padding: '0.75rem', backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '6px', color: '#fff' }}
-                        />
-                      </div>
-                    </div>
-
-                    <div>
-                      <label htmlFor="home-field-7" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Message / Spool Drawing Details</label>
-                      <textarea id="home-field-7" 
-                        rows="3"
-                        placeholder="Mention standard (ASTM A270/A269), Ra roughness requirements, delivery destination, etc."
-                        value={formData.message}
-                        onChange={(e) => setFormData({...formData, message: e.target.value})}
-                        style={{ width: '100%', padding: '0.75rem', backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '6px', color: '#fff', resize: 'vertical' }}
-                      ></textarea>
-                    </div>
-
-                    <button type="submit" className="btn btn-primary" style={{ padding: '0.9rem', fontWeight: '700', width: '100%', marginTop: '0.5rem' }}>
-                      Submit RFQ for a 24-Hour Quote <ArrowRight size={16} />
-                    </button>
-                  </form>
-                )}
+                <RfqForm formType="homepage_rfq" />
               </div>
 
               {/* Google Business Profile: map, live Google rating and reviews (no street address or phone shown here, as requested) */}

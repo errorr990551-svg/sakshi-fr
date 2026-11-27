@@ -383,7 +383,7 @@ export default function ProductPage({ product, relatedProducts = [], onEnquireCl
 
                 <div style={{ textAlign: 'center' }}>
                   <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-                    Quotation within 24 hours
+                    Quotation within 30 minutes
                   </span>
                 </div>
               </div>

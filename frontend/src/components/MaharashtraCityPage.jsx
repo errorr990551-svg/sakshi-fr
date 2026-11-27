@@ -1,12 +1,13 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { 
-  ArrowRight, ShieldCheck, Award, FileText, CheckCircle2, ChevronDown, 
+  ArrowRight, ShieldCheck, Award, FileText, ChevronDown, 
   ChevronUp, MapPin, Phone, Mail, Clock, Download, ExternalLink, HelpCircle, 
   Layers, Factory, Globe, Truck, Check, AlertTriangle, MessageSquare, Calculator,
   SlidersHorizontal, Sparkles, Filter
 } from 'lucide-react';
 import { handleLinkClick, withSlash } from '../utils/router';
 import CityProductPillars from './CityProductPillars';
+import RfqForm from './RfqForm';
 
 export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnlockedContact = false, onShowContactDetails }) {
   const [openFaq, setOpenFaq] = useState(0);
@@ -39,17 +40,6 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
   const [raUm, setRaUm] = useState('0.4');
   const [raUin, setRaUin] = useState('15.7');
 
-  // RFQ Form State
-  const [formData, setFormData] = useState({
-    name: '',
-    company: '',
-    phone: '',
-    email: '',
-    gradeAndSize: '',
-    quantity: '',
-    message: ''
-  });
-  const [formSubmitted, setFormSubmitted] = useState(false);
 
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? -1 : index);
@@ -98,19 +88,11 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
     return (uin * 1.11).toFixed(1);
   }, [raUin]);
 
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-    setFormSubmitted(true);
-    if (onEnquireClick) {
-      onEnquireClick(`${cityData.city} RFQ: ${formData.gradeAndSize} (${formData.quantity}) - ${formData.company}`);
-    }
-  };
-
   const handleWidgetEnquiry = () => {
     const gradeName = calcGrade === '0.02491' ? 'SS 304L' : calcGrade === '0.02450' ? 'Duplex 2205' : 'SS 316L';
     const note = `${cityData.city} Calc: ${gradeName}, OD ${calcOD}mm x WT ${calcWT}mm, Length ${calcLen}m (Weight: ${weightResult.kgm} kg/m)`;
     if (onEnquireClick) {
-      onEnquireClick(note);
+      onEnquireClick('Electropolished Pipe', { message: note });
     }
   };
 
@@ -223,7 +205,7 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
                 className="btn btn-primary btn-lg" 
                 style={{ padding: '0.9rem 1.85rem', fontWeight: '700' }}
               >
-                {['A', 'E', 'I', 'O', 'U'].includes(cityData.city[0].toUpperCase()) ? 'Get an' : 'Get a'} {cityData.city} Quote within 24 Hours <ArrowRight size={16} />
+                {['A', 'E', 'I', 'O', 'U'].includes(cityData.city[0].toUpperCase()) ? 'Get an' : 'Get a'} {cityData.city} Quote within 30 Minutes <ArrowRight size={16} />
               </button>
               <a 
                 href="/catalogue/" 
@@ -864,119 +846,19 @@ export default function MaharashtraCityPage({ cityData, onEnquireClick, hasUnloc
         <div className="container">
           <div style={{ maxWidth: '980px', margin: '0 auto' }}>
             <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
-              <span className="hero-tag" style={{ border: 'none', backgroundColor: 'rgba(255, 193, 7, 0.08)' }}>24-Hour Quote</span>
+              <span className="hero-tag" style={{ border: 'none', backgroundColor: 'rgba(255, 193, 7, 0.08)' }}>30-Minute Quote</span>
               <h2 style={{ fontSize: '2.3rem', margin: '0.75rem 0' }}>
                 Specify Electropolished Pipe for Your {cityData.city} Plant
               </h2>
               <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', maxWidth: '700px', margin: '0 auto' }}>
-                Send your grade, OD × wall, Ra requirement, length and quantity. We'll quote within 24 hours.
+                Pick the grade, finish and quantity. Your quote arrives within 30 minutes, 24×7.
               </p>
             </div>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(320px, 100%), 1fr))', gap: '2.5rem', marginBottom: '3rem' }}>
               {/* Form */}
               <div style={{ backgroundColor: 'var(--bg-dark-800)', padding: '2rem', borderRadius: '12px', border: '1px solid var(--border-color)' }}>
-                {formSubmitted ? (
-                  <div style={{ textAlign: 'center', padding: '2rem 1rem' }}>
-                    <CheckCircle2 size={48} style={{ color: '#10b981', margin: '0 auto 1rem' }} />
-                    <h3 style={{ fontSize: '1.3rem', color: '#fff', marginBottom: '0.5rem' }}>RFQ Received for {cityData.city}</h3>
-                    <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>
-                      Thank you. Our engineering team is preparing your factory-direct quote with 3.1 MTC and transit schedule.
-                    </p>
-                  </div>
-                ) : (
-                  <form onSubmit={handleFormSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                    <div className="stack-sm" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                      <div>
-                        <label htmlFor="maharashtra-city-field-1" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Name *</label>
-                        <input id="maharashtra-city-field-1" 
-                          type="text" 
-                          required 
-                          placeholder="Your Name"
-                          value={formData.name}
-                          onChange={(e) => setFormData({...formData, name: e.target.value})}
-                          style={{ width: '100%', padding: '0.75rem', backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '6px', color: '#fff' }}
-                        />
-                      </div>
-                      <div>
-                        <label htmlFor="maharashtra-city-field-2" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Company *</label>
-                        <input id="maharashtra-city-field-2" 
-                          type="text" 
-                          required 
-                          placeholder="Plant / Company"
-                          value={formData.company}
-                          onChange={(e) => setFormData({...formData, company: e.target.value})}
-                          style={{ width: '100%', padding: '0.75rem', backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '6px', color: '#fff' }}
-                        />
-                      </div>
-                    </div>
-
-                    <div className="stack-sm" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                      <div>
-                        <label htmlFor="maharashtra-city-field-3" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Phone Number *</label>
-                        <input id="maharashtra-city-field-3" 
-                          type="tel" 
-                          required 
-                          placeholder="+91..."
-                          value={formData.phone}
-                          onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                          style={{ width: '100%', padding: '0.75rem', backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '6px', color: '#fff' }}
-                        />
-                      </div>
-                      <div>
-                        <label htmlFor="maharashtra-city-field-4" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Email *</label>
-                        <input id="maharashtra-city-field-4" 
-                          type="email" 
-                          required 
-                          placeholder="procurement@company.com"
-                          value={formData.email}
-                          onChange={(e) => setFormData({...formData, email: e.target.value})}
-                          style={{ width: '100%', padding: '0.75rem', backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '6px', color: '#fff' }}
-                        />
-                      </div>
-                    </div>
-
-                    <div className="stack-sm" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                      <div>
-                        <label htmlFor="maharashtra-city-field-5" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Grade & OD × WT *</label>
-                        <input id="maharashtra-city-field-5" 
-                          type="text" 
-                          required 
-                          placeholder="e.g. 316L, 1 inch OD, 1.65 WT"
-                          value={formData.gradeAndSize}
-                          onChange={(e) => setFormData({...formData, gradeAndSize: e.target.value})}
-                          style={{ width: '100%', padding: '0.75rem', backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '6px', color: '#fff' }}
-                        />
-                      </div>
-                      <div>
-                        <label htmlFor="maharashtra-city-field-6" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Quantity / Length *</label>
-                        <input id="maharashtra-city-field-6" 
-                          type="text" 
-                          required 
-                          placeholder="e.g. 100 meters / 20 pcs"
-                          value={formData.quantity}
-                          onChange={(e) => setFormData({...formData, quantity: e.target.value})}
-                          style={{ width: '100%', padding: '0.75rem', backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '6px', color: '#fff' }}
-                        />
-                      </div>
-                    </div>
-
-                    <div>
-                      <label htmlFor="maharashtra-city-field-7" style={{ display: 'block', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.35rem' }}>Media / drawing / finish notes</label>
-                      <textarea id="maharashtra-city-field-7" 
-                        rows="3"
-                        placeholder="Mention fluid, temperature, Ra requirements (SF4/SF1), delivery location..."
-                        value={formData.message}
-                        onChange={(e) => setFormData({...formData, message: e.target.value})}
-                        style={{ width: '100%', padding: '0.75rem', backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '6px', color: '#fff', resize: 'vertical' }}
-                      ></textarea>
-                    </div>
-
-                    <button type="submit" className="btn btn-primary" style={{ padding: '0.85rem', fontWeight: '700', width: '100%', marginTop: '0.5rem' }}>
-                      Request {cityData.city} Quote in 24 Hours <ArrowRight size={16} />
-                    </button>
-                  </form>
-                )}
+                <RfqForm formType="city_page_rfq" product={`Electropolished Pipe for ${cityData.city}`} />
               </div>
 
               {/* Direct Info */}

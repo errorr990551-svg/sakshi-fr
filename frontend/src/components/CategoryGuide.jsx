@@ -20,9 +20,10 @@ function RichText({ text }) {
 
 function Table({ table }) {
   return (
-    <div style={{ overflowX: 'auto', margin: '1.25rem 0 1.5rem' }}>
+    <div style={{ overflowX: 'auto', margin: '1.25rem 0 1.5rem', containerType: 'inline-size' }}>
       <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem' }}>
-        <caption style={{ textAlign: 'left', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>{table.caption}</caption>
+        {/* Pinned and capped to the visible width, so a wide table on a phone does not clip its caption. */}
+        <caption style={{ textAlign: 'left', color: 'var(--text-secondary)', marginBottom: '0.5rem', position: 'sticky', left: 0, maxWidth: '100cqw' }}>{table.caption}</caption>
         <thead>
           <tr>{table.head.map((h) => <th key={h} scope="col" style={{ textAlign: 'left', padding: '0.6rem', borderBottom: '2px solid var(--border-color)', color: 'var(--primary-yellow)' }}>{h}</th>)}</tr>
         </thead>
@@ -40,6 +41,12 @@ function Block({ block }) {
   return (
     <>
       {block.paragraphs?.map((p, i) => <p key={i} style={{ color: 'var(--text-secondary)', lineHeight: 1.75, marginBottom: '1rem' }}><RichText text={p} /></p>)}
+      {block.figure && (
+        <figure style={{ margin: '1.25rem 0 1.5rem' }}>
+          <img src={block.figure.src} alt={block.figure.alt} width={block.figure.width} height={block.figure.height} loading="lazy" decoding="async" style={{ width: '100%', maxWidth: `${block.figure.width}px`, height: 'auto', display: 'block' }} />
+          <figcaption style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginTop: '0.5rem' }}>{block.figure.caption}</figcaption>
+        </figure>
+      )}
       {block.table && <Table table={block.table} />}
       {block.bullets && (
         <ul style={{ color: 'var(--text-secondary)', lineHeight: 1.75, paddingLeft: '1.25rem', marginBottom: '1rem' }}>
@@ -63,6 +70,11 @@ const STANDARDS = [
 const SOURCE_TITLES = {
   'https://health.ec.europa.eu/medicinal-products/eudralex/eudralex-volume-4_en': 'EudraLex Volume 4: EU Good Manufacturing Practice guidelines (European Commission)',
   'https://www.3-a.org/': '3-A Sanitary Standards, Inc.',
+  'https://www.3-a.org/newsletter-article/the-right-finish-for-a-food-contact-surface-are-we-protecting-consumers': 'The Right Finish for a Food Contact Surface: Are We Protecting Consumers? (3-A Sanitary Standards newsletter)',
+  'https://dairyprocessinghandbook.tetrapak.com/chapter/cleaning-dairy-equipment': 'Dairy Processing Handbook, chapter 22: Cleaning of dairy equipment (Tetra Pak)',
+  'https://www.alfalaval.com/products/fluid-handling/din-11850-en-10357/': 'DIN 11850 and EN 10357 hygienic tube (Alfa Laval)',
+  'https://www.dinmedia.de/en/standard/din-32676/392760456': 'DIN 32676: clamp connections for stainless steel tubes (DIN Media)',
+  'https://www.iso.org/standard/6810.html': 'ISO 2037:1992 Stainless steel tubes for the food industry, withdrawn (ISO)',
   'https://www.ehedg.org/guidelines-working-groups/guidelines': 'EHEDG hygienic design guidelines',
   'https://apeda.gov.in/node/31': 'Mango pulp export information (APEDA)',
   'https://en.wikipedia.org/wiki/Clean-in-place': 'Clean-in-place (Wikipedia)',

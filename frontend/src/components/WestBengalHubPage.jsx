@@ -149,7 +149,7 @@ export default function WestBengalHubPage({ onEnquireClick, onShowContactDetails
                 className="btn btn-primary"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.85rem 1.8rem', fontSize: '0.95rem', fontWeight: '700' }}
               >
-                Request West Bengal Quote (24 Hours)
+                Request West Bengal Quote (30 Minutes)
                 <ArrowRight size={18} />
               </button>
               
@@ -318,7 +318,7 @@ export default function WestBengalHubPage({ onEnquireClick, onShowContactDetails
             Specify Electropolished Stainless Steel for Your West Bengal Project
           </h2>
           <p style={{ color: 'var(--text-secondary)', fontSize: '1.02rem', lineHeight: '1.6', marginBottom: '2rem' }}>
-            Share your bill of materials, media chemistry, OD × wall thickness, Ra requirement, and project drawings. Our engineering team responds with technical validation and competitive commercial quotations within 24 hours.
+            Share your bill of materials, media chemistry, OD × wall thickness, Ra requirement, and project drawings. Our engineering team responds with technical validation and competitive commercial quotations within 30 minutes.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <button 

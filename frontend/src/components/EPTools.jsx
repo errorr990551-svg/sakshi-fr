@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Calculator, ShieldCheck, RefreshCw, FileText, Scale, Layers, Sparkles, ChevronDown, Check } from 'lucide-react';
+import { bpeDesignations } from '../utils/bpeFinish';
 
 // Reusable Custom Glassmorphic Dropdown Component - Yellow/Gold Theme
 function CustomSelect({ options, value, onChange, placeholder = "Select..." }) {
@@ -66,12 +67,8 @@ export function RaConverterTool() {
   const um = unit === 'um' ? numVal : numVal * 0.0254;
   const uin = unit === 'uin' ? numVal : numVal / 0.0254;
 
-  let sfRating = "Non-BPE Standard";
-  if (um <= 0.38) sfRating = "ASME BPE SF4 (Ra ≤ 0.38 µm / 15 µin) - Electropolished";
-  else if (um <= 0.51) sfRating = "ASME BPE SF5 (Ra ≤ 0.51 µm / 20 µin) - Electropolished";
-  else if (um <= 0.64) sfRating = "ASME BPE SF6 (Ra ≤ 0.64 µm / 25 µin) - Electropolished";
-  else if (um <= 0.76) sfRating = "ASME BPE SF1 (Ra ≤ 0.76 µm / 30 µin) - Mechanical Polish";
-  else if (um <= 0.89) sfRating = "ASME BPE SF2 (Ra ≤ 0.89 µm / 35 µin) - Mechanical Polish";
+  const sf = bpeDesignations(numVal, unit);
+  const sfText = (d, rougher) => (d ? `${d.sf} (Ra ≤ ${d.um} µm / ${d.uin} µin)` : rougher);
 
   const unitOptions = [
     { value: 'um', label: 'Micrometres / Microns (µm)' },
@@ -130,14 +127,21 @@ export function RaConverterTool() {
           <span className="text-2xl font-bold font-mono text-amber-400">{uin.toFixed(1)} µin</span>
         </div>
         <div className="bg-slate-800/80 rounded-xl p-4 border border-slate-700/50 sm:col-span-2 lg:col-span-1">
-          <span className="text-xs text-slate-400 block mb-1">ASME BPE Designation</span>
-          <span className="text-sm font-semibold text-yellow-400 block leading-tight">{sfRating}</span>
+          <span className="text-xs text-slate-400 block mb-1">ASME BPE designation met</span>
+          {sf ? (
+            <>
+              <span data-sf="ep" className="text-sm font-semibold text-yellow-400 block leading-tight">Electropolished: {sfText(sf.ep, 'rougher than SF6')}</span>
+              <span data-sf="mp" className="text-sm font-semibold text-amber-400 block leading-tight mt-1">Mechanically polished: {sfText(sf.mp, 'rougher than SF3')}</span>
+            </>
+          ) : (
+            <span className="text-sm text-slate-400 block">Enter an Ra value above 0</span>
+          )}
         </div>
       </div>
 
       <div className="bg-slate-950 border border-yellow-500/30 rounded-xl p-4 text-xs text-slate-300 flex items-center space-x-2">
         <ShieldCheck className="w-5 h-5 text-yellow-400 shrink-0" />
-        <span>Sakshi Forge supplies electropolished pipes certified to Ra ≤ 0.38 µm (15 µin) with profilometer inspection report provided per batch.</span>
+        <span>We supply electropolished tube to SF4 (Ra ≤ 0.38 µm / 15 µin) and mechanically polished tube to SF1 (Ra ≤ 0.51 µm / 20 µin). Every EP lot ships with an Ra report. The other designations are shown for reference.</span>
       </div>
     </div>
   );
@@ -240,7 +244,7 @@ export function PipeWeightCalculatorTool({ onEnquireClick }) {
     const summaryText = `Quote Request for ${qtyNum}x ${pipeDesc} Pipe, Grade: ${currentGrade.name}, Length: ${lengthInput}${unitSystem === 'metric' ? 'm' : 'ft'} (Total Wt: ${unitSystem === 'metric' ? totalBatchWeightKg.toFixed(2) + ' kg' : totalBatchWeightLbs.toFixed(2) + ' lbs'})`;
 
     if (onEnquireClick) {
-      onEnquireClick(summaryText);
+      onEnquireClick('Electropolished Pipe', { message: summaryText });
     }
   };
 
@@ -489,7 +493,7 @@ export function PipeWeightCalculatorTool({ onEnquireClick }) {
           className="bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-500 hover:from-yellow-400 hover:to-amber-400 text-slate-950 font-extrabold px-7 py-3 rounded-xl transition whitespace-nowrap flex items-center space-x-2 text-sm shadow-lg shadow-yellow-500/25 shrink-0"
         >
           <FileText className="w-4 h-4 text-slate-950" />
-          <span>Get Instant Quote</span>
+          <span>Request a Quote</span>
         </button>
       </div>
 

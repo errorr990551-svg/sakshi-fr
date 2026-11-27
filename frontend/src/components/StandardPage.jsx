@@ -119,7 +119,7 @@ export default function StandardPage({ standardData, onEnquireClick }) {
           {/* CTA */}
           <div style={{ textAlign: 'center', marginTop: '3.5rem' }}>
             <button onClick={() => onEnquireClick(`RFQ for ${standardCode} Products`)} className="btn btn-primary btn-lg" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-              Request Instant Quote for {standardCode} <ArrowRight size={18} />
+              Request a Quote for {standardCode} <ArrowRight size={18} />
             </button>
           </div>
         </div>

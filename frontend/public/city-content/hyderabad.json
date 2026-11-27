@@ -30,7 +30,7 @@
         "The service of each line (WFI, pure steam, buffer or media, product transfer, CIP return or utilities) and whether it sits inside a containment area.",
         "Finish per line, SF4 for WFI, steam and product contact or SF1 for utilities, with the Ra limit your qualification protocol will check.",
         "Sizes as OD x wall to ASME BPE or ASTM A270, with metres per size, and any requirement for 3.1 certificates by heat, PMI by length and an Ra report per electropolished lot, all of which we supply.",
-        "We quote within 24 hours; delivery time depends on the order and is confirmed in writing with the quotation."
+        "We quote within 30 minutes; delivery time depends on the order and is confirmed in writing with the quotation."
       ],
       "links": [
         {

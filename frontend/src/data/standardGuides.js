@@ -2,7 +2,7 @@
 // through SPEC_GUIDES). Standard facts are stated at the level the published standards support;
 // company claims are limited to facts confirmed by the owner: Mumbai base, ISO 9001:2015,
 // NABL-lab chemical analysis, EN 10204 3.1 certificate traced to heat number, PMI on every length,
-// internal Ra report per electropolished lot, quotation within 24 hours, dispatch and transit
+// internal Ra report per electropolished lot, quotation within 30 minutes, dispatch and transit
 // confirmed in writing. No stock, prices, lead times, MOQ or customer claims.
 
 export const STANDARD_GUIDES = {
@@ -110,7 +110,7 @@ export const STANDARD_GUIDES = {
       {
         h2: "Send an A312 EP Pipe Enquiry",
         paragraphs: [
-          "A complete A312 enquiry lets us quote within 24 hours. Put each requirement on its own line rather than listing several standards with \"or\", which invites the cheapest reading."
+          "A complete A312 enquiry lets us quote within 30 minutes. Put each requirement on its own line rather than listing several standards with \"or\", which invites the cheapest reading."
         ],
         bullets: [
           "Specification line, for example: ASTM A312 TP316L, welded, NPS 2 Sch 10S, ID electropolished Ra 0.38 µm max, OD as annealed.",
@@ -199,7 +199,7 @@ export const STANDARD_GUIDES = {
           "Length per piece (straight lengths or coils) and total metres per size.",
           "OD finish: as annealed, bright annealed or electropolished.",
           "Documents: EN 10204 3.1 certificate traced to heat number, NABL-lab chemical analysis, PMI on every length and an Ra report for each electropolished lot.",
-          "Send it through the contact page and we reply with a quotation within 24 hours, with dispatch and transit confirmed in writing."
+          "Send it through the contact page and we reply with a quotation within 30 minutes, with dispatch and transit confirmed in writing."
         ],
         cta: { label: "Request an ASTM A269 EP tubing quotation", href: "/contact-us/" }
       }
@@ -275,7 +275,7 @@ export const STANDARD_GUIDES = {
           "Seamless or welded, and the sulphur window if the tube will be orbitally welded.",
           "Matching [electropolished fittings](/electropolished-pipe-fittings/) if you want tube and fittings on one quotation.",
           "Documents: EN 10204 3.1 certificate traced to heat number, NABL-lab chemical analysis, PMI on every length and an internal Ra report for each electropolished lot.",
-          "We reply with a quotation within 24 hours of a complete enquiry; dispatch and transit are confirmed in writing with it."
+          "We reply with a quotation within 30 minutes of a complete enquiry; dispatch and transit are confirmed in writing with it."
         ],
         cta: { label: "Request an ASTM A270 EP tube quotation", href: "/contact-us/" }
       }
@@ -355,7 +355,7 @@ export const STANDARD_GUIDES = {
       {
         h2: "Ask for a Quotation With 3.1 Documentation",
         paragraphs: [
-          "Tell us the certificate type and any extra content your quality team needs, such as specific tests, the edition of the product standard or the format of the turnover package. We reply with a quotation within 24 hours of a complete enquiry and list the documents that come with each length."
+          "Tell us the certificate type and any extra content your quality team needs, such as specific tests, the edition of the product standard or the format of the turnover package. We reply with a quotation within 30 minutes of a complete enquiry and list the documents that come with each length."
         ],
         cta: { label: "Request EP pipe with EN 10204 3.1", href: "/contact-us/" }
       }
@@ -439,7 +439,7 @@ export const STANDARD_GUIDES = {
       {
         h2: "Quoted Against Your Specification",
         paragraphs: [
-          "We supply ASTM A270, A269, A249 and A312 in 304, 304L, 316 and 316L, with 904L supplied electropolished for acid and chloride service, under an ISO 9001:2015 quality system. Every length is PMI tested, chemical analysis is done by a NABL-accredited laboratory, each electropolished lot has an internal Ra report and each heat carries an EN 10204 3.1 certificate traced to its heat number. Send your line list and we quote within 24 hours of a complete enquiry."
+          "We supply ASTM A270, A269, A249 and A312 in 304, 304L, 316 and 316L, with 904L supplied electropolished for acid and chloride service, under an ISO 9001:2015 quality system. Every length is PMI tested, chemical analysis is done by a NABL-accredited laboratory, each electropolished lot has an internal Ra report and each heat carries an EN 10204 3.1 certificate traced to its heat number. Send your line list and we quote within 30 minutes of a complete enquiry."
         ],
         cta: { label: "Send a line list for quotation", href: "/contact-us/" }
       }
@@ -507,7 +507,7 @@ export const STANDARD_GUIDES = {
       {
         h2: "Ask for a Quotation With Your Inspection Requirements",
         paragraphs: [
-          "Send the product standard, sizes, finish and any tests your specification adds. We reply with a quotation within 24 hours of a complete enquiry, listing the certificate, PMI record and Ra report that come with the order."
+          "Send the product standard, sizes, finish and any tests your specification adds. We reply with a quotation within 30 minutes of a complete enquiry, listing the certificate, PMI record and Ra report that come with the order."
         ],
         cta: { label: "Request an inspected EP pipe quotation", href: "/contact-us/" }
       }
@@ -521,7 +521,7 @@ export const STANDARD_GUIDES = {
   },
 
   '/resources/ep-pipe-size-chart/': {
-    updated: '2026-11-15',
+    updated: '2026-11-27',
     sections: [
       {
         h2: "Pipe or Tube? Read the Size the Right Way First",
@@ -582,7 +582,8 @@ export const STANDARD_GUIDES = {
       {
         h2: "Metric Hygienic Tube: DIN 11850 Series 2",
         paragraphs: [
-          "Equipment designed in Europe often uses metric hygienic tube to DIN 11850 rather than inch OD tube. The two series do not interchange: a 25.4 mm clamp ferrule does not fit a 29 mm tube. Series 2 is the most common in dairy and beverage equipment."
+          "Equipment designed in Europe often uses metric hygienic tube to DIN 11850 rather than inch OD tube. The two series do not interchange: a 25.4 mm clamp ferrule does not fit a 29 mm tube. Series 2 is the most common in dairy and beverage equipment.",
+          "This table is here so metric tube can be recognised on a drawing or on imported equipment. It is not a list of sizes we supply."
         ],
         table: {
           caption: "DIN 11850 series 2 hygienic tube: OD x wall (mm), ID and mass (304L)",
@@ -610,7 +611,7 @@ export const STANDARD_GUIDES = {
       {
         h2: "Turning a Size List Into a Quotation",
         paragraphs: [
-          "Send the sizes from these tables in the same form: tube as OD x wall, pipe as NPS and schedule, with metres per size, grade, standard and the finish on the ID. We reply with a quotation within 24 hours of a complete enquiry, with an EN 10204 3.1 certificate traced to heat number, PMI on every length and an Ra report for each electropolished lot included. These tables show standard dimension series; they are not a statement of stock."
+          "Send the sizes from these tables in the same form: tube as OD x wall, pipe as NPS and schedule, with metres per size, grade, standard and the finish on the ID. We reply with a quotation within 30 minutes of a complete enquiry, with an EN 10204 3.1 certificate traced to heat number, PMI on every length and an Ra report for each electropolished lot included. These tables show standard dimension series; they are not a statement of stock."
         ],
         cta: { label: "Get a quotation for your sizes", href: "/contact-us/" }
       }
@@ -624,12 +625,12 @@ export const STANDARD_GUIDES = {
   },
 
   '/resources/download-ep-pipe-catalogue/': {
-    updated: '2026-11-15',
+    updated: '2026-11-27',
     sections: [
       {
         h2: "Electropolished Pipe and Tube Range at a Glance",
         paragraphs: [
-          "This page is our electropolished product specification sheet in one place: the products, standards, grades, finishes and documents we quote. To receive a quotation and specification for your own line list, send it through the contact page; we reply within 24 hours of a complete enquiry."
+          "This page is our electropolished product specification sheet in one place: the products, standards, grades, finishes and documents we quote. To receive a quotation and specification for your own line list, send it through the contact page; we reply within 30 minutes of a complete enquiry."
         ],
         table: {
           caption: "Electropolished products, governing standards and finishes",
@@ -643,6 +644,29 @@ export const STANDARD_GUIDES = {
             ["Electropolished fittings", "ASME BPE and as ordered", "304L, 316L", "To match the tube", "[EP fittings](/electropolished-pipe-fittings/)"]
           ]
         }
+      },
+      {
+        h2: "Download the Sheet as a PDF",
+        paragraphs: [
+          "The [PDF version of this sheet](/Sakshi_Forge_Master_Product_Catalogue.pdf) runs to three A4 pages and is dated November 2026. Page one carries the range table above, the two finish designations and the document list. Page two has the ASME BPE tube and ASME B36.19M pipe tables from the [size chart](/resources/ep-pipe-size-chart/). Page three has the enquiry checklist with our address, phone and email. It is produced from the text of this page and the size chart, so the printed copy and the web pages state the same specifications."
+        ],
+        cta: { label: "Download the PDF", href: "/Sakshi_Forge_Master_Product_Catalogue.pdf" }
+      },
+      {
+        h2: "Using the Sheet in a Vendor File or Tender",
+        paragraphs: [
+          "Buyers often keep supplier literature on file when they register a new vendor or compare bids. The sheet is written for that file: it names the standard, grade and finish of each product line and the documents each order carries, so a reviewer can hold it against the project specification line by line. It is not a quotation and carries no prices; price, dispatch and transit are confirmed in writing in the quotation for your line list."
+        ]
+      },
+      {
+        h2: "Points a Reviewer Checks Against the Project Specification",
+        bullets: [
+          "Tube or pipe. A270, A269 and A249 lines are tube, named by actual OD and wall; A312 lines are pipe, named by NPS and schedule. If a piping class says 2 in without naming the standard, settle which is meant before comparing bids: the two ODs differ by 9.53 mm.",
+          "Finish wording. Tube to ASME BPE is ordered by designation, SF1 or SF4; pipe to A312 is ordered by a maximum Ra on the bore. If a specification asks for SF4 on A312 pipe, confirm that it means the SF4 limit of 0.38 µm Ra and write that number into the order.",
+          "Certificate type. The sheet lists EN 10204 3.1. A 3.2 certificate must also be validated by the purchaser's inspector or an inspector designated by official regulations, so name it in the enquiry if the specification calls for it.",
+          "Outside finish. It is a separate item from the bore. Specify it wherever tube will be on view, for example on a skid or in a clean room.",
+          "Supplementary tests. An intergranular corrosion test to ASTM A262, for example, is not part of the standard documents; list each extra test so the quotation can confirm it."
+        ]
       },
       {
         h2: "Finishes We Quote",
@@ -685,12 +709,12 @@ export const STANDARD_GUIDES = {
     faqs: [
       { q: "Which electropolished products does Sakshi Forge supply?", a: "Sanitary tube to ASTM A270 and ASME BPE, tube to ASTM A269 and A249, pipe to ASTM A312, in 304, 304L, 316 and 316L, with 904L supplied electropolished, and electropolished fittings to match." },
       { q: "Which finishes are available?", a: "ASME BPE SF1 (Ra 0.51 µm maximum, mechanically polished) and SF4 (Ra 0.38 µm maximum, electropolished), or a stated maximum Ra for pipe ordered to ASTM A312." },
-      { q: "How do I get a specification sheet for my project?", a: "Send your line list with standards, grades, sizes and finish through the contact page. We reply with a quotation within 24 hours of a complete enquiry, stating the specification and documents for each line." }
+      { q: "How do I get a specification sheet for my project?", a: "Send your line list with standards, grades, sizes and finish through the contact page. We reply with a quotation within 30 minutes of a complete enquiry, stating the specification and documents for each line." }
     ]
   },
 
   '/resources/': {
-    updated: '2026-11-15',
+    updated: '2026-11-27',
     sections: [
       {
         h2: "Tools for Each Step From Specification to Purchase Order",
@@ -719,16 +743,43 @@ export const STANDARD_GUIDES = {
         ]
       },
       {
+        h2: "Glossary of Electropolished Pipe and Tube Terms",
+        paragraphs: [
+          "Short definitions of the terms used across these resources, each with the page that covers it in depth."
+        ],
+        bullets: [
+          "Electropolishing: the pipe is made the anode in an acid electrolyte, and a controlled current dissolves a thin surface layer, peaks first, leaving a smoother, chromium-rich passive surface. See the [electropolishing guide](/blog/electropolishing-stainless-steel-pipes-guide/).",
+          "Mechanical polishing: abrasive belts or flap wheels of finer and finer grit cut the bore down to a lower Ra, leaving fine directional scratches. SF4 tube is mechanically polished first and electropolished after. Compared in [EP vs mechanically polished pipes](/blog/electropolished-vs-mechanically-polished-pipes/).",
+          "Ra: the average distance of the surface profile from its mean line, measured with a stylus profilometer; 1 µm equals 39.37 µin. Explained in the [Ra values guide](/blog/ra-value-ep-pipes-surface-finish/).",
+          "SF1 and SF4: ASME BPE designations for product-contact surfaces. SF1 is mechanically polished to 0.51 µm Ra maximum; SF4 is mechanically polished and electropolished to 0.38 µm. See [ASME BPE tubes](/asme-bpe-electropolished-tubes/).",
+          "Passivation: a nitric or citric acid treatment, covered by ASTM A967, that removes free iron so the chromium oxide film can form again. When it is worth doing after electropolishing: [passivation after electropolishing](/blog/passivation-after-electropolishing/).",
+          "Tube size and pipe size: tube is named by its real outside diameter, so 2 in tube measures 50.80 mm across; pipe is named by nominal pipe size (NPS), so 2 in pipe measures 60.33 mm. Both are on the [size chart](/resources/ep-pipe-size-chart/).",
+          "Schedule: the wall series of a pipe size. Stainless schedules under ASME B36.19M carry an S (5S, 10S, 40S, 80S); the OD stays the same and the wall grows with the schedule. See the [pipe schedule chart](/pipe-schedule-chart/).",
+          "ASTM A270: welded and seamless austenitic tubing for sanitary service such as dairy and food, with supplementary requirement S2 for pharmaceutical quality. See [A270 tubes](/astm-a270-electropolished-tubes/).",
+          "ASTM A269: seamless and welded austenitic tubing for general corrosion-resisting and low- or high-temperature service, common on instrument lines. See [A269 tubing](/astm-a269-electropolished-tubing/).",
+          "ASTM A249: welded austenitic tubes for boilers, superheaters, heat exchangers and condensers. See [welded EP pipes](/electropolished-welded-erw-pipes/).",
+          "ASTM A312: seamless and welded austenitic stainless pipe for high-temperature and general corrosive service, named by NPS and schedule. See [A312 pipes](/astm-a312-electropolished-pipes/).",
+          "Heat number: the identity of the melt the steel came from. Chemistry is reported per heat, so the heat number ties each length to its analysis.",
+          "EN 10204 3.1: an inspection certificate issued by the manufacturer and validated by an inspection representative independent of production, with test results for the products actually supplied. See the [3.1 certificate guide](/en-10204-31-mtc/).",
+          "PMI (positive material identification): a check, often with a handheld XRF analyser, that each piece is the alloy ordered. XRF reads molybdenum, which separates 316L from 304L, but not carbon, so the L is confirmed from the heat chemistry. See [testing and inspection](/testing-inspection/).",
+          "Orbital welding: automatic TIG welding in which the torch travels around a clamped tube, with inert gas outside and a purge inside, for a repeatable, smooth bead. See [orbital welding of EP tube](/blog/orbital-welding-ep-tube/).",
+          "Dead leg: a branch where liquid stands while the main line flows, out of reach of full cleaning flow. For new designs ASME BPE recommends no more than about two branch diameters. See [WFI loop piping design](/blog/wfi-loop-piping-design/).",
+          "CIP (clean in place): cleaning a plant by circulating rinse water and detergent solutions through the installed lines without taking them apart. A dairy example is on the [dairy EP pipes page](/industries/dairy-electropolished-pipes/).",
+          "UHP (ultra-high purity): tubing for semiconductor and specialty gas lines, specified with tighter limits on roughness, surface defects and cleanliness than pharmaceutical tube. See [ultra-high purity EP tubes](/ultra-high-purity-ep-tubes/).",
+          "L grades: 304L and 316L have a lower carbon limit than 304 and 316, which limits chromium carbide formation in the heat-affected zone, so welded lines keep their corrosion resistance. Compared in [304 vs 316L EP pipes](/blog/304-vs-316l-ep-pipes-india/)."
+        ]
+      },
+      {
         h2: "When You Are Ready to Order",
         paragraphs: [
-          "Send your sizes, grade, standard and finish through the contact page. We reply with a quotation within 24 hours of a complete enquiry; each order comes with an EN 10204 3.1 certificate traced to heat number, PMI on every length and an Ra report for each electropolished lot."
+          "Send your sizes, grade, standard and finish through the contact page. We reply with a quotation within 30 minutes of a complete enquiry; each order comes with an EN 10204 3.1 certificate traced to heat number, PMI on every length and an Ra report for each electropolished lot."
         ],
         cta: { label: "Request a quotation", href: "/contact-us/" }
       }
     ],
     faqs: [
       { q: "Are these tools free?", a: "Yes. The size chart, Ra converter and weight calculator can be used without registering." },
-      { q: "Where do I find the OD of a pipe or tube size?", a: "On the EP pipe size chart, which lists ASME B36.19M pipe schedules, ASME BPE tube sizes and DIN 11850 series 2 tube with ID and weight per metre." }
+      { q: "Where do I find the OD of a pipe or tube size?", a: "On the EP pipe size chart, which lists ASME B36.19M pipe schedules and ASME BPE tube sizes with ID and weight per metre. A DIN 11850 table on the same page helps tell metric tube from inch tube." }
     ]
   },
 
@@ -830,7 +881,7 @@ export const STANDARD_GUIDES = {
       {
         h2: "Quote by Metre or by Kilogram",
         paragraphs: [
-          "Tell us how you want the quotation expressed. We reply within 24 hours of a complete enquiry, with sizes, grade, standard, finish and the documents for each line: EN 10204 3.1 certificate traced to heat number, PMI on every length and an Ra report for each electropolished lot."
+          "Tell us how you want the quotation expressed. We reply within 30 minutes of a complete enquiry, with sizes, grade, standard, finish and the documents for each line: EN 10204 3.1 certificate traced to heat number, PMI on every length and an Ra report for each electropolished lot."
         ],
         cta: { label: "Request a quotation for your sizes", href: "/contact-us/" }
       }

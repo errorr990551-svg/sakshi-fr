@@ -1,67 +1,10 @@
-import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Clock, Send, ShieldCheck, MessageSquare } from 'lucide-react';
-import { trackLeadSubmission } from '../utils/analytics';
+import React from 'react';
+import { Phone, Mail, MapPin, Clock, ShieldCheck } from 'lucide-react';
 import { ADDRESS_LINE } from '../data/business.js';
 import GoogleReviews from './GoogleReviews';
-
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://sakshi-fr.errorr990551.workers.dev';
+import RfqForm from './RfqForm';
 
 export default function ContactPage({ onEnquireClick, hasUnlockedContact = false, onShowContactDetails }) {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    company: '',
-    product: '',
-    message: ''
-  });
-  const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState(false);
-
-  const [errorMsg, setErrorMsg] = useState('');
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setErrorMsg('');
-    try {
-      const res = await fetch(`${API_BASE_URL}/api/contact`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          company: formData.company || 'Not Provided',
-          location: 'Not Provided',
-          // Always send the chosen product, also when the visitor typed a message
-          message: [formData.product && `Product: ${formData.product}`, formData.message].filter(Boolean).join('\n') || 'General enquiry'
-        })
-      });
-      const data = await res.json();
-      if (res.ok && data.success) {
-        setSuccess(true);
-        // Track GA4 conversion key event
-        trackLeadSubmission({
-          formType: 'contact_page_form',
-          product: formData.product,
-          company: formData.company
-        });
-        setTimeout(() => {
-          setSuccess(false);
-          setFormData({ name: '', email: '', phone: '', company: '', product: '', message: '' });
-        }, 5000);
-      } else {
-        setErrorMsg(data.message || 'Failed to send enquiry. Please try again.');
-      }
-    } catch (err) {
-      console.error('Failed submitting contact page form:', err);
-      setErrorMsg('Unable to send enquiry. Please check your network connection.');
-    } finally {
-      setLoading(false);
-    }
-  };
-
   return (
     <div className="contact-page-wrapper" style={{ backgroundColor: 'var(--bg-dark-900)', color: 'var(--text-primary)', paddingBottom: '6rem', paddingTop: '5.5rem' }}>
       
@@ -94,7 +37,7 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
             Contact <span>Sakshi Forge</span>
           </h1>
           <p style={{ color: 'var(--text-secondary)', maxWidth: '700px', margin: '0 auto', fontSize: '1.1rem', lineHeight: '1.6' }}>
-            Get a firm commercial quotation within 24 hours. Contact our Mumbai sales desk or send your details using the form below.
+            Get a firm commercial quotation within 30 minutes. Contact our Mumbai sales desk or send your details using the form below.
           </p>
         </div>
       </section>
@@ -196,112 +139,9 @@ export default function ContactPage({ onEnquireClick, hasUnlockedContact = false
             </div>
 
             {/* Right: RFQ Form */}
-            <div style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '12px', padding: '2.5rem' }}>
-              <h2 style={{ fontSize: '1.5rem', fontWeight: '800', marginBottom: '1.5rem' }}>Request a Quote</h2>
-              
-              {errorMsg && (
-                <div style={{
-                  backgroundColor: 'rgba(239, 68, 68, 0.1)',
-                  border: '1px solid #ef4444',
-                  color: '#ef4444',
-                  padding: '0.8rem 1rem',
-                  borderRadius: '6px',
-                  marginBottom: '1rem',
-                  fontSize: '0.9rem'
-                }}>
-                  {errorMsg}
-                </div>
-              )}
-
-              {success ? (
-                <div style={{
-                  backgroundColor: 'rgba(255, 193, 7, 0.05)',
-                  border: '1px solid var(--primary-yellow)',
-                  padding: '2rem',
-                  borderRadius: '8px',
-                  textAlign: 'center',
-                  color: 'var(--text-primary)'
-                }}>
-                  <MessageSquare size={36} style={{ color: 'var(--primary-yellow)', margin: '0 auto 1rem auto' }} />
-                  <h3 style={{ fontSize: '1.25rem', fontWeight: '700', marginBottom: '0.5rem' }}>Quote Request Sent!</h3>
-                  <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
-                    Thank you for reaching out. A sales engineer has been assigned and will reply with a detailed pricing sheet shortly (usually within 24 hours).
-                  </p>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
-                  <div className="stack-sm" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                    <div>
-                      <label htmlFor="contact-field-1" style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Your Name</label>
-                      <input id="contact-field-1" 
-                        type="text" 
-                        required 
-                        value={formData.name} 
-                        onChange={(e) => setFormData({...formData, name: e.target.value})} 
-                        style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} 
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="contact-field-2" style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Email Address</label>
-                      <input id="contact-field-2" 
-                        type="email" 
-                        required 
-                        value={formData.email} 
-                        onChange={(e) => setFormData({...formData, email: e.target.value})} 
-                        style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} 
-                      />
-                    </div>
-                  </div>
-
-                  <div className="stack-sm" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                    <div>
-                      <label htmlFor="contact-field-3" style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Phone Number</label>
-                      <input id="contact-field-3" 
-                        type="tel" 
-                        required 
-                        value={formData.phone} 
-                        onChange={(e) => setFormData({...formData, phone: e.target.value})} 
-                        style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} 
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="contact-field-4" style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Company / City</label>
-                      <input id="contact-field-4" 
-                        type="text" 
-                        value={formData.company} 
-                        onChange={(e) => setFormData({...formData, company: e.target.value})} 
-                        style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} 
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label htmlFor="contact-field-5" style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Product / Requirements</label>
-                    <input id="contact-field-5" 
-                      type="text" 
-                      placeholder='e.g. 2" Class 150 Slip-On Flanges SS316L' 
-                      value={formData.product} 
-                      onChange={(e) => setFormData({...formData, product: e.target.value})} 
-                      style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)' }} 
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="contact-field-6" style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '0.4rem' }}>Detailed Specifications & Quantity</label>
-                    <textarea id="contact-field-6" 
-                      rows="4" 
-                      value={formData.message} 
-                      onChange={(e) => setFormData({...formData, message: e.target.value})} 
-                      placeholder="Please specify size list, schedule/pressure rating, steel grade, and quantity..."
-                      style={{ width: '100%', padding: '0.8rem', backgroundColor: 'var(--bg-dark-700)', border: '1px solid var(--border-color)', borderRadius: '6px', color: 'var(--text-primary)', resize: 'vertical' }}
-                    ></textarea>
-                  </div>
-
-                  <button type="submit" className="btn btn-primary" style={{ width: '100%', padding: '1rem 0', justifyContent: 'center' }}>
-                    Send RFQ <Send size={16} style={{ marginLeft: '0.5rem' }} />
-                  </button>
-                </form>
-              )}
+            <div style={{ backgroundColor: 'var(--bg-dark-800)', border: '1px solid var(--border-color)', borderRadius: '12px', padding: '2rem' }}>
+              <h2 style={{ fontSize: '1.5rem', fontWeight: '800', marginBottom: '1rem' }}>Request a Quote</h2>
+              <RfqForm formType="contact_page_form" />
             </div>
 
           </div>

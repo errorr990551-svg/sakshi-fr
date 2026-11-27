@@ -31,7 +31,7 @@ export function trackEvent(eventName, params = {}) {
  * Key Event: Lead Submission (Contact Form / RFQ / Quick Enquiry)
  * GA4 Standard Event: generate_lead
  */
-export function trackLeadSubmission({ formType = 'general_enquiry', product = '', company = '', location = '' }) {
+export function trackLeadSubmission({ formType = 'general_enquiry', product = '', company = '', location = '', rfqVersion = '' }) {
   trackEvent('generate_lead', {
     event_category: 'Lead Generation',
     event_label: formType,
@@ -39,6 +39,7 @@ export function trackLeadSubmission({ formType = 'general_enquiry', product = ''
     product_interest: product || 'General Inquiry',
     company_name: company || 'Not Provided',
     user_location: location || 'Not Provided',
+    ...(rfqVersion && { rfq_version: rfqVersion }),
     currency: 'INR',
     value: 5000 // Nominal estimated B2B order value for conversion weighting
   });

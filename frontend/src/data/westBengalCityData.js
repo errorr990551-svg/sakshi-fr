@@ -9,7 +9,7 @@ export const westBengalCityData = {
     "country": "India",
     "pageUrl": "/market-area/kolkata",
     "pageTitle": "Electropolished Pipe Manufacturer Kolkata | Sakshi Forge",
-    "metaDescription": "Electropolished 316L & 304L SS pipes for Kolkata, Falta pharma park and port-belt plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "metaDescription": "Electropolished 316L & 304L SS pipes for Kolkata, Falta pharma park and port-belt plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 30 minutes.",
     "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Kolkata",
     "subHeadline": "Kolkata is eastern India's business capital, with plants around the city, a dedicated pharma park at Falta and the head offices where many eastern projects are bought. We manufacture and electropolish SS 316L and 304L pipes and tubes, in western India, and ship to Kolkata and its industrial belts, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
@@ -445,7 +445,7 @@ export const westBengalCityData = {
     "country": "India",
     "pageUrl": "/market-area/kalyani",
     "pageTitle": "Electropolished Pipe Manufacturer Kalyani | Sakshi Forge",
-    "metaDescription": "Electropolished 304L & 316L SS pipes for Kalyani dairy, food and engineering plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "metaDescription": "Electropolished 304L & 316L SS pipes for Kalyani dairy, food and engineering plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 30 minutes.",
     "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Kalyani",
     "subHeadline": "Kalyani is a planned industrial town in Nadia district, about 50 km north of Kolkata, with three industrial park phases of engineering, chemical and agro-based units and a new park taking shape at Haringhata. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply Kalyani's dairies, food plants and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
@@ -662,7 +662,7 @@ export const westBengalCityData = {
     "country": "India",
     "pageUrl": "/market-area/howrah",
     "pageTitle": "Electropolished Pipe Manufacturer Howrah | Sakshi Forge",
-    "metaDescription": "Electropolished 304L & 316L SS pipes for Howrah food-park, engineering and fabricator needs. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "metaDescription": "Electropolished 304L & 316L SS pipes for Howrah food-park, engineering and fabricator needs. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 30 minutes.",
     "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Howrah",
     "subHeadline": "Howrah is Kolkata's industrial twin across the river, known for foundries, wire and engineering workshops, with a cluster of food parks at Sankrail and industrial parks at Uluberia, Amta and Bagnan. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply Howrah's food plants and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
@@ -886,7 +886,7 @@ export const westBengalCityData = {
     "country": "India",
     "pageUrl": "/market-area/dankuni",
     "pageTitle": "Electropolished Pipe Manufacturer Dankuni | Sakshi Forge",
-    "metaDescription": "Electropolished 304L & 316L SS pipes for Dankuni dairy, food-park and FMCG plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "metaDescription": "Electropolished 304L & 316L SS pipes for Dankuni dairy, food-park and FMCG plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 30 minutes.",
     "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Dankuni",
     "subHeadline": "Dankuni, in Hooghly district about 25 km from central Kolkata, is Eastern India's logistics gateway and also home to a major dairy plant, food and FMCG factories and a modular food park. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply Dankuni's dairy, food and fabricator buyers directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
@@ -1349,7 +1349,7 @@ export const westBengalCityData = {
     "country": "India",
     "pageUrl": "/market-area/siliguri",
     "pageTitle": "Electropolished Pipe Manufacturer Siliguri | Sakshi Forge",
-    "metaDescription": "Electropolished 304L & 316L SS pipes for Siliguri fruit, food, dairy and beverage plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "metaDescription": "Electropolished 304L & 316L SS pipes for Siliguri fruit, food, dairy and beverage plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 30 minutes.",
     "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Siliguri",
     "subHeadline": "Siliguri is North Bengal's commercial hub and the gateway to Sikkim and the north-east, with a food, feed and tea-processing park at Dabgram and a fruit belt in the hills around it. We manufacture and electropolish SS 304L and 316L pipes and tubes, in western India, and ship to Siliguri's food, beverage and dairy plants, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
@@ -2007,7 +2007,7 @@ export const westBengalCityData = {
     "country": "India",
     "pageUrl": "/market-area/bardhaman",
     "pageTitle": "Electropolished Pipe Manufacturer Bardhaman | Sakshi Forge",
-    "metaDescription": "Electropolished 304L & 316L SS pipes for Bardhaman food, potato and agro-processing plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "metaDescription": "Electropolished 304L & 316L SS pipes for Bardhaman food, potato and agro-processing plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 30 minutes.",
     "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Bardhaman",
     "subHeadline": "Bardhaman is the district town of West Bengal's \"rice bowl\", on the Grand Trunk Road between Durgapur and Kolkata, with rice mills, agro-based industry and one of the state's main potato belts around it. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply Bardhaman's food plants and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [

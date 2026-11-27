@@ -163,7 +163,7 @@ export const madhyaPradeshCityData = {
     "country": "India",
     "pageUrl": "/market-area/pithampur",
     "pageTitle": "Electropolished Pipe Manufacturer Pithampur | Sakshi Forge",
-    "metaDescription": "Electropolished 316L & 304L SS pipes for Pithampur pharma SEZ, auto and engineering plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "metaDescription": "Electropolished 316L & 304L SS pipes for Pithampur pharma SEZ, auto and engineering plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 30 minutes.",
     "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Pithampur",
     "subHeadline": "Pithampur is Madhya Pradesh's largest industrial area, known as the \"Detroit of India\" for its automotive plants and home to a dedicated pharma zone in the Indore SEZ. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Pithampur's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
@@ -312,7 +312,7 @@ export const madhyaPradeshCityData = {
     "country": "India",
     "pageUrl": "/market-area/dewas",
     "pageTitle": "Electropolished Pipe Manufacturer Dewas | Sakshi Forge",
-    "metaDescription": "Electropolished 316L & 304L SS pipes for Dewas pharma, engineering and food plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "metaDescription": "Electropolished 316L & 304L SS pipes for Dewas pharma, engineering and food plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 30 minutes.",
     "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Dewas",
     "subHeadline": "Dewas is one of Madhya Pradesh's oldest industrial hubs, home to pharma, engineering and food plants on the road between Indore and Ujjain. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Dewas's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
@@ -756,7 +756,7 @@ export const madhyaPradeshCityData = {
     "country": "India",
     "pageUrl": "/market-area/ratlam",
     "pageTitle": "Electropolished Pipe Manufacturer Ratlam | Sakshi Forge",
-    "metaDescription": "Electropolished 304L & 316L SS pipes for Ratlam namkeen, food and soya-processing plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "metaDescription": "Electropolished 304L & 316L SS pipes for Ratlam namkeen, food and soya-processing plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 30 minutes.",
     "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Ratlam",
     "subHeadline": "Ratlam is a railway and agro-processing town in western Madhya Pradesh, famous for its namkeen and sev, with a purpose-built snack cluster and a planned investment region around it. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply Ratlam's food plants, oil and soya processors and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
@@ -1353,7 +1353,7 @@ export const madhyaPradeshCityData = {
     "country": "India",
     "pageUrl": "/market-area/mandideep",
     "pageTitle": "Electropolished Pipe Manufacturer Mandideep | Sakshi Forge",
-    "metaDescription": "Electropolished 316L & 304L SS pipes for Mandideep pharma, chemical and food plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "metaDescription": "Electropolished 316L & 304L SS pipes for Mandideep pharma, chemical and food plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 30 minutes.",
     "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Mandideep",
     "subHeadline": "Mandideep is the industrial area on the south-east edge of Bhopal, with more than 450 units in pharma, chemicals, food processing and engineering. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Mandideep's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
@@ -1658,7 +1658,7 @@ export const madhyaPradeshCityData = {
     "country": "India",
     "pageUrl": "/market-area/pithampur",
     "pageTitle": "Electropolished Pipe Manufacturer Pithampur | Sakshi Forge",
-    "metaDescription": "Electropolished 316L & 304L SS pipes for Pithampur pharma SEZ, auto and engineering plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "metaDescription": "Electropolished 316L & 304L SS pipes for Pithampur pharma SEZ, auto and engineering plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 30 minutes.",
     "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Pithampur",
     "subHeadline": "Pithampur is Madhya Pradesh's largest industrial area, known as the \"Detroit of India\" for its automotive plants and home to a dedicated pharma zone in the Indore SEZ. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Pithampur's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
@@ -2267,7 +2267,7 @@ export const madhyaPradeshCityData = {
     "country": "India",
     "pageUrl": "/market-area/mandideep",
     "pageTitle": "Electropolished Pipe Manufacturer Mandideep | Sakshi Forge",
-    "metaDescription": "Electropolished 316L & 304L SS pipes for Mandideep pharma, chemical and food plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "metaDescription": "Electropolished 316L & 304L SS pipes for Mandideep pharma, chemical and food plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 30 minutes.",
     "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Mandideep",
     "subHeadline": "Mandideep is the industrial area on the south-east edge of Bhopal, with more than 450 units in pharma, chemicals, food processing and engineering. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Mandideep's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [

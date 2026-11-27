@@ -152,7 +152,7 @@ export default function MadhyaPradeshHubPage({ onEnquireClick, onShowContactDeta
               className="btn btn-primary btn-lg"
               style={{ padding: '0.85rem 1.75rem', fontWeight: '700' }}
             >
-              Request MP Quote in 24 Hours <ArrowRight size={16} />
+              Request MP Quote in 30 Minutes <ArrowRight size={16} />
             </button>
             <button 
               onClick={handleShowContact}

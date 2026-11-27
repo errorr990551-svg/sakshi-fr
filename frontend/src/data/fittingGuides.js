@@ -1518,9 +1518,9 @@ export const FITTING_GUIDES = {
         ]
       },
       {
-        "h2": "How to get a duplex electropolished pipe quote in 24 hours",
+        "h2": "How to get a duplex electropolished pipe quote in 30 minutes",
         "paragraphs": [
-          "Include these details and you will receive a written quotation within 24 hours:"
+          "Include these details and you will receive a written quotation within 30 minutes:"
         ],
         "bullets": [
           "Grade and UNS number (S31803, S32205, S32750 or S32760).",

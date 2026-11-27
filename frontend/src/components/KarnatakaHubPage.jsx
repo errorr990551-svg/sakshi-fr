@@ -146,7 +146,7 @@ export default function KarnatakaHubPage({ onEnquireClick, onShowContactDetails 
 
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
             <button onClick={() => onEnquireClick('Karnataka State Hub RFQ')} className="btn btn-primary btn-lg" style={{ padding: '0.9rem 1.85rem', fontWeight: '700' }}>
-              Request Karnataka Quote in 24 Hours <ArrowRight size={16} />
+              Request Karnataka Quote in 30 Minutes <ArrowRight size={16} />
             </button>
             <button 
               onClick={handleShowContact} 

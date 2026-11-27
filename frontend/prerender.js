@@ -9,6 +9,7 @@ import { visibleProductFaqs } from './src/utils/productFaqs.js';
 import { formatTitle, formatMetaDesc } from './src/utils/titles.js';
 import { CATEGORY_GUIDES } from './src/data/categoryGuides.js';
 import { PHONE, EMAIL, GBP, localBusinessSchema } from './src/data/business.js';
+import { EP_PROCESS_VIDEO } from './src/data/videos.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -522,6 +523,26 @@ async function runPrerender() {
           "mainEntity": faqEntities
         });
       }
+    }
+
+    // Pages that show the EP process video describe it, so Google can index it as a video
+    if (EP_PROCESS_VIDEO.pages.includes(routePath.replace(/\/?$/, '/'))) {
+      const V = EP_PROCESS_VIDEO;
+      schemasGraph.push({
+        "@type": "VideoObject",
+        "@id": `${BASE_URL}${V.contentUrl}#video`,
+        "name": V.name,
+        "description": V.description,
+        "thumbnailUrl": `${BASE_URL}${V.thumbnailUrl}`,
+        "contentUrl": `${BASE_URL}${V.contentUrl}`,
+        "uploadDate": V.uploadDate,
+        "duration": V.duration,
+        "width": V.width,
+        "height": V.height,
+        "inLanguage": "en",
+        "transcript": V.transcript,
+        "publisher": { "@id": `${BASE_URL}/#org` }
+      });
     }
 
     // Every page states when its content last changed (blog posts keep their own date if later)

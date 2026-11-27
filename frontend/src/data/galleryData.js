@@ -45,6 +45,16 @@ export const galleryItems = [
     description: 'Automated hydraulic forging hammer operating under extreme pressure to shape industrial steel flanges and components.'
   },
   {
+    id: 'vid-3',
+    type: 'video',
+    title: 'How Our Electropolished Pipes Are Made',
+    category: 'Video Tour',
+    filterTag: 'Videos',
+    src: '/videos/electropolished-pipes-process.mp4',
+    poster: '/videos/electropolished-pipes-process.webp',
+    description: 'Certified SS 304 and 316L pipe is cut, deburred and degreased, electropolished in a controlled electrolytic bath, rinsed and passivated, then tested for surface roughness and inner finish (borescope and visual inspection).'
+  },
+  {
     id: 'img-1',
     type: 'image',
     title: 'Forged Steel Flange Stock & Machining',

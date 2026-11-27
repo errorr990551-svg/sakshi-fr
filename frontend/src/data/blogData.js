@@ -1227,6 +1227,14 @@ Problems found after installation are expensive to fix.<br />
   <li><strong>Deburring & Stress Relief:</strong> Removes microscopic burrs and relieves surface tensile stress induced during cold drawing or mill tube forming.</li>
 </ul>
 
+<h2>Watch: How Our Electropolished Pipes Are Made</h2>
+<figure style="margin:1.5rem 0">
+  <video controls preload="none" playsinline width="1280" height="720" poster="/videos/electropolished-pipes-process.webp" src="/videos/electropolished-pipes-process.mp4" style="width:100%;height:auto;aspect-ratio:16/9;border-radius:12px;background:#020617">
+    <track kind="captions" srclang="en" label="English" src="/videos/electropolished-pipes-process.vtt">
+  </video>
+  <figcaption>The process in 47 seconds: certified SS 304 and 316L stainless steel is cut, deburred and thoroughly degreased; in a controlled electrolytic bath, microscopic peaks are removed from the surface; the pipe is rinsed and passivated for superior corrosion resistance; and every pipe is tested for surface roughness and inner finish (borescope and visual inspection).</figcaption>
+</figure>
+
 <h2>3. Surface Finish Classification (ASME BPE Standards)</h2>
 <p>The table below summarizes surface finish designations established by ASME BPE (Bioprocessing Equipment) for electropolished stainless steel tubing (ASTM A270 / ASTM A312):</p>
 

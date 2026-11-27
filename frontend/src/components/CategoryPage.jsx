@@ -4,6 +4,8 @@ import { handleLinkClick, navigate, withSlash } from '../utils/router';
 import { PRIORITY_30_CITIES } from '../data/priorityCities';
 import { CATEGORY_GUIDES } from '../data/categoryGuides.js';
 import CategoryGuide from './CategoryGuide';
+import ProcessVideo from './ProcessVideo';
+import { EP_PROCESS_VIDEO } from '../data/videos';
 import { responsiveImg } from '../utils/imgSize';
 
 // `products` (this category's products) and `crossLinkSlugs` (tag -> product slug) are
@@ -218,6 +220,12 @@ export default function CategoryPage({ category, products: filteredProducts = []
           )}
         </div>
       </section>
+
+      {EP_PROCESS_VIDEO.pages.includes(`/${category['Category Slug']}/`) && (
+        <section style={{ padding: '4.5rem 0 1.5rem', backgroundColor: 'var(--bg-dark-900)', borderTop: '1px solid var(--border-color)' }}>
+          <div className="container" style={{ maxWidth: '900px' }}><ProcessVideo /></div>
+        </section>
+      )}
 
       {CATEGORY_GUIDES[category['Category Slug']] && <CategoryGuide guide={CATEGORY_GUIDES[category['Category Slug']]} />}
 

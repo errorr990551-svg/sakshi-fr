@@ -20,9 +20,10 @@ function RichText({ text }) {
 
 function Table({ table }) {
   return (
-    <div style={{ overflowX: 'auto', margin: '1.25rem 0 1.5rem' }}>
+    <div style={{ overflowX: 'auto', margin: '1.25rem 0 1.5rem', containerType: 'inline-size' }}>
       <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem' }}>
-        <caption style={{ textAlign: 'left', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>{table.caption}</caption>
+        {/* Pinned and capped to the visible width, so a wide table on a phone does not clip its caption. */}
+        <caption style={{ textAlign: 'left', color: 'var(--text-secondary)', marginBottom: '0.5rem', position: 'sticky', left: 0, maxWidth: '100cqw' }}>{table.caption}</caption>
         <thead>
           <tr>{table.head.map((h) => <th key={h} scope="col" style={{ textAlign: 'left', padding: '0.6rem', borderBottom: '2px solid var(--border-color)', color: 'var(--primary-yellow)' }}>{h}</th>)}</tr>
         </thead>
@@ -40,6 +41,12 @@ function Block({ block }) {
   return (
     <>
       {block.paragraphs?.map((p, i) => <p key={i} style={{ color: 'var(--text-secondary)', lineHeight: 1.75, marginBottom: '1rem' }}><RichText text={p} /></p>)}
+      {block.figure && (
+        <figure style={{ margin: '1.25rem 0 1.5rem' }}>
+          <img src={block.figure.src} alt={block.figure.alt} width={block.figure.width} height={block.figure.height} loading="lazy" decoding="async" style={{ width: '100%', maxWidth: `${block.figure.width}px`, height: 'auto', display: 'block' }} />
+          <figcaption style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginTop: '0.5rem' }}>{block.figure.caption}</figcaption>
+        </figure>
+      )}
       {block.table && <Table table={block.table} />}
       {block.bullets && (
         <ul style={{ color: 'var(--text-secondary)', lineHeight: 1.75, paddingLeft: '1.25rem', marginBottom: '1rem' }}>

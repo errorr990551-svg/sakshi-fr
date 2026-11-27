@@ -11,7 +11,7 @@ export const SPEC_GUIDES = {
   ...INDUSTRY_GUIDES,
   ...STANDARD_GUIDES,
   '/electropolished-tubes/': {
-    updated: '2026-11-03',
+    updated: '2026-11-27',
     sections: [
       {
         h2: 'Tube, Not Pipe: How Electropolished Tubes Are Sized and Specified',
@@ -43,6 +43,40 @@ export const SPEC_GUIDES = {
               'Process engineers size lines on internal diameter and velocity, while buyers order by OD. Before releasing an order, confirm the ID the designer used. A loop designed on a 1.65 mm wall that is bought in 2.11 mm wall loses bore area, changes velocity and can push a WFI loop below the turbulence its design assumed.'
             ]
           }
+        ]
+      },
+      {
+        h2: 'Same Number, Different Bore: Moving a Line From Pipe to Tube',
+        paragraphs: [
+          'Drawings, line lists and bills of quantities are often written in pipe sizes, while hygienic lines are built in tube. Converting on the nominal number shrinks the bore every time, because a tube\'s OD is its nominal size, while for these sizes a pipe\'s OD is larger than its nominal number. The diagram and table compare ASME BPE tube with Sch 10S pipe, a common wall for electropolished process pipe.'
+        ],
+        figure: {
+          src: '/diagrams/ep-tube-vs-pipe-bore.svg',
+          width: 600,
+          height: 330,
+          alt: 'Cross-sections drawn to the same scale: 1 inch tube with a 22.10 mm bore, 3/4 inch Sch 10S pipe with a 22.45 mm bore, and 1 inch Sch 10S pipe with a 27.86 mm bore',
+          caption: '1 in tube has almost the bore of 3/4 in Sch 10S pipe (22.10 against 22.45 mm), not that of 1 in Sch 10S pipe (27.86 mm).'
+        },
+        table: {
+          caption: 'Sch 10S pipe (ASME B36.19M) against ASME BPE tube of the same nominal size',
+          head: ['Size (in)', 'Pipe OD / bore (mm)', 'Tube OD / bore (mm)', 'Tube flow area against the pipe', 'Tube with the closest bore'],
+          rows: [
+            ['1/2', '21.34 / 17.12', '12.70 / 9.40', '70% less', '3/4 in (15% less)'],
+            ['3/4', '26.67 / 22.45', '19.05 / 15.75', '51% less', '1 in (3% less)'],
+            ['1', '33.40 / 27.86', '25.40 / 22.10', '37% less', 'Same size; 1-1/2 in has 56% more'],
+            ['1-1/2', '48.26 / 42.72', '38.10 / 34.80', '34% less', '2 in (24% more)'],
+            ['2', '60.33 / 54.79', '50.80 / 47.50', '25% less', '2-1/2 in (21% more)'],
+            ['2-1/2', '73.03 / 66.93', '63.50 / 60.20', '19% less', '2-1/2 in (19% less) or 3 in (19% more)'],
+            ['3', '88.90 / 82.80', '76.20 / 72.90', '22% less', 'Same size'],
+            ['4', '114.30 / 108.20', '101.60 / 97.38', '19% less', 'Same size'],
+            ['6', '168.28 / 161.48', '152.40 / 146.86', '17% less', 'Same size']
+          ]
+        },
+        bullets: [
+          'At 1 in no tube size is close. The same-size tube has 37% less flow area than Sch 10S pipe and the next size up has 56% more, so the designer has to choose between a smaller and a much larger bore.',
+          'Example: 10 m³/h flows at 1.94 m/s in 1-1/2 in Sch 10S pipe and at 2.92 m/s in 1-1/2 in tube. That is about 1.5 times the velocity and, in turbulent flow through a smooth bore, roughly 2.6 times the friction loss per metre.',
+          'The tube size should therefore come from the process engineer, chosen on bore, with velocity, pressure drop and pump duty rechecked. Converting on the nominal number is a purchasing shortcut that changes the hydraulics.',
+          'Walls and masses for every pipe and tube size are on the [EP pipe size chart](/resources/ep-pipe-size-chart/).'
         ]
       },
       {
@@ -78,6 +112,28 @@ export const SPEC_GUIDES = {
         ]
       },
       {
+        h2: 'Enquiry Wording That Leads to a Wrong Quotation',
+        paragraphs: [
+          'A wrong quotation often starts from a short line in the enquiry that the buyer and the supplier read differently. The table lists common ones, with wording that leaves nothing open.'
+        ],
+        table: {
+          caption: 'Common enquiry wording, what it leaves open, and what to write instead',
+          head: ['The enquiry says', 'What it leaves open', 'Write it like this'],
+          rows: [
+            ['"1 inch EP pipe"', 'Tube (25.40 mm OD) or NPS pipe (33.40 mm OD); the wall; the standard', '1 in OD x 0.065 in wall tube, ASTM A270; or 1 in NPS Sch 10S pipe, ASTM A312'],
+            ['"SS 316"', 'Whether the low-carbon L grade is required, as it usually is for welded lines', 'TP316L, with sulphur 0.005 to 0.017% (ASME BPE) if the tube will be orbital welded'],
+            ['"Ra 0.4"', 'Micrometres or microinches; inside or outside; maximum or average; polished or electropolished', 'ID Ra 0.38 µm (15 µin) max, electropolished: ASME BPE SF4'],
+            ['"Mirror finish"', 'An appearance, not a measured value; it does not say electropolished', 'An Ra limit and process for the ID, and the OD finish written separately'],
+            ['"100 nos"', 'The length of each piece, and so the total metres', '100 m in 6 m lengths, that is 17 lengths (102 m)'],
+            ['"With MTC"', 'Which certificate type, and whether the finish is reported', 'EN 10204 3.1 certificate traced to heat number, and an Ra report for each electropolished lot'],
+            ['"As per BPE"', 'The edition, the surface designation, and whether BPE tolerances apply', 'ASME BPE, edition as in your specification; ID SF4; BPE dimensional tolerances']
+          ]
+        },
+        bullets: [
+          'To convert a micrometre Ra into microinches, use the [Ra converter](/resources/ra-surface-finish-converter/). How a mirror polish compares with an electropolished surface is covered in [electropolished vs mechanically polished pipes](/blog/electropolished-vs-mechanically-polished-pipes/).'
+        ]
+      },
+      {
         h2: 'Handling, Capping and Storage on Site',
         paragraphs: [
           'An electropolished bore is easily spoiled after delivery. Tube should arrive with end caps fitted and individually sleeved, and should stay capped until it is cut. Store it off the floor, away from carbon-steel work: grinding dust from carbon steel embeds in stainless and rusts. Cut with dedicated stainless tools and deburr without abrasives that leave iron. These steps cost nothing at purchase and decide whether the finish you paid for survives installation.'
@@ -92,10 +148,21 @@ export const SPEC_GUIDES = {
           'Metres per size, length preference, and matching [electropolished fittings](/electropolished-pipe-fittings/).',
           'Documents required for your quality or validation file.'
         ],
+        subsections: [
+          {
+            h3: 'Metres, Lengths and Kilograms',
+            paragraphs: [
+              'Tube is ordered in metres, delivered in lengths and sometimes priced per kilogram, so fix all three in the enquiry. For example, 100 m of 1-1/2 in x 1.65 mm tube in 6 m lengths is 17 lengths: 102 m, about 153 kg in 304L at 1.50 kg/m. To compare a rate per kilogram with a rate per metre, multiply the per-kilogram rate by the mass per metre of that size. Masses for each size are on the [size chart](/resources/ep-pipe-size-chart/).'
+            ]
+          }
+        ],
         cta: { label: 'Request a quotation for electropolished tubes', href: '/contact-us/' }
       }
     ],
     faqs: [
+      { q: 'Which tube has the same bore as 3/4 inch Sch 10S pipe?', a: '1 in OD x 0.065 in wall tube. Its bore is 22.10 mm against 22.45 mm, about 3% less flow area. 1 in tube is not a match for 1 in Sch 10S pipe: it has 37% less flow area.' },
+      { q: 'What does Ra 0.4 mean in a tube enquiry?', a: 'Usually 0.4 µm, but on its own it does not say which surface it applies to, whether it is a maximum or an average, or whether the surface is electropolished. A complete line reads, for example, ID Ra 0.38 µm (15 µin) max, electropolished, which is the ASME BPE SF4 designation.' },
+      { q: 'How do I compare a per-kilogram tube rate with a per-metre rate?', a: 'Multiply the per-kilogram rate by the mass per metre of the size. 1-1/2 in x 1.65 mm tube in 304L weighs about 1.50 kg per metre, so its per-metre rate is 1.50 times the per-kilogram rate. 316L is about 1% heavier.' },
       { q: 'What is the difference between electropolished tube and electropolished pipe?', a: 'Tube is specified by outside diameter and a fixed wall thickness, for example 1" OD x 0.065" wall, and is used in hygienic systems built around clamp ferrules and orbital welding. Pipe is specified by nominal pipe size and schedule, so its OD stays fixed while the wall changes with schedule. The two are not interchangeable.' },
       { q: 'Which wall thickness is standard for electropolished sanitary tube?', a: 'For ASME BPE tube, 0.065" (1.65 mm) is standard from 1/2" to 3" OD, 0.083" (2.11 mm) at 4" and 0.109" (2.77 mm) at 6", with 0.035" (0.89 mm) for 1/4" and 3/8". Other walls are available for specific pressure or process needs.' },
       { q: 'Is the OD of electropolished tube also electropolished?', a: 'Not by default. The bore is the product-contact surface and is electropolished; the OD is usually bright-annealed or mechanically polished. Specify an electropolished or polished OD if the tube runs exposed in a cleanroom or wash-down area.' },

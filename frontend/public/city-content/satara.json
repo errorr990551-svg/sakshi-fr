@@ -1,6 +1,6 @@
 {
   "slug": "satara",
-  "updated": "2026-10-25",
+  "updated": "2026-11-27",
   "sections": [
     {
       "heading": "Satara MIDC: An Engineering Estate with a Pharma and Food Fringe",
@@ -30,21 +30,69 @@
       ]
     },
     {
+      "heading": "Khandala Taluka: Shirwal, Lonand and the Kesurdi Estate",
+      "paragraphs": [
+        "Several of Satara district's process plants sit in Khandala taluka, on the Pune side of the district. The Maharashtra Pollution Control Board's Satara sub-regional database (dated July 2014) lists seven large red-category units in MIDC Lonand and three in MIDC Kesurdi. At Shindewadi near Shirwal it lists Associated Capsules under glue and gelatin manufacture, ACG Pharmapack making PVC and blister films, and Pam Glatt Pharma Technologies, filed under heavy engineering.",
+        "In Lonand the same database lists Privilege Industries with a distillery and bottling division on plot B-1 and a brewery division on plot C-2, filed as beverage and bottling. Datwyler Pharma Packaging India is listed in the Kesurdi SEZ industrial area making rubber closures used in pharma packs, and Govind Milk and Milk Products appears at Kolki in Phaltan taluka as an integrated dairy project. These are the regulator's records, not a list of our customers.",
+        "What this means for tube: a capsule or gelatin plant needs 316L on purified-water and gelatin-solution lines, with SF4 electropolished tube where the water loop is hot-sanitised. Packaging film and closure plants mostly need certified utility and cooling-water tube. Brewery, bottling and dairy lines are CIP-heavy and usually run in 304 or 316L with a polished bore; electropolish is worth it where your audit or brand owner asks for it."
+      ]
+    },
+    {
       "heading": "Delivery to Satara MIDC and Additional MIDC",
       "paragraphs": [
         "Satara is supplied by road from Mumbai via the Mumbai-Pune-Bengaluru corridor; we confirm dispatch and transit in writing with each quotation. JNPT Nhava Sheva, about 280 km away, is the nearest listed gateway for export-bound material.",
         "Nearby clusters:"
       ],
       "links": [
-        { "label": "Pune", "href": "/market-area/pune/" },
-        { "label": "Sangli and Miraj", "href": "/market-area/sangli/" },
-        { "label": "Kolhapur", "href": "/market-area/kolhapur/" }
+        {
+          "label": "Pune",
+          "href": "/market-area/pune/"
+        },
+        {
+          "label": "Sangli and Miraj",
+          "href": "/market-area/sangli/"
+        },
+        {
+          "label": "Kolhapur",
+          "href": "/market-area/kolhapur/"
+        }
+      ]
+    },
+    {
+      "heading": "What a Shirwal, Lonand or Satara MIDC Buyer Should Send",
+      "paragraphs": [
+        "Pharma, capsule and packaging plants in Khandala taluka: the line list from your P&ID with the service on each line (purified water, hot-sanitised loop, gelatin or product transfer, cooling water), design temperature, OD and wall per size, total length, and whether lines are orbitally welded or clamped. Mark the lines your quality team classes as product contact, since that decides SF1 or SF4.",
+        "Process-equipment fabricators around Satara MIDC and Shirwal should send the end customer's specification and the cut-length list from the drawing, so tube and certificates match the turnover package.",
+        "Send it through our contact page for a quotation within 24 hours. A Satara order carries an EN 10204 3.1 certificate traced to heat number, PMI on every length and an internal Ra report for each electropolished lot, and dispatch and delivery to Lonand, Shirwal or Satara MIDC are confirmed in writing with each quotation."
+      ],
+      "links": [
+        {
+          "label": "Request a quotation for Satara",
+          "href": "/contact-us/"
+        },
+        {
+          "label": "Electropolished tubes",
+          "href": "/electropolished-tubes/"
+        },
+        {
+          "label": "Electropolished pipes",
+          "href": "/electropolished-pipes/"
+        }
       ]
     }
   ],
   "sources": [
-    { "title": "Shivaji University thesis: Industrial development of Satara (chapter 5)", "url": "https://ir.unishivaji.ac.in/bitstream/123456789/1185/12/12_Chapter%205.pdf" },
-    { "title": "MPCB: SRO Satara industry database (2014)", "url": "https://mpcb.gov.in/sites/default/files/industrial-statistics/sro-industry/SROSatara_SROdatabase_31072014.pdf" },
-    { "title": "Dun & Bradstreet: Pharmaceutical manufacturers in Satara", "url": "https://www.dnb.com/business-directory/company-information.pharmaceutical_and_medicine_manufacturing.in.maharashtra.satara.html" }
+    {
+      "title": "Shivaji University thesis: Industrial development of Satara (chapter 5)",
+      "url": "https://ir.unishivaji.ac.in/bitstream/123456789/1185/12/12_Chapter%205.pdf"
+    },
+    {
+      "title": "MPCB: SRO Satara industry database (2014)",
+      "url": "https://mpcb.gov.in/sites/default/files/industrial-statistics/sro-industry/SROSatara_SROdatabase_31072014.pdf"
+    },
+    {
+      "title": "Dun & Bradstreet: Pharmaceutical manufacturers in Satara",
+      "url": "https://www.dnb.com/business-directory/company-information.pharmaceutical_and_medicine_manufacturing.in.maharashtra.satara.html"
+    }
   ]
 }

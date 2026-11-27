@@ -1,6 +1,6 @@
 {
   "slug": "sangli",
-  "updated": "2026-10-25",
+  "updated": "2026-11-27",
   "sections": [
     {
       "heading": "Sangli and Miraj: Sugar, Turmeric and the Kupwad MIDC",
@@ -30,21 +30,69 @@
       ]
     },
     {
+      "heading": "Sugar, Distillery, Glucose and Dairy Units on the MPCB Sangli List",
+      "paragraphs": [
+        "The Maharashtra Pollution Control Board's Sangli sub-regional office list (consents dated around 2013 and 2014) counts 14 large red-category units and 22 mid-sized red-category units outside the MIDC estates. Most are sugar factories, and several run a distillery beside the mill: Sonhira Sahakari Sakhar Karkhana at Wangi in Kadegaon taluka, Rajarambapu Patil SSK at Rajaramnagar in Walwa taluka and Vasantdada Shetkari SSK at Madhavnagar near Miraj all appear with both sugar and distillery consents, and Viraj Alcohols is listed at Kapari in Shirala taluka.",
+        "The same list shows Sangli's food processing reaching beyond sugar. Sahyadri Starch and Industries holds plots A/6 to A/8 in MIDC Miraj, Yashwant Sahakari Glucose Karkhana is at Siddheshwar Nagar in Shirala, and B. G. Chitale is listed at Bhilawadi station in Palus taluka as an integrated milk-processing and dairy-products project. This is the regulator's record of plants in the district, not a list of our customers.",
+        "For tube selection these plants differ. A district dairy's milk reception, pasteuriser outlet and CIP return lines are the main hygienic duty, usually in 304 or 316L with a polished bore. Liquid glucose and starch hydrolysate are hot, sticky and drain slowly, so 316L tube with a smooth internal finish shortens cleaning. In a molasses distillery the fermentation side rarely needs an electropolished bore; we would quote electropolished 316L only for lines your process or your buyer's specification names."
+      ]
+    },
+    {
       "heading": "Delivery to Kupwad, Miraj and Sangli",
       "paragraphs": [
         "Sangli is supplied by road from Mumbai; dispatch and transit are confirmed in writing with each quotation. JNPT Nhava Sheva, about 390 km away, is the nearest listed gateway for export-bound material. Sugar-sector buyers often plan pipework replacement in the off-season, so we recommend placing orders well before the crushing season starts.",
         "Nearby clusters:"
       ],
       "links": [
-        { "label": "Kolhapur", "href": "/market-area/kolhapur/" },
-        { "label": "Satara", "href": "/market-area/satara/" },
-        { "label": "Solapur", "href": "/market-area/solapur/" }
+        {
+          "label": "Kolhapur",
+          "href": "/market-area/kolhapur/"
+        },
+        {
+          "label": "Satara",
+          "href": "/market-area/satara/"
+        },
+        {
+          "label": "Solapur",
+          "href": "/market-area/solapur/"
+        }
+      ]
+    },
+    {
+      "heading": "What a Sangli Dairy, Glucose or Distillery Buyer Should Send",
+      "paragraphs": [
+        "Dairy and glucose plants around Palus, Miraj and Shirala: the line list with product on each line (raw milk, pasteurised milk, cream, liquid glucose, CIP supply and return), design temperature, caustic and acid strength used in CIP, OD and wall per size, total length, and whether joints are welded or clamped. Tell us which lines your quality team treats as product contact, because that decides whether a polished 304 tube is enough or 316L electropolished is worth paying for.",
+        "Sugar factories planning work in the off-season should add the refinery or syrup section concerned, so we can separate hygienic lines from cane, boiler and utility piping that we do not supply.",
+        "Send the list through our contact page and you get a quotation within 24 hours. Every order from Sangli carries an EN 10204 3.1 certificate traced to heat number, PMI on each length and an internal Ra report for each electropolished lot; dispatch and delivery to Kupwad, Miraj or your factory gate are confirmed in writing with each quotation."
+      ],
+      "links": [
+        {
+          "label": "Request a quotation for Sangli",
+          "href": "/contact-us/"
+        },
+        {
+          "label": "Electropolished tubes",
+          "href": "/electropolished-tubes/"
+        },
+        {
+          "label": "Electropolished pipes",
+          "href": "/electropolished-pipes/"
+        }
       ]
     }
   ],
   "sources": [
-    { "title": "Sangli Metropolitan Region - Wikipedia", "url": "https://en.wikipedia.org/wiki/Sangli_Metropolitan_Region" },
-    { "title": "Sangli (archived Wikipedia, 2006): turmeric trade and sugar factories", "url": "https://wikipedia2006.classicistranieri.com/en/s/a/n/Sangli.html" },
-    { "title": "MPCB: SRO Sangli industry list", "url": "https://mpcb.gov.in/sites/default/files/industrial-statistics/sro-industry/SRO_Sangli.pdf" }
+    {
+      "title": "Sangli Metropolitan Region - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sangli_Metropolitan_Region"
+    },
+    {
+      "title": "Sangli (archived Wikipedia, 2006): turmeric trade and sugar factories",
+      "url": "https://wikipedia2006.classicistranieri.com/en/s/a/n/Sangli.html"
+    },
+    {
+      "title": "MPCB: SRO Sangli industry list",
+      "url": "https://mpcb.gov.in/sites/default/files/industrial-statistics/sro-industry/SRO_Sangli.pdf"
+    }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "slug": "valsad",
-  "updated": "2026-10-25",
+  "updated": "2026-11-27",
   "sections": [
     {
       "heading": "Valsad District Beyond Vapi: Umbergaon and Sarigam",
@@ -29,21 +29,71 @@
       ]
     },
     {
+      "heading": "Valsad's Four GIDC Notified Areas and What They Mean for an Order",
+      "paragraphs": [
+        "GIDC's own table of notified areas lists four in Valsad district: Valsad itself at 108 hectares, Umbergam at 197 hectares and Vapi at 939 hectares, all notified in May 1975, and Sarigam at 509 hectares, notified in May 1997. The Valsad estate at Gundlav also has its own board of management in GIDC's records.",
+        "Because the district mixes intermediates, chemicals, paper and textiles, the first question on any Valsad enquiry is whether the line is process chemistry or a GMP utility. We answer the grade question first and only then the finish question, so you do not pay for electropolishing on a solvent or utility line that gains nothing from it."
+      ]
+    },
+    {
       "heading": "Delivery to Umbergaon and Sarigam",
       "paragraphs": [
         "Umbergaon and Sarigam are among the nearest Gujarat estates to Mumbai, reached by road; dispatch and transit are confirmed with each quotation. Hazira Port, about 110 km away, is the nearest listed sea gateway for export-bound projects.",
         "Neighbouring clusters:"
       ],
       "links": [
-        { "label": "Vapi", "href": "/market-area/vapi/" },
-        { "label": "Daman", "href": "/market-area/daman/" },
-        { "label": "Silvassa", "href": "/market-area/silvassa/" }
+        {
+          "label": "Vapi",
+          "href": "/market-area/vapi/"
+        },
+        {
+          "label": "Daman",
+          "href": "/market-area/daman/"
+        },
+        {
+          "label": "Silvassa",
+          "href": "/market-area/silvassa/"
+        }
+      ]
+    },
+    {
+      "heading": "What an Umbergaon, Sarigam or Gundlav Buyer Should Send",
+      "paragraphs": [
+        "Intermediate and API-supplier plants: the process fluid, temperature and chloride content on each line, so we can confirm 316L or recommend duplex before quoting, plus OD, wall, total length and joint method. For purified-water, isolation and drying sections being brought up to an API customer's audit, mark which lines are product contact, because that decides SF1 or SF4.",
+        "Send it through our contact page and a quotation follows within 24 hours. Valsad orders carry an EN 10204 3.1 certificate traced to heat number, PMI on every length and an internal Ra report for each electropolished lot, with dispatch and delivery to Umbergaon, Sarigam or Gundlav confirmed in writing with each quotation."
+      ],
+      "links": [
+        {
+          "label": "Request a quotation for Valsad",
+          "href": "/contact-us/"
+        },
+        {
+          "label": "Electropolished tubes",
+          "href": "/electropolished-tubes/"
+        },
+        {
+          "label": "Electropolished pipes",
+          "href": "/electropolished-pipes/"
+        }
       ]
     }
   ],
   "sources": [
-    { "title": "Gujarat Industrial Development Corporation - Wikipedia (estate list)", "url": "https://en.wikipedia.org/wiki/Gujarat_Industrial_Development_Corporation" },
-    { "title": "MSME-DI: Brief Industrial Profile of Valsad", "url": "https://dcmsme.gov.in/old/dips/BIP VALSAD SEPT2912.pdf" },
-    { "title": "CPCB: Gujarat industrial units list", "url": "https://www.cpcb.nic.in/upload/thrust-area/state/Gujarat.pdf" }
+    {
+      "title": "Gujarat Industrial Development Corporation - Wikipedia (estate list)",
+      "url": "https://en.wikipedia.org/wiki/Gujarat_Industrial_Development_Corporation"
+    },
+    {
+      "title": "MSME-DI: Brief Industrial Profile of Valsad",
+      "url": "https://dcmsme.gov.in/old/dips/BIP VALSAD SEPT2912.pdf"
+    },
+    {
+      "title": "CPCB: Gujarat industrial units list",
+      "url": "https://www.cpcb.nic.in/upload/thrust-area/state/Gujarat.pdf"
+    },
+    {
+      "title": "GIDC – Notified Areas",
+      "url": "https://gidc.gujarat.gov.in/Pages/Contents/notified%20areas"
+    }
   ]
 }

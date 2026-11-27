@@ -323,7 +323,7 @@ export const SPEC_GUIDES = {
   },
 
   '/electropolished-welded-erw-pipes/': {
-    updated: '2026-11-03',
+    updated: '2026-11-27',
     sections: [
       {
         h2: 'Welded Electropolished Pipe and Tube: How It Is Made and Why It Dominates Hygienic Systems',
@@ -332,23 +332,45 @@ export const SPEC_GUIDES = {
           'A note on terminology: buyers in India often call this product "ERW" pipe. In carbon steel, ERW means electric resistance welding. Stainless hygienic tube is normally welded by autogenous fusion processes such as TIG (GTAW), plasma or laser welding. If your specification says ERW, confirm what it actually requires so the quotation and certificate match.'
         ],
         table: {
-          caption: 'What to specify for the weld seam',
-          head: ['Item', 'What it means', 'Why it matters'],
+          caption: 'The seam step by step: what to specify, and what a fault at that step leaves behind',
+          head: ['Step', 'What to specify', 'What it leaves on the seam if it goes wrong'],
           rows: [
-            ['Weld process', 'TIG, plasma or laser fusion weld', 'Must match any process named in your specification'],
-            ['Bead condition', 'As-welded, or rolled/conditioned flush', 'A conditioned bead drains and polishes like the wall'],
-            ['Heat treatment', 'Solution annealed (bright annealed)', 'Restores corrosion resistance of weld and HAZ'],
-            ['Seam inspection', 'Eddy current or hydrostatic test per length', 'Detects seam defects before polishing'],
-            ['ID finish', 'Polished and electropolished including the seam', 'The seam must meet the same Ra as the wall']
+            ['Weld process', 'TIG, plasma or laser fusion weld, normally without filler metal; name the process if your specification does', 'Porosity or lack of fusion along the seam, which electropolishing later opens into pits'],
+            ['Bead conditioning', 'Bead rolled or cold-worked flush with the wall', 'A ridge if under-worked; a groove or fold if over-worked'],
+            ['Heat treatment', 'Solution annealed, often bright annealed in a protective atmosphere', 'Heat tint or oxide on the seam and heat-affected zone, and lower corrosion resistance there'],
+            ['Seam inspection', 'Eddy current or hydrostatic test per length', 'A seam defect reaches polishing undetected'],
+            ['ID polishing', 'Polished across the seam to the agreed finish', 'Polishing removes metal and cannot fill a groove; grinding a ridge down thins the wall locally'],
+            ['Electropolishing', 'Electropolished including the seam, with Ra readings across it if required', 'Weld metal can respond differently from the wall and show as a faint line; inclusions open into pits']
           ]
         },
         subsections: [
           {
-            h3: 'The Seam After Electropolishing',
+            h3: 'Why Electropolishing Can Show a Seam That Polishing Hid',
             paragraphs: [
-              'On a properly conditioned and annealed tube, the seam is difficult to see after ID polishing and electropolishing, and it meets the same surface finish as the rest of the bore. Ask for the Ra report to include readings across the seam if your validation team will inspect it, and reject tube where the seam shows a ridge, groove or discolouration on borescope inspection.'
+              'Mechanical polishing cuts and smears the surface level. Electropolishing dissolves a thin layer of metal instead, and it removes peaks faster than valleys. It attacks inclusions and porosity rather than covering them, and weld metal, which solidified with a cast structure, does not always respond exactly like the wrought wall beside it. So a seam that looked invisible after polishing can show as a faint line after electropolishing, and a hidden weld fault becomes a visible pit. That makes electropolishing a final check of the seam. Ask for the Ra report to include readings across the seam if your validation team will inspect it.'
             ]
           }
+        ]
+      },
+      {
+        h2: 'Reading the Seam on a Borescope: What You See and What to Agree on the Order',
+        paragraphs: [
+          'Inside a tube, the seam can only be seen with a borescope: a camera or optical probe passed through the bore. Agree the acceptance criteria for the seam before the order is placed, so there is no argument at receiving inspection. The table lists what the seam can look like after electropolishing, the usual cause, and what to settle in advance.'
+        ],
+        table: {
+          caption: 'Seam appearance on a borescope after electropolishing',
+          head: ['What you see', 'Usual cause', 'What to agree before ordering'],
+          rows: [
+            ['Raised ridge along the seam', 'Bead not fully conditioned before polishing', 'Bead flush with the bore, with no visible ridge'],
+            ['Groove or channel', 'Bead over-worked, or undercut at the edge of the weld', 'Any groove that can hold liquid is a reject'],
+            ['Line of pits', 'Porosity or inclusions in the weld, opened by electropolishing', 'Pit limits of the ASME BPE acceptance criteria for the SF designation ordered'],
+            ['Faint line, same Ra as the wall', 'Weld metal responding slightly differently to electropolishing', 'Whether a line with no ridge, groove or pits is acceptable'],
+            ['Dull or frosted band', 'An electropolishing fault in that area, such as uneven current or surface contamination', 'Whether such lengths are re-electropolished or rejected'],
+            ['Straw, blue or brown tint', 'Heat tint from welding or annealing that was not removed', 'No heat tint on the seam or the heat-affected zone']
+          ]
+        },
+        bullets: [
+          'These points cover the seam only. For the full receiving inspection of electropolished pipe and tube, use our [EP pipe inspection checklist](/blog/ep-pipe-inspection-checklist/).'
         ]
       },
       {
@@ -372,8 +394,10 @@ export const SPEC_GUIDES = {
           'Governing standard (A270, A249, A269 or A312 welded) and whether the specification permits welded product.',
           'Weld process if specified, and the requirement for a conditioned, annealed bead.',
           'Tube OD and wall, grade, sulphur range for orbital welding, and ID finish designation.',
-          'Seam inspection method and whether Ra readings across the seam are required.',
-          'EN 10204 3.1 certificate, PMI per length and measured Ra report per electropolished lot.'
+          'Seam inspection method, the seam acceptance criteria for the borescope check, and whether Ra readings across the seam are required.',
+          'EN 10204 3.1 certificate, PMI per length and measured Ra report per electropolished lot.',
+          'Pipe ordered by NPS and schedule, rather than tube by OD, comes under [ASTM A312](/astm-a312-electropolished-pipes/), which separates welded (WLD) from heavily cold-worked (HCW) pipe.',
+          'Example line: "Welded tube to ASTM A270, 316L, 1-1/2 in OD x 0.065 in wall (38.10 x 1.65 mm), bead conditioned, bright annealed, ID electropolished to ASME BPE SF4, Ra readings to include the seam, EN 10204 3.1 certificate." Check that the certificate repeats the same description.'
         ],
         cta: { label: 'Request a welded EP tube quotation', href: '/contact-us/' }
       }
@@ -382,7 +406,9 @@ export const SPEC_GUIDES = {
       { q: 'Is welded electropolished tube acceptable for pharmaceutical systems?', a: 'Yes. ASME BPE tube is commonly welded tube to ASTM A270 with the weld bead conditioned and annealed and the bore electropolished. Some owners require seamless for specific services; check your specification.' },
       { q: 'Is stainless ERW pipe the same as welded electropolished tube?', a: 'The term is used loosely. Stainless hygienic tube is normally fusion-welded by TIG, plasma or laser, not electric resistance welded. Confirm what your specification requires so the certificate names the correct process.' },
       { q: 'Does the weld seam meet the same Ra as the rest of the bore?', a: 'On correctly conditioned, annealed and electropolished tube, yes. Ask for Ra readings across the seam if your validation team requires them.' },
-      { q: 'Why is welded tube preferred for orbital welding?', a: 'Because it is made from rolled strip, its wall thickness and concentricity are very uniform, so the two ends of an orbital weld match well and penetration is consistent.' }
+      { q: 'Why is welded tube preferred for orbital welding?', a: 'Because it is made from rolled strip, its wall thickness and concentricity are very uniform, so the two ends of an orbital weld match well and penetration is consistent.' },
+      { q: 'Can you see the weld seam inside electropolished tube?', a: 'Sometimes, as a faint line, because weld metal can respond slightly differently to electropolishing than the wall beside it. A faint line is not the same as a ridge, a groove or a line of pits, which are seam faults. Agree before ordering whether a faint line is acceptable.' },
+      { q: 'What does bead conditioned mean on a welded tube quotation?', a: 'The weld bead has been worked, usually by rolling or cold working, until it is flush with the wall. An as-welded bead stands above the bore surface, so it does not drain or polish like the rest of the tube. For hygienic service, specify a conditioned and annealed bead.' }
     ]
   },
 
@@ -642,12 +668,12 @@ export const SPEC_GUIDES = {
   },
 
   '/sanitary-hygienic-ep-pipes/': {
-    updated: '2026-11-03',
+    updated: '2026-11-27',
     sections: [
       {
         h2: 'Sanitary Electropolished Pipe: Matching the Dimension Series to Your Fittings',
         paragraphs: [
-          'Sanitary pipe for food, dairy, beverage, cosmetics and personal-care plants is thin-wall stainless tube that joins to clamp, union and weld fittings. In India three dimensional series are in use side by side: inch-based ASME BPE / 3-A tube, metric DIN 11850 tube used with DIN fittings, and ISO 2037 / SMS tube used with SMS unions. Each series has different ODs. Ordering tube from one series and fittings from another is the single most common and most expensive mistake in sanitary piping.'
+          'Sanitary pipe for food, dairy, beverage, cosmetics and personal-care plants is thin-wall stainless tube that joins to clamp, union and weld fittings. In India three dimensional series are in use side by side: inch-based ASME BPE / 3-A tube, metric DIN 11850 tube used with DIN fittings (its sizes now continue as EN 10357 Series A), and ISO 2037 / SMS tube used with SMS unions. At most sizes the ODs differ. Ordering tube from one series and fittings from another is a common and costly mistake in sanitary piping.'
         ],
         table: {
           caption: 'Approximate equivalents across sanitary tube series (OD x wall, mm)',
@@ -668,6 +694,63 @@ export const SPEC_GUIDES = {
               'Follow the equipment you already have. Many Indian dairies built on SMS unions use ISO 2037 / SMS tube; European process skids often arrive with DIN 11850 connections; export-oriented and US-referenced projects use ASME BPE / 3-A inch tube. A new plant should choose one series and hold every supplier to it. Our [dairy fittings](/dairy-fittings/) and [sanitary tri-clamp fittings](/dairy-fittings/tc-clamp-fittings/) are available to match.'
             ]
           }
+        ]
+      },
+      {
+        h2: 'Identifying the Series on an Existing Line',
+        paragraphs: [
+          'When you extend or repair a line, measure before you order. Take the outside diameter with a caliper at two points 90 degrees apart, away from a cut end, and the wall at a cut end or with an ultrasonic thickness gauge. Then compare the readings with the table.'
+        ],
+        table: {
+          caption: 'Which series a measured OD points to (DN25 to DN100, mm)',
+          head: ['OD you measure', 'Series it points to', 'What decides it'],
+          rows: [
+            ['25.0 or 25.4', 'ISO 2037 / SMS 25.0 x 1.2, or inch 1 in 25.40 x 1.65', 'The wall, 1.2 against 1.65 mm, and the OD, 0.4 mm apart'],
+            ['38.0 or 38.1', 'ISO 2037 / SMS 38.0 x 1.2, or inch 1-1/2 in 38.10 x 1.65', 'The wall, 1.2 against 1.65 mm: the ODs are only 0.1 mm apart'],
+            ['50.8 or 51.0', 'Inch 2 in 50.80 x 1.65, or ISO 2037 / SMS 51.0 x 1.2', 'The wall, 1.65 against 1.2 mm'],
+            ['63.5', 'Inch 2-1/2 in 63.50 x 1.65, or ISO 2037 / SMS 63.5 x 1.6', 'The connections: same OD, walls only 0.05 mm apart'],
+            ['76.1 or 76.2', 'ISO 2037 / SMS 76.1 x 1.6, or inch 3 in 76.20 x 1.65', 'The connections: ODs 0.1 mm and walls 0.05 mm apart'],
+            ['101.6', 'Inch 4 in 101.60 x 2.11, or ISO 2037 / SMS 101.6 x 2.0', 'The connections: same OD, and walls too close to separate reliably by measurement'],
+            ['29, 41, 53, 70, 85 or 104', 'DIN 11850 Series 2, DN25 to DN100', 'The OD alone: no other series in this table uses these sizes']
+          ]
+        },
+        bullets: [
+          'In short: up to 51 mm OD the wall tells ISO 2037 / SMS tube from inch tube; from 63.5 mm up only the connections do.',
+          'SMS unions belong to ISO 2037 / SMS tube and DIN 11851 unions to DIN 11850 tube. Clamp ferrules are made for every series, so on a clamp line take the series from the equipment drawings or the ferrule supplier\'s datasheet.',
+          'If a reading matches nothing in the table, do not round it to the nearest size: it may be another wall thickness, or a size the table does not list.',
+          'Put the measured OD and wall, and a photo of an existing connection, in your enquiry.'
+        ]
+      },
+      {
+        h2: 'Fittings That Belong to Each Series',
+        paragraphs: [
+          'Every connection on a sanitary line is made for one tube series. Order the clamp ferrules, unions and weld fittings in the same series as the tube.'
+        ],
+        table: {
+          caption: 'Connection standards made for each tube series',
+          head: ['Tube series', 'Clamp connections', 'Unions and weld fittings'],
+          rows: [
+            ['Inch OD (ASME BPE / 3-A)', 'ASME BPE clamp ferrules; DIN 32676 Series C', 'ASME BPE weld fittings: bends, tees and reducers'],
+            ['DIN 11850 / EN 10357 Series A', 'DIN 32676 Series A', 'DIN 11851 unions; DIN 11852 bends, tees and reducers'],
+            ['ISO 2037 / SMS', 'ISO 2852 clamp liners', 'SMS 1145 unions']
+          ]
+        },
+        bullets: [
+          'DIN 32676 covers clamp connections for butt welding to tube made to DIN 11866 and EN 10357, in Series A and Series C, and includes a long ferrule version for orbital welding.',
+          'Ferrules of different standards do not mate even where the clamp closes, because their groove and flange diameters differ; see our [clamp ferrule guide](/electropolished-pipe-fittings/electropolished-clamp-ferrule/).',
+          'For the fittings themselves, see the [electropolished pipe fittings range](/electropolished-pipe-fittings/).'
+        ]
+      },
+      {
+        h2: 'Joining Two Series in One Plant',
+        paragraphs: [
+          'A plant that has grown over the years can end up with two series, for example an SMS dairy line and a new skid that arrives with DIN or inch connections. Decide where and how the two meet before the skid is installed.'
+        ],
+        bullets: [
+          'Make the change at one point, with a transition fitting made for both sizes: a reducer or adaptor with one end in each series.',
+          'Do not weld tube of one series to tube or a fitting of another. At 25 mm, for example, SMS tube (25.0 x 1.2, bore 22.6 mm) against inch tube (25.40 x 1.65, bore 22.1 mm) leaves a step at the joint, and the weld penetrates the two walls unevenly.',
+          'Order the transition fittings with the tube, in the same grade and finish, so the joint is not the one surface in the line with no certificate or Ra report.',
+          'Record the series on the line list and on the spare-part bins, so maintenance does not mix fittings.'
         ]
       },
       {
@@ -694,16 +777,26 @@ export const SPEC_GUIDES = {
           'Dimension series (ASME BPE / 3-A, DIN 11850 or ISO 2037 / SMS) and sizes in that series.',
           'Grade per product, and internal finish (3-A baseline or electropolished).',
           'Fitting types to match: clamp ferrules, SMS unions, bends and tees in the same series.',
+          'For an extension to an existing line: the measured OD and wall, and the connection standard in use.',
           'EN 10204 3.1 certificate, PMI per length and measured Ra report for electropolished lots.'
         ],
         cta: { label: 'Request a sanitary EP pipe quotation', href: '/contact-us/' }
       }
     ],
+    sources: [
+      'https://www.alfalaval.com/products/fluid-handling/din-11850-en-10357/',
+      'https://www.dinmedia.de/en/standard/din-32676/392760456',
+      'https://www.iso.org/standard/6810.html',
+      'https://www.3-a.org/',
+      'https://www.ehedg.org/guidelines-working-groups/guidelines'
+    ],
     faqs: [
       { q: 'Are DIN 11850 and SMS tube interchangeable?', a: 'No. They have different outside diameters, for example 29 x 1.5 mm in DIN 11850 Series 2 against 25.0 x 1.2 mm in ISO 2037 / SMS at DN25. Fittings from one series do not fit tube from the other.' },
       { q: 'What surface finish does 3-A require?', a: 'At least as smooth as a No. 4 finish, generally taken as about 0.8 µm Ra, free of pits, folds and crevices. Electropolishing goes beyond that baseline.' },
       { q: 'Is 304L or 316L better for sanitary pipe?', a: '304L suits milk, beverages and most neutral products. 316L is safer for salted, acidic or chloride-bearing products and hot CIP supply.' },
-      { q: 'Do food plants need electropolished pipe?', a: 'Not by regulation for ordinary duty. It is justified on lines where product sticks or ferments, on flavoured and cultured products and on CIP return legs used to verify cleaning.' }
+      { q: 'Do food plants need electropolished pipe?', a: 'Not by regulation for ordinary duty. It is justified on lines where product sticks or ferments, on flavoured and cultured products and on CIP return legs used to verify cleaning.' },
+      { q: 'How do I tell whether my plant uses SMS or inch (ASME BPE) tube?', a: 'Measure the OD and the wall. Up to 51 mm OD the wall decides: 1.2 mm for ISO 2037 / SMS tube against 1.65 mm for inch tube. From 63.5 mm up the two series are almost the same size, so look at the connections: SMS unions belong to SMS tube.' },
+      { q: 'Is DIN 11850 still current?', a: 'No. EN 10357 replaced DIN 11850 at the beginning of 2014, and its sizes continue as EN 10357 Series A. ISO 2037 has also been withdrawn, and EN 10357 Series D follows its sizes. Drawings made before the change still name DIN 11850, so you will see both names for the same tube.' }
     ]
   },
 

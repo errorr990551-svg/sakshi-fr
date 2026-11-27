@@ -125,7 +125,7 @@ export default function EPBuildSpecRenderer({ pageData, onEnquireClick, hasUnloc
                 }} className="space-y-4">
                   <div>
                     <label htmlFor="ep-spec-field-1" className="block text-xs text-slate-400 mb-1">Your Name / Company *</label>
-                    <input id="ep-spec-field-1" type="text" required placeholder="e.g. Reliance / Sun Pharma" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-yellow-500" />
+                    <input id="ep-spec-field-1" type="text" required placeholder="Your name and company" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-yellow-500" />
                   </div>
                   <div className="grid grid-cols-2 gap-3">
                     <div>
@@ -434,7 +434,7 @@ export default function EPBuildSpecRenderer({ pageData, onEnquireClick, hasUnloc
             <div className="space-y-2 text-center md:text-left">
               <h3 className="text-2xl sm:text-3xl font-extrabold text-white">Ready to Order <span className="text-yellow-400">Electropolished Pipe?</span></h3>
               <p className="text-slate-300 text-sm sm:text-base max-w-xl leading-relaxed">
-                Get mill direct pricing, EN 10204 3.1 MTCs, and Ra roughness test reports from Sakshi Forge.
+                Get a quote within 24 hours, with an EN 10204 3.1 MTC and an Ra roughness report for every electropolished lot.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">

@@ -63,6 +63,9 @@ const STANDARDS = [
 const SOURCE_TITLES = {
   'https://health.ec.europa.eu/medicinal-products/eudralex/eudralex-volume-4_en': 'EudraLex Volume 4: EU Good Manufacturing Practice guidelines (European Commission)',
   'https://www.3-a.org/': '3-A Sanitary Standards, Inc.',
+  'https://www.alfalaval.com/products/fluid-handling/din-11850-en-10357/': 'DIN 11850 and EN 10357 hygienic tube (Alfa Laval)',
+  'https://www.dinmedia.de/en/standard/din-32676/392760456': 'DIN 32676: clamp connections for stainless steel tubes (DIN Media)',
+  'https://www.iso.org/standard/6810.html': 'ISO 2037:1992 Stainless steel tubes for the food industry, withdrawn (ISO)',
   'https://www.ehedg.org/guidelines-working-groups/guidelines': 'EHEDG hygienic design guidelines',
   'https://apeda.gov.in/node/31': 'Mango pulp export information (APEDA)',
   'https://en.wikipedia.org/wiki/Clean-in-place': 'Clean-in-place (Wikipedia)',

@@ -8452,6 +8452,10 @@
       {
         "q": "Where are hex nipples used?",
         "a": "To join two female-threaded fittings closely, such as a valve to a gauge on utility and instrument lines."
+      },
+      {
+        "q": "Why do 1/2 inch NPT and BSPT threads get mixed up?",
+        "a": "At 1/2 and 3/4 inch both have 14 threads per inch, so they start to engage. The thread angles differ (60° for NPT, 55° for BSPT), so the joint binds or leaks."
       }
     ],
     "Meta Title (<=60 chars)": "Electropolished Hex Nipple Manufacturer India | Sakshi Forge"
@@ -8615,6 +8619,10 @@
       {
         "q": "What is the difference between a coupling and a reducer coupling?",
         "a": "A coupling joins two pipes of the same size; a reducer coupling joins two different sizes."
+      },
+      {
+        "q": "Which coupling class goes with Schedule 80 pipe?",
+        "a": "Under ASME B16.11, Class 2000 for a threaded coupling and Class 3000 for a socket-weld coupling match Schedule 80 / XS pipe."
       }
     ],
     "Meta Title (<=60 chars)": "Electropolished Coupling Manufacturer India | Sakshi Forge"
@@ -8859,6 +8867,10 @@
       {
         "q": "Is the threaded side hygienic?",
         "a": "No. The threaded side should face the instrument or utility side, not the product."
+      },
+      {
+        "q": "What is the difference between a G thread and an R thread?",
+        "a": "Both are 55° BSP threads. R (ISO 7-1) is tapered and seals on the thread with a sealant. G (ISO 228-1) is parallel and seals on a washer, O-ring or gasket against a face."
       }
     ],
     "Meta Title (<=60 chars)": "Electropolished Male Adapter Manufacturer India"
@@ -8900,6 +8912,10 @@
       {
         "q": "What must be stated when ordering?",
         "a": "The female thread form and size, the clamp standard and size or tube size, the grade and the finish."
+      },
+      {
+        "q": "Which thread do pressure gauges usually have?",
+        "a": "Gauges built to EN 837-1 commonly have G 1/2 B on 100 and 160 mm dials and G 1/4 B on smaller dials; gauges built to ASME B40.100 commonly use 1/4 or 1/2 NPT. Check the gauge data sheet before ordering the adapter."
       }
     ],
     "Meta Title (<=60 chars)": "Electropolished Female Adapter Manufacturer India"
@@ -9391,6 +9407,10 @@
       {
         "q": "Which standard covers hex plugs?",
         "a": "ASME B16.11 for forged threaded fittings."
+      },
+      {
+        "q": "How do you stop a stainless plug from seizing in its port?",
+        "a": "Keep the threads clean, use an anti-seize compound or sealant approved for the fluid, tighten slowly and do not over-tighten. Replace a plug that has galled instead of forcing it back in."
       }
     ],
     "Meta Title (<=60 chars)": "Electropolished Hex Plug Manufacturer India | Sakshi Forge"
@@ -9432,6 +9452,10 @@
       {
         "q": "Which standard covers square plugs?",
         "a": "ASME B16.11 for forged threaded fittings."
+      },
+      {
+        "q": "Which plug head types does ASME B16.11 cover?",
+        "a": "Square head, hex head and round head plugs, plus hex head and flush bushings."
       }
     ],
     "Meta Title (<=60 chars)": "Electropolished Square Plug Manufacturer India"
@@ -9635,6 +9659,10 @@
       {
         "q": "How is a sockolet ordered?",
         "a": "By run size x branch size and class, with grade and finish."
+      },
+      {
+        "q": "What gap is left in a sockolet before welding the branch pipe?",
+        "a": "About 1.5 mm (1/16 in) between the pipe end and the socket bottom, as ASME B31.3 shows, so the fillet weld does not crack when the pipe expands."
       }
     ],
     "Meta Title (<=60 chars)": "Electropolished Sockolet Manufacturer India | Sakshi Forge"
@@ -9676,6 +9704,10 @@
       {
         "q": "Are threadolets used on hygienic product lines?",
         "a": "No. Threads hold product; threadolets suit utility, steam and chemical headers."
+      },
+      {
+        "q": "Does welding a threadolet affect an electropolished header?",
+        "a": "Yes, locally. The weld leaves heat tint inside the run around the branch hole. Pickle and passivate the weld zone, or electropolish the header spool after the threadolet is welded."
       }
     ],
     "Meta Title (<=60 chars)": "Electropolished Threadolet Manufacturer India | Sakshi Forge"

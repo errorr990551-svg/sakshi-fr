@@ -621,13 +621,13 @@ export const FITTING_GUIDES = {
     ]
   },
   "electropolished-pipe-fittings/electropolished-union": {
-    "updated": "2026-11-03",
+    "updated": "2026-11-28",
     "sections": [
       {
         "h2": "Threaded and Socket-Weld Unions versus Hygienic Unions",
         "paragraphs": [
           "A union lets a line be broken without turning the pipe. Forged threaded and socket-weld unions are covered by MSS SP-83 in Class 3000 and 6000. They are used on utility, instrument-air, drain and chemical lines where a joint must be opened for maintenance.",
-          "Product-contact lines in dairies and food plants use hygienic unions instead, such as SMS and DIN 11851 unions, or clamp joints. These are designed to leave no thread in contact with product. Threads hold product in their roots and cannot be cleaned in place, so threaded connections belong on utilities, instrument and drain connections, not on product-contact lines that are cleaned in place."
+          "Product-contact lines in dairies and food plants use hygienic unions instead, such as SMS and DIN 11851 unions, or clamp joints. These are designed to leave no thread in contact with product. A threaded pipe union, by contrast, has product sitting against its thread, where a cleaning cycle cannot reach."
         ]
       },
       {
@@ -685,13 +685,13 @@ export const FITTING_GUIDES = {
     ]
   },
   "electropolished-pipe-fittings/electropolished-half-coupling": {
-    "updated": "2026-11-03",
+    "updated": "2026-11-28",
     "sections": [
       {
         "h2": "Half Couplings as Weld-On Branch Connections",
         "paragraphs": [
           "A half coupling is a forged coupling with one end threaded or socket-welded, welded onto a pipe or vessel wall to make a small branch connection. Forged half couplings are covered by ASME B16.11. They are used for thermowells, gauges, vents and drains on utility headers and vessels.",
-          "The weld around the outside of the half coupling and the hole cut in the run leave an inside edge that is hard to finish smooth. On a hygienic product line a short-outlet [instrument tee](/electropolished-pipe-fittings/electropolished-instrument-tee/) or a clamp ferrule branch gives a cleaner bore. Threads hold product in their roots and cannot be cleaned in place, so threaded connections belong on utilities, instrument and drain connections, not on product-contact lines that are cleaned in place."
+          "The weld around the outside of the half coupling and the hole cut in the run leave an inside edge that is hard to finish smooth. On a hygienic product line a short-outlet [instrument tee](/electropolished-pipe-fittings/electropolished-instrument-tee/) or a clamp ferrule branch gives a cleaner bore. A threaded half coupling also leaves its thread wetted by whatever flows in the run."
         ]
       },
       {
@@ -717,14 +717,60 @@ export const FITTING_GUIDES = {
     ]
   },
   "electropolished-pipe-fittings/electropolished-coupling": {
-    "updated": "2026-11-03",
+    "updated": "2026-11-28",
     "sections": [
       {
         "h2": "Full Couplings: Joining Two Pipes in Line",
         "paragraphs": [
           "A coupling joins two pipes end to end in a straight line. Forged threaded and socket-weld couplings are covered by ASME B16.11, in Class 3000 and 6000 for threaded and socket-weld service. They are used on small-bore utility, instrument and chemical lines.",
-          "In hygienic tube systems, straight joints are made by orbital welding the tube directly or with clamp ferrules, so couplings belong on the utility side. Threads hold product in their roots and cannot be cleaned in place, so threaded connections belong on utilities, instrument and drain connections, not on product-contact lines that are cleaned in place."
+          "In hygienic tube systems, straight joints are made by orbital welding the tube directly or with clamp ferrules, so couplings belong on the utility side. On those utility lines a threaded coupling is acceptable, since what sits in its thread roots is not product."
         ]
+      },
+      {
+        "h2": "Picking the Coupling Class from the Pipe Schedule",
+        "paragraphs": [
+          "ASME B16.11 ties each class to the pipe wall it is meant to join, and the match differs by end type. A coupling carries the pressure rating of the pipe it matches, so the pipe calculation sets the class."
+        ],
+        "table": {
+          "caption": "ASME B16.11 class and the pipe it matches",
+          "head": [
+            "End type",
+            "Class",
+            "Pipe schedule"
+          ],
+          "rows": [
+            [
+              "Threaded",
+              "2000",
+              "Sch 80 / XS"
+            ],
+            [
+              "Threaded",
+              "3000",
+              "Sch 160"
+            ],
+            [
+              "Threaded",
+              "6000",
+              "XXS"
+            ],
+            [
+              "Socket weld",
+              "3000",
+              "Sch 80 / XS"
+            ],
+            [
+              "Socket weld",
+              "6000",
+              "Sch 160"
+            ],
+            [
+              "Socket weld",
+              "9000",
+              "XXS"
+            ]
+          ]
+        }
       },
       {
         "h2": "Selection Notes",
@@ -812,14 +858,75 @@ export const FITTING_GUIDES = {
     ]
   },
   "electropolished-pipe-fittings/electropolished-hex-nipple": {
-    "updated": "2026-11-03",
+    "updated": "2026-11-28",
     "sections": [
       {
         "h2": "Hex Nipples for Threaded Small-Bore Connections",
         "paragraphs": [
           "A hex nipple has male threads on both ends and a hexagon in the middle, so it can be tightened with a spanner without gripping the threads. It joins two female-threaded fittings close together, for example a valve to a gauge or a fitting to a vessel boss.",
-          "Thread forms are NPT (ASME B1.20.1) or BSPT (ISO 7-1). The two are not interchangeable even when the size is the same, so the thread form must be stated with every order. Threads hold product in their roots and cannot be cleaned in place, so threaded connections belong on utilities, instrument and drain connections, not on product-contact lines that are cleaned in place."
+          "Thread forms are NPT (ASME B1.20.1) or BSPT (ISO 7-1). The two are not interchangeable even when the size is the same, so the thread form must be stated with every order. Both threads of a hex nipple are wetted, which keeps it to gauge, valve and utility hook-ups."
         ]
+      },
+      {
+        "h2": "NPT or BSPT: Threads per Inch by Size",
+        "paragraphs": [
+          "Both thread forms taper at 1:16, so the quickest checks are the pitch and the thread angle: 60° for NPT (ASME B1.20.1), 55° for BSPT (ISO 7-1). At 1/2 and 3/4 inch the pitch is the same, 14 threads per inch, which is why the two get mixed up: the joint starts to engage, then binds or leaks. A thread gauge settles it."
+        ],
+        "table": {
+          "caption": "Threads per inch (TPI), NPT and BSPT",
+          "head": [
+            "Size (in)",
+            "NPT (TPI)",
+            "BSPT (TPI)"
+          ],
+          "rows": [
+            [
+              "1/8",
+              "27",
+              "28"
+            ],
+            [
+              "1/4",
+              "18",
+              "19"
+            ],
+            [
+              "3/8",
+              "18",
+              "19"
+            ],
+            [
+              "1/2",
+              "14",
+              "14"
+            ],
+            [
+              "3/4",
+              "14",
+              "14"
+            ],
+            [
+              "1",
+              "11.5",
+              "11"
+            ],
+            [
+              "1-1/4",
+              "11.5",
+              "11"
+            ],
+            [
+              "1-1/2",
+              "11.5",
+              "11"
+            ],
+            [
+              "2",
+              "11.5",
+              "11"
+            ]
+          ]
+        }
       },
       {
         "h2": "Selection Notes",
@@ -843,13 +950,13 @@ export const FITTING_GUIDES = {
     ]
   },
   "electropolished-pipe-fittings/electropolished-barrel-nipple": {
-    "updated": "2026-11-03",
+    "updated": "2026-11-28",
     "sections": [
       {
         "h2": "Barrel Nipples: Plain-Body Threaded Spacers",
         "paragraphs": [
           "A barrel nipple is a length of pipe threaded male at both ends with a plain body between. It spaces two female-threaded fittings apart, for example to bring a gauge clear of insulation or to reach a valve through a panel. Lengths range from close (thread to thread) to longer spacers cut from pipe.",
-          "Because the body is plain, it is tightened with a pipe wrench on the barrel; where wrench marks matter, a [hex nipple](/electropolished-pipe-fittings/electropolished-hex-nipple/) gives a flat for a spanner. Threads hold product in their roots and cannot be cleaned in place, so threaded connections belong on utilities, instrument and drain connections, not on product-contact lines that are cleaned in place."
+          "Because the body is plain, it is tightened with a pipe wrench on the barrel; where wrench marks matter, a [hex nipple](/electropolished-pipe-fittings/electropolished-hex-nipple/) gives a flat for a spanner. Its wetted threads keep a barrel nipple on drains, vents and utility runs."
         ]
       },
       {
@@ -875,13 +982,13 @@ export const FITTING_GUIDES = {
     ]
   },
   "electropolished-pipe-fittings/electropolished-end-plug": {
-    "updated": "2026-11-03",
+    "updated": "2026-11-28",
     "sections": [
       {
         "h2": "Threaded Plugs: Head Types and Uses",
         "paragraphs": [
           "A threaded plug closes a female-threaded port. ASME B16.11 covers forged plugs with hexagon, square and round heads. Plugs close spare ports on valves, vessel bosses and test connections, and seal drain and vent points that are opened only during maintenance.",
-          "Choose the head for access: a [hex plug](/electropolished-pipe-fittings/electropolished-hex-plug/) takes a spanner or socket, a [square plug](/electropolished-pipe-fittings/electropolished-square-plug/) takes a wrench and has a lower profile in some sizes, and round-head plugs suit ports that are not meant to be opened again. Threads hold product in their roots and cannot be cleaned in place, so threaded connections belong on utilities, instrument and drain connections, not on product-contact lines that are cleaned in place."
+          "Choose the head for access: a [hex plug](/electropolished-pipe-fittings/electropolished-hex-plug/) takes a spanner or socket, a [square plug](/electropolished-pipe-fittings/electropolished-square-plug/) takes a wrench and has a lower profile in some sizes, and round-head plugs suit ports that are not meant to be opened again. Whichever head is chosen, the wetted thread keeps the plug on utility, drain and instrument ports."
         ]
       },
       {
@@ -906,13 +1013,25 @@ export const FITTING_GUIDES = {
     ]
   },
   "electropolished-pipe-fittings/electropolished-hex-plug": {
-    "updated": "2026-11-03",
+    "updated": "2026-11-28",
     "sections": [
       {
         "h2": "Hex Head Plugs",
         "paragraphs": [
           "A hex head plug has a hexagon head that takes a spanner or socket, which makes it the easiest threaded plug to remove and refit in a confined space. It is the usual choice for drain and vent ports that are opened during routine maintenance and for test points on utility headers.",
-          "Hex plugs are forged to ASME B16.11 and threaded NPT or BSPT. An electropolished plug suits clean utilities, where the face of the plug sits in the flowing line and a smooth surface reduces particle pick-up. Threads hold product in their roots and cannot be cleaned in place, so threaded connections belong on utilities, instrument and drain connections, not on product-contact lines that are cleaned in place."
+          "Hex plugs are forged to ASME B16.11 and threaded NPT or BSPT. An electropolished plug suits clean utilities, where the face of the plug sits in the flowing line and a smooth surface reduces particle pick-up. Fluid still sits in its thread, so hex plugs stay off lines that are cleaned in place."
+        ]
+      },
+      {
+        "h2": "Stopping Stainless Threads from Galling",
+        "paragraphs": [
+          "Austenitic stainless steel threads tend to gall: under load, the flanks of plug and port cold-weld at their high spots and tear, and the plug seizes before it is tight. Once galled, the threads on both parts are damaged. Electropolishing smooths the flanks but does not remove the need for a lubricant."
+        ],
+        "bullets": [
+          "Clean both threads first; grit raises the load on the high spots.",
+          "Use an anti-seize compound or thread sealant approved for the fluid, and only an oxygen-rated product on oxygen service.",
+          "Tighten slowly and steadily; speed and heat make galling worse.",
+          "Replace a plug that has galled rather than forcing it back into the port."
         ]
       },
       {
@@ -937,14 +1056,55 @@ export const FITTING_GUIDES = {
     ]
   },
   "electropolished-pipe-fittings/electropolished-square-plug": {
-    "updated": "2026-11-03",
+    "updated": "2026-11-28",
     "sections": [
       {
         "h2": "Square Head Plugs",
         "paragraphs": [
           "A square head plug has a square head turned with an adjustable wrench. It is a traditional pattern for ports that are opened rarely, such as spare vessel bosses and line test connections, and is covered with other forged plugs by ASME B16.11.",
-          "Where a port will be opened frequently or in a tight space, a [hex head plug](/electropolished-pipe-fittings/electropolished-hex-plug/) is easier to work with. Threads hold product in their roots and cannot be cleaned in place, so threaded connections belong on utilities, instrument and drain connections, not on product-contact lines that are cleaned in place."
+          "Where a port will be opened frequently or in a tight space, a [hex head plug](/electropolished-pipe-fittings/electropolished-hex-plug/) is easier to work with. Its thread is wetted too, so a square plug is kept to test and utility ports."
         ]
+      },
+      {
+        "h2": "Plug and Bushing Patterns in ASME B16.11",
+        "paragraphs": [
+          "ASME B16.11 lists three plug heads and two bushing types. The choice comes down to the tool that can reach the port and how often the port will be opened."
+        ],
+        "table": {
+          "caption": "Plug and bushing patterns",
+          "head": [
+            "Pattern",
+            "Head",
+            "Typical port"
+          ],
+          "rows": [
+            [
+              "Square head plug",
+              "Square, for an adjustable or pipe wrench",
+              "Spare bosses and test points opened rarely"
+            ],
+            [
+              "Hex head plug",
+              "Hexagon, for a spanner or socket",
+              "Drains, vents and test points opened at maintenance"
+            ],
+            [
+              "Round head plug",
+              "Round, no flats",
+              "Closures not meant to be opened again"
+            ],
+            [
+              "Hex head bushing",
+              "Hexagon",
+              "Reducing a threaded port to a smaller size"
+            ],
+            [
+              "Flush bushing",
+              "None; sits flush with the port face",
+              "Reducing a port where nothing may stand proud"
+            ]
+          ]
+        }
       },
       {
         "h2": "Selection Notes",
@@ -968,13 +1128,13 @@ export const FITTING_GUIDES = {
     ]
   },
   "electropolished-pipe-fittings/electropolished-bushing": {
-    "updated": "2026-11-03",
+    "updated": "2026-11-28",
     "sections": [
       {
         "h2": "Threaded Bushings for Port Reduction",
         "paragraphs": [
           "A bushing has a male thread outside and a smaller female thread inside. Screwed into a port, it reduces the port to a smaller size, for example to fit a 1/4\" gauge into a 1/2\" boss. Bushings are made hex head, which takes a spanner, or flush, which sits level with the port face. Forged bushings follow ASME B16.11.",
-          "A bushing adds a second threaded joint and a step in the bore. Threads hold product in their roots and cannot be cleaned in place, so threaded connections belong on utilities, instrument and drain connections, not on product-contact lines that are cleaned in place."
+          "A bushing adds a second threaded joint and a step in the bore. Both are places where liquid stands out of the flow, so bushings stay on utility and instrument connections."
         ]
       },
       {
@@ -1031,7 +1191,7 @@ export const FITTING_GUIDES = {
     ]
   },
   "electropolished-pipe-fittings/electropolished-male-adapter": {
-    "updated": "2026-11-03",
+    "updated": "2026-11-28",
     "sections": [
       {
         "h2": "Male-Thread Adapters for Instruments and Valves",
@@ -1039,6 +1199,47 @@ export const FITTING_GUIDES = {
           "A male adapter has a male pipe thread on one end and a clamp ferrule or orbital weld end on the other. It lets a component with a female-threaded port, such as a gauge siphon, a pressure switch or a small valve, connect to a hygienic line, or lets a threaded equipment port receive a clamp connection.",
           "The thread form must match the mating port: NPT (ASME B1.20.1) or BSPT (ISO 7-1). The clamp end must match the line ferrule standard, ASME BPE, DIN 32676 or ISO 2852."
         ]
+      },
+      {
+        "h2": "Tapered or Parallel: Reading the Thread Designation",
+        "paragraphs": [
+          "Three thread families turn up on instruments and valves, and the letters on the drawing say which one is meant. Tapered threads seal on their flanks with tape or paste. A parallel G thread does not seal on the thread at all: it needs a bonded washer, an O-ring or a flat gasket pressed against a face, so a male G adapter needs a sealing face behind the thread."
+        ],
+        "table": {
+          "caption": "Thread designations found on adapters",
+          "head": [
+            "Marked as",
+            "Standard",
+            "Form",
+            "Where it seals"
+          ],
+          "rows": [
+            [
+              "1/2 NPT",
+              "ASME B1.20.1",
+              "Taper 1:16, 60° angle",
+              "On the thread flanks, with sealant"
+            ],
+            [
+              "R 1/2 (male), Rc 1/2 (female)",
+              "ISO 7-1",
+              "Taper 1:16, 55° angle",
+              "On the thread flanks, with sealant"
+            ],
+            [
+              "Rp 1/2 (female)",
+              "ISO 7-1",
+              "Parallel, 55° angle",
+              "Takes an R male thread, with sealant"
+            ],
+            [
+              "G 1/2",
+              "ISO 228-1",
+              "Parallel, 55° angle",
+              "On a washer, O-ring or gasket against a face"
+            ]
+          ]
+        }
       },
       {
         "h2": "Points to Check",
@@ -1062,13 +1263,20 @@ export const FITTING_GUIDES = {
     ]
   },
   "electropolished-pipe-fittings/electropolished-female-adapter": {
-    "updated": "2026-11-03",
+    "updated": "2026-11-28",
     "sections": [
       {
         "h2": "Female-Thread Adapters",
         "paragraphs": [
           "A female adapter has a female pipe thread on one end and a clamp ferrule or orbital weld end on the other. It receives instruments and components that come with a male thread, such as many pressure gauges and temperature sensors, and mounts them on a hygienic line.",
           "Instruments with male threads screw into the adapter, so the adapter thread form must match the instrument: NPT or BSPT, with the size stated. The clamp end follows the line ferrule standard."
+        ]
+      },
+      {
+        "h2": "Matching the Adapter to the Instrument Port",
+        "paragraphs": [
+          "Order the adapter from the instrument data sheet, not from the nominal size alone. Pressure gauges built to EN 837-1 commonly have a G 1/2 B connection on 100 and 160 mm dials and G 1/4 B on smaller dials; gauges built to ASME B40.100 commonly come with 1/4 or 1/2 NPT.",
+          "A G connection seals on a washer against the face of the female adapter, so that face must be flat and wide enough for the washer. A tapered NPT or R thread seals inside the thread, so the female thread needs enough length for the male thread to engage fully before it tightens."
         ]
       },
       {
@@ -1220,13 +1428,20 @@ export const FITTING_GUIDES = {
     ]
   },
   "electropolished-pipe-fittings/electropolished-sockolet": {
-    "updated": "2026-11-03",
+    "updated": "2026-11-28",
     "sections": [
       {
         "h2": "Sockolets: Socket-Weld Branch Outlets",
         "paragraphs": [
           "A sockolet is a branch outlet welded to the run with a socket on the outlet to receive a small-bore branch pipe. It follows MSS SP-97 and is rated by class to match socket-weld fittings. It is used for small branches to instruments, drains and vents on headers.",
           "Like any socket-weld joint, the outlet leaves a small gap at the socket bottom. That crevice makes sockolets unsuitable for product lines that are cleaned in place; they suit utility and chemical headers. See [socket-weld fittings](/electropolished-pipe-fittings/electropolished-socket/) for the crevice issue."
+        ]
+      },
+      {
+        "h2": "Fitting the Branch Pipe into a Sockolet",
+        "paragraphs": [
+          "The branch pipe goes into the socket and is pulled back before the fillet weld is made, leaving a gap at the socket bottom. ASME B31.3 shows about 1.5 mm (1/16 in) before welding. Without that gap the pipe end bears on the socket shoulder, and the fillet weld can crack as the joint heats and cools.",
+          "A sockolet takes two welds: the groove weld to the header and the fillet weld at the branch. On electropolished pipe both leave heat tint on the inside. Restore the finish by pickling and passivating the weld zones, or by electropolishing the welded assembly."
         ]
       },
       {
@@ -1251,13 +1466,20 @@ export const FITTING_GUIDES = {
     ]
   },
   "electropolished-pipe-fittings/electropolished-threadolet": {
-    "updated": "2026-11-03",
+    "updated": "2026-11-28",
     "sections": [
       {
         "h2": "Threadolets: Threaded Branch Outlets",
         "paragraphs": [
           "A threadolet is welded to the run and has a female threaded outlet. It gives a ready threaded connection for a pressure gauge, a thermowell, a vent or a drain plug on a header, without cutting in a tee. It is covered by MSS SP-97 and rated by class to match threaded fittings.",
-          "Threadolets are used on utility, steam and chemical headers. Threads hold product in their roots and cannot be cleaned in place, so threaded connections belong on utilities, instrument and drain connections, not on product-contact lines that are cleaned in place."
+          "Threadolets are used on utility, steam and chemical headers. Product would stand in the outlet thread, out of reach of a cleaning cycle, so a hygienic line takes an [instrument tee](/electropolished-pipe-fittings/electropolished-instrument-tee/) or a clamp branch instead."
+        ]
+      },
+      {
+        "h2": "After Welding: Heat Tint and Thread Care",
+        "paragraphs": [
+          "A threadolet is joined to the header by a full-penetration groove weld around its contoured base, after a hole matching the outlet bore is cut in the run. On an electropolished header that weld leaves heat tint inside the run around the hole: a coloured oxide layer with less corrosion resistance than the polished surface next to it.",
+          "There are two ways to deal with it. Pickle and passivate the weld zone (ASTM A380 covers the cleaning, ASTM A967 the passivation), or weld the threadolet into a spool first and electropolish the spool as one piece. Weld before the gauge or plug goes in, keep spatter off the thread, and check the thread with a gauge afterwards, since weld heat can distort it."
         ]
       },
       {

@@ -145,7 +145,7 @@ export default function GujaratHubPage({ onEnquireClick, onShowContactDetails })
               className="btn btn-primary btn-lg"
               style={{ padding: '0.85rem 1.75rem', fontWeight: '700' }}
             >
-              Request Gujarat Quote in 24 Hours <ArrowRight size={16} />
+              Request Gujarat Quote in 30 Minutes <ArrowRight size={16} />
             </button>
             <button 
               onClick={handleShowContact}

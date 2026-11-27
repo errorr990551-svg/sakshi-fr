@@ -8,7 +8,7 @@
     "build": "node generate_sitemap.js && npx --no-install vite build && npx --no-install vite build --ssr src/main-ssr.jsx --outDir dist/server && node prerender.js",
     "lint": "eslint .",
     "preview": "npx --no-install vite preview",
-    "test": "node --test src/utils/titles.test.js src/utils/bpeFinish.test.js"
+    "test": "node --test src/utils/titles.test.js src/utils/bpeFinish.test.js src/utils/rfq.test.js"
   },
   "dependencies": {
     "lucide-react": "^1.21.0",

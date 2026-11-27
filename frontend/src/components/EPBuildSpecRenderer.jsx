@@ -10,6 +10,7 @@ import { PRIORITY_30_CITIES } from '../data/priorityCities';
 import CategoryGuide from './CategoryGuide';
 import ProcessVideo from './ProcessVideo';
 import { EP_PROCESS_VIDEO } from '../data/videos';
+import RfqForm from './RfqForm';
 
 export default function EPBuildSpecRenderer({ pageData, onEnquireClick, hasUnlockedContact = false, onShowContactDetails }) {
   const handleShowContact = onShowContactDetails || (() => onEnquireClick && onEnquireClick('Contact Request - EP Spec'));
@@ -106,49 +107,8 @@ export default function EPBuildSpecRenderer({ pageData, onEnquireClick, hasUnloc
             {/* Hero Quick RFQ Form / Card */}
             <div className="lg:col-span-5">
               <div className="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 shadow-2xl relative">
-                <div className="absolute top-0 right-0 transform translate-x-2 -translate-y-2 bg-yellow-500 text-slate-950 text-[10px] uppercase tracking-wider font-extrabold px-3 py-1 rounded-full shadow">
-                  Quote within 24 hours
-                </div>
-                <h2 className="text-xl font-bold text-white mb-2">Get Price & Spec Sheet</h2>
-                <p className="text-xs text-slate-400 mb-6">Receive a detailed quotation with MTC sample within 24 hours; delivery time is confirmed with it.</p>
-                
-                <form onSubmit={(e) => {
-                  e.preventDefault();
-                  // Carry what was typed into the enquiry form, so the visitor only adds an email and sends
-                  const f = e.currentTarget.elements;
-                  const qty = f['ep-spec-field-4'].value.trim();
-                  onEnquireClick(h1, {
-                    name: f['ep-spec-field-1'].value.trim(),
-                    phone: f['ep-spec-field-2'].value.trim(),
-                    message: `Enquiry for product: ${h1}\nGrade: ${f['ep-spec-field-3'].value}${qty ? `\nQuantity / OD: ${qty}` : ''}`
-                  });
-                }} className="space-y-4">
-                  <div>
-                    <label htmlFor="ep-spec-field-1" className="block text-xs text-slate-400 mb-1">Your Name / Company *</label>
-                    <input id="ep-spec-field-1" type="text" required placeholder="Your name and company" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-yellow-500" />
-                  </div>
-                  <div className="grid grid-cols-2 gap-3">
-                    <div>
-                      <label htmlFor="ep-spec-field-2" className="block text-xs text-slate-400 mb-1">Phone Number *</label>
-                      <input id="ep-spec-field-2" type="tel" required placeholder="+91 XXXXX XXXXX" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-yellow-500" />
-                    </div>
-                    <div>
-                      <label htmlFor="ep-spec-field-3" className="block text-xs text-slate-400 mb-1">Material Grade</label>
-                      <select id="ep-spec-field-3" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-yellow-500">
-                        <option className="bg-slate-900 text-white">SS 316L (EP)</option>
-                        <option className="bg-slate-900 text-white">SS 304L (EP)</option>
-                        <option className="bg-slate-900 text-white">ASME BPE SF4</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div>
-                    <label htmlFor="ep-spec-field-4" className="block text-xs text-slate-400 mb-1">Quantity / Outer Diameter (OD)</label>
-                    <input id="ep-spec-field-4" type="text" placeholder="e.g. 200 metres, 1 inch OD x 1.65mm WT" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-yellow-500" />
-                  </div>
-                  <button type="submit" className="w-full bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-500 hover:from-yellow-400 hover:to-amber-400 text-slate-950 font-extrabold py-3.5 rounded-xl transition shadow-lg shadow-yellow-500/25 uppercase tracking-wider text-sm">
-                    Submit RFQ Now
-                  </button>
-                </form>
+                <h2 className="text-xl font-bold text-white mb-4">Get Price &amp; Spec Sheet</h2>
+                <RfqForm formType="ep_spec_card" product={h1} />
               </div>
             </div>
 
@@ -363,7 +323,7 @@ export default function EPBuildSpecRenderer({ pageData, onEnquireClick, hasUnloc
                   </div>
                   <div className="flex items-center space-x-3 bg-slate-950 p-3.5 rounded-xl border border-slate-800">
                     <Truck className="w-5 h-5 text-emerald-400 shrink-0" />
-                    <span>Quotation Within 24 Hours</span>
+                    <span>Quotation Within 30 Minutes</span>
                   </div>
                   <div className="flex items-center space-x-3 bg-slate-950 p-3.5 rounded-xl border border-slate-800">
                     <ShieldCheck className="w-5 h-5 text-cyan-400 shrink-0" />
@@ -447,7 +407,7 @@ export default function EPBuildSpecRenderer({ pageData, onEnquireClick, hasUnloc
             <div className="space-y-2 text-center md:text-left">
               <h3 className="text-2xl sm:text-3xl font-extrabold text-white">Ready to Order <span className="text-yellow-400">Electropolished Pipe?</span></h3>
               <p className="text-slate-300 text-sm sm:text-base max-w-xl leading-relaxed">
-                Get a quote within 24 hours, with an EN 10204 3.1 MTC and an Ra roughness report for every electropolished lot.
+                Get a quote within 30 minutes, with an EN 10204 3.1 MTC and an Ra roughness report for every electropolished lot.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">

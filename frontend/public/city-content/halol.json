@@ -46,7 +46,7 @@
         "For pharma: whether the order is part of a remediation commitment, the system it belongs to (WFI, clean steam, purified water or product) and the Ra limit your validation team will verify.",
         "For automotive and engineering plants: the conductivity or particle limit of the deionised water, so we can say honestly whether SF4 adds anything over SF1.",
         "OD x wall to ASME BPE or ASTM A270 / A269, or pipe sizes to ASTM A312, with metres per size.",
-        "Quotation within 24 hours; delivery time depends on the order and is confirmed in writing with it."
+        "Quotation within 30 minutes; delivery time depends on the order and is confirmed in writing with it."
       ],
       "links": [
         {

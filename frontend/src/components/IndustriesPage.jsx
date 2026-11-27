@@ -201,7 +201,7 @@ export default function IndustriesPage() {
             {ENQUIRY.map((item) => <li key={item}>{item}</li>)}
           </ul>
           <p style={{ ...p, marginTop: '1rem' }}>
-            We reply with a quotation within 24 hours of a complete enquiry. Plants that need forged flanges or buttweld fittings alongside the tube can find them under <a href="/flanges/" style={{ color: 'var(--primary-yellow)' }}>flanges</a> and <a href="/buttweld-fittings/" style={{ color: 'var(--primary-yellow)' }}>buttweld fittings</a>.
+            We reply with a quotation within 30 minutes of a complete enquiry. Plants that need forged flanges or buttweld fittings alongside the tube can find them under <a href="/flanges/" style={{ color: 'var(--primary-yellow)' }}>flanges</a> and <a href="/buttweld-fittings/" style={{ color: 'var(--primary-yellow)' }}>buttweld fittings</a>.
           </p>
           <a href="/contact-us/" className="btn btn-primary" style={{ marginTop: '1.5rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
             Send your line list <ArrowRight size={18} />

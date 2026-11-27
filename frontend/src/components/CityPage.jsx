@@ -705,7 +705,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
         <section style={{ padding: '5rem 0', backgroundColor: 'var(--bg-dark-900)' }}>
           <div className="container" style={{ maxWidth: '980px', backgroundColor: 'var(--bg-dark-800)', borderRadius: '12px', border: '1px solid var(--border-color)', padding: '3rem 2rem' }}>
             <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
-              <span style={{ color: 'var(--primary-yellow)', fontSize: '0.8rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '0.5rem' }}>24-Hour Quote Turnaround</span>
+              <span style={{ color: 'var(--primary-yellow)', fontSize: '0.8rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.08em', display: 'block', marginBottom: '0.5rem' }}>30-Minute Quote Turnaround</span>
               <h2 style={{ fontSize: '2.2rem', fontWeight: '800', margin: '0 0 1rem 0' }}>{custom.cta.title}</h2>
               <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', maxWidth: '750px', margin: '0 auto 2rem auto', lineHeight: '1.7' }}>
                 {custom.cta.desc}
@@ -892,7 +892,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
                   'ISO 9001:2015 Certified',
                   'EN 10204 3.1 MTC Provided',
                   '100% PMI Tested Metallurgy',
-                  'Quote within 24 Hours'
+                  'Quote within 30 Minutes'
                 ]).map((badge, idx) => (
                   <div key={idx} style={{
                     display: 'flex',

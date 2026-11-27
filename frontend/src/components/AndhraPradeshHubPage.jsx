@@ -165,7 +165,7 @@ export default function AndhraPradeshHubPage({ onEnquireClick, onShowContactDeta
                   fontSize: '0.95rem'
                 }}
               >
-                Get Andhra Pradesh Quote in 24 Hours
+                Get Andhra Pradesh Quote in 30 Minutes
               </button>
               <a 
                 href="tel:+918291366340"

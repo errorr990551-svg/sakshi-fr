@@ -8,7 +8,7 @@ export const tamilNaduCityData = {
     state: 'Tamil Nadu',
     country: 'India',
     pageTitle: 'Electropolished Pipe Supplier in Chennai | SS 316L, 304 & Duplex EP Pipes | Sakshi Forge',
-    metaDescription: 'Electropolished SS 316L, 304 and duplex pipes supplied to Chennai, Manali, Ambattur and Sriperumbudur. Ra ≤0.4 µm, 100% PMI tested, 3.1 MTC. Quote within 24 hours.',
+    metaDescription: 'Electropolished SS 316L, 304 and duplex pipes supplied to Chennai, Manali, Ambattur and Sriperumbudur. Ra ≤0.4 µm, 100% PMI tested, 3.1 MTC. Quote within 30 minutes.',
     isTamilNaduRich: true,
     h1: "Electropolished Pipes & Tubes Manufacturer and Supplier in Chennai",
     heroIntro: "Sakshi Forge manufactures electropolished stainless steel pipes and tubes at Mumbai, and supplies plants across Chennai, from the chemical units at Manali to the pharma estates at Ambattur and the production belts at Sriperumbudur and Oragadam.",
@@ -52,7 +52,7 @@ export const tamilNaduCityData = {
       "ISO 9001:2015",
       "100% PMI Tested",
       "EN 10204 3.1 MTC",
-      "Quote within 24 Hours"
+      "Quote within 30 Minutes"
     ],
     whyBuyersTrust: {
       title: "Why Chennai-Region Buyers Choose Sakshi Forge",
@@ -138,7 +138,7 @@ export const tamilNaduCityData = {
       title: "How an Order Reaches Your Plant in Chennai",
       steps: [
         "Send your requirement. Grade, size, quantity and finish, by phone, email or the form.",
-        "Quote within 24 hours. From someone who can answer technical questions on the same call.",
+        "Quote within 30 minutes. From someone who can answer technical questions on the same call.",
         "Drawing and specification check. We confirm sizes, standards and documents before production.",
         "Manufacture and testing in-house. Electropolishing, Ra testing, PMI, hydro and passivation verification.",
         "Document pack prepared. MTC 3.1, surface report, PMI and hydro certificates, QA inspection report.",
@@ -184,7 +184,7 @@ export const tamilNaduCityData = {
         { heading: "Tested beyond PMI", desc: "Ra, hydro, passivation and ferrite checks, with reports." },
         { heading: "Paperwork built for audits", desc: "3.1 MTC, mill traceability, QA report, surface report." },
         { heading: "Honest about limits", desc: "We list what electropolished pipe shouldn't be used for." },
-        { heading: "Fast, clear quotes", desc: "24-hour quote turnaround." }
+        { heading: "Fast, clear quotes", desc: "30-minute quote turnaround." }
       ]
     },
     faqs: [
@@ -195,7 +195,7 @@ export const tamilNaduCityData = {
       { q: "What documents come with the pipes?", a: "MTC EN 10204 3.1, mill traceability, QA inspection report, surface report with Ra values, and PMI and hydro test certificates." },
       { q: "Can you make custom sizes?", a: "Yes. Custom dimensions and drawings are supported." },
       { q: "What are the limits of electropolished pipe?", a: "Avoid hydrofluoric acid, abrasive slurries, structural use and high-impact wear." },
-      { q: "How fast can I get a quote?", a: "Within 24 hours during working hours." }
+      { q: "How fast can I get a quote?", a: "Within 30 minutes, 24×7." }
     ],
     cta: {
       title: "Ready to Specify Electropolished Pipe for Your Chennai Plant?",
@@ -212,7 +212,7 @@ export const tamilNaduCityData = {
     state: 'Tamil Nadu',
     country: 'India',
     pageTitle: 'Electropolished Pipe Supplier in Coimbatore | SS 316L, 304 EP Pipes | Sakshi Forge',
-    metaDescription: 'Electropolished SS 304, 316L and duplex pipes for Coimbatore fabricators, OEMs and process plants. Custom lengths, Ra ≤0.4 µm, 100% PMI tested, 3.1 MTC. Quote within 24 hours.',
+    metaDescription: 'Electropolished SS 304, 316L and duplex pipes for Coimbatore fabricators, OEMs and process plants. Custom lengths, Ra ≤0.4 µm, 100% PMI tested, 3.1 MTC. Quote within 30 minutes.',
     isTamilNaduRich: true,
     h1: "Electropolished Pipes & Tubes Manufacturer and Supplier in Coimbatore",
     heroIntro: "Coimbatore builds the machines that other industries run on: pumps, motors, textile machinery, foundry castings and process equipment. Sakshi Forge supplies the stainless pipe that goes into that work, electropolished in-house and cut to your drawing.",
@@ -242,7 +242,7 @@ export const tamilNaduCityData = {
         actions: [{ text: "Get Quote for Coimbatore", type: "quote" }]
       }
     ],
-    trustStrip: ["Factory Direct", "ISO 9001:2015", "100% PMI Tested", "EN 10204 3.1 MTC", "Quote within 24 Hours"],
+    trustStrip: ["Factory Direct", "ISO 9001:2015", "100% PMI Tested", "EN 10204 3.1 MTC", "Quote within 30 Minutes"],
     whyBuyersTrust: {
       title: "Why Coimbatore-Region Buyers Choose Sakshi Forge",
       paragraphs: [
@@ -324,7 +324,7 @@ export const tamilNaduCityData = {
       title: "How an Order Reaches Your Coimbatore Plant",
       steps: [
         "Send grade, size, quantity and drawing.",
-        "Quote within 24 hours.",
+        "Quote within 30 minutes.",
         "Specification and drawing check.",
         "In-house manufacture and testing (Ra, PMI, hydro, passivation verification).",
         "Document pack prepared.",
@@ -367,7 +367,7 @@ export const tamilNaduCityData = {
         { heading: "Custom lengths and drawings", desc: "Engineered spools and custom tolerances for fabricators." },
         { heading: "Tested beyond PMI", desc: "Ra, hydro, passivation and ferrite checks supplied on every order." },
         { heading: "Honest about limits", desc: "No HF acid, no abrasive slurries." },
-        { heading: "Fast, clear quotes", desc: "Priced quotes within 24 hours." }
+        { heading: "Fast, clear quotes", desc: "Priced quotes within 30 minutes." }
       ]
     },
     faqs: [
@@ -393,7 +393,7 @@ export const tamilNaduCityData = {
     state: 'Tamil Nadu',
     country: 'India',
     pageTitle: 'Electropolished Pipe Supplier in Hosur | SS 316L, 304 EP Pipes | Sakshi Forge',
-    metaDescription: 'Electropolished SS 316L and 304 pipes for Hosur SIPCOT pharma, electronics and process plants. Ra ≤0.4 µm, 100% PMI tested, 3.1 MTC. Also supplying the Bengaluru belt. Quote within 24 hours.',
+    metaDescription: 'Electropolished SS 316L and 304 pipes for Hosur SIPCOT pharma, electronics and process plants. Ra ≤0.4 µm, 100% PMI tested, 3.1 MTC. Also supplying the Bengaluru belt. Quote within 30 minutes.',
     isTamilNaduRich: true,
     h1: "Electropolished Pipes & Tubes Manufacturer and Supplier in Hosur",
     heroIntro: "Hosur is where Bengaluru's manufacturing spills over the state line: electronics, auto, pharma and precision engineering in one industrial belt. Sakshi Forge supplies SS 316L, 304 and duplex electropolished pipes to plants across Hosur, delivered factory-direct from Mumbai with the paperwork your quality team asks for.",
@@ -423,7 +423,7 @@ export const tamilNaduCityData = {
         actions: [{ text: "Get Quote for Hosur", type: "quote" }]
       }
     ],
-    trustStrip: ["Factory Direct", "ISO 9001:2015", "100% PMI Tested", "EN 10204 3.1 MTC", "Quote within 24 Hours"],
+    trustStrip: ["Factory Direct", "ISO 9001:2015", "100% PMI Tested", "EN 10204 3.1 MTC", "Quote within 30 Minutes"],
     whyBuyersTrust: {
       title: "Why Hosur-Region Buyers Choose Sakshi Forge",
       paragraphs: [
@@ -490,7 +490,7 @@ export const tamilNaduCityData = {
       title: "Getting Pipes to Hosur",
       steps: [
         "Send grade, size, quantity.",
-        "Quote within 24 hours.",
+        "Quote within 30 minutes.",
         "Spec and document check.",
         "In-house manufacture and testing.",
         "Document pack prepared.",
@@ -533,7 +533,7 @@ export const tamilNaduCityData = {
     ],
     cta: {
       title: "Ready to Specify Electropolished Pipe for Your Hosur Plant?",
-      desc: "Send your requirements for direct factory pricing with 24-hour quote turnaround.",
+      desc: "Send your requirements for direct factory pricing with 30-minute quote turnaround.",
       phones: ["+91 82913 66340"],
       email: "info@steelmanufacturer.in",
       address: "Shop No. 05, Ground Floor, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai, Maharashtra 400004"
@@ -546,7 +546,7 @@ export const tamilNaduCityData = {
     state: 'Tamil Nadu',
     country: 'India',
     pageTitle: 'Electropolished Pipe Supplier in Cuddalore | SS 316L & Duplex EP Pipes | Sakshi Forge',
-    metaDescription: 'Electropolished SS 316L and duplex 2205 pipes for Cuddalore SIPCOT chemical, pharma and petrochemical plants. Chloride-resistant grades, 100% PMI tested, 3.1 MTC. Quote within 24 hours.',
+    metaDescription: 'Electropolished SS 316L and duplex 2205 pipes for Cuddalore SIPCOT chemical, pharma and petrochemical plants. Chloride-resistant grades, 100% PMI tested, 3.1 MTC. Quote within 30 minutes.',
     isTamilNaduRich: true,
     h1: "Electropolished Pipes & Tubes Manufacturer and Supplier in Cuddalore",
     heroIntro: "Cuddalore's industrial estate handles chemicals, drugs and pharmaceuticals, petrochemicals and engineering on the Bay of Bengal coast. Sakshi Forge supplies SS 316L and duplex 2205 electropolished pipes for that duty, with the documents regulators and auditors expect.",
@@ -576,7 +576,7 @@ export const tamilNaduCityData = {
         actions: [{ text: "Get Quote for Cuddalore", type: "quote" }]
       }
     ],
-    trustStrip: ["Factory Direct", "ISO 9001:2015", "100% PMI Tested", "EN 10204 3.1 MTC", "Quote within 24 Hours"],
+    trustStrip: ["Factory Direct", "ISO 9001:2015", "100% PMI Tested", "EN 10204 3.1 MTC", "Quote within 30 Minutes"],
     whyBuyersTrust: {
       title: "Why Cuddalore-Region Buyers Choose Sakshi Forge",
       paragraphs: [
@@ -642,7 +642,7 @@ export const tamilNaduCityData = {
       title: "Getting Pipes to Cuddalore",
       steps: [
         "Send media, grade, size, quantity.",
-        "Quote within 24 hours.",
+        "Quote within 30 minutes.",
         "Grade and spec check, including media compatibility.",
         "In-house manufacture and testing.",
         "Document pack prepared.",
@@ -685,7 +685,7 @@ export const tamilNaduCityData = {
     ],
     cta: {
       title: "Ready to Specify Electropolished Pipe for Your Cuddalore Plant?",
-      desc: "Send your requirements for direct factory pricing with 24-hour quote turnaround.",
+      desc: "Send your requirements for direct factory pricing with 30-minute quote turnaround.",
       phones: ["+91 82913 66340"],
       email: "info@steelmanufacturer.in",
       address: "Shop No. 05, Ground Floor, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai, Maharashtra 400004"
@@ -698,7 +698,7 @@ export const tamilNaduCityData = {
     state: 'Tamil Nadu',
     country: 'India',
     pageTitle: 'Electropolished Pipe Supplier in Tiruchirappalli (Trichy) | SS 304, 316L EP Pipes | Sakshi Forge',
-    metaDescription: 'Electropolished SS 304, 316L and duplex pipes for Trichy fabricators, heavy-engineering and process plants. Custom lengths, Ra ≤0.4 µm, 100% PMI tested, 3.1 MTC. Quote within 24 hours.',
+    metaDescription: 'Electropolished SS 304, 316L and duplex pipes for Trichy fabricators, heavy-engineering and process plants. Custom lengths, Ra ≤0.4 µm, 100% PMI tested, 3.1 MTC. Quote within 30 minutes.',
     isTamilNaduRich: true,
     h1: "Electropolished Pipes & Tubes Manufacturer and Supplier in Tiruchirappalli (Trichy)",
     heroIntro: "Trichy is a fabrication town. Boiler, pressure-equipment and engineering shops here turn raw material into assemblies that ship across India. Sakshi Forge supplies the electropolished stainless pipe that goes into the clean-service side of that work, cut to your drawing and documented for your customer's audit.",
@@ -728,7 +728,7 @@ export const tamilNaduCityData = {
         actions: [{ text: "Get Quote for Trichy", type: "quote" }]
       }
     ],
-    trustStrip: ["Factory Direct", "ISO 9001:2015", "100% PMI Tested", "EN 10204 3.1 MTC", "Quote within 24 Hours"],
+    trustStrip: ["Factory Direct", "ISO 9001:2015", "100% PMI Tested", "EN 10204 3.1 MTC", "Quote within 30 Minutes"],
     whyBuyersTrust: {
       title: "Why Trichy-Region Buyers Choose Sakshi Forge",
       paragraphs: [
@@ -795,7 +795,7 @@ export const tamilNaduCityData = {
       title: "Getting Pipes to Trichy",
       steps: [
         "Send grade, size, quantity and drawing.",
-        "Quote within 24 hours.",
+        "Quote within 30 minutes.",
         "Specification check, including weld and passivation requirements.",
         "In-house manufacture and testing (Ra, PMI, hydro, passivation verification).",
         "Document pack prepared.",
@@ -838,7 +838,7 @@ export const tamilNaduCityData = {
     ],
     cta: {
       title: "Ready to Specify Electropolished Pipe for Your Trichy Business?",
-      desc: "Send your requirements for direct factory pricing with 24-hour quote turnaround.",
+      desc: "Send your requirements for direct factory pricing with 30-minute quote turnaround.",
       phones: ["+91 82913 66340"],
       email: "info@steelmanufacturer.in",
       address: "Shop No. 05, Ground Floor, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai, Maharashtra 400004"
@@ -851,7 +851,7 @@ export const tamilNaduCityData = {
     state: 'Tamil Nadu',
     country: 'India',
     pageTitle: 'Electropolished Pipe Supplier in Salem | SS 304L, 316L EP Pipes | Sakshi Forge',
-    metaDescription: 'Electropolished SS 304L and 316L pipes for Salem food, starch, textile and process plants. Ra ≤0.4 µm, 100% PMI tested, 3.1 MTC with full traceability. Quote within 24 hours.',
+    metaDescription: 'Electropolished SS 304L and 316L pipes for Salem food, starch, textile and process plants. Ra ≤0.4 µm, 100% PMI tested, 3.1 MTC with full traceability. Quote within 30 minutes.',
     isTamilNaduRich: true,
     h1: "Electropolished Pipes & Tubes Manufacturer and Supplier in Salem",
     heroIntro: "Salem knows stainless steel. It is home to a major stainless steel plant, a sago and starch processing industry, and textile units that need clean process water. Sakshi Forge supplies SS 304L and 316L electropolished pipes to match, with the technical detail Salem buyers expect on every certificate.",
@@ -881,7 +881,7 @@ export const tamilNaduCityData = {
         actions: [{ text: "Get Quote for Salem", type: "quote" }]
       }
     ],
-    trustStrip: ["Factory Direct", "ISO 9001:2015", "100% PMI Tested", "EN 10204 3.1 MTC", "Quote within 24 Hours"],
+    trustStrip: ["Factory Direct", "ISO 9001:2015", "100% PMI Tested", "EN 10204 3.1 MTC", "Quote within 30 Minutes"],
     whyBuyersTrust: {
       title: "Why Salem-Region Buyers Choose Sakshi Forge",
       paragraphs: [
@@ -948,7 +948,7 @@ export const tamilNaduCityData = {
       title: "Getting Pipes to Salem",
       steps: [
         "Send media, grade, size, quantity.",
-        "Quote within 24 hours.",
+        "Quote within 30 minutes.",
         "Specification check.",
         "In-house manufacture and testing.",
         "Document pack prepared.",
@@ -991,7 +991,7 @@ export const tamilNaduCityData = {
     ],
     cta: {
       title: "Ready to Specify Electropolished Pipe for Your Salem Plant?",
-      desc: "Send your requirements for direct factory pricing with 24-hour quote turnaround.",
+      desc: "Send your requirements for direct factory pricing with 30-minute quote turnaround.",
       phones: ["+91 82913 66340"],
       email: "info@steelmanufacturer.in",
       address: "Shop No. 05, Ground Floor, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai, Maharashtra 400004"
@@ -1004,7 +1004,7 @@ export const tamilNaduCityData = {
     state: 'Tamil Nadu',
     country: 'India',
     pageTitle: 'Electropolished Pipe Supplier in Madurai | SS 304L, 316L EP Pipes | Sakshi Forge',
-    metaDescription: 'Electropolished SS 304L and 316L pipes for Madurai food, agro-processing and small-batch plants. Small lots welcome, Ra ≤0.4 µm, 100% PMI tested, 3.1 MTC. Quote within 24 hours.',
+    metaDescription: 'Electropolished SS 304L and 316L pipes for Madurai food, agro-processing and small-batch plants. Small lots welcome, Ra ≤0.4 µm, 100% PMI tested, 3.1 MTC. Quote within 30 minutes.',
     isTamilNaduRich: true,
     h1: "Electropolished Pipes & Tubes Manufacturer and Supplier in Madurai",
     heroIntro: "Madurai and the districts around it run on food and agro processing and a large base of small and mid-sized units. Sakshi Forge supplies SS 304L and 316L electropolished pipes in the quantities that suit them, from small project lots to full runs, with a complete document pack every time.",
@@ -1034,12 +1034,12 @@ export const tamilNaduCityData = {
         actions: [{ text: "Get Quote for Madurai", type: "quote" }]
       }
     ],
-    trustStrip: ["Factory Direct", "ISO 9001:2015", "100% PMI Tested", "EN 10204 3.1 MTC", "Quote within 24 Hours"],
+    trustStrip: ["Factory Direct", "ISO 9001:2015", "100% PMI Tested", "EN 10204 3.1 MTC", "Quote within 30 Minutes"],
     whyBuyersTrust: {
       title: "Why Madurai-Region Buyers Choose Sakshi Forge",
       paragraphs: [
         "Madurai sits on the Coimbatore–Madurai industrial corridor and close to agro and food-processing estates such as the SIPCOT complex at Nilakottai, which focuses on agro-based, food and fruit processing. Many of the plants around here are small and mid-sized, which means orders are often small, varied and urgent.",
-        "We built our quoting around that. Small lots are welcome, quotes come within 24 hours, and you get the same document pack a large buyer would."
+        "We built our quoting around that. Small lots are welcome, quotes come within 30 minutes, and you get the same document pack a large buyer would."
       ]
     },
     productRange: {
@@ -1102,7 +1102,7 @@ export const tamilNaduCityData = {
       title: "Getting Pipes to Madurai",
       steps: [
         "Send grade, size, quantity (small lots welcome).",
-        "Quote within 24 hours.",
+        "Quote within 30 minutes.",
         "Specification check.",
         "In-house manufacture and testing.",
         "Document pack prepared.",
@@ -1145,7 +1145,7 @@ export const tamilNaduCityData = {
     ],
     cta: {
       title: "Ready to Specify Electropolished Pipe for Your Madurai Plant?",
-      desc: "Send your requirements for direct factory pricing with 24-hour quote turnaround.",
+      desc: "Send your requirements for direct factory pricing with 30-minute quote turnaround.",
       phones: ["+91 82913 66340"],
       email: "info@steelmanufacturer.in",
       address: "Shop No. 05, Ground Floor, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai, Maharashtra 400004"
@@ -1158,7 +1158,7 @@ export const tamilNaduCityData = {
     state: 'Tamil Nadu',
     country: 'India',
     pageTitle: 'Electropolished Pipe Supplier in Thoothukudi | Duplex & SS 316L EP Pipes | Sakshi Forge',
-    metaDescription: 'Electropolished duplex 2205, super duplex and SS 316L pipes for Thoothukudi port, chemical, power and seafood-processing plants. Chloride-resistant grades, 100% PMI tested, 3.1 MTC. Quote within 24 hours.',
+    metaDescription: 'Electropolished duplex 2205, super duplex and SS 316L pipes for Thoothukudi port, chemical, power and seafood-processing plants. Chloride-resistant grades, 100% PMI tested, 3.1 MTC. Quote within 30 minutes.',
     isTamilNaduRich: true,
     h1: "Electropolished Pipes & Tubes Manufacturer and Supplier in Thoothukudi",
     heroIntro: "Thoothukudi is a port city on the Gulf of Mannar coast, with power plants, chemical units and seafood and agro processing around it. That means salt air, chloride-bearing water and hard-working lines. Sakshi Forge supplies duplex, super duplex and SS 316L electropolished pipes chosen for exactly that.",
@@ -1188,7 +1188,7 @@ export const tamilNaduCityData = {
         actions: [{ text: "Get Quote for Thoothukudi", type: "quote" }]
       }
     ],
-    trustStrip: ["Factory Direct", "ISO 9001:2015", "100% PMI Tested", "EN 10204 3.1 MTC", "Quote within 24 Hours"],
+    trustStrip: ["Factory Direct", "ISO 9001:2015", "100% PMI Tested", "EN 10204 3.1 MTC", "Quote within 30 Minutes"],
     whyBuyersTrust: {
       title: "Why Thoothukudi-Region Buyers Choose Sakshi Forge",
       paragraphs: [
@@ -1254,7 +1254,7 @@ export const tamilNaduCityData = {
       title: "Getting Pipes to Thoothukudi",
       steps: [
         "Send media, chloride level if known, grade, size, quantity.",
-        "Quote within 24 hours.",
+        "Quote within 30 minutes.",
         "Grade and spec check.",
         "In-house manufacture and testing.",
         "Document pack prepared.",
@@ -1297,7 +1297,7 @@ export const tamilNaduCityData = {
     ],
     cta: {
       title: "Ready to Specify Electropolished Pipe for Your Thoothukudi Plant?",
-      desc: "Send your requirements for direct factory pricing with 24-hour quote turnaround.",
+      desc: "Send your requirements for direct factory pricing with 30-minute quote turnaround.",
       phones: ["+91 82913 66340"],
       email: "info@steelmanufacturer.in",
       address: "Shop No. 05, Ground Floor, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai, Maharashtra 400004"
@@ -1309,7 +1309,7 @@ export const tamilNaduCityData = {
     state: 'Tamil Nadu',
     country: 'India',
     pageTitle: 'Electropolished Pipe Supplier in Erode | SS 304, 316L EP Pipes | Sakshi Forge',
-    metaDescription: 'Electropolished SS 304 and 316L pipes for Erode and Perundurai dyeing, chemical, food and process plants. Ra ≤0.4 µm, 100% PMI tested, 3.1 MTC. Quote within 24 hours.',
+    metaDescription: 'Electropolished SS 304 and 316L pipes for Erode and Perundurai dyeing, chemical, food and process plants. Ra ≤0.4 µm, 100% PMI tested, 3.1 MTC. Quote within 30 minutes.',
     isTamilNaduRich: true,
     h1: "Electropolished Pipes & Tubes Manufacturer and Supplier in Erode",
     heroIntro: "Erode and the Perundurai industrial belt run on textile processing, dyeing, chemicals, engineering and agro processing. Sakshi Forge supplies SS 304 and 316L electropolished pipes for the clean-service and chemical lines in those plants, factory-direct from Mumbai.",
@@ -1339,7 +1339,7 @@ export const tamilNaduCityData = {
         actions: [{ text: "Get Quote for Erode", type: "quote" }]
       }
     ],
-    trustStrip: ["Factory Direct", "ISO 9001:2015", "100% PMI Tested", "EN 10204 3.1 MTC", "Quote within 24 Hours"],
+    trustStrip: ["Factory Direct", "ISO 9001:2015", "100% PMI Tested", "EN 10204 3.1 MTC", "Quote within 30 Minutes"],
     whyBuyersTrust: {
       title: "Why Erode-Region Buyers Choose Sakshi Forge",
       paragraphs: [
@@ -1406,7 +1406,7 @@ export const tamilNaduCityData = {
       title: "Getting Pipes to Erode",
       steps: [
         "Send media, grade, size, quantity.",
-        "Quote within 24 hours.",
+        "Quote within 30 minutes.",
         "Specification check.",
         "In-house manufacture and testing.",
         "Document pack prepared.",
@@ -1451,7 +1451,7 @@ export const tamilNaduCityData = {
     ],
     cta: {
       title: "Ready to Specify Electropolished Pipe for Your Erode Plant?",
-      desc: "Send your requirements for direct factory pricing with 24-hour quote turnaround.",
+      desc: "Send your requirements for direct factory pricing with 30-minute quote turnaround.",
       phones: ["+91 82913 66340"],
       email: "info@steelmanufacturer.in",
       address: "Shop No. 05, Ground Floor, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai, Maharashtra 400004"
@@ -1466,7 +1466,7 @@ export const tamilNaduCityData = {
     fullPageUrl: 'https://steelmanufacturer.in/market-area/vellore/',
     canonicalUrl: 'https://steelmanufacturer.in/market-area/vellore/',
     pageTitle: 'Electropolished Pipe Supplier in Vellore & Ranipet | SS 316L EP Pipes | Sakshi Forge',
-    metaDescription: 'Electropolished SS 316L and 304 pipes for Vellore and Ranipet SIPCOT pharma, chemical and engineering plants. Ra ≤0.4 µm, 100% PMI tested, 3.1 MTC. Quote within 24 hours.',
+    metaDescription: 'Electropolished SS 316L and 304 pipes for Vellore and Ranipet SIPCOT pharma, chemical and engineering plants. Ra ≤0.4 µm, 100% PMI tested, 3.1 MTC. Quote within 30 minutes.',
     isTamilNaduRich: true,
     h1: "Electropolished Pipes & Tubes Manufacturer and Supplier in Vellore",
     heroIntro: "Vellore is best known for leather and tanning, but the Ranipet SIPCOT estate next door also hosts engineering, chemical and pharmaceutical units. Those are the plants that need hygienic, well-documented pipe. Sakshi Forge supplies SS 316L and 304 electropolished pipes to them, factory-direct from Mumbai.",
@@ -1496,7 +1496,7 @@ export const tamilNaduCityData = {
         actions: [{ text: "Get Quote for Vellore and Ranipet", type: "quote" }]
       }
     ],
-    trustStrip: ["Factory Direct", "ISO 9001:2015", "100% PMI Tested", "EN 10204 3.1 MTC", "Quote within 24 Hours"],
+    trustStrip: ["Factory Direct", "ISO 9001:2015", "100% PMI Tested", "EN 10204 3.1 MTC", "Quote within 30 Minutes"],
     whyBuyersTrust: {
       title: "Why Vellore-Region Buyers Choose Sakshi Forge",
       paragraphs: [
@@ -1563,7 +1563,7 @@ export const tamilNaduCityData = {
       title: "Getting Pipes to Vellore and Ranipet",
       steps: [
         "Send media, grade, size, quantity.",
-        "Quote within 24 hours.",
+        "Quote within 30 minutes.",
         "Specification check.",
         "In-house manufacture and testing.",
         "Document pack prepared.",
@@ -1608,7 +1608,7 @@ export const tamilNaduCityData = {
     ],
     cta: {
       title: "Ready to Specify Electropolished Pipe for Your Vellore or Ranipet Plant?",
-      desc: "Send your requirements for direct factory pricing with 24-hour quote turnaround.",
+      desc: "Send your requirements for direct factory pricing with 30-minute quote turnaround.",
       phones: ["+91 82913 66340"],
       email: "info@steelmanufacturer.in",
       address: "Shop No. 05, Ground Floor, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai, Maharashtra 400004"

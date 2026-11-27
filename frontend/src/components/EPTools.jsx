@@ -244,7 +244,7 @@ export function PipeWeightCalculatorTool({ onEnquireClick }) {
     const summaryText = `Quote Request for ${qtyNum}x ${pipeDesc} Pipe, Grade: ${currentGrade.name}, Length: ${lengthInput}${unitSystem === 'metric' ? 'm' : 'ft'} (Total Wt: ${unitSystem === 'metric' ? totalBatchWeightKg.toFixed(2) + ' kg' : totalBatchWeightLbs.toFixed(2) + ' lbs'})`;
 
     if (onEnquireClick) {
-      onEnquireClick(summaryText);
+      onEnquireClick('Electropolished Pipe', { message: summaryText });
     }
   };
 

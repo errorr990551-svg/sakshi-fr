@@ -759,7 +759,7 @@ export const customCityData = {
         { field: 'Head Office', value: `${ADDRESS_LINE}, India` },
         { field: 'Quality System', value: 'ISO 9001:2015 Certified Manufacturing & Quality Assurance' },
         { field: 'Testing Laboratory', value: 'NABL Accredited Partner Laboratory (ILAC-MRA Signatory)' },
-        { field: 'Sales & Inquiries', value: 'Quote within 24 hours via the official RFQ desk' },
+        { field: 'Sales & Inquiries', value: 'Quote within 30 minutes via the official RFQ desk' },
       ],
       notSupply: [
         'We do not operate a local Al Ain warehouse; every consignment is custom manufactured and dispatched direct from Mumbai for maximum quality control.',

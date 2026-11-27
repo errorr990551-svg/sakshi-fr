@@ -1011,7 +1011,7 @@ export const SPEC_GUIDES = {
           'Dimension series and sizes, with the fittings they connect to ([dairy fittings](/dairy-fittings/), clamp or SMS).',
           'Internal finish per line and the Ra limit, if your customer or auditor sets one.',
           'Documents: EN 10204 3.1 certificate traced to heat number, PMI per length and a measured Ra report for each electropolished lot.',
-          'We quote within 24 hours; delivery time depends on the order and is confirmed with the quotation.'
+          'We quote within 30 minutes; delivery time depends on the order and is confirmed with the quotation.'
         ],
         cta: { label: 'Request a dairy EP pipe quotation', href: '/contact-us/' }
       }

@@ -2,7 +2,7 @@
 // (a blog post takes precedence over the template route, so the URL and its history are kept);
 // the sixth is a new standards comparison. Company claims are limited to facts confirmed by the owner:
 // EN 10204 3.1 per heat, NABL-lab chemistry, PMI on every length, internal Ra report per EP lot,
-// ISO 9001:2015, quotation within 24 hours, dispatch and transit confirmed in writing.
+// ISO 9001:2015, quotation within 30 minutes, dispatch and transit confirmed in writing.
 
 const cta = (heading, text) => `
 <div class="blog-mid-cta">
@@ -82,7 +82,7 @@ ${cta('Supplying a WFI or purified water loop?', 'We supply 316L tube to ASME BP
 
 <h2>9. The Material File for Validation</h2>
 <p>Installation qualification reviews the materials behind every product-contact component. For the tube, that means a certificate for each heat, a heat number on every length that matches it, and a surface finish record for the lot. Indian plants working to the revised Schedule M, and those exporting to regulated markets, are asked for exactly this trail.</p>
-<p>For WFI and purified water tube, Sakshi Forge supplies 316L to ASME BPE dimensions with an EN 10204 3.1 certificate traced to each heat number and chemical analysis from a NABL-accredited laboratory. Every length is PMI tested, each electropolished lot has our internal Ra report, and our quality system is certified to ISO 9001:2015. Send the line list with OD, wall, length and finish, and we quote within 24 hours of a complete enquiry. More on pharmaceutical systems is on our <a href="/industries/pharmaceutical-electropolished-pipes/">pharmaceutical industry page</a>.</p>
+<p>For WFI and purified water tube, Sakshi Forge supplies 316L to ASME BPE dimensions with an EN 10204 3.1 certificate traced to each heat number and chemical analysis from a NABL-accredited laboratory. Every length is PMI tested, each electropolished lot has our internal Ra report, and our quality system is certified to ISO 9001:2015. Send the line list with OD, wall, length and finish, and we quote within 30 minutes of a complete enquiry. More on pharmaceutical systems is on our <a href="/industries/pharmaceutical-electropolished-pipes/">pharmaceutical industry page</a>.</p>
 `,
     faqs: [
       { q: "Which grade and finish is standard for WFI loop tube?", a: "316L to ASME BPE dimensions with an SF4 bore: mechanically polished and electropolished to an Ra of 0.38 µm (15 µin) maximum. ASME BPE also controls sulphur in 316L tube so orbital welds penetrate consistently." },
@@ -227,7 +227,7 @@ ${cta('Want tube that arrives inspection-ready?', 'Every length we supply is PMI
 <h2>4. Grade</h2>
 <p>The common choices are 304L and 316L, often dual-certified as 304/304L or 316/316L. The L grades limit carbon to 0.030% so the weld heat-affected zone does not sensitise. 316L adds molybdenum for pitting resistance and is the default for product contact in pharma and biotech, for salted, acidic or chloride-bearing food products and for hot CIP. For tube to ASME BPE, the sulphur range for 316L should be stated so welds penetrate consistently. Our <a href="/blog/304-vs-316l-ep-pipes-india/">304 versus 316L guide</a> covers the choice in detail. For acid and chloride service beyond 316L, 904L is an option and can be supplied electropolished.</p>
 
-${cta('Send us your line list', 'We quote electropolished tube and pipe in 304, 304L, 316, 316L and 904L within 24 hours of a complete enquiry.')}
+${cta('Send us your line list', 'We quote electropolished tube and pipe in 304, 304L, 316, 316L and 904L within 30 minutes of a complete enquiry.')}
 
 <h2>5. Size, Length and Quantity</h2>
 <p>For tube, give OD and wall for each line, in inches or millimetres as your drawings use them, and the dimension series (ASME BPE, DIN or SMS). For pipe, give NPS and schedule. State lengths, fixed or random, and quantities in metres or number of lengths. Mention any cut-to-length requirement and end preparation: square-cut and deburred ends for orbital welding, or bevelled ends for buttwelding heavier-wall pipe.</p>
@@ -252,7 +252,7 @@ ${cta('Send us your line list', 'We quote electropolished tube and pipe in 304, 
 
 <h2>10. Example Specification Line</h2>
 <p>"Tube, ASTM A270 S2 and ASME BPE, TP316L with sulphur 0.005–0.017%, seamless, 1.5 in OD × 0.065 in wall, 6 m random lengths, 240 m; bore SF4 (Ra 0.38 µm max, electropolished), OD polished; ends square-cut, deburred and capped; EN 10204 3.1 per heat, PMI every length, Ra report per lot; heat number on each length; packed in crates separated from carbon steel."</p>
-<p>A line like that can be quoted the same way by every supplier. Send yours, with quantities and delivery address, through our <a href="/contact-us/">contact page</a>; we quote within 24 hours of a complete enquiry and confirm dispatch and transit in writing.</p>
+<p>A line like that can be quoted the same way by every supplier. Send yours, with quantities and delivery address, through our <a href="/contact-us/">contact page</a>; we quote within 30 minutes of a complete enquiry and confirm dispatch and transit in writing.</p>
 `,
     faqs: [
       { q: "What is the difference between ordering tube and pipe?", a: "Tube is ordered by actual OD and wall thickness and is used in hygienic systems with orbital welds or clamp fittings. Pipe is ordered by nominal pipe size and schedule under ASME B36.19M and is used with flanges and buttweld fittings. A 2 in tube has a 2.000 in OD; a 2 in pipe has a 2.375 in OD." },
@@ -424,7 +424,7 @@ ${cta('Ordering electropolished tube for a distant site?', 'Tell us the delivery
 <tr><td>Handling</td><td>Non-metallic slings; no chains</td></tr>
 </tbody>
 </table>
-<p>For a quotation on <a href="/electropolished-tubes/">electropolished tubes</a> or <a href="/electropolished-pipes/">electropolished pipes</a>, include these packing lines with sizes, grade and finish; we quote within 24 hours of a complete enquiry.</p>
+<p>For a quotation on <a href="/electropolished-tubes/">electropolished tubes</a> or <a href="/electropolished-pipes/">electropolished pipes</a>, include these packing lines with sizes, grade and finish; we quote within 30 minutes of a complete enquiry.</p>
 `,
     faqs: [
       { q: "Why does stainless steel tube rust in storage?", a: "Most often because iron from carbon steel chains, racks, tools or nearby stock has been embedded in the surface and rusts in humid air. Condensation and chloride deposits also stain and can pit stainless steel." },
@@ -522,7 +522,7 @@ ${cta('Not sure which standard your line list needs?', 'Send the service, sizes 
 </ul>
 
 <h2>9. Supply and Documents</h2>
-<p>Sakshi Forge supplies sanitary tube to ASTM A270, seamless and welded tube to ASTM A269 and A249, and pipe to ASTM A312 in grades 304, 304L, 316 and 316L, with 904L supplied electropolished for acid and chloride service. Each heat carries an EN 10204 3.1 certificate traced to its heat number, with chemical analysis from a NABL-accredited laboratory; every length is PMI tested, and each electropolished lot has our internal Ra report. Our quality system is certified to ISO 9001:2015. Send your line list through the <a href="/contact-us/">contact page</a> and we quote within 24 hours of a complete enquiry.</p>
+<p>Sakshi Forge supplies sanitary tube to ASTM A270, seamless and welded tube to ASTM A269 and A249, and pipe to ASTM A312 in grades 304, 304L, 316 and 316L, with 904L supplied electropolished for acid and chloride service. Each heat carries an EN 10204 3.1 certificate traced to its heat number, with chemical analysis from a NABL-accredited laboratory; every length is PMI tested, and each electropolished lot has our internal Ra report. Our quality system is certified to ISO 9001:2015. Send your line list through the <a href="/contact-us/">contact page</a> and we quote within 30 minutes of a complete enquiry.</p>
 `,
     faqs: [
       { q: "What is the difference between ASTM A270 and A269?", a: "A270 is sanitary tubing for dairy and food service, with supplement S2 for pharmaceutical quality, and is usually paired with ASME BPE. A269 is general-service tubing for corrosion-resisting and low- or high-temperature service and is the usual standard for instrument tubing." },

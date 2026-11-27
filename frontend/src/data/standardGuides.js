@@ -2,7 +2,7 @@
 // through SPEC_GUIDES). Standard facts are stated at the level the published standards support;
 // company claims are limited to facts confirmed by the owner: Mumbai base, ISO 9001:2015,
 // NABL-lab chemical analysis, EN 10204 3.1 certificate traced to heat number, PMI on every length,
-// internal Ra report per electropolished lot, quotation within 24 hours, dispatch and transit
+// internal Ra report per electropolished lot, quotation within 30 minutes, dispatch and transit
 // confirmed in writing. No stock, prices, lead times, MOQ or customer claims.
 
 export const STANDARD_GUIDES = {
@@ -110,7 +110,7 @@ export const STANDARD_GUIDES = {
       {
         h2: "Send an A312 EP Pipe Enquiry",
         paragraphs: [
-          "A complete A312 enquiry lets us quote within 24 hours. Put each requirement on its own line rather than listing several standards with \"or\", which invites the cheapest reading."
+          "A complete A312 enquiry lets us quote within 30 minutes. Put each requirement on its own line rather than listing several standards with \"or\", which invites the cheapest reading."
         ],
         bullets: [
           "Specification line, for example: ASTM A312 TP316L, welded, NPS 2 Sch 10S, ID electropolished Ra 0.38 µm max, OD as annealed.",
@@ -199,7 +199,7 @@ export const STANDARD_GUIDES = {
           "Length per piece (straight lengths or coils) and total metres per size.",
           "OD finish: as annealed, bright annealed or electropolished.",
           "Documents: EN 10204 3.1 certificate traced to heat number, NABL-lab chemical analysis, PMI on every length and an Ra report for each electropolished lot.",
-          "Send it through the contact page and we reply with a quotation within 24 hours, with dispatch and transit confirmed in writing."
+          "Send it through the contact page and we reply with a quotation within 30 minutes, with dispatch and transit confirmed in writing."
         ],
         cta: { label: "Request an ASTM A269 EP tubing quotation", href: "/contact-us/" }
       }
@@ -275,7 +275,7 @@ export const STANDARD_GUIDES = {
           "Seamless or welded, and the sulphur window if the tube will be orbitally welded.",
           "Matching [electropolished fittings](/electropolished-pipe-fittings/) if you want tube and fittings on one quotation.",
           "Documents: EN 10204 3.1 certificate traced to heat number, NABL-lab chemical analysis, PMI on every length and an internal Ra report for each electropolished lot.",
-          "We reply with a quotation within 24 hours of a complete enquiry; dispatch and transit are confirmed in writing with it."
+          "We reply with a quotation within 30 minutes of a complete enquiry; dispatch and transit are confirmed in writing with it."
         ],
         cta: { label: "Request an ASTM A270 EP tube quotation", href: "/contact-us/" }
       }
@@ -355,7 +355,7 @@ export const STANDARD_GUIDES = {
       {
         h2: "Ask for a Quotation With 3.1 Documentation",
         paragraphs: [
-          "Tell us the certificate type and any extra content your quality team needs, such as specific tests, the edition of the product standard or the format of the turnover package. We reply with a quotation within 24 hours of a complete enquiry and list the documents that come with each length."
+          "Tell us the certificate type and any extra content your quality team needs, such as specific tests, the edition of the product standard or the format of the turnover package. We reply with a quotation within 30 minutes of a complete enquiry and list the documents that come with each length."
         ],
         cta: { label: "Request EP pipe with EN 10204 3.1", href: "/contact-us/" }
       }
@@ -439,7 +439,7 @@ export const STANDARD_GUIDES = {
       {
         h2: "Quoted Against Your Specification",
         paragraphs: [
-          "We supply ASTM A270, A269, A249 and A312 in 304, 304L, 316 and 316L, with 904L supplied electropolished for acid and chloride service, under an ISO 9001:2015 quality system. Every length is PMI tested, chemical analysis is done by a NABL-accredited laboratory, each electropolished lot has an internal Ra report and each heat carries an EN 10204 3.1 certificate traced to its heat number. Send your line list and we quote within 24 hours of a complete enquiry."
+          "We supply ASTM A270, A269, A249 and A312 in 304, 304L, 316 and 316L, with 904L supplied electropolished for acid and chloride service, under an ISO 9001:2015 quality system. Every length is PMI tested, chemical analysis is done by a NABL-accredited laboratory, each electropolished lot has an internal Ra report and each heat carries an EN 10204 3.1 certificate traced to its heat number. Send your line list and we quote within 30 minutes of a complete enquiry."
         ],
         cta: { label: "Send a line list for quotation", href: "/contact-us/" }
       }
@@ -507,7 +507,7 @@ export const STANDARD_GUIDES = {
       {
         h2: "Ask for a Quotation With Your Inspection Requirements",
         paragraphs: [
-          "Send the product standard, sizes, finish and any tests your specification adds. We reply with a quotation within 24 hours of a complete enquiry, listing the certificate, PMI record and Ra report that come with the order."
+          "Send the product standard, sizes, finish and any tests your specification adds. We reply with a quotation within 30 minutes of a complete enquiry, listing the certificate, PMI record and Ra report that come with the order."
         ],
         cta: { label: "Request an inspected EP pipe quotation", href: "/contact-us/" }
       }
@@ -611,7 +611,7 @@ export const STANDARD_GUIDES = {
       {
         h2: "Turning a Size List Into a Quotation",
         paragraphs: [
-          "Send the sizes from these tables in the same form: tube as OD x wall, pipe as NPS and schedule, with metres per size, grade, standard and the finish on the ID. We reply with a quotation within 24 hours of a complete enquiry, with an EN 10204 3.1 certificate traced to heat number, PMI on every length and an Ra report for each electropolished lot included. These tables show standard dimension series; they are not a statement of stock."
+          "Send the sizes from these tables in the same form: tube as OD x wall, pipe as NPS and schedule, with metres per size, grade, standard and the finish on the ID. We reply with a quotation within 30 minutes of a complete enquiry, with an EN 10204 3.1 certificate traced to heat number, PMI on every length and an Ra report for each electropolished lot included. These tables show standard dimension series; they are not a statement of stock."
         ],
         cta: { label: "Get a quotation for your sizes", href: "/contact-us/" }
       }
@@ -630,7 +630,7 @@ export const STANDARD_GUIDES = {
       {
         h2: "Electropolished Pipe and Tube Range at a Glance",
         paragraphs: [
-          "This page is our electropolished product specification sheet in one place: the products, standards, grades, finishes and documents we quote. To receive a quotation and specification for your own line list, send it through the contact page; we reply within 24 hours of a complete enquiry."
+          "This page is our electropolished product specification sheet in one place: the products, standards, grades, finishes and documents we quote. To receive a quotation and specification for your own line list, send it through the contact page; we reply within 30 minutes of a complete enquiry."
         ],
         table: {
           caption: "Electropolished products, governing standards and finishes",
@@ -709,7 +709,7 @@ export const STANDARD_GUIDES = {
     faqs: [
       { q: "Which electropolished products does Sakshi Forge supply?", a: "Sanitary tube to ASTM A270 and ASME BPE, tube to ASTM A269 and A249, pipe to ASTM A312, in 304, 304L, 316 and 316L, with 904L supplied electropolished, and electropolished fittings to match." },
       { q: "Which finishes are available?", a: "ASME BPE SF1 (Ra 0.51 µm maximum, mechanically polished) and SF4 (Ra 0.38 µm maximum, electropolished), or a stated maximum Ra for pipe ordered to ASTM A312." },
-      { q: "How do I get a specification sheet for my project?", a: "Send your line list with standards, grades, sizes and finish through the contact page. We reply with a quotation within 24 hours of a complete enquiry, stating the specification and documents for each line." }
+      { q: "How do I get a specification sheet for my project?", a: "Send your line list with standards, grades, sizes and finish through the contact page. We reply with a quotation within 30 minutes of a complete enquiry, stating the specification and documents for each line." }
     ]
   },
 
@@ -772,7 +772,7 @@ export const STANDARD_GUIDES = {
       {
         h2: "When You Are Ready to Order",
         paragraphs: [
-          "Send your sizes, grade, standard and finish through the contact page. We reply with a quotation within 24 hours of a complete enquiry; each order comes with an EN 10204 3.1 certificate traced to heat number, PMI on every length and an Ra report for each electropolished lot."
+          "Send your sizes, grade, standard and finish through the contact page. We reply with a quotation within 30 minutes of a complete enquiry; each order comes with an EN 10204 3.1 certificate traced to heat number, PMI on every length and an Ra report for each electropolished lot."
         ],
         cta: { label: "Request a quotation", href: "/contact-us/" }
       }
@@ -881,7 +881,7 @@ export const STANDARD_GUIDES = {
       {
         h2: "Quote by Metre or by Kilogram",
         paragraphs: [
-          "Tell us how you want the quotation expressed. We reply within 24 hours of a complete enquiry, with sizes, grade, standard, finish and the documents for each line: EN 10204 3.1 certificate traced to heat number, PMI on every length and an Ra report for each electropolished lot."
+          "Tell us how you want the quotation expressed. We reply within 30 minutes of a complete enquiry, with sizes, grade, standard, finish and the documents for each line: EN 10204 3.1 certificate traced to heat number, PMI on every length and an Ra report for each electropolished lot."
         ],
         cta: { label: "Request a quotation for your sizes", href: "/contact-us/" }
       }

@@ -11,7 +11,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
     { number: 'ISO', label: '9001:2015 Certified' },
     { number: '3.1', label: 'EN 10204 Certificates' },
     { number: 'NABL', label: 'Lab Chemical Analysis' },
-    { number: '24 h', label: 'Quote Turnaround' }
+    { number: '30 min', label: 'Quote Turnaround' }
   ];
 
   const processes = [
@@ -245,7 +245,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
               <div className="feature-card" style={{ backgroundColor: 'var(--bg-dark-800)', padding: '1.75rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
                 <h3 style={{ fontSize: '1.15rem', color: 'var(--primary-yellow)', marginBottom: '0.5rem' }}>Straight answers</h3>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.6', margin: 0 }}>
-                  Technical questions get technical answers, and quotes come within 24 hours.
+                  Technical questions get technical answers, and quotes come within 30 minutes.
                 </p>
               </div>
 
@@ -601,7 +601,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
               </div>
               <div style={{ backgroundColor: 'var(--bg-dark-900)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
                 <h3 style={{ fontSize: '1.15rem', color: 'var(--primary-yellow)', marginBottom: '0.4rem' }}>Fast, clear quotes</h3>
-                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', margin: 0 }}>24-hour quote turnaround.</p>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', margin: 0 }}>30-minute quote turnaround.</p>
               </div>
               <div style={{ backgroundColor: 'var(--bg-dark-900)', padding: '1.5rem', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
                 <h3 style={{ fontSize: '1.15rem', color: 'var(--primary-yellow)', marginBottom: '0.4rem' }}>Export experience</h3>
@@ -671,7 +671,7 @@ export default function AboutPage({ onEnquireClick, hasUnlockedContact = false, 
               <span className="hero-tag" style={{ border: 'none', backgroundColor: 'rgba(255, 193, 7, 0.08)' }}>Get a Factory-Direct Quote</span>
               <h2 style={{ fontSize: '2.2rem', margin: '0.75rem 0' }}>Let's Talk About Your Project</h2>
               <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem' }}>
-                Send us your grade, size, quantity and standard. We'll quote within 24 hours.
+                Send us your grade, size, quantity and standard. We'll quote within 30 minutes.
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', marginTop: '1.5rem' }}>
                 <button onClick={() => onEnquireClick('About Page Bottom RFQ')} className="btn btn-primary" style={{ padding: '0.85rem 2rem', fontWeight: '700' }}>

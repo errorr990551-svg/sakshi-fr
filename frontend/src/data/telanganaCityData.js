@@ -329,7 +329,7 @@ export const telanganaCityData = {
     "country": "India",
     "pageUrl": "/market-area/karimnagar",
     "pageTitle": "Electropolished Pipe Manufacturer Karimnagar | Sakshi Forge",
-    "metaDescription": "Electropolished 304L & 316L SS pipes for Karimnagar dairy, food and rice-processing plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "metaDescription": "Electropolished 304L & 316L SS pipes for Karimnagar dairy, food and rice-processing plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 30 minutes.",
     "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Karimnagar",
     "subHeadline": "Karimnagar is north Telangana's agri-industrial city, known for rice milling, dairy processing and packaging, and a growing food-park belt around Jammikunta. We manufacture and electropolish SS 304L and 316L pipes and tubes and supply Karimnagar's dairies, food plants and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [
@@ -608,7 +608,7 @@ export const telanganaCityData = {
     "country": "India",
     "pageUrl": "/market-area/warangal",
     "pageTitle": "Electropolished Pipe Manufacturer Warangal | Sakshi Forge",
-    "metaDescription": "Electropolished 316L & 304L SS pipes for Warangal textile-processing, food and agro plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "metaDescription": "Electropolished 316L & 304L SS pipes for Warangal textile-processing, food and agro plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 30 minutes.",
     "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Warangal",
     "subHeadline": "Warangal is Telangana's second city and home to the Kakatiya Mega Textile Park, the country's first operational PM MITRA park, set in a cotton-growing region with rice, chilli and food processing around it. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Warangal's plants directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [

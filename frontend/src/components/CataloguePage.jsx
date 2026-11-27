@@ -146,7 +146,7 @@ export default function CataloguePage({ onEnquireClick }) {
         <div className="container" style={{ maxWidth: '820px' }}>
           <h2 style={{ fontSize: '1.6rem', fontWeight: '700', marginBottom: '1rem' }}>Other Products and the Online Versions</h2>
           <p style={{ color: 'var(--text-secondary)', lineHeight: '1.7', marginBottom: '1rem' }}>
-            The sheet covers electropolished pipes and tubes and the fittings made to match them. For flanges, bars or any other product on this site, send your specification through the <a href="/contact-us/" onClick={(e) => handleLinkClick(e, '/contact-us/')} style={linkStyle}>contact page</a> and we reply with a quotation within 24 hours of a complete enquiry.
+            The sheet covers electropolished pipes and tubes and the fittings made to match them. For flanges, bars or any other product on this site, send your specification through the <a href="/contact-us/" onClick={(e) => handleLinkClick(e, '/contact-us/')} style={linkStyle}>contact page</a> and we reply with a quotation within 30 minutes of a complete enquiry.
           </p>
           <p style={{ color: 'var(--text-secondary)', lineHeight: '1.7', marginBottom: '1.5rem' }}>
             The same range is on the <a href="/resources/download-ep-pipe-catalogue/" onClick={(e) => handleLinkClick(e, '/resources/download-ep-pipe-catalogue/')} style={linkStyle}>online EP pipe and tube spec sheet</a>, and the full tube and pipe tables, with the method behind the weights, are on the <a href="/resources/ep-pipe-size-chart/" onClick={(e) => handleLinkClick(e, '/resources/ep-pipe-size-chart/')} style={linkStyle}>EP pipe size chart</a>. The PDF is printed from those two pages.

@@ -66,7 +66,7 @@ const table = (head, rows, caption) =>
   <h1>Electropolished Pipes and Tubes</h1>
   <div class="sub">Product and specification sheet · ${EDITION} edition · <a href="${SITE}/">steelmanufacturer.in</a></div>
 </header>
-<p>This sheet lists the electropolished (EP) stainless steel pipes and tubes we quote: products, standards, grades and finishes, the documents supplied with every order, the standard size series, and what to include in an enquiry. We reply with a quotation within 24 hours of a complete enquiry.</p>
+<p>This sheet lists the electropolished (EP) stainless steel pipes and tubes we quote: products, standards, grades and finishes, the documents supplied with every order, the standard size series, and what to include in an enquiry. We reply with a quotation within 30 minutes of a complete enquiry.</p>
 
 <h2>1. Products, standards and grades</h2>
 ${table(['Product', 'Standards', 'Grades', 'Finish options'], rangeRows, range.caption)}
@@ -91,7 +91,7 @@ ${ul(section(CAT, 'What to Include in Your Enquiry').bullets)}
   <strong>Sakshi Forge</strong><br>
   Shop No. 05, Ground Floor, 113/117, Dr. MG Mahimtura Marg, 3rd Kumbharwada, Mumbai, Maharashtra 400004<br>
   Phone: +91 82913 66340 · Email: <a href="mailto:info@steelmanufacturer.in">info@steelmanufacturer.in</a> · Enquiries: <a href="${SITE}/contact-us/">steelmanufacturer.in/contact-us/</a><br>
-  Quotation within 24 hours of a complete enquiry. Dispatch and transit are confirmed in writing with each quotation.
+  Quotation within 30 minutes of a complete enquiry. Dispatch and transit are confirmed in writing with each quotation.
 </div>
 </div>
 </body></html>`;

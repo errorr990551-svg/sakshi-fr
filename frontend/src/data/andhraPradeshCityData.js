@@ -788,7 +788,7 @@ export const andhraPradeshCityData = {
     "country": "India",
     "pageUrl": "/market-area/guntur",
     "pageTitle": "Electropolished Pipe Manufacturer Guntur | Sakshi Forge",
-    "metaDescription": "Electropolished 316L & 304L SS pipes for Guntur chilli, spice, food and edible-oil plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 24 hours.",
+    "metaDescription": "Electropolished 316L & 304L SS pipes for Guntur chilli, spice, food and edible-oil plants. ASTM A270, MTC EN 10204 3.1, PMI tested. Quote within 30 minutes.",
     "h1": "Electropolished Pipes & Tubes Manufacturer and Supplier in Guntur",
     "subHeadline": "Guntur is the centre of India's chilli trade and a major cotton, tobacco and spice-processing city, with a government-backed Spices Park near it. We manufacture and electropolish SS 316L and 304L pipes and tubes and supply Guntur's food, paste, sauce and oil processors and fabricators directly, with MTC EN 10204 3.1, 100% PMI testing and a measured Ra report on every order.",
     "trustStrip": [

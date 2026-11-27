@@ -59,7 +59,7 @@ export const INDUSTRY_GUIDES = {
           'Tube or pipe sizes and the dimension series, with the fittings and valves they will join to.',
           'Internal finish per line and the Ra limit your validation protocol or customer sets; our [low Ra electropolished pipes](/low-ra-electropolished-pipes/) page explains how Ra is measured and reported.',
           'Documents: EN 10204 3.1 certificate traced to heat number, PMI on every length, and a measured Ra report for each electropolished lot.',
-          'We quote within 24 hours; dispatch and transit are confirmed in writing with each quotation.'
+          'We quote within 30 minutes; dispatch and transit are confirmed in writing with each quotation.'
         ],
         cta: { label: 'Request a pharmaceutical EP pipe quotation', href: '/contact-us/' }
       }
@@ -123,7 +123,7 @@ export const INDUSTRY_GUIDES = {
           'Tube OD, wall and the dimension series, usually [ASME BPE](/asme-bpe-electropolished-tubes/) inch sizes in biotech, with the hygienic fittings they join to.',
           'Surface finish per line and the Ra limit your validation protocol sets; we report measured Ra on each electropolished lot.',
           'Documents: EN 10204 3.1 certificate traced to heat number, PMI per length, Ra report per lot, and any weld-coupon or marking requirement from your qualification plan.',
-          'We quote within 24 hours; dispatch and transit are confirmed in writing with each quotation.'
+          'We quote within 30 minutes; dispatch and transit are confirmed in writing with each quotation.'
         ],
         cta: { label: 'Request a biotech EP tube quotation', href: '/contact-us/' }
       }
@@ -190,7 +190,7 @@ export const INDUSTRY_GUIDES = {
           'Tube sizes and the dimension series, with the [dairy and sanitary fittings](/dairy-fittings/) they will join to.',
           'The internal finish per line and any Ra limit your customer, auditor or equipment supplier sets.',
           'Documents: EN 10204 3.1 certificate traced to heat number, PMI on every length and a measured Ra report for each electropolished lot.',
-          'We quote within 24 hours; dispatch and transit are confirmed in writing with each quotation.'
+          'We quote within 30 minutes; dispatch and transit are confirmed in writing with each quotation.'
         ],
         cta: { label: 'Request a food grade EP pipe quotation', href: '/contact-us/' }
       }
@@ -258,7 +258,7 @@ export const INDUSTRY_GUIDES = {
           'Tube sizes and the dimension series, with the clamp or SMS fittings and the filler connections they must match.',
           'Internal finish per line and any Ra limit your brand owner or co-packing customer sets.',
           'Documents: EN 10204 3.1 certificate traced to heat number, PMI on every length and a measured Ra report for each electropolished lot.',
-          'We quote within 24 hours; dispatch and transit are confirmed in writing with each quotation.'
+          'We quote within 30 minutes; dispatch and transit are confirmed in writing with each quotation.'
         ],
         cta: { label: 'Request a beverage EP pipe quotation', href: '/contact-us/' }
       }
@@ -325,7 +325,7 @@ export const INDUSTRY_GUIDES = {
           'Tube sizes and series, with the clamp fittings, tank nozzles and filler connections they join to.',
           'Internal finish per line and any Ra limit your brewing consultant or packaging-line supplier sets.',
           'Documents: EN 10204 3.1 certificate traced to heat number, PMI on every length and a measured Ra report for each electropolished lot.',
-          'We quote within 24 hours; dispatch and transit are confirmed in writing with each quotation.'
+          'We quote within 30 minutes; dispatch and transit are confirmed in writing with each quotation.'
         ],
         cta: { label: 'Request a brewery EP pipe quotation', href: '/contact-us/' }
       }
@@ -392,7 +392,7 @@ export const INDUSTRY_GUIDES = {
           'Tube sizes and series, with the fittings and the mixer, hold-tank and filler connections they join to.',
           'Internal finish per line and any Ra limit your GMP system or brand owner sets.',
           'Documents: EN 10204 3.1 certificate traced to heat number, PMI on every length and a measured Ra report for each electropolished lot.',
-          'We quote within 24 hours; dispatch and transit are confirmed in writing with each quotation.'
+          'We quote within 30 minutes; dispatch and transit are confirmed in writing with each quotation.'
         ],
         cta: { label: 'Request a cosmetics EP pipe quotation', href: '/contact-us/' }
       }
@@ -458,7 +458,7 @@ export const INDUSTRY_GUIDES = {
           'Tube OD, wall and series, with the point-of-use fittings and the cleanroom penetrations they must suit.',
           'Internal finish per line and any Ra or particle requirement from your validation master plan.',
           'Documents: EN 10204 3.1 certificate traced to heat number, PMI on every length and a measured Ra report for each electropolished lot, plus any supplier-qualification form your ISO 13485 system requires.',
-          'We quote within 24 hours; dispatch and transit are confirmed in writing with each quotation.'
+          'We quote within 30 minutes; dispatch and transit are confirmed in writing with each quotation.'
         ],
         cta: { label: 'Request a medical device EP tube quotation', href: '/contact-us/' }
       }
@@ -517,7 +517,7 @@ export const INDUSTRY_GUIDES = {
           'Pipe or tube sizes and standard: ASTM A312 pipe for headers, ASTM A270 or A269 tube for product and instrument lines, and the fittings they connect to.',
           'Internal finish per line and any Ra, iron-leach or cleanliness requirement from the product specification.',
           'Documents: EN 10204 3.1 certificate traced to heat number, PMI on every length and a measured Ra report for each electropolished lot.',
-          'We quote within 24 hours; dispatch and transit are confirmed in writing with each quotation.'
+          'We quote within 30 minutes; dispatch and transit are confirmed in writing with each quotation.'
         ],
         cta: { label: 'Request a specialty chemical EP pipe quotation', href: '/contact-us/' }
       }
@@ -584,7 +584,7 @@ export const INDUSTRY_GUIDES = {
           'Tube sizes and series, with the fittings and the pulper, steriliser and aseptic filler connections they must match.',
           'Internal finish per line and any Ra limit your aseptic filler or steriliser supplier specifies.',
           'Documents: EN 10204 3.1 certificate traced to heat number, PMI on every length and a measured Ra report for each electropolished lot.',
-          'We quote within 24 hours; dispatch and transit are confirmed in writing with each quotation. Our city pages for [Chittoor](/market-area/chittoor/) and [Hosur](/market-area/hosur/) in Krishnagiri district cover delivery to the two main pulp clusters.'
+          'We quote within 30 minutes; dispatch and transit are confirmed in writing with each quotation. Our city pages for [Chittoor](/market-area/chittoor/) and [Hosur](/market-area/hosur/) in Krishnagiri district cover delivery to the two main pulp clusters.'
         ],
         cta: { label: 'Request a mango pulp EP pipe quotation', href: '/contact-us/' }
       }

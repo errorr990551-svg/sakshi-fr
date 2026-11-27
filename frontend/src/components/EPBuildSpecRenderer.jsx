@@ -8,6 +8,8 @@ import { handleLinkClick, withSlash } from '../utils/router';
 import { RaConverterTool, PipeWeightCalculatorTool } from './EPTools';
 import { PRIORITY_30_CITIES } from '../data/priorityCities';
 import CategoryGuide from './CategoryGuide';
+import ProcessVideo from './ProcessVideo';
+import { EP_PROCESS_VIDEO } from '../data/videos';
 
 export default function EPBuildSpecRenderer({ pageData, onEnquireClick, hasUnlockedContact = false, onShowContactDetails }) {
   const handleShowContact = onShowContactDetails || (() => onEnquireClick && onEnquireClick('Contact Request - EP Spec'));
@@ -159,6 +161,8 @@ export default function EPBuildSpecRenderer({ pageData, onEnquireClick, hasUnloc
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* A. SPECIFICATION & TECHNICAL TABLES (FOR PRODUCTS & STANDARDS) */}
+          {EP_PROCESS_VIDEO.pages.includes(pageData.url) && <ProcessVideo />}
+
           {guide && <CategoryGuide guide={guide} />}
 
           {!guide && (page_type.includes('Product') || page_type.includes('Standard') || page_type.includes('Category Hub')) && (

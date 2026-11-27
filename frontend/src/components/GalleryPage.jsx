@@ -42,10 +42,11 @@ function GalleryCard({ item, index, onSelect }) {
             <video
               ref={videoRef}
               src={item.src}
+              poster={item.poster}
               muted
               loop
               playsInline
-              preload="metadata"
+              preload={item.poster ? 'none' : 'metadata'}
               className="gallery-media-video"
             />
             <div className={`gallery-video-overlay ${isPlaying ? 'playing' : ''}`}>
@@ -214,6 +215,7 @@ export default function GalleryPage({ onEnquireClick }) {
               {currentItem.type === 'video' ? (
                 <video
                   src={currentItem.src}
+                  poster={currentItem.poster}
                   controls
                   autoPlay
                   className="lightbox-video"

@@ -206,6 +206,24 @@ export const SPEC_GUIDES = {
             paragraphs: [
               'The deciding factor between 304L and 316L is chloride at temperature. Chloride enters through process water, salt in the product, hypochlorite sanitisers and residues trapped under deposits. 304L tolerates clean water and normal CIP chemistry; it pits where chloride concentrates, particularly in crevices and warm stagnant zones. If you cannot rule out chloride, choose 316L for that section and keep 304L elsewhere.'
             ]
+          },
+          {
+            h3: '304L Chemical Composition and Equivalent Designations',
+            paragraphs: [
+              'The certificate should show the heat analysis inside these limits. The equivalent designations below are the names the same grade carries in European and Japanese specifications; check the governing standard when an owner specifies one of them, because the ranges are close but not identical.'
+            ],
+            table: {
+              caption: '304L composition limits (% by weight, UNS S30403) and what each element does',
+              head: ['Element', 'UNS S30403', 'Why it matters to a buyer'],
+              rows: [
+                ['Carbon', '0.030 max', 'Prevents weld sensitisation without heat treatment'],
+                ['Chromium', '18.0–20.0', 'Forms the passive film; enriched further by electropolishing'],
+                ['Nickel', '8.0–12.0', 'Stabilises austenite; lower than 316L, so the grade costs less'],
+                ['Molybdenum', 'Not specified', 'Absent by design, so chloride pitting resistance is lower than 316L'],
+                ['Manganese / Silicon', '2.00 max / 0.75 max', 'Deoxidation; high Mn can influence weld pool and inclusions'],
+                ['Equivalents', 'EN 1.4307 / JIS SUS304L', 'The same grade under European and Japanese designations']
+              ]
+            }
           }
         ]
       },

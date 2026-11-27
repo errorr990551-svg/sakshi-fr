@@ -195,5 +195,121 @@ export const CATEGORY_GUIDES = {
         a: 'SF1 is a mechanically polished finish with a maximum Ra of 0.51 µm (20 µin). SF4 is mechanically polished and then electropolished, with a maximum Ra of 0.38 µm (15 µin). SF4 is the usual specification for WFI, clean steam and critical bioprocess lines; SF1 is often adequate for ambient purified-water loops and general food duty.'
       }
     ]
+  },
+  'electropolished-pipe-fittings': {
+    updated: '2026-11-21',
+    sections: [
+      {
+        h2: 'Electropolished Pipe Fittings: What They Are and Why the Bore Finish Must Match the Tube',
+        paragraphs: [
+          'An electropolished (EP) pipe fitting is a stainless steel elbow, tee, reducer, ferrule, cap or connector whose product-contact bore has been electropolished after forming and mechanical polishing. A hygienic line is only as clean as its roughest surface, and fittings are where roughness, crevices and weld defects concentrate: the inside radius of an elbow, the branch of a tee and the step at a reducer are the first places residue and biofilm settle. An EP fitting carries the same bore finish as the [electropolished pipe](/electropolished-pipes/) or [electropolished tube](/electropolished-tubes/) it is welded to, so the whole line cleans and drains as one surface.',
+          'EP fittings are specified wherever product touches the metal and cleaning is validated: WFI, purified water and clean steam in [pharmaceutical plants](/industries/pharmaceutical-electropolished-pipes/), bioprocess media and buffer lines, dairy, beverage and food process lines, and gas and chemical lines in semiconductor and speciality chemical plants. Sakshi Forge supplies EP fittings in 304L and 316L with SF1 or SF4 bore finishes, each lot supported by an EN 10204 3.1 certificate traced to heat number, a PMI record and a measured Ra report.'
+        ]
+      },
+      {
+        h2: 'Choosing an EP Fitting by the Job It Does',
+        paragraphs: [
+          'Start from what the fitting has to do in the line, then pick the end connection. Hygienic product lines are joined by orbital welding or by clamp joints; threaded and socket-weld fittings leave crevices, so they belong on utilities, instrument and non-product lines.'
+        ],
+        table: {
+          caption: 'Electropolished fitting types, their job in the line and where to use them',
+          head: ['Job in the line', 'EP fitting', 'Selection note'],
+          rows: [
+            ['Change direction', '[90° elbow](/electropolished-pipe-fittings/electropolished-90-degree-elbow/), [45° elbow](/electropolished-pipe-fittings/electropolished-45-degree-elbow/), [180° return bend](/electropolished-pipe-fittings/electropolished-180-degree-return-bend/)', 'Use a 45° where a gentler turn keeps the line draining; return bends for coils and U-loops'],
+            ['Branch or join flow', '[Equal tee](/electropolished-pipe-fittings/electropolished-tee/), [reducing tee](/electropolished-pipe-fittings/electropolished-reducing-tee/), [instrument tee](/electropolished-pipe-fittings/electropolished-instrument-tee/), [cross](/electropolished-pipe-fittings/electropolished-cross/)', 'Keep the branch short: ASME BPE recommends a dead-leg L/D of 2 or less'],
+            ['Change line size', '[Concentric reducer](/electropolished-pipe-fittings/electropolished-concentric-reducer/), [eccentric reducer](/electropolished-pipe-fittings/electropolished-eccentric-reducer/)', 'Concentric on vertical lines; eccentric, flat side down, on horizontal lines so nothing pools'],
+            ['Make a removable joint', '[Clamp ferrule](/electropolished-pipe-fittings/electropolished-clamp-ferrule/), [tri-clover clamp](/electropolished-pipe-fittings/electropolished-tri-clover-clamp/), [blind cap](/electropolished-pipe-fittings/electropolished-blind-cap/)', 'Ferrule, gasket and clamp must all be from the same standard'],
+            ['Close a line permanently', '[End cap](/electropolished-pipe-fittings/electropolished-end-cap/)', 'Weld-on; orders as tube OD x wall'],
+            ['Join to flanged equipment', '[Stub end](/electropolished-pipe-fittings/electropolished-stub-end/) with a lap-joint flange', 'Long or short pattern to suit the space and the flange'],
+            ['Utility and instrument connections', '[Coupling](/electropolished-pipe-fittings/electropolished-coupling/), [union](/electropolished-pipe-fittings/electropolished-union/), [nipples](/electropolished-pipe-fittings/electropolished-hex-nipple/), [plugs](/electropolished-pipe-fittings/electropolished-hex-plug/), [olets](/electropolished-pipe-fittings/electropolished-olet/)', 'Threaded and socket-weld fittings: not for product-contact hygienic lines']
+          ]
+        }
+      },
+      {
+        h2: 'Standards and Dimension Series for EP Fittings',
+        paragraphs: [
+          'The dimension standard decides whether a fitting lines up with the tube and the fittings next to it, so name it in the enquiry. Fittings from different series can share a nominal size and still differ in OD, wall or clamp face.'
+        ],
+        table: {
+          caption: 'Standards that govern electropolished fittings and where each is specified',
+          head: ['Standard', 'What it covers', 'Usually specified for'],
+          rows: [
+            ['ASME BPE', 'Hygienic tube fittings: dimensions, tolerances, weld tangents, clamp ferrules and SF surface finish designations', 'Pharmaceutical and bioprocess systems; [ASME BPE fittings](/electropolished-pipe-fittings/electropolished-bpe-fittings/)'],
+            ['3-A Sanitary Standards', 'Hygienic design of dairy and food equipment and fittings', 'Dairy and food plants, especially to US practice'],
+            ['DIN 11850 / DIN 11852', 'Hygienic tube (11850) and the matching fittings (11852) in metric sizes', 'European-designed food, beverage and pharma lines'],
+            ['DIN 32676 / ISO 2852', 'Clamp connection dimensions for hygienic ferrules', 'Clamp joints on metric and ISO tube'],
+            ['BS 4825', 'Stainless steel tubes and fittings for the food industry', 'UK-designed food and dairy plants'],
+            ['ASME B16.9', 'Factory-made buttweld fittings for NPS pipe', 'EP process pipe to [ASTM A312](/astm-a312-electropolished-pipes/)'],
+            ['ASME B16.11 / MSS SP-97', 'Forged socket-weld and threaded fittings; integrally reinforced branch outlets (olets)', 'Utilities, instrument and non-product connections']
+          ]
+        },
+        subsections: [
+          {
+            h3: 'Tube Fittings and Pipe Fittings Are Not Interchangeable',
+            paragraphs: [
+              'A 1" ASME BPE tube fitting has a 25.4 mm OD; a 1" NPS buttweld fitting has a 33.4 mm OD whatever its schedule. Hygienic systems built from [ASTM A270 tube](/astm-a270-electropolished-tubes/) need tube fittings sized by OD and wall; process systems built from NPS pipe need ASME B16.9 fittings in the matching schedule. Mixing the two in one enquiry is the most common reason a quotation does not fit the line. The [EP pipe size chart](/resources/ep-pipe-size-chart/) lists both series side by side.'
+            ]
+          }
+        ]
+      },
+      {
+        h2: 'Surface Finish: SF1 or SF4 for the Fitting Bore',
+        paragraphs: [
+          'ASME BPE grades product-contact finishes by maximum Ra. SF1 is mechanically polished to 0.51 µm (20 µin) Ra maximum; SF4 is mechanically polished and then electropolished to 0.38 µm (15 µin) Ra maximum. SF4 is the usual specification for WFI, clean steam and critical bioprocess fittings; SF1 often satisfies ambient purified water and general food duty. Specify the fitting bore to the same designation as the tube, otherwise the fittings become the roughest part of the line. See the [ASME BPE surface finish chart](/blog/ra-value-ep-pipes-surface-finish/) for all six designations.',
+          'Fittings are harder to finish evenly than straight tube: the inside radius of an elbow and the crotch of a tee see different current density during electropolishing. That is why each EP lot is checked with a stylus profilometer and visually examined, and the measured Ra values are reported with the certificate. If your specification fixes the measurement locations or number of readings on fittings, include it with the enquiry.'
+        ]
+      },
+      {
+        h2: 'Hygienic Design Rules That Decide Fitting Selection',
+        bullets: [
+          'Dead legs: ASME BPE expresses a dead leg as branch length over branch diameter (L/D) and recommends 2 or less for product-contact systems. Choose short-outlet tees and mount valves directly on the tee.',
+          'Drainability: lines slope to drain points, horizontal size changes use eccentric reducers flat side down, and fittings are oriented so no pocket holds liquid after CIP.',
+          'Orbital welding: hygienic fittings have straight weld tangents so the weld head can clamp each side of the joint; the fitting OD and wall must match the tube so the bore has no step. See [orbital weld fittings](/electropolished-pipe-fittings/electropolished-orbital-weld-fittings/).',
+          'Sulphur match: ASME BPE limits 316L tube sulphur to 0.005 to 0.017 percent so weld penetration stays consistent between heats. Specify the same range for fittings that will be orbital welded to the tube.',
+          'Clamp joints: the gasket must finish flush with the ferrule bore. An over-tightened clamp pushes the gasket into the bore; an under-tightened one leaves a crevice. Both hold product.'
+        ]
+      },
+      {
+        h2: 'Grades and Material Verification',
+        paragraphs: [
+          '[316L](/ss-316l-electropolished-pipes/) is the default grade for pharmaceutical fittings and for any chloride-bearing, salted, acidic or hot service. [304L](/ss-304l-electropolished-pipes/) is the economical choice for milk, most beverages and ambient utilities with low chlorides. 904L can be supplied electropolished where a higher alloy is required. Because 304L and 316L fittings look identical, every fitting is PMI-checked to confirm the molybdenum that 316L contains, and the result is recorded against the heat number on the EN 10204 3.1 certificate.'
+        ]
+      },
+      {
+        h2: 'Ordering Electropolished Pipe Fittings: Checklist',
+        bullets: [
+          'Fitting type and quantity for each size; for reducers and reducing tees, the large and small sizes.',
+          'Dimension standard: ASME BPE, DIN 11852, 3-A, BS 4825, or ASME B16.9 / B16.11 for pipe and utility fittings.',
+          'Tube OD and wall, or pipe NPS and schedule, for every end.',
+          'Grade (304L or 316L) and, for orbital welding, the sulphur range.',
+          'Bore finish designation (SF1 or SF4) and whether the OD is to be polished.',
+          'End connections: weld tangent, clamp ferrule standard, or socket-weld and thread type.',
+          'Documents: EN 10204 3.1 certificate traced to heat number, PMI record and measured Ra report for each electropolished lot. Dispatch and transit are confirmed in writing with each quotation.'
+        ],
+        cta: { label: 'Request an EP fittings quotation', href: '/contact-us/' }
+      }
+    ],
+    faqs: [
+      {
+        q: 'What are electropolished pipe fittings?',
+        a: 'Electropolished pipe fittings are stainless steel elbows, tees, reducers, ferrules, caps and connectors whose product-contact bore has been electropolished, usually to ASME BPE SF4 (Ra 0.38 µm maximum). They match the finish of electropolished tube so the whole hygienic line cleans, drains and resists corrosion as one surface.'
+      },
+      {
+        q: 'Are ASME BPE and DIN 11852 fittings interchangeable?',
+        a: 'No. ASME BPE fittings follow inch tube ODs such as 25.4 mm for 1", while DIN 11852 fittings follow the metric DIN 11850 tube series. Their ODs, walls and clamp faces differ, so a fitting must be ordered in the same series as the tube and the mating fittings.'
+      },
+      {
+        q: 'Should EP fittings be SF1 or SF4?',
+        a: 'Match the tube. SF4 (electropolished, Ra 0.38 µm maximum) is the usual choice for WFI, clean steam and bioprocess lines; SF1 (mechanically polished, Ra 0.51 µm maximum) often suffices for ambient purified water and general food duty. A fitting rougher than the tube becomes the hardest part of the line to clean.'
+      },
+      {
+        q: 'Can threaded or socket-weld fittings be used on hygienic product lines?',
+        a: 'They are not recommended. Threads and socket gaps leave crevices that hold product and cannot be reliably cleaned in place. Product-contact hygienic lines are orbital welded or joined with clamp ferrules; threaded and socket-weld EP fittings suit utilities, instrument and non-product connections.'
+      },
+      {
+        q: 'What documents are supplied with electropolished fittings?',
+        a: 'Each order is supported by an EN 10204 3.1 certificate traced to the heat number, a PMI record confirming the grade, and a measured internal Ra report for each electropolished lot. Ask in the enquiry if your specification needs particular Ra measurement locations or additional records.'
+      }
+    ]
   }
 };

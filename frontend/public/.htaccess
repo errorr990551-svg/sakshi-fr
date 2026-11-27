@@ -109,6 +109,7 @@ RewriteRule ^ https://steelmanufacturer.in%{REQUEST_URI} [L,R=301]
 # ============ 2. Pre-rendered Directory & Static File Routing ============
 AddType application/xml .xml
 AddType text/plain .txt
+AddType text/vtt .vtt
 
 # Serve existing physical files directly (images, css, js, robots.txt, sitemaps, etc.)
 RewriteCond %{REQUEST_FILENAME} -f

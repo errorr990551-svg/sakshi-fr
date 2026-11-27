@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   ArrowRight, ShieldCheck, Award, FileText, CheckCircle2, ChevronDown, 
   ChevronUp, Phone, Mail, Clock, Download, ExternalLink, HelpCircle, 
@@ -12,30 +12,10 @@ import { PHONE, EMAIL, postalAddressSchema } from '../data/business.js';
 import { withoutDuplicateSchemaTypes } from '../utils/schemaHelpers';
 import { PRIORITY_30_CITIES } from '../data/priorityCities';
 import { imgSize } from '../utils/imgSize';
+import { EP_PROCESS_VIDEO as EPV } from '../data/videos';
 
 export default function HomePage({ onEnquireClick }) {
   const [openFaq, setOpenFaq] = useState(0);
-  const videoRef = useRef(null);
-
-  // Load the 1.4 MB lab video only when it scrolls near the viewport, so it
-  // does not compete with the hero image and page scripts on first load.
-  useEffect(() => {
-    const v = videoRef.current;
-    if (!v) return;
-    const start = () => {
-      if (v.dataset.loaded) return;
-      v.dataset.loaded = '1';
-      v.src = '/technical insight.mp4';
-      const p = v.play();
-      if (p && p.catch) p.catch(() => {});
-    };
-    if (!('IntersectionObserver' in window)) { start(); return; }
-    const io = new IntersectionObserver((entries) => {
-      if (entries.some((e) => e.isIntersecting)) { start(); io.disconnect(); }
-    }, { rootMargin: '200px' });
-    io.observe(v);
-    return () => io.disconnect();
-  }, []);
   const [formData, setFormData] = useState({
     name: '',
     company: '',
@@ -520,20 +500,23 @@ export default function HomePage({ onEnquireClick }) {
             {/* Right Video Player Column */}
             <div style={{ position: 'sticky', top: '100px' }}>
               <div style={{ borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255, 193, 7, 0.25)', boxShadow: '0 12px 35px rgba(0,0,0,0.6)', backgroundColor: '#070a10' }}>
-                <video 
-                  ref={videoRef}
+                {/* preload="none": only the poster loads until the visitor presses play */}
+                <video
                   preload="none"
-                  controls 
-                  playsInline 
-                  autoPlay 
-                  muted 
-                  loop 
-                  style={{ width: '100%', height: 'auto', display: 'block' }}
-                />
+                  controls
+                  playsInline
+                  width={EPV.width}
+                  height={EPV.height}
+                  poster={EPV.thumbnailUrl}
+                  src={EPV.contentUrl}
+                  style={{ width: '100%', height: 'auto', aspectRatio: '16 / 9', display: 'block' }}
+                >
+                  <track kind="captions" srcLang="en" label="English" src={EPV.captionsUrl} />
+                </video>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginTop: '1rem', color: '#94a3b8', fontSize: '0.88rem' }}>
                 <Play size={15} style={{ color: 'var(--primary-yellow)' }} />
-                <span>Sakshi Forge In-House Electropolishing & Surface Finishing Lab</span>
+                <span>How our electropolished pipes are made (0:47)</span>
               </div>
             </div>
           </div>

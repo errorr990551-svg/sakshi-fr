@@ -32,3 +32,6 @@ scratch/
 *.njsproj
 *.sln
 *.sw?
+
+# Python bytecode
+__pycache__/

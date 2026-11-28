@@ -4,44 +4,82 @@
     "Category": "SS Round Bars",
     "Product Name": "Brass Round Bars",
     "URL Slug": "brass-round-bars",
-    "Meta Title (<=60 chars)": "Brass Round Bars Manufacturer Mumbai | Sakshi Forge",
-    "Meta Description (<=160 chars)": "Buy premium brass round bars from Sakshi Forge Mumbai. CuZn alloys, multiple diameters. MTC provided. Quote within 30 minutes.",
-    "H1 Tag": "Brass Round Bars - Mumbai Manufacturer & Supplier",
-    "Primary Keyword": "brass round bars manufacturer Mumbai",
-    "Secondary Keywords (3-5)": "CuZn round bar, free-cutting brass bar, yellow brass rod, brass bar stock India",
-    "Target Industries": "Electrical | Plumbing | Automotive | Architecture | Defence",
-    "Key Specs": "Alloy: CuZn30/CuZn37/CuZn40 | Dia: 3-300mm | Len: 1-6m | Std: IS 319/ASTM B16",
+    "Meta Title (<=60 chars)": "Brass Round Bars: C36000 and C46400 Compared",
+    "Meta Description (<=160 chars)": "Brass round bars compared: C36000 free-cutting brass to ASTM B16 and C46400 naval brass to ASTM B21, with CDA limits, machining, welding and uses.",
+    "H1 Tag": "Brass Round Bars: Free-Cutting and Naval Brass",
+    "Primary Keyword": "brass round bars",
+    "Secondary Keywords (3-5)": "C36000 brass rod, free cutting brass bar, naval brass bar C46400, ASTM B16 brass rod, ASTM B21 naval brass",
+    "Target Industries": "Engineering | Plumbing | Marine",
+    "Key Specs": "Specification | Value\nProduct | Brass Round Bars\nAlloys compared | UNS C36000 free-cutting brass; UNS C46400 naval brass\nMachinability rating (CDA) | 100 C36000; 30 C46400\nRod specifications | ASTM B16/B16M; ASTM B21/B21M\nConductivity (CDA) | 26% IACS both\nStandard | ASTM B16/B16M (C36000); ASTM B21/B21M (C46400)\nSizes | Confirmed in writing on the quotation\nTest documents | Type agreed in writing with the quotation\nSupply condition | Dispatch and transit confirmed in writing on the quotation",
     "Schema Type": "Product",
-    "Internal Links": "Bronze Round Bars | SS Round Bar",
+    "Internal Links": "'Bronze round bar: choosing the family' -> https://steelmanufacturer.in/bronze-round-bar/\n'C86300 manganese bronze bar' -> https://steelmanufacturer.in/c86300-steel-round-bar/\n'C54400 free machining phosphor bronze bar' -> https://steelmanufacturer.in/c54400-bronze-round-bar/\n'Bronze round bars: standards and ordering' -> https://steelmanufacturer.in/bronze-round-bars/",
     "CTA": "Get a Quote",
-    "Product Description": "Brass Round Bars are engineered for industrial applications requiring dependable strength, dimensional accuracy and corrosion resistance. Manufactured using high-quality raw materials, these products are suitable for engineering, oil & gas, chemical processing, marine, power, construction and fabrication industries. They are available in multiple sizes, finishes and specifications to meet project requirements while ensuring reliable mechanical performance and long service life.",
-    "Key Features": "• High dimensional accuracy\n• Corrosion resistant\n• Excellent machinability\n• Multiple sizes & finishes\n• Custom lengths available",
-    "Applications": "Oil & Gas, Petrochemical, Power Plants, Marine, Construction, Fabrication, Engineering",
-    "Standards": "ASTM / ASME / EN (as applicable)",
+    "Product Description": "Brass round bars are copper-zinc alloys, and the two most often named on drawings behave very differently in the workshop. Sakshi Forge, Mumbai, supplies brass bars against your enquiry. This page compares C36000 free-cutting brass and C46400 naval brass from Copper Development Association data: composition limits, machinability and forgeability, welding and forming ratings, rod specifications and tempers, the uses CDA lists, and what to put on the enquiry.",
+    "Key Features": "C36000 machinability rating 100; C46400 forgeability rating 90; Welding and forming ratings from CDA; Rod tempers listed by AMS number",
+    "Applications": "Automatic screw machine parts, Plumbing and faucet fittings, Valve stems and seats, Gears and pinions, Marine hardware, Propeller shafts, Condenser plates, Bolts and nuts",
+    "Standards": "ASTM B16/B16M (C36000); ASTM B21/B21M (C46400)",
     "Available Grades": "Standard and customer-specified grades",
-    "Image": "/Brass Round Bars.webp"
+    "Image": "/Brass Round Bars.webp",
+    "TL;DR": "C36000 free-cutting brass, with 2.5 to 3% lead, has a CDA machinability rating of 100 and is bought to ASTM B16. C46400 naval brass has tin instead of lead, forges well and is bought to ASTM B21. Choose C36000 for machined parts and C46400 where forging or welding follows. Quote within 30 minutes: +91 82913 66340.",
+    "FAQs": [
+      {
+        "q": "What is the difference between C36000 and C46400?",
+        "a": "C36000 contains 2.5 to 3.0% lead and is made for machining, with a CDA machinability rating of 100. C46400 has 0.20% lead at most and 0.5 to 1.0% tin; it machines less freely, rated 30, but forges well, rated 90."
+      },
+      {
+        "q": "Which ASTM standard covers brass rod?",
+        "a": "CDA lists ASTM B16/B16M for C36000 free-cutting brass rod and ASTM B21/B21M for C46400 naval brass rod."
+      },
+      {
+        "q": "Can C36000 brass be welded?",
+        "a": "CDA does not recommend oxyacetylene, gas shielded or coated metal arc welding for C36000; butt welding is rated fair. Soldering is rated excellent and brazing good."
+      },
+      {
+        "q": "My drawing names a CuZn or IS grade. Can you quote it?",
+        "a": "Send the drawing with the enquiry. The grade will be confirmed in writing before quoting rather than assumed equal to a UNS alloy."
+      }
+    ]
   },
   {
     "S.No": "2",
     "Category": "SS Round Bars",
     "Product Name": "Bronze Round Bars",
     "URL Slug": "bronze-round-bars",
-    "Meta Title (<=60 chars)": "Bronze Round Bars Manufacturer Mumbai | All Alloys",
-    "Meta Description (<=160 chars)": "Sakshi Forge supplies tin, phosphor & aluminium bronze round bars. Marine & pump grade. Mumbai manufacturer with MTC.",
-    "H1 Tag": "Bronze Round Bars - All Alloy Grades | Mumbai",
-    "Primary Keyword": "bronze round bars manufacturer Mumbai",
-    "Secondary Keywords (3-5)": "tin bronze rod, C95400 bar, aluminium bronze bar, phosphor bronze bar India",
-    "Target Industries": "Marine | Pumps | Bearings | Hydraulics | Defence",
-    "Key Specs": "Alloy: C51000/C52100/C95400/LG2/LG4/RG5 | Dia: 10-500mm | Std: BS/ASTM | MTC: 3.1",
+    "Meta Title (<=60 chars)": "Bronze Round Bars: ASTM Standards and Ordering",
+    "Meta Description (<=160 chars)": "Bronze round bars to ASTM B139, B505 and B271: which standard fits which form, why minimums change by route, old BS 1400 names, and what to put on the RFQ.",
+    "H1 Tag": "Bronze Round Bars: Standards and How to Order",
+    "Primary Keyword": "bronze round bars",
+    "Secondary Keywords (3-5)": "ASTM B505 bronze bar, ASTM B139 bronze rod, ASTM B271 bronze, BS 1400 bronze equivalent, EN 1982 bronze bar",
+    "Target Industries": "Engineering | Marine | Pumps",
+    "Key Specs": "Specification | Value\nProduct | Bronze Round Bars\nWrought rod | ASTM B139/B139M\nContinuous cast bar | ASTM B505/B505M\nCentrifugal castings | ASTM B271/B271M\nBritish cast names | BS 1400, withdrawn 1999; BS EN 1982 current\nStandard | ASTM B139/B139M, B505/B505M, B271/B271M; EN 1982\nSizes | Confirmed in writing on the quotation\nTest documents | Type agreed in writing with the quotation\nSupply condition | Dispatch and transit confirmed in writing on the quotation",
     "Schema Type": "Product",
-    "Internal Links": "Phosphor Bronze Bar | Brass Round Bars",
+    "Internal Links": "'Bronze round bar: choosing the family' -> https://steelmanufacturer.in/bronze-round-bar/\n'LG2 gunmetal bar' -> https://steelmanufacturer.in/lg2-bronze-round-bar/\n'C95800 nickel aluminium bronze bar' -> https://steelmanufacturer.in/c95800-bronze-round-bar/\n'PB1 bronze bar' -> https://steelmanufacturer.in/pb1-bronze-round-bar/",
     "CTA": "Send Inquiry",
-    "Product Description": "Bronze Round Bars are engineered for industrial applications requiring dependable strength, dimensional accuracy and corrosion resistance. Manufactured using high-quality raw materials, these products are suitable for engineering, oil & gas, chemical processing, marine, power, construction and fabrication industries. They are available in multiple sizes, finishes and specifications to meet project requirements while ensuring reliable mechanical performance and long service life.",
-    "Key Features": "• High dimensional accuracy\n• Corrosion resistant\n• Excellent machinability\n• Multiple sizes & finishes\n• Custom lengths available",
-    "Applications": "Oil & Gas, Petrochemical, Power Plants, Marine, Construction, Fabrication, Engineering",
-    "Standards": "ASTM / ASME / EN (as applicable)",
+    "Product Description": "Bronze round bars are bought to a specification that matches how the bar was made, and the same alloy can carry different minimum properties under each. Sakshi Forge, Mumbai, supplies bronze bars against your enquiry. This page lists which ASTM specification the Copper Development Association names for each form, compares minimums by casting route, links old BS 1400 names to the codes published datasheets give, and sets out what a bronze bar enquiry should state.",
+    "Key Features": "Specification matched to the form of bar; Minimums compared by casting route; Old BS 1400 names linked to current codes; Enquiry checklist",
+    "Applications": "Bushes, Bearings, Gears, Valve parts, Pump parts, Marine hardware",
+    "Standards": "ASTM B139/B139M, B505/B505M, B271/B271M; EN 1982",
     "Available Grades": "Standard and customer-specified grades",
-    "Image": "/Bronze Round Bars.webp"
+    "Image": "/Bronze Round Bars.webp",
+    "TL;DR": "Wrought bronze rod is bought to ASTM B139, continuous cast bar to B505 and centrifugal castings to B271. The same alloy can have different minimums under each, so the order should name alloy, specification and temper. Old BS 1400 names need a current code. Quote within 30 minutes: +91 82913 66340.",
+    "FAQs": [
+      {
+        "q": "What is the difference between ASTM B505 and B271?",
+        "a": "Both cover cast copper alloys. CDA lists B505 for continuous castings, the usual route for solid and hollow bar, and B271 for centrifugal castings. Minimums differ: C93200 is 35 ksi tensile continuous cast and 30 ksi centrifugal cast."
+      },
+      {
+        "q": "Which standard covers phosphor bronze rod?",
+        "a": "Wrought phosphor bronze rod such as C51000, C52100 and C54400 is bought to ASTM B139/B139M, not B505."
+      },
+      {
+        "q": "Is BS 1400 still valid?",
+        "a": "BSI lists BS 1400:1985 as withdrawn on 15 March 1999. BS EN 1982 now covers copper alloy ingots and castings. Old names such as LG2 or PB1 are still used, so give the current code or the limits you accept as well."
+      },
+      {
+        "q": "What should a bronze bar enquiry include?",
+        "a": "One alloy designation, the specification and form, the temper where there is a choice, solid or hollow with sizes, length and quantity, and the test document you need, agreed in writing with the quotation."
+      }
+    ]
   },
   {
     "S.No": "3",
@@ -2108,21 +2146,40 @@
     "Category": "Bronze Round Bar",
     "Product Name": "Bronze Round Bar",
     "URL Slug": "bronze-round-bar",
-    "Meta Title (<=60 chars)": "Bronze Round Bar Manufacturer Mumbai | All Alloy Grades",
-    "Meta Description (<=160 chars)": "All alloy grades of bronze round bars - tin, phosphor, aluminium & lead bronze. Sakshi Forge Mumbai manufacturer.",
-    "H1 Tag": "Bronze Round Bar - All Alloy Grades | Mumbai",
-    "Primary Keyword": "bronze round bar manufacturer Mumbai",
-    "Secondary Keywords (3-5)": "tin bronze rod, naval bronze bar, aluminium bronze bar, lead bronze bar India",
-    "Target Industries": "Marine | Bearings | Pumps & Valves | Bushings | Defence",
-    "Key Specs": "Alloys: Phosphor/Gunmetal/Aluminium/Leaded Bronze | Dia: 10-500mm | Std: BS/ASTM",
+    "Meta Title (<=60 chars)": "Bronze Round Bar: Which Bronze Family to Choose",
+    "Meta Description (<=160 chars)": "Bronze round bar families compared: phosphor, leaded tin, aluminium, nickel aluminium and manganese bronze, with CDA strength and machinability figures.",
+    "H1 Tag": "Bronze Round Bar: Choosing the Bronze Family",
+    "Primary Keyword": "bronze round bar",
+    "Secondary Keywords (3-5)": "bronze bar grades, phosphor vs aluminium bronze, leaded bronze bar, manganese bronze bar, bearing bronze bar",
+    "Target Industries": "Engineering | Marine | Valves",
+    "Key Specs": "Specification | Value\nProduct | Bronze Round Bar\nFamilies compared | Phosphor, leaded tin, aluminium, nickel aluminium, manganese bronze\nContinuous cast tensile minimums (CDA) | 35 ksi C93200 to 110 ksi C86300\nMachinability ratings (CDA) | 70 C93200 to 8 C86300\nOlder names covered | LG2, LG4, Rg 5, PB1, PB2\nStandard | ASTM B139, B505 or B271 by form; EN 1982 for castings\nSizes | Confirmed in writing on the quotation\nTest documents | Type agreed in writing with the quotation\nSupply condition | Dispatch and transit confirmed in writing on the quotation",
     "Schema Type": "Product",
-    "Internal Links": "Phosphor Bronze Bar | LG2 Bronze Bar | C95400 Bronze Bar",
+    "Internal Links": "'Bronze round bars: standards and ordering' -> https://steelmanufacturer.in/bronze-round-bars/\n'Phosphor bronze bar' -> https://steelmanufacturer.in/phosphor-bronze-round-bar/\n'C93200 bronze bar' -> https://steelmanufacturer.in/c93200-bronze-round-bar/\n'C95400 aluminium bronze bar' -> https://steelmanufacturer.in/c95400-bronze-round-bar/",
     "CTA": "Send Inquiry",
-    "Product Description": "Bronze Round Bar are engineered for excellent performance, corrosion resistance, dimensional accuracy and durability. These products are widely used across oil & gas, petrochemical, marine, pharmaceutical, food processing, fabrication and engineering industries. Available in custom dimensions and grades as per project requirements.",
-    "Key Features": "Corrosion resistant; High strength; Precision manufactured; Excellent finish; Custom sizes",
-    "Applications": "Oil & Gas, Petrochemical, Marine, Food Processing, Pharmaceutical, Construction, Engineering",
-    "Standards": "ASTM / ASME / EN / DIN (as applicable)",
-    "Image": "/Bronze Round Bars.webp"
+    "Product Description": "Bronze round bar covers several copper alloy families with very different strength, wear and machining. Sakshi Forge, Mumbai, supplies bronze bar against your enquiry. This page compares phosphor bronze, leaded tin bronze, aluminium bronze, nickel aluminium bronze and manganese bronze with one example grade each, from Copper Development Association figures, sets out which family suits which duty, explains what higher strength costs in machining, and links to each grade page.",
+    "Key Features": "Five bronze families compared side by side; Strength against machinability from CDA data; Duty-based choice of grade; Links to every grade page",
+    "Applications": "Bushes and plain bearings, Springs and contacts, Gears, Valve parts, Seawater parts, Heavy slow-moving loads",
+    "Standards": "ASTM B139, B505 or B271 by form; EN 1982 for castings",
+    "Image": "/Bronze Round Bars.webp",
+    "TL;DR": "Bronze bar is several alloy families. Leaded tin bronzes such as C93200 suit bushes; aluminium bronzes such as C95400 carry heavier loads; C86300 manganese bronze is strongest but hardest to machine. Pick by the duty, then the grade. Quote within 30 minutes: +91 82913 66340.",
+    "FAQs": [
+      {
+        "q": "Which bronze is best for bushes?",
+        "a": "For plain bushes running on a steel shaft, the leaded tin bronzes are the usual choice. C93200 is the general purpose grade; C93600 and C93700 carry more lead or tin. Where loads are heavy and lubrication is assured, aluminium bronze C95400 is stronger."
+      },
+      {
+        "q": "Which bronze bar is the strongest?",
+        "a": "Of the grades on this site, C86300 manganese bronze has the highest CDA continuous cast minimum, 110 ksi tensile, against 85 ksi for C95400 and C95800 and 35 ksi for C93200. It also has the lowest machinability rating, 8."
+      },
+      {
+        "q": "Is phosphor bronze the same as bearing bronze?",
+        "a": "No. Wrought phosphor bronzes such as C51000 are drawn rod used mainly for springs and contacts. The cast bearing bronzes, such as C93700, which CDA calls Bearing Bronze, add lead and are continuously cast."
+      },
+      {
+        "q": "My drawing only says bronze. What should I send?",
+        "a": "Send the drawing and a note of the duty: load, speed, lubrication and whether the part sees sea water. The grade will be proposed and confirmed in writing before quoting."
+      }
+    ]
   },
   {
     "S.No": "97",

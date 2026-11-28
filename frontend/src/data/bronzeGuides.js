@@ -1,4 +1,4 @@
-// Page-specific guides for the phosphor bronze (P3a) and cast bronze (P3b) bar pages, merged into FITTING_GUIDES and rendered by ProductPage.
+// Page-specific guides for the phosphor bronze (P3a), cast bronze (P3b) and bronze/brass family (P3c) bar pages, merged into FITTING_GUIDES and rendered by ProductPage.
 // Each page's FAQs live in its FAQs field in products.json so the FAQPage schema matches the page.
 // Alloy data opened 2026-11-28 on the Copper Development Association pages (alloys.copper.org/alloy/<UNS>):
 // composition, rod tempers and typical properties, physical and fabrication data, typical uses, specifications.
@@ -1017,6 +1017,172 @@ export const BRONZE_GUIDES = {
           'Wall thickness of the finished part, given the porosity warning for thick sections.',
           'Service temperature if above room temperature.',
           'Outside diameter, bore, length, quantity and test document type.',
+        ],
+        cta: CTA,
+      },
+    ],
+  },
+
+  'bronze-round-bar': {
+    updated: U,
+    sources: [CDA('C51000'), CDA('C93200'), CDA('C95400'), CDA('C95800'), CDA('C86300'), VULCAN, BS1400, EN1982],
+    sections: [
+      {
+        h2: 'Which Bronze Family Fits the Part?',
+        paragraphs: [
+          'A drawing that only says "bronze" leaves the real decision open. The copper alloys sold as bronze bar fall into a few families, and what is added to the copper, tin, lead, aluminium or zinc, decides how strong the bar is, how it wears and how fast it cuts.',
+          'The table sums up the families covered on this site, one representative grade each, from the Copper Development Association (CDA) figures already set out on the grade pages. Strength is a minimum for continuous cast bar except where the row says typical rod.',
+        ],
+        table: {
+          caption: 'Bronze bar families at a glance (CDA data; each grade page has the full limits)',
+          head: ['Family', 'Main additions', 'Example grade', 'Tensile', 'Machinability', 'Usual duty'],
+          rows: [
+            ['Phosphor bronze, wrought', 'Tin 3.5 – 9%, a little phosphorus', '[C51000](/c51000-bronze-round-bar/)', '75 ksi typical rod, half hard', '20', 'Springs, contacts, light bearings'],
+            ['Leaded tin bronze, cast', 'Tin 6 – 11%, lead 6 – 13%', '[C93200](/c93200-bronze-round-bar/)', '35 ksi min', '70', 'Bushes and plain bearings'],
+            ['Aluminium bronze, cast', 'Aluminium 10 – 11.5%, iron 3 – 5%', '[C95400](/c95400-bronze-round-bar/)', '85 ksi min', '60', 'Gears, heavy bearings, valve parts'],
+            ['Nickel aluminium bronze, cast', 'Aluminium 8.5 – 9.5%, nickel 4 – 5%', '[C95800](/c95800-bronze-round-bar/)', '85 ksi min', '20', 'Seawater parts, propellers'],
+            ['Manganese bronze, cast', 'Zinc 22 – 28% with aluminium, iron, manganese', '[C86300](/c86300-steel-round-bar/)', '110 ksi min', '8', 'Heavy slow-moving loads'],
+          ],
+        },
+      },
+      {
+        h2: 'Start From the Duty, Not the Name',
+        bullets: [
+          'Sliding contact with a steel shaft and only fair lubrication: a leaded tin bronze. The lead phase lets the bearing ride out short dry spells. Compare [C93200](/c93200-bronze-round-bar/), [C93600](/c93600-bronze-round-bar/) and [C93700](/c93700-bronze-round-bar/).',
+          'A part that must flex, spring back and often carry current: wrought [phosphor bronze](/phosphor-bronze-round-bar/), bought as drawn rod.',
+          'High load or shock, with lubrication you can rely on: aluminium bronze, [C95400](/c95400-bronze-round-bar/), which can also be heat treated.',
+          'Contact with sea water: nickel aluminium bronze, [C95800](/c95800-bronze-round-bar/).',
+          'The highest strength in the list, where slow machining is acceptable: manganese bronze, [C86300](/c86300-steel-round-bar/).',
+          'An old British or German grade on the drawing (LG2, LG4, Rg 5, PB1, PB2): a gunmetal or cast phosphor bronze. See [LG2](/lg2-bronze-round-bar/), [LG4](/lg4-bronze-round-bar/), [Rg 5](/rg5-rg25-bronze-round-bar/), [PB1](/pb1-bronze-round-bar/) and [PB2](/pb2-bronze-round-bar/).',
+        ],
+      },
+      {
+        h2: 'What You Give Up for Strength',
+        paragraphs: [
+          'Read the machinability column against the tensile column. Moving from C93200 to C86300 roughly triples the minimum tensile strength, but the CDA machinability rating falls from 70 to 8. For a bush that is mostly bored and turned, the stronger alloy can cost more in machine time than it saves in wall thickness.',
+          'Aluminium bronzes bring their own condition. The Vulcan engineering bronze datasheet notes that 954 aluminium bronze needs reliable full film lubrication because its anti-seizing properties are poor, so it suits bearings only where the oil supply is assured.',
+          'The old British names come from BS 1400, which BSI lists as withdrawn since 1999; BS EN 1982 now covers copper alloy castings. A bar ordered by an old name is safest when the order also gives the current EN 1982 material or a UNS number.',
+        ],
+        cta: CTA,
+      },
+    ],
+  },
+
+  'bronze-round-bars': {
+    updated: U,
+    sources: [CDA('C51000'), CDA('C93200'), CDA('C95400'), B139, BS1400, EN1982, EN1982_PREVIEW, SMITHS_SAE660, SMITHS_AB2, SMITHS_LG2, RB_LG4, ZOLLERN_RG5, VULCAN],
+    sections: [
+      {
+        h2: 'Three ASTM Specifications for Bronze Bar',
+        paragraphs: [
+          'Bronze bar is bought to a specification that matches how it was made. The CDA alloy pages name three for the grades on this site: one for wrought rod, one for continuous castings and one for centrifugal castings. The same alloy number can appear under more than one, with different minimums.',
+        ],
+        table: {
+          caption: 'Which specification goes with which form (as listed on the CDA alloy pages)',
+          head: ['How the bar is made', 'ASTM specification', 'Grades on this site'],
+          rows: [
+            ['Cast, then drawn (wrought rod and bar)', 'B139/B139M', 'C51000, C52100, C54400'],
+            ['Continuous cast, solid or hollow bar', 'B505/B505M', 'C93200, C93600, C93700, C95400, C95800, C86300'],
+            ['Centrifugal cast, mostly tube and rings', 'B271/B271M', 'C93200, C93600, C95400, C95800, C86300'],
+          ],
+        },
+      },
+      {
+        h2: 'Same Alloy, Different Minimum',
+        paragraphs: [
+          'Why the specification belongs on the order: CDA publishes different minimum properties for the same alloy cast by different routes, and for some alloys by temper as well. These rows are copied from the grade pages.',
+        ],
+        table: {
+          caption: 'Minimum tensile strength by casting route and temper (CDA)',
+          head: ['Alloy', 'Continuous cast (B505)', 'Centrifugal cast (B271)', 'Note'],
+          rows: [
+            ['[C93200](/c93200-bronze-round-bar/)', '35 ksi', '30 ksi', 'Elongation 10% and 15%'],
+            ['[C93600](/c93600-bronze-round-bar/)', '33 ksi', '32 ksi', 'Yield 20 ksi and 16 ksi'],
+            ['[C95400](/c95400-bronze-round-bar/)', '85 ksi as cast; 95 ksi TQ50', '75 ksi as cast; 90 ksi TQ50', 'Temper must be stated'],
+            ['[C95800](/c95800-bronze-round-bar/)', '85 ksi', '85 ksi', 'Elongation 18% and 15%'],
+          ],
+        },
+      },
+      {
+        h2: 'Old British Names and Their Current Codes',
+        paragraphs: [
+          'Many drawings still name grades from BS 1400, withdrawn by BSI on 15 March 1999. EN 1982 has replaced it, with material numbers such as CC491K and a process code in the order: GC for continuous casting. Datasheets from distributors and foundries link the old names to current ones, but a related grade is not always identical, so the order should give one designation and its limits.',
+        ],
+        table: {
+          caption: 'Designations linked by published datasheets (each grade page compares the limits)',
+          head: ['Old name', 'Linked designation', 'Who links them'],
+          rows: [
+            ['[LG2](/lg2-bronze-round-bar/)', 'CC491K; Rg 5; approx. C83600', 'Smiths Metal Centres, Zollern'],
+            ['[LG4](/lg4-bronze-round-bar/)', 'CC492K', 'Righton Blackburns'],
+            ['LB4', 'C93200; SAE660', 'Smiths Metal Centres (SAE660 sheet)'],
+            ['AB1', '954 aluminium bronze (C95400)', 'Vulcan'],
+            ['AB2', 'C95800; CC333G', 'Smiths Metal Centres'],
+            ['[PB1](/pb1-bronze-round-bar/)', 'CC481K; C90700', 'Distributor datasheets (see the PB1 page)'],
+          ],
+        },
+      },
+      {
+        h2: 'Writing a Bronze Bar Enquiry',
+        bullets: [
+          'One designation: a UNS number, an EN 1982 material, or the old BS 1400 name together with the limits you accept.',
+          'The specification and form: B139 rod, B505 continuous cast bar or B271 centrifugal casting.',
+          'Temper or heat treatment where the alloy has more than one, as C95400 does.',
+          'Solid or hollow; outside diameter, bore, length and quantity.',
+          'The test document you need, agreed in writing with the quotation.',
+          'The drawing, if it uses an old or local grade name, so the grade can be confirmed before quoting.',
+        ],
+        cta: CTA,
+      },
+    ],
+  },
+
+  'brass-round-bars': {
+    updated: U,
+    sources: [CDA('C36000'), CDA('C46400')],
+    sections: [
+      {
+        h2: 'Free-Cutting Brass or Naval Brass?',
+        paragraphs: [
+          'Brass is copper with zinc as the main addition. For round bar, two CDA alloys answer most drawings. C36000, free-cutting brass, carries 2.5 to 3.0% lead; CDA rates its machinability 100 and calls it the best of the lead brasses. C46400, naval brass, has almost no lead and 0.5 to 1.0% tin instead; CDA lists marine hardware among its uses and gives it a forgeability rating of 90.',
+        ],
+        table: {
+          caption: 'C36000 and C46400 compared (Copper Development Association)',
+          head: ['Property', 'C36000 free-cutting brass', 'C46400 naval brass'],
+          rows: [
+            ['Copper, %', '60.0 – 63.0', '59.0 – 62.0'],
+            ['Lead, %', '2.5 – 3.0', '0.20 max'],
+            ['Tin, %', '—', '0.50 – 1.0'],
+            ['Iron, %', '0.35 max', '0.10 max'],
+            ['Zinc', 'Remainder', 'Remainder'],
+            ['Cu plus named elements, % min', '99.5', '99.6'],
+            ['Machinability rating', '100', '30'],
+            ['Forgeability rating', '—', '90'],
+            ['Conductivity, % IACS', '26', '26'],
+            ['Rod specification', 'ASTM B16/B16M', 'ASTM B21/B21M'],
+          ],
+        },
+      },
+      {
+        h2: 'Where CDA Lists Each Alloy',
+        bullets: [
+          'C36000: automatic screw machine parts, plumbing and faucet fittings, valve stems and seats, gears and pinions, nuts, screws, unions, gauges, sensor bodies and threaded inserts for plastic.',
+          'C46400: marine hardware, propeller shafts, valve stems, condenser plates, bolts, nuts, rivets, turnbuckles and balls.',
+        ],
+      },
+      {
+        h2: 'Joining and Forming',
+        paragraphs: [
+          'The lead that makes C36000 easy to cut also rules out most welding: CDA rates soldering excellent and brazing good, but oxyacetylene, gas shielded and coated metal arc welding are not recommended. If the part is to be welded, C46400 is the better start, with oxyacetylene welding rated good.',
+          'CDA rates C46400 excellent for hot forming and also lists it under ASTM B124/B124M, the specification for forging rod. C36000 is rated fair for both hot forming and cold work.',
+        ],
+      },
+      {
+        h2: 'Brass Bar Enquiry Checklist',
+        bullets: [
+          'Alloy and specification together, for example UNS C36000 to ASTM B16/B16M.',
+          'Temper: CDA lists half hard rod for C36000 (AMS 4610), and half hard or hard for C46400 (AMS 4611 and 4612).',
+          'Size, length and quantity.',
+          'If the drawing names a European CuZn grade or an Indian standard grade, send it, and the grade will be confirmed in writing before quoting.',
         ],
         cta: CTA,
       },

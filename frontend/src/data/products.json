@@ -865,20 +865,39 @@
     "Product Name": "Stainless Steel ERW Pipes",
     "URL Slug": "ss-erw-pipes",
     "Meta Title (<=60 chars)": "SS ERW Pipe Manufacturer Mumbai | 304 & 316 Grade",
-    "Meta Description (<=160 chars)": "SS 304/316 electric resistance welded pipes for structural & general process piping. Sakshi Forge Mumbai manufacturer.",
+    "Meta Description (<=160 chars)": "SS ERW pipe enquiries answered as ASTM A312 welded (WLD) pipe in 304L and 316L. Seam rules, heat treatment and what to write on the RFQ.",
     "H1 Tag": "Stainless Steel ERW Pipes - 304/316 | Mumbai",
     "Primary Keyword": "SS ERW pipe manufacturer Mumbai",
     "Secondary Keywords (3-5)": "304 ERW pipe, 316 welded pipe, ASTM A312 ERW, electric resistance welded SS pipe India",
-    "Target Industries": "Structural | Architecture | General Process Piping | Fabrication | Food",
-    "Key Specs": "Grades: 304/316 | OD: 1/2\"-12\" | Std: ASTM A312/A778 | Finish: 2B/Pickled & Passivated",
+    "Target Industries": "Water Treatment | Engineering | Food and Beverage | Chemical | Fabrication",
+    "Key Specs": "Specification | Value\nProduct | Stainless Steel ERW Pipes\nGrades | ASTM A312 TP304, TP304L, TP316, TP316L\nManufacture | Welded (WLD): automatic weld, no filler metal\nSeams | Single longitudinal seam up to NPS 14\nHeat treatment | After welding, 1040 °C minimum, rapid cooling\nStandard | ASTM A312/A312M; dimensions to ASME B36.19\nSizes and schedules | Confirmed in writing on the quotation\nCertification | EN 10204 3.1 certificate traced to heat number\nTesting | PMI on every length\nSupply condition | Dispatch and transit confirmed in writing on the quotation",
     "Schema Type": "Product",
     "Internal Links": "SS Seamless Pipe | SS Pipe Fittings",
     "CTA": "Send Inquiry",
-    "Product Description": "Stainless Steel ERW Pipes are manufactured to deliver dependable performance in demanding industrial environments. These products offer excellent dimensional accuracy, corrosion resistance and long service life. They are supplied in multiple schedules, sizes and finishes to suit fabrication, process industries, oil & gas, petrochemical, pharmaceutical, food processing and engineering applications.",
-    "Key Features": "High strength; Corrosion resistant; Precision manufactured; Multiple sizes; Custom specifications",
-    "Applications": "Oil & Gas, Petrochemical, Chemical Processing, Food Processing, Pharma, Marine, Engineering",
-    "Standards": "ASTM / ASME / EN / DIN (as applicable)",
-    "Image": "/electropolished-pipes.webp"
+    "Product Description": "In stainless pipe enquiries, \"ERW\" usually means any pipe with a longitudinal seam. ASTM A312 calls this product welded pipe, coded WLD: it is made by an automatic welding process with no filler metal, then heat treated, and every test the standard sets for the weld is done on each seam. Sakshi Forge, Mumbai, quotes SS ERW enquiries as A312 WLD pipe in TP304, TP304L, TP316 and TP316L, so the quotation and the certificate name the same product. Each lot carries an EN 10204 3.1 certificate traced to heat number, with PMI on every length. Send sizes and schedules for a quotation within 30 minutes.",
+    "Key Features": "Quoted as ASTM A312 WLD so the certificate matches the order; Automatic weld with no filler metal; Heat treated after welding; Weld tests carried out on each seam; 3.1 certificate traced to heat number",
+    "Applications": "Utility water, Cooling water, Compressed air, Low and medium pressure process lines, Structural and handrail work",
+    "Standards": "ASTM A312/A312M; dimensions to ASME B36.19",
+    "Image": "/electropolished-pipes.webp",
+    "TL;DR": "Stainless welded pipe to ASTM A312 (WLD) in TP304, TP304L, TP316 and TP316L: automatic weld, no filler metal, heat treated after welding. 3.1 certificate and PMI on every length. Quote within 30 minutes: +91 82913 66340.",
+    "FAQs": [
+      {
+        "q": "Is SS ERW pipe the same as ASTM A312 welded pipe?",
+        "a": "ERW is a trade name taken from carbon-steel pipe. A312 does not use it; its welded product is coded WLD and must be made by an automatic process without filler metal. Writing ASTM A312 WLD on the enquiry removes any doubt."
+      },
+      {
+        "q": "How many seams does A312 welded pipe have?",
+        "a": "One longitudinal seam up to NPS 14. Above NPS 14 it may have one seam, or two longitudinal sections when the purchaser approves."
+      },
+      {
+        "q": "Is welded pipe heat treated after welding?",
+        "a": "Yes. A312 requires all pipe to be heat treated; for TP304, TP304L, TP316 and TP316L that is at least 1040 °C with rapid cooling."
+      },
+      {
+        "q": "Can welded pipe replace seamless pipe in my line?",
+        "a": "Only if your piping class allows a seam. Codes such as ASME B31.3 may apply a weld joint factor to welded pipe, so check the rating with your designer first."
+      }
+    ]
   },
   {
     "S.No": "44",
@@ -907,20 +926,39 @@
     "Product Name": "Stainless Steel Pipe",
     "URL Slug": "stainless-steel-pipe",
     "Meta Title (<=60 chars)": "Stainless Steel Pipe Supplier Mumbai | All Types",
-    "Meta Description (<=160 chars)": "Seamless & ERW SS pipes in all grades from Sakshi Forge Mumbai. 304, 316, Duplex & more. Bulk supply with MTC.",
+    "Meta Description (<=160 chars)": "Stainless steel pipe to ASTM A312 in TP304, 304L, 316 and 316L, seamless or welded. What A312 requires, wall tolerance table, 3.1 certificate.",
     "H1 Tag": "Stainless Steel Pipe - Seamless & ERW | Mumbai",
     "Primary Keyword": "stainless steel pipe manufacturer Mumbai",
     "Secondary Keywords (3-5)": "SS pipe supplier India, ASTM A312 pipe, SS seamless & ERW pipe, SS tube manufacturer Mumbai",
-    "Target Industries": "Oil & Gas | Chemical | Food | Construction | Pharma",
-    "Key Specs": "Grades: All | Type: Seamless/ERW | OD: 1/2\"-24\" | Std: ASTM A312/A358/A778",
+    "Target Industries": "Chemical | Pharmaceutical | Food and Beverage | Water Treatment | Engineering",
+    "Key Specs": "Specification | Value\nProduct | Stainless Steel Pipe\nGrades | ASTM A312 TP304, TP304L, TP316, TP316L\nManufacture | Seamless (SML) or welded (WLD), as ordered\nWall tolerance | −12.5% of nominal; plus side per A312 Table 3\nStandard | ASTM A312/A312M; dimensions to ASME B36.19\nSizes and schedules | Confirmed in writing on the quotation\nCertification | EN 10204 3.1 certificate traced to heat number\nTesting | PMI on every length\nSupply condition | Dispatch and transit confirmed in writing on the quotation",
     "Schema Type": "Product",
     "Internal Links": "SS Pipe Fittings | SS Flanges",
     "CTA": "Send Inquiry",
-    "Product Description": "Stainless Steel Pipe are manufactured to deliver dependable performance in demanding industrial environments. These products offer excellent dimensional accuracy, corrosion resistance and long service life. They are supplied in multiple schedules, sizes and finishes to suit fabrication, process industries, oil & gas, petrochemical, pharmaceutical, food processing and engineering applications.",
-    "Key Features": "High strength; Corrosion resistant; Precision manufactured; Multiple sizes; Custom specifications",
-    "Applications": "Oil & Gas, Petrochemical, Chemical Processing, Food Processing, Pharma, Marine, Engineering",
-    "Standards": "ASTM / ASME / EN / DIN (as applicable)",
-    "Image": "/electropolished-pipes.webp"
+    "Product Description": "Stainless steel pipe is ordered by standard, grade, method of manufacture, NPS and schedule, and ASTM A312 is the standard most process and utility piping in India is bought to. Sakshi Forge, Mumbai, supplies A312 pipe in TP304, TP304L, TP316 and TP316L, in seamless or welded form. This page sets out what A312 itself requires of every pipe, how far the wall may vary from its nominal value, and how to read a pipe material line so nothing is left to guess. Every lot comes with an EN 10204 3.1 certificate traced to heat number and a PMI check on every length. Send your list for a quotation within 30 minutes.",
+    "Key Features": "Made to ASTM A312 in four austenitic grades; Seamless or welded, as your piping class requires; Sized by NPS and schedule to ASME B36.19; EN 10204 3.1 certificate traced to heat number; PMI on every length",
+    "Applications": "Process piping, Utility and water lines, Chemical transfer, Steam condensate, Food and pharmaceutical utilities",
+    "Standards": "ASTM A312/A312M; dimensions to ASME B36.19",
+    "Image": "/electropolished-pipes.webp",
+    "TL;DR": "Stainless steel pipe to ASTM A312 in TP304, TP304L, TP316 and TP316L, seamless (SML) or welded (WLD), sized to ASME B36.19. EN 10204 3.1 certificate and PMI on every length. Quote within 30 minutes: +91 82913 66340.",
+    "FAQs": [
+      {
+        "q": "What does ASTM A312 cover?",
+        "a": "Seamless, straight-seam welded and heavily cold worked welded austenitic stainless steel pipe for high-temperature and general corrosive service. It sets chemistry, tensile strength, heat treatment, testing of each length, wall tolerance and marking."
+      },
+      {
+        "q": "How thin can the wall of A312 pipe be?",
+        "a": "Down to 12.5% below the nominal wall at any size. For NPS 2 Sch 40S, with a nominal wall of 3.91 mm, that is 3.42 mm."
+      },
+      {
+        "q": "Does A312 require the pipe to be heat treated?",
+        "a": "Yes. All A312 pipe is heat treated. For TP304, TP304L, TP316 and TP316L the minimum is 1040 °C, followed by quenching in water or other rapid cooling."
+      },
+      {
+        "q": "What should a stainless pipe enquiry include?",
+        "a": "The standard and grade, SML or WLD if your piping class fixes it, NPS and schedule for each size, metres per size, and the end finish."
+      }
+    ]
   },
   {
     "S.No": "46",
@@ -928,20 +966,39 @@
     "Product Name": "304 Stainless Steel Pipe",
     "URL Slug": "304-stainless-steel-pipe",
     "Meta Title (<=60 chars)": "304 SS Pipe Manufacturer Mumbai | ASTM A312 Grade",
-    "Meta Description (<=160 chars)": "ASTM A312 TP304/304L SS pipes from Sakshi Forge Mumbai. Food-grade, corrosion-resistant. Seamless & ERW available.",
+    "Meta Description (<=160 chars)": "304 stainless steel pipe to ASTM A312 TP304: full chemistry and strength table, when 304 is enough, and when to move to 304L or 316.",
     "H1 Tag": "304 Stainless Steel Pipe - ASTM A312 TP304 | Mumbai",
     "Primary Keyword": "304 SS pipe manufacturer Mumbai",
     "Secondary Keywords (3-5)": "ASTM A312 TP304 pipe, 18/8 stainless pipe, 304L seamless pipe, SS 304 tube India",
-    "Target Industries": "Food Processing | Architecture | Chemical | Engineering | Pharma",
-    "Key Specs": "Grade: 304/304L | OD: 1/2\"-24\" | SCH: 5S-XXS | Std: ASTM A312 | Finish: 2B/Pickled",
+    "Target Industries": "Food and Beverage | Water Treatment | Engineering | Architecture",
+    "Key Specs": "Specification | Value\nProduct | 304 Stainless Steel Pipe\nGrade | ASTM A312 TP304 (UNS S30400)\nChromium / nickel | 18.0–20.0% / 8.0–11.0%\nCarbon | 0.08% max\nTensile / yield | 515 / 205 MPa min\nManufacture | Seamless or welded, as ordered\nStandard | ASTM A312/A312M; dimensions to ASME B36.19\nSizes and schedules | Confirmed in writing on the quotation\nCertification | EN 10204 3.1 certificate traced to heat number\nTesting | PMI on every length\nSupply condition | Dispatch and transit confirmed in writing on the quotation",
     "Schema Type": "Product",
     "Internal Links": "304 SS Pipe Fittings | 304 SS Flanges",
     "CTA": "Get a Quote",
-    "Product Description": "304 Stainless Steel Pipe are manufactured to deliver dependable performance in demanding industrial environments. These products offer excellent dimensional accuracy, corrosion resistance and long service life. They are supplied in multiple schedules, sizes and finishes to suit fabrication, process industries, oil & gas, petrochemical, pharmaceutical, food processing and engineering applications.",
-    "Key Features": "High strength; Corrosion resistant; Precision manufactured; Multiple sizes; Custom specifications",
-    "Applications": "Oil & Gas, Petrochemical, Chemical Processing, Food Processing, Pharma, Marine, Engineering",
-    "Standards": "ASTM / ASME / EN / DIN (as applicable)",
-    "Image": "/electropolished-pipes.webp"
+    "Product Description": "304 is the everyday 18/8 stainless steel and the grade most general stainless piping starts from. Sakshi Forge, Mumbai, supplies 304 stainless steel pipe to ASTM A312 TP304, seamless or welded, sized by NPS and schedule. This page gives the TP304 limits from A312, explains what the 18/8 name really allows, and shows when 304 is the right choice and when a welded or chloride-bearing line needs 304L or 316 instead. Every lot is supplied with an EN 10204 3.1 certificate traced to heat number and a PMI check on every length. Send sizes and quantities for a quotation within 30 minutes.",
+    "Key Features": "ASTM A312 TP304 chemistry and strength; Seamless or welded, sized by NPS and schedule; 3.1 certificate traced to heat number; PMI on every length",
+    "Applications": "Potable and process water, Compressed air, Food product lines, Dairy utilities, General indoor piping",
+    "Standards": "ASTM A312/A312M; dimensions to ASME B36.19",
+    "Image": "/electropolished-pipes.webp",
+    "TL;DR": "ASTM A312 TP304 (UNS S30400) pipe: 18.0–20.0% Cr, 8.0–11.0% Ni, 0.08% C max, 515 MPa tensile min. Seamless or welded. 3.1 certificate and PMI on every length. Quote within 30 minutes: +91 82913 66340.",
+    "FAQs": [
+      {
+        "q": "What is the chemistry of ASTM A312 TP304 pipe?",
+        "a": "Carbon 0.08% max, manganese 2.00% max, phosphorus 0.045% max, sulphur 0.030% max, silicon 1.00% max, chromium 18.0 to 20.0% and nickel 8.0 to 11.0%."
+      },
+      {
+        "q": "What is the minimum strength of TP304 pipe?",
+        "a": "515 MPa [75 ksi] tensile and 205 MPa [30 ksi] yield, from A312 Table 4."
+      },
+      {
+        "q": "Why is 304 called 18/8?",
+        "a": "From its nominal 18% chromium and 8% nickel. A312 allows 18.0 to 20.0% chromium and 8.0 to 11.0% nickel."
+      },
+      {
+        "q": "When should I choose 316 instead of 304?",
+        "a": "When the line sees chlorides, such as brine, seawater spray or chloride cleaning agents. 304 has no molybdenum; 316 has 2.00 to 3.00%."
+      }
+    ]
   },
   {
     "S.No": "47",
@@ -949,20 +1006,39 @@
     "Product Name": "316 Stainless Steel Pipe",
     "URL Slug": "316-stainless-steel-pipe",
     "Meta Title (<=60 chars)": "316 SS Pipe Manufacturer Mumbai | ASTM A312 TP316",
-    "Meta Description (<=160 chars)": "Marine-grade ASTM A312 TP316 SS pipes. Mo content for superior chloride resistance. Sakshi Forge Mumbai.",
+    "Meta Description (<=160 chars)": "316 stainless steel pipe to ASTM A312 TP316 with 2.00–3.00% molybdenum for chloride service. PREN table, 316 vs 316L, 3.1 certificate.",
     "H1 Tag": "316 Stainless Steel Pipe - ASTM A312 TP316 | Mumbai",
     "Primary Keyword": "316 SS pipe manufacturer Mumbai",
     "Secondary Keywords (3-5)": "ASTM A312 TP316 pipe, marine SS pipe, 316 seamless pipe, 1.4401 pipe India",
-    "Target Industries": "Marine | Chemical | Oil & Gas | Offshore | Pharma",
-    "Key Specs": "Grade: 316 | Mo: 2-3% | OD: 1/2\"-24\" | SCH: 5S-XXS | Std: ASTM A312",
+    "Target Industries": "Chemical | Pharmaceutical | Food and Beverage | Water Treatment | Marine",
+    "Key Specs": "Specification | Value\nProduct | 316 Stainless Steel Pipe\nGrade | ASTM A312 TP316 (UNS S31600)\nChromium / nickel | 16.0–18.0% / 10.0–14.0%\nMolybdenum | 2.00–3.00%\nTensile / yield | 515 / 205 MPa min\nManufacture | Seamless or welded, as ordered\nStandard | ASTM A312/A312M; dimensions to ASME B36.19\nSizes and schedules | Confirmed in writing on the quotation\nCertification | EN 10204 3.1 certificate traced to heat number\nTesting | PMI on every length\nSupply condition | Dispatch and transit confirmed in writing on the quotation",
     "Schema Type": "Product",
     "Internal Links": "316 SS Pipe Fittings | 316 SS Flanges | 316 SS Elbow",
     "CTA": "Send Inquiry",
-    "Product Description": "316 Stainless Steel Pipe are manufactured to deliver dependable performance in demanding industrial environments. These products offer excellent dimensional accuracy, corrosion resistance and long service life. They are supplied in multiple schedules, sizes and finishes to suit fabrication, process industries, oil & gas, petrochemical, pharmaceutical, food processing and engineering applications.",
-    "Key Features": "High strength; Corrosion resistant; Precision manufactured; Multiple sizes; Custom specifications",
-    "Applications": "Oil & Gas, Petrochemical, Chemical Processing, Food Processing, Pharma, Marine, Engineering",
-    "Standards": "ASTM / ASME / EN / DIN (as applicable)",
-    "Image": "/electropolished-pipes.webp"
+    "Product Description": "316 is the molybdenum-bearing grade used when a line sees chlorides: brine, coastal air, chloride-bearing cooling water or aggressive cleaning chemicals. Sakshi Forge, Mumbai, supplies 316 stainless steel pipe to ASTM A312 TP316, seamless or welded. This page explains what the 2.00 to 3.00% molybdenum does, compares 304 and 316 by pitting resistance number calculated from the A312 limits, notes where even 316 is not enough, and sets out when to choose 316L. Every lot has an EN 10204 3.1 certificate traced to heat number and a PMI check on every length. Quotation within 30 minutes.",
+    "Key Features": "Molybdenum 2.00 to 3.00% for chloride resistance; ASTM A312 TP316 limits; Seamless or welded; 3.1 certificate traced to heat number; PMI on every length",
+    "Applications": "Brine and chloride-bearing water, Coastal plant piping, Chemical transfer, CIP and cleaning lines",
+    "Standards": "ASTM A312/A312M; dimensions to ASME B36.19",
+    "Image": "/electropolished-pipes.webp",
+    "TL;DR": "ASTM A312 TP316 (UNS S31600) pipe: 16.0–18.0% Cr, 10.0–14.0% Ni, 2.00–3.00% Mo for chloride resistance. Seamless or welded. 3.1 certificate and PMI on every length. Quote within 30 minutes: +91 82913 66340.",
+    "FAQs": [
+      {
+        "q": "How much molybdenum does 316 pipe contain?",
+        "a": "ASTM A312 TP316 requires 2.00 to 3.00% molybdenum, with 16.0 to 18.0% chromium and 10.0 to 14.0% nickel."
+      },
+      {
+        "q": "Is 316 better than 304 against chlorides?",
+        "a": "Yes. From the A312 limits, its pitting resistance number is 22.6 to 27.9, against 18.0 to 20.0 for 304, because of the molybdenum."
+      },
+      {
+        "q": "Is 316 suitable for seawater?",
+        "a": "Not automatically. Warm seawater, stagnant brine and tight crevices can still attack 316. Such duties are normally engineered with more highly alloyed materials."
+      },
+      {
+        "q": "Should I order 316 or 316L?",
+        "a": "Choose 316L for lines welded without later annealing, since its carbon is capped at 0.035%. TP316 has higher minimum strength: 515 MPa tensile against 485 MPa."
+      }
+    ]
   },
   {
     "S.No": "48",
@@ -970,20 +1046,39 @@
     "Product Name": "316L Stainless Steel Pipe",
     "URL Slug": "316l-stainless-steel-pipe",
     "Meta Title (<=60 chars)": "316L SS Pipe Manufacturer Mumbai | Low Carbon Grade",
-    "Meta Description (<=160 chars)": "Low-carbon ASTM A312 TP316L SS pipe ideal for welded piping systems. Sakshi Forge Mumbai - MTC provided.",
+    "Meta Description (<=160 chars)": "316L stainless steel pipe to ASTM A312 TP316L for welded process lines. How to check the 3.1 certificate, sulphur for orbital welding.",
     "H1 Tag": "316L Stainless Steel Pipe - Low Carbon | ASTM A312",
     "Primary Keyword": "316L SS pipe manufacturer Mumbai",
     "Secondary Keywords (3-5)": "ASTM A312 TP316L pipe, 316L seamless pipe, low carbon marine pipe, 1.4404 pipe India",
-    "Target Industries": "Chemical | Marine | Pharma | Nuclear | Offshore",
-    "Key Specs": "Grade: 316L | C <=0.03% | OD: 1/2\"-24\" | Std: ASTM A312 | Sensitisation-resistant after welding",
+    "Target Industries": "Pharmaceutical | Chemical | Food and Beverage | Biotech",
+    "Key Specs": "Specification | Value\nProduct | 316L Stainless Steel Pipe\nGrade | ASTM A312 TP316L (UNS S31603)\nCarbon | 0.035% max (0.040% for small or thin product)\nMolybdenum | 2.00–3.00%\nTensile / yield | 485 / 170 MPa min\nManufacture | Seamless or welded, as ordered\nStandard | ASTM A312/A312M; dimensions to ASME B36.19\nSizes and schedules | Confirmed in writing on the quotation\nCertification | EN 10204 3.1 certificate traced to heat number\nTesting | PMI on every length\nSupply condition | Dispatch and transit confirmed in writing on the quotation",
     "Schema Type": "Product",
     "Internal Links": "316L SS Pipe Fittings | 316L SS Flanges",
     "CTA": "Get a Quote",
-    "Product Description": "316L Stainless Steel Pipe are manufactured to deliver dependable performance in demanding industrial environments. These products offer excellent dimensional accuracy, corrosion resistance and long service life. They are supplied in multiple schedules, sizes and finishes to suit fabrication, process industries, oil & gas, petrochemical, pharmaceutical, food processing and engineering applications.",
-    "Key Features": "High strength; Corrosion resistant; Precision manufactured; Multiple sizes; Custom specifications",
-    "Applications": "Oil & Gas, Petrochemical, Chemical Processing, Food Processing, Pharma, Marine, Engineering",
-    "Standards": "ASTM / ASME / EN / DIN (as applicable)",
-    "Image": "/electropolished-pipes.webp"
+    "Product Description": "316L is the low-carbon 316 grade, and the usual choice for welded process, utility and pharmaceutical piping that sees chlorides. Sakshi Forge, Mumbai, supplies 316L stainless steel pipe to ASTM A312 TP316L, seamless or welded. This page shows how to check a TP316L certificate entry by entry against A312, why sulphur deserves a look when the pipe will be orbitally welded to BPE components, and where 316L pipe is normally used. Every lot is supplied with an EN 10204 3.1 certificate traced to heat number and PMI on every length. Send sizes, schedules and metres for a quotation within 30 minutes.",
+    "Key Features": "Low carbon for welded chloride service; ASTM A312 TP316L limits; Heat chemistry, sulphur included, on the 3.1 certificate; 3.1 certificate traced to heat number; PMI on every length",
+    "Applications": "Welded process lines, Purified water and utilities, CIP supply and return, Chemical transfer",
+    "Standards": "ASTM A312/A312M; dimensions to ASME B36.19",
+    "Image": "/electropolished-pipes.webp",
+    "TL;DR": "ASTM A312 TP316L (UNS S31603) pipe: carbon 0.035% max, 2.00–3.00% Mo, 485 MPa tensile min. Seamless or welded. 3.1 certificate traced to heat number and PMI on every length. Quote within 30 minutes: +91 82913 66340.",
+    "FAQs": [
+      {
+        "q": "What carbon limit applies to TP316L pipe?",
+        "a": "0.035% maximum under ASTM A312. A Table 1 footnote allows 0.040% for small or thin product: under 12.7 mm outside diameter or 1.20 mm average wall."
+      },
+      {
+        "q": "What should I check on a 316L pipe certificate?",
+        "a": "That the heat number matches the pipe marking, carbon is within 0.035%, chromium 16.0 to 18.0%, nickel 10.0 to 14.0%, molybdenum 2.00 to 3.00%, and tensile and yield meet 485 and 170 MPa."
+      },
+      {
+        "q": "Does A312 control sulphur for orbital welding?",
+        "a": "A312 only caps sulphur at 0.030%. ASME BPE tubing uses a narrow band, typically 0.005% to 0.017%. If the pipe will be orbitally welded to BPE components, state the range in the enquiry."
+      },
+      {
+        "q": "Is 316L pipe stronger than 316?",
+        "a": "No. TP316L has lower minimum strength, 485 MPa tensile and 170 MPa yield, against 515 and 205 MPa for TP316. It is chosen for weldability, not strength."
+      }
+    ]
   },
   {
     "S.No": "49",
@@ -991,20 +1086,39 @@
     "Product Name": "304L Stainless Steel Pipe",
     "URL Slug": "304l-stainless-steel-pipe",
     "Meta Title (<=60 chars)": "304L SS Pipe Manufacturer Mumbai | Weld Grade",
-    "Meta Description (<=160 chars)": "Low-carbon ASTM A312 TP304L SS pipes for welded constructions. Sakshi Forge Mumbai manufacturer & bulk supplier.",
+    "Meta Description (<=160 chars)": "304L stainless steel pipe to ASTM A312 TP304L: 0.035% carbon max for welded lines. 304 vs 304L table, sensitisation explained, 3.1 certificate.",
     "H1 Tag": "304L Stainless Steel Pipe - Weld Grade | ASTM A312",
     "Primary Keyword": "304L SS pipe manufacturer",
     "Secondary Keywords (3-5)": "ASTM A312 TP304L pipe, low carbon 304 pipe, 1.4307 pipe, 304L seamless pipe India",
-    "Target Industries": "Chemical Equipment | Food Processing | Architecture | Pharma",
-    "Key Specs": "Grade: 304L | C <=0.03% | OD: 1/2\"-24\" | Std: ASTM A312",
+    "Target Industries": "Chemical | Food and Beverage | Water Treatment | Pharmaceutical",
+    "Key Specs": "Specification | Value\nProduct | 304L Stainless Steel Pipe\nGrade | ASTM A312 TP304L (UNS S30403)\nCarbon | 0.035% max (0.040% for small or thin product)\nNickel | 8.0–13.0%\nTensile / yield | 485 / 170 MPa min\nManufacture | Seamless or welded, as ordered\nStandard | ASTM A312/A312M; dimensions to ASME B36.19\nSizes and schedules | Confirmed in writing on the quotation\nCertification | EN 10204 3.1 certificate traced to heat number\nTesting | PMI on every length\nSupply condition | Dispatch and transit confirmed in writing on the quotation",
     "Schema Type": "Product",
     "Internal Links": "304L SS Pipe Fittings | 304 SS Pipe",
     "CTA": "Send Inquiry",
-    "Product Description": "304L Stainless Steel Pipe are manufactured to deliver dependable performance in demanding industrial environments. These products offer excellent dimensional accuracy, corrosion resistance and long service life. They are supplied in multiple schedules, sizes and finishes to suit fabrication, process industries, oil & gas, petrochemical, pharmaceutical, food processing and engineering applications.",
-    "Key Features": "High strength; Corrosion resistant; Precision manufactured; Multiple sizes; Custom specifications",
-    "Applications": "Oil & Gas, Petrochemical, Chemical Processing, Food Processing, Pharma, Marine, Engineering",
-    "Standards": "ASTM / ASME / EN / DIN (as applicable)",
-    "Image": "/electropolished-pipes.webp"
+    "Product Description": "304L is grade 304 with less carbon, chosen when the pipe will be welded and then carry a fluid that could attack a sensitised weld zone. Sakshi Forge, Mumbai, supplies 304L stainless steel pipe to ASTM A312 TP304L, seamless or welded. This page puts TP304 and TP304L side by side, explains why the lower carbon protects the metal next to a weld, and lists what to check before 304L goes into a line designed for 304, since its minimum strength is lower. Every lot has an EN 10204 3.1 certificate traced to heat number and PMI on every length. Send your sizes for a quotation within 30 minutes.",
+    "Key Features": "Low carbon for welded piping; ASTM A312 TP304L limits; Seamless or welded; 3.1 certificate traced to heat number; PMI on every length",
+    "Applications": "Site-welded process lines, Chemical equipment piping, Food plant utilities, Water treatment skids",
+    "Standards": "ASTM A312/A312M; dimensions to ASME B36.19",
+    "Image": "/electropolished-pipes.webp",
+    "TL;DR": "ASTM A312 TP304L (UNS S30403) pipe: carbon 0.035% max for welded piping, 485 MPa tensile min. Seamless or welded. 3.1 certificate and PMI on every length. Quote within 30 minutes: +91 82913 66340.",
+    "FAQs": [
+      {
+        "q": "What is the difference between 304 and 304L pipe?",
+        "a": "TP304L limits carbon to 0.035% against 0.08% for TP304, and allows nickel up to 13.0%. Its minimum strength is lower: 485 MPa tensile and 170 MPa yield, against 515 and 205 MPa."
+      },
+      {
+        "q": "Why use 304L for welded piping?",
+        "a": "Lower carbon means less chromium carbide forms in the heat-affected zone during welding, so the metal beside the weld keeps its resistance to intergranular corrosion."
+      },
+      {
+        "q": "Can 304L pipe have 0.040% carbon?",
+        "a": "Yes, but only for small or thin product: under 12.7 mm outside diameter or under 1.20 mm average wall, where many drawing passes are needed. Otherwise the limit is 0.035%."
+      },
+      {
+        "q": "Can I use 304L where the drawing says 304?",
+        "a": "Check the pressure rating first, because 304L has lower allowable stresses. Pipe certified TP304/304L meets both sets of limits."
+      }
+    ]
   },
   {
     "S.No": "50",

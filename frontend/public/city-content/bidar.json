@@ -1,0 +1,65 @@
+{
+  "slug": "bidar",
+  "updated": "2026-11-28",
+  "sections": [
+    {
+      "heading": "Kolhar Industrial Area, Bidar: A Bulk-Drug Estate",
+      "paragraphs": [
+        "Bidar's bulk-drug and chemical manufacturing is concentrated in the KIADB Kolhar Industrial Area, on the edge of the city. A Karnataka State Pollution Control Board report placed before the National Green Tribunal, Southern Zone, and summarised in the Tribunal's February 2020 order, gives the main activities there as bulk drugs and their intermediates, pharmaceutical formulation, tyre pyrolysis and used-oil reprocessing, with electroplating closed.",
+        "The same report counted 296 industries of all sizes and categories on the board's records, of which 85 were operating at the time, and 17 bulk-drug and intermediate manufacturers established in the estate. KSPCB inspection notes filed before the Tribunal in April 2022 list the product ranges of individual units, and they read like an API catalogue: corticosteroid esters, antivirals, antifungals and their intermediates."
+      ]
+    },
+    {
+      "heading": "Hard Groundwater and What It Means for Purified Water",
+      "paragraphs": [
+        "Water is the defining constraint in Kolhar. According to the Tribunal's order, a supply from the Karanja River about 10 km away was planned for the estate but never commissioned, so units rely on open wells, borewells and tankers, with a provision to tap 1 MLD from the Bidar city line. A groundwater study cited in the order found plumes of total dissolved solids between 2,000 and 8,000 mg/L inside the industrial area, with raised chloride and sodium.",
+        "For a pharma plant that turns that water into purified water, the lesson is about where to put the expensive tube. Upstream of the RO stage, chloride-rich feed water attacks stainless steel; the pretreatment train is better served by plastics or lined pipe than by polished 316L. From the RO permeate onward, the water is clean and the loop is where electropolished 316L earns its place, because a smooth passive bore resists biofilm and rouge during repeated sanitisation."
+      ]
+    },
+    {
+      "heading": "Zero Liquid Discharge and Cleaning-Water Volume in Bidar",
+      "paragraphs": [
+        "The inspection notes describe bulk-drug units sending process effluent, equipment washings, boiler blowdown and RO reject to a multiple-effect evaporator followed by an agitated thin-film dryer, with closed-loop handling of solvents. Kolhar was also identified as a severely polluted area under the Comprehensive Environmental Pollution Index, and the Tribunal's order notes that inspectors visited the construction site of a common effluent treatment plant inside the estate.",
+        "In a plant where every litre of wash water ends up in an evaporator, cleaning volume has a direct running cost. Electropolished bores on the product and final-wash lines release residue sooner, so wash cycles can be shorter and rinse water less. It does not remove the need for validated cleaning, but it lightens the load on the ZLD system."
+      ]
+    },
+    {
+      "heading": "Choosing SF1 or SF4 for a Kolhar API Plant",
+      "bullets": [
+        "Pretreatment upstream of RO on high-TDS borewell water: not a stainless hygienic duty; choose a chloride-tolerant material.",
+        "Purified-water loop after RO, ambient and chemically sanitised: SF1 316L is usually defensible.",
+        "Hot purified-water loop or points of use feeding final washes: SF4 electropolished 316L.",
+        "Centrifuge wash, crystalliser transfer and dryer feed in a multi-product block: SF4 to shorten cleaning between campaigns.",
+        "Solvent recovery and MEE condensate lines: correct grade and weld quality matter more than surface finish."
+      ]
+    },
+    {
+      "heading": "Delivery to Kolhar and Bidar",
+      "paragraphs": [
+        "Bidar is supplied by road from Mumbai; dispatch and transit are confirmed in writing with each quotation.",
+        "Nearby clusters:"
+      ],
+      "links": [
+        { "label": "Hyderabad", "href": "/market-area/hyderabad/" },
+        { "label": "Sangareddy", "href": "/market-area/sangareddy/" },
+        { "label": "Solapur", "href": "/market-area/solapur/" }
+      ]
+    },
+    {
+      "heading": "What a Bidar Bulk-Drug Buyer Should Send",
+      "paragraphs": [
+        "List each line with its fluid (purified water, CIP supply and return, wash solvent, product slurry), design temperature, OD and wall per size, total length and the finish named in your user requirement specification. Tell us which lines sit after the RO stage, so we can separate them from pretreatment piping on borewell water that should not be specified in polished 316L at all.",
+        "Send the list through our contact page for a quotation within 30 minutes. Each lot is supplied with an EN 10204 3.1 certificate traced to heat number, PMI on every length and, for electropolished tube, an internal Ra report for your qualification file."
+      ],
+      "links": [
+        { "label": "Request a quotation for Bidar", "href": "/contact-us/" },
+        { "label": "Electropolished tubes", "href": "/electropolished-tubes/" },
+        { "label": "Electropolished pipes", "href": "/electropolished-pipes/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "National Green Tribunal (SZ), Rajasekar Shambu vs Karnataka State Pollution Control Board, order of 24 February 2020 (via Indian Kanoon)", "url": "https://indiankanoon.org/doc/109631810/" },
+    { "title": "National Green Tribunal: KSPCB inspection reports, Kolhar Industrial Area, Bidar (April 2022), OA 34 of 2019 (SZ)", "url": "https://www.greentribunal.gov.in/sites/default/files/news_updates/3419_3.pdf" }
+  ]
+}

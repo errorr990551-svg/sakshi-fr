@@ -68,6 +68,12 @@ const STANDARDS = [
   // ASME pages opened and checked 2026-11-27
   [/\bB16\.11\b/, 'https://www.asme.org/codes-standards/find-codes-standards/b16-11-forged-fittings-socket-welding-threaded', 'ASME B16.11: Forged Fittings, Socket-Welding and Threaded (ASME)'],
   [/\bB31\.3\b/, 'https://www.asme.org/codes-standards/find-codes-standards/b31-3-process-piping', 'ASME B31.3: Process Piping (ASME)'],
+  // ASME pages opened and checked 2026-11-28
+  [/\bB16\.5\b/, 'https://www.asme.org/codes-standards/find-codes-standards/b16-5-pipe-flanges-flanged-fittings-nps-1-2-nps-24-metric-inch-standard', 'ASME B16.5: Pipe Flanges and Flanged Fittings, NPS 1/2 through NPS 24 (ASME)'],
+  [/\bB16\.9\b/, 'https://www.asme.org/codes-standards/find-codes-standards/b16-9-factory-made-wrought-buttwelding-fittings', 'ASME B16.9: Factory-Made Wrought Buttwelding Fittings (ASME)'],
+  [/\bB16\.36\b/, 'https://www.asme.org/codes-standards/find-codes-standards/b16-36-orifice-flanges', 'ASME B16.36: Orifice Flanges (ASME)'],
+  [/\bB16\.48\b/, 'https://www.asme.org/codes-standards/find-codes-standards/b16-48-line-blanks', 'ASME B16.48: Line Blanks (ASME)'],
+  [/\bB1\.20\.1\b/, 'https://www.asme.org/codes-standards/find-codes-standards/b1201-pipe-threads-general-purpose-inch', 'ASME B1.20.1: Pipe Threads, General Purpose, Inch (ASME)'],
   [/\bBPE\b/, 'https://www.asme.org/codes-standards/find-codes-standards/bpe-bioprocessing-equipment', 'ASME BPE: Bioprocessing Equipment standard (ASME)'],
 ];
 const SOURCE_TITLES = {

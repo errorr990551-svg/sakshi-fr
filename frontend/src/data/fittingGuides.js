@@ -3,6 +3,8 @@
 // Facts are standard references (ASME BPE, ASME B16.9/B16.11, MSS SP-43/83/95/97, AWS D18.1) and
 // the company facts the owner has confirmed (3.1 certificate, PMI, Ra report per electropolished lot).
 
+import { FLANGE_GUIDES } from './flangeGuides.js';
+
 export const FITTING_GUIDES = {
   "electropolished-pipe-fittings/electropolished-elbow": {
     "updated": "2026-11-03",
@@ -1768,3 +1770,5 @@ export const FITTING_GUIDES = {
     ]
   }
 };
+
+Object.assign(FITTING_GUIDES, FLANGE_GUIDES);

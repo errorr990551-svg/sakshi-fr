@@ -5,6 +5,7 @@
 
 import { FLANGE_GUIDES } from './flangeGuides.js';
 import { PIPE_GUIDES } from './pipeGuides.js';
+import { BRONZE_GUIDES } from './bronzeGuides.js';
 
 export const FITTING_GUIDES = {
   "electropolished-pipe-fittings/electropolished-elbow": {
@@ -1774,3 +1775,4 @@ export const FITTING_GUIDES = {
 
 Object.assign(FITTING_GUIDES, FLANGE_GUIDES);
 Object.assign(FITTING_GUIDES, PIPE_GUIDES);
+Object.assign(FITTING_GUIDES, BRONZE_GUIDES);

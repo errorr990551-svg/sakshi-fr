@@ -74,9 +74,21 @@ const STANDARDS = [
   [/\bB16\.36\b/, 'https://www.asme.org/codes-standards/find-codes-standards/b16-36-orifice-flanges', 'ASME B16.36: Orifice Flanges (ASME)'],
   [/\bB16\.48\b/, 'https://www.asme.org/codes-standards/find-codes-standards/b16-48-line-blanks', 'ASME B16.48: Line Blanks (ASME)'],
   [/\bB1\.20\.1\b/, 'https://www.asme.org/codes-standards/find-codes-standards/b1201-pipe-threads-general-purpose-inch', 'ASME B1.20.1: Pipe Threads, General Purpose, Inch (ASME)'],
+  // ASTM store page opened and checked 2026-11-28 (the www.astm.org/Standards/ link for B139 returns 403)
+  [/\bB139\b/, 'https://store.astm.org/b0139_b0139m-12r24.html', 'ASTM B139/B139M: Phosphor Bronze Rod, Bar, and Shapes (ASTM International)'],
   [/\bBPE\b/, 'https://www.asme.org/codes-standards/find-codes-standards/bpe-bioprocessing-equipment', 'ASME BPE: Bioprocessing Equipment standard (ASME)'],
 ];
 const SOURCE_TITLES = {
+  'https://alloys.copper.org/alloy/C51000': 'C51000 alloy data: composition, properties, typical uses (Copper Development Association)',
+  'https://alloys.copper.org/alloy/C52100': 'C52100 alloy data: composition, properties, typical uses (Copper Development Association)',
+  'https://alloys.copper.org/alloy/C54400': 'C54400 alloy data: composition, properties, typical uses (Copper Development Association)',
+  'https://alloys.copper.org/alloy/C90700': 'C90700 alloy data: composition, specifications, typical uses (Copper Development Association)',
+  'https://knowledge.bsigroup.com/products/specification-for-copper-alloy-ingots-and-copper-alloy-and-high-conductivity-copper-castings': 'BS 1400:1985, Copper alloy ingots and castings: status withdrawn (BSI Knowledge)',
+  'https://knowledge.bsigroup.com/products/copper-and-copper-alloys-ingots-and-castings-3': 'BS EN 1982:2024, Copper and copper alloys: Ingots and castings (BSI Knowledge)',
+  'https://cdn.standards.iteh.ai/samples/28874/fe79ece3e6d34bb493d9f1bfbcc16ff2/SIST-EN-1982-2008.pdf': 'EN 1982:2008 public preview: scope, designation and ordering clauses (iTeh Standards)',
+  'https://www.smithmetal.com/pdf/bronze/pb1.pdf': 'BS1400 PB1 technical datasheet (Smiths Metal Centres)',
+  'https://www.smithmetal.com/pdf/bronze/pb2.pdf': 'PB2 phosphor bronze product datasheet (Smiths Metal Centres)',
+  'https://vulcan.co/wp-content/uploads/VUL_Engineering_Bronze.pdf': 'Engineering bronze datasheets, including PB-1 (Vulcan Engineering Steels)',
   'https://health.ec.europa.eu/medicinal-products/eudralex/eudralex-volume-4_en': 'EudraLex Volume 4: EU Good Manufacturing Practice guidelines (European Commission)',
   'https://www.3-a.org/': '3-A Sanitary Standards, Inc.',
   'https://www.3-a.org/newsletter-article/the-right-finish-for-a-food-contact-surface-are-we-protecting-consumers': 'The Right Finish for a Food Contact Surface: Are We Protecting Consumers? (3-A Sanitary Standards newsletter)',

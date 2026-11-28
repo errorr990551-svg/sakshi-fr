@@ -2068,21 +2068,40 @@
     "Category": "Bronze Round Bar",
     "Product Name": "Phosphor Bronze Round Bar",
     "URL Slug": "phosphor-bronze-round-bar",
-    "Meta Title (<=60 chars)": "Phosphor Bronze Round Bar Manufacturer | Sakshi Forge",
-    "Meta Description (<=160 chars)": "C51000/C52100 phosphor bronze round bars for bearings, springs & electrical contacts. Sakshi Forge Mumbai manufacturer.",
-    "H1 Tag": "Phosphor Bronze Round Bar - C51000/C52100 | Mumbai",
-    "Primary Keyword": "phosphor bronze round bar manufacturer India",
-    "Secondary Keywords (3-5)": "tin phosphor bronze bar, C51000 bar, C52100 bar, spring bronze rod, PB bronze bar India",
-    "Target Industries": "Bearings | Springs | Electrical Contacts | Hydraulic Components | Gears",
-    "Key Specs": "Grades: C51000/C52100/PB1/PB2 | Sn: 3.5-8% | P: 0.03-0.35% | Dia: 10-200mm | Std: ASTM B139",
+    "Meta Title (<=60 chars)": "Phosphor Bronze Round Bar: C51000, C52100, C54400",
+    "Meta Description (<=160 chars)": "Phosphor bronze round bar compared: C51000, C52100 and C54400 to ASTM B139 side by side, which to choose, and how cast PB1 and PB2 bars differ.",
+    "H1 Tag": "Phosphor Bronze Round Bar: Grades Compared",
+    "Primary Keyword": "phosphor bronze round bar",
+    "Secondary Keywords (3-5)": "phosphor bronze rod grades, C51000 vs C52100, ASTM B139 phosphor bronze, wrought vs cast phosphor bronze, PB1 PB2 bronze",
+    "Target Industries": "Engineering | Electrical | Instrumentation",
+    "Key Specs": "Specification | Value\nProduct | Phosphor Bronze Round Bar\nWrought grades | UNS C51000, C52100, C54400\nTin range across grades | 3.5 – 9.0%\nCast grades named in drawings | PB1, PB2 (BS 1400, withdrawn)\nStandard | ASTM B139/B139M\nSizes | Confirmed in writing on the quotation\nTest documents | Type agreed in writing with the quotation\nSupply condition | Dispatch and transit confirmed in writing on the quotation",
     "Schema Type": "Product",
-    "Internal Links": "PB1 Bronze Bar | PB2 Bronze Bar | Bronze Round Bar",
+    "Internal Links": "'C51000 bronze bar' -> https://steelmanufacturer.in/c51000-bronze-round-bar/\n'C52100 bronze bar' -> https://steelmanufacturer.in/c52100-bronze-round-bar/\n'C54400 bronze bar' -> https://steelmanufacturer.in/c54400-bronze-round-bar/\n'PB1 bronze bar' -> https://steelmanufacturer.in/pb1-bronze-round-bar/",
     "CTA": "Get a Quote",
-    "Product Description": "Phosphor Bronze Round Bar are engineered for excellent performance, corrosion resistance, dimensional accuracy and durability. These products are widely used across oil & gas, petrochemical, marine, pharmaceutical, food processing, fabrication and engineering industries. Available in custom dimensions and grades as per project requirements.",
-    "Key Features": "Corrosion resistant; High strength; Precision manufactured; Excellent finish; Custom sizes",
-    "Applications": "Oil & Gas, Petrochemical, Marine, Food Processing, Pharmaceutical, Construction, Engineering",
-    "Standards": "ASTM / ASME / EN / DIN (as applicable)",
-    "Image": "/Bronze Round Bars.webp"
+    "Product Description": "Phosphor bronze is copper alloyed with tin and deoxidised with phosphorus. Sakshi Forge, Mumbai, supplies phosphor bronze rod and bar against your enquiry. This page compares the three wrought rod alloys of ASTM B139, C51000, C52100 and C54400, using Copper Development Association data, so you can pick by the job the part does. It also explains why bars sold as PB1 or PB2 are cast bronzes with far more tin, and links to each grade page for the full detail.",
+    "Key Features": "Three wrought alloys compared in one table; Choice by job: springs, bearings or machined parts; Wrought rod and cast bar explained; Links to a page for each grade",
+    "Applications": "Springs and contacts, Bearings and bushings, Gears, Screw machine parts, Bellows and diaphragms",
+    "Standards": "ASTM B139/B139M",
+    "Image": "/Bronze Round Bars.webp",
+    "TL;DR": "Three wrought phosphor bronzes cover most rod drawings: C51000 (about 5% tin) for springs and contacts, C52100 (about 8% tin) for bearings and gears, and leaded C54400 for machined parts. All three are bought to ASTM B139/B139M. Cast PB1 and PB2 are a separate family. Quote within 30 minutes: +91 82913 66340.",
+    "FAQs": [
+      {
+        "q": "Which phosphor bronze grade is best for springs?",
+        "a": "C51000 is the usual choice. It cold works excellently and is drawn to spring tempers. C52100 is used for heavy-duty springs where more strength is needed."
+      },
+      {
+        "q": "Which phosphor bronze is easiest to machine?",
+        "a": "C54400. Its lead content gives a machinability rating of 80, against 20 for C51000 and C52100."
+      },
+      {
+        "q": "What is the difference between wrought and cast phosphor bronze bar?",
+        "a": "Wrought rod, such as C51000, is cast and then drawn to size, which work hardens it. Cast bar, such as PB1, is continuously cast and only machined, and usually contains much more tin, about 10 to 13% on distributor datasheets."
+      },
+      {
+        "q": "Which standard covers phosphor bronze rod?",
+        "a": "ASTM B139/B139M covers phosphor bronze rod, bar and shapes, including C51000, C52100 and C54400."
+      }
+    ]
   },
   {
     "S.No": "96",
@@ -2110,105 +2129,200 @@
     "Category": "Bronze Round Bar",
     "Product Name": "PB1 Bronze Round Bar",
     "URL Slug": "pb1-bronze-round-bar",
-    "Meta Title (<=60 chars)": "PB1 Bronze Round Bar Manufacturer | BS 2874 Grade",
-    "Meta Description (<=160 chars)": "PB1 (BS 2874) phosphor bronze round bars. 96% Cu, 4% Sn, 0.35% P. Sakshi Forge Mumbai manufacturer.",
-    "H1 Tag": "PB1 Phosphor Bronze Round Bar - BS 2874 | Mumbai",
-    "Primary Keyword": "PB1 bronze round bar manufacturer",
-    "Secondary Keywords (3-5)": "PB1 phosphor bronze, BS 2874 PB1, C51000 PB1 bar, spring bronze PB1 rod India",
-    "Target Industries": "Bearings | Springs | Electrical Contacts | Precision Engineering | Gears",
-    "Key Specs": "Grade: PB1 (BS 2874) | Cu: ~96% | Sn: ~4% | P: 0.03-0.35% | Dia: 10-200mm",
+    "Meta Title (<=60 chars)": "PB1 Phosphor Bronze Bar: Cast Grade, BS 1400 & EN 1982",
+    "Meta Description (<=160 chars)": "PB1 phosphor bronze is a cast grade of the withdrawn BS 1400, not C51000. Two distributor datasheets compared, the C90700 phosphorus gap, how to order.",
+    "H1 Tag": "PB1 Phosphor Bronze Round Bar (Cast, BS 1400)",
+    "Primary Keyword": "PB1 phosphor bronze bar",
+    "Secondary Keywords (3-5)": "PB1 bronze, BS 1400 PB1, PB1 chemical composition, PB1 equivalent, CuSn11P-C CC481K",
+    "Target Industries": "Engineering | Marine | Hydraulics",
+    "Key Specs": "Specification | Value\nProduct | PB1 Bronze Round Bar\nGrade | PB1, cast phosphor bronze (BS 1400)\nTin (distributor datasheets) | About 10 – 12%\nPhosphorus (distributor datasheets) | 0.50% min\nUsual form | Continuously cast bar, solid or hollow\nStandard | BS 1400 (withdrawn 1999); current casting standard BS EN 1982\nSizes | Confirmed in writing on the quotation\nTest documents | Type agreed in writing with the quotation\nSupply condition | Dispatch and transit confirmed in writing on the quotation",
     "Schema Type": "Product",
-    "Internal Links": "PB2 Bronze Bar | Phosphor Bronze Bar | Bronze Round Bar",
+    "Internal Links": "'PB2 bronze bar' -> https://steelmanufacturer.in/pb2-bronze-round-bar/\n'Phosphor bronze grades compared' -> https://steelmanufacturer.in/phosphor-bronze-round-bar/\n'C51000 bronze bar' -> https://steelmanufacturer.in/c51000-bronze-round-bar/\n'Bronze round bars' -> https://steelmanufacturer.in/bronze-round-bar/",
     "CTA": "Get a Quote",
-    "Product Description": "PB1 Bronze Round Bar are engineered for excellent performance, corrosion resistance, dimensional accuracy and durability. These products are widely used across oil & gas, petrochemical, marine, pharmaceutical, food processing, fabrication and engineering industries. Available in custom dimensions and grades as per project requirements.",
-    "Key Features": "Corrosion resistant; High strength; Precision manufactured; Excellent finish; Custom sizes",
-    "Applications": "Oil & Gas, Petrochemical, Marine, Food Processing, Pharmaceutical, Construction, Engineering",
-    "Standards": "ASTM / ASME / EN / DIN (as applicable)",
-    "Image": "/Bronze Round Bars.webp"
+    "Product Description": "PB1 is a cast phosphor bronze, usually bought as continuously cast bar for bushes, bearings and gears. Sakshi Forge, Mumbai, supplies PB1 bar against your enquiry. The grade comes from BS 1400, which BSI lists as withdrawn since March 1999, so the limits buyers see now come from supplier datasheets, and those do not fully agree. This page compares two of them, explains why the related ASTM alloy C90700 may not meet the PB1 phosphorus minimum, and sets out how EN 1982, the current casting standard, describes a casting on an order.",
+    "Key Features": "Cast phosphor bronze with about 10 to 12% tin; Phosphorus at least 0.50% on distributor datasheets; Used for bushes, bearings, worms and gears; Limits written on the order because BS 1400 is withdrawn",
+    "Applications": "Bushes and bearings, Worms and gears under high loads, Pump and valve components, Hydraulic parts",
+    "Standards": "BS 1400 (withdrawn 1999); current casting standard BS EN 1982",
+    "Image": "/Bronze Round Bars.webp",
+    "TL;DR": "PB1 is a cast phosphor bronze from BS 1400, which BSI lists as withdrawn in 1999. Distributor datasheets give about 10–12% tin and at least 0.50% phosphorus. It is not wrought C51000. State the tin and phosphorus limits on the order. Quote within 30 minutes: +91 82913 66340.",
+    "FAQs": [
+      {
+        "q": "Is PB1 the same as C51000?",
+        "a": "No. PB1 is a cast bronze with about 10 to 12% tin on distributor datasheets. C51000 is a wrought alloy with 4.2 to 5.8% tin, bought as drawn rod to ASTM B139."
+      },
+      {
+        "q": "Is BS 1400 still a current standard?",
+        "a": "BSI lists BS 1400:1985 as withdrawn on 15 March 1999. Copper alloy castings are now covered by BS EN 1982, current as BS EN 1982:2024."
+      },
+      {
+        "q": "What is the EN equivalent of PB1?",
+        "a": "One distributor datasheet names CC481K, the EN 1982 number for CuSn11P-C. Another names UNS C90700/C90710. Treat these as related grades and agree the limits in writing."
+      },
+      {
+        "q": "What should a PB1 order state?",
+        "a": "The standard and grade the drawing uses, the tin and phosphorus limits you accept, the casting process (usually continuous cast), solid or hollow sizes, quantity and the test document needed."
+      }
+    ]
   },
   {
     "S.No": "98",
     "Category": "Bronze Round Bar",
     "Product Name": "PB2 Bronze Round Bar",
     "URL Slug": "pb2-bronze-round-bar",
-    "Meta Title (<=60 chars)": "PB2 Bronze Round Bar Manufacturer | BS 2874 Grade",
-    "Meta Description (<=160 chars)": "PB2 (BS 2874) phosphor bronze round bars. 94% Cu, 6% Sn, 0.30% P. Sakshi Forge Mumbai manufacturer.",
-    "H1 Tag": "PB2 Phosphor Bronze Round Bar - BS 2874 | Mumbai",
-    "Primary Keyword": "PB2 bronze round bar manufacturer",
-    "Secondary Keywords (3-5)": "PB2 phosphor bronze, BS 2874 PB2, C52100 PB2 bar, tin phosphor bronze PB2 rod India",
-    "Target Industries": "Bearings | Springs | High-Load Gears | Worm Wheels | Precision Engineering",
-    "Key Specs": "Grade: PB2 (BS 2874) | Cu: ~94% | Sn: ~6% | P: 0.03-0.30% | Dia: 10-200mm",
+    "Meta Title (<=60 chars)": "PB2 Phosphor Bronze Bar: Gear Bronze, Grade Data",
+    "Meta Description (<=160 chars)": "PB2 material: the higher-tin cast gear bronze of the withdrawn BS 1400, about 11–13% tin. PB2 against PB1, EN 1982 copper-tin grades, and an RFQ list.",
+    "H1 Tag": "PB2 Phosphor Bronze Round Bar (Cast Gear Bronze)",
+    "Primary Keyword": "PB2 phosphor bronze bar",
+    "Secondary Keywords (3-5)": "PB2 material, PB2 bronze composition, BS 1400 PB2, PB2 gear bronze, PB2 vs PB1",
+    "Target Industries": "Engineering | Marine | Pumps and Valves",
+    "Key Specs": "Specification | Value\nProduct | PB2 Bronze Round Bar\nGrade | PB2, cast phosphor bronze (BS 1400)\nTin (distributor datasheet) | 11.0 – 13.0%\nPhosphorus (distributor datasheet) | 0.15% max\nTypical uses | Gears, bearings, thrust washers\nStandard | BS 1400 (withdrawn 1999); current casting standard BS EN 1982\nSizes | Confirmed in writing on the quotation\nTest documents | Type agreed in writing with the quotation\nSupply condition | Dispatch and transit confirmed in writing on the quotation",
     "Schema Type": "Product",
-    "Internal Links": "PB1 Bronze Bar | Phosphor Bronze Bar | C52100 Bronze Bar",
+    "Internal Links": "'PB1 bronze bar' -> https://steelmanufacturer.in/pb1-bronze-round-bar/\n'C52100 bronze bar' -> https://steelmanufacturer.in/c52100-bronze-round-bar/\n'Phosphor bronze grades compared' -> https://steelmanufacturer.in/phosphor-bronze-round-bar/\n'Bronze round bars' -> https://steelmanufacturer.in/bronze-round-bar/",
     "CTA": "Send Inquiry",
-    "Product Description": "PB2 Bronze Round Bar are precision manufactured using quality raw materials to provide superior strength, corrosion resistance and long-term reliability. Suitable for oil & gas, chemical processing, marine, pharmaceutical, food processing, engineering and fabrication industries. Custom dimensions and specifications are available.",
-    "Key Features": "Excellent corrosion resistance; Precision engineered; Durable finish; High strength; Custom sizes",
-    "Applications": "Oil & Gas, Chemical Processing, Marine, Pharmaceutical, Food Processing, Engineering, Construction",
-    "Standards": "ASTM / ASME / EN / DIN (as applicable)",
-    "Image": "/Bronze Round Bars.webp"
+    "Product Description": "PB2 is the higher-tin cast phosphor bronze, often called a gear bronze, bought as cast bar and machined into gears, bearings and thrust washers. Sakshi Forge, Mumbai, supplies PB2 bar against your enquiry. Like PB1 it comes from BS 1400, which BSI lists as withdrawn, so no current standard fixes what the name means. This page sets PB2 beside PB1 using one distributor’s datasheets, lists the copper-tin casting materials of EN 1982, and gives the points a PB2 enquiry should settle.",
+    "Key Features": "Higher tin than PB1, about 11 to 13%; Described by a distributor as a gear bronze; Used for gears, bearings and thrust washers; Limits agreed in writing because BS 1400 is withdrawn",
+    "Applications": "Gears, Bearings, Thrust washers, Pump and valve components, Heavy sliding parts",
+    "Standards": "BS 1400 (withdrawn 1999); current casting standard BS EN 1982",
+    "Image": "/Bronze Round Bars.webp",
+    "TL;DR": "PB2 is a cast phosphor bronze from the withdrawn BS 1400 with more tin than PB1, about 11–13% on a distributor datasheet. It is used as a gear bronze for gears, bearings and thrust washers. Agree the tin and phosphorus limits in writing. Quote within 30 minutes: +91 82913 66340.",
+    "FAQs": [
+      {
+        "q": "What is PB2 material?",
+        "a": "PB2 is a cast phosphor bronze grade from the British standard BS 1400, now withdrawn. A distributor datasheet gives 11.0 to 13.0% tin and calls it a gear bronze."
+      },
+      {
+        "q": "What is the difference between PB1 and PB2?",
+        "a": "PB2 has more tin, 11 to 13% against 10 to 12% on the same distributor’s datasheets. That datasheet also caps PB2 phosphorus at 0.15%, while its PB1 sheet asks for at least 0.50%."
+      },
+      {
+        "q": "Is PB2 the same as C52100?",
+        "a": "No. C52100 is a wrought alloy with 7 to 9% tin, bought as rod to ASTM B139. PB2 is cast and carries more tin."
+      },
+      {
+        "q": "Which EN 1982 material matches PB2?",
+        "a": "EN 1982 lists several copper-tin casting materials, such as CuSn12-C (CC483K). The standard does not map them to PB2, so which one fits your drawing should be agreed in writing."
+      }
+    ]
   },
   {
     "S.No": "99",
     "Category": "Bronze Round Bar",
     "Product Name": "C51000 Bronze Round Bar",
     "URL Slug": "c51000-bronze-round-bar",
-    "Meta Title (<=60 chars)": "C51000 Bronze Round Bar Manufacturer | ASTM B139",
-    "Meta Description (<=160 chars)": "C51000 phosphor bronze (5% Sn, 0.35% P) round bars for springs, bellows & contacts. Sakshi Forge Mumbai.",
-    "H1 Tag": "C51000 Phosphor Bronze Round Bar - ASTM B139",
-    "Primary Keyword": "C51000 bronze round bar manufacturer",
-    "Secondary Keywords (3-5)": "ASTM B139 C51000 bar, UNS C51000 rod, 510 phosphor bronze bar, spring bronze C51000 India",
-    "Target Industries": "Springs | Electrical Contacts | Bellows | Precision Parts | Bearings",
-    "Key Specs": "Grade: C51000 (UNS) | Cu: 94.8% | Sn: 5% | P: 0.03-0.35% | Dia: 10-150mm | Std: ASTM B139",
+    "Meta Title (<=60 chars)": "C51000 Phosphor Bronze Round Bar | ASTM B139",
+    "Meta Description (<=160 chars)": "C51000 phosphor bronze rod to ASTM B139: 4.2–5.8% tin, CDA rod properties and uses, why it suits springs and contacts, and what an enquiry must state.",
+    "H1 Tag": "C51000 Phosphor Bronze Round Bar to ASTM B139",
+    "Primary Keyword": "C51000 phosphor bronze round bar",
+    "Secondary Keywords (3-5)": "UNS C51000 rod, ASTM B139 C51000 bar, grade A phosphor bronze, 5% tin bronze rod, spring bronze rod",
+    "Target Industries": "Electrical | Instrumentation | Engineering",
+    "Key Specs": "Specification | Value\nProduct | C51000 Bronze Round Bar\nAlloy | UNS C51000, wrought phosphor bronze\nTin | 4.2 – 5.8%\nPhosphorus | 0.03 – 0.35%\nConductivity | 15% IACS (typical)\nStandard | ASTM B139/B139M\nSizes | Confirmed in writing on the quotation\nTest documents | Type agreed in writing with the quotation\nSupply condition | Dispatch and transit confirmed in writing on the quotation",
     "Schema Type": "Product",
-    "Internal Links": "C52100 Bronze Bar | PB1 Bronze Bar | Phosphor Bronze Bar",
+    "Internal Links": "'C52100 bronze bar' -> https://steelmanufacturer.in/c52100-bronze-round-bar/\n'C54400 bronze bar' -> https://steelmanufacturer.in/c54400-bronze-round-bar/\n'Phosphor bronze grades compared' -> https://steelmanufacturer.in/phosphor-bronze-round-bar/\n'PB1 bronze bar' -> https://steelmanufacturer.in/pb1-bronze-round-bar/",
     "CTA": "Get a Quote",
-    "Product Description": "C51000 Bronze Round Bar are precision manufactured using quality raw materials to provide superior strength, corrosion resistance and long-term reliability. Suitable for oil & gas, chemical processing, marine, pharmaceutical, food processing, engineering and fabrication industries. Custom dimensions and specifications are available.",
-    "Key Features": "Excellent corrosion resistance; Precision engineered; Durable finish; High strength; Custom sizes",
-    "Applications": "Oil & Gas, Chemical Processing, Marine, Pharmaceutical, Food Processing, Engineering, Construction",
-    "Standards": "ASTM / ASME / EN / DIN (as applicable)",
-    "Image": "/Bronze Round Bars.webp"
+    "Product Description": "C51000 is the plain grade of wrought phosphor bronze: copper with 4.2 to 5.8% tin and a trace of phosphorus left from deoxidising the melt. Sakshi Forge, Mumbai, supplies C51000 rod and bar to ASTM B139/B139M against your enquiry. This page gives the composition limits and the typical half hard rod figures published by the Copper Development Association, shows why the alloy is used for springs, contacts and bellows rather than for heavily machined parts, and lists what to state when you ask for a quotation.",
+    "Key Features": "Tin 4.2 to 5.8% with phosphorus 0.03 to 0.35%; Excellent cold working, drawn to spring tempers; Conductivity about 15% IACS; Machinability rating 20, so best for formed rather than turned parts",
+    "Applications": "Springs and spring components, Electrical connectors, Fuse clips, Switch parts, Bellows, Bourdon tubes, Diaphragms, Lock washers, Sleeve bushings",
+    "Standards": "ASTM B139/B139M",
+    "Image": "/Bronze Round Bars.webp",
+    "TL;DR": "UNS C51000 is the 5% tin wrought phosphor bronze (4.2–5.8% Sn, 0.03–0.35% P), bought as rod to ASTM B139/B139M. It cold works excellently, conducts about 15% IACS and is the usual metal for springs and electrical contacts. Quote within 30 minutes: +91 82913 66340.",
+    "FAQs": [
+      {
+        "q": "Is C51000 the same as PB1?",
+        "a": "No. C51000 is a wrought alloy with 4.2 to 5.8% tin, bought as drawn rod to ASTM B139. PB1 is a cast grade of the old British standard BS 1400, and distributor datasheets put its tin at about 10 to 12%."
+      },
+      {
+        "q": "How strong is half hard C51000 rod?",
+        "a": "The Copper Development Association gives typical figures of 75 ksi (about 517 MPa) tensile and 65 ksi (about 448 MPa) yield for 0.5 in rod in the H02 temper. These are typical values, so state any minimum you need on the order."
+      },
+      {
+        "q": "Is C51000 easy to machine?",
+        "a": "Not especially. Its machinability rating is 20. Where most of the cost is turning, C54400, rated 80, is the phosphor bronze made for it."
+      },
+      {
+        "q": "Can C51000 be hot forged?",
+        "a": "The CDA rates its hot forming as poor. Parts are usually machined from rod or cold formed, and the alloy is annealed between 900 and 1250 °F (about 482 to 677 °C)."
+      }
+    ]
   },
   {
     "S.No": "100",
     "Category": "Bronze Round Bar",
     "Product Name": "C52100 Bronze Round Bar",
     "URL Slug": "c52100-bronze-round-bar",
-    "Meta Title (<=60 chars)": "C52100 Bronze Round Bar Manufacturer | 8% Tin Grade",
-    "Meta Description (<=160 chars)": "C52100 (8% Sn phosphor bronze) round bars for heavy load bearings & gears. Sakshi Forge Mumbai manufacturer.",
-    "H1 Tag": "C52100 Phosphor Bronze Round Bar - ASTM B139",
-    "Primary Keyword": "C52100 bronze round bar manufacturer",
-    "Secondary Keywords (3-5)": "ASTM B139 C52100 bar, UNS C52100 rod, 521 phosphor bronze bar, 8% tin bronze bar India",
-    "Target Industries": "Heavy Load Bearings | Worm Gears | Bushings | Hydraulic Valves | Marine",
-    "Key Specs": "Grade: C52100 (UNS) | Cu: 91.8% | Sn: 8% | P: 0.03-0.35% | Dia: 10-200mm | Std: ASTM B139",
+    "Meta Title (<=60 chars)": "C52100 Phosphor Bronze Round Bar | 8% Tin, B139",
+    "Meta Description (<=160 chars)": "C52100 phosphor bronze rod, 7–9% tin, to ASTM B139: how it compares with C51000 on strength, conductivity and melting range, typical uses, enquiry list.",
+    "H1 Tag": "C52100 Phosphor Bronze Round Bar (8% Tin) to ASTM B139",
+    "Primary Keyword": "C52100 phosphor bronze round bar",
+    "Secondary Keywords (3-5)": "UNS C52100 rod, ASTM B139 C52100 bar, grade C phosphor bronze, 8% tin bronze bar, C52100 vs C51000",
+    "Target Industries": "Engineering | Paper and Pulp | Marine",
+    "Key Specs": "Specification | Value\nProduct | C52100 Bronze Round Bar\nAlloy | UNS C52100, wrought phosphor bronze\nTin | 7.0 – 9.0%\nPhosphorus | 0.03 – 0.35%\nConductivity | 13% IACS (typical)\nStandard | ASTM B139/B139M\nSizes | Confirmed in writing on the quotation\nTest documents | Type agreed in writing with the quotation\nSupply condition | Dispatch and transit confirmed in writing on the quotation",
     "Schema Type": "Product",
-    "Internal Links": "C51000 Bronze Bar | PB2 Bronze Bar | Bronze Round Bar",
+    "Internal Links": "'C51000 bronze bar' -> https://steelmanufacturer.in/c51000-bronze-round-bar/\n'Phosphor bronze grades compared' -> https://steelmanufacturer.in/phosphor-bronze-round-bar/\n'PB2 bronze bar' -> https://steelmanufacturer.in/pb2-bronze-round-bar/\n'C54400 bronze bar' -> https://steelmanufacturer.in/c54400-bronze-round-bar/",
     "CTA": "Send Inquiry",
-    "Product Description": "C52100 Bronze Round Bar are precision manufactured using quality raw materials to provide superior strength, corrosion resistance and long-term reliability. Suitable for oil & gas, chemical processing, marine, pharmaceutical, food processing, engineering and fabrication industries. Custom dimensions and specifications are available.",
-    "Key Features": "Excellent corrosion resistance; Precision engineered; Durable finish; High strength; Custom sizes",
-    "Applications": "Oil & Gas, Chemical Processing, Marine, Pharmaceutical, Food Processing, Engineering, Construction",
-    "Standards": "ASTM / ASME / EN / DIN (as applicable)",
-    "Image": "/Bronze Round Bars.webp"
+    "Product Description": "C52100 is the 8% tin member of the wrought phosphor bronze family. Sakshi Forge, Mumbai, supplies C52100 rod and bar to ASTM B139/B139M against your enquiry. The higher tin raises strength and wear resistance compared with C51000, at the cost of slightly lower conductivity, a wider melting range and cold working rated good rather than excellent. This page sets the two alloys side by side using Copper Development Association data, lists the uses the CDA gives for C52100, and shows what an enquiry should say.",
+    "Key Features": "Tin 7.0 to 9.0% for strength and wear; Typical half hard rod tensile about 80 ksi (552 MPa); Cold working rated good; Melting range 1620 to 1880 °F",
+    "Applications": "Thrust bearings, Sleeve bushings, Gears and pinions, Heavy-duty springs, Cold-headed parts, Doctor blades, Thermostat bellows, Marine parts, Welding wire",
+    "Standards": "ASTM B139/B139M",
+    "Image": "/Bronze Round Bars.webp",
+    "TL;DR": "UNS C52100 carries 7.0–9.0% tin, about half as much again as C51000, for more strength and wear resistance. Rod is bought to ASTM B139/B139M; typical uses are thrust bearings, gears and heavy-duty springs. Quote within 30 minutes: +91 82913 66340.",
+    "FAQs": [
+      {
+        "q": "Should I choose C52100 or C51000?",
+        "a": "Choose C52100 where the part carries load or wear, such as a thrust bearing, gear or heavy spring. Choose C51000 where heavy cold forming or slightly better conductivity matters more. Both are bought as rod to ASTM B139/B139M."
+      },
+      {
+        "q": "Is C52100 the same as PB2?",
+        "a": "No. C52100 is a wrought alloy with 7 to 9% tin. PB2 is a cast grade of the withdrawn BS 1400, which a distributor datasheet gives at 11 to 13% tin."
+      },
+      {
+        "q": "Can C52100 parts be brazed?",
+        "a": "Yes, but its solidus is about 1620 °F (882 °C), lower than that of C51000, so joint temperatures need to stay well below it."
+      },
+      {
+        "q": "What tin content does C52100 have?",
+        "a": "7.0 to 9.0%, with 0.03 to 0.35% phosphorus and lead, zinc and iron limited to traces, according to the Copper Development Association."
+      }
+    ]
   },
   {
     "S.No": "101",
     "Category": "Bronze Round Bar",
     "Product Name": "C54400 Bronze Round Bar",
     "URL Slug": "c54400-bronze-round-bar",
-    "Meta Title (<=60 chars)": "C54400 Bronze Round Bar Manufacturer | Free Cutting",
-    "Meta Description (<=160 chars)": "C54400 free-machining phosphor bronze round bars. 4% Sn, 4% Pb, 0.25% P. Sakshi Forge Mumbai.",
-    "H1 Tag": "C54400 Free Machining Bronze Round Bar | Mumbai",
-    "Primary Keyword": "C54400 bronze round bar manufacturer",
-    "Secondary Keywords (3-5)": "ASTM B139 C54400 bar, free cutting bronze bar, 544 phosphor bronze rod, leaded phosphor bronze India",
-    "Target Industries": "Precision Machined Parts | Gears | Bushings | Bearings | Valves",
-    "Key Specs": "Grade: C54400 | Cu: 88% | Sn: 4% | Pb: 4% | P: 0.25% | Dia: 10-200mm | Std: ASTM B139",
+    "Meta Title (<=60 chars)": "C54400 Free Machining Phosphor Bronze Bar | B139",
+    "Meta Description (<=160 chars)": "C54400 leaded phosphor bronze rod to ASTM B139: 3–4% lead for a machinability rating of 80, joining limits, drinking-water caution and enquiry list.",
+    "H1 Tag": "C54400 Free Machining Phosphor Bronze Round Bar",
+    "Primary Keyword": "C54400 free machining bronze bar",
+    "Secondary Keywords (3-5)": "UNS C54400 rod, ASTM B139 C54400, leaded phosphor bronze bar, free cutting bronze rod, C54400 machinability",
+    "Target Industries": "Engineering | Valves | Electrical",
+    "Key Specs": "Specification | Value\nProduct | C54400 Bronze Round Bar\nAlloy | UNS C54400, leaded phosphor bronze\nTin / lead / zinc | 3.5 – 4.5% / 3.0 – 4.0% / 1.5 – 4.5%\nMachinability rating | 80\nJoining | Soldering excellent; arc welding not recommended\nStandard | ASTM B139/B139M\nSizes | Confirmed in writing on the quotation\nTest documents | Type agreed in writing with the quotation\nSupply condition | Dispatch and transit confirmed in writing on the quotation",
     "Schema Type": "Product",
-    "Internal Links": "C51000 Bronze Bar | C52100 Bronze Bar | LG2 Bronze Bar",
+    "Internal Links": "'C51000 bronze bar' -> https://steelmanufacturer.in/c51000-bronze-round-bar/\n'C52100 bronze bar' -> https://steelmanufacturer.in/c52100-bronze-round-bar/\n'Phosphor bronze grades compared' -> https://steelmanufacturer.in/phosphor-bronze-round-bar/\n'Bronze round bars' -> https://steelmanufacturer.in/bronze-round-bar/",
     "CTA": "Get a Quote",
-    "Product Description": "C54400 Bronze Round Bar are precision manufactured using quality raw materials to provide superior strength, corrosion resistance and long-term reliability. Suitable for oil & gas, chemical processing, marine, pharmaceutical, food processing, engineering and fabrication industries. Custom dimensions and specifications are available.",
-    "Key Features": "Excellent corrosion resistance; Precision engineered; Durable finish; High strength; Custom sizes",
-    "Applications": "Oil & Gas, Chemical Processing, Marine, Pharmaceutical, Food Processing, Engineering, Construction",
-    "Standards": "ASTM / ASME / EN / DIN (as applicable)",
-    "Image": "/Bronze Round Bars.webp"
+    "Product Description": "C54400 is the free machining phosphor bronze. Sakshi Forge, Mumbai, supplies C54400 rod and bar to ASTM B139/B139M against your enquiry. Lead particles in the alloy break the chip as it is cut, which makes it the phosphor bronze to choose for turned bushings, screw machine products and valve parts. The same lead rules out arc welding and can restrict use in drinking-water or food contact parts. This page gives the composition and rod figures from the Copper Development Association, what the lead changes, and what to tell us when you ask for a quotation.",
+    "Key Features": "Lead 3.0 to 4.0% for free machining; Machinability rating 80; Soldering rated excellent; Not for arc-welded assemblies",
+    "Applications": "Bushings, Sleeve and thrust bearings, Thrust washers, Gears and pinions, Shafts, Screw machine products, Valve parts, Electrical connectors",
+    "Standards": "ASTM B139/B139M",
+    "Image": "/Bronze Round Bars.webp",
+    "TL;DR": "UNS C54400 adds 3.0–4.0% lead and 1.5–4.5% zinc to phosphor bronze, giving a machinability rating of 80 against 20 for C51000. Soldering is rated excellent; arc welding is not recommended. Rod is bought to ASTM B139/B139M. Quote within 30 minutes: +91 82913 66340.",
+    "FAQs": [
+      {
+        "q": "Why does C54400 machine so much better than C51000?",
+        "a": "Its 3.0 to 4.0% lead forms separate particles that break the chip as the tool cuts. The Copper Development Association rates its machinability 80, against 20 for C51000 and C52100."
+      },
+      {
+        "q": "Can C54400 be welded?",
+        "a": "The CDA does not recommend arc welding it. Soldering is rated excellent. For a part that must be welded, choose a lead-free grade such as C51000."
+      },
+      {
+        "q": "Can C54400 be used for drinking-water parts?",
+        "a": "It contains 3 to 4% lead, and lead-bearing alloys can be restricted in parts that touch drinking water or food. Check the rules for the end product before choosing it."
+      },
+      {
+        "q": "Which standard covers C54400 rod?",
+        "a": "ASTM B139/B139M, the specification for phosphor bronze rod, bar and shapes. The CDA also lists SAE J461 and J463 for the alloy."
+      }
+    ]
   },
   {
     "S.No": "102",

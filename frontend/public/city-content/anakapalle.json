@@ -1,0 +1,65 @@
+{
+  "slug": "anakapalle",
+  "updated": "2026-11-28",
+  "sections": [
+    {
+      "heading": "Anakapalle and Anakapalli District: Four Operational Pharma and Chemical SEZs",
+      "paragraphs": [
+        "Anakapalli became a district of its own on 4 April 2022, formed from the Anakapalli and Narsipatnam revenue divisions of the old Visakhapatnam district. It now has 24 mandals in three revenue divisions, and several of them - Parawada, Atchutapuram, Rambilli, Nakkapalli and Payakaraopeta - hold most of the coastal industry south-west of Visakhapatnam city.",
+        "The Ministry of Commerce list of operational special economic zones (updated to 31 March 2026) still files these zones under Visakhapatnam District, because the entries predate the split. Four of them sit in what is now Anakapalli: Visakha Pharmacity at E-Bonangi in Parawada mandal (formerly Ramky Pharma City), a pharmaceutical SEZ developed by Hetero Infrastructure in Nakkapalli mandal, the APIIC multi-product SEZ across Atchutapuram and Rambilli mandals, and a chemical and pharmaceutical SEZ of Deccan Fine Chemicals at Kesavaram and Rajavaram villages in Payakaraopeta mandal. All four are marked operational."
+      ]
+    },
+    {
+      "heading": "Bulk-Drug Lines at Parawada and Nakkapalli",
+      "paragraphs": [
+        "Two of the four zones are notified as pharmaceutical SEZs, and a third covers chemicals as well as pharma, so the district's demand is weighted towards active pharmaceutical ingredient and intermediate synthesis rather than tablet packing. In an API block, carbon steel and glass-lined reactors do the chemistry; stainless tube carries the solvents, mother liquors, process water and cleaning solutions between them.",
+        "Not every one of those lines deserves an electropolished bore. Solvent headers and recovery lines need correct grade and sound welds more than a low Ra value. The lines where finish pays are the final isolation stage - crystallisation, centrifuge wash, dryer feed - where residues of the previous product must come off quickly, and the purified-water loop that supplies those steps. There, 316L with an SF4 electropolished bore cuts cleaning time and makes swab results more repeatable between campaigns."
+      ]
+    },
+    {
+      "heading": "Purified Water and CIP for an Anakapalli API Block",
+      "paragraphs": [
+        "An API plant that sells into regulated markets usually runs a purified-water generation skid and distribution loop for final washes, and a CIP or wash-in-place circuit for the isolation equipment. Both see hot water, caustic and acid cycles many times a week, which is the duty where a mechanically polished bore slowly roughens and an electropolished, chromium-rich surface holds up better.",
+        "Specify 316L from the RO permeate onward. Grade 304 remains acceptable for cooling water, steam condensate return and the non-contact utilities that make up most of a site's pipe length. Keeping the electropolished scope to the loops that touch product or final-wash water is the simplest way to control cost on a large greenfield block in Parawada or Nakkapalli."
+      ]
+    },
+    {
+      "heading": "SF1 or SF4 on an Atchutapuram or Rambilli Site",
+      "bullets": [
+        "Purified-water loop held at ambient and sanitised with ozone or chemicals: SF1 is often enough, SF4 if your validation plan asks for it.",
+        "Hot purified water, or any loop sanitised above 80 °C: SF4 electropolished 316L.",
+        "Final crystallisation, centrifuge wash and dryer transfer in a multi-product API block: SF4, to shorten cleaning between campaigns.",
+        "Solvent transfer, recovery and tank-farm lines: grade and weld quality first; a hygienic finish adds cost without much benefit.",
+        "Cooling water, compressed air and condensate return: standard tube, no polished bore required."
+      ]
+    },
+    {
+      "heading": "Delivery to Anakapalle, Parawada and Nakkapalli",
+      "paragraphs": [
+        "Anakapalli is supplied by road from Mumbai, and the port at Visakhapatnam is the nearest sea gateway for export-bound material. Dispatch and transit are confirmed in writing with each quotation.",
+        "Nearby Andhra Pradesh clusters:"
+      ],
+      "links": [
+        { "label": "Visakhapatnam", "href": "/market-area/visakhapatnam/" },
+        { "label": "Kakinada", "href": "/market-area/kakinada/" },
+        { "label": "Rajahmundry", "href": "/market-area/rajahmundry/" }
+      ]
+    },
+    {
+      "heading": "What an Anakapalle Pharma Buyer Should Send",
+      "paragraphs": [
+        "For a block in Visakha Pharmacity, the Nakkapalli pharma SEZ or the Atchutapuram estate, send the line list with the fluid on each line (purified water, CIP supply and return, wash solvent, product slurry), design temperature, OD and wall per size, total length, and the finish your user requirement specification asks for. Mark which lines your quality unit classes as product contact, since that decides where SF4 is worth paying for.",
+        "Send it through our contact page and you get a quotation within 30 minutes. Every lot carries an EN 10204 3.1 certificate traced to heat number, PMI on each length and, for electropolished tube, an internal Ra report your validation team can file with the installation qualification."
+      ],
+      "links": [
+        { "label": "Request a quotation for Anakapalli", "href": "/contact-us/" },
+        { "label": "Electropolished tubes", "href": "/electropolished-tubes/" },
+        { "label": "Electropolished pipes", "href": "/electropolished-pipes/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Ministry of Commerce, SEZ India: List of State/UT-wise Operational SEZs (up to 31.03.2026)", "url": "https://sezindia.gov.in/sites/default/files/operational_SEZ/Operational%20SEZs%20in%20India%20277.pdf" },
+    { "title": "Wikipedia: Anakapalli district (formed 4 April 2022; 24 mandals, 3 revenue divisions)", "url": "https://en.wikipedia.org/wiki/Anakapalli_district" }
+  ]
+}

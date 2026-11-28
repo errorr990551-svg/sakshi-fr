@@ -7,8 +7,7 @@ import CityLocalSections from './CityLocalSections';
 import CityProductPillars from './CityProductPillars';
 
 // Premium Live Delivery Widget Component
-const LiveDeliveryWidget = ({ city, state, country, transitLine, freightBasis }) => {
-  const isInternational = country && country !== 'India';
+const LiveDeliveryWidget = ({ city, transitLine }) => {
   return (
     <div style={{
       backgroundColor: 'var(--bg-dark-800)',
@@ -62,7 +61,7 @@ const LiveDeliveryWidget = ({ city, state, country, transitLine, freightBasis })
           </span>
         </div>
         <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)', fontWeight: '700', letterSpacing: '0.05em' }}>
-          {isInternational ? 'International Export Route' : 'Direct Works Dispatch'}
+          Dispatch from Mumbai
         </span>
       </div>
 
@@ -95,11 +94,11 @@ const LiveDeliveryWidget = ({ city, state, country, transitLine, freightBasis })
         }}></div>
 
         {[
-          { label: 'Raw Steel QA Check & Heat Verification (PMI Tested)', status: 'complete' },
-          { label: 'Cold Drawing & Dimensional Calibrations', status: 'complete' },
-          { label: 'Electropolishing Process (Internal Ra ≤ 0.38 µm)', status: 'complete' },
-          { label: 'Final Profilometer Inspection & MTC 3.1 Certification', status: 'complete' },
-          { label: isInternational ? 'Export Packing in ISPM-15 Heat-Treated Crates' : 'Protective Packaging & Transit Dispatch', status: 'transit' },
+          { label: 'Heat number checked against the EN 10204 3.1 certificate', status: 'complete' },
+          { label: 'PMI on every length', status: 'complete' },
+          { label: 'Electropolishing to SF4 (internal Ra ≤ 0.38 µm)', status: 'complete' },
+          { label: 'Ra report issued for the EP lot', status: 'complete' },
+          { label: 'Packing and dispatch', status: 'transit' },
         ].map((step, idx) => (
           <div key={idx} style={{ position: 'relative', fontSize: '0.85rem' }}>
             <div style={{
@@ -131,7 +130,7 @@ const LiveDeliveryWidget = ({ city, state, country, transitLine, freightBasis })
               </span>
               {step.status === 'transit' && (
                 <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)', marginTop: '0.1rem', fontWeight: '500' }}>
-                  {freightBasis}
+                  Confirmed in writing with each quotation
                 </span>
               )}
             </div>
@@ -152,7 +151,7 @@ const LiveDeliveryWidget = ({ city, state, country, transitLine, freightBasis })
       }}>
         <FileCheck size={18} style={{ color: 'var(--primary-yellow)', flexShrink: 0 }} />
         <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: '1.4', fontWeight: '500' }}>
-          Dispatched with EN 10204 3.1 Mill Test Certificates, NABL lab chemical analysis & Ra profilometer mapping.
+          Dispatched with an EN 10204 3.1 certificate traced to the heat number, and an Ra report for each EP lot.
         </span>
       </div>
     </div>
@@ -165,6 +164,8 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
   const localContent = useMemo(() => (custom ? null : buildCityContent(cityData)), [cityData, custom]);
   const cityFaqs = localContent?.faqs || cityData.faqs;
   const isInternational = cityData.country && cityData.country !== 'India';
+  // Foreign pages without custom data: their estate / industry fields are unsourced, so they are not shown.
+  const foreignTemplate = isInternational && !custom;
   const rfqData = custom?.rfq || custom?.rfqBlock;
   const closingData = custom?.closing || custom?.closingBlock;
 
@@ -210,48 +211,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
             "name": cityData.city,
             "containedInPlace": { "@type": "AdministrativeArea", "name": cityData.state }
           },
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Electropolished Stainless Steel Pipes Supply Catalog",
-            "itemListElement": [
-              {
-                "@type": "Offer",
-                "name": "ASTM A270 Electropolished SS 316L Pipe Supply",
-                "description": `High-purity SS 316L electropolished pipes and tubes supplied across industrial plants in ${cityData.city} with certified Ra <= 0.4 um and EN 10204 3.1 MTC.`,
-                "priceCurrency": "INR",
-                "price": "480",
-                "priceValidUntil": "2027-12-31",
-                "availability": "https://schema.org/InStock",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": `ASTM A270 Electropolished SS 316L Pipe Supply in ${cityData.city}`,
-                  "serviceType": "Stainless Steel Pipe Manufacturing",
-                  "provider": {
-                    "@type": "Organization",
-                    "name": "Sakshi Forge"
-                  }
-                }
-              },
-              {
-                "@type": "Offer",
-                "name": "ASME BPE SF4 Sanitary Electropolished Tubing Supply",
-                "description": `ASME BPE compliant sanitary hygienic tubing with internal surface finish SF4 for sterile process lines in ${cityData.city}.`,
-                "priceCurrency": "INR",
-                "price": "520",
-                "priceValidUntil": "2027-12-31",
-                "availability": "https://schema.org/InStock",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": `ASME BPE SF4 Sanitary Electropolished Tubing Supply in ${cityData.city}`,
-                  "serviceType": "Hygienic Tubing Supply",
-                  "provider": {
-                    "@type": "Organization",
-                    "name": "Sakshi Forge"
-                  }
-                }
-              }
-            ]
-          }
+          "serviceType": "Electropolished stainless steel pipe and tube supply"
         },
         {
           "@type": "FAQPage",
@@ -265,7 +225,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
           "@type": "VideoObject",
           "@id": `https://steelmanufacturer.in${cityData.path}#video`,
           "name": "Electropolished Stainless Steel Pipes Manufacturing & Testing",
-          "description": "Electropolishing process, borescope internal inspection and Ra profilometer testing for high-purity stainless steel tube by Sakshi Forge, Mumbai.",
+          "description": "Electropolishing and Ra testing of high-purity stainless steel tube by Sakshi Forge, Mumbai.",
           "thumbnailUrl": `https://i.ytimg.com/vi/${custom.logistics.videoId}/hqdefault.jpg`,
           "uploadDate": "2026-01-01T08:00:00+05:30",
           "embedUrl": `https://www.youtube.com/embed/${custom.logistics.videoId}`
@@ -318,11 +278,11 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
     }
     const text = cityData.section2_whyChooseUs;
     if (!text) return [
-      { num: '1', title: 'Ultra-Smooth Internal Surface (Ra ≤ 0.38 µm / SF4)', desc: 'Electrochemical dissolution eliminates micro-burrs and microscopic crevices, preventing bio-film accumulation.' },
-      { num: '2', title: '100% PMI & EN 10204 3.1 MTC Certified', desc: 'Every batch undergoes Positive Material Identification (PMI) and hydrostatic pressure testing before dispatch.' },
+      { num: '1', title: 'Ultra-Smooth Internal Surface (Ra ≤ 0.38 µm / SF4)', desc: isInternational ? 'Electropolishing removes micro-burrs and levels the bore, so it drains fully, cleans in the CIP cycle and gives biofilm fewer places to hold.' : 'Electrochemical dissolution eliminates micro-burrs and microscopic crevices, preventing bio-film accumulation.' },
+      { num: '2', title: '100% PMI & EN 10204 3.1 MTC Certified', desc: 'Every length is PMI-checked and ships with an EN 10204 3.1 certificate traced to its heat number.' },
       { num: '3', title: 'Dispatch from Mumbai', desc: `Each length is end-capped and sleeved, then dispatched from Mumbai to ${cityData.city} with its EN 10204 3.1 certificate and Ra report.` },
-      { num: '4', title: 'Sanitary Fittings & Flanges from One Source', desc: 'Single-source procurement for EP pipes, tri-clamp fittings, weld neck flanges, and high-purity valves.' },
-      { num: '5', title: 'Protective Export-Grade Crate Packaging', desc: 'All pipes are end-capped, polyethylene sleeved, and packed in reinforced wooden crates to ensure pristine delivery.' }
+      { num: '4', title: 'EP Tube and EP Fittings on One Quote', desc: 'EP tube plus EP elbows, tees and reducers, quoted together so the finish matches across the line.' },
+      { num: '5', title: 'Quote in 30 Minutes, 24×7', desc: 'Send OD × wall, grade, finish and quantity; a written quote comes back within 30 minutes, any hour.' }
     ];
     const points = [];
     const regex = /\((\d+)\)\s*(.*?)(?=\s*\(\d+\)|$)/g;
@@ -777,7 +737,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
         </section>
 
         {/* Core Product Specification Pillars Interlinking */}
-        <CityProductPillars cityName={custom?.city || cityData?.city || 'Chennai'} />
+        <CityProductPillars cityName={custom?.city || cityData?.city || 'Chennai'} foreign={isInternational} />
       </div>
     );
   }
@@ -882,7 +842,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
                 {custom?.heroIntro ? (
                   <span>{custom.heroIntro}</span>
                 ) : (
-                  <>Sakshi Forge is a manufacturer and supplier of ASTM A270 &amp; ASME BPE compliant <strong>electropolished stainless steel pipes</strong> for pharmaceutical, biotechnology, semiconductor, and high-purity chemical units in <strong>{cityData.city}</strong>. We deliver 100% PMI-tested SS 304, 316L, and 904L EP tubing with internal surface roughness Ra ≤ 0.38 µm (SF4) dispatched from Mumbai.</>
+                  <>Sakshi Forge {foreignTemplate ? 'quotes' : 'supplies'} ASTM A270 and ASME BPE <strong>electropolished stainless steel pipes</strong> {foreignTemplate ? 'for' : 'to'} pharmaceutical, biotech, food and chemical buyers in <strong>{cityData.city}</strong>. Every length of SS 304L, 316L or 904L EP tube is PMI-checked, finished to SF4 (internal Ra ≤ 0.38 µm) and dispatched from Mumbai.</>
                 )}
               </p>
 
@@ -1004,14 +964,16 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
                 {custom?.localBlock?.eyebrow || 'LOCAL INDUSTRIAL INTEGRATION'}
               </span>
               <h2 style={{ fontSize: '2.25rem', fontWeight: '800', marginTop: '0.5rem', marginBottom: '1.25rem', letterSpacing: '-0.02em' }}>
-                {custom?.localBlock?.title || `Supplying High-Purity EP Tubing Across ${cityData.city} Estates`}
+                {custom?.localBlock?.title || (foreignTemplate ? `What We Ship to ${cityData.city} from Mumbai` : `Supplying High-Purity EP Tubing Across ${cityData.city} Estates`)}
               </h2>
               <div className="accent-line" style={{ width: '80px', height: '3px', backgroundColor: 'var(--primary-yellow)', borderRadius: '2px', marginBottom: '1.75rem' }}></div>
               
               <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', lineHeight: '1.75', marginBottom: '1.25rem' }}>
-                {custom?.localBlock?.body || (
+                {custom?.localBlock?.body || (foreignTemplate ? (
+                  <>Our electropolished sanitary pipes and fittings are made for purified water (PW/WFI), clean steam and sterile transfer lines. For {cityData.city} we quote <strong>EP tube and EP fittings in 304L, 316L and 904L</strong>, shipped from Mumbai, with dispatch and transit confirmed in writing in each quotation.</>
+                ) : (
                   <>Our electropolished sanitary pipes and fittings are specifically engineered for high-purity water (PW/WFI), clean steam, and sterile fluid transfers in key industrial zones across {cityData.city}, including <strong>{cityData.industrialAreas}</strong>.</>
-                )}
+                ))}
               </p>
 
               {/* Sector cards if present (e.g. Al Ain) */}
@@ -1053,20 +1015,20 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
                   <div style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '12px', padding: '1.25rem' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.4rem' }}>
                       <Building size={16} style={{ color: 'var(--primary-yellow)' }} />
-                      <h3 style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: 'var(--text-muted)', letterSpacing: '0.08em', fontWeight: '700', margin: 0 }}>Named Industrial Zones</h3>
+                      <h3 style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: 'var(--text-muted)', letterSpacing: '0.08em', fontWeight: '700', margin: 0 }}>{foreignTemplate ? 'Grades' : 'Named Industrial Zones'}</h3>
                     </div>
                     <p style={{ color: 'var(--text-primary)', fontSize: '0.9rem', fontWeight: '700', margin: 0, lineHeight: '1.4' }}>
-                      {cityData.industrialAreas}
+                      {foreignTemplate ? '304/304L · 316/316L · 904L supplied electropolished' : cityData.industrialAreas}
                     </p>
                   </div>
 
                   <div style={{ backgroundColor: 'var(--bg-dark-900)', border: '1px solid var(--border-color)', borderRadius: '12px', padding: '1.25rem' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.4rem' }}>
                       <Activity size={16} style={{ color: 'var(--primary-yellow)' }} />
-                      <h3 style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: 'var(--text-muted)', letterSpacing: '0.08em', fontWeight: '700', margin: 0 }}>Dominant Industry Mix</h3>
+                      <h3 style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: 'var(--text-muted)', letterSpacing: '0.08em', fontWeight: '700', margin: 0 }}>{foreignTemplate ? 'Documents' : 'Dominant Industry Mix'}</h3>
                     </div>
                     <p style={{ color: 'var(--text-primary)', fontSize: '0.9rem', fontWeight: '700', margin: 0, lineHeight: '1.4' }}>
-                      {cityData.keyIndustries}
+                      {foreignTemplate ? 'EN 10204 3.1 traced to heat number · Ra report per EP lot' : cityData.keyIndustries}
                     </p>
                   </div>
                 </div>
@@ -1095,10 +1057,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
             <div>
               <LiveDeliveryWidget 
                 city={cityData.city} 
-                state={cityData.state} 
-                country={cityData.country}
-                transitLine={cityData.transitLine} 
-                freightBasis={cityData.freightBasis} 
+                transitLine={isInternational ? 'Shipped from Mumbai. Dispatch and transit are confirmed in writing with each quotation.' : cityData.transitLine} 
               />
             </div>
           </div>
@@ -1619,7 +1578,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
             <div className="section-header" style={{ marginBottom: '4.5rem', textAlign: 'center' }}>
               <span style={{ color: 'var(--primary-yellow)', fontSize: '0.85rem', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.1em' }}>ENGINEERED EXCELLENCE</span>
               <h2 style={{ fontSize: '2.5rem', fontWeight: '800', marginTop: '0.5rem', marginBottom: '1.25rem', letterSpacing: '-0.02em' }}>
-                {custom?.whyUs?.title || `Why Industrial Plants in ${cityData.city} Partner with Sakshi Forge`}
+                {custom?.whyUs?.title || (isInternational ? `What ${cityData.city} Buyers Get from Sakshi Forge` : `Why Industrial Plants in ${cityData.city} Partner with Sakshi Forge`)}
               </h2>
               <div className="accent-line" style={{ margin: '0 auto', width: '80px', height: '3px', backgroundColor: 'var(--primary-yellow)', borderRadius: '2px' }}></div>
             </div>
@@ -1797,8 +1756,8 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
             </h2>
             <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', maxWidth: '750px', margin: '0 auto 3rem auto', lineHeight: '1.7', fontWeight: '400' }}>
               {rfqData?.body || (isInternational
-                ? `Get FOB Nhava Sheva, CIF or DAP pricing on ASTM A270 electropolished 316L and 304L tube, sanitary fittings and flanges. Quotes within one business day with full EN 10204 3.1 certification.`
-                : `Get competitive ex-works & FOR doorstep pricing on ASTM A270 electropolished SS 316L pipes, sanitary fittings, and forged flanges.`)}
+                ? `Send OD × wall, grade, finish and quantity for ASTM A270 electropolished 304L, 316L or 904L tube and EP fittings. Quote within 30 minutes, 24×7, with dispatch and transit confirmed in writing.`
+                : `Send OD × wall, grade, finish and quantity for ASTM A270 electropolished SS 316L pipe and EP fittings. Quote within 30 minutes, 24×7, with an EN 10204 3.1 certificate traced to heat number.`)}
             </p>
             
             <div style={{ display: 'flex', gap: '1.25rem', justifyContent: 'center', flexWrap: 'wrap' }}>
@@ -1828,7 +1787,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
             </div>
             
             <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginTop: '2rem', fontWeight: '500' }}>
-              * {rfqData?.footnote || 'Official EN 10204 3.1 Mill Test Certificates and NABL lab profilometer reports supplied with every dispatch.'}
+              * {rfqData?.footnote || (foreignTemplate ? 'Every lot ships with an EN 10204 3.1 certificate traced to heat number, and every electropolished lot with an Ra report.' : 'Official EN 10204 3.1 Mill Test Certificates and NABL lab profilometer reports supplied with every dispatch.')}
             </p>
           </div>
         </div>
@@ -1871,7 +1830,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
                 gap: '0.5rem'
               }}>
                 <MapPin size={14} style={{ color: 'var(--primary-yellow)' }} />
-                More cities we supply in {(cityData.country || 'India') === 'India' ? cityData.state : cityData.country}:
+                {isInternational ? `Other city pages for ${cityData.country}:` : `More cities we supply in ${cityData.state}:`}
               </span>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.6rem' }}>
                 {cityData.nearbyCitySpokes.map((spoke, idx) => {
@@ -1914,7 +1873,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
       )}
 
       {/* 9. Core Product Specification Pillars Interlinking */}
-      <CityProductPillars cityName={cityData?.city || 'Your Area'} />
+      <CityProductPillars cityName={cityData?.city || 'Your Area'} foreign={isInternational} />
 
     </div>
   );

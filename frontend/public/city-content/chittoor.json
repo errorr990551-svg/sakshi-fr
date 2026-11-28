@@ -1,0 +1,68 @@
+{
+  "slug": "chittoor",
+  "updated": "2026-11-28",
+  "sections": [
+    {
+      "heading": "Chittoor District: A Milk Shed Between Bengaluru and Chennai",
+      "paragraphs": [
+        "Chittoor's food industry starts with milk. A Hans India report on the district's food-processing potential put daily collection by dairies at about 23 lakh litres, with another 17 lakh litres from farmers going to local consumption. It counted more than 50 dairies in the district, among them Heritage, Dodla, Schreiber Dynamix and Parag, and noted that milk is sent by special trains as far as Delhi.",
+        "The report credits the district's position between Bengaluru and Chennai for drawing processors, and lists mango pulp, tomato pulp - six units were functioning at the time - and tamarind, which employs about 10,000 people in Punganur as a cottage industry, as the other food chains. Mango pulp is covered on our Tirupati page; this page is about the dairy and the newer projects."
+      ]
+    },
+    {
+      "heading": "Kuppam: A New Dairy and a Fruit-Pulp Plant",
+      "paragraphs": [
+        "In Kuppam, at the district's south-western corner, the Andhra Pradesh government announced land allotments for two agro-processing projects worth over Rs 338 crore. Shreeja Milk Producer Organisation, with a base of over one lakh women dairy farmers, was allotted 40 acres for a Rs 233 crore dairy and cattle-feed processing unit supported by APIIC.",
+        "Mother Dairy Fruit & Vegetable is building a Rs 105.1 crore fruit-pulp processing unit on 41.22 acres at Thambi Ganipalli in Santhipuram mandal. The Chief Minister asked both companies to start operations within 15 to 18 months of the announcement."
+      ]
+    },
+    {
+      "heading": "Srini Food Park at Mogili, Bangarupalem",
+      "paragraphs": [
+        "The district's mega food park, implemented by Srini Food Park Pvt Ltd at Mogili in Bangarupalem mandal, appears in the Ministry of Food Processing Industries list of mega food parks (as on 30 November 2025) as operational, with a project cost of Rs 121.1 crore and employment of 17,200. The Hans India report places some of the district's fruit-processing units inside the park and the rest in the mandal near Chittoor town.",
+        "A food park brings several processors onto one site, often sharing cold storage and utilities while each runs its own product lines. For tube supply that means many small hygienic scopes rather than one large one, each with its own cleaning regime."
+      ]
+    },
+    {
+      "heading": "Raw Milk to Pasteuriser: Grade and Finish for a Chittoor Dairy",
+      "bullets": [
+        "Milk reception, chilling and raw-milk storage lines: 304 with a polished bore is standard practice; SF1 is usually enough.",
+        "Pasteuriser outlet, cream and flavoured-milk lines cleaned after every run: 316L, SF1 or SF4 depending on how hard deposits are to remove.",
+        "UHT and aseptic filling lines that must stay sterile downstream of the heater: SF4 electropolished 316L.",
+        "CIP supply and return: match the finish of the circuit being cleaned, and use 316L where acid cleaning and hot caustic alternate.",
+        "Cattle-feed plants, chilled water and boiler lines: no hygienic finish required."
+      ]
+    },
+    {
+      "heading": "Delivery to Chittoor, Kuppam and Bangarupalem",
+      "paragraphs": [
+        "Chittoor is supplied by road from Mumbai; dispatch and transit are confirmed in writing with each quotation. Dairy buyers who plan line extensions around the flush season should send their list early, so drawings, certificates and delivery can be agreed before installation starts.",
+        "Nearby clusters:"
+      ],
+      "links": [
+        { "label": "Tirupati and Sri City", "href": "/market-area/tirupati/" },
+        { "label": "Vellore", "href": "/market-area/vellore/" },
+        { "label": "Bengaluru", "href": "/market-area/bengaluru/" },
+        { "label": "Hosur", "href": "/market-area/hosur/" }
+      ]
+    },
+    {
+      "heading": "What a Chittoor Dairy or Fruit Processor Should Send",
+      "paragraphs": [
+        "List each line with its product (raw milk, pasteurised milk, cream, curd base, fruit pulp, CIP supply or return), design temperature, CIP chemicals and strength, OD and wall per size, total length, and whether joints are welded or clamped. Mark the lines downstream of the pasteuriser or UHT heater separately, since those are the ones where SF4 electropolished 316L is worth considering.",
+        "Send it through our contact page for a quotation within 30 minutes. Every lot comes with an EN 10204 3.1 certificate traced to heat number and PMI on each length, and electropolished tube with an internal Ra report your FSSAI and customer audits can refer to."
+      ],
+      "links": [
+        { "label": "Request a quotation for Chittoor", "href": "/contact-us/" },
+        { "label": "Dairy industry page", "href": "/industries/dairy-electropolished-pipes/" },
+        { "label": "Electropolished tubes", "href": "/electropolished-tubes/" },
+        { "label": "Electropolished pipes", "href": "/electropolished-pipes/" }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "The Hans India: Food processing opportunities aplenty (Chittoor dairies, milk collection, pulp units)", "url": "https://www.thehansindia.com/business/food-processing-opportunities-aplenty-673532" },
+    { "title": "The Hans India: Kuppam set for agro-industrial boom with Rs 338 cr investment", "url": "https://www.thehansindia.com/andhra-pradesh/kuppam-set-for-agro-industrial-boom-with-rs-338-cr-investment-974432" },
+    { "title": "PIB / Ministry of Food Processing Industries: Mega Food Park projects as on 30.11.2025 (Srini Food Park, Chittoor)", "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/dec/doc20251211728501.pdf" }
+  ]
+}

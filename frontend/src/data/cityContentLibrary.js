@@ -1,9 +1,10 @@
-// Reusable, fact-checked building blocks for city pages that have a VERIFIED research
-// row (market_cities.json -> research). Placeholders: {city}, {estates}, {lead}, {region},
-// {country}. Company facts used here are limited to ones already published on the site:
-// ISO 9001:2015, based in Mumbai (owner, 2026-11-01), PMI on every length,
-// hydrostatic / eddy-current testing, EN 10204 3.1 MTC, end caps and sleeving,
-// ASME BPE SF4 (Ra <= 0.38 um), payment by LC at sight or TT.
+// Reusable building blocks for city pages that have a research row (market_cities.json ->
+// research). Placeholders: {city}, {estates}, {lead}, {region}, {country}. Company facts
+// used here are limited to the agreed list: ISO 9001:2015, NABL lab, based in Mumbai,
+// PMI on every length, EN 10204 3.1 certificate traced to heat number, Ra report per EP
+// lot, end caps and sleeving, ASME BPE SF4 (Ra <= 0.38 um), grades 304/304L/316/316L and
+// 904L supplied electropolished. Not confirmed, so never stated as our service: hydro,
+// eddy-current or UT testing, duplex, clamps/ferrules/valves, payment or Incoterm terms.
 
 // How electropolished (EP) tube is actually used in each industry. Where EP is rarely
 // needed, the text says so - honest scoping, not a sales list.
@@ -30,7 +31,7 @@ export const INDUSTRY_LIBRARY = [
     key: 'semi',
     match: /semiconductor|wafer|electronics|\bfab\b/i,
     label: 'Semiconductors and electronics',
-    text: 'Electronics and semiconductor facilities in {city} need EP tube for ultra-high-purity (UHP) process gas lines, specialty gas cabinets and high-purity water. The relevant references are SEMI F19 for surface condition and SEMI F17 for the related test methods (SEMI F57 covers polymer components and does not apply to stainless UHP tube). Expect 316L, very low internal Ra, cleanroom packing and capped, bagged ends.'
+    text: 'Electronics and semiconductor facilities in {city} need EP tube for ultra-high-purity (UHP) process gas lines, specialty gas cabinets and high-purity water. The usual reference for surface condition is SEMI F19. Expect 316L, very low internal Ra, cleanroom packing and capped, bagged ends.'
   },
   {
     key: 'dairy',
@@ -54,13 +55,13 @@ export const INDUSTRY_LIBRARY = [
     key: 'chem',
     match: /chemical|petrochem|refin|fertili[sz]|agrochem|\bdye|oil\b|\bgas\b|\blng\b|oilfield/i,
     label: 'Chemicals, petrochemicals and refining',
-    text: 'Chemical and petrochemical units in {city} mostly run process piping in carbon steel or higher alloys, often through EPC contractors. EP tube is used on the clean side: sampling and analyser lines, laboratory and QC utilities, demineralised water and specialty or high-purity chemical dosing. Where chlorides are high, duplex 2205 is usually the better answer than 316L, and hazardous-service lines follow PESO/OISD or local equivalents.'
+    text: 'Chemical and petrochemical units in {city} mostly run process piping in carbon steel or higher alloys, often through EPC contractors. EP tube is used on the clean side: sampling and analyser lines, laboratory and QC utilities, demineralised water and specialty or high-purity chemical dosing. Where chlorides are high, 316L may not be enough, so ask for a material review; hazardous-service lines follow PESO/OISD or local equivalents.'
   },
   {
     key: 'water',
     match: /desalination|water/i,
     label: 'Water and desalination',
-    text: 'Water treatment and desalination plants serving {city} use stainless tube on chemical dosing, sampling, instrumentation and permeate lines. Chlorides drive the grade choice: 316L for moderate exposure, duplex 2205 or super duplex where seawater or brine is involved. Electropolishing helps on high-purity permeate and instrument lines rather than on bulk brine piping.'
+    text: 'Water treatment and desalination plants serving {city} use stainless tube on chemical dosing, sampling, instrumentation and permeate lines. Chlorides drive the grade choice: 316L for moderate exposure, and a material review where seawater or brine is involved. Electropolishing helps on high-purity permeate and instrument lines rather than on bulk brine piping.'
   },
   {
     key: 'cosmetics',
@@ -122,7 +123,7 @@ export const INDUSTRY_LIBRARY = [
 export const ANGLES = {
   PHARMA: {
     heading: 'What pharma plants in {city} specify',
-    intro: 'Most enquiries from {city} come from formulation, API and bulk-drug plants, so the questions are about water systems and audit documentation rather than price alone.',
+    intro: 'For formulation, API and bulk-drug plants the questions are usually about water systems and audit documentation rather than price alone.',
     points: [
       'Standards: ASTM A270 with S2 pharmaceutical supplement, ASME BPE SF4, EN 10204 3.1 certificate.',
       'Grades: 316L for PW, WFI and clean steam; 304 is acceptable for non-critical utilities.',
@@ -132,7 +133,7 @@ export const ANGLES = {
   },
   BIOTECH: {
     heading: 'What biologics and life-science plants in {city} specify',
-    intro: 'Biotech buyers in {city} care most about surface finish, weld quality and the depth of documentation behind every spool.',
+    intro: 'On biologics and vaccine lines, surface finish, weld quality and the documentation behind every spool decide the order.',
     points: [
       'Standards: ASME BPE SF4 (or tighter where your user requirement says so), ASTM A270 S2, EN 10204 3.1.',
       'Grade: 316L only on product and WFI contact.',
@@ -142,9 +143,9 @@ export const ANGLES = {
   },
   SEMI: {
     heading: 'What semiconductor and electronics plants in {city} specify',
-    intro: 'Fab and electronics buyers in {city} specify for purity and cleanliness first; mechanical rating is rarely the deciding factor.',
+    intro: 'Fab and electronics lines are specified for purity and cleanliness first; mechanical rating is rarely the deciding factor.',
     points: [
-      'Standards: SEMI F19 (surface condition) and SEMI F17, with ASTM A269/A270 for the tube itself. Not SEMI F57.',
+      'Standards: SEMI F19 (surface condition), with ASTM A269/A270 for the tube itself.',
       'Grade: 316L, electropolished, very low internal Ra.',
       'Watch-out: particles, moisture and outgassing - packing integrity on arrival matters as much as the finish.',
       'Documents: Ra and cleanliness reports, MTC, packing and capping record.'
@@ -152,9 +153,9 @@ export const ANGLES = {
   },
   DAIRY: {
     heading: 'What dairy plants in {city} specify',
-    intro: 'Dairy enquiries from {city} centre on cleanability: lines must come clean every CIP cycle without hold-up points.',
+    intro: 'In dairy, cleanability sets the specification: lines must come clean every CIP cycle without hold-up points.',
     points: [
-      'Standards: 3-A Sanitary Standards, ASTM A270, EN 10357 where European equipment is installed.',
+      'Standards: 3-A Sanitary Standards and ASTM A270. If European equipment on site is built to EN 10357 sizes, check the equivalence with your engineer.',
       'Grades: 304 or 304L for most product lines; 316L where CIP chemistry or salt is aggressive.',
       'Watch-out: drainability and slope - a perfect Ra does not help if the line holds product.',
       'Documents: MTC with heat numbers, Ra report for product-contact lots.'
@@ -162,9 +163,9 @@ export const ANGLES = {
   },
   BREWERY: {
     heading: 'What breweries and beverage plants in {city} specify',
-    intro: 'Brewery buyers in {city} ask where electropolishing is genuinely needed - and where it is money spent for nothing.',
+    intro: 'In a brewery the real question is where electropolishing is genuinely needed - and where it is money spent for nothing.',
     points: [
-      'Standards: 3-A and EHEDG hygienic design, ASTM A270, DIN 11850 where European brewhouse equipment is installed.',
+      'Standards: 3-A and EHEDG hygienic design and ASTM A270. If the brewhouse is built to DIN 11850 sizes, check the equivalence with your engineer.',
       'Grade: 304 for most lines.',
       'Where EP pays off: yeast propagation, bright beer and aseptic filling. Hot-side and utility lines usually do not need it.',
       'Documents: MTC; Ra report on the lines you specify as EP.'
@@ -172,7 +173,7 @@ export const ANGLES = {
   },
   FOOD: {
     heading: 'What food and agro processors in {city} specify',
-    intro: 'Food buyers in {city} balance hygiene against cost, so the right answer is often EP on product contact and a simpler finish elsewhere.',
+    intro: 'Food lines balance hygiene against cost, so the right answer is often EP on product contact and a simpler finish elsewhere.',
     points: [
       'Standards: 3-A Sanitary Standards, ASTM A270, plus the local food-safety licensing for the plant.',
       'Grades: 304 for most product lines; 316L for salt, acidic or chloride-bearing streams.',
@@ -182,17 +183,17 @@ export const ANGLES = {
   },
   CHEM: {
     heading: 'What chemical and process plants in {city} specify',
-    intro: 'Chemical buyers in {city} usually need a straight answer on alloy selection before they need a finish.',
+    intro: 'On chemical plants, alloy selection usually has to be settled before the finish.',
     points: [
       'Standards: ASTM A269 / A312, ASME B31.3 for process piping, PESO / OISD rules on hazardous service in India.',
-      'Grades: 316L for general service; duplex 2205 or higher where chlorides or stress-corrosion risk are high.',
+      'Grades: 316L for general service; a material review where chlorides or stress-corrosion risk are high.',
       'Where EP pays off: sampling, analyser, lab and high-purity dosing lines.',
-      'Documents: MTC, PMI record, pressure-test record.'
+      'Documents: MTC traced to heat number, PMI record.'
     ]
   },
   GENERAL: {
-    heading: 'What engineering and general industry buyers in {city} specify',
-    intro: 'Most buyers in {city} are fabricators and general industry, so we start by asking whether a hygienic finish is needed at all.',
+    heading: 'What to specify for EP tube in {city}',
+    intro: 'The first question on any enquiry is whether a hygienic finish is needed at all.',
     points: [
       'Standards: ASTM A269 / A270; ASME BPE only where the end use is hygienic.',
       'Grade: 304 for most utility and fabrication work; 316L where the end customer specifies it.',
@@ -223,11 +224,9 @@ export const REGULATORS = [
   { match: /TCVN/i, text: 'Vietnam applies TCVN national standards and conformity rules to imported steel products.' },
   { match: /SNI/i, text: 'Indonesia applies SNI conformity requirements to some steel imports - check your HS code with your importer.' },
   { match: /Halal/i, text: 'Halal-certified plants expect documented, cleanable product-contact surfaces.' },
-  { match: /MS hygienic/i, text: 'Malaysian buyers commonly reference MS hygienic standards alongside ASME BPE and ASTM A270.' },
   { match: /AS 1528|AS\/NZS/i, text: 'Australian food and beverage plants commonly specify AS 1528 hygienic tube, with AS/NZS 3500 for plumbing work.' },
-  { match: /UNI/i, text: 'Italian equipment builders often reference UNI hygienic norms alongside EN 10357.' },
   { match: /\bBIS\b/i, text: 'BIS rules apply to some steel products in India; most hygienic-tube buyers specify ASTM A270 or ASME BPE directly.' },
-  { match: /SEMI F19/i, text: 'SEMI F19 and SEMI F17 are the references for UHP stainless tube in semiconductor fabs.' },
+  { match: /SEMI F19/i, text: 'SEMI F19 is the usual reference for the surface condition of UHP stainless components in semiconductor fabs.' },
   { match: /FDA 21 CFR 177/i, text: 'FDA 21 CFR 177 governs polymer food-contact materials such as gaskets used with sanitary tube.' },
   { match: /PESO|OISD/i, text: 'PESO and OISD rules govern hazardous-service and petroleum installations in India.' },
   { match: /IBR/i, text: 'Lines under the Indian Boiler Regulations need IBR-compliant material and documentation - say so at RFQ stage.' }

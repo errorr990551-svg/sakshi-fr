@@ -3,7 +3,7 @@ import { Layers, ArrowRight, ShieldCheck, Sparkles } from 'lucide-react';
 import { handleLinkClick, withSlash } from '../utils/router';
 import { EP_PRODUCT_PILLARS } from '../data/priorityCities';
 
-export default function CityProductPillars({ cityName = 'Your Facility' }) {
+export default function CityProductPillars({ cityName = 'Your Facility', foreign = false }) {
   return (
     <section 
       aria-label="Core Electropolished Product Specifications"
@@ -31,7 +31,7 @@ export default function CityProductPillars({ cityName = 'Your Facility' }) {
             marginBottom: '0.75rem'
           }}>
             <Sparkles size={14} />
-            National Manufacturing Specifications
+            {foreign ? 'Product Specifications' : 'National Manufacturing Specifications'}
           </div>
           <h2 style={{ 
             fontSize: '1.85rem', 
@@ -40,7 +40,7 @@ export default function CityProductPillars({ cityName = 'Your Facility' }) {
             marginBottom: '0.75rem',
             lineHeight: '1.25'
           }}>
-            Electropolished Stainless Steel Pipes Supplied to {cityName}
+            Electropolished Stainless Steel Pipes {foreign ? 'for' : 'Supplied to'} {cityName}
           </h2>
           <p style={{ 
             color: '#94a3b8', 
@@ -49,7 +49,7 @@ export default function CityProductPillars({ cityName = 'Your Facility' }) {
             lineHeight: '1.65',
             margin: 0
           }}>
-            Every pipe we supply to {cityName} adheres to strict international hygienic standards. Explore our core product specifications, Ra roughness certifications, and alloy grade properties:
+            {foreign ? `Grade chemistry, Ra finish and standards for the tube we quote to ${cityName}.` : `Every pipe we supply to ${cityName} adheres to strict international hygienic standards.`} Explore our core product specifications, Ra roughness certifications, and alloy grade properties:
           </p>
         </div>
 

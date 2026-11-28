@@ -2,6 +2,8 @@
 // Inline links use [anchor](/path/) and must point at prerendered pages.
 // Company claims here are limited to what the rest of the site already states.
 
+import { HUB_GUIDES } from './hubGuides.js';
+
 export const CATEGORY_GUIDES = {
   'electropolished-pipes': {
     updated: '2026-10-29',
@@ -313,3 +315,5 @@ export const CATEGORY_GUIDES = {
     ]
   }
 };
+
+Object.assign(CATEGORY_GUIDES, HUB_GUIDES);

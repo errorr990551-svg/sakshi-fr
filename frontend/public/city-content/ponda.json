@@ -1,59 +1,75 @@
 {
   "slug": "ponda",
-  "updated": "2026-10-25",
+  "updated": "2026-11-28",
   "sections": [
     {
-      "heading": "Ponda Taluka: Kundaim and Bethora Industrial Estates",
+      "heading": "Ponda Taluka's Estates: Kundaim, Usgao, Bethora and Madkai",
       "paragraphs": [
-        "Ponda, in central Goa, is home to the Kundaim and Bethora industrial estates. Kundaim is one of the four locations - with Verna, Pilerne and Colvale - where Goa's pharmaceutical manufacturing is concentrated, and the state's pharma sector as a whole leans heavily on contract manufacturing: industry bodies have counted far more contract manufacturers than brand-owning plants in Goa.",
-        "Contract manufacturing shapes the specification. A plant making products for several brand owners is audited by each of them, runs frequent changeovers and must prove its cleaning works for every product it makes."
+        "Ponda taluka has four industrial estates close together: Kundaim, Usgao, Bethora and Madkai. A list of operational projects approved by the Goa Investment Promotion Board, tabled in the Goa Legislative Assembly as an annexure to an unstarred question, shows what they make. Ponda entries in it include tablets, capsules and injectables at Kundaim, bulk drug and soft-gel capsules at Usgao, beer at Bethora, Indian-made spirits at Madkai, and a chocolate section at a food plant in Usgao.",
+        "Kundaim is also named in Herald Goa reporting as one of the four places where Goa's pharmaceutical manufacturing is concentrated, alongside Verna, Pilerne and Colvale. The same reporting notes how much of Goa's pharma output comes from contract manufacturers rather than brand-owning plants."
       ]
     },
     {
-      "heading": "Contract Manufacturers: Built for Changeovers",
+      "heading": "Injectables at Kundaim: Where WFI and Clean Steam Come In",
       "paragraphs": [
-        "In a multi-client formulation plant, the lines that carry product - granulation binder, coating suspension, liquid-oral transfer - and the CIP circuits that clean them are the ones worth specifying in electropolished 316L. A smooth, passive bore releases residue more readily, so cleaning cycles are shorter and validation data more consistent from product to product.",
-        "The purified-water system that supplies these lines is usually built in 316L, with SF1 tube adequate for an ambient loop and SF4 electropolished tube for hot-sanitised sections and critical points of use. Because several clients' auditors review the same system, consistent documentation matters: an EN 10204 3.1 certificate for every heat, PMI records for every length, and an Ra report for every electropolished lot."
+        "The Goa-IPB list records an approved expansion at Zydus Lifesciences, plots 203 to 213 in the Kundaim estate, adding capacity of 196 million tablets, 20 million capsules and 20 million injections. The last of those changes the piping brief. An oral-solid block can run on a purified-water loop; an injectable block also needs water for injection and pure steam, and those systems are almost always built in 316L with an electropolished bore.",
+        "For a Kundaim plant adding a parenteral line next to oral solids, it is worth keeping the two scopes separate on the drawing. The WFI loop, clean-steam distribution and the transfer lines to the filling room take SF4 tube; the oral-solid purified-water loop can often stay at SF1."
       ]
     },
     {
-      "heading": "Engineering and Food Units in Ponda",
+      "heading": "Bulk Drug and Soft-Gel Capsules at Usgao, Ponda",
       "paragraphs": [
-        "Ponda's engineering units fabricate equipment and skids, some of it for pharma and food customers; they need tube supplied to drawing with certificates they can pass on. Food units follow food-grade practice - 304 for most product lines, 316L for salty or acidic products - with electropolishing reserved for lines cleaned between every batch."
+        "Two approvals on the list concern one site at survey number 11/1, Marvasodo, Usgao: Procter & Gamble Health (formerly Merck) raising bulk-drug capacity from 636.4 to 1,080 tonnes a year, and doubling its soft-gel unit from one to two billion capsules. Bulk-drug synthesis and soft-gel encapsulation ask different things of stainless tube.",
+        "In API synthesis, the reactors and solvent lines are judged on grade and weld quality; the finish matters at final isolation and in the purified-water loop that feeds washes. Soft-gel lines move warm gelatin and oily fill mixtures that cling to a rough bore, so transfer lines and the CIP that cleans them are where an electropolished 316L surface shortens changeovers."
       ]
     },
     {
-      "heading": "Choosing Between SF1 and SF4 for a Goa Formulation Plant",
-      "bullets": [
-        "Ambient purified-water loop, oral solids only: SF1 is usually defensible.",
-        "Hot-sanitised purified water, or loops feeding liquid orals: SF4 recommended.",
-        "WFI and clean steam (any sterile or ophthalmic work): SF4 electropolished as standard.",
-        "Product transfer and CIP in multi-product plants: SF4 shortens cleaning and helps validation.",
-        "Utilities (chilled water, compressed air, non-contact water): no hygienic finish needed."
-      ]
-    },
-    {
-      "heading": "Delivery to Kundaim and Bethora",
+      "heading": "Brewing at Bethora and Spirits at Madkai",
       "paragraphs": [
-        "Ponda is reached by road from Mumbai down the coast; dispatch and transit are confirmed in writing per quotation. Mormugao Port, about 30 km away, is the nearest sea gateway.",
-        "Other Goa estates:"
+        "The list shows United Breweries expanding at Bethora from 0.75 million to one million cases a month, and Mandovi Distilleries & Breweries at plot D-8, Madkai, from 7 lakh to 12 lakh cases a year of brandy, whisky, rum, vodka and gin. On the food side, Nestlé India's entry for plots 294 to 297 in the Usgao estate mentions a hand-wash area at the entry to its chocolate section.",
+        "In a brewery, wort, yeast and bright-beer lines are cleaned with hot caustic and acid many times a week, and a smooth, drainable bore cuts the risk of beer-spoilage organisms surviving between brews. Grade 304 covers most brewery and blending duty; 316L is the safer choice where acid cleaning is heavy or chlorides are present."
       ],
       "links": [
-        {
-          "label": "Panaji, Corlim and Pilerne",
-          "href": "/market-area/panaji/"
-        },
-        {
-          "label": "Verna",
-          "href": "/market-area/verna/"
-        }
+        { "label": "Brewery industry page", "href": "/industries/brewery-electropolished-pipes/" }
+      ]
+    },
+    {
+      "heading": "Which Ponda Lines Need SF1 and Which Need SF4",
+      "bullets": [
+        "Oral-solid purified-water loop at ambient temperature: SF1 316L.",
+        "WFI, pure steam and parenteral transfer lines at Kundaim: SF4 electropolished 316L throughout.",
+        "Soft-gel transfer and the CIP serving it: SF4 to shorten changeovers between fills.",
+        "Bulk-drug solvent and recovery lines: correct grade and sound welds first; polished bore optional.",
+        "Brewery wort, yeast and bright-beer lines: 304 or 316L, SF1 in most cases, with drainable slopes."
+      ]
+    },
+    {
+      "heading": "Delivery to Kundaim, Usgao, Bethora and Madkai",
+      "paragraphs": [
+        "Ponda is reached by road from Mumbai down the coast, and Mormugao Port is the nearest sea gateway for export-bound material. Dispatch and transit are confirmed in writing with each quotation.",
+        "Other Goa and nearby estates:"
+      ],
+      "links": [
+        { "label": "Panaji, Corlim and Pilerne", "href": "/market-area/panaji/" },
+        { "label": "Verna", "href": "/market-area/verna/" },
+        { "label": "Belagavi", "href": "/market-area/belagavi/" }
+      ]
+    },
+    {
+      "heading": "What a Ponda Plant Should Put in Its Enquiry",
+      "paragraphs": [
+        "Send one line list with the service on each line (purified water, WFI, pure steam, CIP supply or return, soft-gel fill, wort or beer), design temperature, sanitisation method, OD and wall per size, total length and whether ends are for orbital welding or clamps. Contract manufacturers should mark which lines fall inside each client's audit scope, so the finish can be matched line by line.",
+        "Send it through our contact page for a quotation within 30 minutes. Each lot carries an EN 10204 3.1 certificate traced to heat number, a PMI record for every length and, for electropolished tube, an internal Ra report for the qualification file."
+      ],
+      "links": [
+        { "label": "Request a quotation for Ponda", "href": "/contact-us/" },
+        { "label": "Electropolished tubes", "href": "/electropolished-tubes/" },
+        { "label": "Electropolished pipes", "href": "/electropolished-pipes/" }
       ]
     }
   ],
   "sources": [
-    {
-      "title": "Herald Goa: Pharma better option for Goa, say experts",
-      "url": "https://www.heraldgoa.in/goa/pharma-better-option-for-goa-say-experts/373339"
-    }
+    { "title": "Goa Legislative Assembly, Unstarred LAQ 049, Annexure-I: List of operational companies approved by Goa-IPB since inception", "url": "https://static.goavidhansabha.gov.in/goalpub/docs/question_docs/file_7a083d69-5ce3-48dd-9b56-b362464aa485.pdf" },
+    { "title": "Herald Goa: Pharma better option for Goa, say experts", "url": "https://www.heraldgoa.in/goa/pharma-better-option-for-goa-say-experts/373339" }
   ]
 }

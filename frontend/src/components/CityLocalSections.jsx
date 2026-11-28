@@ -13,13 +13,13 @@ const cardStyle = { backgroundColor: 'var(--bg-dark-900)', border: '1px solid va
 
 export default function CityLocalSections({ content, city }) {
   if (!content) return null;
-  const { intro, industries, angle, compliance, manufacturer, supplier, wholesaler } = content;
+  const { introHeading, intro, industries, angle, compliance, manufacturer, supplier, wholesaler } = content;
 
   return (
     <>
       <section style={sectionStyle(false)}>
         <div className="container" style={{ maxWidth: '980px' }}>
-          <h2 style={h2Style}>Industry in {city} and Where Electropolished Tube Is Used</h2>
+          <h2 style={h2Style}>{introHeading || `Industry in ${city} and Where Electropolished Tube Is Used`}</h2>
           <p style={pStyle}>{intro}</p>
           {industries.length > 0 && (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))', gap: '1.1rem', marginTop: '1.5rem' }}>

@@ -316,4 +316,307 @@ export const PIPE_GUIDES = {
     ],
     sources: [A312],
   },
+  'stainless-steel-seamless-pipe': {
+    updated: U,
+    sections: [
+      {
+        h2: 'Seamless Routes ASTM A312 Allows',
+        paragraphs: [
+          'In ASTM A312 a seamless pipe, coded SML, is one made by a process with no welding at any stage of production. Inside that single rule the standard leaves the mill several choices. The table separates what A312 fixes for seamless pipe from what it leaves open, so you can tell which points your order needs to settle.',
+        ],
+        table: {
+          caption: 'Seamless pipe under ASTM A312/A312M-24: fixed points and open choices',
+          head: ['Stage', 'What A312 fixes', 'Left to the manufacturer'],
+          rows: [
+            ['Forming', 'No welding at any stage', 'The piercing and forming method'],
+            ['Finishing', 'Hot finished and cold finished pipe both comply (6.1.6)', 'Which of the two'],
+            ['Solution anneal', '1040 °C [1900 °F] minimum for TP304, TP304L, TP316 and TP316L, then water quench or other rapid cooling', 'Furnace and cooling equipment'],
+            ['Direct quench', 'Seamless only: each pipe quenched on its own straight after hot forming, while still at or above the Table 2 temperature', 'Whether to use it in place of a separate anneal'],
+            ['Surface', 'Free of scale and exogenous iron; pickling, blasting or surface finishing is not mandatory when the pipe is bright annealed', 'How the clean surface is reached'],
+            ['Wall', 'Table 3 tolerances, plus the weight limit of ASTM A999 for seamless pipe', 'Nothing'],
+          ],
+        },
+      },
+      {
+        h2: 'Points the Standard Leaves to the Manufacturer',
+        paragraphs: [
+          'Because finishing route and anneal route are the mill\'s call, two seamless lengths that both meet A312 may have reached their final condition by different paths. If your project specification insists on one, for example cold finished pipe, the order has to say it; quoting the standard alone will not.',
+          'Proof of the anneal works the same way. Footnote C to Table 2 asks for cooling fast enough to stop carbides forming again, and says passing ASTM A262 Practice E can demonstrate it. The manufacturer is not obliged to run that test unless the purchase order names Supplementary Requirement S7.',
+        ],
+        subsections: [
+          {
+            h3: 'What to add to a seamless pipe enquiry',
+            bullets: [
+              'ASTM A312, the grade with its TP prefix, and SML.',
+              'Hot finished or cold finished, only if your specification fixes it.',
+              'S7, if the A262 Practice E result must be reported.',
+              'Passivation, if the line needs it; A312 applies it only when the purchaser asks.',
+              'Each NPS with its schedule, metres and end finish.',
+            ],
+            paragraphs: [
+              'Grade pages: [304 seamless](/304-stainless-steel-seamless-pipe/), [304L seamless](/304l-stainless-steel-seamless-pipe/), [316 seamless](/316-stainless-steel-seamless-pipe/) and [316L seamless](/316l-stainless-steel-seamless-pipe/).',
+            ],
+          },
+        ],
+        cta: CTA,
+      },
+    ],
+    sources: [A312],
+  },
+  '304-stainless-steel-seamless-pipe': {
+    updated: U,
+    sections: [
+      {
+        h2: 'Checking Small-Bore TP304 Seamless on Arrival',
+        paragraphs: [
+          'Small-bore TP304 seamless is mostly bought by NPS and schedule, and the receiving check that catches most problems is the wall. Up to NPS 2-1/2, Table 3 of A312 allows 20% over and 12.5% under the nominal wall, at any point measured. A seamless length has no weld area, so no part of its circumference is excused from the upper limit.',
+        ],
+        table: {
+          caption: 'Sch 40S walls that comply, NPS 1/2 to 2 (A312 Table 3; nominal walls from ASME B36.19M)',
+          head: ['NPS', 'OD (mm)', 'Nominal wall (mm)', 'Accepted range (mm)'],
+          rows: [
+            ['1/2', '21.34', '2.77', '2.42 to 3.32'],
+            ['3/4', '26.67', '2.87', '2.51 to 3.44'],
+            ['1', '33.40', '3.38', '2.96 to 4.06'],
+            ['1-1/4', '42.16', '3.56', '3.12 to 4.27'],
+            ['1-1/2', '48.26', '3.68', '3.22 to 4.42'],
+            ['2', '60.33', '3.91', '3.42 to 4.69'],
+          ],
+        },
+        subsections: [
+          {
+            h3: 'What the intergranular test proves on TP304',
+            paragraphs: [
+              'When an order adds Supplementary Requirement S7, ASTM A262 Practice E is run. For TP304 the specimen is tested as shipped, not sensitized first, so a pass shows the length was solution annealed and cooled correctly. It tells you nothing about metal beside a weld made later on site. Where that matters, [304L seamless pipe](/304l-stainless-steel-seamless-pipe/) is the usual answer.',
+            ],
+          },
+          {
+            h3: 'What to send for 304 seamless',
+            bullets: [
+              'ASTM A312 TP304 SML on one line.',
+              'NPS, schedule and metres for each size.',
+              'Plain or bevelled ends.',
+              'S7, if the intergranular test has to be reported.',
+            ],
+          },
+        ],
+        cta: CTA,
+      },
+    ],
+    sources: [A312],
+  },
+  '304l-stainless-steel-seamless-pipe': {
+    updated: U,
+    sections: [
+      {
+        h2: 'Which Seamless Sizes Get the 0.040% Carbon Allowance',
+        paragraphs: [
+          'A312 holds TP304L to 0.035% carbon. Footnote D to Table 1 relaxes that to 0.040% for small or thin product: an outside diameter under 12.7 mm [0.500 in], or an average wall under 1.20 mm [0.049 in]. Run against the standard seamless sizes, the allowance reaches only the very smallest pipe.',
+        ],
+        table: {
+          caption: 'TP304L carbon limit by size (A312 Table 1 footnote D; ODs and walls from ASME B36.19M)',
+          head: ['Size', 'OD (mm)', 'Thinnest listed wall (mm)', 'Carbon max'],
+          rows: [
+            ['NPS 1/8', '10.29', '1.24 (Sch 10S)', '0.040%, because the OD is under 12.7 mm'],
+            ['NPS 1/4', '13.72', '1.65 (Sch 10S)', '0.035%'],
+            ['NPS 3/8', '17.15', '1.65 (Sch 10S)', '0.035%'],
+            ['NPS 1/2 and up', '21.34 and larger', '1.65 or more', '0.035%'],
+            ['Size outside B36.19', 'Under 12.7, or any', 'Under 1.20 average, or any', '0.040% if either condition is met'],
+          ],
+        },
+        subsections: [
+          {
+            h3: 'Why the L only counts once it is shown',
+            paragraphs: [
+              'For low-carbon grades, A262 Practice E is run on a sensitized specimen, so a pass speaks for metal that has already seen welding temperatures, which is the reason to buy TP304L at all. The mill runs it only when the order calls up Supplementary Requirement S7. Without S7, the carbon value in the heat analysis on the 3.1 certificate is the record that the pipe is low carbon.',
+            ],
+          },
+          {
+            h3: 'What to send for 304L seamless',
+            bullets: [
+              'ASTM A312 TP304L SML.',
+              'Each NPS and schedule, with metres per size.',
+              'S7, if your welding procedure or end client needs proof against intergranular attack.',
+              'End finish, and passivation if required.',
+            ],
+          },
+        ],
+        cta: CTA,
+      },
+    ],
+    sources: [A312],
+  },
+  '316-stainless-steel-seamless-pipe': {
+    updated: U,
+    sections: [
+      {
+        h2: 'Where the Over Tolerance Changes on 316 Seamless',
+        paragraphs: [
+          'From NPS 3 upward, Table 3 of A312 sets the allowance above nominal wall by the ratio of wall to outside diameter, t/D. Up to 5% it is +22.5%; above 5% it is +15.0%. The minus side stays at −12.5% throughout. Seamless pipe is also limited indirectly by the weight tolerance of ASTM A999. Since t/D depends on schedule as well as size, one schedule can sit on different sides of the 5% line.',
+        ],
+        table: {
+          caption: 'TP316 seamless, NPS 3 to 12: t/D and the wall that complies (A312 Table 3; walls from ASME B36.19M)',
+          head: ['NPS', 'Sch 40S t/D (over)', 'Sch 40S range (mm)', 'Sch 10S t/D (over)', 'Sch 10S range (mm)'],
+          rows: [
+            ['3', '6.18% (+15.0)', '4.80 to 6.31', '3.43% (+22.5)', '2.67 to 3.74'],
+            ['4', '5.27% (+15.0)', '5.27 to 6.92', '2.67% (+22.5)', '2.67 to 3.74'],
+            ['6', '4.23% (+22.5)', '6.22 to 8.71', '2.02% (+22.5)', '2.98 to 4.17'],
+            ['8', '3.73% (+22.5)', '7.16 to 10.02', '1.72% (+22.5)', '3.29 to 4.61'],
+            ['10', '3.39% (+22.5)', '8.11 to 11.36', '1.53% (+22.5)', '3.67 to 5.13'],
+            ['12', '2.94% (+22.5)', '8.34 to 11.67', '1.41% (+22.5)', '4.00 to 5.60'],
+          ],
+        },
+        subsections: [
+          {
+            h3: 'Reading the table',
+            paragraphs: [
+              'Sch 40S crosses the 5% line between NPS 4 and NPS 6, so an NPS 6 Sch 40S length may legitimately carry more extra metal, relative to nominal, than an NPS 4 one. Sch 10S stays below 5% at every size shown. Metal on the plus side adds weight, which matters if you buy by the metre and check by the kilogram; the [weight calculator](/weight-calculator/) gives the nominal figure. Why TP316 is picked over 304 is covered by the PREN comparison on the [316 pipe page](/316-stainless-steel-pipe/).',
+            ],
+          },
+          {
+            h3: 'What to send for 316 seamless',
+            bullets: [
+              'ASTM A312 TP316 SML.',
+              'NPS and schedule for each line item, since together they decide the tolerance band.',
+              'Metres per size, and plain or bevelled ends.',
+              'Passivation, if the line needs it.',
+            ],
+          },
+        ],
+        cta: CTA,
+      },
+    ],
+    sources: [A312],
+  },
+  '316l-stainless-steel-seamless-pipe': {
+    updated: U,
+    sections: [
+      {
+        h2: 'What Each Record Proves for 316L Seamless',
+        paragraphs: [
+          'Three records travel with a 316L seamless length: the heat analysis on the EN 10204 3.1 certificate, the PMI result taken on the length itself, and the SML marking. Each one proves different things, and none proves everything. Knowing which record answers which question tells you what to check, and where to look.',
+        ],
+        table: {
+          caption: 'TP316L seamless: what each record can show',
+          head: ['To prove', '3.1 heat analysis', 'PMI by XRF', 'PMI by OES', 'Marking and certificate'],
+          rows: [
+            ['Cr, Ni and Mo content', 'Yes, for the heat', 'Yes, on the length', 'Yes, on the length', 'No'],
+            ['Carbon (the L)', 'Yes, for the heat', 'No: XRF does not read carbon', 'Yes, on the length', 'No'],
+            ['Seamless manufacture', 'No', 'No', 'No', 'Yes: SML marked and stated'],
+            ['Link to the heat', 'Heat number', 'Not by itself', 'Not by itself', 'Heat number on each length'],
+          ],
+        },
+        subsections: [
+          {
+            h3: 'What this means when checking 316L',
+            paragraphs: [
+              'PMI separates 316L from 304L by molybdenum, which the usual instruments all read. Separating 316L from 316 is a carbon question, and only an OES reading or the heat analysis settles it. The certificate\'s carbon figure is the one to compare with 0.035%, or 0.040% where footnote D applies to very small or thin sizes. Sakshi Forge, Mumbai, runs PMI on every length and supplies the 3.1 certificate traced to the heat number, so both records come with the pipe.',
+            ],
+          },
+          {
+            h3: 'What to send for 316L seamless',
+            bullets: [
+              'ASTM A312 TP316L SML.',
+              'Each NPS and schedule, with metres per size.',
+              'S7, if the intergranular test must be run; for TP316L it is done on a sensitized specimen.',
+              'End finish, and passivation if needed.',
+            ],
+          },
+        ],
+        cta: CTA,
+      },
+    ],
+    sources: [A312],
+  },
+  'stainless-steel-pipes/ss-seamless-pipes': {
+    updated: U,
+    sections: [
+      {
+        h2: 'Heat Analysis or Product Analysis',
+        paragraphs: [
+          'Every A312 pipe comes with a heat analysis, the chemistry of the heat of steel it was made from. Section 8 adds a second check, product analysis, made only at the purchaser\'s request. It is taken from one billet or one length of flat-rolled stock from each heat, or from two pipes in each lot.',
+          'For this purpose a lot is the lengths of one size and wall from one heat, and how many lengths it may hold depends on NPS:',
+        ],
+        table: {
+          caption: 'Lot size for product analysis, ASTM A312 section 8.1',
+          head: ['NPS', 'Lengths per lot', 'Pipes analysed per lot'],
+          rows: [
+            ['Under 2', '400 or fraction thereof', '2'],
+            ['2 to 5', '200 or fraction thereof', '2'],
+            ['6 and over', '100 or fraction thereof', '2'],
+          ],
+        },
+        subsections: [
+          {
+            h3: 'A worked example',
+            paragraphs: [
+              'Take 1,000 m of NPS 4 from one heat, in 6 m lengths: 167 lengths. That is under 200, so it forms one lot and two pipes are analysed. The same metres in NPS 1 are still one lot, being under 400. In NPS 8 they make two lots, 100 lengths and 67, so four pipes are analysed.',
+            ],
+          },
+          {
+            h3: 'If one analysis fails',
+            paragraphs: [
+              'Section 8.3 lets each billet or pipe from that heat or lot be analysed on its own, and those that conform are accepted. Results of product analysis are reported to the purchaser (section 8.2).',
+            ],
+          },
+          {
+            h3: 'Asking for product analysis',
+            bullets: [
+              'Write "product analysis per ASTM A312 section 8" on the enquiry.',
+              'Give lengths per size, so the number of lots is clear from the start.',
+              'Grade and SML against each line item.',
+            ],
+            paragraphs: [
+              'How A312 treats seamless forming, finishing and annealing is set out on the [seamless pipe page](/stainless-steel-seamless-pipe/).',
+            ],
+          },
+        ],
+        cta: CTA,
+      },
+    ],
+    sources: [A312],
+  },
+  'stainless-steel-pipes/ss-welded-pipes': {
+    updated: U,
+    sections: [
+      {
+        h2: 'WLD and HCW: The Two Welded Forms in A312',
+        paragraphs: [
+          'ASTM A312 recognises two kinds of welded pipe. WLD pipe is welded by an automatic process with no filler metal. HCW pipe starts the same way but is then heavily cold worked before its final anneal. The table puts the two side by side.',
+        ],
+        table: {
+          caption: 'WLD and HCW pipe under ASTM A312/A312M-24',
+          head: ['Requirement', 'WLD', 'HCW'],
+          rows: [
+            ['Welding', 'Automatic, no filler metal', 'Automatic, no filler metal'],
+            ['Weld radiography', 'Not called for by the WLD clause', '100% before cold working, to ASME BPVC Section VIII Division 1, UW-51'],
+            ['Cold work', 'None required', 'At least 35% reduction in thickness of both wall and weld'],
+            ['Final heat treatment', 'Table 2; 1040 °C minimum for 304, 304L, 316 and 316L', 'Table 2, after the cold work'],
+            ['Longitudinal seams', 'One up to NPS 14; above that, one, or two sections if the purchaser approves', 'Same rule'],
+            ['Sizes', 'ASME B36.19, or others meeting every other requirement', 'The same (section 1.4)'],
+            ['Marking code', 'WLD', 'HCW'],
+          ],
+        },
+        subsections: [
+          {
+            h3: 'Naming the welded pipe you need',
+            paragraphs: [
+              'ERW and EFW are trade names for how a seam is fused. Under A312 what counts is that the weld is automatic and adds no filler metal; pipe made that way is WLD, whatever the trade name. Pipe welded with filler metal falls outside A312 and is bought to a different standard, such as ASTM A358 for electric-fusion-welded stainless pipe. Sakshi Forge, Mumbai, quotes welded pipe to ASTM A312.',
+              'If a specification calls for HCW, write HCW on the enquiry: it is a separate product form with its own marking. The seam and weld-area rules for WLD pipe are explained on the [SS ERW pipe page](/ss-erw-pipes/).',
+            ],
+          },
+          {
+            h3: 'What to send for welded pipe',
+            bullets: [
+              'ASTM A312, the grade, and WLD (or HCW, where specified).',
+              'NPS and schedule for every line item.',
+              'Metres per size, end finish, and passivation if needed.',
+            ],
+          },
+        ],
+        cta: CTA,
+      },
+    ],
+    sources: [A312],
+  },
 };

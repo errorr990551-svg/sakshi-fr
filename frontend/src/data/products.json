@@ -904,21 +904,40 @@
     "Category": "Seamless Pipes",
     "Product Name": "Stainless Steel Seamless Pipe",
     "URL Slug": "stainless-steel-seamless-pipe",
-    "Meta Title (<=60 chars)": "SS Seamless Pipe Manufacturer Mumbai | All Grades",
-    "Meta Description (<=160 chars)": "All-grade SS seamless pipes: 304 316 321 347 310 Duplex 2205/2507. ASTM A312. Sakshi Forge Mumbai manufacturer.",
-    "H1 Tag": "Stainless Steel Seamless Pipe - All Grades ASTM A312",
+    "Meta Title (<=60 chars)": "SS Seamless Pipe Manufacturer Mumbai | ASTM A312 SML",
+    "Meta Description (<=160 chars)": "Seamless stainless pipe to ASTM A312 (SML) in TP304, 304L, 316 and 316L: what the standard fixes, what it leaves to the mill, and what to add to your RFQ.",
+    "H1 Tag": "Stainless Steel Seamless Pipe - ASTM A312 SML",
     "Primary Keyword": "SS seamless pipe manufacturer Mumbai",
-    "Secondary Keywords (3-5)": "ASTM A312 seamless pipe, 316L seamless pipe, duplex seamless pipe, SS pipe manufacturer India",
-    "Target Industries": "Oil & Gas | Chemical | Pharma | Power | Petrochemical",
-    "Key Specs": "Grades: 304/316/321/347/310/Duplex 2205/2507 | OD: 1/2\"-24\" | Std: ASTM A312/ASME B36.19",
+    "Secondary Keywords (3-5)": "ASTM A312 seamless pipe, 316L seamless pipe, SML stainless pipe, SS pipe manufacturer India",
+    "Target Industries": "Chemical | Pharmaceutical | Food and Beverage | Engineering",
+    "Key Specs": "Specification | Value\nProduct | Stainless Steel Seamless Pipe\nGrades | ASTM A312 TP304, TP304L, TP316, TP316L\nManufacture | Seamless (SML): no welding at any stage\nFinishing | Hot or cold finished, per A312 6.1.6\nHeat treatment | 1040 °C min, then rapid cooling (A312 Table 2)\nStandard | ASTM A312/A312M; dimensions to ASME B36.19\nSizes and schedules | Confirmed in writing on the quotation\nCertification | EN 10204 3.1 certificate traced to heat number\nTesting | PMI on every length\nSupply condition | Dispatch and transit confirmed in writing on the quotation",
     "Schema Type": "Product",
     "Internal Links": "SS Pipe Fittings | SS Flanges | SS Seamless Pipe category",
     "CTA": "Get a Quote",
-    "Product Description": "Stainless Steel Seamless Pipe are manufactured to deliver dependable performance in demanding industrial environments. These products offer excellent dimensional accuracy, corrosion resistance and long service life. They are supplied in multiple schedules, sizes and finishes to suit fabrication, process industries, oil & gas, petrochemical, pharmaceutical, food processing and engineering applications.",
-    "Key Features": "High strength; Corrosion resistant; Precision manufactured; Multiple sizes; Custom specifications",
-    "Applications": "Oil & Gas, Petrochemical, Chemical Processing, Food Processing, Pharma, Marine, Engineering",
-    "Standards": "ASTM / ASME / EN / DIN (as applicable)",
-    "Image": "/flanges_pipes.webp"
+    "Product Description": "Seamless stainless pipe is pipe made with no weld at any stage, coded SML in ASTM A312. Sakshi Forge, Mumbai, supplies A312 seamless pipe in TP304, TP304L, TP316 and TP316L. The standard fixes the heat treatment, the clean surface and the wall tolerance, but it leaves the finishing route and the way the anneal is done to the mill, and it runs the A262 intergranular test only when the order asks for it. This page shows which points the standard settles and which ones your enquiry has to settle. Each lot carries an EN 10204 3.1 certificate traced to heat number, with PMI on every length.",
+    "Key Features": "No weld at any stage of manufacture; Hot or cold finished, as A312 permits; Solution annealed at 1040 °C minimum with rapid cooling; EN 10204 3.1 certificate traced to heat number; PMI on every length",
+    "Applications": "Piping classes that require SML, High-temperature service, General corrosive service, Heavy-wall small-bore lines",
+    "Standards": "ASTM A312/A312M; dimensions to ASME B36.19",
+    "Image": "/flanges_pipes.webp",
+    "TL;DR": "ASTM A312 seamless (SML) pipe in TP304, TP304L, TP316 and TP316L, made with no welding at any stage and solution annealed at 1040 °C minimum. 3.1 certificate and PMI on every length. Quote within 30 minutes: +91 82913 66340.",
+    "FAQs": [
+      {
+        "q": "Is seamless stainless pipe always cold finished?",
+        "a": "No. ASTM A312 accepts hot finished or cold finished seamless pipe, at the manufacturer's option. If your specification needs one of them, state it in the enquiry so it is confirmed on the quotation."
+      },
+      {
+        "q": "Does seamless pipe need a separate solution anneal?",
+        "a": "A312 requires heat treatment at 1040 °C minimum for TP304, TP304L, TP316 and TP316L, followed by rapid cooling. For seamless pipe only, it also allows a direct quench straight after hot forming while the pipe is still at or above that temperature."
+      },
+      {
+        "q": "Is bright annealed seamless pipe pickled?",
+        "a": "It does not have to be. A312 requires the finished pipe to be free of scale and exogenous iron, but waives pickling, blasting or surface finishing when the pipe is bright annealed. Passivation is done only when the purchaser asks for it."
+      },
+      {
+        "q": "Is the A262 intergranular test included with seamless pipe?",
+        "a": "Only when the purchase order calls for Supplementary Requirement S7. Without it, A312 does not oblige the manufacturer to run ASTM A262 Practice E."
+      }
+    ]
   },
   {
     "S.No": "45",
@@ -2389,20 +2408,39 @@
     "Product Name": "304 Stainless Steel Seamless Pipe",
     "URL Slug": "304-stainless-steel-seamless-pipe",
     "Meta Title (<=60 chars)": "304 SS Seamless Pipe Manufacturer Mumbai | ASTM A312",
-    "Meta Description (<=160 chars)": "ASTM A312 TP304/304L seamless SS pipes. Food-grade, corrosion-resistant. Sakshi Forge Mumbai.",
+    "Meta Description (<=160 chars)": "304 seamless pipe to ASTM A312 TP304: Sch 40S wall ranges that comply for NPS 1/2 to 2, what the A262 test proves on 304, and what to put on the RFQ.",
     "H1 Tag": "304 Stainless Steel Seamless Pipe - ASTM A312",
     "Primary Keyword": "304 SS seamless pipe manufacturer Mumbai",
     "Secondary Keywords (3-5)": "ASTM A312 TP304 seamless pipe, 304L seamless pipe, 18/8 seamless SS pipe India",
-    "Target Industries": "Food Processing | Architecture | Chemical | Engineering | Pharma",
-    "Key Specs": "Grade: 304/304L | OD: 1/2\"-24\" | SCH: 5S-XXS | Std: ASTM A312 | Finish: 2B/Pickled",
+    "Target Industries": "Food and Beverage | Engineering | Water Treatment | Chemical",
+    "Key Specs": "Specification | Value\nProduct | 304 Stainless Steel Seamless Pipe\nGrade | ASTM A312 TP304 (UNS S30400)\nManufacture | Seamless (SML)\nTensile / yield | 515 / 205 MPa min\nWall tolerance up to NPS 2-1/2 | +20% / −12.5% of nominal\nStandard | ASTM A312/A312M; dimensions to ASME B36.19\nSizes and schedules | Confirmed in writing on the quotation\nCertification | EN 10204 3.1 certificate traced to heat number\nTesting | PMI on every length\nSupply condition | Dispatch and transit confirmed in writing on the quotation",
     "Schema Type": "Product",
     "Internal Links": "304 SS Pipe Fittings | 304 SS Flanges | 304 SS Coil",
     "CTA": "Get a Quote",
-    "Product Description": "304 Stainless Steel Seamless Pipe are precision manufactured using quality raw materials to provide superior strength, corrosion resistance and long-term reliability. Suitable for oil & gas, chemical processing, marine, pharmaceutical, food processing, engineering and fabrication industries. Custom dimensions and specifications are available.",
-    "Key Features": "Excellent corrosion resistance; Precision engineered; Durable finish; High strength; Custom sizes",
-    "Applications": "Oil & Gas, Chemical Processing, Marine, Pharmaceutical, Food Processing, Engineering, Construction",
-    "Standards": "ASTM / ASME / EN / DIN (as applicable)",
-    "Image": "/flanges_pipes.webp"
+    "Product Description": "304 seamless pipe is the plain 18/8 grade made with no weld, and in small bores it is usually bought by NPS and schedule. Sakshi Forge, Mumbai, supplies it to ASTM A312 TP304 SML. On arrival, the check that matters most is the wall: up to NPS 2-1/2 it may run 20% over and 12.5% under nominal at any point, and a seamless length has no weld area exempt from that. This page lists the Sch 40S ranges that comply from NPS 1/2 to 2 and explains what an intergranular test does and does not prove on TP304. Each lot carries an EN 10204 3.1 certificate traced to heat number, with PMI on every length.",
+    "Key Features": "ASTM A312 TP304 made seamless; Wall within +20% / −12.5% up to NPS 2-1/2; Same tensile minimums as welded TP304; EN 10204 3.1 certificate traced to heat number; PMI on every length",
+    "Applications": "Small-bore process lines, Instrument and sampling lines, Compressed air, Utility water, Lines whose class requires SML",
+    "Standards": "ASTM A312/A312M; dimensions to ASME B36.19",
+    "Image": "/flanges_pipes.webp",
+    "TL;DR": "ASTM A312 TP304 seamless (SML) pipe: 0.08% C max, 515 MPa tensile min, wall −12.5% / +20% up to NPS 2-1/2. 3.1 certificate and PMI on every length. Quote within 30 minutes: +91 82913 66340.",
+    "FAQs": [
+      {
+        "q": "How thin can NPS 1 Sch 40S TP304 seamless pipe be and still comply?",
+        "a": "The nominal wall is 3.38 mm. A312 allows 12.5% under, so 2.96 mm at any point is the minimum; the maximum is 4.06 mm, 20% over."
+      },
+      {
+        "q": "Does seamless TP304 have higher minimum strength than welded TP304?",
+        "a": "No. A312 sets the same minimums for both, 515 MPa tensile and 205 MPa yield. The difference appears in design codes, which may apply a weld joint factor to welded pipe."
+      },
+      {
+        "q": "Is TP304 seamless pipe suitable for lines that will be welded?",
+        "a": "It can be welded, but heat beside the weld can sensitise TP304 because its carbon limit is 0.08%. Where the line cannot be annealed after welding and corrosion at the weld matters, TP304L is usually specified."
+      },
+      {
+        "q": "What does an A262 Practice E pass show for TP304?",
+        "a": "That the pipe was correctly solution annealed and cooled. For TP304 the specimen is tested as shipped, not sensitized, so it says nothing about behaviour after later welding. The test is run only when the order names S7."
+      }
+    ]
   },
   {
     "S.No": "112",
@@ -2410,20 +2448,39 @@
     "Product Name": "304L Stainless Steel Seamless Pipe",
     "URL Slug": "304l-stainless-steel-seamless-pipe",
     "Meta Title (<=60 chars)": "304L SS Seamless Pipe Manufacturer | Weld Grade",
-    "Meta Description (<=160 chars)": "Low-carbon ASTM A312 TP304L seamless SS pipes. For welded piping systems requiring sensitisation resistance.",
+    "Meta Description (<=160 chars)": "304L seamless pipe to ASTM A312 TP304L: 0.035% carbon, which sizes get the 0.040% allowance, and how the A262 test proves the low carbon matters.",
     "H1 Tag": "304L Stainless Steel Seamless Pipe - ASTM A312",
     "Primary Keyword": "304L SS seamless pipe manufacturer",
     "Secondary Keywords (3-5)": "ASTM A312 TP304L seamless pipe, 1.4307 seamless pipe, low carbon 304 pipe India",
-    "Target Industries": "Chemical | Food Processing | Architecture | Pharma | Fabrication",
-    "Key Specs": "Grade: 304L | C <=0.03% | OD: 1/2\"-24\" | Std: ASTM A312",
+    "Target Industries": "Chemical | Pharmaceutical | Food and Beverage | Water Treatment",
+    "Key Specs": "Specification | Value\nProduct | 304L Stainless Steel Seamless Pipe\nGrade | ASTM A312 TP304L (UNS S30403)\nManufacture | Seamless (SML)\nCarbon | 0.035% max; 0.040% under Table 1 footnote D\nTensile / yield | 485 / 170 MPa min\nStandard | ASTM A312/A312M; dimensions to ASME B36.19\nSizes and schedules | Confirmed in writing on the quotation\nCertification | EN 10204 3.1 certificate traced to heat number\nTesting | PMI on every length\nSupply condition | Dispatch and transit confirmed in writing on the quotation",
     "Schema Type": "Product",
     "Internal Links": "304 SS Seamless Pipe | 304L SS Pipe Fittings",
     "CTA": "Send Inquiry",
-    "Product Description": "304L Stainless Steel Seamless Pipe are precision manufactured using quality raw materials to provide superior strength, corrosion resistance and long-term reliability. Suitable for oil & gas, chemical processing, marine, pharmaceutical, food processing, engineering and fabrication industries. Custom dimensions and specifications are available.",
-    "Key Features": "Excellent corrosion resistance; Precision engineered; Durable finish; High strength; Custom sizes",
-    "Applications": "Oil & Gas, Chemical Processing, Marine, Pharmaceutical, Food Processing, Engineering, Construction",
-    "Standards": "ASTM / ASME / EN / DIN (as applicable)",
-    "Image": "/flanges_pipes.webp"
+    "Product Description": "304L seamless pipe is TP304 with its carbon held to 0.035%, so welded joints resist intergranular attack without a later anneal. Sakshi Forge, Mumbai, supplies it to ASTM A312 TP304L SML. The standard relaxes the carbon limit to 0.040% for very small or thin product, and across the standard seamless sizes that reaches only NPS 1/8. This page sets out which sizes get the allowance, and how the A262 test on a sensitized specimen, run when the order names S7, shows the low carbon is doing its job. Each lot carries an EN 10204 3.1 certificate traced to heat number, with PMI on every length.",
+    "Key Features": "ASTM A312 TP304L made seamless; Carbon 0.035% max for welded service; A262 Practice E on request (S7); EN 10204 3.1 certificate traced to heat number; PMI on every length",
+    "Applications": "Welded process lines not annealed after fabrication, Chemical transfer, Purified water and utilities, Lines whose class requires SML",
+    "Standards": "ASTM A312/A312M; dimensions to ASME B36.19",
+    "Image": "/flanges_pipes.webp",
+    "TL;DR": "ASTM A312 TP304L seamless (SML) pipe: 0.035% C max (0.040% for OD under 12.7 mm or wall under 1.20 mm), 485 MPa tensile min. 3.1 certificate and PMI on every length. Quote within 30 minutes: +91 82913 66340.",
+    "FAQs": [
+      {
+        "q": "What is the carbon limit for TP304L seamless pipe?",
+        "a": "0.035% maximum under ASTM A312. Footnote D allows 0.040% when the outside diameter is under 12.7 mm or the average wall is under 1.20 mm, which among standard sizes covers only NPS 1/8."
+      },
+      {
+        "q": "Is TP304L weaker than TP304?",
+        "a": "Its A312 minimums are lower: 485 MPa tensile and 170 MPa yield, against 515 and 205 MPa for TP304. A design based on TP304 allowable stress must be checked before 304L is substituted."
+      },
+      {
+        "q": "Does 304L seamless pipe need the A262 test?",
+        "a": "Only if the purchase order specifies Supplementary Requirement S7. When it is run on TP304L the specimen is sensitized first, so a pass shows resistance to intergranular attack after welding heat."
+      },
+      {
+        "q": "Why choose seamless rather than welded 304L?",
+        "a": "Some piping classes call for SML at certain sizes or pressures, and a seamless length has no weld area, so its whole circumference is held to the over tolerance. Where the class allows WLD, welded TP304L meets the same chemistry and tensile limits."
+      }
+    ]
   },
   {
     "S.No": "113",
@@ -2494,20 +2551,39 @@
     "Product Name": "316 Stainless Steel Seamless Pipe",
     "URL Slug": "316-stainless-steel-seamless-pipe",
     "Meta Title (<=60 chars)": "316 SS Seamless Pipe Manufacturer Mumbai | ASTM A312",
-    "Meta Description (<=160 chars)": "ASTM A312 TP316 marine-grade SS seamless pipes. Mo for chloride & pitting resistance. Sakshi Forge Mumbai.",
+    "Meta Description (<=160 chars)": "316 seamless pipe to ASTM A312 TP316: how t/D sets the wall tolerance from NPS 3 to 12 in Sch 40S and 10S, with the ranges that comply, and RFQ notes.",
     "H1 Tag": "316 Stainless Steel Seamless Pipe - ASTM A312 TP316",
     "Primary Keyword": "316 SS seamless pipe manufacturer Mumbai",
     "Secondary Keywords (3-5)": "ASTM A312 TP316 seamless pipe, 1.4401 seamless pipe, marine SS seamless pipe India",
-    "Target Industries": "Marine | Chemical | Oil & Gas | Pharma | Offshore",
-    "Key Specs": "Grade: 316 | Mo: 2-3% | OD: 1/2\"-24\" | SCH: 5S-XXS | Std: ASTM A312",
+    "Target Industries": "Chemical | Pharmaceutical | Water Treatment | Engineering",
+    "Key Specs": "Specification | Value\nProduct | 316 Stainless Steel Seamless Pipe\nGrade | ASTM A312 TP316 (UNS S31600)\nManufacture | Seamless (SML)\nMolybdenum | 2.00–3.00%\nWall tolerance, NPS 3 to 18 | −12.5%; +22.5% (t/D ≤ 5%) or +15.0% (t/D > 5%)\nStandard | ASTM A312/A312M; dimensions to ASME B36.19\nSizes and schedules | Confirmed in writing on the quotation\nCertification | EN 10204 3.1 certificate traced to heat number\nTesting | PMI on every length\nSupply condition | Dispatch and transit confirmed in writing on the quotation",
     "Schema Type": "Product",
     "Internal Links": "316 SS Pipe Fittings | 316 SS Flanges | 316 SS Coil",
     "CTA": "Send Inquiry",
-    "Product Description": "316 Stainless Steel Seamless Pipe are precision manufactured using quality raw materials to provide superior strength, corrosion resistance and long-term reliability. Suitable for oil & gas, chemical processing, marine, pharmaceutical, food processing, engineering and fabrication industries. Custom dimensions and specifications are available.",
-    "Key Features": "Excellent corrosion resistance; Precision engineered; Durable finish; High strength; Custom sizes",
-    "Applications": "Oil & Gas, Chemical Processing, Marine, Pharmaceutical, Food Processing, Engineering, Construction",
-    "Standards": "ASTM / ASME / EN / DIN (as applicable)",
-    "Image": "/flanges_pipes.webp"
+    "Product Description": "316 seamless pipe is the molybdenum-bearing grade made with no weld, chosen where chlorides would pit 304. Sakshi Forge, Mumbai, supplies it to ASTM A312 TP316 SML. From NPS 3 upward the wall tolerance is not one fixed figure: A312 sets the allowance above nominal by the ratio of wall to outside diameter, and Sch 40S crosses that line between NPS 4 and NPS 6. This page gives the t/D and the compliant wall range for Sch 40S and Sch 10S from NPS 3 to 12, so receiving inspection knows what to expect. Each lot carries an EN 10204 3.1 certificate traced to heat number, with PMI on every length.",
+    "Key Features": "ASTM A312 TP316 made seamless; Molybdenum 2.00 to 3.00% for chloride service; Wall tolerance set by t/D from NPS 3; EN 10204 3.1 certificate traced to heat number; PMI on every length",
+    "Applications": "Chloride-bearing process lines, Brine and cooling water, Chemical transfer, High-temperature service, Lines whose class requires SML",
+    "Standards": "ASTM A312/A312M; dimensions to ASME B36.19",
+    "Image": "/flanges_pipes.webp",
+    "TL;DR": "ASTM A312 TP316 seamless (SML) pipe: 2.00–3.00% Mo, 515 MPa tensile min; from NPS 3 the over tolerance is +22.5% or +15.0% depending on t/D. 3.1 certificate and PMI on every length. Quote within 30 minutes: +91 82913 66340.",
+    "FAQs": [
+      {
+        "q": "What wall tolerance applies to NPS 6 Sch 40S TP316 seamless pipe?",
+        "a": "The t/D ratio is about 4.2%, under 5%, so A312 allows +22.5% and −12.5% on the 7.11 mm nominal wall: 6.22 mm to 8.71 mm."
+      },
+      {
+        "q": "Why does NPS 4 Sch 40S have a tighter over tolerance than NPS 6?",
+        "a": "At NPS 4 the 6.02 mm wall is about 5.3% of the 114.30 mm outside diameter, above the 5% line, so the over allowance drops to +15.0%. At NPS 6 the ratio falls below 5%."
+      },
+      {
+        "q": "What are the minimum tensile properties of TP316 seamless pipe?",
+        "a": "515 MPa tensile and 205 MPa yield under ASTM A312, the same as welded TP316."
+      },
+      {
+        "q": "Should seamless lines use TP316 or TP316L?",
+        "a": "TP316 allows up to 0.08% carbon and keeps the higher minimum strength; TP316L is limited to 0.035% carbon and suits lines welded without a later anneal. Molybdenum is 2.00 to 3.00% in both."
+      }
+    ]
   },
   {
     "S.No": "117",
@@ -2515,20 +2591,39 @@
     "Product Name": "316L Stainless Steel Seamless Pipe",
     "URL Slug": "316l-stainless-steel-seamless-pipe",
     "Meta Title (<=60 chars)": "316L SS Seamless Pipe Manufacturer | Low Carbon",
-    "Meta Description (<=160 chars)": "Low-carbon ASTM A312 TP316L seamless SS pipes. Sensitisation-free post-weld. Sakshi Forge Mumbai.",
+    "Meta Description (<=160 chars)": "316L seamless pipe to ASTM A312 TP316L: what the 3.1 heat analysis, PMI and SML marking each prove, why carbon needs the certificate, and RFQ notes.",
     "H1 Tag": "316L Stainless Steel Seamless Pipe - Low Carbon",
     "Primary Keyword": "316L SS seamless pipe manufacturer",
     "Secondary Keywords (3-5)": "ASTM A312 TP316L seamless pipe, 1.4404 seamless pipe, low carbon marine SS pipe India",
-    "Target Industries": "Marine | Chemical | Pharma | Nuclear | Offshore",
-    "Key Specs": "Grade: 316L | C <=0.03% | OD: 1/2\"-24\" | Std: ASTM A312",
+    "Target Industries": "Pharmaceutical | Chemical | Food and Beverage | Water Treatment",
+    "Key Specs": "Specification | Value\nProduct | 316L Stainless Steel Seamless Pipe\nGrade | ASTM A312 TP316L (UNS S31603)\nManufacture | Seamless (SML)\nCarbon / molybdenum | 0.035% max / 2.00–3.00%\nTensile / yield | 485 / 170 MPa min\nStandard | ASTM A312/A312M; dimensions to ASME B36.19\nSizes and schedules | Confirmed in writing on the quotation\nCertification | EN 10204 3.1 certificate traced to heat number\nTesting | PMI on every length\nSupply condition | Dispatch and transit confirmed in writing on the quotation",
     "Schema Type": "Product",
     "Internal Links": "316L SS Pipe Fittings | 316L SS Flanges | 316L SS Coil",
     "CTA": "Get a Quote",
-    "Product Description": "316L Stainless Steel Seamless Pipe are precision manufactured using quality raw materials to provide superior strength, corrosion resistance and long-term reliability. Suitable for oil & gas, chemical processing, marine, pharmaceutical, food processing, engineering and fabrication industries. Custom dimensions and specifications are available.",
-    "Key Features": "Excellent corrosion resistance; Precision engineered; Durable finish; High strength; Custom sizes",
-    "Applications": "Oil & Gas, Chemical Processing, Marine, Pharmaceutical, Food Processing, Engineering, Construction",
-    "Standards": "ASTM / ASME / EN / DIN (as applicable)",
-    "Image": "/flanges_pipes.webp"
+    "Product Description": "316L seamless pipe is TP316 with carbon held to 0.035%, made with no weld, for chloride-bearing lines that are welded and not annealed afterwards. Sakshi Forge, Mumbai, supplies it to ASTM A312 TP316L SML. Three records come with each length: the heat analysis on the 3.1 certificate, a PMI result and the SML marking. They prove different things. PMI tells 316L from 304L by molybdenum, but telling 316L from 316 is a carbon question that handheld XRF cannot answer, so the certificate carries that proof. This page maps each record to what it shows.",
+    "Key Features": "ASTM A312 TP316L made seamless; Carbon 0.035% max, molybdenum 2.00 to 3.00%; Heat number marked on each length; EN 10204 3.1 certificate traced to heat number; PMI on every length",
+    "Applications": "Welded chloride-service lines, Purified water and CIP lines, Chemical transfer, Lines whose class requires SML",
+    "Standards": "ASTM A312/A312M; dimensions to ASME B36.19",
+    "Image": "/flanges_pipes.webp",
+    "TL;DR": "ASTM A312 TP316L seamless (SML) pipe: 0.035% C max, 2.00–3.00% Mo, 485 MPa tensile min. EN 10204 3.1 certificate traced to heat number and PMI on every length. Quote within 30 minutes: +91 82913 66340.",
+    "FAQs": [
+      {
+        "q": "Can PMI confirm that seamless pipe is 316L and not 316?",
+        "a": "Only if the instrument reads carbon. Handheld XRF does not, so it cannot separate 316L from 316; optical emission spectrometry can. The heat analysis on the 3.1 certificate also gives the carbon content."
+      },
+      {
+        "q": "What carbon limit applies to TP316L seamless pipe?",
+        "a": "0.035% maximum, or 0.040% under footnote D to A312 Table 1 when the outside diameter is under 12.7 mm or the average wall is under 1.20 mm."
+      },
+      {
+        "q": "How do I know the pipe is seamless and not welded?",
+        "a": "From the SML marking on the pipe and the method of manufacture stated on the certificate. A chemical check cannot show it."
+      },
+      {
+        "q": "Why does the heat number on every length matter?",
+        "a": "It ties each length to one heat analysis and one set of tests on the certificate. A length that has lost its marking can no longer be traced to its 3.1 certificate."
+      }
+    ]
   },
   {
     "S.No": "118",
@@ -5212,7 +5307,7 @@
     "Category": "Seamless Pipes",
     "URL Slug": "stainless-steel-pipes/ss-seamless-pipes",
     "Meta Title": "Stainless Steel Seamless Pipes Manufacturer | Sakshi Forge",
-    "Meta Description": "Sakshi Forge: Stainless Steel Seamless Pipes manufacturer in Mumbai, India. ASTM A312, EN 10204 3.1 MTC, PMI tested. 30-minute quote turnaround.",
+    "Meta Description": "Stainless steel seamless pipes to ASTM A312 in TP304, 304L, 316 and 316L, and how product analysis works: lot sizes, sampling and the retest rule.",
     "H1 Tag": "Stainless Steel Seamless Pipes Manufacturer & Supplier in India - Sakshi Forge, Mumbai",
     "Robots": "index, follow",
     "Sitemap priority": "0.8",
@@ -5221,37 +5316,29 @@
     "Schema on page": "Product + BreadcrumbList + FAQPage",
     "Primary Keyword": "SS seamless pipe manufacturer India",
     "Secondary Keywords (3-5)": "ASTM A312 TP316L seamless pipe supplier Mumbai",
-    "Product Description": "Sakshi Forge is a stainless steel seamless pipes manufacturer and supplier based in Mumbai, India, producing TP304/L, TP316/L, TP321, TP347, TP310S to ASTM A312, A213. Our range covers 1/8\" to 24\" NB, Sch 5S-XXS, supplied with EN 10204 3.1 mill test certificates, PMI verification and full dimensional reports. Typical applications include high-pressure, high-temp, corrosive process service. Material is dispatched from Mumbai, and the dispatch date and transit are confirmed in writing on the quotation. Send your requirement call +91 82913 66340 - we respond with a firm quotation within 30 minutes.",
-    "TL;DR": "Stainless Steel Seamless Pipes: manufactured by Sakshi Forge, Mumbai in TP304/L and more, sizes 1/8\" to 24\" NB, Sch 5S-XXS, per ASTM A312. EN 10204 3.1 MTC + PMI standard. Quote within 30 minutes: +91 82913 66340.",
+    "Product Description": "Stainless steel seamless pipe is bought to ASTM A312 as SML, and every length already comes with a heat analysis on its certificate. Sakshi Forge, Mumbai, supplies A312 seamless pipe in TP304, TP304L, TP316 and TP316L. Some specifications also ask for product analysis, a second chemical check that A312 section 8 sets out: one billet or length of flat-rolled stock per heat, or two pipes per lot, with lot size set by NPS. This page explains the lot sizes, works one order through, and shows what happens if an analysis fails. Each lot carries an EN 10204 3.1 certificate traced to heat number, with PMI on every length.",
+    "TL;DR": "Stainless seamless pipe to ASTM A312 (SML) in TP304, TP304L, TP316 and TP316L. Product analysis to A312 section 8 when the purchaser asks. 3.1 certificate and PMI on every length. Quote within 30 minutes: +91 82913 66340.",
     "H2 Outline": "1. What is Stainless Steel Seamless Pipes? (definition + where it's used - 120w)\n2. Stainless Steel Seamless Pipes Specifications ( the spec table)\n3. Grades & Chemical Composition (per-grade table: C, Cr, Ni, Mo %)\n4. Size Range & Dimensional Standards\n5. Manufacturing Process & Quality Testing at Sakshi Forge\n6. Applications by Industry (H3 per industry)\n7. Why Buy Stainless Steel Seamless Pipes from Sakshi Forge (MTC, PMI, 30-minute quote, export docs)\n8. Frequently Asked Questions (render FAQ Bank rows)\n9. Related Products (4 sibling links)",
-    "Key Specs": "Specification | Value\nProduct | Stainless Steel Seamless Pipes\nGrades / Materials | TP304/L, TP316/L, TP321, TP347, TP310S\nSize range | 1/8\" to 24\" NB, Sch 5S-XXS\nStandards | ASTM A312, A213; ASME B36.19M\nOrigin | Manufactured in Mumbai, India\nCertification | EN 10204 3.1 MTC traced to heat number, PMI on every length\nTesting | PMI on every length; internal Ra report per EP lot\nSupply condition | Dispatch and transit confirmed in writing on the quotation\nKey applications | High-pressure, high-temp, corrosive process service",
-    "Internal Links Raw": "'Stainless Steel Pipes & Tubes' -> https://steelmanufacturer.in/stainless-steel-pipes/\n'Stainless Steel Welded (ERW/EFW) Pipes' -> https://steelmanufacturer.in/stainless-steel-pipes/ss-welded-pipes/\n'Duplex Steel Pipes (UNS S31803/S32205)' -> https://steelmanufacturer.in/stainless-steel-pipes/duplex-steel-pipes/\n'Super Duplex Pipes (UNS S32750/S32760)' -> https://steelmanufacturer.in/stainless-steel-pipes/super-duplex-steel-pipes/\n'Metal Weight Calculator' -> https://steelmanufacturer.in/weight-calculator/\n'Quality Assurance' -> https://steelmanufacturer.in/quality-assurance/",
+    "Key Specs": "Specification | Value\nProduct | Stainless Steel Seamless Pipes\nGrades | ASTM A312 TP304, TP304L, TP316, TP316L\nManufacture | Seamless (SML)\nProduct analysis | On request, per A312 section 8\nStandard | ASTM A312/A312M; dimensions to ASME B36.19\nSizes and schedules | Confirmed in writing on the quotation\nCertification | EN 10204 3.1 certificate traced to heat number\nTesting | PMI on every length\nSupply condition | Dispatch and transit confirmed in writing on the quotation",
+    "Internal Links Raw": "'Stainless Steel Pipes & Tubes' -> https://steelmanufacturer.in/stainless-steel-pipes/\n'Seamless Stainless Steel Pipe' -> https://steelmanufacturer.in/stainless-steel-seamless-pipe/\n'Stainless Steel Welded (ERW/EFW) Pipes' -> https://steelmanufacturer.in/stainless-steel-pipes/ss-welded-pipes/\n'Pipe Schedule Chart' -> https://steelmanufacturer.in/pipe-schedule-chart/\n'Metal Weight Calculator' -> https://steelmanufacturer.in/weight-calculator/\n'Quality Assurance' -> https://steelmanufacturer.in/quality-assurance/",
     "Image": "/Stainless Steel Tee.webp",
-    "Image Alt Texts": "Hero: 'Stainless Steel Seamless Pipes manufactured by Sakshi Forge Mumbai India'\n2: 'Stainless Steel Seamless Pipes - TP304/L supplied by Sakshi Forge'\n3: 'Stainless Steel Seamless Pipes dimensional inspection with EN 10204 3.1 MTC'\nFile names: stainless-steel-seamless-pipes-manufacturer-india-1.webp, -2.webp, -3.webp",
+    "Image Alt Texts": "Hero: 'Stainless Steel Seamless Pipes supplied by Sakshi Forge, Mumbai'\n2: 'Stainless Steel Seamless Pipes in TP304L to ASTM A312'\n3: 'Stainless Steel Seamless Pipes with EN 10204 3.1 certificate'\nFile names: stainless-steel-seamless-pipes-manufacturer-india-1.webp, -2.webp, -3.webp",
     "FAQs": [
       {
-        "q": "What is the price of Stainless Steel Seamless Pipes in India?",
-        "a": "Stainless Steel Seamless Pipes pricing depends on grade, size, quantity and current raw-material (nickel/chrome) rates. Sakshi Forge quotes within 30 minutes with a validity window - call +91 82913 66340 with your size list and grade for today's best ex-Mumbai price."
+        "q": "What is the difference between heat analysis and product analysis?",
+        "a": "Heat analysis is the chemistry of the heat of steel, reported on the 3.1 certificate. Product analysis is a separate check of a billet, flat-rolled stock or finished pipe, made under A312 section 8 only when the purchaser asks for it."
       },
       {
-        "q": "Which grades of Stainless Steel Seamless Pipes does Sakshi Forge manufacture?",
-        "a": "Sakshi Forge manufactures Stainless Steel Seamless Pipes in TP304/L, TP316/L, TP321, TP347, TP310S. Every heat is PMI-verified and shipped with EN 10204 3.1 mill test certificates traced to the heat number."
+        "q": "How many pipes are checked in a product analysis?",
+        "a": "Two pipes from each lot, or one billet or one length of flat-rolled stock from each heat. A lot is up to 400 lengths under NPS 2, 200 lengths from NPS 2 to 5, and 100 lengths at NPS 6 and over."
       },
       {
-        "q": "What size range is available for Stainless Steel Seamless Pipes?",
-        "a": "Standard range: 1/8\" to 24\" NB, Sch 5S-XXS. Non-standard sizes are produced to drawing - share your dimension sheet for a custom quotation."
+        "q": "What happens if a product analysis fails?",
+        "a": "Each billet or pipe from that heat or lot may then be analysed separately, and the ones that conform are accepted, under A312 section 8.3."
       },
       {
-        "q": "Which standards do your Stainless Steel Seamless Pipes comply with?",
-        "a": "Sakshi Forge's Stainless Steel Seamless Pipes conform to ASTM A312, A213; ASME B36.19M. Dimensional and material compliance is documented in the MTC supplied with every consignment."
-      },
-      {
-        "q": "What industries use Stainless Steel Seamless Pipes?",
-        "a": "Typical applications include High-pressure, high-temp, corrosive process service. Sakshi Forge has supplied to oil & gas, pharmaceutical, dairy, semiconductor and petrochemical clients across India."
-      },
-      {
-        "q": "What is the delivery time for Stainless Steel Seamless Pipes from Mumbai?",
-        "a": "Dispatch and transit are confirmed in writing with each quotation."
+        "q": "Which grades are supplied as seamless pipe?",
+        "a": "TP304, TP304L, TP316 and TP316L to ASTM A312, with PMI on every length and an EN 10204 3.1 certificate traced to the heat number."
       }
     ],
     "Secondary Keywords": "ASTM A312 TP316L seamless pipe supplier Mumbai",
@@ -5263,7 +5350,7 @@
     "Category": "Stainless Steel Welded (ERW/EFW) Pipes",
     "URL Slug": "stainless-steel-pipes/ss-welded-pipes",
     "Meta Title": "Stainless Steel Welded (ERW/EFW) Pipes | Sakshi Forge",
-    "Meta Description": "Sakshi Forge: Stainless Steel Welded (ERW/EFW) Pipes manufacturer in Mumbai, India. ASTM A312, EN 10204 3.1 MTC, PMI tested. 30-minute quote turnaround.",
+    "Meta Description": "Stainless steel welded pipes to ASTM A312 in TP304, 304L, 316 and 316L: WLD and HCW compared, where ERW and EFW fit, and what to write on the RFQ.",
     "H1 Tag": "Stainless Steel Welded (ERW/EFW) Pipes Manufacturer & Supplier in India - Sakshi Forge, Mumbai",
     "Robots": "index, follow",
     "Sitemap priority": "0.8",
@@ -5272,37 +5359,29 @@
     "Schema on page": "Product + BreadcrumbList + FAQPage",
     "Primary Keyword": "SS welded pipe manufacturer",
     "Secondary Keywords (3-5)": "A312 welded pipe supplier, EFW large diameter SS pipe India",
-    "Product Description": "Sakshi Forge is a stainless steel welded (erw/efw) pipes manufacturer and supplier based in Mumbai, India, producing TP304/L, TP316/L to ASTM A312, A358. Our range covers 1/2\" to 60\" NB, supplied with EN 10204 3.1 mill test certificates, PMI verification and full dimensional reports. Typical applications include large-diameter transfer lines, water treatment, structural. Material is dispatched from Mumbai, and the dispatch date and transit are confirmed in writing on the quotation. Send your requirement call +91 82913 66340 - we respond with a firm quotation within 30 minutes.",
-    "TL;DR": "Stainless Steel Welded (ERW/EFW) Pipes: manufactured by Sakshi Forge, Mumbai in TP304/L and more, sizes 1/2\" to 60\" NB, per ASTM A312. EN 10204 3.1 MTC + PMI standard. Quote within 30 minutes: +91 82913 66340.",
+    "Product Description": "Stainless steel welded pipe, often called ERW or EFW in enquiries, is bought to ASTM A312 as WLD: welded by an automatic process with no filler metal, then heat treated. Sakshi Forge, Mumbai, quotes welded pipe to ASTM A312 in TP304, TP304L, TP316 and TP316L. A312 also has a second welded form, HCW, which is cold worked by at least 35% after a fully radiographed weld. This page compares WLD and HCW requirement by requirement and shows how the ERW and EFW trade names map onto the standard. Each lot carries an EN 10204 3.1 certificate traced to heat number, with PMI on every length.",
+    "TL;DR": "Stainless welded pipe to ASTM A312 (WLD) in TP304, TP304L, TP316 and TP316L: automatic weld, no filler metal, heat treated at 1040 °C minimum. 3.1 certificate and PMI on every length. Quote within 30 minutes: +91 82913 66340.",
     "H2 Outline": "1. What is Stainless Steel Welded (ERW/EFW) Pipes? (definition + where it's used - 120w)\n2. Stainless Steel Welded (ERW/EFW) Pipes Specifications ( the spec table)\n3. Grades & Chemical Composition (per-grade table: C, Cr, Ni, Mo %)\n4. Size Range & Dimensional Standards\n5. Manufacturing Process & Quality Testing at Sakshi Forge\n6. Applications by Industry (H3 per industry)\n7. Why Buy Stainless Steel Welded (ERW/EFW) Pipes from Sakshi Forge (MTC, PMI, 30-minute quote, export docs)\n8. Frequently Asked Questions (render FAQ Bank rows)\n9. Related Products (4 sibling links)",
-    "Key Specs": "Specification | Value\nProduct | Stainless Steel Welded (ERW/EFW) Pipes\nGrades / Materials | TP304/L, TP316/L\nSize range | 1/2\" to 60\" NB\nStandards | ASTM A312, A358\nOrigin | Manufactured in Mumbai, India\nCertification | EN 10204 3.1 MTC traced to heat number, PMI on every length\nTesting | PMI on every length; internal Ra report per EP lot\nSupply condition | Dispatch and transit confirmed in writing on the quotation\nKey applications | Large-diameter transfer lines, water treatment, structural",
-    "Internal Links Raw": "'Stainless Steel Pipes & Tubes' -> https://steelmanufacturer.in/stainless-steel-pipes/\n'Stainless Steel Seamless Pipes' -> https://steelmanufacturer.in/stainless-steel-pipes/ss-seamless-pipes/\n'Duplex Steel Pipes (UNS S31803/S32205)' -> https://steelmanufacturer.in/stainless-steel-pipes/duplex-steel-pipes/\n'Super Duplex Pipes (UNS S32750/S32760)' -> https://steelmanufacturer.in/stainless-steel-pipes/super-duplex-steel-pipes/\n'Metal Weight Calculator' -> https://steelmanufacturer.in/weight-calculator/\n'Quality Assurance' -> https://steelmanufacturer.in/quality-assurance/",
+    "Key Specs": "Specification | Value\nProduct | Stainless Steel Welded (ERW/EFW) Pipes\nGrades | ASTM A312 TP304, TP304L, TP316, TP316L\nManufacture | Welded (WLD): automatic weld, no filler metal\nHeat treatment | 1040 °C min, rapid cooling (A312 Table 2)\nStandard | ASTM A312/A312M; dimensions to ASME B36.19\nSizes and schedules | Confirmed in writing on the quotation\nCertification | EN 10204 3.1 certificate traced to heat number\nTesting | PMI on every length\nSupply condition | Dispatch and transit confirmed in writing on the quotation",
+    "Internal Links Raw": "'Stainless Steel Pipes & Tubes' -> https://steelmanufacturer.in/stainless-steel-pipes/\n'SS ERW Pipes' -> https://steelmanufacturer.in/ss-erw-pipes/\n'Stainless Steel Seamless Pipes' -> https://steelmanufacturer.in/stainless-steel-pipes/ss-seamless-pipes/\n'Pipe Schedule Chart' -> https://steelmanufacturer.in/pipe-schedule-chart/\n'Metal Weight Calculator' -> https://steelmanufacturer.in/weight-calculator/\n'Quality Assurance' -> https://steelmanufacturer.in/quality-assurance/",
     "Image": "/Stainless Steel Tee.webp",
-    "Image Alt Texts": "Hero: 'Stainless Steel Welded (ERW/EFW) Pipes manufactured by Sakshi Forge Mumbai India'\n2: 'Stainless Steel Welded (ERW/EFW) Pipes - TP304/L supplied by Sakshi Forge'\n3: 'Stainless Steel Welded (ERW/EFW) Pipes dimensional inspection with EN 10204 3.1 MTC'\nFile names: stainless-steel-welded-erw-efw-pipes-manufacturer-india-1.webp, -2.webp, -3.webp",
+    "Image Alt Texts": "Hero: 'Stainless Steel Welded (ERW/EFW) Pipes supplied by Sakshi Forge, Mumbai'\n2: 'Stainless Steel Welded (ERW/EFW) Pipes in TP304L to ASTM A312'\n3: 'Stainless Steel Welded (ERW/EFW) Pipes with EN 10204 3.1 certificate'\nFile names: stainless-steel-welded-erw-efw-pipes-manufacturer-india-1.webp, -2.webp, -3.webp",
     "FAQs": [
       {
-        "q": "What is the price of Stainless Steel Welded (ERW/EFW) Pipes in India?",
-        "a": "Stainless Steel Welded (ERW/EFW) Pipes pricing depends on grade, size, quantity and current raw-material (nickel/chrome) rates. Sakshi Forge quotes within 30 minutes with a validity window - call +91 82913 66340 with your size list and grade for today's best ex-Mumbai price."
+        "q": "Is ERW stainless pipe the same as A312 WLD?",
+        "a": "When the seam is made by an automatic process with no filler metal, yes: A312 classes it as WLD whatever the welding trade name. Pipe welded with filler metal is outside A312."
       },
       {
-        "q": "Which grades of Stainless Steel Welded (ERW/EFW) Pipes does Sakshi Forge manufacture?",
-        "a": "Sakshi Forge manufactures Stainless Steel Welded (ERW/EFW) Pipes in TP304/L, TP316/L. Every heat is PMI-verified and shipped with EN 10204 3.1 mill test certificates traced to the heat number."
+        "q": "What is HCW pipe?",
+        "a": "Heavily cold worked pipe: welded pipe reduced by at least 35% in both wall and weld thickness by cold working before the final anneal. Its weld is fully radiographed before the cold work, and it is marked HCW."
       },
       {
-        "q": "What size range is available for Stainless Steel Welded (ERW/EFW) Pipes?",
-        "a": "Standard range: 1/2\" to 60\" NB. Non-standard sizes are produced to drawing - share your dimension sheet for a custom quotation."
+        "q": "Can a welded pipe above NPS 14 have two seams?",
+        "a": "Yes, if the purchaser approves. A312 requires a single longitudinal seam up to NPS 14; larger pipe may have one seam or be made of two sections, with weld tests on each seam."
       },
       {
-        "q": "Which standards do your Stainless Steel Welded (ERW/EFW) Pipes comply with?",
-        "a": "Sakshi Forge's Stainless Steel Welded (ERW/EFW) Pipes conform to ASTM A312, A358. Dimensional and material compliance is documented in the MTC supplied with every consignment."
-      },
-      {
-        "q": "What industries use Stainless Steel Welded (ERW/EFW) Pipes?",
-        "a": "Typical applications include Large-diameter transfer lines, water treatment, structural. Sakshi Forge has supplied to oil & gas, pharmaceutical, dairy, semiconductor and petrochemical clients across India."
-      },
-      {
-        "q": "What is the delivery time for Stainless Steel Welded (ERW/EFW) Pipes from Mumbai?",
-        "a": "Dispatch and transit are confirmed in writing with each quotation."
+        "q": "Which grades are supplied as welded pipe?",
+        "a": "TP304, TP304L, TP316 and TP316L to ASTM A312, PMI tested on every length and supplied with an EN 10204 3.1 certificate traced to the heat number."
       }
     ],
     "Secondary Keywords": "A312 welded pipe supplier, EFW large diameter SS pipe India",

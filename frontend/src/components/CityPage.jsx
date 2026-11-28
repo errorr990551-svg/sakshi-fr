@@ -4,6 +4,7 @@ import { handleLinkClick, withSlash } from '../utils/router';
 import { stripPrerenderedSchemaTypes } from '../utils/schemaHelpers';
 import { buildCityContent } from '../data/cityContent';
 import CityLocalSections from './CityLocalSections';
+import CityCountryNotes from './CityCountryNotes';
 import CityProductPillars from './CityProductPillars';
 
 // Premium Live Delivery Widget Component
@@ -1065,6 +1066,7 @@ export default function CityPage({ cityData, custom = null, onEnquireClick, hasU
       </section>
 
       <CityLocalSections content={localContent} city={cityData.city} />
+      {isInternational && <CityCountryNotes cityData={cityData} />}
 
       {/* Researched cities link to the product pages for the generic EP-vs-MP and grade tables */}
       {localContent && (

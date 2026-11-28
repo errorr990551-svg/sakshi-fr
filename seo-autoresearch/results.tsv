@@ -240,3 +240,19 @@ date	path	type	status	nearest_overlap_before	nearest_overlap_after	words_before	
 2026-11-28	/market-area/bardhaman/	city-in	discard	0.000	0.000	0	0	discard: insufficient verifiable sources. Rice mills only; no food park, dairy or pharma unit confirmed
 2026-11-28	/market-area/bidar/	city-in	keep	0.540	0.416	1895	2613	Kolhar Industrial Area bulk-drug estate (296 industries, 85 operating, 17 bulk-drug units), groundwater TDS, ZLD, RFQ. Sources: NGT SZ order 24 Feb 2020 (Indian Kanoon), KSPCB inspection reports Apr 2022 (greentribunal.gov.in). Overlap above 0.35 target
 2026-11-28	/market-area/chittoor/	city-in	keep	0.444	0.360	2415	3121	Dairy-led page: 23 lakh L/day dairy collection, 50+ dairies, Kuppam Shreeja dairy (Rs 233 cr) and Mother Dairy F&V pulp unit (Rs 105.1 cr), Srini Mega Food Park (operational, PIB list 30.11.2025), RFQ. Sources: Hans India x2, PIB MoFPI annexure. Mango pulp and Sri City left to Tirupati page. Overlap above 0.35 target
+2026-11-28	/market-area/delhi/	city-in	discard	-	-	-	-	not written: /market-area/new-delhi/ already carries the Mother Dairy Patparganj section (21 Nov); a second Delhi page with the same plant would duplicate it; owner to decide delhi vs new-delhi
+2026-11-28	/market-area/gurugram/	city-in	discard	-	-	-	-	C1 retry: searches for Manesar/Gurugram pharma or dairy plants found no openable source naming an operating plant
+2026-11-28	/market-area/ghaziabad/	city-in	discard	-	-	-	-	C1 retry: only equipment-vendor listings; no source on an operating dairy, pharma or food plant
+2026-11-28	/market-area/greater-noida/	city-in	discard	-	-	-	-	C1 retry: no source with an operating hygienic-process plant and capacity
+2026-11-28	/market-area/jamshedpur/	city-in	discard	-	-	-	-	C1 retry: Medha 50,000 L/day plant at Baliguma only at foundation-stone stage (Daily Pioneer, Mar 2024); no commissioning source
+2026-11-28	/market-area/jamnagar/	city-in	discard	-	-	-	-	C1 retry: still no verifiable source on an operating hygienic-process plant
+2026-11-28	/market-area/bhilai/	city-in	discard	-	-	-	-	C1 retry: no pharma or dairy plant source; steel/cement base
+2026-11-28	/market-area/bokaro/	city-in	discard	-	-	-	-	C1 retry: no new source beyond one Sudha dairy unit
+2026-11-28	/market-area/meerut/	city-in	discard	-	-	-	-	C1 retry: no source on a Meerut dairy or pharma plant
+2026-11-28	/market-area/moradabad/	city-in	discard	-	-	-	-	C1 retry: no new source; Milk Food plant closed
+2026-11-28	/market-area/jodhpur/	city-in	discard	-	-	-	-	C1 retry: only an undated Scribd visit report (2 LLPD installed); no second independent source
+2026-11-28	/market-area/kashipur/	city-in	discard	-	-	-	-	C1 retry: no Kashipur unit in CDSCO WHO-GMP results found; no plant source
+2026-11-28	/market-area/dibrugarh/	city-in	discard	-	-	-	-	C1 retry: NEDFL dairy still unconfirmed as operating
+2026-11-28	/market-area/badlapur/	city-in	discard	-	-	-	-	C1 retry: MPCB lists MIDC Badlapur and CETP only; no named pharma plant source
+2026-11-28	/market-area/bahadurgarh/	city-in	discard	-	-	-	-	C1 retry: no hygienic-process plant source
+2026-11-28	/market-area/chakan/	city-in	discard	-	-	-	-	C1 retry: Tetra Pak Chakan is a packaging plant, not a process line; Amul Khed City operating status still unconfirmed
